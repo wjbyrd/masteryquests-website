@@ -40,7 +40,7 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "A student says, 'My credit card is money because I can buy lunch with it, and my savings account is not money because I do not carry it.' Which correction is strongest?",
       "options": [
-        "The card accesses credit, while savings deposits are included in broad money",
+        "The card accesses credit; savings deposits are in current M1 and M2",
         "The card is M1, while savings deposits are not counted as money",
         "The card is currency, while savings deposits are only bank capital",
         "The card is reserves, while savings deposits are Treasury assets"
@@ -57,15 +57,15 @@ const questionBanks = {
       ],
       "repairSkill": "money_measures",
       "commonError": "confusing_payment_access_with_money",
-      "feedback": "Credit cards access borrowing, while savings deposits are counted in broader money measures such as M2.",
-      "aHash": "75e1f2a0d83d9a4239b5d5c9c38bfe0f2919ee818b2e1b6f908e4906d5604a1c"
+      "feedback": "A credit card accesses borrowing, not a money balance. Under the current Federal Reserve definition, savings deposits are included in M1 and, through M1, in M2.",
+      "aHash": "c3ed45aabc70a9fccaccfe5f35a0ded32413943e6338fa248f880a443e8547de"
     },
     {
       "id": 9001,
       "sourceGame": "mintAshGold",
       "q": "A payment app balance can be spent quickly, but official money measures may treat it awkwardly. Which explanation best handles the gray area?",
       "options": [
-        "It functions like spendable balances but may sit outside standard deposit categories",
+        "It is spendable but may fall outside standard deposit categories",
         "It is always M1 because every app balance is physical currency",
         "It is never money because digital balances cannot be used in exchange",
         "It is bank capital because payment apps lend deposits to the Fed"
@@ -83,7 +83,7 @@ const questionBanks = {
       "repairSkill": "money_measures",
       "commonError": "forcing_payment_apps_into_simple_m1_category",
       "feedback": "Payment app balances can act like money, but they may not fit cleanly into traditional M1 or M2 categories.",
-      "aHash": "b3981fbf36815c13b09571796547c72bc704c0a4daab349fb02cf26249ee6613"
+      "aHash": "7c17c0bce8d8395487c37d81c086ace3931d1757a6221d211f1f8fb6a029296c"
     },
     {
       "id": 9002,
@@ -114,9 +114,9 @@ const questionBanks = {
     {
       "id": 9003,
       "sourceGame": "mintAshGold",
-      "q": "Which classification has the cleanest logic?",
+      "q": "Which classification of deposits, stocks, and money is correct under the current monetary-aggregate definitions?",
       "options": [
-        "Checking deposits are M1; savings deposits are M2; stocks are not money",
+        "Checking and savings deposits are in current M1 and M2; stocks are not money",
         "Savings deposits are M1; stocks are M2; checking deposits are not money",
         "Treasury bonds are M1; checking deposits are wealth but not money",
         "Credit cards are M2; currency is not money until it is deposited"
@@ -134,8 +134,8 @@ const questionBanks = {
       ],
       "repairSkill": "money_measures",
       "commonError": "counting_all_financial_assets_as_money",
-      "feedback": "Checking deposits are in M1, savings deposits are in M2, and stocks are financial assets but not money.",
-      "aHash": "f9d924be4d5aa2cb4c3138250ddf9f58603f4cec4a256a837d9c177abddc4cac"
+      "feedback": "The current Federal Reserve definition includes checking and savings deposits in M1. These liquid deposits also enter M2; stocks are not part of either monetary aggregate.",
+      "aHash": "eb04ef60e326efa8442da5cfecd7f51d91a3ebc01d3e01cf72144c992decd41a"
     },
     {
       "id": 9004,
@@ -190,12 +190,12 @@ const questionBanks = {
     {
       "id": 9006,
       "sourceGame": "mintAshGold",
-      "q": "A household has $600 cash, $2,400 checking, $5,000 savings, $3,000 stocks, and a $4,000 credit limit. What is the cleanest M1 and M2 classification?",
+      "q": "Under current Federal Reserve definitions, a household holds $600 in currency, $2,400 in checking and $5,000 in savings deposits, all outside retirement accounts. It also owns $3,000 in stocks and has a $4,000 unused credit limit. How much do these holdings contribute to M1 and M2?",
       "options": [
-        "M1 is $3,000; M2 adds the $5,000 savings",
-        "M1 is $7,000; M2 adds the $4,000 credit limit",
-        "M1 is $600; M2 adds stocks and the credit limit",
-        "M1 is $14,000; M2 excludes checking deposits"
+        "$8,000 to M1 and $8,000 to M2",
+        "$3,000 to M1 and $8,000 to M2",
+        "$8,000 to M1 and $11,000 to M2",
+        "$12,000 to M1 and $15,000 to M2"
       ],
       "tag": "money_measures",
       "type": "calculation",
@@ -210,8 +210,8 @@ const questionBanks = {
       ],
       "repairSkill": "money_measures",
       "commonError": "including_credit_limit_or_stocks",
-      "feedback": "M1 includes cash and checking: $600 + $2,400 = $3,000. M2 adds savings, but not stocks or credit limits.",
-      "aHash": "70a72aba1a53ddda6a4123c1e674607cd04c06d7e4cb19e84d189c8aaf7d1f64"
+      "feedback": "Current M1 includes currency, checking and savings deposits: $600+$2,400+$5,000=$8,000. These holdings also enter M2; stocks and unused borrowing capacity enter neither measure. There are no additional non-M1 M2 holdings in this list.",
+      "aHash": "39eaafe18b034e301f321d20764a2fa6990f1d374885879982c31eb6dccc27d0"
     },
     {
       "id": 9007,
@@ -318,7 +318,7 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "A student says one bank can create unlimited money by repeatedly lending the same reserves. What is the best correction?",
       "options": [
-        "A single bank loses reserves when loans are spent and deposited elsewhere",
+        "The bank loses reserves when loan proceeds are deposited elsewhere",
         "A single bank can lend required reserves without any limit",
         "A single bank turns loans into currency held at the Fed",
         "A single bank creates deposits only when reserves equal zero"
@@ -336,7 +336,7 @@ const questionBanks = {
       "repairSkill": "bank_money_creation",
       "commonError": "confusing_one_bank_with_whole_system",
       "feedback": "One bank is limited by reserve outflows. The banking system can multiply deposits as funds are redeposited.",
-      "aHash": "3ba8843ca70bc3ba6b416f25b12807e80d25c2254cf1d1589cfed5502e9f7d26"
+      "aHash": "486de649e4b866e82303c03c105d4e993cab7ed97c792f8cc55a3e6ff2f17c06"
     },
     {
       "id": 9012,
@@ -392,7 +392,7 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "The Fed buys $5 million in bonds. Banks lend only half of new excess reserves, and the simple multiplier based on required reserves is 10. Which conclusion is safest?",
       "options": [
-        "The money supply rises less than the simple maximum",
+        "The money supply rises less than the maximum",
         "The money supply must rise exactly $50 million",
         "The money supply must fall exactly $25 million",
         "The monetary base is unchanged by the purchase"
@@ -410,7 +410,7 @@ const questionBanks = {
       "repairSkill": "fed_tools",
       "commonError": "treating_multiplier_as_mechanical",
       "feedback": "The Fed purchase adds reserves, but if banks do not lend all excess reserves, the money supply rises by less than the simple multiplier maximum.",
-      "aHash": "b4a821bbf979ff167937b42f25e05050e24203355a1fac890dd5615ebfec47e5"
+      "aHash": "5cab3d62a9b4f3faec36fccb28579a95f7982456dadb157c432a2f5d8d83c1aa"
     },
     {
       "id": 9015,
@@ -442,7 +442,7 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "The Fed wants to increase lending but fears banks will simply hold reserves. Which tool effect is most directly uncertain?",
       "options": [
-        "Open-market purchases may not translate into loan expansion",
+        "Bond purchases may leave lending unchanged",
         "Reserve requirements instantly create borrower demand",
         "Discount-rate cuts force every bank to borrow",
         "Bond sales always increase bank reserves"
@@ -460,14 +460,14 @@ const questionBanks = {
       "repairSkill": "fed_tools",
       "commonError": "assuming_reserves_force_lending",
       "feedback": "Adding reserves does not guarantee lending if banks choose to hold excess reserves or borrowers are weak.",
-      "aHash": "50d8860fa914d931aa593331f2002fc47caebccf7d874a21dcd5ec52e88ba613"
+      "aHash": "ed19e8c3d8f49670e5eb2e0698fcc92537a047e2724629fb92a9a6214c7d05ad"
     },
     {
       "id": 9017,
       "sourceGame": "mintAshGold",
       "q": "A central bank lowers the discount rate and buys bonds, but also raises reserve requirements. What is the best assessment?",
       "options": [
-        "The policy mix is partly expansionary and partly contractionary",
+        "The tools have opposing effects on money",
         "Every tool in the mix is expansionary",
         "Every tool in the mix is contractionary",
         "The tools affect only fiscal policy"
@@ -486,7 +486,7 @@ const questionBanks = {
       "repairSkill": "fed_tools",
       "commonError": "missing_conflicting_tool_directions",
       "feedback": "Lowering the discount rate and buying bonds are expansionary, but raising reserve requirements is contractionary.",
-      "aHash": "023d91e54158c3a7f302cd5223ac95f773d03f932c15a54a45802e5bd39b0e6b"
+      "aHash": "c2d934a2f031bb60acd5f492c5cc600a5a84c35f36e731a796b69052cfcebebb"
     },
     {
       "id": 9018,
@@ -518,10 +518,10 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "The Fed sells $800,000 in bonds and the reserve ratio is 20 percent. If banks were fully loaned up, what is the maximum deposit contraction?",
       "options": [
-        "$4,000,000",
-        "$800,000",
-        "$160,000",
-        "$640,000"
+        "$4.00 million",
+        "$0.80 million",
+        "$0.16 million",
+        "$0.64 million"
       ],
       "tag": "fed_policy",
       "type": "calculation",
@@ -536,7 +536,7 @@ const questionBanks = {
       "repairSkill": "fed_tools",
       "commonError": "multiplying_by_reserve_ratio",
       "feedback": "The multiplier is 1/0.20 = 5, so an $800,000 reserve drain can contract deposits by up to $4,000,000.",
-      "aHash": "d855682c126228cd14aa55074c1105b00a86bbc1c52537d4a9aad8e966c8dc69"
+      "aHash": "f70380046d5cd332dd82eb030e74458ca8ec840c3e25a67ee13538e8ae5f3d68"
     },
     {
       "id": 9020,
@@ -618,7 +618,7 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "A country prints money to finance deficits, but inflation initially stays low because people hoard money during a crisis. What is the best warning?",
       "options": [
-        "Inflation can rise later if velocity recovers while money remains high",
+        "Inflation may rise if velocity recovers while money stays high",
         "Inflation can never rise once velocity falls during a crisis",
         "Output must permanently offset all money creation",
         "Money-financed deficits reduce nominal spending forever"
@@ -636,16 +636,16 @@ const questionBanks = {
       "repairSkill": "inflation_causes",
       "commonError": "thinking_low_velocity_permanently_blocks_inflation",
       "feedback": "If velocity later rises while money remains high, nominal spending and inflation pressure can increase.",
-      "aHash": "f690edbf0c082102f7e28e4273131f17774349af0b47b451955a9fee4e71989c"
+      "aHash": "d7e0fb510f593435c29b11c31d699eb7c7d5dfc79d46a8e47ee88bd995eafb9b"
     },
     {
       "id": 9024,
       "sourceGame": "mintAshGold",
       "q": "If k in money demand rises from 0.20 to 0.40 while M and Y are unchanged, what must happen to P in equilibrium?",
       "options": [
-        "P falls because desired real balances rise",
-        "P rises because desired real balances rise",
-        "P is unchanged because k does not affect money demand",
+        "The price level falls because desired real balances rise",
+        "The price level rises because desired real balances rise",
+        "The price level is unchanged because k does not affect money demand",
         "P doubles because velocity doubles"
       ],
       "tag": "money_demand",
@@ -661,7 +661,7 @@ const questionBanks = {
       "repairSkill": "inflation_causes",
       "commonError": "wrong_direction_money_demand_price_level",
       "feedback": "A higher k means higher real money demand. With M fixed, P must fall for M/P to rise.",
-      "aHash": "f045827ad90a559698eaddfe561963db2d4499af496e4431072e5a03f5c9e0a9"
+      "aHash": "59b42831fbac616070f4a01e1a7583c9e9688b4e53036fa7b89657ca633c72fb"
     },
     {
       "id": 9025,
@@ -718,7 +718,7 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "Which explanation best connects seigniorage to inflation tax?",
       "options": [
-        "Printing money raises revenue but reduces money holders' purchasing power",
+        "Money creation earns revenue but erodes money’s purchasing power",
         "Printing money raises revenue by increasing real wages permanently",
         "Printing money reduces prices by increasing currency supply",
         "Printing money creates only real output and no price pressure"
@@ -736,7 +736,7 @@ const questionBanks = {
       "repairSkill": "inflation_causes",
       "commonError": "missing_purchasing_power_transfer",
       "feedback": "Seigniorage finances spending through money creation, while inflation reduces the purchasing power of money holders.",
-      "aHash": "273c222e713d46c1affb1456e1f6e9562000a146690568fbfc6f177fa164c68e"
+      "aHash": "b5dc9692f003df9f447dc26a776cc14b51be01748e7e457318a5d1d67cca6dcb"
     },
     {
       "id": 9028,
@@ -792,10 +792,10 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "A firm changes prices once per year while competitors adjust monthly during high inflation. Which cost appears first?",
       "options": [
-        "Relative price distortion from uneven adjustment",
+        "Distorted relative prices from uneven adjustment",
         "Shoeleather cost from falling depreciation",
         "Reserve drain from fixed nominal contracts",
-        "Capital deepening from sticky posted prices"
+        "Capital deepening caused by infrequent price changes"
       ],
       "tag": "inflation_costs",
       "type": "application",
@@ -810,7 +810,7 @@ const questionBanks = {
       "repairSkill": "inflation_effects",
       "commonError": "calling_every_inflation_cost_menu_cost",
       "feedback": "Uneven adjustment changes relative prices, which can distort buying and production decisions.",
-      "aHash": "6b681b5e672f596008718d8818066f32738d5f289c91f1a05bb42e109326bd91"
+      "aHash": "dc8d6d46c9a906463866a195d39452bfe02cbb93af4fad6cf1991526cbeff4eb"
     },
     {
       "id": 9031,
@@ -842,7 +842,7 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "Which scenario best combines menu costs and relative price distortions?",
       "options": [
-        "Firms update prices at different times and customers shift toward outdated prices",
+        "Costly, staggered price updates draw buyers to outdated prices",
         "Households visit banks more often and firms hold more reserves",
         "Workers receive indexed wages and lenders avoid all losses",
         "Banks increase loans and deposits expand through the multiplier"
@@ -860,7 +860,7 @@ const questionBanks = {
       "repairSkill": "inflation_effects",
       "commonError": "confusing_menu_costs_with_shoeleather_costs",
       "feedback": "Price-changing costs can make firms adjust at different times, distorting relative prices and customer choices.",
-      "aHash": "6c88a05568afe05f1791a793e93f022de1dbefff76435892dd47f930d8f3c8bd"
+      "aHash": "12bebcb03b6d8221fab73f74ab6d8d3d1ebe8f978ca76d8ed7bd875c371cfeae"
     },
     {
       "id": 9033,
@@ -891,7 +891,7 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "Which statement best avoids the inflation fallacy while still recognizing short-run harm?",
       "options": [
-        "Inflation need not lower all real incomes, but sticky wages can reduce some real wages",
+        "Sticky wages can fall in real terms without all real incomes falling",
         "Inflation always lowers every real income by the inflation rate",
         "Inflation raises real wages whenever prices rise",
         "Inflation has no effect on any contract or wage"
@@ -909,12 +909,12 @@ const questionBanks = {
       "repairSkill": "inflation_effects",
       "commonError": "overstating_inflation_effect_on_all_real_income",
       "feedback": "Inflation is a general rise in prices and incomes, but sticky wages or fixed contracts can create real losses for some groups.",
-      "aHash": "b47371ba4961be222fb1f86442dc90449074097bbe1daef4e12baef26c12c37c"
+      "aHash": "12f17d0cc8143ed86f22973788eb97caa6cb8e6e299cfb71319875e2a611ddb3"
     },
     {
       "id": 9035,
       "sourceGame": "mintAshGold",
-      "q": "If M = 2,000, V = 5, and Y = 2,500, then M rises 20 percent while V and Y stay fixed. What happens to P?",
+      "q": "If M = 2,000, V = 5, and Y = 2,500, then the nominal money supply rises 20 percent while V and Y stay fixed. What happens to P?",
       "options": [
         "It rises from 4 to 4.8",
         "It rises from 5 to 6",
@@ -933,7 +933,7 @@ const questionBanks = {
       ],
       "repairSkill": "quantity_equation",
       "commonError": "failing_to_recompute_price_level",
-      "feedback": "Initial P is 2,000 × 5 / 2,500 = 4. A 20 percent money increase raises P by 20 percent to 4.8.",
+      "feedback": "Initial P is 2,000 × 5 / 2,500 = 4. A 20 percent money increase raises the price level by 20 percent to 4.8.",
       "aHash": "abb3187ccc576314544afe9d253f05241c336711c096ae8175d22700f3e1196d"
     },
     {
@@ -1137,8 +1137,8 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "A central bank doubles money growth permanently. Which combined long-run prediction best fits classical logic and the Fisher effect?",
       "options": [
-        "Inflation and nominal rates rise; real output does not permanently rise",
-        "Real output and real rates rise; inflation stays fixed",
+        "Inflation and nominal rates rise; real output is unchanged",
+        "Real output and real interest rates rise; inflation is unchanged",
         "Inflation falls and nominal rates fall; output doubles",
         "Nominal wages fall and real wages must rise"
       ],
@@ -1155,14 +1155,14 @@ const questionBanks = {
       "repairSkill": "classical_view",
       "commonError": "confusing_nominal_and_real_long_run_effects",
       "feedback": "Long-run money growth raises inflation and nominal rates but does not permanently raise real output.",
-      "aHash": "a1e894b40b35ed7922733539c621171f97dd7ba87062e26725c25c21bb62d2b9"
+      "aHash": "f183da2390ff9ed64617196c60faad38de3a85ecd1151e1620c8ed357e6f95a0"
     },
     {
       "id": 9045,
       "sourceGame": "mintAshGold",
-      "q": "A country has 10 percent inflation, nominal wage growth of 10 percent, and unchanged productivity. What is the cleanest real-wage conclusion?",
+      "q": "A country has 10 percent inflation, nominal wage growth of 10 percent, and unchanged productivity. What is the most accurate real-wage conclusion?",
       "options": [
-        "Real wages are roughly unchanged",
+        "Real wages are unchanged",
         "Real wages rise by 10 percent",
         "Real wages fall by 10 percent",
         "Real wages rise by 20 percent"
@@ -1180,14 +1180,14 @@ const questionBanks = {
       "repairSkill": "classical_view",
       "commonError": "treating_nominal_wage_growth_as_real_gain",
       "feedback": "If wages and prices rise at the same rate, real wages are roughly unchanged.",
-      "aHash": "4677bdcfe3e4a12b8e003fbbde4b4408492e5dafafb110123a93d1e241dcf8ce"
+      "aHash": "1340a82ee7418dbf0fb80ef1e8e70848ffd54c8c91354583cae441f1a8dd8bb3"
     },
     {
       "id": 9046,
       "sourceGame": "mintAshGold",
       "q": "Which answer best applies classical dichotomy without overstating it?",
       "options": [
-        "Money is neutral for real variables in the long run, not necessarily in the short run",
+        "Money is neutral in the long run but may have short-run real effects",
         "Money is neutral for real variables in every period and every contract",
         "Money affects only real variables and never nominal variables",
         "Money changes capital per worker directly through M2"
@@ -1205,31 +1205,7 @@ const questionBanks = {
       "repairSkill": "classical_view",
       "commonError": "overapplying_long_run_neutrality_to_short_run",
       "feedback": "Classical neutrality is a long-run result; sticky prices can allow money to affect real output in the short run.",
-      "aHash": "b1d23c518c65fa124e02f9505aca6d15c88cca50987896f062fe86259cac23d5"
-    },
-    {
-      "id": 9047,
-      "sourceGame": "mintAshGold",
-      "q": "If expected inflation rises and nominal rates do not adjust, what happens to the expected real interest rate?",
-      "options": [
-        "It falls",
-        "It rises",
-        "It is unchanged",
-        "It becomes the money multiplier"
-      ],
-      "tag": "fisher_effect",
-      "type": "application",
-      "objective": "LO5.4",
-      "difficulty": "legendary",
-      "conceptCluster": "legendary_mint_inflation",
-      "primarySkill": "real_rate_when_nominal_rate_sticky",
-      "secondarySkills": [
-        "fisher_equation"
-      ],
-      "repairSkill": "classical_view",
-      "commonError": "assuming_nominal_rates_always_adjust_immediately",
-      "feedback": "Expected real interest equals nominal interest minus expected inflation, so if expected inflation rises and nominal rates do not, the expected real rate falls.",
-      "aHash": "51a961febd461ad1ea9db3f345c3907f42988e7937e56390ff5e6b439ae33884"
+      "aHash": "a65efdc4f1a6630a88bb4b01553a9f2e0e6276e6f8a9de3c7e2952df4b5b80ea"
     },
     {
       "id": 9048,
@@ -1259,7 +1235,7 @@ const questionBanks = {
     {
       "id": 9049,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the Solow production graph. If k rises from 5 to 10 and then from 15 to 20, which comparison best fits the curve?",
+      "q": "Refer to the Solow production function graph. If k rises from 5 to 10 and then from 15 to 20, which comparison best fits the curve?",
       "options": [
         "The first output gain is larger because MPK falls as k rises",
         "The second output gain is larger because MPK rises as k rises",
@@ -1334,12 +1310,12 @@ const questionBanks = {
     {
       "id": 9052,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the steady-state graph. If the economy starts at k1 where saving exceeds depreciation, which sequence is correct?",
+      "q": "Refer to the Solow steady-state graph. If the economy starts at k1 where saving exceeds depreciation, which sequence is correct?",
       "options": [
         "Δk is positive, k rises, and the gap narrows near k*",
         "Δk is negative, k falls, and the gap widens near k*",
         "Δk is zero, k stays fixed, and output falls",
-        "Δk is positive, prices rise, and AD shifts left"
+        "Δk is positive, prices rise, and the AD curve shifts to the left"
       ],
       "tag": "steady_state",
       "type": "graph_interpretation",
@@ -1360,12 +1336,12 @@ const questionBanks = {
     {
       "id": 9053,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the steady-state graph. If the economy starts at k3, where depreciation exceeds saving, which sequence is correct?",
+      "q": "Refer to the Solow steady-state graph. If the economy starts at k3, where depreciation exceeds saving, which sequence is correct?",
       "options": [
         "Δk is negative, k falls, and output per worker declines toward k*",
         "Δk is positive, k rises, and output per worker rises forever",
         "Δk is zero, k stays fixed, and saving shifts upward",
-        "Δk is negative, AD shifts right, and prices stay fixed"
+        "Δk is negative, the AD curve shifts to the right, and prices stay fixed"
       ],
       "tag": "steady_state",
       "type": "graph_interpretation",
@@ -1389,9 +1365,9 @@ const questionBanks = {
       "q": "If y = k^(1/3), s = 0.25, δ = 0.05, and k = 64, what is Δk?",
       "options": [
         "−2.2",
-        "1.0",
-        "2.2",
-        "3.2"
+        "+1.0",
+        "+2.2",
+        "+3.2"
       ],
       "tag": "steady_state",
       "type": "calculation",
@@ -1413,9 +1389,9 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "A country has high output per worker but low net capital accumulation. In the basic Solow model, which explanation fits best?",
       "options": [
-        "Diminishing returns make saving and depreciation close at high k",
+        "At high capital levels, saving barely exceeds depreciation",
         "Money growth pushes output to the natural rate",
-        "AD shifts left whenever capital rises",
+        "The AD curve shifts to the left whenever capital rises",
         "Velocity declines because saving rises"
       ],
       "tag": "solow_model",
@@ -1430,17 +1406,17 @@ const questionBanks = {
       "repairSkill": "solow_model",
       "commonError": "confusing_growth_model_with_ad_as",
       "feedback": "At higher capital levels, diminishing returns weaken added output and investment, while depreciation is larger.",
-      "aHash": "a151f8bf981d35b083014b7d1864ae27b604ec27fba84de5235a6024ef331a9c"
+      "aHash": "3342e6180df0c369be04d07eb6094ca4b0d3c3113a3036f83303221289c6ee34"
     },
     {
       "id": 9056,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the saving-rate graph. After the saving curve shifts upward, what must happen at the old steady state before the new one is reached?",
+      "q": "Refer to the Solow saving-rate graph. After the saving curve shifts upward, what must happen at the old steady state before the new one is reached?",
       "options": [
         "Investment exceeds depreciation and capital begins rising",
         "Depreciation exceeds investment and capital begins falling",
         "Output per worker falls because saving rises",
-        "The price level rises and LRAS shifts right"
+        "The price level rises and the LRAS curve shifts to the right"
       ],
       "tag": "saving_rate",
       "type": "graph_interpretation",
@@ -1535,7 +1511,7 @@ const questionBanks = {
     {
       "id": 9060,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the saving-rate graph. Which answer best states the tradeoff from raising saving?",
+      "q": "Refer to the Solow saving-rate graph. Which answer best states the tradeoff from raising saving?",
       "options": [
         "Current consumption may fall, while future output per worker can rise",
         "Current consumption must rise, while future output per worker falls",
@@ -1566,7 +1542,7 @@ const questionBanks = {
         "Reduce saving so less output is used maintaining excess capital",
         "Raise saving further because more capital always raises consumption",
         "Raise depreciation so output per worker rises immediately",
-        "Shift AD right so capital per worker becomes irrelevant"
+        "Shift the AD curve to the right so capital per worker becomes irrelevant"
       ],
       "tag": "golden_rule",
       "type": "application",
@@ -1611,11 +1587,11 @@ const questionBanks = {
     {
       "id": 9063,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the AD-SRAS graph. AD shifts right under sticky prices. Which answer best separates short-run and long-run logic?",
+      "q": "Refer to the aggregate demand and short-run aggregate supply graph. The AD curve shifts to the right under sticky prices. Which answer best separates short-run and long-run logic?",
       "options": [
         "Output rises first; later prices adjust and output returns toward natural output",
         "Prices rise first; later output rises permanently above natural output",
-        "LRAS shifts right first; later AD returns to its old position",
+        "The LRAS curve shifts to the right first; later AD returns to its old position",
         "Output falls first; later unemployment falls below zero"
       ],
       "tag": "short_long_run",
@@ -1688,7 +1664,7 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "A policymaker says, 'Because money is neutral in the long run, monetary policy cannot affect output during a recession.' What is the flaw?",
       "options": [
-        "Long-run neutrality does not rule out short-run effects with sticky prices",
+        "Sticky prices allow short-run effects despite long-run neutrality",
         "Money neutrality means output responds permanently to money",
         "Sticky prices imply policy affects only LRAS and not AD",
         "Neutrality applies only to banks and not to households"
@@ -1706,7 +1682,7 @@ const questionBanks = {
       "repairSkill": "short_long_run",
       "commonError": "overapplying_long_run_neutrality",
       "feedback": "Money can affect short-run output when prices are sticky, even if it is neutral in the long run.",
-      "aHash": "9a57a0f434039fbf7ba9f91bb215e47c8cb378d4cc23035835e8c6bee659ff11"
+      "aHash": "e4de4e3d552d5e8dc6680510b5b8ffacbe609c9b718abc554536bf635a2a230e"
     },
     {
       "id": 9067,
@@ -1738,7 +1714,7 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "Which statement best explains why real GDP can be below natural output even though capital and technology have not changed?",
       "options": [
-        "Sticky prices allow weak demand to reduce actual output temporarily",
+        "With sticky prices, weak demand temporarily reduces output",
         "Natural output falls whenever demand falls in the short run",
         "Capital disappears when consumers delay purchases",
         "Technology declines whenever unemployment rises"
@@ -1756,7 +1732,7 @@ const questionBanks = {
       "repairSkill": "short_long_run",
       "commonError": "confusing_actual_output_with_potential_output",
       "feedback": "Natural output depends on productive capacity, but actual output can fall below it when sticky prices and weak demand reduce production.",
-      "aHash": "ed4f6d855b3caf1973b95980e2902e34860ca86ff5ec20c22aea5ff5d6c6195c"
+      "aHash": "3097887999615db0ac62db724ad769610d09fd262bb72b809799afd173f3028e"
     },
     {
       "id": 9069,
@@ -1786,11 +1762,11 @@ const questionBanks = {
     {
       "id": 9070,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the AD graph. Price rises from 90 to 110 with money fixed. Which interpretation correctly separates movement and mechanism?",
+      "q": "Refer to the aggregate demand graph. Price rises from 90 to 110 with money fixed. Which interpretation correctly separates movement and mechanism?",
       "options": [
         "Move along AD to lower output demanded because real balances fall",
-        "Shift AD right because higher prices raise nominal balances",
-        "Shift SRAS left because lower real balances raise production costs",
+        "Shift the AD curve to the right because higher prices raise nominal balances",
+        "Shift the SRAS curve to the left because lower real balances raise production costs",
         "Move along LRAS because real output rises with prices"
       ],
       "tag": "aggregate_demand",
@@ -1812,7 +1788,7 @@ const questionBanks = {
     {
       "id": 9071,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the AD shift graph. Which event shifts AD right while leaving SRAS directly unchanged?",
+      "q": "Refer to the aggregate demand graph. Which event shifts the AD curve to the right while leaving SRAS directly unchanged?",
       "options": [
         "A rise in investment optimism",
         "A drought that raises food costs",
@@ -1837,12 +1813,12 @@ const questionBanks = {
     {
       "id": 9072,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the AD-SRAS graph. If AD shifts left under horizontal SRAS, which result and explanation fit best?",
+      "q": "Refer to the aggregate demand and short-run aggregate supply graph. If the AD curve shifts to the left under horizontal SRAS, which result and explanation fit best?",
       "options": [
         "Output falls because prices do not adjust enough to clear demand",
         "Prices fall because firms cut output without changing employment",
         "Output rises because lower demand raises real money balances",
-        "LRAS shifts left because sticky prices reduce capital"
+        "The LRAS curve shifts to the left because sticky prices reduce capital"
       ],
       "tag": "short_run_adas",
       "type": "graph_interpretation",
@@ -1863,7 +1839,7 @@ const questionBanks = {
     {
       "id": 9073,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the demand-shock graph. A positive demand shock occurs. Which statement best links output, unemployment, and later adjustment?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. A positive demand shock occurs. Which statement best links output, unemployment, and later adjustment?",
       "options": [
         "Output rises above natural output, unemployment falls, and prices later rise",
         "Output falls below natural output, unemployment rises, and prices later fall",
@@ -1889,11 +1865,11 @@ const questionBanks = {
     {
       "id": 9074,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the demand-shock graph. A negative demand shock occurs. Which statement best links output, unemployment, and later adjustment?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. A negative demand shock occurs. Which statement best links output, unemployment, and later adjustment?",
       "options": [
         "Output falls below natural output, unemployment rises, and prices later fall",
         "Output rises above natural output, unemployment falls, and prices later rise",
-        "Output stays at natural output, unemployment rises, and LRAS shifts left",
+        "Output stays at natural output, unemployment rises, and the LRAS curve shifts to the left",
         "Output falls below natural output, unemployment falls, and prices later rise"
       ],
       "tag": "demand_shocks",
@@ -1920,7 +1896,7 @@ const questionBanks = {
         "Short-run output can rise, but long-run output returns to natural output",
         "Short-run output cannot move, but long-run output rises permanently",
         "Short-run prices fall, and long-run output stays above natural output",
-        "Short-run LRAS shifts right, and long-run prices stay fixed"
+        "Short-run the LRAS curve shifts to the right, and long-run prices stay fixed"
       ],
       "tag": "aggregate_demand",
       "type": "trap",
@@ -1940,11 +1916,11 @@ const questionBanks = {
     {
       "id": 9076,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the AD shift graph. Which answer correctly treats lower price level and lower consumer confidence?",
+      "q": "Refer to the aggregate demand graph. Which answer correctly treats lower price level and lower consumer confidence?",
       "options": [
-        "Lower price level moves along AD; lower confidence shifts AD left",
-        "Lower price level shifts AD right; lower confidence moves along AD",
-        "Both lower price and lower confidence shift AD left",
+        "Lower price level moves along AD; lower confidence shifts the AD curve to the left",
+        "Lower price level shifts the AD curve to the right; lower confidence moves along AD",
+        "Both lower price and lower confidence shift the AD curve to the left",
         "Both lower price and lower confidence move along AD"
       ],
       "tag": "aggregate_demand",
@@ -1961,14 +1937,14 @@ const questionBanks = {
       "commonError": "confusing_movement_along_ad_with_shift",
       "feedback": "Price-level changes move along AD. Confidence changes shift AD.",
       "image": "adtwo.webp",
-      "aHash": "4f69cb2d2522e9bd9d8c5bf45c065ab707fe026e2e87c60e2a780c683c17ab96"
+      "aHash": "01d56f00e6084822c4d931a2dd9c6a41baa9efca14e0c65990c8314d147eaf09"
     },
     {
       "id": 9077,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the AD-LRAS graph. Aggregate demand increases from AD1 to AD3 while LRAS is unchanged. What is the long-run result?",
+      "q": "Refer to the aggregate demand and long-run aggregate supply graph. Aggregate demand increases from AD1 to AD3 while LRAS is unchanged. What is the long-run result?",
       "options": [
-        "Higher prices in the long run with output back at natural output",
+        "Prices rise; output returns to its natural level",
         "Permanently higher output because AD is stronger",
         "Lower prices because output exceeds natural output",
         "Lower natural output because demand increased"
@@ -1987,14 +1963,14 @@ const questionBanks = {
       "commonError": "thinking_ad_changes_natural_output",
       "feedback": "In the long run, higher AD raises the price level but leaves output at natural output if LRAS is unchanged.",
       "image": "adlras.webp",
-      "aHash": "135909904fdd7532b6aa76e00040160bed9439c92c0f01e8e09538f49b4212dc"
+      "aHash": "501a4ad5fe931c76dac31d8f8641f155479fae33ea1dbb9ec0b35b33a12fafe1"
     },
     {
       "id": 9078,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the supply-shock graph. A negative supply shock hits and policymakers expand AD. Which tradeoff is most accurate?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. The economy starts at A. A negative supply shock moves it to C, then an AD expansion (not drawn) would move it to B along horizontal SRAS2. Relative to A, what is the final outcome?",
       "options": [
-        "Output loss is softened, but inflation pressure is worsened",
+        "Output returns to its original level, but prices remain higher",
         "Inflation pressure is reduced, but output falls further",
         "Output and prices both return instantly to original levels",
         "Natural output rises because AD accommodates the shock"
@@ -2011,14 +1987,14 @@ const questionBanks = {
       ],
       "repairSkill": "long_run_adjustment",
       "commonError": "missing_supply_shock_tradeoff",
-      "feedback": "Expanding AD after a negative supply shock can support output but adds inflation pressure.",
+      "feedback": "The supply shock raises the price level from P1 to P2 and reduces output from Y1 to Y2. AD expansion moves C to B, restoring output to Y1 at the same P2. It does not reverse the supply shock’s price increase; this horizontal-SRAS diagram does not show an additional immediate price increase from C to B.",
       "image": "supplyshock.webp",
-      "aHash": "9a0bb796ba1f52d4b52dc114e861107829c4cb1943ffe4b0e7e20685053b94ee"
+      "aHash": "54165772711d1c7e8d15f70e9338b0c6eeec7837b3cbbc09f14bd50c94ffaacc"
     },
     {
       "id": 9079,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the shock-plus-policy graph. A negative demand shock pushes output below natural output, then policy shifts AD right past the original equilibrium. What is the likely mistake?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. A negative demand shock pushes output below natural output, then policy shifts the AD curve to the right past the original equilibrium. What is the likely mistake?",
       "options": [
         "Policy overcorrects and creates inflationary pressure",
         "Policy undercorrects and leaves a recessionary gap",
@@ -2046,9 +2022,9 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "A negative demand shock occurs and policymakers do nothing. Which long-run self-correction chain is strongest?",
       "options": [
-        "High unemployment lowers wages, SRAS shifts right, output returns toward natural output",
-        "Low unemployment raises wages, SRAS shifts left, output returns toward natural output",
-        "High prices raise real balances, LRAS shifts right, output rises forever",
+        "High unemployment lowers wages, the SRAS curve shifts to the right, output returns toward natural output",
+        "Low unemployment raises wages, the SRAS curve shifts to the left, output returns toward natural output",
+        "High prices raise real balances, the LRAS curve shifts to the right, output rises forever",
         "Low output raises depreciation, saving shifts up, AD returns to original"
       ],
       "tag": "long_run_adjustment",
@@ -2064,17 +2040,17 @@ const questionBanks = {
       "repairSkill": "long_run_adjustment",
       "commonError": "wrong_direction_wage_price_adjustment",
       "feedback": "A recessionary gap creates high unemployment, downward wage pressure, lower costs, and a rightward SRAS adjustment.",
-      "aHash": "895d0d76bcf9803b38b2a7e78eb7f7815735499bd6bbd1c0185b842a0812896e"
+      "aHash": "d74731fa77159d6ea2132834252b3db816a5723987180bae506047226b4fa977"
     },
     {
       "id": 9081,
       "sourceGame": "mintAshGold",
       "q": "A positive demand shock occurs and policymakers do nothing. Which long-run self-correction chain is strongest?",
       "options": [
-        "Low unemployment raises wages, SRAS shifts left, output returns toward natural output",
-        "High unemployment lowers wages, SRAS shifts right, output returns toward natural output",
-        "Low prices raise real balances, AD shifts left, output rises forever",
-        "High saving lowers depreciation, LRAS shifts left, output returns"
+        "Low unemployment raises wages, the SRAS curve shifts to the left, output returns toward natural output",
+        "High unemployment lowers wages, the SRAS curve shifts to the right, output returns toward natural output",
+        "Low prices raise real balances, the AD curve shifts to the left, output rises forever",
+        "High saving lowers depreciation, the LRAS curve shifts to the left, output returns"
       ],
       "tag": "long_run_adjustment",
       "type": "multi-step",
@@ -2089,7 +2065,7 @@ const questionBanks = {
       "repairSkill": "long_run_adjustment",
       "commonError": "wrong_direction_wage_price_adjustment",
       "feedback": "An inflationary gap creates low unemployment, upward wage pressure, higher costs, and a leftward SRAS adjustment.",
-      "aHash": "5cab233adc633fb9f8468de06e66dda46ef655c8ebc1d73b7b1b42a1df4f3600"
+      "aHash": "2090652b037703786e5ab934002eb03713e5b870dfa283240830c622d3ec9f96"
     },
     {
       "id": 9082,
@@ -2119,12 +2095,12 @@ const questionBanks = {
     {
       "id": 9083,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the shock-plus-policy graph. Which policy response best fits a negative demand shock if the goal is stabilization without overshooting?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. Which policy response best fits a negative demand shock if the goal is stabilization without overshooting?",
       "options": [
         "Shift AD back near natural output and monitor price pressure",
         "Shift AD far right until unemployment stays below normal",
-        "Shift SRAS left to make weak output look natural",
-        "Shift LRAS left so the recession disappears statistically"
+        "Shift the SRAS curve to the left to make weak output look natural",
+        "Shift the LRAS curve to the left so the recession disappears statistically"
       ],
       "tag": "stabilization_policy",
       "type": "graph_interpretation",
@@ -2141,6 +2117,261 @@ const questionBanks = {
       "feedback": "A calibrated response closes the output gap without pushing AD so far right that inflation pressure builds.",
       "image": "shockpluspolicy.webp",
       "aHash": "d93db510f6b8e20613ba121586570c81fca219c3016da4f4e22f83f5b00ef7c5"
+    },
+    {
+      "id": 3021,
+      "sourceGame": "mintAshGold",
+      "q": "What does the Golden Rule level of capital maximize?",
+      "options": [
+        "Consumption per worker",
+        "Capital per worker",
+        "Saving per worker",
+        "Depreciation per worker"
+      ],
+      "tag": "golden_rule",
+      "type": "definition",
+      "objective": "LO8.2",
+      "difficulty": "legendary",
+      "conceptCluster": "boss_ch8_golden_rule",
+      "primarySkill": "golden_rule_definition",
+      "secondarySkills": [
+        "consumption"
+      ],
+      "repairSkill": "saving_rate",
+      "commonError": "thinking_golden_rule_maximizes_capital",
+      "feedback": "The Golden Rule level of capital maximizes consumption per worker.",
+      "aHash": "771eb43a11a9bc845d797dc491a212e26e1ce1fbdee36d8c0fcba45b018e548d"
+    },
+    {
+      "id": 3022,
+      "sourceGame": "mintAshGold",
+      "q": "Why can a saving rate above the Golden Rule level reduce sustainable consumption per worker?",
+      "options": [
+        "Maintaining excess capital leaves less for consumption",
+        "Saving more always raises consumption by increasing the capital stock",
+        "Higher saving eliminates depreciation",
+        "Higher saving matters only for inflation"
+      ],
+      "tag": "golden_rule",
+      "type": "trap",
+      "objective": "LO8.2",
+      "difficulty": "legendary",
+      "conceptCluster": "boss_ch8_golden_rule",
+      "primarySkill": "too_much_saving_warning",
+      "secondarySkills": [
+        "saving_consumption_tradeoff"
+      ],
+      "repairSkill": "saving_rate",
+      "commonError": "equating_max_saving_with_max_welfare",
+      "feedback": "Saving too much can leave too little output for consumption, even if capital is high.",
+      "aHash": "c41ab3aa2685d46742aa486878b0e0e3f6b8038c2b81cb3d8bbf16e01c3fddbe"
+    },
+    {
+      "id": 3023,
+      "sourceGame": "mintAshGold",
+      "q": "The economy is below the Golden Rule level of capital. Which policy direction best fits the model?",
+      "options": [
+        "Encourage more saving and investment",
+        "Reduce saving to zero",
+        "Raise depreciation through neglect",
+        "Lower output per worker intentionally"
+      ],
+      "tag": "golden_rule",
+      "type": "policy_reasoning",
+      "objective": "LO8.2",
+      "difficulty": "legendary",
+      "conceptCluster": "boss_ch8_golden_rule",
+      "primarySkill": "policy_below_golden_rule",
+      "secondarySkills": [
+        "capital_accumulation",
+        "living_standards"
+      ],
+      "repairSkill": "saving_rate",
+      "commonError": "choosing_lower_saving_when_capital_is_too_low",
+      "feedback": "If the economy is below the Golden Rule level of capital, more saving and investment can move it toward higher sustainable consumption.",
+      "aHash": "970047cb390fcff5cfd5a40b7b438285ce39c27c6fc27cacd9caa31a88615d85"
+    },
+    {
+      "id": 27,
+      "sourceGame": "mintAshGold",
+      "q": "What is the Golden Rule level of capital?",
+      "options": [
+        "It maximizes consumption per worker",
+        "The level that makes saving equal zero",
+        "The level that ends all depreciation",
+        "The level that fixes prices forever"
+      ],
+      "tag": "golden_rule",
+      "type": "definition",
+      "objective": "LO8.2",
+      "difficulty": "legendary",
+      "conceptCluster": "mint_easy_growth",
+      "primarySkill": "golden_rule_capital",
+      "secondarySkills": [],
+      "repairSkill": "saving_rate",
+      "commonError": "confusing_golden_rule_with_highest_capital",
+      "feedback": "The Golden Rule level of capital is the steady state that maximizes consumption per worker.",
+      "aHash": "aa7585ac93b2fa01ce7c7ebd9fb05244a2557d71aee7b322c2e8389c13224ade"
+    },
+    {
+      "id": 162,
+      "sourceGame": "mintAshGold",
+      "q": "Which steady state is preferred by the Golden Rule?",
+      "options": [
+        "The one with the highest sustainable consumption",
+        "The one with the highest possible saving rate",
+        "The one with zero capital per worker",
+        "The one with no depreciation curve"
+      ],
+      "tag": "golden_rule",
+      "type": "identification",
+      "objective": "LO8.2",
+      "difficulty": "legendary",
+      "conceptCluster": "mint_medium_growth",
+      "primarySkill": "golden_rule_consumption",
+      "secondarySkills": [],
+      "repairSkill": "saving_rate",
+      "commonError": "confusing_highest_capital_with_highest_consumption",
+      "feedback": "The Golden Rule selects the steady state with the highest sustainable consumption per worker.",
+      "aHash": "4cde20ef98b7454f6c4cf0c39fd1320b60e96b3adc996b34d2e323d7446cac5b"
+    },
+    {
+      "id": 361,
+      "sourceGame": "mintAshGold",
+      "q": "If a country is below its Golden Rule level of capital, which policy direction is most consistent with raising long-run consumption?",
+      "options": [
+        "Encourage more saving and investment",
+        "Reduce saving to zero",
+        "Raise depreciation through poor maintenance",
+        "Shift aggregate demand left"
+      ],
+      "tag": "golden_rule",
+      "type": "application",
+      "objective": "LO8.2",
+      "difficulty": "legendary",
+      "conceptCluster": "mint_elite_growth",
+      "primarySkill": "golden_rule_policy_below",
+      "secondarySkills": [],
+      "repairSkill": "saving_rate",
+      "commonError": "thinking_low_saving_always_maximizes_consumption",
+      "feedback": "If the economy has too little capital, more saving and investment can move it toward higher sustainable consumption.",
+      "aHash": "970047cb390fcff5cfd5a40b7b438285ce39c27c6fc27cacd9caa31a88615d85"
+    },
+    {
+      "id": 362,
+      "sourceGame": "mintAshGold",
+      "q": "Why is the highest possible saving rate not necessarily the Golden Rule?",
+      "options": [
+        "Very high saving can leave too little consumption",
+        "Very high saving eliminates investment",
+        "Very high saving makes depreciation negative",
+        "Very high saving shifts the LRAS curve to the left"
+      ],
+      "tag": "golden_rule",
+      "type": "application",
+      "objective": "LO8.2",
+      "difficulty": "legendary",
+      "conceptCluster": "mint_elite_growth",
+      "primarySkill": "golden_rule_not_max_saving",
+      "secondarySkills": [],
+      "repairSkill": "saving_rate",
+      "commonError": "equating_highest_saving_with_best_outcome",
+      "feedback": "The Golden Rule maximizes consumption per worker, not capital or saving for its own sake.",
+      "aHash": "e2f9f87d3a25b39b6d69041b18d7033b67c5c5f39cdf21b604d0213fc1046d7c"
+    },
+    {
+      "id": 5064,
+      "sourceGame": "mintAshGold",
+      "q": "What does the Golden Rule level of capital maximize?",
+      "options": [
+        "Consumption per worker",
+        "The stock of capital per worker",
+        "Saving rate",
+        "Depreciation"
+      ],
+      "tag": "golden_rule",
+      "type": "repair",
+      "objective": "LO8.2",
+      "difficulty": "legendary",
+      "conceptCluster": "repair_saving_rate",
+      "primarySkill": "golden_rule",
+      "secondarySkills": [],
+      "repairSkill": "saving_rate",
+      "commonError": "thinking_golden_rule_maximizes_capital",
+      "feedback": "The Golden Rule maximizes consumption per worker.",
+      "aHash": "771eb43a11a9bc845d797dc491a212e26e1ce1fbdee36d8c0fcba45b018e548d"
+    },
+    {
+      "id": 5065,
+      "sourceGame": "mintAshGold",
+      "q": "Why does a higher saving rate not guarantee higher welfare?",
+      "options": [
+        "It may reduce current or long-run consumption",
+        "It always lowers future output",
+        "It eliminates investment",
+        "It shifts the AD curve to the left forever"
+      ],
+      "tag": "golden_rule",
+      "type": "repair",
+      "objective": "LO8.2",
+      "difficulty": "legendary",
+      "conceptCluster": "repair_saving_rate",
+      "primarySkill": "too_much_saving",
+      "secondarySkills": [],
+      "repairSkill": "saving_rate",
+      "commonError": "thinking_more_saving_is_always_best",
+      "feedback": "Saving too much can reduce consumption, especially beyond the Golden Rule level.",
+      "aHash": "186991d901ad12060133bf39bf8f9cc9deec0c45be3b9444073895888c93d35a"
+    },
+    {
+      "id": 6040,
+      "sourceGame": "mintAshGold",
+      "q": "Why does maximizing the capital stock alone not identify the saving rate that maximizes steady-state consumption?",
+      "options": [
+        "More capital also requires more replacement investment",
+        "The goal is to maximize the amount of capital lost to depreciation",
+        "The goal is the highest price level",
+        "The goal is the lowest output per worker"
+      ],
+      "tag": "saving_living_bridge",
+      "type": "bridge",
+      "objective": "LO8.2",
+      "difficulty": "legendary",
+      "conceptCluster": "bridge_saving_living",
+      "primarySkill": "golden_rule_bridge",
+      "secondarySkills": [
+        "consumption",
+        "saving_rate"
+      ],
+      "repairSkill": "saving_rate",
+      "commonError": "equating_highest_saving_with_best_outcome",
+      "feedback": "The Golden Rule focuses on consumption per worker, not simply the largest capital stock.",
+      "aHash": "cdf40a1f0283e9eef813ce709a53a67baffeed8ecbc2b7af64878c9e7953be33"
+    },
+    {
+      "id": 6041,
+      "sourceGame": "mintAshGold",
+      "q": "If a country is below the Golden Rule level of capital, why can higher saving help?",
+      "options": [
+        "More investment can raise capital and sustainable consumption",
+        "It lowers investment and raises current consumption forever",
+        "It raises depreciation enough to increase output",
+        "It shifts the AD curve to the right and eliminates capital scarcity"
+      ],
+      "tag": "saving_living_bridge",
+      "type": "bridge",
+      "objective": "LO8.2",
+      "difficulty": "legendary",
+      "conceptCluster": "bridge_saving_living",
+      "primarySkill": "below_golden_rule_bridge",
+      "secondarySkills": [
+        "investment",
+        "consumption"
+      ],
+      "repairSkill": "saving_rate",
+      "commonError": "choosing_lower_saving_when_capital_is_too_low",
+      "feedback": "Below the Golden Rule, more saving and investment can move the economy toward higher sustainable consumption.",
+      "aHash": "cb2c45e3da9fb83793daeabb2b3bcb8ddc1dd39d608f190c99f1ea59ad2acf31"
     }
   ],
   "legendaryBoss": [
@@ -2197,7 +2428,7 @@ const questionBanks = {
     {
       "id": 9102,
       "sourceGame": "mintAshGold",
-      "q": "A city launches a transit card used only for buses. Riders can store value, but stores do not accept it. What is the cleanest assessment?",
+      "q": "A city launches a transit card used only for buses. Riders can store value, but stores do not accept it. What is the most accurate assessment?",
       "options": [
         "It stores value in one system but is not general money",
         "It is M1 because it buys transportation services",
@@ -2447,7 +2678,7 @@ const questionBanks = {
     {
       "id": 9112,
       "sourceGame": "mintAshGold",
-      "q": "A borrower expected 3 percent inflation on a 10 percent nominal loan. Actual inflation is 13 percent. What is the cleanest judgment?",
+      "q": "A borrower expected 3 percent inflation on a 10 percent nominal loan. Actual inflation is 13 percent. What is the most accurate judgment?",
       "options": [
         "Borrower gains; expected real rate was 7 percent but actual was −3 percent",
         "Lender gains; expected real rate was −3 percent but actual was 7 percent",
@@ -2548,7 +2779,7 @@ const questionBanks = {
     {
       "id": 9116,
       "sourceGame": "mintAshGold",
-      "q": "M is 3,000, V is 4, and Y is 2,400. Then M rises 10 percent and V falls 5 percent while Y is fixed. What happens to P approximately?",
+      "q": "M is 3,000, V is 4, and Y is 2,400. Then the nominal money supply rises 10 percent and V falls 5 percent while output is fixed. What happens to P approximately?",
       "options": [
         "It rises about 5 percent from 5 to about 5.25",
         "It falls about 5 percent from 5 to about 4.75",
@@ -2567,7 +2798,7 @@ const questionBanks = {
       ],
       "repairSkill": "quantity_equation",
       "commonError": "ignoring_offsetting_velocity_change",
-      "feedback": "Initial P is 3,000×4/2,400 = 5. With M up 10 percent and V down 5 percent, P rises about 5 percent to roughly 5.25.",
+      "feedback": "Initial P is 3,000×4/2,400 = 5. With M up 10 percent and V down 5 percent, the price level rises about 5 percent to roughly 5.25.",
       "aHash": "4fde8be8701757afc70e00eb37e37cb47b6947428359a622dfa9d4dc9a7a0f82"
     },
     {
@@ -2575,10 +2806,10 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "Real money demand is M/P = kY. If M and Y are fixed but k rises sharply, what price-level movement restores equilibrium?",
       "options": [
-        "P falls so real balances rise",
-        "P rises so real balances rise",
-        "P stays fixed because k affects only velocity",
-        "P rises because higher money demand means inflation"
+        "The price level falls so real balances rise",
+        "The price level rises so real balances rise",
+        "The price level stays fixed because k affects only velocity",
+        "The price level rises because higher money demand means inflation"
       ],
       "tag": "real_money_balances",
       "type": "application",
@@ -2593,7 +2824,7 @@ const questionBanks = {
       "repairSkill": "quantity_equation",
       "commonError": "wrong_direction_money_demand_price_adjustment",
       "feedback": "Higher k means higher desired real balances. With M fixed, P must fall to raise M/P.",
-      "aHash": "fc3a5eff6d8b88b3bfcc8276c896feb6ee79061f57605ad8033aa2994106e14f"
+      "aHash": "3901aa9f3d48e0951430af1f6ce0631f0827f533525d30ec4c5f33844c242ff4"
     },
     {
       "id": 9118,
@@ -2673,7 +2904,7 @@ const questionBanks = {
     {
       "id": 9121,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the steady-state graph. The economy starts left of k*. A minister wants to cut saving immediately because consumption is too low. What warning fits the model?",
+      "q": "Refer to the Solow steady-state graph. The economy starts left of k*. A minister wants to cut saving immediately because consumption is too low. What warning fits the model?",
       "options": [
         "Lower saving may raise current consumption but slow capital accumulation",
         "Lower saving raises investment and speeds movement to k*",
@@ -2724,7 +2955,7 @@ const questionBanks = {
     {
       "id": 9123,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the Solow production graph. A country already has high k, and another unit of capital adds little output. Which policy mistake should be avoided?",
+      "q": "Refer to the Solow production function graph. A country already has high k, and another unit of capital adds little output. Which policy mistake should be avoided?",
       "options": [
         "Assuming capital accumulation alone can sustain high growth forever",
         "Assuming depreciation rises with capital per worker",
@@ -2750,7 +2981,7 @@ const questionBanks = {
     {
       "id": 9124,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the saving-rate graph. Saving rises, output eventually rises, but students complain consumption fell at first. Which response is strongest?",
+      "q": "Refer to the Solow saving-rate graph. Saving rises, output eventually rises, but students complain consumption fell at first. Which response is strongest?",
       "options": [
         "That is the short-run tradeoff; more output is being diverted to investment",
         "That proves the model failed because saving cannot lower consumption",
@@ -2829,7 +3060,7 @@ const questionBanks = {
       "q": "A recession begins after AD falls. Output is below natural output, but inflation is already low. Which memo is strongest?",
       "options": [
         "Support AD carefully because the main gap is weak demand",
-        "Shift SRAS left because output is below natural output",
+        "Shift the SRAS curve to the left because output is below natural output",
         "Cut AD further because low inflation is the only target",
         "Raise saving because Solow capital is the short-run issue"
       ],
@@ -2880,7 +3111,7 @@ const questionBanks = {
       "options": [
         "More stimulus risks inflation pressure from an already hot economy",
         "More stimulus is needed because high GDP proves a recession",
-        "More stimulus shifts LRAS left and lowers inflation",
+        "More stimulus shifts the LRAS curve to the left and lowers inflation",
         "More stimulus reduces wages when unemployment is low"
       ],
       "tag": "business_cycles",
@@ -2901,11 +3132,11 @@ const questionBanks = {
     {
       "id": 9130,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the demand-shock graph. Consumer confidence collapses, but lawmakers propose tax cuts large enough to push AD past the original equilibrium. Which memo is best?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. Consumer confidence collapses, but lawmakers propose tax cuts large enough to push AD past the original equilibrium. Which memo is best?",
       "options": [
         "Close the gap, but avoid overshooting into inflation pressure",
         "Push AD as far right as possible because output fell first",
-        "Shift SRAS left because confidence affects production costs",
+        "Shift the SRAS curve to the left because confidence affects production costs",
         "Do nothing because demand shocks cannot affect output"
       ],
       "tag": "demand_shocks",
@@ -2927,7 +3158,7 @@ const questionBanks = {
     {
       "id": 9131,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the AD graph. Prices rise, output demanded falls, and a student calls this a negative demand shock. What is the correction?",
+      "q": "Refer to the aggregate demand graph. Prices rise, output demanded falls, and a student calls this a negative demand shock. What is the correction?",
       "options": [
         "That is movement along AD, not a leftward shift of AD",
         "That is a leftward AD shift caused by lower confidence",
@@ -2978,11 +3209,11 @@ const questionBanks = {
     {
       "id": 9133,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the supply-shock graph. Oil prices surge, output falls, and prices rise. The cabinet wants to expand AD aggressively. Which warning is best?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. An oil-price shock moves A to C. The cabinet proposes an AD expansion (not drawn) from C to B while SRAS2 remains horizontal. Which warning follows from the graph?",
       "options": [
-        "It may reduce unemployment but worsen inflation",
+        "It can restore output without reversing the price increase caused by the supply shock",
         "It lowers inflation and raises output at the same time",
-        "It shifts SRAS right and eliminates the tradeoff",
+        "It shifts the SRAS curve to the right and eliminates the tradeoff",
         "It restores LRAS by raising nominal spending"
       ],
       "tag": "supply_shocks",
@@ -2997,18 +3228,18 @@ const questionBanks = {
       ],
       "repairSkill": "long_run_adjustment",
       "commonError": "thinking_demand_policy_solves_supply_shock_cleanly",
-      "feedback": "With stagflation, expansionary AD policy can support output but adds inflation pressure.",
+      "feedback": "At C, output is Y2 and price is P2. The move to B restores Y1, but price remains P2, above the original P1. Supporting demand can undo the output loss here without undoing the supply-driven price increase.",
       "image": "supplyshock.webp",
-      "aHash": "788e06b0599a876d99edcadd986e73cb54249f6d62897e6bbf6670ce218efdaa"
+      "aHash": "b4ed50f5faa545148c518c4ea9af78d0eed1f43d8d243a96159c0020d3e4bf12"
     },
     {
       "id": 9134,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the shock-plus-policy graph. A negative demand shock is partly offset, but output remains below natural output. Which memo is strongest?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. A negative demand shock is partly offset, but output remains below natural output. Which memo is strongest?",
       "options": [
         "More support may be justified, but only until the gap closes",
         "Stop support because any AD increase creates stagflation",
-        "Shift LRAS left so natural output matches the slump",
+        "Shift the LRAS curve to the left so natural output matches the slump",
         "Raise input costs so SRAS moves left faster"
       ],
       "tag": "stabilization_policy",
@@ -3032,10 +3263,10 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "A positive demand shock pushes output above natural output. Inflation expectations begin rising. Which no-policy adjustment should the advisor expect?",
       "options": [
-        "Wages and prices rise, SRAS shifts left, output returns toward natural output",
-        "Wages and prices fall, SRAS shifts right, output rises further",
-        "AD shifts right again because expectations rose",
-        "LRAS shifts right because unemployment is low"
+        "Wages and prices rise, the SRAS curve shifts to the left, output returns toward natural output",
+        "Wages and prices fall, the SRAS curve shifts to the right, output rises further",
+        "The AD curve shifts to the right again because expectations rose",
+        "The LRAS curve shifts to the right because unemployment is low"
       ],
       "tag": "long_run_adjustment",
       "type": "multi-step",
@@ -3049,15 +3280,15 @@ const questionBanks = {
       ],
       "repairSkill": "long_run_adjustment",
       "commonError": "wrong_direction_self_correction",
-      "feedback": "An inflationary gap creates upward wage and price pressure, shifting SRAS left and returning output toward natural output.",
-      "aHash": "8abdc0793a2eda482342f35e0be1c2b3b6146458afaec1d7c05fe1181af6be55"
+      "feedback": "An inflationary gap creates upward wage and price pressure, shifting the SRAS curve to the left and returning output toward natural output.",
+      "aHash": "861fb61e410435d7bbdef1eb3c5ebd01785955c929f7538e74a475ac2f81249c"
     }
   ],
   "easyBoss": [
     {
       "id": 2000,
       "sourceGame": "mintAshGold",
-      "q": "The Lord of Liquidity opens the ledger: 'Prices rise, but not all causes are equal.' What is the core long-run cause of inflation in the quantity theory?",
+      "q": "According to the quantity theory, what is a major long-run cause of sustained inflation?",
       "options": [
         "Money growth outpacing real output growth",
         "A single price rising in one market",
@@ -3081,7 +3312,7 @@ const questionBanks = {
     {
       "id": 2001,
       "sourceGame": "mintAshGold",
-      "q": "The Lord of Liquidity presses: 'The Mint expands faster than output.' Money grows 10 percent, output grows 3 percent, and velocity is stable. What inflation pressure follows?",
+      "q": "Money grows 10%, real output grows 3%, and velocity is stable. What is approximate inflation?",
       "options": [
         "About 7 percent inflation",
         "About 3 percent inflation",
@@ -3106,7 +3337,7 @@ const questionBanks = {
     {
       "id": 2002,
       "sourceGame": "mintAshGold",
-      "q": "The Lord of Liquidity warns: 'Money growth is high, but citizens are hoarding cash.' Which judgment is strongest?",
+      "q": "Money growth rises while households choose to hold more money relative to spending. What can be concluded about the resulting inflation pressure?",
       "options": [
         "Inflation pressure may be weaker if velocity falls",
         "Inflation must equal money growth exactly",
@@ -3131,7 +3362,7 @@ const questionBanks = {
     {
       "id": 2003,
       "sourceGame": "mintAshGold",
-      "q": "The Lord of Liquidity turns the contract page: 'The wage rose, but prices rose faster.' If nominal wages rise 4 percent and inflation is 9 percent, what happens to real wages?",
+      "q": "Nominal wages rise 4% while prices rise 9%. What happens to real wages?",
       "options": [
         "They fall by about 5 percent",
         "They rise by about 5 percent",
@@ -3155,7 +3386,7 @@ const questionBanks = {
     {
       "id": 2004,
       "sourceGame": "mintAshGold",
-      "q": "The Lord of Liquidity smiles: 'The borrower signed early. Inflation arrived late.' Who benefits when actual inflation is higher than expected on a fixed-rate loan?",
+      "q": "On a fixed-rate loan, who benefits when actual inflation exceeds expected inflation?",
       "options": [
         "Borrowers, because repayment is made with weaker dollars",
         "Lenders, because repayment buys more than expected",
@@ -3179,7 +3410,7 @@ const questionBanks = {
     {
       "id": 2005,
       "sourceGame": "mintAshGold",
-      "q": "The Lord of Liquidity points to firms changing prices at different times: 'Some adjust. Some lag.' What inflation problem is this?",
+      "q": "During inflation, some firms adjust prices quickly while others adjust with a delay. Which problem can result?",
       "options": [
         "Relative price distortion",
         "Capital accumulation",
@@ -3203,7 +3434,7 @@ const questionBanks = {
     {
       "id": 2006,
       "sourceGame": "mintAshGold",
-      "q": "The Lord of Liquidity demands balance: 'M times V must equal what?' Which equation restores the ledger?",
+      "q": "Which equation relates the money supply, velocity, the price level, and real output?",
       "options": [
         "P times Y",
         "C plus I",
@@ -3221,13 +3452,13 @@ const questionBanks = {
       ],
       "repairSkill": "quantity_equation",
       "commonError": "confusing_quantity_equation_with_other_macro_equations",
-      "feedback": "The quantity equation is M × V = P × Y.",
+      "feedback": "Money supply times velocity measures total nominal spending. The price level times real output measures the value of production. The quantity equation sets these two measures equal: M × V = P × Y.",
       "aHash": "cb636faaa3815e9de273fa400317d01990bbc0715d4d745904ecf408c31669b5"
     },
     {
       "id": 2007,
       "sourceGame": "mintAshGold",
-      "q": "The Lord of Liquidity sets the numbers: M = 500, V = 4, and Y = 1,000. What price level balances the equation?",
+      "q": "The money supply is M = 500, velocity is V = 4, and real output is Y = 1,000. What price level satisfies the quantity equation?",
       "options": [
         "2",
         "4",
@@ -3251,7 +3482,7 @@ const questionBanks = {
     {
       "id": 2008,
       "sourceGame": "mintAshGold",
-      "q": "The Lord of Liquidity shifts the flow: money grows 8 percent, velocity falls 2 percent, and output grows 3 percent. What is approximate inflation?",
+      "q": "Money grows 8%, velocity falls 2%, and real output grows 3%. What is approximate inflation?",
       "options": [
         "3 percent",
         "7 percent",
@@ -3276,7 +3507,7 @@ const questionBanks = {
     {
       "id": 2009,
       "sourceGame": "mintAshGold",
-      "q": "The Lord of Liquidity asks: 'Separate the real from the nominal.' Which pair is correctly classified?",
+      "q": "Which pair is correctly classified?",
       "options": [
         "Money supply is nominal; real GDP is real",
         "Money supply is real; price level is real",
@@ -3300,7 +3531,7 @@ const questionBanks = {
     {
       "id": 2010,
       "sourceGame": "mintAshGold",
-      "q": "The Lord of Liquidity raises expected inflation from 3 percent to 7 percent while the real rate stays 4 percent. What happens to the nominal interest rate?",
+      "q": "Expected inflation rises from 3% to 7% while the real interest rate remains 4%. What happens to the nominal interest rate according to the Fisher effect?",
       "options": [
         "It rises from 7 percent to 11 percent",
         "It falls from 7 percent to 4 percent",
@@ -3324,7 +3555,7 @@ const questionBanks = {
     {
       "id": 2011,
       "sourceGame": "mintAshGold",
-      "q": "The Lord of Liquidity gives the final test: 'Money doubles, prices eventually double, but output returns to its real foundation.' What concept is being applied?",
+      "q": "The money supply doubles and prices eventually double, while real output returns to the level determined by productive capacity. Which concept does this illustrate?",
       "options": [
         "Monetary neutrality in the long run",
         "Permanent real growth from money creation",
@@ -3350,7 +3581,7 @@ const questionBanks = {
     {
       "id": 3000,
       "sourceGame": "mintAshGold",
-      "q": "The Keeper of the Steady State opens the growth ledger: 'Start with the model.' In the basic Solow model, what does capital per worker represent?",
+      "q": "In the basic Solow model, what does capital per worker represent?",
       "options": [
         "The amount of capital available for each worker",
         "The amount of money held by each bank",
@@ -3374,7 +3605,7 @@ const questionBanks = {
     {
       "id": 3001,
       "sourceGame": "mintAshGold",
-      "q": "The Keeper points to the production curve: 'Output rises, but not evenly.' Refer to the Solow production graph. Why does the curve flatten as capital per worker rises?",
+      "q": "Refer to the Solow production function graph. Why does the curve flatten as capital per worker increases?",
       "options": [
         "Diminishing returns make each added unit of capital less productive",
         "Depreciation becomes negative at high levels of capital",
@@ -3399,7 +3630,7 @@ const questionBanks = {
     {
       "id": 3002,
       "sourceGame": "mintAshGold",
-      "q": "The Keeper tests the mechanism: 'Capital rises from 16 to 25, and output rises from 4 to 5.' What does this show?",
+      "q": "Capital rises from 16 to 25, and output rises from 4 to 5. What does this show?",
       "options": [
         "Output rises, but by less than the increase in capital",
         "Output rises by the same amount as capital",
@@ -3424,7 +3655,7 @@ const questionBanks = {
     {
       "id": 3003,
       "sourceGame": "mintAshGold",
-      "q": "The Keeper marks the account: 'Saving becomes investment.' If output per worker is 20 and the saving rate is 25 percent, what is investment per worker?",
+      "q": "Output per worker is 20 and the saving rate is 25%. In the basic closed-economy Solow model, what is investment per worker?",
       "options": [
         "5",
         "15",
@@ -3449,7 +3680,7 @@ const questionBanks = {
     {
       "id": 3004,
       "sourceGame": "mintAshGold",
-      "q": "The Keeper balances the machine: 'Investment is 4.5 and depreciation is 3.0.' What happens to capital per worker?",
+      "q": "Investment is 4.5 and depreciation is 3.0. What happens to capital per worker?",
       "options": [
         "It rises by 1.5",
         "It falls by 1.5",
@@ -3474,7 +3705,7 @@ const questionBanks = {
     {
       "id": 3005,
       "sourceGame": "mintAshGold",
-      "q": "The Keeper destabilizes the vault: 'Depreciation exceeds investment.' Which outcome follows in the Solow model?",
+      "q": "Depreciation exceeds investment. Which outcome follows in the Solow model?",
       "options": [
         "Capital per worker falls",
         "Capital per worker rises",
@@ -3498,7 +3729,7 @@ const questionBanks = {
     {
       "id": 3006,
       "sourceGame": "mintAshGold",
-      "q": "The Keeper points to the crossing: 'Here the system rests.' Refer to the steady-state graph. What defines k*?",
+      "q": "Refer to the Solow steady-state graph. Which condition defines the steady-state capital stock k*?",
       "options": [
         "Saving and investment equal depreciation",
         "Output equals consumption exactly",
@@ -3524,7 +3755,7 @@ const questionBanks = {
     {
       "id": 3007,
       "sourceGame": "mintAshGold",
-      "q": "The Keeper asks: 'Left of k*, what force dominates?' Refer to the steady-state graph. What happens when saving is above depreciation?",
+      "q": "Refer to the Solow steady-state graph. At a capital stock below k*, investment exceeds depreciation. What happens to capital per worker?",
       "options": [
         "Capital per worker rises toward k*",
         "Capital per worker falls away from k*",
@@ -3549,7 +3780,7 @@ const questionBanks = {
     {
       "id": 3008,
       "sourceGame": "mintAshGold",
-      "q": "The Keeper asks again: 'Right of k*, what force dominates?' Refer to the steady-state graph. What happens when depreciation is above saving?",
+      "q": "Refer to the Solow steady-state graph. To the right of k*, depreciation exceeds investment. What happens to capital per worker?",
       "options": [
         "Capital per worker falls toward k*",
         "Capital per worker rises farther from k*",
@@ -3574,7 +3805,7 @@ const questionBanks = {
     {
       "id": 3009,
       "sourceGame": "mintAshGold",
-      "q": "The Keeper gives the rule: y = √k, s = 0.30, δ = 0.10, and k = 9. What is Δk?",
+      "q": "In the basic Solow model, output per worker is y = √k, the saving rate is s = 0.30, and depreciation is δ = 0.10. At k = 9, what is the change in capital per worker, Δk?",
       "options": [
         "0",
         "0.6",
@@ -3600,7 +3831,7 @@ const questionBanks = {
     {
       "id": 3010,
       "sourceGame": "mintAshGold",
-      "q": "The Keeper changes the numbers: y = √k, s = 0.20, δ = 0.10, and k = 9. What happens next?",
+      "q": "In the basic Solow model, output per worker is y = √k, the saving rate is s = 0.20, and depreciation is δ = 0.10. At k = 9, what happens to capital per worker?",
       "options": [
         "Capital falls because investment is below depreciation",
         "Capital rises because investment is above depreciation",
@@ -3624,7 +3855,7 @@ const questionBanks = {
     {
       "id": 3011,
       "sourceGame": "mintAshGold",
-      "q": "The Keeper closes the first chamber: 'If capital per worker keeps changing, what must be true?'",
+      "q": "If capital per worker keeps changing, what must be true?",
       "options": [
         "Investment and depreciation are not equal",
         "Output per worker must be zero",
@@ -3648,7 +3879,7 @@ const questionBanks = {
     {
       "id": 3012,
       "sourceGame": "mintAshGold",
-      "q": "The Keeper raises the saving lever. Refer to the saving-rate graph. Which curve shifts when the saving rate rises?",
+      "q": "Refer to the Solow saving-rate graph. Which curve shifts when the saving rate rises?",
       "options": [
         "Saving and investment per worker shifts upward",
         "Depreciation per worker shifts downward",
@@ -3673,7 +3904,7 @@ const questionBanks = {
     {
       "id": 3013,
       "sourceGame": "mintAshGold",
-      "q": "The Keeper watches the old steady state after saving rises. Refer to the saving-rate graph. What happens at the old k*?",
+      "q": "Refer to the Solow saving-rate graph. Immediately after the saving rate rises, how do investment and depreciation compare at the old steady-state capital stock?",
       "options": [
         "Investment exceeds depreciation, so capital rises",
         "Depreciation exceeds investment, so capital falls",
@@ -3698,7 +3929,7 @@ const questionBanks = {
     {
       "id": 3014,
       "sourceGame": "mintAshGold",
-      "q": "The Keeper asks for the destination: 'After saving rises and adjustment is complete, what is higher?'",
+      "q": "In the basic Solow model, the saving rate rises while technology and depreciation remain unchanged. Which variables are higher after adjustment to the new steady state?",
       "options": [
         "Capital per worker and output per worker",
         "Depreciation rate and inflation rate",
@@ -3722,7 +3953,7 @@ const questionBanks = {
     {
       "id": 3015,
       "sourceGame": "mintAshGold",
-      "q": "The Keeper demands sacrifice: 'Output per worker is 30 and saving rises from 20 percent to 35 percent.' What happens to current consumption per worker?",
+      "q": "Output per worker is 30 and saving rises from 20 percent to 35 percent. What happens to current consumption per worker?",
       "options": [
         "It falls from 24 to 19.5",
         "It rises from 6 to 10.5",
@@ -3747,7 +3978,7 @@ const questionBanks = {
     {
       "id": 3016,
       "sourceGame": "mintAshGold",
-      "q": "The Keeper asks: 'Why might households resist a policy that raises saving even if future output rises?'",
+      "q": "Why might households resist a policy that raises saving even if future output rises?",
       "options": [
         "Current consumption may fall during the transition",
         "Future output must fall when saving rises",
@@ -3771,7 +4002,7 @@ const questionBanks = {
     {
       "id": 3017,
       "sourceGame": "mintAshGold",
-      "q": "The Keeper offers two paths: 'Save more now or consume more now.' Which statement best captures the Solow tradeoff?",
+      "q": "In the Solow model, what tradeoff arises when households allocate more of current output to saving and investment?",
       "options": [
         "More saving can raise future output but reduce present consumption",
         "More saving always raises present and future consumption",
@@ -3795,7 +4026,7 @@ const questionBanks = {
     {
       "id": 3018,
       "sourceGame": "mintAshGold",
-      "q": "The Keeper asks what the people actually feel: 'Why does higher capital per worker matter for living standards?'",
+      "q": "In the Solow model, why can a higher capital stock per worker improve living standards?",
       "options": [
         "It raises output per worker, supporting higher consumption possibilities",
         "It raises the price level, making wages look larger",
@@ -3819,7 +4050,7 @@ const questionBanks = {
     {
       "id": 3019,
       "sourceGame": "mintAshGold",
-      "q": "The Keeper compares two countries. Country A saves little and has low capital per worker. Country B saves more and has higher capital per worker. What is the likely Solow implication?",
+      "q": "Two countries have the same technology and depreciation rate. Country A saves less and has less capital per worker than Country B. Which implication is consistent with the Solow model?",
       "options": [
         "Country B likely has higher output per worker",
         "Country A must have higher output per worker",
@@ -3844,7 +4075,7 @@ const questionBanks = {
     {
       "id": 3020,
       "sourceGame": "mintAshGold",
-      "q": "The Keeper warns: 'Do not confuse levels with growth.' In the basic Solow model, what does a higher saving rate do in the long run?",
+      "q": "In the basic Solow model, what does a higher saving rate do in the long run?",
       "options": [
         "Raises the steady-state level of output per worker",
         "Raises the permanent growth rate forever",
@@ -3866,17 +4097,17 @@ const questionBanks = {
       "aHash": "e9f34dc764c87e9a8b1dcb4a02e6cadc87fbd87f512cf971229793d6697c4a7a"
     },
     {
-      "id": 3021,
+      "id": 43021,
       "sourceGame": "mintAshGold",
-      "q": "The Keeper reveals the compass: 'The goal is not maximum capital.' What does the Golden Rule level of capital maximize?",
+      "q": "In the basic Solow model, what happens to capital per worker when investment exactly equals depreciation?",
       "options": [
-        "Consumption per worker",
-        "Capital per worker",
-        "Saving per worker",
-        "Depreciation per worker"
+        "It remains constant",
+        "It grows without limit",
+        "It falls to zero",
+        "It becomes equal to consumption"
       ],
       "tag": "golden_rule",
-      "type": "definition",
+      "type": "application",
       "objective": "LO8.2",
       "difficulty": "mediumBoss",
       "conceptCluster": "boss_ch8_golden_rule",
@@ -3885,22 +4116,22 @@ const questionBanks = {
         "consumption"
       ],
       "repairSkill": "saving_rate",
-      "commonError": "thinking_golden_rule_maximizes_capital",
-      "feedback": "The Golden Rule level of capital maximizes consumption per worker.",
-      "aHash": "771eb43a11a9bc845d797dc491a212e26e1ce1fbdee36d8c0fcba45b018e548d"
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "Equal investment and depreciation mean no net addition to capital per worker.",
+      "aHash": "f4a9abf3accda23951b6d94fa15cfd4733470238e3ca33613c8e0b383d7785ac"
     },
     {
-      "id": 3022,
+      "id": 43022,
       "sourceGame": "mintAshGold",
-      "q": "The Keeper sets a trap: 'If saving is higher, the country must be better off.' What is the best correction?",
+      "q": "A higher saving rate raises the steady-state capital stock in the basic Solow model. Why does that not mean households consume more immediately?",
       "options": [
-        "Higher saving can reduce consumption if the economy saves beyond the Golden Rule",
-        "Higher saving always maximizes consumption",
-        "Higher saving eliminates depreciation",
-        "Higher saving matters only for inflation"
+        "More of the current output is allocated to investment before the larger capital stock raises production",
+        "Saving immediately eliminates current output",
+        "Every increase in investment is also an equal increase in current consumption",
+        "Capital must fall before saving can rise"
       ],
       "tag": "golden_rule",
-      "type": "trap",
+      "type": "application",
       "objective": "LO8.2",
       "difficulty": "mediumBoss",
       "conceptCluster": "boss_ch8_golden_rule",
@@ -3909,22 +4140,22 @@ const questionBanks = {
         "saving_consumption_tradeoff"
       ],
       "repairSkill": "saving_rate",
-      "commonError": "equating_max_saving_with_max_welfare",
-      "feedback": "Saving too much can leave too little output for consumption, even if capital is high.",
-      "aHash": "cc7ec33a3ba0694731628fa0d3f39fe7a116da766811e909e0ddc3b4ce92d66b"
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "The initial increase in saving reallocates existing output from consumption to investment. The production benefit arrives as capital accumulates.",
+      "aHash": "85bf30dcc2395e8db1a196a0ad5af89c808df44f893383d1a1898eab7d5c00a7"
     },
     {
-      "id": 3023,
+      "id": 43023,
       "sourceGame": "mintAshGold",
-      "q": "The Keeper gives the final order: 'The economy is below the Golden Rule level of capital.' Which policy direction best fits the model?",
+      "q": "In the basic Solow model, a country wants to reach a higher steady-state capital stock while technology and depreciation stay unchanged. Which policy direction is consistent with that goal?",
       "options": [
-        "Encourage more saving and investment",
+        "Encourage a higher saving and investment rate",
         "Reduce saving to zero",
-        "Raise depreciation through neglect",
-        "Lower output per worker intentionally"
+        "Allow more capital to wear out without replacement",
+        "Lower investment below depreciation permanently"
       ],
       "tag": "golden_rule",
-      "type": "policy_reasoning",
+      "type": "application",
       "objective": "LO8.2",
       "difficulty": "mediumBoss",
       "conceptCluster": "boss_ch8_golden_rule",
@@ -3934,16 +4165,16 @@ const questionBanks = {
         "living_standards"
       ],
       "repairSkill": "saving_rate",
-      "commonError": "choosing_lower_saving_when_capital_is_too_low",
-      "feedback": "If the economy is below the Golden Rule level of capital, more saving and investment can move it toward higher sustainable consumption.",
-      "aHash": "970047cb390fcff5cfd5a40b7b438285ce39c27c6fc27cacd9caa31a88615d85"
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "A higher saving rate increases investment at each capital stock and supports a higher steady-state capital stock.",
+      "aHash": "1cf8ba81b9978010a79f814c55cebedd56aeaee5c9e157ca795837b8a696c379"
     }
   ],
   "finalBoss": [
     {
       "id": 4000,
       "sourceGame": "mintAshGold",
-      "q": "The Sovereign of Shocks presents the memo: 'Money is neutral in the long run, so monetary policy cannot help during a recession.' Which response should the advisor give?",
+      "q": "Money is neutral in the long run. Why does this not rule out monetary policy affecting output during a recession with sticky prices?",
       "options": [
         "Long-run neutrality does not rule out short-run effects when prices are sticky",
         "Money neutrality means monetary policy permanently raises output",
@@ -3968,7 +4199,7 @@ const questionBanks = {
     {
       "id": 4001,
       "sourceGame": "mintAshGold",
-      "q": "The Sovereign asks: 'Output is below natural output, but factories and workers still exist.' Which diagnosis is strongest?",
+      "q": "Spending falls while prices are sticky, leaving output below its natural level. Productive capacity is unchanged. Which explanation best accounts for the fall in actual output?",
       "options": [
         "Actual output is weak because demand is low, not because productive capacity vanished",
         "Natural output must have fallen because current output is low",
@@ -3993,7 +4224,7 @@ const questionBanks = {
     {
       "id": 4002,
       "sourceGame": "mintAshGold",
-      "q": "The Sovereign reviews a recession plan: 'Stimulate demand until output exceeds natural output.' What is the best warning?",
+      "q": "A proposal would stimulate demand until output exceeds its natural level. Which limitation should policymakers consider?",
       "options": [
         "Closing the gap is sensible, but overshooting creates inflation pressure",
         "Overshooting is required because natural output is too low",
@@ -4018,7 +4249,7 @@ const questionBanks = {
     {
       "id": 4003,
       "sourceGame": "mintAshGold",
-      "q": "The Sovereign says unemployment rose from 4 percent to 7 percent while normal growth is 3 percent. What does Okun's law imply?",
+      "q": "Unemployment rises from 4% to 7% while normal real GDP growth is 3%. Using the course version of Okun’s law, with a two-percentage-point growth reduction per one-percentage-point increase in unemployment, what is predicted growth?",
       "options": [
         "Real GDP growth is about −3 percent, so the slump is severe",
         "Real GDP growth is about 6 percent, so the economy is booming",
@@ -4043,7 +4274,7 @@ const questionBanks = {
     {
       "id": 4004,
       "sourceGame": "mintAshGold",
-      "q": "The Sovereign sees output above natural output and unemployment below normal. Which policy memo is strongest?",
+      "q": "Output is above its natural level and unemployment is below its natural rate. Which policy assessment is best supported?",
       "options": [
         "The economy is overheated, so more stimulus risks inflation pressure",
         "The economy is weak, so stronger AD support is needed",
@@ -4068,12 +4299,12 @@ const questionBanks = {
     {
       "id": 4005,
       "sourceGame": "mintAshGold",
-      "q": "The Sovereign asks why a recession can raise unemployment even without a change in technology. Which answer belongs in the policy brief?",
+      "q": "Why can a recession raise unemployment even when technology is unchanged?",
       "options": [
         "Weak demand reduces production, so firms need fewer workers",
         "Technology always falls when consumer confidence falls",
         "Capital per worker becomes zero during recessions",
-        "LRAS shifts right whenever unemployment rises"
+        "The LRAS curve shifts to the right whenever unemployment rises"
       ],
       "tag": "okuns_law_policy",
       "type": "policy_analysis",
@@ -4093,7 +4324,7 @@ const questionBanks = {
     {
       "id": 4006,
       "sourceGame": "mintAshGold",
-      "q": "The Sovereign gives two facts: sticky prices and output below natural output. Which model should guide the immediate policy response?",
+      "q": "Prices are sticky and output is below its natural level. Which model is appropriate for analyzing the immediate effects of demand policy?",
       "options": [
         "Short-run AD-AS analysis",
         "Golden Rule capital analysis",
@@ -4118,7 +4349,7 @@ const questionBanks = {
     {
       "id": 4007,
       "sourceGame": "mintAshGold",
-      "q": "The Sovereign asks: 'If prices fully adjust, what should happen after a demand shock?' Which answer is best?",
+      "q": "After a demand shock, what happens to output as prices fully adjust and productive capacity remains unchanged?",
       "options": [
         "Output returns toward natural output while the price level adjusts",
         "Output stays permanently away from natural output",
@@ -4142,11 +4373,11 @@ const questionBanks = {
     {
       "id": 4008,
       "sourceGame": "mintAshGold",
-      "q": "The Sovereign hears: 'Since GDP is low, natural output must be low too.' Which correction is strongest?",
+      "q": "Actual GDP falls during a recession. Why does this observation alone not establish that natural output has fallen?",
       "options": [
         "Low actual GDP can reflect weak demand even when natural output is unchanged",
         "Natural output always equals current GDP in the short run",
-        "Natural output falls whenever AD shifts left",
+        "Natural output falls whenever the AD curve shifts to the left",
         "Current unemployment has no relation to actual GDP"
       ],
       "tag": "model_selection",
@@ -4166,12 +4397,12 @@ const questionBanks = {
     {
       "id": 4009,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the AD-SRAS graph. The Sovereign considers monetary expansion during a slump. What is the short-run benefit and long-run limit?",
+      "q": "Refer to the aggregate demand and short-run aggregate supply graph. Policymakers expand the money supply during a slump. What short-run benefit and long-run limitation should they consider?",
       "options": [
         "Output can rise short run, but later output returns toward natural output",
-        "Natural output rises permanently because AD shifts right",
+        "Natural output rises permanently because the AD curve shifts to the right",
         "Prices fall short run, and output rises forever",
-        "SRAS shifts left immediately, lowering unemployment"
+        "The SRAS curve shifts to the left immediately, lowering unemployment"
       ],
       "tag": "short_long_run_graph_policy",
       "type": "graph_policy_analysis",
@@ -4192,7 +4423,7 @@ const questionBanks = {
     {
       "id": 4010,
       "sourceGame": "mintAshGold",
-      "q": "The Sovereign asks why short-run policy can be useful even if it cannot raise natural output. Which memo is strongest?",
+      "q": "Why can demand policy be useful in the short run even if it cannot permanently raise natural output?",
       "options": [
         "It can reduce the time output spends below natural output",
         "It permanently raises productive capacity through AD",
@@ -4217,11 +4448,11 @@ const questionBanks = {
     {
       "id": 4011,
       "sourceGame": "mintAshGold",
-      "q": "The Sovereign reviews a proposal: 'Keep stimulating until unemployment is permanently below its natural rate.' Which critique lands hardest?",
+      "q": "A proposal calls for sustained demand stimulus to keep unemployment permanently below its natural rate. Which objection follows from long-run price adjustment?",
       "options": [
         "That invites rising wage and price pressure rather than a permanent free lunch",
         "That works because sticky prices last forever",
-        "That shifts LRAS right through lower unemployment",
+        "That shifts the LRAS curve to the right through lower unemployment",
         "That lowers inflation because output is high"
       ],
       "tag": "short_long_run_graph_policy",
@@ -4242,7 +4473,7 @@ const questionBanks = {
     {
       "id": 4012,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the demand-shock graph. Confidence collapses, investment falls, and output drops below natural output. Which memo should the Chancellor accept?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. Business confidence falls, investment declines, and output drops below its natural level. Which explanation is supported?",
       "options": [
         "This is a negative demand shock creating a recessionary gap",
         "This is a negative supply shock creating stagflation",
@@ -4260,18 +4491,18 @@ const questionBanks = {
       ],
       "repairSkill": "demand_shocks",
       "commonError": "confusing_demand_and_supply_shocks",
-      "feedback": "Lower confidence and investment shift AD left, causing output to fall below natural output.",
+      "feedback": "Lower confidence and investment shift the AD curve to the left, causing output to fall below natural output.",
       "image": "demandshock.webp",
       "aHash": "972fd564f472326df0c9ca7c514eb59076a1d72ae7d9e37291e935146fc8d610"
     },
     {
       "id": 4013,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the demand-shock graph. A spending boom pushes output above natural output. Which policy concern should dominate?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. A spending boom pushes output above natural output. Which policy concern should dominate?",
       "options": [
         "Inflation pressure from an inflationary gap",
         "Deflation pressure from a recessionary gap",
-        "Lower production costs from SRAS shifting right",
+        "Lower production costs from the SRAS curve shifting to the right",
         "Lower output from a negative supply shock"
       ],
       "tag": "demand_shock_policy",
@@ -4292,12 +4523,12 @@ const questionBanks = {
     {
       "id": 4014,
       "sourceGame": "mintAshGold",
-      "q": "The Sovereign asks: 'Consumers panic, spending falls, and prices are sticky.' Which short-run outcome is most likely?",
+      "q": "Consumer spending falls while prices remain sticky. Which short-run outcome is most likely?",
       "options": [
-        "AD shifts left, output falls, unemployment rises",
-        "SRAS shifts right, output falls, unemployment falls",
-        "AD shifts right, output rises, unemployment rises",
-        "LRAS shifts left, output returns immediately"
+        "The AD curve shifts to the left, output falls, unemployment rises",
+        "The SRAS curve shifts to the right, output falls, unemployment falls",
+        "The AD curve shifts to the right, output rises, unemployment rises",
+        "The LRAS curve shifts to the left, output returns immediately"
       ],
       "tag": "demand_shock_policy",
       "type": "policy_analysis",
@@ -4311,13 +4542,13 @@ const questionBanks = {
       ],
       "repairSkill": "demand_shocks",
       "commonError": "wrong_curve_for_spending_decline",
-      "feedback": "A spending collapse shifts AD left, lowering output and raising unemployment in the short run.",
-      "aHash": "7f457b739ab3e978894cfafe406178b4461b00f939174debd250b99ba831c081"
+      "feedback": "A spending collapse shifts the AD curve to the left, lowering output and raising unemployment in the short run.",
+      "aHash": "bfc6c162795c984e1361ce616a53ca4be776a19abbfcf2d31eac63d2cd94dddd"
     },
     {
       "id": 4015,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the AD graph. The price level rises and output demanded falls. A memo calls this a collapse in aggregate demand. What is the correction?",
+      "q": "Refer to the aggregate demand graph. The price level rises and output demanded falls. A memo calls this a collapse in aggregate demand. What is the correction?",
       "options": [
         "That is movement along AD, not a leftward shift of AD",
         "That is a leftward shift of AD caused by higher prices",
@@ -4343,11 +4574,11 @@ const questionBanks = {
     {
       "id": 4016,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the AD shift graph. Which policy memo correctly distinguishes lower prices from lower confidence?",
+      "q": "Refer to the aggregate demand graph. Which policy memo correctly distinguishes lower prices from lower confidence?",
       "options": [
-        "Lower prices move along AD; lower confidence shifts AD left",
-        "Lower prices shift AD right; lower confidence moves along AD",
-        "Both lower prices and lower confidence shift AD left",
+        "Lower prices move along AD; lower confidence shifts the AD curve to the left",
+        "Lower prices shift the AD curve to the right; lower confidence moves along AD",
+        "Both lower prices and lower confidence shift the AD curve to the left",
         "Both lower prices and lower confidence move along AD"
       ],
       "tag": "ad_movement_shift_policy",
@@ -4364,17 +4595,17 @@ const questionBanks = {
       "commonError": "confusing_price_effect_with_shock",
       "feedback": "Price-level changes move along AD, while changes in confidence shift AD.",
       "image": "adtwo.webp",
-      "aHash": "c70ff9daa30100ce8da69424c0e33454d6e40e48db2bac277d233ae037e55d84"
+      "aHash": "31655a8645368ef998741b1d4cda58795e788315398b4fd44dcb4b21bab9a9e6"
     },
     {
       "id": 4017,
       "sourceGame": "mintAshGold",
-      "q": "The Sovereign asks whether higher government purchases shifts AD or causes movement along AD. Which answer is correct?",
+      "q": "When government purchases rise with the price level held fixed, does aggregate demand shift or does the economy move along the existing aggregate demand curve?",
       "options": [
-        "It shifts AD right because spending changes at each price level",
+        "It shifts the AD curve to the right because spending changes at each price level",
         "It moves along AD because only price level changed",
-        "It shifts SRAS left because public spending raises input costs",
-        "It shifts LRAS right because output rises immediately"
+        "It shifts the SRAS curve to the left because public spending raises input costs",
+        "It shifts the LRAS curve to the right because output rises immediately"
       ],
       "tag": "ad_movement_shift_policy",
       "type": "policy_analysis",
@@ -4388,17 +4619,17 @@ const questionBanks = {
       ],
       "repairSkill": "aggregate_demand",
       "commonError": "classifying_policy_shift_as_movement",
-      "feedback": "Higher government purchases shift AD right because planned spending is higher at each price level.",
-      "aHash": "a88c9940bd6f105ad3615791fcf90e36ea20b3716c7003f2f020499a1e72b669"
+      "feedback": "Higher government purchases shift the AD curve to the right because planned spending is higher at each price level.",
+      "aHash": "0b3730f329bc6482f636dfcd966fb8bd74d5495b8e194a15274d1773d142a88b"
     },
     {
       "id": 4018,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the shock-plus-policy graph. A negative demand shock lowers output below natural output. Which response is best calibrated?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. A negative demand shock lowers output below natural output. Which response is best calibrated?",
       "options": [
-        "Shift AD right enough to close the gap without overshooting",
+        "Shift the AD curve to the right enough to close the gap without overshooting",
         "Shift AD far right until unemployment stays below normal",
-        "Shift SRAS left so weak output appears natural",
+        "Shift the SRAS curve to the left so weak output appears natural",
         "Do nothing because demand shocks cannot affect output"
       ],
       "tag": "demand_policy_calibration",
@@ -4415,17 +4646,17 @@ const questionBanks = {
       "commonError": "overcorrecting_after_negative_demand_shock",
       "feedback": "The goal is to close the recessionary gap, not push output above natural output.",
       "image": "shockpluspolicy.webp",
-      "aHash": "fb4ed10afe3f319d54030339344b02b3215af99f7d4f5520dfe17154d740a187"
+      "aHash": "b29cc38d4dfab474974ea46d4a6037066e453c599962f717481b7165c1d783e9"
     },
     {
       "id": 4019,
       "sourceGame": "mintAshGold",
-      "q": "The Sovereign considers stimulus after a negative demand shock, but inflation expectations are already unstable. Which memo is strongest?",
+      "q": "Policymakers consider stimulus after a negative demand shock while inflation expectations are unstable. Which assessment best addresses the policy tradeoff?",
       "options": [
         "Support may help output, but the size must account for inflation expectations",
         "Ignore expectations because AD policy affects only output",
         "Stimulus should push output far above natural output",
-        "Shift LRAS left to eliminate the output gap"
+        "Shift the LRAS curve to the left to eliminate the output gap"
       ],
       "tag": "demand_policy_calibration",
       "type": "policy_analysis",
@@ -4450,7 +4681,7 @@ const questionBanks = {
         "Consider more AD support, but stop once the output gap closes",
         "Reverse the policy because all stimulus causes stagflation",
         "Keep stimulating until output permanently exceeds natural output",
-        "Shift SRAS left so current output equals natural output"
+        "Shift the SRAS curve to the left so current output equals natural output"
       ],
       "tag": "demand_policy_calibration",
       "type": "policy_analysis",
@@ -4470,12 +4701,12 @@ const questionBanks = {
     {
       "id": 4021,
       "sourceGame": "mintAshGold",
-      "q": "The Sovereign asks how monetary expansion works when prices are sticky. Which chain belongs in the policy brief?",
+      "q": "How can monetary expansion raise output when prices are sticky?",
       "options": [
-        "Money rises, real balances rise, AD shifts right, output rises short run",
-        "Money rises, real balances fall, AD shifts left, output falls short run",
-        "Money rises, LRAS shifts right, output rises permanently",
-        "Money rises, SRAS shifts left, prices fall short run"
+        "Money rises, real balances rise, the AD curve shifts to the right, output rises short run",
+        "Money rises, real balances fall, the AD curve shifts to the left, output falls short run",
+        "Money rises, the LRAS curve shifts to the right, output rises permanently",
+        "Money rises, the SRAS curve shifts to the left, prices fall short run"
       ],
       "tag": "monetary_policy_ad",
       "type": "policy_analysis",
@@ -4489,17 +4720,17 @@ const questionBanks = {
       ],
       "repairSkill": "aggregate_demand",
       "commonError": "wrong_direction_money_ad_channel",
-      "feedback": "With sticky prices, more money raises real balances and shifts AD right, raising output in the short run.",
-      "aHash": "f729cf1660c6ddbc5dc9c8cf15b4db2f6ee5647305e21b3446e4153c745b7914"
+      "feedback": "With sticky prices, more money raises real balances and shifts the AD curve to the right, raising output in the short run.",
+      "aHash": "14662c4b8d85d8df7b66ea53b6c0acd38364d3ddaaf66f06e7aeb8108de45f85"
     },
     {
       "id": 4022,
       "sourceGame": "mintAshGold",
-      "q": "The Sovereign hears: 'Cut money supply to fight inflation even though output is already below natural output.' Which risk should the advisor flag?",
+      "q": "Policymakers consider reducing the money supply to lower inflation while output is already below its natural level. Which risk should they consider?",
       "options": [
         "It may deepen the recession by shifting AD further left",
         "It will raise output by lowering AD",
-        "It will shift LRAS right and end the slump",
+        "It will shift the LRAS curve to the right and end the slump",
         "It will lower unemployment by reducing spending"
       ],
       "tag": "monetary_policy_ad",
@@ -4520,11 +4751,11 @@ const questionBanks = {
     {
       "id": 4023,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the AD-SRAS graph. The Chancellor wants quick output support while prices are sticky. Which policy direction matches the graph?",
+      "q": "Refer to the aggregate demand and short-run aggregate supply graph. Policymakers want to raise output while prices are sticky. Which policy direction supports that goal?",
       "options": [
         "Increase AD, accepting that long-run price pressure must be watched",
         "Decrease AD, because sticky prices make output rise",
-        "Shift LRAS left, because short-run output is too low",
+        "Shift the LRAS curve to the left, because short-run output is too low",
         "Raise input costs, because SRAS needs to shift left"
       ],
       "tag": "monetary_policy_ad",
@@ -4546,12 +4777,12 @@ const questionBanks = {
     {
       "id": 4024,
       "sourceGame": "mintAshGold",
-      "q": "A negative demand shock occurs and policymakers do nothing. Which long-run adjustment should the Chancellor expect?",
+      "q": "A negative demand shock occurs while productive capacity is unchanged. If policymakers do not intervene, which adjustment returns output to its natural level in the long run?",
       "options": [
-        "Wages and prices fall, SRAS shifts right, output returns toward natural output",
-        "Wages and prices rise, SRAS shifts left, output returns toward natural output",
+        "Wages and prices fall, the SRAS curve shifts to the right, output returns toward natural output",
+        "Wages and prices rise, the SRAS curve shifts to the left, output returns toward natural output",
         "AD shifts farther left because unemployment rises",
-        "LRAS shifts left so the recession becomes permanent"
+        "The LRAS curve shifts to the left so the recession becomes permanent"
       ],
       "tag": "long_run_adjustment_policy",
       "type": "policy_analysis",
@@ -4565,18 +4796,18 @@ const questionBanks = {
       ],
       "repairSkill": "long_run_adjustment",
       "commonError": "wrong_direction_self_correction",
-      "feedback": "A recessionary gap creates downward wage and price pressure, shifting SRAS right over time.",
-      "aHash": "0a488310f8b00f0dc9c05781f41940e89fef0bd642d296584687e7f7333126a4"
+      "feedback": "A recessionary gap creates downward wage and price pressure, shifting the SRAS curve to the right over time.",
+      "aHash": "db15715ff9b480b8242f25b0c2ed61aa042e9b8bbf73a4f12921c5c88d357aa0"
     },
     {
       "id": 4025,
       "sourceGame": "mintAshGold",
-      "q": "A positive demand shock occurs and policymakers do nothing. Which long-run adjustment should the Chancellor expect?",
+      "q": "A positive demand shock occurs while productive capacity is unchanged. If policymakers do not intervene, which adjustment returns output to its natural level in the long run?",
       "options": [
-        "Wages and prices rise, SRAS shifts left, output returns toward natural output",
-        "Wages and prices fall, SRAS shifts right, output returns toward natural output",
+        "Wages and prices rise, the SRAS curve shifts to the left, output returns toward natural output",
+        "Wages and prices fall, the SRAS curve shifts to the right, output returns toward natural output",
         "AD shifts farther right because prices rise",
-        "LRAS shifts right because unemployment is low"
+        "The LRAS curve shifts to the right because unemployment is low"
       ],
       "tag": "long_run_adjustment_policy",
       "type": "policy_analysis",
@@ -4590,18 +4821,18 @@ const questionBanks = {
       ],
       "repairSkill": "long_run_adjustment",
       "commonError": "wrong_direction_self_correction",
-      "feedback": "An inflationary gap creates upward wage and price pressure, shifting SRAS left over time.",
-      "aHash": "8abdc0793a2eda482342f35e0be1c2b3b6146458afaec1d7c05fe1181af6be55"
+      "feedback": "An inflationary gap creates upward wage and price pressure, shifting the SRAS curve to the left over time.",
+      "aHash": "861fb61e410435d7bbdef1eb3c5ebd01785955c929f7538e74a475ac2f81249c"
     },
     {
       "id": 4026,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the AD-LRAS graph. AD rises, but LRAS does not move. What is the long-run policy warning?",
+      "q": "Refer to the aggregate demand and long-run aggregate supply graph. AD rises, but LRAS does not move. What is the long-run policy warning?",
       "options": [
         "Demand can raise prices, but it cannot permanently raise natural output",
         "Demand permanently raises natural output if prices rise enough",
         "Demand lowers prices once output returns to natural output",
-        "Demand shifts LRAS left unless unemployment is high"
+        "Demand shifts the LRAS curve to the left unless unemployment is high"
       ],
       "tag": "long_run_adjustment_policy",
       "type": "graph_policy_analysis",
@@ -4622,7 +4853,7 @@ const questionBanks = {
     {
       "id": 4027,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the supply-shock graph. Oil prices surge, prices rise, and output falls. Which memo is most honest?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. Oil prices surge, prices rise, and output falls. Which memo is most honest?",
       "options": [
         "This is stagflation, so there is no clean demand-policy fix",
         "This is weak demand, so aggressive stimulus lowers inflation",
@@ -4648,11 +4879,11 @@ const questionBanks = {
     {
       "id": 4028,
       "sourceGame": "mintAshGold",
-      "q": "The Sovereign considers expanding AD after a negative supply shock. Which tradeoff must the advisor state?",
+      "q": "Policymakers expand aggregate demand after a negative supply shock. What tradeoff arises?",
       "options": [
         "Output loss may shrink, but inflation pressure worsens",
         "Inflation falls, but unemployment rises further",
-        "SRAS shifts right, and both problems disappear",
+        "The SRAS curve shifts to the right, and both problems disappear",
         "Natural output rises because nominal spending rises"
       ],
       "tag": "supply_shock_policy",
@@ -4673,10 +4904,10 @@ const questionBanks = {
     {
       "id": 4029,
       "sourceGame": "mintAshGold",
-      "q": "The Sovereign considers tightening AD after a negative supply shock to fight inflation. Which tradeoff must be flagged?",
+      "q": "Policymakers reduce aggregate demand to fight inflation after a negative supply shock. What tradeoff arises?",
       "options": [
         "Inflation pressure may ease, but output and unemployment may worsen",
-        "Output rises because lower AD shifts SRAS right",
+        "Output rises because lower AD shifts the SRAS curve to the right",
         "Unemployment falls because prices are pressured down",
         "Natural output rises because demand is restrained"
       ],
@@ -4698,7 +4929,7 @@ const questionBanks = {
     {
       "id": 4030,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the shock-plus-policy graph. Policy shifts AD right after a negative demand shock, but output remains below natural output. What is the best diagnosis?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. Policy shifts the AD curve to the right after a negative demand shock, but output remains below natural output. What is the best diagnosis?",
       "options": [
         "Undercorrection: more support may be needed to close the gap",
         "Overshoot: policy has already created an inflationary gap",
@@ -4724,11 +4955,11 @@ const questionBanks = {
     {
       "id": 4031,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the shock-plus-policy graph. Policy shifts AD right after a negative demand shock and output rises above natural output. What is the best diagnosis?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. Policy shifts the AD curve to the right after a negative demand shock and output rises above natural output. What is the best diagnosis?",
       "options": [
         "Overshoot: the policy response risks inflation pressure",
         "Undercorrection: output is still too low",
-        "Supply repair: SRAS shifted right enough",
+        "Supply repair: the SRAS curve shifted to the right enough",
         "Long-run fix: natural output has permanently risen"
       ],
       "tag": "policy_calibration",
@@ -4750,7 +4981,7 @@ const questionBanks = {
     {
       "id": 4032,
       "sourceGame": "mintAshGold",
-      "q": "The Chancellor asks for the best stabilization rule after a demand shock. Which answer should survive scrutiny?",
+      "q": "After a demand shock, which stabilization policy best accounts for both short-run output effects and long-run price adjustment?",
       "options": [
         "Close the output gap while watching inflation expectations",
         "Always maximize AD because unemployment is costly",
@@ -4775,7 +5006,7 @@ const questionBanks = {
     {
       "id": 4033,
       "sourceGame": "mintAshGold",
-      "q": "The economy has falling output and rising prices. A junior advisor calls for broad AD stimulus. Which senior memo is best?",
+      "q": "Output is falling while prices are rising. What should policymakers consider before responding with broad demand stimulus?",
       "options": [
         "Check for a supply shock first; AD stimulus may worsen inflation",
         "Approve stimulus because falling output always means weak demand",
@@ -4830,7 +5061,7 @@ const questionBanks = {
         "Treat it as a supply shock with a hard tradeoff, not a simple demand slump",
         "Use maximum stimulus because output is below natural output",
         "Use maximum tightening because inflation expectations rose",
-        "Shift LRAS left so the output gap disappears"
+        "Shift the LRAS curve to the left so the output gap disappears"
       ],
       "tag": "ambiguous_policy_choice",
       "type": "policy_analysis",
@@ -4913,7 +5144,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "money_measures",
       "commonError": "including_nonmoney_assets",
-      "feedback": "M1 includes currency in circulation and checkable deposits, not bonds or stock funds.",
+      "feedback": "Current M1 includes currency, demand deposits, and other liquid deposits, including checking and savings deposits. Bonds and stock funds are excluded.",
       "aHash": "529ea10dcb92d574e5152a2c492c5d289a504a2d75f7d0d8b40d31cecfba77cd"
     },
     {
@@ -5199,7 +5430,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "quantity_equation",
       "commonError": "confusing_macro_identities",
-      "feedback": "The quantity equation is M × V = P × Y.",
+      "feedback": "Money supply times velocity measures total nominal spending. The price level times real output measures the value of production. The quantity equation sets these two measures equal: M × V = P × Y.",
       "aHash": "b0146039105d404199eac09fd63a31303bb82ff97432075c3a0cd486449128ac"
     },
     {
@@ -5423,28 +5654,6 @@ const questionBanks = {
       "aHash": "1eb2ba4374db774eb8e9a160767ba3d683d8eb0f9ebfcdce84db98aae85161e4"
     },
     {
-      "id": 27,
-      "sourceGame": "mintAshGold",
-      "q": "What is the Golden Rule level of capital?",
-      "options": [
-        "The level that maximizes consumption per worker",
-        "The level that makes saving equal zero",
-        "The level that ends all depreciation",
-        "The level that fixes prices forever"
-      ],
-      "tag": "golden_rule",
-      "type": "definition",
-      "objective": "LO8.2",
-      "difficulty": "easy",
-      "conceptCluster": "mint_easy_growth",
-      "primarySkill": "golden_rule_capital",
-      "secondarySkills": [],
-      "repairSkill": "saving_rate",
-      "commonError": "confusing_golden_rule_with_highest_capital",
-      "feedback": "The Golden Rule level of capital is the steady state that maximizes consumption per worker.",
-      "aHash": "92f211cb9aafa0003320e815b869ddeeefacb81b336339044bf9a4964120577a"
-    },
-    {
       "id": 28,
       "sourceGame": "mintAshGold",
       "q": "What mainly distinguishes the short run from the long run in the AD-AS model?",
@@ -5557,7 +5766,7 @@ const questionBanks = {
     {
       "id": 33,
       "sourceGame": "mintAshGold",
-      "q": "In the short run, a negative demand shock usually does what?",
+      "q": "How does a negative aggregate demand shock affect output and unemployment in the short run?",
       "options": [
         "Lowers output and raises unemployment",
         "Raises output and lowers unemployment",
@@ -5689,12 +5898,12 @@ const questionBanks = {
     {
       "id": 39,
       "sourceGame": "mintAshGold",
-      "q": "Which item is usually part of M2 but not M1?",
+      "q": "Under current Federal Reserve definitions, which non-retirement holding is included in M2 but not M1?",
       "options": [
-        "Savings deposit",
-        "Currency",
-        "Checkable deposit",
-        "Traveler’s check"
+        "A $10,000 time deposit",
+        "Currency held by a household",
+        "A checking deposit",
+        "A savings deposit"
       ],
       "tag": "money_measures",
       "type": "identification",
@@ -5705,8 +5914,8 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "money_measures",
       "commonError": "confusing_m1_and_m2",
-      "feedback": "Savings deposits are included in M2, while currency and checkable deposits are part of M1.",
-      "aHash": "17cda04ef03af3e898a82f26a406b83611e834e2243744fb0e173981148d6e68"
+      "feedback": "M2 adds small-denomination time deposits and retail money market funds to M1, with retirement-account adjustments. Currency, checking and savings deposits are already in current M1. A $10,000 non-retirement time deposit is in M2 but not M1.",
+      "aHash": "d0c3c6a02905b1d870582f57ed99151d1b59b27593805bfda1a64bc6d50b1ae7"
     },
     {
       "id": 40,
@@ -6349,12 +6558,12 @@ const questionBanks = {
     {
       "id": 69,
       "sourceGame": "mintAshGold",
-      "q": "In the short run, a positive demand shock usually does what?",
+      "q": "How does a positive aggregate demand shock affect output and unemployment in the short run?",
       "options": [
         "Raises output and lowers unemployment",
         "Lowers output and raises unemployment",
         "Lowers prices and lowers output",
-        "Moves LRAS left"
+        "Moves the LRAS curve to the left"
       ],
       "tag": "demand_shocks",
       "type": "identification",
@@ -6433,6 +6642,28 @@ const questionBanks = {
       "commonError": "thinking_demand_shocks_permanently_change_output",
       "feedback": "Over time, price and wage adjustment moves output back toward its natural level after a demand shock.",
       "aHash": "1a55833abf8e6e610158ae6af9ceda9a37cd4b1cd4406877216468da40d31769"
+    },
+    {
+      "id": 40027,
+      "sourceGame": "mintAshGold",
+      "q": "In the basic Solow model, what condition defines a steady-state capital stock per worker?",
+      "options": [
+        "Investment per worker equals depreciation per worker",
+        "The saving rate is zero",
+        "Depreciation has stopped",
+        "Prices cannot change"
+      ],
+      "tag": "golden_rule",
+      "type": "application",
+      "objective": "LO8.2",
+      "difficulty": "easy",
+      "conceptCluster": "mint_easy_growth",
+      "primarySkill": "golden_rule_capital",
+      "secondarySkills": [],
+      "repairSkill": "saving_rate",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "Capital per worker stays constant when new investment exactly replaces depreciated capital.",
+      "aHash": "675bdfa8c86d531b6834068bfce1e0bb50778626ce465c16ba74f97bddf7e94c"
     }
   ],
   "medium": [
@@ -6521,18 +6752,18 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "money_measures",
       "commonError": "including_nonmoney_assets",
-      "feedback": "M1 includes currency and checkable deposits.",
+      "feedback": "Current M1 includes currency, demand deposits, and other liquid deposits, including checking and savings deposits. Bonds and stock funds are excluded.",
       "aHash": "cb6eb07daf098ddd87556bfd5041dee09b6d5d6561b06b9c60d9bb4af8cba5e9"
     },
     {
       "id": 104,
       "sourceGame": "mintAshGold",
-      "q": "Which item is most likely included in M2 but not M1?",
+      "q": "Under current Federal Reserve definitions, which non-retirement holding is included in M2 but not M1?",
       "options": [
-        "Savings deposit",
-        "Checking deposit",
-        "Currency in circulation",
-        "Traveler’s check"
+        "A $10,000 time deposit",
+        "Currency held by a household",
+        "A checking deposit",
+        "A savings deposit"
       ],
       "tag": "money_measures",
       "type": "identification",
@@ -6543,8 +6774,8 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "money_measures",
       "commonError": "confusing_m1_and_m2",
-      "feedback": "Savings deposits are included in M2 but not normally in M1.",
-      "aHash": "17cda04ef03af3e898a82f26a406b83611e834e2243744fb0e173981148d6e68"
+      "feedback": "M2 adds small-denomination time deposits and retail money market funds to M1, with retirement-account adjustments. Currency, checking and savings deposits are already in current M1. A $10,000 non-retirement time deposit is in M2 but not M1.",
+      "aHash": "d0c3c6a02905b1d870582f57ed99151d1b59b27593805bfda1a64bc6d50b1ae7"
     },
     {
       "id": 105,
@@ -7517,7 +7748,7 @@ const questionBanks = {
     {
       "id": 149,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the Solow production graph. As capital per worker rises, output per worker rises at what kind of rate?",
+      "q": "Refer to the Solow production function graph. As capital per worker rises, output per worker rises at what kind of rate?",
       "options": [
         "A decreasing rate",
         "A constant rate",
@@ -7606,7 +7837,7 @@ const questionBanks = {
     {
       "id": 153,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the steady-state graph. At capital levels where saving is above depreciation, what happens to capital per worker?",
+      "q": "Refer to the Solow steady-state graph. At capital levels where saving is above depreciation, what happens to capital per worker?",
       "options": [
         "It rises",
         "It falls",
@@ -7629,7 +7860,7 @@ const questionBanks = {
     {
       "id": 154,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the steady-state graph. At capital levels where depreciation is above saving, what happens to capital per worker?",
+      "q": "Refer to the Solow steady-state graph. At capital levels where depreciation is above saving, what happens to capital per worker?",
       "options": [
         "It falls",
         "It rises",
@@ -7674,7 +7905,7 @@ const questionBanks = {
     {
       "id": 156,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the saving-rate graph. An increase in the saving rate shifts which curve upward?",
+      "q": "Refer to the Solow saving-rate graph. An increase in the saving rate shifts which curve upward?",
       "options": [
         "Saving per worker",
         "Depreciation per worker",
@@ -7697,7 +7928,7 @@ const questionBanks = {
     {
       "id": 157,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the saving-rate graph. After saving rises, the new steady-state capital per worker is usually what?",
+      "q": "Refer to the Solow saving-rate graph. After saving rises, the new steady-state capital per worker is usually what?",
       "options": [
         "Higher",
         "Lower",
@@ -7804,28 +8035,6 @@ const questionBanks = {
       "commonError": "ignoring_present_tradeoff",
       "feedback": "Saving more means consuming less today, even if it can support higher output later.",
       "aHash": "a5a579688416ea67dd79b9bb05384cab980a39d91c02ee706e0a3814a4f29a4c"
-    },
-    {
-      "id": 162,
-      "sourceGame": "mintAshGold",
-      "q": "Which steady state is preferred by the Golden Rule?",
-      "options": [
-        "The one with the highest sustainable consumption",
-        "The one with the highest possible saving rate",
-        "The one with zero capital per worker",
-        "The one with no depreciation curve"
-      ],
-      "tag": "golden_rule",
-      "type": "identification",
-      "objective": "LO8.2",
-      "difficulty": "medium",
-      "conceptCluster": "mint_medium_growth",
-      "primarySkill": "golden_rule_consumption",
-      "secondarySkills": [],
-      "repairSkill": "saving_rate",
-      "commonError": "confusing_highest_capital_with_highest_consumption",
-      "feedback": "The Golden Rule selects the steady state with the highest sustainable consumption per worker.",
-      "aHash": "4cde20ef98b7454f6c4cf0c39fd1320b60e96b3adc996b34d2e323d7446cac5b"
     },
     {
       "id": 163,
@@ -7984,7 +8193,7 @@ const questionBanks = {
     {
       "id": 170,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the AD graph. When the price level rises, aggregate quantity demanded moves in which direction?",
+      "q": "Refer to the aggregate demand graph. When the price level rises, aggregate quantity demanded moves in which direction?",
       "options": [
         "Down along AD",
         "Up along AD",
@@ -8000,14 +8209,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "aggregate_demand",
       "commonError": "confusing_movement_with_shift",
-      "feedback": "A higher price level reduces real money balances and moves the economy down along the AD curve to lower output demanded.",
+      "feedback": "A higher price level reduces real money balances and quantity of output demanded. With P on the vertical axis, this is an upward and leftward movement along the unchanged AD curve.",
       "image": "adone.webp",
-      "aHash": "ded65da2f6d7292dc12eee5301857e08c1754760118fa138723750fe42572149"
+      "aHash": "2a1475fa1f01a7b0031d9f79e83f7dd56689d658a4f0ff408a85cd4e11b1814c"
     },
     {
       "id": 171,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the AD shift graph. Which change best matches a rightward shift of aggregate demand?",
+      "q": "Refer to the aggregate demand graph. Which change best matches a rightward shift of aggregate demand?",
       "options": [
         "Higher government purchases",
         "Higher oil prices",
@@ -8030,12 +8239,12 @@ const questionBanks = {
     {
       "id": 172,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the AD-SRAS graph. If AD shifts left while SRAS is horizontal, what happens in the short run?",
+      "q": "Refer to the aggregate demand and short-run aggregate supply graph. If the AD curve shifts to the left while SRAS is horizontal, what happens in the short run?",
       "options": [
         "Output falls while the price level stays fixed",
         "Output rises while the price level stays fixed",
         "Price level rises while output stays fixed",
-        "LRAS shifts left immediately"
+        "The LRAS curve shifts to the left immediately"
       ],
       "tag": "short_run_adas",
       "type": "graph_identification",
@@ -8055,10 +8264,10 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "A fall in consumer confidence affects the economy first by shifting which curve?",
       "options": [
-        "AD left",
-        "AD right",
-        "LRAS right",
-        "SRAS right"
+        "The AD curve shifts to the left",
+        "The AD curve shifts to the right",
+        "The LRAS curve shifts to the right",
+        "The SRAS curve shifts to the right"
       ],
       "tag": "demand_shocks",
       "type": "identification",
@@ -8070,12 +8279,12 @@ const questionBanks = {
       "repairSkill": "demand_shocks",
       "commonError": "shifting_supply_for_demand_change",
       "feedback": "Lower consumer confidence reduces spending and shifts aggregate demand left.",
-      "aHash": "efc1fae0057743cff5d525cfa428d29bc0b03ba9dc6f83a110181a56ad6cee0d"
+      "aHash": "bbf984088e51e6186ab738820db5022a24af03e25022a772478ecb33bc3fba27"
     },
     {
       "id": 174,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the demand-shock graph. A negative demand shock initially causes which short-run result?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. A negative demand shock initially causes which short-run result?",
       "options": [
         "Lower output and lower pressure on prices",
         "Higher output and higher pressure on prices",
@@ -8091,14 +8300,14 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "demand_shocks",
       "commonError": "reversing_negative_demand_shock",
-      "feedback": "A negative demand shock shifts AD left, reducing output and lowering pressure on the price level.",
+      "feedback": "A negative demand shock shifts the AD curve to the left, reducing output and lowering pressure on the price level.",
       "image": "demandshock.webp",
       "aHash": "5e997eca358aa3580bce55ebeb5493675dae040ab38f99cf816a4ec72b0e5eee"
     },
     {
       "id": 175,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the demand-shock graph. A positive demand shock initially causes which short-run result?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. A positive demand shock initially causes which short-run result?",
       "options": [
         "Higher output and higher pressure on prices",
         "Lower output and lower pressure on prices",
@@ -8114,7 +8323,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "demand_shocks",
       "commonError": "reversing_positive_demand_shock",
-      "feedback": "A positive demand shock shifts AD right, raising output and pressure on prices in the short run.",
+      "feedback": "A positive demand shock shifts the AD curve to the right, raising output and pressure on prices in the short run.",
       "image": "demandshock.webp",
       "aHash": "4be84fd4c7fbb371b4c7b2389884831f6df09f76780865bdf06cb190c9d34feb"
     },
@@ -8125,8 +8334,8 @@ const questionBanks = {
       "options": [
         "AD rises and output increases",
         "AD falls and output decreases",
-        "SRAS shifts left immediately",
-        "LRAS shifts right immediately"
+        "The SRAS curve shifts to the left immediately",
+        "The LRAS curve shifts to the right immediately"
       ],
       "tag": "aggregate_demand",
       "type": "application",
@@ -8143,7 +8352,7 @@ const questionBanks = {
     {
       "id": 177,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the AD-LRAS graph. If AD shifts right and LRAS is unchanged, what is the long-run result?",
+      "q": "Refer to the aggregate demand and long-run aggregate supply graph. If the AD curve shifts to the right and LRAS is unchanged, what is the long-run result?",
       "options": [
         "Higher price level with unchanged natural output",
         "Higher natural output with unchanged price level",
@@ -8166,7 +8375,7 @@ const questionBanks = {
     {
       "id": 178,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the AD-LRAS graph. If AD shifts left and LRAS is unchanged, what is the long-run result?",
+      "q": "Refer to the aggregate demand and long-run aggregate supply graph. If the AD curve shifts to the left and LRAS is unchanged, what is the long-run result?",
       "options": [
         "Lower price level with unchanged natural output",
         "Lower natural output with unchanged price level",
@@ -8189,7 +8398,7 @@ const questionBanks = {
     {
       "id": 179,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the supply-shock graph. A negative supply shock most likely does what in the short run?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. How does a negative short-run aggregate supply shock affect equilibrium output and the price level?",
       "options": [
         "Raises prices and lowers output",
         "Lowers prices and raises output",
@@ -8205,7 +8414,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "supply_shocks",
       "commonError": "treating_supply_shock_like_demand_shock",
-      "feedback": "A negative supply shock shifts SRAS left, raising prices and lowering output.",
+      "feedback": "A negative supply shock shifts the SRAS curve to the left, raising prices and lowering output.",
       "image": "supplyshock.webp",
       "aHash": "99e050191cbc50d9f4dc359475113db06cd68cfa1a37b8fb4dcf79b57c80590b"
     },
@@ -8260,8 +8469,8 @@ const questionBanks = {
       "options": [
         "Wages and prices rise",
         "Wages and prices fall",
-        "SRAS shifts right forever",
-        "LRAS shifts left immediately"
+        "The SRAS curve shifts to the right forever",
+        "The LRAS curve shifts to the left immediately"
       ],
       "tag": "long_run_adjustment",
       "type": "application",
@@ -8278,7 +8487,7 @@ const questionBanks = {
     {
       "id": 183,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the shock-plus-policy graph. If policymakers offset a negative demand shock by raising AD, what is the main goal?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. If policymakers offset a negative demand shock by raising AD, what is the main goal?",
       "options": [
         "Return output closer to natural output",
         "Shift LRAS permanently left",
@@ -8297,6 +8506,806 @@ const questionBanks = {
       "feedback": "Stabilization policy tries to move output closer to natural output after a shock.",
       "image": "shockpluspolicy.webp",
       "aHash": "e0c797e41a00a8374ae3686ac453fc826a964468e96006e65cd31a8185dfbabd"
+    },
+    {
+      "id": 300,
+      "sourceGame": "mintAshGold",
+      "q": "A student says money is valuable only because it earns interest. Which correction is strongest?",
+      "options": [
+        "Money is valuable because it is liquid and accepted in transactions",
+        "Money is valuable only when it pays a high nominal rate",
+        "Money is valuable because it is always backed by gold",
+        "Money is valuable only when banks hold it as reserves"
+      ],
+      "tag": "money_functions",
+      "type": "trap",
+      "objective": "LO4.1",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_money_banking",
+      "primarySkill": "liquidity_and_money_value",
+      "secondarySkills": [],
+      "repairSkill": "money_functions",
+      "commonError": "confusing_money_with_interest_bearing_assets",
+      "feedback": "Money does not need to earn interest to be valuable. Its value comes from liquidity and general usefulness in transactions.",
+      "aHash": "bb0919a5a3081a569cdd3585cd6474e5bdfc4fd463bc5cb27d6e7d485ead3ee2"
+    },
+    {
+      "id": 301,
+      "sourceGame": "mintAshGold",
+      "q": "Which case best separates money from wealth?",
+      "options": [
+        "A checking deposit is money, while a house is wealth but not money",
+        "A house is money because it is valuable and can be sold",
+        "A bond is money because it pays interest over time",
+        "A stock is money because it can increase in value"
+      ],
+      "tag": "money_measures",
+      "type": "trap",
+      "objective": "LO4.1",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_money_banking",
+      "primarySkill": "distinguish_money_from_wealth",
+      "secondarySkills": [],
+      "repairSkill": "money_measures",
+      "commonError": "treating_all_wealth_as_money",
+      "feedback": "Money is part of wealth, but not all wealth is money. A house is valuable but not a medium of exchange.",
+      "aHash": "876f6295554eb2bdcec287045df11e41bf04b31753d4bd972f5f373f0662bbdc"
+    },
+    {
+      "id": 302,
+      "sourceGame": "mintAshGold",
+      "q": "A grocery store accepts dollars, quotes prices in dollars, and holds some cash overnight. Which sequence best matches the functions used?",
+      "options": [
+        "Medium of exchange, unit of account, store of value",
+        "Unit of account, reserve ratio, medium of exchange",
+        "Store of value, fiscal policy, unit of account",
+        "Medium of exchange, money multiplier, reserve deposit"
+      ],
+      "tag": "money_functions",
+      "type": "application",
+      "objective": "LO4.1",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_money_banking",
+      "primarySkill": "multi_function_money_application",
+      "secondarySkills": [],
+      "repairSkill": "money_functions",
+      "commonError": "mixing_money_functions_with_banking_terms",
+      "feedback": "Accepting dollars is medium of exchange, quoting prices is unit of account, and holding cash preserves value for later use.",
+      "aHash": "c5432a096de4e07be7e4c5624710cfef5a6eac830edd9c957e78ac5642783be0"
+    },
+    {
+      "id": 349,
+      "sourceGame": "mintAshGold",
+      "q": "Refer to the Solow production function graph. Why does the curve flatten as k rises?",
+      "options": [
+        "Each added unit of capital adds less output than before",
+        "Depreciation becomes negative at high capital levels",
+        "Saving turns into consumption at high capital levels",
+        "Money growth stops affecting the price level"
+      ],
+      "tag": "solow_model",
+      "type": "graph_interpretation",
+      "objective": "LO8.1",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_growth",
+      "primarySkill": "diminishing_marginal_product_capital",
+      "secondarySkills": [],
+      "repairSkill": "solow_model",
+      "commonError": "missing_diminishing_returns_graph",
+      "feedback": "The production function flattens because the marginal product of capital diminishes as capital per worker rises.",
+      "image": "solowproductionfunction.webp",
+      "aHash": "3dcca482b4fce1f90159ebfa8ef083166f6dd7e0454863f3e5770d982b30786c"
+    },
+    {
+      "id": 9047,
+      "sourceGame": "mintAshGold",
+      "q": "If expected inflation rises and nominal rates do not adjust, what happens to the expected real interest rate?",
+      "options": [
+        "It falls",
+        "It rises",
+        "It is unchanged",
+        "It becomes the money multiplier"
+      ],
+      "tag": "fisher_effect",
+      "type": "application",
+      "objective": "LO5.4",
+      "difficulty": "medium",
+      "conceptCluster": "legendary_mint_inflation",
+      "primarySkill": "real_rate_when_nominal_rate_sticky",
+      "secondarySkills": [
+        "fisher_equation"
+      ],
+      "repairSkill": "classical_view",
+      "commonError": "assuming_nominal_rates_always_adjust_immediately",
+      "feedback": "Expected real interest equals nominal interest minus expected inflation, so if expected inflation rises and nominal rates do not, the expected real rate falls.",
+      "aHash": "51a961febd461ad1ea9db3f345c3907f42988e7937e56390ff5e6b439ae33884"
+    },
+    {
+      "id": 303,
+      "sourceGame": "mintAshGold",
+      "q": "Under current Federal Reserve definitions, which non-retirement holding would be misclassified if placed in M1?",
+      "options": [
+        "A $10,000 time deposit",
+        "A checking deposit",
+        "Currency held by a household",
+        "A savings deposit"
+      ],
+      "tag": "money_measures",
+      "type": "trap",
+      "objective": "LO4.1",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_money_banking",
+      "primarySkill": "detect_m1_misclassification",
+      "secondarySkills": [],
+      "repairSkill": "money_measures",
+      "commonError": "placing_savings_deposit_in_m1",
+      "feedback": "Current M1 includes currency, checking and savings deposits. A small-denomination time deposit is instead part of the additional components used to construct M2.",
+      "aHash": "d0c3c6a02905b1d870582f57ed99151d1b59b27593805bfda1a64bc6d50b1ae7"
+    },
+    {
+      "id": 304,
+      "sourceGame": "mintAshGold",
+      "q": "A student argues that a credit card should count in M1 because it buys goods immediately. What is the flaw?",
+      "options": [
+        "It creates debt access rather than a money balance",
+        "It is counted as currency only when swiped",
+        "It is a reserve held by a commercial bank",
+        "It is included in M2 because it earns interest"
+      ],
+      "tag": "money_measures",
+      "type": "trap",
+      "objective": "LO4.1",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_money_banking",
+      "primarySkill": "credit_card_not_money",
+      "secondarySkills": [],
+      "repairSkill": "money_measures",
+      "commonError": "confusing_credit_with_money",
+      "feedback": "Credit cards provide access to borrowing. They are not existing money balances.",
+      "aHash": "a8348e28480c8c4babe33b127d8a8fd45945d49a6d09c5df7d70426ffb519bbb"
+    },
+    {
+      "id": 305,
+      "sourceGame": "mintAshGold",
+      "q": "Which classification is strongest for a money market mutual fund in standard money measures?",
+      "options": [
+        "Near money included in M2",
+        "Currency included in M1",
+        "Commodity money outside M2",
+        "Federal Reserve reserves"
+      ],
+      "tag": "money_measures",
+      "type": "identification",
+      "objective": "LO4.1",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_money_banking",
+      "primarySkill": "classify_near_money",
+      "secondarySkills": [],
+      "repairSkill": "money_measures",
+      "commonError": "confusing_near_money_with_currency",
+      "feedback": "Money market mutual funds are near monies and are included in M2 rather than M1 currency.",
+      "aHash": "121d5c7d2a26f68d373c076a2b36e143e8ff33899edfd5eb3b897b3e2599663a"
+    },
+    {
+      "id": 306,
+      "sourceGame": "mintAshGold",
+      "q": "Which answer best explains why liquidity matters for money?",
+      "options": [
+        "Money can be used quickly in exchange with little conversion cost",
+        "Money always earns more than bonds when inflation rises",
+        "Money is always physically printed by commercial banks",
+        "Money becomes real output when the price level falls"
+      ],
+      "tag": "money_functions",
+      "type": "application",
+      "objective": "LO4.1",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_money_banking",
+      "primarySkill": "liquidity_money_function",
+      "secondarySkills": [],
+      "repairSkill": "money_functions",
+      "commonError": "confusing_liquidity_with_return",
+      "feedback": "Liquidity matters because money can be used quickly and easily in transactions.",
+      "aHash": "d94f76801d299d46d819d8ea9dd6f2eb0ae5eeb5cd9be9c5ed629285fb753256"
+    },
+    {
+      "id": 309,
+      "sourceGame": "mintAshGold",
+      "q": "A banking system has $3,000 in new excess reserves. If the reserve ratio is 8 percent, what is the maximum deposit expansion?",
+      "options": [
+        "$37,500",
+        "$24,000",
+        "$3,240",
+        "$2,760"
+      ],
+      "tag": "money_multiplier",
+      "type": "calculation",
+      "objective": "LO4.2",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_money_banking",
+      "primarySkill": "deposit_expansion_low_reserve_ratio",
+      "secondarySkills": [],
+      "repairSkill": "bank_money_creation",
+      "commonError": "multiplying_by_reserve_ratio",
+      "feedback": "The multiplier is 1 / 0.08 = 12.5, so maximum deposit expansion is $3,000 × 12.5 = $37,500.",
+      "aHash": "c6e836cb04e30b73bc474abd9022677ec554936f88f7eb5586bc364be235c401"
+    },
+    {
+      "id": 310,
+      "sourceGame": "mintAshGold",
+      "q": "If the reserve ratio falls from 20 percent to 10 percent, what happens to the simple money multiplier?",
+      "options": [
+        "It rises from 5 to 10",
+        "It falls from 10 to 5",
+        "It rises from 0.2 to 0.1",
+        "It stays fixed at 20"
+      ],
+      "tag": "money_multiplier",
+      "type": "calculation",
+      "objective": "LO4.2",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_money_banking",
+      "primarySkill": "compare_money_multiplier",
+      "secondarySkills": [],
+      "repairSkill": "bank_money_creation",
+      "commonError": "reversing_reserve_ratio_multiplier_relation",
+      "feedback": "The multiplier is 1 divided by the reserve ratio, so it rises from 5 to 10.",
+      "aHash": "cafb121bd68002d648ddf05021ca6ea0574b24c64a2eb598011c5123de127597"
+    },
+    {
+      "id": 313,
+      "sourceGame": "mintAshGold",
+      "q": "Which balance-sheet change best shows money creation by a commercial bank?",
+      "options": [
+        "A loan asset rises and a deposit liability rises",
+        "A reserve asset rises and capital disappears",
+        "A bond asset falls and taxes rise",
+        "Currency becomes required reserves"
+      ],
+      "tag": "banking",
+      "type": "application",
+      "objective": "LO4.2",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_money_banking",
+      "primarySkill": "bank_balance_sheet_money_creation",
+      "secondarySkills": [],
+      "repairSkill": "bank_money_creation",
+      "commonError": "thinking_lending_only_transfers_old_deposits",
+      "feedback": "When banks make loans, they create a loan asset and usually a matching deposit liability.",
+      "aHash": "e9ec1902b3af400ced97af5fb456ed2265a5331296001f93fd6da5dd831509db"
+    },
+    {
+      "id": 314,
+      "sourceGame": "mintAshGold",
+      "q": "The Fed sells $2 million in bonds to banks, and the simple multiplier is 4. What is the maximum change in deposits?",
+      "options": [
+        "Deposits fall by up to $8 million",
+        "Deposits rise by up to $8 million",
+        "Deposits fall by up to $500,000",
+        "Deposits rise by up to $2 million"
+      ],
+      "tag": "fed_policy",
+      "type": "calculation",
+      "objective": "LO4.3",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_money_banking",
+      "primarySkill": "fed_sale_multiplier_effect",
+      "secondarySkills": [],
+      "repairSkill": "fed_tools",
+      "commonError": "reversing_open_market_sale",
+      "feedback": "Selling bonds removes reserves. With a multiplier of 4, deposits can fall by up to $2 million × 4 = $8 million.",
+      "aHash": "a9083dbdaa35f5db85c20a7ee671ffdfa1297ad2052453227fd1a4081f3199bd"
+    },
+    {
+      "id": 317,
+      "sourceGame": "mintAshGold",
+      "q": "A central bank wants to expand the monetary base directly. Which action best fits?",
+      "options": [
+        "Buy government bonds from banks",
+        "Raise reserve requirements",
+        "Raise income taxes",
+        "Require firms to lower prices"
+      ],
+      "tag": "fed_policy",
+      "type": "application",
+      "objective": "LO4.3",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_money_banking",
+      "primarySkill": "monetary_base_expansion",
+      "secondarySkills": [],
+      "repairSkill": "fed_tools",
+      "commonError": "confusing_base_with_multiplier",
+      "feedback": "Buying bonds adds reserves to banks and expands the monetary base.",
+      "aHash": "8ac65efc318a9198e0d5af1ef3229a622fbfc78e0d1283b931ae7c56768f2da9"
+    },
+    {
+      "id": 323,
+      "sourceGame": "mintAshGold",
+      "q": "If k in the money demand equation rises from 0.25 to 0.50, what happens to velocity?",
+      "options": [
+        "It falls from 4 to 2",
+        "It rises from 2 to 4",
+        "It stays fixed at 0.25",
+        "It becomes the price level"
+      ],
+      "tag": "money_demand",
+      "type": "calculation",
+      "objective": "LO5.1",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_inflation",
+      "primarySkill": "velocity_inverse_of_k",
+      "secondarySkills": [],
+      "repairSkill": "inflation_causes",
+      "commonError": "treating_k_and_velocity_as_same_direction",
+      "feedback": "Velocity is 1/k, so it falls from 1/0.25 = 4 to 1/0.50 = 2.",
+      "aHash": "69d7c151788db7a93c1d7fff087703be28719a64fbd079db4d790ae3a83a1596"
+    },
+    {
+      "id": 328,
+      "sourceGame": "mintAshGold",
+      "q": "A worker receives a 6 percent raise while inflation is 10 percent. Which statement is most accurate?",
+      "options": [
+        "Real pay falls about 4 percent",
+        "Real pay rises about 16 percent",
+        "Real pay rises about 6 percent",
+        "Real pay is unchanged"
+      ],
+      "tag": "inflation_effects",
+      "type": "calculation",
+      "objective": "LO5.2",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_inflation",
+      "primarySkill": "real_wage_change",
+      "secondarySkills": [],
+      "repairSkill": "inflation_effects",
+      "commonError": "adding_inflation_to_raise",
+      "feedback": "Real wage growth is approximately nominal wage growth minus inflation: 6 − 10 = −4 percent.",
+      "aHash": "e7f39b9929fdfa9967b4632c7fe3e83012393b4735ab14b29a85f123bcb8d98e"
+    },
+    {
+      "id": 329,
+      "sourceGame": "mintAshGold",
+      "q": "A borrower expected 5 percent inflation, but actual inflation is 12 percent. Which result follows for a fixed nominal loan?",
+      "options": [
+        "The borrower repays with dollars worth less than expected",
+        "The lender receives dollars worth more than expected",
+        "The real burden of debt rises for the borrower",
+        "The nominal contract automatically changes"
+      ],
+      "tag": "inflation_effects",
+      "type": "application",
+      "objective": "LO5.2",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_inflation",
+      "primarySkill": "unexpected_inflation_borrower_gain",
+      "secondarySkills": [],
+      "repairSkill": "inflation_effects",
+      "commonError": "reversing_unexpected_inflation_effect",
+      "feedback": "Unexpectedly high inflation reduces the real value of fixed nominal repayments, helping borrowers.",
+      "aHash": "ecc0ce73235de1de39028717d4d2c19f7157dc98c5229aa4dc6df7eefdec1889"
+    },
+    {
+      "id": 330,
+      "sourceGame": "mintAshGold",
+      "q": "A lender expected 4 percent inflation, but actual inflation is −1 percent. Which result follows?",
+      "options": [
+        "The lender gains because repayment has higher real value",
+        "The borrower gains because inflation is above expected",
+        "The loan becomes a real asset with no redistribution",
+        "The nominal interest rate becomes irrelevant"
+      ],
+      "tag": "inflation_effects",
+      "type": "application",
+      "objective": "LO5.2",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_inflation",
+      "primarySkill": "unexpected_deflation_lender_gain",
+      "secondarySkills": [],
+      "repairSkill": "inflation_effects",
+      "commonError": "thinking_only_positive_inflation_matters",
+      "feedback": "Actual inflation below expected inflation raises the real value of repayment, helping lenders.",
+      "aHash": "9105d7abfe3f66207e712eb32e4648e3435eb4de693ffb7ec85ed03daa9fa5b4"
+    },
+    {
+      "id": 332,
+      "sourceGame": "mintAshGold",
+      "q": "Which pair correctly matches inflation cost to example?",
+      "options": [
+        "Menu cost: updating price lists; shoeleather cost: avoiding cash holdings",
+        "Menu cost: avoiding cash holdings; shoeleather cost: updating prices",
+        "Menu cost: bank leverage; shoeleather cost: capital depreciation",
+        "Menu cost: output growth; shoeleather cost: saving growth"
+      ],
+      "tag": "inflation_costs",
+      "type": "identification",
+      "objective": "LO5.2",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_inflation",
+      "primarySkill": "distinguish_menu_shoeleather_costs",
+      "secondarySkills": [],
+      "repairSkill": "inflation_effects",
+      "commonError": "reversing_menu_and_shoeleather",
+      "feedback": "Menu costs involve changing prices. Shoeleather costs involve efforts to reduce money holdings.",
+      "aHash": "27d530d66ed9962d3577b135df171fb759f4d1cd80e57ab613fb695409122d33"
+    },
+    {
+      "id": 333,
+      "sourceGame": "mintAshGold",
+      "q": "A long-term contract uses fixed dollar payments with no inflation adjustment. What is the main inflation risk?",
+      "options": [
+        "Unexpected inflation changes the real value of payments",
+        "Expected inflation removes all contract risk",
+        "Fixed payments become real output automatically",
+        "Nominal terms prevent redistribution"
+      ],
+      "tag": "inflation_effects",
+      "type": "application",
+      "objective": "LO5.2",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_inflation",
+      "primarySkill": "fixed_nominal_contract_risk",
+      "secondarySkills": [],
+      "repairSkill": "inflation_effects",
+      "commonError": "ignoring_real_value_of_nominal_payments",
+      "feedback": "Unexpected inflation changes the purchasing power of fixed nominal payments.",
+      "aHash": "75bea1f55b070d6641fbc8b51186296d0a6d554070b0d868d664b44a9f682ca1"
+    },
+    {
+      "id": 334,
+      "sourceGame": "mintAshGold",
+      "q": "Which example best shows inflation reducing money's usefulness as a measuring stick?",
+      "options": [
+        "A firm struggles to compare project costs written in dollars from different years",
+        "A bank calculates excess reserves from deposits",
+        "A household chooses between cash and checking",
+        "A worker moves from one job to another"
+      ],
+      "tag": "inflation_costs",
+      "type": "application",
+      "objective": "LO5.2",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_inflation",
+      "primarySkill": "inflation_confusion_inconvenience",
+      "secondarySkills": [],
+      "repairSkill": "inflation_effects",
+      "commonError": "missing_measurement_cost_of_inflation",
+      "feedback": "Inflation makes dollars from different years harder to compare because purchasing power changes.",
+      "aHash": "477f07a6c0020c0253fd210223393eaa5ad11e15a42db92f805789f004333b3e"
+    },
+    {
+      "id": 335,
+      "sourceGame": "mintAshGold",
+      "q": "If M = 1,500, V = 3, and Y = 900, what is P?",
+      "options": [
+        "5",
+        "2",
+        "4.5",
+        "405"
+      ],
+      "tag": "quantity_equation",
+      "type": "calculation",
+      "objective": "LO5.3",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_inflation",
+      "primarySkill": "solve_price_level",
+      "secondarySkills": [],
+      "repairSkill": "quantity_equation",
+      "commonError": "misarranging_mv_py",
+      "feedback": "M × V = P × Y, so 1,500 × 3 = P × 900. P = 5.",
+      "aHash": "ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d"
+    },
+    {
+      "id": 339,
+      "sourceGame": "mintAshGold",
+      "q": "If M/P = 600 and M = 2,400, what is the price level?",
+      "options": [
+        "4",
+        "0.25",
+        "1,800",
+        "3,000"
+      ],
+      "tag": "real_money_balances",
+      "type": "calculation",
+      "objective": "LO5.3",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_inflation",
+      "primarySkill": "solve_price_from_real_money_balances",
+      "secondarySkills": [],
+      "repairSkill": "quantity_equation",
+      "commonError": "dividing_real_balances_by_money",
+      "feedback": "Real money balances equal M/P. If 600 = 2,400/P, then P = 4.",
+      "aHash": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
+    },
+    {
+      "id": 343,
+      "sourceGame": "mintAshGold",
+      "q": "Expected inflation rises from 2 percent to 9 percent while the real rate remains 3 percent. What does the Fisher effect predict?",
+      "options": [
+        "Nominal interest rises from 5 percent to 12 percent",
+        "Nominal interest falls from 5 percent to 3 percent",
+        "Real interest rises from 2 percent to 9 percent",
+        "Nominal interest stays at 3 percent"
+      ],
+      "tag": "fisher_effect",
+      "type": "calculation",
+      "objective": "LO5.4",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_inflation",
+      "primarySkill": "fisher_effect_nominal_rate_change",
+      "secondarySkills": [],
+      "repairSkill": "classical_view",
+      "commonError": "missing_real_rate_in_nominal_rate",
+      "feedback": "Nominal interest equals real interest plus expected inflation, so it rises from 5 to 12 percent.",
+      "aHash": "056a864092a563ba51f1ffe4bb623ec1615140acb106d56458f6473cafbd3487"
+    },
+    {
+      "id": 344,
+      "sourceGame": "mintAshGold",
+      "q": "Which statement best applies the classical dichotomy to a doubled money supply in the long run?",
+      "options": [
+        "Nominal variables adjust, while real variables are not changed by money alone",
+        "Real variables double, while nominal variables stay fixed",
+        "Employment and capital double because prices are sticky forever",
+        "The money multiplier becomes the production function"
+      ],
+      "tag": "classical_view",
+      "type": "application",
+      "objective": "LO5.4",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_inflation",
+      "primarySkill": "classical_dichotomy_money_doubling",
+      "secondarySkills": [],
+      "repairSkill": "classical_view",
+      "commonError": "thinking_money_doubles_real_output",
+      "feedback": "The classical dichotomy separates nominal changes from real variables in the long run.",
+      "aHash": "c804570368283ac328561e56bfe9d5b1abd3b37eec904a9d9d8b5107ce591609"
+    },
+    {
+      "id": 346,
+      "sourceGame": "mintAshGold",
+      "q": "A worker’s nominal wage doubles while all prices also double. What happens to the worker’s real wage?",
+      "options": [
+        "It stays roughly unchanged",
+        "It doubles",
+        "It falls by half",
+        "It becomes the inflation rate"
+      ],
+      "tag": "classical_view",
+      "type": "application",
+      "objective": "LO5.4",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_inflation",
+      "primarySkill": "real_wage_nominal_price_change",
+      "secondarySkills": [],
+      "repairSkill": "classical_view",
+      "commonError": "thinking_nominal_wage_gain_equals_real_gain",
+      "feedback": "If both nominal wages and prices double, purchasing power is roughly unchanged.",
+      "aHash": "c360438389b11f979c7977bd18113a19c201fff1c8df039fd101053f7d9a6f29"
+    },
+    {
+      "id": 347,
+      "sourceGame": "mintAshGold",
+      "q": "Which pair is correctly classified?",
+      "options": [
+        "Money supply is nominal; capital per worker is real",
+        "Capital per worker is nominal; price level is real",
+        "Nominal wage is real; real GDP is nominal",
+        "Inflation is real; employment is nominal"
+      ],
+      "tag": "classical_view",
+      "type": "identification",
+      "objective": "LO5.4",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_inflation",
+      "primarySkill": "classify_real_nominal_variables",
+      "secondarySkills": [],
+      "repairSkill": "classical_view",
+      "commonError": "confusing_real_and_nominal_variables",
+      "feedback": "Money supply is nominal, while capital per worker is a real productive variable.",
+      "aHash": "98ce28638fd955bb7d1a069beab4a85fb6e2b6ec170e817cb323b6f91592d063"
+    },
+    {
+      "id": 348,
+      "sourceGame": "mintAshGold",
+      "q": "A lender sets a nominal rate using expected inflation. Actual inflation ends higher. Which rate reveals the lender’s realized return?",
+      "options": [
+        "Ex post real interest rate",
+        "Ex ante real interest rate",
+        "Nominal money growth rate",
+        "Reserve-deposit ratio"
+      ],
+      "tag": "fisher_effect",
+      "type": "identification",
+      "objective": "LO5.4",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_inflation",
+      "primarySkill": "identify_ex_post_real_rate",
+      "secondarySkills": [],
+      "repairSkill": "classical_view",
+      "commonError": "confusing_ex_ante_and_ex_post",
+      "feedback": "The ex post real interest rate uses actual inflation and shows the realized real return.",
+      "aHash": "8591f4c73a9f60eeae45a1b1e9a07be26092f3f0b31b99cf7e7e9b0197090454"
+    },
+    {
+      "id": 355,
+      "sourceGame": "mintAshGold",
+      "q": "Which condition best identifies that an economy is not yet at the Solow steady state?",
+      "options": [
+        "Investment and depreciation are unequal",
+        "Output per worker is positive",
+        "Saving equals consumption",
+        "Capital per worker is measured in dollars"
+      ],
+      "tag": "steady_state",
+      "type": "identification",
+      "objective": "LO8.1",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_growth",
+      "primarySkill": "detect_non_steady_state",
+      "secondarySkills": [],
+      "repairSkill": "steady_state",
+      "commonError": "thinking_positive_output_means_steady_state",
+      "feedback": "The steady state requires investment to equal depreciation. If they differ, capital per worker changes.",
+      "aHash": "18c740f8eb3e9590b5ec6f1047c9434630a9eb305d6d7112a4b9bcdc2ff812df"
+    },
+    {
+      "id": 369,
+      "sourceGame": "mintAshGold",
+      "q": "If output is above natural output, what labor-market signal is most consistent with the short-run boom?",
+      "options": [
+        "Unemployment is below its natural rate",
+        "Unemployment is above its natural rate",
+        "Unemployment is permanently zero",
+        "Unemployment does not relate to output"
+      ],
+      "tag": "business_cycles",
+      "type": "application",
+      "objective": "LO11.1",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_fluctuations",
+      "primarySkill": "output_gap_unemployment_relation",
+      "secondarySkills": [],
+      "repairSkill": "business_cycles",
+      "commonError": "reversing_output_gap_unemployment",
+      "feedback": "When output is above natural output, unemployment is usually below its natural rate.",
+      "aHash": "f6ce28e123cb529527960c2ee6e2ca0ff09f95f52f60f07ad0727ac85a2a1b9d"
+    },
+    {
+      "id": 370,
+      "sourceGame": "mintAshGold",
+      "q": "Refer to the aggregate demand graph. If the price level falls from P1 to P2, what happens along AD and why?",
+      "options": [
+        "Output demanded rises because real money balances rise",
+        "Output demanded falls because real money balances rise",
+        "The AD curve shifts to the left because saving rises",
+        "The LRAS curve shifts to the right because money is neutral"
+      ],
+      "tag": "aggregate_demand",
+      "type": "graph_interpretation",
+      "objective": "LO11.2",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_fluctuations",
+      "primarySkill": "movement_along_ad_real_balances",
+      "secondarySkills": [],
+      "repairSkill": "aggregate_demand",
+      "commonError": "confusing_movement_and_shift",
+      "feedback": "A lower price level raises real money balances and increases the quantity of output demanded along AD.",
+      "image": "adone.webp",
+      "aHash": "b57036930a65f0dfc8c6b9df4dffb7a349087d38528ebad3951c4a3d85b4bd2c"
+    },
+    {
+      "id": 371,
+      "sourceGame": "mintAshGold",
+      "q": "Refer to the aggregate demand graph. Which event most cleanly shifts the AD curve to the right without directly shifting SRAS?",
+      "options": [
+        "An increase in planned investment spending",
+        "A sudden oil supply disruption",
+        "A drought that raises food costs",
+        "A fall in labor productivity"
+      ],
+      "tag": "aggregate_demand",
+      "type": "graph_interpretation",
+      "objective": "LO11.2",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_fluctuations",
+      "primarySkill": "ad_shift_right_investment",
+      "secondarySkills": [],
+      "repairSkill": "aggregate_demand",
+      "commonError": "using_supply_shocks_for_ad",
+      "feedback": "Higher planned investment raises aggregate demand and shifts the AD curve to the right.",
+      "image": "adtwo.webp",
+      "aHash": "5aa848a3abe17354231789864db664885b92949eb517bcca5ffe7c602c1a50fa"
+    },
+    {
+      "id": 372,
+      "sourceGame": "mintAshGold",
+      "q": "Refer to the aggregate demand and short-run aggregate supply graph. If the AD curve shifts to the left under sticky prices, which unemployment effect is most likely?",
+      "options": [
+        "Unemployment rises because output falls",
+        "Unemployment falls because prices stay fixed",
+        "Unemployment stays fixed because AD moved",
+        "Unemployment disappears because LRAS shifts"
+      ],
+      "tag": "short_run_adas",
+      "type": "graph_interpretation",
+      "objective": "LO11.2",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_fluctuations",
+      "primarySkill": "ad_left_unemployment_effect",
+      "secondarySkills": [],
+      "repairSkill": "short_run_adas",
+      "commonError": "missing_output_unemployment_link",
+      "feedback": "With sticky prices, a leftward AD shift lowers output, so unemployment rises.",
+      "image": "adsras.webp",
+      "aHash": "5d79fac194c0ff8d2829f217b1f1a1fca8fd072438123daa2864a4b2a88daae7"
+    },
+    {
+      "id": 377,
+      "sourceGame": "mintAshGold",
+      "q": "Refer to the aggregate demand and long-run aggregate supply graph. If the AD curve shifts to the right, what happens after full long-run adjustment?",
+      "options": [
+        "Prices rise and output returns to natural output",
+        "Output rises permanently and prices stay fixed",
+        "Prices fall and output stays below natural output",
+        "The LRAS curve shifts to the left because AD increased"
+      ],
+      "tag": "long_run_adjustment",
+      "type": "graph_interpretation",
+      "objective": "LO11.3",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_fluctuations",
+      "primarySkill": "long_run_ad_increase",
+      "secondarySkills": [],
+      "repairSkill": "long_run_adjustment",
+      "commonError": "thinking_ad_changes_natural_output",
+      "feedback": "In the long run, higher AD raises the price level while output returns to natural output.",
+      "image": "adlras.webp",
+      "aHash": "5b45e6dd627be239e5241a68f0519cce045ddf7f6ebfb33436c7acd451f7dd71"
+    },
+    {
+      "id": 378,
+      "sourceGame": "mintAshGold",
+      "q": "Refer to the aggregate demand and aggregate supply graph. Which case best matches stagflation?",
+      "options": [
+        "The SRAS curve shifts to the left, output falls, and prices rise",
+        "The AD curve shifts to the right, output rises, and prices rise",
+        "The AD curve shifts to the left, output falls, and prices fall",
+        "The SRAS curve shifts to the right, output rises, and prices fall"
+      ],
+      "tag": "supply_shocks",
+      "type": "graph_interpretation",
+      "objective": "LO11.3",
+      "difficulty": "medium",
+      "conceptCluster": "mint_elite_fluctuations",
+      "primarySkill": "stagflation_graph",
+      "secondarySkills": [],
+      "repairSkill": "supply_shocks",
+      "commonError": "treating_stagflation_as_demand_shock",
+      "feedback": "Stagflation comes from a negative supply shock: lower output and higher prices.",
+      "image": "supplyshock.webp",
+      "aHash": "d3c571029eb31b2b7584d94fe8b2c4eeb4f556c9a58c66ee68a1b367d0b8dcbb"
+    },
+    {
+      "id": 40162,
+      "sourceGame": "mintAshGold",
+      "q": "In the basic Solow model with unchanged technology and depreciation, a higher saving rate leads to a new steady state. Which comparison with the old steady state is correct?",
+      "options": [
+        "Capital and output per worker are higher",
+        "The depreciation rate must be higher",
+        "Capital per worker is lower",
+        "Investment no longer replaces worn-out capital"
+      ],
+      "tag": "golden_rule",
+      "type": "application",
+      "objective": "LO8.2",
+      "difficulty": "medium",
+      "conceptCluster": "mint_medium_growth",
+      "primarySkill": "golden_rule_consumption",
+      "secondarySkills": [],
+      "repairSkill": "saving_rate",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "Higher saving raises investment at each capital stock and leads to a higher steady-state capital stock and output per worker.",
+      "aHash": "8f7f51366944b5c53bf85f64b557354142a19eb778566a37ab86ebd53ca4e00c"
     }
   ],
   "hard": [
@@ -8305,7 +9314,7 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "A student says a debit card is money because the plastic card itself buys goods. What is the better correction?",
       "options": [
-        "The deposit accessed by the card is money, not the plastic card itself",
+        "The deposit is money; the card provides access to it",
         "The card is commodity money because it has physical form",
         "The card counts as reserves held by the Fed",
         "The card is money only if it earns interest"
@@ -8320,7 +9329,7 @@ const questionBanks = {
       "repairSkill": "money_functions",
       "commonError": "confusing_payment_device_with_money",
       "feedback": "The card is a payment tool. The checking deposit it accesses is the money.",
-      "aHash": "2530c21413cb47e3655f282c9da835743e5980eed93891b61eeb770e562d3f01"
+      "aHash": "4e02c85b85e6c6ef872b4ff129224344ecfafa605174ce0896085ae3ef1a7d9f"
     },
     {
       "id": 201,
@@ -8349,8 +9358,8 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "A restaurant lists burgers at $12, pays workers in dollars, and accepts dollars from customers. Which set correctly matches those money functions?",
       "options": [
-        "Unit of account, store of value or payment income, medium of exchange",
-        "Medium of exchange, reserves, store of value",
+        "Unit of account, medium of exchange, medium of exchange",
+        "Medium of exchange, reserve requirement, store of value",
         "Store of value, fiscal policy, unit of account",
         "Reserve ratio, medium of exchange, inflation tax"
       ],
@@ -8363,8 +9372,8 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "money_functions",
       "commonError": "mixing_money_functions_with_policy_tools",
-      "feedback": "Prices use money as a unit of account, wages are paid in money, and customer payments use money as a medium of exchange.",
-      "aHash": "4f123fb7886a76829fa3bc2b94ca78585865bb89c4a26b5ec3a6ff6a0dae6319"
+      "feedback": "Posting a $12 price uses money as a unit of account. Paying wages exchanges money for labor services; accepting dollars exchanges food for money. Both payments use money as a medium of exchange.",
+      "aHash": "a4e0af18867d4b786b7827c8725e0635c6b47d4077da2fea757e795847dd4260"
     },
     {
       "id": 203,
@@ -8407,7 +9416,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "money_measures",
       "commonError": "including_credit_cards_or_bonds",
-      "feedback": "M2 includes M1 plus near monies such as savings deposits.",
+      "feedback": "Currency, checking deposits and savings deposits are all included in current M1 and thus in M2. Stocks, bonds, jewelry and credit-card borrowing are not money balances in M2.",
       "aHash": "d0cee3e41b914821c58b5b0c14fdabff7fbc369c84330049601e998cf19e8324"
     },
     {
@@ -8415,8 +9424,8 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "A Venmo balance is easy to spend but is not always treated cleanly in official money measures. What is the best reason?",
       "options": [
-        "It blurs payment technology and standard deposit money",
-        "It is always commodity money backed by gold",
+        "Payment balances do not fit standard categories neatly",
+        "Every payment balance is commodity money backed by physical gold",
         "It cannot ever be used in transactions",
         "It is counted only as physical currency"
       ],
@@ -8430,14 +9439,14 @@ const questionBanks = {
       "repairSkill": "money_measures",
       "commonError": "treating_payment_apps_as_simple_currency",
       "feedback": "Payment-app balances can function like money but do not always fit neatly into traditional money measures.",
-      "aHash": "f1dd6770c6f2f22cd4f099ce33f7ace66fce481eefc71eb21771d6cf8ba4dbda"
+      "aHash": "4a1936641454f7a4a95aa57b71637e344b77404c663e4e80c320fc1726147e64"
     },
     {
       "id": 206,
       "sourceGame": "mintAshGold",
       "q": "Which statement best explains why credit cards are not counted as money?",
       "options": [
-        "They provide access to borrowing rather than existing money balances",
+        "They provide loans, not existing money",
         "They are issued only by the Federal Reserve",
         "They always increase required reserves",
         "They are included in currency in circulation"
@@ -8452,7 +9461,7 @@ const questionBanks = {
       "repairSkill": "money_measures",
       "commonError": "counting_credit_as_money",
       "feedback": "Credit cards let users borrow; they are not themselves money balances.",
-      "aHash": "6ca8247e3b73072138605519f8894a8981d31490c837d83bb72a1e751cb3449b"
+      "aHash": "01e2d7153deddab06f41728d1d55ac336aaec01e2b36e1288db92614902230ca"
     },
     {
       "id": 207,
@@ -8569,8 +9578,8 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "Why is the simple money multiplier an upper-bound result rather than a guaranteed result?",
       "options": [
-        "Banks may hold excess reserves and borrowers may hold currency",
-        "The Fed must always lend every reserve dollar",
+        "Banks retain reserves; people may hold cash",
+        "The Fed requires banks to lend every dollar of reserves",
         "Required reserves are always zero",
         "Deposits cannot move between banks"
       ],
@@ -8584,14 +9593,14 @@ const questionBanks = {
       "repairSkill": "bank_money_creation",
       "commonError": "treating_multiplier_as_automatic",
       "feedback": "The simple multiplier assumes banks lend all excess reserves and money remains deposited, which may not happen.",
-      "aHash": "4e97cc800d399c0b0d98bd4ab434130b03a863a1e0aa346561dd957735df4152"
+      "aHash": "827dc10bf741ca78e8d11566ab51dc4317baaafc77c67589386dfa23b053deee"
     },
     {
       "id": 213,
       "sourceGame": "mintAshGold",
       "q": "A bank has deposits of $100,000 and a reserve requirement of 10 percent. It currently holds $9,000 in reserves. What is the problem?",
       "options": [
-        "It is short $1,000 in required reserves",
+        "Required reserves are $1,000 short",
         "It has $1,000 in excess reserves",
         "It can lend $91,000 immediately",
         "It has no deposit liabilities"
@@ -8606,7 +9615,7 @@ const questionBanks = {
       "repairSkill": "bank_money_creation",
       "commonError": "missing_reserve_shortfall",
       "feedback": "Required reserves are $10,000, so the bank is $1,000 short.",
-      "aHash": "f38c31d8f08657bd9dba855dd63534a2838e0e31a7ada7546b8cb730447657f7"
+      "aHash": "a3571056a1f8e11ba844277142059f6bed94413d12e91c5ba0e03698167a71b6"
     },
     {
       "id": 214,
@@ -8723,10 +9732,10 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "A bank receives new reserves after a Fed bond purchase but refuses to lend because risk is high. What does this show?",
       "options": [
-        "Monetary policy can face limits when banks hold excess reserves",
+        "Banks can retain reserves rather than lend",
         "The Fed has no effect on reserves",
         "Reserve requirements must be zero",
-        "Open-market purchases are fiscal policy"
+        "Bond purchases count as fiscal spending rather than monetary policy"
       ],
       "tag": "fed_policy",
       "type": "application",
@@ -8738,7 +9747,7 @@ const questionBanks = {
       "repairSkill": "fed_tools",
       "commonError": "assuming_reserves_always_become_loans",
       "feedback": "More reserves do not guarantee more lending if banks choose to hold excess reserves.",
-      "aHash": "396dfa84774b226465044e821c582293a28760eb8c6796c0bde8133f0673abf4"
+      "aHash": "eaec683c1b49eb08c3d7fe1ff32bf60a95826e49d3f3258f636c2b53fe513ef9"
     },
     {
       "id": 220,
@@ -8811,8 +9820,8 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "If inflation stays low despite rapid money growth, which explanation fits the quantity equation best?",
       "options": [
-        "Velocity fell or real output rose enough to offset money growth",
-        "Money growth never affects nominal GDP",
+        "Velocity fell or real output grew enough",
+        "Money growth can never affect total nominal spending",
         "Real output must have fallen to zero",
         "The price level cannot respond to money"
       ],
@@ -8826,14 +9835,14 @@ const questionBanks = {
       "repairSkill": "inflation_causes",
       "commonError": "assuming_money_growth_always_equals_inflation",
       "feedback": "Falling velocity or stronger real output growth can offset inflation pressure from money growth.",
-      "aHash": "2f03ec2e6d1b6f2487ab0f307b730b69fb771c495297760dd5dac06712c7d35c"
+      "aHash": "912e37d40f4a2fe35b2e5eca31f8179b65ce474095545b86281a76ad31aeec36"
     },
     {
       "id": 224,
       "sourceGame": "mintAshGold",
       "q": "A central bank prints money to finance government spending. What inflation-related concept best describes the revenue raised?",
       "options": [
-        "Seigniorage and inflation tax",
+        "Seigniorage",
         "Golden Rule saving",
         "Capital deepening",
         "Okun’s law"
@@ -8848,14 +9857,14 @@ const questionBanks = {
       "repairSkill": "inflation_causes",
       "commonError": "confusing_money_finance_with_tax_cut",
       "feedback": "Printing money to finance spending raises seigniorage and can impose an inflation tax.",
-      "aHash": "8b6b2a989c6015c130613366a436159dea4a2ff360ffc0a5fba5aff8f2538ec9"
+      "aHash": "46f4a1a4e6ffc13d8b8c07b2f8a5bdaab968aa9c8444bd3a1edfb00ee416fc40"
     },
     {
       "id": 225,
       "sourceGame": "mintAshGold",
       "q": "Which scenario is most consistent with demand for money rising?",
       "options": [
-        "Households decide to hold more cash relative to income",
+        "Households hold more cash relative to income",
         "Households use each dollar more frequently",
         "The Fed sells bonds to banks",
         "Firms cut all posted prices"
@@ -8870,7 +9879,7 @@ const questionBanks = {
       "repairSkill": "inflation_causes",
       "commonError": "confusing_money_demand_with_spending",
       "feedback": "Higher money demand means households hold more money rather than spending each dollar quickly.",
-      "aHash": "658f23cfc96b16bd40a98869e8eba2ab2defff29496efb6c1fd07aeeb8b1a516"
+      "aHash": "1aef35ff6704ba3af3e2d23b8d2cf5c3df583b4d76bcf7e5c673d28715b1f4d1"
     },
     {
       "id": 226,
@@ -8965,7 +9974,7 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "A lender expected 6 percent inflation, but actual inflation is 1 percent. What happens?",
       "options": [
-        "The lender gains because repayment has higher real value",
+        "The lender gains from a higher real repayment",
         "The borrower gains because repayment is weaker",
         "Both sides are unaffected by inflation errors",
         "The nominal contract automatically adjusts"
@@ -8980,7 +9989,7 @@ const questionBanks = {
       "repairSkill": "inflation_effects",
       "commonError": "thinking_only_high_inflation_matters",
       "feedback": "Lower-than-expected inflation raises the real value of repayment, helping lenders.",
-      "aHash": "9105d7abfe3f66207e712eb32e4648e3435eb4de693ffb7ec85ed03daa9fa5b4"
+      "aHash": "c343cca16b59eee3df8a1fd925b6bfdaf86f26151c045a68b08ca440d05c08da"
     },
     {
       "id": 231,
@@ -9053,7 +10062,7 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "A contract fixes nominal payments for three years. Which risk matters most if inflation becomes unpredictable?",
       "options": [
-        "The real value of payments may differ from what parties expected",
+        "Payments may have an unexpected real value",
         "The contract automatically becomes a real variable",
         "The money supply must fall to zero",
         "The price level can no longer change"
@@ -9068,7 +10077,7 @@ const questionBanks = {
       "repairSkill": "inflation_effects",
       "commonError": "ignoring_real_value_of_nominal_contracts",
       "feedback": "Unexpected inflation changes the real value of fixed nominal payments.",
-      "aHash": "4cc4aca7df3ea67d3248aacd0a2e1d58a018f3dfe566d864720f8bb659f56d20"
+      "aHash": "8d3d5f4f41b665d51157a0681421eff457a4443f9aa2fcde183f3b8fb3ea3a85"
     },
     {
       "id": 235,
@@ -9095,7 +10104,7 @@ const questionBanks = {
     {
       "id": 236,
       "sourceGame": "mintAshGold",
-      "q": "If M rises 10 percent, V falls 4 percent, and Y rises 3 percent, what is approximate inflation?",
+      "q": "If the nominal money supply rises 10 percent, V falls 4 percent, and output rises 3 percent, what is approximate inflation?",
       "options": [
         "3 percent",
         "7 percent",
@@ -9295,7 +10304,7 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "Which statement best applies monetary neutrality?",
       "options": [
-        "A one-time money supply increase raises prices in the long run without raising real output",
+        "More money raises long-run prices but not real output",
         "A one-time money supply increase raises real output permanently",
         "A price-level increase raises natural output permanently",
         "Inflation lowers all nominal variables"
@@ -9310,7 +10319,7 @@ const questionBanks = {
       "repairSkill": "classical_view",
       "commonError": "thinking_money_changes_real_output_long_run",
       "feedback": "In the long run, money affects nominal variables such as the price level, not real output.",
-      "aHash": "ff9eddefe2b5626606796773ce89f4b3555c89febb8d1b80b1f3f9ec0ee584a3"
+      "aHash": "50087fed651568df99224b73027bbfad83b4b604f3cfa03409a51029233c6319"
     },
     {
       "id": 246,
@@ -9381,11 +10390,11 @@ const questionBanks = {
     {
       "id": 249,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the Solow production graph. Moving rightward along f(k), why does output per worker rise by smaller increments?",
+      "q": "Refer to the Solow production function graph. Moving rightward along f(k), why does output per worker rise by smaller increments?",
       "options": [
-        "Diminishing marginal product of capital",
-        "Higher velocity of money",
-        "Falling aggregate demand",
+        "Diminishing returns to capital",
+        "Increasing velocity of money",
+        "Falling aggregate demand for goods",
         "A lower price level"
       ],
       "tag": "solow_model",
@@ -9399,7 +10408,7 @@ const questionBanks = {
       "commonError": "confusing_solow_with_ad_graph",
       "feedback": "The curve flattens because each added unit of capital raises output by less than the previous unit.",
       "image": "solowproductionfunction.webp",
-      "aHash": "69812a38f63af2a53b887ab7d23d14b8663d4dc88478527c590920543f574412"
+      "aHash": "ea7d99b48006b8e730d3c4741d1464f56c25d4917df4a7fbcbbddd0eb31de194"
     },
     {
       "id": 250,
@@ -9470,7 +10479,7 @@ const questionBanks = {
     {
       "id": 253,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the steady-state graph. To the left of k*, which relationship must hold?",
+      "q": "Refer to the Solow steady-state graph. To the left of k*, which relationship must hold?",
       "options": [
         "Saving and investment exceed depreciation",
         "Depreciation exceeds saving and investment",
@@ -9493,7 +10502,7 @@ const questionBanks = {
     {
       "id": 254,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the steady-state graph. To the right of k*, which relationship must hold?",
+      "q": "Refer to the Solow steady-state graph. To the right of k*, which relationship must hold?",
       "options": [
         "Depreciation exceeds saving and investment",
         "Saving and investment exceed depreciation",
@@ -9538,10 +10547,10 @@ const questionBanks = {
     {
       "id": 256,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the saving-rate graph. After the saving curve shifts upward, why does capital move toward a higher steady state?",
+      "q": "Refer to the Solow saving-rate graph. After the saving curve shifts upward, why does capital move toward a higher steady state?",
       "options": [
-        "Investment exceeds depreciation at the old steady state",
-        "Depreciation disappears at the old steady state",
+        "Investment now exceeds depreciation at the old capital stock",
+        "Depreciation is eliminated at the previously stable capital stock",
         "Output falls below zero at the old steady state",
         "LRAS shifts because prices rise"
       ],
@@ -9556,7 +10565,7 @@ const questionBanks = {
       "commonError": "missing_transition_mechanism",
       "feedback": "At the old steady state, higher saving makes investment exceed depreciation, so capital begins rising.",
       "image": "steadystatechanges.webp",
-      "aHash": "577bc04b9ece137c59f707cc57d97539b2996786d892767d24de7e7e78363110"
+      "aHash": "51de8f7231b61c84781ea2bd6c0ff68dea2dea3c49aadbc2ac1c32da388f7168"
     },
     {
       "id": 257,
@@ -9607,7 +10616,7 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "Why does a higher saving rate not guarantee higher current consumption?",
       "options": [
-        "More current output is diverted into investment",
+        "More output goes to investment",
         "Depreciation becomes impossible",
         "Output per worker immediately doubles",
         "Capital per worker instantly vanishes"
@@ -9622,12 +10631,12 @@ const questionBanks = {
       "repairSkill": "saving_rate",
       "commonError": "ignoring_current_consumption_loss",
       "feedback": "A higher saving rate means a larger share of current output goes to investment instead of consumption.",
-      "aHash": "81ae6ff8525bbc0e20295aa2cffa538b277fbc966f2fcb33be529d68425c0203"
+      "aHash": "52e1d57e1081ab30a770e9f7f22b1f04f30e4f3de778a772ac8f5999a1683958"
     },
     {
       "id": 260,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the saving-rate graph. Which outcome follows after the economy reaches the new higher steady state?",
+      "q": "Refer to the Solow saving-rate graph. Which outcome follows after the economy reaches the new higher steady state?",
       "options": [
         "Higher capital per worker and higher output per worker",
         "Lower capital per worker and lower output per worker",
@@ -9654,7 +10663,7 @@ const questionBanks = {
       "options": [
         "Low saving limits investment and capital per worker",
         "Low saving directly raises depreciation above 100 percent",
-        "Low saving shifts AD left forever",
+        "Low saving shifts the AD curve to the left forever",
         "Low saving prevents money from existing"
       ],
       "tag": "saving_rate",
@@ -9674,7 +10683,7 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "Which warning best fits a policy that pushes saving very high?",
       "options": [
-        "Current consumption may fall too much even if future output rises",
+        "Future output gains may cost too much consumption now",
         "Future output must fall because saving is harmful",
         "Depreciation becomes permanently negative",
         "Capital per worker immediately becomes zero"
@@ -9689,16 +10698,16 @@ const questionBanks = {
       "repairSkill": "saving_rate",
       "commonError": "thinking_highest_saving_is_always_best",
       "feedback": "Very high saving can reduce current consumption too much and may not maximize consumption per worker.",
-      "aHash": "0979710111452eab420caeffe302c95ed11c5278c99ca47de0b0a93629621d04"
+      "aHash": "045671ce052fc3f8ac3b8968379b4243b31ae23cc18f8fdddc68139061391f5f"
     },
     {
       "id": 263,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the AD-SRAS graph. With horizontal SRAS, why does an AD decrease mainly reduce output in the short run?",
+      "q": "Refer to the aggregate demand and short-run aggregate supply graph. With horizontal SRAS, why does an AD decrease mainly reduce output in the short run?",
       "options": [
-        "Prices are sticky, so firms reduce production at the fixed price level",
+        "At sticky prices, firms respond by producing less",
         "Prices rise instantly, so firms expand output",
-        "LRAS shifts left whenever AD falls",
+        "The LRAS curve shifts to the left whenever AD falls",
         "Capital per worker changes immediately"
       ],
       "tag": "short_long_run",
@@ -9712,7 +10721,7 @@ const questionBanks = {
       "commonError": "thinking_prices_flexible_short_run",
       "feedback": "With sticky prices, lower demand shows up mainly as lower output in the short run.",
       "image": "adsras.webp",
-      "aHash": "000f2d69c105a9d2f2d6218a8576829a146b2b6f63474c8b90032ca3690cebd9"
+      "aHash": "db64a8385e6e92e9603d63216beb48cb8d9b69ac9cca4b23f628d140dfc2a059"
     },
     {
       "id": 264,
@@ -9742,9 +10751,9 @@ const questionBanks = {
       "q": "If normal real GDP growth is 3 percent and unemployment rises by 2 percentage points, what real GDP growth does Okun’s law predict?",
       "options": [
         "−1 percent",
-        "1 percent",
-        "3 percent",
-        "7 percent"
+        "+1 percent",
+        "+3 percent",
+        "+7 percent"
       ],
       "tag": "business_cycles",
       "type": "calculation",
@@ -9763,7 +10772,7 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "Which statement best explains why short-run output can rise after an unexpected demand increase?",
       "options": [
-        "Sticky prices let firms sell more before prices fully adjust",
+        "Firms sell more while prices remain sticky",
         "Flexible prices instantly return output to zero",
         "The production function becomes vertical",
         "Depreciation stops immediately"
@@ -9778,17 +10787,17 @@ const questionBanks = {
       "repairSkill": "short_long_run",
       "commonError": "using_long_run_logic_for_short_run",
       "feedback": "When prices are sticky, higher demand can raise output before prices fully adjust.",
-      "aHash": "abfdf9e40cdeb49464ff26f584c5196485c51a2faea86a569128c6ebbabd6e13"
+      "aHash": "0aa99dfd8b30ee4997da0c56d9a2a7ed5a628de381bd838e03080c871ecb495b"
     },
     {
       "id": 267,
       "sourceGame": "mintAshGold",
       "q": "Which case best separates short-run and long-run effects of monetary expansion?",
       "options": [
-        "Output rises temporarily, then returns to natural output as prices rise",
+        "Output rises temporarily, then returns as prices adjust",
         "Output rises permanently because prices never adjust",
         "Prices fall permanently while output doubles",
-        "LRAS shifts left because money rises"
+        "The LRAS curve shifts to the left because money rises"
       ],
       "tag": "short_long_run",
       "type": "application",
@@ -9800,17 +10809,17 @@ const questionBanks = {
       "repairSkill": "short_long_run",
       "commonError": "confusing_short_run_nonneutrality_with_long_run_neutrality",
       "feedback": "Monetary expansion can raise output in the short run, but prices adjust and output returns to natural output in the long run.",
-      "aHash": "247a0188914bcc5481d6b5b0470531685355affc535b8d6d91a88d353107f208"
+      "aHash": "223b392fa423631f9196c0747f82b2e1efaf3e07ccec21e9a209bdc6d904b974"
     },
     {
       "id": 268,
       "sourceGame": "mintAshGold",
       "q": "A recession begins after investment spending collapses. Which short-run pattern fits best?",
       "options": [
-        "AD shifts left, output falls, unemployment rises",
-        "SRAS shifts right, output falls, unemployment falls",
-        "LRAS shifts right, prices rise, output falls",
-        "AD shifts right, output falls, prices fall"
+        "The AD curve shifts to the left, output falls, unemployment rises",
+        "The SRAS curve shifts to the right, output falls, unemployment falls",
+        "The LRAS curve shifts to the right, prices rise, output falls",
+        "The AD curve shifts to the right, output falls, prices fall"
       ],
       "tag": "business_cycles",
       "type": "application",
@@ -9822,15 +10831,15 @@ const questionBanks = {
       "repairSkill": "business_cycles",
       "commonError": "wrong_curve_for_spending_collapse",
       "feedback": "A collapse in investment lowers aggregate demand, reducing output and raising unemployment in the short run.",
-      "aHash": "7f457b739ab3e978894cfafe406178b4461b00f939174debd250b99ba831c081"
+      "aHash": "bfc6c162795c984e1361ce616a53ca4be776a19abbfcf2d31eac63d2cd94dddd"
     },
     {
       "id": 269,
       "sourceGame": "mintAshGold",
       "q": "Why does the LRAS curve not slope upward like SRAS?",
       "options": [
-        "Long-run output is pinned by real productive capacity, not the price level",
-        "Long-run output rises whenever prices rise",
+        "Real productive capacity determines long-run output",
+        "A higher price level permanently raises real productive capacity",
         "LRAS measures only consumer spending",
         "LRAS depends only on the money supply"
       ],
@@ -9844,14 +10853,14 @@ const questionBanks = {
       "repairSkill": "short_long_run",
       "commonError": "thinking_higher_prices_raise_long_run_output",
       "feedback": "LRAS is vertical because long-run output depends on labor, capital, and technology.",
-      "aHash": "e535a7ac50539b1a7fbb7c8acab0d70eb5a6554f82d3174de123cd9969ab42f1"
+      "aHash": "d9baeefa1238851806be86315dd86ea00256a040e70ce60b402a110281aabf32"
     },
     {
       "id": 270,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the AD shift graph. Which event most likely causes AD to shift left?",
+      "q": "Refer to the aggregate demand graph. Which event most likely causes AD to shift left?",
       "options": [
-        "A sharp fall in consumer confidence",
+        "A fall in consumer confidence",
         "A sudden oil price increase",
         "A productivity improvement",
         "A higher labor force"
@@ -9865,19 +10874,19 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "aggregate_demand",
       "commonError": "confusing_demand_and_supply_shifts",
-      "feedback": "A sharp fall in consumer confidence lowers spending and shifts AD left.",
+      "feedback": "A sharp fall in consumer confidence lowers spending and shifts the AD curve to the left.",
       "image": "adtwo.webp",
-      "aHash": "7627da7f1ec4dd0a6838096711e1e30ee1ccbfa40c496260bfe7a9961bf782e6"
+      "aHash": "9cb159281f3a51ae6f3e236afb70f25af94c21cc1d01f40cf9e95a36dc2a22fe"
     },
     {
       "id": 271,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the AD-SRAS graph. If AD shifts right while SRAS is horizontal, what happens in the short run?",
+      "q": "Refer to the aggregate demand and short-run aggregate supply graph. If the AD curve shifts to the right while SRAS is horizontal, what happens in the short run?",
       "options": [
         "Output rises while the price level stays fixed",
         "Output falls while the price level stays fixed",
         "Price level rises while output stays fixed",
-        "LRAS shifts right immediately"
+        "The LRAS curve shifts to the right immediately"
       ],
       "tag": "short_run_adas",
       "type": "graph_interpretation",
@@ -9895,7 +10904,7 @@ const questionBanks = {
     {
       "id": 272,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the demand-shock graph. A positive demand shock moves the economy away from natural output in which direction?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. A positive demand shock moves the economy away from natural output in which direction?",
       "options": [
         "Output rises above natural output",
         "Output falls below natural output",
@@ -9918,7 +10927,7 @@ const questionBanks = {
     {
       "id": 273,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the demand-shock graph. A negative demand shock creates which gap?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. A negative demand shock creates which gap?",
       "options": [
         "A recessionary gap",
         "An inflationary gap",
@@ -9943,9 +10952,9 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "If the price level rises from 100 to 110 and real money balances fall, which AD mechanism is being illustrated?",
       "options": [
-        "Higher prices reduce real money balances and spending",
+        "Higher prices reduce real balances and spending",
         "Higher prices raise capital per worker",
-        "Higher prices shift LRAS right",
+        "Higher prices shift the LRAS curve to the right",
         "Higher prices eliminate unemployment"
       ],
       "tag": "aggregate_demand",
@@ -9958,17 +10967,17 @@ const questionBanks = {
       "repairSkill": "aggregate_demand",
       "commonError": "missing_real_money_balances_channel",
       "feedback": "A higher price level reduces real money balances, which lowers aggregate demand quantity.",
-      "aHash": "1d07d7bced408ec58a88e828f342514f644624f6d0d8b07075688ee6a05220ca"
+      "aHash": "ecd5b3ca097723090471a84ec4061d84d8ccf4bbb8fea09f8edf80fde64156d4"
     },
     {
       "id": 275,
       "sourceGame": "mintAshGold",
       "q": "A central bank unexpectedly increases money while prices are sticky. Which graph movement fits best?",
       "options": [
-        "AD shifts right and output rises in the short run",
-        "AD shifts left and output rises in the short run",
-        "SRAS shifts left and prices fall",
-        "LRAS shifts right and prices stay fixed"
+        "The AD curve shifts to the right and output rises in the short run",
+        "The AD curve shifts to the left and output rises in the short run",
+        "The SRAS curve shifts to the left and prices fall",
+        "The LRAS curve shifts to the right and prices stay fixed"
       ],
       "tag": "aggregate_demand",
       "type": "application",
@@ -9980,7 +10989,7 @@ const questionBanks = {
       "repairSkill": "aggregate_demand",
       "commonError": "using_long_run_neutrality_for_short_run",
       "feedback": "Unexpected monetary expansion raises aggregate demand and can raise output in the short run when prices are sticky.",
-      "aHash": "73dcf010bb4b72bdb3f235100c0e14f1bd7eaae3d2d0777092aa54cbf7b00c35"
+      "aHash": "9ea949a054699729b5a8b78f6abb3b9f55557fac4ac73f9dd83037dab3d58be4"
     },
     {
       "id": 276,
@@ -10007,11 +11016,11 @@ const questionBanks = {
     {
       "id": 277,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the AD-LRAS graph. Why does output return to Y1 after an AD increase in the long run?",
+      "q": "Refer to the aggregate demand and long-run aggregate supply graph. Why does output return to Y1 after an AD increase in the long run?",
       "options": [
         "Prices adjust until output returns to natural output",
         "AD permanently raises technology",
-        "LRAS shifts left until output falls",
+        "The LRAS curve shifts to the left until output falls",
         "Depreciation eliminates demand"
       ],
       "tag": "long_run_adjustment",
@@ -10030,7 +11039,7 @@ const questionBanks = {
     {
       "id": 278,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the supply-shock graph. A negative supply shock creates which short-run combination?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. A negative supply shock creates which short-run combination?",
       "options": [
         "Lower output and higher prices",
         "Higher output and lower prices",
@@ -10055,9 +11064,9 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "A drought destroys crops and raises input costs. Which curve shifts first in the AD-AS model?",
       "options": [
-        "SRAS shifts left",
-        "AD shifts right",
-        "LRAS shifts right immediately",
+        "The SRAS curve shifts to the left",
+        "The AD curve shifts to the right",
+        "The LRAS curve shifts to the right immediately",
         "AD becomes horizontal"
       ],
       "tag": "supply_shocks",
@@ -10069,8 +11078,8 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "supply_shocks",
       "commonError": "treating_input_costs_as_demand",
-      "feedback": "A drought that raises production costs is a negative supply shock and shifts SRAS left.",
-      "aHash": "ed186df55dd27338d0e00519d3f80a3ed4e4ba1eae157468732329fe94471593"
+      "feedback": "A drought that raises production costs is a negative supply shock and shifts the SRAS curve to the left.",
+      "aHash": "67dbe73399b4a8415750e4bfeb425861c1f814731c85d7406fa4df44a93fab1b"
     },
     {
       "id": 280,
@@ -10080,7 +11089,7 @@ const questionBanks = {
         "Expanding AD helps output but adds inflation pressure",
         "Expanding AD lowers prices and lowers output",
         "Reducing AD raises output and lowers unemployment",
-        "Doing nothing instantly shifts LRAS right"
+        "Doing nothing instantly shifts the LRAS curve to the right"
       ],
       "tag": "stabilization_policy",
       "type": "application",
@@ -10097,10 +11106,10 @@ const questionBanks = {
     {
       "id": 281,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the shock-plus-policy graph. If policy shifts AD right after a negative demand shock, what risk can emerge if the response is too large?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. If policy shifts the AD curve to the right after a negative demand shock, what risk can emerge if the response is too large?",
       "options": [
-        "Inflation pressure after overshooting natural output",
-        "Permanent elimination of prices",
+        "Excess demand creates inflation pressure",
+        "Strong demand permanently eliminates the need for prices",
         "A lower saving curve in Solow",
         "A required reserve shortage"
       ],
@@ -10115,16 +11124,16 @@ const questionBanks = {
       "commonError": "thinking_policy_has_no_tradeoff",
       "feedback": "If policy pushes AD too far right, output can overshoot natural output and create inflation pressure.",
       "image": "shockpluspolicy.webp",
-      "aHash": "a6c1d10abcb168a6494978be4d892d534d69b2a91b91f633a496bbe0a53a253c"
+      "aHash": "0ebe60c169487856c89277c503ddafe13f528ac11ba53e46690d57dcfadc6ce8"
     },
     {
       "id": 282,
       "sourceGame": "mintAshGold",
       "q": "If output is below natural output after a negative demand shock and policymakers do nothing, what long-run adjustment is expected?",
       "options": [
-        "Falling wages and prices shift SRAS right",
-        "Rising wages and prices shift SRAS left",
-        "AD shifts right automatically because money doubles",
+        "Falling wages and prices shift the SRAS curve to the right",
+        "Rising wages and prices shift the SRAS curve to the left",
+        "The AD curve shifts to the right automatically because money doubles",
         "LRAS falls until it equals current output"
       ],
       "tag": "long_run_adjustment",
@@ -10136,18 +11145,18 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "long_run_adjustment",
       "commonError": "wrong_direction_self_correction",
-      "feedback": "When output is below natural output, falling wages and prices lower costs and shift SRAS right.",
-      "aHash": "b508d164d80bfe0ca8cfed688b15c6db925c7e16e2c7bfcc30f9599016dbca81"
+      "feedback": "When output is below natural output, falling wages and prices lower costs and shift the SRAS curve to the right.",
+      "aHash": "e19c8363ae13455934da5fae0de2ab3cd0c248e539c103331599bee006225ce2"
     },
     {
       "id": 283,
       "sourceGame": "mintAshGold",
       "q": "If output is above natural output after a positive demand shock and policymakers do nothing, what long-run adjustment is expected?",
       "options": [
-        "Rising wages and prices shift SRAS left",
-        "Falling wages and prices shift SRAS right",
-        "LRAS shifts right because demand is high",
-        "AD shifts left because saving rises"
+        "Rising wages and prices shift the SRAS curve to the left",
+        "Falling wages and prices shift the SRAS curve to the right",
+        "The LRAS curve shifts to the right because demand is high",
+        "The AD curve shifts to the left because saving rises"
       ],
       "tag": "long_run_adjustment",
       "type": "application",
@@ -10158,164 +11167,8 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "long_run_adjustment",
       "commonError": "wrong_direction_self_correction",
-      "feedback": "When output is above natural output, rising wages and prices raise costs and shift SRAS left.",
-      "aHash": "088ca16f83c8f4b1f8265c1b25ada0c6331c5e38f39c350e3d2989cdac0121af"
-    }
-  ],
-  "elite": [
-    {
-      "id": 300,
-      "sourceGame": "mintAshGold",
-      "q": "A student says money is valuable only because it earns interest. Which correction is strongest?",
-      "options": [
-        "Money is valuable because it is liquid and accepted in transactions",
-        "Money is valuable only when it pays a high nominal rate",
-        "Money is valuable because it is always backed by gold",
-        "Money is valuable only when banks hold it as reserves"
-      ],
-      "tag": "money_functions",
-      "type": "trap",
-      "objective": "LO4.1",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_money_banking",
-      "primarySkill": "liquidity_and_money_value",
-      "secondarySkills": [],
-      "repairSkill": "money_functions",
-      "commonError": "confusing_money_with_interest_bearing_assets",
-      "feedback": "Money does not need to earn interest to be valuable. Its value comes from liquidity and general usefulness in transactions.",
-      "aHash": "bb0919a5a3081a569cdd3585cd6474e5bdfc4fd463bc5cb27d6e7d485ead3ee2"
-    },
-    {
-      "id": 301,
-      "sourceGame": "mintAshGold",
-      "q": "Which case best separates money from wealth?",
-      "options": [
-        "A checking deposit is money, while a house is wealth but not money",
-        "A house is money because it is valuable and can be sold",
-        "A bond is money because it pays interest over time",
-        "A stock is money because it can increase in value"
-      ],
-      "tag": "money_measures",
-      "type": "trap",
-      "objective": "LO4.1",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_money_banking",
-      "primarySkill": "distinguish_money_from_wealth",
-      "secondarySkills": [],
-      "repairSkill": "money_measures",
-      "commonError": "treating_all_wealth_as_money",
-      "feedback": "Money is part of wealth, but not all wealth is money. A house is valuable but not a medium of exchange.",
-      "aHash": "876f6295554eb2bdcec287045df11e41bf04b31753d4bd972f5f373f0662bbdc"
-    },
-    {
-      "id": 302,
-      "sourceGame": "mintAshGold",
-      "q": "A grocery store accepts dollars, quotes prices in dollars, and holds some cash overnight. Which sequence best matches the functions used?",
-      "options": [
-        "Medium of exchange, unit of account, store of value",
-        "Unit of account, reserve ratio, medium of exchange",
-        "Store of value, fiscal policy, unit of account",
-        "Medium of exchange, money multiplier, reserve deposit"
-      ],
-      "tag": "money_functions",
-      "type": "application",
-      "objective": "LO4.1",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_money_banking",
-      "primarySkill": "multi_function_money_application",
-      "secondarySkills": [],
-      "repairSkill": "money_functions",
-      "commonError": "mixing_money_functions_with_banking_terms",
-      "feedback": "Accepting dollars is medium of exchange, quoting prices is unit of account, and holding cash preserves value for later use.",
-      "aHash": "c5432a096de4e07be7e4c5624710cfef5a6eac830edd9c957e78ac5642783be0"
-    },
-    {
-      "id": 303,
-      "sourceGame": "mintAshGold",
-      "q": "Which item is most likely misclassified if a student puts it in M1?",
-      "options": [
-        "A savings deposit",
-        "A checking deposit",
-        "Currency in circulation",
-        "A traveler’s check"
-      ],
-      "tag": "money_measures",
-      "type": "trap",
-      "objective": "LO4.1",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_money_banking",
-      "primarySkill": "detect_m1_misclassification",
-      "secondarySkills": [],
-      "repairSkill": "money_measures",
-      "commonError": "placing_savings_deposit_in_m1",
-      "feedback": "Savings deposits are part of broader money measures such as M2, but not normally M1.",
-      "aHash": "5f6fad53310e731f4568ab7733dcb9b934ac3c55bf271362276a0e497a4ea385"
-    },
-    {
-      "id": 304,
-      "sourceGame": "mintAshGold",
-      "q": "A student argues that a credit card should count in M1 because it buys goods immediately. What is the flaw?",
-      "options": [
-        "It creates debt access rather than a money balance",
-        "It is counted as currency only when swiped",
-        "It is a reserve held by a commercial bank",
-        "It is included in M2 because it earns interest"
-      ],
-      "tag": "money_measures",
-      "type": "trap",
-      "objective": "LO4.1",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_money_banking",
-      "primarySkill": "credit_card_not_money",
-      "secondarySkills": [],
-      "repairSkill": "money_measures",
-      "commonError": "confusing_credit_with_money",
-      "feedback": "Credit cards provide access to borrowing. They are not existing money balances.",
-      "aHash": "a8348e28480c8c4babe33b127d8a8fd45945d49a6d09c5df7d70426ffb519bbb"
-    },
-    {
-      "id": 305,
-      "sourceGame": "mintAshGold",
-      "q": "Which classification is strongest for a money market mutual fund in standard money measures?",
-      "options": [
-        "Near money included in M2",
-        "Currency included in M1",
-        "Commodity money outside M2",
-        "Federal Reserve reserves"
-      ],
-      "tag": "money_measures",
-      "type": "identification",
-      "objective": "LO4.1",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_money_banking",
-      "primarySkill": "classify_near_money",
-      "secondarySkills": [],
-      "repairSkill": "money_measures",
-      "commonError": "confusing_near_money_with_currency",
-      "feedback": "Money market mutual funds are near monies and are included in M2 rather than M1 currency.",
-      "aHash": "121d5c7d2a26f68d373c076a2b36e143e8ff33899edfd5eb3b897b3e2599663a"
-    },
-    {
-      "id": 306,
-      "sourceGame": "mintAshGold",
-      "q": "Which answer best explains why liquidity matters for money?",
-      "options": [
-        "Money can be used quickly in exchange with little conversion cost",
-        "Money always earns more than bonds when inflation rises",
-        "Money is always physically printed by commercial banks",
-        "Money becomes real output when the price level falls"
-      ],
-      "tag": "money_functions",
-      "type": "application",
-      "objective": "LO4.1",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_money_banking",
-      "primarySkill": "liquidity_money_function",
-      "secondarySkills": [],
-      "repairSkill": "money_functions",
-      "commonError": "confusing_liquidity_with_return",
-      "feedback": "Liquidity matters because money can be used quickly and easily in transactions.",
-      "aHash": "d94f76801d299d46d819d8ea9dd6f2eb0ae5eeb5cd9be9c5ed629285fb753256"
+      "feedback": "When output is above natural output, rising wages and prices raise costs and shift the SRAS curve to the left.",
+      "aHash": "f21f041944b135c781c41f16c7fb7cc310bb8a14f6fb90ac82e11bed384b0224"
     },
     {
       "id": 307,
@@ -10330,7 +11183,7 @@ const questionBanks = {
       "tag": "reserves",
       "type": "calculation",
       "objective": "LO4.2",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "mint_elite_money_banking",
       "primarySkill": "calculate_excess_reserves",
       "secondarySkills": [],
@@ -10344,7 +11197,7 @@ const questionBanks = {
       "sourceGame": "mintAshGold",
       "q": "A bank has $400,000 in deposits and $52,000 in reserves. If the reserve requirement rises from 10 percent to 15 percent, what must the bank do if no new reserves arrive?",
       "options": [
-        "Reduce lending or obtain $8,000 in reserves",
+        "Cut lending or obtain $8,000 in reserves",
         "Increase lending by $8,000 immediately",
         "Hold $12,000 in excess reserves",
         "Create $60,000 in new deposits"
@@ -10352,87 +11205,43 @@ const questionBanks = {
       "tag": "reserves",
       "type": "calculation",
       "objective": "LO4.2",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "mint_elite_money_banking",
       "primarySkill": "reserve_requirement_shortfall",
       "secondarySkills": [],
       "repairSkill": "bank_money_creation",
       "commonError": "missing_new_required_reserve_level",
       "feedback": "Required reserves rise to $60,000. The bank has $52,000, so it is short $8,000.",
-      "aHash": "f005141b8315b1e4cdccf7be74600fe5e91bbaab2a44567fd66b4e59d7be48e8"
-    },
-    {
-      "id": 309,
-      "sourceGame": "mintAshGold",
-      "q": "A banking system has $3,000 in new excess reserves. If the reserve ratio is 8 percent, what is the maximum deposit expansion?",
-      "options": [
-        "$37,500",
-        "$24,000",
-        "$3,240",
-        "$2,760"
-      ],
-      "tag": "money_multiplier",
-      "type": "calculation",
-      "objective": "LO4.2",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_money_banking",
-      "primarySkill": "deposit_expansion_low_reserve_ratio",
-      "secondarySkills": [],
-      "repairSkill": "bank_money_creation",
-      "commonError": "multiplying_by_reserve_ratio",
-      "feedback": "The multiplier is 1 / 0.08 = 12.5, so maximum deposit expansion is $3,000 × 12.5 = $37,500.",
-      "aHash": "c6e836cb04e30b73bc474abd9022677ec554936f88f7eb5586bc364be235c401"
-    },
-    {
-      "id": 310,
-      "sourceGame": "mintAshGold",
-      "q": "If the reserve ratio falls from 20 percent to 10 percent, what happens to the simple money multiplier?",
-      "options": [
-        "It rises from 5 to 10",
-        "It falls from 10 to 5",
-        "It rises from 0.2 to 0.1",
-        "It stays fixed at 20"
-      ],
-      "tag": "money_multiplier",
-      "type": "calculation",
-      "objective": "LO4.2",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_money_banking",
-      "primarySkill": "compare_money_multiplier",
-      "secondarySkills": [],
-      "repairSkill": "bank_money_creation",
-      "commonError": "reversing_reserve_ratio_multiplier_relation",
-      "feedback": "The multiplier is 1 divided by the reserve ratio, so it rises from 5 to 10.",
-      "aHash": "cafb121bd68002d648ddf05021ca6ea0574b24c64a2eb598011c5123de127597"
+      "aHash": "05d3b6a8d1be50031fe67c339ab85844506632eef9fba22599641ccc8f23afd7"
     },
     {
       "id": 311,
       "sourceGame": "mintAshGold",
       "q": "A bank has $100,000 in deposits, $12,000 in reserves, and a 10 percent reserve requirement. If it lends all excess reserves, what happens first?",
       "options": [
-        "Loans rise by $2,000 and deposits may later expand through the system",
-        "Loans rise by $10,000 and reserves fall to zero",
+        "Loans rise $2,000; systemwide deposits may expand",
+        "Loans rise $10,000, exhausting all the bank’s reserves",
         "Deposits fall by $12,000 immediately",
         "Required reserves rise to $12,000 immediately"
       ],
       "tag": "banking",
       "type": "application",
       "objective": "LO4.2",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "mint_elite_money_banking",
       "primarySkill": "single_bank_to_system_expansion",
       "secondarySkills": [],
       "repairSkill": "bank_money_creation",
       "commonError": "using_required_reserves_as_excess",
       "feedback": "Required reserves are $10,000, so the bank has $2,000 in excess reserves it can lend.",
-      "aHash": "4f9f6c855840108743e7cb350db234b8f2b28017732fd8bbf28ac5cb7892b487"
+      "aHash": "f21c5887d0cb14dcf2cf3ff7781d1baddc1f1cc8f902b4515216c0cee51cfea7"
     },
     {
       "id": 312,
       "sourceGame": "mintAshGold",
       "q": "Why does a currency drain reduce actual deposit expansion below the simple multiplier prediction?",
       "options": [
-        "Some loan proceeds leave deposits and are held as currency",
+        "Borrowers keep some proceeds as cash, not deposits",
         "Banks are required to lend every dollar of reserves",
         "Currency held by households counts as bank reserves",
         "Deposits rise even when borrowers hold cash"
@@ -10440,65 +11249,866 @@ const questionBanks = {
       "tag": "money_multiplier",
       "type": "application",
       "objective": "LO4.2",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "mint_elite_money_banking",
       "primarySkill": "currency_drain_limits_multiplier",
       "secondarySkills": [],
       "repairSkill": "bank_money_creation",
       "commonError": "assuming_all_money_stays_deposited",
       "feedback": "If people hold currency instead of redepositing funds, banks receive fewer deposits and expansion is smaller.",
-      "aHash": "2aaabccf9eed9d4c5e6b1cfc62bdecfd043e4ad69065be379c9f797c6335c586"
+      "aHash": "8978a054a9d57339bd02e3dd2d7dd819b9301ec114e3d369f0d194ffdcaa1e0e"
     },
     {
-      "id": 313,
+      "id": 318,
       "sourceGame": "mintAshGold",
-      "q": "Which balance-sheet change best shows money creation by a commercial bank?",
+      "q": "Suppose banks are fully loaned up. The Fed raises reserve requirements. What pressure follows first?",
       "options": [
-        "A loan asset rises and a deposit liability rises",
-        "A reserve asset rises and capital disappears",
-        "A bond asset falls and taxes rise",
-        "Currency becomes required reserves"
-      ],
-      "tag": "banking",
-      "type": "application",
-      "objective": "LO4.2",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_money_banking",
-      "primarySkill": "bank_balance_sheet_money_creation",
-      "secondarySkills": [],
-      "repairSkill": "bank_money_creation",
-      "commonError": "thinking_lending_only_transfers_old_deposits",
-      "feedback": "When banks make loans, they create a loan asset and usually a matching deposit liability.",
-      "aHash": "e9ec1902b3af400ced97af5fb456ed2265a5331296001f93fd6da5dd831509db"
-    },
-    {
-      "id": 314,
-      "sourceGame": "mintAshGold",
-      "q": "The Fed sells $2 million in bonds to banks, and the simple multiplier is 4. What is the maximum change in deposits?",
-      "options": [
-        "Deposits fall by up to $8 million",
-        "Deposits rise by up to $8 million",
-        "Deposits fall by up to $500,000",
-        "Deposits rise by up to $2 million"
+        "Banks must cut loans or add reserves",
+        "Banks gain excess reserves without changing their assets",
+        "Deposits automatically double",
+        "The monetary base becomes zero"
       ],
       "tag": "fed_policy",
-      "type": "calculation",
+      "type": "application",
       "objective": "LO4.3",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "mint_elite_money_banking",
-      "primarySkill": "fed_sale_multiplier_effect",
+      "primarySkill": "reserve_requirement_policy_effect",
       "secondarySkills": [],
       "repairSkill": "fed_tools",
-      "commonError": "reversing_open_market_sale",
-      "feedback": "Selling bonds removes reserves. With a multiplier of 4, deposits can fall by up to $2 million × 4 = $8 million.",
-      "aHash": "a9083dbdaa35f5db85c20a7ee671ffdfa1297ad2052453227fd1a4081f3199bd"
+      "commonError": "thinking_higher_requirements_expand_lending",
+      "feedback": "A higher reserve requirement raises required reserves and can force banks to reduce lending or get more reserves.",
+      "aHash": "81e7fe790220a1d00d8ffaba957d2461c8a2f289d703e0af3a0336e6cc4188ea"
     },
+    {
+      "id": 319,
+      "sourceGame": "mintAshGold",
+      "q": "Which chain best describes an expansionary open-market purchase?",
+      "options": [
+        "Fed buys bonds, reserves rise, lending capacity rises, money supply may rise",
+        "Fed sells bonds, reserves rise, lending capacity rises, money supply may rise",
+        "Fed buys bonds, reserves fall, lending capacity falls, money supply falls",
+        "Fed sells bonds, reserves fall, lending capacity rises, money supply rises"
+      ],
+      "tag": "fed_policy",
+      "type": "application",
+      "objective": "LO4.3",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_money_banking",
+      "primarySkill": "expansionary_omo_chain",
+      "secondarySkills": [],
+      "repairSkill": "fed_tools",
+      "commonError": "reversing_bond_purchase_and_sale",
+      "feedback": "An open-market purchase adds reserves to banks and can increase lending and the money supply.",
+      "aHash": "5cfcc41ffa283c4b767d0981b9dbf972882141c80d9ee6452ddad16e3722033a"
+    },
+    {
+      "id": 320,
+      "sourceGame": "mintAshGold",
+      "q": "Which statement best explains why the Fed controls the money supply imperfectly?",
+      "options": [
+        "Banks choose reserves; households choose cash",
+        "The Fed cannot conduct open-market operations",
+        "Commercial banks directly determine the monetary base",
+        "Households determine required reserve law"
+      ],
+      "tag": "fed_policy",
+      "type": "application",
+      "objective": "LO4.3",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_money_banking",
+      "primarySkill": "limits_monetary_control",
+      "secondarySkills": [],
+      "repairSkill": "fed_tools",
+      "commonError": "thinking_fed_has_complete_mechanical_control",
+      "feedback": "The Fed controls the monetary base, but banks and households influence lending, reserves, deposits, and currency holdings.",
+      "aHash": "50fb53133bbfc594222ef9d0362e4c9b100b5507ef0b289b64329e209fc0e5c9"
+    },
+    {
+      "id": 321,
+      "sourceGame": "mintAshGold",
+      "q": "Money growth is 14 percent, velocity falls 5 percent, and real output grows 4 percent. What inflation rate follows from the quantity equation?",
+      "options": [
+        "5 percent",
+        "9 percent",
+        "13 percent",
+        "23 percent"
+      ],
+      "tag": "quantity_theory",
+      "type": "calculation",
+      "objective": "LO5.1",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_inflation",
+      "primarySkill": "inflation_growth_accounting",
+      "secondarySkills": [],
+      "repairSkill": "inflation_causes",
+      "commonError": "wrong_sign_for_velocity_change",
+      "feedback": "Inflation is approximately 14 − 5 − 4 = 5 percent.",
+      "aHash": "18b3d14ade1b23572c8d9d22267238312dc9fb1f820e001ec4741a6716e8ae82"
+    },
+    {
+      "id": 322,
+      "sourceGame": "mintAshGold",
+      "q": "An economy has high money growth but no inflation surge because people sharply increase money holdings. Which variable most likely changed?",
+      "options": [
+        "Velocity decreased",
+        "Velocity increased",
+        "Real output fell to zero",
+        "The price level doubled"
+      ],
+      "tag": "money_demand",
+      "type": "application",
+      "objective": "LO5.1",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_inflation",
+      "primarySkill": "money_demand_velocity_offset",
+      "secondarySkills": [],
+      "repairSkill": "inflation_causes",
+      "commonError": "assuming_money_growth_always_becomes_inflation",
+      "feedback": "When people hold more money, velocity falls, which can offset inflation pressure from money growth.",
+      "aHash": "ebef3fa1aa8754c5284c78149794abedd8b03f741044fb6e283873cad9b10854"
+    },
+    {
+      "id": 324,
+      "sourceGame": "mintAshGold",
+      "q": "Which scenario is most likely to create sustained inflation under the quantity theory?",
+      "options": [
+        "Money growth repeatedly exceeds real output growth",
+        "Real output growth repeatedly exceeds money growth",
+        "Velocity falls while money growth slows",
+        "Money demand rises faster than income"
+      ],
+      "tag": "quantity_theory",
+      "type": "application",
+      "objective": "LO5.1",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_inflation",
+      "primarySkill": "sustained_inflation_condition",
+      "secondarySkills": [],
+      "repairSkill": "inflation_causes",
+      "commonError": "ignoring_persistent_money_growth",
+      "feedback": "Sustained inflation is most likely when money growth persistently exceeds real output growth.",
+      "aHash": "ef6b7baa5ffddfd07478aaeeb35e9e9a90a197a9d4b1f5cdb1ae045d26112c25"
+    },
+    {
+      "id": 326,
+      "sourceGame": "mintAshGold",
+      "q": "If money growth is 6 percent, real output growth is 3 percent, and inflation is 1 percent, what must velocity growth be?",
+      "options": [
+        "−2 percent",
+        "+2 percent",
+        "+4 percent",
+        "−8 percent"
+      ],
+      "tag": "quantity_theory",
+      "type": "calculation",
+      "objective": "LO5.1",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_inflation",
+      "primarySkill": "solve_velocity_growth_from_inflation",
+      "secondarySkills": [],
+      "repairSkill": "inflation_causes",
+      "commonError": "wrong_growth_accounting_sign",
+      "feedback": "Money growth plus velocity growth equals inflation plus output growth. 6 + V = 1 + 3, so V = −2 percent.",
+      "aHash": "2e84fee27ce47574e0754c9920c17bbe2731b51b9b99358beadc4fdace50cf54"
+    },
+    {
+      "id": 327,
+      "sourceGame": "mintAshGold",
+      "q": "Which statement best explains why real output growth reduces inflation pressure for a given money growth rate?",
+      "options": [
+        "More goods can absorb the increased spending",
+        "More goods require the velocity of money to become negative",
+        "More goods eliminate nominal GDP",
+        "More goods make money demand equal zero"
+      ],
+      "tag": "quantity_theory",
+      "type": "application",
+      "objective": "LO5.1",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_inflation",
+      "primarySkill": "real_output_absorbs_money_growth",
+      "secondarySkills": [],
+      "repairSkill": "inflation_causes",
+      "commonError": "ignoring_output_side_of_quantity_equation",
+      "feedback": "If real output grows, the same money growth can support more transactions with less price pressure.",
+      "aHash": "2ca4301bbba85d15f5a6508a41f3759fa0bb29b04d46c0890f39f8be9dd97ac8"
+    },
+    {
+      "id": 331,
+      "sourceGame": "mintAshGold",
+      "q": "During high inflation, one firm updates prices weekly while another updates once a year. What problem is most likely?",
+      "options": [
+        "Relative prices become distorted",
+        "The money multiplier becomes infinite",
+        "Real output must equal zero",
+        "Required reserves become negative"
+      ],
+      "tag": "inflation_costs",
+      "type": "application",
+      "objective": "LO5.2",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_inflation",
+      "primarySkill": "relative_price_distortion",
+      "secondarySkills": [],
+      "repairSkill": "inflation_effects",
+      "commonError": "assuming_all_prices_adjust_together",
+      "feedback": "Uneven price adjustment distorts relative prices and can misdirect resources.",
+      "aHash": "75c2deb0ca8653a71b1c21a2fd006977687a6217b85f783a5721e408266dfb73"
+    },
+    {
+      "id": 336,
+      "sourceGame": "mintAshGold",
+      "q": "If M grows 9 percent, V grows 2 percent, and Y grows 4 percent, what is approximate inflation?",
+      "options": [
+        "7 percent",
+        "5 percent",
+        "11 percent",
+        "15 percent"
+      ],
+      "tag": "quantity_equation",
+      "type": "calculation",
+      "objective": "LO5.3",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_inflation",
+      "primarySkill": "inflation_growth_accounting",
+      "secondarySkills": [],
+      "repairSkill": "quantity_equation",
+      "commonError": "subtracting_velocity_growth",
+      "feedback": "Inflation is approximately 9 + 2 − 4 = 7 percent.",
+      "aHash": "2777674cb624184beb03569b53a80e50e6943bf2f4879982c58ecc742892f187"
+    },
+    {
+      "id": 337,
+      "sourceGame": "mintAshGold",
+      "q": "If inflation is 8 percent, Y growth is 3 percent, and V growth is 1 percent, what is money growth?",
+      "options": [
+        "10 percent",
+        "12 percent",
+        "6 percent",
+        "4 percent"
+      ],
+      "tag": "quantity_equation",
+      "type": "calculation",
+      "objective": "LO5.3",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_inflation",
+      "primarySkill": "solve_money_growth",
+      "secondarySkills": [],
+      "repairSkill": "quantity_equation",
+      "commonError": "wrong_sign_for_velocity_growth",
+      "feedback": "M growth + V growth = inflation + Y growth, so M + 1 = 8 + 3. M = 10 percent.",
+      "aHash": "778c31b736ad166fe9c05f7c785e40775ccec9b10d03ffc32b1fe55d46559c1c"
+    },
+    {
+      "id": 338,
+      "sourceGame": "mintAshGold",
+      "q": "Nominal GDP is $5,000 and money supply is $1,250. If money supply rises to $1,500 and nominal GDP stays fixed, what happens to velocity?",
+      "options": [
+        "It falls from 4 to about 3.33",
+        "It rises from 4 to about 4.8",
+        "It falls from 5 to about 1.25",
+        "It stays fixed at 4"
+      ],
+      "tag": "quantity_equation",
+      "type": "calculation",
+      "objective": "LO5.3",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_inflation",
+      "primarySkill": "velocity_change_from_money_supply",
+      "secondarySkills": [],
+      "repairSkill": "quantity_equation",
+      "commonError": "multiplying_nominal_gdp_by_money",
+      "feedback": "Velocity is nominal GDP divided by money. It falls from 5,000/1,250 = 4 to 5,000/1,500 ≈ 3.33.",
+      "aHash": "fee652633add70b1bb053243b12509f9a043f8806242ada9e8b3fa5e735f9bda"
+    },
+    {
+      "id": 340,
+      "sourceGame": "mintAshGold",
+      "q": "If money growth is 4 percent and velocity growth is −2 percent, what output growth would keep inflation at zero?",
+      "options": [
+        "2 percent",
+        "6 percent",
+        "4 percent",
+        "−2 percent"
+      ],
+      "tag": "quantity_equation",
+      "type": "calculation",
+      "objective": "LO5.3",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_inflation",
+      "primarySkill": "zero_inflation_output_growth",
+      "secondarySkills": [],
+      "repairSkill": "quantity_equation",
+      "commonError": "wrong_growth_accounting_sign",
+      "feedback": "Inflation equals M growth plus V growth minus Y growth. Zero = 4 − 2 − Y, so Y = 2 percent.",
+      "aHash": "d691b702f9738b548a848bb5f5455d8b77550421c8fe4f8ef46f6a3ce34f0f16"
+    },
+    {
+      "id": 341,
+      "sourceGame": "mintAshGold",
+      "q": "If nominal GDP grows 6 percent and money grows 10 percent, which statement must be true?",
+      "options": [
+        "Velocity falls by about 4 percent",
+        "Velocity rises by about 4 percent",
+        "Velocity rises by about 16 percent",
+        "Velocity is unchanged"
+      ],
+      "tag": "quantity_equation",
+      "type": "calculation",
+      "objective": "LO5.3",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_inflation",
+      "primarySkill": "velocity_growth_from_nominal_gdp",
+      "secondarySkills": [],
+      "repairSkill": "quantity_equation",
+      "commonError": "adding_money_growth_to_nominal_gdp",
+      "feedback": "Nominal GDP growth equals money growth plus velocity growth, so velocity growth is 6 − 10 = −4 percent.",
+      "aHash": "cb488f84fc8db983de3f74b51313802c2f6a91f2e552287536d07f91890fc405"
+    },
+    {
+      "id": 342,
+      "sourceGame": "mintAshGold",
+      "q": "A loan has a nominal interest rate of 12 percent. Expected inflation is 7 percent and actual inflation is 10 percent. What are the ex ante and ex post real rates?",
+      "options": [
+        "5 percent and 2 percent",
+        "2 percent and 5 percent",
+        "19 percent and 22 percent",
+        "7 percent and 10 percent"
+      ],
+      "tag": "fisher_effect",
+      "type": "calculation",
+      "objective": "LO5.4",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_inflation",
+      "primarySkill": "ex_ante_ex_post_real_rates",
+      "secondarySkills": [],
+      "repairSkill": "classical_view",
+      "commonError": "using_actual_and_expected_inflation_interchangeably",
+      "feedback": "Ex ante uses expected inflation: 12 − 7 = 5. Ex post uses actual inflation: 12 − 10 = 2.",
+      "aHash": "2ff5489a24179ed74b88b89dd6aadc64c2273906d00b170902813824693b0f91"
+    },
+    {
+      "id": 345,
+      "sourceGame": "mintAshGold",
+      "q": "If a central bank permanently raises money growth, which long-run result best fits monetary neutrality?",
+      "options": [
+        "Inflation and nominal rates rise; real output does not",
+        "Real output rises permanently while nominal interest rates decline",
+        "Lower price level and higher real capital",
+        "No change in inflation or nominal rates"
+      ],
+      "tag": "classical_view",
+      "type": "application",
+      "objective": "LO5.4",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_inflation",
+      "primarySkill": "monetary_neutrality_fisher_link",
+      "secondarySkills": [],
+      "repairSkill": "classical_view",
+      "commonError": "confusing_short_run_and_long_run_money_effects",
+      "feedback": "In the long run, faster money growth raises inflation and nominal rates, not real output.",
+      "aHash": "edaacdf3a90f0952783645f51d369e9291655166393fb2937b515e137b587dd3"
+    },
+    {
+      "id": 350,
+      "sourceGame": "mintAshGold",
+      "q": "If y = √k, s = 0.30, δ = 0.10, and k = 4, what is Δk?",
+      "options": [
+        "0.2",
+        "−0.2",
+        "0.6",
+        "1.0"
+      ],
+      "tag": "steady_state",
+      "type": "calculation",
+      "objective": "LO8.1",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_growth",
+      "primarySkill": "calculate_delta_k_from_solow",
+      "secondarySkills": [],
+      "repairSkill": "steady_state",
+      "commonError": "using_k_as_output",
+      "feedback": "Output is √4 = 2. Investment is 0.30 × 2 = 0.6. Depreciation is 0.10 × 4 = 0.4. Δk = 0.2.",
+      "aHash": "44896b09365746b5f7167ee4d64988a38f7f4628803cbf86224e74eeb7c69e9d"
+    },
+    {
+      "id": 351,
+      "sourceGame": "mintAshGold",
+      "q": "If y = √k, s = 0.25, and δ = 0.05, what is steady-state k?",
+      "options": [
+        "25",
+        "5",
+        "10",
+        "100"
+      ],
+      "tag": "steady_state",
+      "type": "calculation",
+      "objective": "LO8.1",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_growth",
+      "primarySkill": "solve_steady_state_k_sqrt",
+      "secondarySkills": [],
+      "repairSkill": "steady_state",
+      "commonError": "not_solving_sf_equals_delta_k",
+      "feedback": "Set 0.25√k = 0.05k. Divide by 0.05: 5√k = k, so k = 25.",
+      "aHash": "b7a56873cd771f2c446d369b649430b65a756ba278ff97ec81bb6f55b2e73569"
+    },
+    {
+      "id": 352,
+      "sourceGame": "mintAshGold",
+      "q": "Refer to the Solow steady-state graph. At k below k*, what happens next and why?",
+      "options": [
+        "Capital rises because saving exceeds depreciation",
+        "Capital falls because depreciation exceeds saving",
+        "Capital stays fixed because output is zero",
+        "Capital rises because the AD curve shifts to the right"
+      ],
+      "tag": "steady_state",
+      "type": "graph_interpretation",
+      "objective": "LO8.1",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_growth",
+      "primarySkill": "steady_state_transition_left",
+      "secondarySkills": [],
+      "repairSkill": "steady_state",
+      "commonError": "reversing_capital_transition",
+      "feedback": "Below k*, saving and investment exceed depreciation, so capital per worker rises toward steady state.",
+      "image": "steadystate.webp",
+      "aHash": "2b8c8f4318adfccb9bc0079e2b99013da32752cd1cc09f7bbe355cc49c91c324"
+    },
+    {
+      "id": 353,
+      "sourceGame": "mintAshGold",
+      "q": "Refer to the Solow steady-state graph. At k above k*, what happens next and why?",
+      "options": [
+        "Capital falls because depreciation exceeds saving",
+        "Capital rises because saving exceeds depreciation",
+        "Capital stays fixed because saving is zero",
+        "Capital rises because prices are sticky"
+      ],
+      "tag": "steady_state",
+      "type": "graph_interpretation",
+      "objective": "LO8.1",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_growth",
+      "primarySkill": "steady_state_transition_right",
+      "secondarySkills": [],
+      "repairSkill": "steady_state",
+      "commonError": "reversing_capital_transition",
+      "feedback": "Above k*, depreciation exceeds saving and investment, so capital per worker falls toward steady state.",
+      "image": "steadystate.webp",
+      "aHash": "0f0c93d97e5d04928bd060a343e037342cd53c1a4dbb9e6d432e33e8f1505860"
+    },
+    {
+      "id": 354,
+      "sourceGame": "mintAshGold",
+      "q": "If y = k^(1/3), s = 0.40, δ = 0.10, and k = 8, what is Δk?",
+      "options": [
+        "0",
+        "0.8",
+        "−0.4",
+        "1.2"
+      ],
+      "tag": "steady_state",
+      "type": "calculation",
+      "objective": "LO8.1",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_growth",
+      "primarySkill": "calculate_delta_k_cube_root",
+      "secondarySkills": [],
+      "repairSkill": "steady_state",
+      "commonError": "misreading_production_function",
+      "feedback": "Output is cube root of 8, or 2. Investment is 0.40 × 2 = 0.8. Depreciation is 0.10 × 8 = 0.8. Δk = 0.",
+      "aHash": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "id": 356,
+      "sourceGame": "mintAshGold",
+      "q": "Refer to the Solow saving-rate graph. At the old steady state after saving rises, which relationship holds?",
+      "options": [
+        "New saving exceeds depreciation",
+        "Depreciation exceeds new saving",
+        "New saving equals zero",
+        "Depreciation shifts downward"
+      ],
+      "tag": "saving_rate",
+      "type": "graph_interpretation",
+      "objective": "LO8.2",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_growth",
+      "primarySkill": "saving_increase_old_steady_state",
+      "secondarySkills": [],
+      "repairSkill": "saving_rate",
+      "commonError": "thinking_economy_immediately_jumps_to_new_steady_state",
+      "feedback": "After saving rises, investment exceeds depreciation at the old steady state, so capital begins increasing.",
+      "image": "steadystatechanges.webp",
+      "aHash": "1cc6bfc003247e9c4a87c2518169ab6d615e9c51a1359c3701e9ba05e83b492a"
+    },
+    {
+      "id": 357,
+      "sourceGame": "mintAshGold",
+      "q": "If y = √k and δ = 0.10, compare steady-state k when s = 0.20 and s = 0.30. What happens?",
+      "options": [
+        "It rises from 4 to 9",
+        "It rises from 2 to 3",
+        "It falls from 9 to 4",
+        "It stays at 10"
+      ],
+      "tag": "saving_rate",
+      "type": "calculation",
+      "objective": "LO8.2",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_growth",
+      "primarySkill": "compare_steady_states_saving_rates",
+      "secondarySkills": [],
+      "repairSkill": "saving_rate",
+      "commonError": "not_solving_each_steady_state",
+      "feedback": "For y = √k, steady-state k = (s/δ)^2. With s = 0.20, k = 4. With s = 0.30, k = 9.",
+      "aHash": "526672cb114ece26117e983443a2439d2dbb91bf39d8080c501110ff14bb5ea7"
+    },
+    {
+      "id": 358,
+      "sourceGame": "mintAshGold",
+      "q": "If y = √k, k = 64, and s rises from 0.25 to 0.50, what happens to current consumption per worker?",
+      "options": [
+        "It falls from 6 to 4",
+        "It rises from 2 to 4",
+        "It rises from 6 to 8",
+        "It stays at 8"
+      ],
+      "tag": "saving_rate",
+      "type": "calculation",
+      "objective": "LO8.2",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_growth",
+      "primarySkill": "current_consumption_saving_change",
+      "secondarySkills": [],
+      "repairSkill": "saving_rate",
+      "commonError": "thinking_higher_saving_raises_current_consumption",
+      "feedback": "Output is √64 = 8. Consumption falls from 0.75 × 8 = 6 to 0.50 × 8 = 4.",
+      "aHash": "5e935eb2705329b84600613999cd5b13baca45648b5b146b55102bcf08266652"
+    },
+    {
+      "id": 360,
+      "sourceGame": "mintAshGold",
+      "q": "Refer to the Solow saving-rate graph. Why does output per worker rise after the new steady state is reached?",
+      "options": [
+        "More saving raises capital and hence output per worker",
+        "Higher saving raises prices, which raises real output",
+        "Depreciation vanishes, so output becomes infinite",
+        "The AD curve shifts to the right, so capital per worker rises"
+      ],
+      "tag": "saving_rate",
+      "type": "graph_interpretation",
+      "objective": "LO8.2",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_growth",
+      "primarySkill": "saving_capital_output_chain",
+      "secondarySkills": [],
+      "repairSkill": "saving_rate",
+      "commonError": "confusing_solow_with_ad_as",
+      "feedback": "A higher saving rate raises steady-state capital per worker, and higher capital per worker raises output per worker.",
+      "image": "steadystatechanges.webp",
+      "aHash": "6c7307b6b26b89949fce1e7d90e7aa979b03fdd60e655f891e38bf9ae28d65d7"
+    },
+    {
+      "id": 363,
+      "sourceGame": "mintAshGold",
+      "q": "Refer to the aggregate demand and short-run aggregate supply graph. Which result best shows the short-run nonneutrality of money?",
+      "options": [
+        "More money raises aggregate demand and output while prices are sticky",
+        "A monetary expansion shifts the LRAS curve to the right and raises natural output",
+        "A monetary expansion lowers prices and raises unemployment",
+        "A monetary expansion changes only depreciation"
+      ],
+      "tag": "short_long_run",
+      "type": "graph_interpretation",
+      "objective": "LO11.1",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_fluctuations",
+      "primarySkill": "short_run_money_nonneutrality",
+      "secondarySkills": [],
+      "repairSkill": "short_long_run",
+      "commonError": "using_long_run_neutrality_for_short_run",
+      "feedback": "With sticky prices, monetary expansion can shift the AD curve to the right and raise output in the short run.",
+      "image": "adsras.webp",
+      "aHash": "19d2c7af5a7876a811caa83df3b5d57645091fa9f9a7b28f9e3ea91953baeca0"
+    },
+    {
+      "id": 364,
+      "sourceGame": "mintAshGold",
+      "q": "If unemployment rises from 4 percent to 7 percent and normal growth is 3 percent, what growth does Okun’s law predict?",
+      "options": [
+        "−3 percent",
+        "0 percent",
+        "+3 percent",
+        "+9 percent"
+      ],
+      "tag": "business_cycles",
+      "type": "calculation",
+      "objective": "LO11.1",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_fluctuations",
+      "primarySkill": "okuns_law_prediction",
+      "secondarySkills": [],
+      "repairSkill": "business_cycles",
+      "commonError": "wrong_sign_okuns_law",
+      "feedback": "%ΔRGDP ≈ 3 − 2 × (7 − 4) = 3 − 6 = −3 percent.",
+      "aHash": "0ba7073e3d481a8a194cb625970495978bcc2d197536067a87eee4d0867774e8"
+    },
+    {
+      "id": 365,
+      "sourceGame": "mintAshGold",
+      "q": "If unemployment falls from 6 percent to 4.5 percent and normal growth is 3 percent, what growth does Okun’s law predict?",
+      "options": [
+        "6 percent",
+        "4.5 percent",
+        "1.5 percent",
+        "0 percent"
+      ],
+      "tag": "business_cycles",
+      "type": "calculation",
+      "objective": "LO11.1",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_fluctuations",
+      "primarySkill": "okuns_law_unemployment_fall",
+      "secondarySkills": [],
+      "repairSkill": "business_cycles",
+      "commonError": "reversing_unemployment_change",
+      "feedback": "Unemployment changes by −1.5 points. Growth ≈ 3 − 2 × (−1.5) = 6 percent.",
+      "aHash": "5bd030d5464d74b1316a839186c8e6e80283edd05cce812fb5ffe4ba9cd05f2a"
+    },
+    {
+      "id": 366,
+      "sourceGame": "mintAshGold",
+      "q": "Which statement best explains why AD shocks can change output in the short run but not permanently?",
+      "options": [
+        "Prices are sticky first but adjust over time",
+        "Capital is fixed first but becomes money later",
+        "Velocity is always zero in the long run",
+        "LRAS slopes downward only in the short run"
+      ],
+      "tag": "short_long_run",
+      "type": "application",
+      "objective": "LO11.1",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_fluctuations",
+      "primarySkill": "short_run_long_run_adjustment",
+      "secondarySkills": [],
+      "repairSkill": "short_long_run",
+      "commonError": "collapsing_short_and_long_run",
+      "feedback": "Sticky prices let demand shocks affect short-run output, but price adjustment pulls output back toward natural output.",
+      "aHash": "a09fd9255092e2e8e66f77d387f6fbab441153f29b322db98cc7ae1773f67905"
+    },
+    {
+      "id": 367,
+      "sourceGame": "mintAshGold",
+      "q": "Which sequence best describes a recession caused by an AD decline?",
+      "options": [
+        "Spending falls, output falls, unemployment rises",
+        "Costs fall, output rises, unemployment rises",
+        "AD rises, output falls, unemployment falls",
+        "LRAS rises, prices rise, unemployment rises"
+      ],
+      "tag": "business_cycles",
+      "type": "application",
+      "objective": "LO11.1",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_fluctuations",
+      "primarySkill": "ad_recession_sequence",
+      "secondarySkills": [],
+      "repairSkill": "business_cycles",
+      "commonError": "mixing_ad_decline_with_supply_expansion",
+      "feedback": "A fall in aggregate spending lowers output and raises unemployment in the short run.",
+      "aHash": "b7dbe284ad613c6f54009c743b0bfebbe838867a0b4cc9b520921c7e80690e8d"
+    },
+    {
+      "id": 368,
+      "sourceGame": "mintAshGold",
+      "q": "What is the strongest reason LRAS is vertical while SRAS may slope upward or be horizontal?",
+      "options": [
+        "Long-run output depends on real capacity, while short-run output reacts to sticky prices",
+        "Long-run output depends only on AD, while short-run output depends only on taxes",
+        "Long-run prices are fixed, while short-run prices adjust instantly",
+        "Long-run output is zero, while short-run output is always natural"
+      ],
+      "tag": "short_long_run",
+      "type": "application",
+      "objective": "LO11.1",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_fluctuations",
+      "primarySkill": "lras_sras_distinction",
+      "secondarySkills": [],
+      "repairSkill": "short_long_run",
+      "commonError": "confusing_price_flexibility_across_runs",
+      "feedback": "LRAS reflects real productive capacity. SRAS reflects short-run price stickiness and production responses.",
+      "aHash": "5e8e23d6f4d2cc2e5bc4f8f8a37de0c114bcca64d468da09f72c2057cb02eb6d"
+    },
+    {
+      "id": 373,
+      "sourceGame": "mintAshGold",
+      "q": "Refer to the aggregate demand and aggregate supply graph. Which interpretation best fits a movement from long-run equilibrium to output above natural output?",
+      "options": [
+        "A positive demand shock creates an inflationary gap",
+        "A negative demand shock creates a recessionary gap",
+        "A negative supply shock lowers prices",
+        "A saving increase shifts the AD curve to the right"
+      ],
+      "tag": "demand_shocks",
+      "type": "graph_interpretation",
+      "objective": "LO11.2",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_fluctuations",
+      "primarySkill": "positive_demand_inflationary_gap",
+      "secondarySkills": [],
+      "repairSkill": "demand_shocks",
+      "commonError": "confusing_gap_types",
+      "feedback": "A positive demand shock pushes output above natural output, creating an inflationary gap.",
+      "image": "demandshock.webp",
+      "aHash": "85e686b28a743426c5c0da3830bb4b9602e15e610ba02f5fb1cf22f4ce8e6aed"
+    },
+    {
+      "id": 374,
+      "sourceGame": "mintAshGold",
+      "q": "Refer to the aggregate demand and aggregate supply graph. Which interpretation best fits output falling below natural output after the AD curve shifts to the left?",
+      "options": [
+        "A negative demand shock creates a recessionary gap",
+        "A positive demand shock creates an inflationary gap",
+        "A positive supply shock creates stagflation",
+        "A higher saving rate raises current output"
+      ],
+      "tag": "demand_shocks",
+      "type": "graph_interpretation",
+      "objective": "LO11.2",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_fluctuations",
+      "primarySkill": "negative_demand_recessionary_gap",
+      "secondarySkills": [],
+      "repairSkill": "demand_shocks",
+      "commonError": "confusing_recessionary_and_inflationary_gaps",
+      "feedback": "A negative demand shock shifts the AD curve to the left and pushes output below natural output.",
+      "image": "demandshock.webp",
+      "aHash": "26c9b2b595a0fd82620915f30e29ac67dd8da98b8cf956ba7f0823c69ecd7a60"
+    },
+    {
+      "id": 376,
+      "sourceGame": "mintAshGold",
+      "q": "Which answer best separates a movement along AD from a shift of AD?",
+      "options": [
+        "A price-level change moves along AD; a spending shock shifts AD",
+        "A spending shock moves along AD; a price-level change shifts AD",
+        "A supply shock moves along AD; a money shock shifts LRAS",
+        "A price-level change shifts SRAS; a tax change shifts depreciation"
+      ],
+      "tag": "aggregate_demand",
+      "type": "trap",
+      "objective": "LO11.2",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_fluctuations",
+      "primarySkill": "movement_vs_shift_ad",
+      "secondarySkills": [],
+      "repairSkill": "aggregate_demand",
+      "commonError": "confusing_ad_movement_and_shift",
+      "feedback": "Changes in the price level move the economy along AD. Changes in spending, money, or policy can shift AD.",
+      "aHash": "8c9199efe13583a29dabd3d18979043ad06843cf5a52dc4d63703c8deb4db37c"
+    },
+    {
+      "id": 381,
+      "sourceGame": "mintAshGold",
+      "q": "After a negative demand shock, which no-policy adjustment eventually helps restore output?",
+      "options": [
+        "Wages and prices fall, shifting the SRAS curve to the right",
+        "Wages and prices rise, shifting the SRAS curve to the left",
+        "AD rises because depreciation increases",
+        "LRAS falls to match weak demand"
+      ],
+      "tag": "long_run_adjustment",
+      "type": "application",
+      "objective": "LO11.3",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_fluctuations",
+      "primarySkill": "negative_demand_long_run_self_correction",
+      "secondarySkills": [],
+      "repairSkill": "long_run_adjustment",
+      "commonError": "wrong_direction_self_correction",
+      "feedback": "Weak demand raises unemployment pressure, causing wages and prices to fall and SRAS to shift right over time.",
+      "aHash": "047ca4db017be5cee4a9d6ebac3a812519a2a33f0f0633ac6299a19253de4cf9"
+    },
+    {
+      "id": 382,
+      "sourceGame": "mintAshGold",
+      "q": "After a positive demand shock, which no-policy adjustment eventually helps restore output?",
+      "options": [
+        "Wages and prices rise, shifting the SRAS curve to the left",
+        "Wages and prices fall, shifting the SRAS curve to the right",
+        "AD shifts farther right because prices rise",
+        "The LRAS curve shifts to the left because unemployment is low"
+      ],
+      "tag": "long_run_adjustment",
+      "type": "application",
+      "objective": "LO11.3",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_fluctuations",
+      "primarySkill": "positive_demand_long_run_self_correction",
+      "secondarySkills": [],
+      "repairSkill": "long_run_adjustment",
+      "commonError": "wrong_direction_self_correction",
+      "feedback": "When output exceeds natural output, rising wages and prices raise costs and shift the SRAS curve to the left.",
+      "aHash": "c08a642ba73feca596ad298351f64a395145d09afc181430d196477e55a2da0f"
+    },
+    {
+      "id": 40361,
+      "sourceGame": "mintAshGold",
+      "q": "A country raises its saving rate while technology and depreciation stay unchanged. Why should policymakers distinguish the transition from the eventual steady state?",
+      "options": [
+        "Investment initially exceeds depreciation; they match at the new steady state",
+        "A higher saving rate permanently removes depreciation",
+        "Output per worker must fall throughout the transition",
+        "Capital grows forever at the same rate merely because saving increased once"
+      ],
+      "tag": "golden_rule",
+      "type": "application",
+      "objective": "LO8.2",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_growth",
+      "primarySkill": "golden_rule_policy_below",
+      "secondarySkills": [],
+      "repairSkill": "saving_rate",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "Higher saving initially creates net investment. As capital accumulates, diminishing returns and depreciation bring the economy to a new steady state.",
+      "aHash": "52762b1a36a7bab4b41c807e21030cb135975059ba6c8425cb76a36b344ac77f"
+    },
+    {
+      "id": 40362,
+      "sourceGame": "mintAshGold",
+      "q": "A country raises its saving rate while its current output is unchanged. Why can households face a short-run cost even if output per worker rises later?",
+      "options": [
+        "More current output is invested, leaving less to consume",
+        "The higher saving rate immediately destroys existing capital",
+        "Investment and consumption are the same use of current output",
+        "The depreciation rate must rise one-for-one with saving"
+      ],
+      "tag": "golden_rule",
+      "type": "application",
+      "objective": "LO8.2",
+      "difficulty": "hard",
+      "conceptCluster": "mint_elite_growth",
+      "primarySkill": "golden_rule_not_max_saving",
+      "secondarySkills": [],
+      "repairSkill": "saving_rate",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "At the moment saving rises, output has not yet increased. More investment therefore requires less current consumption; additional capital can raise output later.",
+      "aHash": "66637a39fe1d980f4d690f25d39539d4ae6dd71756e06c3a301617fb3b40206a"
+    }
+  ],
+  "elite": [
     {
       "id": 315,
       "sourceGame": "mintAshGold",
       "q": "The Fed buys bonds, but the money supply barely changes. Which explanation best fits the banking channel?",
       "options": [
-        "Banks hold the new reserves instead of expanding loans",
+        "Banks keep the reserves rather than expand loans",
         "The Fed purchase directly destroys deposits",
         "The reserve requirement must be above 100 percent",
         "Currency stops counting in the money supply"
@@ -10513,7 +12123,7 @@ const questionBanks = {
       "repairSkill": "fed_tools",
       "commonError": "assuming_reserve_injection_guarantees_lending",
       "feedback": "Fed purchases increase reserves, but money expansion is limited if banks hold excess reserves.",
-      "aHash": "4db6e7aacb4392df08d719048b7ec07fd385ae272b0d02241ea800bcf75265bd"
+      "aHash": "c95c0755b5d2c3cceba8ad557d8a674b9a05489e7a8d5ea5ad4f5b39195a5240"
     },
     {
       "id": 316,
@@ -10538,188 +12148,12 @@ const questionBanks = {
       "aHash": "8651e08025f0e8461372ae7f1638a98916aeb51105f1d11d5b188eaaf76ef2a7"
     },
     {
-      "id": 317,
-      "sourceGame": "mintAshGold",
-      "q": "A central bank wants to expand the monetary base directly. Which action best fits?",
-      "options": [
-        "Buy government bonds from banks",
-        "Raise reserve requirements",
-        "Raise income taxes",
-        "Require firms to lower prices"
-      ],
-      "tag": "fed_policy",
-      "type": "application",
-      "objective": "LO4.3",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_money_banking",
-      "primarySkill": "monetary_base_expansion",
-      "secondarySkills": [],
-      "repairSkill": "fed_tools",
-      "commonError": "confusing_base_with_multiplier",
-      "feedback": "Buying bonds adds reserves to banks and expands the monetary base.",
-      "aHash": "8ac65efc318a9198e0d5af1ef3229a622fbfc78e0d1283b931ae7c56768f2da9"
-    },
-    {
-      "id": 318,
-      "sourceGame": "mintAshGold",
-      "q": "Suppose banks are fully loaned up. The Fed raises reserve requirements. What pressure follows first?",
-      "options": [
-        "Banks must reduce loans or obtain reserves",
-        "Banks gain more excess reserves",
-        "Deposits automatically double",
-        "The monetary base becomes zero"
-      ],
-      "tag": "fed_policy",
-      "type": "application",
-      "objective": "LO4.3",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_money_banking",
-      "primarySkill": "reserve_requirement_policy_effect",
-      "secondarySkills": [],
-      "repairSkill": "fed_tools",
-      "commonError": "thinking_higher_requirements_expand_lending",
-      "feedback": "A higher reserve requirement raises required reserves and can force banks to reduce lending or get more reserves.",
-      "aHash": "72589517254f035e4b722bbcefbbca28f0c21b7e44649579047444d1fcbd3a6b"
-    },
-    {
-      "id": 319,
-      "sourceGame": "mintAshGold",
-      "q": "Which chain best describes an expansionary open-market purchase?",
-      "options": [
-        "Fed buys bonds, reserves rise, lending capacity rises, money supply may rise",
-        "Fed sells bonds, reserves rise, lending capacity rises, money supply may rise",
-        "Fed buys bonds, reserves fall, lending capacity falls, money supply falls",
-        "Fed sells bonds, reserves fall, lending capacity rises, money supply rises"
-      ],
-      "tag": "fed_policy",
-      "type": "application",
-      "objective": "LO4.3",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_money_banking",
-      "primarySkill": "expansionary_omo_chain",
-      "secondarySkills": [],
-      "repairSkill": "fed_tools",
-      "commonError": "reversing_bond_purchase_and_sale",
-      "feedback": "An open-market purchase adds reserves to banks and can increase lending and the money supply.",
-      "aHash": "5cfcc41ffa283c4b767d0981b9dbf972882141c80d9ee6452ddad16e3722033a"
-    },
-    {
-      "id": 320,
-      "sourceGame": "mintAshGold",
-      "q": "Which statement best explains why the Fed controls the money supply imperfectly?",
-      "options": [
-        "Banks and households affect reserves, deposits, and currency choices",
-        "The Fed cannot conduct open-market operations",
-        "Commercial banks directly set the monetary base",
-        "Households determine required reserve law"
-      ],
-      "tag": "fed_policy",
-      "type": "application",
-      "objective": "LO4.3",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_money_banking",
-      "primarySkill": "limits_monetary_control",
-      "secondarySkills": [],
-      "repairSkill": "fed_tools",
-      "commonError": "thinking_fed_has_complete_mechanical_control",
-      "feedback": "The Fed controls the monetary base, but banks and households influence lending, reserves, deposits, and currency holdings.",
-      "aHash": "507f7ebd064fcf495b348e38787899c2bec2fd0b3c5cfd7e2b69d2590eb61fbf"
-    },
-    {
-      "id": 321,
-      "sourceGame": "mintAshGold",
-      "q": "Money growth is 14 percent, velocity falls 5 percent, and real output grows 4 percent. What inflation rate follows from the quantity equation?",
-      "options": [
-        "5 percent",
-        "9 percent",
-        "13 percent",
-        "23 percent"
-      ],
-      "tag": "quantity_theory",
-      "type": "calculation",
-      "objective": "LO5.1",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_inflation",
-      "primarySkill": "inflation_growth_accounting",
-      "secondarySkills": [],
-      "repairSkill": "inflation_causes",
-      "commonError": "wrong_sign_for_velocity_change",
-      "feedback": "Inflation is approximately 14 − 5 − 4 = 5 percent.",
-      "aHash": "18b3d14ade1b23572c8d9d22267238312dc9fb1f820e001ec4741a6716e8ae82"
-    },
-    {
-      "id": 322,
-      "sourceGame": "mintAshGold",
-      "q": "An economy has high money growth but no inflation surge because people sharply increase money holdings. Which variable most likely changed?",
-      "options": [
-        "Velocity decreased",
-        "Velocity increased",
-        "Real output fell to zero",
-        "The price level doubled"
-      ],
-      "tag": "money_demand",
-      "type": "application",
-      "objective": "LO5.1",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_inflation",
-      "primarySkill": "money_demand_velocity_offset",
-      "secondarySkills": [],
-      "repairSkill": "inflation_causes",
-      "commonError": "assuming_money_growth_always_becomes_inflation",
-      "feedback": "When people hold more money, velocity falls, which can offset inflation pressure from money growth.",
-      "aHash": "ebef3fa1aa8754c5284c78149794abedd8b03f741044fb6e283873cad9b10854"
-    },
-    {
-      "id": 323,
-      "sourceGame": "mintAshGold",
-      "q": "If k in the money demand equation rises from 0.25 to 0.50, what happens to velocity?",
-      "options": [
-        "It falls from 4 to 2",
-        "It rises from 2 to 4",
-        "It stays fixed at 0.25",
-        "It becomes the price level"
-      ],
-      "tag": "money_demand",
-      "type": "calculation",
-      "objective": "LO5.1",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_inflation",
-      "primarySkill": "velocity_inverse_of_k",
-      "secondarySkills": [],
-      "repairSkill": "inflation_causes",
-      "commonError": "treating_k_and_velocity_as_same_direction",
-      "feedback": "Velocity is 1/k, so it falls from 1/0.25 = 4 to 1/0.50 = 2.",
-      "aHash": "69d7c151788db7a93c1d7fff087703be28719a64fbd079db4d790ae3a83a1596"
-    },
-    {
-      "id": 324,
-      "sourceGame": "mintAshGold",
-      "q": "Which scenario is most likely to create sustained inflation under the quantity theory?",
-      "options": [
-        "Money growth repeatedly exceeds real output growth",
-        "Real output growth repeatedly exceeds money growth",
-        "Velocity falls while money growth slows",
-        "Money demand rises faster than income"
-      ],
-      "tag": "quantity_theory",
-      "type": "application",
-      "objective": "LO5.1",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_inflation",
-      "primarySkill": "sustained_inflation_condition",
-      "secondarySkills": [],
-      "repairSkill": "inflation_causes",
-      "commonError": "ignoring_persistent_money_growth",
-      "feedback": "Sustained inflation is most likely when money growth persistently exceeds real output growth.",
-      "aHash": "ef6b7baa5ffddfd07478aaeeb35e9e9a90a197a9d4b1f5cdb1ae045d26112c25"
-    },
-    {
       "id": 325,
       "sourceGame": "mintAshGold",
       "q": "A government finances deficits by printing money because borrowing is limited. Which chain is most accurate?",
       "options": [
-        "Seigniorage rises, money grows, inflation tax pressure rises",
-        "Saving rises, capital deepens, inflation disappears",
+        "Money creation earns revenue and increases inflation tax pressure",
+        "Deficit financing raises saving, builds capital and eliminates inflation",
         "Velocity becomes zero, prices cannot rise",
         "Banks create reserves, fiscal deficits vanish"
       ],
@@ -10733,744 +12167,14 @@ const questionBanks = {
       "repairSkill": "inflation_causes",
       "commonError": "missing_money_finance_inflation_link",
       "feedback": "Printing money raises seigniorage but can create inflation and impose an inflation tax on money holders.",
-      "aHash": "38ae8687762670cc5831a7a8ecd56f26e4b8b5583d4323e4aaaf802beefcc285"
-    },
-    {
-      "id": 326,
-      "sourceGame": "mintAshGold",
-      "q": "If money growth is 6 percent, real output growth is 3 percent, and inflation is 1 percent, what must velocity growth be?",
-      "options": [
-        "−2 percent",
-        "+2 percent",
-        "+4 percent",
-        "−8 percent"
-      ],
-      "tag": "quantity_theory",
-      "type": "calculation",
-      "objective": "LO5.1",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_inflation",
-      "primarySkill": "solve_velocity_growth_from_inflation",
-      "secondarySkills": [],
-      "repairSkill": "inflation_causes",
-      "commonError": "wrong_growth_accounting_sign",
-      "feedback": "Money growth plus velocity growth equals inflation plus output growth. 6 + V = 1 + 3, so V = −2 percent.",
-      "aHash": "2e84fee27ce47574e0754c9920c17bbe2731b51b9b99358beadc4fdace50cf54"
-    },
-    {
-      "id": 327,
-      "sourceGame": "mintAshGold",
-      "q": "Which statement best explains why real output growth reduces inflation pressure for a given money growth rate?",
-      "options": [
-        "More goods absorb spending without requiring the same price increase",
-        "More goods force velocity to become negative",
-        "More goods eliminate nominal GDP",
-        "More goods make money demand equal zero"
-      ],
-      "tag": "quantity_theory",
-      "type": "application",
-      "objective": "LO5.1",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_inflation",
-      "primarySkill": "real_output_absorbs_money_growth",
-      "secondarySkills": [],
-      "repairSkill": "inflation_causes",
-      "commonError": "ignoring_output_side_of_quantity_equation",
-      "feedback": "If real output grows, the same money growth can support more transactions with less price pressure.",
-      "aHash": "fe9d44a9bb345a171110b29674f68fdc9aa295bdf2e177141f455ef5c9f74bb9"
-    },
-    {
-      "id": 328,
-      "sourceGame": "mintAshGold",
-      "q": "A worker receives a 6 percent raise while inflation is 10 percent. Which statement is most accurate?",
-      "options": [
-        "Real pay falls about 4 percent",
-        "Real pay rises about 16 percent",
-        "Real pay rises about 6 percent",
-        "Real pay is unchanged"
-      ],
-      "tag": "inflation_effects",
-      "type": "calculation",
-      "objective": "LO5.2",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_inflation",
-      "primarySkill": "real_wage_change",
-      "secondarySkills": [],
-      "repairSkill": "inflation_effects",
-      "commonError": "adding_inflation_to_raise",
-      "feedback": "Real wage growth is approximately nominal wage growth minus inflation: 6 − 10 = −4 percent.",
-      "aHash": "e7f39b9929fdfa9967b4632c7fe3e83012393b4735ab14b29a85f123bcb8d98e"
-    },
-    {
-      "id": 329,
-      "sourceGame": "mintAshGold",
-      "q": "A borrower expected 5 percent inflation, but actual inflation is 12 percent. Which result follows for a fixed nominal loan?",
-      "options": [
-        "The borrower repays with dollars worth less than expected",
-        "The lender receives dollars worth more than expected",
-        "The real burden of debt rises for the borrower",
-        "The nominal contract automatically changes"
-      ],
-      "tag": "inflation_effects",
-      "type": "application",
-      "objective": "LO5.2",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_inflation",
-      "primarySkill": "unexpected_inflation_borrower_gain",
-      "secondarySkills": [],
-      "repairSkill": "inflation_effects",
-      "commonError": "reversing_unexpected_inflation_effect",
-      "feedback": "Unexpectedly high inflation reduces the real value of fixed nominal repayments, helping borrowers.",
-      "aHash": "ecc0ce73235de1de39028717d4d2c19f7157dc98c5229aa4dc6df7eefdec1889"
-    },
-    {
-      "id": 330,
-      "sourceGame": "mintAshGold",
-      "q": "A lender expected 4 percent inflation, but actual inflation is −1 percent. Which result follows?",
-      "options": [
-        "The lender gains because repayment has higher real value",
-        "The borrower gains because inflation is above expected",
-        "The loan becomes a real asset with no redistribution",
-        "The nominal interest rate becomes irrelevant"
-      ],
-      "tag": "inflation_effects",
-      "type": "application",
-      "objective": "LO5.2",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_inflation",
-      "primarySkill": "unexpected_deflation_lender_gain",
-      "secondarySkills": [],
-      "repairSkill": "inflation_effects",
-      "commonError": "thinking_only_positive_inflation_matters",
-      "feedback": "Actual inflation below expected inflation raises the real value of repayment, helping lenders.",
-      "aHash": "9105d7abfe3f66207e712eb32e4648e3435eb4de693ffb7ec85ed03daa9fa5b4"
-    },
-    {
-      "id": 331,
-      "sourceGame": "mintAshGold",
-      "q": "During high inflation, one firm updates prices weekly while another updates once a year. What problem is most likely?",
-      "options": [
-        "Relative prices become distorted",
-        "The money multiplier becomes infinite",
-        "Real output must equal zero",
-        "Required reserves become negative"
-      ],
-      "tag": "inflation_costs",
-      "type": "application",
-      "objective": "LO5.2",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_inflation",
-      "primarySkill": "relative_price_distortion",
-      "secondarySkills": [],
-      "repairSkill": "inflation_effects",
-      "commonError": "assuming_all_prices_adjust_together",
-      "feedback": "Uneven price adjustment distorts relative prices and can misdirect resources.",
-      "aHash": "75c2deb0ca8653a71b1c21a2fd006977687a6217b85f783a5721e408266dfb73"
-    },
-    {
-      "id": 332,
-      "sourceGame": "mintAshGold",
-      "q": "Which pair correctly matches inflation cost to example?",
-      "options": [
-        "Menu cost: updating price lists; shoeleather cost: avoiding cash holdings",
-        "Menu cost: avoiding cash holdings; shoeleather cost: updating prices",
-        "Menu cost: bank leverage; shoeleather cost: capital depreciation",
-        "Menu cost: output growth; shoeleather cost: saving growth"
-      ],
-      "tag": "inflation_costs",
-      "type": "identification",
-      "objective": "LO5.2",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_inflation",
-      "primarySkill": "distinguish_menu_shoeleather_costs",
-      "secondarySkills": [],
-      "repairSkill": "inflation_effects",
-      "commonError": "reversing_menu_and_shoeleather",
-      "feedback": "Menu costs involve changing prices. Shoeleather costs involve efforts to reduce money holdings.",
-      "aHash": "27d530d66ed9962d3577b135df171fb759f4d1cd80e57ab613fb695409122d33"
-    },
-    {
-      "id": 333,
-      "sourceGame": "mintAshGold",
-      "q": "A long-term contract uses fixed dollar payments with no inflation adjustment. What is the main inflation risk?",
-      "options": [
-        "Unexpected inflation changes the real value of payments",
-        "Expected inflation removes all contract risk",
-        "Fixed payments become real output automatically",
-        "Nominal terms prevent redistribution"
-      ],
-      "tag": "inflation_effects",
-      "type": "application",
-      "objective": "LO5.2",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_inflation",
-      "primarySkill": "fixed_nominal_contract_risk",
-      "secondarySkills": [],
-      "repairSkill": "inflation_effects",
-      "commonError": "ignoring_real_value_of_nominal_payments",
-      "feedback": "Unexpected inflation changes the purchasing power of fixed nominal payments.",
-      "aHash": "75bea1f55b070d6641fbc8b51186296d0a6d554070b0d868d664b44a9f682ca1"
-    },
-    {
-      "id": 334,
-      "sourceGame": "mintAshGold",
-      "q": "Which example best shows inflation reducing money's usefulness as a measuring stick?",
-      "options": [
-        "A firm struggles to compare project costs written in dollars from different years",
-        "A bank calculates excess reserves from deposits",
-        "A household chooses between cash and checking",
-        "A worker moves from one job to another"
-      ],
-      "tag": "inflation_costs",
-      "type": "application",
-      "objective": "LO5.2",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_inflation",
-      "primarySkill": "inflation_confusion_inconvenience",
-      "secondarySkills": [],
-      "repairSkill": "inflation_effects",
-      "commonError": "missing_measurement_cost_of_inflation",
-      "feedback": "Inflation makes dollars from different years harder to compare because purchasing power changes.",
-      "aHash": "477f07a6c0020c0253fd210223393eaa5ad11e15a42db92f805789f004333b3e"
-    },
-    {
-      "id": 335,
-      "sourceGame": "mintAshGold",
-      "q": "If M = 1,500, V = 3, and Y = 900, what is P?",
-      "options": [
-        "5",
-        "2",
-        "4.5",
-        "405"
-      ],
-      "tag": "quantity_equation",
-      "type": "calculation",
-      "objective": "LO5.3",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_inflation",
-      "primarySkill": "solve_price_level",
-      "secondarySkills": [],
-      "repairSkill": "quantity_equation",
-      "commonError": "misarranging_mv_py",
-      "feedback": "M × V = P × Y, so 1,500 × 3 = P × 900. P = 5.",
-      "aHash": "ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d"
-    },
-    {
-      "id": 336,
-      "sourceGame": "mintAshGold",
-      "q": "If M grows 9 percent, V grows 2 percent, and Y grows 4 percent, what is approximate inflation?",
-      "options": [
-        "7 percent",
-        "5 percent",
-        "11 percent",
-        "15 percent"
-      ],
-      "tag": "quantity_equation",
-      "type": "calculation",
-      "objective": "LO5.3",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_inflation",
-      "primarySkill": "inflation_growth_accounting",
-      "secondarySkills": [],
-      "repairSkill": "quantity_equation",
-      "commonError": "subtracting_velocity_growth",
-      "feedback": "Inflation is approximately 9 + 2 − 4 = 7 percent.",
-      "aHash": "2777674cb624184beb03569b53a80e50e6943bf2f4879982c58ecc742892f187"
-    },
-    {
-      "id": 337,
-      "sourceGame": "mintAshGold",
-      "q": "If inflation is 8 percent, Y growth is 3 percent, and V growth is 1 percent, what is money growth?",
-      "options": [
-        "10 percent",
-        "12 percent",
-        "6 percent",
-        "4 percent"
-      ],
-      "tag": "quantity_equation",
-      "type": "calculation",
-      "objective": "LO5.3",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_inflation",
-      "primarySkill": "solve_money_growth",
-      "secondarySkills": [],
-      "repairSkill": "quantity_equation",
-      "commonError": "wrong_sign_for_velocity_growth",
-      "feedback": "M growth + V growth = inflation + Y growth, so M + 1 = 8 + 3. M = 10 percent.",
-      "aHash": "778c31b736ad166fe9c05f7c785e40775ccec9b10d03ffc32b1fe55d46559c1c"
-    },
-    {
-      "id": 338,
-      "sourceGame": "mintAshGold",
-      "q": "Nominal GDP is $5,000 and money supply is $1,250. If money supply rises to $1,500 and nominal GDP stays fixed, what happens to velocity?",
-      "options": [
-        "It falls from 4 to about 3.33",
-        "It rises from 4 to about 4.8",
-        "It falls from 5 to about 1.25",
-        "It stays fixed at 4"
-      ],
-      "tag": "quantity_equation",
-      "type": "calculation",
-      "objective": "LO5.3",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_inflation",
-      "primarySkill": "velocity_change_from_money_supply",
-      "secondarySkills": [],
-      "repairSkill": "quantity_equation",
-      "commonError": "multiplying_nominal_gdp_by_money",
-      "feedback": "Velocity is nominal GDP divided by money. It falls from 5,000/1,250 = 4 to 5,000/1,500 ≈ 3.33.",
-      "aHash": "fee652633add70b1bb053243b12509f9a043f8806242ada9e8b3fa5e735f9bda"
-    },
-    {
-      "id": 339,
-      "sourceGame": "mintAshGold",
-      "q": "If M/P = 600 and M = 2,400, what is the price level?",
-      "options": [
-        "4",
-        "0.25",
-        "1,800",
-        "3,000"
-      ],
-      "tag": "real_money_balances",
-      "type": "calculation",
-      "objective": "LO5.3",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_inflation",
-      "primarySkill": "solve_price_from_real_money_balances",
-      "secondarySkills": [],
-      "repairSkill": "quantity_equation",
-      "commonError": "dividing_real_balances_by_money",
-      "feedback": "Real money balances equal M/P. If 600 = 2,400/P, then P = 4.",
-      "aHash": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
-    },
-    {
-      "id": 340,
-      "sourceGame": "mintAshGold",
-      "q": "If money growth is 4 percent and velocity growth is −2 percent, what output growth would keep inflation at zero?",
-      "options": [
-        "2 percent",
-        "6 percent",
-        "4 percent",
-        "−2 percent"
-      ],
-      "tag": "quantity_equation",
-      "type": "calculation",
-      "objective": "LO5.3",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_inflation",
-      "primarySkill": "zero_inflation_output_growth",
-      "secondarySkills": [],
-      "repairSkill": "quantity_equation",
-      "commonError": "wrong_growth_accounting_sign",
-      "feedback": "Inflation equals M growth plus V growth minus Y growth. Zero = 4 − 2 − Y, so Y = 2 percent.",
-      "aHash": "d691b702f9738b548a848bb5f5455d8b77550421c8fe4f8ef46f6a3ce34f0f16"
-    },
-    {
-      "id": 341,
-      "sourceGame": "mintAshGold",
-      "q": "If nominal GDP grows 6 percent and money grows 10 percent, which statement must be true?",
-      "options": [
-        "Velocity falls by about 4 percent",
-        "Velocity rises by about 4 percent",
-        "Velocity rises by about 16 percent",
-        "Velocity is unchanged"
-      ],
-      "tag": "quantity_equation",
-      "type": "calculation",
-      "objective": "LO5.3",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_inflation",
-      "primarySkill": "velocity_growth_from_nominal_gdp",
-      "secondarySkills": [],
-      "repairSkill": "quantity_equation",
-      "commonError": "adding_money_growth_to_nominal_gdp",
-      "feedback": "Nominal GDP growth equals money growth plus velocity growth, so velocity growth is 6 − 10 = −4 percent.",
-      "aHash": "cb488f84fc8db983de3f74b51313802c2f6a91f2e552287536d07f91890fc405"
-    },
-    {
-      "id": 342,
-      "sourceGame": "mintAshGold",
-      "q": "A loan has a nominal interest rate of 12 percent. Expected inflation is 7 percent and actual inflation is 10 percent. What are the ex ante and ex post real rates?",
-      "options": [
-        "5 percent and 2 percent",
-        "2 percent and 5 percent",
-        "19 percent and 22 percent",
-        "7 percent and 10 percent"
-      ],
-      "tag": "fisher_effect",
-      "type": "calculation",
-      "objective": "LO5.4",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_inflation",
-      "primarySkill": "ex_ante_ex_post_real_rates",
-      "secondarySkills": [],
-      "repairSkill": "classical_view",
-      "commonError": "using_actual_and_expected_inflation_interchangeably",
-      "feedback": "Ex ante uses expected inflation: 12 − 7 = 5. Ex post uses actual inflation: 12 − 10 = 2.",
-      "aHash": "2ff5489a24179ed74b88b89dd6aadc64c2273906d00b170902813824693b0f91"
-    },
-    {
-      "id": 343,
-      "sourceGame": "mintAshGold",
-      "q": "Expected inflation rises from 2 percent to 9 percent while the real rate remains 3 percent. What does the Fisher effect predict?",
-      "options": [
-        "Nominal interest rises from 5 percent to 12 percent",
-        "Nominal interest falls from 5 percent to 3 percent",
-        "Real interest rises from 2 percent to 9 percent",
-        "Nominal interest stays at 3 percent"
-      ],
-      "tag": "fisher_effect",
-      "type": "calculation",
-      "objective": "LO5.4",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_inflation",
-      "primarySkill": "fisher_effect_nominal_rate_change",
-      "secondarySkills": [],
-      "repairSkill": "classical_view",
-      "commonError": "missing_real_rate_in_nominal_rate",
-      "feedback": "Nominal interest equals real interest plus expected inflation, so it rises from 5 to 12 percent.",
-      "aHash": "056a864092a563ba51f1ffe4bb623ec1615140acb106d56458f6473cafbd3487"
-    },
-    {
-      "id": 344,
-      "sourceGame": "mintAshGold",
-      "q": "Which statement best applies the classical dichotomy to a doubled money supply in the long run?",
-      "options": [
-        "Nominal variables adjust, while real variables are not changed by money alone",
-        "Real variables double, while nominal variables stay fixed",
-        "Employment and capital double because prices are sticky forever",
-        "The money multiplier becomes the production function"
-      ],
-      "tag": "classical_view",
-      "type": "application",
-      "objective": "LO5.4",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_inflation",
-      "primarySkill": "classical_dichotomy_money_doubling",
-      "secondarySkills": [],
-      "repairSkill": "classical_view",
-      "commonError": "thinking_money_doubles_real_output",
-      "feedback": "The classical dichotomy separates nominal changes from real variables in the long run.",
-      "aHash": "c804570368283ac328561e56bfe9d5b1abd3b37eec904a9d9d8b5107ce591609"
-    },
-    {
-      "id": 345,
-      "sourceGame": "mintAshGold",
-      "q": "If a central bank permanently raises money growth, which long-run result best fits monetary neutrality?",
-      "options": [
-        "Higher inflation and nominal rates, not higher real output",
-        "Higher real output and lower nominal rates",
-        "Lower price level and higher real capital",
-        "No change in inflation or nominal rates"
-      ],
-      "tag": "classical_view",
-      "type": "application",
-      "objective": "LO5.4",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_inflation",
-      "primarySkill": "monetary_neutrality_fisher_link",
-      "secondarySkills": [],
-      "repairSkill": "classical_view",
-      "commonError": "confusing_short_run_and_long_run_money_effects",
-      "feedback": "In the long run, faster money growth raises inflation and nominal rates, not real output.",
-      "aHash": "ec151b9ce69bbc76f94414ce4d3d766b2220a7ce67dc9f552e78d2f6e01770e2"
-    },
-    {
-      "id": 346,
-      "sourceGame": "mintAshGold",
-      "q": "A worker’s nominal wage doubles while all prices also double. What happens to the worker’s real wage?",
-      "options": [
-        "It stays roughly unchanged",
-        "It doubles",
-        "It falls by half",
-        "It becomes the inflation rate"
-      ],
-      "tag": "classical_view",
-      "type": "application",
-      "objective": "LO5.4",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_inflation",
-      "primarySkill": "real_wage_nominal_price_change",
-      "secondarySkills": [],
-      "repairSkill": "classical_view",
-      "commonError": "thinking_nominal_wage_gain_equals_real_gain",
-      "feedback": "If both nominal wages and prices double, purchasing power is roughly unchanged.",
-      "aHash": "c360438389b11f979c7977bd18113a19c201fff1c8df039fd101053f7d9a6f29"
-    },
-    {
-      "id": 347,
-      "sourceGame": "mintAshGold",
-      "q": "Which pair is correctly classified?",
-      "options": [
-        "Money supply is nominal; capital per worker is real",
-        "Capital per worker is nominal; price level is real",
-        "Nominal wage is real; real GDP is nominal",
-        "Inflation is real; employment is nominal"
-      ],
-      "tag": "classical_view",
-      "type": "identification",
-      "objective": "LO5.4",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_inflation",
-      "primarySkill": "classify_real_nominal_variables",
-      "secondarySkills": [],
-      "repairSkill": "classical_view",
-      "commonError": "confusing_real_and_nominal_variables",
-      "feedback": "Money supply is nominal, while capital per worker is a real productive variable.",
-      "aHash": "98ce28638fd955bb7d1a069beab4a85fb6e2b6ec170e817cb323b6f91592d063"
-    },
-    {
-      "id": 348,
-      "sourceGame": "mintAshGold",
-      "q": "A lender sets a nominal rate using expected inflation. Actual inflation ends higher. Which rate reveals the lender’s realized return?",
-      "options": [
-        "Ex post real interest rate",
-        "Ex ante real interest rate",
-        "Nominal money growth rate",
-        "Reserve-deposit ratio"
-      ],
-      "tag": "fisher_effect",
-      "type": "identification",
-      "objective": "LO5.4",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_inflation",
-      "primarySkill": "identify_ex_post_real_rate",
-      "secondarySkills": [],
-      "repairSkill": "classical_view",
-      "commonError": "confusing_ex_ante_and_ex_post",
-      "feedback": "The ex post real interest rate uses actual inflation and shows the realized real return.",
-      "aHash": "8591f4c73a9f60eeae45a1b1e9a07be26092f3f0b31b99cf7e7e9b0197090454"
-    },
-    {
-      "id": 349,
-      "sourceGame": "mintAshGold",
-      "q": "Refer to the Solow production graph. Why does the curve flatten as k rises?",
-      "options": [
-        "Each added unit of capital adds less output than before",
-        "Depreciation becomes negative at high capital levels",
-        "Saving turns into consumption at high capital levels",
-        "Money growth stops affecting the price level"
-      ],
-      "tag": "solow_model",
-      "type": "graph_interpretation",
-      "objective": "LO8.1",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_growth",
-      "primarySkill": "diminishing_marginal_product_capital",
-      "secondarySkills": [],
-      "repairSkill": "solow_model",
-      "commonError": "missing_diminishing_returns_graph",
-      "feedback": "The production function flattens because the marginal product of capital diminishes as capital per worker rises.",
-      "image": "solowproductionfunction.webp",
-      "aHash": "3dcca482b4fce1f90159ebfa8ef083166f6dd7e0454863f3e5770d982b30786c"
-    },
-    {
-      "id": 350,
-      "sourceGame": "mintAshGold",
-      "q": "If y = √k, s = 0.30, δ = 0.10, and k = 4, what is Δk?",
-      "options": [
-        "0.2",
-        "−0.2",
-        "0.6",
-        "1.0"
-      ],
-      "tag": "steady_state",
-      "type": "calculation",
-      "objective": "LO8.1",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_growth",
-      "primarySkill": "calculate_delta_k_from_solow",
-      "secondarySkills": [],
-      "repairSkill": "steady_state",
-      "commonError": "using_k_as_output",
-      "feedback": "Output is √4 = 2. Investment is 0.30 × 2 = 0.6. Depreciation is 0.10 × 4 = 0.4. Δk = 0.2.",
-      "aHash": "44896b09365746b5f7167ee4d64988a38f7f4628803cbf86224e74eeb7c69e9d"
-    },
-    {
-      "id": 351,
-      "sourceGame": "mintAshGold",
-      "q": "If y = √k, s = 0.25, and δ = 0.05, what is steady-state k?",
-      "options": [
-        "25",
-        "5",
-        "10",
-        "100"
-      ],
-      "tag": "steady_state",
-      "type": "calculation",
-      "objective": "LO8.1",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_growth",
-      "primarySkill": "solve_steady_state_k_sqrt",
-      "secondarySkills": [],
-      "repairSkill": "steady_state",
-      "commonError": "not_solving_sf_equals_delta_k",
-      "feedback": "Set 0.25√k = 0.05k. Divide by 0.05: 5√k = k, so k = 25.",
-      "aHash": "b7a56873cd771f2c446d369b649430b65a756ba278ff97ec81bb6f55b2e73569"
-    },
-    {
-      "id": 352,
-      "sourceGame": "mintAshGold",
-      "q": "Refer to the steady-state graph. At k below k*, what happens next and why?",
-      "options": [
-        "Capital rises because saving exceeds depreciation",
-        "Capital falls because depreciation exceeds saving",
-        "Capital stays fixed because output is zero",
-        "Capital rises because AD shifts right"
-      ],
-      "tag": "steady_state",
-      "type": "graph_interpretation",
-      "objective": "LO8.1",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_growth",
-      "primarySkill": "steady_state_transition_left",
-      "secondarySkills": [],
-      "repairSkill": "steady_state",
-      "commonError": "reversing_capital_transition",
-      "feedback": "Below k*, saving and investment exceed depreciation, so capital per worker rises toward steady state.",
-      "image": "steadystate.webp",
-      "aHash": "2b8c8f4318adfccb9bc0079e2b99013da32752cd1cc09f7bbe355cc49c91c324"
-    },
-    {
-      "id": 353,
-      "sourceGame": "mintAshGold",
-      "q": "Refer to the steady-state graph. At k above k*, what happens next and why?",
-      "options": [
-        "Capital falls because depreciation exceeds saving",
-        "Capital rises because saving exceeds depreciation",
-        "Capital stays fixed because saving is zero",
-        "Capital rises because prices are sticky"
-      ],
-      "tag": "steady_state",
-      "type": "graph_interpretation",
-      "objective": "LO8.1",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_growth",
-      "primarySkill": "steady_state_transition_right",
-      "secondarySkills": [],
-      "repairSkill": "steady_state",
-      "commonError": "reversing_capital_transition",
-      "feedback": "Above k*, depreciation exceeds saving and investment, so capital per worker falls toward steady state.",
-      "image": "steadystate.webp",
-      "aHash": "0f0c93d97e5d04928bd060a343e037342cd53c1a4dbb9e6d432e33e8f1505860"
-    },
-    {
-      "id": 354,
-      "sourceGame": "mintAshGold",
-      "q": "If y = k^(1/3), s = 0.40, δ = 0.10, and k = 8, what is Δk?",
-      "options": [
-        "0",
-        "0.8",
-        "−0.4",
-        "1.2"
-      ],
-      "tag": "steady_state",
-      "type": "calculation",
-      "objective": "LO8.1",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_growth",
-      "primarySkill": "calculate_delta_k_cube_root",
-      "secondarySkills": [],
-      "repairSkill": "steady_state",
-      "commonError": "misreading_production_function",
-      "feedback": "Output is cube root of 8, or 2. Investment is 0.40 × 2 = 0.8. Depreciation is 0.10 × 8 = 0.8. Δk = 0.",
-      "aHash": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
-    },
-    {
-      "id": 355,
-      "sourceGame": "mintAshGold",
-      "q": "Which condition best identifies that an economy is not yet at the Solow steady state?",
-      "options": [
-        "Investment and depreciation are unequal",
-        "Output per worker is positive",
-        "Saving equals consumption",
-        "Capital per worker is measured in dollars"
-      ],
-      "tag": "steady_state",
-      "type": "identification",
-      "objective": "LO8.1",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_growth",
-      "primarySkill": "detect_non_steady_state",
-      "secondarySkills": [],
-      "repairSkill": "steady_state",
-      "commonError": "thinking_positive_output_means_steady_state",
-      "feedback": "The steady state requires investment to equal depreciation. If they differ, capital per worker changes.",
-      "aHash": "18c740f8eb3e9590b5ec6f1047c9434630a9eb305d6d7112a4b9bcdc2ff812df"
-    },
-    {
-      "id": 356,
-      "sourceGame": "mintAshGold",
-      "q": "Refer to the saving-rate graph. At the old steady state after saving rises, which relationship holds?",
-      "options": [
-        "New saving exceeds depreciation",
-        "Depreciation exceeds new saving",
-        "New saving equals zero",
-        "Depreciation shifts downward"
-      ],
-      "tag": "saving_rate",
-      "type": "graph_interpretation",
-      "objective": "LO8.2",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_growth",
-      "primarySkill": "saving_increase_old_steady_state",
-      "secondarySkills": [],
-      "repairSkill": "saving_rate",
-      "commonError": "thinking_economy_immediately_jumps_to_new_steady_state",
-      "feedback": "After saving rises, investment exceeds depreciation at the old steady state, so capital begins increasing.",
-      "image": "steadystatechanges.webp",
-      "aHash": "1cc6bfc003247e9c4a87c2518169ab6d615e9c51a1359c3701e9ba05e83b492a"
-    },
-    {
-      "id": 357,
-      "sourceGame": "mintAshGold",
-      "q": "If y = √k and δ = 0.10, compare steady-state k when s = 0.20 and s = 0.30. What happens?",
-      "options": [
-        "It rises from 4 to 9",
-        "It rises from 2 to 3",
-        "It falls from 9 to 4",
-        "It stays at 10"
-      ],
-      "tag": "saving_rate",
-      "type": "calculation",
-      "objective": "LO8.2",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_growth",
-      "primarySkill": "compare_steady_states_saving_rates",
-      "secondarySkills": [],
-      "repairSkill": "saving_rate",
-      "commonError": "not_solving_each_steady_state",
-      "feedback": "For y = √k, steady-state k = (s/δ)^2. With s = 0.20, k = 4. With s = 0.30, k = 9.",
-      "aHash": "526672cb114ece26117e983443a2439d2dbb91bf39d8080c501110ff14bb5ea7"
-    },
-    {
-      "id": 358,
-      "sourceGame": "mintAshGold",
-      "q": "If y = √k, k = 64, and s rises from 0.25 to 0.50, what happens to current consumption per worker?",
-      "options": [
-        "It falls from 6 to 4",
-        "It rises from 2 to 4",
-        "It rises from 6 to 8",
-        "It stays at 8"
-      ],
-      "tag": "saving_rate",
-      "type": "calculation",
-      "objective": "LO8.2",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_growth",
-      "primarySkill": "current_consumption_saving_change",
-      "secondarySkills": [],
-      "repairSkill": "saving_rate",
-      "commonError": "thinking_higher_saving_raises_current_consumption",
-      "feedback": "Output is √64 = 8. Consumption falls from 0.75 × 8 = 6 to 0.50 × 8 = 4.",
-      "aHash": "5e935eb2705329b84600613999cd5b13baca45648b5b146b55102bcf08266652"
+      "aHash": "5a9604b61fbaf8c9f3eccb495bd768e2e3993e39e9a09a52ab3f6706c0de1e9e"
     },
     {
       "id": 359,
       "sourceGame": "mintAshGold",
       "q": "Which statement best captures the saving-rate tradeoff in the Solow model?",
       "options": [
-        "Higher saving can raise future output but reduce current consumption",
+        "Future output may rise at a cost to current consumption",
         "Higher saving always raises current and future consumption",
         "Higher saving lowers investment and future capital",
         "Higher saving only affects inflation, not output"
@@ -11485,344 +12189,7 @@ const questionBanks = {
       "repairSkill": "saving_rate",
       "commonError": "ignoring_present_consumption_cost",
       "feedback": "Higher saving funds investment and future output, but it leaves less output for current consumption.",
-      "aHash": "43c7d6575b26d56334719adb57bda3955c11465259aab1e8da823435e894bcf3"
-    },
-    {
-      "id": 360,
-      "sourceGame": "mintAshGold",
-      "q": "Refer to the saving-rate graph. Why does output per worker rise after the new steady state is reached?",
-      "options": [
-        "Higher saving raises capital per worker, which raises output per worker",
-        "Higher saving raises prices, which raises real output",
-        "Depreciation vanishes, so output becomes infinite",
-        "AD shifts right, so capital per worker rises"
-      ],
-      "tag": "saving_rate",
-      "type": "graph_interpretation",
-      "objective": "LO8.2",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_growth",
-      "primarySkill": "saving_capital_output_chain",
-      "secondarySkills": [],
-      "repairSkill": "saving_rate",
-      "commonError": "confusing_solow_with_ad_as",
-      "feedback": "A higher saving rate raises steady-state capital per worker, and higher capital per worker raises output per worker.",
-      "image": "steadystatechanges.webp",
-      "aHash": "08f629c60151d19d29621a5bb867e23741b44bff3e7188e7d89b6566ff11e67d"
-    },
-    {
-      "id": 361,
-      "sourceGame": "mintAshGold",
-      "q": "If a country is below its Golden Rule level of capital, which policy direction is most consistent with raising long-run consumption?",
-      "options": [
-        "Encourage more saving and investment",
-        "Reduce saving to zero",
-        "Raise depreciation through poor maintenance",
-        "Shift aggregate demand left"
-      ],
-      "tag": "golden_rule",
-      "type": "application",
-      "objective": "LO8.2",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_growth",
-      "primarySkill": "golden_rule_policy_below",
-      "secondarySkills": [],
-      "repairSkill": "saving_rate",
-      "commonError": "thinking_low_saving_always_maximizes_consumption",
-      "feedback": "If the economy has too little capital, more saving and investment can move it toward higher sustainable consumption.",
-      "aHash": "970047cb390fcff5cfd5a40b7b438285ce39c27c6fc27cacd9caa31a88615d85"
-    },
-    {
-      "id": 362,
-      "sourceGame": "mintAshGold",
-      "q": "Why is the highest possible saving rate not necessarily the Golden Rule?",
-      "options": [
-        "Very high saving can leave too little consumption",
-        "Very high saving eliminates investment",
-        "Very high saving makes depreciation negative",
-        "Very high saving shifts LRAS left"
-      ],
-      "tag": "golden_rule",
-      "type": "application",
-      "objective": "LO8.2",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_growth",
-      "primarySkill": "golden_rule_not_max_saving",
-      "secondarySkills": [],
-      "repairSkill": "saving_rate",
-      "commonError": "equating_highest_saving_with_best_outcome",
-      "feedback": "The Golden Rule maximizes consumption per worker, not capital or saving for its own sake.",
-      "aHash": "e2f9f87d3a25b39b6d69041b18d7033b67c5c5f39cdf21b604d0213fc1046d7c"
-    },
-    {
-      "id": 363,
-      "sourceGame": "mintAshGold",
-      "q": "Refer to the AD-SRAS graph. Which result best shows the short-run nonneutrality of money?",
-      "options": [
-        "A monetary expansion shifts AD right and raises output when prices are sticky",
-        "A monetary expansion shifts LRAS right and raises natural output",
-        "A monetary expansion lowers prices and raises unemployment",
-        "A monetary expansion changes only depreciation"
-      ],
-      "tag": "short_long_run",
-      "type": "graph_interpretation",
-      "objective": "LO11.1",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_fluctuations",
-      "primarySkill": "short_run_money_nonneutrality",
-      "secondarySkills": [],
-      "repairSkill": "short_long_run",
-      "commonError": "using_long_run_neutrality_for_short_run",
-      "feedback": "With sticky prices, monetary expansion can shift AD right and raise output in the short run.",
-      "image": "adsras.webp",
-      "aHash": "339ca4b1a0a758bffd3a3565c6bd22d76a363a7e492f162903b69275e31c6d56"
-    },
-    {
-      "id": 364,
-      "sourceGame": "mintAshGold",
-      "q": "If unemployment rises from 4 percent to 7 percent and normal growth is 3 percent, what growth does Okun’s law predict?",
-      "options": [
-        "−3 percent",
-        "0 percent",
-        "3 percent",
-        "9 percent"
-      ],
-      "tag": "business_cycles",
-      "type": "calculation",
-      "objective": "LO11.1",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_fluctuations",
-      "primarySkill": "okuns_law_prediction",
-      "secondarySkills": [],
-      "repairSkill": "business_cycles",
-      "commonError": "wrong_sign_okuns_law",
-      "feedback": "%ΔRGDP ≈ 3 − 2 × (7 − 4) = 3 − 6 = −3 percent.",
-      "aHash": "0ba7073e3d481a8a194cb625970495978bcc2d197536067a87eee4d0867774e8"
-    },
-    {
-      "id": 365,
-      "sourceGame": "mintAshGold",
-      "q": "If unemployment falls from 6 percent to 4.5 percent and normal growth is 3 percent, what growth does Okun’s law predict?",
-      "options": [
-        "6 percent",
-        "4.5 percent",
-        "1.5 percent",
-        "0 percent"
-      ],
-      "tag": "business_cycles",
-      "type": "calculation",
-      "objective": "LO11.1",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_fluctuations",
-      "primarySkill": "okuns_law_unemployment_fall",
-      "secondarySkills": [],
-      "repairSkill": "business_cycles",
-      "commonError": "reversing_unemployment_change",
-      "feedback": "Unemployment changes by −1.5 points. Growth ≈ 3 − 2 × (−1.5) = 6 percent.",
-      "aHash": "5bd030d5464d74b1316a839186c8e6e80283edd05cce812fb5ffe4ba9cd05f2a"
-    },
-    {
-      "id": 366,
-      "sourceGame": "mintAshGold",
-      "q": "Which statement best explains why AD shocks can change output in the short run but not permanently?",
-      "options": [
-        "Prices are sticky first but adjust over time",
-        "Capital is fixed first but becomes money later",
-        "Velocity is always zero in the long run",
-        "LRAS slopes downward only in the short run"
-      ],
-      "tag": "short_long_run",
-      "type": "application",
-      "objective": "LO11.1",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_fluctuations",
-      "primarySkill": "short_run_long_run_adjustment",
-      "secondarySkills": [],
-      "repairSkill": "short_long_run",
-      "commonError": "collapsing_short_and_long_run",
-      "feedback": "Sticky prices let demand shocks affect short-run output, but price adjustment pulls output back toward natural output.",
-      "aHash": "a09fd9255092e2e8e66f77d387f6fbab441153f29b322db98cc7ae1773f67905"
-    },
-    {
-      "id": 367,
-      "sourceGame": "mintAshGold",
-      "q": "Which sequence best describes a recession caused by an AD decline?",
-      "options": [
-        "Spending falls, output falls, unemployment rises",
-        "Costs fall, output rises, unemployment rises",
-        "AD rises, output falls, unemployment falls",
-        "LRAS rises, prices rise, unemployment rises"
-      ],
-      "tag": "business_cycles",
-      "type": "application",
-      "objective": "LO11.1",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_fluctuations",
-      "primarySkill": "ad_recession_sequence",
-      "secondarySkills": [],
-      "repairSkill": "business_cycles",
-      "commonError": "mixing_ad_decline_with_supply_expansion",
-      "feedback": "A fall in aggregate spending lowers output and raises unemployment in the short run.",
-      "aHash": "b7dbe284ad613c6f54009c743b0bfebbe838867a0b4cc9b520921c7e80690e8d"
-    },
-    {
-      "id": 368,
-      "sourceGame": "mintAshGold",
-      "q": "What is the strongest reason LRAS is vertical while SRAS may slope upward or be horizontal?",
-      "options": [
-        "Long-run output depends on real capacity, while short-run output reacts to sticky prices",
-        "Long-run output depends only on AD, while short-run output depends only on taxes",
-        "Long-run prices are fixed, while short-run prices adjust instantly",
-        "Long-run output is zero, while short-run output is always natural"
-      ],
-      "tag": "short_long_run",
-      "type": "application",
-      "objective": "LO11.1",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_fluctuations",
-      "primarySkill": "lras_sras_distinction",
-      "secondarySkills": [],
-      "repairSkill": "short_long_run",
-      "commonError": "confusing_price_flexibility_across_runs",
-      "feedback": "LRAS reflects real productive capacity. SRAS reflects short-run price stickiness and production responses.",
-      "aHash": "5e8e23d6f4d2cc2e5bc4f8f8a37de0c114bcca64d468da09f72c2057cb02eb6d"
-    },
-    {
-      "id": 369,
-      "sourceGame": "mintAshGold",
-      "q": "If output is above natural output, what labor-market signal is most consistent with the short-run boom?",
-      "options": [
-        "Unemployment is below its natural rate",
-        "Unemployment is above its natural rate",
-        "Unemployment is permanently zero",
-        "Unemployment does not relate to output"
-      ],
-      "tag": "business_cycles",
-      "type": "application",
-      "objective": "LO11.1",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_fluctuations",
-      "primarySkill": "output_gap_unemployment_relation",
-      "secondarySkills": [],
-      "repairSkill": "business_cycles",
-      "commonError": "reversing_output_gap_unemployment",
-      "feedback": "When output is above natural output, unemployment is usually below its natural rate.",
-      "aHash": "f6ce28e123cb529527960c2ee6e2ca0ff09f95f52f60f07ad0727ac85a2a1b9d"
-    },
-    {
-      "id": 370,
-      "sourceGame": "mintAshGold",
-      "q": "Refer to the AD graph. If the price level falls from P1 to P2, what happens along AD and why?",
-      "options": [
-        "Output demanded rises because real money balances rise",
-        "Output demanded falls because real money balances rise",
-        "AD shifts left because saving rises",
-        "LRAS shifts right because money is neutral"
-      ],
-      "tag": "aggregate_demand",
-      "type": "graph_interpretation",
-      "objective": "LO11.2",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_fluctuations",
-      "primarySkill": "movement_along_ad_real_balances",
-      "secondarySkills": [],
-      "repairSkill": "aggregate_demand",
-      "commonError": "confusing_movement_and_shift",
-      "feedback": "A lower price level raises real money balances and increases the quantity of output demanded along AD.",
-      "image": "adone.webp",
-      "aHash": "b57036930a65f0dfc8c6b9df4dffb7a349087d38528ebad3951c4a3d85b4bd2c"
-    },
-    {
-      "id": 371,
-      "sourceGame": "mintAshGold",
-      "q": "Refer to the AD shift graph. Which event most cleanly shifts AD right without directly shifting SRAS?",
-      "options": [
-        "An increase in planned investment spending",
-        "A sudden oil supply disruption",
-        "A drought that raises food costs",
-        "A fall in labor productivity"
-      ],
-      "tag": "aggregate_demand",
-      "type": "graph_interpretation",
-      "objective": "LO11.2",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_fluctuations",
-      "primarySkill": "ad_shift_right_investment",
-      "secondarySkills": [],
-      "repairSkill": "aggregate_demand",
-      "commonError": "using_supply_shocks_for_ad",
-      "feedback": "Higher planned investment raises aggregate demand and shifts AD right.",
-      "image": "adtwo.webp",
-      "aHash": "5aa848a3abe17354231789864db664885b92949eb517bcca5ffe7c602c1a50fa"
-    },
-    {
-      "id": 372,
-      "sourceGame": "mintAshGold",
-      "q": "Refer to the AD-SRAS graph. If AD shifts left under sticky prices, which unemployment effect is most likely?",
-      "options": [
-        "Unemployment rises because output falls",
-        "Unemployment falls because prices stay fixed",
-        "Unemployment stays fixed because AD moved",
-        "Unemployment disappears because LRAS shifts"
-      ],
-      "tag": "short_run_adas",
-      "type": "graph_interpretation",
-      "objective": "LO11.2",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_fluctuations",
-      "primarySkill": "ad_left_unemployment_effect",
-      "secondarySkills": [],
-      "repairSkill": "short_run_adas",
-      "commonError": "missing_output_unemployment_link",
-      "feedback": "With sticky prices, a leftward AD shift lowers output, so unemployment rises.",
-      "image": "adsras.webp",
-      "aHash": "5d79fac194c0ff8d2829f217b1f1a1fca8fd072438123daa2864a4b2a88daae7"
-    },
-    {
-      "id": 373,
-      "sourceGame": "mintAshGold",
-      "q": "Refer to the demand-shock graph. Which interpretation best fits a movement from long-run equilibrium to output above natural output?",
-      "options": [
-        "A positive demand shock creates an inflationary gap",
-        "A negative demand shock creates a recessionary gap",
-        "A negative supply shock lowers prices",
-        "A saving increase shifts AD right"
-      ],
-      "tag": "demand_shocks",
-      "type": "graph_interpretation",
-      "objective": "LO11.2",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_fluctuations",
-      "primarySkill": "positive_demand_inflationary_gap",
-      "secondarySkills": [],
-      "repairSkill": "demand_shocks",
-      "commonError": "confusing_gap_types",
-      "feedback": "A positive demand shock pushes output above natural output, creating an inflationary gap.",
-      "image": "demandshock.webp",
-      "aHash": "85e686b28a743426c5c0da3830bb4b9602e15e610ba02f5fb1cf22f4ce8e6aed"
-    },
-    {
-      "id": 374,
-      "sourceGame": "mintAshGold",
-      "q": "Refer to the demand-shock graph. Which interpretation best fits output falling below natural output after AD shifts left?",
-      "options": [
-        "A negative demand shock creates a recessionary gap",
-        "A positive demand shock creates an inflationary gap",
-        "A positive supply shock creates stagflation",
-        "A higher saving rate raises current output"
-      ],
-      "tag": "demand_shocks",
-      "type": "graph_interpretation",
-      "objective": "LO11.2",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_fluctuations",
-      "primarySkill": "negative_demand_recessionary_gap",
-      "secondarySkills": [],
-      "repairSkill": "demand_shocks",
-      "commonError": "confusing_recessionary_and_inflationary_gaps",
-      "feedback": "A negative demand shock shifts AD left and pushes output below natural output.",
-      "image": "demandshock.webp",
-      "aHash": "26c9b2b595a0fd82620915f30e29ac67dd8da98b8cf956ba7f0823c69ecd7a60"
+      "aHash": "bd6dbc72aefe9e363bcba3bf928eabc53e0ebd51ad26376d98b8681a4f0e770c"
     },
     {
       "id": 375,
@@ -11831,8 +12198,8 @@ const questionBanks = {
       "options": [
         "Real balances rise, AD rises, output rises, unemployment falls",
         "Real balances fall, AD falls, output rises, unemployment rises",
-        "SRAS shifts left, output rises, prices fall",
-        "LRAS shifts right, output rises permanently"
+        "The SRAS curve shifts to the left, output rises, prices fall",
+        "The LRAS curve shifts to the right, output rises permanently"
       ],
       "tag": "aggregate_demand",
       "type": "application",
@@ -11843,76 +12210,8 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "aggregate_demand",
       "commonError": "reversing_real_balances_channel",
-      "feedback": "With sticky prices, more money raises real balances, shifts AD right, raises output, and lowers unemployment.",
+      "feedback": "With sticky prices, more money raises real balances, shifts the AD curve to the right, raises output, and lowers unemployment.",
       "aHash": "0d697e2bebcc8128e77fb61d5caca0439e1de892f911cbb59247ebd2ded8fbc8"
-    },
-    {
-      "id": 376,
-      "sourceGame": "mintAshGold",
-      "q": "Which answer best separates a movement along AD from a shift of AD?",
-      "options": [
-        "A price-level change moves along AD; a spending shock shifts AD",
-        "A spending shock moves along AD; a price-level change shifts AD",
-        "A supply shock moves along AD; a money shock shifts LRAS",
-        "A price-level change shifts SRAS; a tax change shifts depreciation"
-      ],
-      "tag": "aggregate_demand",
-      "type": "trap",
-      "objective": "LO11.2",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_fluctuations",
-      "primarySkill": "movement_vs_shift_ad",
-      "secondarySkills": [],
-      "repairSkill": "aggregate_demand",
-      "commonError": "confusing_ad_movement_and_shift",
-      "feedback": "Changes in the price level move the economy along AD. Changes in spending, money, or policy can shift AD.",
-      "aHash": "8c9199efe13583a29dabd3d18979043ad06843cf5a52dc4d63703c8deb4db37c"
-    },
-    {
-      "id": 377,
-      "sourceGame": "mintAshGold",
-      "q": "Refer to the AD-LRAS graph. If AD shifts right, what happens after full long-run adjustment?",
-      "options": [
-        "Prices rise and output returns to natural output",
-        "Output rises permanently and prices stay fixed",
-        "Prices fall and output stays below natural output",
-        "LRAS shifts left because AD increased"
-      ],
-      "tag": "long_run_adjustment",
-      "type": "graph_interpretation",
-      "objective": "LO11.3",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_fluctuations",
-      "primarySkill": "long_run_ad_increase",
-      "secondarySkills": [],
-      "repairSkill": "long_run_adjustment",
-      "commonError": "thinking_ad_changes_natural_output",
-      "feedback": "In the long run, higher AD raises the price level while output returns to natural output.",
-      "image": "adlras.webp",
-      "aHash": "5b45e6dd627be239e5241a68f0519cce045ddf7f6ebfb33436c7acd451f7dd71"
-    },
-    {
-      "id": 378,
-      "sourceGame": "mintAshGold",
-      "q": "Refer to the supply-shock graph. Which case best matches stagflation?",
-      "options": [
-        "SRAS shifts left, output falls, and prices rise",
-        "AD shifts right, output rises, and prices rise",
-        "AD shifts left, output falls, and prices fall",
-        "SRAS shifts right, output rises, and prices fall"
-      ],
-      "tag": "supply_shocks",
-      "type": "graph_interpretation",
-      "objective": "LO11.3",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_fluctuations",
-      "primarySkill": "stagflation_graph",
-      "secondarySkills": [],
-      "repairSkill": "supply_shocks",
-      "commonError": "treating_stagflation_as_demand_shock",
-      "feedback": "Stagflation comes from a negative supply shock: lower output and higher prices.",
-      "image": "supplyshock.webp",
-      "aHash": "511d198536e90f3b3921ec9586d512fbef2471357c27c771002104e28580975d"
     },
     {
       "id": 379,
@@ -11939,11 +12238,11 @@ const questionBanks = {
     {
       "id": 380,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the shock-plus-policy graph. If policy pushes AD beyond the level needed to close a recessionary gap, what problem follows?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. If policy pushes AD beyond the level needed to close a recessionary gap, what problem follows?",
       "options": [
-        "Output may overshoot natural output and raise inflation pressure",
+        "Output may exceed its natural level, creating inflation pressure",
         "Output must fall below natural output again",
-        "LRAS permanently shifts right because demand is high",
+        "Higher demand permanently increases the economy’s productive capacity",
         "Depreciation falls enough to stop inflation"
       ],
       "tag": "stabilization_policy",
@@ -11957,59 +12256,15 @@ const questionBanks = {
       "commonError": "thinking_more_stimulus_is_always_better",
       "feedback": "Too much demand stimulus can push output above natural output and create inflation pressure.",
       "image": "shockpluspolicy.webp",
-      "aHash": "a7721d4a368ec600b95448994b3d8dbbce21d14353a2d22484d0fc58561c98e3"
-    },
-    {
-      "id": 381,
-      "sourceGame": "mintAshGold",
-      "q": "After a negative demand shock, which no-policy adjustment eventually helps restore output?",
-      "options": [
-        "Wages and prices fall, shifting SRAS right",
-        "Wages and prices rise, shifting SRAS left",
-        "AD rises because depreciation increases",
-        "LRAS falls to match weak demand"
-      ],
-      "tag": "long_run_adjustment",
-      "type": "application",
-      "objective": "LO11.3",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_fluctuations",
-      "primarySkill": "negative_demand_long_run_self_correction",
-      "secondarySkills": [],
-      "repairSkill": "long_run_adjustment",
-      "commonError": "wrong_direction_self_correction",
-      "feedback": "Weak demand raises unemployment pressure, causing wages and prices to fall and SRAS to shift right over time.",
-      "aHash": "71603d7a604fe100947c2b2116c45181de9133035097d8b34685b8f0114bffd9"
-    },
-    {
-      "id": 382,
-      "sourceGame": "mintAshGold",
-      "q": "After a positive demand shock, which no-policy adjustment eventually helps restore output?",
-      "options": [
-        "Wages and prices rise, shifting SRAS left",
-        "Wages and prices fall, shifting SRAS right",
-        "AD shifts farther right because prices rise",
-        "LRAS shifts left because unemployment is low"
-      ],
-      "tag": "long_run_adjustment",
-      "type": "application",
-      "objective": "LO11.3",
-      "difficulty": "elite",
-      "conceptCluster": "mint_elite_fluctuations",
-      "primarySkill": "positive_demand_long_run_self_correction",
-      "secondarySkills": [],
-      "repairSkill": "long_run_adjustment",
-      "commonError": "wrong_direction_self_correction",
-      "feedback": "When output exceeds natural output, rising wages and prices raise costs and shift SRAS left.",
-      "aHash": "9fbeb9e0655e159315d76c6f8e31e481e98dac1a15f33c6319e66db679d0a2bf"
+      "aHash": "b3159c9fff195b99b7bb71594d07f8a2301ea14e4140d20778172af67bbeb867"
     },
     {
       "id": 383,
       "sourceGame": "mintAshGold",
       "q": "Which policy memo best handles a negative demand shock if the goal is stabilization without overshooting?",
       "options": [
-        "Raise AD enough to close the output gap, then watch inflation pressure",
-        "Shift LRAS left so current output looks normal",
+        "Close the output gap with higher AD, then monitor inflation",
+        "Shift the LRAS curve to the left so current output looks normal",
         "Expand AD until output stays permanently above natural output",
         "Ignore prices because demand policy cannot affect inflation"
       ],
@@ -12023,7 +12278,7 @@ const questionBanks = {
       "repairSkill": "long_run_adjustment",
       "commonError": "overstimulus_or_wrong_curve_policy",
       "feedback": "Stabilization policy should close the output gap without pushing output too far above natural output.",
-      "aHash": "ed411f779115f92109fe6a10706982839b9b885515435950e614bf800f7bad5b"
+      "aHash": "1f7ced29edd826e3796751136d22dbb36ee02fb84199c58e5af13844f3b5c5d5"
     }
   ]
 };
@@ -12049,7 +12304,7 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "money_functions",
       "commonError": "confusing_money_functions",
-      "feedback": "Listing a price uses money as a unit of account.",
+      "feedback": "The $30 price expresses the shirt’s value in a common measuring unit. That is the unit-of-account function. Paying for the shirt would use money as a medium of exchange.",
       "aHash": "ac3271e51d394abc5655e12dbc18bfd8d5213e94048fc966473f818f83afa44c"
     },
     {
@@ -12093,7 +12348,7 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "money_functions",
       "commonError": "confusing_store_value_with_exchange",
-      "feedback": "Holding money for future use is the store-of-value function.",
+      "feedback": "Saving cash carries purchasing power from today to a later date. This uses money as a store of value, although inflation can reduce how much the saved cash will buy.",
       "aHash": "ebc1bc859ec916120e4fe560f239477362a2d91927db006250b53d194cadde2f"
     },
     {
@@ -12137,7 +12392,7 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "money_functions",
       "commonError": "treating_all_wealth_as_money",
-      "feedback": "Money is part of wealth, but not all wealth is money.",
+      "feedback": "Wealth includes assets such as houses, shares, and money. Money is the part readily used to pay for transactions. An asset can contribute to wealth without itself serving as a means of payment.",
       "aHash": "93bc79e0228a8442517db079db4acb1e9b54c191033201d5a6e1509ca4969f08"
     },
     {
@@ -12183,18 +12438,18 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "money_measures",
       "commonError": "including_nonmoney_assets",
-      "feedback": "Currency is included in M1.",
+      "feedback": "Currency can be used directly for transactions, so it belongs in M1. A savings bond, corporate share, or ownership stake in a house is an asset, but is not itself currency or a deposit included in M1.",
       "aHash": "466e5b9cd57fa444cceaa8e5b053ddd58d05cbbcf162a54d6ccd08492ef36dfd"
     },
     {
       "id": 5007,
       "sourceGame": "mintAshGold",
-      "q": "Which item is included in M2 but not normally M1?",
+      "q": "Under current Federal Reserve definitions, which non-retirement holding is included in M2 but not M1?",
       "options": [
-        "Savings deposit",
-        "Currency",
-        "Checking deposit",
-        "Credit card limit"
+        "A $10,000 time deposit",
+        "Currency held by a household",
+        "A checking deposit",
+        "A savings deposit"
       ],
       "tag": "money_measures",
       "type": "repair",
@@ -12205,8 +12460,8 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "money_measures",
       "commonError": "confusing_m1_and_m2",
-      "feedback": "Savings deposits are included in M2, not usually in M1.",
-      "aHash": "17cda04ef03af3e898a82f26a406b83611e834e2243744fb0e173981148d6e68"
+      "feedback": "M2 adds small-denomination time deposits and retail money market funds to M1, with retirement-account adjustments. Currency, checking and savings deposits are already in current M1. A $10,000 non-retirement time deposit is in M2 but not M1.",
+      "aHash": "d0c3c6a02905b1d870582f57ed99151d1b59b27593805bfda1a64bc6d50b1ae7"
     },
     {
       "id": 5008,
@@ -12271,7 +12526,7 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "money_measures",
       "commonError": "omitting_savings_from_m2",
-      "feedback": "M2 includes cash, checking, and savings here: $300 + $700 + $2,000 = $3,000.",
+      "feedback": "Cash, checking and savings contribute $300+$700+$2,000=$3,000 to M2. Under the current definition they also contribute $3,000 to M1; savings are not excluded from M1.",
       "aHash": "50e5c930578954e631f9c75bfe0ef0b7d0f0b5c27638d20ec1049649881f0acc"
     },
     {
@@ -12293,7 +12548,7 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "money_measures",
       "commonError": "reversing_m1_and_m2",
-      "feedback": "M2 is broader than M1 and includes some near monies such as savings deposits.",
+      "feedback": "M2 includes M1 plus small time deposits and retail money-market fund balances, with the Federal Reserve’s retirement-account adjustments. Savings deposits are already in current M1.",
       "aHash": "d76bbfdc6b9f258c08febd26d81326839b07119e1bdad6da2e4e711163ed753f"
     }
   ],
@@ -12451,7 +12706,7 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "fed_tools",
       "commonError": "reversing_open_market_purchase",
-      "feedback": "Fed bond purchases add reserves to the banking system.",
+      "feedback": "When the Fed buys bonds from banks, it pays by crediting their reserve accounts. Banks exchange bonds for reserves, so total bank reserves rise.",
       "aHash": "11153d9534a01f0d3402fe3a3c67f8c8f68e955d28a915da5727c38c5af7cd8e"
     },
     {
@@ -12473,7 +12728,7 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "fed_tools",
       "commonError": "reversing_open_market_sale",
-      "feedback": "Fed bond sales drain reserves from the banking system.",
+      "feedback": "When banks buy bonds from the Fed, payment is deducted from their reserve accounts. Banks exchange reserves for bonds, so total bank reserves fall.",
       "aHash": "7004f9493607469b064f816734c64a79d3b53ec5587d6ed2a31fb5f72fe8f4f4"
     },
     {
@@ -12495,7 +12750,7 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "fed_tools",
       "commonError": "choosing_contractionary_tool",
-      "feedback": "Buying bonds adds reserves and can expand the money supply.",
+      "feedback": "The Fed pays for bond purchases by adding reserve balances. In the fractional-reserve banking framework, additional reserves can support more lending and deposits, making this an expansionary policy.",
       "aHash": "4f084d265ec3eae7737470fce87f3f347fa36f3156e5fe97b583b261ef10af4d"
     },
     {
@@ -12517,7 +12772,7 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "fed_tools",
       "commonError": "choosing_expansionary_tool",
-      "feedback": "Selling bonds drains reserves and can reduce money growth.",
+      "feedback": "Payment for bonds sold by the Fed removes reserve balances. In the fractional-reserve banking framework, fewer reserves constrain deposit expansion and tighten monetary conditions.",
       "aHash": "21e17d61a4d019db043b983e38b99f95dd6900541d17ad679b2419c6f58202ca"
     },
     {
@@ -12539,7 +12794,7 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "fed_tools",
       "commonError": "confusing_discount_rate_with_reserve_requirement",
-      "feedback": "A lower discount rate makes Fed borrowing cheaper for banks.",
+      "feedback": "The discount rate is the rate banks pay to borrow from the Fed. Lowering it reduces the cost of obtaining reserves through that channel; it does not automatically change the required reserve ratio.",
       "aHash": "fd748223c51ea73f9585f661339fe64d9667959fce5df0335618e8e057b865bc"
     },
     {
@@ -12585,7 +12840,7 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "inflation_causes",
       "commonError": "confusing_inflation_with_relative_price_change",
-      "feedback": "Inflation is a rise in the overall price level.",
+      "feedback": "Inflation means prices rise across the economy on average. A higher price for one product may reflect conditions in that market without representing a general rise in prices.",
       "aHash": "4fae85a3084d580a55b92414f7a2b01f56c87035c5f7034de3b5b3ae3e1b4770"
     },
     {
@@ -12673,7 +12928,7 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "inflation_causes",
       "commonError": "confusing_seigniorage_with_tax_revenue",
-      "feedback": "Seigniorage is revenue raised by creating money.",
+      "feedback": "An issuer obtains seigniorage by creating money and using it to acquire goods, services, or assets. It is distinct from collecting an ordinary tax or earning a return on physical capital.",
       "aHash": "157422730865c69b82fe4f295808f446955dd3670f719fa4e1bdb5d4ad581f0f"
     },
     {
@@ -12741,7 +12996,7 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "inflation_effects",
       "commonError": "reversing_borrower_lender_effects",
-      "feedback": "Borrowers repay with dollars that buy less than expected.",
+      "feedback": "On a fixed-rate nominal loan, unexpected inflation does not raise the promised dollar repayment. Those dollars buy less than the lender expected, reducing the real burden on the borrower and the real return to the lender.",
       "aHash": "70b3eb7a8018295a9588a197ec1e0601050c8aba4d286614387e9445064adb4a"
     },
     {
@@ -12815,7 +13070,7 @@ const microSkillRepairPools = {
       "sourceGame": "mintAshGold",
       "q": "When some prices update faster than others during inflation, what problem results?",
       "options": [
-        "Some prices adjust faster than others",
+        "Relative prices become distorted, potentially misdirecting spending and production",
         "All prices adjust instantly together",
         "Inflation makes all real variables zero",
         "Inflation prevents contracts from existing"
@@ -12829,8 +13084,8 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "inflation_effects",
       "commonError": "thinking_all_prices_adjust_uniformly",
-      "feedback": "If prices adjust unevenly, relative prices can be distorted.",
-      "aHash": "bf34dad5bd481e4ad2da2e87f24aa2bb89f5a588a1af3891c59f4ae6371a13ce"
+      "feedback": "When prices adjust at different times, their ratios change for reasons unrelated to relative scarcity. These distorted relative prices can misdirect purchases and production.",
+      "aHash": "bf94010cac698184f8479f76f0637997dc5be5d2455be869eefa83082e0db7c6"
     }
   ],
   "quantity_equation": [
@@ -12853,7 +13108,7 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "quantity_equation",
       "commonError": "confusing_macro_equations",
-      "feedback": "The quantity equation is M × V = P × Y.",
+      "feedback": "Money supply times velocity measures total nominal spending. The price level times real output measures the value of production. The quantity equation sets these two measures equal: M × V = P × Y.",
       "aHash": "b0146039105d404199eac09fd63a31303bb82ff97432075c3a0cd486449128ac"
     },
     {
@@ -12987,7 +13242,7 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "classical_view",
       "commonError": "confusing_nominal_and_real",
-      "feedback": "Money supply is a nominal variable.",
+      "feedback": "Money supply is expressed in currency units, such as dollars. A real variable instead measures quantities or purchasing power after accounting for prices.",
       "aHash": "d908af39902a40acd9c270333160114e982040f20365f07e718741613ce42b85"
     },
     {
@@ -13009,7 +13264,7 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "classical_view",
       "commonError": "confusing_nominal_and_real",
-      "feedback": "Capital per worker is a real variable.",
+      "feedback": "Capital per worker describes the amount of productive capital available to each worker. It is a quantity concept, unlike a price or nominal wage expressed in current money units.",
       "aHash": "3187cea224c8a5a87b37c59aab98707c71a562932ec6b24c3c76f016bb4539f0"
     },
     {
@@ -13127,7 +13382,7 @@ const microSkillRepairPools = {
     {
       "id": 5049,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the Solow production graph. Why does output rise more slowly as capital per worker rises?",
+      "q": "Refer to the Solow production function graph. Why does output rise more slowly as capital per worker rises?",
       "options": [
         "Diminishing returns to capital",
         "Higher inflation",
@@ -13198,7 +13453,7 @@ const microSkillRepairPools = {
       "options": [
         "Reduces capital per worker",
         "Raises money demand",
-        "Shifts AD right",
+        "Shifts the AD curve to the right",
         "Raises the price level"
       ],
       "tag": "solow_model",
@@ -13262,7 +13517,7 @@ const microSkillRepairPools = {
     {
       "id": 5055,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the steady-state graph. Left of k*, what happens to capital per worker?",
+      "q": "Refer to the Solow steady-state graph. Left of k*, what happens to capital per worker?",
       "options": [
         "It rises",
         "It falls",
@@ -13285,7 +13540,7 @@ const microSkillRepairPools = {
     {
       "id": 5056,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the steady-state graph. Right of k*, what happens to capital per worker?",
+      "q": "Refer to the Solow steady-state graph. Right of k*, what happens to capital per worker?",
       "options": [
         "It falls",
         "It rises",
@@ -13376,12 +13631,12 @@ const microSkillRepairPools = {
     {
       "id": 5060,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the saving-rate graph. What happens when the saving rate rises?",
+      "q": "Refer to the Solow saving-rate graph. What happens when the saving rate rises?",
       "options": [
         "The saving and investment curve shifts upward",
         "The depreciation curve shifts downward",
-        "LRAS shifts left",
-        "AD shifts left"
+        "The LRAS curve shifts to the left",
+        "The AD curve shifts to the left"
       ],
       "tag": "saving_rate",
       "type": "repair_graph",
@@ -13463,60 +13718,60 @@ const microSkillRepairPools = {
       "aHash": "3187cea224c8a5a87b37c59aab98707c71a562932ec6b24c3c76f016bb4539f0"
     },
     {
-      "id": 5064,
+      "id": 45064,
       "sourceGame": "mintAshGold",
-      "q": "What does the Golden Rule level of capital maximize?",
+      "q": "What balances investment in the basic Solow steady state?",
       "options": [
-        "Consumption per worker",
-        "Capital per worker",
-        "Saving rate",
-        "Depreciation"
+        "Depreciation",
+        "The price level",
+        "The money growth rate",
+        "Unemployment"
       ],
       "tag": "golden_rule",
-      "type": "repair",
+      "type": "application",
       "objective": "LO8.2",
       "difficulty": "repair",
       "conceptCluster": "repair_saving_rate",
       "primarySkill": "golden_rule",
       "secondarySkills": [],
       "repairSkill": "saving_rate",
-      "commonError": "thinking_golden_rule_maximizes_capital",
-      "feedback": "The Golden Rule maximizes consumption per worker.",
-      "aHash": "771eb43a11a9bc845d797dc491a212e26e1ce1fbdee36d8c0fcba45b018e548d"
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "Steady-state investment replaces the capital that depreciates, leaving capital per worker unchanged.",
+      "aHash": "03026729836f748559c2e9c6cad619e96ab3b0447c92ebb0c65b5056cdb47eb4"
     },
     {
-      "id": 5065,
+      "id": 45065,
       "sourceGame": "mintAshGold",
-      "q": "Why does a higher saving rate not guarantee higher welfare?",
+      "q": "A country raises its saving rate while current output is unchanged. What immediate cost can households face?",
       "options": [
-        "It may reduce current or Golden Rule consumption",
-        "It always lowers future output",
-        "It eliminates investment",
-        "It shifts AD left forever"
+        "Less current output is available for consumption",
+        "Investment necessarily falls",
+        "The country loses all its existing capital",
+        "The price level must double"
       ],
       "tag": "golden_rule",
-      "type": "repair",
+      "type": "application",
       "objective": "LO8.2",
       "difficulty": "repair",
       "conceptCluster": "repair_saving_rate",
       "primarySkill": "too_much_saving",
       "secondarySkills": [],
       "repairSkill": "saving_rate",
-      "commonError": "thinking_more_saving_is_always_best",
-      "feedback": "Saving too much can reduce consumption, especially beyond the Golden Rule level.",
-      "aHash": "48264c28a2d0cc91c504f77c680846f2017427306177d8f953723e493236fe81"
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "At a given level of output, allocating more to investment leaves less for current consumption. Higher future output does not remove this immediate tradeoff.",
+      "aHash": "f806ca0eef935a8b7c4cd598bc0984f63bb02ea229d0bc71d825250dfb143c9b"
     }
   ],
   "aggregate_demand": [
     {
       "id": 5066,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the AD graph. If the price level rises, what happens along AD?",
+      "q": "Refer to the aggregate demand graph. If the price level rises, what happens along AD?",
       "options": [
         "Output demanded falls",
         "Output demanded rises",
-        "AD shifts right",
-        "LRAS shifts left"
+        "The AD curve shifts to the right",
+        "The LRAS curve shifts to the left"
       ],
       "tag": "aggregate_demand",
       "type": "repair_graph",
@@ -13536,10 +13791,10 @@ const microSkillRepairPools = {
       "sourceGame": "mintAshGold",
       "q": "A fall in consumer confidence shifts which curve?",
       "options": [
-        "AD left",
-        "AD right",
-        "SRAS right",
-        "LRAS right"
+        "The AD curve shifts to the left",
+        "The AD curve shifts to the right",
+        "The SRAS curve shifts to the right",
+        "The LRAS curve shifts to the right"
       ],
       "tag": "aggregate_demand",
       "type": "repair",
@@ -13550,8 +13805,8 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "aggregate_demand",
       "commonError": "wrong_curve_for_confidence",
-      "feedback": "Lower consumer confidence reduces spending and shifts AD left.",
-      "aHash": "efc1fae0057743cff5d525cfa428d29bc0b03ba9dc6f83a110181a56ad6cee0d"
+      "feedback": "Lower consumer confidence reduces spending and shifts the AD curve to the left.",
+      "aHash": "bbf984088e51e6186ab738820db5022a24af03e25022a772478ecb33bc3fba27"
     },
     {
       "id": 5068,
@@ -13572,7 +13827,7 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "aggregate_demand",
       "commonError": "treating_policy_as_movement_along_ad",
-      "feedback": "Higher government purchases raise aggregate demand and shift AD right.",
+      "feedback": "Higher government purchases raise aggregate demand and shift the AD curve to the right.",
       "aHash": "27042f4e6eca7d0b2a7ee4026df2ecfa51d3339e6d122aa099118ecd8563bad9"
     }
   ],
@@ -13580,7 +13835,7 @@ const microSkillRepairPools = {
     {
       "id": 5069,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the demand-shock graph. A negative demand shock does what in the short run?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. How does a negative aggregate demand shock affect output and unemployment in the short run?",
       "options": [
         "Lowers output and raises unemployment",
         "Raises output and lowers unemployment",
@@ -13596,14 +13851,14 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "demand_shocks",
       "commonError": "reversing_negative_demand_shock",
-      "feedback": "A negative demand shock shifts AD left, lowering output and raising unemployment in the short run.",
+      "feedback": "A negative demand shock shifts the AD curve to the left, lowering output and raising unemployment in the short run.",
       "image": "demandshock.webp",
       "aHash": "2487d34c3c5da37f228feefbf468adf951c8b861304a1b5361d27f851e1a182d"
     },
     {
       "id": 5070,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the demand-shock graph. A positive demand shock creates which gap?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. A positive demand shock creates which gap?",
       "options": [
         "Inflationary gap",
         "Recessionary gap",
@@ -13630,7 +13885,7 @@ const microSkillRepairPools = {
       "options": [
         "Policy overshot",
         "Policy undercorrected",
-        "SRAS shifted right",
+        "The SRAS curve shifted to the right",
         "LRAS disappeared"
       ],
       "tag": "demand_shocks",
@@ -13718,7 +13973,7 @@ const microSkillRepairPools = {
     {
       "id": 5075,
       "sourceGame": "mintAshGold",
-      "q": "Actual output below natural output describes what condition?",
+      "q": "What is the term for a situation in which actual output is below natural output?",
       "options": [
         "A recessionary gap",
         "An inflationary gap",
@@ -13762,7 +14017,7 @@ const microSkillRepairPools = {
     {
       "id": 5077,
       "sourceGame": "mintAshGold",
-      "q": "Actual output above natural output describes what condition?",
+      "q": "What is the term for a situation in which actual output is above natural output?",
       "options": [
         "An inflationary gap",
         "A recessionary gap",
@@ -13786,11 +14041,11 @@ const microSkillRepairPools = {
     {
       "id": 5078,
       "sourceGame": "mintAshGold",
-      "q": "With a horizontal short-run aggregate supply curve, a leftward AD shift first changes what?",
+      "q": "With a horizontal short-run aggregate supply curve, how does a leftward shift of aggregate demand initially affect output and the price level?",
       "options": [
         "Output falls while the price level stays fixed",
         "The price level rises while output stays fixed",
-        "LRAS shifts left",
+        "The LRAS curve shifts to the left",
         "Natural output rises"
       ],
       "tag": "short_run_adas",
@@ -13808,11 +14063,11 @@ const microSkillRepairPools = {
     {
       "id": 5079,
       "sourceGame": "mintAshGold",
-      "q": "With a horizontal short-run aggregate supply curve, a rightward AD shift first does what?",
+      "q": "With a horizontal short-run aggregate supply curve, how does a rightward shift of aggregate demand initially affect output and the price level?",
       "options": [
         "Raises output at the same price level",
         "Raises only the price level",
-        "Shifts LRAS right",
+        "Shifts the LRAS curve to the right",
         "Lowers output"
       ],
       "tag": "short_run_adas",
@@ -13854,7 +14109,7 @@ const microSkillRepairPools = {
     {
       "id": 5081,
       "sourceGame": "mintAshGold",
-      "q": "After a negative demand shock, what tends to shift SRAS right over time?",
+      "q": "After a negative demand shock, what tends to shift the SRAS curve to the right over time?",
       "options": [
         "Falling wage and price expectations",
         "Rising input costs",
@@ -13870,13 +14125,13 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "long_run_adjustment",
       "commonError": "wrong_sras_adjustment_direction",
-      "feedback": "Weak demand reduces wage and price pressure, shifting SRAS right toward natural output.",
+      "feedback": "Weak demand reduces wage and price pressure, shifting the SRAS curve to the right toward natural output.",
       "aHash": "f3f1bf1cfe56c8ea90812bf4f82b915116743e73eb783a3ac4eaee62061722e1"
     },
     {
       "id": 5082,
       "sourceGame": "mintAshGold",
-      "q": "After a positive demand shock, what tends to shift SRAS left over time?",
+      "q": "After a positive demand shock, what tends to shift the SRAS curve to the left over time?",
       "options": [
         "Rising wage and price expectations",
         "Falling input costs",
@@ -13892,7 +14147,7 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "long_run_adjustment",
       "commonError": "wrong_sras_adjustment_direction",
-      "feedback": "An overheated economy raises wage and price expectations, shifting SRAS left toward natural output.",
+      "feedback": "An overheated economy raises wage and price expectations, shifting the SRAS curve to the left toward natural output.",
       "aHash": "57f915337f43868fb4d2a1d39cacd4676abd124449d9c92b7b641124d0c7646a"
     },
     {
@@ -13944,7 +14199,7 @@ const microSkillRepairPools = {
     {
       "id": 5085,
       "sourceGame": "mintAshGold",
-      "q": "A change in the price level alone causes what on a vertical LRAS curve?",
+      "q": "Along a vertical long-run aggregate supply curve, how does a change in the price level affect output supplied?",
       "options": [
         "No change in long-run output",
         "A permanent rise in output",
@@ -13982,7 +14237,7 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "lras",
       "commonError": "confusing_ad_shift_with_lras_shift",
-      "feedback": "Higher productivity expands productive capacity and shifts LRAS right.",
+      "feedback": "Higher productivity expands productive capacity and shifts the LRAS curve to the right.",
       "aHash": "55b0e027c8cda608ebd67f83e274d4dc795602df6c17989ec9d0f728abc453e3"
     }
   ],
@@ -13990,7 +14245,7 @@ const microSkillRepairPools = {
     {
       "id": 5087,
       "sourceGame": "mintAshGold",
-      "q": "A negative short-run aggregate supply shock typically does what?",
+      "q": "How does a negative short-run aggregate supply shock typically affect equilibrium output and the price level?",
       "options": [
         "Raises the price level and lowers output",
         "Lowers the price level and raises output",
@@ -14016,7 +14271,7 @@ const microSkillRepairPools = {
       "options": [
         "Supporting output can worsen inflation",
         "Supporting output always lowers inflation",
-        "Demand policy shifts LRAS right immediately",
+        "Demand policy shifts the LRAS curve to the right immediately",
         "The shock has no price effect"
       ],
       "tag": "supply_shocks",
@@ -14034,7 +14289,7 @@ const microSkillRepairPools = {
     {
       "id": 5089,
       "sourceGame": "mintAshGold",
-      "q": "A positive supply shock usually changes output and prices how?",
+      "q": "How does a positive short-run aggregate supply shock affect equilibrium output and the price level?",
       "options": [
         "Output rises and the price level falls",
         "Output falls and the price level rises",
@@ -14111,7 +14366,7 @@ const microSkillBridgePools = {
     {
       "id": 6002,
       "sourceGame": "mintAshGold",
-      "q": "A bank receives new deposits and keeps only required reserves. What bridge connects money measures to money creation?",
+      "q": "A bank receives new deposits and holds only the required reserves. How can its lending affect deposits elsewhere in the banking system?",
       "options": [
         "Deposits are money, and excess reserves can become loans",
         "Deposits are not money, but stocks become reserves",
@@ -14213,7 +14468,7 @@ const microSkillBridgePools = {
     {
       "id": 6006,
       "sourceGame": "mintAshGold",
-      "q": "The Fed buys bonds from banks. Which bridge connects this action to lending?",
+      "q": "The Fed buys bonds from banks. How can the resulting reserve change affect bank lending?",
       "options": [
         "Reserves rise, excess reserves may rise, lending capacity increases",
         "Reserves fall, excess reserves fall, lending capacity increases",
@@ -14263,7 +14518,7 @@ const microSkillBridgePools = {
     {
       "id": 6008,
       "sourceGame": "mintAshGold",
-      "q": "A lower discount rate matters for money creation because it can do what?",
+      "q": "How does a lower discount rate affect the terms on which banks can borrow reserves from the central bank?",
       "options": [
         "Make it cheaper for banks to obtain reserves",
         "Force households to hold less currency",
@@ -14313,7 +14568,7 @@ const microSkillBridgePools = {
     {
       "id": 6010,
       "sourceGame": "mintAshGold",
-      "q": "Which policy bridge is contractionary from start to finish?",
+      "q": "Which sequence correctly describes contractionary monetary policy through bank reserves and lending?",
       "options": [
         "Fed sells bonds, reserves fall, lending weakens, money growth slows",
         "Fed buys bonds, reserves rise, lending weakens, money growth slows",
@@ -14338,7 +14593,7 @@ const microSkillBridgePools = {
     {
       "id": 6011,
       "sourceGame": "mintAshGold",
-      "q": "Which policy bridge is expansionary from start to finish?",
+      "q": "Which sequence correctly describes expansionary monetary policy through bank reserves and lending?",
       "options": [
         "Fed buys bonds, reserves rise, lending capacity rises, money may expand",
         "Fed sells bonds, reserves rise, lending capacity rises, money may expand",
@@ -14390,7 +14645,7 @@ const microSkillBridgePools = {
     {
       "id": 6013,
       "sourceGame": "mintAshGold",
-      "q": "Money grows 8 percent, output grows 3 percent, and velocity falls 2 percent. Which bridge gives inflation?",
+      "q": "Money grows 8%, real output grows 3%, and velocity falls 2%. How do these changes determine approximate inflation?",
       "options": [
         "8 minus 2 minus 3 equals 3 percent",
         "8 plus 2 plus 3 equals 13 percent",
@@ -14440,7 +14695,7 @@ const microSkillBridgePools = {
     {
       "id": 6015,
       "sourceGame": "mintAshGold",
-      "q": "A government prints money to finance spending. Which bridge explains why this can act like a tax?",
+      "q": "A government creates money to finance spending. How can the resulting inflation impose a cost similar to a tax on money holders?",
       "options": [
         "Inflation reduces the purchasing power of money holders",
         "Printing money raises real wages automatically",
@@ -14517,7 +14772,7 @@ const microSkillBridgePools = {
     {
       "id": 6018,
       "sourceGame": "mintAshGold",
-      "q": "A lender sets a nominal rate using expected inflation. Which bridge connects inflation to lending contracts?",
+      "q": "A lender sets a nominal interest rate using expected inflation. How does inflation affect the real return on the loan?",
       "options": [
         "Expected inflation helps determine the nominal interest rate",
         "Actual inflation never affects realized real returns",
@@ -14542,7 +14797,7 @@ const microSkillBridgePools = {
     {
       "id": 6019,
       "sourceGame": "mintAshGold",
-      "q": "A nominal loan rate is 10 percent. Expected inflation is 4 percent, but actual inflation is 8 percent. Which bridge identifies the lender's problem?",
+      "q": "A loan’s nominal interest rate is 10%. Expected inflation was 4%, but actual inflation is 8%. How does the lender’s realized real return compare with the expected return?",
       "options": [
         "The realized real return is lower than expected",
         "The nominal rate automatically rises to 14 percent",
@@ -14592,7 +14847,7 @@ const microSkillBridgePools = {
     {
       "id": 6021,
       "sourceGame": "mintAshGold",
-      "q": "If expected inflation rises and nominal interest rates rise one-for-one, what bridge keeps the real rate stable?",
+      "q": "Expected inflation rises and the nominal interest rate rises by the same amount. Why does the expected real interest rate stay unchanged?",
       "options": [
         "The Fisher effect",
         "The money multiplier",
@@ -14617,7 +14872,7 @@ const microSkillBridgePools = {
     {
       "id": 6022,
       "sourceGame": "mintAshGold",
-      "q": "Which bridge explains why fixed-income retirees can be hurt by unexpected inflation?",
+      "q": "Why can unexpected inflation reduce the purchasing power of retirees with fixed nominal incomes?",
       "options": [
         "Fixed nominal payments buy less when prices rise faster than expected",
         "Fixed nominal payments rise automatically with all prices",
@@ -14642,7 +14897,7 @@ const microSkillBridgePools = {
     {
       "id": 6023,
       "sourceGame": "mintAshGold",
-      "q": "Which bridge connects inflation uncertainty to planning problems?",
+      "q": "How does uncertainty about future inflation make economic planning more difficult?",
       "options": [
         "Unstable prices make future dollar values harder to interpret",
         "Unstable prices make all real variables easier to measure",
@@ -14694,7 +14949,7 @@ const microSkillBridgePools = {
     {
       "id": 6025,
       "sourceGame": "mintAshGold",
-      "q": "If money grows 6 percent and output grows 2 percent with stable velocity, what nominal-real bridge follows?",
+      "q": "Money grows 6% and real output grows 2%, with stable velocity. What are the implied nominal and real effects?",
       "options": [
         "Inflation is about 4 percent, while real output growth is 2 percent",
         "Inflation is 2 percent, while nominal output falls",
@@ -14719,7 +14974,7 @@ const microSkillBridgePools = {
     {
       "id": 6026,
       "sourceGame": "mintAshGold",
-      "q": "Which bridge links long-run money growth to nominal interest rates?",
+      "q": "How does sustained money growth affect nominal interest rates through long-run inflation and the Fisher effect?",
       "options": [
         "Money growth raises inflation, and expected inflation raises nominal rates",
         "Money growth raises capital, and capital raises nominal rates",
@@ -14769,7 +15024,7 @@ const microSkillBridgePools = {
     {
       "id": 6028,
       "sourceGame": "mintAshGold",
-      "q": "If all prices and nominal wages double while real output is unchanged, what bridge is being shown?",
+      "q": "All prices and nominal wages double while real output stays unchanged. What does this illustrate about nominal and real variables?",
       "options": [
         "Classical dichotomy between nominal and real variables",
         "Okun's law between output and unemployment",
@@ -14793,7 +15048,7 @@ const microSkillBridgePools = {
     {
       "id": 6029,
       "sourceGame": "mintAshGold",
-      "q": "Which bridge best handles short-run versus long-run money effects?",
+      "q": "Which statement correctly distinguishes the short-run and long-run effects of a monetary expansion?",
       "options": [
         "Money can affect output with sticky prices, but long-run effects are mainly nominal",
         "Money affects output permanently whenever M2 rises",
@@ -14849,7 +15104,7 @@ const microSkillBridgePools = {
       "options": [
         "Depreciation rises with capital and eventually matches investment",
         "Money demand rises and stops investment",
-        "AD shifts left whenever output rises",
+        "The AD curve shifts to the left whenever output rises",
         "Inflation turns capital into consumption"
       ],
       "tag": "solow_steady_bridge",
@@ -14870,7 +15125,7 @@ const microSkillBridgePools = {
     {
       "id": 6032,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the steady-state graph. What connects the crossing point to Δk?",
+      "q": "Refer to the Solow steady-state graph. What connects the crossing point to Δk?",
       "options": [
         "At the crossing, investment minus depreciation equals zero",
         "At the crossing, output equals zero",
@@ -14896,7 +15151,7 @@ const microSkillBridgePools = {
     {
       "id": 6033,
       "sourceGame": "mintAshGold",
-      "q": "If y = √k, s = 0.25, δ = 0.10, and k = 16, what bridge shows whether capital rises?",
+      "q": "In the basic Solow model, y = √k, s = 0.25, δ = 0.10, and k = 16. How do investment and depreciation determine whether capital per worker rises or falls?",
       "options": [
         "Investment is 1 and depreciation is 1.6, so capital falls",
         "Investment is 4 and depreciation is 1.6, so capital rises",
@@ -14921,7 +15176,7 @@ const microSkillBridgePools = {
     {
       "id": 6034,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the Solow production graph. Why does diminishing returns help create convergence toward steady state?",
+      "q": "Refer to the Solow production function graph. Why does diminishing returns help create convergence toward steady state?",
       "options": [
         "Investment gains weaken while depreciation rises with capital",
         "Depreciation falls to zero as capital rises",
@@ -14947,7 +15202,7 @@ const microSkillBridgePools = {
     {
       "id": 6035,
       "sourceGame": "mintAshGold",
-      "q": "Which bridge connects output per worker, saving, and steady state?",
+      "q": "How do output per worker and the saving rate determine investment and the steady-state capital stock in the basic Solow model?",
       "options": [
         "Output determines saving and investment, which is compared to depreciation",
         "Output determines velocity, which is compared to inflation",
@@ -14999,7 +15254,7 @@ const microSkillBridgePools = {
     {
       "id": 6037,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the saving-rate graph. Why does the new steady state have higher output per worker?",
+      "q": "Refer to the Solow saving-rate graph. Why does the new steady state have higher output per worker?",
       "options": [
         "Higher saving raises capital per worker, and capital raises output",
         "Higher saving raises the price level, and prices raise output",
@@ -15072,42 +15327,17 @@ const microSkillBridgePools = {
       "aHash": "0a2a579b6c5054accc1ed20f0b9f5149ae7c1ad974b750ce46b0f5340419a017"
     },
     {
-      "id": 6040,
+      "id": 46041,
       "sourceGame": "mintAshGold",
-      "q": "What bridge explains why the highest saving rate is not automatically best?",
+      "q": "In the basic Solow model, a higher saving rate initially raises investment above depreciation. What happens as a result?",
       "options": [
-        "The goal is consumption per worker, not capital for its own sake",
-        "The goal is maximum depreciation",
-        "The goal is the highest price level",
-        "The goal is the lowest output per worker"
+        "Capital per worker accumulates, supporting higher output per worker",
+        "Investment falls below depreciation immediately",
+        "Current consumption must rise before output changes",
+        "Aggregate demand eliminates all scarcity of capital"
       ],
       "tag": "saving_living_bridge",
-      "type": "bridge",
-      "objective": "LO8.2",
-      "difficulty": "bridge",
-      "conceptCluster": "bridge_saving_living",
-      "primarySkill": "golden_rule_bridge",
-      "secondarySkills": [
-        "consumption",
-        "saving_rate"
-      ],
-      "repairSkill": "saving_rate",
-      "commonError": "equating_highest_saving_with_best_outcome",
-      "feedback": "The Golden Rule focuses on consumption per worker, not simply the largest capital stock.",
-      "aHash": "e2baeb1e5bd67544926ed3bc6fad2dfe985cc900137bc7e70dac6cab851b082c"
-    },
-    {
-      "id": 6041,
-      "sourceGame": "mintAshGold",
-      "q": "If a country is below the Golden Rule level of capital, why can higher saving help?",
-      "options": [
-        "It raises investment and moves capital toward a more consumption-supporting level",
-        "It lowers investment and raises current consumption forever",
-        "It raises depreciation enough to increase output",
-        "It shifts AD right and eliminates capital scarcity"
-      ],
-      "tag": "saving_living_bridge",
-      "type": "bridge",
+      "type": "application",
       "objective": "LO8.2",
       "difficulty": "bridge",
       "conceptCluster": "bridge_saving_living",
@@ -15117,21 +15347,46 @@ const microSkillBridgePools = {
         "consumption"
       ],
       "repairSkill": "saving_rate",
-      "commonError": "choosing_lower_saving_when_capital_is_too_low",
-      "feedback": "Below the Golden Rule, more saving and investment can move the economy toward higher sustainable consumption.",
-      "aHash": "d80cd59f5ff3a9d113aa391517bf8d531f093bc71c6a13d707befbc5b2c62df5"
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "Net investment adds to capital per worker. Diminishing returns mean the economy eventually approaches a new steady state rather than growing forever from this saving-rate change alone.",
+      "aHash": "50942926ee356921ce6366a1152b3564e3eb41b9b4a004f5ea23dabb82ea1284"
+    },
+    {
+      "id": 46040,
+      "sourceGame": "mintAshGold",
+      "q": "Why should policymakers consider household consumption as well as capital accumulation when assessing a higher saving rate?",
+      "options": [
+        "Investment can raise future output but requires giving up some consumption today",
+        "More capital has no effect on productive capacity",
+        "Saving and consumption are identical uses of current output",
+        "Only the current price level determines living standards"
+      ],
+      "tag": "saving_living_bridge",
+      "type": "application",
+      "objective": "LO8.2",
+      "difficulty": "bridge",
+      "conceptCluster": "bridge_saving_living",
+      "primarySkill": "golden_rule_bridge",
+      "secondarySkills": [
+        "consumption",
+        "saving_rate"
+      ],
+      "repairSkill": "saving_rate",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "A higher saving rate can support future production while reducing current consumption. Evaluating policy requires considering both parts of that tradeoff.",
+      "aHash": "62564aaaa6aa4efcefaf437d3910f72d315f16c73379c07a3f3bd37f79511c21"
     }
   ],
   "ad_to_business_cycles": [
     {
       "id": 6042,
       "sourceGame": "mintAshGold",
-      "q": "A fall in consumer confidence shifts AD left. What bridge connects this to unemployment?",
+      "q": "Consumer confidence falls, shifting aggregate demand to the left while prices are sticky. How does the fall in output affect unemployment?",
       "options": [
         "AD falls, output falls, firms need fewer workers, unemployment rises",
         "AD falls, output rises, firms hire more workers, unemployment falls",
         "AD falls, prices rise instantly, unemployment disappears",
-        "AD falls, LRAS shifts right, unemployment rises"
+        "AD falls, the LRAS curve shifts to the right, unemployment rises"
       ],
       "tag": "ad_cycle_bridge",
       "type": "bridge",
@@ -15151,11 +15406,11 @@ const microSkillBridgePools = {
     {
       "id": 6043,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the AD-SRAS graph. Why does a leftward AD shift reduce output when SRAS is horizontal?",
+      "q": "Refer to the aggregate demand and short-run aggregate supply graph. Why does a leftward AD shift reduce output when SRAS is horizontal?",
       "options": [
         "Prices are sticky, so firms cut production instead",
         "Prices rise instantly, so firms produce more",
-        "LRAS shifts left whenever AD falls",
+        "The LRAS curve shifts to the left whenever AD falls",
         "Capital per worker rises when demand falls"
       ],
       "tag": "ad_cycle_bridge",
@@ -15177,12 +15432,12 @@ const microSkillBridgePools = {
     {
       "id": 6044,
       "sourceGame": "mintAshGold",
-      "q": "A central bank expands money while prices are sticky. Which bridge gives the short-run result?",
+      "q": "A central bank expands the money supply while prices are sticky. What short-run effect on spending and output follows?",
       "options": [
-        "Real balances rise, AD shifts right, output rises",
-        "Real balances fall, AD shifts left, output falls",
-        "LRAS shifts right, output rises permanently",
-        "SRAS shifts left, unemployment falls"
+        "Real balances rise, the AD curve shifts to the right, output rises",
+        "Real balances fall, the AD curve shifts to the left, output falls",
+        "The LRAS curve shifts to the right, output rises permanently",
+        "The SRAS curve shifts to the left, unemployment falls"
       ],
       "tag": "ad_cycle_bridge",
       "type": "bridge",
@@ -15196,13 +15451,13 @@ const microSkillBridgePools = {
       ],
       "repairSkill": "aggregate_demand",
       "commonError": "wrong_direction_money_ad",
-      "feedback": "With sticky prices, more money raises real balances, shifts AD right, and raises short-run output.",
-      "aHash": "3b87f8a0ba77398591d66b6d2c8c35eb332f7684ba81c720f9fab9a10aa45e62"
+      "feedback": "With sticky prices, more money raises real balances, shifts the AD curve to the right, and raises short-run output.",
+      "aHash": "e0efd68f9802779f74e444cc91fc485aacd9c1c53a95ef5d40d14596ce9f5c4c"
     },
     {
       "id": 6045,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the demand-shock graph. A negative demand shock creates which bridge from output to labor markets?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. How does a negative demand shock affect output and unemployment in the short run?",
       "options": [
         "Output falls below natural output, so unemployment rises above normal",
         "Output rises above natural output, so unemployment rises above normal",
@@ -15228,7 +15483,7 @@ const microSkillBridgePools = {
     {
       "id": 6046,
       "sourceGame": "mintAshGold",
-      "q": "If unemployment rises by 2 points and normal growth is 3 percent, what bridge does Okun's law give?",
+      "q": "Unemployment rises by 2 percentage points and normal real GDP growth is 3%. Using Okun’s law with a two-point growth reduction per one-point rise in unemployment, what is predicted GDP growth?",
       "options": [
         "Growth is about −1 percent",
         "Growth is about 1 percent",
@@ -15253,7 +15508,7 @@ const microSkillBridgePools = {
     {
       "id": 6047,
       "sourceGame": "mintAshGold",
-      "q": "Which bridge separates a recessionary gap from an inflationary gap?",
+      "q": "How do recessionary and inflationary gaps differ in their relationship to natural output?",
       "options": [
         "Recessionary gap means output below natural; inflationary gap means output above natural",
         "Recessionary gap means output above natural; inflationary gap means output below natural",
@@ -15280,7 +15535,7 @@ const microSkillBridgePools = {
     {
       "id": 6048,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the demand-shock graph. If AD falls and output is below natural output, what policy bridge fits best?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. Aggregate demand falls, leaving output below its natural level. Which demand-policy response can help close the gap?",
       "options": [
         "Calibrated AD support can close the recessionary gap",
         "Aggressive tightening closes the recessionary gap",
@@ -15305,7 +15560,7 @@ const microSkillBridgePools = {
     {
       "id": 6049,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the demand-shock graph. If AD rises and output is above natural output, what policy warning fits?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. If AD rises and output is above natural output, what policy warning fits?",
       "options": [
         "More stimulus risks inflation pressure",
         "More stimulus is needed because output is high",
@@ -15330,7 +15585,7 @@ const microSkillBridgePools = {
     {
       "id": 6050,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the supply-shock graph. What bridge makes a negative supply shock harder than a demand shock?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. Why does a negative supply shock create a different stabilization tradeoff from a negative demand shock?",
       "options": [
         "Output falls while prices rise, creating a policy tradeoff",
         "Output falls while prices fall, making stimulus costless",
@@ -15359,7 +15614,7 @@ const microSkillBridgePools = {
       "options": [
         "It may help output but worsen inflation",
         "It lowers prices and raises output without cost",
-        "It shifts SRAS right automatically",
+        "It shifts the SRAS curve to the right automatically",
         "It raises natural output permanently"
       ],
       "tag": "shock_policy_bridge",
@@ -15379,11 +15634,11 @@ const microSkillBridgePools = {
     {
       "id": 6052,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the shock-plus-policy graph. What does policy overshoot mean?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. What does policy overshoot mean?",
       "options": [
         "AD shifts so far right that output rises above natural output",
-        "AD shifts right but output remains below natural output",
-        "SRAS shifts right after wages fall",
+        "The AD curve shifts to the right but output remains below natural output",
+        "The SRAS curve shifts to the right after wages fall",
         "LRAS moves to match current output"
       ],
       "tag": "shock_policy_bridge",
@@ -15404,11 +15659,11 @@ const microSkillBridgePools = {
     {
       "id": 6053,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the shock-plus-policy graph. What does policy undercorrection mean?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. What does policy undercorrection mean?",
       "options": [
         "AD support is not enough, so output remains below natural output",
         "AD support is too large, so output exceeds natural output",
-        "SRAS shifts left after input costs rise",
+        "The SRAS curve shifts to the left after input costs rise",
         "LRAS rises because policy worked"
       ],
       "tag": "shock_policy_bridge",
@@ -15433,9 +15688,9 @@ const microSkillBridgePools = {
       "sourceGame": "mintAshGold",
       "q": "After a negative demand shock, why can output recover even without policy?",
       "options": [
-        "Wages and prices fall, shifting SRAS right",
-        "Wages and prices rise, shifting SRAS left",
-        "AD shifts left again until output rises",
+        "Wages and prices fall, shifting the SRAS curve to the right",
+        "Wages and prices rise, shifting the SRAS curve to the left",
+        "The AD curve shifts to the left again until output rises",
         "LRAS falls to match low output"
       ],
       "tag": "long_run_bridge",
@@ -15449,16 +15704,16 @@ const microSkillBridgePools = {
       ],
       "repairSkill": "long_run_adjustment",
       "commonError": "wrong_direction_self_correction",
-      "feedback": "Falling wages and prices reduce costs and shift SRAS right after a recessionary gap.",
-      "aHash": "71603d7a604fe100947c2b2116c45181de9133035097d8b34685b8f0114bffd9"
+      "feedback": "Falling wages and prices reduce costs and shift the SRAS curve to the right after a recessionary gap.",
+      "aHash": "047ca4db017be5cee4a9d6ebac3a812519a2a33f0f0633ac6299a19253de4cf9"
     },
     {
       "id": 6055,
       "sourceGame": "mintAshGold",
       "q": "After a positive demand shock, why does output not stay above natural output forever?",
       "options": [
-        "Wages and prices rise, shifting SRAS left",
-        "Wages and prices fall, shifting SRAS right",
+        "Wages and prices rise, shifting the SRAS curve to the left",
+        "Wages and prices fall, shifting the SRAS curve to the right",
         "Depreciation disappears as output rises",
         "AD keeps shifting right forever"
       ],
@@ -15473,13 +15728,13 @@ const microSkillBridgePools = {
       ],
       "repairSkill": "long_run_adjustment",
       "commonError": "thinking_inflationary_gap_is_permanent",
-      "feedback": "An inflationary gap creates wage and price pressure that shifts SRAS left.",
-      "aHash": "9fbeb9e0655e159315d76c6f8e31e481e98dac1a15f33c6319e66db679d0a2bf"
+      "feedback": "An inflationary gap creates wage and price pressure that shifts the SRAS curve to the left.",
+      "aHash": "c08a642ba73feca596ad298351f64a395145d09afc181430d196477e55a2da0f"
     },
     {
       "id": 6056,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the AD-LRAS graph. Why does AD not determine long-run output?",
+      "q": "Refer to the aggregate demand and long-run aggregate supply graph. Why does AD not determine long-run output?",
       "options": [
         "Long-run output is set by labor, capital, and technology",
         "Long-run output is set only by consumer confidence",
@@ -15504,7 +15759,7 @@ const microSkillBridgePools = {
     {
       "id": 6057,
       "sourceGame": "mintAshGold",
-      "q": "If AD rises in the long run while LRAS is unchanged, what bridge connects the result?",
+      "q": "Aggregate demand increases while long-run aggregate supply stays unchanged. What happens to the price level and output after prices fully adjust?",
       "options": [
         "Prices rise, but natural output is unchanged",
         "Prices fall, and natural output rises",
@@ -15529,11 +15784,11 @@ const microSkillBridgePools = {
     {
       "id": 6058,
       "sourceGame": "mintAshGold",
-      "q": "Which bridge links low unemployment after a positive demand shock to later SRAS movement?",
+      "q": "Following a positive demand shock, unemployment is below its natural rate. How can wage and price adjustment move short-run aggregate supply?",
       "options": [
-        "Low unemployment raises wage pressure, shifting SRAS left",
-        "Low unemployment lowers wages, shifting SRAS right",
-        "Low unemployment shifts AD left immediately",
+        "Low unemployment raises wage pressure, shifting the SRAS curve to the left",
+        "Low unemployment lowers wages, shifting the SRAS curve to the right",
+        "Low unemployment shifts the AD curve to the left immediately",
         "Low unemployment lowers the price level directly"
       ],
       "tag": "long_run_bridge",
@@ -15548,17 +15803,17 @@ const microSkillBridgePools = {
       ],
       "repairSkill": "long_run_adjustment",
       "commonError": "wrong_wage_pressure_direction",
-      "feedback": "Low unemployment creates upward wage pressure, raising costs and shifting SRAS left.",
-      "aHash": "7002627f10df1b18d80f691aeecfc139e9815929a634376ac1a68ef0b0faca40"
+      "feedback": "Low unemployment creates upward wage pressure, raising costs and shifting the SRAS curve to the left.",
+      "aHash": "15fc9e9d26589da30c59fe4b25a2d92593f6e7a5517778b8c3b99da0fb26dc40"
     },
     {
       "id": 6059,
       "sourceGame": "mintAshGold",
-      "q": "Which bridge links high unemployment after a negative demand shock to later SRAS movement?",
+      "q": "Following a negative demand shock, unemployment is above its natural rate. How can wage and price adjustment move short-run aggregate supply?",
       "options": [
-        "High unemployment lowers wage pressure, shifting SRAS right",
-        "High unemployment raises wages, shifting SRAS left",
-        "High unemployment shifts LRAS left permanently",
+        "High unemployment lowers wage pressure, shifting the SRAS curve to the right",
+        "High unemployment raises wages, shifting the SRAS curve to the left",
+        "High unemployment shifts the LRAS curve to the left permanently",
         "High unemployment raises AD by itself"
       ],
       "tag": "long_run_bridge",
@@ -15573,20 +15828,20 @@ const microSkillBridgePools = {
       ],
       "repairSkill": "long_run_adjustment",
       "commonError": "wrong_wage_pressure_direction",
-      "feedback": "High unemployment weakens wage pressure, lowers costs, and shifts SRAS right.",
-      "aHash": "ee8f42de8aa43d476695a5a05b51db3a46601351cd55ae6c8dde5eab41bb22a3"
+      "feedback": "High unemployment weakens wage pressure, lowers costs, and shifts the SRAS curve to the right.",
+      "aHash": "f4d9a077deb6f0ad4726e40e1ac49057b6e37c2e9c5d192fe7b597a1fb370f95"
     }
   ],
   "mixed_policy_analysis": [
     {
       "id": 6060,
       "sourceGame": "mintAshGold",
-      "q": "Output is falling and prices are falling. Which bridge points to the likely shock and policy direction?",
+      "q": "Output and prices are both falling. Which shock and policy response are consistent with that combination?",
       "options": [
         "Negative demand shock; calibrated AD support may help",
         "Negative supply shock; maximum AD support is costless",
         "Positive demand shock; tighten immediately",
-        "Positive supply shock; shift AD left"
+        "Positive supply shock; shift the AD curve to the left"
       ],
       "tag": "mixed_policy_bridge",
       "type": "bridge",
@@ -15606,7 +15861,7 @@ const microSkillBridgePools = {
     {
       "id": 6061,
       "sourceGame": "mintAshGold",
-      "q": "Output is falling and prices are rising. Which bridge points to the likely shock and policy dilemma?",
+      "q": "Output is falling while prices are rising. Which shock and stabilization tradeoff are consistent with that combination?",
       "options": [
         "Negative supply shock; policy faces an output-inflation tradeoff",
         "Negative demand shock; stimulus lowers inflation automatically",
@@ -15631,7 +15886,7 @@ const microSkillBridgePools = {
     {
       "id": 6062,
       "sourceGame": "mintAshGold",
-      "q": "Output is above natural output and inflation expectations are rising. Which bridge supports the policy warning?",
+      "q": "Output exceeds its natural level and expected inflation is rising. What risk should policymakers consider?",
       "options": [
         "The economy is overheated, so more AD support is risky",
         "The economy is in recession, so more AD support is required",
@@ -15656,7 +15911,7 @@ const microSkillBridgePools = {
     {
       "id": 6063,
       "sourceGame": "mintAshGold",
-      "q": "Output is below natural output, but inflation expectations are rising after an oil shock. Which bridge prevents a reckless answer?",
+      "q": "Output is below its natural level, but an oil shock has raised expected inflation. What tradeoff should policymakers consider before expanding demand?",
       "options": [
         "The evidence suggests a supply shock tradeoff, not simple demand weakness",
         "The evidence proves stimulus is costless",
@@ -15681,7 +15936,7 @@ const microSkillBridgePools = {
     {
       "id": 6064,
       "sourceGame": "mintAshGold",
-      "q": "A recessionary gap remains after modest stimulus. What bridge gives the next policy judgment?",
+      "q": "A recessionary gap remains after a modest stimulus. What does the remaining output shortfall imply for the policy assessment?",
       "options": [
         "More support may be justified until the gap closes",
         "Policy has overshot because any stimulus is too much",
@@ -15706,11 +15961,11 @@ const microSkillBridgePools = {
     {
       "id": 6065,
       "sourceGame": "mintAshGold",
-      "q": "Output rises above natural output after stimulus. What bridge gives the next policy concern?",
+      "q": "Output rises above its natural level following stimulus. Which concern should now enter the policy assessment?",
       "options": [
         "Policy overshoot may create inflation pressure",
         "Policy undercorrection remains the main risk",
-        "Output above natural output proves LRAS shifted right",
+        "Output above natural output proves the LRAS curve shifted to the right",
         "Inflation pressure must fall because output rose"
       ],
       "tag": "mixed_policy_bridge",
@@ -15733,12 +15988,12 @@ const microSkillBridgePools = {
     {
       "id": 6066,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the shock-plus-policy graph. Why is the best policy not simply 'shift AD as far right as possible'?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. Why is the best policy not simply 'shift AD as far right as possible'?",
       "options": [
         "Too much AD creates inflation pressure after the gap closes",
         "More AD always lowers inflation",
         "AD cannot affect output even in the short run",
-        "LRAS shifts right whenever AD rises"
+        "The LRAS curve shifts to the right whenever AD rises"
       ],
       "tag": "graph_policy_bridge",
       "type": "bridge_graph",
@@ -15758,11 +16013,11 @@ const microSkillBridgePools = {
     {
       "id": 6067,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the supply-shock graph. Why does the graph make the policy decision harder than a demand-shock graph?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. Why does the graph make the policy decision harder than a demand-shock graph?",
       "options": [
         "The bad outcome includes both lower output and higher prices",
         "The bad outcome includes higher output and lower prices",
-        "The graph shows AD shifting left only",
+        "The graph shows the AD curve shifting to the left only",
         "The graph shows no price effect"
       ],
       "tag": "graph_policy_bridge",
@@ -15783,7 +16038,7 @@ const microSkillBridgePools = {
     {
       "id": 6068,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the demand-shock graph. Why is AD support more straightforward after a negative demand shock than after a negative supply shock?",
+      "q": "Refer to the aggregate demand and aggregate supply graph. Why is AD support more straightforward after a negative demand shock than after a negative supply shock?",
       "options": [
         "It targets the curve that moved and can close a recessionary gap",
         "It raises SRAS and lowers input costs",
@@ -15809,11 +16064,11 @@ const microSkillBridgePools = {
     {
       "id": 6069,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the AD-LRAS graph. What policy bridge does the vertical LRAS line force students to remember?",
+      "q": "Refer to the aggregate demand and long-run aggregate supply graph. What limit on demand policy is represented by the vertical long-run aggregate supply curve?",
       "options": [
         "Demand policy cannot permanently raise natural output",
         "Demand policy always raises natural output",
-        "Price-level changes shift LRAS left",
+        "Price-level changes shift the LRAS curve to the left",
         "Money growth directly raises capital per worker"
       ],
       "tag": "graph_policy_bridge",
@@ -15835,11 +16090,11 @@ const microSkillBridgePools = {
     {
       "id": 6070,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the steady-state changes graph. What policy bridge connects saving to future output?",
+      "q": "Refer to the Solow saving-rate graph. How does a higher saving rate affect investment, capital per worker, and future output per worker?",
       "options": [
         "Higher saving raises investment, capital per worker, and output per worker",
         "Higher saving lowers investment and raises current consumption forever",
-        "Higher saving shifts AD right and raises prices only",
+        "Higher saving shifts the AD curve to the right and raises prices only",
         "Higher saving lowers depreciation to zero"
       ],
       "tag": "graph_policy_bridge",
@@ -15861,7 +16116,7 @@ const microSkillBridgePools = {
     {
       "id": 6071,
       "sourceGame": "mintAshGold",
-      "q": "Refer to the steady-state graph. What bridge connects current position to policy advice?",
+      "q": "Refer to the Solow steady-state graph. How does the current capital stock relative to k* indicate whether capital per worker is accumulating or declining?",
       "options": [
         "If k is below k*, investment exceeds depreciation, so growth is already underway",
         "If k is below k*, depreciation exceeds investment, so saving must be zero",
@@ -15889,11 +16144,11 @@ const microSkillBridgePools = {
     {
       "id": 6072,
       "sourceGame": "mintAshGold",
-      "q": "A fall in confidence shifts AD left while prices are sticky. What bridge connects the shock to employment?",
+      "q": "A fall in confidence shifts aggregate demand to the left while prices are sticky. How does this affect firms’ demand for workers and unemployment?",
       "options": [
         "Output falls, firms need fewer workers, and unemployment rises",
         "Output rises, firms need more workers, and unemployment rises",
-        "LRAS shifts right, so employment falls permanently",
+        "The LRAS curve shifts to the right, so employment falls permanently",
         "Prices jump instantly with no output effect"
       ],
       "tag": "short_run_adas_bridge",
@@ -15916,9 +16171,9 @@ const microSkillBridgePools = {
       "sourceGame": "mintAshGold",
       "q": "Government purchases rise while SRAS is temporarily horizontal. What is the short-run chain?",
       "options": [
-        "AD shifts right and output rises at the current price level",
-        "AD shifts left and output falls",
-        "LRAS shifts right immediately",
+        "The AD curve shifts to the right and output rises at the current price level",
+        "The AD curve shifts to the left and output falls",
+        "The LRAS curve shifts to the right immediately",
         "Only the price level rises"
       ],
       "tag": "short_run_adas_bridge",
@@ -15933,13 +16188,13 @@ const microSkillBridgePools = {
       ],
       "repairSkill": "short_run_adas",
       "commonError": "confusing_shift_and_movement",
-      "feedback": "Higher government purchases shift AD right; with sticky prices, output rises first.",
-      "aHash": "123c1cc8dac11e308626611fb89215031945a39a7c109b85a1dd537c98c310e2"
+      "feedback": "Higher government purchases shift the AD curve to the right; with sticky prices, output rises first.",
+      "aHash": "6ebfb631aa7ea0283e0e83ee7392944d68792925862185e2cbb9b70169bcfb1d"
     },
     {
       "id": 6074,
       "sourceGame": "mintAshGold",
-      "q": "What bridge connects short-run output effects to long-run neutrality?",
+      "q": "What adjustment explains why demand policy can affect output in the short run without permanently raising natural output?",
       "options": [
         "Prices and wages eventually adjust, returning output to natural output",
         "LRAS permanently follows every AD shift",
@@ -15966,10 +16221,10 @@ const microSkillBridgePools = {
     {
       "id": 6075,
       "sourceGame": "mintAshGold",
-      "q": "A policy raises productivity. Which bridge connects that change to the AD-AS model?",
+      "q": "A policy raises productivity. How does this affect productive capacity and long-run aggregate supply?",
       "options": [
-        "Productive capacity rises, shifting LRAS right",
-        "AD shifts left because prices rise",
+        "Productive capacity rises, shifting the LRAS curve to the right",
+        "The AD curve shifts to the left because prices rise",
         "SRAS becomes permanently horizontal",
         "Natural output falls"
       ],
@@ -15985,8 +16240,8 @@ const microSkillBridgePools = {
       ],
       "repairSkill": "lras",
       "commonError": "placing_productivity_on_ad",
-      "feedback": "Higher productivity expands capacity and shifts LRAS right.",
-      "aHash": "39889b97af5f8b7f4876df415c911339bbce9c1c44209ff0ddb0efb971406fad"
+      "feedback": "Higher productivity expands capacity and shifts the LRAS curve to the right.",
+      "aHash": "8915e03f351fb809f7752f4c9f2d687ec1c5a4a6bf11196dd23760b286176f6e"
     },
     {
       "id": 6076,
@@ -15994,7 +16249,7 @@ const microSkillBridgePools = {
       "q": "Why can demand policy close a recessionary gap without permanently raising output?",
       "options": [
         "It moves output toward vertical LRAS but does not shift productive capacity",
-        "It shifts LRAS right automatically",
+        "It shifts the LRAS curve to the right automatically",
         "It eliminates depreciation",
         "It makes the price level irrelevant forever"
       ],
@@ -16016,10 +16271,10 @@ const microSkillBridgePools = {
     {
       "id": 6077,
       "sourceGame": "mintAshGold",
-      "q": "A higher saving rate raises steady-state capital. What bridge links that result to LRAS?",
+      "q": "A higher saving rate raises steady-state capital per worker. How can this affect productive capacity and long-run aggregate supply?",
       "options": [
         "More capital can raise productive capacity and natural output",
-        "More capital shifts AD left only",
+        "More capital shifts the AD curve to the left only",
         "More saving makes LRAS horizontal",
         "More capital lowers productivity"
       ],
@@ -16035,7 +16290,7 @@ const microSkillBridgePools = {
       ],
       "repairSkill": "lras",
       "commonError": "disconnecting_growth_from_capacity",
-      "feedback": "Capital accumulation can expand productive capacity and shift LRAS right.",
+      "feedback": "Capital accumulation can expand productive capacity and shift the LRAS curve to the right.",
       "aHash": "6ee68213cab9a5eb42ba78e9c4360df14494ac3b0a103081e05cab99b4a61528"
     }
   ],
@@ -16043,12 +16298,12 @@ const microSkillBridgePools = {
     {
       "id": 6078,
       "sourceGame": "mintAshGold",
-      "q": "Oil prices surge. What bridge connects the event to the AD-AS outcome?",
+      "q": "Oil prices rise sharply. How do higher production costs affect short-run aggregate supply, output, and prices?",
       "options": [
-        "Production costs rise, SRAS shifts left, output falls, and prices rise",
-        "AD shifts right, output rises, and prices fall",
-        "LRAS shifts right because energy is dearer",
-        "SRAS shifts right because costs rose"
+        "Production costs rise, the SRAS curve shifts to the left, output falls, and prices rise",
+        "The AD curve shifts to the right, output rises, and prices fall",
+        "The LRAS curve shifts to the right because energy is dearer",
+        "The SRAS curve shifts to the right because costs rose"
       ],
       "tag": "supply_shocks_bridge",
       "type": "bridge",
@@ -16062,17 +16317,17 @@ const microSkillBridgePools = {
       ],
       "repairSkill": "supply_shocks",
       "commonError": "wrong_curve_for_input_cost",
-      "feedback": "Higher oil costs shift SRAS left and create lower output with higher prices.",
-      "aHash": "c8e5aa9c636560f2ece7c5d422a4823f7a7e0406a89f96bf55bc7321d84f266a"
+      "feedback": "Higher oil costs shift the SRAS curve to the left and create lower output with higher prices.",
+      "aHash": "7682d3b668fb217ed0b067aae64536e70e5b864631e4db387b371f8fc960c226"
     },
     {
       "id": 6079,
       "sourceGame": "mintAshGold",
-      "q": "Productivity improves sharply. What bridge connects the change to short-run prices and output?",
+      "q": "Productivity improves sharply. With aggregate demand unchanged, how does this affect short-run aggregate supply, output, and prices?",
       "options": [
-        "SRAS shifts right, output rises, and the price level falls",
-        "AD shifts left, output falls, and prices fall",
-        "SRAS shifts left, output falls, and prices rise",
+        "The SRAS curve shifts to the right, output rises, and the price level falls",
+        "The AD curve shifts to the left, output falls, and prices fall",
+        "The SRAS curve shifts to the left, output falls, and prices rise",
         "LRAS disappears"
       ],
       "tag": "supply_shocks_bridge",
@@ -16087,8 +16342,8 @@ const microSkillBridgePools = {
       ],
       "repairSkill": "supply_shocks",
       "commonError": "reversing_positive_supply_shock",
-      "feedback": "Higher productivity reduces unit costs, shifting SRAS right.",
-      "aHash": "e06caf8ef53ab3b8daa86a84e462d0a66e49d4067161c1acdae07676e89aa63a"
+      "feedback": "Higher productivity reduces unit costs, shifting the SRAS curve to the right.",
+      "aHash": "215de94289f6f2c2e0b2919d777c14c19e8d43086d94bfbc414044052fbdca24"
     },
     {
       "id": 6080,
@@ -16096,7 +16351,7 @@ const microSkillBridgePools = {
       "q": "After a negative supply shock, why might aggressive demand stimulus be dangerous?",
       "options": [
         "It may support output but intensify inflation",
-        "It shifts SRAS right and lowers prices automatically",
+        "It shifts the SRAS curve to the right and lowers prices automatically",
         "It permanently raises natural output",
         "It removes the original cost shock"
       ],

@@ -37,7 +37,7 @@ const questionBanks = {
   "easy": [
     {
       "id": 1,
-      "q": "Net exports equal...",
+      "q": "How are net exports calculated?",
       "options": [
         "exports minus imports",
         "imports minus exports",
@@ -56,7 +56,7 @@ const questionBanks = {
     },
     {
       "id": 2,
-      "q": "A trade surplus means...",
+      "q": "What does a trade surplus mean?",
       "options": [
         "exports exceed imports",
         "imports exceed exports",
@@ -75,7 +75,7 @@ const questionBanks = {
     },
     {
       "id": 3,
-      "q": "A trade deficit means...",
+      "q": "What does a trade deficit mean?",
       "options": [
         "imports exceed exports",
         "exports exceed imports",
@@ -94,7 +94,7 @@ const questionBanks = {
     },
     {
       "id": 4,
-      "q": "The open-economy income identity is...",
+      "q": "Which equation is the open-economy income identity?",
       "options": [
         "Y = C + I + G + NX",
         "Y = C + I + G",
@@ -113,7 +113,7 @@ const questionBanks = {
     },
     {
       "id": 5,
-      "q": "The open-economy saving identity is...",
+      "q": "Which equation is the open-economy saving identity?",
       "options": [
         "S = I + NCO",
         "S = C + G",
@@ -151,7 +151,7 @@ const questionBanks = {
     },
     {
       "id": 7,
-      "q": "If domestic spending exceeds domestic output, the economy has...",
+      "q": "What trade balance results when domestic spending exceeds domestic output?",
       "options": [
         "negative net exports",
         "positive net exports",
@@ -170,12 +170,12 @@ const questionBanks = {
     },
     {
       "id": 8,
-      "q": "A small open economy is 'small' because it...",
+      "q": "Why is a small open economy described as small?",
       "options": [
-        "takes the world interest rate as given",
-        "has no imports",
-        "sets the world interest rate",
-        "cannot borrow internationally"
+        "The economy takes the world interest rate as given",
+        "The economy has no imports",
+        "The economy sets the world interest rate",
+        "The economy cannot borrow internationally"
       ],
       "tag": "small_open_world_interest_rate",
       "type": "definition",
@@ -185,11 +185,11 @@ const questionBanks = {
       "primarySkill": "small_open_assumption",
       "repairSkill": "small_open_assumption",
       "feedback": "Small means the economy cannot affect r*.",
-      "aHash": "abbc28e25625c2c06f9b627a385ea907118f04d97b9e51663291d35a1b7ae62b"
+      "aHash": "9619d22c6c7a0d89e300a5515bf9d56f330974415c5e78119047880fbce26b81"
     },
     {
       "id": 9,
-      "q": "Perfect capital mobility means...",
+      "q": "What does perfect capital mobility mean?",
       "options": [
         "capital can move across borders seeking returns",
         "capital cannot leave the country",
@@ -208,7 +208,7 @@ const questionBanks = {
     },
     {
       "id": 10,
-      "q": "In a small open economy with perfect capital mobility, the domestic interest rate equals...",
+      "q": "In a small open economy with perfect capital mobility, what determines the domestic interest rate?",
       "options": [
         "the world interest rate",
         "the inflation rate",
@@ -227,7 +227,7 @@ const questionBanks = {
     },
     {
       "id": 11,
-      "q": "The nominal exchange rate is...",
+      "q": "What is the nominal exchange rate?",
       "options": [
         "the relative price of two currencies",
         "the relative price of goods across countries",
@@ -246,7 +246,7 @@ const questionBanks = {
     },
     {
       "id": 12,
-      "q": "The real exchange rate is...",
+      "q": "What is the real exchange rate?",
       "options": [
         "the relative price of goods across countries",
         "exports minus imports",
@@ -265,12 +265,12 @@ const questionBanks = {
     },
     {
       "id": 13,
-      "q": "A real appreciation makes domestic goods...",
+      "q": "How does a real appreciation affect the relative price of domestic goods?",
       "options": [
-        "more expensive relative to foreign goods",
-        "cheaper relative to foreign goods",
-        "unrelated to exports",
-        "identical to capital outflow"
+        "Domestic goods become more expensive relative to foreign goods",
+        "Domestic goods become cheaper relative to foreign goods",
+        "Domestic goods become unrelated to exports",
+        "Domestic goods become identical to capital outflow"
       ],
       "tag": "exchange_rate_adjustment",
       "type": "interpretation",
@@ -280,16 +280,16 @@ const questionBanks = {
       "primarySkill": "appreciation_nx",
       "repairSkill": "appreciation_nx",
       "feedback": "Appreciation makes exports less attractive and imports more attractive.",
-      "aHash": "4f9ed2a685e9715142ca39eed94e398b23f3b41d36a37f9fe3dea6202a0649c1"
+      "aHash": "bf4961d4a9b54eeec925f18afbe298daddbd02b99dca15dd6231ab994a795d9e"
     },
     {
       "id": 14,
-      "q": "A real depreciation tends to make net exports...",
+      "q": "How does a real depreciation tend to affect net exports?",
       "options": [
-        "rise",
-        "fall",
-        "equal zero",
-        "unrelated to exchange rates"
+        "Net exports rise",
+        "Net exports fall",
+        "Net exports become zero",
+        "Net exports become unrelated to exchange rates"
       ],
       "tag": "exchange_rate_adjustment",
       "type": "definition",
@@ -299,11 +299,11 @@ const questionBanks = {
       "primarySkill": "depreciation_nx",
       "repairSkill": "depreciation_nx",
       "feedback": "Depreciation makes domestic goods cheaper to foreign buyers.",
-      "aHash": "dbfbe1cd2ee1f49a02efb08eea36506d5d46e8a66d7175f118589f212ebcf897"
+      "aHash": "b08ae8c542fb709b6023bb3fbc4bcebdd8d1093a3cfbd9274dd14da0dca6dbc8"
     },
     {
       "id": 15,
-      "q": "A tariff is a tax on...",
+      "q": "Which transactions are taxed by a tariff?",
       "options": [
         "imports",
         "exports",
@@ -322,7 +322,7 @@ const questionBanks = {
     },
     {
       "id": 16,
-      "q": "A quota is...",
+      "q": "What is a quota?",
       "options": [
         "a legal limit on imports",
         "a tax cut",
@@ -341,12 +341,12 @@ const questionBanks = {
     },
     {
       "id": 17,
-      "q": "Capital flight means investors are...",
+      "q": "What do investors do during capital flight?",
       "options": [
-        "rapidly moving funds out of the country",
-        "buying only domestic assets",
-        "setting NX to zero",
-        "lowering all exchange rates by law"
+        "Investors are rapidly moving funds out of the country",
+        "Investors are buying only domestic assets",
+        "Investors are setting NX to zero",
+        "Investors are lowering all exchange rates by law"
       ],
       "tag": "capital_flight",
       "type": "definition",
@@ -356,11 +356,11 @@ const questionBanks = {
       "primarySkill": "capital_flight_exchange_rate",
       "repairSkill": "capital_flight_exchange_rate",
       "feedback": "Capital flight raises net capital outflow pressure.",
-      "aHash": "176c5509eb5faef3e4b92227b3cc144c3986ffcd15aa4588af3f55cd674c9d05"
+      "aHash": "74f3167ac0162ec6042f6aa5ff40b4a33c6f1c16f6d33b3df9ddb48771e6f4dd"
     },
     {
       "id": 18,
-      "q": "The Mundell-Fleming model is best described as...",
+      "q": "How is the Mundell–Fleming model best described?",
       "options": [
         "IS-LM for a small open economy",
         "closed-economy IS-LM with no exchange-rate channel",
@@ -374,12 +374,12 @@ const questionBanks = {
       "conceptCluster": "mundell_fleming_assumptions",
       "primarySkill": "mundell_fleming_assumptions",
       "repairSkill": "mundell_fleming_assumptions",
-      "feedback": "Mundell-Fleming model extends IS-LM to an open economy.",
+      "feedback": "the Mundell–Fleming model extends IS-LM to an open economy.",
       "aHash": "4b145d2e6b7f14b258da1af5cdd4cb3fa4f57696b55b40f972c7ad754728b284"
     },
     {
       "id": 19,
-      "q": "The IS* curve includes net exports as a function of...",
+      "q": "In the IS* relationship, net exports depend on which variable?",
       "options": [
         "the exchange rate",
         "the reserve ratio",
@@ -398,7 +398,7 @@ const questionBanks = {
     },
     {
       "id": 20,
-      "q": "The LM* curve comes from equilibrium in...",
+      "q": "Equilibrium in which market gives rise to the LM* curve?",
       "options": [
         "the money market",
         "the labor market",
@@ -417,7 +417,7 @@ const questionBanks = {
     },
     {
       "id": 21,
-      "q": "A fixed exchange rate is maintained by...",
+      "q": "How is a fixed exchange rate maintained?",
       "options": [
         "central bank intervention in currency markets",
         "letting the exchange rate float",
@@ -436,12 +436,12 @@ const questionBanks = {
     },
     {
       "id": 22,
-      "q": "A floating exchange rate is...",
+      "q": "How is a floating exchange rate determined?",
       "options": [
-        "allowed to move with market forces",
-        "fixed by the central bank",
-        "always equal to one",
-        "unrelated to exports"
+        "The exchange rate is allowed to move with market forces",
+        "The exchange rate is fixed by the central bank",
+        "The exchange rate is always equal to one",
+        "The exchange rate is unrelated to exports"
       ],
       "tag": "fixed_floating_exchange_regimes",
       "type": "definition",
@@ -451,11 +451,11 @@ const questionBanks = {
       "primarySkill": "compare_fixed_floating",
       "repairSkill": "compare_fixed_floating",
       "feedback": "Floating rates adjust through market supply and demand.",
-      "aHash": "649d1a9df80b6bafa6e7fc2c81e123d4fd385af8f139ae4869d32c53a49c24d7"
+      "aHash": "279ba4c911da84501aa147bc890b110e081694725d57879abb1b2927ca4e790f"
     },
     {
       "id": 23,
-      "q": "The impossible trinity says a country cannot simultaneously have fixed exchange rates, free capital mobility, and...",
+      "q": "According to the impossible trinity, which policy objective cannot coexist with fixed exchange rates and free capital mobility?",
       "options": [
         "independent monetary policy",
         "imports",
@@ -474,7 +474,7 @@ const questionBanks = {
     },
     {
       "id": 24,
-      "q": "Open-economy aggregate demand in Mundell-Fleming model links the price level to income through...",
+      "q": "Through which channel does the Mundell–Fleming model link the price level to income along aggregate demand?",
       "options": [
         "real balances, the exchange rate, and net exports",
         "only wages",
@@ -493,7 +493,7 @@ const questionBanks = {
     },
     {
       "id": 25,
-      "q": "In a large open economy, unlike a small open economy, domestic policy can affect...",
+      "q": "Which variable can domestic policy affect in a large open economy that a small open economy takes as given?",
       "options": [
         "the interest rate",
         "the definition of NX",
@@ -1072,7 +1072,7 @@ const questionBanks = {
     },
     {
       "id": 54,
-      "q": "Refer to the image above. Which point shows balanced trade at the world interest rate r_w2?",
+      "q": "Refer to the open-economy saving and investment graph. Which point shows balanced trade at the world interest rate r_w2?",
       "options": [
         "D",
         "B",
@@ -1092,7 +1092,7 @@ const questionBanks = {
     },
     {
       "id": 55,
-      "q": "Refer to the image above. Which point shows domestic investment at the low world interest rate r_w3?",
+      "q": "Refer to the open-economy saving and investment graph. Which point shows domestic investment at the low world interest rate r_w3?",
       "options": [
         "G",
         "A",
@@ -1112,7 +1112,7 @@ const questionBanks = {
     },
     {
       "id": 56,
-      "q": "Refer to the image above. When r is r_w1, saving exceeds investment. What trade position follows?",
+      "q": "Refer to the open-economy saving and investment graph. When r is r_w1, saving exceeds investment. What trade position follows?",
       "options": [
         "trade surplus",
         "trade deficit",
@@ -1132,7 +1132,7 @@ const questionBanks = {
     },
     {
       "id": 57,
-      "q": "Refer to the image above. Which point is the equilibrium when S - I is fixed at NX2?",
+      "q": "Refer to the real exchange rate graph. Which point is the equilibrium when S - I is fixed at NX2?",
       "options": [
         "D",
         "A",
@@ -1152,7 +1152,7 @@ const questionBanks = {
     },
     {
       "id": 58,
-      "q": "Refer to the image above. Which point lies on NX(R) at the highest real exchange rate R1?",
+      "q": "Refer to the real exchange rate graph. Which point lies on NX(R) at the highest real exchange rate R1?",
       "options": [
         "A",
         "D",
@@ -1172,12 +1172,12 @@ const questionBanks = {
     },
     {
       "id": 59,
-      "q": "Refer to the image above. Moving down along NX(R) from A to G means the real exchange rate...",
+      "q": "Refer to the real exchange rate graph. How does the real exchange rate change when moving from A to G along NX(R)?",
       "options": [
-        "depreciates and net exports rise",
-        "appreciates and net exports fall",
-        "stays fixed while net exports fall",
-        "becomes unrelated to trade"
+        "The real exchange rate depreciates and net exports rise",
+        "The real exchange rate appreciates and net exports fall",
+        "The real exchange rate stays fixed while net exports fall",
+        "The real exchange rate becomes unrelated to trade"
       ],
       "tag": "exchange_rate_adjustment",
       "type": "graph",
@@ -1186,13 +1186,13 @@ const questionBanks = {
       "conceptCluster": "depreciation_nx",
       "primarySkill": "depreciation_nx",
       "repairSkill": "depreciation_nx",
-      "feedback": "A lower real exchange rate raises NX.",
+      "feedback": "A lower real exchange rate raises net exports.",
       "image": "realexchangerates.png",
-      "aHash": "e77258dcf791944ed904cec0003da36fd8659e5623ecc09bbef1329b8827a898"
+      "aHash": "8e904b9552827b2935979a5a9d559d02f837a6d48c7f55575b43df6565954eff"
     },
     {
       "id": 60,
-      "q": "Refer to the image above. Using the impossible-trinity triangle, a country that chooses fixed exchange rates and free capital mobility gives up...",
+      "q": "Refer to the policy trilemma graph. Which policy objective must a country give up if it chooses fixed exchange rates and free capital mobility?",
       "options": [
         "independent monetary policy",
         "imports",
@@ -1212,7 +1212,7 @@ const questionBanks = {
     },
     {
       "id": 61,
-      "q": "Refer to the image above. Using the impossible-trinity triangle, a country that wants independent monetary policy and free capital mobility must give up...",
+      "q": "Refer to the policy trilemma graph. Which policy objective must a country give up if it chooses independent monetary policy and free capital mobility?",
       "options": [
         "a fixed exchange rate",
         "all exports",
@@ -1232,10 +1232,10 @@ const questionBanks = {
     },
     {
       "id": 62,
-      "q": "Refer to the image above. Lower P is associated with which movement on aggregate demand?",
+      "q": "Refer to the Mundell–Fleming and aggregate demand graph. Lower price level is associated with which movement on aggregate demand?",
       "options": [
-        "from A toward C as Y rises",
-        "from C toward A as Y rises",
+        "From A toward C as output rises",
+        "From C toward A as output rises",
         "no movement",
         "from B to zero NX"
       ],
@@ -1246,13 +1246,13 @@ const questionBanks = {
       "conceptCluster": "derive_ad_from_mf",
       "primarySkill": "derive_ad_from_mf",
       "repairSkill": "derive_ad_from_mf",
-      "feedback": "Lower P raises real balances, shifts LM* right, and raises Y along aggregate demand.",
+      "feedback": "Lower price level raises real balances, shifts the LM* curve to the right, and raises output along aggregate demand.",
       "image": "mundell_ad.png",
-      "aHash": "37444aecd746d1d858abd0b36ed660df0486d3a30a58c4e28ce27850b98edd21"
+      "aHash": "98a63371d7eb7d7bf6ff675da975cfa6f349b069c6d77f82d5f5ab5d7bbcfa7f"
     },
     {
       "id": 63,
-      "q": "Refer to the image above. The right panel shows the aggregate demand curve as...",
+      "q": "Refer to the Mundell–Fleming and aggregate demand graph. What is the shape of the aggregate demand curve in the right panel?",
       "options": [
         "downward sloping",
         "vertical",
@@ -1272,7 +1272,7 @@ const questionBanks = {
     },
     {
       "id": 64,
-      "q": "Refer to the image above. Which point is on IS2 and LM?",
+      "q": "Refer to the Mundell–Fleming graph. Which point is on IS2 and LM?",
       "options": [
         "B",
         "A",
@@ -1292,7 +1292,7 @@ const questionBanks = {
     },
     {
       "id": 65,
-      "q": "Refer to the image above. Which point is associated with LM3 and the lowest exchange rate e3?",
+      "q": "Refer to the Mundell–Fleming graph. Which point is associated with LM3 and the lowest exchange rate e3?",
       "options": [
         "C",
         "A",
@@ -1312,12 +1312,12 @@ const questionBanks = {
     },
     {
       "id": 66,
-      "q": "A higher world interest rate usually makes domestic investment...",
+      "q": "How does a higher world interest rate usually affect domestic investment?",
       "options": [
-        "fall",
-        "rise",
-        "equal imports",
-        "unrelated to r"
+        "Domestic investment falls",
+        "Domestic investment rises",
+        "Domestic investment equals imports",
+        "Domestic investment becomes unrelated to the interest rate"
       ],
       "tag": "small_open_world_interest_rate",
       "type": "interpretation",
@@ -1327,16 +1327,16 @@ const questionBanks = {
       "primarySkill": "world_interest_rate",
       "repairSkill": "world_interest_rate",
       "feedback": "Investment demand falls when the interest rate rises.",
-      "aHash": "2dc46af1b78c32dfe99dedfbdff6ca7f33e0f652716482f55b03622b67c06dea"
+      "aHash": "499cb9160e1f35819ed8d146f7f62fab8fc9851ae23301286f4c4a594c0ea1ff"
     },
     {
       "id": 67,
-      "q": "A lower world interest rate usually makes domestic investment...",
+      "q": "How does a lower world interest rate usually affect domestic investment?",
       "options": [
-        "rise",
-        "fall",
-        "zero",
-        "identical to saving"
+        "Domestic investment rises",
+        "Domestic investment falls",
+        "Domestic investment becomes zero",
+        "Domestic investment becomes identical to saving"
       ],
       "tag": "small_open_world_interest_rate",
       "type": "interpretation",
@@ -1346,16 +1346,16 @@ const questionBanks = {
       "primarySkill": "world_interest_rate",
       "repairSkill": "world_interest_rate",
       "feedback": "Investment demand rises when the interest rate falls.",
-      "aHash": "dbfbe1cd2ee1f49a02efb08eea36506d5d46e8a66d7175f118589f212ebcf897"
+      "aHash": "4c3bec0670fa1afcff1ceadb40e4d35b0ec23abb3f4bb16f101fe70f3d6c33ca"
     },
     {
       "id": 68,
-      "q": "An appreciation tends to reduce exports because domestic goods become...",
+      "q": "Why does currency appreciation tend to reduce exports?",
       "options": [
-        "relatively expensive",
-        "relatively cheap",
-        "tax free",
-        "capital outflows"
+        "Domestic goods become relatively expensive",
+        "Domestic goods become relatively cheap",
+        "Domestic goods become tax free",
+        "Domestic goods become capital outflows"
       ],
       "tag": "exchange_rate_adjustment",
       "type": "interpretation",
@@ -1365,16 +1365,16 @@ const questionBanks = {
       "primarySkill": "appreciation_nx",
       "repairSkill": "appreciation_nx",
       "feedback": "Foreign buyers face a higher relative price.",
-      "aHash": "3600b4de1813017785d2dd06295e00b2d746adf1fddbf9dacb8cfac96a5f25b2"
+      "aHash": "97445a8397664405258af47cddae2e4cc227521ba9f8bf92623494bee7ca6c8a"
     },
     {
       "id": 69,
-      "q": "A depreciation tends to raise exports because domestic goods become...",
+      "q": "Why does currency depreciation tend to raise exports?",
       "options": [
-        "relatively cheap",
-        "relatively expensive",
-        "impossible to buy",
-        "fixed by law"
+        "Domestic goods become relatively cheap",
+        "Domestic goods become relatively expensive",
+        "Domestic goods become impossible to buy",
+        "Domestic goods become fixed by law"
       ],
       "tag": "exchange_rate_adjustment",
       "type": "interpretation",
@@ -1384,16 +1384,16 @@ const questionBanks = {
       "primarySkill": "depreciation_nx",
       "repairSkill": "depreciation_nx",
       "feedback": "Foreign buyers face a lower relative price.",
-      "aHash": "8e3be18ee3606aee933d16a2dcc2db8b16e13b8189645be0615e61d9f313c316"
+      "aHash": "43592f02b1241f0fa256e6915e8c9a1779ca327488c4638d824fdf21ffacaaa1"
     },
     {
       "id": 70,
-      "q": "Under floating rates, expansionary monetary policy tends to...",
+      "q": "Under floating exchange rates, how does expansionary monetary policy affect the economy?",
       "options": [
-        "depreciate the currency",
-        "appreciate the currency",
-        "fix the exchange rate",
-        "remove capital mobility"
+        "The currency depreciates",
+        "The currency appreciates",
+        "The exchange rate becomes fixed",
+        "Capital mobility is eliminated"
       ],
       "tag": "floating_exchange_policy",
       "type": "interpretation",
@@ -1402,17 +1402,17 @@ const questionBanks = {
       "conceptCluster": "floating_monetary_policy",
       "primarySkill": "floating_monetary_policy",
       "repairSkill": "floating_monetary_policy",
-      "feedback": "Monetary expansion shifts LM* right and lowers the exchange rate.",
-      "aHash": "84f94ef1a098af8b767cbfbee454cc4b4bf7b86d335534e643a9a79b99d9fdd4"
+      "feedback": "Monetary expansion shifts the LM* curve to the right and lowers the exchange rate.",
+      "aHash": "724bf58eaeffe25ad14969c5ae9d511ea31ba37e9739ff2328b65f2d4a0bc835"
     },
     {
       "id": 71,
-      "q": "Under floating rates, expansionary fiscal policy tends to...",
+      "q": "Under floating exchange rates, how does expansionary fiscal policy affect the economy?",
       "options": [
-        "appreciate the currency",
-        "depreciate the currency",
-        "shift LM* right",
-        "eliminate NX"
+        "The currency appreciates",
+        "The currency depreciates",
+        "The LM* curve shifts to the right",
+        "Net exports are eliminated"
       ],
       "tag": "floating_exchange_policy",
       "type": "interpretation",
@@ -1421,12 +1421,12 @@ const questionBanks = {
       "conceptCluster": "floating_fiscal_policy",
       "primarySkill": "floating_fiscal_policy",
       "repairSkill": "floating_fiscal_policy",
-      "feedback": "Fiscal expansion shifts IS* right and appreciates the currency.",
-      "aHash": "4861391db676d20b125c2bafa2f25e4a7c6f5a449f0b93ebce8d9a14e7cd1c2d"
+      "feedback": "Fiscal expansion shifts the IS* curve to the right and appreciates the currency.",
+      "aHash": "908f0264f13b711b8b3951188af622b0f65df5d10409325bfb5a2421b6715680"
     },
     {
       "id": 72,
-      "q": "Under fixed rates, independent monetary policy is...",
+      "q": "How effective is independent monetary policy under a fixed exchange rate?",
       "options": [
         "limited by the need to defend the peg",
         "stronger than under floating",
@@ -1445,12 +1445,12 @@ const questionBanks = {
     },
     {
       "id": 73,
-      "q": "When P falls in Mundell-Fleming model, real money balances...",
+      "q": "With nominal money supply unchanged, how does a lower price level affect real money balances in the Mundell–Fleming model?",
       "options": [
-        "rise",
-        "fall",
-        "become zero",
-        "equal tariffs"
+        "Real money balances rise",
+        "Real money balances fall",
+        "Real money balances become zero",
+        "Real money balances equal tariffs"
       ],
       "tag": "mundell_fleming_ad",
       "type": "interpretation",
@@ -1459,17 +1459,17 @@ const questionBanks = {
       "conceptCluster": "derive_ad_from_mf",
       "primarySkill": "derive_ad_from_mf",
       "repairSkill": "derive_ad_from_mf",
-      "feedback": "M/P rises when P falls.",
-      "aHash": "dbfbe1cd2ee1f49a02efb08eea36506d5d46e8a66d7175f118589f212ebcf897"
+      "feedback": "M/P rises when the price level falls.",
+      "aHash": "407138ffa330bd5cc51e2623c832a34fb5bf7eb017cae5e0657fabb475bcddf4"
     },
     {
       "id": 74,
-      "q": "When real money balances rise in Mundell-Fleming model, LM* shifts...",
+      "q": "How does an increase in real money balances affect the LM* curve in the Mundell–Fleming model?",
       "options": [
-        "right",
-        "left",
-        "nowhere",
-        "into IS*"
+        "The LM* curve shifts to the right",
+        "The LM* curve shifts to the left",
+        "The LM* curve remains unchanged",
+        "The LM* curve becomes the IS* curve"
       ],
       "tag": "mundell_fleming_is_lm",
       "type": "interpretation",
@@ -1478,12 +1478,12 @@ const questionBanks = {
       "conceptCluster": "lm_star_money_market",
       "primarySkill": "lm_star_money_market",
       "repairSkill": "lm_star_money_market",
-      "feedback": "More real balances shift LM* right.",
-      "aHash": "27042f4e6eca7d0b2a7ee4026df2ecfa51d3339e6d122aa099118ecd8563bad9"
+      "feedback": "More real balances shift the LM* curve to the right.",
+      "aHash": "a7a416401c81c0eb6079e5d71044c937083d3008cb26cee4a5aec317cd87406a"
     },
     {
       "id": 75,
-      "q": "In the small-open-economy model, trade policy changes the real exchange rate because...",
+      "q": "Why does trade policy change the real exchange rate in the small-open-economy model?",
       "options": [
         "the exchange rate adjusts to restore NX to S - I",
         "saving disappears",
@@ -1710,7 +1710,7 @@ const questionBanks = {
       "aHash": "33f3e7dc65937f7d8e65ccd950f6169e44b0dfe5acaa402e049564bd636d72c0"
     },
     {
-      "q": "Refer to the image above. Which point shows investment equal to saving at r_w2?",
+      "q": "Refer to the open-economy saving and investment graph. Which point shows investment equal to saving at r_w2?",
       "options": [
         "D",
         "A",
@@ -1730,7 +1730,7 @@ const questionBanks = {
       "aHash": "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4"
     },
     {
-      "q": "Refer to the image above. Which point is on the NX curve at R2?",
+      "q": "Refer to the real exchange rate graph. Which point is on the NX curve at R2?",
       "options": [
         "D",
         "B",
@@ -1750,7 +1750,7 @@ const questionBanks = {
       "aHash": "18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4"
     },
     {
-      "q": "Refer to the image above. Which two goals are combined on side 1?",
+      "q": "Refer to the policy trilemma graph. Which two goals are combined on side 1?",
       "options": [
         "fixed exchange rate and independent monetary policy",
         "fixed exchange rate and free capital mobility",
@@ -1770,7 +1770,7 @@ const questionBanks = {
       "aHash": "bc5aece8ccdbae5b54e97f0524290db74408a145bd2ad7f892a58f10c1e44ab7"
     },
     {
-      "q": "Refer to the image above. Which two goals are combined on side 2?",
+      "q": "Refer to the policy trilemma graph. Which two goals are combined on side 2?",
       "options": [
         "independent monetary policy and free capital mobility",
         "fixed exchange rate and independent monetary policy",
@@ -1793,7 +1793,7 @@ const questionBanks = {
   "medium": [
     {
       "id": 100,
-      "q": "Refer to the image above. If the world interest rate is r_w1, which statement is correct?",
+      "q": "Refer to the open-economy saving and investment graph. If the world interest rate is r_w1, which statement is correct?",
       "options": [
         "saving exceeds investment and the economy has a trade surplus",
         "investment exceeds saving and the economy has a trade deficit",
@@ -1813,12 +1813,12 @@ const questionBanks = {
     },
     {
       "id": 101,
-      "q": "Refer to the image above. If the world interest rate falls from r_w1 to r_w3, domestic investment...",
+      "q": "Refer to the open-economy saving and investment graph. How does domestic investment change when the world interest rate falls from r_w1 to r_w3?",
       "options": [
-        "rises from I1 to I3",
-        "falls from I3 to I1",
-        "stays at I2",
-        "becomes unrelated to the interest rate"
+        "Domestic investment rises from I1 to I3",
+        "Domestic investment falls from I3 to I1",
+        "Domestic investment stays at I2",
+        "Domestic investment becomes unrelated to the interest rate"
       ],
       "tag": "small_open_world_interest_rate",
       "type": "graph",
@@ -1829,16 +1829,16 @@ const questionBanks = {
       "repairSkill": "world_interest_rate",
       "feedback": "Lower interest rates raise investment demand.",
       "image": "loanablefunds.png",
-      "aHash": "2c6ac733eea3c5df4901d34367f1d2b057df49a72040dbac98255e696b267607"
+      "aHash": "1b0343d8feda8c662fc1fb376209275141024651cc754fd0041976eb691ed2a8"
     },
     {
       "id": 102,
-      "q": "Refer to the image above. A fall in national saving moves the vertical saving line...",
+      "q": "Refer to the open-economy saving and investment graph. How does a fall in national saving change the position of the vertical saving line?",
       "options": [
-        "left from S2 to S1",
-        "right from S2 to S3",
-        "down along I(r)",
-        "nowhere because saving is fixed"
+        "The saving line shifts to the left, from S2 to S1",
+        "The saving line shifts to the right, from S2 to S3",
+        "Saving moves down along the investment-demand curve I(r)",
+        "The saving line remains unchanged because saving is fixed"
       ],
       "tag": "fiscal_policy_open_economy",
       "type": "graph",
@@ -1849,16 +1849,16 @@ const questionBanks = {
       "repairSkill": "trace_domestic_fiscal_expansion",
       "feedback": "Lower saving means the vertical S line shifts left.",
       "image": "loanablefunds_changes.png",
-      "aHash": "07815854eec5709d3b1eb8a6a61e41d05346c6c5da247e9f45a9abeb25886654"
+      "aHash": "7c6889d2226e14a444ff65cc82c69b10db7a6bbcc80bdf5aba8f049d061b382e"
     },
     {
       "id": 103,
-      "q": "Refer to the image above. A rise in investment demand moves the investment curve...",
+      "q": "Refer to the open-economy saving and investment graph. How does an increase in investment demand change the position of the investment curve?",
       "options": [
-        "from I(r)1 toward I(r)3",
-        "from I(r)3 toward I(r)1",
-        "from S to NX",
-        "nowhere because investment cannot shift"
+        "The investment curve shifts from I(r)1 toward I(r)3",
+        "The investment curve shifts from I(r)3 toward I(r)1",
+        "The investment curve moves from saving to net exports",
+        "The investment curve remains unchanged because investment cannot shift"
       ],
       "tag": "saving_investment_capital_flows",
       "type": "graph",
@@ -1869,11 +1869,11 @@ const questionBanks = {
       "repairSkill": "investment_shift_trade_balance",
       "feedback": "Higher investment demand shifts I(r) outward/right.",
       "image": "loanablefunds_changes_investment.png",
-      "aHash": "b6cc99304c261dd221a978981cbc9c1b876b6aa7216d7a840e0ed6f4f80990a3"
+      "aHash": "210e1a7d025aa4b93edd585423a2bc5ffaf8d0e7171fbc94890ecbd79f08620c"
     },
     {
       "id": 104,
-      "q": "Refer to the image above. A shift from (S - I)2 to (S - I)1 moves equilibrium from E to...",
+      "q": "Refer to the real exchange rate graph. To which point does the equilibrium move from E when the saving-minus-investment line shifts from (S − I)2 to (S − I)1?",
       "options": [
         "A",
         "I",
@@ -1893,7 +1893,7 @@ const questionBanks = {
     },
     {
       "id": 105,
-      "q": "Refer to the image above. A shift from (S - I)2 to (S - I)3 moves equilibrium from E to...",
+      "q": "Refer to the real exchange rate graph. To which point does the equilibrium move from E when the saving-minus-investment line shifts from (S − I)2 to (S − I)3?",
       "options": [
         "I",
         "A",
@@ -1907,13 +1907,13 @@ const questionBanks = {
       "conceptCluster": "foreign_fiscal_policy",
       "primarySkill": "foreign_fiscal_policy",
       "repairSkill": "foreign_fiscal_policy",
-      "feedback": "A rightward shift in S - I lowers the real exchange rate and raises NX.",
+      "feedback": "A rightward shift in S - I lowers the real exchange rate and raises net exports.",
       "image": "rer_changes.png",
       "aHash": "de7d1b721a1e0632b7cf04edf5032c8ecffa9f9a08492152b926f1a5a7e765d7"
     },
     {
       "id": 106,
-      "q": "Refer to the image above. A tariff that shifts NX(R) from NX(R)2 to NX(R)1 moves equilibrium from B to...",
+      "q": "Refer to the net exports and the real exchange rate graph. A tariff shifts the net-export curve from NX(R)2 to NX(R)1. To which point does the equilibrium move from B?",
       "options": [
         "A",
         "C",
@@ -1933,12 +1933,12 @@ const questionBanks = {
     },
     {
       "id": 107,
-      "q": "Refer to the image above. After the NX curve shifts right, the quantity of NX at equilibrium...",
+      "q": "Refer to the net exports and the real exchange rate graph. With saving minus investment unchanged, how does a rightward shift of the net-export curve affect equilibrium net exports?",
       "options": [
-        "stays at the fixed S - I level",
-        "rises permanently",
-        "falls permanently",
-        "becomes unrelated to S - I"
+        "Equilibrium net exports remain equal to the unchanged level of saving minus investment",
+        "Equilibrium net exports rise permanently",
+        "Equilibrium net exports fall permanently",
+        "Equilibrium net exports become unrelated to saving minus investment"
       ],
       "tag": "trade_policy",
       "type": "graph",
@@ -1949,11 +1949,11 @@ const questionBanks = {
       "repairSkill": "tariff_exchange_rate_offset",
       "feedback": "The real exchange rate adjusts so NX still equals S - I.",
       "image": "tradepolicies.png",
-      "aHash": "c7c185c94d9227391865e8fb6fb45b25dca69b0f0efb813c85346d5f7b5901b0"
+      "aHash": "87b5d8c7ac70995d8ab8cca96802c754e93ae011b7bb0f19ae5dfca0cd367d60"
     },
     {
       "id": 108,
-      "q": "Refer to the image above. A fiscal expansion under floating rates moves the economy from B to...",
+      "q": "Refer to the Mundell–Fleming graph. Under floating exchange rates, to which point does fiscal expansion move the equilibrium from B?",
       "options": [
         "A",
         "C",
@@ -1967,13 +1967,13 @@ const questionBanks = {
       "conceptCluster": "floating_fiscal_policy",
       "primarySkill": "floating_fiscal_policy",
       "repairSkill": "floating_fiscal_policy",
-      "feedback": "Fiscal expansion shifts IS* right and appreciates the exchange rate with Y fixed at Y*.",
+      "feedback": "Fiscal expansion shifts the IS* curve to the right and appreciates the exchange rate with Y fixed at Y*.",
       "image": "islm_exchangerates.png",
       "aHash": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb"
     },
     {
       "id": 109,
-      "q": "Refer to the image above. A fall in demand for domestic goods moves IS* from IS2 to IS3 and the economy from B to...",
+      "q": "Refer to the Mundell–Fleming graph. Lower demand for domestic goods shifts IS* from IS2 to IS3. To which point does the equilibrium move from B?",
       "options": [
         "C",
         "A",
@@ -1993,7 +1993,7 @@ const questionBanks = {
     },
     {
       "id": 110,
-      "q": "Refer to the image above. Monetary expansion moves LM from LM2 to LM3 and the economy from B to...",
+      "q": "Refer to the Mundell–Fleming graph. Monetary expansion shifts the money-market curve from LM2 to LM3. To which point does the equilibrium move from B?",
       "options": [
         "C",
         "A",
@@ -2007,13 +2007,13 @@ const questionBanks = {
       "conceptCluster": "floating_monetary_policy",
       "primarySkill": "floating_monetary_policy",
       "repairSkill": "floating_monetary_policy",
-      "feedback": "Monetary expansion shifts LM* right, lowering e and raising Y.",
+      "feedback": "Monetary expansion shifts the LM* curve to the right, lowering e and raising Y.",
       "image": "islm_er_change.png",
       "aHash": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
     },
     {
       "id": 111,
-      "q": "Refer to the image above. Monetary contraction moves LM from LM2 to LM1 and the economy from B to...",
+      "q": "Refer to the Mundell–Fleming graph. Monetary contraction shifts the money-market curve from LM2 to LM1. To which point does the equilibrium move from B?",
       "options": [
         "A",
         "C",
@@ -2027,7 +2027,7 @@ const questionBanks = {
       "conceptCluster": "floating_monetary_policy",
       "primarySkill": "floating_monetary_policy",
       "repairSkill": "floating_monetary_policy",
-      "feedback": "Contraction shifts LM* left, raising e and lowering Y.",
+      "feedback": "Contraction shifts the LM* curve to the left, raising e and lowering Y.",
       "image": "islm_er_change.png",
       "aHash": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb"
     },
@@ -2073,7 +2073,7 @@ const questionBanks = {
     },
     {
       "id": 114,
-      "q": "If the nominal exchange rate is 1.5 foreign currency units per dollar, P = 120, and P* = 90, the real exchange rate is...",
+      "q": "The nominal exchange rate is 1.5 foreign currency units per dollar, the domestic price level P is 120, and the foreign price level P* is 90. What is the real exchange rate, eP/P*?",
       "options": [
         "2.0",
         "0.5",
@@ -2118,7 +2118,7 @@ const questionBanks = {
         "the real exchange rate appreciates and net exports fall",
         "the real exchange rate depreciates and net exports rise",
         "net exports rise because saving falls",
-        "nothing changes because r* is fixed"
+        "Nothing changes because the world interest rate is fixed"
       ],
       "tag": "fiscal_policy_open_economy",
       "type": "multi-step",
@@ -2132,12 +2132,12 @@ const questionBanks = {
     },
     {
       "id": 117,
-      "q": "A foreign fiscal expansion raises the world interest rate. In the domestic small open economy, domestic investment...",
+      "q": "A foreign fiscal expansion raises the world interest rate. How does this affect domestic investment and the trade balance in a small open economy?",
       "options": [
-        "falls, so S - I and NX rise",
-        "rises, so net exports fall",
-        "is unaffected because r* is irrelevant",
-        "falls, so saving must fall too"
+        "Domestic investment falls, so saving minus investment and net exports rise",
+        "Domestic investment rises, so net exports fall",
+        "Domestic investment is unchanged because the world interest rate is irrelevant",
+        "Domestic investment falls, so saving must also fall"
       ],
       "tag": "fiscal_policy_open_economy",
       "type": "multi-step",
@@ -2146,8 +2146,8 @@ const questionBanks = {
       "conceptCluster": "foreign_fiscal_policy",
       "primarySkill": "foreign_fiscal_policy",
       "repairSkill": "foreign_fiscal_policy",
-      "feedback": "Higher r* lowers domestic investment, raising S - I and NX.",
-      "aHash": "321d887f3adebc436bcc0c8dd5cc4dc3df8c103970d689a16238284cae18240c"
+      "feedback": "Higher world interest rate lowers domestic investment, raising S - I and NX.",
+      "aHash": "c701eb85f1bb7499ce8d95e0bcc414c943b436eee73174eed80e1aba3b34ecc8"
     },
     {
       "id": 118,
@@ -2155,7 +2155,7 @@ const questionBanks = {
       "options": [
         "net exports fall because S - I falls",
         "net exports rise because investment rises",
-        "NX is fixed by tariffs",
+        "Net exports are fixed by tariffs",
         "NX becomes zero by definition"
       ],
       "tag": "saving_investment_capital_flows",
@@ -2170,12 +2170,12 @@ const questionBanks = {
     },
     {
       "id": 119,
-      "q": "A tariff directly increases demand for domestic goods. In a small-open-economy model, the final effect on the trade balance is...",
+      "q": "A tariff directly increases demand for domestic goods. With saving and investment unchanged in the small-open-economy model, what is the final effect on the trade balance?",
       "options": [
-        "offset by real appreciation",
-        "a guaranteed permanent surplus",
-        "a lower real exchange rate",
-        "a fall in saving"
+        "Real appreciation offsets the direct trade effect, leaving the trade balance unchanged",
+        "The tariff guarantees a permanent trade surplus",
+        "The real exchange rate falls",
+        "National saving falls"
       ],
       "tag": "trade_policy",
       "type": "trap",
@@ -2186,7 +2186,7 @@ const questionBanks = {
       "repairSkill": "tariff_exchange_rate_offset",
       "feedback": "Trade restrictions appreciate the real exchange rate, offsetting the direct NX effect.",
       "commonError": "ignoring exchange-rate offset",
-      "aHash": "fe67bd461eebe3f5792321c2f8dff79c74aafea2cdae66a22efccccf9343bb04"
+      "aHash": "21b7bbdda0740b662a5c9fda43fa4b3ec387842781b28f5637626e91696973e0"
     },
     {
       "id": 120,
@@ -2209,7 +2209,7 @@ const questionBanks = {
     },
     {
       "id": 121,
-      "q": "Under floating rates, why is fiscal policy weak in Mundell-Fleming model?",
+      "q": "Under floating rates, why is fiscal policy weak in the Mundell–Fleming model?",
       "options": [
         "appreciation crowds out net exports",
         "the money supply must defend a peg",
@@ -2223,12 +2223,12 @@ const questionBanks = {
       "conceptCluster": "floating_fiscal_policy",
       "primarySkill": "floating_fiscal_policy",
       "repairSkill": "floating_fiscal_policy",
-      "feedback": "Fiscal expansion shifts IS* right, but appreciation lowers NX.",
+      "feedback": "Fiscal expansion shifts the IS* curve to the right, but appreciation lowers net exports.",
       "aHash": "243ccfbe992a7d96d31a0a29b988538ac8fdb5129ef292a9009c9b49d1d5ca00"
     },
     {
       "id": 122,
-      "q": "Under floating rates, why is monetary policy strong in Mundell-Fleming model?",
+      "q": "Under floating rates, why is monetary policy strong in the Mundell–Fleming model?",
       "options": [
         "depreciation raises net exports",
         "appreciation lowers exports",
@@ -2242,7 +2242,7 @@ const questionBanks = {
       "conceptCluster": "floating_monetary_policy",
       "primarySkill": "floating_monetary_policy",
       "repairSkill": "floating_monetary_policy",
-      "feedback": "Monetary expansion shifts LM* right, depreciates the currency, and raises NX.",
+      "feedback": "Monetary expansion shifts the LM* curve to the right, depreciates the currency, and raises net exports.",
       "aHash": "aee11899e7a1cc002f0fa29a3a3202acfb4829f251c535eaf28b50feec62b4de"
     },
     {
@@ -2285,11 +2285,11 @@ const questionBanks = {
     },
     {
       "id": 125,
-      "q": "If the price level falls in Mundell-Fleming model, what happens to M/P and LM*?",
+      "q": "If the price level falls in the Mundell–Fleming model, what happens to M/P and LM*?",
       "options": [
-        "M/P rises and LM* shifts right",
-        "M/P falls and LM* shifts left",
-        "M/P is unchanged and IS* shifts left",
+        "M/P rises and the LM* curve shifts to the right",
+        "M/P falls and the LM* curve shifts to the left",
+        "M/P is unchanged and the IS* curve shifts to the left",
         "M/P rises and net exports fall directly"
       ],
       "tag": "mundell_fleming_ad",
@@ -2299,15 +2299,15 @@ const questionBanks = {
       "conceptCluster": "derive_ad_from_mf",
       "primarySkill": "derive_ad_from_mf",
       "repairSkill": "derive_ad_from_mf",
-      "feedback": "Lower P raises real balances and shifts LM* right.",
-      "aHash": "21e39e51e80f7731fb42037646ae16bfaa28c6b2c3f747b7141d1a8e3c14c26b"
+      "feedback": "Lower price level raises real balances and shifts the LM* curve to the right.",
+      "aHash": "bd29df7f8f0bd92b682d059e85a63a43015310e0f58905d53fedf3e5ae9fff26"
     },
     {
       "id": 126,
       "q": "In a large open economy, a fiscal expansion raises the domestic interest rate. What follows for investment?",
       "options": [
-        "investment falls because r rises",
-        "investment rises because G rises",
+        "Investment falls because the real interest rate rises",
+        "Investment rises because government purchases rise",
         "investment is fixed by the trade balance",
         "investment becomes NX"
       ],
@@ -2319,10 +2319,10 @@ const questionBanks = {
       "primarySkill": "large_open_policy",
       "repairSkill": "large_open_policy",
       "feedback": "Large-open-economy policy can move r, causing partial crowding out.",
-      "aHash": "78f2c09c8891df3d4bc6b707581bfe6fffe093a0e9e77912fe2d89f4d011b31b"
+      "aHash": "cfcbd060701bb69bcc2cbc0e5609ce21cc2443ffde340481201126251eed556f"
     },
     {
-      "q": "Refer to the image above. If the world interest rate is r_w1, domestic investment is closest to...",
+      "q": "Refer to the open-economy saving and investment graph. What level of domestic investment corresponds to the world interest rate r_w1?",
       "options": [
         "I3",
         "I2",
@@ -2335,34 +2335,34 @@ const questionBanks = {
       "conceptCluster": "world_interest_rate",
       "primarySkill": "world_interest_rate",
       "repairSkill": "world_interest_rate",
-      "feedback": "A lower world interest rate raises investment along I(r).",
+      "feedback": "The downward investment curve gives I1 at the high world rate r_w1 and I3 at the low rate r_w3. Higher financing costs reduce investment; lower financing costs increase it.",
       "image": "loanablefunds.png",
       "id": 127,
-      "difficulty": "medium",
-      "aHash": "9a83c6cb1126d93de4a30715b28f1f4b26b983c57fb39e6d826d7e893ae4ee74"
-    },
-    {
-      "q": "Refer to the image above. If the world interest rate is r_w3, domestic investment is closest to...",
-      "options": [
-        "I1",
-        "I2",
-        "I3",
-        "saving minus investment is zero"
-      ],
-      "tag": "small_open_world_interest_rate",
-      "type": "graph",
-      "objective": "LO6.3",
-      "conceptCluster": "world_interest_rate",
-      "primarySkill": "world_interest_rate",
-      "repairSkill": "world_interest_rate",
-      "feedback": "A higher world interest rate lowers investment along I(r).",
-      "image": "loanablefunds.png",
-      "id": 128,
       "difficulty": "medium",
       "aHash": "4cd9b7672d7fbee8fb51fb1e049f690342035f543a8efe734b7b5ffb0c154a45"
     },
     {
-      "q": "Refer to the image above. Which saving line shows the lowest level of national saving?",
+      "q": "Refer to the open-economy saving and investment graph. What level of domestic investment corresponds to the world interest rate r_w3?",
+      "options": [
+        "I1",
+        "I2",
+        "I3",
+        "saving minus investment is zero"
+      ],
+      "tag": "small_open_world_interest_rate",
+      "type": "graph",
+      "objective": "LO6.3",
+      "conceptCluster": "world_interest_rate",
+      "primarySkill": "world_interest_rate",
+      "repairSkill": "world_interest_rate",
+      "feedback": "The downward investment curve gives I1 at the high world rate r_w1 and I3 at the low rate r_w3. Higher financing costs reduce investment; lower financing costs increase it.",
+      "image": "loanablefunds.png",
+      "id": 128,
+      "difficulty": "medium",
+      "aHash": "9a83c6cb1126d93de4a30715b28f1f4b26b983c57fb39e6d826d7e893ae4ee74"
+    },
+    {
+      "q": "Refer to the open-economy saving and investment graph. Which saving line shows the lowest level of national saving?",
       "options": [
         "S1",
         "S2",
@@ -2382,7 +2382,7 @@ const questionBanks = {
       "aHash": "e8bc163c82eee18733288c7d4ac636db3a6deb013ef2d37b68322be20edc45cc"
     },
     {
-      "q": "Refer to the image above. Which saving line shows the highest level of national saving?",
+      "q": "Refer to the open-economy saving and investment graph. Which saving line shows the highest level of national saving?",
       "options": [
         "S3",
         "S2",
@@ -2402,7 +2402,7 @@ const questionBanks = {
       "aHash": "41242b9fae56fad4e6e77dfe33cb18d1c3fc583f988cf25ef9f2d9be0d440bbb"
     },
     {
-      "q": "Refer to the image above. Which investment curve represents stronger investment demand?",
+      "q": "Refer to the open-economy saving and investment graph. Which investment curve represents stronger investment demand?",
       "options": [
         "I(r)3",
         "I(r)2",
@@ -2422,12 +2422,12 @@ const questionBanks = {
       "aHash": "48d88f884f57e88fc768e98e04cd6ccf1e2c113198183031e0ccdbbb704d472a"
     },
     {
-      "q": "Refer to the image above. Moving from E to A means the real exchange rate...",
+      "q": "Refer to the real exchange rate graph. How does the real exchange rate change when the equilibrium moves from E to A?",
       "options": [
-        "rises/appreciates",
-        "falls/depreciates",
-        "stays at R2",
-        "becomes unrelated to NX"
+        "The real exchange rate rises, indicating appreciation",
+        "The real exchange rate falls, indicating depreciation",
+        "The real exchange rate stays at R2",
+        "The real exchange rate becomes unrelated to net exports"
       ],
       "tag": "real_exchange_rate",
       "type": "graph",
@@ -2439,15 +2439,15 @@ const questionBanks = {
       "image": "rer_changes.png",
       "id": 132,
       "difficulty": "medium",
-      "aHash": "7b258aba90b2c0b574dfcd0b61d64a2e2d8db75ae3eee31f1102062cccdfbd1c"
+      "aHash": "8ab8c77fd5bbaa58c04111654b025bb77a0d10de5933f7273aa11868e6aa1847"
     },
     {
-      "q": "Refer to the image above. Moving from E to I means the real exchange rate...",
+      "q": "Refer to the real exchange rate graph. How does the real exchange rate change when the equilibrium moves from E to I?",
       "options": [
-        "falls/depreciates",
-        "rises/appreciates",
-        "stays at R2",
-        "forces NX to zero"
+        "The real exchange rate falls, indicating depreciation",
+        "The real exchange rate rises, indicating appreciation",
+        "The real exchange rate stays at R2",
+        "The real exchange rate forces net exports to zero"
       ],
       "tag": "real_exchange_rate",
       "type": "graph",
@@ -2459,10 +2459,10 @@ const questionBanks = {
       "image": "rer_changes.png",
       "id": 133,
       "difficulty": "medium",
-      "aHash": "0a3ffbc928752ae891e8668b1a45bced097f44f463b868d9acbe698f024df1de"
+      "aHash": "8d8ae5f98c754dd5c4edc7dbe4aeec41b985529880e098290d358c4ba338c767"
     },
     {
-      "q": "Refer to the image above. A shift from NX(R)2 to NX(R)1 moves equilibrium from B to...",
+      "q": "Refer to the net exports and the real exchange rate graph. To which point does the equilibrium move from B when the net-export curve shifts from NX(R)2 to NX(R)1?",
       "options": [
         "A",
         "C",
@@ -2482,7 +2482,7 @@ const questionBanks = {
       "aHash": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb"
     },
     {
-      "q": "Refer to the image above. A shift from NX(R)2 to NX(R)3 moves equilibrium from B to...",
+      "q": "Refer to the net exports and the real exchange rate graph. To which point does the equilibrium move from B when the net-export curve shifts from NX(R)2 to NX(R)3?",
       "options": [
         "C",
         "A",
@@ -2502,7 +2502,7 @@ const questionBanks = {
       "aHash": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
     },
     {
-      "q": "Refer to the image above. A rightward IS* shift under floating rates moves the economy from B to...",
+      "q": "Refer to the Mundell–Fleming graph. Under floating exchange rates, to which point does a rightward shift of IS* move the equilibrium from B?",
       "options": [
         "A",
         "C",
@@ -2522,7 +2522,7 @@ const questionBanks = {
       "aHash": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb"
     },
     {
-      "q": "Refer to the image above. A rightward LM* shift under floating rates moves the economy from B to...",
+      "q": "Refer to the Mundell–Fleming graph. Under floating exchange rates, to which point does a rightward shift of LM* move the equilibrium from B?",
       "options": [
         "C",
         "A",
@@ -2542,7 +2542,7 @@ const questionBanks = {
       "aHash": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
     },
     {
-      "q": "Refer to the image above. Moving from A to C as P falls shows...",
+      "q": "Refer to the Mundell–Fleming and aggregate demand graph. Which changes accompany the move from A to C as the price level falls?",
       "options": [
         "higher real balances, lower exchange rate, and higher income",
         "lower real balances and lower income",
@@ -2555,7 +2555,7 @@ const questionBanks = {
       "conceptCluster": "derive_ad_from_mf",
       "primarySkill": "derive_ad_from_mf",
       "repairSkill": "derive_ad_from_mf",
-      "feedback": "Lower P raises M/P, shifts LM* right, and moves along aggregate demand to higher Y.",
+      "feedback": "Lower price level raises M/P, shifts the LM* curve to the right, and moves along aggregate demand to higher output.",
       "image": "mundell_ad.png",
       "id": 138,
       "difficulty": "medium",
@@ -2714,7 +2714,7 @@ const questionBanks = {
       "aHash": "1b390eceb098677a576fad326a5533b0ca3494719ff308f0f9ea45c00aa9e0db"
     },
     {
-      "q": "Under floating rates, expansionary fiscal policy is weak because...",
+      "q": "Why does fiscal expansion have a weak output effect under floating exchange rates in the basic Mundell–Fleming model?",
       "options": [
         "appreciation crowds out net exports",
         "depreciation raises net exports",
@@ -2733,7 +2733,7 @@ const questionBanks = {
       "aHash": "243ccfbe992a7d96d31a0a29b988538ac8fdb5129ef292a9009c9b49d1d5ca00"
     },
     {
-      "q": "Under floating rates, expansionary monetary policy works because...",
+      "q": "Through which channel does monetary expansion affect output under floating exchange rates?",
       "options": [
         "depreciation raises net exports",
         "appreciation lowers net exports",
@@ -2746,13 +2746,13 @@ const questionBanks = {
       "conceptCluster": "floating_monetary_policy",
       "primarySkill": "floating_monetary_policy",
       "repairSkill": "floating_monetary_policy",
-      "feedback": "Monetary expansion lowers the exchange rate and raises NX.",
+      "feedback": "Monetary expansion lowers the exchange rate and raises net exports.",
       "id": 148,
       "difficulty": "medium",
       "aHash": "aee11899e7a1cc002f0fa29a3a3202acfb4829f251c535eaf28b50feec62b4de"
     },
     {
-      "q": "Under a fixed exchange rate, independent monetary expansion is neutralized because...",
+      "q": "Why is independent monetary expansion neutralized under a fixed exchange rate?",
       "options": [
         "the central bank must defend the peg",
         "the IS curve disappears",
@@ -2790,7 +2790,7 @@ const questionBanks = {
       "aHash": "dd2555485f1265b2efedec85cd460ea4fba4bb0f1b68ac8756ead3f13ddc6a8d"
     },
     {
-      "q": "Refer to the image above. A country wants independent monetary policy and free capital mobility. What must it give up?",
+      "q": "Refer to the policy trilemma graph. A country wants independent monetary policy and free capital mobility. What must it give up?",
       "options": [
         "a fixed exchange rate",
         "exports",
@@ -2810,7 +2810,7 @@ const questionBanks = {
       "aHash": "881b60ebc095911d7b72e0d2c1070dcb697156a6d65ff5352379e626b05b5594"
     },
     {
-      "q": "If P rises in the Mundell-Fleming model aggregate demand derivation, what happens to real balances?",
+      "q": "If the price level rises in the Mundell-Fleming model aggregate demand derivation, what happens to real balances?",
       "options": [
         "M/P falls",
         "M/P rises",
@@ -2823,13 +2823,13 @@ const questionBanks = {
       "conceptCluster": "derive_ad_from_mf",
       "primarySkill": "derive_ad_from_mf",
       "repairSkill": "derive_ad_from_mf",
-      "feedback": "Higher P reduces real money balances and shifts LM* left.",
+      "feedback": "Higher price level reduces real money balances and shifts the LM* curve to the left.",
       "id": 152,
       "difficulty": "medium",
       "aHash": "891475603bfb4337214cf56733e1206818bd09039cf1d61ac7893e945cdf3ad1"
     },
     {
-      "q": "If P falls in the Mundell-Fleming model aggregate demand derivation, what happens to real balances?",
+      "q": "If the price level falls in the Mundell-Fleming model aggregate demand derivation, what happens to real balances?",
       "options": [
         "M/P rises",
         "M/P falls",
@@ -2842,7 +2842,7 @@ const questionBanks = {
       "conceptCluster": "derive_ad_from_mf",
       "primarySkill": "derive_ad_from_mf",
       "repairSkill": "derive_ad_from_mf",
-      "feedback": "Lower P raises M/P and shifts LM* right.",
+      "feedback": "Lower price level raises M/P and shifts the LM* curve to the right.",
       "id": 153,
       "difficulty": "medium",
       "aHash": "e2fb8af84eb77ca540e3c4a98a1194c274cbcef0ef9095ab998d682766bd0845"
@@ -3078,10 +3078,10 @@ const questionBanks = {
     {
       "q": "Y=3000, C=1800, I=700, and G=650. What are net exports?",
       "options": [
-        "-150; deficit",
-        "150; wrong sign",
-        "1200; missing I and G",
-        "3150; domestic spending"
+        "-150",
+        "150",
+        "1200",
+        "3150"
       ],
       "tag": "accounting_identities",
       "type": "calculation",
@@ -3092,15 +3092,15 @@ const questionBanks = {
       "feedback": "NX = Y - C - I - G = -150.",
       "id": 166,
       "difficulty": "medium",
-      "aHash": "eba5187244252db44e06d3a2cb381ce6c1f2e859603d22f31d001dd4a8389559"
+      "aHash": "3821691b2f28f7992d91defafc3b441b1473eb4556656e0746f1336ed6c27033"
     },
     {
       "q": "Y=4200, C=2600, I=900, and G=800. What are net exports?",
       "options": [
-        "-100; deficit",
-        "100; wrong sign",
-        "1600; missing I and G",
-        "4300; domestic spending"
+        "-100",
+        "100",
+        "1600",
+        "4300"
       ],
       "tag": "accounting_identities",
       "type": "calculation",
@@ -3111,15 +3111,15 @@ const questionBanks = {
       "feedback": "NX = Y - C - I - G = -100.",
       "id": 167,
       "difficulty": "medium",
-      "aHash": "6d4604892adc241880ea10789df78d9dfff1a03b1dc8aad3720437e12ed12fa0"
+      "aHash": "b96b3036632771349308fbbe5d7a3f3f762c9e8f3eedd5785b13ff322e05fd9d"
     },
     {
       "q": "Y=2500, C=1600, I=500, and G=450. What are net exports?",
       "options": [
-        "-50; deficit",
-        "50; wrong sign",
-        "900; missing I and G",
-        "2550; domestic spending"
+        "-50",
+        "50",
+        "900",
+        "2550"
       ],
       "tag": "accounting_identities",
       "type": "calculation",
@@ -3130,15 +3130,15 @@ const questionBanks = {
       "feedback": "NX = Y - C - I - G = -50.",
       "id": 168,
       "difficulty": "medium",
-      "aHash": "55d3a087cd56bf9eaacbdf330dbc636933672fea5ddc13004ea44269d780efea"
+      "aHash": "2fb999c7eb9fd71a9b6ef0ea40953481f9edaee5beff420936204bacbdc2040f"
     },
     {
       "q": "Y=5200, C=3300, I=1100, and G=900. What are net exports?",
       "options": [
-        "-100; deficit",
-        "100; wrong sign",
-        "1900; missing I and G",
-        "5300; domestic spending"
+        "-100",
+        "100",
+        "1900",
+        "5300"
       ],
       "tag": "accounting_identities",
       "type": "calculation",
@@ -3149,15 +3149,15 @@ const questionBanks = {
       "feedback": "NX = Y - C - I - G = -100.",
       "id": 169,
       "difficulty": "medium",
-      "aHash": "6d4604892adc241880ea10789df78d9dfff1a03b1dc8aad3720437e12ed12fa0"
+      "aHash": "b96b3036632771349308fbbe5d7a3f3f762c9e8f3eedd5785b13ff322e05fd9d"
     },
     {
       "q": "Y=3800, C=2300, I=850, and G=750. What are net exports?",
       "options": [
-        "-100; deficit",
-        "100; wrong sign",
-        "1500; missing I and G",
-        "3900; domestic spending"
+        "-100",
+        "100",
+        "1500",
+        "3900"
       ],
       "tag": "accounting_identities",
       "type": "calculation",
@@ -3168,7 +3168,7 @@ const questionBanks = {
       "feedback": "NX = Y - C - I - G = -100.",
       "id": 170,
       "difficulty": "medium",
-      "aHash": "6d4604892adc241880ea10789df78d9dfff1a03b1dc8aad3720437e12ed12fa0"
+      "aHash": "b96b3036632771349308fbbe5d7a3f3f762c9e8f3eedd5785b13ff322e05fd9d"
     },
     {
       "q": "Using ε = eP/P*, if e=1.2, P=100, and P*=120, what is ε?",
@@ -3285,7 +3285,7 @@ const questionBanks = {
       "aHash": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
     },
     {
-      "q": "Refer to the image above. A move from D to C is best described as...",
+      "q": "Refer to the open-economy saving and investment graph. Which changes are represented by a move from D to C?",
       "options": [
         "lower saving at the same world interest rate",
         "higher investment demand at the same world interest rate",
@@ -3305,7 +3305,7 @@ const questionBanks = {
       "aHash": "cf4352f3e5e1fbb18070210f1aa52ddd35144f81645ac4a21e2cdea8e1ea9951"
     },
     {
-      "q": "Refer to the image above. A move from D to E is best described as...",
+      "q": "Refer to the open-economy saving and investment graph. Which changes are represented by a move from D to E?",
       "options": [
         "higher saving at the same world interest rate",
         "lower investment demand at the same world interest rate",
@@ -3325,7 +3325,7 @@ const questionBanks = {
       "aHash": "f49ef7ea016b8981895dba9986994ff4ac75d60d2294a742bb3c4e941ce51341"
     },
     {
-      "q": "Refer to the image above. Point B is not equilibrium because...",
+      "q": "Refer to the real exchange rate graph. Why is point B not an equilibrium?",
       "options": [
         "it lies on S - I but not on NX(R)",
         "it lies on NX(R) but not on S - I",
@@ -3345,7 +3345,7 @@ const questionBanks = {
       "aHash": "814165e2d424042d7c7c3e0a770ea94fb1ead198f006edb0167a76c959db8520"
     },
     {
-      "q": "Refer to the image above. Point A is on the NX(R) curve at...",
+      "q": "Refer to the real exchange rate graph. Which real-exchange-rate level corresponds to point A on NX(R)?",
       "options": [
         "R1",
         "R2",
@@ -3441,7 +3441,7 @@ const questionBanks = {
       "aHash": "e9d06ac8f210a89489667f2fbd87b3f77be256104b37fc37f568e6be664a17b0"
     },
     {
-      "q": "Which identity is the bridge from goods-market spending to the trade balance?",
+      "q": "Which accounting identity connects goods-market spending with the trade balance?",
       "options": [
         "Y = C + I + G + NX",
         "M/P = L(r,Y)",
@@ -3460,7 +3460,7 @@ const questionBanks = {
       "aHash": "3bc7f6b4beebd1735ac24655a069dfc1cee68e863518f8059bdbbfebe2b545be"
     },
     {
-      "q": "Which identity is the bridge from saving/investment to capital flows?",
+      "q": "Which accounting identity connects national saving and domestic investment with net capital outflow?",
       "options": [
         "S = I + NCO",
         "NX = M - X only",
@@ -3534,6 +3534,1211 @@ const questionBanks = {
       "id": 189,
       "difficulty": "medium",
       "aHash": "c0ed9c81201a0a172fb9589c0245bc439de328f1eb6c0716bcbdee00ea5e66df"
+    },
+    {
+      "q": "Refer to the open-economy saving and investment graph. When the world rate moves from r_w1 to r_w2 on I(r), which investment change occurs?",
+      "options": [
+        "I1 to I2",
+        "I2 to I1",
+        "I3 to I1",
+        "I1 to I3"
+      ],
+      "tag": "small_open_world_interest_rate",
+      "type": "graph",
+      "objective": "LO6.3",
+      "conceptCluster": "world_interest_rate",
+      "primarySkill": "world_interest_rate",
+      "repairSkill": "world_interest_rate",
+      "feedback": "The world rate falls from the upper to the middle guide. Following the same downward I(r) line moves investment from I1 at A to I2 at D.",
+      "image": "loanablefunds.png",
+      "id": 260,
+      "difficulty": "medium",
+      "aHash": "1ec5befc88631030ba9449ce5514fd55b375d3bfb3d00e1fceccb18d5897700d"
+    },
+    {
+      "q": "Refer to the open-economy saving and investment graph. A rate increase from r_w3 to r_w2 changes investment along I(r) in which direction?",
+      "options": [
+        "I3 to I2",
+        "I1 to I2",
+        "I2 to I3",
+        "I3 to I1"
+      ],
+      "tag": "small_open_world_interest_rate",
+      "type": "graph",
+      "objective": "LO6.3",
+      "conceptCluster": "world_interest_rate",
+      "primarySkill": "world_interest_rate",
+      "repairSkill": "world_interest_rate",
+      "feedback": "At the low rate r_w3, investment is I3. At the middle rate r_w2 it is I2. Higher financing costs reduce investment.",
+      "image": "loanablefunds.png",
+      "id": 261,
+      "difficulty": "medium",
+      "aHash": "0453217b8d205425f726191f32a54fa538a15121e330df668f387a021759bab7"
+    },
+    {
+      "q": "Y=3000, I=700, G=650 and NX=−150. What consumption level completes the accounts?",
+      "options": [
+        "1800",
+        "1500",
+        "2100",
+        "2850"
+      ],
+      "tag": "accounting_identities",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "conceptCluster": "calculate_nx_from_y_c_i_g",
+      "primarySkill": "calculate_nx_from_y_c_i_g",
+      "repairSkill": "calculate_nx_from_y_c_i_g",
+      "feedback": "C=Y−I−G−NX=3000−700−650+150=1800.",
+      "id": 350,
+      "difficulty": "medium",
+      "aHash": "e49ec846db7527df7ff483009fe61700e6435072c8c5b551ab08f0a13fc45a07"
+    },
+    {
+      "q": "Y=4200, C=2600, I=900 and NX=−100. What government purchases balance the accounts?",
+      "options": [
+        "800",
+        "600",
+        "700",
+        "1600"
+      ],
+      "tag": "accounting_identities",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "conceptCluster": "calculate_nx_from_y_c_i_g",
+      "primarySkill": "calculate_nx_from_y_c_i_g",
+      "repairSkill": "calculate_nx_from_y_c_i_g",
+      "feedback": "G=Y−C−I−NX=4200−2600−900+100=800.",
+      "id": 351,
+      "difficulty": "medium",
+      "aHash": "1a1cf797fabe7f95836fabeca626907c77b3e6c9aff7c2290b396a238c69362e"
+    },
+    {
+      "q": "Consumption is 1600, investment is 500, government purchases are 450 and NX=−50. What is output?",
+      "options": [
+        "2500",
+        "2600",
+        "2550",
+        "1600"
+      ],
+      "tag": "accounting_identities",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "conceptCluster": "calculate_nx_from_y_c_i_g",
+      "primarySkill": "calculate_nx_from_y_c_i_g",
+      "repairSkill": "calculate_nx_from_y_c_i_g",
+      "feedback": "Y=C+I+G+NX=1600+500+450−50=2500.",
+      "id": 352,
+      "difficulty": "medium",
+      "aHash": "5a0b83e19c5750eed6d8d46cb858d15c956a657093c08afa53133c0fbe5f04fb"
+    },
+    {
+      "q": "Y=5200, C=3300, G=900 and NX=−100. What investment is implied?",
+      "options": [
+        "1100",
+        "900",
+        "1000",
+        "1900"
+      ],
+      "tag": "accounting_identities",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "conceptCluster": "calculate_nx_from_y_c_i_g",
+      "primarySkill": "calculate_nx_from_y_c_i_g",
+      "repairSkill": "calculate_nx_from_y_c_i_g",
+      "feedback": "I=Y−C−G−NX=5200−3300−900+100=1100.",
+      "id": 353,
+      "difficulty": "medium",
+      "aHash": "ab9828ca390581b72629069049793ba3c99bb8e5e9e7b97a55c71957e04df9a3"
+    },
+    {
+      "q": "Y=3800, C=2300, I=850 and G=750. A student reports NX=100. What correction is required?",
+      "options": [
+        "NX is −100 because domestic spending exceeds output",
+        "NX is 100 because all components are positive",
+        "NX is 1500 because only consumption should be subtracted",
+        "NX is 3900 because spending equals net exports"
+      ],
+      "tag": "accounting_identities",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "conceptCluster": "calculate_nx_from_y_c_i_g",
+      "primarySkill": "calculate_nx_from_y_c_i_g",
+      "repairSkill": "calculate_nx_from_y_c_i_g",
+      "feedback": "Domestic spending is 2300+850+750=3900. NX=3800−3900=−100; the student reversed the sign.",
+      "id": 354,
+      "difficulty": "medium",
+      "aHash": "2306440f11a28282f961e9ef580bb113be1da879d53cca162be10c82d5b0dd11"
+    },
+    {
+      "q": "With Y,I and G fixed, consumption rises by 80. How must NX change in the expenditure identity?",
+      "options": [
+        "It falls by 80",
+        "It rises by 80",
+        "It is unchanged",
+        "It rises by the MPC times 80"
+      ],
+      "tag": "accounting_identities",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "conceptCluster": "calculate_nx_from_y_c_i_g",
+      "primarySkill": "calculate_nx_from_y_c_i_g",
+      "repairSkill": "calculate_nx_from_y_c_i_g",
+      "feedback": "ΔNX=ΔY−ΔC−ΔI−ΔG=−80 under the stated fixed values.",
+      "id": 9068,
+      "difficulty": "medium",
+      "aHash": "e6609168cf68f0d2b556b37b2927a458048a37d351b96f013919a7883b609b84"
+    },
+    {
+      "q": "Output rises by 100 while consumption rises by 70 and I,G stay fixed. How does NX change?",
+      "options": [
+        "It rises by 30",
+        "It rises by 170",
+        "It falls by 30",
+        "It stays fixed"
+      ],
+      "tag": "accounting_identities",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "conceptCluster": "calculate_nx_from_y_c_i_g",
+      "primarySkill": "calculate_nx_from_y_c_i_g",
+      "repairSkill": "calculate_nx_from_y_c_i_g",
+      "feedback": "ΔNX=100−70=30. Only the part of the output increase not absorbed by additional domestic spending raises net exports.",
+      "id": 9069,
+      "difficulty": "medium",
+      "aHash": "a3fc09b202505f823b306cf3581f549c679eaa5895efb97a6e64f242ea94ac11"
+    },
+    {
+      "q": "Output is fixed while government purchases rise by 40 and consumption falls by 10; investment is unchanged. What happens to NX?",
+      "options": [
+        "It falls by 30",
+        "It falls by 50",
+        "It rises by 30",
+        "It rises by 50"
+      ],
+      "tag": "accounting_identities",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "conceptCluster": "calculate_nx_from_y_c_i_g",
+      "primarySkill": "calculate_nx_from_y_c_i_g",
+      "repairSkill": "calculate_nx_from_y_c_i_g",
+      "feedback": "Domestic spending rises by a net 30. ΔNX=−ΔC−ΔG=−(−10)−40=−30.",
+      "id": 9070,
+      "difficulty": "medium",
+      "aHash": "28d5c7be1e89e2b74c84e11f8c4e7b8a6a5d9fcfc3e6ac7a3de68df28559a475"
+    },
+    {
+      "q": "Output is unchanged. Consumption falls by 30 and investment rises by 20, with G fixed. What happens to net exports?",
+      "options": [
+        "They rise by 10",
+        "They fall by 10",
+        "They rise by 50",
+        "They fall by 50"
+      ],
+      "tag": "accounting_identities",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "conceptCluster": "calculate_nx_from_y_c_i_g",
+      "primarySkill": "calculate_nx_from_y_c_i_g",
+      "repairSkill": "calculate_nx_from_y_c_i_g",
+      "feedback": "ΔNX=−ΔC−ΔI=30−20=10. Total domestic spending falls by 10.",
+      "id": 9071,
+      "difficulty": "medium",
+      "aHash": "282f93e2e1588e3ccdb67989cbd43d65507cf889cd79e978454f1b5c106414d5"
+    },
+    {
+      "q": "Output and domestic spending both rise by 120. Which conclusion follows about the change in net exports?",
+      "options": [
+        "It is zero",
+        "It is 240",
+        "It is −120",
+        "It cannot be determined from their changes"
+      ],
+      "tag": "accounting_identities",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "conceptCluster": "calculate_nx_from_y_c_i_g",
+      "primarySkill": "calculate_nx_from_y_c_i_g",
+      "repairSkill": "calculate_nx_from_y_c_i_g",
+      "feedback": "Since NX=Y−domestic spending, ΔNX=120−120=0. Gross exports and imports may still change.",
+      "id": 9072,
+      "difficulty": "medium",
+      "aHash": "22c390c405798baa1b5d8c35a0c6e26617f63c19053f37507212e4b8679dd0b2"
+    },
+    {
+      "q": "Refer to the open-economy saving and investment graph. If saving moves from S1 to S2 while the world rate stays r_w2, what happens to S−I?",
+      "options": [
+        "It rises because saving increases and investment stays I2",
+        "It falls because saving increases",
+        "It is unchanged because the world rate is fixed",
+        "It rises because investment also rises to I3"
+      ],
+      "tag": "saving_investment_capital_flows",
+      "type": "graph",
+      "objective": "LO6.2",
+      "conceptCluster": "saving_shift_nx",
+      "primarySkill": "saving_shift_nx",
+      "repairSkill": "saving_shift_nx",
+      "feedback": "S1 is at I1 and S2 at I2. At r_w2, investment remains I2 on I(r); moving saving right raises the saving-investment gap.",
+      "image": "loanablefunds_changes.png",
+      "id": 262,
+      "difficulty": "medium",
+      "aHash": "0364d54902138a748589d511064e4ec4d84eb7861ca01f890da6512e15826cdf"
+    },
+    {
+      "q": "Refer to the open-economy saving and investment graph. At r_w2, saving is S3 and investment is determined on I(r). Which trade position follows?",
+      "options": [
+        "A surplus equal to I3−I2",
+        "A deficit equal to I3−I2",
+        "Balanced trade because the rate is fixed",
+        "A surplus equal to I2−I1"
+      ],
+      "tag": "saving_investment_capital_flows",
+      "type": "graph",
+      "objective": "LO6.2",
+      "conceptCluster": "saving_shift_nx",
+      "primarySkill": "saving_shift_nx",
+      "repairSkill": "saving_shift_nx",
+      "feedback": "At r_w2 investment is I2, while S3 is the larger quantity I3. Thus S−I is positive and equals I3−I2.",
+      "image": "loanablefunds_changes.png",
+      "id": 263,
+      "difficulty": "medium",
+      "aHash": "4f8d59df1689d060d808de44e0c967505440ea9513d5cfa52da950761642d268"
+    },
+    {
+      "q": "Refer to the open-economy saving and investment graph. Investment demand shifts from I(r)2 to I(r)3 while the world interest rate remains rw2 and saving remains S1. How does the trade balance change?",
+      "options": [
+        "It changes balanced trade to a deficit",
+        "It changes a deficit to balanced trade",
+        "It creates a surplus",
+        "It leaves investment fixed at I2"
+      ],
+      "tag": "saving_investment_capital_flows",
+      "type": "graph",
+      "objective": "LO6.5",
+      "conceptCluster": "investment_shift_trade_balance",
+      "primarySkill": "investment_shift_trade_balance",
+      "repairSkill": "investment_shift_trade_balance",
+      "feedback": "At r_w2 the middle investment curve gives I2, equal to saving. The rightward curve gives I3; investment exceeds the unchanged saving quantity, creating a deficit.",
+      "image": "loanablefunds_changes_investment.png",
+      "id": 264,
+      "difficulty": "medium",
+      "aHash": "66752530473db34dd30c1812e787421a16ff73337c175607fa61f15120376a30"
+    },
+    {
+      "q": "Refer to the real exchange rate graph. Which equilibrium movement along the drawn NX curve shows a fall in net exports and a real appreciation?",
+      "options": [
+        "E to A",
+        "E to I",
+        "A to I",
+        "E to F"
+      ],
+      "tag": "real_exchange_rate",
+      "type": "graph",
+      "objective": "LO6.4",
+      "conceptCluster": "exchange_rate_adjustment",
+      "primarySkill": "exchange_rate_adjustment",
+      "repairSkill": "exchange_rate_adjustment",
+      "feedback": "A has lower net exports and higher R than E, and both lie on the downward curve. F is a guide point off that curve.",
+      "image": "rer_changes.png",
+      "id": 265,
+      "difficulty": "medium",
+      "aHash": "7fb162299eeb242408cab2519f84b8ae09fdec2611f8d4f05c97a52b519a0164"
+    },
+    {
+      "q": "Refer to the real exchange rate graph. If saving minus investment rises from NX2 to NX3 with trade demand fixed, where is the new equilibrium?",
+      "options": [
+        "I",
+        "C",
+        "F",
+        "E"
+      ],
+      "tag": "real_exchange_rate",
+      "type": "graph",
+      "objective": "LO6.4",
+      "conceptCluster": "exchange_rate_adjustment",
+      "primarySkill": "exchange_rate_adjustment",
+      "repairSkill": "exchange_rate_adjustment",
+      "feedback": "The new vertical quantity NX3 meets the downward NX curve at I, at the lower exchange rate R3. C and F share NX3 but do not lie on the curve.",
+      "image": "rer_changes.png",
+      "id": 266,
+      "difficulty": "medium",
+      "aHash": "de7d1b721a1e0632b7cf04edf5032c8ecffa9f9a08492152b926f1a5a7e765d7"
+    },
+    {
+      "q": "Refer to the net exports and the real exchange rate graph. After NX(R) shifts from curve 2 to curve 1 with S−I fixed, what happens to the trade-balance quantity?",
+      "options": [
+        "It remains NX while the real exchange rate rises",
+        "It rises because the curve shifts right",
+        "It falls because the exchange rate rises",
+        "It becomes zero"
+      ],
+      "tag": "trade_policy",
+      "type": "graph",
+      "objective": "LO6.5",
+      "conceptCluster": "tariff_exchange_rate_offset",
+      "primarySkill": "tariff_exchange_rate_offset",
+      "repairSkill": "tariff_exchange_rate_offset",
+      "feedback": "The vertical S−I line fixes the horizontal equilibrium quantity. The intersection moves B to A, changing R2 to R1 without changing NX.",
+      "image": "tradepolicies.png",
+      "id": 267,
+      "difficulty": "medium",
+      "aHash": "85b641b119536ea259ba1ec1d9d2a1e60408943e5b3cb19b9aadaab8b51f47b6"
+    },
+    {
+      "q": "Refer to the net exports and the real exchange rate graph. Starting at C, a new import restriction shifts NX(R) from curve 3 to curve 2. Which coordinate changes at the new equilibrium?",
+      "options": [
+        "R rises from R3 to R2 while net exports stay fixed",
+        "R falls from R3 to R2 while net exports rise",
+        "Net exports rise while R stays R3",
+        "Both R and NX stay fixed"
+      ],
+      "tag": "trade_policy",
+      "type": "graph",
+      "objective": "LO6.5",
+      "conceptCluster": "tariff_exchange_rate_offset",
+      "primarySkill": "tariff_exchange_rate_offset",
+      "repairSkill": "tariff_exchange_rate_offset",
+      "feedback": "Curve 2 intersects the same vertical S−I line at B. B has the higher exchange-rate level R2 and the same NX quantity. The graph’s specified outward shift determines the direction.",
+      "image": "tradepolicies.png",
+      "id": 268,
+      "difficulty": "medium",
+      "aHash": "b936ed39d8e0f1a7ce030d0c3c6e8e3876631c4646bd57344479273a97d05635"
+    },
+    {
+      "q": "Exports are 420 and imports are 510. By how much must exports rise, holding imports fixed, to eliminate the trade deficit?",
+      "options": [
+        "90",
+        "930",
+        "−90",
+        "510"
+      ],
+      "tag": "trade_balance_net_exports",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "conceptCluster": "calculate_net_exports",
+      "primarySkill": "calculate_net_exports",
+      "repairSkill": "calculate_net_exports",
+      "feedback": "The deficit is 510−420=90. An export increase of 90 raises exports to imports and makes NX zero.",
+      "id": 252,
+      "difficulty": "medium",
+      "aHash": "69f59c273b6e669ac32a6dd5e1b2cb63333d8b004f9696447aee2d422ce63763"
+    },
+    {
+      "q": "A country has exports of 860 and a trade surplus of 150. What imports are consistent with the accounts?",
+      "options": [
+        "710",
+        "1010",
+        "150",
+        "860"
+      ],
+      "tag": "trade_balance_net_exports",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "conceptCluster": "calculate_net_exports",
+      "primarySkill": "calculate_net_exports",
+      "repairSkill": "calculate_net_exports",
+      "feedback": "From NX=X−M, M=X−NX=860−150=710.",
+      "id": 253,
+      "difficulty": "medium",
+      "aHash": "4ec24a2d7f1dfae1f98882eabf0400cd9483dd2de78b926b625c46e8787f3816"
+    },
+    {
+      "q": "Imports are 1390 and the trade deficit is 140. What are exports?",
+      "options": [
+        "1250",
+        "1530",
+        "140",
+        "1390"
+      ],
+      "tag": "trade_balance_net_exports",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "conceptCluster": "calculate_net_exports",
+      "primarySkill": "calculate_net_exports",
+      "repairSkill": "calculate_net_exports",
+      "feedback": "A deficit means X−M=−140, so X=1390−140=1250.",
+      "id": 254,
+      "difficulty": "medium",
+      "aHash": "dfcafae694259c719203dd502252ab975bf6849dc6c8f5fcbe1eda19a821db4d"
+    },
+    {
+      "q": "Exports and imports each begin at 980. Imports then rise by 40 while exports stay fixed. What is the new trade position?",
+      "options": [
+        "A deficit of 40",
+        "A surplus of 40",
+        "Balanced trade",
+        "A deficit of 1020"
+      ],
+      "tag": "trade_balance_net_exports",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "conceptCluster": "calculate_net_exports",
+      "primarySkill": "calculate_net_exports",
+      "repairSkill": "calculate_net_exports",
+      "feedback": "The initial balance is zero. Higher imports alone lower net exports to 980−1020=−40.",
+      "id": 255,
+      "difficulty": "medium",
+      "aHash": "105a1a1a14ce49cd89668e3c056c8f1fb649128dd70568211d0c0a43c30f249d"
+    },
+    {
+      "q": "Exports rise by 100 and imports rise by 125. How does the trade balance change, regardless of its starting level?",
+      "options": [
+        "It falls by 25",
+        "It rises by 225",
+        "It rises by 25",
+        "It is unchanged"
+      ],
+      "tag": "trade_balance_net_exports",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "conceptCluster": "calculate_net_exports",
+      "primarySkill": "calculate_net_exports",
+      "repairSkill": "calculate_net_exports",
+      "feedback": "ΔNX=100−125=−25. This is a change in the balance, not necessarily its final level or sign.",
+      "id": 256,
+      "difficulty": "medium",
+      "aHash": "8499c665a7bcd8dec405020b3e1a4383e1a47d9960b204c5fa6b0a6e9d524124"
+    },
+    {
+      "q": "Exports are 675 and imports are 820. If imports fall by 100 and exports are unchanged, does the trade deficit disappear?",
+      "options": [
+        "No; a deficit of 45 remains",
+        "Yes; a surplus of 100 appears",
+        "Yes; trade becomes exactly balanced",
+        "No; the deficit remains 145"
+      ],
+      "tag": "trade_balance_net_exports",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "conceptCluster": "calculate_net_exports",
+      "primarySkill": "calculate_net_exports",
+      "repairSkill": "calculate_net_exports",
+      "feedback": "New imports are 720. NX=675−720=−45, so the original deficit narrows but remains negative.",
+      "id": 257,
+      "difficulty": "medium",
+      "aHash": "58b0d212e4067f1eef364f005d24af5d07c7216f20c0a546b46790c89a0ac152"
+    },
+    {
+      "q": "Domestic investment is 760 and net exports are 140. What national saving is required by the identity?",
+      "options": [
+        "900",
+        "620",
+        "140",
+        "760"
+      ],
+      "tag": "saving_investment_capital_flows",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "conceptCluster": "calculate_nx_from_s_i",
+      "primarySkill": "calculate_nx_from_s_i",
+      "repairSkill": "calculate_nx_from_s_i",
+      "feedback": "S=I+NX=760+140=900.",
+      "id": 258,
+      "difficulty": "medium",
+      "aHash": "bdc5d8a48c23897906b09a9a3680bd2e9c8b3121edbda36f949800f0959c8d55"
+    },
+    {
+      "q": "Saving is 900 and the trade deficit is 120. What domestic investment is consistent with these values?",
+      "options": [
+        "1020",
+        "780",
+        "120",
+        "900"
+      ],
+      "tag": "saving_investment_capital_flows",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "conceptCluster": "calculate_nx_from_s_i",
+      "primarySkill": "calculate_nx_from_s_i",
+      "repairSkill": "calculate_nx_from_s_i",
+      "feedback": "NX=−120 and I=S−NX=900−(−120)=1020. A deficit means investment exceeds saving.",
+      "id": 259,
+      "difficulty": "medium",
+      "aHash": "f296867839c8befafed32b55a7c11ab4ad14387d2434b970a55237d537bc9353"
+    },
+    {
+      "q": "National saving is 1450. What investment level would make net exports zero?",
+      "options": [
+        "1450",
+        "0",
+        "2900",
+        "725"
+      ],
+      "tag": "saving_investment_capital_flows",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "conceptCluster": "calculate_nx_from_s_i",
+      "primarySkill": "calculate_nx_from_s_i",
+      "repairSkill": "calculate_nx_from_s_i",
+      "feedback": "Balanced trade requires NX=S−I=0, hence I=S=1450.",
+      "id": 346,
+      "difficulty": "medium",
+      "aHash": "b0193ceb57d22ae3f35716d0e3d5ee4a45452b7b3af33fdc710013b6a65b3b67"
+    },
+    {
+      "q": "An economy starts with balanced trade. Domestic investment then rises by 80. How much must national saving rise to keep NX unchanged?",
+      "options": [
+        "80",
+        "0",
+        "160",
+        "−80"
+      ],
+      "tag": "saving_investment_capital_flows",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "conceptCluster": "calculate_nx_from_s_i",
+      "primarySkill": "calculate_nx_from_s_i",
+      "repairSkill": "calculate_nx_from_s_i",
+      "feedback": "Keeping ΔNX=ΔS−ΔI at zero requires ΔS=ΔI=80.",
+      "id": 9064,
+      "difficulty": "medium",
+      "aHash": "48449a14a4ff7d79bb7a1b6f3d488eba397c36ef25634c111b49baf362511afc"
+    },
+    {
+      "q": "Investment is 1325 and the target trade surplus is 375. What saving level is consistent with that target?",
+      "options": [
+        "1700",
+        "950",
+        "375",
+        "1325"
+      ],
+      "tag": "saving_investment_capital_flows",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "conceptCluster": "calculate_nx_from_s_i",
+      "primarySkill": "calculate_nx_from_s_i",
+      "repairSkill": "calculate_nx_from_s_i",
+      "feedback": "S=I+NX=1325+375=1700.",
+      "id": 347,
+      "difficulty": "medium",
+      "aHash": "b97d4904938f12a04277ff18c386c7460877bf4002ad82a0ee3a5ab88f2b9249"
+    },
+    {
+      "q": "National saving rises by 60 while investment is unchanged. A country starts with a trade deficit of 100. What is its new trade balance?",
+      "options": [
+        "A deficit of 40",
+        "A surplus of 60",
+        "A deficit of 160",
+        "A surplus of 40"
+      ],
+      "tag": "saving_investment_capital_flows",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "conceptCluster": "calculate_nx_from_s_i",
+      "primarySkill": "calculate_nx_from_s_i",
+      "repairSkill": "calculate_nx_from_s_i",
+      "feedback": "The saving increase raises net exports by 60: −100+60=−40.",
+      "id": 9065,
+      "difficulty": "medium",
+      "aHash": "105a1a1a14ce49cd89668e3c056c8f1fb649128dd70568211d0c0a43c30f249d"
+    },
+    {
+      "q": "Saving is 1325 and investment is 1700. Which external financing description matches the gap?",
+      "options": [
+        "Net borrowing from abroad of 375",
+        "Net lending abroad of 375",
+        "Net borrowing abroad of 3025",
+        "No net international financing"
+      ],
+      "tag": "saving_investment_capital_flows",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "conceptCluster": "calculate_nx_from_s_i",
+      "primarySkill": "calculate_nx_from_s_i",
+      "repairSkill": "calculate_nx_from_s_i",
+      "feedback": "Investment exceeds saving by 375. The country finances the excess through net borrowing from abroad and has NX=−375.",
+      "id": 348,
+      "difficulty": "medium",
+      "aHash": "778e31a849ed583d9d9a4c96a16a2083252e75f3052464d21018ea2862fc5af5"
+    },
+    {
+      "q": "National saving falls by 50 and domestic investment falls by 20. What happens to NX?",
+      "options": [
+        "It falls by 30",
+        "It rises by 30",
+        "It falls by 70",
+        "It rises by 70"
+      ],
+      "tag": "saving_investment_capital_flows",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "conceptCluster": "calculate_nx_from_s_i",
+      "primarySkill": "calculate_nx_from_s_i",
+      "repairSkill": "calculate_nx_from_s_i",
+      "feedback": "ΔNX=−50−(−20)=−30. Lower investment offsets part, but not all, of the saving decline.",
+      "id": 9066,
+      "difficulty": "medium",
+      "aHash": "28d5c7be1e89e2b74c84e11f8c4e7b8a6a5d9fcfc3e6ac7a3de68df28559a475"
+    },
+    {
+      "q": "National saving is 2100 and NX is 250. What domestic investment follows?",
+      "options": [
+        "1850",
+        "2350",
+        "250",
+        "2100"
+      ],
+      "tag": "saving_investment_capital_flows",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "conceptCluster": "calculate_nx_from_s_i",
+      "primarySkill": "calculate_nx_from_s_i",
+      "repairSkill": "calculate_nx_from_s_i",
+      "feedback": "I=S−NX=2100−250=1850.",
+      "id": 349,
+      "difficulty": "medium",
+      "aHash": "202fd26f14d638ccb40975163ab0f05e1acf24c04a30708b3e0abfac44301a08"
+    },
+    {
+      "q": "A country initially has NX=250. An investment incentive raises I by 100 at the given world rate, with saving unchanged. What is the new trade balance?",
+      "options": [
+        "A surplus of 150",
+        "A surplus of 350",
+        "A deficit of 100",
+        "Balanced trade"
+      ],
+      "tag": "saving_investment_capital_flows",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "conceptCluster": "calculate_nx_from_s_i",
+      "primarySkill": "calculate_nx_from_s_i",
+      "repairSkill": "calculate_nx_from_s_i",
+      "feedback": "Higher investment reduces S−I by 100. Net exports fall from 250 to 150, so the country still has a surplus.",
+      "id": 9067,
+      "difficulty": "medium",
+      "aHash": "75bdddd0931a40b960c74d8ec33094d508cd3322260e0ac257a8b458150e3229"
+    },
+    {
+      "q": "The nominal rate is 1.2 foreign units per domestic unit and P*=120. What domestic price level gives ε=1?",
+      "options": [
+        "100",
+        "144",
+        "120",
+        "1.2"
+      ],
+      "tag": "real_exchange_rate",
+      "type": "calculation",
+      "objective": "LO6.4",
+      "conceptCluster": "calculate_real_exchange_rate",
+      "primarySkill": "calculate_real_exchange_rate",
+      "repairSkill": "calculate_real_exchange_rate",
+      "feedback": "From ε=eP/P*, P=εP*/e=120/1.2=100.",
+      "id": 355,
+      "difficulty": "medium",
+      "aHash": "ad57366865126e55649ecb23ae1d48887544976efea46a48eb5d85a6eeb4d306"
+    },
+    {
+      "q": "If the real exchange rate is 1.2 when measured as domestic-basket value relative to foreign-basket value in a common currency, how do the baskets' prices compare?",
+      "options": [
+        "The domestic basket costs 20% more than the foreign basket",
+        "The domestic currency must buy exactly 1.2 foreign units",
+        "Domestic output is 20% larger",
+        "The domestic basket costs 20% less"
+      ],
+      "tag": "real_exchange_rate",
+      "type": "calculation",
+      "objective": "LO6.4",
+      "conceptCluster": "calculate_real_exchange_rate",
+      "primarySkill": "calculate_real_exchange_rate",
+      "repairSkill": "calculate_real_exchange_rate",
+      "feedback": "The dimensionless ratio 1.2 compares basket prices after currency conversion. It need not equal the nominal exchange-rate quote.",
+      "id": 9073,
+      "difficulty": "medium",
+      "aHash": "aa6095b0ee052c99e3dc361aa8b73f74c7830f8935d76fc376b4b8096cf20e42"
+    },
+    {
+      "q": "With e=0.8 and P*=100, the domestic price level falls from 150 to 125. What happens to ε=eP/P*?",
+      "options": [
+        "It falls from 1.2 to 1.0",
+        "It rises from 1.0 to 1.2",
+        "It remains 0.8",
+        "It falls from 1.5 to 1.25"
+      ],
+      "tag": "real_exchange_rate",
+      "type": "calculation",
+      "objective": "LO6.4",
+      "conceptCluster": "calculate_real_exchange_rate",
+      "primarySkill": "calculate_real_exchange_rate",
+      "repairSkill": "calculate_real_exchange_rate",
+      "feedback": "Initially ε=0.8×150/100=1.2; afterward it is 0.8×125/100=1.0.",
+      "id": 9045,
+      "difficulty": "medium",
+      "aHash": "1b9c96eb9e9d2c2e360892ccae420fe0e3d7a73d9219ae9db1b277d0dd6d2ab5"
+    },
+    {
+      "q": "A domestic basket costs 80 domestic units and a foreign basket costs 120 foreign units. What nominal quote, in foreign units per domestic unit, makes the basket prices equal?",
+      "options": [
+        "1.5",
+        "0.667",
+        "120",
+        "80"
+      ],
+      "tag": "real_exchange_rate",
+      "type": "calculation",
+      "objective": "LO6.4",
+      "conceptCluster": "calculate_real_exchange_rate",
+      "primarySkill": "calculate_real_exchange_rate",
+      "repairSkill": "calculate_real_exchange_rate",
+      "feedback": "Equality requires e×80=120, giving e=1.5. Reversing the ratio would use the opposite quotation convention.",
+      "id": 9046,
+      "difficulty": "medium",
+      "aHash": "9f29a130438b81170b92a42650f9a94291ecad60bd47af2a3886e75f7f728725"
+    },
+    {
+      "q": "With e=1 and P=120 fixed, P* rises from 80 to 100. How does ε change?",
+      "options": [
+        "It falls from 1.5 to 1.2",
+        "It rises from 1.2 to 1.5",
+        "It stays at 1",
+        "It falls from 0.8 to 0.667"
+      ],
+      "tag": "real_exchange_rate",
+      "type": "calculation",
+      "objective": "LO6.4",
+      "conceptCluster": "calculate_real_exchange_rate",
+      "primarySkill": "calculate_real_exchange_rate",
+      "repairSkill": "calculate_real_exchange_rate",
+      "feedback": "ε initially equals 120/80=1.5 and later 120/100=1.2. Higher foreign prices make domestic goods relatively cheaper.",
+      "id": 9047,
+      "difficulty": "medium",
+      "aHash": "33d1d219cf73bc0785c63f762d8791d572d7d11dc96a69b13db0fbd8cb9e058d"
+    },
+    {
+      "q": "Initially ε=1.2. The nominal exchange rate doubles while both price levels remain fixed. What is the new real exchange rate?",
+      "options": [
+        "2.4",
+        "1.2",
+        "0.6",
+        "3.2"
+      ],
+      "tag": "real_exchange_rate",
+      "type": "calculation",
+      "objective": "LO6.4",
+      "conceptCluster": "calculate_real_exchange_rate",
+      "primarySkill": "calculate_real_exchange_rate",
+      "repairSkill": "calculate_real_exchange_rate",
+      "feedback": "With P/P* unchanged, ε changes proportionally with e. Doubling e doubles ε from 1.2 to 2.4.",
+      "id": 9048,
+      "difficulty": "medium",
+      "aHash": "0814305f8cfb2f14744b7c7ce9da6768802df7bdd801d62be3e0d7caa0d84c81"
+    },
+    {
+      "q": "Initially e=0.75, P=160 and P*=120, so ε=1. Both price levels then rise 10% with e unchanged. What is the new ε?",
+      "options": [
+        "1",
+        "1.1",
+        "0.9",
+        "1.21"
+      ],
+      "tag": "real_exchange_rate",
+      "type": "calculation",
+      "objective": "LO6.4",
+      "conceptCluster": "calculate_real_exchange_rate",
+      "primarySkill": "calculate_real_exchange_rate",
+      "repairSkill": "calculate_real_exchange_rate",
+      "feedback": "Equal proportional changes in P and P* cancel in their ratio. Therefore ε remains 0.75×176/132=1.",
+      "id": 9049,
+      "difficulty": "medium",
+      "aHash": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "id": 307,
+      "q": "Refer to the Mundell–Fleming graph. Which change would move the economy from C back to B?",
+      "options": [
+        "The LM* curve shifting to the left as monetary conditions tighten",
+        "The IS* curve shifting to the right",
+        "NX(R) shifting right",
+        "S - I shifting left"
+      ],
+      "tag": "floating_exchange_policy",
+      "type": "graph",
+      "objective": "LO14.1",
+      "difficulty": "medium",
+      "conceptCluster": "floating_monetary_policy",
+      "primarySkill": "floating_monetary_policy",
+      "repairSkill": "floating_monetary_policy",
+      "feedback": "C is the expansionary LM* position; moving back to B reverses it.",
+      "image": "islm_er_change.png",
+      "aHash": "7125088e98c40069b71cfd97b2cacabc15c2ad68fc994e3be699d5f212574e73"
+    },
+    {
+      "id": 308,
+      "q": "Refer to the Mundell–Fleming graph. Which policy shock most naturally moves from B to A?",
+      "options": [
+        "fiscal expansion or a rise in demand for domestic goods",
+        "monetary expansion",
+        "a fall in money demand",
+        "capital controls under a peg"
+      ],
+      "tag": "floating_exchange_policy",
+      "type": "graph",
+      "objective": "LO14.1",
+      "difficulty": "medium",
+      "conceptCluster": "floating_fiscal_policy",
+      "primarySkill": "floating_fiscal_policy",
+      "repairSkill": "floating_fiscal_policy",
+      "feedback": "The IS* curve shifts to the right and the exchange rate appreciates.",
+      "image": "islm_exchangerates.png",
+      "aHash": "038333235725d904288782a57f2d447d2a35fe5d1bf565fa3e8f92216b5c5586"
+    },
+    {
+      "id": 309,
+      "q": "Refer to the open-economy saving and investment graph. What does a shift from I(r)2 to I(r)3 imply when the saving line is unchanged?",
+      "options": [
+        "higher investment demand and lower net exports",
+        "higher saving and higher net exports",
+        "lower investment and higher net exports",
+        "no trade-balance effect"
+      ],
+      "tag": "saving_investment_capital_flows",
+      "type": "graph",
+      "objective": "LO6.5",
+      "difficulty": "medium",
+      "conceptCluster": "investment_shift_trade_balance",
+      "primarySkill": "investment_shift_trade_balance",
+      "repairSkill": "investment_shift_trade_balance",
+      "feedback": "More investment demand lowers S - I.",
+      "image": "loanablefunds_changes_investment.png",
+      "aHash": "4f53debe890b236f4f0fbb0af73e7b12630e30c161ef830ae7f811e92c9417b1"
+    },
+    {
+      "id": 310,
+      "q": "S = 1,250, I = 1,480. Then a fiscal consolidation raises saving by 150. What are the new net exports?",
+      "options": [
+        "-80",
+        "-230",
+        "80",
+        "150"
+      ],
+      "tag": "saving_investment_capital_flows",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "difficulty": "medium",
+      "conceptCluster": "calculate_nx_from_s_i",
+      "primarySkill": "calculate_nx_from_s_i",
+      "repairSkill": "calculate_nx_from_s_i",
+      "feedback": "Initial NX = -230. New saving = 1400, so NX = 1400 - 1480 = -80.",
+      "hint": "Update saving before using S - I.",
+      "aHash": "4b35f70cb9a561c1a7436f35e6927810129b7751181050d4da7413e290f20be8"
+    },
+    {
+      "id": 311,
+      "q": "Y = 3,000, C = 1,850, I = 725, G = 500. What is the trade balance?",
+      "options": [
+        "-75",
+        "75",
+        "425",
+        "-425"
+      ],
+      "tag": "accounting_identities",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "difficulty": "medium",
+      "conceptCluster": "calculate_nx_from_y_c_i_g",
+      "primarySkill": "calculate_nx_from_y_c_i_g",
+      "repairSkill": "calculate_nx_from_y_c_i_g",
+      "feedback": "NX = 3000 - 1850 - 725 - 500 = -75.",
+      "hint": "NX = Y - C - I - G.",
+      "aHash": "20ccb43659cac32e5b2b67b9f8d77277ebaeb8f96c1332e7ac1ab6b7451d0fde"
+    },
+    {
+      "id": 312,
+      "q": "The real exchange rate is ε = eP/P*. If e rises from 1.1 to 1.3 while P and P* remain unchanged, how does the real exchange rate change?",
+      "options": [
+        "appreciates",
+        "depreciates",
+        "is unchanged",
+        "becomes NX"
+      ],
+      "tag": "real_exchange_rate",
+      "type": "calculation",
+      "objective": "LO6.4",
+      "difficulty": "medium",
+      "conceptCluster": "calculate_real_exchange_rate",
+      "primarySkill": "calculate_real_exchange_rate",
+      "repairSkill": "calculate_real_exchange_rate",
+      "feedback": "With prices fixed, a higher nominal exchange rate raises ε.",
+      "hint": "Track the direction of ε.",
+      "aHash": "594767b87b83a305f16e7732bc08a337dc5c74766cba7b63e435099c826bb8ce"
+    },
+    {
+      "id": 326,
+      "q": "Refer to the Mundell–Fleming graph. Under floating exchange rates, which change would most naturally move the equilibrium from B to A?",
+      "options": [
+        "fiscal expansion or a trade-policy IS* shift",
+        "Monetary expansion shifting the LM* curve to the right",
+        "A fall in the price level shifting the LM* curve to the right",
+        "a decrease in money demand"
+      ],
+      "tag": "floating_exchange_policy",
+      "type": "graph",
+      "objective": "LO14.1",
+      "difficulty": "medium",
+      "conceptCluster": "is_shift_graph",
+      "primarySkill": "floating_fiscal_policy",
+      "repairSkill": "floating_fiscal_policy",
+      "feedback": "B to A is an IS* shift under floating rates.",
+      "image": "islm_exchangerates.png",
+      "aHash": "3549bcd2c77b069778417ee536c9fe44050649dea4e2ec3e039c8ddcea0d3422"
+    },
+    {
+      "id": 327,
+      "q": "Refer to the Mundell–Fleming graph. Under floating exchange rates, which change would most naturally move the equilibrium from B to C?",
+      "options": [
+        "Monetary expansion shifting the LM* curve to the right",
+        "Fiscal expansion shifting the IS* curve to the right",
+        "A tariff shifting the IS* curve to the right",
+        "higher saving in the classical small-open-economy graph"
+      ],
+      "tag": "floating_exchange_policy",
+      "type": "graph",
+      "objective": "LO14.1",
+      "difficulty": "medium",
+      "conceptCluster": "lm_shift_graph",
+      "primarySkill": "floating_monetary_policy",
+      "repairSkill": "floating_monetary_policy",
+      "feedback": "B to C is an LM* shift to the right.",
+      "image": "islm_er_change.png",
+      "aHash": "6b8f7e9cfb86ef7107a27e0e62272c17164b98aec6e78b4db88a4c6d77acd7c4"
+    },
+    {
+      "id": 329,
+      "q": "Y = 4,200, C = 2,600, I = 950, and G = 775. What is the trade balance?",
+      "options": [
+        "-125",
+        "125",
+        "875",
+        "3,425"
+      ],
+      "tag": "accounting_identities",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "difficulty": "medium",
+      "conceptCluster": "income_identity_calculation",
+      "primarySkill": "calculate_nx_from_y_c_i_g",
+      "repairSkill": "calculate_nx_from_y_c_i_g",
+      "feedback": "NX = 4,200 - 2,600 - 950 - 775 = -125.",
+      "aHash": "5f9c2b683e6727c0e75e270de5d76c491873c8da897f9e84d16d2cd42c23fc10"
+    },
+    {
+      "id": 330,
+      "q": "The real exchange rate formula is ε = eP/P*. If the nominal exchange rate falls while P and P* are unchanged, what happens?",
+      "options": [
+        "the real exchange rate falls and net exports tend to rise",
+        "the real exchange rate rises and net exports tend to fall",
+        "the real exchange rate is unchanged because prices are unchanged",
+        "net exports become equal to the money supply"
+      ],
+      "tag": "real_exchange_rate",
+      "type": "calculation",
+      "objective": "LO6.4",
+      "difficulty": "medium",
+      "conceptCluster": "real_exchange_rate_direction",
+      "primarySkill": "calculate_real_exchange_rate",
+      "repairSkill": "calculate_real_exchange_rate",
+      "feedback": "With prices fixed, ε moves with e.",
+      "aHash": "dae17a74f3373df2ac522458f3e30181ce01e33cb4998dc9608de954442b9022"
+    },
+    {
+      "q": "Refer to the Mundell–Fleming graph. Which change is consistent with a move from B to C?",
+      "options": [
+        "expansionary monetary policy under floating rates",
+        "expansionary fiscal policy under floating rates",
+        "a fixed exchange rate peg with no money change",
+        "a tariff in the classical small-open-economy model"
+      ],
+      "tag": "floating_exchange_policy",
+      "type": "graph",
+      "objective": "LO14.1",
+      "conceptCluster": "floating_monetary_policy",
+      "primarySkill": "floating_monetary_policy",
+      "repairSkill": "floating_monetary_policy",
+      "feedback": "A move to the right on LM* lowers the nominal exchange rate and raises output.",
+      "image": "islm_er_change.png",
+      "id": 340,
+      "difficulty": "medium",
+      "aHash": "f6a7065bbfab366412ed5a67258e2af124c440973c8beb5f18fe5f3497d68302"
+    },
+    {
+      "q": "Refer to the Mundell–Fleming graph. Which change is consistent with a move from B to A?",
+      "options": [
+        "a rightward IS* shock under floating rates",
+        "a monetary expansion under floating rates",
+        "A fall in the price level shifting the LM* curve to the right",
+        "capital flight in the large open model"
+      ],
+      "tag": "floating_exchange_policy",
+      "type": "graph",
+      "objective": "LO14.1",
+      "conceptCluster": "floating_fiscal_policy",
+      "primarySkill": "floating_fiscal_policy",
+      "repairSkill": "floating_fiscal_policy",
+      "feedback": "A rightward IS* shock raises the nominal exchange rate with Y pinned at Y*.",
+      "image": "islm_exchangerates.png",
+      "id": 341,
+      "difficulty": "medium",
+      "aHash": "b91651c5a4473f33c847d5b56cd26c3c7cdaf093405d8f2f4a2190f3864d60d2"
+    },
+    {
+      "q": "Refer to the real exchange rate graph. Which changes are represented by a move from E to C?",
+      "options": [
+        "higher S - I and a higher real exchange rate",
+        "lower S - I and a lower real exchange rate",
+        "a tariff shifting NX(R)",
+        "a money-demand shock shifting LM*"
+      ],
+      "tag": "real_exchange_rate",
+      "type": "graph",
+      "objective": "LO6.4",
+      "conceptCluster": "exchange_rate_adjustment",
+      "primarySkill": "exchange_rate_adjustment",
+      "repairSkill": "exchange_rate_adjustment",
+      "feedback": "Point C is on the right-most S - I line and the high R line.",
+      "image": "rer_changes.png",
+      "id": 343,
+      "difficulty": "medium",
+      "aHash": "3b4e317af3ec2c57c98e970bd7177986e5c429a3d80090150c15f0eadef35c63"
+    },
+    {
+      "q": "Refer to the open-economy saving and investment graph. Which changes are represented by a move from D to E?",
+      "options": [
+        "higher investment demand at the same world interest rate",
+        "lower saving at the same world interest rate",
+        "a fall in the world interest rate",
+        "a tariff shifting NX demand"
+      ],
+      "tag": "saving_investment_capital_flows",
+      "type": "graph",
+      "objective": "LO6.5",
+      "conceptCluster": "investment_shift_trade_balance",
+      "primarySkill": "investment_shift_trade_balance",
+      "repairSkill": "investment_shift_trade_balance",
+      "feedback": "The investment-demand curve shifts right at the same r_w2.",
+      "image": "loanablefunds_changes_investment.png",
+      "id": 344,
+      "difficulty": "medium",
+      "aHash": "b1c4dd4839e453490af78f8935c9e4f5a270604d78a6d011b33676b86ce741ca"
+    },
+    {
+      "q": "Refer to the policy trilemma graph. A country insists on fixed exchange rate and free capital mobility. According to the impossible trinity, what must it give up?",
+      "options": [
+        "independent monetary policy",
+        "exports",
+        "fiscal policy",
+        "national saving"
+      ],
+      "tag": "impossible_trinity",
+      "type": "integration",
+      "objective": "LO14.3",
+      "conceptCluster": "impossible_trinity",
+      "primarySkill": "impossible_trinity",
+      "repairSkill": "impossible_trinity",
+      "feedback": "The trilemma permits two goals, not all three.",
+      "image": "impossibletrinity.png",
+      "id": 372,
+      "difficulty": "medium",
+      "aHash": "dd2555485f1265b2efedec85cd460ea4fba4bb0f1b68ac8756ead3f13ddc6a8d"
+    },
+    {
+      "q": "Refer to the policy trilemma graph. A country insists on independent monetary policy and free capital mobility. According to the impossible trinity, what must it give up?",
+      "options": [
+        "a fixed exchange rate",
+        "exports",
+        "fiscal policy",
+        "national saving"
+      ],
+      "tag": "impossible_trinity",
+      "type": "integration",
+      "objective": "LO14.3",
+      "conceptCluster": "impossible_trinity",
+      "primarySkill": "impossible_trinity",
+      "repairSkill": "impossible_trinity",
+      "feedback": "The trilemma permits two goals, not all three.",
+      "image": "impossibletrinity.png",
+      "id": 373,
+      "difficulty": "medium",
+      "aHash": "881b60ebc095911d7b72e0d2c1070dcb697156a6d65ff5352379e626b05b5594"
+    },
+    {
+      "q": "Refer to the policy trilemma graph. A country insists on fixed exchange rate and independent monetary policy. According to the impossible trinity, what must it give up?",
+      "options": [
+        "free capital mobility",
+        "exports",
+        "fiscal policy",
+        "national saving"
+      ],
+      "tag": "impossible_trinity",
+      "type": "integration",
+      "objective": "LO14.3",
+      "conceptCluster": "impossible_trinity",
+      "primarySkill": "impossible_trinity",
+      "repairSkill": "impossible_trinity",
+      "feedback": "The trilemma permits two goals, not all three.",
+      "image": "impossibletrinity.png",
+      "id": 374,
+      "difficulty": "medium",
+      "aHash": "51e1c59eed53c8a7ada7215e0afd9dc555705a903fb66e17c3663a8daf2e55ba"
+    },
+    {
+      "q": "Refer to the Mundell–Fleming and aggregate demand–aggregate supply graph. Why does point B sit on LRAS?",
+      "options": [
+        "Y2 is the long-run output level",
+        "P2 is always the highest price",
+        "B is a tariff equilibrium",
+        "LM* cannot move through B"
+      ],
+      "tag": "mundell_fleming_ad",
+      "type": "graph",
+      "objective": "LO14.4",
+      "conceptCluster": "derive_ad_from_mf",
+      "primarySkill": "derive_ad_from_mf",
+      "repairSkill": "derive_ad_from_mf",
+      "feedback": "LRAS marks the long-run output level, shown at Y2.",
+      "image": "mundell_adas.png",
+      "id": 384,
+      "difficulty": "medium",
+      "aHash": "16829a79375707f8ea112c0e87a3a525300e930b0c989356c4cebf42a8e2d247"
+    },
+    {
+      "q": "Refer to the Mundell–Fleming graph. Why does a movement from A to B require IS* to shift left?",
+      "options": [
+        "B is back on the middle IS* position at Y*",
+        "B requires LM* to shift right",
+        "B is a lower price-level point on aggregate demand",
+        "B is outside the model"
+      ],
+      "tag": "mundell_fleming_is_lm",
+      "type": "graph",
+      "objective": "LO14.1",
+      "conceptCluster": "is_star_exchange_rate",
+      "primarySkill": "is_star_exchange_rate",
+      "repairSkill": "is_star_exchange_rate",
+      "feedback": "A to B reverses the rightward IS* movement.",
+      "image": "islm_exchangerates.png",
+      "id": 385,
+      "difficulty": "medium",
+      "aHash": "1215443401b0909ca596b4bd700a3ecdd4023507d96e482a29a7be91a5872030"
+    },
+    {
+      "q": "Refer to the Mundell–Fleming graph. Why does a movement from C to B require LM* to shift left?",
+      "options": [
+        "B is back on the middle LM* position",
+        "B requires IS* to shift right",
+        "B is a tariff equilibrium",
+        "B changes S - I"
+      ],
+      "tag": "mundell_fleming_is_lm",
+      "type": "graph",
+      "objective": "LO14.1",
+      "conceptCluster": "lm_star_money_market",
+      "primarySkill": "lm_star_money_market",
+      "repairSkill": "lm_star_money_market",
+      "feedback": "C to B reverses the rightward LM* movement.",
+      "image": "islm_er_change.png",
+      "id": 386,
+      "difficulty": "medium",
+      "aHash": "1be4c8d8a99ea020f605b39c19b9a636bc1a5432342a032ab1f8f49013333fbc"
     }
   ],
   "hard": [
@@ -3541,10 +4746,10 @@ const questionBanks = {
       "id": 200,
       "q": "A small open economy begins at balanced trade. A domestic budget deficit opens. Which full chain is correct?",
       "options": [
-        "national saving falls → S - I falls → real exchange rate appreciates → net exports fall",
-        "national saving rises → S - I rises → depreciation → net exports rise",
-        "investment rises because G rises → net exports rise",
-        "r* falls because the domestic country borrows"
+        "National saving falls, reducing saving minus investment; the real exchange rate appreciates and net exports fall",
+        "National saving rises, increasing saving minus investment; the real exchange rate depreciates and net exports rise",
+        "Higher government purchases raise investment, causing net exports to rise",
+        "Domestic borrowing lowers the world interest rate"
       ],
       "tag": "fiscal_policy_open_economy",
       "type": "multi-step",
@@ -3554,7 +4759,7 @@ const questionBanks = {
       "primarySkill": "trace_domestic_fiscal_expansion",
       "repairSkill": "trace_domestic_fiscal_expansion",
       "feedback": "The deficit lowers saving, reducing net capital outflow and appreciating the real exchange rate.",
-      "aHash": "2243539c39c737249003b034c2293247e801f634e0ce29ea8336903e19e1e396"
+      "aHash": "c1acb3e26520ed0a89bcbe6cd4d47c7b0aae4df0db9caec37a3df6cae38ea95a"
     },
     {
       "id": 201,
@@ -3572,17 +4777,17 @@ const questionBanks = {
       "conceptCluster": "foreign_fiscal_policy",
       "primarySkill": "foreign_fiscal_policy",
       "repairSkill": "foreign_fiscal_policy",
-      "feedback": "Lower r* raises investment, reducing S - I and NX.",
+      "feedback": "Lower world interest rate raises investment, reducing S - I and NX.",
       "aHash": "aff5222623d9ee38a42ab6c3c835c129fd6788949d42fcbfc0b9bc26f72c6f87"
     },
     {
       "id": 202,
       "q": "A technology boom raises investment demand. In the S - I/NX graph, which result is right?",
       "options": [
-        "S - I shifts left, the real exchange rate appreciates, and net exports fall",
+        "Investment reduces S − I; appreciation lowers net exports",
         "S - I shifts right and net exports rise",
         "NX(R) shifts right because tariffs rise",
-        "the real exchange rate depreciates and imports fall"
+        "The currency depreciates, making imports cheaper and reducing their quantity"
       ],
       "tag": "saving_investment_capital_flows",
       "type": "multi-step",
@@ -3592,13 +4797,13 @@ const questionBanks = {
       "primarySkill": "investment_shift_trade_balance",
       "repairSkill": "investment_shift_trade_balance",
       "feedback": "Higher investment lowers S - I at each real exchange rate.",
-      "aHash": "ca3405f0ef289cf1f8a6cd41d9526f0b582810a9032a44557c9bfaaedcd3dcd4"
+      "aHash": "a3faa31037e984fd52d7ad9966aeebde97ad56dd7e8ae40051cae823a244b3b0"
     },
     {
       "id": 203,
       "q": "A tariff shifts NX(R) right. Why does the trade balance not necessarily improve?",
       "options": [
-        "real appreciation offsets the direct rise in demand for NX",
+        "Appreciation offsets the direct gain in NX",
         "saving rises automatically",
         "investment falls because tariffs change r*",
         "the central bank fixes imports"
@@ -3612,14 +4817,14 @@ const questionBanks = {
       "repairSkill": "tariff_exchange_rate_offset",
       "feedback": "The real exchange rate moves to keep NX equal to S - I.",
       "commonError": "assuming tariffs mechanically fix deficits",
-      "aHash": "cd3d1f04889f33e78f9b62681cf1e5a367dba842d99ecfd6e9706edd7853f4a5"
+      "aHash": "94bf797b46c566a3e29294a29fe3aa1854a7966dfc98e039c2b3729e5c7faa1e"
     },
     {
       "id": 204,
       "q": "Capital flight causes a currency depreciation and higher net exports. Why is 'higher net exports means better economy' a bad conclusion?",
       "options": [
-        "the higher net exports reflects financial stress and capital outflow, not a clean productivity gain",
-        "higher net exports always means stronger welfare",
+        "Capital outflows can raise net exports during a financial crisis",
+        "Any increase in net exports guarantees that households enjoy higher welfare",
         "capital flight causes appreciation",
         "NX is unrelated to capital flows"
       ],
@@ -3630,12 +4835,12 @@ const questionBanks = {
       "conceptCluster": "capital_flight_exchange_rate",
       "primarySkill": "capital_flight_exchange_rate",
       "repairSkill": "capital_flight_exchange_rate",
-      "feedback": "Capital flight can raise NX through depreciation while still signaling a crisis.",
-      "aHash": "e9c96ff67873a1ea00410d8e4e88fa28fb87b0f490eaa2c0ce6baf00e482f295"
+      "feedback": "Capital flight can raise net exports through depreciation while still signaling a crisis.",
+      "aHash": "84e5f8e61efb22439b526c5bb259dd1c716582a699a9e0eb717103d56dddbe15"
     },
     {
       "id": 205,
-      "q": "Refer to the image above. A domestic fiscal expansion most likely moves equilibrium from E to...",
+      "q": "Refer to the real exchange rate graph. To which point would a domestic fiscal expansion most likely move the equilibrium from E?",
       "options": [
         "A",
         "I",
@@ -3655,7 +4860,7 @@ const questionBanks = {
     },
     {
       "id": 206,
-      "q": "Refer to the image above. A rise in national saving most likely moves equilibrium from E to...",
+      "q": "Refer to the real exchange rate graph. To which point would an increase in national saving most likely move the equilibrium from E?",
       "options": [
         "I",
         "A",
@@ -3675,9 +4880,9 @@ const questionBanks = {
     },
     {
       "id": 207,
-      "q": "Refer to the image above. Moving from B to A means the real exchange rate...",
+      "q": "Refer to the net exports and the real exchange rate graph. How does the real exchange rate change when the equilibrium moves from B to A?",
       "options": [
-        "appreciates while NX stays tied to S - I",
+        "Appreciates while net exports stay tied to S - I",
         "depreciates and net exports rise permanently",
         "stays fixed while imports vanish",
         "falls and exports collapse"
@@ -3691,13 +4896,13 @@ const questionBanks = {
       "repairSkill": "tariff_exchange_rate_offset",
       "feedback": "The rightward NX shift raises R but does not move the vertical S - I line.",
       "image": "tradepolicies.png",
-      "aHash": "8f9ec311161d0c1e13f5f5cfe35f22af49b7b065a37b3b58c1e8407b71052cdb"
+      "aHash": "2d2e74d8664d351408b9d3fde2c93fa4964fd8f6303e7b2256791b1bd7b75c3c"
     },
     {
       "id": 208,
-      "q": "Refer to the image above. Floating-rate fiscal expansion moves from B to A. What happens to output?",
+      "q": "Refer to the Mundell–Fleming graph. Floating-rate fiscal expansion moves from B to A. What happens to output?",
       "options": [
-        "it remains at Y*",
+        "it stays at Y*",
         "it rises to Y3",
         "it falls to Y1",
         "it becomes NX2"
@@ -3709,18 +4914,18 @@ const questionBanks = {
       "conceptCluster": "floating_fiscal_policy",
       "primarySkill": "floating_fiscal_policy",
       "repairSkill": "floating_fiscal_policy",
-      "feedback": "IS* shifts right, but Y is pinned by LM* at Y*.",
+      "feedback": "The IS* curve shifts to the right, but Y is pinned by LM* at Y*.",
       "image": "islm_exchangerates.png",
-      "aHash": "6e363b5b7cab852da26c31b5db9908f00cedb131ac197907fb95abd257135f7f"
+      "aHash": "760fda36ef11636a9683ecec07eee9da7fc22446909e4e40007368f26aa208fe"
     },
     {
       "id": 209,
-      "q": "Refer to the image above. Floating-rate monetary expansion moves from B to C. What is the exchange-rate channel?",
+      "q": "Refer to the Mundell–Fleming graph. Floating-rate monetary expansion moves from B to C. What is the exchange-rate channel?",
       "options": [
-        "e falls, depreciation raises NX, and Y rises",
-        "e rises, appreciation raises NX, and Y falls",
-        "e is fixed by the central bank",
-        "net exports fall because LM* shifts right"
+        "The nominal exchange rate falls, depreciation raises net exports, and output rises",
+        "The nominal exchange rate rises, appreciation raises net exports, and output falls",
+        "The nominal exchange rate is fixed by the central bank",
+        "Net exports fall because the LM* curve shifts to the right"
       ],
       "tag": "floating_exchange_policy",
       "type": "graph",
@@ -3729,18 +4934,18 @@ const questionBanks = {
       "conceptCluster": "floating_monetary_policy",
       "primarySkill": "floating_monetary_policy",
       "repairSkill": "floating_monetary_policy",
-      "feedback": "LM* right lowers e and raises Y through NX.",
+      "feedback": "The LM* curve shifts to the right lowers the nominal exchange rate and raises output through NX.",
       "image": "islm_er_change.png",
-      "aHash": "5ba8739e04b6eb95492155475cdb65b722924504b982e3206704fcbbc73aadc9"
+      "aHash": "0f4faaa2f2250b0bfb406bee0d4d19137ac5d359367d0b3eb9ac0e18155b4c25"
     },
     {
       "id": 210,
-      "q": "Refer to the image above. Why does the right-panel aggregate demand slope downward?",
+      "q": "Refer to the Mundell–Fleming and aggregate demand graph. Why does the right-panel aggregate demand slope downward?",
       "options": [
-        "lower P raises M/P, shifts LM* right, lowers e, raises NX, and raises Y",
-        "lower P shifts IS* left",
-        "higher P raises NX",
-        "lower P raises r* directly"
+        "Lower prices raise real balances; depreciation then raises net exports and output",
+        "Lower prices reduce real balances; appreciation then raises net exports and output",
+        "Higher price level raises net exports",
+        "Lower price level raises the world interest rate directly"
       ],
       "tag": "mundell_fleming_ad",
       "type": "graph",
@@ -3751,7 +4956,7 @@ const questionBanks = {
       "repairSkill": "derive_ad_from_mf",
       "feedback": "The open-economy aggregate demand channel runs through real balances and the exchange rate.",
       "image": "mundell_ad.png",
-      "aHash": "cd150057fa54221e8feac75e5affcd531a3ba9f31c47d32e0e3cb6ed2575095a"
+      "aHash": "8f10cf76debf0fc5a9fa355508be1df2dfbc9597e2851b3202caf3ed87ba9e05"
     },
     {
       "id": 211,
@@ -3769,15 +4974,15 @@ const questionBanks = {
       "conceptCluster": "floating_exchange_policy",
       "primarySkill": "floating_exchange_policy",
       "repairSkill": "floating_exchange_policy",
-      "feedback": "Fiscal shifts IS* right; monetary shifts LM* right.",
+      "feedback": "Fiscal shifts the IS* curve to the right; monetary shifts the LM* curve to the right.",
       "aHash": "67a984b0d11db164ab660a5f02e2b758feb0ab0c46771aa813faa13bc7d3beea"
     },
     {
       "id": 212,
-      "q": "Under fixed rates, why does fiscal policy become powerful in Mundell-Fleming model?",
+      "q": "Under fixed rates, why does fiscal policy become powerful in the Mundell–Fleming model?",
       "options": [
-        "pressure for appreciation forces monetary expansion to defend the peg",
-        "fiscal policy shifts LM* left",
+        "Defending the peg against appreciation requires money creation",
+        "Fiscal expansion contracts money supply as the bank defends the exchange-rate peg",
         "the exchange rate floats away",
         "capital mobility vanishes"
       ],
@@ -3789,11 +4994,11 @@ const questionBanks = {
       "primarySkill": "fixed_fiscal_policy",
       "repairSkill": "fixed_fiscal_policy",
       "feedback": "Fiscal expansion raises income and money demand; defending the peg expands the money supply.",
-      "aHash": "a5b80fc87778f8c6f6a2137f98ad2d4b0cd777bb888bf7ffd5466375143c2319"
+      "aHash": "c164e3b3180203e42531900072dc394291fb97c94dcef7f8f51de8082b7abcbd"
     },
     {
       "id": 213,
-      "q": "Under fixed rates, a central bank facing depreciation pressure must...",
+      "q": "Under a fixed exchange rate, how must the central bank respond to depreciation pressure to defend the peg?",
       "options": [
         "buy domestic currency and reduce the money supply",
         "sell domestic currency and expand money supply",
@@ -3831,7 +5036,7 @@ const questionBanks = {
     },
     {
       "id": 215,
-      "q": "Refer to the image above. A country chooses independent monetary policy and a fixed exchange rate. Which side of the impossible trinity is sacrificed?",
+      "q": "Refer to the policy trilemma graph. A country chooses independent monetary policy and a fixed exchange rate. Which side of the impossible trinity is sacrificed?",
       "options": [
         "free capital mobility",
         "fiscal policy",
@@ -3851,12 +5056,12 @@ const questionBanks = {
     },
     {
       "id": 216,
-      "q": "If P rises in the Mundell-Fleming model aggregate demand derivation, what happens to M/P, e, NX, and Y?",
+      "q": "If the price level rises in the Mundell-Fleming model aggregate demand derivation, what happens to M/P, e, NX, and Y?",
       "options": [
-        "M/P falls, e rises, net exports fall, and Y falls",
-        "M/P rises, e falls, net exports rise, and Y rises",
-        "IS* shifts right and Y rises",
-        "r* falls and investment rises"
+        "M/P falls, the nominal exchange rate rises, net exports fall, and output falls",
+        "M/P rises, the nominal exchange rate falls, net exports rise, and output rises",
+        "The IS* curve shifts to the right and output rises",
+        "The world interest rate falls and investment rises"
       ],
       "tag": "mundell_fleming_ad",
       "type": "multi-step",
@@ -3865,14 +5070,14 @@ const questionBanks = {
       "conceptCluster": "derive_ad_from_mf",
       "primarySkill": "derive_ad_from_mf",
       "repairSkill": "derive_ad_from_mf",
-      "feedback": "Higher P reduces real balances, shifts LM* left, appreciates the currency, and lowers NX.",
-      "aHash": "52a1f0093f5a0ec8b2468b833e482487805f771612d1093b4e0f203d3f3416ff"
+      "feedback": "Higher price level reduces real balances, shifts the LM* curve to the left, appreciates the currency, and lowers net exports.",
+      "aHash": "978b1a378a62fb6f61847b2a9c69760a0ca25674f0796f2547a7ccbdbd08a5ea"
     },
     {
       "id": 217,
       "q": "A large open economy runs expansionary fiscal policy. Which result differs from the small-open-economy case?",
       "options": [
-        "the domestic interest rate rises rather than staying fixed at r*",
+        "The domestic interest rate can rise above r*",
         "NX becomes unrelated to saving",
         "investment is unchanged because r cannot move",
         "net exports stop depending on exchange rates"
@@ -3885,16 +5090,16 @@ const questionBanks = {
       "primarySkill": "large_open_policy",
       "repairSkill": "large_open_policy",
       "feedback": "Large open economies partly affect the interest rate.",
-      "aHash": "918281308594e41613eca0ac02fa0c61dbe36e840b5ee37b948586d302c7dacb"
+      "aHash": "3d81d8c6a2fd0dde40c068653428633145a716c71910b01463d3e6fa43b41ae8"
     },
     {
       "id": 218,
       "q": "In a large open economy, why is fiscal crowding out only partial relative to a closed economy?",
       "options": [
-        "capital inflows can finance some extra borrowing",
+        "Foreign inflows finance some borrowing",
         "NX is always zero",
         "investment is banned",
-        "saving stops mattering"
+        "Domestic saving no longer affects the funds available to borrowers"
       ],
       "tag": "large_open_economy",
       "type": "integration",
@@ -3904,15 +5109,15 @@ const questionBanks = {
       "primarySkill": "large_open_policy",
       "repairSkill": "large_open_policy",
       "feedback": "International capital flows reduce but do not eliminate interest-rate pressure.",
-      "aHash": "7be6600500b7ea519b2648c422143b160790cf44d7005ee1159f85b3ee81a1f9"
+      "aHash": "ae9500cce0c3595dd7289770050b30e72e8dc53b09d21431956e2d3c88e2d415"
     },
     {
       "id": 219,
       "q": "Why is it wrong to treat a small open economy like a closed economy when fiscal policy changes?",
       "options": [
-        "the exchange-rate/net-export channel can offset spending changes",
+        "Appreciation can offset spending through lower net exports",
         "saving has no role",
-        "investment never depends on interest rates",
+        "Domestic investment never responds to interest rates, even when the world rate changes",
         "NX is always positive"
       ],
       "tag": "floating_exchange_policy",
@@ -3923,7 +5128,7 @@ const questionBanks = {
       "primarySkill": "floating_fiscal_policy",
       "repairSkill": "floating_fiscal_policy",
       "feedback": "In open economy models, capital flows and exchange rates matter.",
-      "aHash": "211d2a921b2a02b49d1c87cb06eeb8a4184eacd5ba256fac84e64aa5cccdb893"
+      "aHash": "7e6b4c9ca02d9e2887c8d08b714a72cd48ccb660979325f6630ce7959797b222"
     },
     {
       "id": 220,
@@ -3965,12 +5170,12 @@ const questionBanks = {
     },
     {
       "id": 222,
-      "q": "Refer to the image above. Moving from D to B is best read as...",
+      "q": "Refer to the open-economy saving and investment graph. Which changes are represented by a move from D to B?",
       "options": [
         "a higher world interest rate reducing investment while saving stays fixed",
         "a lower world interest rate raising investment while saving stays fixed",
         "a tariff shifting the net-exports curve",
-        "a monetary expansion shifting LM* right"
+        "A monetary expansion shifting the LM* curve to the right"
       ],
       "tag": "small_open_world_interest_rate",
       "type": "graph",
@@ -4006,7 +5211,7 @@ const questionBanks = {
       "id": 224,
       "q": "A country’s currency appreciates after a fiscal expansion. Why do net exports fall?",
       "options": [
-        "domestic goods become relatively more expensive to foreign buyers",
+        "Domestic goods become more expensive relative to foreign goods",
         "domestic goods become relatively cheaper to foreign buyers",
         "the national saving identity stops applying",
         "imports are banned by the fiscal expansion"
@@ -4019,11 +5224,11 @@ const questionBanks = {
       "primarySkill": "exchange_rate_adjustment",
       "repairSkill": "exchange_rate_adjustment",
       "feedback": "A real appreciation makes domestic goods relatively more expensive and reduces net exports.",
-      "aHash": "bef12b78b47ff63676706b34c27d418f2f34a673548b00a28d92bf0d1dcdb064"
+      "aHash": "bf4961d4a9b54eeec925f18afbe298daddbd02b99dca15dd6231ab994a795d9e"
     },
     {
       "id": 225,
-      "q": "Refer to the image above. At R1 with the vertical S - I line at NX2, which point represents the S - I position rather than the net-exports curve?",
+      "q": "Refer to the real exchange rate graph. At R1 with the vertical S - I line at NX2, which point represents the S - I position rather than the net-exports curve?",
       "options": [
         "B",
         "A",
@@ -4043,7 +5248,7 @@ const questionBanks = {
     },
     {
       "id": 226,
-      "q": "Refer to the image above. A movement from D to G on the investment-demand curve is most consistent with...",
+      "q": "Refer to the open-economy saving and investment graph. Which change is consistent with a movement from D to G along the investment-demand curve?",
       "options": [
         "a lower world interest rate raising investment",
         "a higher world interest rate lowering investment",
@@ -4063,11 +5268,11 @@ const questionBanks = {
     },
     {
       "id": 227,
-      "q": "In the floating-rate Mundell-Fleming model, a fall in money demand is closest to which policy effect?",
+      "q": "In the Mundell–Fleming model with floating exchange rates, a fall in money demand is closest to which policy effect?",
       "options": [
-        "monetary expansion: LM* shifts right, the currency depreciates, and output rises",
-        "fiscal expansion: IS* shifts right and output is unchanged",
-        "trade restriction: IS* shifts right and the currency appreciates",
+        "Monetary expansion: LM* shifts right, causing depreciation and higher output",
+        "Fiscal expansion: the IS* curve shifts to the right and output is unchanged",
+        "Trade restriction: the IS* curve shifts to the right and the currency appreciates",
         "fixed-rate intervention: the central bank sells reserves"
       ],
       "tag": "floating_exchange_policy",
@@ -4078,11 +5283,11 @@ const questionBanks = {
       "primarySkill": "money_demand_shock",
       "repairSkill": "money_demand_shock",
       "feedback": "Lower money demand acts like an expansionary money-market shock in the Mundell-Fleming model.",
-      "aHash": "c9754def863a184707ab9fba5366c0ca4c4ae59c2d535039897aae3744d1a96a"
+      "aHash": "add857962990e44cc9613744d51c83003eed76fa956bb1d2a5d25ff84f700666"
     },
     {
       "id": 228,
-      "q": "Refer to the image above. A leftward LM* shift under floating rates would move the economy from B toward...",
+      "q": "Refer to the Mundell–Fleming graph. Under floating exchange rates, toward which point would a leftward shift of LM* move the equilibrium from B?",
       "options": [
         "A",
         "C",
@@ -4102,7 +5307,7 @@ const questionBanks = {
     },
     {
       "id": 229,
-      "q": "Refer to the image above. Choosing side 3 preserves a fixed exchange rate and free capital mobility. What must be surrendered?",
+      "q": "Refer to the policy trilemma graph. Choosing side 3 preserves a fixed exchange rate and free capital mobility. What must be surrendered?",
       "options": [
         "independent monetary policy",
         "the fixed exchange rate",
@@ -4121,7 +5326,7 @@ const questionBanks = {
       "aHash": "dd2555485f1265b2efedec85cd460ea4fba4bb0f1b68ac8756ead3f13ddc6a8d"
     },
     {
-      "q": "A policy memo says: domestic fiscal expansion lowers national saving. Which complete open-economy chain is correct?",
+      "q": "Domestic fiscal expansion lowers national saving. Which sequence correctly describes the effects on the open economy?",
       "options": [
         "S - I falls, the real exchange rate appreciates, and net exports fall",
         "S - I rises, the real exchange rate depreciates, and net exports rise",
@@ -4140,7 +5345,7 @@ const questionBanks = {
       "aHash": "a677520ff1e5cea63cc204123cc5b54deac9781321d905410cdc8bb114e13c6e"
     },
     {
-      "q": "A policy memo says: domestic fiscal contraction raises national saving. Which complete open-economy chain is correct?",
+      "q": "Domestic fiscal contraction raises national saving. Which sequence correctly describes the effects on the open economy?",
       "options": [
         "S - I rises, the real exchange rate depreciates, and net exports rise",
         "S - I falls, the real exchange rate appreciates, and net exports fall",
@@ -4159,7 +5364,7 @@ const questionBanks = {
       "aHash": "2ea21fe51bcc96624bdc74b4f787c05fe2745efed0c0fcd6d5f57213d45ec343"
     },
     {
-      "q": "A policy memo says: investment demand rises while saving is unchanged. Which complete open-economy chain is correct?",
+      "q": "Investment demand rises while saving is unchanged. Which sequence correctly describes the effects on the open economy?",
       "options": [
         "S - I falls, the real exchange rate appreciates, and net exports fall",
         "S - I rises, the real exchange rate depreciates, and net exports rise",
@@ -4178,7 +5383,7 @@ const questionBanks = {
       "aHash": "a677520ff1e5cea63cc204123cc5b54deac9781321d905410cdc8bb114e13c6e"
     },
     {
-      "q": "A policy memo says: investment demand falls while saving is unchanged. Which complete open-economy chain is correct?",
+      "q": "Investment demand falls while saving is unchanged. Which sequence correctly describes the effects on the open economy?",
       "options": [
         "S - I rises, the real exchange rate depreciates, and net exports rise",
         "S - I falls, the real exchange rate appreciates, and net exports fall",
@@ -4197,7 +5402,7 @@ const questionBanks = {
       "aHash": "2ea21fe51bcc96624bdc74b4f787c05fe2745efed0c0fcd6d5f57213d45ec343"
     },
     {
-      "q": "A policy memo says: foreign fiscal expansion raises the world interest rate. Which complete open-economy chain is correct?",
+      "q": "Foreign fiscal expansion raises the world interest rate. Which sequence correctly describes the effects on the open economy?",
       "options": [
         "domestic investment falls, S - I rises, and net exports rise",
         "domestic investment rises, S - I falls, and net exports fall",
@@ -4216,7 +5421,7 @@ const questionBanks = {
       "aHash": "e6d46ba27efb98c1e9b1934ba0b0854bdb0680a5e7e6eb67aff7d9a6a8de9e82"
     },
     {
-      "q": "A policy memo says: foreign fiscal contraction lowers the world interest rate. Which complete open-economy chain is correct?",
+      "q": "Foreign fiscal contraction lowers the world interest rate. Which sequence correctly describes the effects on the open economy?",
       "options": [
         "domestic investment rises, S - I falls, and net exports fall",
         "domestic investment falls, S - I rises, and net exports rise",
@@ -4235,12 +5440,12 @@ const questionBanks = {
       "aHash": "5ef71c427326cb3d6e66da97933b32c34fdec90749559906a8a822e34bbe6be6"
     },
     {
-      "q": "In Mundell-Fleming model with floating exchange rates, expansionary fiscal policy, which chain is correct?",
+      "q": "In the Mundell–Fleming model with floating exchange rates, how does an expansion of fiscal policy affect the economy?",
       "options": [
-        "IS* shifts right, the exchange rate appreciates, net exports fall, and Y is offset",
-        "LM* shifts right, the exchange rate depreciates, net exports rise, and Y rises",
+        "IS* shifts right; appreciation reduces net exports, offsetting the output gain",
+        "The LM* curve shifts to the right, the exchange rate depreciates, net exports rise, and output rises",
         "r* changes because the country is small",
-        "NX is fixed by accounting identity alone"
+        "Net exports are fixed by accounting identity alone"
       ],
       "tag": "floating_exchange_policy",
       "type": "multi-step",
@@ -4251,15 +5456,15 @@ const questionBanks = {
       "feedback": "Use the exchange-rate regime to decide whether the exchange rate or money supply adjusts.",
       "id": 236,
       "difficulty": "hard",
-      "aHash": "69bd6340f82e7a77a161874dca6b3cddeba1a6b171d0323d08c6102521fbb6e3"
+      "aHash": "62d963a9f1637182419509fd55b892e3a424030dfb1ccf3a39e938e90657f1f8"
     },
     {
-      "q": "In a Mundell-Fleming model with floating exchange rates, and contractionary fiscal policy, which chain is correct?",
+      "q": "In the Mundell–Fleming model with floating exchange rates, how does a contraction of fiscal policy affect the economy?",
       "options": [
-        "IS* shifts left, the exchange rate depreciates, net exports rise, and Y is offset",
-        "LM* shifts left, the exchange rate appreciates, net exports fall, and Y falls strongly",
+        "IS* shifts left; depreciation raises net exports, offsetting the output loss",
+        "The LM* curve shifts to the left, the exchange rate appreciates, net exports fall, and output falls strongly",
         "r* changes because the country is small",
-        "NX is fixed by accounting identity alone"
+        "Net exports are fixed by accounting identity alone"
       ],
       "tag": "floating_exchange_policy",
       "type": "multi-step",
@@ -4270,15 +5475,15 @@ const questionBanks = {
       "feedback": "Use the exchange-rate regime to decide whether the exchange rate or money supply adjusts.",
       "id": 237,
       "difficulty": "hard",
-      "aHash": "0e66188499fb7a6d6d5a1ae5b93217618a8b6991f5e14f4fe91058fb9fe3fbf2"
+      "aHash": "bb81667dcdd13be00a7b3fed802fa1b2154a60faeb49875938143a53c80bedfa"
     },
     {
-      "q": "In a Mundell-Fleming model with floating exchange rates, and expansionary monetary policy, which chain is correct?",
+      "q": "In the Mundell–Fleming model with floating exchange rates, how does an expansion of monetary policy affect the economy?",
       "options": [
-        "LM* shifts right, the exchange rate depreciates, net exports rise, and Y rises",
-        "IS* shifts right, the exchange rate appreciates, net exports fall, and Y is unchanged",
+        "The LM* curve shifts to the right, the exchange rate depreciates, net exports rise, and output rises",
+        "The IS* curve shifts to the right, the exchange rate appreciates, net exports fall, and output is unchanged",
         "r* changes because the country is small",
-        "NX is fixed by accounting identity alone"
+        "Net exports are fixed by accounting identity alone"
       ],
       "tag": "floating_exchange_policy",
       "type": "multi-step",
@@ -4289,15 +5494,15 @@ const questionBanks = {
       "feedback": "Use the exchange-rate regime to decide whether the exchange rate or money supply adjusts.",
       "id": 238,
       "difficulty": "hard",
-      "aHash": "9c60cc346f0a7ec2318794af1e299024c5ab33882ef97252fc8c94747a89cf26"
+      "aHash": "0fdd09c3422f6f554b904859d584d4c014a9e681e5ac537efdcab5166645080e"
     },
     {
-      "q": "In a Mundell-Fleming model with floating exchange rates, and contractionary monetary policy, which chain is correct?",
+      "q": "In the Mundell–Fleming model with floating exchange rates, how does a contraction of monetary policy affect the economy?",
       "options": [
-        "LM* shifts left, the exchange rate appreciates, net exports fall, and Y falls",
-        "IS* shifts left, the exchange rate depreciates, net exports rise, and Y is unchanged",
+        "The LM* curve shifts to the left, the exchange rate appreciates, net exports fall, and output falls",
+        "The IS* curve shifts to the left, the exchange rate depreciates, net exports rise, and output is unchanged",
         "r* changes because the country is small",
-        "NX is fixed by accounting identity alone"
+        "Net exports are fixed by accounting identity alone"
       ],
       "tag": "floating_exchange_policy",
       "type": "multi-step",
@@ -4308,15 +5513,15 @@ const questionBanks = {
       "feedback": "Use the exchange-rate regime to decide whether the exchange rate or money supply adjusts.",
       "id": 239,
       "difficulty": "hard",
-      "aHash": "f4c356a68f5f77f4693509adcf9c4aba93c27677221680088c6f8127f5f3c838"
+      "aHash": "f34679ba710c016eb1548e30599c0085e8fc1dd9086fea2532e7f867e94445f8"
     },
     {
-      "q": "In a Mundell-Fleming model with fixed exchange rates, and expansionary fiscal policy, which chain is correct?",
+      "q": "In the Mundell–Fleming model with fixed exchange rates, how does an expansion of fiscal policy affect the economy?",
       "options": [
-        "IS* shifts right and the central bank expands M to defend the peg, amplifying Y",
-        "IS* shifts right but appreciation fully crowds out NX as under floating rates",
+        "The IS* curve shifts to the right and the central bank expands M to defend the peg, amplifying Y",
+        "The IS* curve shifts to the right but appreciation fully crowds out NX as under floating rates",
         "r* changes because the country is small",
-        "NX is fixed by accounting identity alone"
+        "Net exports are fixed by accounting identity alone"
       ],
       "tag": "fixed_exchange_policy",
       "type": "multi-step",
@@ -4327,15 +5532,15 @@ const questionBanks = {
       "feedback": "Use the exchange-rate regime to decide whether the exchange rate or money supply adjusts.",
       "id": 240,
       "difficulty": "hard",
-      "aHash": "58e2ed73c7ce1e36df434c58a48bc80264e424d3ec13eaa5c851ff19d37fb8d9"
+      "aHash": "f344f55b7894b29a0061a231e388b485ed0f41b4a4e165d3b76c9079cbec804e"
     },
     {
-      "q": "In a Mundell-Fleming model with fixed exchange rates, and expansionary monetary policy, which chain is correct?",
+      "q": "In the Mundell–Fleming model with fixed exchange rates, how does an expansion of monetary policy affect the economy?",
       "options": [
-        "pressure for depreciation forces reversal if the peg is defended, so the policy loses independence",
+        "Defending the peg against depreciation reverses the money expansion",
         "LM* remains right because fixed exchange rates strengthen monetary autonomy",
         "r* changes because the country is small",
-        "NX is fixed by accounting identity alone"
+        "Net exports are fixed by accounting identity alone"
       ],
       "tag": "fixed_exchange_policy",
       "type": "multi-step",
@@ -4346,15 +5551,15 @@ const questionBanks = {
       "feedback": "Use the exchange-rate regime to decide whether the exchange rate or money supply adjusts.",
       "id": 241,
       "difficulty": "hard",
-      "aHash": "95991cd5fb496237ab2b36a4cff3db21f79105bd3591bb93230473dfe37718a8"
+      "aHash": "0b3bd62a32aab444f30b8be5240a7b4132a2d87e37d95d8ac5294727730fd66d"
     },
     {
-      "q": "In a Mundell-Fleming model with fixed exchange rates, and contractionary monetary policy, which chain is correct?",
+      "q": "In the Mundell–Fleming model with fixed exchange rates, how does a contraction of monetary policy affect the economy?",
       "options": [
-        "pressure for appreciation forces reversal if the peg is defended, so the policy loses independence",
+        "Defending the peg against appreciation reverses the money contraction",
         "LM* remains left because fixed exchange rates strengthen monetary autonomy",
         "r* changes because the country is small",
-        "NX is fixed by accounting identity alone"
+        "Net exports are fixed by accounting identity alone"
       ],
       "tag": "fixed_exchange_policy",
       "type": "multi-step",
@@ -4365,15 +5570,15 @@ const questionBanks = {
       "feedback": "Use the exchange-rate regime to decide whether the exchange rate or money supply adjusts.",
       "id": 242,
       "difficulty": "hard",
-      "aHash": "476d43f6eaf2929735da234a89f3771832bdc2b9222cbe4ba3b5bab6155d6c23"
+      "aHash": "f33d480a4687362fe8f36408e98441dfe625b7c897f5ed2d32129a53117e3dff"
     },
     {
-      "q": "In a Mundell-Fleming model with floating exchange rates, and an import quota, which chain is correct?",
+      "q": "In the Mundell–Fleming model with floating exchange rates, how does an import quota affect the economy?",
       "options": [
-        "IS* shifts right at first, but appreciation offsets the output effect",
-        "LM* shifts right and output rises permanently",
+        "IS* shifts right, but appreciation offsets the output gain",
+        "The LM* curve shifts to the right and output rises permanently",
         "r* changes because the country is small",
-        "NX is fixed by accounting identity alone"
+        "Net exports are fixed by accounting identity alone"
       ],
       "tag": "trade_policy",
       "type": "multi-step",
@@ -4384,13 +5589,13 @@ const questionBanks = {
       "feedback": "Use the exchange-rate regime to decide whether the exchange rate or money supply adjusts.",
       "id": 243,
       "difficulty": "hard",
-      "aHash": "a7b3475c90501e4f7dddd4e6680bc8af04441ba89974d5f4460eac3ec62f4bed"
+      "aHash": "1cdc1d948fe48a4aafa8c8f7074f3840f3d4982cdebe42f1d39d68d3f773f0e3"
     },
     {
-      "q": "Refer to the image above. In the small-open-economy aggregate demand derivation, the price level falls. What is the full chain?",
+      "q": "Refer to the Mundell–Fleming and aggregate demand–aggregate supply graph. In the small-open-economy aggregate demand derivation, the price level falls. What sequence of economic changes follows?",
       "options": [
-        "M/P rises, LM* shifts right, e falls/depreciates, net exports rise, and Y rises",
-        "M/P moves the opposite way, so Y moves the opposite way",
+        "Real balances rise; LM* shifts right, causing depreciation and higher net exports and output",
+        "Real balances fall; LM* shifts left, causing appreciation and lower net exports and output",
         "IS* shifts because P changes government spending",
         "the world interest rate adjusts first"
       ],
@@ -4404,13 +5609,13 @@ const questionBanks = {
       "image": "mundell_adas.png",
       "id": 244,
       "difficulty": "hard",
-      "aHash": "c1a0cae949b3c834e6ec33c670051e1f5e73529b829624fbb6cbd8bf0af81096"
+      "aHash": "8aaab9b75666d85378bb95807fedb16670c400d1bb91a2966b9b8266de32dd95"
     },
     {
-      "q": "Refer to the image above. In the small-open-economy aggregate demand derivation, the price level rises. What is the full chain?",
+      "q": "Refer to the Mundell–Fleming and aggregate demand–aggregate supply graph. In the small-open-economy aggregate demand derivation, the price level rises. What sequence of economic changes follows?",
       "options": [
-        "M/P falls, LM* shifts left, e rises/appreciates, net exports fall, and Y falls",
-        "M/P moves the opposite way, so Y moves the opposite way",
+        "Real balances fall; LM* shifts left, causing appreciation and lower net exports and output",
+        "Real balances rise; LM* shifts right, causing depreciation and higher net exports and output",
         "IS* shifts because P changes government spending",
         "the world interest rate adjusts first"
       ],
@@ -4424,15 +5629,15 @@ const questionBanks = {
       "image": "mundell_adas.png",
       "id": 245,
       "difficulty": "hard",
-      "aHash": "fcb08ddc8dec41a76089ddac64e08f46459b957086fca8937fc21b58cab2eb5d"
+      "aHash": "99998fc2cc91aff306017d8b0127721181f92b251890bc56b69d2225d7bfc690"
     },
     {
-      "q": "Refer to the image above. A country insists on fixed exchange rate and free capital mobility. According to the impossible trinity, what must it give up?",
+      "q": "Refer to the policy trilemma graph. A country insists on fixed exchange rate and free capital mobility. According to the impossible trinity, what must it give up?",
       "options": [
         "independent monetary policy",
-        "exports",
+        "independent control of fiscal policy",
         "fiscal policy",
-        "national saving"
+        "the ability to maintain national saving"
       ],
       "tag": "impossible_trinity",
       "type": "trap",
@@ -4447,11 +5652,11 @@ const questionBanks = {
       "aHash": "dd2555485f1265b2efedec85cd460ea4fba4bb0f1b68ac8756ead3f13ddc6a8d"
     },
     {
-      "q": "Refer to the image above. A country insists on independent monetary policy and free capital mobility. According to the impossible trinity, what must it give up?",
+      "q": "Refer to the policy trilemma graph. A country insists on independent monetary policy and free capital mobility. According to the impossible trinity, what must it give up?",
       "options": [
         "a fixed exchange rate",
-        "exports",
-        "fiscal policy",
+        "the ability to export goods",
+        "independent fiscal policy",
         "national saving"
       ],
       "tag": "impossible_trinity",
@@ -4467,11 +5672,11 @@ const questionBanks = {
       "aHash": "881b60ebc095911d7b72e0d2c1070dcb697156a6d65ff5352379e626b05b5594"
     },
     {
-      "q": "Refer to the image above. A country insists on fixed exchange rate and independent monetary policy. According to the impossible trinity, what must it give up?",
+      "q": "Refer to the policy trilemma graph. A country insists on fixed exchange rate and independent monetary policy. According to the impossible trinity, what must it give up?",
       "options": [
         "free capital mobility",
-        "exports",
-        "fiscal policy",
+        "the ability to export goods",
+        "independent fiscal policy",
         "national saving"
       ],
       "tag": "impossible_trinity",
@@ -4489,7 +5694,7 @@ const questionBanks = {
     {
       "q": "Fiscal expansion raises the domestic interest rate. Which result fits the model?",
       "options": [
-        "investment falls and capital-flow/exchange-rate pressure reduces NX",
+        "Investment falls and capital-flow/exchange-rate pressure reduces net exports",
         "investment rises because all fiscal expansions increase private investment",
         "the economy has no exchange-rate channel",
         "NX cannot respond to capital flows"
@@ -4503,13 +5708,13 @@ const questionBanks = {
       "feedback": "In a large open economy, r can move and international flows still matter.",
       "id": 249,
       "difficulty": "hard",
-      "aHash": "fddf67ad0f9cb25a85bc5a7f84c5fd96fe950ad138ea9b82bc40d0c3c7f7d6a3"
+      "aHash": "6aec3a4e404997a69748e7bc8d2e5a0bad1374aa96176cb1393c7b71f189e51d"
     },
     {
       "q": "Monetary expansion lowers the interest rate. Which result fits the model?",
       "options": [
-        "investment rises and capital-flow/exchange-rate pressure affects NX",
-        "investment falls because money supply crowds out capital",
+        "Investment rises, and capital flows affect the exchange rate and net exports",
+        "Investment falls because a larger money supply displaces capital from private production",
         "the economy has no exchange-rate channel",
         "NX cannot respond to capital flows"
       ],
@@ -4522,12 +5727,12 @@ const questionBanks = {
       "feedback": "In a large open economy, r can move and international flows still matter.",
       "id": 250,
       "difficulty": "hard",
-      "aHash": "935be0f382d92ff1829cbd2eb64fd8cf85c6f1678b19ff8524d29f423663415a"
+      "aHash": "6de214c9a9ac64288b6e69ae507bf53c44f37f209920a0c60eff03f41ce0b264"
     },
     {
       "q": "Investment demand rises. Which result fits the model?",
       "options": [
-        "the interest rate rises, partly crowding out other investment and affecting capital flows",
+        "Interest rises, limiting investment and changing capital flows",
         "the interest rate is pinned at r* exactly as in a small open economy",
         "the economy has no exchange-rate channel",
         "NX cannot respond to capital flows"
@@ -4541,346 +5746,14 @@ const questionBanks = {
       "feedback": "In a large open economy, r can move and international flows still matter.",
       "id": 251,
       "difficulty": "hard",
-      "aHash": "c41647e4f91e6117f2b5db55b00dec06dd9814f0bb6acfee09479a39d2ac6f87"
+      "aHash": "44137854a0a1baf58075bb71537003cb364438f92d364f2233b4697712bb0a88"
     },
     {
-      "q": "Exports are 420 and imports are 510. What is NX and the trade position?",
-      "options": [
-        "-90; deficit",
-        "90; surplus",
-        "930; trade surplus",
-        "90; balanced trade"
-      ],
-      "tag": "trade_balance_net_exports",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "conceptCluster": "calculate_net_exports",
-      "primarySkill": "calculate_net_exports",
-      "repairSkill": "calculate_net_exports",
-      "feedback": "NX = 420 - 510 = -90.",
-      "id": 252,
-      "difficulty": "hard",
-      "aHash": "c4886772f4eacef926807bbe9f271deb82e2a27f12645c54296d9dc3cd1ae65d"
-    },
-    {
-      "q": "Exports are 860 and imports are 710. What is NX and the trade position?",
-      "options": [
-        "150; surplus",
-        "-150; deficit",
-        "1570; trade surplus",
-        "150; balanced trade"
-      ],
-      "tag": "trade_balance_net_exports",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "conceptCluster": "calculate_net_exports",
-      "primarySkill": "calculate_net_exports",
-      "repairSkill": "calculate_net_exports",
-      "feedback": "NX = 860 - 710 = 150.",
-      "id": 253,
-      "difficulty": "hard",
-      "aHash": "2525b8c66daca46a31ff39ca7e358aa48a6fd583491ef4e3db8d5c0a755c327a"
-    },
-    {
-      "q": "Exports are 1250 and imports are 1390. What is NX and the trade position?",
-      "options": [
-        "-140; deficit",
-        "140; surplus",
-        "2640; trade surplus",
-        "140; balanced trade"
-      ],
-      "tag": "trade_balance_net_exports",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "conceptCluster": "calculate_net_exports",
-      "primarySkill": "calculate_net_exports",
-      "repairSkill": "calculate_net_exports",
-      "feedback": "NX = 1250 - 1390 = -140.",
-      "id": 254,
-      "difficulty": "hard",
-      "aHash": "6a1ba0ac522fd476a62b4a4e27ebe17d313add331e0c1c915611dcc765ec5965"
-    },
-    {
-      "q": "Exports are 980 and imports are 980. What is NX and the trade position?",
-      "options": [
-        "0; balanced trade",
-        "-1960; trade deficit",
-        "1960; trade surplus",
-        "980; trade surplus"
-      ],
-      "tag": "trade_balance_net_exports",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "conceptCluster": "calculate_net_exports",
-      "primarySkill": "calculate_net_exports",
-      "repairSkill": "calculate_net_exports",
-      "feedback": "NX = 980 - 980 = 0.",
-      "id": 255,
-      "difficulty": "hard",
-      "aHash": "7977583b1b14849c67c9d21d71aeea2adaefb4adffacaa81dd30959ecf418d68"
-    },
-    {
-      "q": "Exports are 1540 and imports are 1325. What is NX and the trade position?",
-      "options": [
-        "215; surplus",
-        "-215; deficit",
-        "2865; trade surplus",
-        "215; balanced trade"
-      ],
-      "tag": "trade_balance_net_exports",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "conceptCluster": "calculate_net_exports",
-      "primarySkill": "calculate_net_exports",
-      "repairSkill": "calculate_net_exports",
-      "feedback": "NX = 1540 - 1325 = 215.",
-      "id": 256,
-      "difficulty": "hard",
-      "aHash": "941fdfb399815bdc056d9dfcf2d02c602999791acfbbcb1bba36374367b131e0"
-    },
-    {
-      "q": "Exports are 675 and imports are 820. What is NX and the trade position?",
-      "options": [
-        "-145; deficit",
-        "145; surplus",
-        "1495; trade surplus",
-        "145; balanced trade"
-      ],
-      "tag": "trade_balance_net_exports",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "conceptCluster": "calculate_net_exports",
-      "primarySkill": "calculate_net_exports",
-      "repairSkill": "calculate_net_exports",
-      "feedback": "NX = 675 - 820 = -145.",
-      "id": 257,
-      "difficulty": "hard",
-      "aHash": "dea529b0268de9cf35b4f8c4065e6336732edb9f3c25328b50dfe76f66c128d4"
-    },
-    {
-      "q": "National saving is 900 and domestic investment is 760. What are net exports?",
-      "options": [
-        "140; surplus",
-        "-140; the opposite sign",
-        "1660; surplus",
-        "140; balanced trade"
-      ],
-      "tag": "saving_investment_capital_flows",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "conceptCluster": "calculate_nx_from_s_i",
-      "primarySkill": "calculate_nx_from_s_i",
-      "repairSkill": "calculate_nx_from_s_i",
-      "feedback": "NX = S - I = 900 - 760 = 140.",
-      "id": 258,
-      "difficulty": "hard",
-      "aHash": "1f6e5d637d13a2c8127adb5e350ea3cbb68edbc600e47b704a0cc488ee96dcb8"
-    },
-    {
-      "q": "National saving is 900 and domestic investment is 1020. What are net exports?",
-      "options": [
-        "-120; deficit",
-        "120; the opposite sign",
-        "1920; surplus",
-        "120; balanced trade"
-      ],
-      "tag": "saving_investment_capital_flows",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "conceptCluster": "calculate_nx_from_s_i",
-      "primarySkill": "calculate_nx_from_s_i",
-      "repairSkill": "calculate_nx_from_s_i",
-      "feedback": "NX = S - I = 900 - 1020 = -120.",
-      "id": 259,
-      "difficulty": "hard",
-      "aHash": "3e44354f655f93134c56c38a4949330f2fc41951d304fddde169c7fab108f24b"
-    },
-    {
-      "q": "Refer to the image above. If the world interest rate is r_w1, domestic investment is closest to...",
-      "options": [
-        "I3",
-        "I2",
-        "I1",
-        "saving minus investment is zero"
-      ],
-      "tag": "small_open_world_interest_rate",
-      "type": "graph",
-      "objective": "LO6.3",
-      "conceptCluster": "world_interest_rate",
-      "primarySkill": "world_interest_rate",
-      "repairSkill": "world_interest_rate",
-      "feedback": "A lower world interest rate raises investment along I(r).",
-      "image": "loanablefunds.png",
-      "id": 260,
-      "difficulty": "hard",
-      "aHash": "9a83c6cb1126d93de4a30715b28f1f4b26b983c57fb39e6d826d7e893ae4ee74"
-    },
-    {
-      "q": "Refer to the image above. If the world interest rate is r_w3, domestic investment is closest to...",
-      "options": [
-        "I1",
-        "I2",
-        "I3",
-        "saving minus investment is zero"
-      ],
-      "tag": "small_open_world_interest_rate",
-      "type": "graph",
-      "objective": "LO6.3",
-      "conceptCluster": "world_interest_rate",
-      "primarySkill": "world_interest_rate",
-      "repairSkill": "world_interest_rate",
-      "feedback": "A higher world interest rate lowers investment along I(r).",
-      "image": "loanablefunds.png",
-      "id": 261,
-      "difficulty": "hard",
-      "aHash": "4cd9b7672d7fbee8fb51fb1e049f690342035f543a8efe734b7b5ffb0c154a45"
-    },
-    {
-      "q": "Refer to the image above. Which saving line shows the lowest level of national saving?",
-      "options": [
-        "S1",
-        "S2",
-        "S3",
-        "I(r)"
-      ],
-      "tag": "saving_investment_capital_flows",
-      "type": "graph",
-      "objective": "LO6.2",
-      "conceptCluster": "saving_shift_nx",
-      "primarySkill": "saving_shift_nx",
-      "repairSkill": "saving_shift_nx",
-      "feedback": "The left-most vertical saving line is the lowest saving level.",
-      "image": "loanablefunds_changes.png",
-      "id": 262,
-      "difficulty": "hard",
-      "aHash": "e8bc163c82eee18733288c7d4ac636db3a6deb013ef2d37b68322be20edc45cc"
-    },
-    {
-      "q": "Refer to the image above. Which saving line shows the highest level of national saving?",
-      "options": [
-        "S3",
-        "S2",
-        "S1",
-        "I(r)"
-      ],
-      "tag": "saving_investment_capital_flows",
-      "type": "graph",
-      "objective": "LO6.2",
-      "conceptCluster": "saving_shift_nx",
-      "primarySkill": "saving_shift_nx",
-      "repairSkill": "saving_shift_nx",
-      "feedback": "The right-most vertical saving line is the highest saving level.",
-      "image": "loanablefunds_changes.png",
-      "id": 263,
-      "difficulty": "hard",
-      "aHash": "41242b9fae56fad4e6e77dfe33cb18d1c3fc583f988cf25ef9f2d9be0d440bbb"
-    },
-    {
-      "q": "Refer to the image above. Which investment curve represents stronger investment demand?",
-      "options": [
-        "I(r)3",
-        "I(r)2",
-        "I(r)1",
-        "S1"
-      ],
-      "tag": "saving_investment_capital_flows",
-      "type": "graph",
-      "objective": "LO6.5",
-      "conceptCluster": "investment_shift_trade_balance",
-      "primarySkill": "investment_shift_trade_balance",
-      "repairSkill": "investment_shift_trade_balance",
-      "feedback": "The rightward investment-demand curve represents stronger investment demand.",
-      "image": "loanablefunds_changes_investment.png",
-      "id": 264,
-      "difficulty": "hard",
-      "aHash": "48d88f884f57e88fc768e98e04cd6ccf1e2c113198183031e0ccdbbb704d472a"
-    },
-    {
-      "q": "Refer to the image above. Moving from E to A means the real exchange rate...",
-      "options": [
-        "rises/appreciates",
-        "falls/depreciates",
-        "stays at R2",
-        "becomes unrelated to NX"
-      ],
-      "tag": "real_exchange_rate",
-      "type": "graph",
-      "objective": "LO6.4",
-      "conceptCluster": "exchange_rate_adjustment",
-      "primarySkill": "exchange_rate_adjustment",
-      "repairSkill": "exchange_rate_adjustment",
-      "feedback": "Point A is at R1, a higher real exchange rate than R2.",
-      "image": "rer_changes.png",
-      "id": 265,
-      "difficulty": "hard",
-      "aHash": "7b258aba90b2c0b574dfcd0b61d64a2e2d8db75ae3eee31f1102062cccdfbd1c"
-    },
-    {
-      "q": "Refer to the image above. Moving from E to I means the real exchange rate...",
-      "options": [
-        "falls/depreciates",
-        "rises/appreciates",
-        "stays at R2",
-        "forces NX to zero"
-      ],
-      "tag": "real_exchange_rate",
-      "type": "graph",
-      "objective": "LO6.4",
-      "conceptCluster": "exchange_rate_adjustment",
-      "primarySkill": "exchange_rate_adjustment",
-      "repairSkill": "exchange_rate_adjustment",
-      "feedback": "Point I is at R3, a lower real exchange rate than R2.",
-      "image": "rer_changes.png",
-      "id": 266,
-      "difficulty": "hard",
-      "aHash": "0a3ffbc928752ae891e8668b1a45bced097f44f463b868d9acbe698f024df1de"
-    },
-    {
-      "q": "Refer to the image above. A shift from NX(R)2 to NX(R)1 moves equilibrium from B to...",
-      "options": [
-        "A",
-        "C",
-        "NX",
-        "R3"
-      ],
-      "tag": "trade_policy",
-      "type": "graph",
-      "objective": "LO6.5",
-      "conceptCluster": "tariff_exchange_rate_offset",
-      "primarySkill": "tariff_exchange_rate_offset",
-      "repairSkill": "tariff_exchange_rate_offset",
-      "feedback": "A rightward shift of NX demand raises the real exchange rate at fixed S - I.",
-      "image": "tradepolicies.png",
-      "id": 267,
-      "difficulty": "hard",
-      "aHash": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb"
-    },
-    {
-      "q": "Refer to the image above. A shift from NX(R)2 to NX(R)3 moves equilibrium from B to...",
-      "options": [
-        "C",
-        "A",
-        "NX",
-        "R1"
-      ],
-      "tag": "trade_policy",
-      "type": "graph",
-      "objective": "LO6.5",
-      "conceptCluster": "tariff_exchange_rate_offset",
-      "primarySkill": "tariff_exchange_rate_offset",
-      "repairSkill": "tariff_exchange_rate_offset",
-      "feedback": "A leftward shift of NX demand lowers the real exchange rate at fixed S - I.",
-      "image": "tradepolicies.png",
-      "id": 268,
-      "difficulty": "hard",
-      "aHash": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
-    },
-    {
-      "q": "A foreign fiscal expansion raises r*. In a small open economy, what happens to domestic investment and NX?",
+      "q": "A foreign fiscal expansion raises the world interest rate. In a small open economy, what happens to domestic investment and NX?",
       "options": [
         "investment falls and net exports rise",
         "investment rises and net exports fall",
-        "investment is unchanged and NX is unchanged",
+        "Investment is unchanged and net exports are unchanged",
         "net exports rise because imports are banned"
       ],
       "tag": "fiscal_policy_open_economy",
@@ -4889,17 +5762,17 @@ const questionBanks = {
       "conceptCluster": "foreign_fiscal_policy",
       "primarySkill": "foreign_fiscal_policy",
       "repairSkill": "foreign_fiscal_policy",
-      "feedback": "Higher r* lowers domestic investment; with saving fixed, S - I and NX rise.",
+      "feedback": "Higher world interest rate lowers domestic investment; with saving fixed, S - I and NX rise.",
       "id": 269,
       "difficulty": "hard",
       "aHash": "7620da8878462386b0d48d1ca61b628c47a9a34606ab3aba26790f5cebe3e45e"
     },
     {
-      "q": "A foreign fiscal contraction lowers r*. In a small open economy, what happens to domestic investment and NX?",
+      "q": "A foreign fiscal contraction lowers the world interest rate. In a small open economy, what happens to domestic investment and NX?",
       "options": [
         "investment rises and net exports fall",
         "investment falls and net exports rise",
-        "investment is unchanged and NX is unchanged",
+        "Investment is unchanged and net exports are unchanged",
         "net exports rise because exports are fixed"
       ],
       "tag": "fiscal_policy_open_economy",
@@ -4908,13 +5781,13 @@ const questionBanks = {
       "conceptCluster": "foreign_fiscal_policy",
       "primarySkill": "foreign_fiscal_policy",
       "repairSkill": "foreign_fiscal_policy",
-      "feedback": "Lower r* raises domestic investment; with saving fixed, S - I and NX fall.",
+      "feedback": "Lower world interest rate raises domestic investment; with saving fixed, S - I and NX fall.",
       "id": 270,
       "difficulty": "hard",
       "aHash": "11dd2672f31f52202b8ef4ccc9182962f5dc535d7260965de8739c00e0e661bc"
     },
     {
-      "q": "Refer to the image above. Moving from E to C is most consistent with...",
+      "q": "Refer to the real exchange rate graph. Which change is consistent with the equilibrium moving from E to I along the unchanged NX(R) curve?",
       "options": [
         "an increase in S - I",
         "a tariff shifting NX(R) right",
@@ -4927,14 +5800,14 @@ const questionBanks = {
       "conceptCluster": "exchange_rate_adjustment",
       "primarySkill": "exchange_rate_adjustment",
       "repairSkill": "exchange_rate_adjustment",
-      "feedback": "C lies on the rightward S - I line at R1.",
+      "feedback": "E lies at NX2,R2 and I at NX3,R3 on the downward NX curve. Higher S−I shifts the vertical line right, raising NX and depreciating the real exchange rate.",
       "image": "rer_changes.png",
       "id": 271,
       "difficulty": "hard",
       "aHash": "bf9e4b16e71813dc49c5db45ef95715e13d9c2405fa50dd18abd1d5963515a53"
     },
     {
-      "q": "Refer to the image above. Moving from E to G is most consistent with...",
+      "q": "Refer to the real exchange rate graph. Which change is consistent with the equilibrium moving from E to A along the unchanged NX(R) curve?",
       "options": [
         "a decrease in S - I",
         "a tariff shifting NX(R) left",
@@ -4947,19 +5820,19 @@ const questionBanks = {
       "conceptCluster": "exchange_rate_adjustment",
       "primarySkill": "exchange_rate_adjustment",
       "repairSkill": "exchange_rate_adjustment",
-      "feedback": "G lies on the leftward S - I line at R3.",
+      "feedback": "E is NX2,R2 and A is NX1,R1 on the downward NX curve. Lower S−I shifts the vertical line left, lowering NX and appreciating the real exchange rate.",
       "image": "rer_changes.png",
       "id": 272,
       "difficulty": "hard",
       "aHash": "2d56d2a555ac963d11e68d33df14faa8008283c71f9d2b0f7feebdf140d5529f"
     },
     {
-      "q": "Refer to the image above. Moving from B to A means...",
+      "q": "Refer to the net exports and the real exchange rate graph. Which changes are represented by a move from B to A?",
       "options": [
-        "R rises while equilibrium NX remains pinned by S - I",
-        "R falls while net exports rise permanently",
+        "R rises, but net exports remain equal to fixed S − I",
+        "R falls, permanently raising net exports above saving minus investment",
         "S - I shifts right",
-        "LM* shifts left"
+        "The LM* curve shifts to the left"
       ],
       "tag": "trade_policy",
       "type": "graph",
@@ -4971,15 +5844,15 @@ const questionBanks = {
       "image": "tradepolicies.png",
       "id": 273,
       "difficulty": "hard",
-      "aHash": "6799f9d7901716b8a0171c43d0acd69ee69ecc65acb6f5798009ee32332ead82"
+      "aHash": "67c540a009aabcb70033786f9aaf5c39239340fa0e3248778ed575181a72f3d7"
     },
     {
-      "q": "Refer to the image above. Moving from B to C means...",
+      "q": "Refer to the net exports and the real exchange rate graph. Which changes are represented by a move from B to C?",
       "options": [
-        "R falls while equilibrium NX remains pinned by S - I",
-        "R rises while net exports rise permanently",
+        "R falls, but net exports remain equal to fixed S − I",
+        "R rises, permanently raising net exports above saving minus investment",
         "S - I shifts left",
-        "IS* shifts right"
+        "The IS* curve shifts to the right"
       ],
       "tag": "trade_policy",
       "type": "graph",
@@ -4991,15 +5864,15 @@ const questionBanks = {
       "image": "tradepolicies.png",
       "id": 274,
       "difficulty": "hard",
-      "aHash": "c48a7e73681e88d0294d9abad7b5007f1b8a9077eae63be31b83d341c4a46d26"
+      "aHash": "5c5f9ea43afb379c53cb3ea8ef3886559526317d8425b7c8c97629e7a07e3a50"
     },
     {
-      "q": "Under floating rates, an increase in government purchases shifts IS* right. What prevents a large output gain?",
+      "q": "Under floating rates, an increase in government purchases shifts the IS* curve to the right. What prevents a large output gain?",
       "options": [
-        "currency appreciation reduces NX",
-        "currency depreciation raises NX",
+        "Currency appreciation reduces net exports",
+        "Currency depreciation raises net exports",
         "the money supply must expand to defend a peg",
-        "r* rises because fiscal policy changed"
+        "The world interest rate rises because fiscal policy changed"
       ],
       "tag": "floating_exchange_policy",
       "type": "multi-step",
@@ -5010,13 +5883,13 @@ const questionBanks = {
       "feedback": "The floating exchange rate appreciates and crowds out net exports.",
       "id": 275,
       "difficulty": "hard",
-      "aHash": "416a819759930e07ea875222845cc753c05052552638a27e767b3f2c07cacab7"
+      "aHash": "8d5a4930d559a20a4ae0823f6b508c43d982f5608ecae42c3ada5c1cd7a671d0"
     },
     {
-      "q": "Under floating rates, an increase in the money supply shifts LM* right. What reinforces the output gain?",
+      "q": "Under floating rates, an increase in the money supply shifts the LM* curve to the right. What reinforces the output gain?",
       "options": [
-        "currency depreciation raises NX",
-        "currency appreciation reduces NX",
+        "Currency depreciation raises net exports",
+        "Currency appreciation reduces net exports",
         "the peg forces money contraction",
         "government spending falls automatically"
       ],
@@ -5029,13 +5902,13 @@ const questionBanks = {
       "feedback": "Depreciation makes domestic goods cheaper and raises net exports.",
       "id": 276,
       "difficulty": "hard",
-      "aHash": "4c42edede2e36be076d0a639748a0389c868a548d9d6d70303ed1b6b70b313f6"
+      "aHash": "e90c1efc708edc82a62b2305f01fc762ad7562f7de5e53ca4f8132fb7eae3e31"
     },
     {
       "q": "A central bank tries to expand M while defending a fixed exchange rate. What happens next?",
       "options": [
         "reserve intervention reverses the monetary expansion",
-        "IS* shifts right and output rises permanently",
+        "The IS* curve shifts to the right and output rises permanently",
         "the exchange rate floats freely",
         "NX becomes independent of e"
       ],
@@ -5051,7 +5924,7 @@ const questionBanks = {
       "aHash": "0424a9dfaf1735ea529a852ff93917b3fb4d6d0ae1af57f0d15c374007488d82"
     },
     {
-      "q": "Fiscal expansion under a fixed exchange rate tends to be powerful because...",
+      "q": "Why is fiscal expansion especially effective at raising output under a fixed exchange rate?",
       "options": [
         "the central bank expands M to prevent appreciation",
         "the exchange rate appreciates and crowds out NX",
@@ -5070,11 +5943,11 @@ const questionBanks = {
       "aHash": "0884b85a86f451f84518a7a7b65c3ab5a4b65512f2739ac73a296dd116597cf7"
     },
     {
-      "q": "Refer to the image above. If P rises, which Mundell-Fleming model aggregate demand chain is correct?",
+      "q": "Refer to the Mundell–Fleming and aggregate demand–aggregate supply graph. As the domestic price level rises with the nominal money supply fixed, which sequence explains the change in output demanded?",
       "options": [
-        "M/P falls, LM* shifts left, e rises, net exports fall, and Y falls",
-        "M/P rises, LM* shifts right, e falls, net exports rise, and Y rises",
-        "IS* shifts right, e rises, and Y rises",
+        "M/P falls, the LM* curve shifts to the left, the nominal exchange rate rises, net exports fall, and output falls",
+        "M/P rises, the LM* curve shifts to the right, the nominal exchange rate falls, net exports rise, and output rises",
+        "The IS* curve shifts to the right, the nominal exchange rate rises, and output rises",
         "S - I shifts right and net exports rise"
       ],
       "tag": "mundell_fleming_ad",
@@ -5083,18 +5956,18 @@ const questionBanks = {
       "conceptCluster": "derive_ad_from_mf",
       "primarySkill": "derive_ad_from_mf",
       "repairSkill": "derive_ad_from_mf",
-      "feedback": "Higher P lowers real balances and contracts demand through LM* and NX.",
+      "feedback": "Higher price level lowers real balances and contracts demand through LM* and NX.",
       "image": "mundell_adas.png",
       "id": 279,
       "difficulty": "hard",
-      "aHash": "3cbc059956bdaf925cd51d4d8ae57df1c1cf5685333d83458cf8741e2b2feab4"
+      "aHash": "0403854cb3b46e37f35d603a37f73f05cd940e3a7f152fd2908556578b2f67bf"
     },
     {
-      "q": "Refer to the image above. If P falls, which Mundell-Fleming model aggregate demand chain is correct?",
+      "q": "Refer to the Mundell–Fleming and aggregate demand–aggregate supply graph. As the domestic price level falls with the nominal money supply fixed, which sequence explains the change in output demanded?",
       "options": [
-        "M/P rises, LM* shifts right, e falls, net exports rise, and Y rises",
-        "M/P falls, LM* shifts left, e rises, net exports fall, and Y falls",
-        "IS* shifts left, e falls, and Y falls",
+        "M/P rises, the LM* curve shifts to the right, the nominal exchange rate falls, net exports rise, and output rises",
+        "M/P falls, the LM* curve shifts to the left, the nominal exchange rate rises, net exports fall, and output falls",
+        "The IS* curve shifts to the left, the nominal exchange rate falls, and output falls",
         "S - I shifts left and net exports fall"
       ],
       "tag": "mundell_fleming_ad",
@@ -5103,11 +5976,11 @@ const questionBanks = {
       "conceptCluster": "derive_ad_from_mf",
       "primarySkill": "derive_ad_from_mf",
       "repairSkill": "derive_ad_from_mf",
-      "feedback": "Lower P raises real balances and expands demand through LM* and NX.",
+      "feedback": "Lower price level raises real balances and expands demand through LM* and NX.",
       "image": "mundell_adas.png",
       "id": 280,
       "difficulty": "hard",
-      "aHash": "cf11ec28041c0fa146d2a763047a4c2e1a95c862793c05254ccffb72619b8a86"
+      "aHash": "6f6ab4e667458c8862a16994646e6d1a77ad48cecbc6c54800d92fda87d29814"
     },
     {
       "q": "Y=4,000, C=2,450, I=850, and G=650. What are net exports?",
@@ -5186,12 +6059,12 @@ const questionBanks = {
       "aHash": "98737cf8964673a0a3049f9494464c72759fd03af06bbdb81130e8ef9a927405"
     },
     {
-      "q": "Refer to the image above. A country keeps a fixed exchange rate and monetary independence. What must be limited?",
+      "q": "Refer to the policy trilemma graph. A country keeps a fixed exchange rate and monetary independence. What must be limited?",
       "options": [
         "free capital mobility",
-        "fiscal policy",
+        "independent fiscal policy",
         "exports",
-        "public saving"
+        "the government’s ability to save"
       ],
       "tag": "impossible_trinity",
       "type": "trap",
@@ -5206,12 +6079,12 @@ const questionBanks = {
       "aHash": "51e1c59eed53c8a7ada7215e0afd9dc555705a903fb66e17c3663a8daf2e55ba"
     },
     {
-      "q": "Refer to the image above. A country keeps a fixed exchange rate and free capital mobility. What must be surrendered?",
+      "q": "Refer to the policy trilemma graph. A country keeps a fixed exchange rate and free capital mobility. What must be surrendered?",
       "options": [
         "independent monetary policy",
-        "fiscal policy",
+        "independent control of fiscal policy",
         "imports",
-        "private saving"
+        "the ability of households to save"
       ],
       "tag": "impossible_trinity",
       "type": "trap",
@@ -5266,7 +6139,7 @@ const questionBanks = {
     {
       "q": "Which statement confuses an identity with a policy result?",
       "options": [
-        "S - I = NX is always true, but it does not say every tariff improves NX",
+        "S − I = NX guarantees that tariffs raise net exports",
         "tariffs can shift NX demand",
         "saving minus investment is linked to net exports",
         "net exports equal net capital outflow"
@@ -5278,9 +6151,679 @@ const questionBanks = {
       "conceptCluster": "open_economy_identity",
       "primarySkill": "open_economy_identity",
       "repairSkill": "open_economy_identity",
-      "feedback": "Identities are accounting links; policy effects require the model mechanism.",
+      "feedback": "NX = S − I is an accounting identity, not a causal policy rule. With saving and investment fixed, an import restriction changes the real exchange rate rather than equilibrium net exports.",
       "id": 289,
-      "aHash": "58a18031787ba4c28a63363af8ae2f304320a0b42e4e8d9f41c9dda9c293f384"
+      "aHash": "e99ee74bba6733cb51b3534a1401fddeeb01489bab3104dee26e5bf57cea4f38"
+    },
+    {
+      "id": 305,
+      "q": "A lower price level raises output in open-economy aggregate demand. Which intermediate movement is essential?",
+      "options": [
+        "The LM* curve shifts to the right and the exchange rate depreciates",
+        "The IS* curve shifts to the left and the exchange rate appreciates",
+        "S - I shifts left",
+        "the world interest rate rises"
+      ],
+      "tag": "mundell_fleming_ad",
+      "type": "integration",
+      "objective": "LO14.4",
+      "difficulty": "hard",
+      "conceptCluster": "derive_ad_from_mf",
+      "primarySkill": "derive_ad_from_mf",
+      "repairSkill": "derive_ad_from_mf",
+      "feedback": "The aggregate demand derivation runs through real balances and depreciation.",
+      "aHash": "c4345ec26221410e60afe6940137975511c286bda4ecb967334f6d7868292258"
+    },
+    {
+      "id": 306,
+      "q": "Refer to the Mundell–Fleming and aggregate demand–aggregate supply graph. Which changes accompany the move from A to C when deriving aggregate demand?",
+      "options": [
+        "Lower price level, lower nominal exchange rate, and higher output",
+        "Higher price level, higher nominal exchange rate, and lower output",
+        "Fixed price level and a fiscal shock",
+        "higher tariffs only"
+      ],
+      "tag": "mundell_fleming_ad",
+      "type": "graph",
+      "objective": "LO14.4",
+      "difficulty": "hard",
+      "conceptCluster": "open_economy_ad_slope",
+      "primarySkill": "open_economy_ad_slope",
+      "repairSkill": "open_economy_ad_slope",
+      "feedback": "Lower price level raises real balances and moves the economy down/right along aggregate demand.",
+      "image": "mundell_adas.png",
+      "aHash": "e652b7aa38214323974ef1c246832c41412f5e89f45e22ebe564bbbb54d7a570"
+    },
+    {
+      "id": 313,
+      "q": "A central bank under fixed rates wants to stimulate output with monetary expansion. What blocks the plan?",
+      "options": [
+        "Defending the peg reverses the expansion",
+        "fiscal policy must fall",
+        "NX always rises enough",
+        "LM* cannot shift under either fixed or floating exchange rates"
+      ],
+      "tag": "fixed_exchange_policy",
+      "type": "policy_memo",
+      "objective": "LO14.3",
+      "difficulty": "hard",
+      "conceptCluster": "fixed_monetary_policy",
+      "primarySkill": "fixed_monetary_policy",
+      "repairSkill": "fixed_monetary_policy",
+      "feedback": "The peg eliminates independent monetary policy when capital is mobile.",
+      "aHash": "b688604c15e71e92e5165bab951e91a3f4a231fec7bca2d84802cf3d0ed0094e"
+    },
+    {
+      "id": 314,
+      "q": "Why might policymakers prefer fixed rates despite losing monetary flexibility?",
+      "options": [
+        "Stable exchange rates reduce trade and investment uncertainty",
+        "A fixed exchange rate guarantees independent monetary policy under free capital mobility",
+        "fixed rates eliminate capital flows",
+        "fixed rates make NX always positive"
+      ],
+      "tag": "fixed_floating_exchange_regimes",
+      "type": "interpretation",
+      "objective": "LO14.3",
+      "difficulty": "hard",
+      "conceptCluster": "compare_fixed_floating",
+      "primarySkill": "compare_fixed_floating",
+      "repairSkill": "compare_fixed_floating",
+      "feedback": "The argument for fixed rates emphasizes stability, not free monetary discretion.",
+      "aHash": "b7977f85049a722914cf8e3284ae0658148d3762a0a4df6b283d24a1df69c80a"
+    },
+    {
+      "id": 315,
+      "q": "Why might policymakers prefer floating rates?",
+      "options": [
+        "Domestic monetary policy remains independent",
+        "capital mobility disappears",
+        "the exchange rate never moves",
+        "Floating rates prevent the country from ever running a trade deficit"
+      ],
+      "tag": "fixed_floating_exchange_regimes",
+      "type": "interpretation",
+      "objective": "LO14.3",
+      "difficulty": "hard",
+      "conceptCluster": "compare_fixed_floating",
+      "primarySkill": "compare_fixed_floating",
+      "repairSkill": "compare_fixed_floating",
+      "feedback": "Floating rates preserve monetary independence.",
+      "aHash": "1eb12e4dd8db4d7b29534122864d2784be217fa4ac9c39e8d11b5405089a5df3"
+    },
+    {
+      "id": 316,
+      "q": "Which trilemma package is internally consistent?",
+      "options": [
+        "free capital mobility + independent monetary policy + floating exchange rate",
+        "free capital mobility + independent monetary policy + fixed exchange rate",
+        "fixed rate + free mobility + monetary independence",
+        "fixed rate + floating rate + no currency"
+      ],
+      "tag": "impossible_trinity",
+      "type": "trap",
+      "objective": "LO14.3",
+      "difficulty": "hard",
+      "conceptCluster": "impossible_trinity",
+      "primarySkill": "impossible_trinity",
+      "repairSkill": "impossible_trinity",
+      "feedback": "The consistent package gives up the peg.",
+      "aHash": "eb905426add7d70bb2949ab83271c89155f8d1d605554e5d031a0be56ade1dd0"
+    },
+    {
+      "id": 321,
+      "q": "Under floating rates, a tariff shifts the IS* curve to the right. Why does that not automatically raise output?",
+      "options": [
+        "currency appreciation offsets the initial net-export increase",
+        "the central bank fixes the exchange rate by law",
+        "The price level falls and shifts the LM* curve to the left immediately",
+        "investment demand must rise by the same amount"
+      ],
+      "tag": "trade_policy",
+      "type": "trap",
+      "objective": "LO14.3",
+      "difficulty": "hard",
+      "conceptCluster": "tariff_floating_offset",
+      "primarySkill": "floating_trade_policy_offset",
+      "repairSkill": "floating_trade_policy_offset",
+      "feedback": "Floating-rate appreciation crowds out the tariff’s direct net-export push.",
+      "aHash": "a4a21ba237b4195267e1581221c6adfc7fecfdca26db1f1e17f5a9498ebff936"
+    },
+    {
+      "id": 323,
+      "q": "A lower price level raises output in the open-economy aggregate demand derivation. Which intermediate step is essential?",
+      "options": [
+        "Real money balances rise and the LM* curve shifts to the right",
+        "Government spending rises and the IS* curve shifts to the right",
+        "the world interest rate rises and investment falls",
+        "the fixed exchange rate becomes floating"
+      ],
+      "tag": "mundell_fleming_ad",
+      "type": "multi-step",
+      "objective": "LO14.4",
+      "difficulty": "hard",
+      "conceptCluster": "ad_intermediate_step",
+      "primarySkill": "derive_ad_from_mf",
+      "repairSkill": "derive_ad_from_mf",
+      "feedback": "The aggregate demand derivation starts with M/P.",
+      "aHash": "4addeef82401fc298e32a76f4c278732c9285062c660c8c8c647be4eda561cc4"
+    },
+    {
+      "id": 324,
+      "q": "Refer to the Mundell–Fleming and aggregate demand–aggregate supply graph. Which change is consistent with a move from C back toward B?",
+      "options": [
+        "A higher price level reducing real money balances and shifting the LM* curve to the left",
+        "A lower price level raising real money balances and shifting the LM* curve to the right",
+        "a tariff shifting NX(R) right",
+        "higher saving shifting S - I right"
+      ],
+      "tag": "mundell_fleming_ad",
+      "type": "graph",
+      "objective": "LO14.4",
+      "difficulty": "hard",
+      "conceptCluster": "ad_reverse_movement",
+      "primarySkill": "derive_ad_from_mf",
+      "repairSkill": "derive_ad_from_mf",
+      "feedback": "Moving back toward B requires a higher price level, lower M/P, and a leftward LM* shift.",
+      "image": "mundell_adas.png",
+      "aHash": "058abc79c02ad72802ec2303802a0e1d1516e870e8ce1497bc7b1b05970b260e"
+    },
+    {
+      "id": 325,
+      "q": "Refer to the Mundell–Fleming and aggregate demand–aggregate supply graph. If the economy moves from B to C in the left panel, what corresponding change appears in the right panel?",
+      "options": [
+        "Lower price level and higher output along aggregate demand",
+        "Higher price level and lower output along aggregate demand",
+        "a rightward LRAS shift",
+        "a movement to balanced trade"
+      ],
+      "tag": "mundell_fleming_ad",
+      "type": "graph",
+      "objective": "LO14.4",
+      "difficulty": "hard",
+      "conceptCluster": "ad_mapping",
+      "primarySkill": "derive_ad_from_mf",
+      "repairSkill": "derive_ad_from_mf",
+      "feedback": "B to C in the left panel maps lower price level to higher output on aggregate demand.",
+      "image": "mundell_adas.png",
+      "aHash": "d5735b03493de2b9b1aaad1ca71656e04a1e9ca95d18ab418760bd4e77fcb2a7"
+    },
+    {
+      "id": 328,
+      "q": "S = 1,400 and I = 1,650. A policy raises saving by 200 and investment demand raises investment by 75. What are the new net exports?",
+      "options": [
+        "-125",
+        "-250",
+        "25",
+        "-525"
+      ],
+      "tag": "accounting_identities",
+      "type": "calculation",
+      "objective": "LO6.2",
+      "difficulty": "hard",
+      "conceptCluster": "combined_s_i_calculation",
+      "primarySkill": "calculate_nx_from_s_i",
+      "repairSkill": "calculate_nx_from_s_i",
+      "feedback": "New S is 1,600 and new I is 1,725. NX = -125.",
+      "aHash": "5f9c2b683e6727c0e75e270de5d76c491873c8da897f9e84d16d2cd42c23fc10"
+    },
+    {
+      "q": "Why does floating-rate fiscal policy fail to raise income strongly in the Mundell–Fleming model?",
+      "options": [
+        "Appreciation reduces net exports",
+        "money supply rises automatically",
+        "the peg forces monetary expansion",
+        "investment demand becomes vertical"
+      ],
+      "tag": "floating_exchange_policy",
+      "type": "integration",
+      "objective": "LO14.1",
+      "conceptCluster": "floating_fiscal_policy",
+      "primarySkill": "floating_fiscal_policy",
+      "repairSkill": "floating_fiscal_policy",
+      "feedback": "The exchange-rate channel offsets the fiscal demand shock.",
+      "id": 337,
+      "difficulty": "hard",
+      "aHash": "1b1fa5df5d1416512daa6220eb35627667961efe240e7dc96c74b03d2cfcad2d"
+    },
+    {
+      "q": "Why is monetary policy powerful under floating rates?",
+      "options": [
+        "depreciation reinforces the initial LM* expansion through higher net exports",
+        "appreciation reinforces the initial LM* expansion through lower net exports",
+        "the central bank fixes e and M independently",
+        "fiscal policy automatically contracts"
+      ],
+      "tag": "floating_exchange_policy",
+      "type": "integration",
+      "objective": "LO14.1",
+      "conceptCluster": "floating_monetary_policy",
+      "primarySkill": "floating_monetary_policy",
+      "repairSkill": "floating_monetary_policy",
+      "feedback": "Floating rates allow the exchange rate to move, so monetary policy works through NX.",
+      "id": 338,
+      "difficulty": "hard",
+      "aHash": "d9d15a8e924a1d5b26e2b3a9745b4c60a170337e23cf61adff8eaff9a9dfe1df"
+    },
+    {
+      "q": "Refer to the Mundell–Fleming and aggregate demand–aggregate supply graph. Moving from A to C in the left panel corresponds to what in the right panel?",
+      "options": [
+        "A movement along AD to lower prices and higher output",
+        "a shift of LRAS to the left",
+        "a tariff shifting NX right",
+        "An intervention that restores a fixed exchange rate by selling foreign reserves"
+      ],
+      "tag": "mundell_fleming_ad",
+      "type": "graph",
+      "objective": "LO14.4",
+      "conceptCluster": "derive_ad_from_mf",
+      "primarySkill": "derive_ad_from_mf",
+      "repairSkill": "derive_ad_from_mf",
+      "feedback": "The left panel explains points along the open-economy aggregate demand curve.",
+      "image": "mundell_adas.png",
+      "id": 339,
+      "difficulty": "hard",
+      "aHash": "02e993c0e9d9c9c43ed95c050fea903dfaa3f752c79342a299286b0e81ec4158"
+    },
+    {
+      "q": "Refer to the net exports and the real exchange rate graph. Why does moving from B to A not prove net exports rise?",
+      "options": [
+        "Fixed S − I determines net exports; R adjusts",
+        "the NX curve is irrelevant to trade policy",
+        "saving always rises after a tariff",
+        "The exchange rate stays fixed whenever the net-export demand curve shifts"
+      ],
+      "tag": "trade_policy",
+      "type": "graph",
+      "objective": "LO6.5",
+      "conceptCluster": "tariff_exchange_rate_offset",
+      "primarySkill": "tariff_exchange_rate_offset",
+      "repairSkill": "tariff_exchange_rate_offset",
+      "feedback": "The equilibrium remains on the same S - I line; the real exchange rate absorbs the shift.",
+      "image": "tradepolicies.png",
+      "id": 342,
+      "difficulty": "hard",
+      "aHash": "2ebf1771c9ddbbc355b6ad56251bd3dd925c16d035c62089d16f9c99a087168d"
+    },
+    {
+      "q": "A nation wants to stabilize its currency and allow free capital flows during a recession. What policy limitation follows?",
+      "options": [
+        "Monetary policy must defend the exchange-rate peg",
+        "fiscal policy becomes illegal",
+        "exports must equal imports every period",
+        "The country must eliminate capital flows to retain any fiscal-policy control"
+      ],
+      "tag": "impossible_trinity",
+      "type": "integration",
+      "objective": "LO14.3",
+      "conceptCluster": "impossible_trinity",
+      "primarySkill": "impossible_trinity",
+      "repairSkill": "impossible_trinity",
+      "feedback": "The peg plus capital mobility sacrifices monetary independence.",
+      "id": 345,
+      "difficulty": "hard",
+      "aHash": "5bac421954fcb683ef9839f39f27913d46934d4cfce234603ecb2d933b238f6f"
+    },
+    {
+      "q": "Domestic fiscal expansion lowers national saving. Which sequence correctly describes the effects on the open economy?",
+      "options": [
+        "S - I falls, the real exchange rate appreciates, and net exports fall",
+        "S - I rises, the real exchange rate depreciates, and net exports rise",
+        "NX changes first and then mechanically sets saving",
+        "the result cannot be traced with S - I = NX"
+      ],
+      "tag": "fiscal_policy_open_economy",
+      "type": "integration",
+      "objective": "LO6.5",
+      "conceptCluster": "trace_domestic_fiscal_expansion",
+      "primarySkill": "trace_domestic_fiscal_expansion",
+      "repairSkill": "trace_domestic_fiscal_expansion",
+      "feedback": "Trace the first movement through S - I, then connect S - I to NX.",
+      "id": 356,
+      "difficulty": "hard",
+      "aHash": "a677520ff1e5cea63cc204123cc5b54deac9781321d905410cdc8bb114e13c6e"
+    },
+    {
+      "q": "Domestic fiscal contraction raises national saving. Which sequence correctly describes the effects on the open economy?",
+      "options": [
+        "S - I rises, the real exchange rate depreciates, and net exports rise",
+        "S - I falls, the real exchange rate appreciates, and net exports fall",
+        "NX changes first and then mechanically sets saving",
+        "the result cannot be traced with S - I = NX"
+      ],
+      "tag": "fiscal_policy_open_economy",
+      "type": "integration",
+      "objective": "LO6.5",
+      "conceptCluster": "trace_domestic_fiscal_expansion",
+      "primarySkill": "trace_domestic_fiscal_expansion",
+      "repairSkill": "trace_domestic_fiscal_expansion",
+      "feedback": "Trace the first movement through S - I, then connect S - I to NX.",
+      "id": 357,
+      "difficulty": "hard",
+      "aHash": "2ea21fe51bcc96624bdc74b4f787c05fe2745efed0c0fcd6d5f57213d45ec343"
+    },
+    {
+      "q": "Investment demand rises while saving is unchanged. Which sequence correctly describes the effects on the open economy?",
+      "options": [
+        "S - I falls, the real exchange rate appreciates, and net exports fall",
+        "S - I rises, the real exchange rate depreciates, and net exports rise",
+        "NX changes first and then mechanically sets saving",
+        "the result cannot be traced with S - I = NX"
+      ],
+      "tag": "saving_investment_capital_flows",
+      "type": "integration",
+      "objective": "LO6.5",
+      "conceptCluster": "investment_shift_trade_balance",
+      "primarySkill": "investment_shift_trade_balance",
+      "repairSkill": "investment_shift_trade_balance",
+      "feedback": "Trace the first movement through S - I, then connect S - I to NX.",
+      "id": 358,
+      "difficulty": "hard",
+      "aHash": "a677520ff1e5cea63cc204123cc5b54deac9781321d905410cdc8bb114e13c6e"
+    },
+    {
+      "q": "Investment demand falls while saving is unchanged. Which sequence correctly describes the effects on the open economy?",
+      "options": [
+        "S - I rises, the real exchange rate depreciates, and net exports rise",
+        "S - I falls, the real exchange rate appreciates, and net exports fall",
+        "NX changes first and then mechanically sets saving",
+        "the result cannot be traced with S - I = NX"
+      ],
+      "tag": "saving_investment_capital_flows",
+      "type": "integration",
+      "objective": "LO6.5",
+      "conceptCluster": "investment_shift_trade_balance",
+      "primarySkill": "investment_shift_trade_balance",
+      "repairSkill": "investment_shift_trade_balance",
+      "feedback": "Trace the first movement through S - I, then connect S - I to NX.",
+      "id": 359,
+      "difficulty": "hard",
+      "aHash": "2ea21fe51bcc96624bdc74b4f787c05fe2745efed0c0fcd6d5f57213d45ec343"
+    },
+    {
+      "q": "Foreign fiscal expansion raises the world interest rate. Which sequence correctly describes the effects on the open economy?",
+      "options": [
+        "domestic investment falls, S - I rises, and net exports rise",
+        "domestic investment rises, S - I falls, and net exports fall",
+        "NX changes first and then mechanically sets saving",
+        "the result cannot be traced with S - I = NX"
+      ],
+      "tag": "fiscal_policy_open_economy",
+      "type": "integration",
+      "objective": "LO6.5",
+      "conceptCluster": "foreign_fiscal_policy",
+      "primarySkill": "foreign_fiscal_policy",
+      "repairSkill": "foreign_fiscal_policy",
+      "feedback": "Trace the first movement through S - I, then connect S - I to NX.",
+      "id": 360,
+      "difficulty": "hard",
+      "aHash": "e6d46ba27efb98c1e9b1934ba0b0854bdb0680a5e7e6eb67aff7d9a6a8de9e82"
+    },
+    {
+      "q": "Foreign fiscal contraction lowers the world interest rate. Which sequence correctly describes the effects on the open economy?",
+      "options": [
+        "domestic investment rises, S - I falls, and net exports fall",
+        "domestic investment falls, S - I rises, and net exports rise",
+        "NX changes first and then mechanically sets saving",
+        "the result cannot be traced with S - I = NX"
+      ],
+      "tag": "fiscal_policy_open_economy",
+      "type": "integration",
+      "objective": "LO6.5",
+      "conceptCluster": "foreign_fiscal_policy",
+      "primarySkill": "foreign_fiscal_policy",
+      "repairSkill": "foreign_fiscal_policy",
+      "feedback": "Trace the first movement through S - I, then connect S - I to NX.",
+      "id": 361,
+      "difficulty": "hard",
+      "aHash": "5ef71c427326cb3d6e66da97933b32c34fdec90749559906a8a822e34bbe6be6"
+    },
+    {
+      "q": "In the Mundell–Fleming model with floating exchange rates, how does an expansion of fiscal policy affect the economy?",
+      "options": [
+        "IS* shifts right; appreciation reduces net exports, offsetting the output gain",
+        "The LM* curve shifts to the right, the exchange rate depreciates, net exports rise, and output rises",
+        "r* changes because the country is small",
+        "Net exports are fixed by accounting identity alone"
+      ],
+      "tag": "floating_exchange_policy",
+      "type": "integration",
+      "objective": "LO14.1",
+      "conceptCluster": "floating_fiscal_policy",
+      "primarySkill": "floating_fiscal_policy",
+      "repairSkill": "floating_fiscal_policy",
+      "feedback": "Use the exchange-rate regime to decide whether the exchange rate or money supply adjusts.",
+      "id": 362,
+      "difficulty": "hard",
+      "aHash": "62d963a9f1637182419509fd55b892e3a424030dfb1ccf3a39e938e90657f1f8"
+    },
+    {
+      "q": "In the Mundell–Fleming model with floating exchange rates, how does a contraction of fiscal policy affect the economy?",
+      "options": [
+        "IS* shifts left; depreciation raises net exports, offsetting the output loss",
+        "The LM* curve shifts to the left, the exchange rate appreciates, net exports fall, and output falls strongly",
+        "r* changes because the country is small",
+        "Net exports are fixed by accounting identity alone"
+      ],
+      "tag": "floating_exchange_policy",
+      "type": "integration",
+      "objective": "LO14.1",
+      "conceptCluster": "floating_fiscal_policy",
+      "primarySkill": "floating_fiscal_policy",
+      "repairSkill": "floating_fiscal_policy",
+      "feedback": "Use the exchange-rate regime to decide whether the exchange rate or money supply adjusts.",
+      "id": 363,
+      "difficulty": "hard",
+      "aHash": "bb81667dcdd13be00a7b3fed802fa1b2154a60faeb49875938143a53c80bedfa"
+    },
+    {
+      "q": "In the Mundell–Fleming model with floating exchange rates, how does an expansion of monetary policy affect the economy?",
+      "options": [
+        "The LM* curve shifts to the right, the exchange rate depreciates, net exports rise, and output rises",
+        "The IS* curve shifts to the right, the exchange rate appreciates, net exports fall, and output is unchanged",
+        "r* changes because the country is small",
+        "Net exports are fixed by accounting identity alone"
+      ],
+      "tag": "floating_exchange_policy",
+      "type": "integration",
+      "objective": "LO14.1",
+      "conceptCluster": "floating_monetary_policy",
+      "primarySkill": "floating_monetary_policy",
+      "repairSkill": "floating_monetary_policy",
+      "feedback": "Use the exchange-rate regime to decide whether the exchange rate or money supply adjusts.",
+      "id": 364,
+      "difficulty": "hard",
+      "aHash": "0fdd09c3422f6f554b904859d584d4c014a9e681e5ac537efdcab5166645080e"
+    },
+    {
+      "q": "In the Mundell–Fleming model with floating exchange rates, how does a contraction of monetary policy affect the economy?",
+      "options": [
+        "The LM* curve shifts to the left, the exchange rate appreciates, net exports fall, and output falls",
+        "The IS* curve shifts to the left, the exchange rate depreciates, net exports rise, and output is unchanged",
+        "r* changes because the country is small",
+        "Net exports are fixed by accounting identity alone"
+      ],
+      "tag": "floating_exchange_policy",
+      "type": "integration",
+      "objective": "LO14.1",
+      "conceptCluster": "floating_monetary_policy",
+      "primarySkill": "floating_monetary_policy",
+      "repairSkill": "floating_monetary_policy",
+      "feedback": "Use the exchange-rate regime to decide whether the exchange rate or money supply adjusts.",
+      "id": 365,
+      "difficulty": "hard",
+      "aHash": "f34679ba710c016eb1548e30599c0085e8fc1dd9086fea2532e7f867e94445f8"
+    },
+    {
+      "q": "In the Mundell–Fleming model with fixed exchange rates, how does an expansion of fiscal policy affect the economy?",
+      "options": [
+        "The IS* curve shifts to the right and the central bank expands M to defend the peg, amplifying Y",
+        "The IS* curve shifts to the right but appreciation fully crowds out NX as under floating rates",
+        "r* changes because the country is small",
+        "Net exports are fixed by accounting identity alone"
+      ],
+      "tag": "fixed_exchange_policy",
+      "type": "integration",
+      "objective": "LO14.3",
+      "conceptCluster": "fixed_fiscal_policy",
+      "primarySkill": "fixed_fiscal_policy",
+      "repairSkill": "fixed_fiscal_policy",
+      "feedback": "Use the exchange-rate regime to decide whether the exchange rate or money supply adjusts.",
+      "id": 366,
+      "difficulty": "hard",
+      "aHash": "f344f55b7894b29a0061a231e388b485ed0f41b4a4e165d3b76c9079cbec804e"
+    },
+    {
+      "q": "In the Mundell–Fleming model with fixed exchange rates, how does an expansion of monetary policy affect the economy?",
+      "options": [
+        "Defending the peg against depreciation reverses the money expansion",
+        "LM* remains right because fixed exchange rates strengthen monetary autonomy",
+        "r* changes because the country is small",
+        "Net exports are fixed by accounting identity alone"
+      ],
+      "tag": "fixed_exchange_policy",
+      "type": "integration",
+      "objective": "LO14.3",
+      "conceptCluster": "fixed_monetary_policy",
+      "primarySkill": "fixed_monetary_policy",
+      "repairSkill": "fixed_monetary_policy",
+      "feedback": "Use the exchange-rate regime to decide whether the exchange rate or money supply adjusts.",
+      "id": 367,
+      "difficulty": "hard",
+      "aHash": "0b3bd62a32aab444f30b8be5240a7b4132a2d87e37d95d8ac5294727730fd66d"
+    },
+    {
+      "q": "In the Mundell–Fleming model with fixed exchange rates, how does a contraction of monetary policy affect the economy?",
+      "options": [
+        "Defending the peg against appreciation reverses the money contraction",
+        "LM* remains left because fixed exchange rates strengthen monetary autonomy",
+        "r* changes because the country is small",
+        "Net exports are fixed by accounting identity alone"
+      ],
+      "tag": "fixed_exchange_policy",
+      "type": "integration",
+      "objective": "LO14.3",
+      "conceptCluster": "fixed_monetary_policy",
+      "primarySkill": "fixed_monetary_policy",
+      "repairSkill": "fixed_monetary_policy",
+      "feedback": "Use the exchange-rate regime to decide whether the exchange rate or money supply adjusts.",
+      "id": 368,
+      "difficulty": "hard",
+      "aHash": "f33d480a4687362fe8f36408e98441dfe625b7c897f5ed2d32129a53117e3dff"
+    },
+    {
+      "q": "In the Mundell–Fleming model with floating exchange rates, how does an import quota affect the economy?",
+      "options": [
+        "IS* shifts right, but appreciation offsets the output gain",
+        "The LM* curve shifts to the right and output rises permanently",
+        "r* changes because the country is small",
+        "Net exports are fixed by accounting identity alone"
+      ],
+      "tag": "trade_policy",
+      "type": "integration",
+      "objective": "LO14.1",
+      "conceptCluster": "trade_policy_under_floating",
+      "primarySkill": "trade_policy_under_floating",
+      "repairSkill": "trade_policy_under_floating",
+      "feedback": "Use the exchange-rate regime to decide whether the exchange rate or money supply adjusts.",
+      "id": 369,
+      "difficulty": "hard",
+      "aHash": "1cdc1d948fe48a4aafa8c8f7074f3840f3d4982cdebe42f1d39d68d3f773f0e3"
+    },
+    {
+      "q": "In the large-open-economy model, fiscal expansion raises the domestic interest rate. How do net capital outflow and the exchange rate respond?",
+      "options": [
+        "Investment falls and capital-flow/exchange-rate pressure reduces net exports",
+        "investment rises because all fiscal expansions increase private investment",
+        "the economy has no exchange-rate channel",
+        "NX cannot respond to capital flows"
+      ],
+      "tag": "large_open_economy",
+      "type": "integration",
+      "objective": "LO14.1",
+      "conceptCluster": "large_open_policy",
+      "primarySkill": "large_open_policy",
+      "repairSkill": "large_open_policy",
+      "feedback": "In a large open economy, r can move and international flows still matter.",
+      "id": 375,
+      "difficulty": "hard",
+      "aHash": "6aec3a4e404997a69748e7bc8d2e5a0bad1374aa96176cb1393c7b71f189e51d"
+    },
+    {
+      "q": "In the large-open-economy model, monetary expansion lowers the domestic interest rate. How do net capital outflow and the exchange rate respond?",
+      "options": [
+        "Capital outflow rises and the currency depreciates",
+        "Capital outflow falls because lower interest attracts foreign investment",
+        "the economy has no exchange-rate channel",
+        "NX cannot respond to capital flows"
+      ],
+      "tag": "large_open_economy",
+      "type": "integration",
+      "objective": "LO14.1",
+      "conceptCluster": "large_open_policy",
+      "primarySkill": "large_open_policy",
+      "repairSkill": "large_open_policy",
+      "feedback": "In a large open economy, r can move and international flows still matter.",
+      "id": 376,
+      "difficulty": "hard",
+      "aHash": "0f8a2e41b6058fd9b69ce0393edaa33fbef706571557add0cb1e95ddb8b3a9b9"
+    },
+    {
+      "q": "Why is the open-economy aggregate demand curve downward sloping in the Mundell–Fleming model?",
+      "options": [
+        "Lower prices raise real balances; depreciation increases net exports",
+        "Lower prices reduce real balances; appreciation increases net exports",
+        "Higher price level raises M/P and raises output",
+        "R* moves down whenever the price level falls"
+      ],
+      "tag": "mundell_fleming_ad",
+      "type": "integration",
+      "objective": "LO14.4",
+      "conceptCluster": "open_economy_ad_slope",
+      "primarySkill": "open_economy_ad_slope",
+      "repairSkill": "open_economy_ad_slope",
+      "feedback": "The price level affects real balances, which triggers the exchange-rate and net-export channel.",
+      "id": 383,
+      "difficulty": "hard",
+      "aHash": "1b7ba3adc6386a83250021273a419e048a91dfd1331543bf48fceee69cc7a280"
+    },
+    {
+      "q": "In the classical small-open-economy model, why does an analysis of net exports begin with national saving minus domestic investment?",
+      "options": [
+        "Saving minus investment determines equilibrium net exports",
+        "because NX is unrelated to saving",
+        "because investment is always fixed at zero",
+        "Fiscal legislation fixes the exchange rate independently of saving and investment"
+      ],
+      "tag": "accounting_identities",
+      "type": "integration",
+      "objective": "LO6.1",
+      "difficulty": "hard",
+      "conceptCluster": "open_economy_identity",
+      "primarySkill": "open_economy_identity",
+      "repairSkill": "open_economy_identity",
+      "feedback": "The identity tells you that changes in S - I map into NX.",
+      "id": 387,
+      "aHash": "cf9297d727f9f56d3abf4cb82913d5664dbeeb0652e1720a7ca28570970b5072"
+    },
+    {
+      "q": "Why does NX = NCO matter before discussing exchange-rate adjustment?",
+      "options": [
+        "It links trade balances and international financial flows",
+        "It makes the real exchange rate unnecessary for explaining the trade balance",
+        "it means exports and imports are always equal",
+        "it makes fiscal policy irrelevant"
+      ],
+      "tag": "accounting_identities",
+      "type": "integration",
+      "objective": "LO6.1",
+      "difficulty": "hard",
+      "conceptCluster": "open_economy_identity",
+      "primarySkill": "open_economy_identity",
+      "repairSkill": "open_economy_identity",
+      "feedback": "The exchange-rate story clears the goods-market outcome implied by capital flows.",
+      "id": 388,
+      "aHash": "337a17e492745f4cde3c0b481c8e130959929361ba46d3e10f49c7d8a05410b3"
     }
   ],
   "elite": [
@@ -5291,7 +6834,7 @@ const questionBanks = {
         "both shocks push S - I down, so net exports fall",
         "both shocks push S - I up, so net exports rise",
         "the shocks cancel by identity",
-        "NX is unchanged because tariffs are absent"
+        "Net exports are unchanged because tariffs are absent"
       ],
       "tag": "open_economy_synthesis",
       "type": "integration",
@@ -5307,9 +6850,9 @@ const questionBanks = {
       "id": 301,
       "q": "Domestic fiscal expansion under floating rates and a tariff both appreciate the exchange rate. What differs?",
       "options": [
-        "fiscal expansion lowers NX through S - I, while tariff appreciation offsets the direct NX shift",
-        "both permanently raise NX",
-        "both shift LM* right",
+        "Fiscal expansion lowers net exports; the tariff’s direct gain is offset",
+        "Both permanently increase net exports by raising foreign demand for domestic goods",
+        "Both shift the LM* curve to the right",
         "neither affects the exchange rate"
       ],
       "tag": "open_economy_synthesis",
@@ -5320,13 +6863,13 @@ const questionBanks = {
       "primarySkill": "open_economy_synthesis",
       "repairSkill": "open_economy_synthesis",
       "feedback": "Same appreciation direction, different underlying curve shift.",
-      "aHash": "7ab7837beacdec3e95ad99c57c66573db735cf87bc19cd03e5277d1c302534ec"
+      "aHash": "ed8f11919e5d4b9fc42a2c704c885a610a4b91716210ab51fe3486ded2576984"
     },
     {
       "id": 302,
-      "q": "In Chapter 6, fiscal expansion lowers NX. In floating-rate Mundell-Fleming model, fiscal expansion leaves Y unchanged. What links the results?",
+      "q": "In the classical small-open-economy model, fiscal expansion lowers net exports. In the Mundell–Fleming model with floating exchange rates, fiscal expansion leaves Y unchanged. What links the results?",
       "options": [
-        "exchange-rate appreciation reduces net exports",
+        "Appreciation reduces net exports",
         "monetary contraction raises imports",
         "the world interest rate must fall",
         "investment demand disappears"
@@ -5339,14 +6882,14 @@ const questionBanks = {
       "primarySkill": "floating_fiscal_policy",
       "repairSkill": "floating_fiscal_policy",
       "feedback": "The exchange-rate channel is the connecting mechanism.",
-      "aHash": "7c959fdcd1fd5045849eb51ad9e4654090ee15168fafd0c9fa52aca2bad1a034"
+      "aHash": "1b1fa5df5d1416512daa6220eb35627667961efe240e7dc96c74b03d2cfcad2d"
     },
     {
       "id": 303,
-      "q": "Under floating rates, why can a tariff fail to raise output even though it shifts IS* right?",
+      "q": "Under floating rates, why can a tariff fail to raise output even though it shifts the IS* curve to the right?",
       "options": [
-        "appreciation offsets the NX increase and returns output to Y*",
-        "LM* shifts right automatically",
+        "Appreciation offsets the gain in net exports and output",
+        "LM* automatically shifts right because the tariff raises real money balances",
         "r* collapses",
         "saving rises one-for-one"
       ],
@@ -5358,7 +6901,7 @@ const questionBanks = {
       "primarySkill": "trade_policy_under_floating",
       "repairSkill": "trade_policy_under_floating",
       "feedback": "Trade policy is offset by exchange-rate adjustment under floating rates.",
-      "aHash": "ed16a4cb321231b47e3ffa05f1fa947cd7a33035733a4ca7354647c6e2e4ee85"
+      "aHash": "c6aa785b6d63eb2d5dad7bbb37d3b22b5128c19ddfa3ce9cc24b6cc5fa778202"
     },
     {
       "id": 304,
@@ -5380,246 +6923,11 @@ const questionBanks = {
       "aHash": "7f01f093030caa50090c161c3d82393091dc52cdad7881553e1eb60c0c719afa"
     },
     {
-      "id": 305,
-      "q": "A lower price level raises Y in open-economy aggregate demand. Which intermediate movement is essential?",
-      "options": [
-        "LM* shifts right and the exchange rate depreciates",
-        "IS* shifts left and the exchange rate appreciates",
-        "S - I shifts left",
-        "the world interest rate rises"
-      ],
-      "tag": "mundell_fleming_ad",
-      "type": "integration",
-      "objective": "LO14.4",
-      "difficulty": "elite",
-      "conceptCluster": "derive_ad_from_mf",
-      "primarySkill": "derive_ad_from_mf",
-      "repairSkill": "derive_ad_from_mf",
-      "feedback": "The aggregate demand derivation runs through real balances and depreciation.",
-      "aHash": "91d6e04aa824ca92e2d267799098c23cffa8f665be092ca8b7e412bbe482652e"
-    },
-    {
-      "id": 306,
-      "q": "Refer to the image above. Moving from A to C in the aggregate demand derivation corresponds to...",
-      "options": [
-        "lower P, lower e, and higher Y",
-        "higher P, higher e, and lower Y",
-        "fixed P and a fiscal shock",
-        "higher tariffs only"
-      ],
-      "tag": "mundell_fleming_ad",
-      "type": "graph",
-      "objective": "LO14.4",
-      "difficulty": "elite",
-      "conceptCluster": "open_economy_ad_slope",
-      "primarySkill": "open_economy_ad_slope",
-      "repairSkill": "open_economy_ad_slope",
-      "feedback": "Lower P raises real balances and moves the economy down/right along aggregate demand.",
-      "image": "mundell_adas.png",
-      "aHash": "e382e4f8334417aa7e713207cf75770bc8d36d3230c2fb84e890150f97253d70"
-    },
-    {
-      "id": 307,
-      "q": "Refer to the image above. A move from C back to B would require...",
-      "options": [
-        "LM* shifting left as monetary conditions tighten",
-        "IS* shifting right",
-        "NX(R) shifting right",
-        "S - I shifting left"
-      ],
-      "tag": "floating_exchange_policy",
-      "type": "graph",
-      "objective": "LO14.1",
-      "difficulty": "elite",
-      "conceptCluster": "floating_monetary_policy",
-      "primarySkill": "floating_monetary_policy",
-      "repairSkill": "floating_monetary_policy",
-      "feedback": "C is the expansionary LM* position; moving back to B reverses it.",
-      "image": "islm_er_change.png",
-      "aHash": "a60b893880757e817285a40c79ee57288227849961312e59fb41059a0e995867"
-    },
-    {
-      "id": 308,
-      "q": "Refer to the image above. Which policy shock most naturally moves from B to A?",
-      "options": [
-        "fiscal expansion or a rise in demand for domestic goods",
-        "monetary expansion",
-        "a fall in money demand",
-        "capital controls under a peg"
-      ],
-      "tag": "floating_exchange_policy",
-      "type": "graph",
-      "objective": "LO14.1",
-      "difficulty": "elite",
-      "conceptCluster": "floating_fiscal_policy",
-      "primarySkill": "floating_fiscal_policy",
-      "repairSkill": "floating_fiscal_policy",
-      "feedback": "IS* shifts right and the exchange rate appreciates.",
-      "image": "islm_exchangerates.png",
-      "aHash": "038333235725d904288782a57f2d447d2a35fe5d1bf565fa3e8f92216b5c5586"
-    },
-    {
-      "id": 309,
-      "q": "Refer to the image above. A shift from I(r)2 to I(r)3 at the same saving line implies...",
-      "options": [
-        "higher investment demand and lower net exports",
-        "higher saving and higher net exports",
-        "lower investment and higher net exports",
-        "no trade-balance effect"
-      ],
-      "tag": "saving_investment_capital_flows",
-      "type": "graph",
-      "objective": "LO6.5",
-      "difficulty": "elite",
-      "conceptCluster": "investment_shift_trade_balance",
-      "primarySkill": "investment_shift_trade_balance",
-      "repairSkill": "investment_shift_trade_balance",
-      "feedback": "More investment demand lowers S - I.",
-      "image": "loanablefunds_changes_investment.png",
-      "aHash": "4f53debe890b236f4f0fbb0af73e7b12630e30c161ef830ae7f811e92c9417b1"
-    },
-    {
-      "id": 310,
-      "q": "S = 1,250, I = 1,480. Then a fiscal consolidation raises saving by 150. What are the new net exports?",
-      "options": [
-        "-80",
-        "-230",
-        "80",
-        "150"
-      ],
-      "tag": "saving_investment_capital_flows",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "difficulty": "elite",
-      "conceptCluster": "calculate_nx_from_s_i",
-      "primarySkill": "calculate_nx_from_s_i",
-      "repairSkill": "calculate_nx_from_s_i",
-      "feedback": "Initial NX = -230. New saving = 1400, so NX = 1400 - 1480 = -80.",
-      "hint": "Update saving before using S - I.",
-      "aHash": "4b35f70cb9a561c1a7436f35e6927810129b7751181050d4da7413e290f20be8"
-    },
-    {
-      "id": 311,
-      "q": "Y = 3,000, C = 1,850, I = 725, G = 500. What is the trade balance?",
-      "options": [
-        "-75",
-        "75",
-        "425",
-        "-425"
-      ],
-      "tag": "accounting_identities",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "difficulty": "elite",
-      "conceptCluster": "calculate_nx_from_y_c_i_g",
-      "primarySkill": "calculate_nx_from_y_c_i_g",
-      "repairSkill": "calculate_nx_from_y_c_i_g",
-      "feedback": "NX = 3000 - 1850 - 725 - 500 = -75.",
-      "hint": "NX = Y - C - I - G.",
-      "aHash": "20ccb43659cac32e5b2b67b9f8d77277ebaeb8f96c1332e7ac1ab6b7451d0fde"
-    },
-    {
-      "id": 312,
-      "q": "ε = eP/P*. If e rises from 1.1 to 1.3 while P and P* are unchanged, the real exchange rate...",
-      "options": [
-        "appreciates",
-        "depreciates",
-        "is unchanged",
-        "becomes NX"
-      ],
-      "tag": "real_exchange_rate",
-      "type": "calculation",
-      "objective": "LO6.4",
-      "difficulty": "elite",
-      "conceptCluster": "calculate_real_exchange_rate",
-      "primarySkill": "calculate_real_exchange_rate",
-      "repairSkill": "calculate_real_exchange_rate",
-      "feedback": "With prices fixed, a higher e raises ε.",
-      "hint": "Track the direction of ε.",
-      "aHash": "594767b87b83a305f16e7732bc08a337dc5c74766cba7b63e435099c826bb8ce"
-    },
-    {
-      "id": 313,
-      "q": "A central bank under fixed rates wants to stimulate output with monetary expansion. What blocks the plan?",
-      "options": [
-        "capital outflow and depreciation pressure force the bank to reverse the expansion",
-        "fiscal policy must fall",
-        "NX always rises enough",
-        "LM* cannot move under any regime"
-      ],
-      "tag": "fixed_exchange_policy",
-      "type": "policy_memo",
-      "objective": "LO14.3",
-      "difficulty": "elite",
-      "conceptCluster": "fixed_monetary_policy",
-      "primarySkill": "fixed_monetary_policy",
-      "repairSkill": "fixed_monetary_policy",
-      "feedback": "The peg eliminates independent monetary policy when capital is mobile.",
-      "aHash": "59e6cec999ac2792d5a9ea06ba1bb1fd31f1f9eee76c5d9495a167df293d0522"
-    },
-    {
-      "id": 314,
-      "q": "Why might policymakers prefer fixed rates despite losing monetary flexibility?",
-      "options": [
-        "exchange-rate stability can reduce uncertainty in trade and investment",
-        "fixed rates guarantee full monetary independence",
-        "fixed rates eliminate capital flows",
-        "fixed rates make NX always positive"
-      ],
-      "tag": "fixed_floating_exchange_regimes",
-      "type": "interpretation",
-      "objective": "LO14.3",
-      "difficulty": "elite",
-      "conceptCluster": "compare_fixed_floating",
-      "primarySkill": "compare_fixed_floating",
-      "repairSkill": "compare_fixed_floating",
-      "feedback": "The argument for fixed rates emphasizes stability, not free monetary discretion.",
-      "aHash": "23e3ce93059cdb5a38c36e7cd8ee0e66d62349acd57b9ca30835a2bbbc5216c0"
-    },
-    {
-      "id": 315,
-      "q": "Why might policymakers prefer floating rates?",
-      "options": [
-        "monetary policy can respond to domestic conditions",
-        "capital mobility disappears",
-        "the exchange rate never moves",
-        "trade deficits become impossible"
-      ],
-      "tag": "fixed_floating_exchange_regimes",
-      "type": "interpretation",
-      "objective": "LO14.3",
-      "difficulty": "elite",
-      "conceptCluster": "compare_fixed_floating",
-      "primarySkill": "compare_fixed_floating",
-      "repairSkill": "compare_fixed_floating",
-      "feedback": "Floating rates preserve monetary independence.",
-      "aHash": "ead32a20cb82567e4897bbf31bd13f850c01c8b3513ddd1e3a66824cc33af3d5"
-    },
-    {
-      "id": 316,
-      "q": "Which trilemma package is internally consistent?",
-      "options": [
-        "free capital mobility + independent monetary policy + floating exchange rate",
-        "free capital mobility + independent monetary policy + fixed exchange rate",
-        "fixed rate + free mobility + monetary independence",
-        "fixed rate + floating rate + no currency"
-      ],
-      "tag": "impossible_trinity",
-      "type": "trap",
-      "objective": "LO14.3",
-      "difficulty": "elite",
-      "conceptCluster": "impossible_trinity",
-      "primarySkill": "impossible_trinity",
-      "repairSkill": "impossible_trinity",
-      "feedback": "The consistent package gives up the peg.",
-      "aHash": "eb905426add7d70bb2949ab83271c89155f8d1d605554e5d031a0be56ade1dd0"
-    },
-    {
       "id": 317,
-      "q": "In a large open economy, a fiscal expansion affects both investment and NX because...",
+      "q": "Why does fiscal expansion affect both investment and net exports in a large open economy?",
       "options": [
         "the interest rate and exchange rate both adjust",
-        "r is fixed at r* exactly",
+        "The real interest rate is fixed at r* exactly",
         "NX is defined as imports minus exports",
         "capital cannot move internationally"
       ],
@@ -5637,8 +6945,8 @@ const questionBanks = {
       "id": 318,
       "q": "Domestic saving rises while investment demand also rises. Why is the effect on net exports ambiguous?",
       "options": [
-        "saving raises S - I, but higher investment lowers S - I",
-        "both shocks raise S - I",
+        "Saving raises net exports; investment lowers them",
+        "Both changes raise saving minus investment and therefore raise net exports",
         "both shocks lower S - I",
         "neither shock affects S - I"
       ],
@@ -5650,15 +6958,15 @@ const questionBanks = {
       "primarySkill": "open_economy_synthesis",
       "repairSkill": "open_economy_synthesis",
       "feedback": "The shocks push S - I in opposite directions, so the net-export effect depends on magnitudes.",
-      "aHash": "60e226fa941721758ba3bd232016b806bcbbd11526f1167451c9dcb4647a42bb"
+      "aHash": "d632ac37eb4692c164fbf21018741e10941a32b87a24f485e0e2c64bed73c929"
     },
     {
       "id": 319,
       "q": "A fiscal expansion and a tariff both appreciate the real exchange rate. Which final variable separates the two stories?",
       "options": [
-        "fiscal expansion lowers S - I and net exports; the tariff leaves S - I unchanged",
+        "Fiscal expansion lowers net exports; the tariff leaves S − I unchanged",
         "both policies raise S - I and net exports",
-        "the tariff lowers saving while fiscal policy shifts NX(R)",
+        "The tariff reduces saving, while fiscal expansion directly shifts net-export demand",
         "neither policy affects the real exchange rate"
       ],
       "tag": "open_economy_synthesis",
@@ -5669,15 +6977,15 @@ const questionBanks = {
       "primarySkill": "tariff_exchange_rate_offset",
       "repairSkill": "tariff_exchange_rate_offset",
       "feedback": "The same exchange-rate direction can hide different mechanisms.",
-      "aHash": "9c117cbeb9fc6407b52fc792afbfb615082bf87bdba728081fb65c24d46af499"
+      "aHash": "4c99ea8c9cbf750be347d9d11a6c197f6a71b74cce758ca8bea330a5c86cd603"
     },
     {
       "id": 320,
-      "q": "Chapter 6 and the floating-rate Mundell-Fleming model both say fiscal expansion appreciates the currency. What differs?",
+      "q": "The classical small-open-economy model and the Mundell–Fleming model with floating exchange rates both predict that fiscal expansion appreciates the currency. Which comparison correctly describes the role of net exports and output in these explanations?",
       "options": [
-        "Chapter 6 emphasizes lower net exports; the Mundell-Fleming model emphasizes the offset to output",
-        "Chapter 6 says output rises; the Mundell-Fleming model says saving rises",
-        "both models say fiscal policy shifts LM* right",
+        "The classical model stresses lower net exports; Mundell–Fleming stresses unchanged output",
+        "The classical small-open-economy model says output rises; the Mundell-Fleming model says saving rises",
+        "Both models say fiscal policy shifts the LM* curve to the right",
         "both models ignore net exports"
       ],
       "tag": "open_economy_synthesis",
@@ -5688,26 +6996,7 @@ const questionBanks = {
       "primarySkill": "open_economy_synthesis",
       "repairSkill": "open_economy_synthesis",
       "feedback": "The shared appreciation result appears in different model frames.",
-      "aHash": "bf0fe344ab76a0fb2f25aa05aaa3a0c176fb1b1a6c3ff4373039fdee499cf590"
-    },
-    {
-      "id": 321,
-      "q": "Under floating rates, a tariff shifts IS* right. Why does that not automatically raise output?",
-      "options": [
-        "currency appreciation offsets the initial net-export increase",
-        "the central bank fixes the exchange rate by law",
-        "the price level falls and shifts LM* left immediately",
-        "investment demand must rise by the same amount"
-      ],
-      "tag": "trade_policy",
-      "type": "trap",
-      "objective": "LO14.3",
-      "difficulty": "elite",
-      "conceptCluster": "tariff_floating_offset",
-      "primarySkill": "floating_trade_policy_offset",
-      "repairSkill": "floating_trade_policy_offset",
-      "feedback": "Floating-rate appreciation crowds out the tariff’s direct net-export push.",
-      "aHash": "a4a21ba237b4195267e1581221c6adfc7fecfdca26db1f1e17f5a9498ebff936"
+      "aHash": "3ed05ed712e4c5e79cb3ab385c60c851fbe7e0bad4528459f30c6b5457599d85"
     },
     {
       "id": 322,
@@ -5729,167 +7018,11 @@ const questionBanks = {
       "aHash": "823343ab58877eff72700bae8a0039325b5a4470b6b5ef9e9fbe2093647c20e4"
     },
     {
-      "id": 323,
-      "q": "A lower price level raises output in the open-economy aggregate demand derivation. Which intermediate step is essential?",
-      "options": [
-        "real money balances rise and LM* shifts right",
-        "government spending rises and IS* shifts right",
-        "the world interest rate rises and investment falls",
-        "the fixed exchange rate becomes floating"
-      ],
-      "tag": "mundell_fleming_ad",
-      "type": "multi-step",
-      "objective": "LO14.4",
-      "difficulty": "elite",
-      "conceptCluster": "ad_intermediate_step",
-      "primarySkill": "derive_ad_from_mf",
-      "repairSkill": "derive_ad_from_mf",
-      "feedback": "The aggregate demand derivation starts with M/P.",
-      "aHash": "cef8ce7ca9274c6bc20a5accf2498a0f68a5cfeb7a101af7e1d828f3c43365f6"
-    },
-    {
-      "id": 324,
-      "q": "Refer to the image above. A move from C back toward B is most consistent with...",
-      "options": [
-        "a higher price level reducing real money balances and shifting LM* left",
-        "a lower price level raising real money balances and shifting LM* right",
-        "a tariff shifting NX(R) right",
-        "higher saving shifting S - I right"
-      ],
-      "tag": "mundell_fleming_ad",
-      "type": "graph",
-      "objective": "LO14.4",
-      "difficulty": "elite",
-      "conceptCluster": "ad_reverse_movement",
-      "primarySkill": "derive_ad_from_mf",
-      "repairSkill": "derive_ad_from_mf",
-      "feedback": "Moving back toward B requires a higher P, lower M/P, and a leftward LM* shift.",
-      "image": "mundell_adas.png",
-      "aHash": "4eb1789602c5865e7fe52c0971b0407286e44615ae57aee66fe155c0e343b4cd"
-    },
-    {
-      "id": 325,
-      "q": "Refer to the image above. If the economy moves from B to C in the left panel, the right-panel implication is...",
-      "options": [
-        "lower P and higher Y along aggregate demand",
-        "higher P and lower Y along aggregate demand",
-        "a rightward LRAS shift",
-        "a movement to balanced trade"
-      ],
-      "tag": "mundell_fleming_ad",
-      "type": "graph",
-      "objective": "LO14.4",
-      "difficulty": "elite",
-      "conceptCluster": "ad_mapping",
-      "primarySkill": "derive_ad_from_mf",
-      "repairSkill": "derive_ad_from_mf",
-      "feedback": "B to C in the left panel maps lower P to higher Y on aggregate demand.",
-      "image": "mundell_adas.png",
-      "aHash": "0a972108d0ab3a2dfe30eec86a33b17cdcfde479a77ab2e06903d1342c188e3e"
-    },
-    {
-      "id": 326,
-      "q": "Refer to the image above. A movement from B to A under floating rates is most naturally caused by...",
-      "options": [
-        "fiscal expansion or a trade-policy IS* shift",
-        "monetary expansion shifting LM* right",
-        "a fall in the price level shifting LM* right",
-        "a decrease in money demand"
-      ],
-      "tag": "floating_exchange_policy",
-      "type": "graph",
-      "objective": "LO14.1",
-      "difficulty": "elite",
-      "conceptCluster": "is_shift_graph",
-      "primarySkill": "floating_fiscal_policy",
-      "repairSkill": "floating_fiscal_policy",
-      "feedback": "B to A is an IS* shift under floating rates.",
-      "image": "islm_exchangerates.png",
-      "aHash": "3549bcd2c77b069778417ee536c9fe44050649dea4e2ec3e039c8ddcea0d3422"
-    },
-    {
-      "id": 327,
-      "q": "Refer to the image above. A movement from B to C under floating rates is most naturally caused by...",
-      "options": [
-        "monetary expansion shifting LM* right",
-        "fiscal expansion shifting IS* right",
-        "a tariff shifting IS* right",
-        "higher saving in the Chapter 6 graph"
-      ],
-      "tag": "floating_exchange_policy",
-      "type": "graph",
-      "objective": "LO14.1",
-      "difficulty": "elite",
-      "conceptCluster": "lm_shift_graph",
-      "primarySkill": "floating_monetary_policy",
-      "repairSkill": "floating_monetary_policy",
-      "feedback": "B to C is an LM* shift to the right.",
-      "image": "islm_er_change.png",
-      "aHash": "4c427b80a8430a151454fa585310b73a59731ed78f1c7ed69331d2fce80cae9c"
-    },
-    {
-      "id": 328,
-      "q": "S = 1,400 and I = 1,650. A policy raises saving by 200 and investment demand raises investment by 75. What are the new net exports?",
-      "options": [
-        "-125",
-        "-250",
-        "25",
-        "-525"
-      ],
-      "tag": "accounting_identities",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "difficulty": "elite",
-      "conceptCluster": "combined_s_i_calculation",
-      "primarySkill": "calculate_nx_from_s_i",
-      "repairSkill": "calculate_nx_from_s_i",
-      "feedback": "New S is 1,600 and new I is 1,725. NX = -125.",
-      "aHash": "5f9c2b683e6727c0e75e270de5d76c491873c8da897f9e84d16d2cd42c23fc10"
-    },
-    {
-      "id": 329,
-      "q": "Y = 4,200, C = 2,600, I = 950, and G = 775. What is the trade balance?",
-      "options": [
-        "-125",
-        "125",
-        "875",
-        "3,425"
-      ],
-      "tag": "accounting_identities",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "difficulty": "elite",
-      "conceptCluster": "income_identity_calculation",
-      "primarySkill": "calculate_nx_from_y_c_i_g",
-      "repairSkill": "calculate_nx_from_y_c_i_g",
-      "feedback": "NX = 4,200 - 2,600 - 950 - 775 = -125.",
-      "aHash": "5f9c2b683e6727c0e75e270de5d76c491873c8da897f9e84d16d2cd42c23fc10"
-    },
-    {
-      "id": 330,
-      "q": "The real exchange rate formula is ε = eP/P*. If e falls while P and P* are unchanged, what happens?",
-      "options": [
-        "the real exchange rate falls and net exports tend to rise",
-        "the real exchange rate rises and net exports tend to fall",
-        "the real exchange rate is unchanged because prices are unchanged",
-        "net exports become equal to the money supply"
-      ],
-      "tag": "real_exchange_rate",
-      "type": "calculation",
-      "objective": "LO6.4",
-      "difficulty": "elite",
-      "conceptCluster": "real_exchange_rate_direction",
-      "primarySkill": "calculate_real_exchange_rate",
-      "repairSkill": "calculate_real_exchange_rate",
-      "feedback": "With prices fixed, ε moves with e.",
-      "aHash": "dae17a74f3373df2ac522458f3e30181ce01e33cb4998dc9608de954442b9022"
-    },
-    {
       "id": 331,
       "q": "A central bank under fixed rates tries to expand money while the currency faces depreciation pressure. What undoes the policy?",
       "options": [
-        "defending the peg forces the bank to buy domestic currency and contract the money supply",
-        "defending the peg forces the bank to shift IS* right",
+        "Buying domestic currency to defend the peg contracts money supply",
+        "Defending the peg forces the bank to shift the IS* curve to the right",
         "capital mobility makes the fiscal multiplier zero",
         "net exports must be zero under fixed rates"
       ],
@@ -5901,10 +7034,10 @@ const questionBanks = {
       "primarySkill": "fixed_exchange_rate_policy",
       "repairSkill": "fixed_exchange_rate_policy",
       "feedback": "The peg forces monetary policy to accommodate exchange-rate defense.",
-      "aHash": "8dfabe1a7d00d10e0647e4be22876f925b5d9baeccc371e3498b42287f842993"
+      "aHash": "9749ddd1c8cfa482790eaf58fb2159f65b8226790980efc8eb88f29a7720c295"
     },
     {
-      "q": "Domestic saving falls while investment demand rises. What is the cleanest conclusion?",
+      "q": "Domestic saving falls while investment demand rises. Which conclusion is supported?",
       "options": [
         "both forces lower S - I, so net exports fall strongly",
         "both forces raise S - I, so net exports rise strongly",
@@ -5923,7 +7056,7 @@ const questionBanks = {
       "aHash": "30d078936bbb567eba8d39a9d3b246f78368e14a4481d84c2876d818cdca3b3b"
     },
     {
-      "q": "Domestic saving rises while investment demand falls. What is the cleanest conclusion?",
+      "q": "Domestic saving rises while investment demand falls. Which conclusion is supported?",
       "options": [
         "both forces raise S - I, so net exports rise strongly",
         "both forces lower S - I, so net exports fall strongly",
@@ -5942,7 +7075,7 @@ const questionBanks = {
       "aHash": "68684258e72cd210033b05697efe5f0e9d89d535049ae83a3dd0438e42c3cd48"
     },
     {
-      "q": "Domestic saving rises while investment demand rises. What is the cleanest conclusion?",
+      "q": "Domestic saving rises while investment demand rises. Which conclusion is supported?",
       "options": [
         "the effect on S - I is ambiguous without magnitudes",
         "NX must rise because saving changed",
@@ -5961,7 +7094,7 @@ const questionBanks = {
       "aHash": "e24a47612fb160fa98eb58f1a97dae3f3d03c5e020c8f62370ce53a5cb02766f"
     },
     {
-      "q": "Domestic saving falls while investment demand falls. What is the cleanest conclusion?",
+      "q": "Domestic saving falls while investment demand falls. Which conclusion is supported?",
       "options": [
         "the effect on S - I is ambiguous without magnitudes",
         "NX must fall because saving changed",
@@ -5980,9 +7113,9 @@ const questionBanks = {
       "aHash": "e24a47612fb160fa98eb58f1a97dae3f3d03c5e020c8f62370ce53a5cb02766f"
     },
     {
-      "q": "In Chapter 6, a tariff appreciates the real exchange rate. In floating-rate Mundell-Fleming model, a tariff also appreciates the exchange rate. What is the shared lesson?",
+      "q": "In the classical small-open-economy model, a tariff appreciates the real exchange rate. In the Mundell–Fleming model with floating exchange rates, a tariff also appreciates the exchange rate. What is the shared lesson?",
       "options": [
-        "exchange-rate adjustment offsets the direct trade-policy effect",
+        "Appreciation offsets the direct trade-policy effect",
         "tariffs always raise output permanently",
         "tariffs lower the world interest rate",
         "saving automatically rises after trade restrictions"
@@ -5996,646 +7129,13 @@ const questionBanks = {
       "feedback": "Trade restrictions trigger exchange-rate adjustment that offsets the direct NX effect.",
       "id": 336,
       "difficulty": "elite",
-      "aHash": "cfb78d2624f5f8f0734a29ce74f107dbe017a0590426523e87a4afcfa02c9d70"
+      "aHash": "296ee1557c8e6acf3e1e7233cc682c3d99f5afa88725655c83e103d7e817a0ef"
     },
     {
-      "q": "Why does floating-rate fiscal policy fail to raise income strongly in Mundell-Fleming model?",
+      "q": "Refer to the Mundell–Fleming and aggregate demand–aggregate supply graph. In the small-open-economy aggregate demand derivation, the price level falls. What sequence of economic changes follows?",
       "options": [
-        "currency appreciation crowds out net exports",
-        "money supply rises automatically",
-        "the peg forces monetary expansion",
-        "investment demand becomes vertical"
-      ],
-      "tag": "floating_exchange_policy",
-      "type": "integration",
-      "objective": "LO14.1",
-      "conceptCluster": "floating_fiscal_policy",
-      "primarySkill": "floating_fiscal_policy",
-      "repairSkill": "floating_fiscal_policy",
-      "feedback": "The exchange-rate channel offsets the fiscal demand shock.",
-      "id": 337,
-      "difficulty": "elite",
-      "aHash": "0702c32bf0e9554920d871540cdb4d542f24b0367e1af3453d3f6eb755d97c97"
-    },
-    {
-      "q": "Why is monetary policy powerful under floating rates?",
-      "options": [
-        "depreciation reinforces the initial LM* expansion through higher net exports",
-        "appreciation reinforces the initial LM* expansion through lower net exports",
-        "the central bank fixes e and M independently",
-        "fiscal policy automatically contracts"
-      ],
-      "tag": "floating_exchange_policy",
-      "type": "integration",
-      "objective": "LO14.1",
-      "conceptCluster": "floating_monetary_policy",
-      "primarySkill": "floating_monetary_policy",
-      "repairSkill": "floating_monetary_policy",
-      "feedback": "Floating rates allow the exchange rate to move, so monetary policy works through NX.",
-      "id": 338,
-      "difficulty": "elite",
-      "aHash": "d9d15a8e924a1d5b26e2b3a9745b4c60a170337e23cf61adff8eaff9a9dfe1df"
-    },
-    {
-      "q": "Refer to the image above. Moving from A to C in the left panel corresponds to what in the right panel?",
-      "options": [
-        "moving down the aggregate demand curve as P falls and Y rises",
-        "a shift of LRAS to the left",
-        "a tariff shifting NX right",
-        "a fixed-rate reserve intervention"
-      ],
-      "tag": "mundell_fleming_ad",
-      "type": "graph",
-      "objective": "LO14.4",
-      "conceptCluster": "derive_ad_from_mf",
-      "primarySkill": "derive_ad_from_mf",
-      "repairSkill": "derive_ad_from_mf",
-      "feedback": "The left panel explains points along the open-economy aggregate demand curve.",
-      "image": "mundell_adas.png",
-      "id": 339,
-      "difficulty": "elite",
-      "aHash": "8d184b873491c950ce9ed6e47e7f78b45054f343dda43db8f1de6edc91c4fc9f"
-    },
-    {
-      "q": "Refer to the image above. Moving from B to C is most consistent with...",
-      "options": [
-        "expansionary monetary policy under floating rates",
-        "expansionary fiscal policy under floating rates",
-        "a fixed exchange rate peg with no money change",
-        "a tariff under Chapter 6"
-      ],
-      "tag": "floating_exchange_policy",
-      "type": "graph",
-      "objective": "LO14.1",
-      "conceptCluster": "floating_monetary_policy",
-      "primarySkill": "floating_monetary_policy",
-      "repairSkill": "floating_monetary_policy",
-      "feedback": "A move to the right on LM* lowers e and raises Y.",
-      "image": "islm_er_change.png",
-      "id": 340,
-      "difficulty": "elite",
-      "aHash": "f6a7065bbfab366412ed5a67258e2af124c440973c8beb5f18fe5f3497d68302"
-    },
-    {
-      "q": "Refer to the image above. Moving from B to A is most consistent with...",
-      "options": [
-        "a rightward IS* shock under floating rates",
-        "a monetary expansion under floating rates",
-        "a fall in the price level shifting LM* right",
-        "capital flight in the large open model"
-      ],
-      "tag": "floating_exchange_policy",
-      "type": "graph",
-      "objective": "LO14.1",
-      "conceptCluster": "floating_fiscal_policy",
-      "primarySkill": "floating_fiscal_policy",
-      "repairSkill": "floating_fiscal_policy",
-      "feedback": "A rightward IS* shock raises e with Y pinned at Y*.",
-      "image": "islm_exchangerates.png",
-      "id": 341,
-      "difficulty": "elite",
-      "aHash": "b91651c5a4473f33c847d5b56cd26c3c7cdaf093405d8f2f4a2190f3864d60d2"
-    },
-    {
-      "q": "Refer to the image above. Why does moving from B to A not prove net exports rise?",
-      "options": [
-        "the vertical S - I line fixes equilibrium NX while R adjusts",
-        "the NX curve is irrelevant to trade policy",
-        "saving always rises after a tariff",
-        "the exchange rate cannot move in this graph"
-      ],
-      "tag": "trade_policy",
-      "type": "graph",
-      "objective": "LO6.5",
-      "conceptCluster": "tariff_exchange_rate_offset",
-      "primarySkill": "tariff_exchange_rate_offset",
-      "repairSkill": "tariff_exchange_rate_offset",
-      "feedback": "The equilibrium remains on the same S - I line; the real exchange rate absorbs the shift.",
-      "image": "tradepolicies.png",
-      "id": 342,
-      "difficulty": "elite",
-      "aHash": "c44adb774a7c9297c28759d79d0289d092cb4fb040ee495b6310c2144839510c"
-    },
-    {
-      "q": "Refer to the image above. Moving from E to C is best read as...",
-      "options": [
-        "higher S - I and a higher real exchange rate",
-        "lower S - I and a lower real exchange rate",
-        "a tariff shifting NX(R)",
-        "a money-demand shock shifting LM*"
-      ],
-      "tag": "real_exchange_rate",
-      "type": "graph",
-      "objective": "LO6.4",
-      "conceptCluster": "exchange_rate_adjustment",
-      "primarySkill": "exchange_rate_adjustment",
-      "repairSkill": "exchange_rate_adjustment",
-      "feedback": "Point C is on the right-most S - I line and the high R line.",
-      "image": "rer_changes.png",
-      "id": 343,
-      "difficulty": "elite",
-      "aHash": "3b4e317af3ec2c57c98e970bd7177986e5c429a3d80090150c15f0eadef35c63"
-    },
-    {
-      "q": "Refer to the image above. Moving from D to E is best read as...",
-      "options": [
-        "higher investment demand at the same world interest rate",
-        "lower saving at the same world interest rate",
-        "a fall in the world interest rate",
-        "a tariff shifting NX demand"
-      ],
-      "tag": "saving_investment_capital_flows",
-      "type": "graph",
-      "objective": "LO6.5",
-      "conceptCluster": "investment_shift_trade_balance",
-      "primarySkill": "investment_shift_trade_balance",
-      "repairSkill": "investment_shift_trade_balance",
-      "feedback": "The investment-demand curve shifts right at the same r_w2.",
-      "image": "loanablefunds_changes_investment.png",
-      "id": 344,
-      "difficulty": "elite",
-      "aHash": "b1c4dd4839e453490af78f8935c9e4f5a270604d78a6d011b33676b86ce741ca"
-    },
-    {
-      "q": "A nation wants to stabilize its currency and allow free capital flows during a recession. What policy limitation follows?",
-      "options": [
-        "monetary policy must defend the peg rather than independently stabilize output",
-        "fiscal policy becomes illegal",
-        "exports must equal imports every period",
-        "the country must abandon all capital flows"
-      ],
-      "tag": "impossible_trinity",
-      "type": "integration",
-      "objective": "LO14.3",
-      "conceptCluster": "impossible_trinity",
-      "primarySkill": "impossible_trinity",
-      "repairSkill": "impossible_trinity",
-      "feedback": "The peg plus capital mobility sacrifices monetary independence.",
-      "id": 345,
-      "difficulty": "elite",
-      "aHash": "0f945f281e2b0478a8af8107d282271b83e0cdf218591c233f25d58d131f8cae"
-    },
-    {
-      "q": "National saving is 1450 and domestic investment is 1450. What are net exports?",
-      "options": [
-        "0; balanced trade",
-        "-2900; deficit",
-        "2900; surplus",
-        "1450; surplus"
-      ],
-      "tag": "saving_investment_capital_flows",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "conceptCluster": "calculate_nx_from_s_i",
-      "primarySkill": "calculate_nx_from_s_i",
-      "repairSkill": "calculate_nx_from_s_i",
-      "feedback": "NX = S - I = 1450 - 1450 = 0.",
-      "id": 346,
-      "difficulty": "elite",
-      "aHash": "7977583b1b14849c67c9d21d71aeea2adaefb4adffacaa81dd30959ecf418d68"
-    },
-    {
-      "q": "National saving is 1700 and domestic investment is 1325. What are net exports?",
-      "options": [
-        "375; surplus",
-        "-375; the opposite sign",
-        "3025; surplus",
-        "375; balanced trade"
-      ],
-      "tag": "saving_investment_capital_flows",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "conceptCluster": "calculate_nx_from_s_i",
-      "primarySkill": "calculate_nx_from_s_i",
-      "repairSkill": "calculate_nx_from_s_i",
-      "feedback": "NX = S - I = 1700 - 1325 = 375.",
-      "id": 347,
-      "difficulty": "elite",
-      "aHash": "7a2dbd605cb24009caf93db04c5a90070512fb34725357c164bf6a3702180055"
-    },
-    {
-      "q": "National saving is 1325 and domestic investment is 1700. What are net exports?",
-      "options": [
-        "-375; deficit",
-        "375; the opposite sign",
-        "3025; surplus",
-        "375; balanced trade"
-      ],
-      "tag": "saving_investment_capital_flows",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "conceptCluster": "calculate_nx_from_s_i",
-      "primarySkill": "calculate_nx_from_s_i",
-      "repairSkill": "calculate_nx_from_s_i",
-      "feedback": "NX = S - I = 1325 - 1700 = -375.",
-      "id": 348,
-      "difficulty": "elite",
-      "aHash": "6753cc00a0d8d48dd667a109452b3ba5be7c77c3ce53b88c54800c66ea848a1c"
-    },
-    {
-      "q": "National saving is 2100 and domestic investment is 1850. What are net exports?",
-      "options": [
-        "250; surplus",
-        "-250; the opposite sign",
-        "3950; surplus",
-        "250; balanced trade"
-      ],
-      "tag": "saving_investment_capital_flows",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "conceptCluster": "calculate_nx_from_s_i",
-      "primarySkill": "calculate_nx_from_s_i",
-      "repairSkill": "calculate_nx_from_s_i",
-      "feedback": "NX = S - I = 2100 - 1850 = 250.",
-      "id": 349,
-      "difficulty": "elite",
-      "aHash": "237255bdba5ab04c8d0c2368458cf8300060292173d2ff428cae3380eba46eef"
-    },
-    {
-      "q": "Y=3000, C=1800, I=700, and G=650. What are net exports?",
-      "options": [
-        "-150; deficit",
-        "150; wrong sign",
-        "1200; missing I and G",
-        "3150; domestic spending"
-      ],
-      "tag": "accounting_identities",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "conceptCluster": "calculate_nx_from_y_c_i_g",
-      "primarySkill": "calculate_nx_from_y_c_i_g",
-      "repairSkill": "calculate_nx_from_y_c_i_g",
-      "feedback": "NX = Y - C - I - G = -150.",
-      "id": 350,
-      "difficulty": "elite",
-      "aHash": "eba5187244252db44e06d3a2cb381ce6c1f2e859603d22f31d001dd4a8389559"
-    },
-    {
-      "q": "Y=4200, C=2600, I=900, and G=800. What are net exports?",
-      "options": [
-        "-100; deficit",
-        "100; wrong sign",
-        "1600; missing I and G",
-        "4300; domestic spending"
-      ],
-      "tag": "accounting_identities",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "conceptCluster": "calculate_nx_from_y_c_i_g",
-      "primarySkill": "calculate_nx_from_y_c_i_g",
-      "repairSkill": "calculate_nx_from_y_c_i_g",
-      "feedback": "NX = Y - C - I - G = -100.",
-      "id": 351,
-      "difficulty": "elite",
-      "aHash": "6d4604892adc241880ea10789df78d9dfff1a03b1dc8aad3720437e12ed12fa0"
-    },
-    {
-      "q": "Y=2500, C=1600, I=500, and G=450. What are net exports?",
-      "options": [
-        "-50; deficit",
-        "50; wrong sign",
-        "900; missing I and G",
-        "2550; domestic spending"
-      ],
-      "tag": "accounting_identities",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "conceptCluster": "calculate_nx_from_y_c_i_g",
-      "primarySkill": "calculate_nx_from_y_c_i_g",
-      "repairSkill": "calculate_nx_from_y_c_i_g",
-      "feedback": "NX = Y - C - I - G = -50.",
-      "id": 352,
-      "difficulty": "elite",
-      "aHash": "55d3a087cd56bf9eaacbdf330dbc636933672fea5ddc13004ea44269d780efea"
-    },
-    {
-      "q": "Y=5200, C=3300, I=1100, and G=900. What are net exports?",
-      "options": [
-        "-100; deficit",
-        "100; wrong sign",
-        "1900; missing I and G",
-        "5300; domestic spending"
-      ],
-      "tag": "accounting_identities",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "conceptCluster": "calculate_nx_from_y_c_i_g",
-      "primarySkill": "calculate_nx_from_y_c_i_g",
-      "repairSkill": "calculate_nx_from_y_c_i_g",
-      "feedback": "NX = Y - C - I - G = -100.",
-      "id": 353,
-      "difficulty": "elite",
-      "aHash": "6d4604892adc241880ea10789df78d9dfff1a03b1dc8aad3720437e12ed12fa0"
-    },
-    {
-      "q": "Y=3800, C=2300, I=850, and G=750. What are net exports?",
-      "options": [
-        "-100; deficit",
-        "100; wrong sign",
-        "1500; missing I and G",
-        "3900; domestic spending"
-      ],
-      "tag": "accounting_identities",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "conceptCluster": "calculate_nx_from_y_c_i_g",
-      "primarySkill": "calculate_nx_from_y_c_i_g",
-      "repairSkill": "calculate_nx_from_y_c_i_g",
-      "feedback": "NX = Y - C - I - G = -100.",
-      "id": 354,
-      "difficulty": "elite",
-      "aHash": "6d4604892adc241880ea10789df78d9dfff1a03b1dc8aad3720437e12ed12fa0"
-    },
-    {
-      "q": "Using ε = eP/P*, if e=1.2, P=100, and P*=120, what is ε?",
-      "options": [
-        "1",
-        "1.2",
-        "0.83",
-        "120"
-      ],
-      "tag": "real_exchange_rate",
-      "type": "calculation",
-      "objective": "LO6.4",
-      "conceptCluster": "calculate_real_exchange_rate",
-      "primarySkill": "calculate_real_exchange_rate",
-      "repairSkill": "calculate_real_exchange_rate",
-      "feedback": "ε = 1.2 × 100 / 120 = 1.",
-      "id": 355,
-      "difficulty": "elite",
-      "aHash": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
-    },
-    {
-      "q": "A policy memo says: domestic fiscal expansion lowers national saving. Which complete open-economy chain is correct?",
-      "options": [
-        "S - I falls, the real exchange rate appreciates, and net exports fall",
-        "S - I rises, the real exchange rate depreciates, and net exports rise",
-        "NX changes first and then mechanically sets saving",
-        "the result cannot be traced with S - I = NX"
-      ],
-      "tag": "fiscal_policy_open_economy",
-      "type": "integration",
-      "objective": "LO6.5",
-      "conceptCluster": "trace_domestic_fiscal_expansion",
-      "primarySkill": "trace_domestic_fiscal_expansion",
-      "repairSkill": "trace_domestic_fiscal_expansion",
-      "feedback": "Trace the first movement through S - I, then connect S - I to NX.",
-      "id": 356,
-      "difficulty": "elite",
-      "aHash": "a677520ff1e5cea63cc204123cc5b54deac9781321d905410cdc8bb114e13c6e"
-    },
-    {
-      "q": "A policy memo says: domestic fiscal contraction raises national saving. Which complete open-economy chain is correct?",
-      "options": [
-        "S - I rises, the real exchange rate depreciates, and net exports rise",
-        "S - I falls, the real exchange rate appreciates, and net exports fall",
-        "NX changes first and then mechanically sets saving",
-        "the result cannot be traced with S - I = NX"
-      ],
-      "tag": "fiscal_policy_open_economy",
-      "type": "integration",
-      "objective": "LO6.5",
-      "conceptCluster": "trace_domestic_fiscal_expansion",
-      "primarySkill": "trace_domestic_fiscal_expansion",
-      "repairSkill": "trace_domestic_fiscal_expansion",
-      "feedback": "Trace the first movement through S - I, then connect S - I to NX.",
-      "id": 357,
-      "difficulty": "elite",
-      "aHash": "2ea21fe51bcc96624bdc74b4f787c05fe2745efed0c0fcd6d5f57213d45ec343"
-    },
-    {
-      "q": "A policy memo says: investment demand rises while saving is unchanged. Which complete open-economy chain is correct?",
-      "options": [
-        "S - I falls, the real exchange rate appreciates, and net exports fall",
-        "S - I rises, the real exchange rate depreciates, and net exports rise",
-        "NX changes first and then mechanically sets saving",
-        "the result cannot be traced with S - I = NX"
-      ],
-      "tag": "saving_investment_capital_flows",
-      "type": "integration",
-      "objective": "LO6.5",
-      "conceptCluster": "investment_shift_trade_balance",
-      "primarySkill": "investment_shift_trade_balance",
-      "repairSkill": "investment_shift_trade_balance",
-      "feedback": "Trace the first movement through S - I, then connect S - I to NX.",
-      "id": 358,
-      "difficulty": "elite",
-      "aHash": "a677520ff1e5cea63cc204123cc5b54deac9781321d905410cdc8bb114e13c6e"
-    },
-    {
-      "q": "A policy memo says: investment demand falls while saving is unchanged. Which complete open-economy chain is correct?",
-      "options": [
-        "S - I rises, the real exchange rate depreciates, and net exports rise",
-        "S - I falls, the real exchange rate appreciates, and net exports fall",
-        "NX changes first and then mechanically sets saving",
-        "the result cannot be traced with S - I = NX"
-      ],
-      "tag": "saving_investment_capital_flows",
-      "type": "integration",
-      "objective": "LO6.5",
-      "conceptCluster": "investment_shift_trade_balance",
-      "primarySkill": "investment_shift_trade_balance",
-      "repairSkill": "investment_shift_trade_balance",
-      "feedback": "Trace the first movement through S - I, then connect S - I to NX.",
-      "id": 359,
-      "difficulty": "elite",
-      "aHash": "2ea21fe51bcc96624bdc74b4f787c05fe2745efed0c0fcd6d5f57213d45ec343"
-    },
-    {
-      "q": "A policy memo says: foreign fiscal expansion raises the world interest rate. Which complete open-economy chain is correct?",
-      "options": [
-        "domestic investment falls, S - I rises, and net exports rise",
-        "domestic investment rises, S - I falls, and net exports fall",
-        "NX changes first and then mechanically sets saving",
-        "the result cannot be traced with S - I = NX"
-      ],
-      "tag": "fiscal_policy_open_economy",
-      "type": "integration",
-      "objective": "LO6.5",
-      "conceptCluster": "foreign_fiscal_policy",
-      "primarySkill": "foreign_fiscal_policy",
-      "repairSkill": "foreign_fiscal_policy",
-      "feedback": "Trace the first movement through S - I, then connect S - I to NX.",
-      "id": 360,
-      "difficulty": "elite",
-      "aHash": "e6d46ba27efb98c1e9b1934ba0b0854bdb0680a5e7e6eb67aff7d9a6a8de9e82"
-    },
-    {
-      "q": "A policy memo says: foreign fiscal contraction lowers the world interest rate. Which complete open-economy chain is correct?",
-      "options": [
-        "domestic investment rises, S - I falls, and net exports fall",
-        "domestic investment falls, S - I rises, and net exports rise",
-        "NX changes first and then mechanically sets saving",
-        "the result cannot be traced with S - I = NX"
-      ],
-      "tag": "fiscal_policy_open_economy",
-      "type": "integration",
-      "objective": "LO6.5",
-      "conceptCluster": "foreign_fiscal_policy",
-      "primarySkill": "foreign_fiscal_policy",
-      "repairSkill": "foreign_fiscal_policy",
-      "feedback": "Trace the first movement through S - I, then connect S - I to NX.",
-      "id": 361,
-      "difficulty": "elite",
-      "aHash": "5ef71c427326cb3d6e66da97933b32c34fdec90749559906a8a822e34bbe6be6"
-    },
-    {
-      "q": "In Mundell-Fleming model with floating exchange rates, expansionary fiscal policy, which chain is correct?",
-      "options": [
-        "IS* shifts right, the exchange rate appreciates, net exports fall, and Y is offset",
-        "LM* shifts right, the exchange rate depreciates, net exports rise, and Y rises",
-        "r* changes because the country is small",
-        "NX is fixed by accounting identity alone"
-      ],
-      "tag": "floating_exchange_policy",
-      "type": "integration",
-      "objective": "LO14.1",
-      "conceptCluster": "floating_fiscal_policy",
-      "primarySkill": "floating_fiscal_policy",
-      "repairSkill": "floating_fiscal_policy",
-      "feedback": "Use the exchange-rate regime to decide whether the exchange rate or money supply adjusts.",
-      "id": 362,
-      "difficulty": "elite",
-      "aHash": "69bd6340f82e7a77a161874dca6b3cddeba1a6b171d0323d08c6102521fbb6e3"
-    },
-    {
-      "q": "In Mundell-Fleming model with floating exchange rates, contractionary fiscal policy, which chain is correct?",
-      "options": [
-        "IS* shifts left, the exchange rate depreciates, net exports rise, and Y is offset",
-        "LM* shifts left, the exchange rate appreciates, net exports fall, and Y falls strongly",
-        "r* changes because the country is small",
-        "NX is fixed by accounting identity alone"
-      ],
-      "tag": "floating_exchange_policy",
-      "type": "integration",
-      "objective": "LO14.1",
-      "conceptCluster": "floating_fiscal_policy",
-      "primarySkill": "floating_fiscal_policy",
-      "repairSkill": "floating_fiscal_policy",
-      "feedback": "Use the exchange-rate regime to decide whether the exchange rate or money supply adjusts.",
-      "id": 363,
-      "difficulty": "elite",
-      "aHash": "0e66188499fb7a6d6d5a1ae5b93217618a8b6991f5e14f4fe91058fb9fe3fbf2"
-    },
-    {
-      "q": "In Mundell-Fleming model with floating exchange rates, expansionary monetary policy, which chain is correct?",
-      "options": [
-        "LM* shifts right, the exchange rate depreciates, net exports rise, and Y rises",
-        "IS* shifts right, the exchange rate appreciates, net exports fall, and Y is unchanged",
-        "r* changes because the country is small",
-        "NX is fixed by accounting identity alone"
-      ],
-      "tag": "floating_exchange_policy",
-      "type": "integration",
-      "objective": "LO14.1",
-      "conceptCluster": "floating_monetary_policy",
-      "primarySkill": "floating_monetary_policy",
-      "repairSkill": "floating_monetary_policy",
-      "feedback": "Use the exchange-rate regime to decide whether the exchange rate or money supply adjusts.",
-      "id": 364,
-      "difficulty": "elite",
-      "aHash": "9c60cc346f0a7ec2318794af1e299024c5ab33882ef97252fc8c94747a89cf26"
-    },
-    {
-      "q": "In Mundell-Fleming model with floating exchange rates, contractionary monetary policy, which chain is correct?",
-      "options": [
-        "LM* shifts left, the exchange rate appreciates, net exports fall, and Y falls",
-        "IS* shifts left, the exchange rate depreciates, net exports rise, and Y is unchanged",
-        "r* changes because the country is small",
-        "NX is fixed by accounting identity alone"
-      ],
-      "tag": "floating_exchange_policy",
-      "type": "integration",
-      "objective": "LO14.1",
-      "conceptCluster": "floating_monetary_policy",
-      "primarySkill": "floating_monetary_policy",
-      "repairSkill": "floating_monetary_policy",
-      "feedback": "Use the exchange-rate regime to decide whether the exchange rate or money supply adjusts.",
-      "id": 365,
-      "difficulty": "elite",
-      "aHash": "f4c356a68f5f77f4693509adcf9c4aba93c27677221680088c6f8127f5f3c838"
-    },
-    {
-      "q": "In Mundell-Fleming model with fixed exchange rates, expansionary fiscal policy, which chain is correct?",
-      "options": [
-        "IS* shifts right and the central bank expands M to defend the peg, amplifying Y",
-        "IS* shifts right but appreciation fully crowds out NX as under floating rates",
-        "r* changes because the country is small",
-        "NX is fixed by accounting identity alone"
-      ],
-      "tag": "fixed_exchange_policy",
-      "type": "integration",
-      "objective": "LO14.3",
-      "conceptCluster": "fixed_fiscal_policy",
-      "primarySkill": "fixed_fiscal_policy",
-      "repairSkill": "fixed_fiscal_policy",
-      "feedback": "Use the exchange-rate regime to decide whether the exchange rate or money supply adjusts.",
-      "id": 366,
-      "difficulty": "elite",
-      "aHash": "58e2ed73c7ce1e36df434c58a48bc80264e424d3ec13eaa5c851ff19d37fb8d9"
-    },
-    {
-      "q": "In Mundell-Fleming model with fixed exchange rates, expansionary monetary policy, which chain is correct?",
-      "options": [
-        "pressure for depreciation forces reversal if the peg is defended, so the policy loses independence",
-        "LM* remains right because fixed exchange rates strengthen monetary autonomy",
-        "r* changes because the country is small",
-        "NX is fixed by accounting identity alone"
-      ],
-      "tag": "fixed_exchange_policy",
-      "type": "integration",
-      "objective": "LO14.3",
-      "conceptCluster": "fixed_monetary_policy",
-      "primarySkill": "fixed_monetary_policy",
-      "repairSkill": "fixed_monetary_policy",
-      "feedback": "Use the exchange-rate regime to decide whether the exchange rate or money supply adjusts.",
-      "id": 367,
-      "difficulty": "elite",
-      "aHash": "95991cd5fb496237ab2b36a4cff3db21f79105bd3591bb93230473dfe37718a8"
-    },
-    {
-      "q": "In Mundell-Fleming model with fixed exchange rates, contractionary monetary policy, which chain is correct?",
-      "options": [
-        "pressure for appreciation forces reversal if the peg is defended, so the policy loses independence",
-        "LM* remains left because fixed exchange rates strengthen monetary autonomy",
-        "r* changes because the country is small",
-        "NX is fixed by accounting identity alone"
-      ],
-      "tag": "fixed_exchange_policy",
-      "type": "integration",
-      "objective": "LO14.3",
-      "conceptCluster": "fixed_monetary_policy",
-      "primarySkill": "fixed_monetary_policy",
-      "repairSkill": "fixed_monetary_policy",
-      "feedback": "Use the exchange-rate regime to decide whether the exchange rate or money supply adjusts.",
-      "id": 368,
-      "difficulty": "elite",
-      "aHash": "476d43f6eaf2929735da234a89f3771832bdc2b9222cbe4ba3b5bab6155d6c23"
-    },
-    {
-      "q": "In Mundell-Fleming model with floating exchange rates, an import quota, which chain is correct?",
-      "options": [
-        "IS* shifts right at first, but appreciation offsets the output effect",
-        "LM* shifts right and output rises permanently",
-        "r* changes because the country is small",
-        "NX is fixed by accounting identity alone"
-      ],
-      "tag": "trade_policy",
-      "type": "integration",
-      "objective": "LO14.1",
-      "conceptCluster": "trade_policy_under_floating",
-      "primarySkill": "trade_policy_under_floating",
-      "repairSkill": "trade_policy_under_floating",
-      "feedback": "Use the exchange-rate regime to decide whether the exchange rate or money supply adjusts.",
-      "id": 369,
-      "difficulty": "elite",
-      "aHash": "a7b3475c90501e4f7dddd4e6680bc8af04441ba89974d5f4460eac3ec62f4bed"
-    },
-    {
-      "q": "Refer to the image above. In the small-open-economy aggregate demand derivation, the price level falls. What is the full chain?",
-      "options": [
-        "M/P rises, LM* shifts right, e falls/depreciates, net exports rise, and Y rises",
-        "M/P moves the opposite way, so Y moves the opposite way",
+        "Real balances rise; LM* shifts right, causing depreciation and higher net exports and output",
+        "Real balances fall; LM* shifts left, causing appreciation and lower net exports and output",
         "IS* shifts because P changes government spending",
         "the world interest rate adjusts first"
       ],
@@ -6649,13 +7149,13 @@ const questionBanks = {
       "image": "mundell_adas.png",
       "id": 370,
       "difficulty": "elite",
-      "aHash": "c1a0cae949b3c834e6ec33c670051e1f5e73529b829624fbb6cbd8bf0af81096"
+      "aHash": "8aaab9b75666d85378bb95807fedb16670c400d1bb91a2966b9b8266de32dd95"
     },
     {
-      "q": "Refer to the image above. In the small-open-economy aggregate demand derivation, the price level rises. What is the full chain?",
+      "q": "Refer to the Mundell–Fleming and aggregate demand–aggregate supply graph. In the small-open-economy aggregate demand derivation, the price level rises. What sequence of economic changes follows?",
       "options": [
-        "M/P falls, LM* shifts left, e rises/appreciates, net exports fall, and Y falls",
-        "M/P moves the opposite way, so Y moves the opposite way",
+        "Real balances fall; LM* shifts left, causing appreciation and lower net exports and output",
+        "Real balances rise; LM* shifts right, causing depreciation and higher net exports and output",
         "IS* shifts because P changes government spending",
         "the world interest rate adjusts first"
       ],
@@ -6669,105 +7169,7 @@ const questionBanks = {
       "image": "mundell_adas.png",
       "id": 371,
       "difficulty": "elite",
-      "aHash": "fcb08ddc8dec41a76089ddac64e08f46459b957086fca8937fc21b58cab2eb5d"
-    },
-    {
-      "q": "Refer to the image above. A country insists on fixed exchange rate and free capital mobility. According to the impossible trinity, what must it give up?",
-      "options": [
-        "independent monetary policy",
-        "exports",
-        "fiscal policy",
-        "national saving"
-      ],
-      "tag": "impossible_trinity",
-      "type": "integration",
-      "objective": "LO14.3",
-      "conceptCluster": "impossible_trinity",
-      "primarySkill": "impossible_trinity",
-      "repairSkill": "impossible_trinity",
-      "feedback": "The trilemma permits two goals, not all three.",
-      "image": "impossibletrinity.png",
-      "id": 372,
-      "difficulty": "elite",
-      "aHash": "dd2555485f1265b2efedec85cd460ea4fba4bb0f1b68ac8756ead3f13ddc6a8d"
-    },
-    {
-      "q": "Refer to the image above. A country insists on independent monetary policy and free capital mobility. According to the impossible trinity, what must it give up?",
-      "options": [
-        "a fixed exchange rate",
-        "exports",
-        "fiscal policy",
-        "national saving"
-      ],
-      "tag": "impossible_trinity",
-      "type": "integration",
-      "objective": "LO14.3",
-      "conceptCluster": "impossible_trinity",
-      "primarySkill": "impossible_trinity",
-      "repairSkill": "impossible_trinity",
-      "feedback": "The trilemma permits two goals, not all three.",
-      "image": "impossibletrinity.png",
-      "id": 373,
-      "difficulty": "elite",
-      "aHash": "881b60ebc095911d7b72e0d2c1070dcb697156a6d65ff5352379e626b05b5594"
-    },
-    {
-      "q": "Refer to the image above. A country insists on fixed exchange rate and independent monetary policy. According to the impossible trinity, what must it give up?",
-      "options": [
-        "free capital mobility",
-        "exports",
-        "fiscal policy",
-        "national saving"
-      ],
-      "tag": "impossible_trinity",
-      "type": "integration",
-      "objective": "LO14.3",
-      "conceptCluster": "impossible_trinity",
-      "primarySkill": "impossible_trinity",
-      "repairSkill": "impossible_trinity",
-      "feedback": "The trilemma permits two goals, not all three.",
-      "image": "impossibletrinity.png",
-      "id": 374,
-      "difficulty": "elite",
-      "aHash": "51e1c59eed53c8a7ada7215e0afd9dc555705a903fb66e17c3663a8daf2e55ba"
-    },
-    {
-      "q": "fiscal expansion raises the domestic interest rate. Which result fits the model?",
-      "options": [
-        "investment falls and capital-flow/exchange-rate pressure reduces NX",
-        "investment rises because all fiscal expansions increase private investment",
-        "the economy has no exchange-rate channel",
-        "NX cannot respond to capital flows"
-      ],
-      "tag": "large_open_economy",
-      "type": "integration",
-      "objective": "LO14.1",
-      "conceptCluster": "large_open_policy",
-      "primarySkill": "large_open_policy",
-      "repairSkill": "large_open_policy",
-      "feedback": "In a large open economy, r can move and international flows still matter.",
-      "id": 375,
-      "difficulty": "elite",
-      "aHash": "fddf67ad0f9cb25a85bc5a7f84c5fd96fe950ad138ea9b82bc40d0c3c7f7d6a3"
-    },
-    {
-      "q": "monetary expansion lowers the interest rate. Which result fits the model?",
-      "options": [
-        "investment rises and capital-flow/exchange-rate pressure affects NX",
-        "investment falls because money supply crowds out capital",
-        "the economy has no exchange-rate channel",
-        "NX cannot respond to capital flows"
-      ],
-      "tag": "large_open_economy",
-      "type": "integration",
-      "objective": "LO14.1",
-      "conceptCluster": "large_open_policy",
-      "primarySkill": "large_open_policy",
-      "repairSkill": "large_open_policy",
-      "feedback": "In a large open economy, r can move and international flows still matter.",
-      "id": 376,
-      "difficulty": "elite",
-      "aHash": "935be0f382d92ff1829cbd2eb64fd8cf85c6f1678b19ff8524d29f423663415a"
+      "aHash": "99998fc2cc91aff306017d8b0127721181f92b251890bc56b69d2225d7bfc690"
     },
     {
       "q": "A tax cut lowers saving while a business tax credit raises investment demand. What happens to NX?",
@@ -6775,7 +7177,7 @@ const questionBanks = {
         "net exports fall through both channels",
         "net exports rise through both channels",
         "the effect is ambiguous because the channels offset",
-        "NX is fixed by trade policy"
+        "Net exports are fixed by trade policy"
       ],
       "tag": "open_economy_synthesis",
       "type": "integration",
@@ -6794,7 +7196,7 @@ const questionBanks = {
         "net exports rise through both channels",
         "net exports fall through both channels",
         "the effect is ambiguous because the channels offset",
-        "NX is fixed by the exchange regime"
+        "Net exports are fixed by the exchange regime"
       ],
       "tag": "open_economy_synthesis",
       "type": "integration",
@@ -6808,12 +7210,12 @@ const questionBanks = {
       "aHash": "2188518421d3692ce3a51303fd7edde8286eaa9cf3cdbcbbeca689c669d3ee5f"
     },
     {
-      "q": "A tax increase raises saving while investment optimism raises investment demand. What is the honest answer for NX?",
+      "q": "A tax increase raises saving while investment optimism raises investment demand. What can be concluded about net exports?",
       "options": [
-        "ambiguous without magnitudes",
-        "NX must rise",
-        "NX must fall",
-        "NX cannot move"
+        "Net exports may go either way",
+        "Net exports must increase",
+        "Net exports must decrease",
+        "Net exports must stay unchanged"
       ],
       "tag": "open_economy_synthesis",
       "type": "integration",
@@ -6824,15 +7226,15 @@ const questionBanks = {
       "feedback": "One force raises S - I while the other lowers it.",
       "id": 379,
       "difficulty": "elite",
-      "aHash": "38dd270789c01d67ddf3e1e26099406551477b4510dc4fe7c7e2323b8d965f2d"
+      "aHash": "c197fefe44f2fd7661fcee1cdf073d0f7b56004f3be616c8c5c80729b478973c"
     },
     {
-      "q": "A tax cut lowers saving while investment pessimism lowers investment demand. What is the honest answer for NX?",
+      "q": "A tax cut lowers saving while investment pessimism lowers investment demand. What can be concluded about net exports?",
       "options": [
-        "ambiguous without magnitudes",
-        "NX must rise",
-        "NX must fall",
-        "NX cannot move"
+        "Net exports may go either way",
+        "Net exports must increase",
+        "Net exports must decrease",
+        "Net exports must stay unchanged"
       ],
       "tag": "open_economy_synthesis",
       "type": "integration",
@@ -6843,10 +7245,10 @@ const questionBanks = {
       "feedback": "One force lowers S - I while the other raises it.",
       "id": 380,
       "difficulty": "elite",
-      "aHash": "38dd270789c01d67ddf3e1e26099406551477b4510dc4fe7c7e2323b8d965f2d"
+      "aHash": "c197fefe44f2fd7661fcee1cdf073d0f7b56004f3be616c8c5c80729b478973c"
     },
     {
-      "q": "Fiscal expansion under floating rates versus fixed rates differs because...",
+      "q": "Why does fiscal expansion have different effects under floating and fixed exchange rates?",
       "options": [
         "floating rates adjust e; fixed rates require money-supply intervention",
         "floating rates require money-supply intervention; fixed rates adjust e freely",
@@ -6865,10 +7267,10 @@ const questionBanks = {
       "aHash": "f758b3c69c43db0a06198a1bfc98874bcb7adbbd72b0a451eb6aee35dae1cb5a"
     },
     {
-      "q": "Monetary expansion under floating rates versus fixed rates differs because...",
+      "q": "Why does monetary expansion have different effects under floating and fixed exchange rates?",
       "options": [
-        "floating rates allow depreciation; fixed rates force reversal to defend the peg",
-        "floating rates force reversal; fixed rates allow depreciation",
+        "Floating permits depreciation; defending a peg reverses the expansion",
+        "Floating requires reversal; a fixed rate permits the currency to depreciate",
         "both regimes make money neutral immediately",
         "neither affects output"
       ],
@@ -6881,130 +7283,13 @@ const questionBanks = {
       "feedback": "Monetary autonomy depends on the exchange-rate regime.",
       "id": 382,
       "difficulty": "elite",
-      "aHash": "6ba23ba99db19ba8ab4119a43db7b0a89dd09895250346b480584f3cfa74fc4e"
-    },
-    {
-      "q": "Why is the open-economy aggregate demand curve downward sloping in Mundell-Fleming model?",
-      "options": [
-        "lower P raises M/P, shifts LM* right, depreciates e, and raises NX",
-        "lower P shifts IS* left and lowers imports",
-        "higher P raises M/P and raises output",
-        "r* moves down whenever P falls"
-      ],
-      "tag": "mundell_fleming_ad",
-      "type": "integration",
-      "objective": "LO14.4",
-      "conceptCluster": "open_economy_ad_slope",
-      "primarySkill": "open_economy_ad_slope",
-      "repairSkill": "open_economy_ad_slope",
-      "feedback": "The price level affects real balances, which triggers the exchange-rate and net-export channel.",
-      "id": 383,
-      "difficulty": "elite",
-      "aHash": "4d6c566c18eb617abbb6978b679db85fa6642b174e673e82ce8ca7813a3b0a90"
-    },
-    {
-      "q": "Refer to the image above. Why does point B sit on LRAS?",
-      "options": [
-        "Y2 is the long-run output level",
-        "P2 is always the highest price",
-        "B is a tariff equilibrium",
-        "LM* cannot move through B"
-      ],
-      "tag": "mundell_fleming_ad",
-      "type": "graph",
-      "objective": "LO14.4",
-      "conceptCluster": "derive_ad_from_mf",
-      "primarySkill": "derive_ad_from_mf",
-      "repairSkill": "derive_ad_from_mf",
-      "feedback": "LRAS marks the long-run output level, shown at Y2.",
-      "image": "mundell_adas.png",
-      "id": 384,
-      "difficulty": "elite",
-      "aHash": "16829a79375707f8ea112c0e87a3a525300e930b0c989356c4cebf42a8e2d247"
-    },
-    {
-      "q": "Refer to the image above. Why does a movement from A to B require IS* to shift left?",
-      "options": [
-        "B is back on the middle IS* position at Y*",
-        "B requires LM* to shift right",
-        "B is a lower price-level point on aggregate demand",
-        "B is outside the model"
-      ],
-      "tag": "mundell_fleming_is_lm",
-      "type": "graph",
-      "objective": "LO14.1",
-      "conceptCluster": "is_star_exchange_rate",
-      "primarySkill": "is_star_exchange_rate",
-      "repairSkill": "is_star_exchange_rate",
-      "feedback": "A to B reverses the rightward IS* movement.",
-      "image": "islm_exchangerates.png",
-      "id": 385,
-      "difficulty": "elite",
-      "aHash": "1215443401b0909ca596b4bd700a3ecdd4023507d96e482a29a7be91a5872030"
-    },
-    {
-      "q": "Refer to the image above. Why does a movement from C to B require LM* to shift left?",
-      "options": [
-        "B is back on the middle LM* position",
-        "B requires IS* to shift right",
-        "B is a tariff equilibrium",
-        "B changes S - I"
-      ],
-      "tag": "mundell_fleming_is_lm",
-      "type": "graph",
-      "objective": "LO14.1",
-      "conceptCluster": "lm_star_money_market",
-      "primarySkill": "lm_star_money_market",
-      "repairSkill": "lm_star_money_market",
-      "feedback": "C to B reverses the rightward LM* movement.",
-      "image": "islm_er_change.png",
-      "id": 386,
-      "difficulty": "elite",
-      "aHash": "1be4c8d8a99ea020f605b39c19b9a636bc1a5432342a032ab1f8f49013333fbc"
-    },
-    {
-      "q": "Why can Chapter 6 policy questions often start with S - I even when the final answer asks about NX?",
-      "options": [
-        "because S - I = NX pins the trade balance in the small-open long-run model",
-        "because NX is unrelated to saving",
-        "because investment is always fixed at zero",
-        "because the exchange rate is fixed by fiscal law"
-      ],
-      "tag": "accounting_identities",
-      "type": "integration",
-      "objective": "LO6.1",
-      "difficulty": "elite",
-      "conceptCluster": "open_economy_identity",
-      "primarySkill": "open_economy_identity",
-      "repairSkill": "open_economy_identity",
-      "feedback": "The identity tells you that changes in S - I map into NX.",
-      "id": 387,
-      "aHash": "16ca62c5e986072c6edce4e242df3feaee9f9ab00380a232916749e90662b9c1"
-    },
-    {
-      "q": "Why does NX = NCO matter before discussing exchange-rate adjustment?",
-      "options": [
-        "it connects the goods-market balance to international financial flows",
-        "it replaces the need for a real exchange rate",
-        "it means exports and imports are always equal",
-        "it makes fiscal policy irrelevant"
-      ],
-      "tag": "accounting_identities",
-      "type": "integration",
-      "objective": "LO6.1",
-      "difficulty": "elite",
-      "conceptCluster": "open_economy_identity",
-      "primarySkill": "open_economy_identity",
-      "repairSkill": "open_economy_identity",
-      "feedback": "The exchange-rate story clears the goods-market outcome implied by capital flows.",
-      "id": 388,
-      "aHash": "16f085fd63f98cfdc0192e30bf81a36046f0a35f779a866f0065f34e87d04335"
+      "aHash": "34989a7ffb031b3b184c18ace576fbc2392297bd42986a2dab3b4f662a96bd13"
     },
     {
       "q": "Which answer correctly separates identity from mechanism?",
       "options": [
-        "S - I = NX is the accounting link; exchange-rate adjustment explains how the goods market reaches it",
-        "S - I = NX means tariffs always raise NX",
+        "S − I = NX is an identity; exchange-rate adjustment brings trade into balance",
+        "S − I = NX guarantees that any tariff raises net exports without changing saving or investment",
         "NX = NCO means exchange rates cannot move",
         "Y = C + I + G + NX means saving is irrelevant"
       ],
@@ -7017,7 +7302,7 @@ const questionBanks = {
       "repairSkill": "open_economy_identity",
       "feedback": "The identity tells what must hold; the model explains adjustment.",
       "id": 389,
-      "aHash": "7ce98f31b7261964265a330ec397ab060dfb5272e33b77530c51d2274f90d6fe"
+      "aHash": "7b94d16c7df4f6ec90bc683bfb07eed4c2f687f69b7258afb73bcaea2cb09706"
     }
   ],
   "legendary": [
@@ -7025,7 +7310,7 @@ const questionBanks = {
       "id": 9000,
       "q": "Same fiscal expansion, two regimes. Under floating rates output is muted; under fixed rates output is amplified. Why?",
       "options": [
-        "floating appreciation crowds out NX, while fixed-rate defense expands money supply",
+        "Floating permits appreciation; peg defense requires money creation",
         "floating rates require reserve defense, while fixed rates do not",
         "both regimes produce identical LM* shifts",
         "tariffs determine the entire result"
@@ -7038,16 +7323,16 @@ const questionBanks = {
       "primarySkill": "open_economy_synthesis",
       "repairSkill": "open_economy_synthesis",
       "feedback": "The exchange-rate regime determines whether the central bank offsets or reinforces the shock.",
-      "aHash": "2dbbf32ad91841c8c32eac3b35c72a9d9d8a3aff589a67a113438034fb0be9d2"
+      "aHash": "96ce9a3328950c3bf68f327026ad8831f3e506f43dce2b621bef8d03fb18b75c"
     },
     {
       "id": 9001,
-      "q": "A tariff under Chapter 6 and under floating-rate Mundell-Fleming model shares what final lesson?",
+      "q": "A tariff under the classical small-open-economy model and under the Mundell–Fleming model with floating exchange rates shares what final lesson?",
       "options": [
-        "exchange-rate appreciation offsets much of the direct trade effect",
-        "tariffs permanently raise NX and output",
-        "tariffs shift LM* right",
-        "tariffs lower r* in a small economy"
+        "Appreciation offsets the direct trade-policy effect",
+        "Tariffs permanently raise net exports and output",
+        "Tariffs shift the LM* curve to the right",
+        "Tariffs lower world interest rate in a small economy"
       ],
       "tag": "trade_policy",
       "type": "legendary_trap",
@@ -7057,14 +7342,14 @@ const questionBanks = {
       "primarySkill": "tariff_exchange_rate_offset",
       "repairSkill": "tariff_exchange_rate_offset",
       "feedback": "The exchange rate does the dirty work in both versions.",
-      "aHash": "81451f74306468265e4c210c729b53182aae75f2e93a1f8e25d4462fe74226a0"
+      "aHash": "296ee1557c8e6acf3e1e7233cc682c3d99f5afa88725655c83e103d7e817a0ef"
     },
     {
       "id": 9002,
       "q": "A country wants to stimulate output but also keep a fixed exchange rate and free capital mobility. Which tool is more plausible?",
       "options": [
-        "fiscal expansion, because monetary expansion is blocked by the peg",
-        "monetary expansion, because pegs make it stronger",
+        "Fiscal expansion, since defending the peg constrains money",
+        "Monetary expansion, since defending a peg strengthens its effect on output",
         "tariffs, because they shift LM*",
         "capital flight, because it raises welfare"
       ],
@@ -7076,7 +7361,7 @@ const questionBanks = {
       "primarySkill": "fixed_fiscal_policy",
       "repairSkill": "fixed_fiscal_policy",
       "feedback": "Under fixed rates, fiscal policy is effective; monetary independence is sacrificed.",
-      "aHash": "346401989f29fb2ff62ad9192223595e9c7f29459ce5d783661930bfb415f86b"
+      "aHash": "cc18f1141e6e9e7d3a4c582f00e6a56808a3c0851baf22ce97fc2cfe571b146f"
     },
     {
       "id": 9003,
@@ -7094,15 +7379,15 @@ const questionBanks = {
       "conceptCluster": "floating_monetary_policy",
       "primarySkill": "floating_monetary_policy",
       "repairSkill": "floating_monetary_policy",
-      "feedback": "Lower money demand shifts LM* right, like a monetary expansion.",
+      "feedback": "Lower money demand shifts the LM* curve to the right, like a monetary expansion.",
       "aHash": "d92279d6504f43718aa73f69adabe1f64e7954615b2dc8e219f40934da4316e5"
     },
     {
       "id": 9004,
       "q": "If students say 'depreciation always means stronger economy,' which counterexample should you use?",
       "options": [
-        "capital flight can depreciate the currency while signaling crisis",
-        "tariffs always depreciate the currency",
+        "Capital flight causes depreciation during a crisis",
+        "Tariffs always cause depreciation by reducing demand for domestic currency",
         "saving always disappears",
         "fixed rates always float"
       ],
@@ -7114,15 +7399,15 @@ const questionBanks = {
       "primarySkill": "capital_flight_exchange_rate",
       "repairSkill": "capital_flight_exchange_rate",
       "feedback": "Exchange-rate direction alone is not a welfare judgment.",
-      "aHash": "0e434c2b525de6d050631d7433b4bfb7cd8685105a991df5030e7c7ef9b85860"
+      "aHash": "c4b0c4223dd702f9389c83aad4c2922ef29fe8dc33e8c0924164f336af17a465"
     },
     {
       "id": 9005,
-      "q": "A domestic fiscal expansion lowers saving while a foreign fiscal contraction lowers r*. What is ambiguous?",
+      "q": "In a small open economy, domestic fiscal expansion lowers saving while foreign fiscal contraction lowers the world interest rate. What happens to net exports?",
       "options": [
         "the net effect on domestic investment and NX can pull in opposite directions",
         "both shocks necessarily lower net exports",
-        "both shocks necessarily raise NX",
+        "Both shocks necessarily raise net exports",
         "neither shock affects S - I"
       ],
       "tag": "open_economy_synthesis",
@@ -7132,12 +7417,12 @@ const questionBanks = {
       "conceptCluster": "open_economy_synthesis",
       "primarySkill": "open_economy_synthesis",
       "repairSkill": "open_economy_synthesis",
-      "feedback": "Domestic saving falls lowers NX; lower r* raises investment and can also lower net exports, depending framing, but channels must be separated.",
-      "aHash": "dfc79c21524a856470af9173c5b19a97ebea7b464917638c5d4fa609fbd8aa75"
+      "feedback": "NX = S − I(r*). Domestic fiscal expansion lowers S; the lower world interest rate raises I. Both changes lower net exports.",
+      "aHash": "7899d77fa1c3083d7a79af332e670a0c35b27a27c6c4470f84584034bf4992ce"
     },
     {
       "id": 9006,
-      "q": "Refer to the image above. Which movement best represents higher saving rather than a tariff?",
+      "q": "Refer to the real exchange rate graph. Which movement best represents higher saving rather than a tariff?",
       "options": [
         "E to I",
         "B to A",
@@ -7157,11 +7442,11 @@ const questionBanks = {
     },
     {
       "id": 9007,
-      "q": "Refer to the image above. Why is B to A not a saving shock?",
+      "q": "Refer to the net exports and the real exchange rate graph. Why is B to A not a saving shock?",
       "options": [
-        "the NX(R) curve shifts while S - I stays fixed",
+        "Net-export demand shifts; S − I is fixed",
         "S - I shifts right",
-        "LM* shifts right",
+        "Monetary expansion shifts LM* to the right",
         "investment demand falls"
       ],
       "tag": "trade_policy",
@@ -7173,16 +7458,16 @@ const questionBanks = {
       "repairSkill": "tariff_exchange_rate_offset",
       "feedback": "A trade policy shifts the NX curve, not the S - I line.",
       "image": "tradepolicies.png",
-      "aHash": "9f4ed070e1000af7ccfe6344288fc188a29917b40e14e29c1ed3ba68eba27acf"
+      "aHash": "7b0c9c2b0ef750f4a3a7da8401c896c0a8a371f5df5ac247c17b4219c02f4d82"
     },
     {
       "id": 9008,
-      "q": "Refer to the image above. The left panel explains the right-panel aggregate demand curve because...",
+      "q": "Refer to the Mundell–Fleming and aggregate demand–aggregate supply graph. How does the adjustment in the left panel explain the aggregate demand curve in the right panel?",
       "options": [
-        "different price levels shift LM* and produce different Y values",
+        "Prices change real balances, shifting LM* and output",
         "different tariffs shift LRAS",
         "r* is shown changing directly",
-        "government spending is on the vertical axis"
+        "Government purchases, rather than prices, are measured on the vertical axis"
       ],
       "tag": "mundell_fleming_ad",
       "type": "graph",
@@ -7193,13 +7478,13 @@ const questionBanks = {
       "repairSkill": "derive_ad_from_mf",
       "feedback": "Changing P changes M/P, LM*, e, NX, and Y.",
       "image": "mundell_adas.png",
-      "aHash": "68a8d596ab5c34020b8a895a446a83bf06c806e15c77e00dfef1a6fe82593d11"
+      "aHash": "e9f75712e5f0e808f06e1172508cd79698af2aa5c62ede658de01d01a571c914"
     },
     {
       "id": 9009,
-      "q": "Refer to the image above. Choosing side 3 means choosing...",
+      "q": "Refer to the policy trilemma graph. Which combination of policy objectives is represented by side 3 of the impossible-trinity triangle?",
       "options": [
-        "fixed exchange rate and free capital mobility, giving up monetary independence",
+        "Fixed exchange rates and free capital mobility",
         "monetary independence and free capital mobility",
         "fixed rate and monetary independence",
         "all three corners"
@@ -7213,7 +7498,7 @@ const questionBanks = {
       "repairSkill": "impossible_trinity",
       "feedback": "Side 3 connects fixed exchange rate and free capital mobility.",
       "image": "impossibletrinity.png",
-      "aHash": "15702918a730735d66b77183129e23bd7a8606eaa2fd035d049a4b447ec843c4"
+      "aHash": "578ec1f54359ecf18258e58d71d8bd3f40ec433eee0f1ee6b8c9cb2cc8e3c225"
     },
     {
       "id": 9010,
@@ -7236,7 +7521,7 @@ const questionBanks = {
     },
     {
       "id": 9011,
-      "q": "S = 1,600 and I = 1,350. Then investment demand rises by 300 with saving unchanged. New NX is...",
+      "q": "National saving is 1,600 and investment is initially 1,350. Investment demand then raises investment by 300 while saving is unchanged. What is the new level of net exports?",
       "options": [
         "-50",
         "250",
@@ -7255,7 +7540,7 @@ const questionBanks = {
     },
     {
       "id": 9012,
-      "q": "e = 0.8, P = 150, and P* = 100. If e rises to 1.0 with prices fixed, ε changes from...",
+      "q": "Initially, e = 0.8, P = 150, and P* = 100. If e rises to 1.0 while both price levels stay fixed, how does the real exchange rate ε = eP/P* change?",
       "options": [
         "1.2 to 1.5",
         "1.5 to 1.2",
@@ -7276,9 +7561,9 @@ const questionBanks = {
       "id": 9013,
       "q": "Why does the small-open-economy assumption matter for fiscal-policy questions?",
       "options": [
-        "it keeps r fixed at r*, forcing adjustment through capital flows and exchange rates",
+        "The world rate fixes interest; capital flows and exchange rates adjust",
         "it eliminates saving",
-        "it makes NX unrelated to policy",
+        "Net exports become independent of every domestic fiscal-policy decision",
         "it makes imports equal zero"
       ],
       "tag": "small_open_world_interest_rate",
@@ -7289,7 +7574,7 @@ const questionBanks = {
       "primarySkill": "small_open_assumption",
       "repairSkill": "small_open_assumption",
       "feedback": "The interest rate does not do the adjusting in the small-open model.",
-      "aHash": "011cbb82a00e317245998d482b394bd1a2eadecffb4498b50510757790ff30ee"
+      "aHash": "d01482d274ef07181cb6a5a8b74ec61864bcc8fbfcaf100ae2f8158813cf027e"
     },
     {
       "id": 9014,
@@ -7297,7 +7582,7 @@ const questionBanks = {
       "options": [
         "both the interest rate and international capital flows adjust",
         "neither the interest rate nor NX adjusts",
-        "r is fixed exactly at r*",
+        "The real interest rate is fixed exactly at r*",
         "the exchange rate channel is ignored even though the model uses it"
       ],
       "tag": "large_open_economy",
@@ -7312,12 +7597,12 @@ const questionBanks = {
     },
     {
       "id": 9015,
-      "q": "A central bank under a peg faces appreciation pressure after fiscal expansion. To defend the peg, it must...",
+      "q": "Fiscal expansion creates appreciation pressure under a fixed exchange rate. How must the central bank respond to defend the peg?",
       "options": [
         "sell domestic currency and expand the money supply",
         "buy domestic currency and contract the money supply",
         "let the exchange rate float while keeping the peg",
-        "raise tariffs until LM* shifts left"
+        "Raise tariffs until the LM* curve shifts to the left"
       ],
       "tag": "fixed_exchange_policy",
       "type": "policy_memo",
@@ -7350,11 +7635,11 @@ const questionBanks = {
     },
     {
       "id": 9017,
-      "q": "Which shock shifts IS* right but does not shift LM* directly?",
+      "q": "Which shock shifts the IS* curve to the right but does not shift LM* directly?",
       "options": [
         "higher government purchases",
-        "higher money supply",
-        "lower price level",
+        "an increase in the money supply",
+        "a decline in the price level",
         "lower money demand"
       ],
       "tag": "mundell_fleming_is_lm",
@@ -7369,7 +7654,7 @@ const questionBanks = {
     },
     {
       "id": 9018,
-      "q": "Which shock shifts LM* right but does not shift IS* directly?",
+      "q": "Which shock shifts the LM* curve to the right but does not shift IS* directly?",
       "options": [
         "higher money supply",
         "higher government purchases",
@@ -7388,11 +7673,11 @@ const questionBanks = {
     },
     {
       "id": 9019,
-      "q": "If P rises above the level consistent with long-run output, what adjustment pulls Y back?",
+      "q": "In floating-rate Mundell–Fleming, output initially exceeds its long-run level. With nominal money and other AD determinants unchanged, which channel lets rising prices bring output back toward its long-run level?",
       "options": [
-        "real balances fall, LM* shifts left, and income falls",
-        "real balances rise, LM* shifts right, and income rises",
-        "IS* shifts right permanently",
+        "Real balances fall, the LM* curve shifts to the left, and income falls",
+        "Real balances rise, the LM* curve shifts to the right, and income rises",
+        "The IS* curve shifts to the right permanently",
         "net exports rise because appreciation boosts exports"
       ],
       "tag": "mundell_fleming_ad",
@@ -7402,15 +7687,15 @@ const questionBanks = {
       "conceptCluster": "open_economy_ad_slope",
       "primarySkill": "open_economy_ad_slope",
       "repairSkill": "open_economy_ad_slope",
-      "feedback": "Higher P reduces M/P, appreciating the exchange rate and lowering NX/Y.",
-      "aHash": "e32d7e5f35656740ce63423c596a52ce9eb931e497ac15138c383ad47f39aade"
+      "feedback": "Rising the price level lowers M/P, shifting the LM* curve to the left. Currency appreciation reduces net exports and income. This price adjustment reduces an initially excessive output level; the starting condition is output above its long-run level.",
+      "aHash": "482f862de5121286ed12dccee8f10b20854a3cefe996b3f04138e4317666dae8"
     },
     {
       "id": 9020,
-      "q": "A fiscal expansion under floating rates and a fiscal expansion under fixed rates can point in opposite output directions. What is the core reason?",
+      "q": "A fiscal expansion under floating rates and a fiscal expansion under fixed rates can point in different output effects. What is the core reason?",
       "options": [
-        "the exchange-rate regime determines whether appreciation offsets or monetary accommodation reinforces the IS* shift",
-        "floating rates force the central bank to defend the peg",
+        "Floating permits appreciation; peg defense adds monetary stimulus",
+        "Floating rates require central banks to defend the original exchange rate",
         "fixed rates always eliminate capital mobility",
         "fiscal policy never affects IS*"
       ],
@@ -7421,16 +7706,16 @@ const questionBanks = {
       "conceptCluster": "regime_comparison",
       "primarySkill": "fixed_floating_exchange_regimes",
       "repairSkill": "fixed_floating_exchange_regimes",
-      "feedback": "The exchange-rate regime changes the adjustment path.",
-      "aHash": "080f6edf889d720a465ca5d8ec39856f68b6b2d08ad261e4d0c21b125033e82f"
+      "feedback": "With floating rates, fiscal expansion induces appreciation that crowds out net exports at unchanged LM*. With a peg, reserve purchases expand money to defend the rate, accommodating higher output.",
+      "aHash": "8123a53897f62227546c01fc386669ac030be67dca16fe1ca27af95de775639e"
     },
     {
       "id": 9021,
-      "q": "A tariff in Chapter 6 and a tariff in the floating-rate Mundell-Fleming model share which warning?",
+      "q": "A tariff in the classical small-open-economy model and a tariff in the Mundell–Fleming model with floating exchange rates share which warning?",
       "options": [
-        "exchange-rate appreciation can offset the direct net-export effect",
+        "Appreciation can offset the net-export gain",
         "tariffs always raise long-run saving",
-        "tariffs always shift LM* right",
+        "Tariffs always shift the LM* curve to the right",
         "tariffs remove the need to track S - I"
       ],
       "tag": "trade_policy",
@@ -7441,7 +7726,7 @@ const questionBanks = {
       "primarySkill": "tariff_exchange_rate_offset",
       "repairSkill": "tariff_exchange_rate_offset",
       "feedback": "Both models warn against stopping at the first import effect.",
-      "aHash": "84b93eb0f8ada37008b05a059295cdf7bb2ab939e96f6d6d03e5a374063daf60"
+      "aHash": "e15ab57de7c2f67928dc92233c9f0abaa5db3fe5a3542a55c0ed8f0a60e18be3"
     },
     {
       "id": 9022,
@@ -7485,7 +7770,7 @@ const questionBanks = {
       "id": 9024,
       "q": "If a student says “depreciation always proves the economy is stronger,” which counterexample breaks that claim?",
       "options": [
-        "capital flight can cause depreciation while signaling crisis and lost confidence",
+        "Capital flight can cause depreciation during a crisis",
         "a tariff can cause appreciation while raising saving",
         "fiscal consolidation always causes depreciation through higher imports",
         "balanced trade means there is no exchange rate"
@@ -7498,16 +7783,16 @@ const questionBanks = {
       "primarySkill": "capital_flight_exchange_rate",
       "repairSkill": "capital_flight_exchange_rate",
       "feedback": "Depreciation can come from a bad shock.",
-      "aHash": "5171489eb4347c5eb20b04b211021c4ba5b28f3374f4bbbfb566f1e2ac602a1b"
+      "aHash": "fd13a150574c1746ab5b9ef33e0bf8228cf4046e1e8b24205c933f5a1c8c915f"
     },
     {
       "id": 9025,
-      "q": "Domestic fiscal expansion lowers saving while foreign fiscal contraction lowers the world interest rate. Which outcome is ambiguous?",
+      "q": "In a small open economy, domestic fiscal expansion lowers saving while foreign fiscal contraction lowers the world interest rate. What happens to S − I and net exports?",
       "options": [
-        "the final change in S - I and net exports",
-        "the fact that saving falls domestically",
-        "the fact that investment responds to r*",
-        "the identity NX = NCO"
+        "Saving minus investment and net exports both fall",
+        "Saving minus investment and net exports both rise",
+        "Saving minus investment falls while net exports rise",
+        "Saving minus investment and net exports remain unchanged"
       ],
       "tag": "open_economy_synthesis",
       "type": "integration",
@@ -7516,12 +7801,12 @@ const questionBanks = {
       "conceptCluster": "opposing_shocks",
       "primarySkill": "foreign_fiscal_policy",
       "repairSkill": "foreign_fiscal_policy",
-      "feedback": "One shock lowers saving; the other changes investment through the world interest rate.",
-      "aHash": "1db5a1667fa1fc57add76a0ab6955c6cba38288eaf8c1853ea60424696d57a27"
+      "feedback": "The saving reduction lowers S − I. The lower world interest rate raises investment, reducing S − I further. Since NX = S − I, both shocks lower net exports.",
+      "aHash": "c602a140fb0d0847f02a1c41dad700ceb3f09d765bf15d63019df09be2ca871b"
     },
     {
       "id": 9026,
-      "q": "Refer to the image above. Which movement is more consistent with higher saving rather than a tariff?",
+      "q": "Refer to the real exchange rate graph. Which movement is more consistent with higher saving rather than a tariff?",
       "options": [
         "E to I",
         "B to A",
@@ -7541,7 +7826,7 @@ const questionBanks = {
     },
     {
       "id": 9027,
-      "q": "Refer to the image above. Which feature shows this is a trade-policy shift rather than a saving shift?",
+      "q": "Refer to the net exports and the real exchange rate graph. Which feature shows this is a trade-policy shift rather than a saving shift?",
       "options": [
         "the net-exports curve shifts while the S - I line stays fixed",
         "the S - I line shifts right while the net-exports curve stays fixed",
@@ -7561,12 +7846,12 @@ const questionBanks = {
     },
     {
       "id": 9028,
-      "q": "Refer to the image above. Why does a lower price level map to higher output on the aggregate demand curve?",
+      "q": "Refer to the Mundell–Fleming and aggregate demand–aggregate supply graph. Why does a lower price level map to higher output on the aggregate demand curve?",
       "options": [
-        "lower P raises M/P, shifts LM* right, depreciates the currency, and raises net exports",
-        "lower P shifts IS* left and lowers net exports",
-        "lower P fixes the exchange rate and removes the money market",
-        "lower P shifts LRAS right immediately"
+        "Lower prices raise real balances; depreciation then increases net exports",
+        "Lower prices reduce real balances; appreciation then increases net exports",
+        "Lower price level fixes the exchange rate and removes the money market",
+        "Lower price level shifts the LRAS curve to the right immediately"
       ],
       "tag": "mundell_fleming_ad",
       "type": "graph",
@@ -7575,13 +7860,13 @@ const questionBanks = {
       "conceptCluster": "ad_graph_synthesis",
       "primarySkill": "derive_ad_from_mf",
       "repairSkill": "derive_ad_from_mf",
-      "feedback": "The Mundell-Fleming model channel runs through real balances, LM*, the exchange rate, and net exports.",
+      "feedback": "The Mundell–Fleming model channel runs through real balances, LM*, the exchange rate, and net exports.",
       "image": "mundell_adas.png",
-      "aHash": "dcd35f50c927314a370c8eada9c34babe227e2879ea98ac082cb57735bc69101"
+      "aHash": "af42356b791fc4bcd4c80ae5478bdb16ad91af64c3696e3cf13fa70df53677b0"
     },
     {
       "id": 9029,
-      "q": "Refer to the image above. If a country chooses side 3, which policy freedom is lost?",
+      "q": "Refer to the policy trilemma graph. If a country chooses side 3, which policy freedom is lost?",
       "options": [
         "independent monetary policy",
         "free capital mobility",
@@ -7600,9 +7885,9 @@ const questionBanks = {
       "aHash": "dd2555485f1265b2efedec85cd460ea4fba4bb0f1b68ac8756ead3f13ddc6a8d"
     },
     {
-      "q": "A fiscal expansion in a small open economy lowers NX in Chapter 6, but fiscal expansion under floating rates leaves Y largely unchanged in Mundell-Fleming model. What links the two results?",
+      "q": "A fiscal expansion in a small open economy lowers net exports in the classical small-open-economy model, but fiscal expansion under floating rates leaves Y largely unchanged in the Mundell–Fleming model. What links the two results?",
       "options": [
-        "exchange-rate appreciation crowds out net exports",
+        "Appreciation crowds out net exports",
         "the world interest rate falls in both models",
         "the money supply expands automatically",
         "imports are fixed"
@@ -7613,13 +7898,13 @@ const questionBanks = {
       "conceptCluster": "open_economy_synthesis",
       "primarySkill": "open_economy_synthesis",
       "repairSkill": "open_economy_synthesis",
-      "feedback": "Legendary items require separating the model channel before judging the final outcome.",
+      "feedback": "In the classical small-open-economy model, lower saving reduces S−I and the real exchange rate appreciates to reduce net exports. In short-run floating-rate Mundell–Fleming, higher fiscal demand shifts the IS* curve to the right; appreciation crowds out NX while fixed LM* pins Y. The models differ in their output assumptions but share the exchange-rate crowding-out channel.",
       "id": 9030,
       "difficulty": "legendary",
-      "aHash": "ff9d4e015c7c62ea6e4314db3322c74e8c7837f26355c5cc48686eb0785ebbe2"
+      "aHash": "243ccfbe992a7d96d31a0a29b988538ac8fdb5129ef292a9009c9b49d1d5ca00"
     },
     {
-      "q": "A tariff under Chapter 6 and a tariff under floating-rate Mundell-Fleming model both disappoint protectionist expectations. Why?",
+      "q": "A tariff under the classical small-open-economy model and a tariff under the Mundell–Fleming model with floating exchange rates both disappoint protectionist expectations. Why?",
       "options": [
         "exchange-rate appreciation offsets the direct NX effect",
         "saving rises enough to cancel the tariff",
@@ -7632,18 +7917,18 @@ const questionBanks = {
       "conceptCluster": "open_economy_synthesis",
       "primarySkill": "open_economy_synthesis",
       "repairSkill": "open_economy_synthesis",
-      "feedback": "Legendary items require separating the model channel before judging the final outcome.",
+      "feedback": "The tariff raises net exports demand at a given exchange rate. In the classical small-open-economy model, unchanged S−I fixes equilibrium NX; under floating-rate Mundell–Fleming, unchanged LM* fixes Y and therefore the NX compatible with other spending. Appreciation offsets the direct trade stimulus in both benchmarks.",
       "id": 9031,
       "difficulty": "legendary",
       "aHash": "fa473b8c2bea5c4bfb03e1e25b2e4c6ba9453a1114d51030c2e3f4acf6ee1b74"
     },
     {
-      "q": "A price-level decline in Mundell-Fleming model raises Y along aggregate demand. What is the mechanism?",
+      "q": "A price-level decline in floating-rate Mundell–Fleming raises output along aggregate demand. What is the mechanism?",
       "options": [
-        "higher M/P shifts LM* right, depreciates the currency, and raises NX",
-        "lower P shifts IS* left and lowers NX",
-        "higher P raises real balances and output",
-        "r* falls because domestic prices fall"
+        "Higher real balances shift LM* right; depreciation raises net exports",
+        "Lower price level shifts the IS* curve to the left and lowers net exports",
+        "Higher price level raises real balances and output",
+        "The world interest rate falls because domestic prices fall"
       ],
       "tag": "open_economy_synthesis",
       "type": "integration",
@@ -7651,15 +7936,15 @@ const questionBanks = {
       "conceptCluster": "open_economy_synthesis",
       "primarySkill": "open_economy_synthesis",
       "repairSkill": "open_economy_synthesis",
-      "feedback": "Legendary items require separating the model channel before judging the final outcome.",
+      "feedback": "With nominal M fixed, lower price level raises M/P and shifts the LM* curve to the right. Under floating rates the currency depreciates, raising NX and output along the derived AD curve. Domestic prices do not set the given world interest rate.",
       "id": 9032,
       "difficulty": "legendary",
-      "aHash": "f8ce770d4041000af17bfe4d682fc301811ab7d5da52be614e3c5a7312665eea"
+      "aHash": "a8ee40cf088feabe7dc3500a1fc79e92a631c208e09ca576d4db2ecf656a6de1"
     },
     {
       "q": "A country wants fixed exchange rates, free capital mobility, and recession-fighting monetary expansion. What is the verdict?",
       "options": [
-        "the trilemma blocks all three; one goal must be abandoned",
+        "One of the three goals must be abandoned",
         "the package works if NX is positive",
         "the package works if the country imports less",
         "the trilemma applies only to closed economies"
@@ -7670,16 +7955,16 @@ const questionBanks = {
       "conceptCluster": "open_economy_synthesis",
       "primarySkill": "open_economy_synthesis",
       "repairSkill": "open_economy_synthesis",
-      "feedback": "Legendary items require separating the model channel before judging the final outcome.",
+      "feedback": "A monetary expansion under a peg creates capital outflow and depreciation pressure. Defending the peg reverses the expansion when capital can move freely. The country must relax the peg, capital mobility or monetary independence.",
       "id": 9033,
       "difficulty": "legendary",
-      "aHash": "1d99ac3e9eaaa4e28c7cffab3015dccd833d31af961c5409ee1d2c07f86bc368"
+      "aHash": "867de04307f6974c30a900c18ab636fc3b193ba46b078e3b8dd95bb1ff88c54b"
     },
     {
-      "q": "Capital flight depreciates the currency and may raise NX. Why is that not automatically good news?",
+      "q": "Capital flight depreciates the currency and may raise net exports. Why is that not automatically good news?",
       "options": [
-        "the NX rise comes from financial stress and reduced demand for domestic assets",
-        "a weaker currency always means stronger real income",
+        "Financial stress and weaker asset demand can raise net exports",
+        "A currency depreciation always raises real household income and improves welfare",
         "capital flight raises investment automatically",
         "capital flight fixes the exchange rate"
       ],
@@ -7689,15 +7974,15 @@ const questionBanks = {
       "conceptCluster": "open_economy_synthesis",
       "primarySkill": "open_economy_synthesis",
       "repairSkill": "open_economy_synthesis",
-      "feedback": "Legendary items require separating the model channel before judging the final outcome.",
+      "feedback": "Capital flight reduces demand for domestic assets and can disrupt financing. The resulting depreciation may raise net exports through relative prices while investment and confidence deteriorate. A higher trade balance alone is not a welfare verdict.",
       "id": 9034,
       "difficulty": "legendary",
-      "aHash": "3e9e1a25bfb0ab70e05b9351e66697779ab3638905c3c545fd3def7ccdebb7ba"
+      "aHash": "47af9c3a5309379a79ad9f296c8300e21158145a4942caa39eaf9822e545f538"
     },
     {
-      "q": "In a large open economy, fiscal expansion raises r. Why is the result between closed-economy and small-open-economy logic?",
+      "q": "In a large open economy, fiscal expansion raises the real interest rate. Why is the result between closed-economy and small-open-economy logic?",
       "options": [
-        "both investment crowding out and international capital flows adjust",
+        "Investment and capital flows both adjust",
         "the interest rate is fixed exactly at r*",
         "NX is absent from the model",
         "the exchange rate channel is ignored entirely"
@@ -7708,17 +7993,17 @@ const questionBanks = {
       "conceptCluster": "open_economy_synthesis",
       "primarySkill": "open_economy_synthesis",
       "repairSkill": "open_economy_synthesis",
-      "feedback": "Legendary items require separating the model channel before judging the final outcome.",
+      "feedback": "In a large open economy, fiscal expansion can raise the real interest rate, reducing domestic investment and net capital outflow. Appreciation then reduces net exports. Unlike the small-open fixed-r* case, some crowding out occurs in investment; unlike the closed economy, some occurs through the external balance.",
       "id": 9035,
       "difficulty": "legendary",
-      "aHash": "dee261f510d29f81f31b2b86184ede1a0689ed6a55a335d1ce537cba08cd5907"
+      "aHash": "83622d00bd8ef7655109f8acbb02394f24304cc93aff1c82ba6b2213ef89ce38"
     },
     {
       "q": "A memo says fixed rates make monetary policy stronger because the central bank controls both e and M. What is wrong?",
       "options": [
-        "defending e removes independent control of M under capital mobility",
+        "Free capital flows make peg defense constrain money supply",
         "fixed rates eliminate the central bank",
-        "money supply can never change under a peg",
+        "The money supply must remain unchanged under a peg, even during intervention",
         "capital flows cannot respond to returns"
       ],
       "tag": "open_economy_synthesis",
@@ -7727,18 +8012,18 @@ const questionBanks = {
       "conceptCluster": "open_economy_synthesis",
       "primarySkill": "open_economy_synthesis",
       "repairSkill": "open_economy_synthesis",
-      "feedback": "Legendary items require separating the model channel before judging the final outcome.",
+      "feedback": "With free capital mobility, deviations from the return consistent with the peg induce capital flows. Reserve intervention then changes money supply to maintain the currency value. Money can change, but it cannot be independently chosen while all the peg conditions remain fixed.",
       "id": 9036,
       "difficulty": "legendary",
-      "aHash": "6cd5d136f2a76820c6701e3ea65dac2f61b0017c3f7b04e5bdbc17ce30760beb"
+      "aHash": "b4dd8c4d04e50d387c06d8371336f0beaf3f389edabeef237a7cf7c880fdc873"
     },
     {
       "q": "A fall in money demand under floating rates is closest to which shock?",
       "options": [
-        "an effective rightward LM* shift that lowers e and raises Y",
-        "a rightward IS* shift that raises e and leaves Y fixed",
+        "LM* shifts right, causing depreciation and higher output",
+        "A rightward IS* shift that raises the nominal exchange rate and leaves Y fixed",
         "a tariff shifting NX(R) right",
-        "a saving increase in Chapter 6"
+        "a saving increase in the classical small-open-economy model"
       ],
       "tag": "open_economy_synthesis",
       "type": "integration",
@@ -7746,17 +8031,17 @@ const questionBanks = {
       "conceptCluster": "open_economy_synthesis",
       "primarySkill": "open_economy_synthesis",
       "repairSkill": "open_economy_synthesis",
-      "feedback": "Legendary items require separating the model channel before judging the final outcome.",
+      "feedback": "At unchanged real balances and r*, lower money demand permits higher income in money-market equilibrium, shifting the LM* curve to the right. Under floating rates depreciation raises net exports to support the higher income. This differs from an autonomous-goods-demand IS* shift.",
       "id": 9037,
       "difficulty": "legendary",
-      "aHash": "a4cfcb9ce7121eef3532bda85a2a261f7f8543b7e36fbde28cd5d1a705ef4259"
+      "aHash": "890943aac95691fc4103f91cc694f82d849b77383aac9e0900ea8dbb6aa8ecba"
     },
     {
-      "q": "If domestic saving falls and foreign fiscal contraction lowers r*, what is the best conclusion for NX?",
+      "q": "If domestic saving falls and foreign fiscal contraction lowers the world interest rate, what is the best conclusion for NX?",
       "options": [
-        "the forces push in opposite directions, so magnitudes matter",
-        "NX must rise because r* falls",
-        "NX must fall because saving falls",
+        "Net exports fall because saving falls and investment rises",
+        "NX must rise because the world interest rate falls",
+        "Net exports fall because both saving and investment fall",
         "NX cannot be affected by either force"
       ],
       "tag": "open_economy_synthesis",
@@ -7765,18 +8050,18 @@ const questionBanks = {
       "conceptCluster": "open_economy_synthesis",
       "primarySkill": "open_economy_synthesis",
       "repairSkill": "open_economy_synthesis",
-      "feedback": "Legendary items require separating the model channel before judging the final outcome.",
+      "feedback": "In NX = S − I(r*), lower saving reduces net exports. Foreign fiscal contraction lowers the world interest rate, raising domestic investment and reducing NX again. The two effects reinforce each other.",
       "id": 9038,
       "difficulty": "legendary",
-      "aHash": "d2c18c7527de1f8ec710244a94d3a625a50a76dc80fd86c31a79a266e7573af4"
+      "aHash": "309d8b37eef80cf755cc8738045f5db62534e37d0d8898bcc10610233c8f342b"
     },
     {
-      "q": "If investment demand rises and trade policy shifts NX demand right, what should a careful answer separate?",
+      "q": "In the long-run small-open-economy graph, investment demand rises while an import restriction raises net exports demand at each real exchange rate. Which pair of shifts represents the two shocks?",
       "options": [
-        "the S - I shift from the NX(R) curve shift",
-        "the model channel that moved first",
-        "nominal versus real variables",
-        "exports from imports and capital flows"
+        "S − I shifts left, while NX(R) shifts right",
+        "S − I shifts right, while NX(R) shifts left",
+        "Both S − I and NX(R) shift left",
+        "Neither curve shifts because the world interest rate is fixed"
       ],
       "tag": "open_economy_synthesis",
       "type": "integration",
@@ -7784,18 +8069,18 @@ const questionBanks = {
       "conceptCluster": "open_economy_synthesis",
       "primarySkill": "open_economy_synthesis",
       "repairSkill": "open_economy_synthesis",
-      "feedback": "Legendary items require separating the model channel before judging the final outcome.",
+      "feedback": "Higher investment demand raises I at r*, reducing S−I and equilibrium NX. Trade policy instead shifts the NX(R) schedule at each exchange rate. Separating the vertical saving-investment quantity from trade demand explains why both can appreciate the exchange rate while S−I still determines the final NX quantity.",
       "id": 9039,
       "difficulty": "legendary",
-      "aHash": "6e626cf900fb18dbbe39745f21845566f4841bbee26551e4c18af6d12f7ab1a3"
+      "aHash": "435fed9e2432a101f1589ff30ef137e5981afa22e8534d4cb9d3737fb501263d"
     },
     {
-      "q": "Refer to the image above. Choosing side 3 means the country keeps fixed rates and free capital mobility. What is sacrificed?",
+      "q": "Refer to the policy trilemma graph. Choosing side 3 means the country keeps fixed rates and free capital mobility. What is sacrificed?",
       "options": [
         "independent monetary policy",
-        "fiscal policy",
+        "independent control of fiscal policy",
         "exports",
-        "investment"
+        "the ability to invest in domestic capital"
       ],
       "tag": "impossible_trinity",
       "type": "graph",
@@ -7810,11 +8095,11 @@ const questionBanks = {
       "aHash": "dd2555485f1265b2efedec85cd460ea4fba4bb0f1b68ac8756ead3f13ddc6a8d"
     },
     {
-      "q": "Refer to the image above. A movement from C back toward B after overheating would require...",
+      "q": "Refer to the Mundell–Fleming and aggregate demand–aggregate supply graph. Which change would move the economy from C back toward B after overheating?",
       "options": [
-        "a higher price level reducing M/P and shifting LM* left",
-        "a lower price level shifting LM* right",
-        "a tariff shifting IS* right",
+        "Higher prices reduce real balances and shift LM* left",
+        "A lower price level shifting the LM* curve to the right",
+        "A tariff shifting the IS* curve to the right",
         "a saving increase shifting S - I right"
       ],
       "tag": "mundell_fleming_ad",
@@ -7823,17 +8108,17 @@ const questionBanks = {
       "conceptCluster": "derive_ad_from_mf",
       "primarySkill": "derive_ad_from_mf",
       "repairSkill": "derive_ad_from_mf",
-      "feedback": "Higher P reduces real balances, moving LM* left and Y back down along aggregate demand.",
+      "feedback": "Higher price level reduces real balances, moving the LM* curve shifts to the left and Y back down along aggregate demand.",
       "image": "mundell_adas.png",
       "id": 9041,
       "difficulty": "legendary",
-      "aHash": "d4733f73190dc9b55a6c03ad785dcae48ff0f64742eaa15046758b19aabf92c4"
+      "aHash": "a638dc94d8223b26bd7932508da7dc88a9dcf178ba41df055531d75b1da04ba6"
     },
     {
-      "q": "Refer to the image above. Why is a move from E to C different from a move from B to A in the image above?",
+      "q": "In the long-run small-open-economy model, compare higher domestic saving with investment unchanged against an import restriction with saving and investment unchanged. Which distinction is correct?",
       "options": [
-        "E to C changes S - I; B to A shifts NX(R) with S - I fixed",
-        "both are identical saving shocks",
+        "Saving shifts S − I; the restriction shifts net-export demand",
+        "Both raise saving minus investment and therefore have identical trade effects",
         "both are monetary-policy shocks",
         "neither affects the real exchange rate"
       ],
@@ -7843,16 +8128,16 @@ const questionBanks = {
       "conceptCluster": "open_economy_synthesis",
       "primarySkill": "open_economy_synthesis",
       "repairSkill": "open_economy_synthesis",
-      "feedback": "One graph shifts S - I; the other shifts NX demand.",
+      "feedback": "Higher saving moves the vertical S − I line and raises equilibrium NX. An import restriction shifts NX(R); the real exchange rate appreciates until NX again equals the unchanged S − I. These are different marketside shifts, not equivalent saving shocks.",
       "id": 9042,
       "difficulty": "legendary",
-      "aHash": "f2a597f1baede7bece1a4a3c347457a095b7fddca8780754998d66aee613b15e"
+      "aHash": "231ca0fa9bdab0ec836411339f8fbb752a6d70e41a2ef90890e5d7b41e1a1767"
     },
     {
-      "q": "Refer to the image above. Why does fiscal expansion under floating rates not move Y past Y*?",
+      "q": "Refer to the Mundell–Fleming graph. Why does fiscal expansion under floating rates not move Y past Y*?",
       "options": [
-        "appreciation reduces NX enough to offset the IS* increase",
-        "LM* shifts right automatically",
+        "Appreciation offsets fiscal stimulus through lower net exports",
+        "Government purchases automatically raise real balances and shift LM* to the right",
         "the central bank defends a peg",
         "the world interest rate falls"
       ],
@@ -7866,15 +8151,15 @@ const questionBanks = {
       "image": "islm_exchangerates.png",
       "id": 9043,
       "difficulty": "legendary",
-      "aHash": "89ade019ece691f28ce506463744d54ed73c6f75304d8b6d7d4c761441b79ff4"
+      "aHash": "e5bdf29a27d38f7bab2ea7673ae3b58257064d34781421690dabb5a0eb584b2d"
     },
     {
-      "q": "Refer to the image above. Why does monetary expansion raise Y under floating rates?",
+      "q": "Refer to the Mundell–Fleming graph. Why does monetary expansion raise output under floating rates?",
       "options": [
-        "LM* shifts right and depreciation raises NX",
-        "IS* shifts left and appreciation raises NX",
+        "The LM* curve shifts to the right and depreciation raises net exports",
+        "The IS* curve shifts to the left and appreciation raises net exports",
         "the peg forces fiscal expansion",
-        "r* rises because the country is small"
+        "The world interest rate rises because the country is small"
       ],
       "tag": "floating_exchange_policy",
       "type": "graph",
@@ -7882,109 +8167,14 @@ const questionBanks = {
       "conceptCluster": "floating_monetary_policy",
       "primarySkill": "floating_monetary_policy",
       "repairSkill": "floating_monetary_policy",
-      "feedback": "The LM* shift lowers e, raising net exports and income.",
+      "feedback": "The LM* shift lowers the nominal exchange rate, raising net exports and income.",
       "image": "islm_er_change.png",
       "id": 9044,
       "difficulty": "legendary",
-      "aHash": "d6c14f55eb76b205b995369caeac73a3d5f4a8a09f7cc8543881fd747d969f4d"
+      "aHash": "4a831043f1317ecc538a751b4f890f60ab929cf6f391b1673bc56f92f9e06115"
     },
     {
-      "q": "Using ε = eP/P*, if e=0.8, P=150, and P*=100, what is ε?",
-      "options": [
-        "1.2",
-        "0.8",
-        "1.5",
-        "120"
-      ],
-      "tag": "real_exchange_rate",
-      "type": "calculation",
-      "objective": "LO6.4",
-      "conceptCluster": "calculate_real_exchange_rate",
-      "primarySkill": "calculate_real_exchange_rate",
-      "repairSkill": "calculate_real_exchange_rate",
-      "feedback": "ε = 0.8 × 150 / 100 = 1.2.",
-      "id": 9045,
-      "difficulty": "legendary",
-      "aHash": "77ac319bfe1979e2d799d9e6987e65feb54f61511c03552ebae990826c208590"
-    },
-    {
-      "q": "Using ε = eP/P*, if e=1.5, P=80, and P*=120, what is ε?",
-      "options": [
-        "1",
-        "1.5",
-        "0.67",
-        "120"
-      ],
-      "tag": "real_exchange_rate",
-      "type": "calculation",
-      "objective": "LO6.4",
-      "conceptCluster": "calculate_real_exchange_rate",
-      "primarySkill": "calculate_real_exchange_rate",
-      "repairSkill": "calculate_real_exchange_rate",
-      "feedback": "ε = 1.5 × 80 / 120 = 1.",
-      "id": 9046,
-      "difficulty": "legendary",
-      "aHash": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
-    },
-    {
-      "q": "Using ε = eP/P*, if e=1.0, P=120, and P*=80, what is ε?",
-      "options": [
-        "1.5",
-        "1.0",
-        "0.67",
-        "120"
-      ],
-      "tag": "real_exchange_rate",
-      "type": "calculation",
-      "objective": "LO6.4",
-      "conceptCluster": "calculate_real_exchange_rate",
-      "primarySkill": "calculate_real_exchange_rate",
-      "repairSkill": "calculate_real_exchange_rate",
-      "feedback": "ε = 1.0 × 120 / 80 = 1.5.",
-      "id": 9047,
-      "difficulty": "legendary",
-      "aHash": "9f29a130438b81170b92a42650f9a94291ecad60bd47af2a3886e75f7f728725"
-    },
-    {
-      "q": "Using ε = eP/P*, if e=2.0, P=90, and P*=150, what is ε?",
-      "options": [
-        "1.2",
-        "2.0",
-        "0.6",
-        "180"
-      ],
-      "tag": "real_exchange_rate",
-      "type": "calculation",
-      "objective": "LO6.4",
-      "conceptCluster": "calculate_real_exchange_rate",
-      "primarySkill": "calculate_real_exchange_rate",
-      "repairSkill": "calculate_real_exchange_rate",
-      "feedback": "ε = 2.0 × 90 / 150 = 1.2.",
-      "id": 9048,
-      "difficulty": "legendary",
-      "aHash": "77ac319bfe1979e2d799d9e6987e65feb54f61511c03552ebae990826c208590"
-    },
-    {
-      "q": "Using ε = eP/P*, if e=0.75, P=160, and P*=120, what is ε?",
-      "options": [
-        "1",
-        "0.75",
-        "1.33",
-        "120"
-      ],
-      "tag": "real_exchange_rate",
-      "type": "calculation",
-      "objective": "LO6.4",
-      "conceptCluster": "calculate_real_exchange_rate",
-      "primarySkill": "calculate_real_exchange_rate",
-      "repairSkill": "calculate_real_exchange_rate",
-      "feedback": "ε = 0.75 × 160 / 120 = 1.",
-      "id": 9049,
-      "difficulty": "legendary",
-      "aHash": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
-    },
-    {
-      "q": "Domestic saving falls while investment demand rises. What is the cleanest conclusion?",
+      "q": "Domestic saving falls while investment demand rises. Which conclusion is supported?",
       "options": [
         "both forces lower S - I, so net exports fall strongly",
         "both forces raise S - I, so net exports rise strongly",
@@ -8003,7 +8193,7 @@ const questionBanks = {
       "aHash": "30d078936bbb567eba8d39a9d3b246f78368e14a4481d84c2876d818cdca3b3b"
     },
     {
-      "q": "Domestic saving rises while investment demand falls. What is the cleanest conclusion?",
+      "q": "Domestic saving rises while investment demand falls. Which conclusion is supported?",
       "options": [
         "both forces raise S - I, so net exports rise strongly",
         "both forces lower S - I, so net exports fall strongly",
@@ -8022,7 +8212,7 @@ const questionBanks = {
       "aHash": "68684258e72cd210033b05697efe5f0e9d89d535049ae83a3dd0438e42c3cd48"
     },
     {
-      "q": "Domestic saving rises while investment demand rises. What is the cleanest conclusion?",
+      "q": "Domestic saving rises while investment demand rises. Which conclusion is supported?",
       "options": [
         "the effect on S - I is ambiguous without magnitudes",
         "NX must rise because saving changed",
@@ -8041,7 +8231,7 @@ const questionBanks = {
       "aHash": "e24a47612fb160fa98eb58f1a97dae3f3d03c5e020c8f62370ce53a5cb02766f"
     },
     {
-      "q": "Domestic saving falls while investment demand falls. What is the cleanest conclusion?",
+      "q": "Domestic saving falls while investment demand falls. Which conclusion is supported?",
       "options": [
         "the effect on S - I is ambiguous without magnitudes",
         "NX must fall because saving changed",
@@ -8060,9 +8250,9 @@ const questionBanks = {
       "aHash": "e24a47612fb160fa98eb58f1a97dae3f3d03c5e020c8f62370ce53a5cb02766f"
     },
     {
-      "q": "In Chapter 6, a tariff appreciates the real exchange rate. In floating-rate Mundell-Fleming model, a tariff also appreciates the exchange rate. What is the shared lesson?",
+      "q": "In the classical small-open-economy model, a tariff appreciates the real exchange rate. In the Mundell–Fleming model with floating exchange rates, a tariff also appreciates the exchange rate. What is the shared lesson?",
       "options": [
-        "exchange-rate adjustment offsets the direct trade-policy effect",
+        "Appreciation offsets the direct trade-policy effect",
         "tariffs always raise output permanently",
         "tariffs lower the world interest rate",
         "saving automatically rises after trade restrictions"
@@ -8076,12 +8266,12 @@ const questionBanks = {
       "feedback": "Trade restrictions trigger exchange-rate adjustment that offsets the direct NX effect.",
       "id": 9054,
       "difficulty": "legendary",
-      "aHash": "cfb78d2624f5f8f0734a29ce74f107dbe017a0590426523e87a4afcfa02c9d70"
+      "aHash": "296ee1557c8e6acf3e1e7233cc682c3d99f5afa88725655c83e103d7e817a0ef"
     },
     {
-      "q": "Why does floating-rate fiscal policy fail to raise income strongly in Mundell-Fleming model?",
+      "q": "Why does floating-rate fiscal policy fail to raise income strongly in the Mundell–Fleming model?",
       "options": [
-        "currency appreciation crowds out net exports",
+        "Appreciation reduces net exports",
         "money supply rises automatically",
         "the peg forces monetary expansion",
         "investment demand becomes vertical"
@@ -8095,7 +8285,7 @@ const questionBanks = {
       "feedback": "The exchange-rate channel offsets the fiscal demand shock.",
       "id": 9055,
       "difficulty": "legendary",
-      "aHash": "0702c32bf0e9554920d871540cdb4d542f24b0367e1af3453d3f6eb755d97c97"
+      "aHash": "1b1fa5df5d1416512daa6220eb35627667961efe240e7dc96c74b03d2cfcad2d"
     },
     {
       "q": "Why is monetary policy powerful under floating rates?",
@@ -8117,12 +8307,12 @@ const questionBanks = {
       "aHash": "d9d15a8e924a1d5b26e2b3a9745b4c60a170337e23cf61adff8eaff9a9dfe1df"
     },
     {
-      "q": "Refer to the image above. Moving from A to C in the left panel corresponds to what in the right panel?",
+      "q": "Refer to the Mundell–Fleming and aggregate demand–aggregate supply graph. Moving from A to C in the left panel corresponds to what in the right panel?",
       "options": [
-        "moving down the aggregate demand curve as P falls and Y rises",
+        "A movement along AD to lower prices and higher output",
         "a shift of LRAS to the left",
         "a tariff shifting NX right",
-        "a fixed-rate reserve intervention"
+        "An intervention that restores a fixed exchange rate by selling foreign reserves"
       ],
       "tag": "mundell_fleming_ad",
       "type": "legendary",
@@ -8134,15 +8324,15 @@ const questionBanks = {
       "image": "mundell_adas.png",
       "id": 9057,
       "difficulty": "legendary",
-      "aHash": "8d184b873491c950ce9ed6e47e7f78b45054f343dda43db8f1de6edc91c4fc9f"
+      "aHash": "02e993c0e9d9c9c43ed95c050fea903dfaa3f752c79342a299286b0e81ec4158"
     },
     {
-      "q": "Refer to the image above. Moving from B to C is most consistent with...",
+      "q": "Refer to the Mundell–Fleming graph. Which change is consistent with a move from B to C?",
       "options": [
         "expansionary monetary policy under floating rates",
         "expansionary fiscal policy under floating rates",
         "a fixed exchange rate peg with no money change",
-        "a tariff under Chapter 6"
+        "a tariff in the classical small-open-economy model"
       ],
       "tag": "floating_exchange_policy",
       "type": "legendary",
@@ -8150,18 +8340,18 @@ const questionBanks = {
       "conceptCluster": "floating_monetary_policy",
       "primarySkill": "floating_monetary_policy",
       "repairSkill": "floating_monetary_policy",
-      "feedback": "A move to the right on LM* lowers e and raises Y.",
+      "feedback": "A move to the right on LM* lowers the nominal exchange rate and raises output.",
       "image": "islm_er_change.png",
       "id": 9058,
       "difficulty": "legendary",
       "aHash": "f6a7065bbfab366412ed5a67258e2af124c440973c8beb5f18fe5f3497d68302"
     },
     {
-      "q": "Refer to the image above. Moving from B to A is most consistent with...",
+      "q": "Refer to the Mundell–Fleming graph. Which change is consistent with a move from B to A?",
       "options": [
         "a rightward IS* shock under floating rates",
         "a monetary expansion under floating rates",
-        "a fall in the price level shifting LM* right",
+        "A fall in the price level shifting the LM* curve to the right",
         "capital flight in the large open model"
       ],
       "tag": "floating_exchange_policy",
@@ -8170,19 +8360,19 @@ const questionBanks = {
       "conceptCluster": "floating_fiscal_policy",
       "primarySkill": "floating_fiscal_policy",
       "repairSkill": "floating_fiscal_policy",
-      "feedback": "A rightward IS* shock raises e with Y pinned at Y*.",
+      "feedback": "A rightward IS* shock raises the nominal exchange rate with Y pinned at Y*.",
       "image": "islm_exchangerates.png",
       "id": 9059,
       "difficulty": "legendary",
       "aHash": "b91651c5a4473f33c847d5b56cd26c3c7cdaf093405d8f2f4a2190f3864d60d2"
     },
     {
-      "q": "Refer to the image above. Why does moving from B to A not prove net exports rise?",
+      "q": "Refer to the net exports and the real exchange rate graph. Why does moving from B to A not prove net exports rise?",
       "options": [
-        "the vertical S - I line fixes equilibrium NX while R adjusts",
+        "Fixed S − I determines net exports; R adjusts",
         "the NX curve is irrelevant to trade policy",
         "saving always rises after a tariff",
-        "the exchange rate cannot move in this graph"
+        "The exchange rate stays fixed whenever the net-export demand curve shifts"
       ],
       "tag": "trade_policy",
       "type": "legendary",
@@ -8194,10 +8384,10 @@ const questionBanks = {
       "image": "tradepolicies.png",
       "id": 9060,
       "difficulty": "legendary",
-      "aHash": "c44adb774a7c9297c28759d79d0289d092cb4fb040ee495b6310c2144839510c"
+      "aHash": "2ebf1771c9ddbbc355b6ad56251bd3dd925c16d035c62089d16f9c99a087168d"
     },
     {
-      "q": "Refer to the image above. Moving from E to C is best read as...",
+      "q": "Refer to the real exchange rate graph. Which changes are represented by a move from E to C?",
       "options": [
         "higher S - I and a higher real exchange rate",
         "lower S - I and a lower real exchange rate",
@@ -8217,10 +8407,10 @@ const questionBanks = {
       "aHash": "3b4e317af3ec2c57c98e970bd7177986e5c429a3d80090150c15f0eadef35c63"
     },
     {
-      "q": "Refer to the image above. Moving from D to E is best read as...",
+      "q": "Refer to the open-economy saving and investment graph. Which changes are represented by a move from D to E?",
       "options": [
-        "higher investment demand at the same world interest rate",
-        "lower saving at the same world interest rate",
+        "Higher investment demand with the world interest rate unchanged",
+        "Lower national saving with the world interest rate unchanged",
         "a fall in the world interest rate",
         "a tariff shifting NX demand"
       ],
@@ -8234,15 +8424,15 @@ const questionBanks = {
       "image": "loanablefunds_changes_investment.png",
       "id": 9062,
       "difficulty": "legendary",
-      "aHash": "b1c4dd4839e453490af78f8935c9e4f5a270604d78a6d011b33676b86ce741ca"
+      "aHash": "a23e7b87b20d09ffd9348ca6eaa15c56634448b9a0f97f09c68a37686e9671b1"
     },
     {
       "q": "A nation wants to stabilize its currency and allow free capital flows during a recession. What policy limitation follows?",
       "options": [
-        "monetary policy must defend the peg rather than independently stabilize output",
+        "Monetary policy must defend the exchange-rate peg",
         "fiscal policy becomes illegal",
         "exports must equal imports every period",
-        "the country must abandon all capital flows"
+        "The country must eliminate capital flows to retain any fiscal-policy control"
       ],
       "tag": "impossible_trinity",
       "type": "legendary",
@@ -8253,200 +8443,10 @@ const questionBanks = {
       "feedback": "The peg plus capital mobility sacrifices monetary independence.",
       "id": 9063,
       "difficulty": "legendary",
-      "aHash": "0f945f281e2b0478a8af8107d282271b83e0cdf218591c233f25d58d131f8cae"
+      "aHash": "5bac421954fcb683ef9839f39f27913d46934d4cfce234603ecb2d933b238f6f"
     },
     {
-      "q": "National saving is 1450 and domestic investment is 1450. What are net exports?",
-      "options": [
-        "0; balanced trade",
-        "-2900; deficit",
-        "2900; surplus",
-        "1450; surplus"
-      ],
-      "tag": "saving_investment_capital_flows",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "conceptCluster": "calculate_nx_from_s_i",
-      "primarySkill": "calculate_nx_from_s_i",
-      "repairSkill": "calculate_nx_from_s_i",
-      "feedback": "NX = S - I = 1450 - 1450 = 0.",
-      "id": 9064,
-      "difficulty": "legendary",
-      "aHash": "7977583b1b14849c67c9d21d71aeea2adaefb4adffacaa81dd30959ecf418d68"
-    },
-    {
-      "q": "National saving is 1700 and domestic investment is 1325. What are net exports?",
-      "options": [
-        "375; surplus",
-        "-375; the opposite sign",
-        "3025; surplus",
-        "375; balanced trade"
-      ],
-      "tag": "saving_investment_capital_flows",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "conceptCluster": "calculate_nx_from_s_i",
-      "primarySkill": "calculate_nx_from_s_i",
-      "repairSkill": "calculate_nx_from_s_i",
-      "feedback": "NX = S - I = 1700 - 1325 = 375.",
-      "id": 9065,
-      "difficulty": "legendary",
-      "aHash": "7a2dbd605cb24009caf93db04c5a90070512fb34725357c164bf6a3702180055"
-    },
-    {
-      "q": "National saving is 1325 and domestic investment is 1700. What are net exports?",
-      "options": [
-        "-375; deficit",
-        "375; the opposite sign",
-        "3025; surplus",
-        "375; balanced trade"
-      ],
-      "tag": "saving_investment_capital_flows",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "conceptCluster": "calculate_nx_from_s_i",
-      "primarySkill": "calculate_nx_from_s_i",
-      "repairSkill": "calculate_nx_from_s_i",
-      "feedback": "NX = S - I = 1325 - 1700 = -375.",
-      "id": 9066,
-      "difficulty": "legendary",
-      "aHash": "6753cc00a0d8d48dd667a109452b3ba5be7c77c3ce53b88c54800c66ea848a1c"
-    },
-    {
-      "q": "National saving is 2100 and domestic investment is 1850. What are net exports?",
-      "options": [
-        "250; surplus",
-        "-250; the opposite sign",
-        "3950; surplus",
-        "250; balanced trade"
-      ],
-      "tag": "saving_investment_capital_flows",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "conceptCluster": "calculate_nx_from_s_i",
-      "primarySkill": "calculate_nx_from_s_i",
-      "repairSkill": "calculate_nx_from_s_i",
-      "feedback": "NX = S - I = 2100 - 1850 = 250.",
-      "id": 9067,
-      "difficulty": "legendary",
-      "aHash": "237255bdba5ab04c8d0c2368458cf8300060292173d2ff428cae3380eba46eef"
-    },
-    {
-      "q": "Y=3000, C=1800, I=700, and G=650. What are net exports?",
-      "options": [
-        "-150; deficit",
-        "150; wrong sign",
-        "1200; missing I and G",
-        "3150; domestic spending"
-      ],
-      "tag": "accounting_identities",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "conceptCluster": "calculate_nx_from_y_c_i_g",
-      "primarySkill": "calculate_nx_from_y_c_i_g",
-      "repairSkill": "calculate_nx_from_y_c_i_g",
-      "feedback": "NX = Y - C - I - G = -150.",
-      "id": 9068,
-      "difficulty": "legendary",
-      "aHash": "eba5187244252db44e06d3a2cb381ce6c1f2e859603d22f31d001dd4a8389559"
-    },
-    {
-      "q": "Y=4200, C=2600, I=900, and G=800. What are net exports?",
-      "options": [
-        "-100; deficit",
-        "100; wrong sign",
-        "1600; missing I and G",
-        "4300; domestic spending"
-      ],
-      "tag": "accounting_identities",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "conceptCluster": "calculate_nx_from_y_c_i_g",
-      "primarySkill": "calculate_nx_from_y_c_i_g",
-      "repairSkill": "calculate_nx_from_y_c_i_g",
-      "feedback": "NX = Y - C - I - G = -100.",
-      "id": 9069,
-      "difficulty": "legendary",
-      "aHash": "6d4604892adc241880ea10789df78d9dfff1a03b1dc8aad3720437e12ed12fa0"
-    },
-    {
-      "q": "Y=2500, C=1600, I=500, and G=450. What are net exports?",
-      "options": [
-        "-50; deficit",
-        "50; wrong sign",
-        "900; missing I and G",
-        "2550; domestic spending"
-      ],
-      "tag": "accounting_identities",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "conceptCluster": "calculate_nx_from_y_c_i_g",
-      "primarySkill": "calculate_nx_from_y_c_i_g",
-      "repairSkill": "calculate_nx_from_y_c_i_g",
-      "feedback": "NX = Y - C - I - G = -50.",
-      "id": 9070,
-      "difficulty": "legendary",
-      "aHash": "55d3a087cd56bf9eaacbdf330dbc636933672fea5ddc13004ea44269d780efea"
-    },
-    {
-      "q": "Y=5200, C=3300, I=1100, and G=900. What are net exports?",
-      "options": [
-        "-100; deficit",
-        "100; wrong sign",
-        "1900; missing I and G",
-        "5300; domestic spending"
-      ],
-      "tag": "accounting_identities",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "conceptCluster": "calculate_nx_from_y_c_i_g",
-      "primarySkill": "calculate_nx_from_y_c_i_g",
-      "repairSkill": "calculate_nx_from_y_c_i_g",
-      "feedback": "NX = Y - C - I - G = -100.",
-      "id": 9071,
-      "difficulty": "legendary",
-      "aHash": "6d4604892adc241880ea10789df78d9dfff1a03b1dc8aad3720437e12ed12fa0"
-    },
-    {
-      "q": "Y=3800, C=2300, I=850, and G=750. What are net exports?",
-      "options": [
-        "-100; deficit",
-        "100; wrong sign",
-        "1500; missing I and G",
-        "3900; domestic spending"
-      ],
-      "tag": "accounting_identities",
-      "type": "calculation",
-      "objective": "LO6.2",
-      "conceptCluster": "calculate_nx_from_y_c_i_g",
-      "primarySkill": "calculate_nx_from_y_c_i_g",
-      "repairSkill": "calculate_nx_from_y_c_i_g",
-      "feedback": "NX = Y - C - I - G = -100.",
-      "id": 9072,
-      "difficulty": "legendary",
-      "aHash": "6d4604892adc241880ea10789df78d9dfff1a03b1dc8aad3720437e12ed12fa0"
-    },
-    {
-      "q": "Using ε = eP/P*, if e=1.2, P=100, and P*=120, what is ε?",
-      "options": [
-        "1",
-        "1.2",
-        "0.83",
-        "120"
-      ],
-      "tag": "real_exchange_rate",
-      "type": "calculation",
-      "objective": "LO6.4",
-      "conceptCluster": "calculate_real_exchange_rate",
-      "primarySkill": "calculate_real_exchange_rate",
-      "repairSkill": "calculate_real_exchange_rate",
-      "feedback": "ε = 1.2 × 100 / 120 = 1.",
-      "id": 9073,
-      "difficulty": "legendary",
-      "aHash": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
-    },
-    {
-      "q": "A policy memo says: domestic fiscal expansion lowers national saving. Which complete open-economy chain is correct?",
+      "q": "Domestic fiscal expansion lowers national saving. Which sequence correctly describes the effects on the open economy?",
       "options": [
         "S - I falls, the real exchange rate appreciates, and net exports fall",
         "S - I rises, the real exchange rate depreciates, and net exports rise",
@@ -8465,7 +8465,7 @@ const questionBanks = {
       "aHash": "a677520ff1e5cea63cc204123cc5b54deac9781321d905410cdc8bb114e13c6e"
     },
     {
-      "q": "A policy memo says: domestic fiscal contraction raises national saving. Which complete open-economy chain is correct?",
+      "q": "Domestic fiscal contraction raises national saving. Which sequence correctly describes the effects on the open economy?",
       "options": [
         "S - I rises, the real exchange rate depreciates, and net exports rise",
         "S - I falls, the real exchange rate appreciates, and net exports fall",
@@ -8505,7 +8505,7 @@ const questionBanks = {
     {
       "q": "A country imposes a tariff in the long-run trade model and expects a better trade balance. What is the best critique?",
       "options": [
-        "real appreciation offsets the direct NX demand shift",
+        "Appreciation offsets the direct gain in NX",
         "saving rises by exactly the tariff revenue",
         "investment collapses automatically",
         "r* must fall"
@@ -8519,13 +8519,13 @@ const questionBanks = {
       "feedback": "Trade restrictions change R more than equilibrium NX when S - I is fixed.",
       "id": 9077,
       "difficulty": "legendary",
-      "aHash": "52a7956ba1cdbcc97fc442f3fb68ac0182bf038ab14565743babb3f5779e31a2"
+      "aHash": "94bf797b46c566a3e29294a29fe3aa1854a7966dfc98e039c2b3729e5c7faa1e"
     },
     {
-      "q": "A policy raises saving but foreign fiscal contraction lowers r*. What is the careful conclusion for NX?",
+      "q": "A policy raises saving but foreign fiscal contraction lowers the world interest rate. What is the careful conclusion for NX?",
       "options": [
-        "the forces work in opposite directions, so magnitudes matter",
-        "both forces tend to raise NX",
+        "Their relative sizes determine the effect",
+        "Both forces tend to raise net exports",
         "both forces tend to lower net exports",
         "NX cannot respond to r*"
       ],
@@ -8535,16 +8535,16 @@ const questionBanks = {
       "conceptCluster": "open_economy_synthesis",
       "primarySkill": "open_economy_synthesis",
       "repairSkill": "open_economy_synthesis",
-      "feedback": "Higher saving raises S - I, while lower r* raises investment and lowers S - I.",
+      "feedback": "Higher saving raises S - I, while lower world interest rate raises investment and lowers S - I.",
       "id": 9078,
       "difficulty": "legendary",
-      "aHash": "b2182ac12fa2c62c083731c633190bfd29ab5c742c15bea3dbb4cebc0fdec7b9"
+      "aHash": "dea5d56c3a0c8d088489ef39189009525ee5f7d34074d0c182e226c04787adc2"
     },
     {
-      "q": "A policy lowers saving while foreign fiscal expansion raises r*. What is the careful conclusion for NX?",
+      "q": "A policy lowers saving while foreign fiscal expansion raises the world interest rate. What is the careful conclusion for NX?",
       "options": [
-        "the forces work in opposite directions, so magnitudes matter",
-        "both forces tend to raise NX",
+        "Their relative sizes determine the effect",
+        "Both forces tend to raise net exports",
         "both forces tend to lower net exports",
         "NX cannot respond to r*"
       ],
@@ -8554,15 +8554,15 @@ const questionBanks = {
       "conceptCluster": "open_economy_synthesis",
       "primarySkill": "open_economy_synthesis",
       "repairSkill": "open_economy_synthesis",
-      "feedback": "Lower saving lowers S - I, while higher r* lowers investment and raises S - I.",
+      "feedback": "Lower saving lowers S - I, while higher world interest rate lowers investment and raises S - I.",
       "id": 9079,
       "difficulty": "legendary",
-      "aHash": "b2182ac12fa2c62c083731c633190bfd29ab5c742c15bea3dbb4cebc0fdec7b9"
+      "aHash": "dea5d56c3a0c8d088489ef39189009525ee5f7d34074d0c182e226c04787adc2"
     },
     {
-      "q": "Fiscal expansion under fixed rates is more powerful than under floating rates because...",
+      "q": "Why is fiscal expansion more effective at raising output under fixed exchange rates than under floating exchange rates?",
       "options": [
-        "the central bank expands money to defend the peg instead of allowing appreciation",
+        "Money expansion defends the peg, reinforcing fiscal stimulus",
         "the central bank contracts money to defend the peg and reduce output",
         "floating rates fix e and remove NX",
         "fixed rates eliminate capital mobility"
@@ -8576,12 +8576,12 @@ const questionBanks = {
       "feedback": "The fixed peg turns fiscal pressure into monetary accommodation.",
       "id": 9080,
       "difficulty": "legendary",
-      "aHash": "2337d86785e290c2be808338ffac9c9eacf6b3f5595ec1bcbe27a977acb66633"
+      "aHash": "d1a2a627c470a6fffcd83c6064f2d7214dfc4e40946b2a12c9997a6c8974815e"
     },
     {
-      "q": "Monetary expansion under fixed rates is weaker than under floating rates because...",
+      "q": "Why is monetary expansion less effective at raising output under fixed exchange rates than under floating exchange rates?",
       "options": [
-        "defending the peg reverses independent money creation",
+        "Peg defense reverses the money expansion",
         "the peg causes automatic depreciation",
         "floating rates ban capital flows",
         "fiscal policy must offset every money change"
@@ -8595,14 +8595,14 @@ const questionBanks = {
       "feedback": "Fixed rates sacrifice monetary independence under capital mobility.",
       "id": 9081,
       "difficulty": "legendary",
-      "aHash": "0bb01c8f24bf783e3f6cdd047028d5367ddfc489440d9ed2cfecd09a1a44257a"
+      "aHash": "d14af22ec28bf71e7cc218a65f5042d5a460ff03911b767adeb22563fd91ea54"
     },
     {
-      "q": "Refer to the image above. In the image above, starting at Y3 above LRAS, what long-run pressure should follow?",
+      "q": "Refer to the Mundell–Fleming and aggregate demand–aggregate supply graph. Starting at Y3 above LRAS, what long-run pressure should follow?",
       "options": [
-        "P rises, M/P falls, LM* shifts left, and Y falls toward LRAS",
-        "P falls, M/P rises, LM* shifts right, and Y rises further",
-        "IS* shifts right because output is high",
+        "The price level rises, M/P falls, the LM* curve shifts to the left, and output falls toward LRAS",
+        "The price level falls, M/P rises, the LM* curve shifts to the right, and output rises further",
+        "The IS* curve shifts to the right because output is high",
         "NX(R) shifts right because LRAS moves"
       ],
       "tag": "mundell_fleming_ad",
@@ -8615,14 +8615,14 @@ const questionBanks = {
       "image": "mundell_adas.png",
       "id": 9082,
       "difficulty": "legendary",
-      "aHash": "872a45492dc761379db12219bec7def96458b739600a250d41ef518392bb75a7"
+      "aHash": "89d74513f7fa38a2add2c21034373505068f2d309dff9b08ff0db7db768e99db"
     },
     {
-      "q": "Refer to the image above. In the image above, starting at Y1 below LRAS, what long-run pressure should follow?",
+      "q": "Refer to the Mundell–Fleming and aggregate demand–aggregate supply graph. Starting at Y1 below LRAS, what long-run pressure should follow?",
       "options": [
-        "P falls, M/P rises, LM* shifts right, and Y rises toward LRAS",
-        "P rises, M/P falls, LM* shifts left, and Y falls further",
-        "IS* shifts left because output is low",
+        "The price level falls, M/P rises, the LM* curve shifts to the right, and output rises toward LRAS",
+        "The price level rises, M/P falls, the LM* curve shifts to the left, and output falls further",
+        "The IS* curve shifts to the left because output is low",
         "NX(R) shifts left because LRAS moves"
       ],
       "tag": "mundell_fleming_ad",
@@ -8635,12 +8635,12 @@ const questionBanks = {
       "image": "mundell_adas.png",
       "id": 9083,
       "difficulty": "legendary",
-      "aHash": "1644c29571b6596807a92e39b91d2dad7d4d69cf8503e1148f0e31b2838388fe"
+      "aHash": "b62834e6d1f110443efe0f1b61ae4014d273d5173dd4dd552ed6b5334e19a71a"
     },
     {
-      "q": "Refer to the image above. Why can no point inside the triangle hold all three corners?",
+      "q": "Refer to the policy trilemma graph. Why can no point inside the triangle hold all three corners?",
       "options": [
-        "the model says only two goals can be jointly maintained under capital mobility constraints",
+        "Only two of the three goals can coexist",
         "the graph is only decorative",
         "each side means rejecting all three goals",
         "fixed exchange rates eliminate fiscal policy"
@@ -8655,7 +8655,7 @@ const questionBanks = {
       "image": "impossibletrinity.png",
       "id": 9084,
       "difficulty": "legendary",
-      "aHash": "cfef6db9da1605e450e687b9c93df8aa075922da3f5102cc062a1b998ca1f9cb"
+      "aHash": "d0a3081611131b71c6266a21dfccaa1ecb512c40419e87482d6195c069eb52d9"
     },
     {
       "q": "Y=5,200, C=3,050, I=1,150, and G=1,150. Which statement is correct?",
@@ -8696,7 +8696,7 @@ const questionBanks = {
       "aHash": "3821691b2f28f7992d91defafc3b441b1473eb4556656e0746f1336ed6c27033"
     },
     {
-      "q": "ε=eP/P*. If e rises from 0.8 to 1.0 while P=150 and P*=100, what happens to ε?",
+      "q": "Ε=eP/P*. If the nominal exchange rate rises from 0.8 to 1.0 while P=150 and P*=100, what happens to ε?",
       "options": [
         "it rises from 1.2 to 1.5",
         "it falls from 1.5 to 1.2",
@@ -8717,8 +8717,8 @@ const questionBanks = {
     {
       "q": "A large open economy faces investment optimism. Why is the final NX effect not just the small-open answer?",
       "options": [
-        "r can rise and partly crowd out investment while capital flows adjust",
-        "r is fixed at r* and cannot move",
+        "Interest can rise, limiting investment and changing capital flows",
+        "The domestic interest rate stays fixed at the world rate despite the investment boom",
         "NX is absent from the large-open model",
         "the exchange rate cannot adjust"
       ],
@@ -8731,13 +8731,13 @@ const questionBanks = {
       "feedback": "Large-open adjustment includes an endogenous interest-rate response.",
       "id": 9088,
       "difficulty": "legendary",
-      "aHash": "09f20e78bd1701e8e7311662cb31dcb84a3c6baa98d6fd0357887607a4b05f68"
+      "aHash": "af993823407662c742d19aae7e3411f2e70b20c72e2c850b171a74a998dd3f6c"
     },
     {
       "q": "A student says, “Fiscal policy always works better with floating rates.” What is the correction?",
       "options": [
-        "under floating rates fiscal policy is weakened by appreciation; under fixed rates it can be amplified",
-        "under floating rates fiscal policy always shifts LM* right",
+        "Appreciation weakens fiscal stimulus under floating; peg defense reinforces it",
+        "Fiscal stimulus under floating always raises real money balances and shifts LM* right",
         "under fixed rates fiscal policy cannot move IS*",
         "exchange-rate regimes do not affect fiscal policy"
       ],
@@ -8747,16 +8747,16 @@ const questionBanks = {
       "conceptCluster": "compare_fixed_floating",
       "primarySkill": "compare_fixed_floating",
       "repairSkill": "compare_fixed_floating",
-      "feedback": "The fiscal multiplier depends heavily on the exchange-rate regime.",
+      "feedback": "Under floating rates, fiscal expansion can appreciate the currency and reduce net exports, offsetting part of the extra government spending. Under a credible fixed rate, central-bank intervention can accommodate the expansion. That is why the exchange-rate regime changes the result.",
       "id": 9089,
       "difficulty": "legendary",
-      "aHash": "eaf8a082d824ac26d7e31db063f0838c0145ce0e3a0140935cde9faba55d9259"
+      "aHash": "adbb1c9c960dc47cc6d331bd1e1876e36ce263e00a9bbbce97068ff636737b82"
     }
   ],
   "easyBoss": [
     {
       "id": 2000,
-      "q": "The Keeper opens the ledger. Which identity belongs in the missing slot: S = I + ___?",
+      "q": "Which term completes the national saving identity S = I + ___ for an open economy?",
       "options": [
         "NCO",
         "C",
@@ -8775,7 +8775,7 @@ const questionBanks = {
     },
     {
       "id": 2001,
-      "q": "The Keeper asks why NX and NCO move together. Which answer survives?",
+      "q": "Why are net exports equal to net capital outflow in the open-economy accounting framework?",
       "options": [
         "international transactions create offsetting goods and asset flows",
         "exports are always larger",
@@ -8794,7 +8794,7 @@ const questionBanks = {
     },
     {
       "id": 2002,
-      "q": "The Keeper sees Y exceed C + I + G. What must NX be?",
+      "q": "Output exceeds the sum of consumption, investment, and government purchases. What does this imply about net exports?",
       "options": [
         "positive",
         "negative",
@@ -8870,7 +8870,7 @@ const questionBanks = {
     },
     {
       "id": 2006,
-      "q": "The Keeper asks what makes the economy small. Which answer is right?",
+      "q": "What makes an economy “small” in the small-open-economy model?",
       "options": [
         "it takes r* as given",
         "it sets r*",
@@ -8889,7 +8889,7 @@ const questionBanks = {
     },
     {
       "id": 2007,
-      "q": "Refer to the image above. Which point shows balanced trade at r_w2?",
+      "q": "Refer to the open-economy saving and investment graph. Which point shows balanced trade at r_w2?",
       "options": [
         "D",
         "A",
@@ -8909,7 +8909,7 @@ const questionBanks = {
     },
     {
       "id": 2008,
-      "q": "Refer to the image above. At r_w3, what trade result occurs?",
+      "q": "Refer to the open-economy saving and investment graph. At r_w3, what trade result occurs?",
       "options": [
         "trade deficit",
         "trade surplus",
@@ -8929,7 +8929,7 @@ const questionBanks = {
     },
     {
       "id": 2009,
-      "q": "The Keeper sees appreciation. What happens to domestic goods?",
+      "q": "When the domestic currency appreciates in real terms, how does the relative price of domestic goods change?",
       "options": [
         "they become relatively more expensive",
         "they become relatively cheaper",
@@ -8948,7 +8948,7 @@ const questionBanks = {
     },
     {
       "id": 2010,
-      "q": "Refer to the image above. Moving from A to G means...",
+      "q": "Refer to the real exchange rate graph. How do the real exchange rate and net exports change when moving from A to G?",
       "options": [
         "R falls and net exports rise",
         "R rises and net exports fall",
@@ -8968,12 +8968,12 @@ const questionBanks = {
     },
     {
       "id": 2011,
-      "q": "A depreciation usually pushes NX...",
+      "q": "How does currency depreciation usually affect net exports?",
       "options": [
-        "up",
-        "down",
-        "to zero",
-        "into investment"
+        "Net exports rise",
+        "Net exports fall",
+        "Net exports fall to zero",
+        "Net exports become investment"
       ],
       "tag": "exchange_rate_adjustment",
       "type": "interpretation",
@@ -8983,7 +8983,7 @@ const questionBanks = {
       "primarySkill": "appreciation_nx",
       "repairSkill": "appreciation_nx",
       "feedback": "Depreciation makes domestic goods cheaper.",
-      "aHash": "75a288c0d6898c5f7b054590845978a82a3ad79fcce3d43ff68a7501e5a91ee9"
+      "aHash": "b08ae8c542fb709b6023bb3fbc4bcebdd8d1093a3cfbd9274dd14da0dca6dbc8"
     },
     {
       "id": 2012,
@@ -9044,7 +9044,7 @@ const questionBanks = {
     },
     {
       "id": 2015,
-      "q": "Refer to the image above. Side 3 combines a fixed exchange rate with...",
+      "q": "Refer to the policy trilemma graph. Which policy objective is combined with a fixed exchange rate on side 3 of the impossible-trinity triangle?",
       "options": [
         "free capital mobility",
         "independent monetary policy",
@@ -9104,7 +9104,7 @@ const questionBanks = {
   "mediumBoss": [
     {
       "id": 3000,
-      "q": "The Chancellor asks for the core Mundell-Fleming model assumption.",
+      "q": "Which assumption about international capital mobility is central to the small-open-economy Mundell–Fleming model?",
       "options": [
         "small open economy with perfect capital mobility",
         "closed economy with no trade",
@@ -9118,16 +9118,16 @@ const questionBanks = {
       "conceptCluster": "mf_model",
       "primarySkill": "mundell_fleming_assumptions",
       "repairSkill": "mundell_fleming_assumptions",
-      "feedback": "Mundell-Fleming model uses r = r*.",
+      "feedback": "the Mundell–Fleming model uses r = r*.",
       "aHash": "79a6b1b5280f247181ef28a53b9e0177cc7035acb634d440f6a70e9feacdbe37"
     },
     {
       "id": 3001,
-      "q": "Why is r pinned at r* in Mundell-Fleming model?",
+      "q": "Why is r pinned at r* in the Mundell–Fleming model?",
       "options": [
         "capital mobility arbitrages returns",
         "tariffs set r",
-        "NX is fixed",
+        "Net exports are fixed",
         "government spending sets r*"
       ],
       "tag": "mundell_fleming_model",
@@ -9144,9 +9144,9 @@ const questionBanks = {
       "id": 3002,
       "q": "What makes IS* slope downward in e-Y space?",
       "options": [
-        "higher e lowers NX and planned spending",
-        "higher e raises NX",
-        "LM* shifts right",
+        "Higher nominal exchange rate lowers net exports and planned spending",
+        "Higher nominal exchange rate raises net exports",
+        "The LM* curve shifts to the right",
         "saving disappears"
       ],
       "tag": "mundell_fleming_model",
@@ -9157,15 +9157,15 @@ const questionBanks = {
       "primarySkill": "mundell_fleming_assumptions",
       "repairSkill": "mundell_fleming_assumptions",
       "feedback": "Appreciation reduces net exports.",
-      "aHash": "da4e0fb0e45720d201780bf2dca03a0304c11228945d03147033586863e6e521"
+      "aHash": "164e0ac8862ffbbe1c01e13feea64aff452a427e74d3acba199ed60f03c929be"
     },
     {
       "id": 3003,
-      "q": "Under floating rates, fiscal expansion shifts...",
+      "q": "Under floating exchange rates, which curve shifts, and in which direction, after fiscal expansion?",
       "options": [
-        "IS* right",
-        "LM* right",
-        "LRAS left",
+        "The IS* curve shifts to the right",
+        "The LM* curve shifts to the right",
+        "The LRAS curve shifts to the left",
         "S right"
       ],
       "tag": "floating_exchange_policy",
@@ -9176,11 +9176,11 @@ const questionBanks = {
       "primarySkill": "floating_fiscal_policy",
       "repairSkill": "floating_fiscal_policy",
       "feedback": "Fiscal expansion raises planned spending.",
-      "aHash": "78725889af781da9aaf51f70fb60d33df2ece68807f71cc25583245c32177583"
+      "aHash": "38e678cb4b95d70dc30fddacab6ffee1e664421b3e54100b878ed54991c800ac"
     },
     {
       "id": 3004,
-      "q": "Refer to the image above. Fiscal expansion moves from B to...",
+      "q": "Refer to the Mundell–Fleming graph. To which point does fiscal expansion move the equilibrium from B?",
       "options": [
         "A",
         "C",
@@ -9194,7 +9194,7 @@ const questionBanks = {
       "conceptCluster": "floating_fiscal",
       "primarySkill": "floating_fiscal_policy",
       "repairSkill": "floating_fiscal_policy",
-      "feedback": "IS* shifts right and e rises.",
+      "feedback": "The IS* curve shifts to the right and the nominal exchange rate rises.",
       "image": "islm_exchangerates.png",
       "aHash": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb"
     },
@@ -9202,8 +9202,8 @@ const questionBanks = {
       "id": 3005,
       "q": "Why does output not rise much under floating fiscal expansion?",
       "options": [
-        "appreciation lowers NX",
-        "depreciation raises NX",
+        "Appreciation lowers net exports",
+        "Depreciation raises net exports",
         "the peg expands M",
         "tariffs fall"
       ],
@@ -9215,14 +9215,14 @@ const questionBanks = {
       "primarySkill": "floating_fiscal_policy",
       "repairSkill": "floating_fiscal_policy",
       "feedback": "NX crowding out offsets the fiscal push.",
-      "aHash": "fd64c386e7e363f8b55d44d0bc629a23041c6605dad5d17af46f36d18a0cb1ce"
+      "aHash": "24d0d77d436f84b1a34c9204a2687bf8a10e7f44b4b4fe5c257d39fca9c8be17"
     },
     {
       "id": 3006,
-      "q": "Under floating rates, monetary expansion shifts...",
+      "q": "Under floating exchange rates, which curve shifts, and in which direction, after monetary expansion?",
       "options": [
-        "LM* right",
-        "IS* left",
+        "The LM* curve shifts to the right",
+        "The IS* curve shifts to the left",
         "S - I left",
         "NX(R) left"
       ],
@@ -9233,12 +9233,12 @@ const questionBanks = {
       "conceptCluster": "floating_monetary",
       "primarySkill": "floating_monetary_policy",
       "repairSkill": "floating_monetary_policy",
-      "feedback": "Higher M/P shifts LM* right.",
-      "aHash": "cc3b16bbdc348e02aa6ec4ea34a5fb8d76ec4baba942ba5246daff268663fe09"
+      "feedback": "Higher M/P shifts the LM* curve to the right.",
+      "aHash": "a7a416401c81c0eb6079e5d71044c937083d3008cb26cee4a5aec317cd87406a"
     },
     {
       "id": 3007,
-      "q": "Refer to the image above. Monetary expansion moves from B to...",
+      "q": "Refer to the Mundell–Fleming graph. To which point does monetary expansion move the equilibrium from B?",
       "options": [
         "C",
         "A",
@@ -9252,18 +9252,18 @@ const questionBanks = {
       "conceptCluster": "floating_monetary",
       "primarySkill": "floating_monetary_policy",
       "repairSkill": "floating_monetary_policy",
-      "feedback": "LM* right lowers e and raises Y.",
+      "feedback": "The LM* curve shifts to the right lowers the nominal exchange rate and raises output.",
       "image": "islm_er_change.png",
       "aHash": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
     },
     {
       "id": 3008,
-      "q": "The output effect of monetary expansion is reinforced because...",
+      "q": "Which mechanism reinforces the output effect of monetary expansion in an open economy?",
       "options": [
-        "depreciation raises NX",
-        "appreciation lowers NX",
+        "Depreciation raises net exports",
+        "Appreciation lowers net exports",
         "government spending falls",
-        "r* rises"
+        "The world interest rate rises"
       ],
       "tag": "floating_exchange_policy",
       "type": "multi-step",
@@ -9273,11 +9273,11 @@ const questionBanks = {
       "primarySkill": "floating_monetary_policy",
       "repairSkill": "floating_monetary_policy",
       "feedback": "The exchange-rate channel amplifies monetary policy under floating rates.",
-      "aHash": "5a7be63a4a656374b6685854c5d263325166172d0ad4066ca12f4a178aca7f29"
+      "aHash": "aee11899e7a1cc002f0fa29a3a3202acfb4829f251c535eaf28b50feec62b4de"
     },
     {
       "id": 3009,
-      "q": "Under fixed rates, monetary expansion creates pressure for...",
+      "q": "Under a fixed exchange rate, what pressure does an attempted monetary expansion place on the currency?",
       "options": [
         "depreciation",
         "appreciation",
@@ -9296,12 +9296,12 @@ const questionBanks = {
     },
     {
       "id": 3010,
-      "q": "To defend a fixed exchange rate against depreciation pressure, the central bank must...",
+      "q": "How must the central bank intervene to defend a fixed exchange rate against depreciation pressure?",
       "options": [
         "buy domestic currency and contract M",
         "sell domestic currency and expand M",
         "let the peg float",
-        "shift IS* right"
+        "Shift the IS* curve to the right"
       ],
       "tag": "fixed_exchange_policy",
       "type": "policy_memo",
@@ -9334,7 +9334,7 @@ const questionBanks = {
     },
     {
       "id": 3012,
-      "q": "Refer to the image above. Choosing side 1 means giving up...",
+      "q": "Refer to the policy trilemma graph. Which policy objective is forgone on side 1 of the impossible-trinity triangle?",
       "options": [
         "free capital mobility",
         "fixed exchange rate",
@@ -9354,7 +9354,7 @@ const questionBanks = {
     },
     {
       "id": 3013,
-      "q": "Refer to the image above. Choosing side 2 means giving up...",
+      "q": "Refer to the policy trilemma graph. Which policy objective is forgone on side 2 of the impossible-trinity triangle?",
       "options": [
         "fixed exchange rate",
         "monetary independence",
@@ -9374,7 +9374,7 @@ const questionBanks = {
     },
     {
       "id": 3014,
-      "q": "The impossible trinity is most directly about the conflict between capital mobility, exchange-rate targets, and...",
+      "q": "Along with capital mobility and exchange-rate targets, which policy objective is involved in the impossible trinity?",
       "options": [
         "monetary independence",
         "fiscal multipliers",
@@ -9393,7 +9393,7 @@ const questionBanks = {
     },
     {
       "id": 3015,
-      "q": "A lower price level changes Mundell-Fleming model first through...",
+      "q": "Through which initial change does a lower price level affect the Mundell–Fleming model?",
       "options": [
         "higher real money balances",
         "lower government spending",
@@ -9407,17 +9407,17 @@ const questionBanks = {
       "conceptCluster": "ad_derivation",
       "primarySkill": "derive_ad_from_mf",
       "repairSkill": "derive_ad_from_mf",
-      "feedback": "P falls, so M/P rises.",
+      "feedback": "The price level falls, so M/P rises.",
       "aHash": "522c92f966f7fc3f42a390e7a5d32c3573f66ba8860215bc52ca235f97556e80"
     },
     {
       "id": 3016,
-      "q": "Refer to the image above. A lower P moves the Mundell-Fleming model equilibrium toward...",
+      "q": "Refer to the Mundell–Fleming and aggregate demand graph. How does a lower price level change output and the exchange rate at the Mundell–Fleming equilibrium?",
       "options": [
-        "higher Y and lower e",
-        "lower Y and higher e",
-        "unchanged Y and higher e",
-        "lower net exports and higher P"
+        "Higher output and lower nominal exchange rate",
+        "Lower output and higher nominal exchange rate",
+        "Unchanged output and higher nominal exchange rate",
+        "Lower net exports and higher price level"
       ],
       "tag": "mundell_fleming_ad",
       "type": "graph",
@@ -9426,18 +9426,18 @@ const questionBanks = {
       "conceptCluster": "ad_derivation",
       "primarySkill": "derive_ad_from_mf",
       "repairSkill": "derive_ad_from_mf",
-      "feedback": "Lower P shifts LM* right.",
+      "feedback": "Lower price level shifts the LM* curve to the right.",
       "image": "mundell_ad.png",
-      "aHash": "1badfc6f0e686df277c89e8ac209a0384b923d576c24d13c02a75efedff8a0c8"
+      "aHash": "d3dbc8e0eacb65dd7f7b40b1cb9ed0a4431161ac02ef8cfe326e2d557bc6ae06"
     },
     {
       "id": 3017,
       "q": "Why does open-economy aggregate demand curve slope downward?",
       "options": [
-        "lower P raises M/P, depreciates the currency, raises NX, and raises Y",
-        "lower P shifts IS* left",
-        "higher P raises NX, appreciates the currency, raises M/P, and lowers Y",
-        "r* falls automatically"
+        "Lower price level raises M/P, depreciates the currency, raises net exports, and raises output",
+        "Lower price level shifts the IS* curve to the left",
+        "Higher price level raises net exports, appreciates the currency, raises M/P, and lowers output",
+        "The world interest rate falls automatically"
       ],
       "tag": "mundell_fleming_ad",
       "type": "multi-step",
@@ -9447,13 +9447,13 @@ const questionBanks = {
       "primarySkill": "derive_ad_from_mf",
       "repairSkill": "derive_ad_from_mf",
       "feedback": "That is the Mundell-Fleming model aggregate demand channel.",
-      "aHash": "bdbca5166d6372eb1843273a7c4e5d475de82177c28e069304ec4c42c817a657"
+      "aHash": "117249d9218df0518cc19311e9029e8135cb1991339539f39781d753566ffb89"
     }
   ],
   "finalBoss": [
     {
       "id": 4000,
-      "q": "The Custodian gives Y = 4,800, C = 3,050, I = 900, and G = 1,050. Which verdict correctly links the identity to the capital-flow position?",
+      "q": "Output is Y = 4,800, consumption is C = 3,050, investment is I = 900, and government purchases are G = 1,050. What do these values imply about the trade balance and net capital flow?",
       "options": [
         "net exports are -200, so net capital outflow is -200 and the economy is borrowing from abroad",
         "net exports are 200, so net capital outflow is 200 and the economy is lending abroad",
@@ -9472,7 +9472,7 @@ const questionBanks = {
     },
     {
       "id": 4001,
-      "q": "National saving is 1,150 and domestic investment is 1,430. Which statement is the cleanest diagnosis?",
+      "q": "National saving is 1,150 and domestic investment is 1,430. Which statement is the most accurate diagnosis?",
       "options": [
         "S - I = -280, so the economy has a trade deficit financed by capital inflow",
         "S - I = 280, so the economy has a trade surplus financed by capital outflow",
@@ -9505,7 +9505,7 @@ const questionBanks = {
       "conceptCluster": "identity_capital_flow_synthesis",
       "primarySkill": "open_economy_identities",
       "repairSkill": "open_economy_identities",
-      "feedback": "The identity is NX = S - I. A deficit means NX < 0, so S < I.",
+      "feedback": "Net exports equal national saving minus domestic investment. A trade deficit means net exports are negative, so saving is less than investment. The deficit does not show that saving is high; it shows a shortfall relative to domestic investment.",
       "commonError": "reversing S and I",
       "aHash": "616d01620a50945a263c0c18e9e4804b7874060223022a872d3cf3e3a73a1a36"
     },
@@ -9530,7 +9530,7 @@ const questionBanks = {
     },
     {
       "id": 4004,
-      "q": "Refer to the image above. Starting from E, a domestic fiscal expansion is best represented by which movement?",
+      "q": "Refer to the real exchange rate graph. Starting from E, a domestic fiscal expansion is best represented by which movement?",
       "options": [
         "E to A",
         "E to I",
@@ -9554,7 +9554,7 @@ const questionBanks = {
       "options": [
         "S - I falls, net exports fall, and the real exchange rate appreciates",
         "S - I rises, net exports rise, and the real exchange rate depreciates",
-        "investment cannot change because r is fixed at the world interest rate",
+        "Investment cannot change because the real interest rate is fixed at the world interest rate",
         "the trade balance improves because firms invest more"
       ],
       "tag": "fiscal_policy_open_economy",
@@ -9569,7 +9569,7 @@ const questionBanks = {
     },
     {
       "id": 4006,
-      "q": "The Custodian hears, “A tariff fixes a trade deficit because imports fall.” What is the missing adjustment?",
+      "q": "In the classical small-open-economy model, a tariff reduces desired imports at the initial real exchange rate. Why does this not necessarily reduce the equilibrium trade deficit?",
       "options": [
         "the real exchange rate appreciates and offsets the direct increase in net exports",
         "the world interest rate falls and raises domestic investment",
@@ -9588,7 +9588,7 @@ const questionBanks = {
     },
     {
       "id": 4007,
-      "q": "Refer to the image above. If a tariff shifts the net-exports schedule right while S - I is fixed, what changes at the new equilibrium?",
+      "q": "Refer to the net exports and the real exchange rate graph. If a tariff shifts the net-exports schedule right while S - I is fixed, what changes at the new equilibrium?",
       "options": [
         "the real exchange rate rises, but net exports stay tied to S - I",
         "net exports rise permanently because imports are lower",
@@ -9611,7 +9611,7 @@ const questionBanks = {
       "q": "Why is a tariff under floating exchange rates weak as output stimulus in the Mundell-Fleming model?",
       "options": [
         "the exchange rate appreciates and crowds out net exports, leaving output unchanged",
-        "the money supply automatically falls and shifts LM* left",
+        "The money supply automatically falls and shifts the LM* curve to the left",
         "the world interest rate rises and forces investment down",
         "the tariff directly lowers aggregate demand"
       ],
@@ -9629,9 +9629,9 @@ const questionBanks = {
       "id": 4009,
       "q": "Under floating exchange rates, expansionary monetary policy works through which complete channel?",
       "options": [
-        "LM* shifts right, the exchange rate depreciates, net exports rise, and output rises",
-        "IS* shifts right, the exchange rate appreciates, and output is unchanged",
-        "LM* shifts left, the exchange rate appreciates, and output falls",
+        "The LM* curve shifts to the right, the exchange rate depreciates, net exports rise, and output rises",
+        "The IS* curve shifts to the right, the exchange rate appreciates, and output is unchanged",
+        "The LM* curve shifts to the left, the exchange rate appreciates, and output falls",
         "the central bank buys foreign currency to defend the peg"
       ],
       "tag": "floating_exchange_policy",
@@ -9641,15 +9641,15 @@ const questionBanks = {
       "conceptCluster": "floating_mundell_fleming_policy",
       "primarySkill": "floating_monetary_policy",
       "repairSkill": "floating_monetary_policy",
-      "feedback": "Monetary expansion shifts LM* right. Depreciation raises net exports and output.",
-      "aHash": "0e2c685437966f5b9696d3afba44753e6f7e7394d863e5ef2e8e23b63a2798dd"
+      "feedback": "Monetary expansion shifts the LM* curve to the right. Depreciation raises net exports and output.",
+      "aHash": "0fdd09c3422f6f554b904859d584d4c014a9e681e5ac537efdcab5166645080e"
     },
     {
       "id": 4010,
-      "q": "Under floating exchange rates, fiscal expansion has a muted output effect because...",
+      "q": "Why does fiscal expansion have a muted output effect under floating exchange rates?",
       "options": [
         "the exchange rate appreciates and reduces net exports",
-        "LM* shifts right and offsets the fiscal expansion",
+        "The LM* curve shifts to the right and offsets the fiscal expansion",
         "the central bank must buy domestic currency to maintain the peg",
         "investment becomes perfectly interest-inelastic"
       ],
@@ -9660,12 +9660,12 @@ const questionBanks = {
       "conceptCluster": "floating_mundell_fleming_policy",
       "primarySkill": "floating_fiscal_policy",
       "repairSkill": "floating_fiscal_policy",
-      "feedback": "Fiscal expansion shifts IS* right, but appreciation reduces net exports and offsets the effect on output.",
+      "feedback": "Fiscal expansion shifts the IS* curve to the right, but appreciation reduces net exports and offsets the effect on output.",
       "aHash": "b1656ea158a0fb2e3796f5063e8b475baa34eaedfbdd53d37645dde9560d77c5"
     },
     {
       "id": 4011,
-      "q": "Compare monetary expansion and fiscal expansion in the floating-rate Mundell-Fleming model. What is the key difference?",
+      "q": "Compare monetary expansion and fiscal expansion in the Mundell–Fleming model with floating exchange rates. What is the key difference?",
       "options": [
         "monetary expansion shifts LM* and raises output; fiscal expansion shifts IS* and is offset by appreciation",
         "both policies shift LM* and raise output by the same amount",
@@ -9703,7 +9703,7 @@ const questionBanks = {
     },
     {
       "id": 4013,
-      "q": "Refer to the image above. Which side preserves independent monetary policy and free capital mobility?",
+      "q": "Refer to the policy trilemma graph. Which side preserves independent monetary policy and free capital mobility?",
       "options": [
         "side 2",
         "side 1",
@@ -9728,7 +9728,7 @@ const questionBanks = {
         "sell foreign reserves and buy domestic currency",
         "buy foreign reserves and sell domestic currency",
         "increase money growth and allow depreciation",
-        "shift IS* right through tax cuts"
+        "Shift the IS* curve to the right through tax cuts"
       ],
       "tag": "fixed_floating_exchange_regimes",
       "type": "multi-step",
@@ -9756,12 +9756,12 @@ const questionBanks = {
       "conceptCluster": "ad_derivation_open_economy",
       "primarySkill": "derive_ad_from_mf",
       "repairSkill": "derive_ad_from_mf",
-      "feedback": "Lower P raises M/P, shifts LM* right, lowers the exchange rate, raises net exports, and raises Y.",
+      "feedback": "Lower price level raises M/P, shifts the LM* curve to the right, lowers the exchange rate, raises net exports, and raises output.",
       "aHash": "b094b1d9e1c9586ed8c603053b419b5ec01eb52f09ce3d586e5870bf77e2bc65"
     },
     {
       "id": 4016,
-      "q": "Refer to the image above. The aggregate demand curve connects different price levels to output because...",
+      "q": "Refer to the Mundell–Fleming and aggregate demand–aggregate supply graph. Which mechanism links different price levels to output along the aggregate demand curve?",
       "options": [
         "each price level changes real money balances and therefore the LM* position",
         "each price level changes government spending by law",
@@ -9878,7 +9878,7 @@ const questionBanks = {
     },
     {
       "id": 9104,
-      "q": "Refer to the image above. Moving from E to A and from E to I both involve a change in the real exchange rate. Which interpretation separates them?",
+      "q": "Refer to the real exchange rate graph. Moving from E to A and from E to I both involve a change in the real exchange rate. Which interpretation separates them?",
       "options": [
         "E to A reflects lower S - I; E to I reflects higher S - I",
         "E to A reflects higher S - I; E to I reflects lower S - I",
@@ -9898,9 +9898,9 @@ const questionBanks = {
     },
     {
       "id": 9105,
-      "q": "Foreign fiscal contraction lowers the world interest rate while domestic fiscal expansion lowers saving. Why is the net effect not automatic?",
+      "q": "Foreign fiscal contraction lowers the world interest rate while domestic fiscal expansion lowers saving. In the long-run small-open model, which conclusion follows for net exports?",
       "options": [
-        "one shock raises investment through lower r*, while the other lowers S - I through lower saving",
+        "Lower saving and higher investment both reduce S − I and net exports",
         "both shocks increase saving by the same amount",
         "foreign policy cannot affect a small open economy",
         "domestic fiscal policy only changes the price level"
@@ -9912,8 +9912,8 @@ const questionBanks = {
       "conceptCluster": "small_open_policy_synthesis",
       "primarySkill": "foreign_fiscal_policy",
       "repairSkill": "foreign_fiscal_policy",
-      "feedback": "The shocks push different pieces of the model. You have to trace saving and investment separately.",
-      "aHash": "f5c7c3d740aa1ba10a97ac12a2e1d0470bd937884d93bb04ec3967b73259b034"
+      "feedback": "A lower world interest rate raises investment. Domestic fiscal expansion lowers saving. In ΔNX=ΔS−ΔI, a negative saving change and a positive investment change both reduce net exports; the net direction is not ambiguous.",
+      "aHash": "d6b1e59c08f452175ab3a560fd4a6c0f25a229e8855822717c8a1e626b386197"
     },
     {
       "id": 9106,
@@ -9936,7 +9936,7 @@ const questionBanks = {
     },
     {
       "id": 9107,
-      "q": "Refer to the image above. The tariff movement from B to A mainly demonstrates...",
+      "q": "Refer to the net exports and the real exchange rate graph. What does the tariff-induced move from B to A demonstrate?",
       "options": [
         "a higher real exchange rate with net exports pinned by S - I",
         "a lower real exchange rate with a permanent trade surplus",
@@ -9961,7 +9961,7 @@ const questionBanks = {
         "currency appreciation offsets the direct net-export gain",
         "the central bank must reduce the money supply to defend a peg",
         "investment rises until output returns to zero",
-        "the tariff directly shifts LM* left"
+        "The tariff directly shifts the LM* curve to the left"
       ],
       "tag": "trade_policy",
       "type": "multi-step",
@@ -9975,11 +9975,11 @@ const questionBanks = {
     },
     {
       "id": 9109,
-      "q": "Under floating exchange rates, a rise in money demand shifts LM* left. What is the chain?",
+      "q": "Under floating exchange rates, a rise in money demand shifts the LM* curve to the left. What is the chain?",
       "options": [
         "the exchange rate appreciates, net exports fall, and output falls",
         "the exchange rate depreciates, net exports rise, and output rises",
-        "IS* shifts right and output is unchanged",
+        "The IS* curve shifts to the right and output is unchanged",
         "the central bank must buy foreign reserves to fix the exchange rate"
       ],
       "tag": "floating_exchange_policy",
@@ -9994,11 +9994,11 @@ const questionBanks = {
     },
     {
       "id": 9110,
-      "q": "Refer to the image above. Monetary expansion under floating exchange rates moves from B to C. Why does output rise?",
+      "q": "Refer to the Mundell–Fleming graph. Monetary expansion under floating exchange rates moves from B to C. Why does output rise?",
       "options": [
-        "depreciation raises net exports as LM* shifts right",
+        "Depreciation raises net exports as the LM* curve shifts to the right",
         "appreciation raises imports and lowers output",
-        "IS* shifts left because government spending falls",
+        "The IS* curve shifts to the left because government spending falls",
         "the world interest rate rises above r*"
       ],
       "tag": "floating_exchange_policy",
@@ -10010,15 +10010,15 @@ const questionBanks = {
       "repairSkill": "floating_monetary_policy",
       "feedback": "The LM* shift lowers the exchange rate and raises net exports.",
       "image": "islm_er_change.png",
-      "aHash": "51f838ae17eadd6c330581aec5025777337a2d10d316c27ce029a9c9344d1413"
+      "aHash": "a851b21bad0daa7ff06c04a4f91f41926b32fc475d418bbeab8324dbe67fdb45"
     },
     {
       "id": 9111,
-      "q": "Refer to the image above. Fiscal expansion under floating exchange rates moves from B to A. Why is output unchanged?",
+      "q": "Refer to the Mundell–Fleming graph. Fiscal expansion under floating exchange rates moves from B to A. Why is output unchanged?",
       "options": [
-        "appreciation crowds out net exports as IS* shifts right",
+        "Appreciation crowds out net exports as the IS* curve shifts to the right",
         "depreciation raises net exports enough to double output",
-        "LM* shifts right automatically",
+        "The LM* curve shifts to the right automatically",
         "the price level falls immediately"
       ],
       "tag": "floating_exchange_policy",
@@ -10030,7 +10030,7 @@ const questionBanks = {
       "repairSkill": "floating_fiscal_policy",
       "feedback": "The IS* shift is offset by appreciation, keeping output at Y*.",
       "image": "islm_exchangerates.png",
-      "aHash": "1d3679afcd6cf7d34354aacc9289aefce74dcf15327672fabce4fc8225e4c4ef"
+      "aHash": "f7de68522d88ee3aee789901bd9594a8d0430caf8aa1e60cc459f1da7e357375"
     },
     {
       "id": 9112,
@@ -10053,7 +10053,7 @@ const questionBanks = {
     },
     {
       "id": 9113,
-      "q": "Refer to the image above. Choosing side 1 preserves independent monetary policy and a fixed exchange rate. What is sacrificed?",
+      "q": "Refer to the policy trilemma graph. Choosing side 1 preserves independent monetary policy and a fixed exchange rate. What is sacrificed?",
       "options": [
         "free capital mobility",
         "the fixed exchange rate",
@@ -10092,12 +10092,12 @@ const questionBanks = {
     },
     {
       "id": 9115,
-      "q": "In the open-economy aggregate demand derivation, what is the essential reason lower P raises Y?",
+      "q": "In the open-economy aggregate demand derivation, what is the essential reason lower price level raises output?",
       "options": [
-        "lower P raises M/P, shifts LM* right, depreciates the currency, and raises net exports",
-        "lower P shifts IS* left because consumption falls",
-        "lower P raises the world interest rate and lowers investment",
-        "lower P fixes the exchange rate and eliminates net exports"
+        "Lower price level raises M/P, shifts the LM* curve to the right, depreciates the currency, and raises net exports",
+        "Lower price level shifts the IS* curve to the left because consumption falls",
+        "Lower price level raises the world interest rate and lowers investment",
+        "Lower price level fixes the exchange rate and eliminates net exports"
       ],
       "tag": "mundell_fleming_ad",
       "type": "multi-step",
@@ -10107,11 +10107,11 @@ const questionBanks = {
       "primarySkill": "derive_ad_from_mf",
       "repairSkill": "derive_ad_from_mf",
       "feedback": "The aggregate demand channel runs through real money balances and the exchange rate.",
-      "aHash": "dcd35f50c927314a370c8eada9c34babe227e2879ea98ac082cb57735bc69101"
+      "aHash": "8f659c223d6838964aeb830067bf5b680fbaee371675431cbd855f6fcb1a356d"
     },
     {
       "id": 9116,
-      "q": "Refer to the image above. Moving from A to C in the left panel corresponds to what in the right panel?",
+      "q": "Refer to the Mundell–Fleming and aggregate demand–aggregate supply graph. Moving from A to C in the left panel corresponds to what in the right panel?",
       "options": [
         "moving down along the aggregate demand curve from high P/low Y to low P/high Y",
         "shifting aggregate demand left because net exports fall",
@@ -10125,7 +10125,7 @@ const questionBanks = {
       "conceptCluster": "ad_derivation_synthesis",
       "primarySkill": "derive_ad_from_mf",
       "repairSkill": "derive_ad_from_mf",
-      "feedback": "Lower P raises real balances and output, producing movement along aggregate demand.",
+      "feedback": "Lower price level raises real balances and output, producing movement along aggregate demand.",
       "image": "mundell_adas.png",
       "aHash": "c6735962cba4009b6b62f8c9f6b9e180e62b0d7866223d2cb8d8629f5625e3a3"
     },
@@ -10133,8 +10133,8 @@ const questionBanks = {
       "id": 9117,
       "q": "If the economy is temporarily beyond long-run output in the aggregate demand and aggregate supply panel, what adjustment closes the gap?",
       "options": [
-        "the price level rises, real balances fall, LM* shifts left, and output returns toward LRAS",
-        "the price level falls, real balances rise, LM* shifts right, and output moves farther from LRAS",
+        "The price level rises, real balances fall, the LM* curve shifts to the left, and output returns toward LRAS",
+        "The price level falls, real balances rise, the LM* curve shifts to the right, and output moves farther from LRAS",
         "the real exchange rate is fixed, so no adjustment occurs",
         "investment demand shifts right until LRAS moves"
       ],
@@ -10146,7 +10146,7 @@ const questionBanks = {
       "primarySkill": "long_run_price_adjustment",
       "repairSkill": "long_run_price_adjustment",
       "feedback": "Long-run adjustment works through the price level, real balances, and LM*.",
-      "aHash": "659a962a38011596e915ad213b65d2d8c78ab5ea277395625f296beb2e88e3db"
+      "aHash": "fe4992ed0a07a348de04cd7aa937b590d2af8d9b14b11a2340425650b9ffdec8"
     },
     {
       "id": 9118,
@@ -10183,12 +10183,12 @@ const questionBanks = {
       "conceptCluster": "capital_flight_synthesis",
       "primarySkill": "capital_flight_exchange_rate",
       "repairSkill": "capital_flight_exchange_rate",
-      "feedback": "Higher r crowds out investment, while depreciation tends to raise net exports.",
+      "feedback": "Higher real interest rate crowds out investment, while depreciation tends to raise net exports.",
       "aHash": "7620da8878462386b0d48d1ca61b628c47a9a34606ab3aba26790f5cebe3e45e"
     },
     {
       "id": 9120,
-      "q": "A policymaker celebrates depreciation because exports rise. What question should the Custodian ask next?",
+      "q": "A currency depreciation raises exports. What additional information is needed to assess its effect on net exports?",
       "options": [
         "why the currency depreciated and whether it reflects a harmful capital-flow shock",
         "whether imports should be counted as exports",
@@ -10226,7 +10226,7 @@ const questionBanks = {
     },
     {
       "id": 9122,
-      "q": "A real depreciation raises net exports only if you keep which distinction clear?",
+      "q": "When interpreting a rise in net exports after real depreciation, which distinction helps assess whether the underlying shock is beneficial?",
       "options": [
         "relative price movement versus the reason the currency moved",
         "exports versus government purchases only",
@@ -10240,7 +10240,7 @@ const questionBanks = {
       "conceptCluster": "exchange_rate_synthesis",
       "primarySkill": "exchange_rate_adjustment",
       "repairSkill": "exchange_rate_adjustment",
-      "feedback": "Depreciation changes relative prices, but the underlying shock still matters.",
+      "feedback": "Real depreciation makes domestic goods relatively cheaper and can raise net exports. Its cause still matters: capital flight can produce the same relative-price movement while damaging finance and investment. Keeping that distinction clear improves interpretation; it does not cause the trade response.",
       "aHash": "99abb1070bf743e0348843f72e7b398db7b90f098b49963b63c110287bb70b56"
     },
     {
@@ -10297,14 +10297,14 @@ const questionBanks = {
       "conceptCluster": "large_open_policy_synthesis",
       "primarySkill": "large_open_policy",
       "repairSkill": "large_open_policy",
-      "feedback": "When r rises, investment falls along the investment-demand curve.",
+      "feedback": "When the real interest rate rises, investment falls along the investment-demand curve.",
       "aHash": "e4e99b69e84c0a45f6296ad570b7aa24f2e7450c187ec10ab0bdbcb7b8097acc"
     },
     {
       "id": 9126,
       "q": "A large open economy faces expansionary monetary policy. Why can the exchange-rate and interest-rate channels both matter?",
       "options": [
-        "the policy can lower r, stimulate investment, affect capital flows, and depreciate the currency",
+        "The policy can lower real interest rate, stimulate investment, affect capital flows, and depreciate the currency",
         "the policy only changes government spending",
         "the policy fixes net exports at zero",
         "the policy has no effect because large economies are closed"
@@ -10317,15 +10317,15 @@ const questionBanks = {
       "primarySkill": "large_open_policy",
       "repairSkill": "large_open_policy",
       "feedback": "Large-open-economy policy blends interest-rate and exchange-rate channels.",
-      "aHash": "56a0c141111dfa328ddcafd9b24551f49ae7eac61a651d149dbdf8a0f6b08ee2"
+      "aHash": "416570721c689ba96145710e3f2850a2a75d99953435d9ab89fe022fbdedb379"
     },
     {
       "id": 9127,
-      "q": "Which answer best separates Chapter 6 from the Mundell-Fleming model?",
+      "q": "Which answer best separates the classical small-open-economy model from the Mundell-Fleming model?",
       "options": [
-        "Chapter 6 focuses on long-run S - I and real exchange rates; the Mundell-Fleming model adds short-run output and IS*/LM*",
-        "Chapter 6 ignores net exports, while the Mundell-Fleming model ignores exchange rates",
-        "Chapter 6 assumes fixed prices and the Mundell-Fleming model assumes flexible prices only",
+        "The classical small-open-economy model focuses on long-run S - I and real exchange rates; the Mundell-Fleming model adds short-run output and IS*/LM*",
+        "The classical small-open-economy model ignores net exports, while the Mundell-Fleming model ignores exchange rates",
+        "The classical small-open-economy model assumes fixed prices and the Mundell-Fleming model assumes flexible prices only",
         "the two models give identical answers to every policy question"
       ],
       "tag": "open_economy_synthesis",
@@ -10335,8 +10335,8 @@ const questionBanks = {
       "conceptCluster": "model_comparison_synthesis",
       "primarySkill": "open_economy_synthesis",
       "repairSkill": "open_economy_synthesis",
-      "feedback": "Chapter 6 is the long-run open-economy baseline; the Mundell-Fleming model is the short-run IS-LM extension.",
-      "aHash": "8f636f025999fbedbc50328ecdc5e441a3aaa9e077c997f5726e6a8fceca0617"
+      "feedback": "The classical small-open-economy model is the long-run open-economy baseline; the Mundell-Fleming model is the short-run IS-LM extension.",
+      "aHash": "9fb011f27b1e5d402caede954c9619721f4094f106ac459cb4b1cc3b43ee1d8a"
     },
     {
       "id": 9128,
@@ -10344,7 +10344,7 @@ const questionBanks = {
       "options": [
         "under floating-rate Mundell-Fleming model logic, appreciation can crowd out net exports and leave output unchanged",
         "under all models, fiscal policy only changes the money supply",
-        "under Chapter 6, fiscal policy directly shifts aggregate demand only",
+        "in the classical small-open-economy model, fiscal policy directly shifts aggregate demand only",
         "under a fixed exchange rate, fiscal policy is always neutral"
       ],
       "tag": "open_economy_synthesis",
@@ -10359,7 +10359,7 @@ const questionBanks = {
     },
     {
       "id": 9129,
-      "q": "The Custodian asks for the cleanest final rule. Which answer survives across the Citadel?",
+      "q": "When evaluating an open-economy policy, which approach correctly uses the model’s assumptions and traces the economic mechanism?",
       "options": [
         "start with the model assumption, then trace the identity, curve shift, exchange-rate movement, and final variable",
         "start with the answer that names the most variables",
@@ -10373,7 +10373,7 @@ const questionBanks = {
       "conceptCluster": "model_comparison_synthesis",
       "primarySkill": "open_economy_synthesis",
       "repairSkill": "open_economy_synthesis",
-      "feedback": "The final boss tests chain logic: model, identity, shock, curve, exchange rate, and outcome.",
+      "feedback": "First establish the relevant assumptions, including the exchange-rate regime and capital mobility. Then trace how the policy changes saving or spending, shifts curves, affects the exchange rate, and determines the final outcome.",
       "aHash": "130e390e8c910da0ccf189d6f4b30ac24130661fad5560fc6d0c38422a550221"
     }
   ]
@@ -10382,12 +10382,12 @@ const questionBanks = {
 const microSkillRepairPools = {
   "open_economy_identity": [
     {
-      "q": "For open-economy identity, what should be the first move?",
+      "q": "Which open-economy expenditure identity includes purchases of domestic output by foreigners and excludes domestic purchases of foreign output?",
       "options": [
-        "start from Y = C + I + G + NX or S = I + NCO",
-        "pick the answer with the most words",
-        "ignore the sign of NX",
-        "treat fixed and floating regimes as the same"
+        "Y=C+I+G+NX",
+        "Y=C+I+G+imports",
+        "Y=C+I+G−exports",
+        "Y=C+I+G regardless of trade"
       ],
       "tag": "accounting_identities",
       "type": "repair",
@@ -10395,18 +10395,18 @@ const microSkillRepairPools = {
       "conceptCluster": "open_economy_identity",
       "primarySkill": "open_economy_identity",
       "repairSkill": "open_economy_identity",
-      "feedback": "Repair starts by anchoring the specific mechanism: start from Y = C + I + G + NX or S = I + NCO.",
+      "feedback": "Net exports are exports minus imports. Exports buy domestic output; imports are removed because they are foreign production already included in spending categories.",
       "id": 5000,
       "difficulty": "repair",
-      "aHash": "60c846b4fc695b04c56cffe07ec837e1e2f5b9545f203d88c54c4be655e0e6ac"
+      "aHash": "6b360fde67917caebddf8efd30c2502b0e693137b6ad4338775a6251ce625f7e"
     },
     {
-      "q": "Which mistake most often breaks open-economy identity?",
+      "q": "If domestic spending C+I+G exceeds domestic output Y, what sign must net exports have?",
       "options": [
-        "reversing the first model link",
-        "checking the relevant identity",
-        "following the exchange-rate channel",
-        "using the graph label carefully"
+        "Positive",
+        "Exactly zero",
+        "The same sign as government saving",
+        "Negative"
       ],
       "tag": "accounting_identities",
       "type": "repair",
@@ -10414,18 +10414,18 @@ const microSkillRepairPools = {
       "conceptCluster": "open_economy_identity",
       "primarySkill": "open_economy_identity",
       "repairSkill": "open_economy_identity",
-      "feedback": "The first wrong link usually wrecks the final answer in open-economy identity questions.",
+      "feedback": "Rearrange the identity: NX=Y−(C+I+G). Spending more than output makes that difference negative.",
       "id": 5001,
       "difficulty": "repair",
-      "aHash": "3f3766ee94167d6effd96db67b755df0ef06dd3e0f079a16359e2f21ea26736f"
+      "aHash": "09f04951af4cd503877815fd30f98e3af8d3d50a0972e83a4aaa42f4fba59761"
     },
     {
-      "q": "Which clue tells you this is a open-economy identity question?",
+      "q": "Why does an imported phone not add its full price to domestic GDP merely because it is included in consumption?",
       "options": [
-        "it asks you to start from Y = C + I + G + NX or S = I + NCO",
-        "it mentions a random room number",
-        "it uses long answer choices",
-        "it avoids every macro variable"
+        "Consumption is excluded from GDP whenever imports occur",
+        "Imports are subtracted from government purchases",
+        "Its import value is subtracted in net exports",
+        "All phone spending is classified as investment"
       ],
       "tag": "accounting_identities",
       "type": "repair",
@@ -10433,20 +10433,20 @@ const microSkillRepairPools = {
       "conceptCluster": "open_economy_identity",
       "primarySkill": "open_economy_identity",
       "repairSkill": "open_economy_identity",
-      "feedback": "The clue is the model task: start from Y = C + I + G + NX or S = I + NCO.",
+      "feedback": "The imported phone enters C, but the corresponding import enters NX negatively. The foreign-produced value therefore does not become domestic output.",
       "id": 5002,
       "difficulty": "repair",
-      "aHash": "7df24b6d284df181c32e32c3fb1dd487574cc833fc90cd81b0e6670f73e5595b"
+      "aHash": "0cd949c6783aa4a55c23c2f4eab9f7c6cfe781dac2972e54d715a73e49daa2cd"
     }
   ],
   "calculate_nx_from_s_i": [
     {
-      "q": "For NX from S and I, what should be the first move?",
+      "q": "In the long-run open-economy accounting model, national saving is 120 and domestic investment is 90. What are net exports?",
       "options": [
-        "use NX = S - I and keep the sign",
-        "pick the answer with the most words",
-        "ignore the sign of NX",
-        "treat fixed and floating regimes as the same"
+        "210",
+        "−30",
+        "90",
+        "30"
       ],
       "tag": "saving_investment_capital_flows",
       "type": "repair",
@@ -10454,18 +10454,18 @@ const microSkillRepairPools = {
       "conceptCluster": "calculate_nx_from_s_i",
       "primarySkill": "calculate_nx_from_s_i",
       "repairSkill": "calculate_nx_from_s_i",
-      "feedback": "Repair starts by anchoring the specific mechanism: use NX = S - I and keep the sign.",
+      "feedback": "NX=S−I=120−90=30. Saving not used for domestic investment finances net lending abroad.",
       "id": 5003,
       "difficulty": "repair",
-      "aHash": "9a122af68b5880a57d200797f47b8b69350c2af68e7ca7a149a5ccc8695fb385"
+      "aHash": "624b60c58c9d8bfb6ff1886c2fd605d2adeb6ea4da576068201b6c6958ce93f4"
     },
     {
-      "q": "Which mistake most often breaks NX from S and I?",
+      "q": "If national saving is less than domestic investment, which conclusion follows from NX=S−I?",
       "options": [
-        "reversing the first model link",
-        "checking the relevant identity",
-        "following the exchange-rate channel",
-        "using the graph label carefully"
+        "Government saving must be negative",
+        "Domestic investment must be zero",
+        "The country has a trade deficit",
+        "The country has a trade surplus"
       ],
       "tag": "saving_investment_capital_flows",
       "type": "repair",
@@ -10473,18 +10473,18 @@ const microSkillRepairPools = {
       "conceptCluster": "calculate_nx_from_s_i",
       "primarySkill": "calculate_nx_from_s_i",
       "repairSkill": "calculate_nx_from_s_i",
-      "feedback": "The first wrong link usually wrecks the final answer in NX from S and I questions.",
+      "feedback": "S−I is negative, so NX is negative. This does not by itself identify the government budget balance.",
       "id": 5004,
       "difficulty": "repair",
-      "aHash": "3f3766ee94167d6effd96db67b755df0ef06dd3e0f079a16359e2f21ea26736f"
+      "aHash": "1e9cef93c7bc95897777d6f231d254179f1d38961ad94f701f8a00c0472f36c6"
     },
     {
-      "q": "Which clue tells you this is a NX from S and I question?",
+      "q": "A student calculates NX as I−S. What sign error results when S=80 and I=100?",
       "options": [
-        "it asks you to use NX = S - I and keep the sign",
-        "it mentions a random room number",
-        "it uses long answer choices",
-        "it avoids every macro variable"
+        "The student reports the correct deficit but the wrong size",
+        "The student reports a surplus of 20 instead of a deficit of 20",
+        "The student reports a deficit of 20 instead of a surplus of 20",
+        "The student correctly reports balanced trade"
       ],
       "tag": "saving_investment_capital_flows",
       "type": "repair",
@@ -10492,20 +10492,20 @@ const microSkillRepairPools = {
       "conceptCluster": "calculate_nx_from_s_i",
       "primarySkill": "calculate_nx_from_s_i",
       "repairSkill": "calculate_nx_from_s_i",
-      "feedback": "The clue is the model task: use NX = S - I and keep the sign.",
+      "feedback": "The correct order is S−I=80−100=−20. Reversing the subtraction reverses the trade-balance sign.",
       "id": 5005,
       "difficulty": "repair",
-      "aHash": "ea30dc268d11a8fe2177d2a8a28317ee329647dcbd2db8a07169055a44eff3a6"
+      "aHash": "bd5a6de852db4d1713e8d8c666e15e03282dc6313c727ed41d54e6f7a5b9f760"
     }
   ],
   "calculate_nx_from_y_c_i_g": [
     {
-      "q": "For NX from Y, C, I, and G, what should be the first move?",
+      "q": "An economy produces 1,000 units of output. Consumption is 600, investment is 150, and government purchases are 200. What are net exports?",
       "options": [
-        "rearrange Y = C + I + G + NX",
-        "pick the answer with the most words",
-        "ignore the sign of NX",
-        "treat fixed and floating regimes as the same"
+        "−50",
+        "950",
+        "50",
+        "350"
       ],
       "tag": "accounting_identities",
       "type": "repair",
@@ -10513,18 +10513,18 @@ const microSkillRepairPools = {
       "conceptCluster": "calculate_nx_from_y_c_i_g",
       "primarySkill": "calculate_nx_from_y_c_i_g",
       "repairSkill": "calculate_nx_from_y_c_i_g",
-      "feedback": "Repair starts by anchoring the specific mechanism: rearrange Y = C + I + G + NX.",
+      "feedback": "Domestic spending is 600 + 150 + 200 = 950. Output exceeds domestic spending by 1,000 − 950 = 50, so net exports are 50. These are the goods and services sold abroad net of imports.",
       "id": 5006,
       "difficulty": "repair",
-      "aHash": "5aab5ab2f9582ab4bcd61c9edbd571a630599a81d72f33161c3d412634eb5271"
+      "aHash": "1a6562590ef19d1045d06c4055742d38288e9e6dcd71ccde5cee80f1d5a774eb"
     },
     {
-      "q": "Which mistake most often breaks NX from Y, C, I, and G?",
+      "q": "When solving for NX from Y=C+I+G+NX, which spending categories must be subtracted from Y?",
       "options": [
-        "reversing the first model link",
-        "checking the relevant identity",
-        "following the exchange-rate channel",
-        "using the graph label carefully"
+        "Investment and exports",
+        "Consumption, investment and government purchases",
+        "Only consumption",
+        "Consumption and taxes"
       ],
       "tag": "accounting_identities",
       "type": "repair",
@@ -10532,18 +10532,18 @@ const microSkillRepairPools = {
       "conceptCluster": "calculate_nx_from_y_c_i_g",
       "primarySkill": "calculate_nx_from_y_c_i_g",
       "repairSkill": "calculate_nx_from_y_c_i_g",
-      "feedback": "The first wrong link usually wrecks the final answer in NX from Y, C, I, and G questions.",
+      "feedback": "Rearranging the expenditure identity requires subtracting all three domestic spending components C, I and G.",
       "id": 5007,
       "difficulty": "repair",
-      "aHash": "3f3766ee94167d6effd96db67b755df0ef06dd3e0f079a16359e2f21ea26736f"
+      "aHash": "bb4d40d484adeece2ab1e4180f56f43662e99624155e6fbdaddb72c2499b28f4"
     },
     {
-      "q": "Which clue tells you this is a NX from Y, C, I, and G question?",
+      "q": "Output is 500 while C=350, I=100 and G=80. Is the trade balance positive or negative?",
       "options": [
-        "it asks you to rearrange Y = C + I + G + NX",
-        "it mentions a random room number",
-        "it uses long answer choices",
-        "it avoids every macro variable"
+        "Negative, because domestic spending exceeds output by 30",
+        "Positive, because output exceeds consumption by 150",
+        "Zero, because every good must have a buyer",
+        "Positive, because investment is positive"
       ],
       "tag": "accounting_identities",
       "type": "repair",
@@ -10551,20 +10551,20 @@ const microSkillRepairPools = {
       "conceptCluster": "calculate_nx_from_y_c_i_g",
       "primarySkill": "calculate_nx_from_y_c_i_g",
       "repairSkill": "calculate_nx_from_y_c_i_g",
-      "feedback": "The clue is the model task: rearrange Y = C + I + G + NX.",
+      "feedback": "Domestic spending totals 530. NX=500−530=−30; considering only Y−C would omit investment and government purchases.",
       "id": 5008,
       "difficulty": "repair",
-      "aHash": "dfb8ce5cee716cccdecbafb4c2eeee2107e7f698677bc167eedf26ac87e4e28b"
+      "aHash": "30d789f42f95f2f782f26db88f5819fcf5409fdd456b6068444ec49b1cf84857"
     }
   ],
   "calculate_net_exports": [
     {
-      "q": "For net exports from trade data, what should be the first move?",
+      "q": "A country exports goods and services worth 75 and imports goods and services worth 95. What are its net exports?",
       "options": [
-        "subtract imports from exports",
-        "pick the answer with the most words",
-        "ignore the sign of NX",
-        "treat fixed and floating regimes as the same"
+        "−170",
+        "−20",
+        "20",
+        "170"
       ],
       "tag": "trade_balance_net_exports",
       "type": "repair",
@@ -10572,18 +10572,18 @@ const microSkillRepairPools = {
       "conceptCluster": "calculate_net_exports",
       "primarySkill": "calculate_net_exports",
       "repairSkill": "calculate_net_exports",
-      "feedback": "Repair starts by anchoring the specific mechanism: subtract imports from exports.",
+      "feedback": "Subtract imports from exports: 75 − 95 = −20. The negative result means the country imports 20 more than it exports, so it has a trade deficit of 20.",
       "id": 5009,
       "difficulty": "repair",
-      "aHash": "e4e2efddfe19c4aa1aa13ad98e0e2fd463dbad2dff7ff705703dce05e15e15ed"
+      "aHash": "79c3378d277dccd9b0d3fa275aa3b54c66e92f0bf118ee5ddef2ee904af89563"
     },
     {
-      "q": "Which mistake most often breaks net exports from trade data?",
+      "q": "Which transaction enters a country’s exports?",
       "options": [
-        "reversing the first model link",
-        "checking the relevant identity",
-        "following the exchange-rate channel",
-        "using the graph label carefully"
+        "A foreign resident buys a service produced domestically",
+        "A domestic resident buys a foreign-produced car",
+        "A resident buys a domestically issued bond from another resident",
+        "The central bank prints currency"
       ],
       "tag": "trade_balance_net_exports",
       "type": "repair",
@@ -10591,18 +10591,18 @@ const microSkillRepairPools = {
       "conceptCluster": "calculate_net_exports",
       "primarySkill": "calculate_net_exports",
       "repairSkill": "calculate_net_exports",
-      "feedback": "The first wrong link usually wrecks the final answer in net exports from trade data questions.",
+      "feedback": "Exports are foreign purchases of domestically produced goods or services; asset trades and money creation are not exports of current output.",
       "id": 5010,
       "difficulty": "repair",
-      "aHash": "3f3766ee94167d6effd96db67b755df0ef06dd3e0f079a16359e2f21ea26736f"
+      "aHash": "50c0978f53d665c0566953258af285acc85c78563d8bab451fcea0526f8dfce4"
     },
     {
-      "q": "Which clue tells you this is a net exports from trade data question?",
+      "q": "Does a country with exports of 200 necessarily have positive net exports?",
       "options": [
-        "it asks you to subtract imports from exports",
-        "it mentions a random room number",
-        "it uses long answer choices",
-        "it avoids every macro variable"
+        "Yes; any exports imply a surplus",
+        "Yes; gross exports equal net exports",
+        "No; net exports are always negative",
+        "No; imports may exceed 200"
       ],
       "tag": "trade_balance_net_exports",
       "type": "repair",
@@ -10610,20 +10610,20 @@ const microSkillRepairPools = {
       "conceptCluster": "calculate_net_exports",
       "primarySkill": "calculate_net_exports",
       "repairSkill": "calculate_net_exports",
-      "feedback": "The clue is the model task: subtract imports from exports.",
+      "feedback": "Net exports subtract imports. Positive gross exports can coexist with a deficit if imports are larger.",
       "id": 5011,
       "difficulty": "repair",
-      "aHash": "261617fac467ace445ca31aada51732fa9e9337b1c92cd4ec016ff0acbd0b82a"
+      "aHash": "5c3547f65b7f38fdd084adb6b23c0094895f9b3f609e1b668fffbd131cb59131"
     }
   ],
   "small_open_assumption": [
     {
-      "q": "For small-open-economy assumption, what should be the first move?",
+      "q": "What does “small” mean in the small-open-economy model?",
       "options": [
-        "remember the country takes r* as given",
-        "pick the answer with the most words",
-        "ignore the sign of NX",
-        "treat fixed and floating regimes as the same"
+        "Domestic borrowing and lending do not materially affect the world interest rate",
+        "The country has no international trade",
+        "Domestic investment is too small to matter",
+        "The country has no government debt"
       ],
       "tag": "small_open_world_interest_rate",
       "type": "repair",
@@ -10631,18 +10631,18 @@ const microSkillRepairPools = {
       "conceptCluster": "small_open_assumption",
       "primarySkill": "small_open_assumption",
       "repairSkill": "small_open_assumption",
-      "feedback": "Repair starts by anchoring the specific mechanism: remember the country takes r* as given.",
+      "feedback": "Smallness is a price-taking assumption in world capital markets, not the absence of trade, investment or fiscal policy.",
       "id": 5012,
       "difficulty": "repair",
-      "aHash": "eb0f5ee0c7439af4048e1a2bebdf4fc1c6a756a107236ff9f80ddb5127e21e94"
+      "aHash": "7a9df2c69bb04eb7e3d050d6b67850548cd882fb1e67e947b63265a021e150a9"
     },
     {
-      "q": "Which mistake most often breaks small-open-economy assumption?",
+      "q": "With perfect capital mobility and identical risk, which interest-rate condition holds in the small-open benchmark?",
       "options": [
-        "reversing the first model link",
-        "checking the relevant identity",
-        "following the exchange-rate channel",
-        "using the graph label carefully"
+        "The domestic real rate must be zero",
+        "The domestic real rate is chosen solely to equate domestic saving and investment",
+        "The domestic real rate equals domestic inflation",
+        "The domestic real interest rate equals the world real interest rate"
       ],
       "tag": "small_open_world_interest_rate",
       "type": "repair",
@@ -10650,18 +10650,18 @@ const microSkillRepairPools = {
       "conceptCluster": "small_open_assumption",
       "primarySkill": "small_open_assumption",
       "repairSkill": "small_open_assumption",
-      "feedback": "The first wrong link usually wrecks the final answer in small-open-economy assumption questions.",
+      "feedback": "Capital flows arbitrage otherwise comparable real returns, so r=r*. Domestic saving need not equal domestic investment.",
       "id": 5013,
       "difficulty": "repair",
-      "aHash": "3f3766ee94167d6effd96db67b755df0ef06dd3e0f079a16359e2f21ea26736f"
+      "aHash": "5e44a119b80fa19dd5a798f3ed75150ec65b0e481ce63c05cb3faf91b6d6c66e"
     },
     {
-      "q": "Which clue tells you this is a small-open-economy assumption question?",
+      "q": "Why can domestic investment exceed domestic saving in an open economy?",
       "options": [
-        "it asks you to remember the country takes r* as given",
-        "it mentions a random room number",
-        "it uses long answer choices",
-        "it avoids every macro variable"
+        "Government purchases must become negative",
+        "Foreign funds eliminate the resource cost of investment",
+        "The difference can be financed by net borrowing from abroad",
+        "The accounting identity stops applying"
       ],
       "tag": "small_open_world_interest_rate",
       "type": "repair",
@@ -10669,20 +10669,20 @@ const microSkillRepairPools = {
       "conceptCluster": "small_open_assumption",
       "primarySkill": "small_open_assumption",
       "repairSkill": "small_open_assumption",
-      "feedback": "The clue is the model task: remember the country takes r* as given.",
+      "feedback": "International capital inflows finance I−S. The counterpart is negative NX, not the disappearance of the saving-investment identity.",
       "id": 5014,
       "difficulty": "repair",
-      "aHash": "14133844f3e54f749b091c278160ce182186910a2face7be5aa62af9eec53594"
+      "aHash": "9f5d195cbd10d7859c40686cc426ea5a875cc45f5f25e8c2d097a42912c55571"
     }
   ],
   "world_interest_rate": [
     {
-      "q": "For world interest rate movement, what should be the first move?",
+      "q": "Along a fixed downward-sloping investment-demand curve, what happens when the world real interest rate rises?",
       "options": [
-        "move along I(r) when r* changes",
-        "pick the answer with the most words",
-        "ignore the sign of NX",
-        "treat fixed and floating regimes as the same"
+        "Domestic investment rises",
+        "National saving must rise equally",
+        "Investment demand shifts right",
+        "Domestic investment falls"
       ],
       "tag": "small_open_world_interest_rate",
       "type": "repair",
@@ -10690,18 +10690,18 @@ const microSkillRepairPools = {
       "conceptCluster": "world_interest_rate",
       "primarySkill": "world_interest_rate",
       "repairSkill": "world_interest_rate",
-      "feedback": "Repair starts by anchoring the specific mechanism: move along I(r) when r* changes.",
+      "feedback": "A higher financing cost reduces desired investment along the existing curve; a movement is not a shift in investment demand.",
       "id": 5015,
       "difficulty": "repair",
-      "aHash": "c0dd407170b6eeb1dd5915d1e059f5bb9401025d1152ececa1b09851f5b32b46"
+      "aHash": "499cb9160e1f35819ed8d146f7f62fab8fc9851ae23301286f4c4a594c0ea1ff"
     },
     {
-      "q": "Which mistake most often breaks world interest rate movement?",
+      "q": "In a small open economy with saving fixed, a fall in the world interest rate raises investment. What happens to NX?",
       "options": [
-        "reversing the first model link",
-        "checking the relevant identity",
-        "following the exchange-rate channel",
-        "using the graph label carefully"
+        "Net exports are fixed by the world rate",
+        "NX equals investment",
+        "Net exports fall",
+        "Net exports rise"
       ],
       "tag": "small_open_world_interest_rate",
       "type": "repair",
@@ -10709,18 +10709,18 @@ const microSkillRepairPools = {
       "conceptCluster": "world_interest_rate",
       "primarySkill": "world_interest_rate",
       "repairSkill": "world_interest_rate",
-      "feedback": "The first wrong link usually wrecks the final answer in world interest rate movement questions.",
+      "feedback": "NX=S−I. Higher investment with unchanged saving reduces the trade balance.",
       "id": 5016,
       "difficulty": "repair",
-      "aHash": "3f3766ee94167d6effd96db67b755df0ef06dd3e0f079a16359e2f21ea26736f"
+      "aHash": "3bab11ce364b87493edf7f2ebe2cad74fffaaf4070393510d2e3956fc1289fae"
     },
     {
-      "q": "Which clue tells you this is a world interest rate movement question?",
+      "q": "What determines r* for a country treated as small in world capital markets?",
       "options": [
-        "it asks you to move along I(r) when r* changes",
-        "it mentions a random room number",
-        "it uses long answer choices",
-        "it avoids every macro variable"
+        "Its desired domestic exchange rate alone",
+        "Conditions in the world saving and investment market",
+        "Only that country’s tax rate",
+        "Only that country’s imports"
       ],
       "tag": "small_open_world_interest_rate",
       "type": "repair",
@@ -10728,20 +10728,20 @@ const microSkillRepairPools = {
       "conceptCluster": "world_interest_rate",
       "primarySkill": "world_interest_rate",
       "repairSkill": "world_interest_rate",
-      "feedback": "The clue is the model task: move along I(r) when r* changes.",
+      "feedback": "The small economy takes the world rate as given; its own policies do not materially set the global price of funds.",
       "id": 5017,
       "difficulty": "repair",
-      "aHash": "0d35d92b18005d0bd4a34f701cc322a4ee7ea1901085fc8f4982f9578f5ad912"
+      "aHash": "f2a3be3cea0382f7ff5f8700a4ee6e1e58fc9dc6603f593a106c51e966695493"
     }
   ],
   "trade_balance_terms": [
     {
-      "q": "For surplus versus deficit, what should be the first move?",
+      "q": "What is a trade surplus?",
       "options": [
-        "read the sign of NX",
-        "pick the answer with the most words",
-        "ignore the sign of NX",
-        "treat fixed and floating regimes as the same"
+        "Government revenue exceeds spending",
+        "Investment exceeds national saving",
+        "Exports exceed imports",
+        "Imports exceed exports"
       ],
       "tag": "trade_balance_net_exports",
       "type": "repair",
@@ -10749,18 +10749,18 @@ const microSkillRepairPools = {
       "conceptCluster": "trade_balance_terms",
       "primarySkill": "trade_balance_terms",
       "repairSkill": "trade_balance_terms",
-      "feedback": "Repair starts by anchoring the specific mechanism: read the sign of NX.",
+      "feedback": "A trade surplus means positive NX. A fiscal surplus is a different balance involving taxes and government purchases.",
       "id": 5018,
       "difficulty": "repair",
-      "aHash": "f46b9ca0a9d9b15fdbe33c381206804a24a9555a78022a107b59991bbb895551"
+      "aHash": "d6a94e912cafb90af0908a663e2d6871167155a0a404ba0454bfe5d0a021b46a"
     },
     {
-      "q": "Which mistake most often breaks surplus versus deficit?",
+      "q": "What does NX=−40 mean?",
       "options": [
-        "reversing the first model link",
-        "checking the relevant identity",
-        "following the exchange-rate channel",
-        "using the graph label carefully"
+        "Government purchases exceed taxes by 40",
+        "Imports exceed exports by 40",
+        "Exports exceed imports by 40",
+        "Exports must equal zero"
       ],
       "tag": "trade_balance_net_exports",
       "type": "repair",
@@ -10768,18 +10768,18 @@ const microSkillRepairPools = {
       "conceptCluster": "trade_balance_terms",
       "primarySkill": "trade_balance_terms",
       "repairSkill": "trade_balance_terms",
-      "feedback": "The first wrong link usually wrecks the final answer in surplus versus deficit questions.",
+      "feedback": "Negative net exports identify a trade deficit of 40, not necessarily a government budget deficit.",
       "id": 5019,
       "difficulty": "repair",
-      "aHash": "3f3766ee94167d6effd96db67b755df0ef06dd3e0f079a16359e2f21ea26736f"
+      "aHash": "d2a4c10afe03e7e8cb4cd365550a0e0b80b0c354a968767c5efd238a7184bdbb"
     },
     {
-      "q": "Which clue tells you this is a surplus versus deficit question?",
+      "q": "Can a country have both a government budget surplus and a trade deficit?",
       "options": [
-        "it asks you to read the sign of NX",
-        "it mentions a random room number",
-        "it uses long answer choices",
-        "it avoids every macro variable"
+        "Yes; private saving and domestic investment also affect S−I",
+        "No; both balances are the same identity",
+        "No; government saving equals all national saving",
+        "Yes, but only if exports are zero"
       ],
       "tag": "trade_balance_net_exports",
       "type": "repair",
@@ -10787,20 +10787,20 @@ const microSkillRepairPools = {
       "conceptCluster": "trade_balance_terms",
       "primarySkill": "trade_balance_terms",
       "repairSkill": "trade_balance_terms",
-      "feedback": "The clue is the model task: read the sign of NX.",
+      "feedback": "National saving includes private and public saving. Even positive public saving can coexist with total saving below investment.",
       "id": 5020,
       "difficulty": "repair",
-      "aHash": "5746cb13ac57e13a70b61e7fe2cad81388297be4ce9c5589311fb45f2a421471"
+      "aHash": "bea4760557f1b909ee3fc6e705a9ae3b4ceebfe389c24a0cc5c2bc3b17b767d0"
     }
   ],
   "nominal_vs_real_exchange_rate": [
     {
-      "q": "For nominal versus real exchange rate, what should be the first move?",
+      "q": "Which exchange rate compares the prices of domestic and foreign goods rather than currencies alone?",
       "options": [
-        "separate currency prices from relative goods prices",
-        "pick the answer with the most words",
-        "ignore the sign of NX",
-        "treat fixed and floating regimes as the same"
+        "The world interest rate",
+        "The real exchange rate",
+        "The nominal exchange rate",
+        "The domestic inflation rate"
       ],
       "tag": "real_exchange_rate",
       "type": "repair",
@@ -10808,18 +10808,18 @@ const microSkillRepairPools = {
       "conceptCluster": "nominal_vs_real_exchange_rate",
       "primarySkill": "nominal_vs_real_exchange_rate",
       "repairSkill": "nominal_vs_real_exchange_rate",
-      "feedback": "Repair starts by anchoring the specific mechanism: separate currency prices from relative goods prices.",
+      "feedback": "The real exchange rate adjusts the currency conversion rate for domestic and foreign price levels, measuring relative goods prices.",
       "id": 5021,
       "difficulty": "repair",
-      "aHash": "878fb545d4168441ea4ffae3791a024108c19c1174bbf6ad728d67aa0f2e2436"
+      "aHash": "491f5e113cf60d2b819f840a5da156602a9ba9717a28e03f6842b6e3b2f5a05d"
     },
     {
-      "q": "Which mistake most often breaks nominal versus real exchange rate?",
+      "q": "Let e be foreign currency per unit of domestic currency. What does an increase in e mean?",
       "options": [
-        "reversing the first model link",
-        "checking the relevant identity",
-        "following the exchange-rate channel",
-        "using the graph label carefully"
+        "Nominal appreciation of the domestic currency",
+        "Nominal depreciation of the domestic currency",
+        "An automatic fall in the domestic price level",
+        "An automatic increase in domestic output"
       ],
       "tag": "real_exchange_rate",
       "type": "repair",
@@ -10827,18 +10827,18 @@ const microSkillRepairPools = {
       "conceptCluster": "nominal_vs_real_exchange_rate",
       "primarySkill": "nominal_vs_real_exchange_rate",
       "repairSkill": "nominal_vs_real_exchange_rate",
-      "feedback": "The first wrong link usually wrecks the final answer in nominal versus real exchange rate questions.",
+      "feedback": "One unit of domestic currency buys more foreign currency, which is nominal appreciation under this quotation convention.",
       "id": 5022,
       "difficulty": "repair",
-      "aHash": "3f3766ee94167d6effd96db67b755df0ef06dd3e0f079a16359e2f21ea26736f"
+      "aHash": "446f0932e10c166f39bb76bf71516cb09b8de403d3e2014b6e7993f7d4996233"
     },
     {
-      "q": "Which clue tells you this is a nominal versus real exchange rate question?",
+      "q": "With ε=eP/P*, can a higher domestic price level raise the real exchange rate even if e does not change?",
       "options": [
-        "it asks you to separate currency prices from relative goods prices",
-        "it mentions a random room number",
-        "it uses long answer choices",
-        "it avoids every macro variable"
+        "No; only nominal currency trades affect ε",
+        "No; P cancels from the formula",
+        "Yes; but only if foreign prices rise equally",
+        "Yes; domestic goods become more expensive relative to foreign goods"
       ],
       "tag": "real_exchange_rate",
       "type": "repair",
@@ -10846,20 +10846,20 @@ const microSkillRepairPools = {
       "conceptCluster": "nominal_vs_real_exchange_rate",
       "primarySkill": "nominal_vs_real_exchange_rate",
       "repairSkill": "nominal_vs_real_exchange_rate",
-      "feedback": "The clue is the model task: separate currency prices from relative goods prices.",
+      "feedback": "Holding e and P* fixed, higher price level raises ε. A real appreciation can occur without a nominal exchange-rate movement.",
       "id": 5023,
       "difficulty": "repair",
-      "aHash": "8f807af10d1ccdb218ab59511f16fc3d6eabb55f9ec801b97ba5db51a9ffa1fc"
+      "aHash": "2092cde4dbe798f4c1ad990e711d9f16eaaf2b88995cec7317b88b6f76134327"
     }
   ],
   "calculate_real_exchange_rate": [
     {
-      "q": "For real exchange rate calculation, what should be the first move?",
+      "q": "Using ε=eP/P*, with e=2, P=100 and P*=200, what is ε?",
       "options": [
-        "use ε = eP/P* or rearrange it",
-        "pick the answer with the most words",
-        "ignore the sign of NX",
-        "treat fixed and floating regimes as the same"
+        "1",
+        "4",
+        "2",
+        "0.5"
       ],
       "tag": "real_exchange_rate",
       "type": "repair",
@@ -10867,18 +10867,18 @@ const microSkillRepairPools = {
       "conceptCluster": "calculate_real_exchange_rate",
       "primarySkill": "calculate_real_exchange_rate",
       "repairSkill": "calculate_real_exchange_rate",
-      "feedback": "Repair starts by anchoring the specific mechanism: use ε = eP/P* or rearrange it.",
+      "feedback": "ε=2×100/200=1. Multiply by the domestic price level and divide by the foreign price level.",
       "id": 5024,
       "difficulty": "repair",
-      "aHash": "5e4cdb285ae89066a0d81d9678259792b75f835afd3035925e83371eab78264c"
+      "aHash": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
     },
     {
-      "q": "Which mistake most often breaks real exchange rate calculation?",
+      "q": "In ε=eP/P*, why is P* in the denominator?",
       "options": [
-        "reversing the first model link",
-        "checking the relevant identity",
-        "following the exchange-rate channel",
-        "using the graph label carefully"
+        "Foreign prices are excluded from real comparisons",
+        "The foreign price level always equals one",
+        "The nominal rate is itself a price index",
+        "The converted domestic goods price is compared with the foreign goods price"
       ],
       "tag": "real_exchange_rate",
       "type": "repair",
@@ -10886,18 +10886,18 @@ const microSkillRepairPools = {
       "conceptCluster": "calculate_real_exchange_rate",
       "primarySkill": "calculate_real_exchange_rate",
       "repairSkill": "calculate_real_exchange_rate",
-      "feedback": "The first wrong link usually wrecks the final answer in real exchange rate calculation questions.",
+      "feedback": "eP expresses the domestic basket price in foreign currency. Dividing by P* compares it with the foreign basket price.",
       "id": 5025,
       "difficulty": "repair",
-      "aHash": "3f3766ee94167d6effd96db67b755df0ef06dd3e0f079a16359e2f21ea26736f"
+      "aHash": "2314bd407bb8b33367f8d7401031cc4afc59f3186d7c2848b4af4c9f953d2c4a"
     },
     {
-      "q": "Which clue tells you this is a real exchange rate calculation question?",
+      "q": "If e and P are fixed while P* doubles, what happens to ε=eP/P*?",
       "options": [
-        "it asks you to use ε = eP/P* or rearrange it",
-        "it mentions a random room number",
-        "it uses long answer choices",
-        "it avoids every macro variable"
+        "It is unchanged",
+        "It becomes zero",
+        "It halves",
+        "It doubles"
       ],
       "tag": "real_exchange_rate",
       "type": "repair",
@@ -10905,20 +10905,20 @@ const microSkillRepairPools = {
       "conceptCluster": "calculate_real_exchange_rate",
       "primarySkill": "calculate_real_exchange_rate",
       "repairSkill": "calculate_real_exchange_rate",
-      "feedback": "The clue is the model task: use ε = eP/P* or rearrange it.",
+      "feedback": "Doubling only the denominator halves the ratio. Domestic goods become cheaper relative to foreign goods.",
       "id": 5026,
       "difficulty": "repair",
-      "aHash": "2f73afdad065b95a4de17f9ccc5602530e9933813652057dbfcc568a618bed20"
+      "aHash": "a2849e34f7fc016ee604282520e63d12daaf8adf75aaed91e289b892f70f57f0"
     }
   ],
   "appreciation_nx": [
     {
-      "q": "For appreciation and NX, what should be the first move?",
+      "q": "In the basic NX(ε) relationship, what does a higher real exchange rate mean for domestic goods?",
       "options": [
-        "appreciation makes domestic goods relatively expensive",
-        "pick the answer with the most words",
-        "ignore the sign of NX",
-        "treat fixed and floating regimes as the same"
+        "They are cheaper relative to foreign goods",
+        "Their price must be unchanged in both currencies",
+        "Their production cost must fall",
+        "They are more expensive relative to foreign goods"
       ],
       "tag": "exchange_rate_adjustment",
       "type": "repair",
@@ -10926,18 +10926,18 @@ const microSkillRepairPools = {
       "conceptCluster": "appreciation_nx",
       "primarySkill": "appreciation_nx",
       "repairSkill": "appreciation_nx",
-      "feedback": "Repair starts by anchoring the specific mechanism: appreciation makes domestic goods relatively expensive.",
+      "feedback": "With ε defined as the relative price of domestic goods, a real appreciation makes them more expensive relative to foreign alternatives.",
       "id": 5027,
       "difficulty": "repair",
-      "aHash": "6e8a3198a2ccad021ab201682bf448d7f302d3beb401ff155eb1b801efa4da17"
+      "aHash": "f861d17bea914629e87177721eda4a301c98ab3afa1e1b7e177f2d42d46bf0a5"
     },
     {
-      "q": "Which mistake most often breaks appreciation and NX?",
+      "q": "Holding other determinants fixed, how does real appreciation affect net exports in the standard downward-sloping NX schedule?",
       "options": [
-        "reversing the first model link",
-        "checking the relevant identity",
-        "following the exchange-rate channel",
-        "using the graph label carefully"
+        "It shifts the NX schedule right",
+        "It fixes net exports at zero",
+        "It lowers net exports",
+        "It raises net exports"
       ],
       "tag": "exchange_rate_adjustment",
       "type": "repair",
@@ -10945,18 +10945,18 @@ const microSkillRepairPools = {
       "conceptCluster": "appreciation_nx",
       "primarySkill": "appreciation_nx",
       "repairSkill": "appreciation_nx",
-      "feedback": "The first wrong link usually wrecks the final answer in appreciation and NX questions.",
+      "feedback": "Relatively expensive domestic goods reduce export demand and encourage imports. This is a movement along NX(ε).",
       "id": 5028,
       "difficulty": "repair",
-      "aHash": "3f3766ee94167d6effd96db67b755df0ef06dd3e0f079a16359e2f21ea26736f"
+      "aHash": "67c254d9a7e1f9c1ed0ecde63d748692ddad0d8aa3b6a55649963a02591c85d6"
     },
     {
-      "q": "Which clue tells you this is a appreciation and NX question?",
+      "q": "Why is appreciation not itself a rightward shift of the NX(ε) curve?",
       "options": [
-        "it asks you to appreciation makes domestic goods relatively expensive",
-        "it mentions a random room number",
-        "it uses long answer choices",
-        "it avoids every macro variable"
+        "The curve is always vertical",
+        "The exchange rate is a variable on the curve, so its change causes a movement along it",
+        "Appreciation changes neither exports nor imports",
+        "Only investment can move along NX"
       ],
       "tag": "exchange_rate_adjustment",
       "type": "repair",
@@ -10964,20 +10964,20 @@ const microSkillRepairPools = {
       "conceptCluster": "appreciation_nx",
       "primarySkill": "appreciation_nx",
       "repairSkill": "appreciation_nx",
-      "feedback": "The clue is the model task: appreciation makes domestic goods relatively expensive.",
+      "feedback": "A shift changes NX at each given real exchange rate. Changing ε itself instead selects another point on the existing relationship.",
       "id": 5029,
       "difficulty": "repair",
-      "aHash": "3196613a0def32ec396610fc2b4e5cd3a21c985b3ceb6e584bd4ec0227ee6940"
+      "aHash": "91cf5a74c467726fd50dcc0b0425792ac5c35e5f2fe0fc00f00d8a126f2cc8df"
     }
   ],
   "depreciation_nx": [
     {
-      "q": "For depreciation and NX, what should be the first move?",
+      "q": "With ε defined as the relative price of domestic goods, what does real depreciation mean?",
       "options": [
-        "depreciation makes domestic goods relatively cheap",
-        "pick the answer with the most words",
-        "ignore the sign of NX",
-        "treat fixed and floating regimes as the same"
+        "The domestic price level must fall to zero",
+        "The nominal exchange rate must be unchanged",
+        "Domestic goods become cheaper relative to foreign goods",
+        "Domestic goods become more expensive relative to foreign goods"
       ],
       "tag": "exchange_rate_adjustment",
       "type": "repair",
@@ -10985,18 +10985,18 @@ const microSkillRepairPools = {
       "conceptCluster": "depreciation_nx",
       "primarySkill": "depreciation_nx",
       "repairSkill": "depreciation_nx",
-      "feedback": "Repair starts by anchoring the specific mechanism: depreciation makes domestic goods relatively cheap.",
+      "feedback": "Real depreciation lowers ε, making domestic output relatively cheaper. It can result from nominal or relative-price changes.",
       "id": 5030,
       "difficulty": "repair",
-      "aHash": "00d37ee460cbb22d618d5053822d984cf9a090c43e18d66adfd6de9645ea2508"
+      "aHash": "1da5b8c97abab47f81714bbec1a31b779177d6d137b4de13d7f124712bd111b0"
     },
     {
-      "q": "Which mistake most often breaks depreciation and NX?",
+      "q": "Along the standard downward-sloping NX(ε) schedule, what happens to NX when ε falls?",
       "options": [
-        "reversing the first model link",
-        "checking the relevant identity",
-        "following the exchange-rate channel",
-        "using the graph label carefully"
+        "NX must remain zero",
+        "Net exports rise",
+        "Net exports fall",
+        "NX becomes equal to government purchases"
       ],
       "tag": "exchange_rate_adjustment",
       "type": "repair",
@@ -11004,18 +11004,18 @@ const microSkillRepairPools = {
       "conceptCluster": "depreciation_nx",
       "primarySkill": "depreciation_nx",
       "repairSkill": "depreciation_nx",
-      "feedback": "The first wrong link usually wrecks the final answer in depreciation and NX questions.",
+      "feedback": "Cheaper domestic goods encourage exports and discourage imports in this benchmark, increasing net exports along the curve.",
       "id": 5031,
       "difficulty": "repair",
-      "aHash": "3f3766ee94167d6effd96db67b755df0ef06dd3e0f079a16359e2f21ea26736f"
+      "aHash": "b08ae8c542fb709b6023bb3fbc4bcebdd8d1093a3cfbd9274dd14da0dca6dbc8"
     },
     {
-      "q": "Which clue tells you this is a depreciation and NX question?",
+      "q": "A real depreciation raises exports while imports fall. Do these two changes offset in NX=exports−imports?",
       "options": [
-        "it asks you to depreciation makes domestic goods relatively cheap",
-        "it mentions a random room number",
-        "it uses long answer choices",
-        "it avoids every macro variable"
+        "No; both raise net exports",
+        "Yes; they necessarily cancel",
+        "Only the export change matters",
+        "Only the import change matters"
       ],
       "tag": "exchange_rate_adjustment",
       "type": "repair",
@@ -11023,20 +11023,20 @@ const microSkillRepairPools = {
       "conceptCluster": "depreciation_nx",
       "primarySkill": "depreciation_nx",
       "repairSkill": "depreciation_nx",
-      "feedback": "The clue is the model task: depreciation makes domestic goods relatively cheap.",
+      "feedback": "A higher export term and a smaller subtracted import term both increase net exports.",
       "id": 5032,
       "difficulty": "repair",
-      "aHash": "b7ebae964b678c9c1b6d5ee036a62b812aa3e6123a9faa475cf25796188cdf25"
+      "aHash": "921e24d3c73227c920f1449b92c0574a9458bf00dbf7a69196b16f97cb3f0157"
     }
   ],
   "trace_domestic_fiscal_expansion": [
     {
-      "q": "For domestic fiscal policy chain, what should be the first move?",
+      "q": "In the fixed-output small-open model, government purchases rise with consumption otherwise unchanged. What happens to national saving S=Y−C−G?",
       "options": [
-        "trace saving to S - I to R to NX",
-        "pick the answer with the most words",
-        "ignore the sign of NX",
-        "treat fixed and floating regimes as the same"
+        "It becomes equal to G",
+        "It falls",
+        "It rises",
+        "It is unchanged because the economy is open"
       ],
       "tag": "fiscal_policy_open_economy",
       "type": "repair",
@@ -11044,18 +11044,18 @@ const microSkillRepairPools = {
       "conceptCluster": "trace_domestic_fiscal_expansion",
       "primarySkill": "trace_domestic_fiscal_expansion",
       "repairSkill": "trace_domestic_fiscal_expansion",
-      "feedback": "Repair starts by anchoring the specific mechanism: trace saving to S - I to R to NX.",
+      "feedback": "At fixed output and C, higher government purchases reduce national saving one-for-one.",
       "id": 5033,
       "difficulty": "repair",
-      "aHash": "3c3a718a131e0762efbbe53956c8e09d1d8ee1963d0bca45e4b654e3f48ffae4"
+      "aHash": "51a961febd461ad1ea9db3f345c3907f42988e7937e56390ff5e6b439ae33884"
     },
     {
-      "q": "Which mistake most often breaks domestic fiscal policy chain?",
+      "q": "Domestic fiscal expansion lowers saving while r* and investment demand are unchanged. What happens to domestic investment in the basic small-open model?",
       "options": [
-        "reversing the first model link",
-        "checking the relevant identity",
-        "following the exchange-rate channel",
-        "using the graph label carefully"
+        "It is unchanged at I(r*)",
+        "It falls one-for-one with saving",
+        "It rises because saving falls",
+        "It must equal the new lower saving"
       ],
       "tag": "fiscal_policy_open_economy",
       "type": "repair",
@@ -11063,18 +11063,18 @@ const microSkillRepairPools = {
       "conceptCluster": "trace_domestic_fiscal_expansion",
       "primarySkill": "trace_domestic_fiscal_expansion",
       "repairSkill": "trace_domestic_fiscal_expansion",
-      "feedback": "The first wrong link usually wrecks the final answer in domestic fiscal policy chain questions.",
+      "feedback": "Domestic investment depends on the given world rate and its demand schedule. Capital inflows can finance the gap between investment and reduced saving.",
       "id": 5034,
       "difficulty": "repair",
-      "aHash": "3f3766ee94167d6effd96db67b755df0ef06dd3e0f079a16359e2f21ea26736f"
+      "aHash": "c88bdb5d78a731f4f175c9c391d58c20a8787c21353d8a4f574c724d2c36ff8a"
     },
     {
-      "q": "Which clue tells you this is a domestic fiscal policy chain question?",
+      "q": "Which chain describes a domestic fiscal expansion in the long-run small-open benchmark?",
       "options": [
-        "it asks you to trace saving to S - I to R to NX",
-        "it mentions a random room number",
-        "it uses long answer choices",
-        "it avoids every macro variable"
+        "Saving rises, net exports rise and the real exchange rate depreciates",
+        "The world rate rises, domestic investment falls and net exports are unchanged",
+        "Domestic output rises permanently with no trade adjustment",
+        "Saving falls, net exports fall and the real exchange rate appreciates"
       ],
       "tag": "fiscal_policy_open_economy",
       "type": "repair",
@@ -11082,20 +11082,20 @@ const microSkillRepairPools = {
       "conceptCluster": "trace_domestic_fiscal_expansion",
       "primarySkill": "trace_domestic_fiscal_expansion",
       "repairSkill": "trace_domestic_fiscal_expansion",
-      "feedback": "The clue is the model task: trace saving to S - I to R to NX.",
+      "feedback": "With fixed output and r*, lower saving reduces S−I. The real exchange rate appreciates to bring net exports down to that quantity.",
       "id": 5035,
       "difficulty": "repair",
-      "aHash": "1c2d038501a0294db4a95aec9be1984fa297e8d780ce2a5b694f2807b24417fe"
+      "aHash": "e5c16dcff194ff12b5613498dc16f369593ed36115d492e53696ab44b0337ba8"
     }
   ],
   "investment_shift_trade_balance": [
     {
-      "q": "For investment demand shift, what should be the first move?",
+      "q": "In the small-open model, a tax incentive raises investment demand at each r*. With saving fixed, what happens to S−I?",
       "options": [
-        "higher investment lowers S - I when saving is fixed",
-        "pick the answer with the most words",
-        "ignore the sign of NX",
-        "treat fixed and floating regimes as the same"
+        "It falls",
+        "It rises",
+        "It stays fixed because the world interest rate is fixed",
+        "It becomes equal to the tax incentive"
       ],
       "tag": "saving_investment_capital_flows",
       "type": "repair",
@@ -11103,18 +11103,18 @@ const microSkillRepairPools = {
       "conceptCluster": "investment_shift_trade_balance",
       "primarySkill": "investment_shift_trade_balance",
       "repairSkill": "investment_shift_trade_balance",
-      "feedback": "Repair starts by anchoring the specific mechanism: higher investment lowers S - I when saving is fixed.",
+      "feedback": "Fixed world interest rate does not mean fixed investment when the investment-demand curve shifts. Higher I lowers S−I.",
       "id": 5036,
       "difficulty": "repair",
-      "aHash": "9af39a4c7e3fe39f7c40a9079e4a8a2743dddee311b00038fda0795443cd046c"
+      "aHash": "51a961febd461ad1ea9db3f345c3907f42988e7937e56390ff5e6b439ae33884"
     },
     {
-      "q": "Which mistake most often breaks investment demand shift?",
+      "q": "What distinguishes stronger investment demand from a lower world interest rate on an I(r) diagram?",
       "options": [
-        "reversing the first model link",
-        "checking the relevant identity",
-        "following the exchange-rate channel",
-        "using the graph label carefully"
+        "Both are movements along an unchanged curve",
+        "The former changes saving but cannot affect investment",
+        "The latter shifts investment demand right at every rate",
+        "The former shifts the curve; the latter moves along it"
       ],
       "tag": "saving_investment_capital_flows",
       "type": "repair",
@@ -11122,18 +11122,18 @@ const microSkillRepairPools = {
       "conceptCluster": "investment_shift_trade_balance",
       "primarySkill": "investment_shift_trade_balance",
       "repairSkill": "investment_shift_trade_balance",
-      "feedback": "The first wrong link usually wrecks the final answer in investment demand shift questions.",
+      "feedback": "An incentive or improved expected return changes desired investment at any given r. A rate change chooses a different point on the existing schedule.",
       "id": 5037,
       "difficulty": "repair",
-      "aHash": "3f3766ee94167d6effd96db67b755df0ef06dd3e0f079a16359e2f21ea26736f"
+      "aHash": "9d240dc2c10bf6a9783b9ed5e5215696ba949ce8aa9eeb302552368bc62d0145"
     },
     {
-      "q": "Which clue tells you this is a investment demand shift question?",
+      "q": "With saving fixed, weaker investment demand reduces investment at r*. What happens to the trade balance?",
       "options": [
-        "it asks you to higher investment lowers S - I when saving is fixed",
-        "it mentions a random room number",
-        "it uses long answer choices",
-        "it avoids every macro variable"
+        "NX must be zero",
+        "The sign of ΔNX is indeterminate",
+        "Net exports rise",
+        "Net exports fall"
       ],
       "tag": "saving_investment_capital_flows",
       "type": "repair",
@@ -11141,20 +11141,20 @@ const microSkillRepairPools = {
       "conceptCluster": "investment_shift_trade_balance",
       "primarySkill": "investment_shift_trade_balance",
       "repairSkill": "investment_shift_trade_balance",
-      "feedback": "The clue is the model task: higher investment lowers S - I when saving is fixed.",
+      "feedback": "NX=S−I rises when I falls and S is unchanged. The new level may still be a deficit; the direction is determinate.",
       "id": 5038,
       "difficulty": "repair",
-      "aHash": "368adb60b9b64fe787512c8be9de6f069b9480055245f790d5a4636ca1614a65"
+      "aHash": "b08ae8c542fb709b6023bb3fbc4bcebdd8d1093a3cfbd9274dd14da0dca6dbc8"
     }
   ],
   "tariff_exchange_rate_offset": [
     {
-      "q": "For tariff exchange-rate offset, what should be the first move?",
+      "q": "At a given real exchange rate, what is the direct effect of an import restriction on NX demand?",
       "options": [
-        "NX(R) shifts but R adjusts at fixed S - I",
-        "pick the answer with the most words",
-        "ignore the sign of NX",
-        "treat fixed and floating regimes as the same"
+        "It lowers net exports by reducing exports",
+        "It shifts national saving left",
+        "It lowers domestic investment at every interest rate",
+        "It raises net exports by reducing imports"
       ],
       "tag": "trade_policy",
       "type": "repair",
@@ -11162,18 +11162,18 @@ const microSkillRepairPools = {
       "conceptCluster": "tariff_exchange_rate_offset",
       "primarySkill": "tariff_exchange_rate_offset",
       "repairSkill": "tariff_exchange_rate_offset",
-      "feedback": "Repair starts by anchoring the specific mechanism: NX(R) shifts but R adjusts at fixed S - I.",
+      "feedback": "At the same relative prices, fewer imports raise exports-minus-imports. This is an outward shift of NX demand, distinct from a saving shift.",
       "id": 5039,
       "difficulty": "repair",
-      "aHash": "0b53c16e2db4bcd7ec23599013c448feee319e27b7b79f044f9a3f578da4957b"
+      "aHash": "5b38e0445a8b868688f40571210af577a8827e1e191b992f785ab1a29d3f89e6"
     },
     {
-      "q": "Which mistake most often breaks tariff exchange-rate offset?",
+      "q": "In the long-run small-open model, a tariff leaves saving and investment unchanged. What fixes the final equilibrium NX?",
       "options": [
-        "reversing the first model link",
-        "checking the relevant identity",
-        "following the exchange-rate channel",
-        "using the graph label carefully"
+        "Gross exports before the tariff",
+        "The central bank’s preferred nominal interest rate",
+        "The unchanged S−I quantity",
+        "The tariff rate alone"
       ],
       "tag": "trade_policy",
       "type": "repair",
@@ -11181,18 +11181,18 @@ const microSkillRepairPools = {
       "conceptCluster": "tariff_exchange_rate_offset",
       "primarySkill": "tariff_exchange_rate_offset",
       "repairSkill": "tariff_exchange_rate_offset",
-      "feedback": "The first wrong link usually wrecks the final answer in tariff exchange-rate offset questions.",
+      "feedback": "The identity and equilibrium condition require NX=S−I. If those quantities stay fixed, the tariff cannot change the final trade balance.",
       "id": 5040,
       "difficulty": "repair",
-      "aHash": "3f3766ee94167d6effd96db67b755df0ef06dd3e0f079a16359e2f21ea26736f"
+      "aHash": "0342a474b7d4d614001fd2bb6158dfe6cb00a2fef5fe2a60efaa9e281c45353b"
     },
     {
-      "q": "Which clue tells you this is a tariff exchange-rate offset question?",
+      "q": "What offsets an import restriction’s direct NX increase when S−I is fixed?",
       "options": [
-        "it asks you to NX(R) shifts but R adjusts at fixed S - I",
-        "it mentions a random room number",
-        "it uses long answer choices",
-        "it avoids every macro variable"
+        "An automatic rise in national saving",
+        "Real appreciation",
+        "Real depreciation",
+        "A fall in every foreign price to zero"
       ],
       "tag": "trade_policy",
       "type": "repair",
@@ -11200,20 +11200,20 @@ const microSkillRepairPools = {
       "conceptCluster": "tariff_exchange_rate_offset",
       "primarySkill": "tariff_exchange_rate_offset",
       "repairSkill": "tariff_exchange_rate_offset",
-      "feedback": "The clue is the model task: NX(R) shifts but R adjusts at fixed S - I.",
+      "feedback": "Appreciation makes domestic goods relatively more expensive, lowering NX along the shifted schedule until it again equals unchanged S−I.",
       "id": 5041,
       "difficulty": "repair",
-      "aHash": "748b0a69694680741c9d520d626b2297270cdb849995be8b0c5e4213bf575315"
+      "aHash": "3ae427a09fd9c4af8995349f7db55d0410916e9e716c51d4c1968caee7b5c33c"
     }
   ],
   "capital_flight_exchange_rate": [
     {
-      "q": "For capital flight, what should be the first move?",
+      "q": "What is capital flight?",
       "options": [
-        "capital outflow pressure depreciates the currency",
-        "pick the answer with the most words",
-        "ignore the sign of NX",
-        "treat fixed and floating regimes as the same"
+        "A rise in domestic saving caused only by higher taxes",
+        "A central bank’s routine replacement of damaged notes",
+        "A sudden shift away from holding a country’s assets",
+        "An increase in exports caused only by lower tariffs"
       ],
       "tag": "capital_flight",
       "type": "repair",
@@ -11221,18 +11221,18 @@ const microSkillRepairPools = {
       "conceptCluster": "capital_flight_exchange_rate",
       "primarySkill": "capital_flight_exchange_rate",
       "repairSkill": "capital_flight_exchange_rate",
-      "feedback": "Repair starts by anchoring the specific mechanism: capital outflow pressure depreciates the currency.",
+      "feedback": "Capital flight concerns investors’ asset demand and international financial flows, rather than a direct trade-policy change.",
       "id": 5042,
       "difficulty": "repair",
-      "aHash": "a9820ead19d7cce8e0cb2036a999bd1c078de9d8bc75390555a33c53af29e0bf"
+      "aHash": "046b9636969787ccb6e2b021484df2adaf7a30877581f7312b609312edb95e11"
     },
     {
-      "q": "Which mistake most often breaks capital flight?",
+      "q": "In a floating-rate setting, investors sell domestic currency to acquire foreign assets. What immediate pressure does this create on the domestic currency?",
       "options": [
-        "reversing the first model link",
-        "checking the relevant identity",
-        "following the exchange-rate channel",
-        "using the graph label carefully"
+        "No pressure because assets are not goods",
+        "Depreciation pressure",
+        "Appreciation pressure",
+        "A guaranteed fixed exchange rate"
       ],
       "tag": "capital_flight",
       "type": "repair",
@@ -11240,18 +11240,18 @@ const microSkillRepairPools = {
       "conceptCluster": "capital_flight_exchange_rate",
       "primarySkill": "capital_flight_exchange_rate",
       "repairSkill": "capital_flight_exchange_rate",
-      "feedback": "The first wrong link usually wrecks the final answer in capital flight questions.",
+      "feedback": "Selling domestic currency to buy foreign assets lowers demand for the domestic currency relative to its supply, putting downward pressure on its value.",
       "id": 5043,
       "difficulty": "repair",
-      "aHash": "3f3766ee94167d6effd96db67b755df0ef06dd3e0f079a16359e2f21ea26736f"
+      "aHash": "abf5f23303bed04c91d76b1a4deb84019e30ce33cd399cf92394a0785432aba4"
     },
     {
-      "q": "Which clue tells you this is a capital flight question?",
+      "q": "Why can capital flight raise net exports in a simple model without representing an economic improvement?",
       "options": [
-        "it asks you to capital outflow pressure depreciates the currency",
-        "it mentions a random room number",
-        "it uses long answer choices",
-        "it avoids every macro variable"
+        "Depreciation can stimulate NX while financial stress harms spending and investment",
+        "NX growth guarantees higher welfare",
+        "Capital flight automatically raises productive capital",
+        "Currency depreciation eliminates default risk"
       ],
       "tag": "capital_flight",
       "type": "repair",
@@ -11259,20 +11259,20 @@ const microSkillRepairPools = {
       "conceptCluster": "capital_flight_exchange_rate",
       "primarySkill": "capital_flight_exchange_rate",
       "repairSkill": "capital_flight_exchange_rate",
-      "feedback": "The clue is the model task: capital outflow pressure depreciates the currency.",
+      "feedback": "The trade-price channel and the financial disruption are separate. A favorable movement in NX alone does not summarize all consequences.",
       "id": 5044,
       "difficulty": "repair",
-      "aHash": "c4feffd8a6c84ebb5d125719efcfaaf5d5bb938d860b460eebaa3bb4b20343ce"
+      "aHash": "b345e5196bf47495234dc74c7e198a69150a5d549baa3a70bcd3dd6cc96eb149"
     }
   ],
   "mundell_fleming_assumptions": [
     {
-      "q": "For Mundell-Fleming model assumptions, what should be the first move?",
+      "q": "Which assumptions define the basic short-run Mundell–Fleming small-open model used here?",
       "options": [
-        "small open economy, perfect capital mobility, r = r*",
-        "pick the answer with the most words",
-        "ignore the sign of NX",
-        "treat fixed and floating regimes as the same"
+        "Zero imports and a permanently balanced government budget",
+        "Fixed prices, high capital mobility and a given world interest rate",
+        "Perfectly flexible prices and no international capital flows",
+        "A domestic rate always independent of the world rate"
       ],
       "tag": "mundell_fleming_model",
       "type": "repair",
@@ -11280,18 +11280,18 @@ const microSkillRepairPools = {
       "conceptCluster": "mundell_fleming_assumptions",
       "primarySkill": "mundell_fleming_assumptions",
       "repairSkill": "mundell_fleming_assumptions",
-      "feedback": "Repair starts by anchoring the specific mechanism: small open economy, perfect capital mobility, r = r*.",
+      "feedback": "The model combines short-run price stickiness with an open capital market. The small economy takes the world interest rate as given.",
       "id": 5045,
       "difficulty": "repair",
-      "aHash": "16c9086218d96c837970bacda11e79af3c83c42c07ebb5c2bef4e55c9917f7b3"
+      "aHash": "1a1c0b584212c1004624e8f9f65040d9ef8bb7e6e0ec975eec54331d5c2ecf27"
     },
     {
-      "q": "Which mistake most often breaks Mundell-Fleming model assumptions?",
+      "q": "Why is the domestic interest rate pinned to r* in the basic Mundell–Fleming benchmark?",
       "options": [
-        "reversing the first model link",
-        "checking the relevant identity",
-        "following the exchange-rate channel",
-        "using the graph label carefully"
+        "Comparable assets and perfect capital mobility permit return arbitrage",
+        "The government always chooses investment equal to saving",
+        "The exchange rate cannot change",
+        "Domestic consumption has no effect on goods demand"
       ],
       "tag": "mundell_fleming_model",
       "type": "repair",
@@ -11299,18 +11299,18 @@ const microSkillRepairPools = {
       "conceptCluster": "mundell_fleming_assumptions",
       "primarySkill": "mundell_fleming_assumptions",
       "repairSkill": "mundell_fleming_assumptions",
-      "feedback": "The first wrong link usually wrecks the final answer in Mundell-Fleming model assumptions questions.",
+      "feedback": "Capital flows respond to return differences, preventing a lasting domestic-world rate gap under the equal-risk benchmark.",
       "id": 5046,
       "difficulty": "repair",
-      "aHash": "3f3766ee94167d6effd96db67b755df0ef06dd3e0f079a16359e2f21ea26736f"
+      "aHash": "495dab84bf23e1622782f7a6b08d0813719bb8833701ef8a2f3597d5246ad812"
     },
     {
-      "q": "Which clue tells you this is a Mundell-Fleming model assumptions question?",
+      "q": "In an (e,Y) Mundell–Fleming diagram, why can e adjust even though r=r*?",
       "options": [
-        "it asks you to small open economy, perfect capital mobility, r = r*",
-        "it mentions a random room number",
-        "it uses long answer choices",
-        "it avoids every macro variable"
+        "A fixed interest rate requires fixed output and exchange rate",
+        "The exchange rate is the nominal interest rate",
+        "Capital mobility prohibits foreign-currency trades",
+        "The exchange rate and interest rate are distinct prices"
       ],
       "tag": "mundell_fleming_model",
       "type": "repair",
@@ -11318,20 +11318,20 @@ const microSkillRepairPools = {
       "conceptCluster": "mundell_fleming_assumptions",
       "primarySkill": "mundell_fleming_assumptions",
       "repairSkill": "mundell_fleming_assumptions",
-      "feedback": "The clue is the model task: small open economy, perfect capital mobility, r = r*.",
+      "feedback": "The world rate fixes the financing return; exchange-rate adjustment can still change net exports and goods-market equilibrium.",
       "id": 5047,
       "difficulty": "repair",
-      "aHash": "f64a0c93c6c17aef8b44f4217656759fba3af3084c1316919153c71dbaca04a3"
+      "aHash": "5fb97ee4b759da2b4280d9f7c40a7326749e21204cf6544f706516e3961d88b7"
     }
   ],
   "is_star_exchange_rate": [
     {
-      "q": "For IS* exchange-rate channel, what should be the first move?",
+      "q": "With e quoted as foreign currency per domestic unit, why does IS* slope downward in (e,Y) space?",
       "options": [
-        "appreciation reduces NX and planned expenditure",
-        "pick the answer with the most words",
-        "ignore the sign of NX",
-        "treat fixed and floating regimes as the same"
+        "A lower nominal exchange rate raises net exports and goods-market equilibrium income",
+        "A lower nominal exchange rate reduces real money balances",
+        "A higher nominal exchange rate always raises exports",
+        "A higher nominal exchange rate makes the world interest rate zero"
       ],
       "tag": "mundell_fleming_is_lm",
       "type": "repair",
@@ -11339,18 +11339,18 @@ const microSkillRepairPools = {
       "conceptCluster": "is_star_exchange_rate",
       "primarySkill": "is_star_exchange_rate",
       "repairSkill": "is_star_exchange_rate",
-      "feedback": "Repair starts by anchoring the specific mechanism: appreciation reduces NX and planned expenditure.",
+      "feedback": "Depreciation makes domestic goods relatively cheaper at fixed prices, raising net exports and equilibrium demand/output.",
       "id": 5048,
       "difficulty": "repair",
-      "aHash": "159b5e752af703fbd4937a28dcdef280f26fad23ab2b733fcd48b1bb717a6498"
+      "aHash": "ec38d41ca2babdf8a71106c1b458f5ec214e6e04f54539a0e13ee3cc547eaed2"
     },
     {
-      "q": "Which mistake most often breaks IS* exchange-rate channel?",
+      "q": "At fixed prices, what is the goods-market effect of nominal appreciation in the basic Mundell–Fleming model?",
       "options": [
-        "reversing the first model link",
-        "checking the relevant identity",
-        "following the exchange-rate channel",
-        "using the graph label carefully"
+        "Higher net exports and higher income",
+        "A rightward LM* shift",
+        "A necessary increase in government purchases",
+        "Lower net exports and lower goods-market equilibrium income"
       ],
       "tag": "mundell_fleming_is_lm",
       "type": "repair",
@@ -11358,18 +11358,18 @@ const microSkillRepairPools = {
       "conceptCluster": "is_star_exchange_rate",
       "primarySkill": "is_star_exchange_rate",
       "repairSkill": "is_star_exchange_rate",
-      "feedback": "The first wrong link usually wrecks the final answer in IS* exchange-rate channel questions.",
+      "feedback": "Appreciation reduces external demand for domestic goods and encourages imports, lowering income along IS*.",
       "id": 5049,
       "difficulty": "repair",
-      "aHash": "3f3766ee94167d6effd96db67b755df0ef06dd3e0f079a16359e2f21ea26736f"
+      "aHash": "9b79173a2adc12cf693bd7203debbdb54c848f2fd32e4f0519900bf10ed2bfd2"
     },
     {
-      "q": "Which clue tells you this is a IS* exchange-rate channel question?",
+      "q": "Which change shifts the IS* curve to the right rather than moves along it?",
       "options": [
-        "it asks you to appreciation reduces NX and planned expenditure",
-        "it mentions a random room number",
-        "it uses long answer choices",
-        "it avoids every macro variable"
+        "A rise in e with fiscal policy fixed",
+        "A change in income induced only by currency appreciation",
+        "Higher government purchases at each exchange rate",
+        "A fall in e with fiscal policy fixed"
       ],
       "tag": "mundell_fleming_is_lm",
       "type": "repair",
@@ -11377,20 +11377,20 @@ const microSkillRepairPools = {
       "conceptCluster": "is_star_exchange_rate",
       "primarySkill": "is_star_exchange_rate",
       "repairSkill": "is_star_exchange_rate",
-      "feedback": "The clue is the model task: appreciation reduces NX and planned expenditure.",
+      "feedback": "Higher government purchases increase goods demand at any given e. A change in e itself is a movement along the existing IS* curve.",
       "id": 5050,
       "difficulty": "repair",
-      "aHash": "3375a9a2575fcf1049e07ca0b7b41c9822f891c2f469ab34c27a79f850e122c1"
+      "aHash": "393492c12f7110c7c368c9328e447505fc46febeb9ddc2187cb05897b231f63e"
     }
   ],
   "lm_star_money_market": [
     {
-      "q": "For LM* money-market channel, what should be the first move?",
+      "q": "Why is LM* vertical in the basic (e,Y) diagram?",
       "options": [
-        "M/P and r* determine income in the money market",
-        "pick the answer with the most words",
-        "ignore the sign of NX",
-        "treat fixed and floating regimes as the same"
+        "Money demand is unrelated to income",
+        "The exchange rate is legally fixed in every model",
+        "Investment is always zero",
+        "Given r*, M/P determines Y without a direct e term in money demand"
       ],
       "tag": "mundell_fleming_is_lm",
       "type": "repair",
@@ -11398,18 +11398,18 @@ const microSkillRepairPools = {
       "conceptCluster": "lm_star_money_market",
       "primarySkill": "lm_star_money_market",
       "repairSkill": "lm_star_money_market",
-      "feedback": "Repair starts by anchoring the specific mechanism: M/P and r* determine income in the money market.",
+      "feedback": "Money-market equilibrium M/P=L(r*,Y) fixes income at the given world rate. Changing e alone does not change this equation.",
       "id": 5051,
       "difficulty": "repair",
-      "aHash": "118a0cf09e84864e6999d7d39ba2a606677d66fc9d69c66c4baf153e86e6cbd5"
+      "aHash": "592a1f2d0d2eeaf701e188e33c570fb7a911963eeca8bf59bd256732113efa96"
     },
     {
-      "q": "Which mistake most often breaks LM* money-market channel?",
+      "q": "With P and r* fixed, what shifts the LM* curve to the right?",
       "options": [
-        "reversing the first model link",
-        "checking the relevant identity",
-        "following the exchange-rate channel",
-        "using the graph label carefully"
+        "A rise in the price level",
+        "A fall in foreign demand for exports",
+        "An increase in nominal money supply",
+        "An increase in government purchases"
       ],
       "tag": "mundell_fleming_is_lm",
       "type": "repair",
@@ -11417,18 +11417,18 @@ const microSkillRepairPools = {
       "conceptCluster": "lm_star_money_market",
       "primarySkill": "lm_star_money_market",
       "repairSkill": "lm_star_money_market",
-      "feedback": "The first wrong link usually wrecks the final answer in LM* money-market channel questions.",
+      "feedback": "Higher nominal money supply raises real balances, supporting higher income in money-market equilibrium at r*. Fiscal and export demand shifts act through IS*.",
       "id": 5052,
       "difficulty": "repair",
-      "aHash": "3f3766ee94167d6effd96db67b755df0ef06dd3e0f079a16359e2f21ea26736f"
+      "aHash": "b9c804505a17d7b9935599ee030405b2f34e3b8bea88918bc00aace2ba257251"
     },
     {
-      "q": "Which clue tells you this is a LM* money-market channel question?",
+      "q": "With M and r* fixed, what does a higher price level do to LM*?",
       "options": [
-        "it asks you to M/P and r* determine income in the money market",
-        "it mentions a random room number",
-        "it uses long answer choices",
-        "it avoids every macro variable"
+        "It shifts only the IS* curve shifts to the right",
+        "It shifts the LM* curve to the left",
+        "It shifts the LM* curve to the right",
+        "It makes LM* horizontal"
       ],
       "tag": "mundell_fleming_is_lm",
       "type": "repair",
@@ -11436,20 +11436,20 @@ const microSkillRepairPools = {
       "conceptCluster": "lm_star_money_market",
       "primarySkill": "lm_star_money_market",
       "repairSkill": "lm_star_money_market",
-      "feedback": "The clue is the model task: M/P and r* determine income in the money market.",
+      "feedback": "Higher price level reduces M/P. At the given interest rate, a lower income is needed to reduce money demand to the available real balances.",
       "id": 5053,
       "difficulty": "repair",
-      "aHash": "5afa77ff32fdba02afd120759316c673cd2a05be7ed21a997be25635555296f8"
+      "aHash": "c90eb0abfce0ae54cc683064f7b27576a7b31098608055d9fef94ad5a9236ad7"
     }
   ],
   "floating_fiscal_policy": [
     {
-      "q": "For floating-rate fiscal policy, what should be the first move?",
+      "q": "In the basic floating-rate Mundell–Fleming model, what is the initial curve shift from higher government purchases?",
       "options": [
-        "IS* shifts but appreciation crowds out NX",
-        "pick the answer with the most words",
-        "ignore the sign of NX",
-        "treat fixed and floating regimes as the same"
+        "The LM* curve shifts to the left",
+        "The IS* curve shifts to the left",
+        "The IS* curve shifts to the right",
+        "The LM* curve shifts to the right"
       ],
       "tag": "floating_exchange_policy",
       "type": "repair",
@@ -11457,18 +11457,18 @@ const microSkillRepairPools = {
       "conceptCluster": "floating_fiscal_policy",
       "primarySkill": "floating_fiscal_policy",
       "repairSkill": "floating_fiscal_policy",
-      "feedback": "Repair starts by anchoring the specific mechanism: IS* shifts but appreciation crowds out NX.",
+      "feedback": "Government purchases raise goods demand at every exchange rate, shifting the IS* curve to the right. The money supply is unchanged under the stated independent floating policy.",
       "id": 5054,
       "difficulty": "repair",
-      "aHash": "f6823ab412df4de6d25d0521a3e2c292b889cab1259721423cd1c16956467357"
+      "aHash": "38e678cb4b95d70dc30fddacab6ffee1e664421b3e54100b878ed54991c800ac"
     },
     {
-      "q": "Which mistake most often breaks floating-rate fiscal policy?",
+      "q": "In the Mundell–Fleming model with floating exchange rates, real money balances and the world interest rate are fixed. What offsets an expansion of fiscal policy?",
       "options": [
-        "reversing the first model link",
-        "checking the relevant identity",
-        "following the exchange-rate channel",
-        "using the graph label carefully"
+        "The world interest rate must fall",
+        "Currency appreciation reduces net exports",
+        "Currency depreciation increases net exports",
+        "The central bank must automatically expand money"
       ],
       "tag": "floating_exchange_policy",
       "type": "repair",
@@ -11476,18 +11476,18 @@ const microSkillRepairPools = {
       "conceptCluster": "floating_fiscal_policy",
       "primarySkill": "floating_fiscal_policy",
       "repairSkill": "floating_fiscal_policy",
-      "feedback": "The first wrong link usually wrecks the final answer in floating-rate fiscal policy questions.",
+      "feedback": "LM* pins income. The exchange rate appreciates after the IS* curve shifts to the right, reducing NX enough to offset the additional government demand.",
       "id": 5055,
       "difficulty": "repair",
-      "aHash": "3f3766ee94167d6effd96db67b755df0ef06dd3e0f079a16359e2f21ea26736f"
+      "aHash": "8d5a4930d559a20a4ae0823f6b508c43d982f5608ecae42c3ada5c1cd7a671d0"
     },
     {
-      "q": "Which clue tells you this is a floating-rate fiscal policy question?",
+      "q": "Does unchanged equilibrium output after floating-rate fiscal expansion mean government purchases did not rise?",
       "options": [
-        "it asks you to IS* shifts but appreciation crowds out NX",
-        "it mentions a random room number",
-        "it uses long answer choices",
-        "it avoids every macro variable"
+        "No; the composition of demand changes as net exports fall",
+        "Yes; every spending component must be unchanged",
+        "Yes; fiscal policy cannot shift IS*",
+        "No; investment must rise equally"
       ],
       "tag": "floating_exchange_policy",
       "type": "repair",
@@ -11495,20 +11495,20 @@ const microSkillRepairPools = {
       "conceptCluster": "floating_fiscal_policy",
       "primarySkill": "floating_fiscal_policy",
       "repairSkill": "floating_fiscal_policy",
-      "feedback": "The clue is the model task: IS* shifts but appreciation crowds out NX.",
+      "feedback": "An unchanged total can conceal offsetting components: higher government purchases and lower net exports. Under fixed world interest rate, investment does not provide the offset in this benchmark.",
       "id": 5056,
       "difficulty": "repair",
-      "aHash": "a2230d7b8b9190096bca55d07a0679f936d1459b52c501b748c3ab7ad6a95ed1"
+      "aHash": "1540f10f7d5816353965f172e4167879d04d2f0db5d800a1a3e51687632d2970"
     }
   ],
   "floating_monetary_policy": [
     {
-      "q": "For floating-rate monetary policy, what should be the first move?",
+      "q": "Under floating rates in the basic Mundell–Fleming model, what is the first effect of a money-supply increase at fixed price level?",
       "options": [
-        "LM* shifts and depreciation raises NX",
-        "pick the answer with the most words",
-        "ignore the sign of NX",
-        "treat fixed and floating regimes as the same"
+        "Government purchases automatically fall",
+        "The LM* curve shifts to the right",
+        "The IS* curve shifts to the left",
+        "The world interest rate permanently rises"
       ],
       "tag": "floating_exchange_policy",
       "type": "repair",
@@ -11516,18 +11516,18 @@ const microSkillRepairPools = {
       "conceptCluster": "floating_monetary_policy",
       "primarySkill": "floating_monetary_policy",
       "repairSkill": "floating_monetary_policy",
-      "feedback": "Repair starts by anchoring the specific mechanism: LM* shifts and depreciation raises NX.",
+      "feedback": "More nominal money at fixed price level raises real balances and shifts LM* to a higher income level.",
       "id": 5057,
       "difficulty": "repair",
-      "aHash": "8adbd3ef610f83ed0d251c60e6ffc55cc482d07c8f2f81dc366410959cb708f9"
+      "aHash": "a7a416401c81c0eb6079e5d71044c937083d3008cb26cee4a5aec317cd87406a"
     },
     {
-      "q": "Which mistake most often breaks floating-rate monetary policy?",
+      "q": "How does currency adjustment transmit floating-rate monetary expansion to goods demand?",
       "options": [
-        "reversing the first model link",
-        "checking the relevant identity",
-        "following the exchange-rate channel",
-        "using the graph label carefully"
+        "Depreciation raises net exports",
+        "Appreciation raises net exports",
+        "Depreciation lowers government purchases",
+        "Appreciation reduces the price level automatically"
       ],
       "tag": "floating_exchange_policy",
       "type": "repair",
@@ -11535,18 +11535,18 @@ const microSkillRepairPools = {
       "conceptCluster": "floating_monetary_policy",
       "primarySkill": "floating_monetary_policy",
       "repairSkill": "floating_monetary_policy",
-      "feedback": "The first wrong link usually wrecks the final answer in floating-rate monetary policy questions.",
+      "feedback": "The expansion puts downward pressure on the domestic currency. Cheaper domestic goods raise net exports, supplying the demand needed for higher output.",
       "id": 5058,
       "difficulty": "repair",
-      "aHash": "3f3766ee94167d6effd96db67b755df0ef06dd3e0f079a16359e2f21ea26736f"
+      "aHash": "aee11899e7a1cc002f0fa29a3a3202acfb4829f251c535eaf28b50feec62b4de"
     },
     {
-      "q": "Which clue tells you this is a floating-rate monetary policy question?",
+      "q": "Why need monetary expansion not permanently lower the domestic interest rate below r* in the basic open-economy model?",
       "options": [
-        "it asks you to LM* shifts and depreciation raises NX",
-        "it mentions a random room number",
-        "it uses long answer choices",
-        "it avoids every macro variable"
+        "Domestic investment disappears",
+        "Money demand stops depending on income",
+        "The central bank must permanently impose a rate below r*",
+        "Capital flows and exchange-rate adjustment restore the world-rate condition"
       ],
       "tag": "floating_exchange_policy",
       "type": "repair",
@@ -11554,20 +11554,20 @@ const microSkillRepairPools = {
       "conceptCluster": "floating_monetary_policy",
       "primarySkill": "floating_monetary_policy",
       "repairSkill": "floating_monetary_policy",
-      "feedback": "The clue is the model task: LM* shifts and depreciation raises NX.",
+      "feedback": "An attempted rate decline induces capital outflow and depreciation. Output and money demand rise until the domestic rate again equals the given world rate.",
       "id": 5059,
       "difficulty": "repair",
-      "aHash": "dec9167ea9bae08647dbbe851d55bba5d756364a23e3a0f717a721857d225080"
+      "aHash": "4ead71ea0cd4158169277c419e6d8cb0b1e40ea995541889f33853143082e9ec"
     }
   ],
   "trade_policy_under_floating": [
     {
-      "q": "For trade policy under floating rates, what should be the first move?",
+      "q": "An import restriction raises net exports at every exchange rate in the floating-rate Mundell–Fleming model. Which curve shifts first?",
       "options": [
-        "appreciation offsets the initial IS* increase",
-        "pick the answer with the most words",
-        "ignore the sign of NX",
-        "treat fixed and floating regimes as the same"
+        "The IS* curve shifts to the right",
+        "The LM* curve shifts to the right",
+        "The LM* curve shifts to the left",
+        "The IS* curve shifts to the left"
       ],
       "tag": "trade_policy",
       "type": "repair",
@@ -11575,18 +11575,18 @@ const microSkillRepairPools = {
       "conceptCluster": "trade_policy_under_floating",
       "primarySkill": "trade_policy_under_floating",
       "repairSkill": "trade_policy_under_floating",
-      "feedback": "Repair starts by anchoring the specific mechanism: appreciation offsets the initial IS* increase.",
+      "feedback": "The import restriction raises goods demand at a given e, moving the IS* curve shifts to the right. It does not itself change nominal money or real balances.",
       "id": 5060,
       "difficulty": "repair",
-      "aHash": "f6cfdfcf5c2a398a04bd4c96417932cc3eb92d8a9b25d56d3bf67883ea9e3205"
+      "aHash": "38e678cb4b95d70dc30fddacab6ffee1e664421b3e54100b878ed54991c800ac"
     },
     {
-      "q": "Which mistake most often breaks trade policy under floating rates?",
+      "q": "With floating rates and unchanged M/P, why need an import restriction not raise equilibrium output?",
       "options": [
-        "reversing the first model link",
-        "checking the relevant identity",
-        "following the exchange-rate channel",
-        "using the graph label carefully"
+        "The central bank automatically expands money",
+        "The world interest rate must rise permanently",
+        "Imports cannot respond to trade policy",
+        "Appreciation offsets its initial NX stimulus"
       ],
       "tag": "trade_policy",
       "type": "repair",
@@ -11594,18 +11594,18 @@ const microSkillRepairPools = {
       "conceptCluster": "trade_policy_under_floating",
       "primarySkill": "trade_policy_under_floating",
       "repairSkill": "trade_policy_under_floating",
-      "feedback": "The first wrong link usually wrecks the final answer in trade policy under floating rates questions.",
+      "feedback": "Vertical LM* fixes income at r*. Appreciation reduces net exports along the shifted IS* relationship, offsetting the direct demand stimulus.",
       "id": 5061,
       "difficulty": "repair",
-      "aHash": "3f3766ee94167d6effd96db67b755df0ef06dd3e0f079a16359e2f21ea26736f"
+      "aHash": "974e0789250e2ad7b2c68ad91588c2d2ed1df5293cca1f158849bb5bbec8e13d"
     },
     {
-      "q": "Which clue tells you this is a trade policy under floating rates question?",
+      "q": "In the basic floating-rate model, does an unchanged final NX mean a tariff has no effect on trade patterns?",
       "options": [
-        "it asks you to appreciation offsets the initial IS* increase",
-        "it mentions a random room number",
-        "it uses long answer choices",
-        "it avoids every macro variable"
+        "Yes; the exchange rate cannot move",
+        "No; unchanged net exports requires exports to double",
+        "No; imports and exports can both fall while their difference is unchanged",
+        "Yes; each individual trade flow must be unchanged"
       ],
       "tag": "trade_policy",
       "type": "repair",
@@ -11613,20 +11613,20 @@ const microSkillRepairPools = {
       "conceptCluster": "trade_policy_under_floating",
       "primarySkill": "trade_policy_under_floating",
       "repairSkill": "trade_policy_under_floating",
-      "feedback": "The clue is the model task: appreciation offsets the initial IS* increase.",
+      "feedback": "An unchanged balance is compatible with reduced gross trade. Appreciation can reduce exports as the restriction reduces imports.",
       "id": 5062,
       "difficulty": "repair",
-      "aHash": "5301f03566188bb5ee551a9c211a2b235cbfcd07b901442438c054367586759c"
+      "aHash": "703753fe7544105c0cc16f146e389ef26c440c6ea69fd5040eacf0b9deed6eef"
     }
   ],
   "fixed_monetary_policy": [
     {
-      "q": "For fixed-rate monetary policy, what should be the first move?",
+      "q": "In the Mundell–Fleming model with a credible fixed exchange rate and perfect capital mobility, what happens when the central bank attempts an independent monetary expansion?",
       "options": [
-        "monetary policy defends the peg",
-        "pick the answer with the most words",
-        "ignore the sign of NX",
-        "treat fixed and floating regimes as the same"
+        "It permanently raises output without intervention",
+        "It permanently raises the domestic rate above r*",
+        "It eliminates the need for foreign reserves",
+        "Peg defense reverses it"
       ],
       "tag": "fixed_exchange_policy",
       "type": "repair",
@@ -11634,18 +11634,18 @@ const microSkillRepairPools = {
       "conceptCluster": "fixed_monetary_policy",
       "primarySkill": "fixed_monetary_policy",
       "repairSkill": "fixed_monetary_policy",
-      "feedback": "Repair starts by anchoring the specific mechanism: monetary policy defends the peg.",
+      "feedback": "Expansion creates depreciation pressure. Selling reserves and buying domestic currency to defend the peg removes the added domestic money.",
       "id": 5063,
       "difficulty": "repair",
-      "aHash": "e9af3583dd33c7a6da327fc15155cb7a026a55c779de6cd05e0735d82e3333ad"
+      "aHash": "4b7f837c4bc9307879964d481ce8db511fcb99a3c0181d5fbf6886922ddf4c30"
     },
     {
-      "q": "Which mistake most often breaks fixed-rate monetary policy?",
+      "q": "An attempted money expansion creates depreciation pressure under a peg. Which reserve transaction supports the fixed rate?",
       "options": [
-        "reversing the first model link",
-        "checking the relevant identity",
-        "following the exchange-rate channel",
-        "using the graph label carefully"
+        "Buy domestic goods with newly printed money",
+        "Sell government services to households",
+        "Sell foreign currency and buy domestic currency",
+        "Buy foreign currency and issue domestic currency"
       ],
       "tag": "fixed_exchange_policy",
       "type": "repair",
@@ -11653,18 +11653,18 @@ const microSkillRepairPools = {
       "conceptCluster": "fixed_monetary_policy",
       "primarySkill": "fixed_monetary_policy",
       "repairSkill": "fixed_monetary_policy",
-      "feedback": "The first wrong link usually wrecks the final answer in fixed-rate monetary policy questions.",
+      "feedback": "Buying domestic currency supports its value and contracts the money supply, reversing the independent expansion.",
       "id": 5064,
       "difficulty": "repair",
-      "aHash": "3f3766ee94167d6effd96db67b755df0ef06dd3e0f079a16359e2f21ea26736f"
+      "aHash": "05984654f0d6f7fe17c68f9723a9f023e58c2c38a2253c7cb7edc7774bd14595"
     },
     {
-      "q": "Which clue tells you this is a fixed-rate monetary policy question?",
+      "q": "What monetary-policy freedom is sacrificed by combining a fixed exchange rate with perfect capital mobility?",
       "options": [
-        "it asks you to monetary policy defends the peg",
-        "it mentions a random room number",
-        "it uses long answer choices",
-        "it avoids every macro variable"
+        "All possible changes in the money supply",
+        "Independent control of the money supply for domestic stabilization",
+        "The ability to collect taxes",
+        "The existence of a central bank"
       ],
       "tag": "fixed_exchange_policy",
       "type": "repair",
@@ -11672,20 +11672,20 @@ const microSkillRepairPools = {
       "conceptCluster": "fixed_monetary_policy",
       "primarySkill": "fixed_monetary_policy",
       "repairSkill": "fixed_monetary_policy",
-      "feedback": "The clue is the model task: monetary policy defends the peg.",
+      "feedback": "The money supply can change, but it must accommodate the peg rather than independently target domestic conditions.",
       "id": 5065,
       "difficulty": "repair",
-      "aHash": "856aa60a6d6e24bfd48e8950fd20d11a7b94d748b0c141345f030aebd402a1fd"
+      "aHash": "4fe6b1daa1e4e87e50465b5d9556bb28feb7515cf81f680c5e78aae6108645c9"
     }
   ],
   "fixed_fiscal_policy": [
     {
-      "q": "For fixed-rate fiscal policy, what should be the first move?",
+      "q": "Under a fixed exchange rate in the basic Mundell–Fleming model, what is the initial effect of higher government purchases?",
       "options": [
-        "the money supply adjusts to defend the peg and amplify fiscal shifts",
-        "pick the answer with the most words",
-        "ignore the sign of NX",
-        "treat fixed and floating regimes as the same"
+        "The IS* curve shifts to the left and output falls",
+        "The world rate rises permanently because the economy is small",
+        "The IS* curve shifts to the right and creates appreciation pressure",
+        "The LM* curve shifts to the left and creates depreciation pressure"
       ],
       "tag": "fixed_exchange_policy",
       "type": "repair",
@@ -11693,18 +11693,18 @@ const microSkillRepairPools = {
       "conceptCluster": "fixed_fiscal_policy",
       "primarySkill": "fixed_fiscal_policy",
       "repairSkill": "fixed_fiscal_policy",
-      "feedback": "Repair starts by anchoring the specific mechanism: the money supply adjusts to defend the peg and amplify fiscal shifts.",
+      "feedback": "Higher government purchases increase goods demand. At the old money supply this creates appreciation pressure, triggering intervention to defend the peg.",
       "id": 5066,
       "difficulty": "repair",
-      "aHash": "d549f30fc4c4bc1fff9c9bc0fb9f3a84ae812398b307b84d8731ba3fe453c0e4"
+      "aHash": "65b9ccb539d62d4e4b875fa9c36a81b0feb0dc8db66dd7ac37fcac594f1d5725"
     },
     {
-      "q": "Which mistake most often breaks fixed-rate fiscal policy?",
+      "q": "How does a pegged central bank respond to appreciation pressure after fiscal expansion?",
       "options": [
-        "reversing the first model link",
-        "checking the relevant identity",
-        "following the exchange-rate channel",
-        "using the graph label carefully"
+        "It lets the currency appreciate without changing the peg",
+        "It buys foreign currency and supplies domestic money",
+        "It sells foreign currency and absorbs domestic money",
+        "It must cut government purchases itself"
       ],
       "tag": "fixed_exchange_policy",
       "type": "repair",
@@ -11712,18 +11712,18 @@ const microSkillRepairPools = {
       "conceptCluster": "fixed_fiscal_policy",
       "primarySkill": "fixed_fiscal_policy",
       "repairSkill": "fixed_fiscal_policy",
-      "feedback": "The first wrong link usually wrecks the final answer in fixed-rate fiscal policy questions.",
+      "feedback": "Buying foreign currency supplies domestic currency. The resulting monetary accommodation shifts the LM* curve to the right and supports higher output.",
       "id": 5067,
       "difficulty": "repair",
-      "aHash": "3f3766ee94167d6effd96db67b755df0ef06dd3e0f079a16359e2f21ea26736f"
+      "aHash": "02430eee41211795425d62f666bf5579e3102541158b80180bfb4ece0315d01d"
     },
     {
-      "q": "Which clue tells you this is a fixed-rate fiscal policy question?",
+      "q": "In the Mundell–Fleming model, why is fiscal policy more effective at raising output under a fixed exchange rate than under floating rates?",
       "options": [
-        "it asks you to the money supply adjusts to defend the peg and amplify fiscal shifts",
-        "it mentions a random room number",
-        "it uses long answer choices",
-        "it avoids every macro variable"
+        "Peg defense accommodates the IS* shift instead of allowing appreciation to crowd out NX",
+        "A peg removes the goods-market identity",
+        "A peg makes all imports disappear",
+        "Floating rates prohibit government spending"
       ],
       "tag": "fixed_exchange_policy",
       "type": "repair",
@@ -11731,20 +11731,20 @@ const microSkillRepairPools = {
       "conceptCluster": "fixed_fiscal_policy",
       "primarySkill": "fixed_fiscal_policy",
       "repairSkill": "fixed_fiscal_policy",
-      "feedback": "The clue is the model task: the money supply adjusts to defend the peg and amplify fiscal shifts.",
+      "feedback": "The fixed-rate commitment changes the monetary response. Under floating rates appreciation offsets the fiscal stimulus; under a peg money expands to preserve e.",
       "id": 5068,
       "difficulty": "repair",
-      "aHash": "85c74c8b36b7b0226d57fcc3087700f92dc52e9c193e263cc89b0671f77a4424"
+      "aHash": "9fb3ce4867e94f48d4869390aa02c18a26543a36e4297b092f6ef3dc9b471764"
     }
   ],
   "compare_fixed_floating": [
     {
-      "q": "For fixed versus floating regimes, what should be the first move?",
+      "q": "In the basic small-open model, which regime permits independent monetary policy to affect short-run output?",
       "options": [
-        "ask whether e or M adjusts",
-        "pick the answer with the most words",
-        "ignore the sign of NX",
-        "treat fixed and floating regimes as the same"
+        "Only a regime with no money market",
+        "Floating exchange rates",
+        "Fixed rates with perfect capital mobility",
+        "Neither regime under sticky prices"
       ],
       "tag": "fixed_floating_exchange_regimes",
       "type": "repair",
@@ -11752,18 +11752,18 @@ const microSkillRepairPools = {
       "conceptCluster": "compare_fixed_floating",
       "primarySkill": "compare_fixed_floating",
       "repairSkill": "compare_fixed_floating",
-      "feedback": "Repair starts by anchoring the specific mechanism: ask whether e or M adjusts.",
+      "feedback": "Floating exchange rates allow depreciation or appreciation to transmit monetary policy. Under a peg, intervention reverses independent monetary changes.",
       "id": 5069,
       "difficulty": "repair",
-      "aHash": "36004af3e63004d0c39d44afc64184855ac1f3839f6478d2befc6f887e9576f7"
+      "aHash": "7c6c9b8858b3e09d5690462e9ea9b6df9d39a675b46a9787569be480c54e8c50"
     },
     {
-      "q": "Which mistake most often breaks fixed versus floating regimes?",
+      "q": "Which policy is comparatively powerful for short-run output under fixed rates and perfect capital mobility?",
       "options": [
-        "reversing the first model link",
-        "checking the relevant identity",
-        "following the exchange-rate channel",
-        "using the graph label carefully"
+        "Fiscal expansion accompanied by peg-consistent monetary accommodation",
+        "Independent monetary expansion with no reserve intervention",
+        "A currency appreciation while the peg is unchanged",
+        "A permanent domestic rate above r* with identical risk"
       ],
       "tag": "fixed_floating_exchange_regimes",
       "type": "repair",
@@ -11771,18 +11771,18 @@ const microSkillRepairPools = {
       "conceptCluster": "compare_fixed_floating",
       "primarySkill": "compare_fixed_floating",
       "repairSkill": "compare_fixed_floating",
-      "feedback": "The first wrong link usually wrecks the final answer in fixed versus floating regimes questions.",
+      "feedback": "Fiscal expansion induces reserve purchases and money growth to defend the peg. Independent monetary expansion is instead reversed.",
       "id": 5070,
       "difficulty": "repair",
-      "aHash": "3f3766ee94167d6effd96db67b755df0ef06dd3e0f079a16359e2f21ea26736f"
+      "aHash": "6c072f66423ca2d9d4b69c4e5806cb564fcb1c507c4736cc64d63bb654f61081"
     },
     {
-      "q": "Which clue tells you this is a fixed versus floating regimes question?",
+      "q": "What distinguishes a fixed from a floating exchange-rate regime in these policy comparisons?",
       "options": [
-        "it asks you to ask whether e or M adjusts",
-        "it mentions a random room number",
-        "it uses long answer choices",
-        "it avoids every macro variable"
+        "Whether national accounting identities apply",
+        "Whether households can consume imported goods",
+        "Whether government purchases are included in output",
+        "Whether the central bank commits to intervene to maintain a currency value"
       ],
       "tag": "fixed_floating_exchange_regimes",
       "type": "repair",
@@ -11790,20 +11790,20 @@ const microSkillRepairPools = {
       "conceptCluster": "compare_fixed_floating",
       "primarySkill": "compare_fixed_floating",
       "repairSkill": "compare_fixed_floating",
-      "feedback": "The clue is the model task: ask whether e or M adjusts.",
+      "feedback": "The regime changes the policy constraint and adjustment path, not the definition of output or the existence of international trade.",
       "id": 5071,
       "difficulty": "repair",
-      "aHash": "39ab685566afae8c664ec54dd3223dfffbc3382669c564573d13fcef3c2c9a3d"
+      "aHash": "7a1e06007d5ded8cf9ad66d0fff2b94af75dd04f2f649d8edb9db2daca75efbd"
     }
   ],
   "impossible_trinity": [
     {
-      "q": "For impossible trinity, what should be the first move?",
+      "q": "Which three goals form the impossible trinity?",
       "options": [
-        "choose two goals and identify the sacrificed third",
-        "pick the answer with the most words",
-        "ignore the sign of NX",
-        "treat fixed and floating regimes as the same"
+        "A fixed exchange rate, free capital mobility and independent monetary policy",
+        "Low taxes, high exports and positive saving",
+        "Balanced trade, positive investment and a fiscal surplus",
+        "A floating rate, imports and private banking"
       ],
       "tag": "impossible_trinity",
       "type": "repair",
@@ -11811,18 +11811,18 @@ const microSkillRepairPools = {
       "conceptCluster": "impossible_trinity",
       "primarySkill": "impossible_trinity",
       "repairSkill": "impossible_trinity",
-      "feedback": "Repair starts by anchoring the specific mechanism: choose two goals and identify the sacrificed third.",
+      "feedback": "The trilemma concerns three policy commitments that cannot all be sustained together in the benchmark with arbitrage across capital markets.",
       "id": 5072,
       "difficulty": "repair",
-      "aHash": "192c04cfd55dacb367da97d7628dca639f481ae9228a4a7f03d57376b5f007e5"
+      "aHash": "17e312d02cca1647b864652208bdc0702506fd594ab3fad5a73972c55e0c072e"
     },
     {
-      "q": "Which mistake most often breaks impossible trinity?",
+      "q": "A country maintains a fixed exchange rate and free capital mobility. Which goal must it give up in the basic trilemma?",
       "options": [
-        "reversing the first model link",
-        "checking the relevant identity",
-        "following the exchange-rate channel",
-        "using the graph label carefully"
+        "All fiscal policy",
+        "International trade in goods",
+        "The ability to hold foreign reserves",
+        "Independent monetary policy"
       ],
       "tag": "impossible_trinity",
       "type": "repair",
@@ -11830,18 +11830,18 @@ const microSkillRepairPools = {
       "conceptCluster": "impossible_trinity",
       "primarySkill": "impossible_trinity",
       "repairSkill": "impossible_trinity",
-      "feedback": "The first wrong link usually wrecks the final answer in impossible trinity questions.",
+      "feedback": "Capital flows and peg defense tie domestic monetary conditions to the anchor; fiscal policy and trade can still operate.",
       "id": 5073,
       "difficulty": "repair",
-      "aHash": "3f3766ee94167d6effd96db67b755df0ef06dd3e0f079a16359e2f21ea26736f"
+      "aHash": "dd2555485f1265b2efedec85cd460ea4fba4bb0f1b68ac8756ead3f13ddc6a8d"
     },
     {
-      "q": "Which clue tells you this is a impossible trinity question?",
+      "q": "A country wants monetary independence and free capital mobility. Which exchange-rate arrangement is compatible with the basic trilemma?",
       "options": [
-        "it asks you to choose two goals and identify the sacrificed third",
-        "it mentions a random room number",
-        "it uses long answer choices",
-        "it avoids every macro variable"
+        "A peg that requires no reserves or intervention",
+        "A fixed rate plus a guaranteed different interest rate at equal risk",
+        "A floating exchange rate",
+        "An irrevocable peg with no adjustment"
       ],
       "tag": "impossible_trinity",
       "type": "repair",
@@ -11849,20 +11849,20 @@ const microSkillRepairPools = {
       "conceptCluster": "impossible_trinity",
       "primarySkill": "impossible_trinity",
       "repairSkill": "impossible_trinity",
-      "feedback": "The clue is the model task: choose two goals and identify the sacrificed third.",
+      "feedback": "Allowing the currency to adjust reconciles capital mobility with independent monetary decisions.",
       "id": 5074,
       "difficulty": "repair",
-      "aHash": "9752a355cac7439b458a9cd0c0b5558f2b7ebe6a1d29654d76ed6592d4e4aa55"
+      "aHash": "40fea38e022a7828aaf59398671ca55ba780ff1f3fa54c12c09bd25f713ef309"
     }
   ],
   "derive_ad_from_mf": [
     {
-      "q": "For aggregate demand from Mundell-Fleming model, what should be the first move?",
+      "q": "When deriving open-economy AD from Mundell–Fleming, what happens first if the price level falls while nominal the nominal money supply is fixed?",
       "options": [
-        "P changes M/P, LM*, e, NX, and Y",
-        "pick the answer with the most words",
-        "ignore the sign of NX",
-        "treat fixed and floating regimes as the same"
+        "Real money balances M/P fall",
+        "Government purchases rise automatically",
+        "The world real interest rate must rise",
+        "Real money balances M/P rise"
       ],
       "tag": "mundell_fleming_ad",
       "type": "repair",
@@ -11870,18 +11870,18 @@ const microSkillRepairPools = {
       "conceptCluster": "derive_ad_from_mf",
       "primarySkill": "derive_ad_from_mf",
       "repairSkill": "derive_ad_from_mf",
-      "feedback": "Repair starts by anchoring the specific mechanism: P changes M/P, LM*, e, NX, and Y.",
+      "feedback": "A lower denominator raises M/P. This is the money-market link from the price level to aggregate demand.",
       "id": 5075,
       "difficulty": "repair",
-      "aHash": "c9546fced2e1f0da3bf7def513609f04d5e178c4e7574ed2756edfe1c044f102"
+      "aHash": "165bc7f5923bb7e5156adc26b83a0a15da448a74376e736b6adc2a7c8f23de6d"
     },
     {
-      "q": "Which mistake most often breaks aggregate demand from Mundell-Fleming model?",
+      "q": "Under floating rates, how does a price-level fall affect LM* at a given r*?",
       "options": [
-        "reversing the first model link",
-        "checking the relevant identity",
-        "following the exchange-rate channel",
-        "using the graph label carefully"
+        "It shifts the IS* curve to the left without affecting money",
+        "It makes LM* slope downward",
+        "It shifts the LM* curve to the right",
+        "It shifts the LM* curve to the left"
       ],
       "tag": "mundell_fleming_ad",
       "type": "repair",
@@ -11889,18 +11889,18 @@ const microSkillRepairPools = {
       "conceptCluster": "derive_ad_from_mf",
       "primarySkill": "derive_ad_from_mf",
       "repairSkill": "derive_ad_from_mf",
-      "feedback": "The first wrong link usually wrecks the final answer in aggregate demand from Mundell-Fleming model questions.",
+      "feedback": "The increase in real balances supports higher income at the given interest rate, moving the vertical the LM* curve shifts to the right.",
       "id": 5076,
       "difficulty": "repair",
-      "aHash": "3f3766ee94167d6effd96db67b755df0ef06dd3e0f079a16359e2f21ea26736f"
+      "aHash": "f54e8535e93bd5405c2511458598810f7f8d91ff21e311c1e620decbb7e34564"
     },
     {
-      "q": "Which clue tells you this is a aggregate demand from Mundell-Fleming model question?",
+      "q": "Which chain derives higher output from a lower price level under floating rates?",
       "options": [
-        "it asks you to P changes M/P, LM*, e, NX, and Y",
-        "it mentions a random room number",
-        "it uses long answer choices",
-        "it avoids every macro variable"
+        "The world interest rate rises and domestic investment disappears",
+        "M/P rises, the LM* curve shifts to the right, the currency depreciates and net exports rise",
+        "M/P falls, the LM* curve shifts to the left and net exports fall",
+        "Government purchases rise automatically and the IS* curve shifts to the right"
       ],
       "tag": "mundell_fleming_ad",
       "type": "repair",
@@ -11908,20 +11908,20 @@ const microSkillRepairPools = {
       "conceptCluster": "derive_ad_from_mf",
       "primarySkill": "derive_ad_from_mf",
       "repairSkill": "derive_ad_from_mf",
-      "feedback": "The clue is the model task: P changes M/P, LM*, e, NX, and Y.",
+      "feedback": "The price-level decline works through real balances and exchange-rate adjustment to raise net exports and output.",
       "id": 5077,
       "difficulty": "repair",
-      "aHash": "f6e2a6f5496f2b191c83d7101c0296dcf04ea54ea16ab1b3a9a98444dbb81c4e"
+      "aHash": "467482a237820e5f863234e866fa6ee349ca536efa7a18b013d1e9426fcab21f"
     }
   ],
   "open_economy_ad_slope": [
     {
-      "q": "For open-economy aggregate demand slope, what should be the first move?",
+      "q": "Why does open-economy aggregate demand slope downward in the floating-rate benchmark?",
       "options": [
-        "lower P raises Y through M/P and NX",
-        "pick the answer with the most words",
-        "ignore the sign of NX",
-        "treat fixed and floating regimes as the same"
+        "A higher price level always increases real money supply",
+        "The world interest rate must move inversely with domestic prices",
+        "A lower price level raises real balances and supports higher net exports and Y",
+        "A lower price level automatically increases productive capacity"
       ],
       "tag": "mundell_fleming_ad",
       "type": "repair",
@@ -11929,18 +11929,18 @@ const microSkillRepairPools = {
       "conceptCluster": "open_economy_ad_slope",
       "primarySkill": "open_economy_ad_slope",
       "repairSkill": "open_economy_ad_slope",
-      "feedback": "Repair starts by anchoring the specific mechanism: lower P raises Y through M/P and NX.",
+      "feedback": "The downward relationship arises through M/P, LM* and the exchange rate, rather than an automatic shift in long-run supply.",
       "id": 5078,
       "difficulty": "repair",
-      "aHash": "52ead2e9ef9002ee787f48fd137907706fac8fdf3e572b2d439546aff852c7ac"
+      "aHash": "c90c36bfd105d834ee5d6d16b930490b2c346fc912834f0d3ae0b40f11fe9cd9"
     },
     {
-      "q": "Which mistake most often breaks open-economy aggregate demand slope?",
+      "q": "Holding nominal money fixed, what is the direction from a higher price level to short-run Y along open-economy AD?",
       "options": [
-        "reversing the first model link",
-        "checking the relevant identity",
-        "following the exchange-rate channel",
-        "using the graph label carefully"
+        "Higher price level shifts the IS* curve to the right through higher government purchases",
+        "Higher price level lowers M/P and Y",
+        "Higher price level raises M/P and Y",
+        "Higher price level leaves every real variable unchanged in the short run"
       ],
       "tag": "mundell_fleming_ad",
       "type": "repair",
@@ -11948,18 +11948,18 @@ const microSkillRepairPools = {
       "conceptCluster": "open_economy_ad_slope",
       "primarySkill": "open_economy_ad_slope",
       "repairSkill": "open_economy_ad_slope",
-      "feedback": "The first wrong link usually wrecks the final answer in open-economy aggregate demand slope questions.",
+      "feedback": "Higher prices reduce real balances. The LM* curve shifts to the left, appreciation reduces net exports and equilibrium output falls.",
       "id": 5079,
       "difficulty": "repair",
-      "aHash": "3f3766ee94167d6effd96db67b755df0ef06dd3e0f079a16359e2f21ea26736f"
+      "aHash": "2ac6f2e8295894498097163fd723b38e2714f027c1b2875e845a448c876c3801"
     },
     {
-      "q": "Which clue tells you this is a open-economy aggregate demand slope question?",
+      "q": "Why is a price-level increase not automatically a shift of aggregate demand?",
       "options": [
-        "it asks you to lower P raises Y through M/P and NX",
-        "it mentions a random room number",
-        "it uses long answer choices",
-        "it avoids every macro variable"
+        "P is an axis variable used to trace the existing AD relationship",
+        "The price level never affects spending",
+        "AD is always vertical",
+        "Every nominal variable is fixed by the world rate"
       ],
       "tag": "mundell_fleming_ad",
       "type": "repair",
@@ -11967,20 +11967,20 @@ const microSkillRepairPools = {
       "conceptCluster": "open_economy_ad_slope",
       "primarySkill": "open_economy_ad_slope",
       "repairSkill": "open_economy_ad_slope",
-      "feedback": "The clue is the model task: lower P raises Y through M/P and NX.",
+      "feedback": "A change in P, with AD determinants held fixed, changes quantity demanded along AD. Policy or other autonomous-demand changes can shift it.",
       "id": 5080,
       "difficulty": "repair",
-      "aHash": "42ff26e5a21a7cf86ffeb5f7ee3cfa1f85b9c5b5bfdc7108b0b38c535d5b1feb"
+      "aHash": "25f5b8b0da2bfcbe7060bd5fc5cc391842548e9b32dffb8b66fded81151d66e7"
     }
   ],
   "large_open_policy": [
     {
-      "q": "For large-open-economy text chain, what should be the first move?",
+      "q": "Why can the domestic interest rate respond to fiscal policy in a large open economy?",
       "options": [
-        "remember r can move and capital flows still matter",
-        "pick the answer with the most words",
-        "ignore the sign of NX",
-        "treat fixed and floating regimes as the same"
+        "Its exchange rate never changes",
+        "The economy is large enough to influence financing conditions and international capital flows",
+        "It has no trade in goods",
+        "Its national saving must equal investment"
       ],
       "tag": "large_open_economy",
       "type": "repair",
@@ -11988,18 +11988,18 @@ const microSkillRepairPools = {
       "conceptCluster": "large_open_policy",
       "primarySkill": "large_open_policy",
       "repairSkill": "large_open_policy",
-      "feedback": "Repair starts by anchoring the specific mechanism: remember r can move and capital flows still matter.",
+      "feedback": "The large-open model relaxes the small-country fixed-r* assumption while retaining international financial and trade links.",
       "id": 5081,
       "difficulty": "repair",
-      "aHash": "86091fefa09db03ff97eb128db1547b9fa8c35d60130df1a130e7f418dc299cf"
+      "aHash": "d34d51a34e093c4728ac95b3b4ca40855051ea73a1da06b977b2ba58928f4de7"
     },
     {
-      "q": "Which mistake most often breaks large-open-economy text chain?",
+      "q": "In the standard long-run large-open model, lower saving raises the real interest rate. What happens to domestic investment along a downward I(r) curve?",
       "options": [
-        "reversing the first model link",
-        "checking the relevant identity",
-        "following the exchange-rate channel",
-        "using the graph label carefully"
+        "It falls",
+        "It rises",
+        "It becomes zero automatically",
+        "It is fixed by assumption at every r"
       ],
       "tag": "large_open_economy",
       "type": "repair",
@@ -12007,18 +12007,18 @@ const microSkillRepairPools = {
       "conceptCluster": "large_open_policy",
       "primarySkill": "large_open_policy",
       "repairSkill": "large_open_policy",
-      "feedback": "The first wrong link usually wrecks the final answer in large-open-economy text chain questions.",
+      "feedback": "Higher borrowing costs reduce desired domestic investment. Unlike the small-open benchmark, domestic r is not held unchanged here.",
       "id": 5082,
       "difficulty": "repair",
-      "aHash": "3f3766ee94167d6effd96db67b755df0ef06dd3e0f079a16359e2f21ea26736f"
+      "aHash": "51a961febd461ad1ea9db3f345c3907f42988e7937e56390ff5e6b439ae33884"
     },
     {
-      "q": "Which clue tells you this is a large-open-economy text chain question?",
+      "q": "Why can fiscal expansion crowd out both investment and net exports in a large open economy?",
       "options": [
-        "it asks you to remember r can move and capital flows still matter",
-        "it mentions a random room number",
-        "it uses long answer choices",
-        "it avoids every macro variable"
+        "A higher real interest rate necessarily raises both investment and capital outflow",
+        "The expenditure identity excludes investment",
+        "The economy has no exchange-rate response",
+        "A higher real interest rate reduces investment and net capital outflow, which reduces net exports"
       ],
       "tag": "large_open_economy",
       "type": "repair",
@@ -12026,20 +12026,20 @@ const microSkillRepairPools = {
       "conceptCluster": "large_open_policy",
       "primarySkill": "large_open_policy",
       "repairSkill": "large_open_policy",
-      "feedback": "The clue is the model task: remember r can move and capital flows still matter.",
+      "feedback": "Higher real interest rate discourages investment and attracts funds, reducing net capital outflow. The exchange rate appreciates to reduce net exports to that lower outflow.",
       "id": 5083,
       "difficulty": "repair",
-      "aHash": "2d166b3f8a19d3235b17f1954e6484a16c3410c24d31c0539b8049ff8d247c54"
+      "aHash": "f2318dd74af0f71a6c2665a3a7e8eb3fcfbf2712253903bdd7ce3b75b78497ca"
     }
   ],
   "foreign_fiscal_policy": [
     {
-      "q": "For foreign fiscal policy, what should be the first move?",
+      "q": "In the standard world loanable-funds model, foreign fiscal expansion reduces world saving. What happens to the world interest rate, other things equal?",
       "options": [
-        "foreign fiscal policy moves r* and domestic investment",
-        "pick the answer with the most words",
-        "ignore the sign of NX",
-        "treat fixed and floating regimes as the same"
+        "It rises",
+        "It falls",
+        "It must be zero",
+        "It is set by the small domestic economy"
       ],
       "tag": "fiscal_policy_open_economy",
       "type": "repair",
@@ -12047,18 +12047,18 @@ const microSkillRepairPools = {
       "conceptCluster": "foreign_fiscal_policy",
       "primarySkill": "foreign_fiscal_policy",
       "repairSkill": "foreign_fiscal_policy",
-      "feedback": "Repair starts by anchoring the specific mechanism: foreign fiscal policy moves r* and domestic investment.",
+      "feedback": "Less world saving relative to investment demand raises the equilibrium global financing rate.",
       "id": 5084,
       "difficulty": "repair",
-      "aHash": "f8b1b9057bb6e0aa908cb18f9dd264c8f1f266c696242430f766d5a84a58b494"
+      "aHash": "654d4dc3d354a15b30ce49eb7818491fe5c33edd8a0774f069834474de424203"
     },
     {
-      "q": "Which mistake most often breaks foreign fiscal policy?",
+      "q": "A foreign fiscal contraction raises world saving and lowers the world interest rate. With domestic saving fixed, what happens to domestic investment in the small economy?",
       "options": [
-        "reversing the first model link",
-        "checking the relevant identity",
-        "following the exchange-rate channel",
-        "using the graph label carefully"
+        "It falls",
+        "It is unchanged because domestic taxes did not change",
+        "It becomes equal to foreign saving",
+        "It rises"
       ],
       "tag": "fiscal_policy_open_economy",
       "type": "repair",
@@ -12066,18 +12066,18 @@ const microSkillRepairPools = {
       "conceptCluster": "foreign_fiscal_policy",
       "primarySkill": "foreign_fiscal_policy",
       "repairSkill": "foreign_fiscal_policy",
-      "feedback": "The first wrong link usually wrecks the final answer in foreign fiscal policy questions.",
+      "feedback": "Lower world financing costs raise domestic investment along I(r*), even without a domestic tax change.",
       "id": 5085,
       "difficulty": "repair",
-      "aHash": "3f3766ee94167d6effd96db67b755df0ef06dd3e0f079a16359e2f21ea26736f"
+      "aHash": "654d4dc3d354a15b30ce49eb7818491fe5c33edd8a0774f069834474de424203"
     },
     {
-      "q": "Which clue tells you this is a foreign fiscal policy question?",
+      "q": "If foreign fiscal expansion raises the world interest rate and reduces domestic investment while domestic saving is fixed, what happens to domestic NX?",
       "options": [
-        "it asks you to foreign fiscal policy moves r* and domestic investment",
-        "it mentions a random room number",
-        "it uses long answer choices",
-        "it avoids every macro variable"
+        "It remains fixed",
+        "Its direction is necessarily ambiguous",
+        "It rises",
+        "It falls"
       ],
       "tag": "fiscal_policy_open_economy",
       "type": "repair",
@@ -12085,20 +12085,20 @@ const microSkillRepairPools = {
       "conceptCluster": "foreign_fiscal_policy",
       "primarySkill": "foreign_fiscal_policy",
       "repairSkill": "foreign_fiscal_policy",
-      "feedback": "The clue is the model task: foreign fiscal policy moves r* and domestic investment.",
+      "feedback": "NX=S−I rises when I falls at fixed S. The sign follows from the domestic saving-investment gap.",
       "id": 5086,
       "difficulty": "repair",
-      "aHash": "b794ec592ffe389a437512a8eef9ea71e1ded0e917d044b472cbae4faec6dbee"
+      "aHash": "654d4dc3d354a15b30ce49eb7818491fe5c33edd8a0774f069834474de424203"
     }
   ],
   "open_economy_synthesis": [
     {
-      "q": "For open-economy synthesis, what should be the first move?",
+      "q": "In NX=S−I(r*), what must be traced separately when two policies occur together?",
       "options": [
-        "identify the model before tracing the chain",
-        "pick the answer with the most words",
-        "ignore the sign of NX",
-        "treat fixed and floating regimes as the same"
+        "Only the exchange-rate label",
+        "Only whether either policy is expansionary",
+        "Only the government budget balance",
+        "The change in saving and the change in investment"
       ],
       "tag": "open_economy_synthesis",
       "type": "repair",
@@ -12106,18 +12106,18 @@ const microSkillRepairPools = {
       "conceptCluster": "open_economy_synthesis",
       "primarySkill": "open_economy_synthesis",
       "repairSkill": "open_economy_synthesis",
-      "feedback": "Repair starts by anchoring the specific mechanism: identify the model before tracing the chain.",
+      "feedback": "The trade-balance effect is ΔS−ΔI. Policy labels alone do not establish the signs or magnitudes of those two terms.",
       "id": 5087,
       "difficulty": "repair",
-      "aHash": "0148ce569a360e03130e804ce48152e8c127f2f3f50ec1712c8f73567ecdcecb"
+      "aHash": "2da01605b6312947f1db80938e38045a06778a4dc7f562b3c6d603959c52fd82"
     },
     {
-      "q": "Which mistake most often breaks open-economy synthesis?",
+      "q": "Saving falls while investment rises in a small open economy. What is the sign of ΔNX?",
       "options": [
-        "reversing the first model link",
-        "checking the relevant identity",
-        "following the exchange-rate channel",
-        "using the graph label carefully"
+        "Zero",
+        "Indeterminate without knowing which change is larger",
+        "Negative",
+        "Positive"
       ],
       "tag": "open_economy_synthesis",
       "type": "repair",
@@ -12125,18 +12125,18 @@ const microSkillRepairPools = {
       "conceptCluster": "open_economy_synthesis",
       "primarySkill": "open_economy_synthesis",
       "repairSkill": "open_economy_synthesis",
-      "feedback": "The first wrong link usually wrecks the final answer in open-economy synthesis questions.",
+      "feedback": "Both a lower S and a higher subtracted I reduce net exports. Their magnitudes affect size, not direction.",
       "id": 5088,
       "difficulty": "repair",
-      "aHash": "3f3766ee94167d6effd96db67b755df0ef06dd3e0f079a16359e2f21ea26736f"
+      "aHash": "09f04951af4cd503877815fd30f98e3af8d3d50a0972e83a4aaa42f4fba59761"
     },
     {
-      "q": "Which clue tells you this is a open-economy synthesis question?",
+      "q": "Saving and investment both rise, but their changes are unspecified. What can be concluded about ΔNX?",
       "options": [
-        "it asks you to identify the model before tracing the chain",
-        "it mentions a random room number",
-        "it uses long answer choices",
-        "it avoids every macro variable"
+        "It must be zero",
+        "Its sign depends on their relative changes",
+        "It must be positive",
+        "It must be negative"
       ],
       "tag": "open_economy_synthesis",
       "type": "repair",
@@ -12144,10 +12144,10 @@ const microSkillRepairPools = {
       "conceptCluster": "open_economy_synthesis",
       "primarySkill": "open_economy_synthesis",
       "repairSkill": "open_economy_synthesis",
-      "feedback": "The clue is the model task: identify the model before tracing the chain.",
+      "feedback": "A saving increase raises net exports while an investment increase lowers it. With opposing effects and unspecified magnitudes, the net sign is undetermined.",
       "id": 5089,
       "difficulty": "repair",
-      "aHash": "e6c08cf488094b93b844e2899bcf84c1df7c71bead641057d8b2871849107cee"
+      "aHash": "36f462ac8909c149de1a1db683d0bc2fc8a1254a3a3e5cd8ceec41b052f918cb"
     }
   ]
 };
@@ -12155,12 +12155,12 @@ const microSkillRepairPools = {
 const microSkillBridgePools = {
   "open_economy_identity": [
     {
-      "q": "After you identify open-economy identity, what is the next step?",
+      "q": "A country produces 900 of output and its residents and government spend 960 on consumption, investment and government purchases. What trade position reconciles the accounts?",
       "options": [
-        "trace the next variable in the chain",
-        "stop after naming the concept",
-        "assume NX always rises",
-        "switch to an unrelated closed-economy model"
+        "Balanced trade because output is positive",
+        "Net imports of 60",
+        "Net exports of 60",
+        "Net imports of 960"
       ],
       "tag": "accounting_identities",
       "type": "bridge",
@@ -12168,18 +12168,18 @@ const microSkillBridgePools = {
       "conceptCluster": "open_economy_identity",
       "primarySkill": "open_economy_identity",
       "repairSkill": "open_economy_identity",
-      "feedback": "Bridge items force the second link, not just the label.",
+      "feedback": "NX=900−960=−60. Domestic absorption exceeds output by 60, requiring net imports of 60.",
       "id": 6000,
       "difficulty": "bridge",
-      "aHash": "fd55486d3d7ccb89a9fe2ffa1c6c97f93a94bb01587f244c3036fba426b55902"
+      "aHash": "cb885908c058844bb85ef77e7b176f204a248e8f1a93d630ea1e419a41a14510"
     },
     {
-      "q": "Which answer form is strongest for open-economy identity?",
+      "q": "A resident switches a 20 purchase from a domestically produced shirt to an imported shirt, with total consumption unchanged. Holding all other expenditure entries fixed, how does the accounting measure of domestic output change?",
       "options": [
-        "direction plus mechanism",
-        "direction only",
-        "a definition with no application",
-        "a slogan about policy"
+        "It falls by 20 because imports rise by 20",
+        "It rises by 20 because imports add variety",
+        "It is unchanged because consumption is unchanged",
+        "It falls by 40 because both C and NX fall"
       ],
       "tag": "accounting_identities",
       "type": "bridge",
@@ -12187,18 +12187,18 @@ const microSkillBridgePools = {
       "conceptCluster": "open_economy_identity",
       "primarySkill": "open_economy_identity",
       "repairSkill": "open_economy_identity",
-      "feedback": "The right answer should say what changes and why.",
+      "feedback": "Consumption stays fixed but net exports fall by 20. Thus measured domestic output falls by 20, not 40; consumption was not reduced.",
       "id": 6001,
       "difficulty": "bridge",
-      "aHash": "c03016a24828b539324f28766d35c805af3b0b202a6571a3fd6dc11f7312df31"
+      "aHash": "f6c1ea08153fa52d520a5c989770873406e7246f38d027ec52193482211d203f"
     },
     {
-      "q": "If two answers sound possible for open-economy identity, what should you compare?",
+      "q": "Output and C+I+G both rise by 50 between two periods. What can be concluded about net exports from the expenditure identity alone?",
       "options": [
-        "the model assumption and the first shifted curve or identity",
-        "which option has the flashiest wording",
-        "whether the answer mentions a boss",
-        "whether the option uses no economics terms"
+        "Net exports rise by 100",
+        "Net exports fall by 50",
+        "Imports must be unchanged",
+        "Net exports are unchanged"
       ],
       "tag": "accounting_identities",
       "type": "bridge",
@@ -12206,20 +12206,20 @@ const microSkillBridgePools = {
       "conceptCluster": "open_economy_identity",
       "primarySkill": "open_economy_identity",
       "repairSkill": "open_economy_identity",
-      "feedback": "Compare the model assumption and the first actual movement.",
+      "feedback": "The change in NX is ΔY−Δ(C+I+G)=50−50=0. The identity does not separately determine exports and imports.",
       "id": 6002,
       "difficulty": "bridge",
-      "aHash": "389107cca54735d0d5b191a0c19b0c7450a84f1c7ce1c95bc0c9fde58d558e9a"
+      "aHash": "61e63eba35b7c21ae7baf99b3d39d403ed168f95267f7040c2d9bfbd21e7ea90"
     }
   ],
   "calculate_nx_from_s_i": [
     {
-      "q": "After you identify NX from S and I, what is the next step?",
+      "q": "A country initially has S=150 and I=130. Saving then rises by 10 while investment is unchanged. What is the new NX?",
       "options": [
-        "trace the next variable in the chain",
-        "stop after naming the concept",
-        "assume NX always rises",
-        "switch to an unrelated closed-economy model"
+        "30",
+        "10",
+        "20",
+        "40"
       ],
       "tag": "saving_investment_capital_flows",
       "type": "bridge",
@@ -12227,18 +12227,18 @@ const microSkillBridgePools = {
       "conceptCluster": "calculate_nx_from_s_i",
       "primarySkill": "calculate_nx_from_s_i",
       "repairSkill": "calculate_nx_from_s_i",
-      "feedback": "Bridge items force the second link, not just the label.",
+      "feedback": "Initial NX is 20; the saving increase raises S−I by 10. New NX=160−130=30.",
       "id": 6003,
       "difficulty": "bridge",
-      "aHash": "fd55486d3d7ccb89a9fe2ffa1c6c97f93a94bb01587f244c3036fba426b55902"
+      "aHash": "624b60c58c9d8bfb6ff1886c2fd605d2adeb6ea4da576068201b6c6958ce93f4"
     },
     {
-      "q": "Which answer form is strongest for NX from S and I?",
+      "q": "A country invests 240 domestically and has a trade deficit of 40. Using the saving-investment identity, how much does the country save?",
       "options": [
-        "direction plus mechanism",
-        "direction only",
-        "a definition with no application",
-        "a slogan about policy"
+        "280",
+        "−200",
+        "240",
+        "200"
       ],
       "tag": "saving_investment_capital_flows",
       "type": "bridge",
@@ -12246,18 +12246,18 @@ const microSkillBridgePools = {
       "conceptCluster": "calculate_nx_from_s_i",
       "primarySkill": "calculate_nx_from_s_i",
       "repairSkill": "calculate_nx_from_s_i",
-      "feedback": "The right answer should say what changes and why.",
+      "feedback": "Net exports equal saving minus investment. A trade deficit of 40 means net exports are −40, so saving is 240 − 40 = 200. The country invests 40 more than it saves.",
       "id": 6004,
       "difficulty": "bridge",
-      "aHash": "c03016a24828b539324f28766d35c805af3b0b202a6571a3fd6dc11f7312df31"
+      "aHash": "27badc983df1780b60c2b3fa9d3a19a00e46aac798451f0febdca52920faaddf"
     },
     {
-      "q": "If two answers sound possible for NX from S and I, what should you compare?",
+      "q": "Saving rises by 15 while investment rises by 25. How does the trade balance change?",
       "options": [
-        "the model assumption and the first shifted curve or identity",
-        "which option has the flashiest wording",
-        "whether the answer mentions a boss",
-        "whether the option uses no economics terms"
+        "Net exports rise by 10",
+        "Net exports are unchanged because both rise",
+        "Net exports fall by 10",
+        "Net exports rise by 40"
       ],
       "tag": "saving_investment_capital_flows",
       "type": "bridge",
@@ -12265,20 +12265,20 @@ const microSkillBridgePools = {
       "conceptCluster": "calculate_nx_from_s_i",
       "primarySkill": "calculate_nx_from_s_i",
       "repairSkill": "calculate_nx_from_s_i",
-      "feedback": "Compare the model assumption and the first actual movement.",
+      "feedback": "ΔNX=ΔS−ΔI=15−25=−10. Higher saving alone would raise net exports, but the larger investment increase more than offsets it.",
       "id": 6005,
       "difficulty": "bridge",
-      "aHash": "389107cca54735d0d5b191a0c19b0c7450a84f1c7ce1c95bc0c9fde58d558e9a"
+      "aHash": "77efcb2b0b1892b5eeb04dbea7e69d6798fa8710b0565f029d94526679bc31ed"
     }
   ],
   "calculate_nx_from_y_c_i_g": [
     {
-      "q": "After you identify NX from Y, C, I, and G, what is the next step?",
+      "q": "Output is 800, consumption is 500, government purchases are 180 and NX=−20. What investment level completes the accounts?",
       "options": [
-        "trace the next variable in the chain",
-        "stop after naming the concept",
-        "assume NX always rises",
-        "switch to an unrelated closed-economy model"
+        "100",
+        "160",
+        "120",
+        "140"
       ],
       "tag": "accounting_identities",
       "type": "bridge",
@@ -12286,18 +12286,18 @@ const microSkillBridgePools = {
       "conceptCluster": "calculate_nx_from_y_c_i_g",
       "primarySkill": "calculate_nx_from_y_c_i_g",
       "repairSkill": "calculate_nx_from_y_c_i_g",
-      "feedback": "Bridge items force the second link, not just the label.",
+      "feedback": "I=Y−C−G−NX=800−500−180−(−20)=140. A negative NX adds to the domestic spending that output can support.",
       "id": 6006,
       "difficulty": "bridge",
-      "aHash": "fd55486d3d7ccb89a9fe2ffa1c6c97f93a94bb01587f244c3036fba426b55902"
+      "aHash": "dbae772db29058a88f9bd830e957c695347c41b6162a7eb9a9ea13def34be56b"
     },
     {
-      "q": "Which answer form is strongest for NX from Y, C, I, and G?",
+      "q": "Output, investment and government purchases are unchanged while consumption rises by 25. What does the expenditure identity imply for NX?",
       "options": [
-        "direction plus mechanism",
-        "direction only",
-        "a definition with no application",
-        "a slogan about policy"
+        "It remains fixed",
+        "It rises by the consumption multiplier",
+        "It falls by 25",
+        "It rises by 25"
       ],
       "tag": "accounting_identities",
       "type": "bridge",
@@ -12305,18 +12305,18 @@ const microSkillBridgePools = {
       "conceptCluster": "calculate_nx_from_y_c_i_g",
       "primarySkill": "calculate_nx_from_y_c_i_g",
       "repairSkill": "calculate_nx_from_y_c_i_g",
-      "feedback": "The right answer should say what changes and why.",
+      "feedback": "At the stated fixed output and other spending, NX must fall one-for-one to offset the higher consumption. This is an accounting comparison, not a claim about an unconstrained multiplier.",
       "id": 6007,
       "difficulty": "bridge",
-      "aHash": "c03016a24828b539324f28766d35c805af3b0b202a6571a3fd6dc11f7312df31"
+      "aHash": "8499c665a7bcd8dec405020b3e1a4383e1a47d9960b204c5fa6b0a6e9d524124"
     },
     {
-      "q": "If two answers sound possible for NX from Y, C, I, and G, what should you compare?",
+      "q": "An analyst reports Y=700, C=400, I=150, G=100 and NX=80. Which correction makes the expenditure accounts balance if Y,C,I,G are accurate?",
       "options": [
-        "the model assumption and the first shifted curve or identity",
-        "which option has the flashiest wording",
-        "whether the answer mentions a boss",
-        "whether the option uses no economics terms"
+        "NX should be 750",
+        "NX should be 50",
+        "NX should be −50",
+        "NX should be 250"
       ],
       "tag": "accounting_identities",
       "type": "bridge",
@@ -12324,20 +12324,20 @@ const microSkillBridgePools = {
       "conceptCluster": "calculate_nx_from_y_c_i_g",
       "primarySkill": "calculate_nx_from_y_c_i_g",
       "repairSkill": "calculate_nx_from_y_c_i_g",
-      "feedback": "Compare the model assumption and the first actual movement.",
+      "feedback": "Domestic spending is 650, leaving NX=700−650=50. The reported 80 would imply output of 730.",
       "id": 6008,
       "difficulty": "bridge",
-      "aHash": "389107cca54735d0d5b191a0c19b0c7450a84f1c7ce1c95bc0c9fde58d558e9a"
+      "aHash": "2c012f68cec95bbba6b10d41895c267873bcff60f0bfb3f3618205c175db43a4"
     }
   ],
   "calculate_net_exports": [
     {
-      "q": "After you identify net exports from trade data, what is the next step?",
+      "q": "A tourism boom increases a country’s service exports by 30. Goods exports stay unchanged, while imports increase by 10. How do net exports change?",
       "options": [
-        "trace the next variable in the chain",
-        "stop after naming the concept",
-        "assume NX always rises",
-        "switch to an unrelated closed-economy model"
+        "It falls by 20",
+        "It is unchanged because services do not count",
+        "It rises by 20",
+        "It rises by 40"
       ],
       "tag": "trade_balance_net_exports",
       "type": "bridge",
@@ -12345,18 +12345,18 @@ const microSkillBridgePools = {
       "conceptCluster": "calculate_net_exports",
       "primarySkill": "calculate_net_exports",
       "repairSkill": "calculate_net_exports",
-      "feedback": "Bridge items force the second link, not just the label.",
+      "feedback": "Tourism sold to foreign visitors counts as a service export. Total exports rise by 30 and imports rise by 10, so net exports increase by 30 − 10 = 20.",
       "id": 6009,
       "difficulty": "bridge",
-      "aHash": "fd55486d3d7ccb89a9fe2ffa1c6c97f93a94bb01587f244c3036fba426b55902"
+      "aHash": "2cbd9fbc21d8daf9e93117c96083fe9363d48bec78f720eefa745caec2499bbe"
     },
     {
-      "q": "Which answer form is strongest for net exports from trade data?",
+      "q": "A country’s exports are 85 and its net exports are −15. What is the value of its imports?",
       "options": [
-        "direction plus mechanism",
-        "direction only",
-        "a definition with no application",
-        "a slogan about policy"
+        "−100",
+        "100",
+        "70",
+        "85"
       ],
       "tag": "trade_balance_net_exports",
       "type": "bridge",
@@ -12364,18 +12364,18 @@ const microSkillBridgePools = {
       "conceptCluster": "calculate_net_exports",
       "primarySkill": "calculate_net_exports",
       "repairSkill": "calculate_net_exports",
-      "feedback": "The right answer should say what changes and why.",
+      "feedback": "Net exports equal exports minus imports. With net exports of −15, imports exceed exports by 15. Imports must therefore be 85 + 15 = 100; check that 85 − 100 = −15.",
       "id": 6010,
       "difficulty": "bridge",
-      "aHash": "c03016a24828b539324f28766d35c805af3b0b202a6571a3fd6dc11f7312df31"
+      "aHash": "ad57366865126e55649ecb23ae1d48887544976efea46a48eb5d85a6eeb4d306"
     },
     {
-      "q": "If two answers sound possible for net exports from trade data, what should you compare?",
+      "q": "Exports and imports both double, from 40 and 60 to 80 and 120. What happens to the trade deficit?",
       "options": [
-        "the model assumption and the first shifted curve or identity",
-        "which option has the flashiest wording",
-        "whether the answer mentions a boss",
-        "whether the option uses no economics terms"
+        "It grows from 20 to 40",
+        "It shrinks from 20 to 10",
+        "It disappears because trade grows equally in percentage terms",
+        "It remains 20"
       ],
       "tag": "trade_balance_net_exports",
       "type": "bridge",
@@ -12383,20 +12383,20 @@ const microSkillBridgePools = {
       "conceptCluster": "calculate_net_exports",
       "primarySkill": "calculate_net_exports",
       "repairSkill": "calculate_net_exports",
-      "feedback": "Compare the model assumption and the first actual movement.",
+      "feedback": "Initially NX=−20; afterward NX=−40. Equal percentage growth does not preserve the absolute gap when starting levels differ.",
       "id": 6011,
       "difficulty": "bridge",
-      "aHash": "389107cca54735d0d5b191a0c19b0c7450a84f1c7ce1c95bc0c9fde58d558e9a"
+      "aHash": "b5b087f1d8d36ef89741af81a2dcb3421ed2fe29b17b0d21e6b83638717abbe2"
     }
   ],
   "small_open_assumption": [
     {
-      "q": "After you identify small-open-economy assumption, what is the next step?",
+      "q": "A small country increases government borrowing, but world capital-market conditions do not change. In the basic long-run model, what happens to the interest rate used by domestic investors?",
       "options": [
-        "trace the next variable in the chain",
-        "stop after naming the concept",
-        "assume NX always rises",
-        "switch to an unrelated closed-economy model"
+        "It becomes equal to the government deficit",
+        "It remains at the unchanged world rate",
+        "It rises until domestic saving again equals investment",
+        "It falls because the country is small"
       ],
       "tag": "small_open_world_interest_rate",
       "type": "bridge",
@@ -12404,18 +12404,18 @@ const microSkillBridgePools = {
       "conceptCluster": "small_open_assumption",
       "primarySkill": "small_open_assumption",
       "repairSkill": "small_open_assumption",
-      "feedback": "Bridge items force the second link, not just the label.",
+      "feedback": "A small price-taking economy takes r* as given. Lower national saving changes external borrowing and NX rather than r*.",
       "id": 6012,
       "difficulty": "bridge",
-      "aHash": "fd55486d3d7ccb89a9fe2ffa1c6c97f93a94bb01587f244c3036fba426b55902"
+      "aHash": "7f5c9b2dc7a5ca0a8b4238ae0866e91ac741275743e345830762a52731aef2e2"
     },
     {
-      "q": "Which answer form is strongest for small-open-economy assumption?",
+      "q": "A study finds that a country’s borrowing substantially changes world interest rates. Which benchmark assumption should be reconsidered first?",
       "options": [
-        "direction plus mechanism",
-        "direction only",
-        "a definition with no application",
-        "a slogan about policy"
+        "The country is small in world capital markets",
+        "Net exports equal exports minus imports",
+        "Investment is part of expenditure",
+        "Saving subtracts consumption"
       ],
       "tag": "small_open_world_interest_rate",
       "type": "bridge",
@@ -12423,18 +12423,18 @@ const microSkillBridgePools = {
       "conceptCluster": "small_open_assumption",
       "primarySkill": "small_open_assumption",
       "repairSkill": "small_open_assumption",
-      "feedback": "The right answer should say what changes and why.",
+      "feedback": "A substantial effect on world financing prices contradicts the small-economy price-taking assumption, while accounting identities remain valid.",
       "id": 6013,
       "difficulty": "bridge",
-      "aHash": "c03016a24828b539324f28766d35c805af3b0b202a6571a3fd6dc11f7312df31"
+      "aHash": "703a937856cc5ac75b66f573bee48f20f0b73f8034cfcb41e06d7e542c03e341"
     },
     {
-      "q": "If two answers sound possible for small-open-economy assumption, what should you compare?",
+      "q": "Two countries face the same r* but one has a country-risk premium. Why may its domestic borrowing rate exceed r*?",
       "options": [
-        "the model assumption and the first shifted curve or identity",
-        "which option has the flashiest wording",
-        "whether the answer mentions a boss",
-        "whether the option uses no economics terms"
+        "National saving must equal zero",
+        "The net-export identity must be discarded",
+        "Capital mobility necessarily makes all risks identical",
+        "The equal-risk assumption of the basic benchmark no longer holds"
       ],
       "tag": "small_open_world_interest_rate",
       "type": "bridge",
@@ -12442,20 +12442,20 @@ const microSkillBridgePools = {
       "conceptCluster": "small_open_assumption",
       "primarySkill": "small_open_assumption",
       "repairSkill": "small_open_assumption",
-      "feedback": "Compare the model assumption and the first actual movement.",
+      "feedback": "A risk premium compensates lenders for additional risk. The simple r=r* result assumes comparable risk and no such wedge.",
       "id": 6014,
       "difficulty": "bridge",
-      "aHash": "389107cca54735d0d5b191a0c19b0c7450a84f1c7ce1c95bc0c9fde58d558e9a"
+      "aHash": "df5a7a637a7614a8aa0f6a4d8c148b83c096805f9c97dbfbf04443f16a0131de"
     }
   ],
   "world_interest_rate": [
     {
-      "q": "After you identify world interest rate movement, what is the next step?",
+      "q": "Investment is I=100−5r*, with r* measured in percentage points. If the world interest rate rises from 2 to 4, how does investment change?",
       "options": [
-        "trace the next variable in the chain",
-        "stop after naming the concept",
-        "assume NX always rises",
-        "switch to an unrelated closed-economy model"
+        "It falls from 90 to 80",
+        "It rises from 90 to 100",
+        "It falls from 100 to 90",
+        "It is unchanged at 80"
       ],
       "tag": "small_open_world_interest_rate",
       "type": "bridge",
@@ -12463,18 +12463,18 @@ const microSkillBridgePools = {
       "conceptCluster": "world_interest_rate",
       "primarySkill": "world_interest_rate",
       "repairSkill": "world_interest_rate",
-      "feedback": "Bridge items force the second link, not just the label.",
+      "feedback": "Substitution gives I=100−10=90 initially and I=100−20=80 afterward. This is a 10-unit fall along investment demand.",
       "id": 6015,
       "difficulty": "bridge",
-      "aHash": "fd55486d3d7ccb89a9fe2ffa1c6c97f93a94bb01587f244c3036fba426b55902"
+      "aHash": "1a12d8f3a78d4b83a5e584235de384175faa63c47354202a0f96879eb37b80bb"
     },
     {
-      "q": "Which answer form is strongest for world interest rate movement?",
+      "q": "Saving stays at 100 while a lower world rate raises investment from 80 to 95. Does the country move into deficit?",
       "options": [
-        "direction plus mechanism",
-        "direction only",
-        "a definition with no application",
-        "a slogan about policy"
+        "Yes; its deficit becomes 15",
+        "No; its surplus grows from 20 to 35",
+        "Yes; any investment increase creates a deficit",
+        "No; its surplus shrinks from 20 to 5"
       ],
       "tag": "small_open_world_interest_rate",
       "type": "bridge",
@@ -12482,18 +12482,18 @@ const microSkillBridgePools = {
       "conceptCluster": "world_interest_rate",
       "primarySkill": "world_interest_rate",
       "repairSkill": "world_interest_rate",
-      "feedback": "The right answer should say what changes and why.",
+      "feedback": "NX initially equals 100−80=20 and later 100−95=5. A declining trade balance need not cross zero.",
       "id": 6016,
       "difficulty": "bridge",
-      "aHash": "c03016a24828b539324f28766d35c805af3b0b202a6571a3fd6dc11f7312df31"
+      "aHash": "2712b0c275595db4b7daa9840a58f4cddeb76b95c490f8a02deaa58f8dc47eec"
     },
     {
-      "q": "If two answers sound possible for world interest rate movement, what should you compare?",
+      "q": "A global saving increase lowers the world interest rate. With domestic saving fixed and no investment-demand shift, which two changes go together in the small economy?",
       "options": [
-        "the model assumption and the first shifted curve or identity",
-        "which option has the flashiest wording",
-        "whether the answer mentions a boss",
-        "whether the option uses no economics terms"
+        "Higher investment and higher net exports",
+        "Unchanged investment and a higher world rate",
+        "Higher investment and lower net exports",
+        "Lower investment and higher net exports"
       ],
       "tag": "small_open_world_interest_rate",
       "type": "bridge",
@@ -12501,20 +12501,20 @@ const microSkillBridgePools = {
       "conceptCluster": "world_interest_rate",
       "primarySkill": "world_interest_rate",
       "repairSkill": "world_interest_rate",
-      "feedback": "Compare the model assumption and the first actual movement.",
+      "feedback": "The lower global financing rate encourages investment. At fixed domestic saving, NX=S−I consequently falls.",
       "id": 6017,
       "difficulty": "bridge",
-      "aHash": "389107cca54735d0d5b191a0c19b0c7450a84f1c7ce1c95bc0c9fde58d558e9a"
+      "aHash": "e662f143249490a3bd3e0e66304571b29c8c190a719cd134af2a624d4b3594b6"
     }
   ],
   "trade_balance_terms": [
     {
-      "q": "After you identify surplus versus deficit, what is the next step?",
+      "q": "A trade balance improves from −50 to −20. Which description is correct?",
       "options": [
-        "trace the next variable in the chain",
-        "stop after naming the concept",
-        "assume NX always rises",
-        "switch to an unrelated closed-economy model"
+        "A surplus of 30 has emerged",
+        "The deficit grows by 30",
+        "Imports have necessarily fallen to zero",
+        "The deficit narrows by 30, but the country still has a deficit"
       ],
       "tag": "trade_balance_net_exports",
       "type": "bridge",
@@ -12522,18 +12522,18 @@ const microSkillBridgePools = {
       "conceptCluster": "trade_balance_terms",
       "primarySkill": "trade_balance_terms",
       "repairSkill": "trade_balance_terms",
-      "feedback": "Bridge items force the second link, not just the label.",
+      "feedback": "Net exports rise by 30 but remains negative. Improvement is a change, whereas surplus or deficit describes the level.",
       "id": 6018,
       "difficulty": "bridge",
-      "aHash": "fd55486d3d7ccb89a9fe2ffa1c6c97f93a94bb01587f244c3036fba426b55902"
+      "aHash": "96ea650c622ce0f2b3eac6919b6fef9f58d689a9d871c5dfda4bd21c92179501"
     },
     {
-      "q": "Which answer form is strongest for surplus versus deficit?",
+      "q": "Private saving is 100, public saving is −20 and investment is 90. Which pair of balances is correct?",
       "options": [
-        "direction plus mechanism",
-        "direction only",
-        "a definition with no application",
-        "a slogan about policy"
+        "A government deficit and a trade surplus",
+        "Balanced government accounts and a trade deficit",
+        "A government deficit and a trade deficit",
+        "A government surplus and a trade surplus"
       ],
       "tag": "trade_balance_net_exports",
       "type": "bridge",
@@ -12541,18 +12541,18 @@ const microSkillBridgePools = {
       "conceptCluster": "trade_balance_terms",
       "primarySkill": "trade_balance_terms",
       "repairSkill": "trade_balance_terms",
-      "feedback": "The right answer should say what changes and why.",
+      "feedback": "National saving is 80; NX=80−90=−10. Public saving of −20 also identifies a government deficit.",
       "id": 6019,
       "difficulty": "bridge",
-      "aHash": "c03016a24828b539324f28766d35c805af3b0b202a6571a3fd6dc11f7312df31"
+      "aHash": "42caa898a9cd6d68e86f7ba129bf8d60403a9a88e7ec73f60863f454739d6089"
     },
     {
-      "q": "If two answers sound possible for surplus versus deficit, what should you compare?",
+      "q": "Exports rise from 100 to 120 while imports rise from 90 to 115. How does the trade position change?",
       "options": [
-        "the model assumption and the first shifted curve or identity",
-        "which option has the flashiest wording",
-        "whether the answer mentions a boss",
-        "whether the option uses no economics terms"
+        "The surplus remains 10",
+        "The surplus narrows from 10 to 5",
+        "The surplus grows from 10 to 25",
+        "A deficit of 5 replaces the surplus"
       ],
       "tag": "trade_balance_net_exports",
       "type": "bridge",
@@ -12560,20 +12560,20 @@ const microSkillBridgePools = {
       "conceptCluster": "trade_balance_terms",
       "primarySkill": "trade_balance_terms",
       "repairSkill": "trade_balance_terms",
-      "feedback": "Compare the model assumption and the first actual movement.",
+      "feedback": "Initial NX=10 and final NX=5. Export growth alone does not establish improvement when imports grow more in absolute terms.",
       "id": 6020,
       "difficulty": "bridge",
-      "aHash": "389107cca54735d0d5b191a0c19b0c7450a84f1c7ce1c95bc0c9fde58d558e9a"
+      "aHash": "b2513a061bc96ae9f4ad404bd29a632a30c8681df8fc4054cb6c94f7ee5bccaa"
     }
   ],
   "nominal_vs_real_exchange_rate": [
     {
-      "q": "After you identify nominal versus real exchange rate, what is the next step?",
+      "q": "The nominal exchange rate the nominal exchange rate is unchanged while domestic and foreign price levels both rise 10%. What happens to ε=eP/P*?",
       "options": [
-        "trace the next variable in the chain",
-        "stop after naming the concept",
-        "assume NX always rises",
-        "switch to an unrelated closed-economy model"
+        "It rises 10%",
+        "It falls 10%",
+        "It is unchanged",
+        "It rises 20%"
       ],
       "tag": "real_exchange_rate",
       "type": "bridge",
@@ -12581,18 +12581,18 @@ const microSkillBridgePools = {
       "conceptCluster": "nominal_vs_real_exchange_rate",
       "primarySkill": "nominal_vs_real_exchange_rate",
       "repairSkill": "nominal_vs_real_exchange_rate",
-      "feedback": "Bridge items force the second link, not just the label.",
+      "feedback": "The equal proportional price increases leave P/P* unchanged; with e fixed, the real exchange rate is unchanged.",
       "id": 6021,
       "difficulty": "bridge",
-      "aHash": "fd55486d3d7ccb89a9fe2ffa1c6c97f93a94bb01587f244c3036fba426b55902"
+      "aHash": "2eb953560d2aee9c96090261017ebe948bbd5a91ac4e77d6b95c43634e63f109"
     },
     {
-      "q": "Which answer form is strongest for nominal versus real exchange rate?",
+      "q": "A domestic currency appreciates 5% under the foreign-currency-per-domestic-unit quote, while both price levels stay fixed. Which exchange rates appreciate?",
       "options": [
-        "direction plus mechanism",
-        "direction only",
-        "a definition with no application",
-        "a slogan about policy"
+        "Neither",
+        "Both nominal and real",
+        "Only nominal",
+        "Only real"
       ],
       "tag": "real_exchange_rate",
       "type": "bridge",
@@ -12600,18 +12600,18 @@ const microSkillBridgePools = {
       "conceptCluster": "nominal_vs_real_exchange_rate",
       "primarySkill": "nominal_vs_real_exchange_rate",
       "repairSkill": "nominal_vs_real_exchange_rate",
-      "feedback": "The right answer should say what changes and why.",
+      "feedback": "When P and P* are fixed, ε is proportional to e. The nominal appreciation therefore also raises relative domestic-goods prices.",
       "id": 6022,
       "difficulty": "bridge",
-      "aHash": "c03016a24828b539324f28766d35c805af3b0b202a6571a3fd6dc11f7312df31"
+      "aHash": "36d40338df1e7a269ef1529d5decf096f0985e40972804a7bca6358310b6d477"
     },
     {
-      "q": "If two answers sound possible for nominal versus real exchange rate, what should you compare?",
+      "q": "An unchanged currency quote is used to claim that domestic export competitiveness cannot have changed. Domestic prices rose while foreign prices did not. What is missing from the claim?",
       "options": [
-        "the model assumption and the first shifted curve or identity",
-        "which option has the flashiest wording",
-        "whether the answer mentions a boss",
-        "whether the option uses no economics terms"
+        "The real appreciation caused by the rise in P/P*",
+        "A required fall in all domestic wages",
+        "The identity that nominal and real rates are always equal",
+        "A necessary increase in the world interest rate"
       ],
       "tag": "real_exchange_rate",
       "type": "bridge",
@@ -12619,20 +12619,20 @@ const microSkillBridgePools = {
       "conceptCluster": "nominal_vs_real_exchange_rate",
       "primarySkill": "nominal_vs_real_exchange_rate",
       "repairSkill": "nominal_vs_real_exchange_rate",
-      "feedback": "Compare the model assumption and the first actual movement.",
+      "feedback": "At unchanged nominal exchange rate, a higher P/P* raises ε. Domestic goods become relatively more expensive even though the nominal quote is unchanged.",
       "id": 6023,
       "difficulty": "bridge",
-      "aHash": "389107cca54735d0d5b191a0c19b0c7450a84f1c7ce1c95bc0c9fde58d558e9a"
+      "aHash": "bfc80006cce9456ab9f586d8810266139f63d198b2296edc0f12ba1d3ced2581"
     }
   ],
   "calculate_real_exchange_rate": [
     {
-      "q": "After you identify real exchange rate calculation, what is the next step?",
+      "q": "A basket costs 80 domestic currency units at home and 120 foreign units abroad. One domestic unit buys 1.5 foreign units. What relative basket price does ε imply?",
       "options": [
-        "trace the next variable in the chain",
-        "stop after naming the concept",
-        "assume NX always rises",
-        "switch to an unrelated closed-economy model"
+        "The foreign basket costs 1.5 times as much after conversion",
+        "The baskets cost the same after conversion",
+        "The domestic basket costs twice as much",
+        "The domestic basket costs half as much"
       ],
       "tag": "real_exchange_rate",
       "type": "bridge",
@@ -12640,18 +12640,18 @@ const microSkillBridgePools = {
       "conceptCluster": "calculate_real_exchange_rate",
       "primarySkill": "calculate_real_exchange_rate",
       "repairSkill": "calculate_real_exchange_rate",
-      "feedback": "Bridge items force the second link, not just the label.",
+      "feedback": "Convert the domestic basket: 1.5×80=120 foreign units. ε=120/120=1, so the converted basket prices are equal.",
       "id": 6024,
       "difficulty": "bridge",
-      "aHash": "fd55486d3d7ccb89a9fe2ffa1c6c97f93a94bb01587f244c3036fba426b55902"
+      "aHash": "c61da6001e893b8e5b33d277f6f492f7304bb988e33c9b3693f5f8cb986bedd7"
     },
     {
-      "q": "Which answer form is strongest for real exchange rate calculation?",
+      "q": "Initially e=1, P=100 and P*=100. Domestic prices rise to 110 while the nominal exchange rate falls to 0.9 and P* stays 100. What is the new ε?",
       "options": [
-        "direction plus mechanism",
-        "direction only",
-        "a definition with no application",
-        "a slogan about policy"
+        "0.99",
+        "1.10",
+        "0.90",
+        "1.21"
       ],
       "tag": "real_exchange_rate",
       "type": "bridge",
@@ -12659,18 +12659,18 @@ const microSkillBridgePools = {
       "conceptCluster": "calculate_real_exchange_rate",
       "primarySkill": "calculate_real_exchange_rate",
       "repairSkill": "calculate_real_exchange_rate",
-      "feedback": "The right answer should say what changes and why.",
+      "feedback": "ε=0.9×110/100=0.99. The nominal depreciation slightly more than offsets the domestic price increase.",
       "id": 6025,
       "difficulty": "bridge",
-      "aHash": "c03016a24828b539324f28766d35c805af3b0b202a6571a3fd6dc11f7312df31"
+      "aHash": "b45898ec08623bcb9a13a8656cf546137cd5aaf7526fc3eb83e4a3f3b8e4b924"
     },
     {
-      "q": "If two answers sound possible for real exchange rate calculation, what should you compare?",
+      "q": "If ε=1.2, e=1.5 and P*=100, what domestic price level satisfies ε=eP/P*?",
       "options": [
-        "the model assumption and the first shifted curve or identity",
-        "which option has the flashiest wording",
-        "whether the answer mentions a boss",
-        "whether the option uses no economics terms"
+        "125",
+        "180",
+        "100",
+        "80"
       ],
       "tag": "real_exchange_rate",
       "type": "bridge",
@@ -12678,20 +12678,20 @@ const microSkillBridgePools = {
       "conceptCluster": "calculate_real_exchange_rate",
       "primarySkill": "calculate_real_exchange_rate",
       "repairSkill": "calculate_real_exchange_rate",
-      "feedback": "Compare the model assumption and the first actual movement.",
+      "feedback": "Rearrange to P=εP*/e=1.2×100/1.5=80. Inverting the wrong ratio would give a different answer.",
       "id": 6026,
       "difficulty": "bridge",
-      "aHash": "389107cca54735d0d5b191a0c19b0c7450a84f1c7ce1c95bc0c9fde58d558e9a"
+      "aHash": "48449a14a4ff7d79bb7a1b6f3d488eba397c36ef25634c111b49baf362511afc"
     }
   ],
   "appreciation_nx": [
     {
-      "q": "After you identify appreciation and NX, what is the next step?",
+      "q": "After appreciation, exports fall by 12 and imports rise by 8, with no other trade changes. How much does NX change?",
       "options": [
-        "trace the next variable in the chain",
-        "stop after naming the concept",
-        "assume NX always rises",
-        "switch to an unrelated closed-economy model"
+        "It falls by 20",
+        "It falls by 4",
+        "It rises by 20",
+        "It rises by 4"
       ],
       "tag": "exchange_rate_adjustment",
       "type": "bridge",
@@ -12699,18 +12699,18 @@ const microSkillBridgePools = {
       "conceptCluster": "appreciation_nx",
       "primarySkill": "appreciation_nx",
       "repairSkill": "appreciation_nx",
-      "feedback": "Bridge items force the second link, not just the label.",
+      "feedback": "ΔNX=Δexports−Δimports=−12−8=−20. The export and import responses reinforce each other.",
       "id": 6027,
       "difficulty": "bridge",
-      "aHash": "fd55486d3d7ccb89a9fe2ffa1c6c97f93a94bb01587f244c3036fba426b55902"
+      "aHash": "ceddd127f6d887f3c244c0bf03e572f095780f8a73ea2562eb5a7c1a5d25d1b4"
     },
     {
-      "q": "Which answer form is strongest for appreciation and NX?",
+      "q": "A tariff initially raises demand for domestic goods, but saving and investment are fixed. Which adjustment brings NX back to S−I in the long-run model?",
       "options": [
-        "direction plus mechanism",
-        "direction only",
-        "a definition with no application",
-        "a slogan about policy"
+        "Real depreciation further raises net exports",
+        "National saving must automatically double",
+        "Imports must become zero",
+        "Real appreciation reduces net exports along the shifted schedule"
       ],
       "tag": "exchange_rate_adjustment",
       "type": "bridge",
@@ -12718,18 +12718,18 @@ const microSkillBridgePools = {
       "conceptCluster": "appreciation_nx",
       "primarySkill": "appreciation_nx",
       "repairSkill": "appreciation_nx",
-      "feedback": "The right answer should say what changes and why.",
+      "feedback": "The tariff shifts NX demand outward, but the unchanged S−I quantity fixes equilibrium NX. Appreciation offsets the direct trade effect.",
       "id": 6028,
       "difficulty": "bridge",
-      "aHash": "c03016a24828b539324f28766d35c805af3b0b202a6571a3fd6dc11f7312df31"
+      "aHash": "f4c5b2f01a52e47d8262bc2d12f0242ad3025521526b86088442d2d209fae0c0"
     },
     {
-      "q": "If two answers sound possible for appreciation and NX, what should you compare?",
+      "q": "A policy memo says every appreciation proves that national saving fell. Why is that inference too strong?",
       "options": [
-        "the model assumption and the first shifted curve or identity",
-        "which option has the flashiest wording",
-        "whether the answer mentions a boss",
-        "whether the option uses no economics terms"
+        "The exchange rate cannot respond to saving",
+        "Saving is excluded from the open-economy model",
+        "A shift in demand for domestic goods can also appreciate the real exchange rate",
+        "Appreciation always proves investment fell"
       ],
       "tag": "exchange_rate_adjustment",
       "type": "bridge",
@@ -12737,20 +12737,20 @@ const microSkillBridgePools = {
       "conceptCluster": "appreciation_nx",
       "primarySkill": "appreciation_nx",
       "repairSkill": "appreciation_nx",
-      "feedback": "Compare the model assumption and the first actual movement.",
+      "feedback": "Appreciation is an outcome with multiple possible causes. Lower S−I or higher net exports demand can each raise the equilibrium real exchange rate.",
       "id": 6029,
       "difficulty": "bridge",
-      "aHash": "389107cca54735d0d5b191a0c19b0c7450a84f1c7ce1c95bc0c9fde58d558e9a"
+      "aHash": "07b23e7a10d693d26a4664a186415ca3a703f9fa67862e6adb7174cc711bee5c"
     }
   ],
   "depreciation_nx": [
     {
-      "q": "After you identify depreciation and NX, what is the next step?",
+      "q": "Exports rise by 15 and imports fall by 5 following a currency depreciation. What is the change in net exports?",
       "options": [
-        "trace the next variable in the chain",
-        "stop after naming the concept",
-        "assume NX always rises",
-        "switch to an unrelated closed-economy model"
+        "10",
+        "−20",
+        "−10",
+        "20"
       ],
       "tag": "exchange_rate_adjustment",
       "type": "bridge",
@@ -12758,18 +12758,18 @@ const microSkillBridgePools = {
       "conceptCluster": "depreciation_nx",
       "primarySkill": "depreciation_nx",
       "repairSkill": "depreciation_nx",
-      "feedback": "Bridge items force the second link, not just the label.",
+      "feedback": "ΔNX=15−(−5)=20. A decline in imports adds to the trade-balance improvement.",
       "id": 6030,
       "difficulty": "bridge",
-      "aHash": "fd55486d3d7ccb89a9fe2ffa1c6c97f93a94bb01587f244c3036fba426b55902"
+      "aHash": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b"
     },
     {
-      "q": "Which answer form is strongest for depreciation and NX?",
+      "q": "A country’s real exchange rate falls and net exports rise after investors flee its assets. Why does the NX improvement alone not establish a welfare gain?",
       "options": [
-        "direction plus mechanism",
-        "direction only",
-        "a definition with no application",
-        "a slogan about policy"
+        "A depreciation must eliminate all foreign debt",
+        "Trade balances directly measure household utility",
+        "The underlying financial disruption may reduce investment and income",
+        "Higher net exports proves every resident gains"
       ],
       "tag": "exchange_rate_adjustment",
       "type": "bridge",
@@ -12777,18 +12777,18 @@ const microSkillBridgePools = {
       "conceptCluster": "depreciation_nx",
       "primarySkill": "depreciation_nx",
       "repairSkill": "depreciation_nx",
-      "feedback": "The right answer should say what changes and why.",
+      "feedback": "Relative-price effects can improve NX while the shock damages finance or spending. The cause of depreciation matters for the broader assessment.",
       "id": 6031,
       "difficulty": "bridge",
-      "aHash": "c03016a24828b539324f28766d35c805af3b0b202a6571a3fd6dc11f7312df31"
+      "aHash": "026976283e5707dfe205027e822ed3e099b411772a3861a7c12723ab11f246f2"
     },
     {
-      "q": "If two answers sound possible for depreciation and NX, what should you compare?",
+      "q": "A firm faces stronger export demand after a real depreciation, holding foreign income and trade rules fixed. Should this be described as a shift of the economy’s NX(ε) schedule?",
       "options": [
-        "the model assumption and the first shifted curve or identity",
-        "which option has the flashiest wording",
-        "whether the answer mentions a boss",
-        "whether the option uses no economics terms"
+        "No; depreciation leaves relative prices unchanged",
+        "No; it is the response to a lower ε along that schedule",
+        "Yes; every increase in exports shifts NX(ε)",
+        "Yes; depreciation holds ε fixed"
       ],
       "tag": "exchange_rate_adjustment",
       "type": "bridge",
@@ -12796,20 +12796,20 @@ const microSkillBridgePools = {
       "conceptCluster": "depreciation_nx",
       "primarySkill": "depreciation_nx",
       "repairSkill": "depreciation_nx",
-      "feedback": "Compare the model assumption and the first actual movement.",
+      "feedback": "NX(ε) already describes how trade responds to relative prices. A lower ε changes the chosen point, whereas foreign income or trade-policy changes may shift the schedule.",
       "id": 6032,
       "difficulty": "bridge",
-      "aHash": "389107cca54735d0d5b191a0c19b0c7450a84f1c7ce1c95bc0c9fde58d558e9a"
+      "aHash": "9392893048ef8f2bbbebdf6ce771697b47bd7cab65c493ce136f1fd4a3685bfa"
     }
   ],
   "trace_domestic_fiscal_expansion": [
     {
-      "q": "After you identify domestic fiscal policy chain, what is the next step?",
+      "q": "A government-purchases increase of 20 leaves Y, C and I unchanged in a small open economy. How does NX change?",
       "options": [
-        "trace the next variable in the chain",
-        "stop after naming the concept",
-        "assume NX always rises",
-        "switch to an unrelated closed-economy model"
+        "It is unchanged",
+        "It falls by the closed-economy spending multiplier",
+        "It falls by 20",
+        "It rises by 20"
       ],
       "tag": "fiscal_policy_open_economy",
       "type": "bridge",
@@ -12817,18 +12817,18 @@ const microSkillBridgePools = {
       "conceptCluster": "trace_domestic_fiscal_expansion",
       "primarySkill": "trace_domestic_fiscal_expansion",
       "repairSkill": "trace_domestic_fiscal_expansion",
-      "feedback": "Bridge items force the second link, not just the label.",
+      "feedback": "Saving falls by 20 and investment stays fixed, so ΔNX=−20. A fixed-output long-run comparison does not use a short-run output multiplier.",
       "id": 6033,
       "difficulty": "bridge",
-      "aHash": "fd55486d3d7ccb89a9fe2ffa1c6c97f93a94bb01587f244c3036fba426b55902"
+      "aHash": "ceddd127f6d887f3c244c0bf03e572f095780f8a73ea2562eb5a7c1a5d25d1b4"
     },
     {
-      "q": "Which answer form is strongest for domestic fiscal policy chain?",
+      "q": "Taxes fall by 40 and consumption rises by 30, with Y,G and I unchanged. What happens to national saving and NX?",
       "options": [
-        "direction plus mechanism",
-        "direction only",
-        "a definition with no application",
-        "a slogan about policy"
+        "Both rise by 30",
+        "Both fall by 30",
+        "Both fall by 40",
+        "Saving falls by 10 and net exports rise by 10"
       ],
       "tag": "fiscal_policy_open_economy",
       "type": "bridge",
@@ -12836,18 +12836,18 @@ const microSkillBridgePools = {
       "conceptCluster": "trace_domestic_fiscal_expansion",
       "primarySkill": "trace_domestic_fiscal_expansion",
       "repairSkill": "trace_domestic_fiscal_expansion",
-      "feedback": "The right answer should say what changes and why.",
+      "feedback": "National saving is Y−C−G; the consumption increase reduces it by 30. With investment fixed, NX also falls by 30.",
       "id": 6034,
       "difficulty": "bridge",
-      "aHash": "c03016a24828b539324f28766d35c805af3b0b202a6571a3fd6dc11f7312df31"
+      "aHash": "692f3566c0fa099f8e199f73dd530f0c520d935f7b29b5110f50a690926bfb77"
     },
     {
-      "q": "If two answers sound possible for domestic fiscal policy chain, what should you compare?",
+      "q": "A fiscal contraction raises national saving while the world rate remains fixed. Which real-exchange-rate movement clears the trade market?",
       "options": [
-        "the model assumption and the first shifted curve or identity",
-        "which option has the flashiest wording",
-        "whether the answer mentions a boss",
-        "whether the option uses no economics terms"
+        "Depreciation that raises net exports to the higher S−I",
+        "Appreciation that lowers net exports to the higher S−I",
+        "No exchange-rate adjustment because saving cannot affect trade",
+        "A rise in r* that eliminates international borrowing"
       ],
       "tag": "fiscal_policy_open_economy",
       "type": "bridge",
@@ -12855,20 +12855,20 @@ const microSkillBridgePools = {
       "conceptCluster": "trace_domestic_fiscal_expansion",
       "primarySkill": "trace_domestic_fiscal_expansion",
       "repairSkill": "trace_domestic_fiscal_expansion",
-      "feedback": "Compare the model assumption and the first actual movement.",
+      "feedback": "Higher saving raises the required net-export quantity. A lower real exchange rate encourages exports and discourages imports until NX reaches S−I.",
       "id": 6035,
       "difficulty": "bridge",
-      "aHash": "389107cca54735d0d5b191a0c19b0c7450a84f1c7ce1c95bc0c9fde58d558e9a"
+      "aHash": "b10aa595cb0ba0fed303a0e4bf2955f858b4a0d0b04ffe03191b034abf001f06"
     }
   ],
   "investment_shift_trade_balance": [
     {
-      "q": "After you identify investment demand shift, what is the next step?",
+      "q": "National saving is 100. An investment incentive raises I from 90 to 115 at the unchanged world rate. What is the new trade balance?",
       "options": [
-        "trace the next variable in the chain",
-        "stop after naming the concept",
-        "assume NX always rises",
-        "switch to an unrelated closed-economy model"
+        "A deficit of 25",
+        "A deficit of 15",
+        "A surplus of 15",
+        "A surplus of 25"
       ],
       "tag": "saving_investment_capital_flows",
       "type": "bridge",
@@ -12876,18 +12876,18 @@ const microSkillBridgePools = {
       "conceptCluster": "investment_shift_trade_balance",
       "primarySkill": "investment_shift_trade_balance",
       "repairSkill": "investment_shift_trade_balance",
-      "feedback": "Bridge items force the second link, not just the label.",
+      "feedback": "The new NX is 100−115=−15. The balance falls by 25, from a surplus of 10 to a deficit of 15.",
       "id": 6036,
       "difficulty": "bridge",
-      "aHash": "fd55486d3d7ccb89a9fe2ffa1c6c97f93a94bb01587f244c3036fba426b55902"
+      "aHash": "bdb0563168cebeb4e892558d48a4382eacc2e03600ce1095582f369b6849e185"
     },
     {
-      "q": "Which answer form is strongest for investment demand shift?",
+      "q": "An investment-demand contraction raises S−I. In the long-run exchange-rate diagram, what completes the adjustment?",
       "options": [
-        "direction plus mechanism",
-        "direction only",
-        "a definition with no application",
-        "a slogan about policy"
+        "Real depreciation raises net exports along the unchanged net exports curve",
+        "Real appreciation raises net exports along the unchanged net exports curve",
+        "A tariff is required to make NX respond",
+        "Saving must fall by exactly the investment decline"
       ],
       "tag": "saving_investment_capital_flows",
       "type": "bridge",
@@ -12895,18 +12895,18 @@ const microSkillBridgePools = {
       "conceptCluster": "investment_shift_trade_balance",
       "primarySkill": "investment_shift_trade_balance",
       "repairSkill": "investment_shift_trade_balance",
-      "feedback": "The right answer should say what changes and why.",
+      "feedback": "The larger S−I quantity requires higher net exports. Real depreciation induces that increase along the existing trade relationship.",
       "id": 6037,
       "difficulty": "bridge",
-      "aHash": "c03016a24828b539324f28766d35c805af3b0b202a6571a3fd6dc11f7312df31"
+      "aHash": "bf4d7927e0092deccd84fb5f0f476a48026c35a5205ce5687900969799707af5"
     },
     {
-      "q": "If two answers sound possible for investment demand shift, what should you compare?",
+      "q": "Saving rises by 10 while an investment incentive raises investment by 10 at r*. Which conclusion follows?",
       "options": [
-        "the model assumption and the first shifted curve or identity",
-        "which option has the flashiest wording",
-        "whether the answer mentions a boss",
-        "whether the option uses no economics terms"
+        "Net exports rise by 20",
+        "Net exports fall by 20",
+        "The incentive cannot raise investment at a fixed rate",
+        "Net exports are unchanged even though investment rises"
       ],
       "tag": "saving_investment_capital_flows",
       "type": "bridge",
@@ -12914,20 +12914,20 @@ const microSkillBridgePools = {
       "conceptCluster": "investment_shift_trade_balance",
       "primarySkill": "investment_shift_trade_balance",
       "repairSkill": "investment_shift_trade_balance",
-      "feedback": "Compare the model assumption and the first actual movement.",
+      "feedback": "ΔNX=ΔS−ΔI=10−10=0. Equal increases leave the external balance unchanged without implying unchanged domestic investment.",
       "id": 6038,
       "difficulty": "bridge",
-      "aHash": "389107cca54735d0d5b191a0c19b0c7450a84f1c7ce1c95bc0c9fde58d558e9a"
+      "aHash": "3b80be902dd8c13517d882053bdfd1a10b1b68e691522b40ab75ef4ac1f73229"
     }
   ],
   "tariff_exchange_rate_offset": [
     {
-      "q": "After you identify tariff exchange-rate offset, what is the next step?",
+      "q": "Saving is 200 and investment is 180 before and after a tariff. The tariff initially reduces imports by 10 at the old exchange rate. What is equilibrium NX after exchange-rate adjustment?",
       "options": [
-        "trace the next variable in the chain",
-        "stop after naming the concept",
-        "assume NX always rises",
-        "switch to an unrelated closed-economy model"
+        "20",
+        "30",
+        "10",
+        "0"
       ],
       "tag": "trade_policy",
       "type": "bridge",
@@ -12935,18 +12935,18 @@ const microSkillBridgePools = {
       "conceptCluster": "tariff_exchange_rate_offset",
       "primarySkill": "tariff_exchange_rate_offset",
       "repairSkill": "tariff_exchange_rate_offset",
-      "feedback": "Bridge items force the second link, not just the label.",
+      "feedback": "S−I remains 20. The initial trade-demand effect changes the exchange rate; it does not add 10 to the final external balance.",
       "id": 6039,
       "difficulty": "bridge",
-      "aHash": "fd55486d3d7ccb89a9fe2ffa1c6c97f93a94bb01587f244c3036fba426b55902"
+      "aHash": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b"
     },
     {
-      "q": "Which answer form is strongest for tariff exchange-rate offset?",
+      "q": "A tariff reduces imports, yet the trade surplus is unchanged after real appreciation. What must have happened to exports in this comparison?",
       "options": [
-        "direction plus mechanism",
-        "direction only",
-        "a definition with no application",
-        "a slogan about policy"
+        "Exports rose by the import decline",
+        "Exports must have stayed fixed",
+        "Exports became equal to government purchases",
+        "Exports also fell by the same amount as imports"
       ],
       "tag": "trade_policy",
       "type": "bridge",
@@ -12954,18 +12954,18 @@ const microSkillBridgePools = {
       "conceptCluster": "tariff_exchange_rate_offset",
       "primarySkill": "tariff_exchange_rate_offset",
       "repairSkill": "tariff_exchange_rate_offset",
-      "feedback": "The right answer should say what changes and why.",
+      "feedback": "If ΔNX=Δexports−Δimports=0, the absolute changes in exports and imports are equal. Lower trade volumes can accompany an unchanged balance.",
       "id": 6040,
       "difficulty": "bridge",
-      "aHash": "c03016a24828b539324f28766d35c805af3b0b202a6571a3fd6dc11f7312df31"
+      "aHash": "cfc350f60b265630e0f76d688f0e10d420eed628ebaec1bd1a4d99718fefcf94"
     },
     {
-      "q": "If two answers sound possible for tariff exchange-rate offset, what should you compare?",
+      "q": "A policy analyst draws a rightward shift of the vertical S−I line for a tariff that changes neither saving nor investment. Which correction is needed?",
       "options": [
-        "the model assumption and the first shifted curve or identity",
-        "which option has the flashiest wording",
-        "whether the answer mentions a boss",
-        "whether the option uses no economics terms"
+        "Shift investment demand left by the tariff rate",
+        "Remove the exchange-rate axis",
+        "Shift NX(ε), leaving the vertical S−I line fixed",
+        "Shift both curves by the same quantity"
       ],
       "tag": "trade_policy",
       "type": "bridge",
@@ -12973,20 +12973,20 @@ const microSkillBridgePools = {
       "conceptCluster": "tariff_exchange_rate_offset",
       "primarySkill": "tariff_exchange_rate_offset",
       "repairSkill": "tariff_exchange_rate_offset",
-      "feedback": "Compare the model assumption and the first actual movement.",
+      "feedback": "The tariff changes desired trade at each exchange rate. Without a saving or investment change, it does not move the vertical supply of foreign-currency exchange.",
       "id": 6041,
       "difficulty": "bridge",
-      "aHash": "389107cca54735d0d5b191a0c19b0c7450a84f1c7ce1c95bc0c9fde58d558e9a"
+      "aHash": "c936446e66ea655d2cc8d55e43ede80e223d8eb3f9ac47e1bae009d441de6ce4"
     }
   ],
   "capital_flight_exchange_rate": [
     {
-      "q": "After you identify capital flight, what is the next step?",
+      "q": "After a confidence shock, the currency depreciates and firms lose access to external finance. Which assessment uses both observations?",
       "options": [
-        "trace the next variable in the chain",
-        "stop after naming the concept",
-        "assume NX always rises",
-        "switch to an unrelated closed-economy model"
+        "Depreciation proves that investment must rise",
+        "Lost financing proves exports must fall",
+        "The two observations cannot occur together",
+        "Export demand may improve while financing constraints depress investment"
       ],
       "tag": "capital_flight",
       "type": "bridge",
@@ -12994,18 +12994,18 @@ const microSkillBridgePools = {
       "conceptCluster": "capital_flight_exchange_rate",
       "primarySkill": "capital_flight_exchange_rate",
       "repairSkill": "capital_flight_exchange_rate",
-      "feedback": "Bridge items force the second link, not just the label.",
+      "feedback": "Cheaper domestic goods can support exports, while restricted credit can reduce investment. The two channels need not move every component of demand together.",
       "id": 6042,
       "difficulty": "bridge",
-      "aHash": "fd55486d3d7ccb89a9fe2ffa1c6c97f93a94bb01587f244c3036fba426b55902"
+      "aHash": "218784d353884b298b9e7f3649ea4182a2af7d8223d6640cfb5a880714efdba6"
     },
     {
-      "q": "Which answer form is strongest for capital flight?",
+      "q": "Under a fixed exchange rate, residents seek foreign currency during capital flight. To maintain the peg, what transaction is required from the central bank, assuming it has reserves?",
       "options": [
-        "direction plus mechanism",
-        "direction only",
-        "a definition with no application",
-        "a slogan about policy"
+        "Lower the peg automatically without intervention",
+        "Sell domestic currency without acquiring foreign assets",
+        "Sell foreign reserves and buy domestic currency",
+        "Buy foreign reserves by issuing more domestic currency"
       ],
       "tag": "capital_flight",
       "type": "bridge",
@@ -13013,18 +13013,18 @@ const microSkillBridgePools = {
       "conceptCluster": "capital_flight_exchange_rate",
       "primarySkill": "capital_flight_exchange_rate",
       "repairSkill": "capital_flight_exchange_rate",
-      "feedback": "The right answer should say what changes and why.",
+      "feedback": "Meeting demand for foreign currency at the peg requires reserve sales and purchases of domestic currency. This contracts domestic liquidity unless offset through another policy.",
       "id": 6043,
       "difficulty": "bridge",
-      "aHash": "c03016a24828b539324f28766d35c805af3b0b202a6571a3fd6dc11f7312df31"
+      "aHash": "a700512bc23f2b4a85fe646be647f7671ba167c1f6fdf21877a208492fa1e2e9"
     },
     {
-      "q": "If two answers sound possible for capital flight, what should you compare?",
+      "q": "A country’s borrowing premium rises after a confidence shock. Holding r* fixed, what can happen to domestic investment?",
       "options": [
-        "the model assumption and the first shifted curve or identity",
-        "which option has the flashiest wording",
-        "whether the answer mentions a boss",
-        "whether the option uses no economics terms"
+        "It becomes equal to exports",
+        "It can fall because domestic financing costs rise",
+        "It must rise because the world interest rate is unchanged",
+        "It is necessarily unchanged because all risks are identical"
       ],
       "tag": "capital_flight",
       "type": "bridge",
@@ -13032,20 +13032,20 @@ const microSkillBridgePools = {
       "conceptCluster": "capital_flight_exchange_rate",
       "primarySkill": "capital_flight_exchange_rate",
       "repairSkill": "capital_flight_exchange_rate",
-      "feedback": "Compare the model assumption and the first actual movement.",
+      "feedback": "A higher risk premium raises the domestic financing rate above the unchanged world benchmark. Higher borrowing costs can reduce investment.",
       "id": 6044,
       "difficulty": "bridge",
-      "aHash": "389107cca54735d0d5b191a0c19b0c7450a84f1c7ce1c95bc0c9fde58d558e9a"
+      "aHash": "99cc3a649703b7ec29c0904d50ef555e92d65ae752577545f8dd45ec8b28b18f"
     }
   ],
   "mundell_fleming_assumptions": [
     {
-      "q": "After you identify Mundell-Fleming model assumptions, what is the next step?",
+      "q": "A short-run policy exercise holds P fixed while allowing e to change. Which variable can still alter the real exchange rate when P* is also fixed?",
       "options": [
-        "trace the next variable in the chain",
-        "stop after naming the concept",
-        "assume NX always rises",
-        "switch to an unrelated closed-economy model"
+        "The foreign price level P*",
+        "Only the government deficit",
+        "The nominal exchange rate e",
+        "The domestic price level P"
       ],
       "tag": "mundell_fleming_model",
       "type": "bridge",
@@ -13053,18 +13053,18 @@ const microSkillBridgePools = {
       "conceptCluster": "mundell_fleming_assumptions",
       "primarySkill": "mundell_fleming_assumptions",
       "repairSkill": "mundell_fleming_assumptions",
-      "feedback": "Bridge items force the second link, not just the label.",
+      "feedback": "With both price levels fixed, ε=eP/P* moves proportionally with the nominal exchange rate.",
       "id": 6045,
       "difficulty": "bridge",
-      "aHash": "fd55486d3d7ccb89a9fe2ffa1c6c97f93a94bb01587f244c3036fba426b55902"
+      "aHash": "70789b71edd520f449b3d28501352f8d96d6dd68d2807c2820375d63194e900e"
     },
     {
-      "q": "Which answer form is strongest for Mundell-Fleming model assumptions?",
+      "q": "A country restricts capital outflows enough to sustain a domestic rate different from r*. Which basic model condition has been relaxed?",
       "options": [
-        "direction plus mechanism",
-        "direction only",
-        "a definition with no application",
-        "a slogan about policy"
+        "The definition of money demand",
+        "Perfect capital mobility",
+        "The expenditure identity",
+        "The distinction between imports and exports"
       ],
       "tag": "mundell_fleming_model",
       "type": "bridge",
@@ -13072,18 +13072,18 @@ const microSkillBridgePools = {
       "conceptCluster": "mundell_fleming_assumptions",
       "primarySkill": "mundell_fleming_assumptions",
       "repairSkill": "mundell_fleming_assumptions",
-      "feedback": "The right answer should say what changes and why.",
+      "feedback": "Capital controls can weaken the arbitrage link. They do not remove national accounting identities.",
       "id": 6046,
       "difficulty": "bridge",
-      "aHash": "c03016a24828b539324f28766d35c805af3b0b202a6571a3fd6dc11f7312df31"
+      "aHash": "3d5f7e36498e825e2d1c19a65e3dfac7bb79f51cc3e467c64ceea862dc12c72e"
     },
     {
-      "q": "If two answers sound possible for Mundell-Fleming model assumptions, what should you compare?",
+      "q": "The same money-supply change is studied under floating and fixed exchange rates. Why must the regime be stated before predicting output?",
       "options": [
-        "the model assumption and the first shifted curve or identity",
-        "which option has the flashiest wording",
-        "whether the answer mentions a boss",
-        "whether the option uses no economics terms"
+        "A peg can force reserve transactions that undo an independent money change",
+        "The regime determines whether consumption exists",
+        "Floating rates remove the goods market",
+        "Fixed rates make r* equal to zero"
       ],
       "tag": "mundell_fleming_model",
       "type": "bridge",
@@ -13091,20 +13091,20 @@ const microSkillBridgePools = {
       "conceptCluster": "mundell_fleming_assumptions",
       "primarySkill": "mundell_fleming_assumptions",
       "repairSkill": "mundell_fleming_assumptions",
-      "feedback": "Compare the model assumption and the first actual movement.",
+      "feedback": "The central bank’s obligation to defend a peg changes how money supply responds to capital flows, altering policy effectiveness.",
       "id": 6047,
       "difficulty": "bridge",
-      "aHash": "389107cca54735d0d5b191a0c19b0c7450a84f1c7ce1c95bc0c9fde58d558e9a"
+      "aHash": "0066ea41483be4df00b32c118530bee31b1a8a67538060a927cd1ba07fab21af"
     }
   ],
   "is_star_exchange_rate": [
     {
-      "q": "After you identify IS* exchange-rate channel, what is the next step?",
+      "q": "At a fixed nominal exchange rate, foreign demand for domestic exports rises. How should this be represented in the (e,Y) goods market?",
       "options": [
-        "trace the next variable in the chain",
-        "stop after naming the concept",
-        "assume NX always rises",
-        "switch to an unrelated closed-economy model"
+        "No goods-market change because the world interest rate is fixed",
+        "A rightward IS* shift",
+        "A movement down unchanged IS*",
+        "A leftward LM* shift"
       ],
       "tag": "mundell_fleming_is_lm",
       "type": "bridge",
@@ -13112,18 +13112,18 @@ const microSkillBridgePools = {
       "conceptCluster": "is_star_exchange_rate",
       "primarySkill": "is_star_exchange_rate",
       "repairSkill": "is_star_exchange_rate",
-      "feedback": "Bridge items force the second link, not just the label.",
+      "feedback": "Higher export demand raises net exports at each e, increasing goods-market equilibrium income. The given interest rate does not eliminate the export channel.",
       "id": 6048,
       "difficulty": "bridge",
-      "aHash": "fd55486d3d7ccb89a9fe2ffa1c6c97f93a94bb01587f244c3036fba426b55902"
+      "aHash": "2d7e0b648945169a6d2d8957d864c8b7323accd2af399814f072cec8191f1013"
     },
     {
-      "q": "Which answer form is strongest for IS* exchange-rate channel?",
+      "q": "A currency depreciation raises net exports by 10; in a simple goods market MPC=0.5 and other autonomous spending is fixed. What is the implied income increase before money-market equilibrium is imposed?",
       "options": [
-        "direction plus mechanism",
-        "direction only",
-        "a definition with no application",
-        "a slogan about policy"
+        "20",
+        "10",
+        "5",
+        "0"
       ],
       "tag": "mundell_fleming_is_lm",
       "type": "bridge",
@@ -13131,18 +13131,18 @@ const microSkillBridgePools = {
       "conceptCluster": "is_star_exchange_rate",
       "primarySkill": "is_star_exchange_rate",
       "repairSkill": "is_star_exchange_rate",
-      "feedback": "The right answer should say what changes and why.",
+      "feedback": "The goods-market multiplier is 1/(1−0.5)=2, so ΔY=2×10=20. This illustrates movement along IS*, not the complete two-market equilibrium.",
       "id": 6049,
       "difficulty": "bridge",
-      "aHash": "c03016a24828b539324f28766d35c805af3b0b202a6571a3fd6dc11f7312df31"
+      "aHash": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b"
     },
     {
-      "q": "If two answers sound possible for IS* exchange-rate channel, what should you compare?",
+      "q": "A report treats a depreciation caused by monetary expansion as a new outward IS* shift. What is the correct distinction?",
       "options": [
-        "the model assumption and the first shifted curve or identity",
-        "which option has the flashiest wording",
-        "whether the answer mentions a boss",
-        "whether the option uses no economics terms"
+        "Both curves shift right solely because the nominal exchange rate falls",
+        "The IS* curve shifts to the left because exports rise",
+        "A change in e cannot affect the goods market",
+        "The monetary expansion shifts LM*; the resulting depreciation moves along IS*"
       ],
       "tag": "mundell_fleming_is_lm",
       "type": "bridge",
@@ -13150,20 +13150,20 @@ const microSkillBridgePools = {
       "conceptCluster": "is_star_exchange_rate",
       "primarySkill": "is_star_exchange_rate",
       "repairSkill": "is_star_exchange_rate",
-      "feedback": "Compare the model assumption and the first actual movement.",
+      "feedback": "With fiscal policy and autonomous trade demand unchanged, depreciation is the adjustment along IS* following the LM* shift.",
       "id": 6050,
       "difficulty": "bridge",
-      "aHash": "389107cca54735d0d5b191a0c19b0c7450a84f1c7ce1c95bc0c9fde58d558e9a"
+      "aHash": "a5981c1ab63150826175e4de54e791ae2d4ea5a1538059f9bcae8ec69019a293"
     }
   ],
   "lm_star_money_market": [
     {
-      "q": "After you identify LM* money-market channel, what is the next step?",
+      "q": "Money demand at r* is L=0.5Y. Real balances rise from 100 to 120. What happens to the LM* income level?",
       "options": [
-        "trace the next variable in the chain",
-        "stop after naming the concept",
-        "assume NX always rises",
-        "switch to an unrelated closed-economy model"
+        "It rises from 200 to 240",
+        "It rises from 100 to 120",
+        "It falls from 200 to 160",
+        "It remains 200"
       ],
       "tag": "mundell_fleming_is_lm",
       "type": "bridge",
@@ -13171,18 +13171,18 @@ const microSkillBridgePools = {
       "conceptCluster": "lm_star_money_market",
       "primarySkill": "lm_star_money_market",
       "repairSkill": "lm_star_money_market",
-      "feedback": "Bridge items force the second link, not just the label.",
+      "feedback": "Set M/P=0.5Y. Income is twice real balances, rising by 40 when real balances rise by 20.",
       "id": 6051,
       "difficulty": "bridge",
-      "aHash": "fd55486d3d7ccb89a9fe2ffa1c6c97f93a94bb01587f244c3036fba426b55902"
+      "aHash": "1f4e68eecf58de32036d594e883ffc69b73c64fe30335275b0a3654b57d8d16d"
     },
     {
-      "q": "Which answer form is strongest for LM* money-market channel?",
+      "q": "Payments technology lowers money demand at every income and at the fixed world rate. With M/P unchanged, which LM* adjustment restores equilibrium?",
       "options": [
-        "direction plus mechanism",
-        "direction only",
-        "a definition with no application",
-        "a slogan about policy"
+        "Lower output, so the LM* curve shifts to the left",
+        "Lower nominal money supply must occur automatically",
+        "A higher exchange rate must directly raise money demand",
+        "Higher output, so the LM* curve shifts to the right"
       ],
       "tag": "mundell_fleming_is_lm",
       "type": "bridge",
@@ -13190,18 +13190,18 @@ const microSkillBridgePools = {
       "conceptCluster": "lm_star_money_market",
       "primarySkill": "lm_star_money_market",
       "repairSkill": "lm_star_money_market",
-      "feedback": "The right answer should say what changes and why.",
+      "feedback": "Lower money demand leaves excess real balances at the old Y. Higher income raises transaction demand until the money market clears.",
       "id": 6052,
       "difficulty": "bridge",
-      "aHash": "c03016a24828b539324f28766d35c805af3b0b202a6571a3fd6dc11f7312df31"
+      "aHash": "067656a149329486671b6d098d1decfae4736cb2c7f8122ae4c5f78f5f0e1c42"
     },
     {
-      "q": "If two answers sound possible for LM* money-market channel, what should you compare?",
+      "q": "Nominal money rises 10% while P also rises 10%, with money-demand behavior and r* unchanged. What happens to LM*?",
       "options": [
-        "the model assumption and the first shifted curve or identity",
-        "which option has the flashiest wording",
-        "whether the answer mentions a boss",
-        "whether the option uses no economics terms"
+        "It shifts left by 10%",
+        "It becomes downward sloping",
+        "It remains in the same position",
+        "It shifts right by 20%"
       ],
       "tag": "mundell_fleming_is_lm",
       "type": "bridge",
@@ -13209,20 +13209,20 @@ const microSkillBridgePools = {
       "conceptCluster": "lm_star_money_market",
       "primarySkill": "lm_star_money_market",
       "repairSkill": "lm_star_money_market",
-      "feedback": "Compare the model assumption and the first actual movement.",
+      "feedback": "M/P is unchanged when numerator and denominator rise proportionally. Thus the income level satisfying money-market equilibrium is unchanged.",
       "id": 6053,
       "difficulty": "bridge",
-      "aHash": "389107cca54735d0d5b191a0c19b0c7450a84f1c7ce1c95bc0c9fde58d558e9a"
+      "aHash": "f6a0c7b71cfec02af4159ecfd7122cfa45e9281cfac86aedcbfd845e29d0423d"
     }
   ],
   "floating_fiscal_policy": [
     {
-      "q": "After you identify floating-rate fiscal policy, what is the next step?",
+      "q": "In the Mundell–Fleming model with floating exchange rates, government purchases rise by 30 while output, consumption, and investment remain unchanged. What change in net exports balances expenditure?",
       "options": [
-        "trace the next variable in the chain",
-        "stop after naming the concept",
-        "assume NX always rises",
-        "switch to an unrelated closed-economy model"
+        "A rise of 30",
+        "No change",
+        "A fall of 60",
+        "A fall of 30"
       ],
       "tag": "floating_exchange_policy",
       "type": "bridge",
@@ -13230,18 +13230,18 @@ const microSkillBridgePools = {
       "conceptCluster": "floating_fiscal_policy",
       "primarySkill": "floating_fiscal_policy",
       "repairSkill": "floating_fiscal_policy",
-      "feedback": "Bridge items force the second link, not just the label.",
+      "feedback": "With output and the other components fixed, the 30 increase in G must be offset by ΔNX=−30.",
       "id": 6054,
       "difficulty": "bridge",
-      "aHash": "fd55486d3d7ccb89a9fe2ffa1c6c97f93a94bb01587f244c3036fba426b55902"
+      "aHash": "45623945e44c4d50d997dbacd9f7915e4c0aff9e90f94c8a63b583ef4da508f2"
     },
     {
-      "q": "Which answer form is strongest for floating-rate fiscal policy?",
+      "q": "A tax cut raises consumption by 20 under floating rates, with M/P and r* fixed. What combination describes the basic-model equilibrium?",
       "options": [
-        "direction plus mechanism",
-        "direction only",
-        "a definition with no application",
-        "a slogan about policy"
+        "Unchanged income, depreciation and NX higher by 20",
+        "Lower income, appreciation and unchanged net exports",
+        "Unchanged income, appreciation and NX lower by 20",
+        "Higher income, depreciation and NX higher by 20"
       ],
       "tag": "floating_exchange_policy",
       "type": "bridge",
@@ -13249,18 +13249,18 @@ const microSkillBridgePools = {
       "conceptCluster": "floating_fiscal_policy",
       "primarySkill": "floating_fiscal_policy",
       "repairSkill": "floating_fiscal_policy",
-      "feedback": "The right answer should say what changes and why.",
+      "feedback": "The consumption stimulus shifts the IS* curve to the right. Appreciation reduces net exports by 20 while LM* keeps income fixed.",
       "id": 6055,
       "difficulty": "bridge",
-      "aHash": "c03016a24828b539324f28766d35c805af3b0b202a6571a3fd6dc11f7312df31"
+      "aHash": "d09b89a656d398a4abe270460465c37531158f4686c0fc7c6e3efd09e60c7ece"
     },
     {
-      "q": "If two answers sound possible for floating-rate fiscal policy, what should you compare?",
+      "q": "After a fiscal expansion, a student predicts sustained higher output because the closed-economy multiplier exceeds one. What adjustment is missing under perfect capital mobility and floating rates?",
       "options": [
-        "the model assumption and the first shifted curve or identity",
-        "which option has the flashiest wording",
-        "whether the answer mentions a boss",
-        "whether the option uses no economics terms"
+        "The removal of consumption from expenditure",
+        "The exchange-rate appreciation that crowds out net exports",
+        "A necessary reduction in the world rate",
+        "A mandatory money-supply expansion to defend a peg"
       ],
       "tag": "floating_exchange_policy",
       "type": "bridge",
@@ -13268,20 +13268,20 @@ const microSkillBridgePools = {
       "conceptCluster": "floating_fiscal_policy",
       "primarySkill": "floating_fiscal_policy",
       "repairSkill": "floating_fiscal_policy",
-      "feedback": "Compare the model assumption and the first actual movement.",
+      "feedback": "The floating exchange rate adjusts to the fiscal stimulus. At fixed M/P and r*, this external-demand offset prevents the predicted lasting output increase in the basic benchmark.",
       "id": 6056,
       "difficulty": "bridge",
-      "aHash": "389107cca54735d0d5b191a0c19b0c7450a84f1c7ce1c95bc0c9fde58d558e9a"
+      "aHash": "e913e4d30966f5879eeb2191be1932266581de3e3b4693e1087e11ab728aba31"
     }
   ],
   "floating_monetary_policy": [
     {
-      "q": "After you identify floating-rate monetary policy, what is the next step?",
+      "q": "A floating-rate monetary expansion raises income by 40. Consumption rises by 25 and I and G are unchanged. What rise in NX completes the expenditure identity?",
       "options": [
-        "trace the next variable in the chain",
-        "stop after naming the concept",
-        "assume NX always rises",
-        "switch to an unrelated closed-economy model"
+        "65",
+        "25",
+        "15",
+        "40"
       ],
       "tag": "floating_exchange_policy",
       "type": "bridge",
@@ -13289,18 +13289,18 @@ const microSkillBridgePools = {
       "conceptCluster": "floating_monetary_policy",
       "primarySkill": "floating_monetary_policy",
       "repairSkill": "floating_monetary_policy",
-      "feedback": "Bridge items force the second link, not just the label.",
+      "feedback": "ΔNX=ΔY−ΔC−ΔI−ΔG=40−25=15. The increased output is absorbed by both consumption and net exports.",
       "id": 6057,
       "difficulty": "bridge",
-      "aHash": "fd55486d3d7ccb89a9fe2ffa1c6c97f93a94bb01587f244c3036fba426b55902"
+      "aHash": "e629fa6598d732768f7c726b4b621285f9c3b85303900aa912017db7617d8bdb"
     },
     {
-      "q": "Which answer form is strongest for floating-rate monetary policy?",
+      "q": "In the Mundell–Fleming model with floating exchange rates and fixed prices, the central bank reduces the money supply. How do the exchange rate and output adjust?",
       "options": [
-        "direction plus mechanism",
-        "direction only",
-        "a definition with no application",
-        "a slogan about policy"
+        "The peg forces an automatic restoration of money",
+        "The LM* curve shifts to the left, the currency appreciates and output falls",
+        "The LM* curve shifts to the right, the currency depreciates and output rises",
+        "The IS* curve shifts to the right and output rises"
       ],
       "tag": "floating_exchange_policy",
       "type": "bridge",
@@ -13308,18 +13308,18 @@ const microSkillBridgePools = {
       "conceptCluster": "floating_monetary_policy",
       "primarySkill": "floating_monetary_policy",
       "repairSkill": "floating_monetary_policy",
-      "feedback": "The right answer should say what changes and why.",
+      "feedback": "Lower real balances shift the LM* curve to the left. Appreciation reduces net exports, matching the lower equilibrium output under floating rates.",
       "id": 6058,
       "difficulty": "bridge",
-      "aHash": "c03016a24828b539324f28766d35c805af3b0b202a6571a3fd6dc11f7312df31"
+      "aHash": "1254c50e53493ea75e8144e6b3b3877e1a535613e2c8a0c2716bdf456c3f6957"
     },
     {
-      "q": "If two answers sound possible for floating-rate monetary policy, what should you compare?",
+      "q": "Two economies have fixed prices and perfect capital mobility. Only one lets its currency float. Where can an independent monetary expansion persist without being undone by peg defense?",
       "options": [
-        "the model assumption and the first shifted curve or identity",
-        "which option has the flashiest wording",
-        "whether the answer mentions a boss",
-        "whether the option uses no economics terms"
+        "In the floating-rate economy",
+        "Only in the fixed-rate economy",
+        "In neither because money can never change output",
+        "In both because a peg has no monetary implications"
       ],
       "tag": "floating_exchange_policy",
       "type": "bridge",
@@ -13327,20 +13327,20 @@ const microSkillBridgePools = {
       "conceptCluster": "floating_monetary_policy",
       "primarySkill": "floating_monetary_policy",
       "repairSkill": "floating_monetary_policy",
-      "feedback": "Compare the model assumption and the first actual movement.",
+      "feedback": "Floating rates allow currency depreciation to clear markets. A fixed-rate commitment instead forces intervention that reverses an independent expansion.",
       "id": 6059,
       "difficulty": "bridge",
-      "aHash": "389107cca54735d0d5b191a0c19b0c7450a84f1c7ce1c95bc0c9fde58d558e9a"
+      "aHash": "c09057e98c7f2c3bf84ccb06d2db2abada11eede15735dc08e63008799807dc8"
     }
   ],
   "trade_policy_under_floating": [
     {
-      "q": "After you identify trade policy under floating rates, what is the next step?",
+      "q": "An import quota shifts the IS* curve to the right while LM* remains at Y=500. After adjustment, what happens to income and the currency under floating rates?",
       "options": [
-        "trace the next variable in the chain",
-        "stop after naming the concept",
-        "assume NX always rises",
-        "switch to an unrelated closed-economy model"
+        "Income stays 500 and the currency must depreciate",
+        "Income stays 500 and the currency appreciates",
+        "Income exceeds 500 and the currency depreciates",
+        "Income falls below 500 and the currency appreciates"
       ],
       "tag": "trade_policy",
       "type": "bridge",
@@ -13348,18 +13348,18 @@ const microSkillBridgePools = {
       "conceptCluster": "trade_policy_under_floating",
       "primarySkill": "trade_policy_under_floating",
       "repairSkill": "trade_policy_under_floating",
-      "feedback": "Bridge items force the second link, not just the label.",
+      "feedback": "With LM* fixed, equilibrium income is unchanged. The higher goods-demand schedule requires appreciation to reduce net exports back to the compatible level.",
       "id": 6060,
       "difficulty": "bridge",
-      "aHash": "fd55486d3d7ccb89a9fe2ffa1c6c97f93a94bb01587f244c3036fba426b55902"
+      "aHash": "ec397c26bf348f8fe53ba1e29fad96fc6b2890f23e90da986006a7a0427ce689"
     },
     {
-      "q": "Which answer form is strongest for trade policy under floating rates?",
+      "q": "After a floating-rate import restriction, Y,C,I and G are unchanged. Which result follows for NX?",
       "options": [
-        "direction plus mechanism",
-        "direction only",
-        "a definition with no application",
-        "a slogan about policy"
+        "It is unchanged",
+        "It rises by the initial reduction in imports",
+        "It falls to zero",
+        "It becomes equal to government purchases"
       ],
       "tag": "trade_policy",
       "type": "bridge",
@@ -13367,18 +13367,18 @@ const microSkillBridgePools = {
       "conceptCluster": "trade_policy_under_floating",
       "primarySkill": "trade_policy_under_floating",
       "repairSkill": "trade_policy_under_floating",
-      "feedback": "The right answer should say what changes and why.",
+      "feedback": "The expenditure identity requires NX=Y−C−I−G. When all terms on the right are unchanged, the final balance is unchanged.",
       "id": 6061,
       "difficulty": "bridge",
-      "aHash": "c03016a24828b539324f28766d35c805af3b0b202a6571a3fd6dc11f7312df31"
+      "aHash": "2eb953560d2aee9c96090261017ebe948bbd5a91ac4e77d6b95c43634e63f109"
     },
     {
-      "q": "If two answers sound possible for trade policy under floating rates, what should you compare?",
+      "q": "A protection proposal predicts higher output by holding the exchange rate fixed while also assuming a freely floating currency and unchanged money. What is the inconsistency?",
       "options": [
-        "the model assumption and the first shifted curve or identity",
-        "which option has the flashiest wording",
-        "whether the answer mentions a boss",
-        "whether the option uses no economics terms"
+        "It incorrectly allows imports to change",
+        "It assumes money demand can depend on income",
+        "It includes exports in goods demand",
+        "It omits the appreciation permitted by the floating regime"
       ],
       "tag": "trade_policy",
       "type": "bridge",
@@ -13386,20 +13386,20 @@ const microSkillBridgePools = {
       "conceptCluster": "trade_policy_under_floating",
       "primarySkill": "trade_policy_under_floating",
       "repairSkill": "trade_policy_under_floating",
-      "feedback": "Compare the model assumption and the first actual movement.",
+      "feedback": "Holding e fixed suppresses the key floating-rate adjustment. Appreciation can offset the protection-induced IS* shift at unchanged LM*.",
       "id": 6062,
       "difficulty": "bridge",
-      "aHash": "389107cca54735d0d5b191a0c19b0c7450a84f1c7ce1c95bc0c9fde58d558e9a"
+      "aHash": "46e1dd7b7ac6f6dc5dab827c064fd6971d22aeafe2887a71fcbaed17c0492a7a"
     }
   ],
   "fixed_monetary_policy": [
     {
-      "q": "After you identify fixed-rate monetary policy, what is the next step?",
+      "q": "A pegged central bank adds 10 to domestic money, then buys back 10 units of domestic currency with reserves to defend the rate. What is the net money change?",
       "options": [
-        "trace the next variable in the chain",
-        "stop after naming the concept",
-        "assume NX always rises",
-        "switch to an unrelated closed-economy model"
+        "Zero",
+        "An increase of 20",
+        "An increase of 10",
+        "A decrease of 20"
       ],
       "tag": "fixed_exchange_policy",
       "type": "bridge",
@@ -13407,18 +13407,18 @@ const microSkillBridgePools = {
       "conceptCluster": "fixed_monetary_policy",
       "primarySkill": "fixed_monetary_policy",
       "repairSkill": "fixed_monetary_policy",
-      "feedback": "Bridge items force the second link, not just the label.",
+      "feedback": "The intervention withdraws the same money that was initially added: +10−10=0.",
       "id": 6063,
       "difficulty": "bridge",
-      "aHash": "fd55486d3d7ccb89a9fe2ffa1c6c97f93a94bb01587f244c3036fba426b55902"
+      "aHash": "f9194e73f9e9459e3450ea10a179cdf77aafa695beecd3b9344a98d111622243"
     },
     {
-      "q": "Which answer form is strongest for fixed-rate monetary policy?",
+      "q": "A pegged economy suffers a recession and wants monetary expansion while keeping free capital flows. Which policy choice restores independent monetary policy in the basic trilemma?",
       "options": [
-        "direction plus mechanism",
-        "direction only",
-        "a definition with no application",
-        "a slogan about policy"
+        "Promise a still more rigid peg",
+        "Require a permanently balanced trade account",
+        "Increase government purchases while leaving the monetary constraint unchanged",
+        "Allow the exchange rate to float"
       ],
       "tag": "fixed_exchange_policy",
       "type": "bridge",
@@ -13426,18 +13426,18 @@ const microSkillBridgePools = {
       "conceptCluster": "fixed_monetary_policy",
       "primarySkill": "fixed_monetary_policy",
       "repairSkill": "fixed_monetary_policy",
-      "feedback": "The right answer should say what changes and why.",
+      "feedback": "Abandoning the fixed-rate commitment permits exchange-rate adjustment. Fiscal expansion may stimulate output under a peg, but it does not itself restore monetary independence.",
       "id": 6064,
       "difficulty": "bridge",
-      "aHash": "c03016a24828b539324f28766d35c805af3b0b202a6571a3fd6dc11f7312df31"
+      "aHash": "98fc264e4fc20f5b9eaf6b46e15db7daaa9415fac5f5ed1531264e1042e18067"
     },
     {
-      "q": "If two answers sound possible for fixed-rate monetary policy, what should you compare?",
+      "q": "An attempted monetary contraction creates appreciation pressure under a peg. What intervention reverses it?",
       "options": [
-        "the model assumption and the first shifted curve or identity",
-        "which option has the flashiest wording",
-        "whether the answer mentions a boss",
-        "whether the option uses no economics terms"
+        "Raise taxes to destroy foreign currency",
+        "Let the currency appreciate while claiming the peg is unchanged",
+        "Buy foreign reserves by supplying domestic currency",
+        "Sell reserves and absorb more domestic currency"
       ],
       "tag": "fixed_exchange_policy",
       "type": "bridge",
@@ -13445,20 +13445,20 @@ const microSkillBridgePools = {
       "conceptCluster": "fixed_monetary_policy",
       "primarySkill": "fixed_monetary_policy",
       "repairSkill": "fixed_monetary_policy",
-      "feedback": "Compare the model assumption and the first actual movement.",
+      "feedback": "Supplying domestic currency meets excess demand for it, counteracting appreciation and restoring the money withdrawn by the initial contraction.",
       "id": 6065,
       "difficulty": "bridge",
-      "aHash": "389107cca54735d0d5b191a0c19b0c7450a84f1c7ce1c95bc0c9fde58d558e9a"
+      "aHash": "c9e3cadf270eeee72c68266fb07cd29b8bd73a249dc9e4db14c2476e74c9589b"
     }
   ],
   "fixed_fiscal_policy": [
     {
-      "q": "After you identify fixed-rate fiscal policy, what is the next step?",
+      "q": "After fiscal expansion under a peg, money demand at the given the world interest rate rises from 100 to 120. What real-balance accommodation is needed to sustain the new equilibrium?",
       "options": [
-        "trace the next variable in the chain",
-        "stop after naming the concept",
-        "assume NX always rises",
-        "switch to an unrelated closed-economy model"
+        "A decrease of 20",
+        "No change because the rate is fixed",
+        "An increase of 120",
+        "An increase of 20"
       ],
       "tag": "fixed_exchange_policy",
       "type": "bridge",
@@ -13466,18 +13466,18 @@ const microSkillBridgePools = {
       "conceptCluster": "fixed_fiscal_policy",
       "primarySkill": "fixed_fiscal_policy",
       "repairSkill": "fixed_fiscal_policy",
-      "feedback": "Bridge items force the second link, not just the label.",
+      "feedback": "At the same r*, higher income requires 20 more real balances. Peg-consistent reserve purchases can supply that increase.",
       "id": 6066,
       "difficulty": "bridge",
-      "aHash": "fd55486d3d7ccb89a9fe2ffa1c6c97f93a94bb01587f244c3036fba426b55902"
+      "aHash": "f6151e1ec230d739c41e08284a8700e94949e05039ae62bf6cfa3782bd0a8954"
     },
     {
-      "q": "Which answer form is strongest for fixed-rate fiscal policy?",
+      "q": "Government purchases fall under a credible peg, with prices and r* fixed. Which adjustment is the reverse of fiscal expansion?",
       "options": [
-        "direction plus mechanism",
-        "direction only",
-        "a definition with no application",
-        "a slogan about policy"
+        "The currency depreciates permanently while the peg remains unchanged",
+        "Output is fixed because fiscal policy never works under pegs",
+        "The IS* curve shifts to the left; reserve sales contract money and output falls",
+        "The IS* curve shifts to the right; reserve purchases expand money"
       ],
       "tag": "fixed_exchange_policy",
       "type": "bridge",
@@ -13485,18 +13485,18 @@ const microSkillBridgePools = {
       "conceptCluster": "fixed_fiscal_policy",
       "primarySkill": "fixed_fiscal_policy",
       "repairSkill": "fixed_fiscal_policy",
-      "feedback": "The right answer should say what changes and why.",
+      "feedback": "Fiscal contraction creates depreciation pressure. Defending the peg withdraws domestic money, shifting the LM* curve to the left and reinforcing the output decline.",
       "id": 6067,
       "difficulty": "bridge",
-      "aHash": "c03016a24828b539324f28766d35c805af3b0b202a6571a3fd6dc11f7312df31"
+      "aHash": "81fc74587cd48c887a35cba31bd0f114f15e370287fab0226be505a8184a4503"
     },
     {
-      "q": "If two answers sound possible for fixed-rate fiscal policy, what should you compare?",
+      "q": "A student predicts fiscal expansion under a peg will raise the exchange rate and leave money unchanged. Which premise conflicts with that prediction?",
       "options": [
-        "the model assumption and the first shifted curve or identity",
-        "which option has the flashiest wording",
-        "whether the answer mentions a boss",
-        "whether the option uses no economics terms"
+        "The assumption that prices are sticky",
+        "The central bank’s commitment to intervene at the fixed exchange rate",
+        "The inclusion of government spending in demand",
+        "The existence of exports"
       ],
       "tag": "fixed_exchange_policy",
       "type": "bridge",
@@ -13504,20 +13504,20 @@ const microSkillBridgePools = {
       "conceptCluster": "fixed_fiscal_policy",
       "primarySkill": "fixed_fiscal_policy",
       "repairSkill": "fixed_fiscal_policy",
-      "feedback": "Compare the model assumption and the first actual movement.",
+      "feedback": "A credible peg requires intervention against appreciation. That intervention changes money supply; it cannot be ignored while retaining the fixed-rate assumption.",
       "id": 6068,
       "difficulty": "bridge",
-      "aHash": "389107cca54735d0d5b191a0c19b0c7450a84f1c7ce1c95bc0c9fde58d558e9a"
+      "aHash": "6f387439252f3fde20dd64d2aed9e053ebebf075a19712a66a7f70cffb395097"
     }
   ],
   "compare_fixed_floating": [
     {
-      "q": "After you identify fixed versus floating regimes, what is the next step?",
+      "q": "Two otherwise identical small economies raise government purchases by the same amount. One floats; the other maintains a credible peg. Which basic-model contrast is expected?",
       "options": [
-        "trace the next variable in the chain",
-        "stop after naming the concept",
-        "assume NX always rises",
-        "switch to an unrelated closed-economy model"
+        "Only the floating economy can expand output",
+        "Both must contract money",
+        "Appreciation offsets output gains under floating; monetary accommodation permits gains under the peg",
+        "Both must appreciate by the same amount"
       ],
       "tag": "fixed_floating_exchange_regimes",
       "type": "bridge",
@@ -13525,18 +13525,18 @@ const microSkillBridgePools = {
       "conceptCluster": "compare_fixed_floating",
       "primarySkill": "compare_fixed_floating",
       "repairSkill": "compare_fixed_floating",
-      "feedback": "Bridge items force the second link, not just the label.",
+      "feedback": "Under floating rates the currency absorbs the fiscal shock; under fixed rates reserve intervention expands money instead.",
       "id": 6069,
       "difficulty": "bridge",
-      "aHash": "fd55486d3d7ccb89a9fe2ffa1c6c97f93a94bb01587f244c3036fba426b55902"
+      "aHash": "b32661e804a9c6195034447621726f421b3f36243379c3b3802e386577a01e43"
     },
     {
-      "q": "Which answer form is strongest for fixed versus floating regimes?",
+      "q": "A floating central bank expands money and output rises. An observer expects the same lasting result under a peg. What additional adjustment must be considered?",
       "options": [
-        "direction plus mechanism",
-        "direction only",
-        "a definition with no application",
-        "a slogan about policy"
+        "A disappearance of import demand",
+        "Reserve sales that remove domestic money to defend the peg",
+        "A required fiscal surplus equal to the monetary expansion",
+        "An automatic permanent fall in r*"
       ],
       "tag": "fixed_floating_exchange_regimes",
       "type": "bridge",
@@ -13544,18 +13544,18 @@ const microSkillBridgePools = {
       "conceptCluster": "compare_fixed_floating",
       "primarySkill": "compare_fixed_floating",
       "repairSkill": "compare_fixed_floating",
-      "feedback": "The right answer should say what changes and why.",
+      "feedback": "The expansion’s depreciation pressure triggers reserve sales under a peg, reversing the money increase that can persist under floating rates.",
       "id": 6070,
       "difficulty": "bridge",
-      "aHash": "c03016a24828b539324f28766d35c805af3b0b202a6571a3fd6dc11f7312df31"
+      "aHash": "473abe351805718f1ba4cf106096fd0ce63900ad1c569afc6725a507320facba"
     },
     {
-      "q": "If two answers sound possible for fixed versus floating regimes, what should you compare?",
+      "q": "A country keeps free capital movement but switches from a peg to a float. Which stabilization constraint changes?",
       "options": [
-        "the model assumption and the first shifted curve or identity",
-        "which option has the flashiest wording",
-        "whether the answer mentions a boss",
-        "whether the option uses no economics terms"
+        "The central bank no longer has to set money solely to defend the peg",
+        "Government spending stops affecting goods demand",
+        "Investment no longer responds to financing costs",
+        "The external-account identity stops holding"
       ],
       "tag": "fixed_floating_exchange_regimes",
       "type": "bridge",
@@ -13563,20 +13563,20 @@ const microSkillBridgePools = {
       "conceptCluster": "compare_fixed_floating",
       "primarySkill": "compare_fixed_floating",
       "repairSkill": "compare_fixed_floating",
-      "feedback": "Compare the model assumption and the first actual movement.",
+      "feedback": "A float restores monetary independence in the basic trilemma. It does not abolish other economic mechanisms or identities.",
       "id": 6071,
       "difficulty": "bridge",
-      "aHash": "389107cca54735d0d5b191a0c19b0c7450a84f1c7ce1c95bc0c9fde58d558e9a"
+      "aHash": "2b7c194362fb20ece0cf663561b4b0deac6684ff590b33aca75aea6ef8c28149"
     }
   ],
   "impossible_trinity": [
     {
-      "q": "After you identify impossible trinity, what is the next step?",
+      "q": "A government insists on a fixed rate but wants to set a domestic interest rate independently of the anchor. What must it relax under the trilemma?",
       "options": [
-        "trace the next variable in the chain",
-        "stop after naming the concept",
-        "assume NX always rises",
-        "switch to an unrelated closed-economy model"
+        "The use of domestic currency",
+        "Free capital mobility",
+        "The definition of exports",
+        "Its tax system"
       ],
       "tag": "impossible_trinity",
       "type": "bridge",
@@ -13584,18 +13584,18 @@ const microSkillBridgePools = {
       "conceptCluster": "impossible_trinity",
       "primarySkill": "impossible_trinity",
       "repairSkill": "impossible_trinity",
-      "feedback": "Bridge items force the second link, not just the label.",
+      "feedback": "Capital controls can weaken arbitrage and permit some independent monetary policy while retaining a currency target.",
       "id": 6072,
       "difficulty": "bridge",
-      "aHash": "fd55486d3d7ccb89a9fe2ffa1c6c97f93a94bb01587f244c3036fba426b55902"
+      "aHash": "51e1c59eed53c8a7ada7215e0afd9dc555705a903fb66e17c3663a8daf2e55ba"
     },
     {
-      "q": "Which answer form is strongest for impossible trinity?",
+      "q": "A proposal promises a permanent peg, unrestricted capital flows and recession-driven rate cuts below the anchor with equal asset risk. Which objection follows directly from the trilemma?",
       "options": [
-        "direction plus mechanism",
-        "direction only",
-        "a definition with no application",
-        "a slogan about policy"
+        "Capital outflows and peg defense prevent sustaining all three commitments",
+        "A trade surplus is mathematically impossible",
+        "Government purchases must fall to zero",
+        "The country must stop issuing bonds"
       ],
       "tag": "impossible_trinity",
       "type": "bridge",
@@ -13603,18 +13603,18 @@ const microSkillBridgePools = {
       "conceptCluster": "impossible_trinity",
       "primarySkill": "impossible_trinity",
       "repairSkill": "impossible_trinity",
-      "feedback": "The right answer should say what changes and why.",
+      "feedback": "Lower domestic returns induce capital outflows; defending the peg forces monetary adjustment. The three promises cannot all be maintained.",
       "id": 6073,
       "difficulty": "bridge",
-      "aHash": "c03016a24828b539324f28766d35c805af3b0b202a6571a3fd6dc11f7312df31"
+      "aHash": "a6ce79e1fc558077d9dc6b08c9503757ba0bd4d4f5a8c6adbb953dd9441a607d"
     },
     {
-      "q": "If two answers sound possible for impossible trinity, what should you compare?",
+      "q": "Which change preserves monetary independence while removing a conflict created by a fixed exchange rate and open capital markets?",
       "options": [
-        "the model assumption and the first shifted curve or identity",
-        "which option has the flashiest wording",
-        "whether the answer mentions a boss",
-        "whether the option uses no economics terms"
+        "Strengthen the peg while keeping every other promise",
+        "Require imports to equal exports every day",
+        "Rename the interest-rate target without changing policy",
+        "Let the currency float while keeping capital markets open"
       ],
       "tag": "impossible_trinity",
       "type": "bridge",
@@ -13622,20 +13622,20 @@ const microSkillBridgePools = {
       "conceptCluster": "impossible_trinity",
       "primarySkill": "impossible_trinity",
       "repairSkill": "impossible_trinity",
-      "feedback": "Compare the model assumption and the first actual movement.",
+      "feedback": "Floating removes the exchange-rate commitment. Cosmetic changes or a trade target do not remove the financial-arbitrage constraint.",
       "id": 6074,
       "difficulty": "bridge",
-      "aHash": "389107cca54735d0d5b191a0c19b0c7450a84f1c7ce1c95bc0c9fde58d558e9a"
+      "aHash": "b56852888ebdae74a654d2cca8f1f88e7a89ee25bfd3d892cc409a2bc22e822c"
     }
   ],
   "derive_ad_from_mf": [
     {
-      "q": "After you identify aggregate demand from Mundell-Fleming model, what is the next step?",
+      "q": "Nominal money is 200. When the price level falls from 2 to 1.6, what happens to real balances?",
       "options": [
-        "trace the next variable in the chain",
-        "stop after naming the concept",
-        "assume NX always rises",
-        "switch to an unrelated closed-economy model"
+        "They rise from 100 to 125",
+        "They fall from 100 to 80",
+        "They rise from 200 to 250",
+        "They remain 100"
       ],
       "tag": "mundell_fleming_ad",
       "type": "bridge",
@@ -13643,18 +13643,18 @@ const microSkillBridgePools = {
       "conceptCluster": "derive_ad_from_mf",
       "primarySkill": "derive_ad_from_mf",
       "repairSkill": "derive_ad_from_mf",
-      "feedback": "Bridge items force the second link, not just the label.",
+      "feedback": "M/P initially equals 200/2=100 and later 200/1.6=125. The nominal stock did not need to change.",
       "id": 6075,
       "difficulty": "bridge",
-      "aHash": "fd55486d3d7ccb89a9fe2ffa1c6c97f93a94bb01587f244c3036fba426b55902"
+      "aHash": "5e65436ee8562d05537ddff547b87e03c05b5601f2cf23f3f6a78bb4bd4ef051"
     },
     {
-      "q": "Which answer form is strongest for aggregate demand from Mundell-Fleming model?",
+      "q": "Two equilibria on the same derived AD curve differ only because P is lower in the second. Is the change a shift of AD?",
       "options": [
-        "direction plus mechanism",
-        "direction only",
-        "a definition with no application",
-        "a slogan about policy"
+        "Yes; every LM* movement shifts AD",
+        "Yes; a lower price level automatically changes fiscal policy",
+        "No; income must be the same at both points",
+        "No; it is a movement along AD generated by different LM* positions"
       ],
       "tag": "mundell_fleming_ad",
       "type": "bridge",
@@ -13662,18 +13662,18 @@ const microSkillBridgePools = {
       "conceptCluster": "derive_ad_from_mf",
       "primarySkill": "derive_ad_from_mf",
       "repairSkill": "derive_ad_from_mf",
-      "feedback": "The right answer should say what changes and why.",
+      "feedback": "AD collects equilibria for alternative price levels holding nominal policy and other determinants fixed. Varying P moves along that relationship.",
       "id": 6076,
       "difficulty": "bridge",
-      "aHash": "c03016a24828b539324f28766d35c805af3b0b202a6571a3fd6dc11f7312df31"
+      "aHash": "3a686712791b927ded9f0e9f05a446dcc1ea25018862e226094b1f2ca3e168ac"
     },
     {
-      "q": "If two answers sound possible for aggregate demand from Mundell-Fleming model, what should you compare?",
+      "q": "Nominal the nominal money supply rises at every possible price level. Compared with deriving AD by varying P alone, what changes?",
       "options": [
-        "the model assumption and the first shifted curve or identity",
-        "which option has the flashiest wording",
-        "whether the answer mentions a boss",
-        "whether the option uses no economics terms"
+        "The world rate must become zero",
+        "The AD curve shifts to the left because money demand is unchanged",
+        "The AD curve shifts right because each P supports greater real balances and demand",
+        "The economy only moves along the old AD curve"
       ],
       "tag": "mundell_fleming_ad",
       "type": "bridge",
@@ -13681,20 +13681,20 @@ const microSkillBridgePools = {
       "conceptCluster": "derive_ad_from_mf",
       "primarySkill": "derive_ad_from_mf",
       "repairSkill": "derive_ad_from_mf",
-      "feedback": "Compare the model assumption and the first actual movement.",
+      "feedback": "A policy change in M changes equilibrium Y at each P, shifting AD. Varying P with M fixed instead traces one AD curve.",
       "id": 6077,
       "difficulty": "bridge",
-      "aHash": "389107cca54735d0d5b191a0c19b0c7450a84f1c7ce1c95bc0c9fde58d558e9a"
+      "aHash": "7964e6b4fdc6b75fd3c1df09e1e1fbc01fb6844cd7dc2874511775fa6b63293f"
     }
   ],
   "open_economy_ad_slope": [
     {
-      "q": "After you identify open-economy aggregate demand slope, what is the next step?",
+      "q": "A graph shows a lower price level paired with higher output at unchanged nominal money and fiscal policy. Which intermediate exchange-rate change fits the floating-rate AD mechanism?",
       "options": [
-        "trace the next variable in the chain",
-        "stop after naming the concept",
-        "assume NX always rises",
-        "switch to an unrelated closed-economy model"
+        "Appreciation that raises net exports",
+        "A compulsory peg defense that fixes money",
+        "No exchange-rate response because prices changed",
+        "Depreciation that raises net exports"
       ],
       "tag": "mundell_fleming_ad",
       "type": "bridge",
@@ -13702,18 +13702,18 @@ const microSkillBridgePools = {
       "conceptCluster": "open_economy_ad_slope",
       "primarySkill": "open_economy_ad_slope",
       "repairSkill": "open_economy_ad_slope",
-      "feedback": "Bridge items force the second link, not just the label.",
+      "feedback": "Lower price level raises M/P and shifts the LM* curve to the right. Depreciation stimulates net exports, completing the increase in goods demand.",
       "id": 6078,
       "difficulty": "bridge",
-      "aHash": "fd55486d3d7ccb89a9fe2ffa1c6c97f93a94bb01587f244c3036fba426b55902"
+      "aHash": "5e0305fc020a7a9813c215ff82d59d9ef7795cbb65c954cb2f03982b5d4d86c0"
     },
     {
-      "q": "Which answer form is strongest for open-economy aggregate demand slope?",
+      "q": "In the Mundell–Fleming derivation of aggregate demand under floating exchange rates, how does a lower domestic price level raise the quantity of output demanded when the nominal money supply and productive capacity are unchanged?",
       "options": [
-        "direction plus mechanism",
-        "direction only",
-        "a definition with no application",
-        "a slogan about policy"
+        "Lower prices necessarily destroy money",
+        "Government purchases must change whenever P changes",
+        "The demand channel runs through real balances and net exports; LRAS is a separate capacity relationship",
+        "LRAS and AD are the same curve"
       ],
       "tag": "mundell_fleming_ad",
       "type": "bridge",
@@ -13721,18 +13721,18 @@ const microSkillBridgePools = {
       "conceptCluster": "open_economy_ad_slope",
       "primarySkill": "open_economy_ad_slope",
       "repairSkill": "open_economy_ad_slope",
-      "feedback": "The right answer should say what changes and why.",
+      "feedback": "The AD derivation holds supply capacity separate and traces how real balances and exchange rates alter demanded output.",
       "id": 6079,
       "difficulty": "bridge",
-      "aHash": "c03016a24828b539324f28766d35c805af3b0b202a6571a3fd6dc11f7312df31"
+      "aHash": "3b8800a1c731a2513e190bac1977b5fb23f333ea45ea5a353d793ccc92a70307"
     },
     {
-      "q": "If two answers sound possible for open-economy aggregate demand slope, what should you compare?",
+      "q": "Price rises 25% while nominal money is unchanged. What happens to M/P before the rest of the AD adjustment?",
       "options": [
-        "the model assumption and the first shifted curve or identity",
-        "which option has the flashiest wording",
-        "whether the answer mentions a boss",
-        "whether the option uses no economics terms"
+        "It is unchanged",
+        "It falls by 20%",
+        "It falls by 25%",
+        "It rises by 25%"
       ],
       "tag": "mundell_fleming_ad",
       "type": "bridge",
@@ -13740,20 +13740,20 @@ const microSkillBridgePools = {
       "conceptCluster": "open_economy_ad_slope",
       "primarySkill": "open_economy_ad_slope",
       "repairSkill": "open_economy_ad_slope",
-      "feedback": "Compare the model assumption and the first actual movement.",
+      "feedback": "The new real balance is the old one divided by 1.25, or 0.8 times its prior level. A 25% denominator increase yields a 20% ratio decline.",
       "id": 6080,
       "difficulty": "bridge",
-      "aHash": "389107cca54735d0d5b191a0c19b0c7450a84f1c7ce1c95bc0c9fde58d558e9a"
+      "aHash": "4c09f5a12081dd841478c0152f73e2fefd5089b059aab57cd982fad0aff8ec79"
     }
   ],
   "large_open_policy": [
     {
-      "q": "After you identify large-open-economy text chain, what is the next step?",
+      "q": "Saving falls by 30 in a large open economy. Higher real interest rate reduces domestic investment by 10. By how much does NX change?",
       "options": [
-        "trace the next variable in the chain",
-        "stop after naming the concept",
-        "assume NX always rises",
-        "switch to an unrelated closed-economy model"
+        "It rises by 20",
+        "It stays fixed",
+        "It falls by 20",
+        "It falls by 40"
       ],
       "tag": "large_open_economy",
       "type": "bridge",
@@ -13761,18 +13761,18 @@ const microSkillBridgePools = {
       "conceptCluster": "large_open_policy",
       "primarySkill": "large_open_policy",
       "repairSkill": "large_open_policy",
-      "feedback": "Bridge items force the second link, not just the label.",
+      "feedback": "ΔNX=ΔS−ΔI=−30−(−10)=−20. Part of the saving decline crowds out investment, and the remainder reduces net exports.",
       "id": 6081,
       "difficulty": "bridge",
-      "aHash": "fd55486d3d7ccb89a9fe2ffa1c6c97f93a94bb01587f244c3036fba426b55902"
+      "aHash": "ceddd127f6d887f3c244c0bf03e572f095780f8a73ea2562eb5a7c1a5d25d1b4"
     },
     {
-      "q": "Which answer form is strongest for large-open-economy text chain?",
+      "q": "In the large-open-economy model, the domestic interest rate rises and net capital outflow falls. Which real exchange-rate adjustment brings net exports into line with the lower net capital outflow?",
       "options": [
-        "direction plus mechanism",
-        "direction only",
-        "a definition with no application",
-        "a slogan about policy"
+        "A mandatory tariff that raises saving",
+        "Appreciation that lowers net exports",
+        "Depreciation that raises net exports",
+        "No trade adjustment because capital flows are separate from NX"
       ],
       "tag": "large_open_economy",
       "type": "bridge",
@@ -13780,18 +13780,18 @@ const microSkillBridgePools = {
       "conceptCluster": "large_open_policy",
       "primarySkill": "large_open_policy",
       "repairSkill": "large_open_policy",
-      "feedback": "The right answer should say what changes and why.",
+      "feedback": "NX equals net capital outflow. Appreciation reduces net exports to match the smaller net flow of funds abroad.",
       "id": 6082,
       "difficulty": "bridge",
-      "aHash": "c03016a24828b539324f28766d35c805af3b0b202a6571a3fd6dc11f7312df31"
+      "aHash": "a4a36afa1472a7296342305b01d5052ce4ad9492082c5fa63a24c62dc975b3fe"
     },
     {
-      "q": "If two answers sound possible for large-open-economy text chain, what should you compare?",
+      "q": "For a fiscal expansion, why is the large-open result often described as between the closed and small-open benchmarks?",
       "options": [
-        "the model assumption and the first shifted curve or identity",
-        "which option has the flashiest wording",
-        "whether the answer mentions a boss",
-        "whether the option uses no economics terms"
+        "Some adjustment occurs through domestic investment and some through the external balance",
+        "Output must equal the arithmetic average of the two benchmarks",
+        "The country uses half a currency peg",
+        "Saving falls by exactly half as much"
       ],
       "tag": "large_open_economy",
       "type": "bridge",
@@ -13799,20 +13799,20 @@ const microSkillBridgePools = {
       "conceptCluster": "large_open_policy",
       "primarySkill": "large_open_policy",
       "repairSkill": "large_open_policy",
-      "feedback": "Compare the model assumption and the first actual movement.",
+      "feedback": "A closed economy adjusts investment to saving; a small price-taking economy adjusts NX at fixed world interest rate. The large-open case generally shares adjustment across both margins.",
       "id": 6083,
       "difficulty": "bridge",
-      "aHash": "389107cca54735d0d5b191a0c19b0c7450a84f1c7ce1c95bc0c9fde58d558e9a"
+      "aHash": "72a327df8e98f6bcb6540acfc16357b586d74138c19ae6b289361c8632c7892d"
     }
   ],
   "foreign_fiscal_policy": [
     {
-      "q": "After you identify foreign fiscal policy, what is the next step?",
+      "q": "A foreign fiscal expansion raises the world interest rate enough to reduce domestic investment from 90 to 75. Domestic saving remains 100. What is the new NX?",
       "options": [
-        "trace the next variable in the chain",
-        "stop after naming the concept",
-        "assume NX always rises",
-        "switch to an unrelated closed-economy model"
+        "15",
+        "25",
+        "10",
+        "−25"
       ],
       "tag": "fiscal_policy_open_economy",
       "type": "bridge",
@@ -13820,18 +13820,18 @@ const microSkillBridgePools = {
       "conceptCluster": "foreign_fiscal_policy",
       "primarySkill": "foreign_fiscal_policy",
       "repairSkill": "foreign_fiscal_policy",
-      "feedback": "Bridge items force the second link, not just the label.",
+      "feedback": "New NX=100−75=25, up from 10. The change in NX is 15, while its new level is 25.",
       "id": 6084,
       "difficulty": "bridge",
-      "aHash": "fd55486d3d7ccb89a9fe2ffa1c6c97f93a94bb01587f244c3036fba426b55902"
+      "aHash": "b7a56873cd771f2c446d369b649430b65a756ba278ff97ec81bb6f55b2e73569"
     },
     {
-      "q": "Which answer form is strongest for foreign fiscal policy?",
+      "q": "Foreign fiscal contraction lowers the world interest rate and raises domestic investment by 12, while a domestic fiscal expansion lowers national saving by 8. How does domestic NX change?",
       "options": [
-        "direction plus mechanism",
-        "direction only",
-        "a definition with no application",
-        "a slogan about policy"
+        "It falls by 20",
+        "It rises by 4",
+        "It falls by 4",
+        "It is indeterminate because one policy is foreign"
       ],
       "tag": "fiscal_policy_open_economy",
       "type": "bridge",
@@ -13839,18 +13839,18 @@ const microSkillBridgePools = {
       "conceptCluster": "foreign_fiscal_policy",
       "primarySkill": "foreign_fiscal_policy",
       "repairSkill": "foreign_fiscal_policy",
-      "feedback": "The right answer should say what changes and why.",
+      "feedback": "ΔNX=−8−12=−20. Lower saving and higher investment both reduce the trade balance; the geographic origin of the shocks does not make their signs oppose.",
       "id": 6085,
       "difficulty": "bridge",
-      "aHash": "c03016a24828b539324f28766d35c805af3b0b202a6571a3fd6dc11f7312df31"
+      "aHash": "ceddd127f6d887f3c244c0bf03e572f095780f8a73ea2562eb5a7c1a5d25d1b4"
     },
     {
-      "q": "If two answers sound possible for foreign fiscal policy, what should you compare?",
+      "q": "Foreign fiscal expansion lowers domestic investment through higher world interest rate. In the long-run small-open model with saving fixed, which real exchange-rate response supports the resulting trade adjustment?",
       "options": [
-        "the model assumption and the first shifted curve or identity",
-        "which option has the flashiest wording",
-        "whether the answer mentions a boss",
-        "whether the option uses no economics terms"
+        "Appreciation that raises net exports",
+        "Appreciation that leaves NX fixed",
+        "No exchange-rate change because r* is external",
+        "Depreciation that raises net exports"
       ],
       "tag": "fiscal_policy_open_economy",
       "type": "bridge",
@@ -13858,20 +13858,20 @@ const microSkillBridgePools = {
       "conceptCluster": "foreign_fiscal_policy",
       "primarySkill": "foreign_fiscal_policy",
       "repairSkill": "foreign_fiscal_policy",
-      "feedback": "Compare the model assumption and the first actual movement.",
+      "feedback": "Lower I raises S−I. A real depreciation stimulates net exports to match the larger saving-investment gap.",
       "id": 6086,
       "difficulty": "bridge",
-      "aHash": "389107cca54735d0d5b191a0c19b0c7450a84f1c7ce1c95bc0c9fde58d558e9a"
+      "aHash": "5e0305fc020a7a9813c215ff82d59d9ef7795cbb65c954cb2f03982b5d4d86c0"
     }
   ],
   "open_economy_synthesis": [
     {
-      "q": "After you identify open-economy synthesis, what is the next step?",
+      "q": "Saving rises by 25 and investment rises by 10 at the world rate. What is the change in NX, and which real-exchange-rate direction supports it with NX demand unchanged?",
       "options": [
-        "trace the next variable in the chain",
-        "stop after naming the concept",
-        "assume NX always rises",
-        "switch to an unrelated closed-economy model"
+        "Net exports rise by 15 and the real exchange rate depreciates",
+        "Net exports rise by 35 and the real exchange rate appreciates",
+        "Net exports fall by 15 and the real exchange rate appreciates",
+        "Net exports are unchanged and the exchange rate is fixed"
       ],
       "tag": "open_economy_synthesis",
       "type": "bridge",
@@ -13879,18 +13879,18 @@ const microSkillBridgePools = {
       "conceptCluster": "open_economy_synthesis",
       "primarySkill": "open_economy_synthesis",
       "repairSkill": "open_economy_synthesis",
-      "feedback": "Bridge items force the second link, not just the label.",
+      "feedback": "ΔNX=25−10=15. Along downward NX(ε), a lower real exchange rate is needed to raise net exports.",
       "id": 6087,
       "difficulty": "bridge",
-      "aHash": "fd55486d3d7ccb89a9fe2ffa1c6c97f93a94bb01587f244c3036fba426b55902"
+      "aHash": "769bd144e5edcaded6577bb9d6beb280692039a9ae8d7ed2a244e91868709de3"
     },
     {
-      "q": "Which answer form is strongest for open-economy synthesis?",
+      "q": "An investment incentive lowers S−I while an import restriction shifts NX demand right. In the long-run exchange-rate diagram, what is determinate?",
       "options": [
-        "direction plus mechanism",
-        "direction only",
-        "a definition with no application",
-        "a slogan about policy"
+        "The real exchange rate depreciates; net exports rise",
+        "The two policies necessarily leave the exchange rate unchanged",
+        "The tariff fixes NX regardless of saving and investment",
+        "The real exchange rate appreciates; equilibrium net exports fall with S−I"
       ],
       "tag": "open_economy_synthesis",
       "type": "bridge",
@@ -13898,18 +13898,18 @@ const microSkillBridgePools = {
       "conceptCluster": "open_economy_synthesis",
       "primarySkill": "open_economy_synthesis",
       "repairSkill": "open_economy_synthesis",
-      "feedback": "The right answer should say what changes and why.",
+      "feedback": "Lower S−I requires lower equilibrium NX and raises ε. Higher net exports demand also raises ε at any fixed S−I. Both appreciate the real exchange rate, while S−I determines the final NX quantity.",
       "id": 6088,
       "difficulty": "bridge",
-      "aHash": "c03016a24828b539324f28766d35c805af3b0b202a6571a3fd6dc11f7312df31"
+      "aHash": "f2a03459b519c1e6b5c61783c8d30c5399cc62a822fef9ea9d11652c6c648e9f"
     },
     {
-      "q": "If two answers sound possible for open-economy synthesis, what should you compare?",
+      "q": "A memo predicts that a tariff reverses a trade deficit caused by low saving, while assuming saving and investment do not change. Which evidence contradicts its prediction in the basic long-run model?",
       "options": [
-        "the model assumption and the first shifted curve or identity",
-        "which option has the flashiest wording",
-        "whether the answer mentions a boss",
-        "whether the option uses no economics terms"
+        "A deficit proves the exchange rate cannot change",
+        "Foreign currency cannot be purchased in a deficit country",
+        "The unchanged negative S−I continues to fix negative equilibrium NX",
+        "The tariff makes national accounting identities optional"
       ],
       "tag": "open_economy_synthesis",
       "type": "bridge",
@@ -13917,10 +13917,10 @@ const microSkillBridgePools = {
       "conceptCluster": "open_economy_synthesis",
       "primarySkill": "open_economy_synthesis",
       "repairSkill": "open_economy_synthesis",
-      "feedback": "Compare the model assumption and the first actual movement.",
+      "feedback": "The tariff changes the exchange rate and trade composition, but unchanged S−I leaves the deficit in place. Changing the balance requires changing saving or investment under these assumptions.",
       "id": 6089,
       "difficulty": "bridge",
-      "aHash": "389107cca54735d0d5b191a0c19b0c7450a84f1c7ce1c95bc0c9fde58d558e9a"
+      "aHash": "848e81e03816eb4a6d4a642103f7cb76e4ab18f6ecfbb5b8bae88bc5927f5a6c"
     }
   ]
 };

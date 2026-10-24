@@ -66,7 +66,7 @@ const microSkillRepairPools = {
     {
       "id": 500000,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair \u2014 A student has $20 and ranks several affordable bundles of restaurant meals. In consumer choice theory, what determines the bundle selected?",
+      "q": "A student has $20 and ranks several affordable bundles of restaurant meals. In consumer choice theory, what determines the bundle selected?",
       "options": [
         "The most preferred affordable bundle",
         "The bundle with the highest price",
@@ -89,7 +89,7 @@ const microSkillRepairPools = {
     {
       "id": 500001,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair \u2014 A student has $20 and ranks several affordable bundles of gym visits. In consumer choice theory, what determines the bundle selected?",
+      "q": "A student has $20 and ranks several affordable bundles of gym visits. In consumer choice theory, what determines the bundle selected?",
       "options": [
         "The most preferred affordable bundle",
         "The bundle with the highest price",
@@ -112,7 +112,7 @@ const microSkillRepairPools = {
     {
       "id": 500002,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair \u2014 A student has $20 and ranks several affordable bundles of movie tickets. In consumer choice theory, what determines the bundle selected?",
+      "q": "A student has $20 and ranks several affordable bundles of movie tickets. In consumer choice theory, what determines the bundle selected?",
       "options": [
         "The most preferred affordable bundle",
         "The bundle with the highest price",
@@ -135,7 +135,7 @@ const microSkillRepairPools = {
     {
       "id": 500003,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair \u2014 A student has $20 and ranks several affordable bundles of bottled tea. In consumer choice theory, what determines the bundle selected?",
+      "q": "A student has $20 and ranks several affordable bundles of bottled tea. In consumer choice theory, what determines the bundle selected?",
       "options": [
         "The most preferred affordable bundle",
         "The bundle with the highest price",
@@ -159,7 +159,7 @@ const microSkillRepairPools = {
   "preferences_complete_transitive": [
     {
       "id": 5000,
-      "q": "Preferences are rational if they are...",
+      "q": "Which properties make a preference ordering rational?",
       "options": [
         "Complete and transitive",
         "Based only on prices",
@@ -182,7 +182,7 @@ const microSkillRepairPools = {
     },
     {
       "id": 5001,
-      "q": "If a consumer prefers bundle A to bundle B, this means...",
+      "q": "What does it mean for a consumer to prefer bundle A to bundle B?",
       "options": [
         "A provides greater satisfaction than B",
         "A costs less than B",
@@ -205,7 +205,7 @@ const microSkillRepairPools = {
     },
     {
       "id": 5002,
-      "q": "Utility represents...",
+      "q": "What does utility represent?",
       "options": [
         "A ranking of satisfaction across bundles",
         "Total income a consumer earns",
@@ -228,18 +228,18 @@ const microSkillRepairPools = {
     },
     {
       "id": 5003,
-      "q": "If preferences are complete, a consumer can...",
+      "q": "A shopper compares two baskets of groceries. What does the assumption of complete preferences allow the shopper to do?",
       "options": [
-        "Compare any two bundles",
-        "Always afford their preferred bundle",
-        "Avoid trade-offs",
-        "Ignore prices"
+        "Prefer one basket or be equally satisfied with both",
+        "Always afford the basket they prefer",
+        "Avoid every trade-off between goods",
+        "Ignore prices when deciding what is affordable"
       ],
       "a": 0,
       "tag": "preferences_complete_transitive",
       "type": "definition",
       "objective": "LO3.2",
-      "feedback": "Completeness means consumers can rank any two bundles.",
+      "feedback": "Complete preferences let a consumer compare any two bundles: prefer the first, prefer the second, or be indifferent. This says nothing about whether either bundle is affordable.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "repair",
       "conceptCluster": "LO3.2_preferences_complete_transitive",
@@ -253,7 +253,7 @@ const microSkillRepairPools = {
   "indifference_curve_properties": [
     {
       "id": 5010,
-      "q": "Two bundles on the same indifference curve...",
+      "q": "A shopper is equally satisfied with two different combinations of apples and oranges. Both combinations lie on the same indifference curve. What do they have in common?",
       "options": [
         "Provide the same satisfaction",
         "Cost the same amount",
@@ -264,7 +264,7 @@ const microSkillRepairPools = {
       "tag": "indifference_curve_properties",
       "type": "definition",
       "objective": "LO3.2",
-      "feedback": "All points on an indifference curve yield the same utility.",
+      "feedback": "An indifference curve connects bundles the consumer likes equally. Their quantities and costs may differ, but moving between them leaves satisfaction unchanged.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "repair",
       "conceptCluster": "LO3.2_indifference_curve_properties",
@@ -276,7 +276,7 @@ const microSkillRepairPools = {
     },
     {
       "id": 5012,
-      "q": "Convex indifference curves imply...",
+      "q": "What do convex indifference curves imply about willingness to substitute between goods?",
       "options": [
         "Diminishing marginal rate of substitution",
         "Constant trade-offs",
@@ -299,7 +299,7 @@ const microSkillRepairPools = {
     },
     {
       "id": 5013,
-      "q": "A higher indifference curve represents...",
+      "q": "Assume more of either good is preferred, holding the other fixed. What does a higher indifference curve represent?",
       "options": [
         "Greater satisfaction",
         "Higher income",
@@ -322,7 +322,7 @@ const microSkillRepairPools = {
     },
     {
       "id": 5014,
-      "q": "If a bundle lies above an indifference curve, it is...",
+      "q": "Assume more of either good is preferred, holding the other fixed. How does a bundle above an indifference curve compare with bundles on that curve?",
       "options": [
         "Preferred to bundles on that curve",
         "Less preferred",
@@ -333,7 +333,7 @@ const microSkillRepairPools = {
       "tag": "indifference_curve_properties",
       "type": "interpretation",
       "objective": "LO3.2",
-      "feedback": "Bundles above the curve provide higher utility.",
+      "feedback": "With both goods desirable, a bundle above a given indifference curve offers more of at least one good than a bundle on that curve without less of the other, so it is preferred.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "repair",
       "conceptCluster": "LO3.2_indifference_curve_properties",
@@ -347,7 +347,7 @@ const microSkillRepairPools = {
   "marginal_rate_substitution": [
     {
       "id": 5011,
-      "q": "The slope of an indifference curve represents the...",
+      "q": "What does the absolute value of the slope of a downward-sloping indifference curve represent?",
       "options": [
         "Marginal rate of substitution",
         "Price ratio",
@@ -358,7 +358,7 @@ const microSkillRepairPools = {
       "tag": "marginal_rate_substitution",
       "type": "definition",
       "objective": "LO3.2",
-      "feedback": "The slope equals the marginal rate of substitution between the goods.",
+      "feedback": "With X horizontal and Y vertical, MRS is the amount of Y the consumer would give up for one more X while keeping utility constant. Under the positive MRS convention, it is the absolute value of the indifference curve slope.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "repair",
       "conceptCluster": "LO3.2_marginal_rate_substitution",
@@ -370,18 +370,18 @@ const microSkillRepairPools = {
     },
     {
       "id": 5018,
-      "q": "As a consumer moves down an indifference curve, the MRS...",
+      "q": "A shopper moves along a convex indifference curve toward more apples and fewer oranges. What happens to the number of oranges the shopper is willing to give up for one more apple?",
       "options": [
-        "Decreases",
-        "Increases",
-        "Remains constant",
-        "Becomes zero"
+        "It decreases",
+        "It increases",
+        "It remains constant",
+        "It immediately becomes zero"
       ],
       "a": 0,
       "tag": "marginal_rate_substitution",
       "type": "interpretation",
       "objective": "LO3.2",
-      "feedback": "Convexity implies diminishing willingness to substitute.",
+      "feedback": "As apples become more plentiful and oranges become scarcer in the shopper’s basket, another apple becomes less valuable relative to an orange. The shopper gives up fewer oranges for an extra apple. This is diminishing marginal rate of substitution.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "repair",
       "conceptCluster": "LO3.2_marginal_rate_substitution",
@@ -393,18 +393,18 @@ const microSkillRepairPools = {
     },
     {
       "id": 5019,
-      "q": "A flatter indifference curve means...",
+      "q": "At the bundle a shopper is considering, the indifference curve becomes flatter, with X on the horizontal axis and Y on the vertical axis. What does this indicate?",
       "options": [
-        "Lower MRS",
+        "A lower marginal rate of substitution",
         "Higher income",
         "Higher utility",
-        "Greater demand"
+        "Greater market demand"
       ],
       "a": 0,
       "tag": "marginal_rate_substitution",
       "type": "interpretation",
       "objective": "LO3.2",
-      "feedback": "A flatter slope means the consumer gives up less of Y for X.",
+      "feedback": "The absolute slope of an indifference curve is the marginal rate of substitution. A flatter curve means the consumer would give up fewer units of Y for one more unit of X while keeping satisfaction unchanged.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "repair",
       "conceptCluster": "LO3.2_marginal_rate_substitution",
@@ -417,7 +417,7 @@ const microSkillRepairPools = {
     {
       "id": 500004,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair \u2014 The marginal rate of substitution (MRS) describes what?",
+      "q": "What does the marginal rate of substitution (MRS) measure?",
       "options": [
         "How much of one good a consumer is willing to give up for another while holding utility constant",
         "How much income changes when price changes",
@@ -441,7 +441,7 @@ const microSkillRepairPools = {
   "budget_constraint_intercepts_slope": [
     {
       "id": 5020,
-      "q": "A budget constraint shows...",
+      "q": "What does a budget constraint show?",
       "options": [
         "All combinations of goods a consumer can afford",
         "The bundles consumers most prefer",
@@ -452,7 +452,7 @@ const microSkillRepairPools = {
       "tag": "budget_constraint_intercepts_slope",
       "type": "definition",
       "objective": "LO3.3",
-      "feedback": "The budget line shows all affordable combinations given income and prices.",
+      "feedback": "The budget set contains every bundle whose total cost is no greater than income. Its boundary, the budget line, contains bundles that spend the full budget.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "repair",
       "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
@@ -464,12 +464,12 @@ const microSkillRepairPools = {
     },
     {
       "id": 5022,
-      "q": "If the price of good X increases while income stays constant, the budget line...",
+      "q": "How does an increase in the price of X affect the budget line when income and the price of Y are unchanged?",
       "options": [
-        "Pivots inward along the X-axis intercept",
-        "Shifts outward parallel",
-        "Rotates outward",
-        "Becomes horizontal"
+        "The budget line pivots inward along the X-axis intercept",
+        "The budget line shifts outward parallel",
+        "The budget line rotates outward",
+        "The budget line becomes horizontal"
       ],
       "a": 0,
       "tag": "budget_constraint_intercepts_slope",
@@ -487,7 +487,7 @@ const microSkillRepairPools = {
     },
     {
       "id": 5023,
-      "q": "The intercepts of a budget line represent...",
+      "q": "What do the intercepts of a budget line represent?",
       "options": [
         "Maximum quantities of each good affordable if income is spent on only that good",
         "The consumer's utility level",
@@ -510,7 +510,7 @@ const microSkillRepairPools = {
     },
     {
       "id": 5024,
-      "q": "Bundles inside the budget constraint are...",
+      "q": "How should bundles inside the budget constraint be described?",
       "options": [
         "Affordable but not fully using income",
         "Unaffordable",
@@ -535,7 +535,7 @@ const microSkillRepairPools = {
   "budget_line_changes": [
     {
       "id": 5021,
-      "q": "If income rises and prices stay the same, the budget line...",
+      "q": "A student has more money to spend on meals and coffee, while both prices stay the same. How does the student’s budget line change?",
       "options": [
         "Shifts outward parallel",
         "Rotates inward",
@@ -546,7 +546,7 @@ const microSkillRepairPools = {
       "tag": "budget_line_changes",
       "type": "interpretation",
       "objective": "LO3.3",
-      "feedback": "Higher income increases purchasing power for both goods.",
+      "feedback": "With prices fixed, more income increases the maximum affordable quantity of each good. Both budget intercepts rise while the price ratio stays unchanged, so the budget line shifts outward in parallel.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "repair",
       "conceptCluster": "LO3.3_budget_line_changes",
@@ -558,7 +558,7 @@ const microSkillRepairPools = {
     },
     {
       "id": 5029,
-      "q": "If income decreases, the budget line...",
+      "q": "A student’s monthly spending budget falls, while the prices of both goods stay the same. How does the budget line change?",
       "options": [
         "Shifts inward parallel",
         "Rotates outward",
@@ -569,7 +569,7 @@ const microSkillRepairPools = {
       "tag": "budget_line_changes",
       "type": "interpretation",
       "objective": "LO3.3",
-      "feedback": "Lower income reduces purchasing power equally for both goods.",
+      "feedback": "With both prices fixed, lower income reduces the maximum affordable quantity of each good in the same proportion. The price ratio is unchanged, so the budget line shifts inward without rotating.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "repair",
       "conceptCluster": "LO3.3_budget_line_changes",
@@ -582,7 +582,7 @@ const microSkillRepairPools = {
     {
       "id": 500005,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair \u2014 Income rises while both prices stay unchanged. What happens to the budget line?",
+      "q": "Income rises while both prices stay unchanged. What happens to the budget line?",
       "options": [
         "It shifts outward in parallel",
         "It rotates around the X-intercept",
@@ -605,7 +605,7 @@ const microSkillRepairPools = {
     {
       "id": 500006,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using movie tickets, the Archivist asks: concept repair \u2014 Income rises while both prices stay unchanged. What happens to the budget line?",
+      "q": "Income rises while both prices stay unchanged. What happens to the budget line?",
       "options": [
         "It shifts outward in parallel",
         "It rotates around the X-intercept",
@@ -629,7 +629,7 @@ const microSkillRepairPools = {
   "utility_maximization_mrs": [
     {
       "id": 5030,
-      "q": "Consumer equilibrium occurs where...",
+      "q": "Where does consumer equilibrium occur?",
       "options": [
         "The highest attainable indifference curve touches the budget line",
         "Demand equals supply",
@@ -640,7 +640,7 @@ const microSkillRepairPools = {
       "tag": "utility_maximization_mrs",
       "type": "definition",
       "objective": "LO3.4",
-      "feedback": "Consumers maximize utility at the tangency between the budget line and an indifference curve.",
+      "feedback": "The best affordable bundle reaches the highest attainable indifference curve. With smooth preferences and an interior solution this is a tangency; a corner or kink requires a different geometric condition.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "repair",
       "conceptCluster": "LO3.4_utility_maximization_mrs",
@@ -652,7 +652,7 @@ const microSkillRepairPools = {
     },
     {
       "id": 5031,
-      "q": "At the optimal bundle, the marginal rate of substitution equals...",
+      "q": "Assume smooth, locally nonsatiated preferences and an interior optimum with both goods consumed and the budget exhausted. What must the marginal rate of substitution equal at the optimal bundle?",
       "options": [
         "The price ratio",
         "Income",
@@ -663,7 +663,7 @@ const microSkillRepairPools = {
       "tag": "utility_maximization_mrs",
       "type": "definition",
       "objective": "LO3.4",
-      "feedback": "Utility maximization occurs when MRS equals Px/Py.",
+      "feedback": "At a smooth interior optimum, willingness to substitute equals the market tradeoff: MRS=Px/Py, equivalently MUx/Px=MUy/Py. Corners and kinks need not satisfy this equality.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "repair",
       "conceptCluster": "LO3.4_utility_maximization_mrs",
@@ -675,12 +675,12 @@ const microSkillRepairPools = {
     },
     {
       "id": 5034,
-      "q": "At equilibrium the consumer...",
+      "q": "Which statement is true of the consumer at equilibrium?",
       "options": [
-        "Cannot increase satisfaction without changing prices or income",
-        "Consumes equal amounts of both goods",
-        "Faces zero prices",
-        "Has no preferences"
+        "The consumer cannot increase satisfaction without changing prices or income",
+        "The consumer consumes equal amounts of both goods",
+        "The consumer faces zero prices",
+        "The consumer has no preferences"
       ],
       "a": 0,
       "tag": "utility_maximization_mrs",
@@ -698,7 +698,7 @@ const microSkillRepairPools = {
     },
     {
       "id": 5035,
-      "q": "If MRS > Px/Py, the consumer should...",
+      "q": "A consumer buys positive amounts of X and Y and can make small changes in purchases. If MRS exceeds Px/Py, how should the consumer adjust purchases to increase utility?",
       "options": [
         "Consume more X",
         "Consume more Y",
@@ -709,7 +709,7 @@ const microSkillRepairPools = {
       "tag": "utility_maximization_mrs",
       "type": "interpretation",
       "objective": "LO3.4",
-      "feedback": "The consumer values X more than the market does\u2014buy more X.",
+      "feedback": "The consumer values X more than the market does—buy more X.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "repair",
       "conceptCluster": "LO3.4_utility_maximization_mrs",
@@ -723,7 +723,7 @@ const microSkillRepairPools = {
   "marginal_utility_per_dollar": [
     {
       "id": 5032,
-      "q": "If MUx/Px is greater than MUy/Py, the consumer should...",
+      "q": "If MUx/Px exceeds MUy/Py, how should the consumer reallocate spending to increase utility?",
       "options": [
         "Consume more X and less Y",
         "Consume more Y and less X",
@@ -746,7 +746,7 @@ const microSkillRepairPools = {
     },
     {
       "id": 5033,
-      "q": "If MUx/Px is less than MUy/Py, the consumer should...",
+      "q": "If MUx/Px is below MUy/Py, how should the consumer reallocate spending to increase utility?",
       "options": [
         "Consume more Y and less X",
         "Consume more X",
@@ -769,7 +769,7 @@ const microSkillRepairPools = {
     },
     {
       "id": 5036,
-      "q": "If MRS < Px/Py, the consumer should...",
+      "q": "A consumer buys positive amounts of X and Y and can make small changes in purchases. If MRS is below Px/Py, how should the consumer adjust purchases to increase utility?",
       "options": [
         "Consume more Y",
         "Consume more X",
@@ -780,7 +780,7 @@ const microSkillRepairPools = {
       "tag": "marginal_utility_per_dollar",
       "type": "interpretation",
       "objective": "LO3.4",
-      "feedback": "The consumer values Y more per dollar\u2014shift toward Y.",
+      "feedback": "The consumer values Y more per dollar—shift toward Y.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "repair",
       "conceptCluster": "LO3.4_marginal_utility_per_dollar",
@@ -793,7 +793,7 @@ const microSkillRepairPools = {
     {
       "id": 500007,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair \u2014 MUx=20 and Px=$5. What is marginal utility per dollar for X?",
+      "q": "MUx=20 and Px=$5. What is marginal utility per dollar for X?",
       "options": [
         "4",
         "100",
@@ -810,14 +810,14 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "marginal_utility_per_dollar",
       "commonError": "compares_marginal_utility_without_dividing_by_price",
-      "feedback": "MUx/Px=20/5=4.",
+      "feedback": "MUx/Px=20/5=4. The ratio measures the extra utility obtained from a dollar spent on X at the current bundle.",
       "source": "engine2_repair"
     }
   ],
   "derive_individual_demand": [
     {
       "id": 5040,
-      "q": "The law of demand states that when price rises...",
+      "q": "According to the law of demand, how does quantity demanded respond to a higher price, holding other determinants fixed?",
       "options": [
         "Quantity demanded falls",
         "Quantity demanded rises",
@@ -840,7 +840,7 @@ const microSkillRepairPools = {
     },
     {
       "id": 5041,
-      "q": "A demand curve shows...",
+      "q": "What relationship does a demand curve show?",
       "options": [
         "The relationship between price and quantity demanded",
         "Income and utility",
@@ -863,7 +863,7 @@ const microSkillRepairPools = {
     },
     {
       "id": 5043,
-      "q": "A movement along a demand curve occurs when...",
+      "q": "Which change causes a movement along a demand curve?",
       "options": [
         "The price of the good changes",
         "Income changes",
@@ -886,7 +886,7 @@ const microSkillRepairPools = {
     },
     {
       "id": 5048,
-      "q": "A student says: 'When price rises, demand falls.' What is wrong?",
+      "q": "A café raises the price of coffee, and customers buy fewer cups. A student describes this as a decrease in demand. Holding all other factors fixed, what is wrong with that description?",
       "options": [
         "They confused demand with quantity demanded",
         "They are correct",
@@ -897,7 +897,7 @@ const microSkillRepairPools = {
       "tag": "derive_individual_demand",
       "type": "trap",
       "objective": "LO4.1",
-      "feedback": "Price changes affect quantity demanded, not demand itself.",
+      "feedback": "A change in the good’s own price moves the consumer to another quantity on the same demand curve. A shift of demand means quantities change at each given price because another determinant, such as income or preferences, changes.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "repair",
       "conceptCluster": "LO4.1_derive_individual_demand",
@@ -912,7 +912,7 @@ const microSkillRepairPools = {
     {
       "id": 500008,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair \u2014 If the price of a substitute for X rises, what usually happens to demand for X?",
+      "q": "If the price of a substitute for X rises, what usually happens to demand for X?",
       "options": [
         "It increases",
         "It decreases",
@@ -935,7 +935,7 @@ const microSkillRepairPools = {
     {
       "id": 500009,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using campus meals, the Archivist asks: concept repair \u2014 If the price of a substitute for X rises, what usually happens to demand for X?",
+      "q": "If the price of a substitute for X rises, what usually happens to demand for X?",
       "options": [
         "It increases",
         "It decreases",
@@ -958,7 +958,7 @@ const microSkillRepairPools = {
     {
       "id": 500010,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using concert tickets, the Archivist asks: concept repair \u2014 If the price of a substitute for X rises, what usually happens to demand for X?",
+      "q": "If the price of a substitute for X rises, what usually happens to demand for X?",
       "options": [
         "It increases",
         "It decreases",
@@ -981,7 +981,7 @@ const microSkillRepairPools = {
     {
       "id": 500011,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using ride-share trips, the Archivist asks: concept repair \u2014 If the price of a substitute for X rises, what usually happens to demand for X?",
+      "q": "If the price of a substitute for X rises, what usually happens to demand for X?",
       "options": [
         "It increases",
         "It decreases",
@@ -1005,12 +1005,12 @@ const microSkillRepairPools = {
   "normal_inferior_goods": [
     {
       "id": 5044,
-      "q": "If income increases and a good is normal, demand will...",
+      "q": "How does an increase in income affect demand for a normal good?",
       "options": [
-        "Shift outward",
-        "Shift inward",
-        "Stay the same",
-        "Become perfectly elastic"
+        "The demand curve shifts outward",
+        "The demand curve shifts inward",
+        "The demand curve remains unchanged",
+        "Demand becomes perfectly elastic"
       ],
       "a": 0,
       "tag": "normal_inferior_goods",
@@ -1029,7 +1029,7 @@ const microSkillRepairPools = {
     {
       "id": 500012,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair \u2014 Income rises and demand for bus rides falls. Bus rides are acting as what type of good for this consumer?",
+      "q": "Income rises and demand for bus rides falls. Bus rides are acting as what type of good for this consumer?",
       "options": [
         "Inferior",
         "Normal",
@@ -1052,7 +1052,7 @@ const microSkillRepairPools = {
     {
       "id": 500013,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using gym memberships, the Archivist asks: concept repair \u2014 Income rises and demand for bus rides falls. Bus rides are acting as what type of good for this consumer?",
+      "q": "Income rises and demand for bus rides falls. Bus rides are acting as what type of good for this consumer?",
       "options": [
         "Inferior",
         "Normal",
@@ -1075,7 +1075,7 @@ const microSkillRepairPools = {
     {
       "id": 500014,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using movie tickets, the Archivist asks: concept repair \u2014 Income rises and demand for bus rides falls. Bus rides are acting as what type of good for this consumer?",
+      "q": "Income rises and demand for bus rides falls. Bus rides are acting as what type of good for this consumer?",
       "options": [
         "Inferior",
         "Normal",
@@ -1100,7 +1100,7 @@ const microSkillRepairPools = {
     {
       "id": 500015,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair \u2014 When X becomes cheaper relative to Y, what does the substitution effect push the consumer to do?",
+      "q": "When X becomes cheaper relative to Y, what does the substitution effect push the consumer to do?",
       "options": [
         "Buy relatively more X and less Y",
         "Buy relatively less X and more Y",
@@ -1123,7 +1123,7 @@ const microSkillRepairPools = {
     {
       "id": 500016,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using streaming subscriptions, the Archivist asks: concept repair \u2014 When X becomes cheaper relative to Y, what does the substitution effect push the consumer to do?",
+      "q": "When X becomes cheaper relative to Y, what does the substitution effect push the consumer to do?",
       "options": [
         "Buy relatively more X and less Y",
         "Buy relatively less X and more Y",
@@ -1146,7 +1146,7 @@ const microSkillRepairPools = {
     {
       "id": 500017,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using campus meals, the Archivist asks: concept repair \u2014 When X becomes cheaper relative to Y, what does the substitution effect push the consumer to do?",
+      "q": "When X becomes cheaper relative to Y, what does the substitution effect push the consumer to do?",
       "options": [
         "Buy relatively more X and less Y",
         "Buy relatively less X and more Y",
@@ -1169,7 +1169,7 @@ const microSkillRepairPools = {
     {
       "id": 500018,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using concert tickets, the Archivist asks: concept repair \u2014 When X becomes cheaper relative to Y, what does the substitution effect push the consumer to do?",
+      "q": "When X becomes cheaper relative to Y, what does the substitution effect push the consumer to do?",
       "options": [
         "Buy relatively more X and less Y",
         "Buy relatively less X and more Y",
@@ -1194,7 +1194,7 @@ const microSkillRepairPools = {
     {
       "id": 500019,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair \u2014 A fall in the price of X increases the consumer's real purchasing power. Which component of the price effect captures the response to that purchasing-power change?",
+      "q": "A fall in the price of X increases the consumer's real purchasing power. Which component of the price effect captures the response to that purchasing-power change?",
       "options": [
         "Income effect",
         "Substitution effect",
@@ -1217,7 +1217,7 @@ const microSkillRepairPools = {
     {
       "id": 500020,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using textbook purchases, the Archivist asks: concept repair \u2014 A fall in the price of X increases the consumer's real purchasing power. Which component of the price effect captures the response to that purchasing-power change?",
+      "q": "A fall in the price of X increases the consumer's real purchasing power. Which component of the price effect captures the response to that purchasing-power change?",
       "options": [
         "Income effect",
         "Substitution effect",
@@ -1240,7 +1240,7 @@ const microSkillRepairPools = {
     {
       "id": 500021,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using gym memberships, the Archivist asks: concept repair \u2014 A fall in the price of X increases the consumer's real purchasing power. Which component of the price effect captures the response to that purchasing-power change?",
+      "q": "A fall in the price of X increases the consumer's real purchasing power. Which component of the price effect captures the response to that purchasing-power change?",
       "options": [
         "Income effect",
         "Substitution effect",
@@ -1263,7 +1263,7 @@ const microSkillRepairPools = {
     {
       "id": 500022,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using movie tickets, the Archivist asks: concept repair \u2014 A fall in the price of X increases the consumer's real purchasing power. Which component of the price effect captures the response to that purchasing-power change?",
+      "q": "A fall in the price of X increases the consumer's real purchasing power. Which component of the price effect captures the response to that purchasing-power change?",
       "options": [
         "Income effect",
         "Substitution effect",
@@ -1288,7 +1288,7 @@ const microSkillRepairPools = {
     {
       "id": 500023,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair \u2014 A Giffen good is unusual because, over the relevant range, what happens when its own price rises?",
+      "q": "A Giffen good is unusual because, over the relevant range, what happens when its own price rises?",
       "options": [
         "Quantity demanded rises",
         "Quantity demanded falls normally",
@@ -1311,7 +1311,7 @@ const microSkillRepairPools = {
     {
       "id": 500024,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using streaming subscriptions, the Archivist asks: concept repair \u2014 A Giffen good is unusual because, over the relevant range, what happens when its own price rises?",
+      "q": "A Giffen good is unusual because, over the relevant range, what happens when its own price rises?",
       "options": [
         "Quantity demanded rises",
         "Quantity demanded falls normally",
@@ -1334,7 +1334,7 @@ const microSkillRepairPools = {
     {
       "id": 500025,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using campus meals, the Archivist asks: concept repair \u2014 A Giffen good is unusual because, over the relevant range, what happens when its own price rises?",
+      "q": "A Giffen good is unusual because, over the relevant range, what happens when its own price rises?",
       "options": [
         "Quantity demanded rises",
         "Quantity demanded falls normally",
@@ -1357,7 +1357,7 @@ const microSkillRepairPools = {
     {
       "id": 500026,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using concert tickets, the Archivist asks: concept repair \u2014 A Giffen good is unusual because, over the relevant range, what happens when its own price rises?",
+      "q": "A Giffen good is unusual because, over the relevant range, what happens when its own price rises?",
       "options": [
         "Quantity demanded rises",
         "Quantity demanded falls normally",
@@ -1384,7 +1384,7 @@ const microSkillRepairPools = {
       "q": "Which situation represents a shift in demand rather than a movement along the curve?",
       "options": [
         "A change in income",
-        "A change in the good\u2019s price",
+        "A change in the good’s price",
         "A movement from one point to another on the curve",
         "A change in quantity demanded"
       ],
@@ -1427,7 +1427,7 @@ const microSkillRepairPools = {
     },
     {
       "id": 5047,
-      "q": "If the price of a complement falls, demand for the related good will...",
+      "q": "Printers and ink cartridges are used together. If printer prices fall, how is demand for ink cartridges likely to change, holding other factors fixed?",
       "options": [
         "Increase",
         "Decrease",
@@ -1438,7 +1438,7 @@ const microSkillRepairPools = {
       "tag": "demand_curve_shifts",
       "type": "interpretation",
       "objective": "LO4.4",
-      "feedback": "Cheaper complements increase demand for the good.",
+      "feedback": "Complementary goods are used together. When one becomes cheaper, using the pair becomes more attractive, so demand for the related good rises at each given price.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "repair",
       "conceptCluster": "LO4.4_demand_curve_shifts",
@@ -1450,12 +1450,12 @@ const microSkillRepairPools = {
     },
     {
       "id": 5049,
-      "q": "If population increases, the demand curve will...",
+      "q": "How does an increase in population affect the market demand curve?",
       "options": [
-        "Shift outward",
-        "Shift inward",
-        "Rotate",
-        "Stay the same"
+        "The demand curve shifts outward",
+        "The demand curve shifts inward",
+        "The demand curve rotates",
+        "The demand curve remains unchanged"
       ],
       "a": 0,
       "tag": "demand_curve_shifts",
@@ -1476,7 +1476,7 @@ const microSkillRepairPools = {
     {
       "id": 500027,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair \u2014 A buyer is willing to pay $50 for an item and pays $25. What is consumer surplus?",
+      "q": "A buyer is willing to pay $50 for an item and pays $25. What is consumer surplus?",
       "options": [
         "$25",
         "$75",
@@ -1499,7 +1499,7 @@ const microSkillRepairPools = {
     {
       "id": 500028,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair \u2014 A buyer is willing to pay $55 for an item and pays $30. What is consumer surplus?",
+      "q": "A buyer is willing to pay $55 for an item and pays $30. What is consumer surplus?",
       "options": [
         "$25",
         "$85",
@@ -1522,7 +1522,7 @@ const microSkillRepairPools = {
     {
       "id": 500029,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair \u2014 A buyer is willing to pay $60 for an item and pays $35. What is consumer surplus?",
+      "q": "A buyer is willing to pay $60 for an item and pays $35. What is consumer surplus?",
       "options": [
         "$25",
         "$95",
@@ -1545,7 +1545,7 @@ const microSkillRepairPools = {
     {
       "id": 500030,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair \u2014 A buyer is willing to pay $65 for an item and pays $20. What is consumer surplus?",
+      "q": "A buyer is willing to pay $65 for an item and pays $20. What is consumer surplus?",
       "options": [
         "$45",
         "$85",
@@ -1569,7 +1569,7 @@ const microSkillRepairPools = {
   "market_demand_aggregation": [
     {
       "id": 5042,
-      "q": "Market demand is found by...",
+      "q": "How is market demand calculated from individual demands?",
       "options": [
         "Adding individual demand curves horizontally",
         "Adding them vertically",
@@ -1593,7 +1593,7 @@ const microSkillRepairPools = {
     {
       "id": 500031,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair \u2014 At a price of $10, three consumers demand 8, 15, and 3 units. What is market quantity demanded?",
+      "q": "At a price of $10, three consumers demand 8, 15, and 3 units. What is market quantity demanded?",
       "options": [
         "26",
         "8.67",
@@ -1616,7 +1616,7 @@ const microSkillRepairPools = {
     {
       "id": 500032,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair \u2014 At a price of $10, three consumers demand 9, 17, and 4 units. What is market quantity demanded?",
+      "q": "At a price of $10, three consumers demand 9, 17, and 4 units. What is market quantity demanded?",
       "options": [
         "30",
         "10.0",
@@ -1639,7 +1639,7 @@ const microSkillRepairPools = {
     {
       "id": 500033,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair \u2014 At a price of $10, three consumers demand 10, 19, and 1 units. What is market quantity demanded?",
+      "q": "At a price of $10, three consumers demand 10, 19, and 1 units. What is market quantity demanded?",
       "options": [
         "30",
         "10.0",
@@ -1664,7 +1664,7 @@ const microSkillRepairPools = {
     {
       "id": 500034,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair \u2014 The absolute value of price elasticity of demand is 0.4. Demand is:",
+      "q": "The absolute value of price elasticity of demand is 0.4. How is demand classified?",
       "options": [
         "Inelastic",
         "Perfectly inelastic",
@@ -1687,7 +1687,7 @@ const microSkillRepairPools = {
     {
       "id": 500035,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair \u2014 The absolute value of price elasticity of demand is 0.8. Demand is:",
+      "q": "The absolute value of price elasticity of demand is 0.8. How is demand classified?",
       "options": [
         "Inelastic",
         "Perfectly inelastic",
@@ -1710,7 +1710,7 @@ const microSkillRepairPools = {
     {
       "id": 500036,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair \u2014 The absolute value of price elasticity of demand is 1.0. Demand is:",
+      "q": "The absolute value of price elasticity of demand is 1.0. How is demand classified?",
       "options": [
         "Unit elastic",
         "Perfectly inelastic",
@@ -1733,7 +1733,7 @@ const microSkillRepairPools = {
     {
       "id": 500037,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair \u2014 The absolute value of price elasticity of demand is 1.5. Demand is:",
+      "q": "The absolute value of price elasticity of demand is 1.5. How is demand classified?",
       "options": [
         "Elastic",
         "Perfectly inelastic",
@@ -1758,7 +1758,7 @@ const microSkillRepairPools = {
     {
       "id": 500038,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair \u2014 Why does the midpoint method use the average of the two values in the denominator of each percentage change?",
+      "q": "Why does the midpoint method use the average of the two values in the denominator of each percentage change?",
       "options": [
         "It gives the same elasticity for a move between two points regardless of direction",
         "It guarantees elasticity equals 1",
@@ -1781,7 +1781,7 @@ const microSkillRepairPools = {
     {
       "id": 500039,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using coffee purchases, the Archivist asks: concept repair \u2014 Why does the midpoint method use the average of the two values in the denominator of each percentage change?",
+      "q": "Why does the midpoint method use the average of the two values in the denominator of each percentage change?",
       "options": [
         "It gives the same elasticity for a move between two points regardless of direction",
         "It guarantees elasticity equals 1",
@@ -1804,7 +1804,7 @@ const microSkillRepairPools = {
     {
       "id": 500040,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using streaming subscriptions, the Archivist asks: concept repair \u2014 Why does the midpoint method use the average of the two values in the denominator of each percentage change?",
+      "q": "Why does the midpoint method use the average of the two values in the denominator of each percentage change?",
       "options": [
         "It gives the same elasticity for a move between two points regardless of direction",
         "It guarantees elasticity equals 1",
@@ -1827,7 +1827,7 @@ const microSkillRepairPools = {
     {
       "id": 500041,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using campus meals, the Archivist asks: concept repair \u2014 Why does the midpoint method use the average of the two values in the denominator of each percentage change?",
+      "q": "Why does the midpoint method use the average of the two values in the denominator of each percentage change?",
       "options": [
         "It gives the same elasticity for a move between two points regardless of direction",
         "It guarantees elasticity equals 1",
@@ -1852,7 +1852,7 @@ const microSkillRepairPools = {
     {
       "id": 500042,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair \u2014 If demand is elastic, what happens to total revenue when price falls?",
+      "q": "If demand is elastic, what happens to total revenue when price falls?",
       "options": [
         "Total revenue rises",
         "Total revenue falls",
@@ -1875,7 +1875,7 @@ const microSkillRepairPools = {
     {
       "id": 500043,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using ride-share trips, the Archivist asks: concept repair \u2014 If demand is elastic, what happens to total revenue when price falls?",
+      "q": "If demand is elastic, what happens to total revenue when price falls?",
       "options": [
         "Total revenue rises",
         "Total revenue falls",
@@ -1898,7 +1898,7 @@ const microSkillRepairPools = {
     {
       "id": 500044,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using textbook purchases, the Archivist asks: concept repair \u2014 If demand is elastic, what happens to total revenue when price falls?",
+      "q": "If demand is elastic, what happens to total revenue when price falls?",
       "options": [
         "Total revenue rises",
         "Total revenue falls",
@@ -1921,7 +1921,7 @@ const microSkillRepairPools = {
     {
       "id": 500045,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using gym memberships, the Archivist asks: concept repair \u2014 If demand is elastic, what happens to total revenue when price falls?",
+      "q": "If demand is elastic, what happens to total revenue when price falls?",
       "options": [
         "Total revenue rises",
         "Total revenue falls",
@@ -1946,7 +1946,7 @@ const microSkillRepairPools = {
     {
       "id": 500046,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair \u2014 A positive cross-price elasticity between X and Y indicates the goods are most likely:",
+      "q": "If the cross-price elasticity between X and Y is positive, which relationship between the goods is most likely?",
       "options": [
         "Substitutes",
         "Complements",
@@ -1969,7 +1969,7 @@ const microSkillRepairPools = {
     {
       "id": 500047,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using coffee purchases, the Archivist asks: concept repair \u2014 A positive cross-price elasticity between X and Y indicates the goods are most likely:",
+      "q": "If the cross-price elasticity between X and Y is positive, which relationship between the goods is most likely?",
       "options": [
         "Substitutes",
         "Complements",
@@ -1992,7 +1992,7 @@ const microSkillRepairPools = {
     {
       "id": 500048,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using streaming subscriptions, the Archivist asks: concept repair \u2014 A positive cross-price elasticity between X and Y indicates the goods are most likely:",
+      "q": "If the cross-price elasticity between X and Y is positive, which relationship between the goods is most likely?",
       "options": [
         "Substitutes",
         "Complements",
@@ -2015,7 +2015,7 @@ const microSkillRepairPools = {
     {
       "id": 500049,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using campus meals, the Archivist asks: concept repair \u2014 A positive cross-price elasticity between X and Y indicates the goods are most likely:",
+      "q": "If the cross-price elasticity between X and Y is positive, which relationship between the goods is most likely?",
       "options": [
         "Substitutes",
         "Complements",
@@ -2040,7 +2040,7 @@ const microSkillRepairPools = {
     {
       "id": 500050,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair \u2014 A negative income elasticity means the good is:",
+      "q": "How is a good classified if its income elasticity is negative?",
       "options": [
         "Inferior",
         "Normal",
@@ -2063,7 +2063,7 @@ const microSkillRepairPools = {
     {
       "id": 500051,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using ride-share trips, the Archivist asks: concept repair \u2014 A negative income elasticity means the good is:",
+      "q": "How is a good classified if its income elasticity is negative?",
       "options": [
         "Inferior",
         "Normal",
@@ -2086,7 +2086,7 @@ const microSkillRepairPools = {
     {
       "id": 500052,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using textbook purchases, the Archivist asks: concept repair \u2014 A negative income elasticity means the good is:",
+      "q": "How is a good classified if its income elasticity is negative?",
       "options": [
         "Inferior",
         "Normal",
@@ -2109,7 +2109,7 @@ const microSkillRepairPools = {
     {
       "id": 500053,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using gym memberships, the Archivist asks: concept repair \u2014 A negative income elasticity means the good is:",
+      "q": "How is a good classified if its income elasticity is negative?",
       "options": [
         "Inferior",
         "Normal",
@@ -2134,7 +2134,7 @@ const microSkillRepairPools = {
     {
       "id": 500054,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Concept repair \u2014 Which good is likely to have more elastic demand, other things equal?",
+      "q": "Which good is likely to have more elastic demand, other things equal?",
       "options": [
         "A brand with many close substitutes",
         "A unique emergency medicine with no close substitute",
@@ -2157,7 +2157,7 @@ const microSkillRepairPools = {
     {
       "id": 500055,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using coffee purchases, the Archivist asks: concept repair \u2014 Which good is likely to have more elastic demand, other things equal?",
+      "q": "Which good is likely to have more elastic demand, other things equal?",
       "options": [
         "A brand with many close substitutes",
         "A unique emergency medicine with no close substitute",
@@ -2180,7 +2180,7 @@ const microSkillRepairPools = {
     {
       "id": 500056,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using streaming subscriptions, the Archivist asks: concept repair \u2014 Which good is likely to have more elastic demand, other things equal?",
+      "q": "Which good is likely to have more elastic demand, other things equal?",
       "options": [
         "A brand with many close substitutes",
         "A unique emergency medicine with no close substitute",
@@ -2203,7 +2203,7 @@ const microSkillRepairPools = {
     {
       "id": 500057,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During targeted concept repair using campus meals, the Archivist asks: concept repair \u2014 Which good is likely to have more elastic demand, other things equal?",
+      "q": "Which good is likely to have more elastic demand, other things equal?",
       "options": [
         "A brand with many close substitutes",
         "A unique emergency medicine with no close substitute",
@@ -2231,7 +2231,7 @@ const microSkillBridgePools = {
     {
       "id": 600000,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check \u2014 A consumer ranks A above B, but B is the only affordable bundle. Which prediction follows from constrained choice?",
+      "q": "A consumer ranks A above B, but B is the only affordable bundle. Which prediction follows from constrained choice?",
       "options": [
         "Choose B because A is infeasible",
         "Choose A because preferences always override constraints",
@@ -2254,12 +2254,12 @@ const microSkillBridgePools = {
     {
       "id": 600001,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using campus meals, the Archivist asks: bridge check \u2014 A consumer ranks A above B, but B is the only affordable bundle. Which prediction follows from constrained choice?",
+      "q": "A student chooses between a weekly campus-meal plan and a café plan. The café plan is strictly preferred but costs $45; the budget is $30 and the meal plan costs $25. If these are the only plans and one must be chosen, which choice follows?",
       "options": [
-        "Choose B because A is infeasible",
-        "Choose A because preferences always override constraints",
-        "Choose neither because the ranking is inconsistent",
-        "Choose randomly between A and B"
+        "Choose the meal plan because the preferred café plan is infeasible",
+        "Choose the café plan because preference overrides the budget",
+        "Choose the café plan because unused budget is undesirable",
+        "The prices imply that the meal plan must be preferred"
       ],
       "a": 0,
       "tag": "theory_of_choice",
@@ -2271,13 +2271,13 @@ const microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "theory_of_choice",
       "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
-      "feedback": "Preferences rank alternatives, but the budget set limits which alternatives can actually be chosen.",
+      "feedback": "The café plan lies outside the feasible set. The meal plan is the only affordable plan, so constrained choice selects it without reversing the preference ranking.",
       "source": "engine2_bridge"
     },
     {
       "id": 600002,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using concert tickets, the Archivist asks: bridge check \u2014 A consumer ranks A above B, but B is the only affordable bundle. Which prediction follows from constrained choice?",
+      "q": "A consumer ranks A above B, but B is the only affordable bundle. Which prediction follows from constrained choice?",
       "options": [
         "Choose B because A is infeasible",
         "Choose A because preferences always override constraints",
@@ -2300,7 +2300,7 @@ const microSkillBridgePools = {
     {
       "id": 600003,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using ride-share trips, the Archivist asks: bridge check \u2014 A consumer ranks A above B, but B is the only affordable bundle. Which prediction follows from constrained choice?",
+      "q": "A consumer ranks A above B, but B is the only affordable bundle. Which prediction follows from constrained choice?",
       "options": [
         "Choose B because A is infeasible",
         "Choose A because preferences always override constraints",
@@ -2325,7 +2325,7 @@ const microSkillBridgePools = {
     {
       "id": 600004,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check \u2014 A is preferred to B and B is preferred to C. What must hold if preferences are transitive?",
+      "q": "A is preferred to B and B is preferred to C. What must hold if preferences are transitive?",
       "options": [
         "A is preferred to C",
         "C is preferred to A",
@@ -2342,18 +2342,18 @@ const microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
-      "feedback": "Transitivity requires A \u227b C when A \u227b B and B \u227b C.",
+      "feedback": "Transitivity requires A ≻ C when A ≻ B and B ≻ C.",
       "source": "engine2_bridge"
     },
     {
       "id": 600005,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using gym memberships, the Archivist asks: bridge check \u2014 A is preferred to B and B is preferred to C. What must hold if preferences are transitive?",
+      "q": "A student strictly prefers a gym pass to a pool pass and a pool pass to a climbing pass. A friend claims the student can also strictly prefer the climbing pass to the gym pass without changing those rankings. Under transitivity, how should that claim be assessed?",
       "options": [
-        "A is preferred to C",
-        "C is preferred to A",
-        "A and C must be identical",
-        "Nothing can be inferred"
+        "Reject it: the first two strict rankings imply gym is preferred to climbing",
+        "Accept it: three strict rankings can always form a cycle",
+        "Accept it if all three passes have the same price",
+        "Reject it because transitivity requires equal utility for every pass"
       ],
       "a": 0,
       "tag": "preferences_complete_transitive",
@@ -2365,13 +2365,13 @@ const microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
-      "feedback": "Transitivity requires A \u227b C when A \u227b B and B \u227b C.",
+      "feedback": "Transitivity links the two supplied rankings: gym≻pool and pool≻climbing imply gym≻climbing. Adding the opposite strict ranking creates a contradiction; price equality does not resolve it.",
       "source": "engine2_bridge"
     },
     {
       "id": 600006,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using movie tickets, the Archivist asks: bridge check \u2014 A is preferred to B and B is preferred to C. What must hold if preferences are transitive?",
+      "q": "A is preferred to B and B is preferred to C. What must hold if preferences are transitive?",
       "options": [
         "A is preferred to C",
         "C is preferred to A",
@@ -2388,13 +2388,13 @@ const microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
-      "feedback": "Transitivity requires A \u227b C when A \u227b B and B \u227b C.",
+      "feedback": "Transitivity requires A ≻ C when A ≻ B and B ≻ C.",
       "source": "engine2_bridge"
     },
     {
       "id": 600007,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using coffee purchases, the Archivist asks: bridge check \u2014 A is preferred to B and B is preferred to C. What must hold if preferences are transitive?",
+      "q": "A is preferred to B and B is preferred to C. What must hold if preferences are transitive?",
       "options": [
         "A is preferred to C",
         "C is preferred to A",
@@ -2411,7 +2411,7 @@ const microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
-      "feedback": "Transitivity requires A \u227b C when A \u227b B and B \u227b C.",
+      "feedback": "Transitivity requires A ≻ C when A ≻ B and B ≻ C.",
       "source": "engine2_bridge"
     }
   ],
@@ -2419,7 +2419,7 @@ const microSkillBridgePools = {
     {
       "id": 600008,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check \u2014 Why can two indifference curves for the same consumer not cross under standard consistent preferences?",
+      "q": "Why can two indifference curves for the same consumer not cross under standard consistent preferences?",
       "options": [
         "A crossing would assign inconsistent utility rankings to the same bundles",
         "Crossing would make income zero",
@@ -2442,7 +2442,7 @@ const microSkillBridgePools = {
     {
       "id": 600009,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using campus meals, the Archivist asks: bridge check \u2014 Why can two indifference curves for the same consumer not cross under standard consistent preferences?",
+      "q": "Why can two indifference curves for the same consumer not cross under standard consistent preferences?",
       "options": [
         "A crossing would assign inconsistent utility rankings to the same bundles",
         "Crossing would make income zero",
@@ -2465,7 +2465,7 @@ const microSkillBridgePools = {
     {
       "id": 600010,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using concert tickets, the Archivist asks: bridge check \u2014 Why can two indifference curves for the same consumer not cross under standard consistent preferences?",
+      "q": "Why can two indifference curves for the same consumer not cross under standard consistent preferences?",
       "options": [
         "A crossing would assign inconsistent utility rankings to the same bundles",
         "Crossing would make income zero",
@@ -2488,7 +2488,7 @@ const microSkillBridgePools = {
     {
       "id": 600011,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using ride-share trips, the Archivist asks: bridge check \u2014 Why can two indifference curves for the same consumer not cross under standard consistent preferences?",
+      "q": "Why can two indifference curves for the same consumer not cross under standard consistent preferences?",
       "options": [
         "A crossing would assign inconsistent utility rankings to the same bundles",
         "Crossing would make income zero",
@@ -2513,9 +2513,9 @@ const microSkillBridgePools = {
     {
       "id": 600012,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check \u2014 At a bundle, MUx=26 and MUy=8. Using MRS=MUx/MUy, what is the MRS?",
+      "q": "At a bundle, MUx=26 and MUy=8. Using MRS=MUx/MUy, what is the MRS?",
       "options": [
-        "3.2 units of Y per unit of X",
+        "3.25 units of Y per unit of X",
         "0.3 units of Y per unit of X",
         "34 units of Y per unit of X",
         "18 units of Y per unit of X"
@@ -2530,13 +2530,13 @@ const microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "marginal_rate_substitution",
       "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
-      "feedback": "MRS=26/8=3.2.",
+      "feedback": "MRS=MUx/MUy=26/8=3.25. At this bundle the consumer is willing to give up 3.25 units of Y for one additional unit of X at the margin.",
       "source": "engine2_bridge"
     },
     {
       "id": 600013,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check \u2014 At a bundle, MUx=28 and MUy=10. Using MRS=MUx/MUy, what is the MRS?",
+      "q": "At a bundle, MUx=28 and MUy=10. Using MRS=MUx/MUy, what is the MRS?",
       "options": [
         "2.8 units of Y per unit of X",
         "0.4 units of Y per unit of X",
@@ -2553,13 +2553,13 @@ const microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "marginal_rate_substitution",
       "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
-      "feedback": "MRS=28/10=2.8.",
+      "feedback": "MRS=28/10=2.8. This is the amount of Y the consumer is willing to give up for one additional unit of X at the margin, holding utility constant.",
       "source": "engine2_bridge"
     },
     {
       "id": 600014,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check \u2014 At a bundle, MUx=30 and MUy=6. Using MRS=MUx/MUy, what is the MRS?",
+      "q": "At a bundle, MUx=30 and MUy=6. Using MRS=MUx/MUy, what is the MRS?",
       "options": [
         "5.0 units of Y per unit of X",
         "0.2 units of Y per unit of X",
@@ -2576,13 +2576,13 @@ const microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "marginal_rate_substitution",
       "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
-      "feedback": "MRS=30/6=5.0.",
+      "feedback": "MRS=30/6=5.0. This is the amount of Y the consumer is willing to give up for one additional unit of X at the margin, holding utility constant.",
       "source": "engine2_bridge"
     },
     {
       "id": 600015,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check \u2014 At a bundle, MUx=32 and MUy=8. Using MRS=MUx/MUy, what is the MRS?",
+      "q": "At a bundle, MUx=32 and MUy=8. Using MRS=MUx/MUy, what is the MRS?",
       "options": [
         "4.0 units of Y per unit of X",
         "0.2 units of Y per unit of X",
@@ -2599,7 +2599,7 @@ const microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "marginal_rate_substitution",
       "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
-      "feedback": "MRS=32/8=4.0.",
+      "feedback": "MRS=32/8=4.0. This is the amount of Y the consumer is willing to give up for one additional unit of X at the margin, holding utility constant.",
       "source": "engine2_bridge"
     }
   ],
@@ -2607,7 +2607,7 @@ const microSkillBridgePools = {
     {
       "id": 600016,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check \u2014 With income $120, Px=$20, and Py=$15, which expression gives the budget-line slope when X is on the horizontal axis?",
+      "q": "With income $120, Px=$20, and Py=$15, which expression gives the budget-line slope when X is on the horizontal axis?",
       "options": [
         "-20/15",
         "-15/20",
@@ -2624,13 +2624,13 @@ const microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "budget_constraint_intercepts_slope",
       "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
-      "feedback": "The budget-line slope is -Px/Py.",
+      "feedback": "With X horizontal and Y vertical, the budget slope is -Px/Py. Buying one more X uses money that could have bought Px/Py units of Y; income determines the intercepts, not this tradeoff.",
       "source": "engine2_bridge"
     },
     {
       "id": 600017,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check \u2014 With income $60, Px=$5, and Py=$20, which expression gives the budget-line slope when X is on the horizontal axis?",
+      "q": "With income $60, Px=$5, and Py=$20, which expression gives the budget-line slope when X is on the horizontal axis?",
       "options": [
         "-5/20",
         "-20/5",
@@ -2647,13 +2647,13 @@ const microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "budget_constraint_intercepts_slope",
       "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
-      "feedback": "The budget-line slope is -Px/Py.",
+      "feedback": "With X horizontal and Y vertical, the budget slope is -Px/Py. Buying one more X uses money that could have bought Px/Py units of Y; income determines the intercepts, not this tradeoff.",
       "source": "engine2_bridge"
     },
     {
       "id": 600018,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check \u2014 With income $80, Px=$10, and Py=$10, which expression gives the budget-line slope when X is on the horizontal axis?",
+      "q": "With income $80, Px=$10, and Py=$10, which expression gives the budget-line slope when X is on the horizontal axis?",
       "options": [
         "-1",
         "+1",
@@ -2676,7 +2676,7 @@ const microSkillBridgePools = {
     {
       "id": 600019,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check \u2014 With income $100, Px=$15, and Py=$15, which expression gives the budget-line slope when X is on the horizontal axis?",
+      "q": "With income $100, Px=$15, and Py=$15, which expression gives the budget-line slope when X is on the horizontal axis?",
       "options": [
         "-1",
         "+1",
@@ -2701,7 +2701,7 @@ const microSkillBridgePools = {
     {
       "id": 600020,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check \u2014 The price of X falls while income and Py are unchanged. How does the budget line change?",
+      "q": "The price of X falls while income and Py are unchanged. How does the budget line change?",
       "options": [
         "It rotates outward around the Y-intercept",
         "It shifts outward in parallel",
@@ -2724,7 +2724,7 @@ const microSkillBridgePools = {
     {
       "id": 600021,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using gym memberships, the Archivist asks: bridge check \u2014 The price of X falls while income and Py are unchanged. How does the budget line change?",
+      "q": "The price of X falls while income and Py are unchanged. How does the budget line change?",
       "options": [
         "It rotates outward around the Y-intercept",
         "It shifts outward in parallel",
@@ -2747,7 +2747,7 @@ const microSkillBridgePools = {
     {
       "id": 600022,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using movie tickets, the Archivist asks: bridge check \u2014 The price of X falls while income and Py are unchanged. How does the budget line change?",
+      "q": "The price of X falls while income and Py are unchanged. How does the budget line change?",
       "options": [
         "It rotates outward around the Y-intercept",
         "It shifts outward in parallel",
@@ -2770,7 +2770,7 @@ const microSkillBridgePools = {
     {
       "id": 600023,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using coffee purchases, the Archivist asks: bridge check \u2014 The price of X falls while income and Py are unchanged. How does the budget line change?",
+      "q": "The price of X falls while income and Py are unchanged. How does the budget line change?",
       "options": [
         "It rotates outward around the Y-intercept",
         "It shifts outward in parallel",
@@ -2794,18 +2794,18 @@ const microSkillBridgePools = {
   "utility_maximization_mrs": [
     {
       "id": 6024,
-      "q": "During a bridge check using streaming subscriptions, the Archivist asks: consumer equilibrium occurs where...",
+      "q": "A student consumes meals X and streaming hours Y at a smooth interior optimum with positive marginal utilities. Meals cost $6 and a streaming hour costs $3. If MUy=4 at the optimum, what must MUx equal?",
       "options": [
-        "The highest attainable indifference curve is tangent to the budget line",
-        "Income equals spending on one good",
-        "Demand equals supply",
-        "Utility is zero"
+        "8",
+        "4",
+        "2",
+        "12"
       ],
       "a": 0,
       "tag": "utility_maximization_mrs",
       "type": "definition",
       "objective": "LO3.4",
-      "feedback": "Consumers maximize utility at the point where the best affordable indifference curve touches the budget line.",
+      "feedback": "At an interior optimum MUx/Px=MUy/Py. Thus MUx/6=4/3 and MUx=8. Prices need not be equal; marginal utility per dollar must be.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "bridge",
       "conceptCluster": "LO3.4_utility_maximization_mrs",
@@ -2817,18 +2817,18 @@ const microSkillBridgePools = {
     },
     {
       "id": 6025,
-      "q": "During a bridge check using campus meals, the Archivist asks: at the optimal bundle, the marginal rate of substitution equals...",
+      "q": "At a smooth interior optimum, campus meals X cost $8 and transport rides Y cost $2. Using the positive MRS=MUx/MUy convention, how many rides is the student willing to give up for one extra meal at the margin?",
       "options": [
-        "The ratio of prices",
-        "Total income",
-        "The slope of the demand curve",
-        "Total utility"
+        "4 rides",
+        "0.25 ride",
+        "6 rides",
+        "10 rides"
       ],
       "a": 0,
       "tag": "utility_maximization_mrs",
       "type": "definition",
       "objective": "LO3.4",
-      "feedback": "Consumer equilibrium occurs where MRS equals the price ratio.",
+      "feedback": "Interior optimality requires MRS=Px/Py=8/2=4 rides per meal. This is a marginal willingness to substitute, not the total number of rides purchased.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "bridge",
       "conceptCluster": "LO3.4_utility_maximization_mrs",
@@ -2840,18 +2840,18 @@ const microSkillBridgePools = {
     },
     {
       "id": 6028,
-      "q": "If a consumer moves along a budget line to a higher indifference curve, utility...",
+      "q": "How does utility change when a consumer moves along the budget line to a higher indifference curve?",
       "options": [
-        "Increases",
-        "Decreases",
-        "Stays the same",
-        "Becomes zero"
+        "Utility increases",
+        "Utility decreases",
+        "Utility stays the same",
+        "Utility becomes zero"
       ],
       "a": 0,
       "tag": "utility_maximization_mrs",
       "type": "interpretation",
       "objective": "LO3.4",
-      "feedback": "Higher curves represent greater satisfaction.",
+      "feedback": "With both goods desirable, a bundle above a given indifference curve offers more of at least one good than a bundle on that curve without less of the other, so it is preferred.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "bridge",
       "conceptCluster": "LO3.4_utility_maximization_mrs",
@@ -2863,18 +2863,18 @@ const microSkillBridgePools = {
     },
     {
       "id": 6029,
-      "q": "A corner solution occurs when...",
+      "q": "What characterizes a corner solution in consumer choice?",
       "options": [
-        "Tangency is not possible",
-        "MRS equals price ratio",
-        "Income is zero",
-        "Prices are equal"
+        "Only one of the two goods is consumed",
+        "Both goods must be consumed in equal quantities",
+        "Income must be zero",
+        "Both prices must be equal"
       ],
       "a": 0,
       "tag": "utility_maximization_mrs",
       "type": "definition",
       "objective": "LO3.4",
-      "feedback": "Sometimes the best bundle is at an endpoint.",
+      "feedback": "At a corner solution, the chosen bundle is an endpoint of the budget line, with zero consumption of one good. An interior tangency condition need not hold there.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "bridge",
       "conceptCluster": "LO3.4_utility_maximization_mrs",
@@ -2888,7 +2888,7 @@ const microSkillBridgePools = {
   "marginal_utility_per_dollar": [
     {
       "id": 6026,
-      "q": "During a bridge check using concert tickets, the Archivist asks: if MUx/Px is greater than MUy/Py, the consumer should...",
+      "q": "A consumer allocates spending between concert tickets X and another good Y. If MUx/Px exceeds MUy/Py, how should the consumer adjust purchases to increase utility?",
       "options": [
         "Consume more X and less Y",
         "Consume more Y and less X",
@@ -2911,7 +2911,7 @@ const microSkillBridgePools = {
     },
     {
       "id": 6027,
-      "q": "If MRS > Px/Py, the consumer is...",
+      "q": "Assume positive marginal utilities, smooth preferences, positive consumption of both goods and a feasible small reallocation of spending. If MRS exceeds Px/Py, what does this imply about the consumer's current allocation?",
       "options": [
         "Not maximizing utility",
         "At equilibrium",
@@ -2922,7 +2922,7 @@ const microSkillBridgePools = {
       "tag": "marginal_utility_per_dollar",
       "type": "interpretation",
       "objective": "LO3.4",
-      "feedback": "MRS must equal the price ratio at equilibrium.",
+      "feedback": "If marginal utility per dollar differs, transfer spending from the lower-ratio good to the higher-ratio good to raise utility. The feasible interior reallocation assumption matters; an unavailable corner direction cannot be used.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "bridge",
       "conceptCluster": "LO3.4_marginal_utility_per_dollar",
@@ -2934,18 +2934,18 @@ const microSkillBridgePools = {
     },
     {
       "id": 6030,
-      "q": "If MUx/Px \u2260 MUy/Py, the consumer...",
+      "q": "Assume positive marginal utilities, smooth preferences, positive consumption of both goods and a feasible small reallocation of spending. If MUx/Px differs from MUy/Py, what can be concluded about the consumer's allocation?",
       "options": [
-        "Can increase utility",
-        "Is at equilibrium",
-        "Has no preferences",
-        "Must reduce consumption"
+        "The consumer can increase utility",
+        "The consumer is at equilibrium",
+        "The consumer has no preferences",
+        "The consumer must reduce consumption"
       ],
       "a": 0,
       "tag": "marginal_utility_per_dollar",
       "type": "interpretation",
       "objective": "LO3.4",
-      "feedback": "Unequal marginal utility per dollar means reallocation can improve utility.",
+      "feedback": "If marginal utility per dollar differs, transfer spending from the lower-ratio good to the higher-ratio good to raise utility. The feasible interior reallocation assumption matters; an unavailable corner direction cannot be used.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "bridge",
       "conceptCluster": "LO3.4_marginal_utility_per_dollar",
@@ -2958,7 +2958,7 @@ const microSkillBridgePools = {
     {
       "id": 600024,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check \u2014 MUx=30, Px=$5; MUy=16, Py=$4. What does the marginal-utility-per-dollar rule recommend?",
+      "q": "MUx=30, Px=$5; MUy=16, Py=$4. What does the marginal-utility-per-dollar rule recommend?",
       "options": [
         "Buy more X",
         "Buy equal quantities of X and Y",
@@ -2982,7 +2982,7 @@ const microSkillBridgePools = {
   "derive_individual_demand": [
     {
       "id": 6000,
-      "q": "During a bridge check using streaming subscriptions, the Archivist asks: a movement along a demand curve occurs when...",
+      "q": "For streaming subscriptions, which change causes a movement along the demand curve?",
       "options": [
         "The price of the good changes",
         "Income changes",
@@ -2993,7 +2993,7 @@ const microSkillBridgePools = {
       "tag": "derive_individual_demand",
       "type": "definition",
       "objective": "LO4.1",
-      "feedback": "A change in the good\u2019s own price causes movement along the demand curve.",
+      "feedback": "A change in the good’s own price causes movement along the demand curve.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "bridge",
       "conceptCluster": "LO4.1_derive_individual_demand",
@@ -3005,7 +3005,7 @@ const microSkillBridgePools = {
     },
     {
       "id": 6003,
-      "q": "A student says: 'When price rises, demand falls.' What is the mistake?",
+      "q": "A cinema raises its ticket price and sells fewer tickets, with incomes, preferences, and other prices unchanged. A manager says the demand curve has shifted inward. What is the mistake?",
       "options": [
         "They confused demand with quantity demanded",
         "They are correct",
@@ -3016,7 +3016,7 @@ const microSkillBridgePools = {
       "tag": "derive_individual_demand",
       "type": "trap",
       "objective": "LO4.1",
-      "feedback": "Price changes affect quantity demanded, not demand itself.",
+      "feedback": "A change in the good’s own price moves the consumer to another quantity on the same demand curve. A shift of demand means quantities change at each given price because another determinant, such as income or preferences, changes.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "bridge",
       "conceptCluster": "LO4.1_derive_individual_demand",
@@ -3030,7 +3030,7 @@ const microSkillBridgePools = {
       "id": 6004,
       "q": "Which scenario causes a movement along the demand curve?",
       "options": [
-        "A change in the good\u2019s own price",
+        "A change in the good’s own price",
         "A change in income",
         "A change in preferences",
         "An increase in population"
@@ -3039,7 +3039,7 @@ const microSkillBridgePools = {
       "tag": "derive_individual_demand",
       "type": "interpretation",
       "objective": "LO4.1",
-      "feedback": "Only a change in the good\u2019s own price moves along the curve.",
+      "feedback": "Holding other determinants fixed, a change in the good’s own price selects a different point on the existing demand curve. Changes in income, preferences, or the number of buyers shift the curve instead.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "bridge",
       "conceptCluster": "LO4.1_derive_individual_demand",
@@ -3052,7 +3052,7 @@ const microSkillBridgePools = {
     {
       "id": 600025,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check \u2014 A consumer's optimal quantity of X is 8 when Px=$6 and 11 when Px=$4, with income and other prices fixed. These two choices are points on what?",
+      "q": "A consumer's optimal quantity of X is 8 when Px=$6 and 11 when Px=$4, with income and other prices fixed. These two choices are points on what?",
       "options": [
         "The individual's demand curve for X",
         "A market supply curve",
@@ -3076,7 +3076,7 @@ const microSkillBridgePools = {
   "demand_response_income_prices": [
     {
       "id": 6002,
-      "q": "If the price of coffee rises and demand for tea increases, coffee and tea are...",
+      "q": "If a higher price of coffee increases demand for tea, what is the relationship between the goods?",
       "options": [
         "Substitutes",
         "Complements",
@@ -3100,7 +3100,7 @@ const microSkillBridgePools = {
     {
       "id": 600026,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check \u2014 The price of X falls while income and other prices stay fixed. What happens?",
+      "q": "The price of X falls while income and other prices stay fixed. What happens?",
       "options": [
         "Quantity demanded of X changes along the existing demand curve",
         "Demand for X shifts because income changed",
@@ -3123,7 +3123,7 @@ const microSkillBridgePools = {
     {
       "id": 600027,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using ride-share trips, the Archivist asks: bridge check \u2014 The price of X falls while income and other prices stay fixed. What happens?",
+      "q": "The price of X falls while income and other prices stay fixed. What happens?",
       "options": [
         "Quantity demanded of X changes along the existing demand curve",
         "Demand for X shifts because income changed",
@@ -3146,7 +3146,7 @@ const microSkillBridgePools = {
     {
       "id": 600028,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using textbook purchases, the Archivist asks: bridge check \u2014 The price of X falls while income and other prices stay fixed. What happens?",
+      "q": "The price of X falls while income and other prices stay fixed. What happens?",
       "options": [
         "Quantity demanded of X changes along the existing demand curve",
         "Demand for X shifts because income changed",
@@ -3170,7 +3170,7 @@ const microSkillBridgePools = {
   "normal_inferior_goods": [
     {
       "id": 6016,
-      "q": "A normal good is one where...",
+      "q": "A household wants to buy more fresh fruit when its income rises, even though fruit prices and other conditions stay the same. What makes fruit a normal good for this household?",
       "options": [
         "Demand rises as income rises",
         "Demand falls as income rises",
@@ -3181,7 +3181,7 @@ const microSkillBridgePools = {
       "tag": "normal_inferior_goods",
       "type": "definition",
       "objective": "LO4.2",
-      "feedback": "Normal goods are purchased more when income increases.",
+      "feedback": "For a normal good, higher income raises the quantity consumers want at each given price. The definition concerns income, not a change in the good’s own price.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "bridge",
       "conceptCluster": "LO4.2_normal_inferior_goods",
@@ -3193,7 +3193,7 @@ const microSkillBridgePools = {
     },
     {
       "id": 6017,
-      "q": "An inferior good is one where...",
+      "q": "How does demand for an inferior good respond to an increase in income?",
       "options": [
         "Demand falls as income rises",
         "Demand rises as income rises",
@@ -3216,7 +3216,7 @@ const microSkillBridgePools = {
     },
     {
       "id": 6018,
-      "q": "If income rises and people buy more restaurant meals, restaurant meals are...",
+      "q": "If people buy more restaurant meals when income rises, how are restaurant meals classified?",
       "options": [
         "Normal goods",
         "Inferior goods",
@@ -3239,7 +3239,7 @@ const microSkillBridgePools = {
     },
     {
       "id": 6019,
-      "q": "If income rises and demand falls, the good is...",
+      "q": "How is a good classified if demand falls when income rises?",
       "options": [
         "Inferior",
         "Normal",
@@ -3264,7 +3264,7 @@ const microSkillBridgePools = {
   "substitution_effect": [
     {
       "id": 6008,
-      "q": "The substitution effect occurs because...",
+      "q": "What causes the substitution effect of a price change?",
       "options": [
         "Relative prices change",
         "Income changes",
@@ -3287,7 +3287,7 @@ const microSkillBridgePools = {
     },
     {
       "id": 6010,
-      "q": "When the price of a good falls, the substitution effect causes consumers to...",
+      "q": "Apples become cheaper relative to oranges. Holding a shopper’s purchasing power constant to isolate the substitution effect, how does the shopper adjust purchases?",
       "options": [
         "Buy more of the relatively cheaper good",
         "Buy less of the good",
@@ -3298,7 +3298,7 @@ const microSkillBridgePools = {
       "tag": "substitution_effect",
       "type": "interpretation",
       "objective": "LO4.3",
-      "feedback": "Consumers substitute toward the relatively cheaper good.",
+      "feedback": "When a good’s price falls relative to other goods, it becomes cheaper to obtain compared with those alternatives. Holding purchasing power constant isolates the substitution effect: consumers choose more of the relatively cheaper good.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "bridge",
       "conceptCluster": "LO4.3_substitution_effect",
@@ -3321,7 +3321,7 @@ const microSkillBridgePools = {
       "tag": "substitution_effect",
       "type": "definition",
       "objective": "LO4.3",
-      "feedback": "Substitution effect comes from changes in relative prices.",
+      "feedback": "The substitution effect describes how a change in relative prices changes the preferred mix of goods, holding purchasing power constant. The income effect instead captures the change caused by greater or lower purchasing power.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "bridge",
       "conceptCluster": "LO4.3_substitution_effect",
@@ -3333,7 +3333,7 @@ const microSkillBridgePools = {
     },
     {
       "id": 6013,
-      "q": "When the price of a good falls, which effect always increases quantity demanded?",
+      "q": "Under standard convex preferences, after an own-price fall, which effect never reduces the compensated quantity of that good demanded?",
       "options": [
         "Substitution effect",
         "Income effect",
@@ -3344,7 +3344,7 @@ const microSkillBridgePools = {
       "tag": "substitution_effect",
       "type": "interpretation",
       "objective": "LO4.3",
-      "feedback": "Substitution effect always increases consumption of the relatively cheaper good.",
+      "feedback": "The substitution effect favors the relatively cheaper good, so its compensated quantity cannot fall. The effect may be zero, as with perfect complements. The income effect can have either sign.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "bridge",
       "conceptCluster": "LO4.3_substitution_effect",
@@ -3358,7 +3358,7 @@ const microSkillBridgePools = {
   "income_effect": [
     {
       "id": 6009,
-      "q": "The income effect occurs because...",
+      "q": "What causes the income effect of a price change?",
       "options": [
         "A price change changes purchasing power",
         "Consumers always buy less",
@@ -3369,7 +3369,7 @@ const microSkillBridgePools = {
       "tag": "income_effect",
       "type": "definition",
       "objective": "LO4.3",
-      "feedback": "When price changes, the consumer\u2019s real purchasing power changes too.",
+      "feedback": "When price changes, the consumer’s real purchasing power changes too.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "bridge",
       "conceptCluster": "LO4.3_income_effect",
@@ -3405,7 +3405,7 @@ const microSkillBridgePools = {
     {
       "id": 600029,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check \u2014 X is a normal good. Px falls. What direction does the income effect have on X?",
+      "q": "The price of normal good X falls while income and other prices stay fixed. How does the income effect influence consumption of X?",
       "options": [
         "It increases consumption of X",
         "It decreases consumption of X",
@@ -3428,7 +3428,7 @@ const microSkillBridgePools = {
     {
       "id": 600030,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using movie tickets, the Archivist asks: bridge check \u2014 X is a normal good. Px falls. What direction does the income effect have on X?",
+      "q": "The price of normal good X falls while income and other prices stay fixed. How does the income effect influence consumption of X?",
       "options": [
         "It increases consumption of X",
         "It decreases consumption of X",
@@ -3454,7 +3454,7 @@ const microSkillBridgePools = {
       "id": 6023,
       "q": "Which case would violate the law of demand?",
       "options": [
-        "Income effect outweighs substitution effect",
+        "The good is inferior and its opposing income effect exceeds the substitution effect",
         "Substitution effect dominates",
         "Demand shifts outward",
         "Price decreases"
@@ -3463,7 +3463,7 @@ const microSkillBridgePools = {
       "tag": "giffen_good_logic",
       "type": "trap",
       "objective": "LO4.3",
-      "feedback": "This describes a Giffen good.",
+      "feedback": "For a Giffen good, a price fall creates a substitution effect toward the good but an opposing income effect away from the inferior good. If the latter is larger, total quantity demanded falls as price falls.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "bridge",
       "conceptCluster": "LO4.3_giffen_good_logic",
@@ -3476,7 +3476,7 @@ const microSkillBridgePools = {
     {
       "id": 600031,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check \u2014 Which condition is necessary for Giffen behavior?",
+      "q": "Which condition is necessary for Giffen behavior?",
       "options": [
         "The good must be inferior and the income effect must dominate the substitution effect",
         "The good must be normal",
@@ -3499,7 +3499,7 @@ const microSkillBridgePools = {
     {
       "id": 600032,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using streaming subscriptions, the Archivist asks: bridge check \u2014 Which condition is necessary for Giffen behavior?",
+      "q": "Which condition is necessary for Giffen behavior?",
       "options": [
         "The good must be inferior and the income effect must dominate the substitution effect",
         "The good must be normal",
@@ -3522,7 +3522,7 @@ const microSkillBridgePools = {
     {
       "id": 600033,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using campus meals, the Archivist asks: bridge check \u2014 Which condition is necessary for Giffen behavior?",
+      "q": "Which condition is necessary for Giffen behavior?",
       "options": [
         "The good must be inferior and the income effect must dominate the substitution effect",
         "The good must be normal",
@@ -3546,10 +3546,10 @@ const microSkillBridgePools = {
   "demand_curve_shifts": [
     {
       "id": 6001,
-      "q": "A demand curve shifts when...",
+      "q": "Which type of change shifts a demand curve?",
       "options": [
         "Income or preferences change",
-        "The good\u2019s own price changes",
+        "The good’s own price changes",
         "Firms change production",
         "Technology changes"
       ],
@@ -3557,7 +3557,7 @@ const microSkillBridgePools = {
       "tag": "demand_curve_shifts",
       "type": "definition",
       "objective": "LO4.4",
-      "feedback": "Demand shifts occur when factors other than the good\u2019s own price change.",
+      "feedback": "Demand shifts occur when factors other than the good’s own price change.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "bridge",
       "conceptCluster": "LO4.4_demand_curve_shifts",
@@ -3569,7 +3569,7 @@ const microSkillBridgePools = {
     },
     {
       "id": 6005,
-      "q": "If both income and price increase, what happens to demand?",
+      "q": "Income and a good's own price both rise. The good's income responsiveness is unknown. What can be concluded about the direction of the shift in its demand curve?",
       "options": [
         "Cannot be determined without more information",
         "Demand always increases",
@@ -3580,7 +3580,7 @@ const microSkillBridgePools = {
       "tag": "demand_curve_shifts",
       "type": "trap",
       "objective": "LO4.4",
-      "feedback": "Multiple factors can affect demand and quantity demanded differently, so the net result cannot be determined without more information.",
+      "feedback": "The own-price increase causes movement along demand. Whether higher income shifts demand outward, inward, or not at all depends on whether the good is normal, inferior, or income-neutral.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "bridge",
       "conceptCluster": "LO4.4_demand_curve_shifts",
@@ -3615,7 +3615,7 @@ const microSkillBridgePools = {
     },
     {
       "id": 6007,
-      "q": "If the price of a substitute falls, demand for the good will...",
+      "q": "Two cafés sell coffee that customers view as close substitutes. One café cuts its price. Holding the other café’s price fixed, what happens to demand for the other café’s coffee?",
       "options": [
         "Decrease",
         "Increase",
@@ -3626,7 +3626,7 @@ const microSkillBridgePools = {
       "tag": "demand_curve_shifts",
       "type": "interpretation",
       "objective": "LO4.4",
-      "feedback": "Cheaper substitutes reduce demand for the original good.",
+      "feedback": "When a substitute becomes cheaper, some consumers switch to it. At any given price of the original good, fewer units are demanded, so its demand curve shifts inward.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "bridge",
       "conceptCluster": "LO4.4_demand_curve_shifts",
@@ -3641,7 +3641,7 @@ const microSkillBridgePools = {
     {
       "id": 600034,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check \u2014 A buyer's willingness to pay remains $60. Price falls from $35 to $25. By how much does this buyer's consumer surplus rise?",
+      "q": "A buyer's willingness to pay remains $60. Price falls from $35 to $25. By how much does this buyer's consumer surplus rise?",
       "options": [
         "$10",
         "$35",
@@ -3664,7 +3664,7 @@ const microSkillBridgePools = {
     {
       "id": 600035,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check \u2014 A buyer's willingness to pay remains $65. Price falls from $20 to $10. By how much does this buyer's consumer surplus rise?",
+      "q": "A buyer's willingness to pay remains $65. Price falls from $20 to $10. By how much does this buyer's consumer surplus rise?",
       "options": [
         "$10",
         "$55",
@@ -3687,7 +3687,7 @@ const microSkillBridgePools = {
     {
       "id": 600036,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check \u2014 A buyer's willingness to pay remains $70. Price falls from $25 to $15. By how much does this buyer's consumer surplus rise?",
+      "q": "A buyer's willingness to pay remains $70. Price falls from $25 to $15. By how much does this buyer's consumer surplus rise?",
       "options": [
         "$10",
         "$55",
@@ -3710,7 +3710,7 @@ const microSkillBridgePools = {
     {
       "id": 600037,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check \u2014 A buyer's willingness to pay remains $50. Price falls from $30 to $20. By how much does this buyer's consumer surplus rise?",
+      "q": "A buyer's willingness to pay remains $50. Price falls from $30 to $20. By how much does this buyer's consumer surplus rise?",
       "options": [
         "$10",
         "$30",
@@ -3735,7 +3735,7 @@ const microSkillBridgePools = {
     {
       "id": 600038,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check \u2014 How is a market demand curve constructed from individual demand curves?",
+      "q": "How is a market demand curve constructed from individual demand curves?",
       "options": [
         "Add individual quantities demanded at each price",
         "Average individual prices at each quantity",
@@ -3758,7 +3758,7 @@ const microSkillBridgePools = {
     {
       "id": 600039,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using coffee purchases, the Archivist asks: bridge check \u2014 How is a market demand curve constructed from individual demand curves?",
+      "q": "How is a market demand curve constructed from individual demand curves?",
       "options": [
         "Add individual quantities demanded at each price",
         "Average individual prices at each quantity",
@@ -3781,7 +3781,7 @@ const microSkillBridgePools = {
     {
       "id": 600040,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using streaming subscriptions, the Archivist asks: bridge check \u2014 How is a market demand curve constructed from individual demand curves?",
+      "q": "How is a market demand curve constructed from individual demand curves?",
       "options": [
         "Add individual quantities demanded at each price",
         "Average individual prices at each quantity",
@@ -3804,7 +3804,7 @@ const microSkillBridgePools = {
     {
       "id": 600041,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using campus meals, the Archivist asks: bridge check \u2014 How is a market demand curve constructed from individual demand curves?",
+      "q": "How is a market demand curve constructed from individual demand curves?",
       "options": [
         "Add individual quantities demanded at each price",
         "Average individual prices at each quantity",
@@ -3828,7 +3828,7 @@ const microSkillBridgePools = {
   "price_elasticity_fundamentals": [
     {
       "id": 6032,
-      "q": "During a bridge check using streaming subscriptions, the Archivist asks: price elasticity of demand measures...",
+      "q": "What does the price elasticity of demand for streaming subscriptions measure?",
       "options": [
         "How responsive quantity demanded is to price changes",
         "How responsive supply is to price changes",
@@ -3851,7 +3851,7 @@ const microSkillBridgePools = {
     },
     {
       "id": 6033,
-      "q": "If elasticity is greater than 1, demand is...",
+      "q": "How is demand classified when the absolute value of its price elasticity exceeds 1?",
       "options": [
         "Elastic",
         "Inelastic",
@@ -3874,7 +3874,7 @@ const microSkillBridgePools = {
     },
     {
       "id": 6034,
-      "q": "If elasticity is less than 1, demand is...",
+      "q": "How is demand classified when the absolute value of its price elasticity is below 1?",
       "options": [
         "Inelastic",
         "Elastic",
@@ -3897,12 +3897,12 @@ const microSkillBridgePools = {
     },
     {
       "id": 6035,
-      "q": "If demand is elastic, a price increase will...",
+      "q": "If demand is elastic, how does a price increase affect total revenue?",
       "options": [
-        "Decrease total revenue",
-        "Increase total revenue",
-        "Not affect revenue",
-        "Double revenue"
+        "Total revenue falls",
+        "Total revenue rises",
+        "Total revenue remains unchanged",
+        "Total revenue doubles"
       ],
       "a": 0,
       "tag": "price_elasticity_fundamentals",
@@ -3923,7 +3923,7 @@ const microSkillBridgePools = {
     {
       "id": 600042,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check \u2014 Price rises from $34 to $38; quantity falls from 65 to 45. Using midpoint percentage changes, approximately what is |Ed|?",
+      "q": "Price rises from $34 to $38; quantity falls from 65 to 45. Using midpoint percentage changes, approximately what is |Ed|?",
       "options": [
         "3.27",
         "5.00",
@@ -3940,13 +3940,13 @@ const microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "midpoint_elasticity",
       "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
-      "feedback": "Midpoint %\u0394Q=-20/55; %\u0394P=4/36; |Ed|\u22483.27.",
+      "feedback": "Midpoint %ΔQ=-20/55; %ΔP=4/36; |Ed|≈3.27.",
       "source": "engine2_bridge"
     },
     {
       "id": 600043,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check \u2014 Price rises from $36 to $40; quantity falls from 60 to 40. Using midpoint percentage changes, approximately what is |Ed|?",
+      "q": "Price rises from $36 to $40; quantity falls from 60 to 40. Using midpoint percentage changes, approximately what is |Ed|?",
       "options": [
         "3.80",
         "5.00",
@@ -3963,13 +3963,13 @@ const microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "midpoint_elasticity",
       "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
-      "feedback": "Midpoint %\u0394Q=-20/50; %\u0394P=4/38; |Ed|\u22483.80.",
+      "feedback": "Midpoint %ΔQ=-20/50; %ΔP=4/38; |Ed|≈3.80.",
       "source": "engine2_bridge"
     },
     {
       "id": 600044,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check \u2014 Price rises from $38 to $42; quantity falls from 55 to 35. Using midpoint percentage changes, approximately what is |Ed|?",
+      "q": "Price rises from $38 to $42; quantity falls from 55 to 35. Using midpoint percentage changes, approximately what is |Ed|?",
       "options": [
         "4.44",
         "5.00",
@@ -3986,13 +3986,13 @@ const microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "midpoint_elasticity",
       "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
-      "feedback": "Midpoint %\u0394Q=-20/45; %\u0394P=4/40; |Ed|\u22484.44.",
+      "feedback": "Midpoint %ΔQ=-20/45; %ΔP=4/40; |Ed|≈4.44.",
       "source": "engine2_bridge"
     },
     {
       "id": 600045,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check \u2014 Price rises from $40 to $44; quantity falls from 50 to 30. Using midpoint percentage changes, approximately what is |Ed|?",
+      "q": "Price rises from $40 to $44; quantity falls from 50 to 30. Using midpoint percentage changes, approximately what is |Ed|?",
       "options": [
         "5.25",
         "5.00",
@@ -4009,7 +4009,7 @@ const microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "midpoint_elasticity",
       "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
-      "feedback": "Midpoint %\u0394Q=-20/40; %\u0394P=4/42; |Ed|\u22485.25.",
+      "feedback": "Midpoint %ΔQ=-20/40; %ΔP=4/42; |Ed|≈5.25.",
       "source": "engine2_bridge"
     }
   ],
@@ -4017,7 +4017,7 @@ const microSkillBridgePools = {
     {
       "id": 600046,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check \u2014 Price rises and total revenue also rises. What does the total-revenue test imply over that range?",
+      "q": "Price rises along an unchanged demand curve and total revenue also rises. What does the total-revenue test imply over that range?",
       "options": [
         "Demand is inelastic",
         "Demand is elastic",
@@ -4034,13 +4034,13 @@ const microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
-      "feedback": "When price and total revenue move in the same direction, demand is inelastic.",
+      "feedback": "With demand unchanged, revenue rises when the midpoint percentage fall in quantity is smaller than the midpoint percentage rise in price. Absolute arc elasticity is below one.",
       "source": "engine2_bridge"
     },
     {
       "id": 600047,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using coffee purchases, the Archivist asks: bridge check \u2014 Price rises and total revenue also rises. What does the total-revenue test imply over that range?",
+      "q": "Price rises along an unchanged demand curve and total revenue also rises. What does the total-revenue test imply over that range?",
       "options": [
         "Demand is inelastic",
         "Demand is elastic",
@@ -4057,13 +4057,13 @@ const microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
-      "feedback": "When price and total revenue move in the same direction, demand is inelastic.",
+      "feedback": "With demand unchanged, revenue rises when the midpoint percentage fall in quantity is smaller than the midpoint percentage rise in price. Absolute arc elasticity is below one.",
       "source": "engine2_bridge"
     },
     {
       "id": 600048,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using streaming subscriptions, the Archivist asks: bridge check \u2014 Price rises and total revenue also rises. What does the total-revenue test imply over that range?",
+      "q": "Price rises along an unchanged demand curve and total revenue also rises. What does the total-revenue test imply over that range?",
       "options": [
         "Demand is inelastic",
         "Demand is elastic",
@@ -4080,13 +4080,13 @@ const microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
-      "feedback": "When price and total revenue move in the same direction, demand is inelastic.",
+      "feedback": "With demand unchanged, revenue rises when the midpoint percentage fall in quantity is smaller than the midpoint percentage rise in price. Absolute arc elasticity is below one.",
       "source": "engine2_bridge"
     },
     {
       "id": 600049,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using campus meals, the Archivist asks: bridge check \u2014 Price rises and total revenue also rises. What does the total-revenue test imply over that range?",
+      "q": "Price rises along an unchanged demand curve and total revenue also rises. What does the total-revenue test imply over that range?",
       "options": [
         "Demand is inelastic",
         "Demand is elastic",
@@ -4103,14 +4103,14 @@ const microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
-      "feedback": "When price and total revenue move in the same direction, demand is inelastic.",
+      "feedback": "With demand unchanged, revenue rises when the midpoint percentage fall in quantity is smaller than the midpoint percentage rise in price. Absolute arc elasticity is below one.",
       "source": "engine2_bridge"
     }
   ],
   "cross_price_elasticity": [
     {
       "id": 6039,
-      "q": "A good with many substitutes is likely to have...",
+      "q": "How elastic is demand likely to be for a good with many substitutes?",
       "options": [
         "Elastic demand",
         "Inelastic demand",
@@ -4134,7 +4134,7 @@ const microSkillBridgePools = {
     {
       "id": 600050,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check \u2014 The price of Y rises 10% and quantity demanded of X falls 5%. What is the cross-price elasticity of demand for X with respect to Py?",
+      "q": "The price of Y rises 10% and quantity demanded of X falls 5%. What is the cross-price elasticity of demand for X with respect to Py?",
       "options": [
         "-0.5",
         "0.5",
@@ -4151,13 +4151,13 @@ const microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "cross_price_elasticity",
       "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
-      "feedback": "Cross-price elasticity = %\u0394Qx/%\u0394Py = -5%/10% = -0.5, consistent with complements.",
+      "feedback": "Cross-price elasticity = %ΔQx/%ΔPy = -5%/10% = -0.5, consistent with complements.",
       "source": "engine2_bridge"
     },
     {
       "id": 600051,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using ride-share trips, the Archivist asks: bridge check \u2014 The price of Y rises 10% and quantity demanded of X falls 5%. What is the cross-price elasticity of demand for X with respect to Py?",
+      "q": "The price of Y rises 10% and quantity demanded of X falls 5%. What is the cross-price elasticity of demand for X with respect to Py?",
       "options": [
         "-0.5",
         "0.5",
@@ -4174,13 +4174,13 @@ const microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "cross_price_elasticity",
       "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
-      "feedback": "Cross-price elasticity = %\u0394Qx/%\u0394Py = -5%/10% = -0.5, consistent with complements.",
+      "feedback": "Cross-price elasticity = %ΔQx/%ΔPy = -5%/10% = -0.5, consistent with complements.",
       "source": "engine2_bridge"
     },
     {
       "id": 600052,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using textbook purchases, the Archivist asks: bridge check \u2014 The price of Y rises 10% and quantity demanded of X falls 5%. What is the cross-price elasticity of demand for X with respect to Py?",
+      "q": "The price of Y rises 10% and quantity demanded of X falls 5%. What is the cross-price elasticity of demand for X with respect to Py?",
       "options": [
         "-0.5",
         "0.5",
@@ -4197,7 +4197,7 @@ const microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "cross_price_elasticity",
       "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
-      "feedback": "Cross-price elasticity = %\u0394Qx/%\u0394Py = -5%/10% = -0.5, consistent with complements.",
+      "feedback": "Cross-price elasticity = %ΔQx/%ΔPy = -5%/10% = -0.5, consistent with complements.",
       "source": "engine2_bridge"
     }
   ],
@@ -4205,7 +4205,7 @@ const microSkillBridgePools = {
     {
       "id": 600053,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check \u2014 Income rises 8% and demand for X rises 12%. What is income elasticity?",
+      "q": "Income rises 8% and demand for X rises 12%. What is income elasticity?",
       "options": [
         "1.5",
         "0.67",
@@ -4228,7 +4228,7 @@ const microSkillBridgePools = {
     {
       "id": 600054,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using movie tickets, the Archivist asks: bridge check \u2014 Income rises 8% and demand for X rises 12%. What is income elasticity?",
+      "q": "Income rises 8% and demand for X rises 12%. What is income elasticity?",
       "options": [
         "1.5",
         "0.67",
@@ -4251,7 +4251,7 @@ const microSkillBridgePools = {
     {
       "id": 600055,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using coffee purchases, the Archivist asks: bridge check \u2014 Income rises 8% and demand for X rises 12%. What is income elasticity?",
+      "q": "Income rises 8% and demand for X rises 12%. What is income elasticity?",
       "options": [
         "1.5",
         "0.67",
@@ -4274,7 +4274,7 @@ const microSkillBridgePools = {
     {
       "id": 600056,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using streaming subscriptions, the Archivist asks: bridge check \u2014 Income rises 8% and demand for X rises 12%. What is income elasticity?",
+      "q": "Income rises 8% and demand for X rises 12%. What is income elasticity?",
       "options": [
         "1.5",
         "0.67",
@@ -4299,7 +4299,7 @@ const microSkillBridgePools = {
     {
       "id": 600057,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Bridge check \u2014 Why does demand often become more elastic over a longer time horizon?",
+      "q": "Why does demand often become more elastic over a longer time horizon?",
       "options": [
         "Consumers have more time to find substitutes and change behavior",
         "Prices stop mattering",
@@ -4322,7 +4322,7 @@ const microSkillBridgePools = {
     {
       "id": 600058,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using concert tickets, the Archivist asks: bridge check \u2014 Why does demand often become more elastic over a longer time horizon?",
+      "q": "Why does demand often become more elastic over a longer time horizon?",
       "options": [
         "Consumers have more time to find substitutes and change behavior",
         "Prices stop mattering",
@@ -4345,7 +4345,7 @@ const microSkillBridgePools = {
     {
       "id": 600059,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using ride-share trips, the Archivist asks: bridge check \u2014 Why does demand often become more elastic over a longer time horizon?",
+      "q": "Why does demand often become more elastic over a longer time horizon?",
       "options": [
         "Consumers have more time to find substitutes and change behavior",
         "Prices stop mattering",
@@ -4368,7 +4368,7 @@ const microSkillBridgePools = {
     {
       "id": 600060,
       "sourceGame": "labyrinthOfChoice",
-      "q": "During a bridge check using textbook purchases, the Archivist asks: bridge check \u2014 Why does demand often become more elastic over a longer time horizon?",
+      "q": "Why does demand often become more elastic over a longer time horizon?",
       "options": [
         "Consumers have more time to find substitutes and change behavior",
         "Prices stop mattering",
@@ -4401,17 +4401,17 @@ const questionBank = {
   "easyBoss": [
     {
       "id": 1000,
-      "q": "The Warden observes: 'Choice begins with preference.' What do preferences represent?",
+      "q": "' What do preferences represent?",
       "options": [
         "The income of a consumer",
-        "The satisfaction a consumer receives from goods",
+        "The consumer’s ranking of alternative bundles",
         "The price of goods in the market",
         "The total quantity purchased"
       ],
       "tag": "preferences_complete_transitive",
       "type": "definition",
       "objective": "LO3.1",
-      "feedback": "Preferences describe how consumers rank bundles based on satisfaction or utility.",
+      "feedback": "Preferences rank bundles according to how desirable the consumer finds them. A utility function represents that ranking; prices and income determine affordability.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "easyBoss",
       "conceptCluster": "LO3.1_preferences_complete_transitive",
@@ -4420,11 +4420,11 @@ const questionBank = {
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
       "source": "legacy_primary",
-      "aHash": "65401002184468b5cbe2e803a096bc643dd83c0a94ab38d4c3574b862c2f5824"
+      "aHash": "eb4ac526844e0649e547dd5b4d7f6ed72bbf771ed26ed5fbc9c6b35fd9f92f6f"
     },
     {
       "id": 1001,
-      "q": "The Warden tests your judgment. A consumer prefers bundle A to bundle B, and B to C. What must be true?",
+      "q": "A consumer has transitive preferences and prefers bundle A to B and B to C. What must be true?",
       "options": [
         "C is preferred to A",
         "A is preferred to C",
@@ -4447,7 +4447,7 @@ const questionBank = {
     },
     {
       "id": 1002,
-      "q": "The Warden challenges consistency. If a consumer\u2019s preferences change unpredictably, what happens?",
+      "q": "Within one decision, a consumer strictly prefers A to B, B to C, and C to A. What does this imply?",
       "options": [
         "Utility maximization improves",
         "Choices become inconsistent",
@@ -4457,7 +4457,7 @@ const questionBank = {
       "tag": "preferences_complete_transitive",
       "type": "interpretation",
       "objective": "LO3.1",
-      "feedback": "Inconsistent preferences prevent stable decision-making and optimization.",
+      "feedback": "This strict preference cycle violates transitivity: A preferred to B and B to C require A preferred to C. Changing preferences over time is a different issue and need not be logically inconsistent.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "easyBoss",
       "conceptCluster": "LO3.1_preferences_complete_transitive",
@@ -4470,7 +4470,7 @@ const questionBank = {
     },
     {
       "id": 1003,
-      "q": "The Warden speaks: 'Some choices leave you unchanged.' What does an indifference curve represent?",
+      "q": "' What does an indifference curve represent?",
       "options": [
         "All bundles with equal income",
         "All bundles with equal utility",
@@ -4493,7 +4493,7 @@ const questionBank = {
     },
     {
       "id": 1004,
-      "q": "The Warden reveals a curve. If a consumer moves along an indifference curve, what happens to total utility?",
+      "q": "If a consumer moves along an indifference curve, what happens to total utility?",
       "options": [
         "It increases",
         "It decreases",
@@ -4516,7 +4516,7 @@ const questionBank = {
     },
     {
       "id": 1005,
-      "q": "The Warden tests your reasoning. If indifference curves cross, what does this imply?",
+      "q": "If indifference curves cross, what does this imply?",
       "options": [
         "Preferences are consistent",
         "Preferences are inconsistent",
@@ -4539,7 +4539,7 @@ const questionBank = {
     },
     {
       "id": 1006,
-      "q": "The Warden states: 'Constraints define possibility.' What does a budget constraint represent?",
+      "q": "' What does a budget constraint represent?",
       "options": [
         "Maximum utility",
         "All affordable combinations of goods",
@@ -4562,7 +4562,7 @@ const questionBank = {
     },
     {
       "id": 1007,
-      "q": "The Warden presents numbers. Income = $60, Px = $10, Py = $5. What is the maximum amount of X if all income is spent on X?",
+      "q": "Income = $60, Px = $10, Py = $5. What is the maximum amount of X if all income is spent on X?",
       "options": [
         "3",
         "4",
@@ -4585,7 +4585,7 @@ const questionBank = {
     },
     {
       "id": 1008,
-      "q": "The Warden shifts reality. If income increases, what happens to the budget constraint?",
+      "q": "Income increases while both goods' prices stay fixed. How does the budget line change?",
       "options": [
         "It rotates inward",
         "It shifts outward",
@@ -4595,7 +4595,7 @@ const questionBank = {
       "tag": "budget_line_changes",
       "type": "interpretation",
       "objective": "LO3.3",
-      "feedback": "An increase in income shifts the budget constraint outward.",
+      "feedback": "Higher income increases both intercepts in the same proportion. Since the price ratio is unchanged, the line shifts outward in parallel.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "easyBoss",
       "conceptCluster": "LO3.3_budget_line_changes",
@@ -4608,7 +4608,7 @@ const questionBank = {
     },
     {
       "id": 1009,
-      "q": "The Warden demands balance. What condition defines consumer equilibrium?",
+      "q": "Assume smooth, locally nonsatiated preferences and an interior optimum with both goods consumed and the budget exhausted. What condition defines consumer equilibrium?",
       "options": [
         "Income equals price",
         "MRS equals price ratio",
@@ -4618,7 +4618,7 @@ const questionBank = {
       "tag": "utility_maximization_mrs",
       "type": "definition",
       "objective": "LO3.4",
-      "feedback": "Equilibrium occurs where MRS equals the price ratio.",
+      "feedback": "At a smooth interior optimum, willingness to substitute equals the market tradeoff: MRS=Px/Py, equivalently MUx/Px=MUy/Py. Corners and kinks need not satisfy this equality.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "easyBoss",
       "conceptCluster": "LO3.4_utility_maximization_mrs",
@@ -4631,7 +4631,7 @@ const questionBank = {
     },
     {
       "id": 1010,
-      "q": "The Warden tests precision. MUx = 20, MUy = 10, Px = 5, Py = 5. Is the consumer maximizing utility?",
+      "q": "Assume the consumer buys positive amounts of both goods and can reallocate spending at the margin. MUx = 20, MUy = 10, Px = 5, Py = 5. Is the consumer maximizing utility?",
       "options": [
         "Yes",
         "No, buy more X",
@@ -4654,7 +4654,7 @@ const questionBank = {
     },
     {
       "id": 1011,
-      "q": "The Warden destabilizes the system. If MRS > (Px/Py), what should the consumer do?",
+      "q": "A consumer buys positive amounts of X and Y and can make small changes in purchases. If MRS > (Px/Py), what should the consumer do?",
       "options": [
         "Buy more Y",
         "Buy more X",
@@ -4677,7 +4677,7 @@ const questionBank = {
     },
     {
       "id": 1012,
-      "q": "The Warden whispers: 'Desire becomes demand.' What does a demand curve represent?",
+      "q": "' What does a demand curve represent?",
       "options": [
         "Income over time",
         "Quantity demanded at different prices",
@@ -4700,7 +4700,7 @@ const questionBank = {
     },
     {
       "id": 1013,
-      "q": "The Warden presents a change. If the price of a good falls, what happens to quantity demanded?",
+      "q": "If the price of a good falls, what happens to quantity demanded?",
       "options": [
         "It falls",
         "It rises",
@@ -4723,7 +4723,7 @@ const questionBank = {
     },
     {
       "id": 1014,
-      "q": "The Warden tests deeper insight. If income rises and a good is normal, what happens to demand?",
+      "q": "If income rises and a good is normal, what happens to demand?",
       "options": [
         "Demand decreases",
         "Demand increases",
@@ -4748,7 +4748,7 @@ const questionBank = {
   "mediumBoss": [
     {
       "id": 3000,
-      "q": "The Decomposer observes: 'Order reveals truth.' What property ensures consistent consumer choice?",
+      "q": "' What property ensures consistent consumer choice?",
       "options": [
         "Completeness",
         "Transitivity",
@@ -4771,7 +4771,7 @@ const questionBank = {
     },
     {
       "id": 3001,
-      "q": "The Decomposer tests logic. A consumer prefers A to B and is indifferent between B and C. What must be true?",
+      "q": "A consumer has transitive preferences, prefers A to B, and is indifferent between B and C. What must be true?",
       "options": [
         "A is preferred to C",
         "C is preferred to A",
@@ -4781,7 +4781,7 @@ const questionBank = {
       "tag": "preferences_complete_transitive",
       "type": "interpretation",
       "objective": "LO3.2",
-      "feedback": "If A > B and B = C, then A > C.",
+      "feedback": "Transitivity extends across the indifference between B and C. Since A is preferred to B, A must also be preferred to C.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "mediumBoss",
       "conceptCluster": "LO3.2_preferences_complete_transitive",
@@ -4794,7 +4794,7 @@ const questionBank = {
     },
     {
       "id": 3002,
-      "q": "The Decomposer destabilizes choice. If preferences are incomplete, what follows?",
+      "q": "If preferences are incomplete, what follows?",
       "options": [
         "Utility increases",
         "Some bundles cannot be ranked",
@@ -4817,7 +4817,7 @@ const questionBank = {
     },
     {
       "id": 3003,
-      "q": "The Decomposer states: 'Curves reveal substitution.' What does the slope of an indifference curve represent?",
+      "q": "' What does the absolute value of the slope of a downward-sloping indifference curve represent?",
       "options": [
         "Price ratio",
         "Marginal rate of substitution",
@@ -4827,7 +4827,7 @@ const questionBank = {
       "tag": "marginal_rate_substitution",
       "type": "definition",
       "objective": "LO3.2",
-      "feedback": "The slope equals the marginal rate of substitution (MRS).",
+      "feedback": "With X horizontal and Y vertical, MRS is the amount of Y the consumer would give up for one more X while keeping utility constant. Under the positive MRS convention, it is the absolute value of the indifference curve slope.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "mediumBoss",
       "conceptCluster": "LO3.2_marginal_rate_substitution",
@@ -4840,7 +4840,7 @@ const questionBank = {
     },
     {
       "id": 3004,
-      "q": "The Decomposer presents a curve. If MRS decreases as X increases, what does this imply?",
+      "q": "If MRS decreases as X increases, what does this imply?",
       "options": [
         "Perfect substitutes",
         "Diminishing marginal rate of substitution",
@@ -4863,7 +4863,7 @@ const questionBank = {
     },
     {
       "id": 3005,
-      "q": "The Decomposer presses deeper. If indifference curves are straight lines, what does this imply?",
+      "q": "If indifference curves are straight lines, what does this imply?",
       "options": [
         "Perfect complements",
         "Perfect substitutes",
@@ -4873,7 +4873,7 @@ const questionBank = {
       "tag": "marginal_rate_substitution",
       "type": "interpretation",
       "objective": "LO3.2",
-      "feedback": "Straight lines imply a constant MRS\u2014perfect substitutes.",
+      "feedback": "Straight lines imply a constant MRS—perfect substitutes.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "mediumBoss",
       "conceptCluster": "LO3.2_marginal_rate_substitution",
@@ -4886,7 +4886,7 @@ const questionBank = {
     },
     {
       "id": 3006,
-      "q": "The Decomposer declares: 'Constraints shift the path.' What happens when the price of good X falls?",
+      "q": "The price of good X falls while income and the price of Y remain fixed. How does the budget line change?",
       "options": [
         "Budget shifts outward",
         "Budget rotates outward",
@@ -4909,7 +4909,7 @@ const questionBank = {
     },
     {
       "id": 3007,
-      "q": "The Decomposer calculates. Income = $100, Px falls from $10 to $5. What happens to the X-intercept?",
+      "q": "Income = $100, Px falls from $10 to $5. What happens to the X-intercept?",
       "options": [
         "It halves",
         "It doubles",
@@ -4919,7 +4919,7 @@ const questionBank = {
       "tag": "budget_constraint_intercepts_slope",
       "type": "calculation",
       "objective": "LO3.3",
-      "feedback": "100/10 = 10 \u2192 100/5 = 20, so it doubles.",
+      "feedback": "100/10 = 10 → 100/5 = 20, so it doubles.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "mediumBoss",
       "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
@@ -4932,7 +4932,7 @@ const questionBank = {
     },
     {
       "id": 3008,
-      "q": "The Decomposer challenges. If both income and prices double, what happens to the budget constraint?",
+      "q": "If both income and prices double, what happens to the budget constraint?",
       "options": [
         "It shifts outward",
         "It rotates",
@@ -4955,17 +4955,17 @@ const questionBank = {
     },
     {
       "id": 3009,
-      "q": "The Decomposer insists: 'Balance is precise.' What defines equilibrium in terms of marginal utility?",
+      "q": "Assume smooth, locally nonsatiated preferences and an interior optimum with both goods consumed and the budget exhausted. ' What defines equilibrium in terms of marginal utility?",
       "options": [
         "MUx = MUy",
         "MUx/Px = MUy/Py",
         "Px = Py",
-        "Utility is maximized"
+        "MUx/Px = −MUy/Py"
       ],
       "tag": "marginal_utility_per_dollar",
       "type": "definition",
       "objective": "LO3.4",
-      "feedback": "Equilibrium occurs where marginal utility per dollar is equal.",
+      "feedback": "At a smooth interior optimum, willingness to substitute equals the market tradeoff: MRS=Px/Py, equivalently MUx/Px=MUy/Py. Corners and kinks need not satisfy this equality.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "mediumBoss",
       "conceptCluster": "LO3.4_marginal_utility_per_dollar",
@@ -4978,7 +4978,7 @@ const questionBank = {
     },
     {
       "id": 3010,
-      "q": "The Decomposer evaluates. MUx = 30, MUy = 15, Px = 10, Py = 5. What should the consumer do?",
+      "q": "A consumer spends the entire budget on positive quantities of X and Y and has smooth, strictly convex, monotonic preferences. MUx = 30, MUy = 15, Px = 10, and Py = 5. What should the consumer do?",
       "options": [
         "Do nothing",
         "Buy more X",
@@ -5001,7 +5001,7 @@ const questionBank = {
     },
     {
       "id": 3011,
-      "q": "The Decomposer twists the system. If MUx/Px > MUy/Py, what must occur?",
+      "q": "A consumer buys both goods and can reallocate a small amount of spending. If MUx/Px exceeds MUy/Py, which change increases utility?",
       "options": [
         "Consume more Y",
         "Consume more X",
@@ -5024,7 +5024,7 @@ const questionBank = {
     },
     {
       "id": 3012,
-      "q": "The Decomposer observes: 'Demand hides deeper forces.' What explains a movement along a demand curve?",
+      "q": "' What explains a movement along a demand curve?",
       "options": [
         "Change in income",
         "Change in price",
@@ -5047,7 +5047,7 @@ const questionBank = {
     },
     {
       "id": 3013,
-      "q": "The Decomposer analyzes. If price falls and quantity demanded rises significantly, what does this suggest?",
+      "q": "Price falls along an unchanged demand curve. The midpoint percentage increase in quantity demanded exceeds the midpoint percentage decrease in price. What does this imply about demand over that interval?",
       "options": [
         "Elastic demand",
         "Inelastic demand",
@@ -5057,7 +5057,7 @@ const questionBank = {
       "tag": "price_elasticity_fundamentals",
       "type": "interpretation",
       "objective": "LO4.7",
-      "feedback": "A large response in quantity demanded indicates elastic demand.",
+      "feedback": "Arc price elasticity compares the magnitudes of midpoint percentage changes. The quantity percentage change is larger, so absolute elasticity exceeds one: demand is elastic.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "mediumBoss",
       "conceptCluster": "LO4.7_price_elasticity_fundamentals",
@@ -5070,7 +5070,7 @@ const questionBank = {
     },
     {
       "id": 3014,
-      "q": "The Decomposer delivers the strike. A price falls and quantity demanded falls. What must be true?",
+      "q": "A good's price falls, with income, preferences, and other prices unchanged, yet its quantity demanded falls. What explains this response?",
       "options": [
         "Income effect dominates substitution effect",
         "Substitution effect is negative",
@@ -5095,7 +5095,7 @@ const questionBank = {
   "finalBoss": [
     {
       "id": 4000,
-      "q": "The Sovereign whispers: 'Order defines choice.' What must hold for preferences to produce consistent optimization?",
+      "q": "' What must hold for preferences to produce consistent optimization?",
       "options": [
         "Preferences must be complete and transitive",
         "Preferences must maximize income",
@@ -5118,7 +5118,7 @@ const questionBank = {
     },
     {
       "id": 4001,
-      "q": "The Sovereign tests logic. A consumer prefers A to B and B to C, but prefers C to A. What does this imply?",
+      "q": "A consumer prefers A to B and B to C, but prefers C to A. What does this imply?",
       "options": [
         "Preferences are complete",
         "Preferences are transitive",
@@ -5141,7 +5141,7 @@ const questionBank = {
     },
     {
       "id": 4002,
-      "q": "The Sovereign distorts the system. If preferences are inconsistent, what happens to equilibrium choice?",
+      "q": "A consumer strictly prefers A to B, B to C, and C to A. All three bundles are affordable. What happens to the prediction of a single best bundle among these alternatives?",
       "options": [
         "It remains unchanged",
         "It becomes indeterminate",
@@ -5151,7 +5151,7 @@ const questionBank = {
       "tag": "preferences_complete_transitive",
       "type": "interpretation",
       "objective": "LO3.1",
-      "feedback": "Without consistent preferences, no stable optimum exists.",
+      "feedback": "Every candidate in this strict cycle is beaten by another affordable alternative. These observations do not identify a bundle that is preferred to all the others.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "finalBoss",
       "conceptCluster": "LO3.1_preferences_complete_transitive",
@@ -5164,7 +5164,7 @@ const questionBank = {
     },
     {
       "id": 4003,
-      "q": "The Sovereign observes: 'Curves reveal structure.' What condition must indifference curves satisfy?",
+      "q": "' What condition must indifference curves satisfy?",
       "options": [
         "They must cross",
         "They must be linear",
@@ -5187,7 +5187,7 @@ const questionBank = {
     },
     {
       "id": 4004,
-      "q": "The Sovereign evaluates. If MRS = 4 while Px/Py = 2, what does the consumer do?",
+      "q": "A consumer buys both goods and can make a small spending reallocation. If MRS = 4 while Px/Py = 2, which change raises utility?",
       "options": [
         "Consume more Y",
         "Consume more X",
@@ -5210,7 +5210,7 @@ const questionBank = {
     },
     {
       "id": 4005,
-      "q": "The Sovereign connects the system. If indifference curves become flatter as X increases, what follows?",
+      "q": "If indifference curves become flatter as X increases, what follows?",
       "options": [
         "Increasing MRS",
         "Diminishing MRS",
@@ -5233,7 +5233,7 @@ const questionBank = {
     },
     {
       "id": 4006,
-      "q": "The Sovereign declares: 'Constraint defines possibility.' What determines the slope of the budget constraint?",
+      "q": "' What determines the slope of the budget constraint?",
       "options": [
         "Income",
         "Price ratio",
@@ -5256,7 +5256,7 @@ const questionBank = {
     },
     {
       "id": 4007,
-      "q": "The Sovereign calculates. Income doubles while prices remain constant. What happens?",
+      "q": "Income doubles while prices remain constant. What happens?",
       "options": [
         "Budget rotates",
         "Budget shifts outward",
@@ -5279,7 +5279,7 @@ const questionBank = {
     },
     {
       "id": 4008,
-      "q": "The Sovereign tightens the system. If Px falls while income stays constant, what happens?",
+      "q": "The price of X falls while income and the price of Y stay constant. How does the budget line change?",
       "options": [
         "Parallel shift",
         "Rotation outward",
@@ -5302,7 +5302,7 @@ const questionBank = {
     },
     {
       "id": 4009,
-      "q": "The Sovereign commands: 'Balance is precise.' What defines consumer equilibrium?",
+      "q": "Assume smooth, locally nonsatiated preferences and an interior optimum with both goods consumed and the budget exhausted. ' What defines consumer equilibrium?",
       "options": [
         "MUx = MUy",
         "MRS = Px/Py",
@@ -5312,7 +5312,7 @@ const questionBank = {
       "tag": "utility_maximization_mrs",
       "type": "definition",
       "objective": "LO3.4",
-      "feedback": "Consumer equilibrium occurs where MRS equals the price ratio.",
+      "feedback": "At a smooth interior optimum, willingness to substitute equals the market tradeoff: MRS=Px/Py, equivalently MUx/Px=MUy/Py. Corners and kinks need not satisfy this equality.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "finalBoss",
       "conceptCluster": "LO3.4_utility_maximization_mrs",
@@ -5325,7 +5325,7 @@ const questionBank = {
     },
     {
       "id": 4010,
-      "q": "The Sovereign evaluates. MUx/Px = 5 and MUy/Py = 3. What must occur?",
+      "q": "A consumer buys both goods and can make a small spending reallocation. MUx/Px = 5 and MUy/Py = 3. Which change raises utility?",
       "options": [
         "Consume more Y",
         "Consume more X",
@@ -5348,7 +5348,7 @@ const questionBank = {
     },
     {
       "id": 4011,
-      "q": "The Sovereign integrates. A price falls, shifting the budget outward and changing equilibrium. What combination explains this change?",
+      "q": "One good becomes cheaper while income and the other price remain fixed. The budget line rotates outward and the optimal bundle changes. Which two effects decompose the price response?",
       "options": [
         "Only substitution effect",
         "Only income effect",
@@ -5371,7 +5371,7 @@ const questionBank = {
     },
     {
       "id": 4012,
-      "q": "The Sovereign states: 'Demand reveals behavior.' What does elasticity measure?",
+      "q": "' What does elasticity measure?",
       "options": [
         "Total utility",
         "Responsiveness of quantity demanded to price",
@@ -5394,7 +5394,7 @@ const questionBank = {
     },
     {
       "id": 4013,
-      "q": "The Sovereign tests. Price falls and total revenue rises. What must be true?",
+      "q": "A price decrease along an unchanged demand curve raises total revenue. How is midpoint price elasticity classified over that interval?",
       "options": [
         "Demand is elastic",
         "Demand is inelastic",
@@ -5417,7 +5417,7 @@ const questionBank = {
     },
     {
       "id": 4014,
-      "q": "The Sovereign delivers final judgment. A price falls and quantity demanded falls. What must be true?",
+      "q": "A good's price falls, with income, preferences, and other prices unchanged, yet its quantity demanded falls. What explains this response?",
       "options": [
         "Income effect dominates substitution effect",
         "Substitution effect is negative",
@@ -5442,12 +5442,12 @@ const questionBank = {
   "easy": [
     {
       "id": 1,
-      "q": "A theory of choice assumes individuals...",
+      "q": "What does the theory of consumer choice assume about individuals?",
       "options": [
-        "Make random decisions",
-        "Choose the most preferred affordable bundle",
-        "Always maximize income",
-        "Always minimize work"
+        "Individuals make random decisions",
+        "Individuals choose the most preferred affordable bundle",
+        "Individuals always maximize income",
+        "Individuals always minimize work"
       ],
       "tag": "preferences_complete_transitive",
       "type": "definition",
@@ -5461,11 +5461,11 @@ const questionBank = {
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
       "source": "legacy_primary",
-      "aHash": "7ce26e31be210af181e38f0e121d32105acfbde12da34980a30581e4ea7b841f"
+      "aHash": "2d668e7dc35011086b9f8b7caa80d8260d84ee21233e99f8a80b7f9a7f482a52"
     },
     {
       "id": 2,
-      "q": "Consumer preferences are typically represented using...",
+      "q": "How are consumer preferences typically represented?",
       "options": [
         "Demand curves",
         "Indifference curves",
@@ -5488,7 +5488,7 @@ const questionBank = {
     },
     {
       "id": 3,
-      "q": "Indifference curves represent...",
+      "q": "What do indifference curves represent?",
       "options": [
         "Bundles giving equal utility",
         "Bundles giving equal price",
@@ -5511,7 +5511,7 @@ const questionBank = {
     },
     {
       "id": 4,
-      "q": "Marginal rate of substitution represents...",
+      "q": "What does the marginal rate of substitution represent?",
       "options": [
         "Rate consumers trade one good for another",
         "Price ratio",
@@ -5534,7 +5534,7 @@ const questionBank = {
     },
     {
       "id": 5,
-      "q": "Utility refers to...",
+      "q": "What does utility mean in consumer theory?",
       "options": [
         "Satisfaction a consumer receives",
         "Total income",
@@ -5557,7 +5557,7 @@ const questionBank = {
     },
     {
       "id": 6,
-      "q": "The budget constraint shows...",
+      "q": "What does a budget constraint show?",
       "options": [
         "All affordable combinations of goods",
         "Only preferred bundles",
@@ -5580,7 +5580,7 @@ const questionBank = {
     },
     {
       "id": 7,
-      "q": "A bundle of goods refers to...",
+      "q": "What is a bundle of goods?",
       "options": [
         "A set of goods a consumer may consume",
         "A firm's production level",
@@ -5603,7 +5603,7 @@ const questionBank = {
     },
     {
       "id": 8,
-      "q": "Demand represents...",
+      "q": "What does demand represent?",
       "options": [
         "Quantity consumers are willing and able to buy at different prices",
         "Total production of firms",
@@ -5626,7 +5626,7 @@ const questionBank = {
     },
     {
       "id": 9,
-      "q": "A demand curve typically slopes...",
+      "q": "In which direction does a demand curve typically slope?",
       "options": [
         "Downward",
         "Upward",
@@ -5649,7 +5649,7 @@ const questionBank = {
     },
     {
       "id": 10,
-      "q": "Price elasticity of demand measures...",
+      "q": "What does price elasticity of demand measure?",
       "options": [
         "Responsiveness of quantity demanded to price change",
         "Firm profit",
@@ -5672,7 +5672,7 @@ const questionBank = {
     },
     {
       "id": 11,
-      "q": "Consumer surplus measures...",
+      "q": "What does consumer surplus measure?",
       "options": [
         "Difference between willingness to pay and price",
         "Firm profits",
@@ -5695,7 +5695,7 @@ const questionBank = {
     },
     {
       "id": 12,
-      "q": "Market demand is obtained by...",
+      "q": "How is market demand obtained from individual demands?",
       "options": [
         "Summing individual demand curves horizontally",
         "Summing vertically",
@@ -5718,7 +5718,7 @@ const questionBank = {
     },
     {
       "id": 13,
-      "q": "If elasticity equals 1, demand is...",
+      "q": "How is demand classified when the absolute value of its price elasticity is 1?",
       "options": [
         "Unit elastic",
         "Perfectly elastic",
@@ -5741,7 +5741,7 @@ const questionBank = {
     },
     {
       "id": 14,
-      "q": "If two bundles lie on the same indifference curve...",
+      "q": "What can be concluded about two bundles on the same indifference curve?",
       "options": [
         "They provide equal utility",
         "They cost the same",
@@ -5764,7 +5764,7 @@ const questionBank = {
     },
     {
       "id": 15,
-      "q": "A complete preference ordering means...",
+      "q": "What does a complete preference ordering mean?",
       "options": [
         "Consumers can compare any two bundles",
         "Consumers always prefer cheaper goods",
@@ -5787,7 +5787,7 @@ const questionBank = {
     },
     {
       "id": 16,
-      "q": "Transitive preferences imply...",
+      "q": "What does transitivity of preferences imply?",
       "options": [
         "If A is preferred to B and B to C, then A is preferred to C",
         "Consumers prefer cheaper goods",
@@ -5833,7 +5833,7 @@ const questionBank = {
     },
     {
       "id": 18,
-      "q": "The price of good X falls while income stays the same. What happens to the budget constraint?",
+      "q": "The price of good X falls while income and the price of Y remain unchanged. How does the budget line change?",
       "options": [
         "Rotates outward on the X-axis",
         "Shifts outward parallel",
@@ -5879,7 +5879,7 @@ const questionBank = {
     },
     {
       "id": 20,
-      "q": "If the price of a good rises and consumers buy less of it, this reflects...",
+      "q": "Which economic relationship is illustrated when a higher price leads consumers to buy less of a good?",
       "options": [
         "The law of demand",
         "Perfect competition",
@@ -5902,7 +5902,7 @@ const questionBank = {
     },
     {
       "id": 21,
-      "q": "When the price of coffee rises, many consumers switch to tea. Coffee and tea are...",
+      "q": "When the price of coffee rises, consumers buy more tea. What relationship between coffee and tea does this suggest?",
       "options": [
         "Substitutes",
         "Complements",
@@ -5925,7 +5925,7 @@ const questionBank = {
     },
     {
       "id": 22,
-      "q": "If the price of printers rises and fewer people buy ink cartridges, these goods are...",
+      "q": "When the price of printers rises, consumers buy fewer ink cartridges. What relationship between printers and ink does this suggest?",
       "options": [
         "Complements",
         "Substitutes",
@@ -5948,7 +5948,7 @@ const questionBank = {
     },
     {
       "id": 23,
-      "q": "If price falls and total revenue increases, demand must be...",
+      "q": "A price decrease along an unchanged demand curve raises total revenue. How is midpoint price elasticity classified over that interval?",
       "options": [
         "Elastic",
         "Inelastic",
@@ -5971,12 +5971,12 @@ const questionBank = {
     },
     {
       "id": 24,
-      "q": "A consumer chooses a bundle where the indifference curve touches the budget line. This bundle...",
+      "q": "With smooth, strictly convex, monotonic preferences, a consumer spends the full budget at an interior bundle where the indifference curve is tangent to the budget line. What does this indicate about the bundle?",
       "options": [
-        "Maximizes utility",
-        "Minimizes spending",
-        "Maximizes income",
-        "Eliminates scarcity"
+        "The bundle maximizes utility",
+        "The bundle minimizes spending",
+        "The bundle maximizes income",
+        "The bundle eliminates scarcity"
       ],
       "tag": "utility_maximization_mrs",
       "type": "interpretation",
@@ -5990,7 +5990,7 @@ const questionBank = {
       "repairSkill": "utility_maximization_mrs",
       "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
       "source": "legacy_primary",
-      "aHash": "2812165a89a76b18c5f54dc9949f5e9550b67437f5309b6badeac359f03754bd"
+      "aHash": "1f0d976d8dfd2abe51eb8da330422f3ce5106093e672c2c92c4a833ff913b434"
     },
     {
       "id": 25,
@@ -6017,12 +6017,12 @@ const questionBank = {
     },
     {
       "id": 26,
-      "q": "If more consumers enter a market while prices stay the same, market demand will...",
+      "q": "How does market demand change if more consumers enter the market while prices remain unchanged?",
       "options": [
-        "Increase",
-        "Decrease",
-        "Stay constant",
-        "Become perfectly elastic"
+        "Market demand increases",
+        "Market demand decreases",
+        "Market demand remains unchanged",
+        "Market demand becomes perfectly elastic"
       ],
       "tag": "market_demand_aggregation",
       "type": "interpretation",
@@ -6036,11 +6036,11 @@ const questionBank = {
       "repairSkill": "market_demand_aggregation",
       "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
       "source": "legacy_primary",
-      "aHash": "e20a548f23fa36bc8d5ba48237ec3ee4d4f00087841d3614f81749e3c6c1b47e"
+      "aHash": "db98bdfea819e4d106c2ba22204c20e46af21b7a45bf2c7de2e2691b621e8928"
     },
     {
       "id": 27,
-      "q": "A bundle lies inside the budget constraint but not on the highest indifference curve. This bundle is...",
+      "q": "A bundle is inside the budget constraint but below the highest attainable indifference curve. How should this bundle be described?",
       "options": [
         "Affordable but not optimal",
         "Impossible",
@@ -6063,7 +6063,7 @@ const questionBank = {
     },
     {
       "id": 28,
-      "q": "If consumers are willing to trade fewer units of good Y for each additional unit of X, this reflects...",
+      "q": "As a consumer acquires more X, the consumer is willing to give up fewer units of Y for another unit of X. Which concept does this illustrate?",
       "options": [
         "Diminishing marginal rate of substitution",
         "Increasing elasticity",
@@ -6109,7 +6109,7 @@ const questionBank = {
     },
     {
       "id": 30,
-      "q": "A bundle lies on the budget line. This means...",
+      "q": "What does it mean for a bundle to lie on the budget line?",
       "options": [
         "It is affordable but not necessarily optimal",
         "It always maximizes utility",
@@ -6119,7 +6119,7 @@ const questionBank = {
       "tag": "budget_constraint_intercepts_slope",
       "type": "trap",
       "objective": "LO3.3",
-      "feedback": "Points on the budget line are affordable, but only the point tangent to the highest indifference curve maximizes utility.",
+      "feedback": "A bundle on the budget line spends all available income. It maximizes utility only if no other affordable bundle is preferred; that may occur at an interior tangency or at a corner.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "easy",
       "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
@@ -6132,17 +6132,17 @@ const questionBank = {
     },
     {
       "id": 31,
-      "q": "If income increases, demand for an inferior good will...",
+      "q": "How does an increase in income affect demand for an inferior good?",
       "options": [
-        "Decrease",
-        "Increase",
-        "Stay constant",
-        "Become perfectly elastic"
+        "Demand decreases",
+        "Demand increases",
+        "Demand remains unchanged",
+        "Demand becomes perfectly elastic"
       ],
       "tag": "normal_inferior_goods",
       "type": "trap",
       "objective": "LO4.2",
-      "feedback": "Inferior goods are purchased less when income rises because consumers shift toward higher-quality alternatives.",
+      "feedback": "An inferior good is defined by a fall in demand when income rises, holding prices and preferences fixed. The classification concerns the consumer's income response, not the product's quality.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "easy",
       "conceptCluster": "LO4.2_normal_inferior_goods",
@@ -6151,7 +6151,7 @@ const questionBank = {
       "repairSkill": "normal_inferior_goods",
       "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
       "source": "legacy_primary",
-      "aHash": "b2dc971f4895ca1f298f3f72fa80f67a6a2100532dfc3e74898b93ab12fdb8cd"
+      "aHash": "36679ebb97eb45a56a4d82d758bac6282bee49bc594d4049e53faf34c0bd1299"
     },
     {
       "id": 32,
@@ -6178,12 +6178,12 @@ const questionBank = {
     },
     {
       "id": 33,
-      "q": "If the price of a good falls, demand has...",
+      "q": "If only a good's own price falls, what happens to the position of its demand curve?",
       "options": [
-        "Increased",
-        "Decreased",
-        "Not changed",
-        "Become elastic"
+        "The demand curve shifts outward",
+        "The demand curve shifts inward",
+        "The demand curve remains unchanged",
+        "Demand becomes elastic"
       ],
       "tag": "derive_individual_demand",
       "type": "trap",
@@ -6197,11 +6197,11 @@ const questionBank = {
       "repairSkill": "derive_individual_demand",
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
       "source": "legacy_primary",
-      "aHash": "38de4c9dc0a4417709f3b19cc720962f336ccb29f6d47fcf804e24bb50995cee"
+      "aHash": "59f17acf63927c50c6448173280a0588d6bbcb907a27dc419494bdfe33db0059"
     },
     {
       "id": 34,
-      "q": "A point on a demand curve shows...",
+      "q": "What does a point on a demand curve show?",
       "options": [
         "The quantity demanded at a particular price",
         "All possible prices consumers prefer",
@@ -6224,7 +6224,7 @@ const questionBank = {
     },
     {
       "id": 35,
-      "q": "If income increases and a consumer buys more of a good, that good must be...",
+      "q": "If a consumer buys more of a good when income rises, how is the good classified?",
       "options": [
         "Normal",
         "Inferior",
@@ -6247,7 +6247,7 @@ const questionBank = {
     },
     {
       "id": 36,
-      "q": "If the price of good X changes and the budget line rotates, what stays constant?",
+      "q": "Income and Py are fixed while Px changes. Which budget determinant, besides Py, remains constant as the budget line rotates?",
       "options": [
         "Income",
         "Utility",
@@ -6257,7 +6257,7 @@ const questionBank = {
       "tag": "budget_line_changes",
       "type": "trap",
       "objective": "LO3.3",
-      "feedback": "When a price changes, the budget line rotates but income remains the same.",
+      "feedback": "With income and Py fixed, the Y-intercept M/Py is fixed. A change in Px changes the X-intercept M/Px and rotates the budget line.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "easy",
       "conceptCluster": "LO3.3_budget_line_changes",
@@ -6293,12 +6293,12 @@ const questionBank = {
     },
     {
       "id": 38,
-      "q": "If the price of both goods doubles and income also doubles, the budget constraint...",
+      "q": "How does the budget constraint change if both prices and income double?",
       "options": [
-        "Does not change",
-        "Shifts outward",
-        "Rotates inward",
-        "Becomes vertical"
+        "The budget constraint does not change",
+        "The budget constraint shifts outward",
+        "The budget constraint rotates inward",
+        "The budget constraint becomes vertical"
       ],
       "tag": "budget_constraint_intercepts_slope",
       "type": "trap",
@@ -6312,7 +6312,7 @@ const questionBank = {
       "repairSkill": "budget_constraint_intercepts_slope",
       "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
       "source": "legacy_primary",
-      "aHash": "d88f2633fad59c021750a8e0cdc68605bc4937ae0a3413f88515045d4f9dea5b"
+      "aHash": "28bc17b69db71c5f0855b77671c1bb7732c9b23007dcdaa4e4ab56afd60ef077"
     },
     {
       "id": 110000,
@@ -6356,7 +6356,7 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "marginal_utility_per_dollar",
       "commonError": "compares_marginal_utility_without_dividing_by_price",
-      "feedback": "MUx/Px=20/5=4.",
+      "feedback": "MUx/Px=20/5=4. The ratio measures the extra utility obtained from a dollar spent on X at the current bundle.",
       "source": "engine2_expansion",
       "aHash": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
     },
@@ -6478,7 +6478,7 @@ const questionBank = {
     {
       "id": 110007,
       "sourceGame": "labyrinthOfChoice",
-      "q": "A positive cross-price elasticity between X and Y indicates the goods are most likely:",
+      "q": "If the cross-price elasticity between X and Y is positive, which relationship between the goods is most likely?",
       "options": [
         "Substitutes",
         "Complements",
@@ -6501,7 +6501,7 @@ const questionBank = {
     {
       "id": 110008,
       "sourceGame": "labyrinthOfChoice",
-      "q": "A negative income elasticity means the good is:",
+      "q": "How is a good classified if its income elasticity is negative?",
       "options": [
         "Inferior",
         "Normal",
@@ -6563,14 +6563,14 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "marginal_utility_per_dollar",
       "commonError": "compares_marginal_utility_without_dividing_by_price",
-      "feedback": "MUx/Px=25/5=5.",
+      "feedback": "MUx/Px=25/5=5. The ratio measures the extra utility obtained from a dollar spent on X at the current bundle.",
       "source": "engine2_expansion",
       "aHash": "ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d"
     },
     {
       "id": 110011,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving ride-share trips, when X becomes cheaper relative to Y, what does the substitution effect push the consumer to do?",
+      "q": "When X becomes cheaper relative to Y, what does the substitution effect push the consumer to do?",
       "options": [
         "Buy relatively more X and less Y",
         "Buy relatively less X and more Y",
@@ -6593,7 +6593,7 @@ const questionBank = {
     {
       "id": 110012,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving textbook purchases, a fall in the price of X increases the consumer's real purchasing power. Which component of the price effect captures the response to that purchasing-power change?",
+      "q": "A fall in the price of X increases the consumer's real purchasing power. Which component of the price effect captures the response to that purchasing-power change?",
       "options": [
         "Income effect",
         "Substitution effect",
@@ -6616,7 +6616,7 @@ const questionBank = {
     {
       "id": 110013,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving gym memberships, a Giffen good is unusual because, over the relevant range, what happens when its own price rises?",
+      "q": "A Giffen good is unusual because, over the relevant range, what happens when its own price rises?",
       "options": [
         "Quantity demanded rises",
         "Quantity demanded falls normally",
@@ -6639,7 +6639,7 @@ const questionBank = {
     {
       "id": 110014,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving movie tickets, which event shifts the demand curve for X rather than causing a movement along it?",
+      "q": "Which event shifts the demand curve for X rather than causing a movement along it?",
       "options": [
         "A change in consumer income",
         "A change in Px",
@@ -6685,7 +6685,7 @@ const questionBank = {
     {
       "id": 110016,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving streaming subscriptions, why does the midpoint method use the average of the two values in the denominator of each percentage change?",
+      "q": "Why does the midpoint method use the average of the two values in the denominator of each percentage change?",
       "options": [
         "It gives the same elasticity for a move between two points regardless of direction",
         "It guarantees elasticity equals 1",
@@ -6731,7 +6731,7 @@ const questionBank = {
     {
       "id": 110018,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving concert tickets, a positive cross-price elasticity between X and Y indicates the goods are most likely:",
+      "q": "If the cross-price elasticity between X and Y is positive, which relationship between the goods is most likely?",
       "options": [
         "Substitutes",
         "Complements",
@@ -6754,7 +6754,7 @@ const questionBank = {
     {
       "id": 110019,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving ride-share trips, a negative income elasticity means the good is:",
+      "q": "How is a good classified if its income elasticity is negative?",
       "options": [
         "Inferior",
         "Normal",
@@ -6907,7 +6907,7 @@ const questionBank = {
     {
       "id": 110025,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. The shift from D0 to D1 in the taco market means that at the same price consumers want to buy...",
+      "q": "Refer to the graph. How does the shift from D0 to D1 affect the quantity of tacos consumers want to buy at a given price?",
       "options": [
         "More tacos",
         "Fewer tacos",
@@ -7065,7 +7065,7 @@ const questionBank = {
     {
       "id": 310010,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. The straight, parallel indifference curves indicate that the two goods are...",
+      "q": "Refer to the graph. What relationship between the goods is indicated by straight, parallel indifference curves?",
       "options": [
         "perfect complements",
         "perfect substitutes",
@@ -7081,7 +7081,7 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "indifference_curve_properties",
       "commonError": "confuses_perfect_substitutes_with_perfect_complements",
-      "feedback": "Straight, downward-sloping and parallel indifference curves are the classic shape for perfect substitutes.",
+      "feedback": "With perfect substitutes, the consumer trades the goods at a constant rate while keeping utility unchanged, so indifference curves are straight, parallel lines.",
       "source": "graph_batch_indifference_20260816",
       "image": "IC-05.png",
       "imageAlt": "Three parallel downward-sloping straight indifference curves labeled IC1, IC2 and IC3.",
@@ -7091,7 +7091,7 @@ const questionBank = {
     {
       "id": 310012,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. The right-angle indifference curves indicate that the two goods are...",
+      "q": "Refer to the graph. What relationship between the goods is indicated by right-angle indifference curves?",
       "options": [
         "perfect substitutes",
         "perfect complements",
@@ -7117,7 +7117,7 @@ const questionBank = {
     {
       "id": 310016,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. Budget\u2080 rotates outward to Budget\u2081 while the vertical intercept stays the same. What changed?",
+      "q": "Refer to the graph. Budget₀ rotates outward to Budget₁ while the vertical intercept stays the same. What changed?",
       "options": [
         "The price of Good X fell",
         "The price of Good Y fell",
@@ -7145,7 +7145,7 @@ const questionBank = {
     {
       "id": 310023,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. Budget\u2080 and Budget\u2081 share the same horizontal intercept, but Budget\u2081 has a higher vertical intercept. What changed?",
+      "q": "Refer to the graph. Budget₀ and Budget₁ share the same horizontal intercept, but Budget₁ has a higher vertical intercept. What changed?",
       "options": [
         "The price of Good X fell",
         "The price of Good Y fell",
@@ -7173,7 +7173,7 @@ const questionBank = {
     {
       "id": 310026,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. Budget\u2080 rotates outward to Budget\u2081 while the vertical intercept stays fixed. Which statement is correct?",
+      "q": "Refer to the graph. Budget₀ rotates outward to Budget₁ while the vertical intercept stays fixed. Which statement is correct?",
       "options": [
         "The price of Good Y rose",
         "The price of Good X fell",
@@ -7191,10 +7191,10 @@ const questionBank = {
       ],
       "repairSkill": "budget_line_changes",
       "commonError": "fails_to_connect_budget_rotation_with_relative_price_changes",
-      "feedback": "A larger X-intercept with the same Y-intercept means Good X became cheaper.",
+      "feedback": "The vertical intercept stays at 40 while the horizontal intercept expands from 20 to 40. With nominal income and Py fixed, Px falls from 2 to 1. The optimum changes from A=(10,20) to C=(15,25).",
       "source": "graph_batch_indifference_20260816",
       "image": "INCOME-SUB-04.png",
-      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and labeled bundles A, B and C.",
+      "imageAlt": "Convex indifference curves with original optimum A (10,20), compensated optimum B (20,5), and final optimum C (15,25).",
       "graphRequired": true,
       "aHash": "fc4ef110eb01f9a087be12c680b018a2b6d05bf4e84d605e4804f50687487d14"
     },
@@ -7255,7 +7255,7 @@ const questionBank = {
     {
       "id": 310035,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. Point A on the budget line shows a consumer choosing...",
+      "q": "Refer to the graph. What consumption choice is represented by point A on the budget line?",
       "options": [
         "10 units of Good X and 15 units of Good Y",
         "15 units of Good X and 10 units of Good Y",
@@ -7307,7 +7307,7 @@ const questionBank = {
     {
       "id": 310037,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. Before the price change, which point shows the consumer\u2019s original optimal bundle?",
+      "q": "Refer to the graph. Before the price change, which point shows the consumer’s original optimal bundle?",
       "options": [
         "A",
         "B",
@@ -7336,10 +7336,10 @@ const questionBank = {
   "medium": [
     {
       "id": 100,
-      "q": "The substitution effect of a price decrease occurs because...",
+      "q": "Why does a price decrease produce a substitution effect?",
       "options": [
         "Relative prices change while utility is held constant",
-        "The consumer\u2019s real income increases, allowing more consumption",
+        "The consumer’s real income increases, allowing more consumption",
         "Preferences adjust in response to lower prices",
         "The good becomes cheaper, increasing demand"
       ],
@@ -7359,9 +7359,9 @@ const questionBank = {
     },
     {
       "id": 101,
-      "q": "A demand curve can be interpreted as...",
+      "q": "How can a demand curve be interpreted?",
       "options": [
-        "The consumer\u2019s willingness to pay for additional units",
+        "The consumer’s willingness to pay for additional units",
         "A firm's marginal cost curve",
         "Total utility over time",
         "Market supply"
@@ -7369,7 +7369,7 @@ const questionBank = {
       "tag": "derive_individual_demand",
       "type": "definition",
       "objective": "LO4.1",
-      "feedback": "Each point on the demand curve reflects the consumer\u2019s willingness to pay for one more unit.",
+      "feedback": "Each point on the demand curve reflects the consumer’s willingness to pay for one more unit.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "medium",
       "conceptCluster": "LO4.1_derive_individual_demand",
@@ -7382,7 +7382,7 @@ const questionBank = {
     },
     {
       "id": 102,
-      "q": "Consumer equilibrium requires that...",
+      "q": "Assume smooth, locally nonsatiated preferences and an interior optimum with both goods consumed and the budget exhausted. Which condition must hold at consumer equilibrium?",
       "options": [
         "Marginal utility per dollar is equal across goods",
         "Income equals zero",
@@ -7392,7 +7392,7 @@ const questionBank = {
       "tag": "marginal_utility_per_dollar",
       "type": "definition",
       "objective": "LO3.4",
-      "feedback": "Consumers maximize utility when the marginal utility gained per dollar spent is equal across goods.",
+      "feedback": "At a smooth interior optimum, willingness to substitute equals the market tradeoff: MRS=Px/Py, equivalently MUx/Px=MUy/Py. Corners and kinks need not satisfy this equality.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "medium",
       "conceptCluster": "LO3.4_marginal_utility_per_dollar",
@@ -7405,7 +7405,7 @@ const questionBank = {
     },
     {
       "id": 103,
-      "q": "In a consumer-choice scenario involving coffee purchases, price elasticity of demand measures...",
+      "q": "What does the price elasticity of demand for coffee measure?",
       "options": [
         "The responsiveness of quantity demanded to price changes",
         "The responsiveness of total revenue to price changes",
@@ -7428,7 +7428,7 @@ const questionBank = {
     },
     {
       "id": 104,
-      "q": "If the price of a good falls and total revenue increases, what must be true about demand?",
+      "q": "A price decrease along an unchanged demand curve raises total revenue. How is midpoint price elasticity classified over that interval?",
       "options": [
         "Demand is elastic",
         "Demand is inelastic",
@@ -7497,7 +7497,7 @@ const questionBank = {
     },
     {
       "id": 107,
-      "q": "A normal good is defined as one where...",
+      "q": "How does demand for a normal good respond to an increase in income?",
       "options": [
         "Demand rises as income rises",
         "Demand falls as income rises",
@@ -7520,7 +7520,7 @@ const questionBank = {
     },
     {
       "id": 108,
-      "q": "An inferior good is defined as one where...",
+      "q": "How does demand for an inferior good respond to an increase in income?",
       "options": [
         "Demand falls as income rises",
         "Demand rises as income rises",
@@ -7543,12 +7543,12 @@ const questionBank = {
     },
     {
       "id": 109,
-      "q": "If demand is elastic, a price increase will most likely...",
+      "q": "If demand is elastic, how does a price increase affect total revenue?",
       "options": [
-        "Decrease total revenue",
-        "Increase total revenue",
-        "Leave total revenue unchanged",
-        "Increase quantity demanded"
+        "Total revenue falls",
+        "Total revenue rises",
+        "Total revenue remains unchanged",
+        "Quantity demanded rises"
       ],
       "tag": "elasticity_total_revenue",
       "type": "interpretation",
@@ -7562,11 +7562,11 @@ const questionBank = {
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
       "source": "legacy_primary",
-      "aHash": "d20ec5f2efaacfe9885ef7ee3fefacfe42e21e40984549a93051e95b6177ddc8"
+      "aHash": "6beab79a71c14772f46b1b6f2b83366e120824ec587b761c097f2950efbfccb7"
     },
     {
       "id": 110,
-      "q": "A price decrease causes quantity demanded to rise substantially. What does this suggest about elasticity?",
+      "q": "Price falls along an unchanged demand curve. The midpoint percentage increase in quantity demanded exceeds the midpoint percentage decrease in price. What does this imply about demand over that interval?",
       "options": [
         "Demand is elastic",
         "Demand is inelastic",
@@ -7576,7 +7576,7 @@ const questionBank = {
       "tag": "price_elasticity_fundamentals",
       "type": "interpretation",
       "objective": "LO4.7",
-      "feedback": "Large quantity responses indicate elastic demand.",
+      "feedback": "Arc price elasticity compares the magnitudes of midpoint percentage changes. The quantity percentage change is larger, so absolute elasticity exceeds one: demand is elastic.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "medium",
       "conceptCluster": "LO4.7_price_elasticity_fundamentals",
@@ -7589,7 +7589,7 @@ const questionBank = {
     },
     {
       "id": 111,
-      "q": "If the substitution effect increases consumption but the income effect decreases it, the good must be...",
+      "q": "If a price decrease produces a substitution effect that increases consumption and an income effect that decreases it, how is the good classified?",
       "options": [
         "Inferior",
         "Normal",
@@ -7612,7 +7612,7 @@ const questionBank = {
     },
     {
       "id": 112,
-      "q": "If MRS is greater than the price ratio, what should the consumer do?",
+      "q": "A consumer buys positive amounts of X and Y and can make small changes in purchases. If MRS is greater than the price ratio, what should the consumer do?",
       "options": [
         "Consume more of good X",
         "Consume less of good X",
@@ -7635,12 +7635,12 @@ const questionBank = {
     },
     {
       "id": 113,
-      "q": "If demand is elastic, a price decrease will...",
+      "q": "If demand is elastic, how does a price decrease affect total revenue?",
       "options": [
-        "Increase total revenue",
-        "Decrease total revenue",
-        "Leave revenue unchanged",
-        "Eliminate demand"
+        "Total revenue rises",
+        "Total revenue falls",
+        "Total revenue remains unchanged",
+        "Demand is eliminated"
       ],
       "tag": "elasticity_total_revenue",
       "type": "interpretation",
@@ -7654,11 +7654,11 @@ const questionBank = {
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
       "source": "legacy_primary",
-      "aHash": "fbc5f4ce994d819e1ac1f2ecf0e3b7f4af1134f18859cfdbdeb01521ffc53bf0"
+      "aHash": "a6e2545fcd6c1031672c546888a30992cc374549d235074b3c96fcccc28e9315"
     },
     {
       "id": 114,
-      "q": "If both substitution and income effects increase consumption after a price decrease, the good must be...",
+      "q": "If both the substitution and income effects increase consumption after a price decrease, how is the good classified?",
       "options": [
         "Normal",
         "Inferior",
@@ -7704,7 +7704,7 @@ const questionBank = {
     },
     {
       "id": 116,
-      "q": "If the price of coffee rises and consumers buy more tea, the goods are...",
+      "q": "If a rise in the price of coffee increases purchases of tea, what is the relationship between the goods?",
       "options": [
         "Substitutes",
         "Complements",
@@ -7727,7 +7727,7 @@ const questionBank = {
     },
     {
       "id": 117,
-      "q": "If the price of printers rises and demand for ink falls, the goods are...",
+      "q": "If a rise in the price of printers reduces demand for ink, what is the relationship between the goods?",
       "options": [
         "Complements",
         "Substitutes",
@@ -7750,7 +7750,7 @@ const questionBank = {
     },
     {
       "id": 118,
-      "q": "If the price of a good rises and total revenue falls, demand must be...",
+      "q": "How is demand classified if a price increase reduces total revenue?",
       "options": [
         "Elastic",
         "Inelastic",
@@ -7773,7 +7773,7 @@ const questionBank = {
     },
     {
       "id": 119,
-      "q": "If the price of a good rises and total revenue increases, demand must be...",
+      "q": "How is demand classified if a price increase raises total revenue?",
       "options": [
         "Inelastic",
         "Elastic",
@@ -7796,7 +7796,7 @@ const questionBank = {
     },
     {
       "id": 120,
-      "q": "If income rises and demand increases, the good is...",
+      "q": "How is a good classified if demand increases when income rises?",
       "options": [
         "Normal",
         "Inferior",
@@ -7819,7 +7819,7 @@ const questionBank = {
     },
     {
       "id": 121,
-      "q": "If income rises and demand decreases, the good is...",
+      "q": "How is a good classified if demand decreases when income rises?",
       "options": [
         "Inferior",
         "Normal",
@@ -7842,7 +7842,7 @@ const questionBank = {
     },
     {
       "id": 122,
-      "q": "A steeper budget constraint indicates...",
+      "q": "What does a steeper budget line indicate about relative prices?",
       "options": [
         "One good has become relatively more expensive",
         "Income increased",
@@ -7865,7 +7865,7 @@ const questionBank = {
     },
     {
       "id": 123,
-      "q": "A steeper indifference curve indicates...",
+      "q": "With X on the horizontal axis and Y on the vertical axis, what does a steeper indifference curve indicate about willingness to substitute at a bundle?",
       "options": [
         "Greater willingness to trade Y for X",
         "Greater willingness to trade X for Y",
@@ -7888,7 +7888,7 @@ const questionBank = {
     },
     {
       "id": 124,
-      "q": "If a consumer moves to a higher indifference curve after a price decrease, this indicates...",
+      "q": "What does it mean if a price decrease allows a consumer to reach a higher indifference curve?",
       "options": [
         "Higher utility",
         "Lower income",
@@ -7911,7 +7911,7 @@ const questionBank = {
     },
     {
       "id": 125,
-      "q": "If quantity demanded barely responds to price changes, demand is...",
+      "q": "How is demand classified if quantity demanded responds very little to price changes?",
       "options": [
         "Inelastic",
         "Elastic",
@@ -7934,7 +7934,7 @@ const questionBank = {
     },
     {
       "id": 126,
-      "q": "If the price of X falls and the consumer buys more X and less Y, this reflects...",
+      "q": "The price of X falls. After income is adjusted to keep the consumer on the original indifference curve, the consumer buys more X and less Y. Which effect does this isolate?",
       "options": [
         "The substitution effect",
         "The income effect",
@@ -7980,7 +7980,7 @@ const questionBank = {
     },
     {
       "id": 128,
-      "q": "If income rises and quantity demanded does not change, the good must be...",
+      "q": "How is a good classified if quantity demanded does not change when income rises?",
       "options": [
         "Normal",
         "Inferior",
@@ -8003,12 +8003,12 @@ const questionBank = {
     },
     {
       "id": 129,
-      "q": "If MRS equals the price ratio but the bundle lies outside the budget constraint...",
+      "q": "The marginal rate of substitution equals the price ratio at a bundle outside the budget constraint. What can be concluded about that bundle?",
       "options": [
-        "It is impossible",
-        "It maximizes utility",
-        "Prices changed",
-        "Income increased"
+        "The bundle is unaffordable",
+        "The bundle maximizes utility",
+        "Prices have changed",
+        "Income has increased"
       ],
       "tag": "utility_maximization_mrs",
       "type": "trap",
@@ -8022,16 +8022,16 @@ const questionBank = {
       "repairSkill": "utility_maximization_mrs",
       "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
       "source": "legacy_primary",
-      "aHash": "f31ff2216093721e83287b1543403015c283a7b9795f0054380bc7cc0393cf0b"
+      "aHash": "8b81d272590eea0210759d9af16846e8a1e9ce7ef4a8d72384c6ed12323b7537"
     },
     {
       "id": 130,
-      "q": "If demand is perfectly elastic and price rises slightly, quantity demanded will...",
+      "q": "If demand is perfectly elastic, how does a price increase above the prevailing price affect quantity demanded?",
       "options": [
-        "Fall to zero",
-        "Decrease slightly",
-        "Remain constant",
-        "Increase"
+        "Quantity demanded falls to zero",
+        "Quantity demanded falls slightly",
+        "Quantity demanded remains unchanged",
+        "Quantity demanded rises"
       ],
       "tag": "price_elasticity_fundamentals",
       "type": "trap",
@@ -8045,13 +8045,13 @@ const questionBank = {
       "repairSkill": "price_elasticity_fundamentals",
       "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
       "source": "legacy_primary",
-      "aHash": "58f78ff344fcf63aed91d39b1926263a34e1f194fae99540b77354bb7fa74d2f"
+      "aHash": "81403360a768328122a9714d7f5f88fbfb66797c4de0c17dcfdc6d9f20582db5"
     },
     {
       "id": 131,
-      "q": "A consumer moves along a demand curve after income rises. What actually happened?",
+      "q": "At an unchanged price, a consumer buys more of a normal good after income rises. A student calls this a movement along the demand curve. What actually happened?",
       "options": [
-        "Nothing \u2014 income changes do not affect demand",
+        "Nothing — income changes do not affect demand",
         "Demand shifted",
         "Supply changed",
         "Prices disappeared"
@@ -8072,7 +8072,7 @@ const questionBank = {
     },
     {
       "id": 132,
-      "q": "If the substitution effect dominates the income effect for an inferior good after a price decrease...",
+      "q": "For an inferior good, how does consumption change after a price decrease if the substitution effect is larger than the opposing income effect?",
       "options": [
         "Quantity demanded still rises",
         "Quantity demanded falls",
@@ -8095,7 +8095,7 @@ const questionBank = {
     },
     {
       "id": 133,
-      "q": "Two indifference curves intersect. This implies...",
+      "q": "What problem with preferences would be implied by two intersecting indifference curves?",
       "options": [
         "Preferences are inconsistent",
         "Utility is maximized",
@@ -8118,12 +8118,12 @@ const questionBank = {
     },
     {
       "id": 134,
-      "q": "A bundle inside the budget constraint must...",
+      "q": "What must be true of a bundle inside the budget constraint?",
       "options": [
-        "Be affordable but not necessarily optimal",
-        "Maximize utility",
-        "Be impossible",
-        "Increase income"
+        "The bundle is affordable but need not be optimal",
+        "The bundle maximizes utility",
+        "The bundle is impossible to afford",
+        "The bundle increases income"
       ],
       "tag": "budget_constraint_intercepts_slope",
       "type": "trap",
@@ -8137,11 +8137,11 @@ const questionBank = {
       "repairSkill": "budget_constraint_intercepts_slope",
       "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
       "source": "legacy_primary",
-      "aHash": "447c6ae2cc813e7f21cd8bd6cc78e271ccb529555136d3664ff0434598ac591d"
+      "aHash": "bf6d6476db7c9b6c154d2bb367a1727a5d5ca2be407fe4866c72bb9021392800"
     },
     {
       "id": 135,
-      "q": "If demand is unit elastic and price rises...",
+      "q": "If demand is unit elastic, how does a price increase affect total revenue?",
       "options": [
         "Total revenue stays the same",
         "Revenue rises",
@@ -8164,7 +8164,7 @@ const questionBank = {
     },
     {
       "id": 136,
-      "q": "A decrease in income leads to an increase in demand for a good. This good is...",
+      "q": "How is a good classified if demand rises when income falls?",
       "options": [
         "Inferior",
         "Normal",
@@ -8210,7 +8210,7 @@ const questionBank = {
     },
     {
       "id": 138,
-      "q": "At the utility-maximizing bundle, what must be true about the slope of the indifference curve?",
+      "q": "Assume smooth, locally nonsatiated preferences and an interior optimum with both goods consumed and the budget exhausted. At the utility-maximizing bundle, what must be true about the slope of the indifference curve?",
       "options": [
         "It equals the slope of the budget constraint",
         "It is zero",
@@ -8220,7 +8220,7 @@ const questionBank = {
       "tag": "marginal_utility_per_dollar",
       "type": "interpretation",
       "objective": "LO3.4",
-      "feedback": "Utility maximization occurs where MRS equals the price ratio.",
+      "feedback": "At a smooth interior optimum, willingness to substitute equals the market tradeoff: MRS=Px/Py, equivalently MUx/Px=MUy/Py. Corners and kinks need not satisfy this equality.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "medium",
       "conceptCluster": "LO3.4_marginal_utility_per_dollar",
@@ -8256,7 +8256,7 @@ const questionBank = {
     },
     {
       "id": 140,
-      "q": "If the substitution effect and income effect both reduce consumption after a price increase, the good is most likely...",
+      "q": "If both the substitution and income effects reduce consumption after a price increase, how is the good most likely classified?",
       "options": [
         "Normal",
         "Inferior",
@@ -8279,17 +8279,17 @@ const questionBank = {
     },
     {
       "id": 141,
-      "q": "A flatter demand curve generally indicates...",
+      "q": "Two demand curves use identical axis units and pass through the same positive price–quantity point. At that point, which statement follows if one curve is flatter (with price on the vertical axis)?",
       "options": [
-        "More elastic demand",
-        "More inelastic demand",
-        "Unit elastic demand",
-        "Perfectly inelastic demand"
+        "It has greater absolute point elasticity",
+        "Its absolute elasticity must equal one",
+        "Its absolute elasticity must be zero",
+        "Its absolute elasticity cannot be compared even at the same P and Q"
       ],
       "tag": "price_elasticity_fundamentals",
       "type": "interpretation",
       "objective": "LO4.7",
-      "feedback": "A flatter demand curve generally suggests greater responsiveness to price changes, though elasticity also depends on where you are on the curve.",
+      "feedback": "At the same P and Q, |Ed|=|dQ/dP|×P/Q. A flatter inverse-demand curve has larger |dQ/dP| and therefore greater absolute elasticity. This comparison requires common units and the same price–quantity point.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "medium",
       "conceptCluster": "LO4.7_price_elasticity_fundamentals",
@@ -8298,11 +8298,11 @@ const questionBank = {
       "repairSkill": "price_elasticity_fundamentals",
       "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
       "source": "legacy_primary",
-      "aHash": "50ed599199bd8a8704ca778dac332f99c41a6273fd4e0a796d47c2fbe00c96e2"
+      "aHash": "8a31c3e3374c47ff4b2a1d30ad36b8124f13169eb3cfe3b63892e0431e62f405"
     },
     {
       "id": 142,
-      "q": "If a price decrease causes quantity demanded to fall, what kind of good is this describing?",
+      "q": "A good's price falls, with income, preferences, and other prices unchanged, yet its quantity demanded falls. What kind of good does this describe?",
       "options": [
         "Giffen good",
         "Normal good",
@@ -8365,7 +8365,7 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
-      "feedback": "Transitivity requires A \u227b C when A \u227b B and B \u227b C.",
+      "feedback": "Transitivity requires A ≻ C when A ≻ B and B ≻ C.",
       "source": "engine2_expansion",
       "aHash": "98f4e0a197cb15868630a3b7f9511b11c32c4643cbee5e604b52624436339795"
     },
@@ -8434,7 +8434,7 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "midpoint_elasticity",
       "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
-      "feedback": "Midpoint %\u0394Q=-20/90; %\u0394P=4/22; |Ed|\u22481.22.",
+      "feedback": "Midpoint %ΔQ=-20/90; %ΔP=4/22; |Ed|≈1.22.",
       "source": "engine2_expansion",
       "aHash": "7f1bfb468d99e5451444f5ee3327293b7082b4a81087357ea826ee8ad176d485"
     },
@@ -8457,7 +8457,7 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "cross_price_elasticity",
       "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
-      "feedback": "Cross-price elasticity = %\u0394Qx/%\u0394Py = -5%/10% = -0.5, consistent with complements.",
+      "feedback": "Cross-price elasticity = %ΔQx/%ΔPy = -5%/10% = -0.5, consistent with complements.",
       "source": "engine2_expansion",
       "aHash": "1b07b0cffa0b3f596b5e048b0115168886cc5183dd518655b5515ee5dddac6d1"
     },
@@ -8510,7 +8510,7 @@ const questionBank = {
     {
       "id": 120008,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving streaming subscriptions, a consumer ranks A above B, but B is the only affordable bundle. Which prediction follows from constrained choice?",
+      "q": "A consumer ranks A above B, but B is the only affordable bundle. Which prediction follows from constrained choice?",
       "options": [
         "Choose B because A is infeasible",
         "Choose A because preferences always override constraints",
@@ -8533,7 +8533,7 @@ const questionBank = {
     {
       "id": 120009,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving campus meals, a is preferred to B and B is preferred to C. What must hold if preferences are transitive?",
+      "q": "A is preferred to B and B is preferred to C. What must hold if preferences are transitive?",
       "options": [
         "A is preferred to C",
         "C is preferred to A",
@@ -8549,7 +8549,7 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
-      "feedback": "Transitivity requires A \u227b C when A \u227b B and B \u227b C.",
+      "feedback": "Transitivity requires A ≻ C when A ≻ B and B ≻ C.",
       "source": "engine2_expansion",
       "aHash": "98f4e0a197cb15868630a3b7f9511b11c32c4643cbee5e604b52624436339795"
     },
@@ -8579,7 +8579,7 @@ const questionBank = {
     {
       "id": 120011,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving ride-share trips, the price of X falls while income and Py are unchanged. How does the budget line change?",
+      "q": "The price of X falls while income and Py are unchanged. How does the budget line change?",
       "options": [
         "It rotates outward around the Y-intercept",
         "It shifts outward in parallel",
@@ -8625,7 +8625,7 @@ const questionBank = {
     {
       "id": 120013,
       "sourceGame": "labyrinthOfChoice",
-      "q": "X is a normal good. Px falls. What direction does the income effect have on X?",
+      "q": "The price of normal good X falls while income and other prices stay fixed. How does the income effect influence consumption of X?",
       "options": [
         "It increases consumption of X",
         "It decreases consumption of X",
@@ -8773,7 +8773,7 @@ const questionBank = {
     {
       "id": 120019,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. Moving from point A to point B on D0, the price of tacos changes by...",
+      "q": "Refer to the graph. By how much does the price of tacos change when moving from A to B on D0?",
       "options": [
         "A decrease of $6",
         "An increase of $6",
@@ -8829,7 +8829,7 @@ const questionBank = {
     {
       "id": 120021,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. Moving from point B to point A, price falls from $10 to $6 while quantity rises from 45 to 75. Using the midpoint method, demand over this arc is approximately...",
+      "q": "Refer to the graph. Moving from B to A, price falls from $10 to $6 and quantity rises from 45 to 75. Using the midpoint method, how is demand over this arc classified?",
       "options": [
         "Unit elastic",
         "Elastic with a coefficient of about 2.0",
@@ -8901,7 +8901,7 @@ const questionBank = {
       ],
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
-      "feedback": "At B, total revenue is 5\u00d735 = 175. At A, total revenue is 3\u00d775 = 225. Revenue rises when price falls, consistent with elastic demand.",
+      "feedback": "At B, total revenue is 5×35 = 175. At A, total revenue is 3×75 = 225. Revenue rises when price falls, consistent with elastic demand.",
       "source": "graph_batch_elasticity_20260816",
       "image": "ELASTICITY-03.png",
       "imageAlt": "Two intersecting downward-sloping lines, flatter blue D1 and steeper red D2, with four labeled points.",
@@ -8929,7 +8929,7 @@ const questionBank = {
       ],
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
-      "feedback": "At B, total revenue is 7\u00d720 = 140. At A, total revenue is 2\u00d770 = 140. Revenue is unchanged.",
+      "feedback": "At B, total revenue is 7×20 = 140. At A, total revenue is 2×70 = 140. Revenue is unchanged.",
       "source": "graph_batch_elasticity_20260816",
       "image": "ELASTICITY-04.png",
       "imageAlt": "Downward-curving Demand line with B at quantity 20, price 7 and A at quantity 70, price 2.",
@@ -8965,7 +8965,7 @@ const questionBank = {
     {
       "id": 310002,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. A bundle on IC2 provides...",
+      "q": "Refer to the graph. How does the utility of a bundle on IC2 compare with utility on the other indifference curves?",
       "options": [
         "more utility than IC3 and less than IC1",
         "the same utility as any bundle on IC1",
@@ -9019,7 +9019,7 @@ const questionBank = {
     {
       "id": 310006,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. Why is point A the consumer\u2019s optimal bundle?",
+      "q": "Refer to the graph. Why is point A the consumer’s optimal bundle?",
       "options": [
         "It is the cheapest bundle shown",
         "It lies on the highest attainable indifference curve and is tangent to the budget line",
@@ -9073,7 +9073,7 @@ const questionBank = {
     {
       "id": 310013,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. Moving right along the horizontal arm of IC2 while Good Y stays fixed implies...",
+      "q": "Refer to the graph. What happens to utility when moving right along the horizontal arm of IC2 while Good Y remains fixed?",
       "options": [
         "utility rises because the consumer has more of both goods",
         "utility falls because Good X is worth less",
@@ -9099,7 +9099,7 @@ const questionBank = {
     {
       "id": 310020,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. Budget\u2080 rotates inward to Budget\u2081 while the vertical intercept stays fixed. What happened?",
+      "q": "Refer to the graph. Budget₀ rotates inward to Budget₁ while the vertical intercept stays fixed. What happened?",
       "options": [
         "The price of Good X rose",
         "The price of Good Y rose",
@@ -9183,7 +9183,7 @@ const questionBank = {
     {
       "id": 310040,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. The shape of these indifference curves implies that the consumer is willing to trade one good for the other at a...",
+      "q": "Refer to the graph. What does the shape of the indifference curves imply about the rate at which the consumer is willing to substitute one good for the other?",
       "options": [
         "diminishing rate",
         "constant rate",
@@ -9211,7 +9211,7 @@ const questionBank = {
     {
       "id": 310041,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. The L-shaped indifference curves imply that the consumer values the two goods in...",
+      "q": "Refer to the graph. What do the L-shaped indifference curves imply about the proportions in which the consumer values the goods?",
       "options": [
         "fixed proportions",
         "perfectly flexible proportions",
@@ -9237,7 +9237,7 @@ const questionBank = {
     {
       "id": 310042,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. When Budget\u2080 changes to Budget\u2081, which good becomes cheaper?",
+      "q": "Refer to the graph. When Budget₀ changes to Budget₁, which good becomes cheaper?",
       "options": [
         "Good X",
         "Good Y",
@@ -9261,12 +9261,95 @@ const questionBank = {
       "imageAlt": "Two budget lines sharing an X intercept, curves U0 and U1, and points A, B and C; Budget1 reaches higher on Y.",
       "graphRequired": true,
       "aHash": "bc3f7f738025403c98c6c9c896e67ad52784db34e603d754d10f8c041186b12c"
-    }
-  ],
-  "hard": [
+    },
+    {
+      "id": 130020,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Which statement is most accurate about D0 and D1 in the hamburger market?",
+      "options": [
+        "At every price, D0 shows a greater quantity demanded than D1",
+        "At every price, D1 shows a greater quantity demanded than D0",
+        "The curves cross, so sometimes D1 shows more demand",
+        "The graph shows only movements along one demand curve"
+      ],
+      "tag": "demand_curve_shifts",
+      "type": "interpretation",
+      "objective": "LO4.4",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.4_demand_curve_shifts",
+      "primarySkill": "demand_curve_shifts",
+      "secondarySkills": [
+        "market_demand_aggregation"
+      ],
+      "repairSkill": "demand_curve_shifts",
+      "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
+      "feedback": "Because D1 is left of D0, D0 shows the larger quantity demanded at every common price.",
+      "source": "graph_batch_demand_20260816",
+      "image": "DEMAND-05.png",
+      "imageAlt": "Hamburger graph with two parallel downward-sloping lines; D1 lies below and left of D0.",
+      "graphRequired": true,
+      "aHash": "9e9e524e6544d723e524648baaf3fb9a9c833af9c3d535b6c61ac2d79e4c7a14"
+    },
+    {
+      "id": 310009,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. At the tangency point A, what must the slope of IC2 equal?",
+      "options": [
+        "the consumer’s income",
+        "the slope of the budget line",
+        "the vertical intercept",
+        "zero"
+      ],
+      "tag": "utility_maximization_mrs",
+      "type": "graph",
+      "objective": "LO3.4",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.4_utility_maximization_mrs",
+      "primarySkill": "utility_maximization_mrs",
+      "secondarySkills": [
+        "marginal_rate_substitution"
+      ],
+      "repairSkill": "utility_maximization_mrs",
+      "commonError": "cannot_translate_a_tangency_picture_into_the_mrs_equals_price_ratio_condition",
+      "feedback": "At an interior optimum, the indifference curve and the budget line share a common slope. That is the MRS = price ratio condition.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "IC-04.png",
+      "imageAlt": "Budget line and downward-curving IC2 touching at point A, Good X 15 and Good Y 10.",
+      "graphRequired": true,
+      "aHash": "5eb06c0d47f7167b3d1a732d987e9643b5e84946a95601b46633f662148a6b5d"
+    },
+    {
+      "id": 310029,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Comparing the initial and final optima, which statement is correct?",
+      "options": [
+        "At C the consumer buys less X and more Y than at A",
+        "At C the consumer buys more X and less Y than at A",
+        "At C the consumer buys more X and more Y than at A",
+        "At C the consumer buys the same amounts as at A"
+      ],
+      "tag": "demand_response_income_prices",
+      "type": "graph",
+      "objective": "LO4.2",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.2_demand_response_income_prices",
+      "primarySkill": "demand_response_income_prices",
+      "secondarySkills": [
+        "income_effect",
+        "substitution_effect"
+      ],
+      "repairSkill": "demand_response_income_prices",
+      "commonError": "cannot_compare_initial_and_final_optima_after_a_price_change",
+      "feedback": "A=(10,20) and C=(15,25), so both goods increase in the total price-change response. The compensated point B=(20,5) separates the +10 substitution effect and −5 income effect on X.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "INCOME-SUB-04.png",
+      "imageAlt": "Convex indifference curves with original optimum A (10,20), compensated optimum B (20,5), and final optimum C (15,25).",
+      "graphRequired": true,
+      "aHash": "cab23d63ec3db6c65dc608a509e6beda3ce0bfbbc72c70d35438c1c731a689d9"
+    },
     {
       "id": 200,
-      "q": "A firm lowers its price and observes that total revenue falls. What must be true about demand at the original price?",
+      "q": "A firm lowers price along an unchanged demand curve and total revenue falls. What does this imply about midpoint price elasticity over that price interval?",
       "options": [
         "Demand was inelastic",
         "Demand was elastic",
@@ -9276,9 +9359,9 @@ const questionBank = {
       "tag": "elasticity_total_revenue",
       "type": "interpretation",
       "objective": "LO4.7",
-      "feedback": "If lowering price reduces revenue, quantity did not increase enough to offset the price drop. Demand must have been inelastic.",
+      "feedback": "A price reduction lowers total revenue when the midpoint percentage quantity gain is smaller than the midpoint percentage price decline. Absolute arc elasticity is below one over that interval; this does not identify elasticity at the starting point.",
       "sourceGame": "labyrinthOfChoice",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "conceptCluster": "LO4.7_elasticity_total_revenue",
       "primarySkill": "elasticity_total_revenue",
       "secondarySkills": [],
@@ -9289,7 +9372,7 @@ const questionBank = {
     },
     {
       "id": 201,
-      "q": "A price increase causes total revenue to stay the same. What does this imply about demand at that price?",
+      "q": "A price increase along an unchanged demand curve leaves total revenue unchanged. What does this imply about midpoint price elasticity over that interval?",
       "options": [
         "Demand is unit elastic",
         "Demand is elastic",
@@ -9299,9 +9382,9 @@ const questionBank = {
       "tag": "elasticity_total_revenue",
       "type": "definition",
       "objective": "LO4.7",
-      "feedback": "When elasticity equals one, the percentage change in quantity exactly offsets the percentage change in price.",
+      "feedback": "Unchanged P×Q means the midpoint percentage quantity decline exactly offsets the midpoint percentage price rise. Absolute arc elasticity is one over the interval, without identifying point elasticity at either endpoint.",
       "sourceGame": "labyrinthOfChoice",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "conceptCluster": "LO4.7_elasticity_total_revenue",
       "primarySkill": "elasticity_total_revenue",
       "secondarySkills": [],
@@ -9324,7 +9407,7 @@ const questionBank = {
       "objective": "LO4.7",
       "feedback": "When price rises and revenue falls, demand must be elastic.",
       "sourceGame": "labyrinthOfChoice",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "conceptCluster": "LO4.7_elasticity_total_revenue",
       "primarySkill": "elasticity_total_revenue",
       "secondarySkills": [],
@@ -9347,7 +9430,7 @@ const questionBank = {
       "objective": "LO4.7",
       "feedback": "More substitutes increase consumers' responsiveness to price changes.",
       "sourceGame": "labyrinthOfChoice",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "conceptCluster": "LO4.7_cross_price_elasticity",
       "primarySkill": "cross_price_elasticity",
       "secondarySkills": [],
@@ -9356,6 +9439,2238 @@ const questionBank = {
       "source": "legacy_primary",
       "aHash": "f732f1f9c3ffa7b9b22690ca979f730fc096799ee0b6d977b80718db73789afb"
     },
+    {
+      "id": 207,
+      "q": "A firm lowers price along an unchanged demand curve. The midpoint percentage increase in quantity exceeds the midpoint percentage decrease in price. What happens to total revenue?",
+      "options": [
+        "Total revenue increases",
+        "Total revenue decreases",
+        "Total revenue stays the same",
+        "Revenue becomes zero"
+      ],
+      "tag": "elasticity_total_revenue",
+      "type": "interpretation",
+      "objective": "LO4.7",
+      "feedback": "Demand is elastic over the interval. The proportional quantity gain more than offsets the proportional price decline, so P×Q and total revenue increase.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.7_elasticity_total_revenue",
+      "primarySkill": "elasticity_total_revenue",
+      "secondarySkills": [],
+      "repairSkill": "elasticity_total_revenue",
+      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "source": "legacy_primary",
+      "aHash": "ebcd1986d232ed6cda5820fa468cc2daa6fb03b3a5f4703bf5afd9e441fcf041"
+    },
+    {
+      "id": 208,
+      "q": "If price falls and consumers buy more units while also gaining more surplus per unit, what happens to total consumer surplus?",
+      "options": [
+        "Consumer surplus increases",
+        "Consumer surplus decreases",
+        "Consumer surplus stays the same",
+        "Consumer surplus becomes zero"
+      ],
+      "tag": "consumer_surplus",
+      "type": "interpretation",
+      "objective": "LO4.5",
+      "feedback": "Lower prices increase the gap between willingness to pay and price and increase quantity purchased.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.5_consumer_surplus",
+      "primarySkill": "consumer_surplus",
+      "secondarySkills": [],
+      "repairSkill": "consumer_surplus",
+      "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
+      "source": "legacy_primary",
+      "aHash": "7b2c8c375e57dd7834b68e6f0c92e99942368a03bc02026e60803cfccb5ee818"
+    },
+    {
+      "id": 209,
+      "q": "If consumers become less sensitive to price changes, what happens to elasticity?",
+      "options": [
+        "Demand becomes more inelastic",
+        "Demand becomes more elastic",
+        "Demand becomes perfectly elastic",
+        "Demand becomes unit elastic"
+      ],
+      "tag": "price_elasticity_fundamentals",
+      "type": "interpretation",
+      "objective": "LO4.7",
+      "feedback": "Less responsiveness to price changes means demand is more inelastic.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
+      "primarySkill": "price_elasticity_fundamentals",
+      "secondarySkills": [],
+      "repairSkill": "price_elasticity_fundamentals",
+      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "source": "legacy_primary",
+      "aHash": "9d9022caabe06a84efa98672a61092108297294acb628ee7f56066e188c023ea"
+    },
+    {
+      "id": 210,
+      "q": "How elastic is demand likely to be for a good with few substitutes that takes a small share of income?",
+      "options": [
+        "Inelastic",
+        "Highly elastic",
+        "Perfectly elastic",
+        "Unit elastic"
+      ],
+      "tag": "cross_price_elasticity",
+      "type": "interpretation",
+      "objective": "LO4.7",
+      "feedback": "Few substitutes and small budget share both reduce price sensitivity.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.7_cross_price_elasticity",
+      "primarySkill": "cross_price_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "cross_price_elasticity",
+      "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
+      "source": "legacy_primary",
+      "aHash": "862be9846b7db52d7a7ead25fbad55dbdab1658dec6260ec427b9144838648f7"
+    },
+    {
+      "id": 211,
+      "q": "A firm lowers price slightly and sees almost no change in quantity demanded. What does this imply about demand?",
+      "options": [
+        "Demand is inelastic",
+        "Demand is elastic",
+        "Demand is unit elastic",
+        "Demand is perfectly elastic"
+      ],
+      "tag": "price_elasticity_fundamentals",
+      "type": "trap",
+      "objective": "LO4.7",
+      "feedback": "If quantity barely responds to price changes, demand is inelastic.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
+      "primarySkill": "price_elasticity_fundamentals",
+      "secondarySkills": [],
+      "repairSkill": "price_elasticity_fundamentals",
+      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "source": "legacy_primary",
+      "aHash": "847c1c6331eea1d8cd40d8df58f44dfb000b77a8ef4bd6a1b948645ec4ec10ad"
+    },
+    {
+      "id": 212,
+      "q": "Assume smooth, locally nonsatiated preferences and an interior optimum with both goods consumed and the budget exhausted. At the optimal consumption bundle, what must be true about the marginal rate of substitution (MRS) and the price ratio?",
+      "options": [
+        "MRS equals the price ratio",
+        "MRS is greater than the price ratio",
+        "MRS is less than the price ratio",
+        "MRS must equal income"
+      ],
+      "tag": "marginal_utility_per_dollar",
+      "type": "definition",
+      "objective": "LO3.4",
+      "feedback": "At a smooth interior optimum, willingness to substitute equals the market tradeoff: MRS=Px/Py, equivalently MUx/Px=MUy/Py. Corners and kinks need not satisfy this equality.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.4_marginal_utility_per_dollar",
+      "primarySkill": "marginal_utility_per_dollar",
+      "secondarySkills": [],
+      "repairSkill": "marginal_utility_per_dollar",
+      "commonError": "compares_marginal_utility_without_dividing_by_price",
+      "source": "legacy_primary",
+      "aHash": "7d6b305127028d0967909088d4ca9f1328ef416537a9a6d2c7cd72ee79e0094a"
+    },
+    {
+      "id": 214,
+      "q": "If two indifference curves intersect on a graph, what does this imply about consumer preferences?",
+      "options": [
+        "Inconsistent rankings",
+        "Utility is maximized",
+        "Income increased",
+        "Demand increased"
+      ],
+      "tag": "indifference_curve_properties",
+      "type": "trap",
+      "objective": "LO3.2",
+      "feedback": "Indifference curves cannot cross because that would imply contradictory rankings of bundles.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.2_indifference_curve_properties",
+      "primarySkill": "indifference_curve_properties",
+      "secondarySkills": [],
+      "repairSkill": "indifference_curve_properties",
+      "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
+      "source": "legacy_primary",
+      "aHash": "6d071c7b156b21129b9a13e0a7f757576ad8b84cddc1684a9f8e95d053a17797"
+    },
+    {
+      "id": 215,
+      "q": "A consumer moves to a higher indifference curve after a price decrease. What must be true?",
+      "options": [
+        "The consumer is better off",
+        "The consumer is worse off",
+        "Income decreased",
+        "The budget line rotated inward"
+      ],
+      "tag": "consumer_surplus",
+      "type": "interpretation",
+      "objective": "LO4.5",
+      "feedback": "Higher indifference curves represent higher utility levels.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.5_consumer_surplus",
+      "primarySkill": "consumer_surplus",
+      "secondarySkills": [],
+      "repairSkill": "consumer_surplus",
+      "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
+      "source": "legacy_primary",
+      "aHash": "e56ee88abb98e36d0c54073bdb316823b9b97381432bf22eca949c81f2d77a5a"
+    },
+    {
+      "id": 216,
+      "q": "If indifference curves become flatter as you move to the right along a curve, what does this indicate?",
+      "options": [
+        "Diminishing MRS",
+        "Increasing marginal utility",
+        "Perfect substitutes",
+        "Perfect complements"
+      ],
+      "tag": "marginal_rate_substitution",
+      "type": "definition",
+      "objective": "LO3.2",
+      "feedback": "Consumers are willing to give up fewer units of Y for each additional unit of X, which reflects diminishing marginal rate of substitution.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.2_marginal_rate_substitution",
+      "primarySkill": "marginal_rate_substitution",
+      "secondarySkills": [],
+      "repairSkill": "marginal_rate_substitution",
+      "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
+      "source": "legacy_primary",
+      "aHash": "8393e5502fed88243a37204bbd0c8c9de1aff34815b4d6fea60c94df4d57f9b5"
+    },
+    {
+      "id": 217,
+      "q": "The price of good X falls while income and the price of Y remain unchanged. How does the budget line change?",
+      "options": [
+        "It rotates outward",
+        "It shifts outward parallel",
+        "It rotates inward",
+        "It becomes vertical"
+      ],
+      "tag": "budget_constraint_intercepts_slope",
+      "type": "interpretation",
+      "objective": "LO3.3",
+      "feedback": "A lower price for X allows consumers to buy more X while the Y intercept stays the same.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
+      "primarySkill": "budget_constraint_intercepts_slope",
+      "secondarySkills": [],
+      "repairSkill": "budget_constraint_intercepts_slope",
+      "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
+      "source": "legacy_primary",
+      "aHash": "bcb9810f02809dd97300e8b4136d307752353c400665b4686715244aa3192495"
+    },
+    {
+      "id": 219,
+      "q": "Assume smooth, locally nonsatiated preferences and an interior optimum with both goods consumed and the budget exhausted. Which statement must be true for a bundle to maximize utility?",
+      "options": [
+        "An indifference curve is tangent to the budget line",
+        "The bundle lies on the highest indifference curve regardless of affordability",
+        "The consumer buys equal amounts of both goods",
+        "The budget line is horizontal"
+      ],
+      "tag": "marginal_utility_per_dollar",
+      "type": "definition",
+      "objective": "LO3.4",
+      "feedback": "At a smooth interior optimum, willingness to substitute equals the market tradeoff: MRS=Px/Py, equivalently MUx/Px=MUy/Py. Corners and kinks need not satisfy this equality.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.4_marginal_utility_per_dollar",
+      "primarySkill": "marginal_utility_per_dollar",
+      "secondarySkills": [],
+      "repairSkill": "marginal_utility_per_dollar",
+      "commonError": "compares_marginal_utility_without_dividing_by_price",
+      "source": "legacy_primary",
+      "aHash": "0f686f3020dcf931f09f8d328d02ff43a8f88afa2cf35e5c1f9fb4559e534ad3"
+    },
+    {
+      "id": 223,
+      "q": "If the price of a good decreases and total revenue decreases, what can you conclude about demand?",
+      "options": [
+        "Demand is inelastic",
+        "Demand is elastic",
+        "Demand is unit elastic",
+        "Demand is perfectly elastic"
+      ],
+      "tag": "elasticity_total_revenue",
+      "type": "interpretation",
+      "objective": "LO4.7",
+      "feedback": "If price and revenue move in the same direction, demand is inelastic.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.7_elasticity_total_revenue",
+      "primarySkill": "elasticity_total_revenue",
+      "secondarySkills": [],
+      "repairSkill": "elasticity_total_revenue",
+      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "source": "legacy_primary",
+      "aHash": "847c1c6331eea1d8cd40d8df58f44dfb000b77a8ef4bd6a1b948645ec4ec10ad"
+    },
+    {
+      "id": 225,
+      "q": "If the substitution effect and income effect exactly offset each other after a price change, what happens to quantity demanded?",
+      "options": [
+        "It stays constant",
+        "It rises overall",
+        "It falls overall",
+        "It falls to zero"
+      ],
+      "tag": "substitution_effect",
+      "type": "trap",
+      "objective": "LO4.3",
+      "feedback": "If both effects cancel out, there is no net change in consumption.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [],
+      "repairSkill": "substitution_effect",
+      "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
+      "source": "legacy_primary",
+      "aHash": "310e1e0c99e70bed9410689ad2c801f42f7d29277aba4b30ece6b50b6ff89bbe"
+    },
+    {
+      "id": 226,
+      "q": "The price of a good rises from $8 to $10 and quantity demanded falls from 50 to 40. Using midpoint elasticity, what happens to total revenue?",
+      "options": [
+        "Total revenue decreases",
+        "Total revenue increases",
+        "Total revenue stays the same",
+        "Not enough information to determine"
+      ],
+      "tag": "elasticity_total_revenue",
+      "type": "calculation",
+      "objective": "LO4.7",
+      "feedback": "Initial revenue is $8 × 50 = $400. New revenue is $10 × 40 = $400. Total revenue remains unchanged.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.7_elasticity_total_revenue",
+      "primarySkill": "elasticity_total_revenue",
+      "secondarySkills": [],
+      "repairSkill": "elasticity_total_revenue",
+      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "source": "legacy_primary",
+      "aHash": "898147c60ec0dcbd487f6c05e66e558d31c42e2cd8ea768daa30a7fbb156e402"
+    },
+    {
+      "id": 227,
+      "q": "A consumer’s marginal rate of substitution is decreasing. What does this imply about preferences?",
+      "options": [
+        "They are convex",
+        "They are linear",
+        "They are inconsistent",
+        "They are perfect complements"
+      ],
+      "tag": "marginal_rate_substitution",
+      "type": "interpretation",
+      "objective": "LO3.2",
+      "feedback": "Diminishing MRS implies convex preferences.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.2_marginal_rate_substitution",
+      "primarySkill": "marginal_rate_substitution",
+      "secondarySkills": [],
+      "repairSkill": "marginal_rate_substitution",
+      "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
+      "source": "legacy_primary",
+      "aHash": "0a0f278199de5fd6372ac3c83a85b0c4ded7b64798bb8a3b06b2358494891760"
+    },
+    {
+      "id": 237,
+      "q": "A demand curve is perfectly vertical. What happens to total revenue if price increases?",
+      "options": [
+        "Total revenue increases",
+        "Total revenue decreases",
+        "Total revenue stays constant",
+        "Cannot be determined"
+      ],
+      "tag": "elasticity_total_revenue",
+      "type": "interpretation",
+      "objective": "LO4.7",
+      "feedback": "With perfectly inelastic demand, quantity does not change, so higher price increases revenue.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.7_elasticity_total_revenue",
+      "primarySkill": "elasticity_total_revenue",
+      "secondarySkills": [],
+      "repairSkill": "elasticity_total_revenue",
+      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "source": "legacy_primary",
+      "aHash": "ebcd1986d232ed6cda5820fa468cc2daa6fb03b3a5f4703bf5afd9e441fcf041"
+    },
+    {
+      "id": 239,
+      "q": "Demand is elastic at the current price. With demand unchanged, how does a sufficiently small price decrease affect total revenue?",
+      "options": [
+        "Total revenue increases",
+        "Total revenue decreases",
+        "Total revenue stays the same",
+        "Revenue becomes zero"
+      ],
+      "tag": "elasticity_total_revenue",
+      "type": "interpretation",
+      "objective": "LO4.7",
+      "feedback": "With elastic demand, price and total revenue move in opposite directions.",
+      "sourceGame": "labyrinthOfChoice",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.7_elasticity_total_revenue",
+      "primarySkill": "elasticity_total_revenue",
+      "secondarySkills": [],
+      "repairSkill": "elasticity_total_revenue",
+      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "source": "legacy_primary",
+      "aHash": "ebcd1986d232ed6cda5820fa468cc2daa6fb03b3a5f4703bf5afd9e441fcf041"
+    },
+    {
+      "id": 130002,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Income and both prices all rise by 10%. What happens to the consumer's budget set?",
+      "options": [
+        "It is unchanged",
+        "It shifts outward",
+        "It shifts inward",
+        "It rotates toward X"
+      ],
+      "tag": "budget_line_changes",
+      "type": "trap",
+      "objective": "LO3.3",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.3_budget_line_changes",
+      "primarySkill": "budget_line_changes",
+      "secondarySkills": [],
+      "repairSkill": "budget_line_changes",
+      "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+      "feedback": "Proportional changes in nominal income and all prices leave real purchasing power and the budget set unchanged.",
+      "source": "engine2_expansion",
+      "aHash": "2eb953560d2aee9c96090261017ebe948bbd5a91ac4e77d6b95c43634e63f109"
+    },
+    {
+      "id": 130003,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "To derive a demand curve from consumer optimization, what should be varied while preferences, income, and other prices are held fixed?",
+      "options": [
+        "The good's own price",
+        "Every determinant simultaneously",
+        "Only utility labels",
+        "The number of consumers in the market"
+      ],
+      "tag": "derive_individual_demand",
+      "type": "interpretation",
+      "objective": "LO4.1",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.1_derive_individual_demand",
+      "primarySkill": "derive_individual_demand",
+      "secondarySkills": [],
+      "repairSkill": "derive_individual_demand",
+      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
+      "feedback": "The individual demand curve isolates the effect of own price on the consumer's optimal quantity.",
+      "source": "engine2_expansion",
+      "aHash": "e545d63760fe7e84e02622b458a7fa729cc2ff1a01e96d14387999ff43d8f640"
+    },
+    {
+      "id": 130006,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "At $20, A demands 1 unit and B demands 0. At $15, A demands 2 and B demands 1. What are the market quantities at those prices?",
+      "options": [
+        "1 at $20 and 3 at $15",
+        "0.5 at $20 and 1.5 at $15",
+        "1 at $20 and 2 at $15",
+        "20 at $20 and 15 at $15"
+      ],
+      "tag": "market_demand_aggregation",
+      "type": "application",
+      "objective": "LO4.6",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.6_market_demand_aggregation",
+      "primarySkill": "market_demand_aggregation",
+      "secondarySkills": [],
+      "repairSkill": "market_demand_aggregation",
+      "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
+      "feedback": "Sum quantities across consumers at each common price.",
+      "source": "engine2_expansion",
+      "aHash": "d337b5f229ba6ed5e970de24ad3c865ef2ef37a347b8ed5a2e555cd1a79e7fa7"
+    },
+    {
+      "id": 130007,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Using the change from P=20 to 24 and Q=100 to 80, which denominator belongs in the midpoint percentage change for quantity?",
+      "options": [
+        "90",
+        "100",
+        "80",
+        "22"
+      ],
+      "tag": "midpoint_elasticity",
+      "type": "calculation",
+      "objective": "LO4.7",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.7_midpoint_elasticity",
+      "primarySkill": "midpoint_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "midpoint_elasticity",
+      "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
+      "feedback": "The midpoint method divides the quantity change by the average of the two quantities.",
+      "source": "engine2_expansion",
+      "aHash": "69f59c273b6e669ac32a6dd5e1b2cb63333d8b004f9696447aee2d422ce63763"
+    },
+    {
+      "id": 130011,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "With two goods that are both desirable, bundle A lies northeast of bundle B. Under the usual 'more is better' assumption, what follows?",
+      "options": [
+        "A is preferred to B",
+        "B is preferred to A",
+        "A and B must be indifferent",
+        "The ranking depends only on prices"
+      ],
+      "tag": "indifference_curve_properties",
+      "type": "application",
+      "objective": "LO3.2",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.2_indifference_curve_properties",
+      "primarySkill": "indifference_curve_properties",
+      "secondarySkills": [],
+      "repairSkill": "indifference_curve_properties",
+      "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
+      "feedback": "When both goods are desirable, having more of both places the consumer on a higher utility level.",
+      "source": "engine2_expansion",
+      "aHash": "528417832443b165090b6a0546a9db10d7437f328367a638347b927d8f88af14"
+    },
+    {
+      "id": 130013,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Income and both prices all rise by 10%. What happens to the consumer's budget set?",
+      "options": [
+        "It is unchanged",
+        "It shifts outward",
+        "It shifts inward",
+        "It rotates toward X"
+      ],
+      "tag": "budget_line_changes",
+      "type": "trap",
+      "objective": "LO3.3",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.3_budget_line_changes",
+      "primarySkill": "budget_line_changes",
+      "secondarySkills": [],
+      "repairSkill": "budget_line_changes",
+      "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+      "feedback": "Proportional changes in nominal income and all prices leave real purchasing power and the budget set unchanged.",
+      "source": "engine2_expansion",
+      "aHash": "2eb953560d2aee9c96090261017ebe948bbd5a91ac4e77d6b95c43634e63f109"
+    },
+    {
+      "id": 130014,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "To derive a demand curve from consumer optimization, what should be varied while preferences, income, and other prices are held fixed?",
+      "options": [
+        "The good's own price",
+        "Every determinant simultaneously",
+        "Only utility labels",
+        "The number of consumers in the market"
+      ],
+      "tag": "derive_individual_demand",
+      "type": "interpretation",
+      "objective": "LO4.1",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.1_derive_individual_demand",
+      "primarySkill": "derive_individual_demand",
+      "secondarySkills": [],
+      "repairSkill": "derive_individual_demand",
+      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
+      "feedback": "The individual demand curve isolates the effect of own price on the consumer's optimal quantity.",
+      "source": "engine2_expansion",
+      "aHash": "e545d63760fe7e84e02622b458a7fa729cc2ff1a01e96d14387999ff43d8f640"
+    },
+    {
+      "id": 130019,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "At $20, A demands 1 unit and B demands 0. At $15, A demands 2 and B demands 1. What are the market quantities at those prices?",
+      "options": [
+        "1 at $20 and 3 at $15",
+        "0.5 at $20 and 1.5 at $15",
+        "1 at $20 and 2 at $15",
+        "20 at $20 and 15 at $15"
+      ],
+      "tag": "market_demand_aggregation",
+      "type": "application",
+      "objective": "LO4.6",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.6_market_demand_aggregation",
+      "primarySkill": "market_demand_aggregation",
+      "secondarySkills": [],
+      "repairSkill": "market_demand_aggregation",
+      "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
+      "feedback": "Sum quantities across consumers at each common price.",
+      "source": "engine2_expansion",
+      "aHash": "d337b5f229ba6ed5e970de24ad3c865ef2ef37a347b8ed5a2e555cd1a79e7fa7"
+    },
+    {
+      "id": 130021,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. What type of change is shown by the arrow from D0 to D1 in the taco market?",
+      "options": [
+        "A rightward shift of demand caused by a nonprice determinant",
+        "A movement along D0 caused by a fall in price",
+        "A leftward shift of demand caused by lower consumer income for a normal good",
+        "An increase in quantity supplied"
+      ],
+      "tag": "demand_curve_shifts",
+      "type": "interpretation",
+      "objective": "LO4.4",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.4_demand_curve_shifts",
+      "primarySkill": "demand_curve_shifts",
+      "secondarySkills": [
+        "demand_response_income_prices"
+      ],
+      "repairSkill": "demand_curve_shifts",
+      "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
+      "feedback": "The entire curve shifts right, which means demand increased because of a nonprice determinant.",
+      "source": "graph_batch_demand_20260816",
+      "image": "DEMAND-03.png",
+      "imageAlt": "Taco graph with parallel downward-sloping D0 and D1 and a right-pointing arrow between them.",
+      "graphRequired": true,
+      "aHash": "5ae7509f640114ec6db907c65a6f155edf0edae296eb6071c96450ee79241e1c"
+    },
+    {
+      "id": 130022,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. How does point B compare with point A on D0 in the peanut butter market?",
+      "options": [
+        "A lower price and a larger quantity demanded",
+        "A higher price and a lower quantity demanded",
+        "A higher price and a larger quantity demanded",
+        "A lower price and a smaller quantity demanded"
+      ],
+      "tag": "derive_individual_demand",
+      "type": "interpretation",
+      "objective": "LO4.1",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.1_derive_individual_demand",
+      "primarySkill": "derive_individual_demand",
+      "secondarySkills": [
+        "demand_response_income_prices"
+      ],
+      "repairSkill": "derive_individual_demand",
+      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand_shift",
+      "feedback": "From A to B on D0, price falls and quantity demanded increases, which matches the law of demand.",
+      "source": "graph_batch_demand_20260816",
+      "image": "DEMAND-04.png",
+      "imageAlt": "Peanut butter graph with parallel downward-sloping D0 and D1; A and B are on D0.",
+      "graphRequired": true,
+      "aHash": "5a00d82bf48f9860644424b2132369a9d754baa168a9f552c42616bac962d2ee"
+    },
+    {
+      "id": 130023,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. If the price of tacos rises from $6 back to $12 on D0, what happens to quantity demanded?",
+      "options": [
+        "It falls from 200 thousand back to 50 thousand",
+        "It rises from 50 thousand to 200 thousand",
+        "The entire demand curve shifts right",
+        "Nothing changes because the demand curve is fixed"
+      ],
+      "tag": "demand_response_income_prices",
+      "type": "interpretation",
+      "objective": "LO4.2",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.2_demand_response_income_prices",
+      "primarySkill": "demand_response_income_prices",
+      "secondarySkills": [
+        "derive_individual_demand"
+      ],
+      "repairSkill": "demand_response_income_prices",
+      "commonError": "treats_income_and_related_goods_changes_as_movements_along_the_curve",
+      "feedback": "Reversing the move from B to A means a higher price and a lower quantity demanded on the same curve.",
+      "source": "graph_batch_demand_20260816",
+      "image": "DEMAND-02.png",
+      "imageAlt": "Taco graph with downward-sloping D0 and points A at 50 thousand, $12 and B at 200 thousand, $6.",
+      "graphRequired": true,
+      "aHash": "6284c96a075348b8289468cc77ab613b3ce383367e41fda1a8427fb8ae205f74"
+    },
+    {
+      "id": 310008,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. At the consumer optimum shown at point A, which condition must hold?",
+      "options": [
+        "MRS = price ratio",
+        "MUx = MUy",
+        "Income = 0",
+        "The budget line is steeper than every indifference curve"
+      ],
+      "tag": "utility_maximization_mrs",
+      "type": "graph",
+      "objective": "LO3.4",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.4_utility_maximization_mrs",
+      "primarySkill": "utility_maximization_mrs",
+      "secondarySkills": [
+        "marginal_rate_substitution"
+      ],
+      "repairSkill": "utility_maximization_mrs",
+      "commonError": "does_not_connect_tangency_with_mrs_and_market_tradeoffs",
+      "feedback": "At an interior optimum, the slope of the indifference curve equals the slope of the budget line, so MRS equals the price ratio.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "IC-04.png",
+      "imageAlt": "Budget line and downward-curving IC2 touching at point A, Good X 15 and Good Y 10.",
+      "graphRequired": true,
+      "aHash": "210baedb4c17c1f63b8a8ecdf1afa78920926017c9557ac4934ee817cd941d8f"
+    },
+    {
+      "id": 310017,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. When the price of Good X falls, which effect is represented by the move from A to B?",
+      "options": [
+        "income effect",
+        "substitution effect",
+        "market demand effect",
+        "consumer surplus effect"
+      ],
+      "tag": "substitution_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [
+        "budget_line_changes"
+      ],
+      "repairSkill": "substitution_effect",
+      "commonError": "confuses_the_compensated_move_with_the_final_income_adjustment",
+      "feedback": "A to B is the substitution effect: the consumer responds to the new relative price of Good X while staying on the original utility level U₀.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "INCOME-SUB-01.png",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C.",
+      "graphRequired": true,
+      "aHash": "82dfe3b7a4869112f86b0bd8fa7b76f2d42047e31637afebee3604717a05340b"
+    },
+    {
+      "id": 310018,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. In the price-change diagram, which effect is represented by the move from B to C?",
+      "options": [
+        "substitution effect",
+        "income effect",
+        "cross-price effect",
+        "normal-good effect"
+      ],
+      "tag": "income_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.3_income_effect",
+      "primarySkill": "income_effect",
+      "secondarySkills": [
+        "substitution_effect"
+      ],
+      "repairSkill": "income_effect",
+      "commonError": "confuses_the_shift_to_the_new_higher_utility_curve_with_substitution_alone",
+      "feedback": "B to C is the income effect. After the price drop in Good X raises real purchasing power, the consumer moves to a higher utility level U₁.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "INCOME-SUB-01.png",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C.",
+      "graphRequired": true,
+      "aHash": "63082db471cf9c97f398a5c11aaff4349407cc276cbbdb9ca8705a0ae6e9f797"
+    },
+    {
+      "id": 310021,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. When the price of Good X rises, which effect is represented by the move from A to B?",
+      "options": [
+        "The income effect",
+        "The substitution effect",
+        "A change in preferences",
+        "A change in nominal income"
+      ],
+      "tag": "substitution_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [
+        "budget_line_changes"
+      ],
+      "repairSkill": "substitution_effect",
+      "commonError": "mislabels_the_compensated_movement_after_a_price_increase",
+      "feedback": "A to B is the substitution effect: the consumer substitutes away from the now relatively more expensive Good X.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "INCOME-SUB-02.png",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C; Budget1 is steeper.",
+      "graphRequired": true,
+      "aHash": "bfc1f50255362495e78201618356942c83a7883342b1ec6d6449bd76a74c5a64"
+    },
+    {
+      "id": 310024,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. After the price change, which point is the consumer’s final optimal bundle?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "There is no final optimum"
+      ],
+      "tag": "demand_response_income_prices",
+      "type": "graph",
+      "objective": "LO4.2",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.2_demand_response_income_prices",
+      "primarySkill": "demand_response_income_prices",
+      "secondarySkills": [
+        "utility_maximization_mrs"
+      ],
+      "repairSkill": "demand_response_income_prices",
+      "commonError": "mistakes_the_compensated_tangency_for_the_final_choice",
+      "feedback": "Point C lies on the new budget line and the highest attainable indifference curve after the price change, so C is the final chosen bundle.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "INCOME-SUB-03.png",
+      "imageAlt": "Two budget lines sharing an X intercept, curves U0 and U1, and points A, B and C; Budget1 reaches higher on Y.",
+      "graphRequired": true,
+      "aHash": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
+    },
+    {
+      "id": 310044,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. At A, the indifference curve and budget line have the same slope. What economic condition does this represent?",
+      "options": [
+        "total utility is maximized because income is zero",
+        "MRS equals the price ratio",
+        "the consumer values both goods equally",
+        "the budget line is horizontal"
+      ],
+      "tag": "utility_maximization_mrs",
+      "type": "graph",
+      "objective": "LO3.4",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.4_utility_maximization_mrs",
+      "primarySkill": "utility_maximization_mrs",
+      "secondarySkills": [
+        "marginal_rate_substitution"
+      ],
+      "repairSkill": "utility_maximization_mrs",
+      "commonError": "cannot_connect_tangency_to_the_mrs_equals_price_ratio_rule",
+      "feedback": "At an interior optimum, the indifference curve is tangent to the budget line, so the MRS equals the market tradeoff given by the price ratio.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "IC-03.png",
+      "imageAlt": "Budget line touching the middle indifference curve IC2 at A, with IC1 below and IC3 above.",
+      "graphRequired": true,
+      "aHash": "7d6b305127028d0967909088d4ca9f1328ef416537a9a6d2c7cd72ee79e0094a"
+    },
+    {
+      "id": 310046,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. When the price of Good X falls, how do purchases change in the move from A to B?",
+      "options": [
+        "more Good X and less Good Y",
+        "less Good X and more Good Y",
+        "more of both goods",
+        "less of both goods"
+      ],
+      "tag": "substitution_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [
+        "budget_line_changes"
+      ],
+      "repairSkill": "substitution_effect",
+      "commonError": "gets_the_direction_of_substitution_wrong_after_a_price_drop",
+      "feedback": "From A to B, Good X rises from 5 to 10 while Good Y falls from 20 to 10. That is the substitution effect.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "INCOME-SUB-01.png",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C.",
+      "graphRequired": true,
+      "aHash": "546f3969649081edead524a24503802a566b7aafe83d88bf29c28aaf73c3a507"
+    },
+    {
+      "id": 310047,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. When the price of Good Y falls, how do purchases change in the move from A to B?",
+      "options": [
+        "more Good X and less Good Y",
+        "less Good X and more Good Y",
+        "more of both goods",
+        "less of both goods"
+      ],
+      "tag": "substitution_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [
+        "budget_line_changes"
+      ],
+      "repairSkill": "substitution_effect",
+      "commonError": "reverses_the_substitution_effect_after_a_drop_in_good_y_price",
+      "feedback": "From A to B, Good X falls from 20 to 10 while Good Y rises from 5 to 10, which is the substitution effect toward the cheaper good Y.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "INCOME-SUB-03.png",
+      "imageAlt": "Two budget lines sharing an X intercept, curves U0 and U1, and points A, B and C; Budget1 reaches higher on Y.",
+      "graphRequired": true,
+      "aHash": "fa66951af26b0feb75b2762a47f1a2350d498789551ae2ecfd5f11f3e8c75289"
+    },
+    {
+      "id": 310048,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. After the price of Good X rises, the consumer chooses C. How does the indifference curve through C compare with the one through A?",
+      "options": [
+        "a higher indifference curve",
+        "the same indifference curve",
+        "a lower indifference curve",
+        "no indifference curve at all"
+      ],
+      "tag": "income_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.3_income_effect",
+      "primarySkill": "income_effect",
+      "secondarySkills": [
+        "demand_response_income_prices"
+      ],
+      "repairSkill": "income_effect",
+      "commonError": "does_not_notice_the_loss_in_welfare_after_a_price_increase",
+      "feedback": "Point C lies on the lower curve U1 rather than the original curve U0, so the consumer is worse off after the price increase.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "INCOME-SUB-02.png",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C; Budget1 is steeper.",
+      "graphRequired": true,
+      "aHash": "87905b2c03987189aeac6bb5929ee00a851847ab5889a8dd367251a9dfbd9d4d"
+    },
+    {
+      "id": 140001,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Pairwise choices reveal strict preference A over B, B over C, and C over A. Each choice is unique and both alternatives are affordable. Which assumption is contradicted?",
+      "options": [
+        "Transitivity of preferences",
+        "The law of one price",
+        "Positive cross-price elasticity",
+        "Market-demand aggregation"
+      ],
+      "tag": "preferences_complete_transitive",
+      "type": "diagnosis",
+      "objective": "LO3.2",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.2_preferences_complete_transitive",
+      "primarySkill": "preferences_complete_transitive",
+      "secondarySkills": [],
+      "repairSkill": "preferences_complete_transitive",
+      "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
+      "feedback": "Strict A≻B and B≻C require A≻C under transitivity. The strict C≻A observation contradicts that implication. A sequence of arbitrary selections among indifferent bundles would not establish this strict cycle.",
+      "source": "engine2_expansion",
+      "aHash": "4b6743cc7ed85cff47e4d0478fd736857bb26d1da9884a730a9021bdc5b7e0e8"
+    },
+    {
+      "id": 140002,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A proposed indifference map has upward-sloping curves for two goods that are both desirable. What is the best diagnosis?",
+      "options": [
+        "It contradicts the assumption that both goods are desirable",
+        "They show that all affordable bundles must be equally desirable",
+        "It shows the budget line shifted",
+        "It implies unit elastic demand"
+      ],
+      "tag": "indifference_curve_properties",
+      "type": "critique",
+      "objective": "LO3.2",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.2_indifference_curve_properties",
+      "primarySkill": "indifference_curve_properties",
+      "secondarySkills": [],
+      "repairSkill": "indifference_curve_properties",
+      "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
+      "feedback": "For two goods, maintaining constant utility normally requires a tradeoff, which produces downward-sloping indifference curves.",
+      "source": "engine2_expansion",
+      "aHash": "09ec5e362a7519cb70740d168cc374a0641db4c29db56d6b2a4aa3cd5a2e0786"
+    },
+    {
+      "id": 140004,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A consumer has income $60, Px=$5, Py=$10. Bundle (6,3) lies where relative to the budget line?",
+      "options": [
+        "On the budget line",
+        "Strictly inside the budget set",
+        "Outside the budget set",
+        "Cannot be determined"
+      ],
+      "tag": "budget_constraint_intercepts_slope",
+      "type": "calculation",
+      "objective": "LO3.3",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
+      "primarySkill": "budget_constraint_intercepts_slope",
+      "secondarySkills": [],
+      "repairSkill": "budget_constraint_intercepts_slope",
+      "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
+      "feedback": "Spending half the X-intercept and half the Y-intercept uses exactly half the budget on each good, totaling all income.",
+      "source": "engine2_expansion",
+      "aHash": "cbdb230c1870070af6de124037d16cb7724a94b270bc4539ea11e56bcaaa14fe"
+    },
+    {
+      "id": 140009,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A firm's data show Qx rose after Py rose, while Px and income were stable. Which relationship is most consistent with the evidence?",
+      "options": [
+        "X and Y are substitutes",
+        "X and Y are complements",
+        "X is necessarily inferior",
+        "X has unit elastic demand"
+      ],
+      "tag": "demand_response_income_prices",
+      "type": "diagnosis",
+      "objective": "LO4.2",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.2_demand_response_income_prices",
+      "primarySkill": "demand_response_income_prices",
+      "secondarySkills": [],
+      "repairSkill": "demand_response_income_prices",
+      "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
+      "feedback": "With other determinants stable, a rise in Py that raises Qx is consistent with substitutes.",
+      "source": "engine2_expansion",
+      "aHash": "b072faf47abc0486fb459eb0b84202a2362e94e1e75492d394f15d644df72780"
+    },
+    {
+      "id": 140011,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A compensated price change lowers Px while adjusting income so the consumer can just reach the original utility level. What is this experiment designed to isolate?",
+      "options": [
+        "The substitution effect",
+        "The income effect",
+        "Market demand aggregation",
+        "Consumer surplus only"
+      ],
+      "tag": "substitution_effect",
+      "type": "application",
+      "objective": "LO4.3",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [],
+      "repairSkill": "substitution_effect",
+      "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
+      "feedback": "Holding utility constant while changing relative prices isolates the substitution effect.",
+      "source": "engine2_expansion",
+      "aHash": "bfc1f50255362495e78201618356942c83a7883342b1ec6d6449bd76a74c5a64"
+    },
+    {
+      "id": 140015,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Holding the set of buyers and their willingness to pay fixed, a price cut transfers some surplus from sellers to existing buyers and may attract additional buyers. What happens to consumer surplus?",
+      "options": [
+        "It rises",
+        "It must fall",
+        "It is unchanged by price",
+        "It becomes producer surplus"
+      ],
+      "tag": "consumer_surplus",
+      "type": "interpretation",
+      "objective": "LO4.5",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.5_consumer_surplus",
+      "primarySkill": "consumer_surplus",
+      "secondarySkills": [],
+      "repairSkill": "consumer_surplus",
+      "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
+      "feedback": "Lower prices raise surplus for existing purchasers and can create surplus for new purchasers.",
+      "source": "engine2_expansion",
+      "aHash": "654d4dc3d354a15b30ce49eb7818491fe5c33edd8a0774f069834474de424203"
+    },
+    {
+      "id": 140016,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A new group of consumers enters the market with positive demand at every relevant price. Holding incumbent demand fixed, what happens to market demand?",
+      "options": [
+        "It shifts outward as quantities are added",
+        "It moves along the old market demand curve",
+        "It becomes the average of old and new demand",
+        "It must become more inelastic"
+      ],
+      "tag": "market_demand_aggregation",
+      "type": "interpretation",
+      "objective": "LO4.6",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.6_market_demand_aggregation",
+      "primarySkill": "market_demand_aggregation",
+      "secondarySkills": [],
+      "repairSkill": "market_demand_aggregation",
+      "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
+      "feedback": "Market quantity is the sum of all buyers’ quantities at the same price. New buyers with positive demand add to that sum, so market demand shifts outward; existing buyers do not need to change their preferences.",
+      "source": "engine2_expansion",
+      "aHash": "d850340d7fff8f07b795c5bffbaab7e9c5cf854e540113ee85e357159f52ac75"
+    },
+    {
+      "id": 140019,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A manager wants to raise revenue by increasing price. Which demand estimate supports that move, all else equal?",
+      "options": [
+        "|Ed|=0.6",
+        "|Ed|=1.8",
+        "|Ed|=2.5",
+        "Perfectly elastic demand"
+      ],
+      "tag": "elasticity_total_revenue",
+      "type": "strategy",
+      "objective": "LO4.7",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.7_elasticity_total_revenue",
+      "primarySkill": "elasticity_total_revenue",
+      "secondarySkills": [],
+      "repairSkill": "elasticity_total_revenue",
+      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "feedback": "With inelastic demand, quantity falls proportionally less than price rises, so total revenue increases.",
+      "source": "engine2_expansion",
+      "aHash": "39b3e5780d93c0191c20515ef109bd7b1cdd742102ac4fbae3031752e030f9d8"
+    },
+    {
+      "id": 140020,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A streaming service estimates cross-price elasticity with a rival at +1.4. Which strategic inference is strongest?",
+      "options": [
+        "They are substitutes; rival prices shift demand",
+        "They are complements; rival prices shift demand",
+        "The service is inferior",
+        "Own-price demand is necessarily inelastic"
+      ],
+      "tag": "cross_price_elasticity",
+      "type": "strategy",
+      "objective": "LO4.7",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.7_cross_price_elasticity",
+      "primarySkill": "cross_price_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "cross_price_elasticity",
+      "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
+      "feedback": "A sizable positive cross-price elasticity indicates substitution between the services.",
+      "source": "engine2_expansion",
+      "aHash": "fe9852f1134b3c3207ce940dacc65073f3dd6b7fcf8654f4fbd4c625876b078c"
+    },
+    {
+      "id": 140021,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A product's income elasticity is 1.8. During a broad income downturn, what demand pattern would this estimate predict, all else equal?",
+      "options": [
+        "Demand falls proportionally more than income",
+        "Demand rises because the good is inferior",
+        "Demand is unaffected by income",
+        "Demand must move only along the curve"
+      ],
+      "tag": "income_elasticity",
+      "type": "application",
+      "objective": "LO4.7",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.7_income_elasticity",
+      "primarySkill": "income_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "income_elasticity",
+      "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
+      "feedback": "An income elasticity above 1 indicates a strongly income-responsive normal good.",
+      "source": "engine2_expansion",
+      "aHash": "2191e60b96079e863a9ad079f89f3d387d638185033ed2cb0d2171d9c8259627"
+    },
+    {
+      "id": 140024,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Pairwise choices reveal strict preference A over B, B over C, and C over A. Each choice is unique and both alternatives are affordable. Which assumption is contradicted?",
+      "options": [
+        "Transitivity of preferences",
+        "The law of one price",
+        "Positive cross-price elasticity",
+        "Market-demand aggregation"
+      ],
+      "tag": "preferences_complete_transitive",
+      "type": "diagnosis",
+      "objective": "LO3.2",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.2_preferences_complete_transitive",
+      "primarySkill": "preferences_complete_transitive",
+      "secondarySkills": [],
+      "repairSkill": "preferences_complete_transitive",
+      "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
+      "feedback": "Strict A≻B and B≻C require A≻C under transitivity. The strict C≻A observation contradicts that implication. A sequence of arbitrary selections among indifferent bundles would not establish this strict cycle.",
+      "source": "engine2_expansion",
+      "aHash": "4b6743cc7ed85cff47e4d0478fd736857bb26d1da9884a730a9021bdc5b7e0e8"
+    },
+    {
+      "id": 140025,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A proposed indifference map has upward-sloping curves for two goods that are both desirable. What is the best diagnosis?",
+      "options": [
+        "It contradicts the assumption that both goods are desirable",
+        "They show that all affordable bundles must be equally desirable",
+        "It shows the budget line shifted",
+        "It implies unit elastic demand"
+      ],
+      "tag": "indifference_curve_properties",
+      "type": "critique",
+      "objective": "LO3.2",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.2_indifference_curve_properties",
+      "primarySkill": "indifference_curve_properties",
+      "secondarySkills": [],
+      "repairSkill": "indifference_curve_properties",
+      "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
+      "feedback": "For two goods, maintaining constant utility normally requires a tradeoff, which produces downward-sloping indifference curves.",
+      "source": "engine2_expansion",
+      "aHash": "09ec5e362a7519cb70740d168cc374a0641db4c29db56d6b2a4aa3cd5a2e0786"
+    },
+    {
+      "id": 140027,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A consumer has income $80, Px=$10, Py=$15. Bundle (4,8/3) lies where relative to the budget line?",
+      "options": [
+        "On the budget line",
+        "Strictly inside the budget set",
+        "Outside the budget set",
+        "Cannot be determined"
+      ],
+      "tag": "budget_constraint_intercepts_slope",
+      "type": "calculation",
+      "objective": "LO3.3",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
+      "primarySkill": "budget_constraint_intercepts_slope",
+      "secondarySkills": [],
+      "repairSkill": "budget_constraint_intercepts_slope",
+      "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
+      "feedback": "Spending is 10×4+15×(8/3)=40+40=$80, exactly the full budget. The exact fraction avoids a rounding error that would put the bundle just outside.",
+      "source": "engine2_expansion",
+      "aHash": "cbdb230c1870070af6de124037d16cb7724a94b270bc4539ea11e56bcaaa14fe"
+    },
+    {
+      "id": 140032,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A firm's data show Qx rose after Py rose, while Px and income were stable. Which relationship is most consistent with the evidence?",
+      "options": [
+        "X and Y are substitutes",
+        "X and Y are complements",
+        "X is necessarily inferior",
+        "X has unit elastic demand"
+      ],
+      "tag": "demand_response_income_prices",
+      "type": "diagnosis",
+      "objective": "LO4.2",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.2_demand_response_income_prices",
+      "primarySkill": "demand_response_income_prices",
+      "secondarySkills": [],
+      "repairSkill": "demand_response_income_prices",
+      "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
+      "feedback": "With other determinants stable, a rise in Py that raises Qx is consistent with substitutes.",
+      "source": "engine2_expansion",
+      "aHash": "b072faf47abc0486fb459eb0b84202a2362e94e1e75492d394f15d644df72780"
+    },
+    {
+      "id": 140034,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A compensated price change lowers Px while adjusting income so the consumer can just reach the original utility level. What is this experiment designed to isolate?",
+      "options": [
+        "The substitution effect",
+        "The income effect",
+        "Market demand aggregation",
+        "Consumer surplus only"
+      ],
+      "tag": "substitution_effect",
+      "type": "application",
+      "objective": "LO4.3",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [],
+      "repairSkill": "substitution_effect",
+      "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
+      "feedback": "Holding utility constant while changing relative prices isolates the substitution effect.",
+      "source": "engine2_expansion",
+      "aHash": "bfc1f50255362495e78201618356942c83a7883342b1ec6d6449bd76a74c5a64"
+    },
+    {
+      "id": 140038,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Holding the set of buyers and their willingness to pay fixed, a price cut transfers some surplus from sellers to existing buyers and may attract additional buyers. What happens to consumer surplus?",
+      "options": [
+        "It rises",
+        "It must fall",
+        "It is unchanged by price",
+        "It becomes producer surplus"
+      ],
+      "tag": "consumer_surplus",
+      "type": "interpretation",
+      "objective": "LO4.5",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.5_consumer_surplus",
+      "primarySkill": "consumer_surplus",
+      "secondarySkills": [],
+      "repairSkill": "consumer_surplus",
+      "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
+      "feedback": "Lower prices raise surplus for existing purchasers and can create surplus for new purchasers.",
+      "source": "engine2_expansion",
+      "aHash": "654d4dc3d354a15b30ce49eb7818491fe5c33edd8a0774f069834474de424203"
+    },
+    {
+      "id": 140039,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A new group of consumers enters the market with positive demand at every relevant price. Holding incumbent demand fixed, what happens to market demand?",
+      "options": [
+        "It shifts outward as quantities are added",
+        "It moves along the old market demand curve",
+        "It becomes the average of old and new demand",
+        "It must become more inelastic"
+      ],
+      "tag": "market_demand_aggregation",
+      "type": "interpretation",
+      "objective": "LO4.6",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.6_market_demand_aggregation",
+      "primarySkill": "market_demand_aggregation",
+      "secondarySkills": [],
+      "repairSkill": "market_demand_aggregation",
+      "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
+      "feedback": "Market quantity is the sum of all buyers’ quantities at the same price. New buyers with positive demand add to that sum, so market demand shifts outward; existing buyers do not need to change their preferences.",
+      "source": "engine2_expansion",
+      "aHash": "d850340d7fff8f07b795c5bffbaab7e9c5cf854e540113ee85e357159f52ac75"
+    },
+    {
+      "id": 140042,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A manager wants to raise revenue by increasing price. Which demand estimate supports that move, all else equal?",
+      "options": [
+        "|Ed|=0.6",
+        "|Ed|=1.8",
+        "|Ed|=2.5",
+        "Perfectly elastic demand"
+      ],
+      "tag": "elasticity_total_revenue",
+      "type": "strategy",
+      "objective": "LO4.7",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.7_elasticity_total_revenue",
+      "primarySkill": "elasticity_total_revenue",
+      "secondarySkills": [],
+      "repairSkill": "elasticity_total_revenue",
+      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "feedback": "With inelastic demand, quantity falls proportionally less than price rises, so total revenue increases.",
+      "source": "engine2_expansion",
+      "aHash": "39b3e5780d93c0191c20515ef109bd7b1cdd742102ac4fbae3031752e030f9d8"
+    },
+    {
+      "id": 140043,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A streaming service estimates cross-price elasticity with a rival at +1.4. Which strategic inference is strongest?",
+      "options": [
+        "They are substitutes; rival prices shift demand",
+        "They are complements; rival prices shift demand",
+        "The service is inferior",
+        "Own-price demand is necessarily inelastic"
+      ],
+      "tag": "cross_price_elasticity",
+      "type": "strategy",
+      "objective": "LO4.7",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.7_cross_price_elasticity",
+      "primarySkill": "cross_price_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "cross_price_elasticity",
+      "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
+      "feedback": "A sizable positive cross-price elasticity indicates substitution between the services.",
+      "source": "engine2_expansion",
+      "aHash": "fe9852f1134b3c3207ce940dacc65073f3dd6b7fcf8654f4fbd4c625876b078c"
+    },
+    {
+      "id": 140044,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A product's income elasticity is 1.8. During a broad income downturn, what demand pattern would this estimate predict, all else equal?",
+      "options": [
+        "Demand falls proportionally more than income",
+        "Demand rises because the good is inferior",
+        "Demand is unaffected by income",
+        "Demand must move only along the curve"
+      ],
+      "tag": "income_elasticity",
+      "type": "application",
+      "objective": "LO4.7",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.7_income_elasticity",
+      "primarySkill": "income_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "income_elasticity",
+      "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
+      "feedback": "An income elasticity above 1 indicates a strongly income-responsive normal good.",
+      "source": "engine2_expansion",
+      "aHash": "2191e60b96079e863a9ad079f89f3d387d638185033ed2cb0d2171d9c8259627"
+    },
+    {
+      "id": 140047,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Pairwise choices reveal strict preference A over B, B over C, and C over A. Each choice is unique and both alternatives are affordable. Which assumption is contradicted?",
+      "options": [
+        "Transitivity of preferences",
+        "The law of one price",
+        "Positive cross-price elasticity",
+        "Market-demand aggregation"
+      ],
+      "tag": "preferences_complete_transitive",
+      "type": "diagnosis",
+      "objective": "LO3.2",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.2_preferences_complete_transitive",
+      "primarySkill": "preferences_complete_transitive",
+      "secondarySkills": [],
+      "repairSkill": "preferences_complete_transitive",
+      "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
+      "feedback": "Strict A≻B and B≻C require A≻C under transitivity. The strict C≻A observation contradicts that implication. A sequence of arbitrary selections among indifferent bundles would not establish this strict cycle.",
+      "source": "engine2_expansion",
+      "aHash": "4b6743cc7ed85cff47e4d0478fd736857bb26d1da9884a730a9021bdc5b7e0e8"
+    },
+    {
+      "id": 140048,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A proposed indifference map has upward-sloping curves for two goods that are both desirable. What is the best diagnosis?",
+      "options": [
+        "It contradicts the assumption that both goods are desirable",
+        "They show that all affordable bundles must be equally desirable",
+        "It shows the budget line shifted",
+        "It implies unit elastic demand"
+      ],
+      "tag": "indifference_curve_properties",
+      "type": "critique",
+      "objective": "LO3.2",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.2_indifference_curve_properties",
+      "primarySkill": "indifference_curve_properties",
+      "secondarySkills": [],
+      "repairSkill": "indifference_curve_properties",
+      "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
+      "feedback": "For two goods, maintaining constant utility normally requires a tradeoff, which produces downward-sloping indifference curves.",
+      "source": "engine2_expansion",
+      "aHash": "09ec5e362a7519cb70740d168cc374a0641db4c29db56d6b2a4aa3cd5a2e0786"
+    },
+    {
+      "id": 140050,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A consumer has income $100, Px=$15, Py=$20. Bundle (10/3,2.5) lies where relative to the budget line?",
+      "options": [
+        "On the budget line",
+        "Strictly inside the budget set",
+        "Outside the budget set",
+        "Cannot be determined"
+      ],
+      "tag": "budget_constraint_intercepts_slope",
+      "type": "calculation",
+      "objective": "LO3.3",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
+      "primarySkill": "budget_constraint_intercepts_slope",
+      "secondarySkills": [],
+      "repairSkill": "budget_constraint_intercepts_slope",
+      "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
+      "feedback": "Spending is 15×(10/3)+20×2.5=50+50=$100, exactly the full budget.",
+      "source": "engine2_expansion",
+      "aHash": "cbdb230c1870070af6de124037d16cb7724a94b270bc4539ea11e56bcaaa14fe"
+    },
+    {
+      "id": 140055,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A firm's data show Qx rose after Py rose, while Px and income were stable. Which relationship is most consistent with the evidence?",
+      "options": [
+        "X and Y are substitutes",
+        "X and Y are complements",
+        "X is necessarily inferior",
+        "X has unit elastic demand"
+      ],
+      "tag": "demand_response_income_prices",
+      "type": "diagnosis",
+      "objective": "LO4.2",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.2_demand_response_income_prices",
+      "primarySkill": "demand_response_income_prices",
+      "secondarySkills": [],
+      "repairSkill": "demand_response_income_prices",
+      "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
+      "feedback": "With other determinants stable, a rise in Py that raises Qx is consistent with substitutes.",
+      "source": "engine2_expansion",
+      "aHash": "b072faf47abc0486fb459eb0b84202a2362e94e1e75492d394f15d644df72780"
+    },
+    {
+      "id": 140057,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A compensated price change lowers Px while adjusting income so the consumer can just reach the original utility level. What is this experiment designed to isolate?",
+      "options": [
+        "The substitution effect",
+        "The income effect",
+        "Market demand aggregation",
+        "Consumer surplus only"
+      ],
+      "tag": "substitution_effect",
+      "type": "application",
+      "objective": "LO4.3",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [],
+      "repairSkill": "substitution_effect",
+      "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
+      "feedback": "Holding utility constant while changing relative prices isolates the substitution effect.",
+      "source": "engine2_expansion",
+      "aHash": "bfc1f50255362495e78201618356942c83a7883342b1ec6d6449bd76a74c5a64"
+    },
+    {
+      "id": 140060,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Between C and B, quantity rises from 30 to 45 while price falls from $12 to $10. Using the midpoint method, what is the approximate price elasticity of demand?",
+      "options": [
+        "2.2",
+        "1.0",
+        "0.45",
+        "3.0"
+      ],
+      "tag": "midpoint_elasticity",
+      "type": "multi-step",
+      "objective": "LO4.7",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.7_midpoint_elasticity",
+      "primarySkill": "midpoint_elasticity",
+      "secondarySkills": [
+        "price_elasticity_fundamentals"
+      ],
+      "repairSkill": "midpoint_elasticity",
+      "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
+      "feedback": "Quantity changes 15/37.5 = 40%. Price changes 2/11 ≈ 18.2%. Elasticity is about 40/18.2 = 2.2.",
+      "source": "graph_batch_elasticity_20260816",
+      "image": "ELASTICITY-01.png",
+      "imageAlt": "Straight downward-sloping Demand line with labeled points C, B and A.",
+      "graphRequired": true,
+      "aHash": "914204c25f3f144ddec3469c61a6faea695c87590ab78a5eb25b0f3904cf84e0"
+    },
+    {
+      "id": 140062,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. The movement from B to A leaves total revenue unchanged. What does the total-revenue test imply about demand over this arc?",
+      "options": [
+        "Demand is unit elastic",
+        "Demand is perfectly elastic",
+        "Demand is relatively inelastic",
+        "Demand is perfectly inelastic"
+      ],
+      "tag": "elasticity_total_revenue",
+      "type": "integration",
+      "objective": "LO4.7",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.7_elasticity_total_revenue",
+      "primarySkill": "elasticity_total_revenue",
+      "secondarySkills": [
+        "midpoint_elasticity"
+      ],
+      "repairSkill": "elasticity_total_revenue",
+      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "feedback": "Price falls while quantity rises enough to leave total revenue unchanged at 140. That is the total-revenue signature of unit elasticity.",
+      "source": "graph_batch_elasticity_20260816",
+      "image": "ELASTICITY-04.png",
+      "imageAlt": "Downward-curving Demand line with B at quantity 20, price 7 and A at quantity 70, price 2.",
+      "graphRequired": true,
+      "aHash": "94c91649771132d388c42292891ef450001fc31b210b4cb4c188333b3f6c7466"
+    },
+    {
+      "id": 310005,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. What does tangency at C imply about the consumer's willingness to trade Good X for Good Y relative to the market tradeoff?",
+      "options": [
+        "greater than the market tradeoff",
+        "less than the market tradeoff",
+        "Equal to the market tradeoff",
+        "unrelated to the market tradeoff"
+      ],
+      "tag": "utility_maximization_mrs",
+      "type": "graph",
+      "objective": "LO3.4",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.4_utility_maximization_mrs",
+      "primarySkill": "utility_maximization_mrs",
+      "secondarySkills": [
+        "marginal_rate_substitution"
+      ],
+      "repairSkill": "utility_maximization_mrs",
+      "commonError": "separates_mrs_from_the_budget_line_slope_at_tangency",
+      "feedback": "At tangency, the slope of the indifference curve equals the slope of the budget line, so the consumer’s MRS equals the market tradeoff.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "IC-02.png",
+      "imageAlt": "Budget line and three indifference curves with A, B and a tangency at C.",
+      "graphRequired": true,
+      "aHash": "e863eae168afa5fb5c8b0f484c940fe0595a1a9153a668c90181bb9395f46e1b"
+    },
+    {
+      "id": 310019,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. After Good X becomes cheaper, what is the consumer’s final utility-maximizing choice?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "Any point on U₀"
+      ],
+      "tag": "demand_response_income_prices",
+      "type": "graph",
+      "objective": "LO4.2",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.2_demand_response_income_prices",
+      "primarySkill": "demand_response_income_prices",
+      "secondarySkills": [
+        "substitution_effect",
+        "income_effect"
+      ],
+      "repairSkill": "demand_response_income_prices",
+      "commonError": "stops_at_the_compensated_bundle_instead_of_the_final_bundle",
+      "feedback": "The final choice is point C, where the consumer reaches the new higher utility curve U₁ on Budget₁.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "INCOME-SUB-01.png",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C.",
+      "graphRequired": true,
+      "aHash": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
+    },
+    {
+      "id": 310022,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. How does the consumer's choice at C compare with the choice at A?",
+      "options": [
+        "The consumer reaches a higher utility level after the price increase",
+        "The consumer reaches a lower utility level after the price increase",
+        "The consumer faces no change in utility",
+        "The consumer is off the budget line"
+      ],
+      "tag": "income_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.3_income_effect",
+      "primarySkill": "income_effect",
+      "secondarySkills": [
+        "demand_response_income_prices"
+      ],
+      "repairSkill": "income_effect",
+      "commonError": "fails_to_notice_that_the_new_choice_is_on_a_lower_indifference_curve",
+      "feedback": "Point C lies on a lower indifference curve than point A, so the consumer ends up worse off after the price increase in Good X.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "INCOME-SUB-02.png",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C; Budget1 is steeper.",
+      "graphRequired": true,
+      "aHash": "7c81395af8abff32423c210bdc2e11183ed3034c2b0e404fcc337ecb0bbf49c9"
+    },
+    {
+      "id": 310025,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. When Good Y becomes cheaper, how do purchases change in the compensated move from A to B?",
+      "options": [
+        "more Good X and less Good Y",
+        "less Good X and more Good Y",
+        "more of both goods",
+        "less of both goods"
+      ],
+      "tag": "substitution_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [
+        "budget_line_changes"
+      ],
+      "repairSkill": "substitution_effect",
+      "commonError": "gets_the_direction_of_substitution_wrong_when_y_becomes_cheaper",
+      "feedback": "When Good Y becomes cheaper, the substitution effect pushes the consumer toward more Y and away from X. That is the A to B movement shown here.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "INCOME-SUB-03.png",
+      "imageAlt": "Two budget lines sharing an X intercept, curves U0 and U1, and points A, B and C; Budget1 reaches higher on Y.",
+      "graphRequired": true,
+      "aHash": "fa66951af26b0feb75b2762a47f1a2350d498789551ae2ecfd5f11f3e8c75289"
+    },
+    {
+      "id": 310027,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. In this price-change graph, the movement from A to B isolates the substitution effect. Which change is shown?",
+      "options": [
+        "More Good X and less Good Y",
+        "Less Good X and more Good Y",
+        "More of both goods",
+        "No change in consumption"
+      ],
+      "tag": "substitution_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [
+        "budget_line_changes"
+      ],
+      "repairSkill": "substitution_effect",
+      "commonError": "reverses_the_direction_of_substitution_when_x_becomes_cheaper",
+      "feedback": "The original optimum is A=(10,20). At the new relative price but original utility U0, the compensated optimum is B=(20,5). The substitution effect raises X by 10 and lowers Y by 15 along U0.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "INCOME-SUB-04.png",
+      "imageAlt": "Convex indifference curves with original optimum A (10,20), compensated optimum B (20,5), and final optimum C (15,25).",
+      "graphRequired": true,
+      "aHash": "546f3969649081edead524a24503802a566b7aafe83d88bf29c28aaf73c3a507"
+    },
+    {
+      "id": 310049,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. After the price of Good X falls, how does the final bundle at C compare with the initial bundle at A?",
+      "options": [
+        "More X and unchanged Y",
+        "more Good X and more Good Y",
+        "less Good X and more Good Y",
+        "the same bundle"
+      ],
+      "tag": "demand_response_income_prices",
+      "type": "graph",
+      "objective": "LO4.2",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.2_demand_response_income_prices",
+      "primarySkill": "demand_response_income_prices",
+      "secondarySkills": [
+        "substitution_effect",
+        "income_effect"
+      ],
+      "repairSkill": "demand_response_income_prices",
+      "commonError": "miscompares_the_initial_and_final_bundles_after_a_price_change",
+      "feedback": "Point A is about (5, 20) and point C is about (20, 20), so the consumer ends with more Good X and the same amount of Good Y.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "INCOME-SUB-01.png",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C.",
+      "graphRequired": true,
+      "aHash": "c53830672e591e1098ec8fdae6522f35e7a2312a5a5c96b441d6a90f32e7f23a"
+    },
+    {
+      "id": 310050,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. After the price of Good Y falls, how does the final bundle at C compare with the initial bundle at A?",
+      "options": [
+        "the same amount of Good X and more Good Y",
+        "more Good X and more Good Y",
+        "less Good X and more Good Y",
+        "more Good X and the same amount of Good Y"
+      ],
+      "tag": "demand_response_income_prices",
+      "type": "graph",
+      "objective": "LO4.2",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.2_demand_response_income_prices",
+      "primarySkill": "demand_response_income_prices",
+      "secondarySkills": [
+        "substitution_effect",
+        "income_effect"
+      ],
+      "repairSkill": "demand_response_income_prices",
+      "commonError": "misreads_the_initial_and_final_coordinates",
+      "feedback": "Point A is about (20, 5) and point C is about (20, 20), so Good X stays the same while Good Y increases.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "INCOME-SUB-03.png",
+      "imageAlt": "Two budget lines sharing an X intercept, curves U0 and U1, and points A, B and C; Budget1 reaches higher on Y.",
+      "graphRequired": true,
+      "aHash": "0419e66c983c7c20c26b029f9f4a365b8216e94e67d46b7dfb871ddf93f6b3d7"
+    },
+    {
+      "id": 310051,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. After the price of Good X rises, how does the final bundle at C compare with the initial bundle at A?",
+      "options": [
+        "more Good X and the same amount of Good Y",
+        "less Good X and the same amount of Good Y",
+        "less Good X and more Good Y",
+        "more Good X and less Good Y"
+      ],
+      "tag": "demand_response_income_prices",
+      "type": "graph",
+      "objective": "LO4.2",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.2_demand_response_income_prices",
+      "primarySkill": "demand_response_income_prices",
+      "secondarySkills": [
+        "income_effect",
+        "substitution_effect"
+      ],
+      "repairSkill": "demand_response_income_prices",
+      "commonError": "misreads_the_coordinates_of_initial_and_final_bundles",
+      "feedback": "Point A is about (20, 20) and point C is about (5, 20), so the consumer ends with less Good X and the same amount of Good Y.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "INCOME-SUB-02.png",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C; Budget1 is steeper.",
+      "graphRequired": true,
+      "aHash": "fd45ba3df3bf946f3686940737eff2be832969766b4bfce2b8939aca71c9a4c2"
+    },
+    {
+      "id": 310052,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. After the price of Good X falls in this graph, what happens to the consumer’s chosen amounts from A to C?",
+      "options": [
+        "Good X rises and Good Y falls",
+        "both Good X and Good Y rise",
+        "Good X falls and Good Y rises",
+        "Good X rises and Good Y stays the same"
+      ],
+      "tag": "demand_response_income_prices",
+      "type": "graph",
+      "objective": "LO4.2",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.2_demand_response_income_prices",
+      "primarySkill": "demand_response_income_prices",
+      "secondarySkills": [
+        "income_effect",
+        "substitution_effect"
+      ],
+      "repairSkill": "demand_response_income_prices",
+      "commonError": "cannot_compare_initial_and_final_choices_in_the_alternate_price_drop_graph",
+      "feedback": "The original optimum A=(10,20) becomes C=(15,25). Both X and Y rise in the total response. The A-to-B substitution effect raises X by 10, while the B-to-C income effect reduces X by 5, leaving a net increase of 5.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "INCOME-SUB-04.png",
+      "imageAlt": "Convex indifference curves with original optimum A (10,20), compensated optimum B (20,5), and final optimum C (15,25).",
+      "graphRequired": true,
+      "aHash": "86d7604f974695a66f7b8d52d5a6f735fd179810b9ae03a2ff2056ae94a01c63"
+    },
+    {
+      "id": 310053,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. For perfect complements, where will the optimal bundle typically occur?",
+      "options": [
+        "At the highest affordable kink",
+        "Anywhere along a horizontal arm",
+        "Anywhere along a vertical arm",
+        "At the highest vertical intercept"
+      ],
+      "tag": "utility_maximization_mrs",
+      "type": "graph",
+      "objective": "LO3.4",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.4_utility_maximization_mrs",
+      "primarySkill": "utility_maximization_mrs",
+      "secondarySkills": [
+        "indifference_curve_properties"
+      ],
+      "repairSkill": "utility_maximization_mrs",
+      "commonError": "thinks_any_point_on_an_l_shaped_curve_is_equally_likely_to_be_optimal",
+      "feedback": "With perfect complements, extra units of only one good do not raise utility, so the optimum occurs at the kink of the highest attainable indifference curve.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "IC-06.png",
+      "imageAlt": "Three right-angle indifference curves with corners progressing upward and right from IC1 to IC3.",
+      "graphRequired": true,
+      "aHash": "c84b3d75dc92ed20d25855491107eb529397cef99ee789ce20190ac53767c7d8"
+    },
+    {
+      "id": 150004,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Suppose the budget equation is 5X + 10Y = 60. Which pair of facts is simultaneously correct?",
+      "options": [
+        "X-intercept=12 and slope=-0.50",
+        "X-intercept=6 and slope=-2.00",
+        "Y-intercept=12 and slope=-0.50",
+        "X-intercept=60 and slope=-1"
+      ],
+      "tag": "budget_constraint_intercepts_slope",
+      "type": "synthesis",
+      "objective": "LO3.3",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
+      "primarySkill": "budget_constraint_intercepts_slope",
+      "secondarySkills": [],
+      "repairSkill": "budget_constraint_intercepts_slope",
+      "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
+      "feedback": "The X-intercept is I/Px and the slope is -Px/Py.",
+      "source": "engine2_expansion",
+      "aHash": "56bacb7f697eeb84038a42fcb6f80fb81b0d6273441486f1503f9253b41b117e"
+    },
+    {
+      "id": 150010,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A household's demand for a good falls 6% when income rises 10%, with prices unchanged. What does the sign of this response imply?",
+      "options": [
+        "An inferior good",
+        "The good is normal and a necessity",
+        "The good is a substitute",
+        "The good is perfectly inelastic"
+      ],
+      "tag": "normal_inferior_goods",
+      "type": "calculation",
+      "objective": "LO4.2",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.2_normal_inferior_goods",
+      "primarySkill": "normal_inferior_goods",
+      "secondarySkills": [
+        "income_elasticity"
+      ],
+      "repairSkill": "normal_inferior_goods",
+      "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
+      "feedback": "Income elasticity is negative, so the good is inferior.",
+      "source": "engine2_expansion",
+      "aHash": "19e2cd4a75b554fc2e496ee58898aa70fc1adb32ab8b18d0b9730a6a567790c3"
+    },
+    {
+      "id": 150011,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A price decrease for X produces a positive substitution effect of +4 units and a negative income effect of -1 unit. What is the total change in quantity demanded?",
+      "options": [
+        "+3 units",
+        "+5 units",
+        "-3 units",
+        "-5 units"
+      ],
+      "tag": "substitution_effect",
+      "type": "multi-step",
+      "objective": "LO4.3",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [
+        "income_effect"
+      ],
+      "repairSkill": "substitution_effect",
+      "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
+      "feedback": "Total effect = substitution effect + income effect = 4 + (-1) = 3 units.",
+      "source": "engine2_expansion",
+      "aHash": "beb5ec53ad7185cb7f133947de50348cf0aab82d9d11f931c9dc26b6297e221e"
+    },
+    {
+      "id": 150018,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "When midpoint elasticity is 1.00 between two points, which interpretation is best?",
+      "options": [
+        "Equal midpoint percentage changes in magnitude",
+        "Equal absolute changes in price and quantity over the interval",
+        "Total revenue must be zero",
+        "Price and quantity levels are equal"
+      ],
+      "tag": "midpoint_elasticity",
+      "type": "synthesis",
+      "objective": "LO4.7",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.7_midpoint_elasticity",
+      "primarySkill": "midpoint_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "midpoint_elasticity",
+      "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
+      "feedback": "Unit elasticity means equal percentage changes in price and quantity, not equal levels or slope.",
+      "source": "engine2_expansion",
+      "aHash": "b499994350f1f12313d35e2738ee912217e061c26df3f2e8dbbf3351cc57b16b"
+    },
+    {
+      "id": 150019,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "On a linear demand curve, total revenue is maximized at the quantity where demand is approximately what?",
+      "options": [
+        "Unit elastic",
+        "Perfectly inelastic",
+        "Perfectly elastic",
+        "Always inelastic"
+      ],
+      "tag": "elasticity_total_revenue",
+      "type": "integration",
+      "objective": "LO4.7",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.7_elasticity_total_revenue",
+      "primarySkill": "elasticity_total_revenue",
+      "secondarySkills": [],
+      "repairSkill": "elasticity_total_revenue",
+      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "feedback": "Along a linear demand curve, total revenue peaks where elasticity transitions through unit elasticity.",
+      "source": "engine2_expansion",
+      "aHash": "9a643cf5dcd22f83a67be1168305fb5af5e8a6221e1299027e74c458f4e5589c"
+    },
+    {
+      "id": 150020,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Two products have cross-price elasticity -1.2. If the price of Y rises 5%, what approximate change in Qx is predicted, holding other factors fixed?",
+      "options": [
+        "A 6% decrease",
+        "A 6% increase",
+        "A 4.2% decrease",
+        "A 1.2% decrease"
+      ],
+      "tag": "cross_price_elasticity",
+      "type": "calculation",
+      "objective": "LO4.7",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.7_cross_price_elasticity",
+      "primarySkill": "cross_price_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "cross_price_elasticity",
+      "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
+      "feedback": "%ΔQx ≈ Exy × %ΔPy = -1.2 × 5% = -6%.",
+      "source": "engine2_expansion",
+      "aHash": "f4379d747e6bf0ab6a5cf3d03eb450c6b5a46d193ed642a9a7692e797bba682a"
+    },
+    {
+      "id": 150021,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Income falls 5% and a good's income elasticity is -0.8. What approximate change in quantity demanded is predicted?",
+      "options": [
+        "A 4% increase",
+        "A 4% decrease",
+        "An 8% increase",
+        "A 0.8% increase"
+      ],
+      "tag": "income_elasticity",
+      "type": "calculation",
+      "objective": "LO4.7",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.7_income_elasticity",
+      "primarySkill": "income_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "income_elasticity",
+      "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
+      "feedback": "%ΔQ ≈ Ey × %ΔIncome = -0.8 × -5% = +4%.",
+      "source": "engine2_expansion",
+      "aHash": "8a9dc06b6e65012609b1be11814dda93d1169c12a0d51ca090848054d700e7c9"
+    },
+    {
+      "id": 150027,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Suppose the budget equation is 10X + 15Y = 80. Which pair of facts is simultaneously correct?",
+      "options": [
+        "X-intercept=8 and slope=-0.67",
+        "X-intercept=5.33333 and slope=-1.50",
+        "Y-intercept=8 and slope=-0.67",
+        "X-intercept=80 and slope=-1"
+      ],
+      "tag": "budget_constraint_intercepts_slope",
+      "type": "synthesis",
+      "objective": "LO3.3",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
+      "primarySkill": "budget_constraint_intercepts_slope",
+      "secondarySkills": [],
+      "repairSkill": "budget_constraint_intercepts_slope",
+      "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
+      "feedback": "The X-intercept is I/Px and the slope is -Px/Py.",
+      "source": "engine2_expansion",
+      "aHash": "2d5b676012f4e757a5602e7a57eb67216b76ea71db2b19fa45c6eadab16c0796"
+    },
+    {
+      "id": 150033,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A household's demand for a good falls 6% when income rises 10%, with prices unchanged. What does the sign of this response imply?",
+      "options": [
+        "An inferior good",
+        "The good is normal and a necessity",
+        "The good is a substitute",
+        "The good is perfectly inelastic"
+      ],
+      "tag": "normal_inferior_goods",
+      "type": "calculation",
+      "objective": "LO4.2",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.2_normal_inferior_goods",
+      "primarySkill": "normal_inferior_goods",
+      "secondarySkills": [
+        "income_elasticity"
+      ],
+      "repairSkill": "normal_inferior_goods",
+      "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
+      "feedback": "Income elasticity is negative, so the good is inferior.",
+      "source": "engine2_expansion",
+      "aHash": "19e2cd4a75b554fc2e496ee58898aa70fc1adb32ab8b18d0b9730a6a567790c3"
+    },
+    {
+      "id": 150034,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A price decrease for X produces a positive substitution effect of +4 units and a negative income effect of -1 unit. What is the total change in quantity demanded?",
+      "options": [
+        "+3 units",
+        "+5 units",
+        "-3 units",
+        "-5 units"
+      ],
+      "tag": "substitution_effect",
+      "type": "multi-step",
+      "objective": "LO4.3",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [
+        "income_effect"
+      ],
+      "repairSkill": "substitution_effect",
+      "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
+      "feedback": "Total effect = substitution effect + income effect = 4 + (-1) = 3 units.",
+      "source": "engine2_expansion",
+      "aHash": "beb5ec53ad7185cb7f133947de50348cf0aab82d9d11f931c9dc26b6297e221e"
+    },
+    {
+      "id": 150041,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "When midpoint elasticity is 1.00 between two points, which interpretation is best?",
+      "options": [
+        "Equal midpoint percentage changes in magnitude",
+        "Equal absolute changes in price and quantity over the interval",
+        "Total revenue must be zero",
+        "Price and quantity levels are equal"
+      ],
+      "tag": "midpoint_elasticity",
+      "type": "synthesis",
+      "objective": "LO4.7",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.7_midpoint_elasticity",
+      "primarySkill": "midpoint_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "midpoint_elasticity",
+      "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
+      "feedback": "Unit elasticity means equal percentage changes in price and quantity, not equal levels or slope.",
+      "source": "engine2_expansion",
+      "aHash": "b499994350f1f12313d35e2738ee912217e061c26df3f2e8dbbf3351cc57b16b"
+    },
+    {
+      "id": 150042,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "On a linear demand curve, total revenue is maximized at the quantity where demand is approximately what?",
+      "options": [
+        "Unit elastic",
+        "Perfectly inelastic",
+        "Perfectly elastic",
+        "Always inelastic"
+      ],
+      "tag": "elasticity_total_revenue",
+      "type": "integration",
+      "objective": "LO4.7",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.7_elasticity_total_revenue",
+      "primarySkill": "elasticity_total_revenue",
+      "secondarySkills": [],
+      "repairSkill": "elasticity_total_revenue",
+      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "feedback": "Along a linear demand curve, total revenue peaks where elasticity transitions through unit elasticity.",
+      "source": "engine2_expansion",
+      "aHash": "9a643cf5dcd22f83a67be1168305fb5af5e8a6221e1299027e74c458f4e5589c"
+    },
+    {
+      "id": 150043,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Two products have cross-price elasticity -1.2. If the price of Y rises 5%, what approximate change in Qx is predicted, holding other factors fixed?",
+      "options": [
+        "A 6% decrease",
+        "A 6% increase",
+        "A 4.2% decrease",
+        "A 1.2% decrease"
+      ],
+      "tag": "cross_price_elasticity",
+      "type": "calculation",
+      "objective": "LO4.7",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.7_cross_price_elasticity",
+      "primarySkill": "cross_price_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "cross_price_elasticity",
+      "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
+      "feedback": "%ΔQx ≈ Exy × %ΔPy = -1.2 × 5% = -6%.",
+      "source": "engine2_expansion",
+      "aHash": "f4379d747e6bf0ab6a5cf3d03eb450c6b5a46d193ed642a9a7692e797bba682a"
+    },
+    {
+      "id": 150044,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Income falls 5% and a good's income elasticity is -0.8. What approximate change in quantity demanded is predicted?",
+      "options": [
+        "A 4% increase",
+        "A 4% decrease",
+        "An 8% increase",
+        "A 0.8% increase"
+      ],
+      "tag": "income_elasticity",
+      "type": "calculation",
+      "objective": "LO4.7",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.7_income_elasticity",
+      "primarySkill": "income_elasticity",
+      "secondarySkills": [],
+      "repairSkill": "income_elasticity",
+      "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
+      "feedback": "%ΔQ ≈ Ey × %ΔIncome = -0.8 × -5% = +4%.",
+      "source": "engine2_expansion",
+      "aHash": "8a9dc06b6e65012609b1be11814dda93d1169c12a0d51ca090848054d700e7c9"
+    },
+    {
+      "id": 150050,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Suppose the budget equation is 15X + 20Y = 100. Which pair of facts is simultaneously correct?",
+      "options": [
+        "X-intercept=6.66667 and slope=-0.75",
+        "X-intercept=5 and slope=-1.33",
+        "Y-intercept=6.66667 and slope=-0.75",
+        "X-intercept=100 and slope=-1"
+      ],
+      "tag": "budget_constraint_intercepts_slope",
+      "type": "synthesis",
+      "objective": "LO3.3",
+      "difficulty": "medium",
+      "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
+      "primarySkill": "budget_constraint_intercepts_slope",
+      "secondarySkills": [],
+      "repairSkill": "budget_constraint_intercepts_slope",
+      "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
+      "feedback": "The X-intercept is I/Px and the slope is -Px/Py.",
+      "source": "engine2_expansion",
+      "aHash": "b0c38cafc5a4b88494b281c20e8dbcc8afa7565a3d57ac46cdad33a5323a4aba"
+    },
+    {
+      "id": 150056,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A household's demand for a good falls 6% when income rises 10%, with prices unchanged. What does the sign of this response imply?",
+      "options": [
+        "An inferior good",
+        "The good is normal and a necessity",
+        "The good is a substitute",
+        "The good is perfectly inelastic"
+      ],
+      "tag": "normal_inferior_goods",
+      "type": "calculation",
+      "objective": "LO4.2",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.2_normal_inferior_goods",
+      "primarySkill": "normal_inferior_goods",
+      "secondarySkills": [
+        "income_elasticity"
+      ],
+      "repairSkill": "normal_inferior_goods",
+      "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
+      "feedback": "Income elasticity is negative, so the good is inferior.",
+      "source": "engine2_expansion",
+      "aHash": "19e2cd4a75b554fc2e496ee58898aa70fc1adb32ab8b18d0b9730a6a567790c3"
+    },
+    {
+      "id": 150057,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A price decrease for X produces a positive substitution effect of +4 units and a negative income effect of -1 unit. What is the total change in quantity demanded?",
+      "options": [
+        "+3 units",
+        "+5 units",
+        "-3 units",
+        "-5 units"
+      ],
+      "tag": "substitution_effect",
+      "type": "multi-step",
+      "objective": "LO4.3",
+      "difficulty": "medium",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [
+        "income_effect"
+      ],
+      "repairSkill": "substitution_effect",
+      "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
+      "feedback": "Total effect = substitution effect + income effect = 4 + (-1) = 3 units.",
+      "source": "engine2_expansion",
+      "aHash": "beb5ec53ad7185cb7f133947de50348cf0aab82d9d11f931c9dc26b6297e221e"
+    }
+  ],
+  "hard": [
     {
       "id": 204,
       "q": "A price decrease causes consumers to buy more of good X even though X is an inferior good. Why?",
@@ -9381,7 +11696,7 @@ const questionBank = {
     },
     {
       "id": 205,
-      "q": "If a good takes a large share of consumer income and has many substitutes, demand will most likely be...",
+      "q": "How elastic is demand likely to be for a good that takes a large share of income and has many substitutes?",
       "options": [
         "Highly elastic",
         "Highly inelastic",
@@ -9404,17 +11719,17 @@ const questionBank = {
     },
     {
       "id": 206,
-      "q": "A demand curve becomes flatter. What does this imply about consumer responsiveness to price?",
+      "q": "Two demand curves use identical axis units and pass through the same positive price–quantity point. At that point, which statement follows if one curve is flatter (with price on the vertical axis)?",
       "options": [
-        "Consumers are more responsive to price changes",
-        "Consumers are less responsive to price changes",
-        "Consumers ignore price changes",
-        "Consumers stop buying the good"
+        "It has greater absolute point elasticity",
+        "Its absolute elasticity must equal one",
+        "Its absolute elasticity must be zero",
+        "Its absolute elasticity cannot be compared even at the same P and Q"
       ],
       "tag": "elasticity_determinants",
       "type": "interpretation",
       "objective": "LO4.7",
-      "feedback": "Flatter demand curves generally indicate more elastic demand.",
+      "feedback": "At the same P and Q, |Ed|=|dQ/dP|×P/Q. A flatter inverse-demand curve has larger |dQ/dP| and therefore greater absolute elasticity. This comparison requires common units and the same price–quantity point.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "hard",
       "conceptCluster": "LO4.7_elasticity_determinants",
@@ -9423,149 +11738,11 @@ const questionBank = {
       "repairSkill": "elasticity_determinants",
       "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
       "source": "legacy_primary",
-      "aHash": "c7a586dfb18aea750a52b6ab037262f22d00d8b2d16e835959653be8171b3e92"
-    },
-    {
-      "id": 207,
-      "q": "A firm lowers price and sees quantity demanded increase substantially. What will most likely happen to total revenue?",
-      "options": [
-        "Total revenue increases",
-        "Total revenue decreases",
-        "Total revenue stays the same",
-        "Revenue becomes zero"
-      ],
-      "tag": "elasticity_total_revenue",
-      "type": "interpretation",
-      "objective": "LO4.7",
-      "feedback": "A large increase in quantity indicates elastic demand, which raises revenue when price falls.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "hard",
-      "conceptCluster": "LO4.7_elasticity_total_revenue",
-      "primarySkill": "elasticity_total_revenue",
-      "secondarySkills": [],
-      "repairSkill": "elasticity_total_revenue",
-      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
-      "source": "legacy_primary",
-      "aHash": "ebcd1986d232ed6cda5820fa468cc2daa6fb03b3a5f4703bf5afd9e441fcf041"
-    },
-    {
-      "id": 208,
-      "q": "If price falls and consumers buy more units while also gaining more surplus per unit, what happens to total consumer surplus?",
-      "options": [
-        "Consumer surplus increases",
-        "Consumer surplus decreases",
-        "Consumer surplus stays the same",
-        "Consumer surplus becomes zero"
-      ],
-      "tag": "consumer_surplus",
-      "type": "interpretation",
-      "objective": "LO4.5",
-      "feedback": "Lower prices increase the gap between willingness to pay and price and increase quantity purchased.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "hard",
-      "conceptCluster": "LO4.5_consumer_surplus",
-      "primarySkill": "consumer_surplus",
-      "secondarySkills": [],
-      "repairSkill": "consumer_surplus",
-      "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
-      "source": "legacy_primary",
-      "aHash": "7b2c8c375e57dd7834b68e6f0c92e99942368a03bc02026e60803cfccb5ee818"
-    },
-    {
-      "id": 209,
-      "q": "If consumers become less sensitive to price changes, what happens to elasticity?",
-      "options": [
-        "Demand becomes more inelastic",
-        "Demand becomes more elastic",
-        "Demand becomes perfectly elastic",
-        "Demand becomes unit elastic"
-      ],
-      "tag": "price_elasticity_fundamentals",
-      "type": "interpretation",
-      "objective": "LO4.7",
-      "feedback": "Less responsiveness to price changes means demand is more inelastic.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "hard",
-      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
-      "primarySkill": "price_elasticity_fundamentals",
-      "secondarySkills": [],
-      "repairSkill": "price_elasticity_fundamentals",
-      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
-      "source": "legacy_primary",
-      "aHash": "9d9022caabe06a84efa98672a61092108297294acb628ee7f56066e188c023ea"
-    },
-    {
-      "id": 210,
-      "q": "A good has very few substitutes and is a small part of consumer income. Demand is most likely...",
-      "options": [
-        "Relatively inelastic",
-        "Highly elastic",
-        "Perfectly elastic",
-        "Unit elastic"
-      ],
-      "tag": "cross_price_elasticity",
-      "type": "interpretation",
-      "objective": "LO4.7",
-      "feedback": "Few substitutes and small budget share both reduce price sensitivity.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "hard",
-      "conceptCluster": "LO4.7_cross_price_elasticity",
-      "primarySkill": "cross_price_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "cross_price_elasticity",
-      "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
-      "source": "legacy_primary",
-      "aHash": "20c8dc8b96cf89d6a76cb246ba07f3eb86f60f19a3effafef79eb1b2f7e5c350"
-    },
-    {
-      "id": 211,
-      "q": "A firm lowers price slightly and sees almost no change in quantity demanded. What does this imply about demand?",
-      "options": [
-        "Demand is inelastic",
-        "Demand is elastic",
-        "Demand is unit elastic",
-        "Demand is perfectly elastic"
-      ],
-      "tag": "price_elasticity_fundamentals",
-      "type": "trap",
-      "objective": "LO4.7",
-      "feedback": "If quantity barely responds to price changes, demand is inelastic.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "hard",
-      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
-      "primarySkill": "price_elasticity_fundamentals",
-      "secondarySkills": [],
-      "repairSkill": "price_elasticity_fundamentals",
-      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
-      "source": "legacy_primary",
-      "aHash": "847c1c6331eea1d8cd40d8df58f44dfb000b77a8ef4bd6a1b948645ec4ec10ad"
-    },
-    {
-      "id": 212,
-      "q": "At the optimal consumption bundle, what must be true about the marginal rate of substitution (MRS) and the price ratio?",
-      "options": [
-        "MRS equals the price ratio",
-        "MRS is greater than the price ratio",
-        "MRS is less than the price ratio",
-        "MRS must equal income"
-      ],
-      "tag": "marginal_utility_per_dollar",
-      "type": "definition",
-      "objective": "LO3.4",
-      "feedback": "Utility maximization occurs where the marginal rate of substitution equals the relative price of the goods.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "hard",
-      "conceptCluster": "LO3.4_marginal_utility_per_dollar",
-      "primarySkill": "marginal_utility_per_dollar",
-      "secondarySkills": [],
-      "repairSkill": "marginal_utility_per_dollar",
-      "commonError": "compares_marginal_utility_without_dividing_by_price",
-      "source": "legacy_primary",
-      "aHash": "7d6b305127028d0967909088d4ca9f1328ef416537a9a6d2c7cd72ee79e0094a"
+      "aHash": "8a31c3e3374c47ff4b2a1d30ad36b8124f13169eb3cfe3b63892e0431e62f405"
     },
     {
       "id": 213,
-      "q": "If the marginal rate of substitution is greater than the price ratio, what should the consumer do?",
+      "q": "A consumer buys positive amounts of X and Y and can make small changes in purchases. If the marginal rate of substitution is greater than the price ratio, what should the consumer do?",
       "options": [
         "Consume more of good X and less of good Y",
         "Consume more of good Y and less of good X",
@@ -9587,100 +11764,8 @@ const questionBank = {
       "aHash": "c3094eb5231b9f1916c93d95a8f87a514ff1d3ef5aa12abcd4cc5341fb3f752a"
     },
     {
-      "id": 214,
-      "q": "If two indifference curves intersect on a graph, what does this imply about consumer preferences?",
-      "options": [
-        "Preferences are inconsistent",
-        "Utility is maximized",
-        "Income increased",
-        "Demand increased"
-      ],
-      "tag": "indifference_curve_properties",
-      "type": "trap",
-      "objective": "LO3.2",
-      "feedback": "Indifference curves cannot cross because that would imply contradictory rankings of bundles.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "hard",
-      "conceptCluster": "LO3.2_indifference_curve_properties",
-      "primarySkill": "indifference_curve_properties",
-      "secondarySkills": [],
-      "repairSkill": "indifference_curve_properties",
-      "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
-      "source": "legacy_primary",
-      "aHash": "a8bcb59ba002fb66b157e3f084722b60e0f57fc83ecc85935b8cdf4ef9ddc5c1"
-    },
-    {
-      "id": 215,
-      "q": "A consumer moves to a higher indifference curve after a price decrease. What must be true?",
-      "options": [
-        "The consumer is better off",
-        "The consumer is worse off",
-        "Income decreased",
-        "The budget line rotated inward"
-      ],
-      "tag": "consumer_surplus",
-      "type": "interpretation",
-      "objective": "LO4.5",
-      "feedback": "Higher indifference curves represent higher utility levels.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "hard",
-      "conceptCluster": "LO4.5_consumer_surplus",
-      "primarySkill": "consumer_surplus",
-      "secondarySkills": [],
-      "repairSkill": "consumer_surplus",
-      "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
-      "source": "legacy_primary",
-      "aHash": "e56ee88abb98e36d0c54073bdb316823b9b97381432bf22eca949c81f2d77a5a"
-    },
-    {
-      "id": 216,
-      "q": "If indifference curves become flatter as you move to the right along a curve, what does this indicate?",
-      "options": [
-        "Diminishing marginal rate of substitution",
-        "Increasing marginal utility",
-        "Perfect substitutes",
-        "Perfect complements"
-      ],
-      "tag": "marginal_rate_substitution",
-      "type": "definition",
-      "objective": "LO3.2",
-      "feedback": "Consumers are willing to give up fewer units of Y for each additional unit of X, which reflects diminishing marginal rate of substitution.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "hard",
-      "conceptCluster": "LO3.2_marginal_rate_substitution",
-      "primarySkill": "marginal_rate_substitution",
-      "secondarySkills": [],
-      "repairSkill": "marginal_rate_substitution",
-      "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
-      "source": "legacy_primary",
-      "aHash": "01c36a799a7d1e817e44d5b623e4d5e3c41eac3abaff1681bcaf86e34c13a108"
-    },
-    {
-      "id": 217,
-      "q": "If the price of good X falls while income remains constant, what happens to the budget constraint?",
-      "options": [
-        "It rotates outward along the X-axis",
-        "It shifts outward parallel",
-        "It rotates inward",
-        "It becomes vertical"
-      ],
-      "tag": "budget_constraint_intercepts_slope",
-      "type": "interpretation",
-      "objective": "LO3.3",
-      "feedback": "A lower price for X allows consumers to buy more X while the Y intercept stays the same.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "hard",
-      "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
-      "primarySkill": "budget_constraint_intercepts_slope",
-      "secondarySkills": [],
-      "repairSkill": "budget_constraint_intercepts_slope",
-      "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
-      "source": "legacy_primary",
-      "aHash": "d02c66126c2672b3ae9e1d38a0460ab85442a6c48e5667277398a7237fcaa0ea"
-    },
-    {
       "id": 218,
-      "q": "If the marginal rate of substitution is less than the price ratio at a bundle, what should the consumer do?",
+      "q": "A consumer buys positive amounts of X and Y and can make small changes in purchases. If the marginal rate of substitution is less than the price ratio at a bundle, what should the consumer do?",
       "options": [
         "Consume more of good Y and less of good X",
         "Consume more of good X and less of good Y",
@@ -9702,31 +11787,8 @@ const questionBank = {
       "aHash": "fdc322005cdab6ce5117f1b092ebcb4da6c8a7d7a08d73e83cd73fd5c8025048"
     },
     {
-      "id": 219,
-      "q": "Which statement must be true for a bundle to maximize utility?",
-      "options": [
-        "An indifference curve is tangent to the budget line",
-        "The bundle lies on the highest indifference curve regardless of affordability",
-        "The consumer buys equal amounts of both goods",
-        "The budget line is horizontal"
-      ],
-      "tag": "marginal_utility_per_dollar",
-      "type": "definition",
-      "objective": "LO3.4",
-      "feedback": "Utility maximization occurs where the highest attainable indifference curve is tangent to the budget constraint.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "hard",
-      "conceptCluster": "LO3.4_marginal_utility_per_dollar",
-      "primarySkill": "marginal_utility_per_dollar",
-      "secondarySkills": [],
-      "repairSkill": "marginal_utility_per_dollar",
-      "commonError": "compares_marginal_utility_without_dividing_by_price",
-      "source": "legacy_primary",
-      "aHash": "0f686f3020dcf931f09f8d328d02ff43a8f88afa2cf35e5c1f9fb4559e534ad3"
-    },
-    {
       "id": 220,
-      "q": "A consumer has MUx = 30 and MUy = 20. Prices are Px = 5 and Py = 4. What should the consumer do?",
+      "q": "Assume the consumer buys positive amounts of both goods and can reallocate spending at the margin. A consumer has MUx = 30 and MUy = 20. Prices are Px = 5 and Py = 4. What should the consumer do?",
       "options": [
         "Buy more X and less Y",
         "Buy more Y and less X",
@@ -9749,7 +11811,7 @@ const questionBank = {
     },
     {
       "id": 221,
-      "q": "A good has price elasticity of demand of 1.5. If price increases by 10%, what happens to total revenue?",
+      "q": "A good has absolute midpoint price elasticity of demand of 1.5 over a price increase of 10%. With the demand curve unchanged, what happens to total revenue?",
       "options": [
         "Total revenue decreases",
         "Total revenue increases",
@@ -9772,7 +11834,7 @@ const questionBank = {
     },
     {
       "id": 222,
-      "q": "A consumer\u2019s income increases and the demand for good X falls. Meanwhile, when price falls, quantity demanded rises. What type of good is X?",
+      "q": "A consumer’s income increases and the demand for good X falls. Meanwhile, when price falls, quantity demanded rises. What type of good is X?",
       "options": [
         "Inferior",
         "Normal",
@@ -9794,36 +11856,13 @@ const questionBank = {
       "aHash": "d67a02ebcf174379d24d404541745ce063ebce7460f8c72b50e8d08274cb1493"
     },
     {
-      "id": 223,
-      "q": "If the price of a good decreases and total revenue decreases, what can you conclude about demand?",
-      "options": [
-        "Demand is inelastic",
-        "Demand is elastic",
-        "Demand is unit elastic",
-        "Demand is perfectly elastic"
-      ],
-      "tag": "elasticity_total_revenue",
-      "type": "interpretation",
-      "objective": "LO4.7",
-      "feedback": "If price and revenue move in the same direction, demand is inelastic.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "hard",
-      "conceptCluster": "LO4.7_elasticity_total_revenue",
-      "primarySkill": "elasticity_total_revenue",
-      "secondarySkills": [],
-      "repairSkill": "elasticity_total_revenue",
-      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
-      "source": "legacy_primary",
-      "aHash": "847c1c6331eea1d8cd40d8df58f44dfb000b77a8ef4bd6a1b948645ec4ec10ad"
-    },
-    {
       "id": 224,
-      "q": "A consumer is at equilibrium. Income doubles, and prices remain constant. What happens to the optimal bundle?",
+      "q": "A consumer maximizes utility with monotonic preferences. Income doubles while prices remain fixed. What must happen to the highest attainable utility?",
       "options": [
-        "The consumer moves to a higher indifference curve",
-        "The consumer stays on the same bundle",
-        "The budget line rotates",
-        "The slope of the indifference curve changes"
+        "The consumer can reach a higher indifference curve",
+        "The consumer must remain at the original bundle",
+        "The budget line rotates around its original vertical intercept",
+        "The new budget line has a different slope"
       ],
       "tag": "utility_maximization_mrs",
       "type": "interpretation",
@@ -9837,76 +11876,7 @@ const questionBank = {
       "repairSkill": "utility_maximization_mrs",
       "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
       "source": "legacy_primary",
-      "aHash": "e938805cdff2e87b93de62b541b4708f9e356374876c2588f4b7f4ac62776ece"
-    },
-    {
-      "id": 225,
-      "q": "If the substitution effect and income effect exactly offset each other after a price change, what happens to quantity demanded?",
-      "options": [
-        "It remains unchanged",
-        "It increases",
-        "It decreases",
-        "It becomes zero"
-      ],
-      "tag": "substitution_effect",
-      "type": "trap",
-      "objective": "LO4.3",
-      "feedback": "If both effects cancel out, there is no net change in consumption.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "hard",
-      "conceptCluster": "LO4.3_substitution_effect",
-      "primarySkill": "substitution_effect",
-      "secondarySkills": [],
-      "repairSkill": "substitution_effect",
-      "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
-      "source": "legacy_primary",
-      "aHash": "58675c4c66916b7b10428eed84e625feaa95859eaeb2fe6de04e87110933a9d0"
-    },
-    {
-      "id": 226,
-      "q": "The price of a good rises from $8 to $10 and quantity demanded falls from 50 to 40. Using midpoint elasticity, what happens to total revenue?",
-      "options": [
-        "Total revenue decreases",
-        "Total revenue increases",
-        "Total revenue stays the same",
-        "Not enough information to determine"
-      ],
-      "tag": "elasticity_total_revenue",
-      "type": "calculation",
-      "objective": "LO4.7",
-      "feedback": "Initial revenue is $8 \u00d7 50 = $400. New revenue is $10 \u00d7 40 = $400. Total revenue remains unchanged.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "hard",
-      "conceptCluster": "LO4.7_elasticity_total_revenue",
-      "primarySkill": "elasticity_total_revenue",
-      "secondarySkills": [],
-      "repairSkill": "elasticity_total_revenue",
-      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
-      "source": "legacy_primary",
-      "aHash": "898147c60ec0dcbd487f6c05e66e558d31c42e2cd8ea768daa30a7fbb156e402"
-    },
-    {
-      "id": 227,
-      "q": "A consumer\u2019s marginal rate of substitution is decreasing. What does this imply about preferences?",
-      "options": [
-        "They are convex",
-        "They are linear",
-        "They are inconsistent",
-        "They are perfect complements"
-      ],
-      "tag": "marginal_rate_substitution",
-      "type": "interpretation",
-      "objective": "LO3.2",
-      "feedback": "Diminishing MRS implies convex preferences.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "hard",
-      "conceptCluster": "LO3.2_marginal_rate_substitution",
-      "primarySkill": "marginal_rate_substitution",
-      "secondarySkills": [],
-      "repairSkill": "marginal_rate_substitution",
-      "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
-      "source": "legacy_primary",
-      "aHash": "0a0f278199de5fd6372ac3c83a85b0c4ded7b64798bb8a3b06b2358494891760"
+      "aHash": "91c0bb56a8547c9997add53d49391df04b993ba833c89e30fb4ae01cfcb96f3c"
     },
     {
       "id": 228,
@@ -9933,17 +11903,17 @@ const questionBank = {
     },
     {
       "id": 229,
-      "q": "A demand curve is steep but not vertical. What can generally be said about elasticity?",
+      "q": "Two demand curves use identical axis units and pass through the same positive price–quantity point. At that point, which statement follows if one curve is steeper (with price on the vertical axis)?",
       "options": [
-        "Demand is relatively inelastic",
-        "Demand is relatively elastic",
-        "Demand is perfectly elastic",
-        "Demand is unit elastic"
+        "It has smaller absolute point elasticity",
+        "Its absolute elasticity must equal one",
+        "Its absolute elasticity must be zero",
+        "Its absolute elasticity cannot be compared even at the same P and Q"
       ],
       "tag": "price_elasticity_fundamentals",
       "type": "interpretation",
       "objective": "LO4.7",
-      "feedback": "Steeper curves generally indicate lower responsiveness to price changes, though exact elasticity also depends on the point on the curve.",
+      "feedback": "At the same P and Q, |Ed|=|dQ/dP|×P/Q. A flatter inverse-demand curve has larger |dQ/dP| and therefore greater absolute elasticity. This comparison requires common units and the same price–quantity point.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "hard",
       "conceptCluster": "LO4.7_price_elasticity_fundamentals",
@@ -9952,7 +11922,7 @@ const questionBank = {
       "repairSkill": "price_elasticity_fundamentals",
       "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
       "source": "legacy_primary",
-      "aHash": "9d0e17ef8099428ee774675b0c51216fc6a28cb3aca4a3ece20e26d07975e2ad"
+      "aHash": "ac4d8203b3558bf58e4eaaf372db8b7864357638da9e55e86059324905370fc9"
     },
     {
       "id": 230,
@@ -9979,7 +11949,7 @@ const questionBank = {
     },
     {
       "id": 231,
-      "q": "If demand is elastic and price decreases by 5%, what must happen to quantity demanded for total revenue to increase?",
+      "q": "Along an unchanged demand curve, price falls by 5% using midpoint percentages. If demand is elastic over the interval, what must happen to quantity demanded for total revenue to increase?",
       "options": [
         "Quantity demanded increases by more than 5%",
         "Quantity demanded increases by less than 5%",
@@ -9989,7 +11959,7 @@ const questionBank = {
       "tag": "elasticity_total_revenue",
       "type": "interpretation",
       "objective": "LO4.7",
-      "feedback": "Elastic demand requires quantity to change proportionally more than price.",
+      "feedback": "Absolute arc elasticity exceeds one when the midpoint percentage quantity increase exceeds the midpoint percentage price decrease. Using the same midpoint convention for both makes this comparison consistent.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "hard",
       "conceptCluster": "LO4.7_elasticity_total_revenue",
@@ -10025,7 +11995,7 @@ const questionBank = {
     },
     {
       "id": 233,
-      "q": "A consumer faces Px = 2 and Py = 4. At their current bundle, MRS = 3. What should they do?",
+      "q": "Assume the consumer buys positive amounts of both goods and can reallocate spending at the margin. A consumer faces Px = 2 and Py = 4. At their current bundle, MRS = 3. What should they do?",
       "options": [
         "Consume more X",
         "Consume more Y",
@@ -10048,7 +12018,7 @@ const questionBank = {
     },
     {
       "id": 234,
-      "q": "If total revenue rises when price increases, what must be true about the percentage change in quantity demanded?",
+      "q": "Price rises along an unchanged, downward-sloping demand curve and total revenue rises. Using midpoint percentages, how does the quantity decrease compare with the price increase?",
       "options": [
         "It falls by less than the percentage increase in price",
         "It falls by more than the percentage increase in price",
@@ -10073,7 +12043,7 @@ const questionBank = {
       "id": 235,
       "q": "If both goods are normal and income rises, what happens to the budget constraint and optimal bundle?",
       "options": [
-        "Budget shifts outward, higher indifference curve reached",
+        "The budget expands and utility rises",
         "Budget rotates, same indifference curve",
         "Budget shifts inward, lower utility",
         "No change occurs"
@@ -10090,7 +12060,7 @@ const questionBank = {
       "repairSkill": "utility_maximization_mrs",
       "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
       "source": "legacy_primary",
-      "aHash": "926d16de5c57248fd9bca6ba484d37a34e4031c17e395dbfd7f56aaae54b2194"
+      "aHash": "b4e7a5010d216a9f9a17f2191877da7684a17e4ab582b9138849cef371adadfc"
     },
     {
       "id": 236,
@@ -10116,41 +12086,18 @@ const questionBank = {
       "aHash": "b072faf47abc0486fb459eb0b84202a2362e94e1e75492d394f15d644df72780"
     },
     {
-      "id": 237,
-      "q": "A demand curve is perfectly vertical. What happens to total revenue if price increases?",
-      "options": [
-        "Total revenue increases",
-        "Total revenue decreases",
-        "Total revenue stays constant",
-        "Cannot be determined"
-      ],
-      "tag": "elasticity_total_revenue",
-      "type": "interpretation",
-      "objective": "LO4.7",
-      "feedback": "With perfectly inelastic demand, quantity does not change, so higher price increases revenue.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "hard",
-      "conceptCluster": "LO4.7_elasticity_total_revenue",
-      "primarySkill": "elasticity_total_revenue",
-      "secondarySkills": [],
-      "repairSkill": "elasticity_total_revenue",
-      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
-      "source": "legacy_primary",
-      "aHash": "ebcd1986d232ed6cda5820fa468cc2daa6fb03b3a5f4703bf5afd9e441fcf041"
-    },
-    {
       "id": 238,
-      "q": "If MRS equals the price ratio but the consumer is not maximizing utility, what must be true?",
+      "q": "A consumer has U(X,Y)=XY, positive equal prices Px=Py=$1 and income $10. At bundle (1,1), MRS=Y/X=1 equals Px/Py. Why is that bundle not optimal?",
       "options": [
-        "The bundle is not affordable",
-        "Preferences are inconsistent",
-        "Income is zero",
-        "Prices are changing"
+        "Unspent income could still raise utility",
+        "It is unaffordable at the stated prices",
+        "The utility function has inconsistent preferences",
+        "The price ratio must be zero"
       ],
       "tag": "marginal_utility_per_dollar",
       "type": "trap",
       "objective": "LO3.4",
-      "feedback": "Utility maximization requires both MRS = price ratio and affordability.",
+      "feedback": "Bundle (1,1) costs only $2. The consumer can afford (5,5), with utility 25 rather than 1. Tangency alone is insufficient: with these monotonic preferences the optimum also exhausts the budget.",
       "sourceGame": "labyrinthOfChoice",
       "difficulty": "hard",
       "conceptCluster": "LO3.4_marginal_utility_per_dollar",
@@ -10159,30 +12106,7 @@ const questionBank = {
       "repairSkill": "marginal_utility_per_dollar",
       "commonError": "compares_marginal_utility_without_dividing_by_price",
       "source": "legacy_primary",
-      "aHash": "cac24141b5f2bf609825994dfd424299a57ebdca786c384138e725959136a7b5"
-    },
-    {
-      "id": 239,
-      "q": "If demand is elastic at a given price, what happens to total revenue when price falls?",
-      "options": [
-        "Total revenue increases",
-        "Total revenue decreases",
-        "Total revenue stays the same",
-        "Revenue becomes zero"
-      ],
-      "tag": "elasticity_total_revenue",
-      "type": "interpretation",
-      "objective": "LO4.7",
-      "feedback": "With elastic demand, price and total revenue move in opposite directions.",
-      "sourceGame": "labyrinthOfChoice",
-      "difficulty": "hard",
-      "conceptCluster": "LO4.7_elasticity_total_revenue",
-      "primarySkill": "elasticity_total_revenue",
-      "secondarySkills": [],
-      "repairSkill": "elasticity_total_revenue",
-      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
-      "source": "legacy_primary",
-      "aHash": "ebcd1986d232ed6cda5820fa468cc2daa6fb03b3a5f4703bf5afd9e441fcf041"
+      "aHash": "2511ded1374d3af492b1da21a850b25664caf7ecbbc5c0399ab28ed92724d984"
     },
     {
       "id": 130000,
@@ -10210,7 +12134,7 @@ const questionBank = {
     {
       "id": 130001,
       "sourceGame": "labyrinthOfChoice",
-      "q": "A consumer reports A \u227b B, B ~ C, and C \u227b A. What is the problem?",
+      "q": "A consumer reports A ≻ B, B ~ C, and C ≻ A. What is the problem?",
       "options": [
         "The ranking violates transitivity",
         "The ranking violates the budget constraint",
@@ -10226,63 +12150,17 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
-      "feedback": "Combining A \u227b B and B ~ C implies A \u227b C, so C \u227b A creates a transitivity violation.",
+      "feedback": "Combining A ≻ B and B ~ C implies A ≻ C, so C ≻ A creates a transitivity violation.",
       "source": "engine2_expansion",
       "aHash": "97aa662894429360551f673ae5949433f4a7aca1c58728b682601e8271912f96"
-    },
-    {
-      "id": 130002,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Income and both prices all rise by 10%. What happens to the consumer's budget set?",
-      "options": [
-        "It is unchanged",
-        "It shifts outward",
-        "It shifts inward",
-        "It rotates toward X"
-      ],
-      "tag": "budget_line_changes",
-      "type": "trap",
-      "objective": "LO3.3",
-      "difficulty": "hard",
-      "conceptCluster": "LO3.3_budget_line_changes",
-      "primarySkill": "budget_line_changes",
-      "secondarySkills": [],
-      "repairSkill": "budget_line_changes",
-      "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
-      "feedback": "Proportional changes in nominal income and all prices leave real purchasing power and the budget set unchanged.",
-      "source": "engine2_expansion",
-      "aHash": "2eb953560d2aee9c96090261017ebe948bbd5a91ac4e77d6b95c43634e63f109"
-    },
-    {
-      "id": 130003,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "To derive a demand curve from consumer optimization, what should be varied while preferences, income, and other prices are held fixed?",
-      "options": [
-        "The good's own price",
-        "Every determinant simultaneously",
-        "Only utility labels",
-        "The number of consumers in the market"
-      ],
-      "tag": "derive_individual_demand",
-      "type": "interpretation",
-      "objective": "LO4.1",
-      "difficulty": "hard",
-      "conceptCluster": "LO4.1_derive_individual_demand",
-      "primarySkill": "derive_individual_demand",
-      "secondarySkills": [],
-      "repairSkill": "derive_individual_demand",
-      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
-      "feedback": "The individual demand curve isolates the effect of own price on the consumer's optimal quantity.",
-      "source": "engine2_expansion",
-      "aHash": "e545d63760fe7e84e02622b458a7fa729cc2ff1a01e96d14387999ff43d8f640"
     },
     {
       "id": 130004,
       "sourceGame": "labyrinthOfChoice",
       "q": "X is inferior. Px falls. How does the income effect on X compare with the substitution effect?",
       "options": [
-        "The income effect works toward less X while the substitution effect works toward more X",
-        "Both effects work toward more X",
+        "The income effect opposes substitution toward X",
+        "Both effects increase consumption of good X",
         "Both effects work toward less X",
         "The substitution effect becomes zero"
       ],
@@ -10297,7 +12175,7 @@ const questionBank = {
       "commonError": "confuses_purchasing_power_with_relative_price substitution",
       "feedback": "For an inferior good, higher real purchasing power reduces demand for X, opposing the positive substitution effect from a price fall.",
       "source": "engine2_expansion",
-      "aHash": "bf7d90a2317a6f2060a8fe220831a616d374d060197dde17a9699c46282027b0"
+      "aHash": "200433d34c4beead44af1929bd7d1f06025619d5f0f2e279eb3a05b03d1d36e5"
     },
     {
       "id": 130005,
@@ -10323,60 +12201,14 @@ const questionBank = {
       "aHash": "b084159172cc56031df6d7d40efc2b54454e3d4882c7a805c34973ee7ad44183"
     },
     {
-      "id": 130006,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "At $20, A demands 1 unit and B demands 0. At $15, A demands 2 and B demands 1. What are the market quantities at those prices?",
-      "options": [
-        "1 at $20 and 3 at $15",
-        "0.5 at $20 and 1.5 at $15",
-        "1 at $20 and 2 at $15",
-        "20 at $20 and 15 at $15"
-      ],
-      "tag": "market_demand_aggregation",
-      "type": "application",
-      "objective": "LO4.6",
-      "difficulty": "hard",
-      "conceptCluster": "LO4.6_market_demand_aggregation",
-      "primarySkill": "market_demand_aggregation",
-      "secondarySkills": [],
-      "repairSkill": "market_demand_aggregation",
-      "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
-      "feedback": "Sum quantities across consumers at each common price.",
-      "source": "engine2_expansion",
-      "aHash": "d337b5f229ba6ed5e970de24ad3c865ef2ef37a347b8ed5a2e555cd1a79e7fa7"
-    },
-    {
-      "id": 130007,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Using the change from P=20 to 24 and Q=100 to 80, which denominator belongs in the midpoint percentage change for quantity?",
-      "options": [
-        "90",
-        "100",
-        "80",
-        "22"
-      ],
-      "tag": "midpoint_elasticity",
-      "type": "calculation",
-      "objective": "LO4.7",
-      "difficulty": "hard",
-      "conceptCluster": "LO4.7_midpoint_elasticity",
-      "primarySkill": "midpoint_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "midpoint_elasticity",
-      "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
-      "feedback": "The midpoint method divides the quantity change by the average of the two quantities.",
-      "source": "engine2_expansion",
-      "aHash": "69f59c273b6e669ac32a6dd5e1b2cb63333d8b004f9696447aee2d422ce63763"
-    },
-    {
       "id": 130008,
       "sourceGame": "labyrinthOfChoice",
       "q": "Income elasticity is +0.3. Which classification is most appropriate?",
       "options": [
-        "Normal good with less-than-proportional income response",
-        "Inferior good",
-        "Luxury with elasticity above 1",
-        "Complement"
+        "Normal, with income elasticity below one",
+        "Inferior, with demand falling as income rises",
+        "A luxury, with income elasticity above one",
+        "A complement, with negative cross-price elasticity"
       ],
       "tag": "income_elasticity",
       "type": "interpretation",
@@ -10389,12 +12221,12 @@ const questionBank = {
       "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
       "feedback": "Positive elasticity indicates normal; a value below 1 indicates demand rises less than proportionally with income.",
       "source": "engine2_expansion",
-      "aHash": "3e370ca3c653b3eeadb052abed299856c6c872bdc287edcd26f0f538204618d0"
+      "aHash": "e8e1ee863149a4fde66e411d9d97597c1ccdb5eddf50d4dc1bc0eebf722465b3"
     },
     {
       "id": 130009,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving campus meals, two utility functions assign different numbers to the same bundles but preserve exactly the same ranking. What does ordinary consumer choice theory predict?",
+      "q": "Two utility functions assign different numbers to the same bundles but preserve exactly the same ranking. What does ordinary consumer choice theory predict?",
       "options": [
         "The same choices because utility is ordinal",
         "Different choices because utility numbers changed",
@@ -10417,7 +12249,7 @@ const questionBank = {
     {
       "id": 130010,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving concert tickets, a consumer reports A \u227b B, B ~ C, and C \u227b A. What is the problem?",
+      "q": "A consumer reports A ≻ B, B ~ C, and C ≻ A. What is the problem?",
       "options": [
         "The ranking violates transitivity",
         "The ranking violates the budget constraint",
@@ -10433,32 +12265,9 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
-      "feedback": "Combining A \u227b B and B ~ C implies A \u227b C, so C \u227b A creates a transitivity violation.",
+      "feedback": "Combining A ≻ B and B ~ C implies A ≻ C, so C ≻ A creates a transitivity violation.",
       "source": "engine2_expansion",
       "aHash": "97aa662894429360551f673ae5949433f4a7aca1c58728b682601e8271912f96"
-    },
-    {
-      "id": 130011,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "With two goods that are both desirable, bundle A lies northeast of bundle B. Under the usual 'more is better' assumption, what follows?",
-      "options": [
-        "A is preferred to B",
-        "B is preferred to A",
-        "A and B must be indifferent",
-        "The ranking depends only on prices"
-      ],
-      "tag": "indifference_curve_properties",
-      "type": "application",
-      "objective": "LO3.2",
-      "difficulty": "hard",
-      "conceptCluster": "LO3.2_indifference_curve_properties",
-      "primarySkill": "indifference_curve_properties",
-      "secondarySkills": [],
-      "repairSkill": "indifference_curve_properties",
-      "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
-      "feedback": "When both goods are desirable, having more of both places the consumer on a higher utility level.",
-      "source": "engine2_expansion",
-      "aHash": "528417832443b165090b6a0546a9db10d7437f328367a638347b927d8f88af14"
     },
     {
       "id": 130012,
@@ -10484,60 +12293,14 @@ const questionBank = {
       "aHash": "f88afaea4207e3bdbf9381c1649835a1780019d246fe640dd86f1abe706462c0"
     },
     {
-      "id": 130013,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving gym memberships, income and both prices all rise by 10%. What happens to the consumer's budget set?",
-      "options": [
-        "It is unchanged",
-        "It shifts outward",
-        "It shifts inward",
-        "It rotates toward X"
-      ],
-      "tag": "budget_line_changes",
-      "type": "trap",
-      "objective": "LO3.3",
-      "difficulty": "hard",
-      "conceptCluster": "LO3.3_budget_line_changes",
-      "primarySkill": "budget_line_changes",
-      "secondarySkills": [],
-      "repairSkill": "budget_line_changes",
-      "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
-      "feedback": "Proportional changes in nominal income and all prices leave real purchasing power and the budget set unchanged.",
-      "source": "engine2_expansion",
-      "aHash": "2eb953560d2aee9c96090261017ebe948bbd5a91ac4e77d6b95c43634e63f109"
-    },
-    {
-      "id": 130014,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving movie tickets, to derive a demand curve from consumer optimization, what should be varied while preferences, income, and other prices are held fixed?",
-      "options": [
-        "The good's own price",
-        "Every determinant simultaneously",
-        "Only utility labels",
-        "The number of consumers in the market"
-      ],
-      "tag": "derive_individual_demand",
-      "type": "interpretation",
-      "objective": "LO4.1",
-      "difficulty": "hard",
-      "conceptCluster": "LO4.1_derive_individual_demand",
-      "primarySkill": "derive_individual_demand",
-      "secondarySkills": [],
-      "repairSkill": "derive_individual_demand",
-      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
-      "feedback": "The individual demand curve isolates the effect of own price on the consumer's optimal quantity.",
-      "source": "engine2_expansion",
-      "aHash": "e545d63760fe7e84e02622b458a7fa729cc2ff1a01e96d14387999ff43d8f640"
-    },
-    {
       "id": 130015,
       "sourceGame": "labyrinthOfChoice",
       "q": "A good has positive income elasticity of 0.4. How should it be classified?",
       "options": [
-        "Normal and income-inelastic",
-        "Inferior",
-        "A complement",
-        "Necessarily a luxury"
+        "Normal, with income elasticity below one",
+        "Inferior, with demand falling as income rises",
+        "A complement, with negative cross-price elasticity",
+        "A luxury, with income elasticity above one"
       ],
       "tag": "normal_inferior_goods",
       "type": "interpretation",
@@ -10552,15 +12315,15 @@ const questionBank = {
       "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
       "feedback": "Positive income elasticity indicates a normal good; a value between 0 and 1 indicates less-than-proportional response.",
       "source": "engine2_expansion",
-      "aHash": "5c957586005b552e0891efcd7e4e0f24ef16842b0b4ef01cc6e0fbe403f6b2a3"
+      "aHash": "e8e1ee863149a4fde66e411d9d97597c1ccdb5eddf50d4dc1bc0eebf722465b3"
     },
     {
       "id": 130016,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving streaming subscriptions, x is inferior. Px falls. How does the income effect on X compare with the substitution effect?",
+      "q": "X is inferior. Px falls. How does the income effect on X compare with the substitution effect?",
       "options": [
-        "The income effect works toward less X while the substitution effect works toward more X",
-        "Both effects work toward more X",
+        "The income effect opposes substitution toward X",
+        "Both effects increase consumption of good X",
         "Both effects work toward less X",
         "The substitution effect becomes zero"
       ],
@@ -10575,7 +12338,7 @@ const questionBank = {
       "commonError": "confuses_purchasing_power_with_relative_price substitution",
       "feedback": "For an inferior good, higher real purchasing power reduces demand for X, opposing the positive substitution effect from a price fall.",
       "source": "engine2_expansion",
-      "aHash": "bf7d90a2317a6f2060a8fe220831a616d374d060197dde17a9699c46282027b0"
+      "aHash": "200433d34c4beead44af1929bd7d1f06025619d5f0f2e279eb3a05b03d1d36e5"
     },
     {
       "id": 130017,
@@ -10606,7 +12369,7 @@ const questionBank = {
     {
       "id": 130018,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving concert tickets, which combination would unambiguously shift demand for a normal good X to the right?",
+      "q": "Which combination would unambiguously shift demand for a normal good X to the right?",
       "options": [
         "Income rises and the price of a substitute rises",
         "Income falls and the price of a substitute rises",
@@ -10625,141 +12388,6 @@ const questionBank = {
       "feedback": "For a normal good, higher income raises demand; a higher substitute price also raises demand for X.",
       "source": "engine2_expansion",
       "aHash": "b084159172cc56031df6d7d40efc2b54454e3d4882c7a805c34973ee7ad44183"
-    },
-    {
-      "id": 130019,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving ride-share trips, at $20, A demands 1 unit and B demands 0. At $15, A demands 2 and B demands 1. What are the market quantities at those prices?",
-      "options": [
-        "1 at $20 and 3 at $15",
-        "0.5 at $20 and 1.5 at $15",
-        "1 at $20 and 2 at $15",
-        "20 at $20 and 15 at $15"
-      ],
-      "tag": "market_demand_aggregation",
-      "type": "application",
-      "objective": "LO4.6",
-      "difficulty": "hard",
-      "conceptCluster": "LO4.6_market_demand_aggregation",
-      "primarySkill": "market_demand_aggregation",
-      "secondarySkills": [],
-      "repairSkill": "market_demand_aggregation",
-      "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
-      "feedback": "Sum quantities across consumers at each common price.",
-      "source": "engine2_expansion",
-      "aHash": "d337b5f229ba6ed5e970de24ad3c865ef2ef37a347b8ed5a2e555cd1a79e7fa7"
-    },
-    {
-      "id": 130020,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. Which statement is most accurate about D0 and D1 in the hamburger market?",
-      "options": [
-        "At every price, D0 shows a greater quantity demanded than D1",
-        "At every price, D1 shows a greater quantity demanded than D0",
-        "The curves cross, so sometimes D1 shows more demand",
-        "The graph shows only movements along one demand curve"
-      ],
-      "tag": "demand_curve_shifts",
-      "type": "interpretation",
-      "objective": "LO4.4",
-      "difficulty": "hard",
-      "conceptCluster": "LO4.4_demand_curve_shifts",
-      "primarySkill": "demand_curve_shifts",
-      "secondarySkills": [
-        "market_demand_aggregation"
-      ],
-      "repairSkill": "demand_curve_shifts",
-      "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
-      "feedback": "Because D1 is left of D0, D0 shows the larger quantity demanded at every common price.",
-      "source": "graph_batch_demand_20260816",
-      "image": "DEMAND-05.png",
-      "imageAlt": "Hamburger graph with two parallel downward-sloping lines; D1 lies below and left of D0.",
-      "graphRequired": true,
-      "aHash": "9e9e524e6544d723e524648baaf3fb9a9c833af9c3d535b6c61ac2d79e4c7a14"
-    },
-    {
-      "id": 130021,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. The arrow from D0 to D1 in the taco graph is best described as...",
-      "options": [
-        "A rightward shift of demand caused by a nonprice determinant",
-        "A movement along D0 caused by a fall in price",
-        "A leftward shift of demand caused by lower consumer income for a normal good",
-        "An increase in quantity supplied"
-      ],
-      "tag": "demand_curve_shifts",
-      "type": "interpretation",
-      "objective": "LO4.4",
-      "difficulty": "hard",
-      "conceptCluster": "LO4.4_demand_curve_shifts",
-      "primarySkill": "demand_curve_shifts",
-      "secondarySkills": [
-        "demand_response_income_prices"
-      ],
-      "repairSkill": "demand_curve_shifts",
-      "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
-      "feedback": "The entire curve shifts right, which means demand increased because of a nonprice determinant.",
-      "source": "graph_batch_demand_20260816",
-      "image": "DEMAND-03.png",
-      "imageAlt": "Taco graph with parallel downward-sloping D0 and D1 and a right-pointing arrow between them.",
-      "graphRequired": true,
-      "aHash": "5ae7509f640114ec6db907c65a6f155edf0edae296eb6071c96450ee79241e1c"
-    },
-    {
-      "id": 130022,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. Compared with point A, point B on D0 in the peanut butter graph represents...",
-      "options": [
-        "A lower price and a larger quantity demanded",
-        "A higher price and a lower quantity demanded",
-        "A higher price and a larger quantity demanded",
-        "A lower price and a smaller quantity demanded"
-      ],
-      "tag": "derive_individual_demand",
-      "type": "interpretation",
-      "objective": "LO4.1",
-      "difficulty": "hard",
-      "conceptCluster": "LO4.1_derive_individual_demand",
-      "primarySkill": "derive_individual_demand",
-      "secondarySkills": [
-        "demand_response_income_prices"
-      ],
-      "repairSkill": "derive_individual_demand",
-      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand_shift",
-      "feedback": "From A to B on D0, price falls and quantity demanded increases, which matches the law of demand.",
-      "source": "graph_batch_demand_20260816",
-      "image": "DEMAND-04.png",
-      "imageAlt": "Peanut butter graph with parallel downward-sloping D0 and D1; A and B are on D0.",
-      "graphRequired": true,
-      "aHash": "5a00d82bf48f9860644424b2132369a9d754baa168a9f552c42616bac962d2ee"
-    },
-    {
-      "id": 130023,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. If the price of tacos rises from $6 back to $12 on D0, what happens to quantity demanded?",
-      "options": [
-        "It falls from 200 thousand back to 50 thousand",
-        "It rises from 50 thousand to 200 thousand",
-        "The entire demand curve shifts right",
-        "Nothing changes because the demand curve is fixed"
-      ],
-      "tag": "demand_response_income_prices",
-      "type": "interpretation",
-      "objective": "LO4.2",
-      "difficulty": "hard",
-      "conceptCluster": "LO4.2_demand_response_income_prices",
-      "primarySkill": "demand_response_income_prices",
-      "secondarySkills": [
-        "derive_individual_demand"
-      ],
-      "repairSkill": "demand_response_income_prices",
-      "commonError": "treats_income_and_related_goods_changes_as_movements_along_the_curve",
-      "feedback": "Reversing the move from B to A means a higher price and a lower quantity demanded on the same curve.",
-      "source": "graph_batch_demand_20260816",
-      "image": "DEMAND-02.png",
-      "imageAlt": "Taco graph with downward-sloping D0 and points A at 50 thousand, $12 and B at 200 thousand, $6.",
-      "graphRequired": true,
-      "aHash": "6284c96a075348b8289468cc77ab613b3ce383367e41fda1a8427fb8ae205f74"
     },
     {
       "id": 130024,
@@ -10792,7 +12420,7 @@ const questionBank = {
       "sourceGame": "labyrinthOfChoice",
       "q": "Refer to the graph. Total revenue rises from 420 at A to 700 at B when price rises from $6 to $10. Why does this not imply elastic demand?",
       "options": [
-        "Because quantity does not change, so demand is perfectly inelastic",
+        "Quantity is fixed, so demand is perfectly inelastic",
         "Because revenue can never be used to study elasticity",
         "Because price and quantity both rose",
         "Because the demand curve is unit elastic"
@@ -10813,12 +12441,12 @@ const questionBank = {
       "image": "ELASTICITY-02.png",
       "imageAlt": "Vertical Demand line at quantity 70 with A at price 6 and B at price 10.",
       "graphRequired": true,
-      "aHash": "26ff71763a8baece69a3d90472810172d925def5e3e5e3b3d9f9dc237088b04f"
+      "aHash": "6ecb2f3a0a2fd8fce1d0cfca2a5ac39926b233668b11e8e88d2701da1245ec3a"
     },
     {
       "id": 130026,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. Using the midpoint method, the elasticity of D1 between B and A is closest to...",
+      "q": "Refer to the graph. Using the midpoint method, what is the approximate price elasticity of D1 between B and A?",
       "options": [
         "1.45",
         "0.31",
@@ -10846,7 +12474,7 @@ const questionBank = {
     {
       "id": 130027,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. Using the midpoint method between B and A, the elasticity coefficient is...",
+      "q": "Refer to the graph. Using the midpoint method between B and A, what is the price elasticity of demand?",
       "options": [
         "1.0",
         "0.5",
@@ -10864,7 +12492,7 @@ const questionBank = {
       ],
       "repairSkill": "midpoint_elasticity",
       "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
-      "feedback": "Quantity changes from 20 to 70: 50/45 \u2248 111.1%. Price changes from 7 to 2: 5/4.5 \u2248 111.1%. Their ratio is 1.",
+      "feedback": "Quantity changes from 20 to 70: 50/45 ≈ 111.1%. Price changes from 7 to 2: 5/4.5 ≈ 111.1%. Their ratio is 1.",
       "source": "graph_batch_elasticity_20260816",
       "image": "ELASTICITY-04.png",
       "imageAlt": "Downward-curving Demand line with B at quantity 20, price 7 and A at quantity 70, price 2.",
@@ -10876,7 +12504,7 @@ const questionBank = {
       "sourceGame": "labyrinthOfChoice",
       "q": "Refer to the graph. Which statement best describes the horizontal demand curve?",
       "options": [
-        "Consumers are willing to buy different quantities at $10, but none at a price above $10",
+        "Different quantities at $10; no purchases above $10",
         "Consumers buy exactly 70 units at every price",
         "Quantity demanded never changes when price changes",
         "The curve is inelastic because it is flat"
@@ -10895,7 +12523,7 @@ const questionBank = {
       "image": "ELASTICITY-05.png",
       "imageAlt": "Horizontal Demand line at price 10 with A at quantity 50 and B at quantity 100.",
       "graphRequired": true,
-      "aHash": "55c4479fff1dd7d62524eedfd829499db0dc16eaa694ad182591c09a17b9a75f"
+      "aHash": "2063569590e3d80242be47e4644b72435323eafb952ce3bafa70968af7f779ad"
     },
     {
       "id": 310004,
@@ -10904,7 +12532,7 @@ const questionBank = {
       "options": [
         "They are outside the budget line",
         "They lie on higher indifference curves than C",
-        "They are affordable but lie on lower attainable indifference curves than point C",
+        "They are affordable but less preferred than C",
         "They violate transitivity"
       ],
       "tag": "utility_maximization_mrs",
@@ -10923,16 +12551,16 @@ const questionBank = {
       "image": "IC-02.png",
       "imageAlt": "Budget line and three indifference curves with A, B and a tangency at C.",
       "graphRequired": true,
-      "aHash": "d7e5e9816b62f08fdf3e8826148ee98f49ccbe006837214d9f2ae268532c16bb"
+      "aHash": "42a92f6cf46e665d7953e2db2bbfd6da713614e75c025abf6003c8b3a1497a76"
     },
     {
       "id": 310007,
       "sourceGame": "labyrinthOfChoice",
       "q": "Refer to the graph. Which statement about IC3 is correct?",
       "options": [
-        "It is the consumer\u2019s chosen indifference curve at point A",
+        "It is the consumer’s chosen indifference curve at point A",
         "It lies below the budget line and is affordable",
-        "It represents a preferred utility level but is unattainable with the current budget",
+        "It is preferred but unaffordable",
         "It contains all affordable bundles"
       ],
       "tag": "utility_maximization_mrs",
@@ -10951,43 +12579,15 @@ const questionBank = {
       "image": "IC-03.png",
       "imageAlt": "Budget line touching the middle indifference curve IC2 at A, with IC1 below and IC3 above.",
       "graphRequired": true,
-      "aHash": "943cbfc7eb265d70a8b33702628c5254a5427a190bdc986ace13c8b89a07b201"
-    },
-    {
-      "id": 310008,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. At the consumer optimum shown at point A, which condition must hold?",
-      "options": [
-        "MRS = price ratio",
-        "MUx = MUy",
-        "Income = 0",
-        "The budget line is steeper than every indifference curve"
-      ],
-      "tag": "utility_maximization_mrs",
-      "type": "graph",
-      "objective": "LO3.4",
-      "difficulty": "hard",
-      "conceptCluster": "LO3.4_utility_maximization_mrs",
-      "primarySkill": "utility_maximization_mrs",
-      "secondarySkills": [
-        "marginal_rate_substitution"
-      ],
-      "repairSkill": "utility_maximization_mrs",
-      "commonError": "does_not_connect_tangency_with_mrs_and_market_tradeoffs",
-      "feedback": "At an interior optimum, the slope of the indifference curve equals the slope of the budget line, so MRS equals the price ratio.",
-      "source": "graph_batch_indifference_20260816",
-      "image": "IC-04.png",
-      "imageAlt": "Budget line and downward-curving IC2 touching at point A, Good X 15 and Good Y 10.",
-      "graphRequired": true,
-      "aHash": "210baedb4c17c1f63b8a8ecdf1afa78920926017c9557ac4934ee817cd941d8f"
+      "aHash": "7f6a04e7dbaf15eda560a2ce27d20fb3e9f36bd183c6ca5ea4370748cc6af6ae"
     },
     {
       "id": 310014,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. If Good X and Good Y are both ordinary goods, what is the problem with these indifference curves?",
+      "q": "Refer to the graph. If Good X and Good Y are both desirable goods, what is the problem with these indifference curves?",
       "options": [
-        "They are too steep",
-        "They slope upward, which violates the idea that more of both goods should be preferred",
+        "They wrongly imply that every affordable bundle is optimal",
+        "They wrongly treat more of both goods as equally desirable",
         "They are parallel",
         "They intersect the axes"
       ],
@@ -11005,127 +12605,15 @@ const questionBank = {
       "image": "IC-07.png",
       "imageAlt": "Three parallel upward-sloping lines labeled IC1, IC2 and IC3.",
       "graphRequired": true,
-      "aHash": "4ebbf43d2872ae4e1dbcd01045bb5d024c659ddcff94c740cbc302da6e2f987d"
-    },
-    {
-      "id": 310017,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. When the price of Good X falls, the movement from point A to point B is the...",
-      "options": [
-        "income effect",
-        "substitution effect",
-        "market demand effect",
-        "consumer surplus effect"
-      ],
-      "tag": "substitution_effect",
-      "type": "graph",
-      "objective": "LO4.3",
-      "difficulty": "hard",
-      "conceptCluster": "LO4.3_substitution_effect",
-      "primarySkill": "substitution_effect",
-      "secondarySkills": [
-        "budget_line_changes"
-      ],
-      "repairSkill": "substitution_effect",
-      "commonError": "confuses_the_compensated_move_with_the_final_income_adjustment",
-      "feedback": "A to B is the substitution effect: the consumer responds to the new relative price of Good X while staying on the original utility level U\u2080.",
-      "source": "graph_batch_indifference_20260816",
-      "image": "INCOME-SUB-01.png",
-      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C.",
-      "graphRequired": true,
-      "aHash": "82dfe3b7a4869112f86b0bd8fa7b76f2d42047e31637afebee3604717a05340b"
-    },
-    {
-      "id": 310018,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. In the same price-change graph, the movement from point B to point C is the...",
-      "options": [
-        "substitution effect",
-        "income effect",
-        "cross-price effect",
-        "normal-good effect"
-      ],
-      "tag": "income_effect",
-      "type": "graph",
-      "objective": "LO4.3",
-      "difficulty": "hard",
-      "conceptCluster": "LO4.3_income_effect",
-      "primarySkill": "income_effect",
-      "secondarySkills": [
-        "substitution_effect"
-      ],
-      "repairSkill": "income_effect",
-      "commonError": "confuses_the_shift_to_the_new_higher_utility_curve_with_substitution_alone",
-      "feedback": "B to C is the income effect. After the price drop in Good X raises real purchasing power, the consumer moves to a higher utility level U\u2081.",
-      "source": "graph_batch_indifference_20260816",
-      "image": "INCOME-SUB-01.png",
-      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C.",
-      "graphRequired": true,
-      "aHash": "63082db471cf9c97f398a5c11aaff4349407cc276cbbdb9ca8705a0ae6e9f797"
-    },
-    {
-      "id": 310021,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. When the price of Good X rises, the movement from point A to point B captures the...",
-      "options": [
-        "income effect",
-        "substitution effect",
-        "law of demand",
-        "budget share"
-      ],
-      "tag": "substitution_effect",
-      "type": "graph",
-      "objective": "LO4.3",
-      "difficulty": "hard",
-      "conceptCluster": "LO4.3_substitution_effect",
-      "primarySkill": "substitution_effect",
-      "secondarySkills": [
-        "budget_line_changes"
-      ],
-      "repairSkill": "substitution_effect",
-      "commonError": "mislabels_the_compensated_movement_after_a_price_increase",
-      "feedback": "A to B is the substitution effect: the consumer substitutes away from the now relatively more expensive Good X.",
-      "source": "graph_batch_indifference_20260816",
-      "image": "INCOME-SUB-02.png",
-      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C; Budget1 is steeper.",
-      "graphRequired": true,
-      "aHash": "82dfe3b7a4869112f86b0bd8fa7b76f2d42047e31637afebee3604717a05340b"
-    },
-    {
-      "id": 310024,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. After the price change, which point is the consumer\u2019s final optimal bundle?",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "There is no final optimum"
-      ],
-      "tag": "demand_response_income_prices",
-      "type": "graph",
-      "objective": "LO4.2",
-      "difficulty": "hard",
-      "conceptCluster": "LO4.2_demand_response_income_prices",
-      "primarySkill": "demand_response_income_prices",
-      "secondarySkills": [
-        "utility_maximization_mrs"
-      ],
-      "repairSkill": "demand_response_income_prices",
-      "commonError": "mistakes_the_compensated_tangency_for_the_final_choice",
-      "feedback": "Point C lies on the new budget line and the highest attainable indifference curve after the price change, so C is the final chosen bundle.",
-      "source": "graph_batch_indifference_20260816",
-      "image": "INCOME-SUB-03.png",
-      "imageAlt": "Two budget lines sharing an X intercept, curves U0 and U1, and points A, B and C; Budget1 reaches higher on Y.",
-      "graphRequired": true,
-      "aHash": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
+      "aHash": "98706d52f2b91f7460e297a8fa9a4ca49448a072f551c4cb1ded7be8dfa3c64b"
     },
     {
       "id": 310043,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. Why is point C the consumer\u2019s chosen bundle?",
+      "q": "Refer to the graph. Why is point C the consumer’s chosen bundle?",
       "options": [
         "It is the cheapest point on the graph",
-        "It lies on the highest attainable indifference curve and on the budget line",
+        "It is the best affordable bundle",
         "It uses equal amounts of both goods",
         "It is above the budget line"
       ],
@@ -11145,43 +12633,15 @@ const questionBank = {
       "image": "IC-02.png",
       "imageAlt": "Budget line and three indifference curves with A, B and a tangency at C.",
       "graphRequired": true,
-      "aHash": "8d2617f6592affbc6b333068bb01e8ed6cdb5c86b4cb3bae35d8e620e02ad123"
-    },
-    {
-      "id": 310044,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. At point A, the slope of the indifference curve equals the slope of the budget line. This means that...",
-      "options": [
-        "total utility is maximized because income is zero",
-        "the marginal rate of substitution equals the price ratio",
-        "the consumer values both goods equally",
-        "the budget line is horizontal"
-      ],
-      "tag": "utility_maximization_mrs",
-      "type": "graph",
-      "objective": "LO3.4",
-      "difficulty": "hard",
-      "conceptCluster": "LO3.4_utility_maximization_mrs",
-      "primarySkill": "utility_maximization_mrs",
-      "secondarySkills": [
-        "marginal_rate_substitution"
-      ],
-      "repairSkill": "utility_maximization_mrs",
-      "commonError": "cannot_connect_tangency_to_the_mrs_equals_price_ratio_rule",
-      "feedback": "At an interior optimum, the indifference curve is tangent to the budget line, so the MRS equals the market tradeoff given by the price ratio.",
-      "source": "graph_batch_indifference_actual_20260816",
-      "image": "IC-03.png",
-      "imageAlt": "Budget line touching the middle indifference curve IC2 at A, with IC1 below and IC3 above.",
-      "graphRequired": true,
-      "aHash": "399f0a4ee9a59d58ff77b51e779198886a2d4bf425e879c6bf290054fe9f95d8"
+      "aHash": "d066327be0391c86955bf205257dc39e069cf91720b4303c555018b08b2bca2c"
     },
     {
       "id": 310045,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. What is the main problem with these indifference curves if both items on the axes are goods?",
+      "q": "Refer to the graph. What is the main problem with these indifference curves if more of either item is preferred, holding the other fixed?",
       "options": [
-        "They are too flat",
-        "They are upward sloping, which violates the more-is-better assumption",
+        "They wrongly imply that every affordable bundle is optimal",
+        "They treat more of both goods as equally desirable",
         "They are perfectly straight",
         "They are tangent to each other"
       ],
@@ -11199,162 +12659,7 @@ const questionBank = {
       "image": "IC-07.png",
       "imageAlt": "Three parallel upward-sloping lines labeled IC1, IC2 and IC3.",
       "graphRequired": true,
-      "aHash": "739bc436e633eddd0cd33606b9191098e7b9f84a0acd10dec2eedf4bb0a88cf6"
-    },
-    {
-      "id": 310046,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. When the price of Good X falls, the movement from point A to point B shows the consumer choosing...",
-      "options": [
-        "more Good X and less Good Y",
-        "less Good X and more Good Y",
-        "more of both goods",
-        "less of both goods"
-      ],
-      "tag": "substitution_effect",
-      "type": "graph",
-      "objective": "LO4.3",
-      "difficulty": "hard",
-      "conceptCluster": "LO4.3_substitution_effect",
-      "primarySkill": "substitution_effect",
-      "secondarySkills": [
-        "budget_line_changes"
-      ],
-      "repairSkill": "substitution_effect",
-      "commonError": "gets_the_direction_of_substitution_wrong_after_a_price_drop",
-      "feedback": "From A to B, Good X rises from 5 to 10 while Good Y falls from 20 to 10. That is the substitution effect.",
-      "source": "graph_batch_indifference_actual_20260816",
-      "image": "INCOME-SUB-01.png",
-      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C.",
-      "graphRequired": true,
-      "aHash": "546f3969649081edead524a24503802a566b7aafe83d88bf29c28aaf73c3a507"
-    },
-    {
-      "id": 310047,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. When the price of Good Y falls, the movement from point A to point B indicates the consumer buys...",
-      "options": [
-        "more Good X and less Good Y",
-        "less Good X and more Good Y",
-        "more of both goods",
-        "less of both goods"
-      ],
-      "tag": "substitution_effect",
-      "type": "graph",
-      "objective": "LO4.3",
-      "difficulty": "hard",
-      "conceptCluster": "LO4.3_substitution_effect",
-      "primarySkill": "substitution_effect",
-      "secondarySkills": [
-        "budget_line_changes"
-      ],
-      "repairSkill": "substitution_effect",
-      "commonError": "reverses_the_substitution_effect_after_a_drop_in_good_y_price",
-      "feedback": "From A to B, Good X falls from 20 to 10 while Good Y rises from 5 to 10, which is the substitution effect toward the cheaper good Y.",
-      "source": "graph_batch_indifference_actual_20260816",
-      "image": "INCOME-SUB-03.png",
-      "imageAlt": "Two budget lines sharing an X intercept, curves U0 and U1, and points A, B and C; Budget1 reaches higher on Y.",
-      "graphRequired": true,
-      "aHash": "fa66951af26b0feb75b2762a47f1a2350d498789551ae2ecfd5f11f3e8c75289"
-    },
-    {
-      "id": 310048,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. After the price of Good X rises, the consumer\u2019s final choice is at point C. Compared with point A, point C lies on...",
-      "options": [
-        "a higher indifference curve",
-        "the same indifference curve",
-        "a lower indifference curve",
-        "no indifference curve at all"
-      ],
-      "tag": "income_effect",
-      "type": "graph",
-      "objective": "LO4.3",
-      "difficulty": "hard",
-      "conceptCluster": "LO4.3_income_effect",
-      "primarySkill": "income_effect",
-      "secondarySkills": [
-        "demand_response_income_prices"
-      ],
-      "repairSkill": "income_effect",
-      "commonError": "does_not_notice_the_loss_in_welfare_after_a_price_increase",
-      "feedback": "Point C lies on the lower curve U1 rather than the original curve U0, so the consumer is worse off after the price increase.",
-      "source": "graph_batch_indifference_actual_20260816",
-      "image": "INCOME-SUB-02.png",
-      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C; Budget1 is steeper.",
-      "graphRequired": true,
-      "aHash": "87905b2c03987189aeac6bb5929ee00a851847ab5889a8dd367251a9dfbd9d4d"
-    }
-  ],
-  "elite": [
-    {
-      "id": 140000,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "A consumer chooses bundle A when both A and B are affordable. Later, with the same preferences, B is chosen from a budget set that still contains A. What should an analyst investigate first?",
-      "options": [
-        "Whether constraints or preferences changed, because stable choice would otherwise be inconsistent",
-        "Whether utility can be measured in dollars",
-        "Whether all goods became inferior",
-        "Whether the law of demand must be false"
-      ],
-      "tag": "theory_of_choice",
-      "type": "diagnosis",
-      "objective": "LO3.1",
-      "difficulty": "elite",
-      "conceptCluster": "LO3.1_theory_of_choice",
-      "primarySkill": "theory_of_choice",
-      "secondarySkills": [],
-      "repairSkill": "theory_of_choice",
-      "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
-      "feedback": "With stable preferences and both bundles feasible in both situations, the reversal needs an explanation such as changed constraints, changed preferences, or measurement error.",
-      "source": "engine2_expansion",
-      "aHash": "0f556be73d9b0b6ac5dd5495e64efc743b2a1738cf0f43df1d21278e10323f67"
-    },
-    {
-      "id": 140001,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "An observed choice cycle repeatedly moves A \u2192 B \u2192 C \u2192 A even when all three bundles remain feasible. Which assumption is most directly threatened?",
-      "options": [
-        "Transitivity of preferences",
-        "The law of one price",
-        "Positive cross-price elasticity",
-        "Market-demand aggregation"
-      ],
-      "tag": "preferences_complete_transitive",
-      "type": "diagnosis",
-      "objective": "LO3.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO3.2_preferences_complete_transitive",
-      "primarySkill": "preferences_complete_transitive",
-      "secondarySkills": [],
-      "repairSkill": "preferences_complete_transitive",
-      "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
-      "feedback": "Choice cycles are inconsistent with transitive preferences when constraints are unchanged.",
-      "source": "engine2_expansion",
-      "aHash": "4b6743cc7ed85cff47e4d0478fd736857bb26d1da9884a730a9021bdc5b7e0e8"
-    },
-    {
-      "id": 140002,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "A proposed indifference map has upward-sloping curves for two goods that are both desirable. What is the best diagnosis?",
-      "options": [
-        "It conflicts with the idea that giving up some of one good is needed to offset getting more of the other",
-        "It proves the goods are perfect substitutes",
-        "It shows the budget line shifted",
-        "It implies unit elastic demand"
-      ],
-      "tag": "indifference_curve_properties",
-      "type": "critique",
-      "objective": "LO3.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO3.2_indifference_curve_properties",
-      "primarySkill": "indifference_curve_properties",
-      "secondarySkills": [],
-      "repairSkill": "indifference_curve_properties",
-      "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
-      "feedback": "For two goods, maintaining constant utility normally requires a tradeoff, which produces downward-sloping indifference curves.",
-      "source": "engine2_expansion",
-      "aHash": "74481056a3de88429ca27541b28e1584779be866095db9ff1f7d3f1ba5ff5d12"
+      "aHash": "50bbe8d64da87e40389093b966f66206000a83cbfad6dd6c7a69bcbb7c25128a"
     },
     {
       "id": 140003,
@@ -11369,7 +12674,7 @@ const questionBank = {
       "tag": "marginal_rate_substitution",
       "type": "application",
       "objective": "LO3.2",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "LO3.2_marginal_rate_substitution",
       "primarySkill": "marginal_rate_substitution",
       "secondarySkills": [],
@@ -11380,34 +12685,11 @@ const questionBank = {
       "aHash": "c913068a6830c1c449b03c544cc54a044a83700cf832b4e49cd716580560e1d4"
     },
     {
-      "id": 140004,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "A consumer has income $60, Px=$5, Py=$10. Bundle (6,3) lies where relative to the budget line?",
-      "options": [
-        "On the budget line",
-        "Strictly inside the budget set",
-        "Outside the budget set",
-        "Cannot be determined"
-      ],
-      "tag": "budget_constraint_intercepts_slope",
-      "type": "calculation",
-      "objective": "LO3.3",
-      "difficulty": "elite",
-      "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
-      "primarySkill": "budget_constraint_intercepts_slope",
-      "secondarySkills": [],
-      "repairSkill": "budget_constraint_intercepts_slope",
-      "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
-      "feedback": "Spending half the X-intercept and half the Y-intercept uses exactly half the budget on each good, totaling all income.",
-      "source": "engine2_expansion",
-      "aHash": "cbdb230c1870070af6de124037d16cb7724a94b270bc4539ea11e56bcaaa14fe"
-    },
-    {
       "id": 140005,
       "sourceGame": "labyrinthOfChoice",
       "q": "Px falls by half while Py and income are unchanged. Which pair of changes is correct?",
       "options": [
-        "The X-intercept doubles and the absolute slope falls by half",
+        "The X-intercept doubles; the absolute slope halves",
         "Both intercepts double",
         "The Y-intercept doubles and slope becomes steeper",
         "Both intercepts stay fixed"
@@ -11415,7 +12697,7 @@ const questionBank = {
       "tag": "budget_line_changes",
       "type": "multi-step",
       "objective": "LO3.3",
-      "difficulty": "elite",
+      "difficulty": "hard",
       "conceptCluster": "LO3.3_budget_line_changes",
       "primarySkill": "budget_line_changes",
       "secondarySkills": [],
@@ -11423,14 +12705,942 @@ const questionBank = {
       "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
       "feedback": "I/Px doubles, I/Py is unchanged, and |slope|=Px/Py falls by half.",
       "source": "engine2_expansion",
-      "aHash": "0979d7da5bb26fec5371a696f40301a65e6e9f29922124dde337231a993994aa"
+      "aHash": "ea1b2876762b5de1e15e2f184058e7d8020bdae303bf1e92fb25ce40ecef3a48"
+    },
+    {
+      "id": 140012,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A price fall raises Qx even though X is inferior. What can be inferred?",
+      "options": [
+        "Substitution toward X outweighs the opposing income effect",
+        "The opposing income effect is stronger than substitution toward X",
+        "The income effect must be positive",
+        "The law of demand has failed"
+      ],
+      "tag": "income_effect",
+      "type": "diagnosis",
+      "objective": "LO4.3",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.3_income_effect",
+      "primarySkill": "income_effect",
+      "secondarySkills": [],
+      "repairSkill": "income_effect",
+      "commonError": "confuses_purchasing_power_with_relative_price substitution",
+      "feedback": "An inferior good still has a downward-sloping demand curve when the substitution effect dominates the opposing income effect.",
+      "source": "engine2_expansion",
+      "aHash": "da7c7486f34edfa9fdfc1603ddb5151ff692d52c17d3c137914aaf05b3297fce"
+    },
+    {
+      "id": 140017,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Two differentiable demand curves cross at the same positive price and quantity and use identical axis units, with price vertical. What determines which has larger absolute point price elasticity there?",
+      "options": [
+        "The curve with the smaller absolute dP/dQ",
+        "The steeper curve must have larger absolute elasticity",
+        "The curve drawn farther from the origin has larger elasticity",
+        "Both must have the same elasticity because they share P and Q"
+      ],
+      "tag": "price_elasticity_fundamentals",
+      "type": "critique",
+      "objective": "LO4.7",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
+      "primarySkill": "price_elasticity_fundamentals",
+      "secondarySkills": [],
+      "repairSkill": "price_elasticity_fundamentals",
+      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "feedback": "At their common point P/Q is identical. Since |Ed|=(P/Q)/|dP/dQ|, the flatter inverse-demand curve has larger absolute elasticity. Comparing steepness without matching units and P/Q would not generally suffice.",
+      "source": "engine2_expansion",
+      "aHash": "b5bf68fbe112c6a201de306be91c56851c56f6dafaafd2f1f7ad612fba715876"
+    },
+    {
+      "id": 140026,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "At the current bundle MRS=3 while Px/Py=2. Which local reallocation raises utility without changing expenditure?",
+      "options": [
+        "Move toward more X and less Y",
+        "Move toward less X and more Y",
+        "Keep the bundle because any MRS is optimal",
+        "Reduce both goods proportionally"
+      ],
+      "tag": "marginal_rate_substitution",
+      "type": "application",
+      "objective": "LO3.2",
+      "difficulty": "hard",
+      "conceptCluster": "LO3.2_marginal_rate_substitution",
+      "primarySkill": "marginal_rate_substitution",
+      "secondarySkills": [],
+      "repairSkill": "marginal_rate_substitution",
+      "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
+      "feedback": "The consumer values X at 3 units of Y while the market tradeoff is only 2, so shifting toward X raises utility.",
+      "source": "engine2_expansion",
+      "aHash": "c913068a6830c1c449b03c544cc54a044a83700cf832b4e49cd716580560e1d4"
+    },
+    {
+      "id": 140028,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Px falls by half while Py and income are unchanged. Which pair of changes is correct?",
+      "options": [
+        "The X-intercept doubles; the absolute slope halves",
+        "Both intercepts double",
+        "The Y-intercept doubles and slope becomes steeper",
+        "Both intercepts stay fixed"
+      ],
+      "tag": "budget_line_changes",
+      "type": "multi-step",
+      "objective": "LO3.3",
+      "difficulty": "hard",
+      "conceptCluster": "LO3.3_budget_line_changes",
+      "primarySkill": "budget_line_changes",
+      "secondarySkills": [],
+      "repairSkill": "budget_line_changes",
+      "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+      "feedback": "I/Px doubles, I/Py is unchanged, and |slope|=Px/Py falls by half.",
+      "source": "engine2_expansion",
+      "aHash": "ea1b2876762b5de1e15e2f184058e7d8020bdae303bf1e92fb25ce40ecef3a48"
+    },
+    {
+      "id": 140035,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A price fall raises Qx even though X is inferior. What can be inferred?",
+      "options": [
+        "Substitution toward X outweighs the opposing income effect",
+        "The opposing income effect is stronger than substitution toward X",
+        "The income effect must be positive",
+        "The law of demand has failed"
+      ],
+      "tag": "income_effect",
+      "type": "diagnosis",
+      "objective": "LO4.3",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.3_income_effect",
+      "primarySkill": "income_effect",
+      "secondarySkills": [],
+      "repairSkill": "income_effect",
+      "commonError": "confuses_purchasing_power_with_relative_price substitution",
+      "feedback": "An inferior good still has a downward-sloping demand curve when the substitution effect dominates the opposing income effect.",
+      "source": "engine2_expansion",
+      "aHash": "da7c7486f34edfa9fdfc1603ddb5151ff692d52c17d3c137914aaf05b3297fce"
+    },
+    {
+      "id": 140040,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Two differentiable demand curves cross at the same positive price and quantity and use identical axis units, with price vertical. What determines which has larger absolute point price elasticity there?",
+      "options": [
+        "The curve with the smaller absolute dP/dQ",
+        "The steeper curve must have larger absolute elasticity",
+        "The curve drawn farther from the origin has larger elasticity",
+        "Both must have the same elasticity because they share P and Q"
+      ],
+      "tag": "price_elasticity_fundamentals",
+      "type": "critique",
+      "objective": "LO4.7",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
+      "primarySkill": "price_elasticity_fundamentals",
+      "secondarySkills": [],
+      "repairSkill": "price_elasticity_fundamentals",
+      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "feedback": "At their common point P/Q is identical. Since |Ed|=(P/Q)/|dP/dQ|, the flatter inverse-demand curve has larger absolute elasticity. Comparing steepness without matching units and P/Q would not generally suffice.",
+      "source": "engine2_expansion",
+      "aHash": "b5bf68fbe112c6a201de306be91c56851c56f6dafaafd2f1f7ad612fba715876"
+    },
+    {
+      "id": 140049,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "At the current bundle MRS=3 while Px/Py=2. Which local reallocation raises utility without changing expenditure?",
+      "options": [
+        "Move toward more X and less Y",
+        "Move toward less X and more Y",
+        "Keep the bundle because any MRS is optimal",
+        "Reduce both goods proportionally"
+      ],
+      "tag": "marginal_rate_substitution",
+      "type": "application",
+      "objective": "LO3.2",
+      "difficulty": "hard",
+      "conceptCluster": "LO3.2_marginal_rate_substitution",
+      "primarySkill": "marginal_rate_substitution",
+      "secondarySkills": [],
+      "repairSkill": "marginal_rate_substitution",
+      "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
+      "feedback": "The consumer values X at 3 units of Y while the market tradeoff is only 2, so shifting toward X raises utility.",
+      "source": "engine2_expansion",
+      "aHash": "c913068a6830c1c449b03c544cc54a044a83700cf832b4e49cd716580560e1d4"
+    },
+    {
+      "id": 140051,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Px falls by half while Py and income are unchanged. Which pair of changes is correct?",
+      "options": [
+        "The X-intercept doubles; the absolute slope halves",
+        "Both intercepts double",
+        "The Y-intercept doubles and slope becomes steeper",
+        "Both intercepts stay fixed"
+      ],
+      "tag": "budget_line_changes",
+      "type": "multi-step",
+      "objective": "LO3.3",
+      "difficulty": "hard",
+      "conceptCluster": "LO3.3_budget_line_changes",
+      "primarySkill": "budget_line_changes",
+      "secondarySkills": [],
+      "repairSkill": "budget_line_changes",
+      "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+      "feedback": "I/Px doubles, I/Py is unchanged, and |slope|=Px/Py falls by half.",
+      "source": "engine2_expansion",
+      "aHash": "ea1b2876762b5de1e15e2f184058e7d8020bdae303bf1e92fb25ce40ecef3a48"
+    },
+    {
+      "id": 140058,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A price fall raises Qx even though X is inferior. What can be inferred?",
+      "options": [
+        "Substitution toward X outweighs the opposing income effect",
+        "The opposing income effect is stronger than substitution toward X",
+        "The income effect must be positive",
+        "The law of demand has failed"
+      ],
+      "tag": "income_effect",
+      "type": "diagnosis",
+      "objective": "LO4.3",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.3_income_effect",
+      "primarySkill": "income_effect",
+      "secondarySkills": [],
+      "repairSkill": "income_effect",
+      "commonError": "confuses_purchasing_power_with_relative_price substitution",
+      "feedback": "An inferior good still has a downward-sloping demand curve when the substitution effect dominates the opposing income effect.",
+      "source": "engine2_expansion",
+      "aHash": "da7c7486f34edfa9fdfc1603ddb5151ff692d52c17d3c137914aaf05b3297fce"
+    },
+    {
+      "id": 310015,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Under what condition could these upward-sloping indifference curves make economic sense?",
+      "options": [
+        "One item is a good and the other a bad",
+        "the consumer had convex preferences",
+        "the goods were perfect substitutes",
+        "income was zero"
+      ],
+      "tag": "indifference_curve_properties",
+      "type": "graph",
+      "objective": "LO3.2",
+      "difficulty": "hard",
+      "conceptCluster": "LO3.2_indifference_curve_properties",
+      "primarySkill": "indifference_curve_properties",
+      "secondarySkills": [],
+      "repairSkill": "indifference_curve_properties",
+      "commonError": "ignores_that_upward_sloping_curves_require_bads_or_reversed_preferences",
+      "feedback": "Upward-sloping indifference curves are inconsistent with ordinary goods. They could only be rationalized if at least one item were a bad or the axes were interpreted differently.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "IC-07.png",
+      "imageAlt": "Three parallel upward-sloping lines labeled IC1, IC2 and IC3.",
+      "graphRequired": true,
+      "aHash": "fcd7f97f08609becd55e26466605d790924bbe2bc4d658ac1fdef3b9065ad804"
+    },
+    {
+      "id": 140061,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. When price falls from $5 to $3, total revenue rises on D1 but falls on D2. Which conclusion follows?",
+      "options": [
+        "D1 is elastic; D2 is inelastic",
+        "D1 is inelastic while D2 is elastic",
+        "Both curves are unit elastic",
+        "Both curves are perfectly inelastic"
+      ],
+      "tag": "elasticity_total_revenue",
+      "type": "integration",
+      "objective": "LO4.7",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.7_elasticity_total_revenue",
+      "primarySkill": "elasticity_total_revenue",
+      "secondarySkills": [
+        "price_elasticity_fundamentals",
+        "midpoint_elasticity"
+      ],
+      "repairSkill": "elasticity_total_revenue",
+      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
+      "feedback": "For D1, revenue rises from 175 to 225 as price falls, so demand is elastic. For D2, revenue falls from 235 to 165 as price falls, so demand is inelastic.",
+      "source": "graph_batch_elasticity_20260816",
+      "image": "ELASTICITY-03.png",
+      "imageAlt": "Two intersecting downward-sloping lines, flatter blue D1 and steeper red D2, with four labeled points.",
+      "graphRequired": true,
+      "aHash": "b029230a918f07d444367cff2a417ad2f21dcf866a6c02ae2be574775da37399"
+    },
+    {
+      "id": 150005,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A policy doubles income, doubles Py, and leaves Px unchanged. Which description is best?",
+      "options": [
+        "The X-intercept doubles, the Y-intercept stays fixed",
+        "Both intercepts are unchanged",
+        "Both intercepts double and slope is unchanged",
+        "The X-intercept is unchanged and the line becomes steeper"
+      ],
+      "tag": "budget_line_changes",
+      "type": "integration",
+      "objective": "LO3.3",
+      "difficulty": "hard",
+      "conceptCluster": "LO3.3_budget_line_changes",
+      "primarySkill": "budget_line_changes",
+      "secondarySkills": [],
+      "repairSkill": "budget_line_changes",
+      "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+      "feedback": "I/Px doubles; I/Py stays constant because both I and Py double; Px/Py falls, so the line flattens.",
+      "source": "engine2_expansion",
+      "aHash": "a052ea0b88926588da3c7bf349e04a877d84714c1a3ae9e889479d09e7bd5351"
+    },
+    {
+      "id": 150006,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "An interior optimum satisfies MRS=Px/Py. If Px falls and preferences stay fixed, why will the original bundle generally cease to be optimal?",
+      "options": [
+        "The price ratio changes but the old bundle's MRS does not",
+        "The price change reverses the preference ranking at the old bundle",
+        "The budget constraint disappears",
+        "Marginal utility becomes cardinal"
+      ],
+      "tag": "utility_maximization_mrs",
+      "type": "integration",
+      "objective": "LO3.4",
+      "difficulty": "hard",
+      "conceptCluster": "LO3.4_utility_maximization_mrs",
+      "primarySkill": "utility_maximization_mrs",
+      "secondarySkills": [],
+      "repairSkill": "utility_maximization_mrs",
+      "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
+      "feedback": "A price change alters the budget slope and therefore the tangency condition.",
+      "source": "engine2_expansion",
+      "aHash": "a9bf58a103d84a271c12d2ae6594bb8039cee04003f52b5d1e4901a448b64c1d"
+    },
+    {
+      "id": 150007,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Why is comparing MUx with MUy directly generally insufficient for allocating a fixed budget?",
+      "options": [
+        "Compare utility per dollar when prices differ",
+        "Marginal utility is always negative",
+        "Prices affect only supply",
+        "Utility maximization requires equal quantities"
+      ],
+      "tag": "marginal_utility_per_dollar",
+      "type": "synthesis",
+      "objective": "LO3.4",
+      "difficulty": "hard",
+      "conceptCluster": "LO3.4_marginal_utility_per_dollar",
+      "primarySkill": "marginal_utility_per_dollar",
+      "secondarySkills": [],
+      "repairSkill": "marginal_utility_per_dollar",
+      "commonError": "compares_marginal_utility_without_dividing_by_price",
+      "feedback": "Budget allocation depends on the marginal benefit from the last dollar spent, not marginal utility alone.",
+      "source": "engine2_expansion",
+      "aHash": "482beeae8db1fc1c7dc0dfcbff1b20340fd4308a71ebd16231f32a9570757631"
+    },
+    {
+      "id": 150008,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "An individual's Marshallian demand for X is generated by repeated utility maximization. Which object changes directly as Px changes and produces the price-quantity locus?",
+      "options": [
+        "Budget line and optimal choice",
+        "The preference ordering itself",
+        "The number of consumers",
+        "The definition of utility"
+      ],
+      "tag": "derive_individual_demand",
+      "type": "integration",
+      "objective": "LO4.1",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.1_derive_individual_demand",
+      "primarySkill": "derive_individual_demand",
+      "secondarySkills": [],
+      "repairSkill": "derive_individual_demand",
+      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
+      "feedback": "Changing Px changes the budget constraint; the resulting sequence of optimal X choices forms the individual demand curve.",
+      "source": "engine2_expansion",
+      "aHash": "79d5d37ad478e1cf75fc7c37c528efe12cc6dc4755b0028c0ea6baf074660776"
+    },
+    {
+      "id": 150012,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A price rise for an inferior good reduces real purchasing power. Which direction does the income effect push quantity of the inferior good?",
+      "options": [
+        "Upward",
+        "Downward",
+        "Always to zero",
+        "The direction cannot be linked to inferiority"
+      ],
+      "tag": "income_effect",
+      "type": "synthesis",
+      "objective": "LO4.3",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.3_income_effect",
+      "primarySkill": "income_effect",
+      "secondarySkills": [],
+      "repairSkill": "income_effect",
+      "commonError": "confuses_purchasing_power_with_relative_price substitution",
+      "feedback": "Lower real income raises demand for an inferior good, so the income effect of a price rise pushes its quantity upward.",
+      "source": "engine2_expansion",
+      "aHash": "69b565816811be91c81d5e62ea4e170a208433ba0eb9e8a4476536513c96bd03"
+    },
+    {
+      "id": 150022,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A product is a necessity in the short run, has few immediate substitutes, but new technologies can replace it over several years. Which pattern is most plausible?",
+      "options": [
+        "Demand is less elastic now than in the long run",
+        "Perfectly elastic demand at all horizons",
+        "More elastic short-run than long-run demand by definition",
+        "Unit elasticity at every price"
+      ],
+      "tag": "elasticity_determinants",
+      "type": "synthesis",
+      "objective": "LO4.7",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.7_elasticity_determinants",
+      "primarySkill": "elasticity_determinants",
+      "secondarySkills": [],
+      "repairSkill": "elasticity_determinants",
+      "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
+      "feedback": "Necessity and few immediate substitutes reduce short-run responsiveness; substitution possibilities can expand over time.",
+      "source": "engine2_expansion",
+      "aHash": "400a1f20ac70bf9363479fd69c4fb0c2ce61488ac3193637a02af11ee1a5f2b0"
+    },
+    {
+      "id": 150028,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A policy doubles income, doubles Py, and leaves Px unchanged. Which description is best?",
+      "options": [
+        "The X-intercept doubles, the Y-intercept stays fixed",
+        "Both intercepts are unchanged",
+        "Both intercepts double and slope is unchanged",
+        "The X-intercept is unchanged and the line becomes steeper"
+      ],
+      "tag": "budget_line_changes",
+      "type": "integration",
+      "objective": "LO3.3",
+      "difficulty": "hard",
+      "conceptCluster": "LO3.3_budget_line_changes",
+      "primarySkill": "budget_line_changes",
+      "secondarySkills": [],
+      "repairSkill": "budget_line_changes",
+      "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+      "feedback": "I/Px doubles; I/Py stays constant because both I and Py double; Px/Py falls, so the line flattens.",
+      "source": "engine2_expansion",
+      "aHash": "a052ea0b88926588da3c7bf349e04a877d84714c1a3ae9e889479d09e7bd5351"
+    },
+    {
+      "id": 150029,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "An interior optimum satisfies MRS=Px/Py. If Px falls and preferences stay fixed, why will the original bundle generally cease to be optimal?",
+      "options": [
+        "The price ratio changes but the old bundle's MRS does not",
+        "The price change reverses the preference ranking at the old bundle",
+        "The budget constraint disappears",
+        "Marginal utility becomes cardinal"
+      ],
+      "tag": "utility_maximization_mrs",
+      "type": "integration",
+      "objective": "LO3.4",
+      "difficulty": "hard",
+      "conceptCluster": "LO3.4_utility_maximization_mrs",
+      "primarySkill": "utility_maximization_mrs",
+      "secondarySkills": [],
+      "repairSkill": "utility_maximization_mrs",
+      "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
+      "feedback": "A price change alters the budget slope and therefore the tangency condition.",
+      "source": "engine2_expansion",
+      "aHash": "a9bf58a103d84a271c12d2ae6594bb8039cee04003f52b5d1e4901a448b64c1d"
+    },
+    {
+      "id": 150030,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Why is comparing MUx with MUy directly generally insufficient for allocating a fixed budget?",
+      "options": [
+        "Compare utility per dollar when prices differ",
+        "Marginal utility is always negative",
+        "Prices affect only supply",
+        "Utility maximization requires equal quantities"
+      ],
+      "tag": "marginal_utility_per_dollar",
+      "type": "synthesis",
+      "objective": "LO3.4",
+      "difficulty": "hard",
+      "conceptCluster": "LO3.4_marginal_utility_per_dollar",
+      "primarySkill": "marginal_utility_per_dollar",
+      "secondarySkills": [],
+      "repairSkill": "marginal_utility_per_dollar",
+      "commonError": "compares_marginal_utility_without_dividing_by_price",
+      "feedback": "Budget allocation depends on the marginal benefit from the last dollar spent, not marginal utility alone.",
+      "source": "engine2_expansion",
+      "aHash": "482beeae8db1fc1c7dc0dfcbff1b20340fd4308a71ebd16231f32a9570757631"
+    },
+    {
+      "id": 150031,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "An individual's Marshallian demand for X is generated by repeated utility maximization. Which object changes directly as Px changes and produces the price-quantity locus?",
+      "options": [
+        "Budget line and optimal choice",
+        "The preference ordering itself",
+        "The number of consumers",
+        "The definition of utility"
+      ],
+      "tag": "derive_individual_demand",
+      "type": "integration",
+      "objective": "LO4.1",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.1_derive_individual_demand",
+      "primarySkill": "derive_individual_demand",
+      "secondarySkills": [],
+      "repairSkill": "derive_individual_demand",
+      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
+      "feedback": "Changing Px changes the budget constraint; the resulting sequence of optimal X choices forms the individual demand curve.",
+      "source": "engine2_expansion",
+      "aHash": "79d5d37ad478e1cf75fc7c37c528efe12cc6dc4755b0028c0ea6baf074660776"
+    },
+    {
+      "id": 150035,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A price rise for an inferior good reduces real purchasing power. Which direction does the income effect push quantity of the inferior good?",
+      "options": [
+        "Upward",
+        "Downward",
+        "Always to zero",
+        "The direction cannot be linked to inferiority"
+      ],
+      "tag": "income_effect",
+      "type": "synthesis",
+      "objective": "LO4.3",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.3_income_effect",
+      "primarySkill": "income_effect",
+      "secondarySkills": [],
+      "repairSkill": "income_effect",
+      "commonError": "confuses_purchasing_power_with_relative_price substitution",
+      "feedback": "Lower real income raises demand for an inferior good, so the income effect of a price rise pushes its quantity upward.",
+      "source": "engine2_expansion",
+      "aHash": "69b565816811be91c81d5e62ea4e170a208433ba0eb9e8a4476536513c96bd03"
+    },
+    {
+      "id": 150045,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A product is a necessity in the short run, has few immediate substitutes, but new technologies can replace it over several years. Which pattern is most plausible?",
+      "options": [
+        "Demand is less elastic now than in the long run",
+        "Perfectly elastic demand at all horizons",
+        "More elastic short-run than long-run demand by definition",
+        "Unit elasticity at every price"
+      ],
+      "tag": "elasticity_determinants",
+      "type": "synthesis",
+      "objective": "LO4.7",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.7_elasticity_determinants",
+      "primarySkill": "elasticity_determinants",
+      "secondarySkills": [],
+      "repairSkill": "elasticity_determinants",
+      "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
+      "feedback": "Necessity and few immediate substitutes reduce short-run responsiveness; substitution possibilities can expand over time.",
+      "source": "engine2_expansion",
+      "aHash": "400a1f20ac70bf9363479fd69c4fb0c2ce61488ac3193637a02af11ee1a5f2b0"
+    },
+    {
+      "id": 150051,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A policy doubles income, doubles Py, and leaves Px unchanged. Which description is best?",
+      "options": [
+        "The X-intercept doubles, the Y-intercept stays fixed",
+        "Both intercepts are unchanged",
+        "Both intercepts double and slope is unchanged",
+        "The X-intercept is unchanged and the line becomes steeper"
+      ],
+      "tag": "budget_line_changes",
+      "type": "integration",
+      "objective": "LO3.3",
+      "difficulty": "hard",
+      "conceptCluster": "LO3.3_budget_line_changes",
+      "primarySkill": "budget_line_changes",
+      "secondarySkills": [],
+      "repairSkill": "budget_line_changes",
+      "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
+      "feedback": "I/Px doubles; I/Py stays constant because both I and Py double; Px/Py falls, so the line flattens.",
+      "source": "engine2_expansion",
+      "aHash": "a052ea0b88926588da3c7bf349e04a877d84714c1a3ae9e889479d09e7bd5351"
+    },
+    {
+      "id": 150052,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "An interior optimum satisfies MRS=Px/Py. If Px falls and preferences stay fixed, why will the original bundle generally cease to be optimal?",
+      "options": [
+        "The price ratio changes but the old bundle's MRS does not",
+        "The price change reverses the preference ranking at the old bundle",
+        "The budget constraint disappears",
+        "Marginal utility becomes cardinal"
+      ],
+      "tag": "utility_maximization_mrs",
+      "type": "integration",
+      "objective": "LO3.4",
+      "difficulty": "hard",
+      "conceptCluster": "LO3.4_utility_maximization_mrs",
+      "primarySkill": "utility_maximization_mrs",
+      "secondarySkills": [],
+      "repairSkill": "utility_maximization_mrs",
+      "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
+      "feedback": "A price change alters the budget slope and therefore the tangency condition.",
+      "source": "engine2_expansion",
+      "aHash": "a9bf58a103d84a271c12d2ae6594bb8039cee04003f52b5d1e4901a448b64c1d"
+    },
+    {
+      "id": 150053,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Why is comparing MUx with MUy directly generally insufficient for allocating a fixed budget?",
+      "options": [
+        "Compare utility per dollar when prices differ",
+        "Marginal utility is always negative",
+        "Prices affect only supply",
+        "Utility maximization requires equal quantities"
+      ],
+      "tag": "marginal_utility_per_dollar",
+      "type": "synthesis",
+      "objective": "LO3.4",
+      "difficulty": "hard",
+      "conceptCluster": "LO3.4_marginal_utility_per_dollar",
+      "primarySkill": "marginal_utility_per_dollar",
+      "secondarySkills": [],
+      "repairSkill": "marginal_utility_per_dollar",
+      "commonError": "compares_marginal_utility_without_dividing_by_price",
+      "feedback": "Budget allocation depends on the marginal benefit from the last dollar spent, not marginal utility alone.",
+      "source": "engine2_expansion",
+      "aHash": "482beeae8db1fc1c7dc0dfcbff1b20340fd4308a71ebd16231f32a9570757631"
+    },
+    {
+      "id": 150054,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "An individual's Marshallian demand for X is generated by repeated utility maximization. Which object changes directly as Px changes and produces the price-quantity locus?",
+      "options": [
+        "Budget line and optimal choice",
+        "The preference ordering itself",
+        "The number of consumers",
+        "The definition of utility"
+      ],
+      "tag": "derive_individual_demand",
+      "type": "integration",
+      "objective": "LO4.1",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.1_derive_individual_demand",
+      "primarySkill": "derive_individual_demand",
+      "secondarySkills": [],
+      "repairSkill": "derive_individual_demand",
+      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
+      "feedback": "Changing Px changes the budget constraint; the resulting sequence of optimal X choices forms the individual demand curve.",
+      "source": "engine2_expansion",
+      "aHash": "79d5d37ad478e1cf75fc7c37c528efe12cc6dc4755b0028c0ea6baf074660776"
+    },
+    {
+      "id": 150058,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A price rise for an inferior good reduces real purchasing power. Which direction does the income effect push quantity of the inferior good?",
+      "options": [
+        "Upward",
+        "Downward",
+        "Always to zero",
+        "The direction cannot be linked to inferiority"
+      ],
+      "tag": "income_effect",
+      "type": "synthesis",
+      "objective": "LO4.3",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.3_income_effect",
+      "primarySkill": "income_effect",
+      "secondarySkills": [],
+      "repairSkill": "income_effect",
+      "commonError": "confuses_purchasing_power_with_relative_price substitution",
+      "feedback": "Lower real income raises demand for an inferior good, so the income effect of a price rise pushes its quantity upward.",
+      "source": "engine2_expansion",
+      "aHash": "69b565816811be91c81d5e62ea4e170a208433ba0eb9e8a4476536513c96bd03"
+    },
+    {
+      "id": 150062,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. A student claims that the horizontal line must be perfectly inelastic because price never changes between A and B. What is the best critique?",
+      "options": [
+        "A horizontal demand curve is perfectly elastic",
+        "The student is correct because price is fixed",
+        "The curve is unit elastic because A and B share the same price",
+        "Elasticity cannot be classified from the graph"
+      ],
+      "tag": "price_elasticity_fundamentals",
+      "type": "critique",
+      "objective": "LO4.7",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
+      "primarySkill": "price_elasticity_fundamentals",
+      "secondarySkills": [],
+      "repairSkill": "price_elasticity_fundamentals",
+      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
+      "feedback": "Slope orientation matters here: vertical demand is perfectly inelastic, while horizontal demand is perfectly elastic.",
+      "source": "graph_batch_elasticity_20260816",
+      "image": "ELASTICITY-05.png",
+      "imageAlt": "Horizontal Demand line at price 10 with A at quantity 50 and B at quantity 100.",
+      "graphRequired": true,
+      "aHash": "cf3de37b56ced0588a055a7f036a6281007b147e098cc3162eb06b69bce90c28"
+    },
+    {
+      "id": 310028,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. After Good X becomes cheaper, how does the income effect represented by the move from B to C affect the consumer's purchases?",
+      "options": [
+        "buy more X and less Y",
+        "buy less of both goods",
+        "buy the same amount of X but fewer units of Y",
+        "Fewer units of X and more Y"
+      ],
+      "tag": "income_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.3_income_effect",
+      "primarySkill": "income_effect",
+      "secondarySkills": [
+        "substitution_effect"
+      ],
+      "repairSkill": "income_effect",
+      "commonError": "ignores_that_income_effect_can_partially_offset_the_substitution_effect",
+      "feedback": "The compensated optimum B is (20,5), while the final optimum C is (15,25). The income effect therefore reduces X by 5 and raises Y by 20. It partly offsets the A-to-B substitution effect on X.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "INCOME-SUB-04.png",
+      "imageAlt": "Convex indifference curves with original optimum A (10,20), compensated optimum B (20,5), and final optimum C (15,25).",
+      "graphRequired": true,
+      "aHash": "db48296e9cddbfee4d0280d9b37b7f423e0f23f9def321200b3f8fb276ac78c3"
+    },
+    {
+      "id": 310030,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Which statement best describes point B in the price-increase graph?",
+      "options": [
+        "It is the final optimum on the new lower indifference curve",
+        "The compensated bundle isolating substitution",
+        "It is unaffordable",
+        "It is the initial optimum before prices change"
+      ],
+      "tag": "substitution_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [
+        "income_effect"
+      ],
+      "repairSkill": "substitution_effect",
+      "commonError": "mistakes_the_compensated_bundle_for_the_final_choice",
+      "feedback": "Point B sits on the compensated budget line tangent to the original utility level, so it isolates the substitution effect.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "INCOME-SUB-02.png",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C; Budget1 is steeper.",
+      "graphRequired": true,
+      "aHash": "a15724b82504ff492c96175df48aaebde00609557f22b8545c60d4d9d0a2ddfc"
+    },
+    {
+      "id": 310031,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. In the Y-price-drop graph, which point represents the substitution-effect bundle?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "No point does"
+      ],
+      "tag": "substitution_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [
+        "budget_line_changes"
+      ],
+      "repairSkill": "substitution_effect",
+      "commonError": "cannot_identify_the_compensated_tangency_bundle",
+      "feedback": "Point B is the compensated bundle: it lies on the dashed line and the original indifference curve, isolating the substitution effect.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "INCOME-SUB-03.png",
+      "imageAlt": "Two budget lines sharing an X intercept, curves U0 and U1, and points A, B and C; Budget1 reaches higher on Y.",
+      "graphRequired": true,
+      "aHash": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d"
+    },
+    {
+      "id": 310032,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. Why does point C lie on a higher indifference curve than point A?",
+      "options": [
+        "Because the consumer became less efficient",
+        "The price fall raises attainable utility",
+        "Because point C is off the budget line",
+        "Because point A violates the budget constraint"
+      ],
+      "tag": "income_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.3_income_effect",
+      "primarySkill": "income_effect",
+      "secondarySkills": [
+        "demand_response_income_prices"
+      ],
+      "repairSkill": "income_effect",
+      "commonError": "fails_to_link_real_income_gain_with_higher_utility",
+      "feedback": "The lower price raises real purchasing power, so after substitution and income effects the consumer reaches a higher indifference curve at C.",
+      "source": "graph_batch_indifference_20260816",
+      "image": "INCOME-SUB-01.png",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C.",
+      "graphRequired": true,
+      "aHash": "bc01501043058381318fe9b95bdb5233169c0a623ee74174cdc78773aea8e355"
+    },
+    {
+      "id": 310054,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. After the price of Good X falls, how does the income effect represented by the move from B to C affect purchases?",
+      "options": [
+        "buy more Good X and more Good Y",
+        "buy more Good X and the same amount of Good Y",
+        "buy less Good X and more Good Y",
+        "buy less of both goods"
+      ],
+      "tag": "income_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.3_income_effect",
+      "primarySkill": "income_effect",
+      "secondarySkills": [
+        "substitution_effect"
+      ],
+      "repairSkill": "income_effect",
+      "commonError": "cannot_trace_the_income_effect_from_the_compensated_bundle_to_the_final_bundle",
+      "feedback": "From B to C, Good X rises from 10 to 20 and Good Y rises from 10 to 20. The income effect raises consumption of both goods in this graph.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "INCOME-SUB-01.png",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C.",
+      "graphRequired": true,
+      "aHash": "83e984e191fcb7e862cde7dc74a0f636dd5a9d072ac0d70ba8a4742634570fba"
+    },
+    {
+      "id": 310055,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. In the price-drop-for-Good-Y graph, what does the move from point B to point C show?",
+      "options": [
+        "the substitution effect reduces both goods",
+        "The income effect raises both quantities",
+        "the final bundle is on the original utility curve",
+        "Good Y falls while Good X rises"
+      ],
+      "tag": "income_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.3_income_effect",
+      "primarySkill": "income_effect",
+      "secondarySkills": [
+        "substitution_effect"
+      ],
+      "repairSkill": "income_effect",
+      "commonError": "fails_to_separate_the_income_effect_from_the_substitution_effect",
+      "feedback": "From B at (10, 10) to C at (20, 20), the consumer buys more of both goods. That is the income effect after Good Y becomes cheaper.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "INCOME-SUB-03.png",
+      "imageAlt": "Two budget lines sharing an X intercept, curves U0 and U1, and points A, B and C; Budget1 reaches higher on Y.",
+      "graphRequired": true,
+      "aHash": "842a52f33cfbbfd21e1ca07306c90762a809ab9a8560b3567d62b5e77cd970d6"
+    },
+    {
+      "id": 310056,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. In the price-rise-for-Good-X graph, what does the movement from point A to point B show?",
+      "options": [
+        "more Good X and less Good Y",
+        "less Good X and more Good Y",
+        "less Good X and less Good Y",
+        "more of both goods"
+      ],
+      "tag": "substitution_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.3_substitution_effect",
+      "primarySkill": "substitution_effect",
+      "secondarySkills": [
+        "budget_line_changes"
+      ],
+      "repairSkill": "substitution_effect",
+      "commonError": "gets_the_direction_of_substitution_wrong_when_good_x_becomes_more_expensive",
+      "feedback": "From A at (20, 20) to B at (10, 40), Good X falls and Good Y rises. The substitution effect pushes the consumer away from the now more expensive Good X.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "INCOME-SUB-02.png",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C; Budget1 is steeper.",
+      "graphRequired": true,
+      "aHash": "fa66951af26b0feb75b2762a47f1a2350d498789551ae2ecfd5f11f3e8c75289"
+    },
+    {
+      "id": 310057,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "Refer to the graph. In the same price-rise-for-Good-X graph, what does the movement from point B to point C show?",
+      "options": [
+        "more Good X and less Good Y",
+        "less Good X and less Good Y",
+        "less Good X and more Good Y",
+        "more of both goods"
+      ],
+      "tag": "income_effect",
+      "type": "graph",
+      "objective": "LO4.3",
+      "difficulty": "hard",
+      "conceptCluster": "LO4.3_income_effect",
+      "primarySkill": "income_effect",
+      "secondarySkills": [
+        "substitution_effect"
+      ],
+      "repairSkill": "income_effect",
+      "commonError": "cannot_read_the_income_effect_after_a_price_increase",
+      "feedback": "From B at (10, 40) to C at (5, 20), both goods decrease. The income effect lowers real purchasing power.",
+      "source": "graph_batch_indifference_actual_20260816",
+      "image": "INCOME-SUB-02.png",
+      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C; Budget1 is steeper.",
+      "graphRequired": true,
+      "aHash": "565aa66afe948be1602a81fd1d34e5d52d79f23db3d44d526abd698b224f406b"
+    }
+  ],
+  "elite": [
+    {
+      "id": 140000,
+      "sourceGame": "labyrinthOfChoice",
+      "q": "A consumer uniquely chooses A over affordable B. Later the same consumer uniquely chooses B while A remains affordable. An analyst is told that preferences are stable and both observations are accurate. What should the analyst investigate?",
+      "options": [
+        "Whether stable preferences or accurate measurement fail",
+        "Whether utility is measured in dollars",
+        "Whether all goods are inferior",
+        "Whether the two choices prove demand must slope upward"
+      ],
+      "tag": "theory_of_choice",
+      "type": "diagnosis",
+      "objective": "LO3.1",
+      "difficulty": "elite",
+      "conceptCluster": "LO3.1_theory_of_choice",
+      "primarySkill": "theory_of_choice",
+      "secondarySkills": [],
+      "repairSkill": "theory_of_choice",
+      "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
+      "feedback": "A unique choice reveals strict preference over the other affordable bundle. A strict A-over-B then B-over-A reversal cannot follow the same stable ranking. If choices were tied rather than unique, different tie-breaking could explain a reversal.",
+      "source": "engine2_expansion",
+      "aHash": "e9d6922c4c949d5a3fca79dbee36ec0fe82787aa14a26732381f1c2e3307d45f"
     },
     {
       "id": 140006,
       "sourceGame": "labyrinthOfChoice",
       "q": "A consumer is on the budget line, but MRS exceeds Px/Py. Which statement is correct?",
       "options": [
-        "The bundle is feasible but not utility-maximizing if an interior reallocation is possible",
+        "Feasible, but improvable if reallocation is possible",
         "The bundle must be optimal because the budget is exhausted",
         "The consumer should buy more Y",
         "The price ratio must equal 1"
@@ -11446,7 +13656,7 @@ const questionBank = {
       "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
       "feedback": "Exhausting the budget is necessary but not sufficient; the marginal tradeoff condition must also hold at an interior optimum.",
       "source": "engine2_expansion",
-      "aHash": "c959f3445c88e339a553506af5af1d9e6ccc018ecf7defe24bc36b8bbeb67c0e"
+      "aHash": "e4c6ea29254e555b47a2165801b88e88807aa8ca96c83307e3db0f0e4cf42b07"
     },
     {
       "id": 140007,
@@ -11476,7 +13686,7 @@ const questionBank = {
       "sourceGame": "labyrinthOfChoice",
       "q": "A researcher changes Px and income at the same time, then connects the observed quantities of X. Why is the result not a clean individual demand curve?",
       "options": [
-        "The observed changes combine own-price and income effects across different demand curves",
+        "Own-price and income responses are mixed",
         "Demand curves require market aggregation",
         "Income never affects consumer choice",
         "Px must be held fixed"
@@ -11492,37 +13702,14 @@ const questionBank = {
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
       "feedback": "A demand curve holds non-price determinants constant; simultaneous income changes shift the demand relationship.",
       "source": "engine2_expansion",
-      "aHash": "86f61142fd078a7f26e66abfd4f34f2b4f70c18c50532d41e57f1547db094522"
-    },
-    {
-      "id": 140009,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "A firm's data show Qx rose after Py rose, while Px and income were stable. Which relationship is most consistent with the evidence?",
-      "options": [
-        "X and Y are substitutes",
-        "X and Y are complements",
-        "X is necessarily inferior",
-        "X has unit elastic demand"
-      ],
-      "tag": "demand_response_income_prices",
-      "type": "diagnosis",
-      "objective": "LO4.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.2_demand_response_income_prices",
-      "primarySkill": "demand_response_income_prices",
-      "secondarySkills": [],
-      "repairSkill": "demand_response_income_prices",
-      "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
-      "feedback": "With other determinants stable, a rise in Py that raises Qx is consistent with substitutes.",
-      "source": "engine2_expansion",
-      "aHash": "b072faf47abc0486fb459eb0b84202a2362e94e1e75492d394f15d644df72780"
+      "aHash": "a5bded69d6349217191baa9aad0bbd9d93c15e685e6691b1324a7938888a4ad5"
     },
     {
       "id": 140010,
       "sourceGame": "labyrinthOfChoice",
       "q": "A consumer buys less generic noodles as income rises but still buys more noodles when their price falls. Which statement is correct?",
       "options": [
-        "The good can be inferior without being Giffen",
+        "Inferior does not necessarily mean Giffen",
         "The good must be Giffen",
         "Inferior goods violate the law of demand",
         "Income effects never matter"
@@ -11540,61 +13727,15 @@ const questionBank = {
       "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
       "feedback": "Inferiority concerns the response to income. A Giffen good is a much stronger case involving an upward-sloping demand response to own price.",
       "source": "engine2_expansion",
-      "aHash": "c125c250b1c3a79a47fe84e221f4e1d826c068e44e070f883b922c0f5793a525"
-    },
-    {
-      "id": 140011,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "A compensated price change lowers Px while adjusting income so the consumer can just reach the original utility level. What is this experiment designed to isolate?",
-      "options": [
-        "The substitution effect",
-        "The income effect",
-        "Market demand aggregation",
-        "Consumer surplus only"
-      ],
-      "tag": "substitution_effect",
-      "type": "application",
-      "objective": "LO4.3",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.3_substitution_effect",
-      "primarySkill": "substitution_effect",
-      "secondarySkills": [],
-      "repairSkill": "substitution_effect",
-      "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
-      "feedback": "Holding utility constant while changing relative prices isolates the substitution effect.",
-      "source": "engine2_expansion",
-      "aHash": "bfc1f50255362495e78201618356942c83a7883342b1ec6d6449bd76a74c5a64"
-    },
-    {
-      "id": 140012,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "A price fall raises Qx even though X is inferior. What can be inferred?",
-      "options": [
-        "The positive substitution effect exceeds the negative income effect",
-        "X must be normal",
-        "The income effect must be positive",
-        "The law of demand has failed"
-      ],
-      "tag": "income_effect",
-      "type": "diagnosis",
-      "objective": "LO4.3",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.3_income_effect",
-      "primarySkill": "income_effect",
-      "secondarySkills": [],
-      "repairSkill": "income_effect",
-      "commonError": "confuses_purchasing_power_with_relative_price substitution",
-      "feedback": "An inferior good still has a downward-sloping demand curve when the substitution effect dominates the opposing income effect.",
-      "source": "engine2_expansion",
-      "aHash": "3ffc99f478074f705b1ca257abc8f4b1231e43d178108331f60ed9013c7499e8"
+      "aHash": "fb749eca96246f218dc92dcfece0190c038d16b085a6858631c32942bebca017"
     },
     {
       "id": 140013,
       "sourceGame": "labyrinthOfChoice",
       "q": "A dataset shows an inferior good with downward-sloping demand. Why is that not contradictory?",
       "options": [
-        "Most inferior goods are not Giffen because the substitution effect still dominates",
-        "All inferior goods should have upward-sloping demand",
+        "Substitution still outweighs the opposing income effect",
+        "Inferiority requires quantity to rise whenever own price rises",
         "Inferiority is defined by own-price response",
         "Substitution effects apply only to normal goods"
       ],
@@ -11609,7 +13750,7 @@ const questionBank = {
       "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
       "feedback": "Inferiority describes income response; Giffen behavior requires the income effect to be unusually strong relative to substitution.",
       "source": "engine2_expansion",
-      "aHash": "2a657502820038fc812b90d88225ec042e36536c19c6bb588bb76cc23f044de8"
+      "aHash": "a9f6a6adb0cd1313ed41592bfa7322caafe3d8cccdfe10370c68a0e593b756f3"
     },
     {
       "id": 140014,
@@ -11635,75 +13776,6 @@ const questionBank = {
       "aHash": "50c92d898b1ca1351c771ebb18a200126a54dae2c2f0ac3e71c7a7acdf0d8ea7"
     },
     {
-      "id": 140015,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Holding the set of buyers and their willingness to pay fixed, a price cut transfers some surplus from sellers to existing buyers and may attract additional buyers. What happens to consumer surplus?",
-      "options": [
-        "It rises",
-        "It must fall",
-        "It is unchanged by price",
-        "It becomes producer surplus"
-      ],
-      "tag": "consumer_surplus",
-      "type": "interpretation",
-      "objective": "LO4.5",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.5_consumer_surplus",
-      "primarySkill": "consumer_surplus",
-      "secondarySkills": [],
-      "repairSkill": "consumer_surplus",
-      "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
-      "feedback": "Lower prices raise surplus for existing purchasers and can create surplus for new purchasers.",
-      "source": "engine2_expansion",
-      "aHash": "654d4dc3d354a15b30ce49eb7818491fe5c33edd8a0774f069834474de424203"
-    },
-    {
-      "id": 140016,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "A new group of consumers enters the market with positive demand at every relevant price. Holding incumbent demand fixed, what happens to market demand?",
-      "options": [
-        "It shifts outward because horizontal quantities rise at each price",
-        "It moves along the old market demand curve",
-        "It becomes the average of old and new demand",
-        "It must become more inelastic"
-      ],
-      "tag": "market_demand_aggregation",
-      "type": "interpretation",
-      "objective": "LO4.6",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.6_market_demand_aggregation",
-      "primarySkill": "market_demand_aggregation",
-      "secondarySkills": [],
-      "repairSkill": "market_demand_aggregation",
-      "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
-      "feedback": "Adding consumers increases market quantity demanded at each price.",
-      "source": "engine2_expansion",
-      "aHash": "e79599d25c7b3f2632ed71a6e97a47cd8fd536e76126b070287d02d9299e6b68"
-    },
-    {
-      "id": 140017,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Two demand curves pass through the same price-quantity point but have different slopes. What determines which is more price elastic at that point?",
-      "options": [
-        "The percentage responsiveness of quantity to price, not slope alone",
-        "Only which curve is flatter on the page",
-        "Only the price level",
-        "Only the quantity level"
-      ],
-      "tag": "price_elasticity_fundamentals",
-      "type": "critique",
-      "objective": "LO4.7",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
-      "primarySkill": "price_elasticity_fundamentals",
-      "secondarySkills": [],
-      "repairSkill": "price_elasticity_fundamentals",
-      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
-      "feedback": "Elasticity is unit-free percentage responsiveness; slope and the price/quantity position jointly matter.",
-      "source": "engine2_expansion",
-      "aHash": "7a54873adefecbe732bb1629e4fc75d7122175a782c05838925a1fed9a2dab0a"
-    },
-    {
       "id": 140018,
       "sourceGame": "labyrinthOfChoice",
       "q": "A student computes elasticity from A to B using the initial-value percentage formula and gets 0.8, then from B to A gets 1.2. What fixes the inconsistency?",
@@ -11727,80 +13799,11 @@ const questionBank = {
       "aHash": "0951ab25f408cd1f5a3fa9ebd7f66379d68962884fa0a775a257b76ca174f923"
     },
     {
-      "id": 140019,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "A manager wants to raise revenue by increasing price. Which demand estimate supports that move, all else equal?",
-      "options": [
-        "|Ed|=0.6",
-        "|Ed|=1.8",
-        "|Ed|=2.5",
-        "Perfectly elastic demand"
-      ],
-      "tag": "elasticity_total_revenue",
-      "type": "strategy",
-      "objective": "LO4.7",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.7_elasticity_total_revenue",
-      "primarySkill": "elasticity_total_revenue",
-      "secondarySkills": [],
-      "repairSkill": "elasticity_total_revenue",
-      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
-      "feedback": "With inelastic demand, quantity falls proportionally less than price rises, so total revenue increases.",
-      "source": "engine2_expansion",
-      "aHash": "39b3e5780d93c0191c20515ef109bd7b1cdd742102ac4fbae3031752e030f9d8"
-    },
-    {
-      "id": 140020,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "A streaming service estimates cross-price elasticity with a rival at +1.4. Which strategic inference is strongest?",
-      "options": [
-        "The services are meaningful substitutes, so rival price changes can shift demand toward or away from the service",
-        "They are complements",
-        "The service is inferior",
-        "Own-price demand is necessarily inelastic"
-      ],
-      "tag": "cross_price_elasticity",
-      "type": "strategy",
-      "objective": "LO4.7",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.7_cross_price_elasticity",
-      "primarySkill": "cross_price_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "cross_price_elasticity",
-      "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
-      "feedback": "A sizable positive cross-price elasticity indicates substitution between the services.",
-      "source": "engine2_expansion",
-      "aHash": "c7db24ab5122a8d37991120826dcc1708ef41dfb283f3b488ac0d839ad657dbc"
-    },
-    {
-      "id": 140021,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "A product's income elasticity is 1.8. During a broad income downturn, what demand pattern would this estimate predict, all else equal?",
-      "options": [
-        "Demand falls proportionally more than income",
-        "Demand rises because the good is inferior",
-        "Demand is unaffected by income",
-        "Demand must move only along the curve"
-      ],
-      "tag": "income_elasticity",
-      "type": "application",
-      "objective": "LO4.7",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.7_income_elasticity",
-      "primarySkill": "income_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "income_elasticity",
-      "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
-      "feedback": "An income elasticity above 1 indicates a strongly income-responsive normal good.",
-      "source": "engine2_expansion",
-      "aHash": "2191e60b96079e863a9ad079f89f3d387d638185033ed2cb0d2171d9c8259627"
-    },
-    {
       "id": 140022,
       "sourceGame": "labyrinthOfChoice",
       "q": "A firm observes very inelastic demand this week after a price increase. Why should it be cautious about assuming the same elasticity next year?",
       "options": [
-        "Long-run consumers may find substitutes or adjust behavior, making demand more elastic",
+        "More substitutes and time to adjust can raise elasticity",
         "Elasticity can never change over time",
         "Only supply changes with time",
         "Short-run elasticity is always greater than long-run elasticity"
@@ -11816,17 +13819,17 @@ const questionBank = {
       "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
       "feedback": "Elasticity can differ across time horizons because adjustment opportunities expand.",
       "source": "engine2_expansion",
-      "aHash": "56fde23a30e378873fb352d44b43195a26a2f3bd2ffcf26431b091ded582ff2e"
+      "aHash": "1f337b3aff374dc52ce8d8f90ded6da8660524190e0da5f30a5f1a9d7660d0d2"
     },
     {
       "id": 140023,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving coffee purchases, a consumer chooses bundle A when both A and B are affordable. Later, with the same preferences, B is chosen from a budget set that still contains A. What should an analyst investigate first?",
+      "q": "A consumer uniquely chooses A over affordable B. Later the same consumer uniquely chooses B while A remains affordable. An analyst is told that preferences are stable and both observations are accurate. What should the analyst investigate?",
       "options": [
-        "Whether constraints or preferences changed, because stable choice would otherwise be inconsistent",
-        "Whether utility can be measured in dollars",
-        "Whether all goods became inferior",
-        "Whether the law of demand must be false"
+        "Whether stable preferences or accurate measurement fail",
+        "Whether utility is measured in dollars",
+        "Whether all goods are inferior",
+        "Whether the two choices prove demand must slope upward"
       ],
       "tag": "theory_of_choice",
       "type": "diagnosis",
@@ -11837,131 +13840,16 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "theory_of_choice",
       "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
-      "feedback": "With stable preferences and both bundles feasible in both situations, the reversal needs an explanation such as changed constraints, changed preferences, or measurement error.",
+      "feedback": "A unique choice reveals strict preference over the other affordable bundle. A strict A-over-B then B-over-A reversal cannot follow the same stable ranking. If choices were tied rather than unique, different tie-breaking could explain a reversal.",
       "source": "engine2_expansion",
-      "aHash": "0f556be73d9b0b6ac5dd5495e64efc743b2a1738cf0f43df1d21278e10323f67"
-    },
-    {
-      "id": 140024,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving streaming subscriptions, an observed choice cycle repeatedly moves A \u2192 B \u2192 C \u2192 A even when all three bundles remain feasible. Which assumption is most directly threatened?",
-      "options": [
-        "Transitivity of preferences",
-        "The law of one price",
-        "Positive cross-price elasticity",
-        "Market-demand aggregation"
-      ],
-      "tag": "preferences_complete_transitive",
-      "type": "diagnosis",
-      "objective": "LO3.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO3.2_preferences_complete_transitive",
-      "primarySkill": "preferences_complete_transitive",
-      "secondarySkills": [],
-      "repairSkill": "preferences_complete_transitive",
-      "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
-      "feedback": "Choice cycles are inconsistent with transitive preferences when constraints are unchanged.",
-      "source": "engine2_expansion",
-      "aHash": "4b6743cc7ed85cff47e4d0478fd736857bb26d1da9884a730a9021bdc5b7e0e8"
-    },
-    {
-      "id": 140025,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving campus meals, a proposed indifference map has upward-sloping curves for two goods that are both desirable. What is the best diagnosis?",
-      "options": [
-        "It conflicts with the idea that giving up some of one good is needed to offset getting more of the other",
-        "It proves the goods are perfect substitutes",
-        "It shows the budget line shifted",
-        "It implies unit elastic demand"
-      ],
-      "tag": "indifference_curve_properties",
-      "type": "critique",
-      "objective": "LO3.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO3.2_indifference_curve_properties",
-      "primarySkill": "indifference_curve_properties",
-      "secondarySkills": [],
-      "repairSkill": "indifference_curve_properties",
-      "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
-      "feedback": "For two goods, maintaining constant utility normally requires a tradeoff, which produces downward-sloping indifference curves.",
-      "source": "engine2_expansion",
-      "aHash": "74481056a3de88429ca27541b28e1584779be866095db9ff1f7d3f1ba5ff5d12"
-    },
-    {
-      "id": 140026,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving concert tickets, at the current bundle MRS=3 while Px/Py=2. Which local reallocation raises utility without changing expenditure?",
-      "options": [
-        "Move toward more X and less Y",
-        "Move toward less X and more Y",
-        "Keep the bundle because any MRS is optimal",
-        "Reduce both goods proportionally"
-      ],
-      "tag": "marginal_rate_substitution",
-      "type": "application",
-      "objective": "LO3.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO3.2_marginal_rate_substitution",
-      "primarySkill": "marginal_rate_substitution",
-      "secondarySkills": [],
-      "repairSkill": "marginal_rate_substitution",
-      "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
-      "feedback": "The consumer values X at 3 units of Y while the market tradeoff is only 2, so shifting toward X raises utility.",
-      "source": "engine2_expansion",
-      "aHash": "c913068a6830c1c449b03c544cc54a044a83700cf832b4e49cd716580560e1d4"
-    },
-    {
-      "id": 140027,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "A consumer has income $80, Px=$10, Py=$15. Bundle (4,2.66667) lies where relative to the budget line?",
-      "options": [
-        "On the budget line",
-        "Strictly inside the budget set",
-        "Outside the budget set",
-        "Cannot be determined"
-      ],
-      "tag": "budget_constraint_intercepts_slope",
-      "type": "calculation",
-      "objective": "LO3.3",
-      "difficulty": "elite",
-      "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
-      "primarySkill": "budget_constraint_intercepts_slope",
-      "secondarySkills": [],
-      "repairSkill": "budget_constraint_intercepts_slope",
-      "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
-      "feedback": "Spending half the X-intercept and half the Y-intercept uses exactly half the budget on each good, totaling all income.",
-      "source": "engine2_expansion",
-      "aHash": "cbdb230c1870070af6de124037d16cb7724a94b270bc4539ea11e56bcaaa14fe"
-    },
-    {
-      "id": 140028,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving textbook purchases, px falls by half while Py and income are unchanged. Which pair of changes is correct?",
-      "options": [
-        "The X-intercept doubles and the absolute slope falls by half",
-        "Both intercepts double",
-        "The Y-intercept doubles and slope becomes steeper",
-        "Both intercepts stay fixed"
-      ],
-      "tag": "budget_line_changes",
-      "type": "multi-step",
-      "objective": "LO3.3",
-      "difficulty": "elite",
-      "conceptCluster": "LO3.3_budget_line_changes",
-      "primarySkill": "budget_line_changes",
-      "secondarySkills": [],
-      "repairSkill": "budget_line_changes",
-      "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
-      "feedback": "I/Px doubles, I/Py is unchanged, and |slope|=Px/Py falls by half.",
-      "source": "engine2_expansion",
-      "aHash": "0979d7da5bb26fec5371a696f40301a65e6e9f29922124dde337231a993994aa"
+      "aHash": "e9d6922c4c949d5a3fca79dbee36ec0fe82787aa14a26732381f1c2e3307d45f"
     },
     {
       "id": 140029,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving gym memberships, a consumer is on the budget line, but MRS exceeds Px/Py. Which statement is correct?",
+      "q": "A consumer is on the budget line, but MRS exceeds Px/Py. Which statement is correct?",
       "options": [
-        "The bundle is feasible but not utility-maximizing if an interior reallocation is possible",
+        "Feasible, but improvable if reallocation is possible",
         "The bundle must be optimal because the budget is exhausted",
         "The consumer should buy more Y",
         "The price ratio must equal 1"
@@ -11977,12 +13865,12 @@ const questionBank = {
       "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
       "feedback": "Exhausting the budget is necessary but not sufficient; the marginal tradeoff condition must also hold at an interior optimum.",
       "source": "engine2_expansion",
-      "aHash": "c959f3445c88e339a553506af5af1d9e6ccc018ecf7defe24bc36b8bbeb67c0e"
+      "aHash": "e4c6ea29254e555b47a2165801b88e88807aa8ca96c83307e3db0f0e4cf42b07"
     },
     {
       "id": 140030,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving movie tickets, a consumer spends the entire budget and has MUx/Px=3, MUy/Py=3, and MUz/Pz=5. Which change can raise utility?",
+      "q": "A consumer spends the entire budget and has MUx/Px=3, MUy/Py=3, and MUz/Pz=5. Which change can raise utility?",
       "options": [
         "Shift some spending toward Z",
         "Shift spending equally away from all goods",
@@ -12005,9 +13893,9 @@ const questionBank = {
     {
       "id": 140031,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving coffee purchases, a researcher changes Px and income at the same time, then connects the observed quantities of X. Why is the result not a clean individual demand curve?",
+      "q": "A researcher changes Px and income at the same time, then connects the observed quantities of X. Why is the result not a clean individual demand curve?",
       "options": [
-        "The observed changes combine own-price and income effects across different demand curves",
+        "Own-price and income responses are mixed",
         "Demand curves require market aggregation",
         "Income never affects consumer choice",
         "Px must be held fixed"
@@ -12023,37 +13911,14 @@ const questionBank = {
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
       "feedback": "A demand curve holds non-price determinants constant; simultaneous income changes shift the demand relationship.",
       "source": "engine2_expansion",
-      "aHash": "86f61142fd078a7f26e66abfd4f34f2b4f70c18c50532d41e57f1547db094522"
-    },
-    {
-      "id": 140032,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving streaming subscriptions, a firm's data show Qx rose after Py rose, while Px and income were stable. Which relationship is most consistent with the evidence?",
-      "options": [
-        "X and Y are substitutes",
-        "X and Y are complements",
-        "X is necessarily inferior",
-        "X has unit elastic demand"
-      ],
-      "tag": "demand_response_income_prices",
-      "type": "diagnosis",
-      "objective": "LO4.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.2_demand_response_income_prices",
-      "primarySkill": "demand_response_income_prices",
-      "secondarySkills": [],
-      "repairSkill": "demand_response_income_prices",
-      "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
-      "feedback": "With other determinants stable, a rise in Py that raises Qx is consistent with substitutes.",
-      "source": "engine2_expansion",
-      "aHash": "b072faf47abc0486fb459eb0b84202a2362e94e1e75492d394f15d644df72780"
+      "aHash": "a5bded69d6349217191baa9aad0bbd9d93c15e685e6691b1324a7938888a4ad5"
     },
     {
       "id": 140033,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving campus meals, a consumer buys less generic noodles as income rises but still buys more noodles when their price falls. Which statement is correct?",
+      "q": "A consumer buys less generic noodles as income rises but still buys more noodles when their price falls. Which statement is correct?",
       "options": [
-        "The good can be inferior without being Giffen",
+        "Inferior does not necessarily mean Giffen",
         "The good must be Giffen",
         "Inferior goods violate the law of demand",
         "Income effects never matter"
@@ -12071,61 +13936,15 @@ const questionBank = {
       "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
       "feedback": "Inferiority concerns the response to income. A Giffen good is a much stronger case involving an upward-sloping demand response to own price.",
       "source": "engine2_expansion",
-      "aHash": "c125c250b1c3a79a47fe84e221f4e1d826c068e44e070f883b922c0f5793a525"
-    },
-    {
-      "id": 140034,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving concert tickets, a compensated price change lowers Px while adjusting income so the consumer can just reach the original utility level. What is this experiment designed to isolate?",
-      "options": [
-        "The substitution effect",
-        "The income effect",
-        "Market demand aggregation",
-        "Consumer surplus only"
-      ],
-      "tag": "substitution_effect",
-      "type": "application",
-      "objective": "LO4.3",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.3_substitution_effect",
-      "primarySkill": "substitution_effect",
-      "secondarySkills": [],
-      "repairSkill": "substitution_effect",
-      "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
-      "feedback": "Holding utility constant while changing relative prices isolates the substitution effect.",
-      "source": "engine2_expansion",
-      "aHash": "bfc1f50255362495e78201618356942c83a7883342b1ec6d6449bd76a74c5a64"
-    },
-    {
-      "id": 140035,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving ride-share trips, a price fall raises Qx even though X is inferior. What can be inferred?",
-      "options": [
-        "The positive substitution effect exceeds the negative income effect",
-        "X must be normal",
-        "The income effect must be positive",
-        "The law of demand has failed"
-      ],
-      "tag": "income_effect",
-      "type": "diagnosis",
-      "objective": "LO4.3",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.3_income_effect",
-      "primarySkill": "income_effect",
-      "secondarySkills": [],
-      "repairSkill": "income_effect",
-      "commonError": "confuses_purchasing_power_with_relative_price substitution",
-      "feedback": "An inferior good still has a downward-sloping demand curve when the substitution effect dominates the opposing income effect.",
-      "source": "engine2_expansion",
-      "aHash": "3ffc99f478074f705b1ca257abc8f4b1231e43d178108331f60ed9013c7499e8"
+      "aHash": "fb749eca96246f218dc92dcfece0190c038d16b085a6858631c32942bebca017"
     },
     {
       "id": 140036,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving textbook purchases, a dataset shows an inferior good with downward-sloping demand. Why is that not contradictory?",
+      "q": "A dataset shows an inferior good with downward-sloping demand. Why is that not contradictory?",
       "options": [
-        "Most inferior goods are not Giffen because the substitution effect still dominates",
-        "All inferior goods should have upward-sloping demand",
+        "Substitution still outweighs the opposing income effect",
+        "Inferiority requires quantity to rise whenever own price rises",
         "Inferiority is defined by own-price response",
         "Substitution effects apply only to normal goods"
       ],
@@ -12140,12 +13959,12 @@ const questionBank = {
       "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
       "feedback": "Inferiority describes income response; Giffen behavior requires the income effect to be unusually strong relative to substitution.",
       "source": "engine2_expansion",
-      "aHash": "2a657502820038fc812b90d88225ec042e36536c19c6bb588bb76cc23f044de8"
+      "aHash": "a9f6a6adb0cd1313ed41592bfa7322caafe3d8cccdfe10370c68a0e593b756f3"
     },
     {
       "id": 140037,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving gym memberships, observed Qx rises while Px also rises. Which explanation is most consistent with a demand shift dominating movement along the curve?",
+      "q": "Observed Qx rises while Px also rises. Which explanation is most consistent with a demand shift dominating movement along the curve?",
       "options": [
         "A strong outward shift in demand occurred",
         "The law of demand requires Qx to fall in every dataset",
@@ -12166,78 +13985,9 @@ const questionBank = {
       "aHash": "50c92d898b1ca1351c771ebb18a200126a54dae2c2f0ac3e71c7a7acdf0d8ea7"
     },
     {
-      "id": 140038,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving movie tickets, holding the set of buyers and their willingness to pay fixed, a price cut transfers some surplus from sellers to existing buyers and may attract additional buyers. What happens to consumer surplus?",
-      "options": [
-        "It rises",
-        "It must fall",
-        "It is unchanged by price",
-        "It becomes producer surplus"
-      ],
-      "tag": "consumer_surplus",
-      "type": "interpretation",
-      "objective": "LO4.5",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.5_consumer_surplus",
-      "primarySkill": "consumer_surplus",
-      "secondarySkills": [],
-      "repairSkill": "consumer_surplus",
-      "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
-      "feedback": "Lower prices raise surplus for existing purchasers and can create surplus for new purchasers.",
-      "source": "engine2_expansion",
-      "aHash": "654d4dc3d354a15b30ce49eb7818491fe5c33edd8a0774f069834474de424203"
-    },
-    {
-      "id": 140039,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving coffee purchases, a new group of consumers enters the market with positive demand at every relevant price. Holding incumbent demand fixed, what happens to market demand?",
-      "options": [
-        "It shifts outward because horizontal quantities rise at each price",
-        "It moves along the old market demand curve",
-        "It becomes the average of old and new demand",
-        "It must become more inelastic"
-      ],
-      "tag": "market_demand_aggregation",
-      "type": "interpretation",
-      "objective": "LO4.6",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.6_market_demand_aggregation",
-      "primarySkill": "market_demand_aggregation",
-      "secondarySkills": [],
-      "repairSkill": "market_demand_aggregation",
-      "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
-      "feedback": "Adding consumers increases market quantity demanded at each price.",
-      "source": "engine2_expansion",
-      "aHash": "e79599d25c7b3f2632ed71a6e97a47cd8fd536e76126b070287d02d9299e6b68"
-    },
-    {
-      "id": 140040,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving streaming subscriptions, two demand curves pass through the same price-quantity point but have different slopes. What determines which is more price elastic at that point?",
-      "options": [
-        "The percentage responsiveness of quantity to price, not slope alone",
-        "Only which curve is flatter on the page",
-        "Only the price level",
-        "Only the quantity level"
-      ],
-      "tag": "price_elasticity_fundamentals",
-      "type": "critique",
-      "objective": "LO4.7",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
-      "primarySkill": "price_elasticity_fundamentals",
-      "secondarySkills": [],
-      "repairSkill": "price_elasticity_fundamentals",
-      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
-      "feedback": "Elasticity is unit-free percentage responsiveness; slope and the price/quantity position jointly matter.",
-      "source": "engine2_expansion",
-      "aHash": "7a54873adefecbe732bb1629e4fc75d7122175a782c05838925a1fed9a2dab0a"
-    },
-    {
       "id": 140041,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving campus meals, a student computes elasticity from A to B using the initial-value percentage formula and gets 0.8, then from B to A gets 1.2. What fixes the inconsistency?",
+      "q": "A student computes elasticity from A to B using the initial-value percentage formula and gets 0.8, then from B to A gets 1.2. What fixes the inconsistency?",
       "options": [
         "Use midpoint percentage changes",
         "Average the two elasticity answers after the fact",
@@ -12258,80 +14008,11 @@ const questionBank = {
       "aHash": "0951ab25f408cd1f5a3fa9ebd7f66379d68962884fa0a775a257b76ca174f923"
     },
     {
-      "id": 140042,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving concert tickets, a manager wants to raise revenue by increasing price. Which demand estimate supports that move, all else equal?",
-      "options": [
-        "|Ed|=0.6",
-        "|Ed|=1.8",
-        "|Ed|=2.5",
-        "Perfectly elastic demand"
-      ],
-      "tag": "elasticity_total_revenue",
-      "type": "strategy",
-      "objective": "LO4.7",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.7_elasticity_total_revenue",
-      "primarySkill": "elasticity_total_revenue",
-      "secondarySkills": [],
-      "repairSkill": "elasticity_total_revenue",
-      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
-      "feedback": "With inelastic demand, quantity falls proportionally less than price rises, so total revenue increases.",
-      "source": "engine2_expansion",
-      "aHash": "39b3e5780d93c0191c20515ef109bd7b1cdd742102ac4fbae3031752e030f9d8"
-    },
-    {
-      "id": 140043,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving ride-share trips, a streaming service estimates cross-price elasticity with a rival at +1.4. Which strategic inference is strongest?",
-      "options": [
-        "The services are meaningful substitutes, so rival price changes can shift demand toward or away from the service",
-        "They are complements",
-        "The service is inferior",
-        "Own-price demand is necessarily inelastic"
-      ],
-      "tag": "cross_price_elasticity",
-      "type": "strategy",
-      "objective": "LO4.7",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.7_cross_price_elasticity",
-      "primarySkill": "cross_price_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "cross_price_elasticity",
-      "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
-      "feedback": "A sizable positive cross-price elasticity indicates substitution between the services.",
-      "source": "engine2_expansion",
-      "aHash": "c7db24ab5122a8d37991120826dcc1708ef41dfb283f3b488ac0d839ad657dbc"
-    },
-    {
-      "id": 140044,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving textbook purchases, a product's income elasticity is 1.8. During a broad income downturn, what demand pattern would this estimate predict, all else equal?",
-      "options": [
-        "Demand falls proportionally more than income",
-        "Demand rises because the good is inferior",
-        "Demand is unaffected by income",
-        "Demand must move only along the curve"
-      ],
-      "tag": "income_elasticity",
-      "type": "application",
-      "objective": "LO4.7",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.7_income_elasticity",
-      "primarySkill": "income_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "income_elasticity",
-      "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
-      "feedback": "An income elasticity above 1 indicates a strongly income-responsive normal good.",
-      "source": "engine2_expansion",
-      "aHash": "2191e60b96079e863a9ad079f89f3d387d638185033ed2cb0d2171d9c8259627"
-    },
-    {
       "id": 140045,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving gym memberships, a firm observes very inelastic demand this week after a price increase. Why should it be cautious about assuming the same elasticity next year?",
+      "q": "A firm observes very inelastic demand this week after a price increase. Why should it be cautious about assuming the same elasticity next year?",
       "options": [
-        "Long-run consumers may find substitutes or adjust behavior, making demand more elastic",
+        "More substitutes and time to adjust can raise elasticity",
         "Elasticity can never change over time",
         "Only supply changes with time",
         "Short-run elasticity is always greater than long-run elasticity"
@@ -12347,17 +14028,17 @@ const questionBank = {
       "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
       "feedback": "Elasticity can differ across time horizons because adjustment opportunities expand.",
       "source": "engine2_expansion",
-      "aHash": "56fde23a30e378873fb352d44b43195a26a2f3bd2ffcf26431b091ded582ff2e"
+      "aHash": "1f337b3aff374dc52ce8d8f90ded6da8660524190e0da5f30a5f1a9d7660d0d2"
     },
     {
       "id": 140046,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving movie tickets, a consumer chooses bundle A when both A and B are affordable. Later, with the same preferences, B is chosen from a budget set that still contains A. What should an analyst investigate first?",
+      "q": "A consumer uniquely chooses A over affordable B. Later the same consumer uniquely chooses B while A remains affordable. An analyst is told that preferences are stable and both observations are accurate. What should the analyst investigate?",
       "options": [
-        "Whether constraints or preferences changed, because stable choice would otherwise be inconsistent",
-        "Whether utility can be measured in dollars",
-        "Whether all goods became inferior",
-        "Whether the law of demand must be false"
+        "Whether stable preferences or accurate measurement fail",
+        "Whether utility is measured in dollars",
+        "Whether all goods are inferior",
+        "Whether the two choices prove demand must slope upward"
       ],
       "tag": "theory_of_choice",
       "type": "diagnosis",
@@ -12368,131 +14049,16 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "theory_of_choice",
       "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
-      "feedback": "With stable preferences and both bundles feasible in both situations, the reversal needs an explanation such as changed constraints, changed preferences, or measurement error.",
+      "feedback": "A unique choice reveals strict preference over the other affordable bundle. A strict A-over-B then B-over-A reversal cannot follow the same stable ranking. If choices were tied rather than unique, different tie-breaking could explain a reversal.",
       "source": "engine2_expansion",
-      "aHash": "0f556be73d9b0b6ac5dd5495e64efc743b2a1738cf0f43df1d21278e10323f67"
-    },
-    {
-      "id": 140047,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving coffee purchases, an observed choice cycle repeatedly moves A \u2192 B \u2192 C \u2192 A even when all three bundles remain feasible. Which assumption is most directly threatened?",
-      "options": [
-        "Transitivity of preferences",
-        "The law of one price",
-        "Positive cross-price elasticity",
-        "Market-demand aggregation"
-      ],
-      "tag": "preferences_complete_transitive",
-      "type": "diagnosis",
-      "objective": "LO3.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO3.2_preferences_complete_transitive",
-      "primarySkill": "preferences_complete_transitive",
-      "secondarySkills": [],
-      "repairSkill": "preferences_complete_transitive",
-      "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
-      "feedback": "Choice cycles are inconsistent with transitive preferences when constraints are unchanged.",
-      "source": "engine2_expansion",
-      "aHash": "4b6743cc7ed85cff47e4d0478fd736857bb26d1da9884a730a9021bdc5b7e0e8"
-    },
-    {
-      "id": 140048,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving streaming subscriptions, a proposed indifference map has upward-sloping curves for two goods that are both desirable. What is the best diagnosis?",
-      "options": [
-        "It conflicts with the idea that giving up some of one good is needed to offset getting more of the other",
-        "It proves the goods are perfect substitutes",
-        "It shows the budget line shifted",
-        "It implies unit elastic demand"
-      ],
-      "tag": "indifference_curve_properties",
-      "type": "critique",
-      "objective": "LO3.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO3.2_indifference_curve_properties",
-      "primarySkill": "indifference_curve_properties",
-      "secondarySkills": [],
-      "repairSkill": "indifference_curve_properties",
-      "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
-      "feedback": "For two goods, maintaining constant utility normally requires a tradeoff, which produces downward-sloping indifference curves.",
-      "source": "engine2_expansion",
-      "aHash": "74481056a3de88429ca27541b28e1584779be866095db9ff1f7d3f1ba5ff5d12"
-    },
-    {
-      "id": 140049,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving campus meals, at the current bundle MRS=3 while Px/Py=2. Which local reallocation raises utility without changing expenditure?",
-      "options": [
-        "Move toward more X and less Y",
-        "Move toward less X and more Y",
-        "Keep the bundle because any MRS is optimal",
-        "Reduce both goods proportionally"
-      ],
-      "tag": "marginal_rate_substitution",
-      "type": "application",
-      "objective": "LO3.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO3.2_marginal_rate_substitution",
-      "primarySkill": "marginal_rate_substitution",
-      "secondarySkills": [],
-      "repairSkill": "marginal_rate_substitution",
-      "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
-      "feedback": "The consumer values X at 3 units of Y while the market tradeoff is only 2, so shifting toward X raises utility.",
-      "source": "engine2_expansion",
-      "aHash": "c913068a6830c1c449b03c544cc54a044a83700cf832b4e49cd716580560e1d4"
-    },
-    {
-      "id": 140050,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "A consumer has income $100, Px=$15, Py=$20. Bundle (3.33333,2.5) lies where relative to the budget line?",
-      "options": [
-        "On the budget line",
-        "Strictly inside the budget set",
-        "Outside the budget set",
-        "Cannot be determined"
-      ],
-      "tag": "budget_constraint_intercepts_slope",
-      "type": "calculation",
-      "objective": "LO3.3",
-      "difficulty": "elite",
-      "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
-      "primarySkill": "budget_constraint_intercepts_slope",
-      "secondarySkills": [],
-      "repairSkill": "budget_constraint_intercepts_slope",
-      "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
-      "feedback": "Spending half the X-intercept and half the Y-intercept uses exactly half the budget on each good, totaling all income.",
-      "source": "engine2_expansion",
-      "aHash": "cbdb230c1870070af6de124037d16cb7724a94b270bc4539ea11e56bcaaa14fe"
-    },
-    {
-      "id": 140051,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving ride-share trips, px falls by half while Py and income are unchanged. Which pair of changes is correct?",
-      "options": [
-        "The X-intercept doubles and the absolute slope falls by half",
-        "Both intercepts double",
-        "The Y-intercept doubles and slope becomes steeper",
-        "Both intercepts stay fixed"
-      ],
-      "tag": "budget_line_changes",
-      "type": "multi-step",
-      "objective": "LO3.3",
-      "difficulty": "elite",
-      "conceptCluster": "LO3.3_budget_line_changes",
-      "primarySkill": "budget_line_changes",
-      "secondarySkills": [],
-      "repairSkill": "budget_line_changes",
-      "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
-      "feedback": "I/Px doubles, I/Py is unchanged, and |slope|=Px/Py falls by half.",
-      "source": "engine2_expansion",
-      "aHash": "0979d7da5bb26fec5371a696f40301a65e6e9f29922124dde337231a993994aa"
+      "aHash": "e9d6922c4c949d5a3fca79dbee36ec0fe82787aa14a26732381f1c2e3307d45f"
     },
     {
       "id": 140052,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving textbook purchases, a consumer is on the budget line, but MRS exceeds Px/Py. Which statement is correct?",
+      "q": "A consumer is on the budget line, but MRS exceeds Px/Py. Which statement is correct?",
       "options": [
-        "The bundle is feasible but not utility-maximizing if an interior reallocation is possible",
+        "Feasible, but improvable if reallocation is possible",
         "The bundle must be optimal because the budget is exhausted",
         "The consumer should buy more Y",
         "The price ratio must equal 1"
@@ -12508,12 +14074,12 @@ const questionBank = {
       "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
       "feedback": "Exhausting the budget is necessary but not sufficient; the marginal tradeoff condition must also hold at an interior optimum.",
       "source": "engine2_expansion",
-      "aHash": "c959f3445c88e339a553506af5af1d9e6ccc018ecf7defe24bc36b8bbeb67c0e"
+      "aHash": "e4c6ea29254e555b47a2165801b88e88807aa8ca96c83307e3db0f0e4cf42b07"
     },
     {
       "id": 140053,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving gym memberships, a consumer spends the entire budget and has MUx/Px=3, MUy/Py=3, and MUz/Pz=5. Which change can raise utility?",
+      "q": "A consumer spends the entire budget and has MUx/Px=3, MUy/Py=3, and MUz/Pz=5. Which change can raise utility?",
       "options": [
         "Shift some spending toward Z",
         "Shift spending equally away from all goods",
@@ -12536,9 +14102,9 @@ const questionBank = {
     {
       "id": 140054,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving movie tickets, a researcher changes Px and income at the same time, then connects the observed quantities of X. Why is the result not a clean individual demand curve?",
+      "q": "A researcher changes Px and income at the same time, then connects the observed quantities of X. Why is the result not a clean individual demand curve?",
       "options": [
-        "The observed changes combine own-price and income effects across different demand curves",
+        "Own-price and income responses are mixed",
         "Demand curves require market aggregation",
         "Income never affects consumer choice",
         "Px must be held fixed"
@@ -12554,37 +14120,14 @@ const questionBank = {
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
       "feedback": "A demand curve holds non-price determinants constant; simultaneous income changes shift the demand relationship.",
       "source": "engine2_expansion",
-      "aHash": "86f61142fd078a7f26e66abfd4f34f2b4f70c18c50532d41e57f1547db094522"
-    },
-    {
-      "id": 140055,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving coffee purchases, a firm's data show Qx rose after Py rose, while Px and income were stable. Which relationship is most consistent with the evidence?",
-      "options": [
-        "X and Y are substitutes",
-        "X and Y are complements",
-        "X is necessarily inferior",
-        "X has unit elastic demand"
-      ],
-      "tag": "demand_response_income_prices",
-      "type": "diagnosis",
-      "objective": "LO4.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.2_demand_response_income_prices",
-      "primarySkill": "demand_response_income_prices",
-      "secondarySkills": [],
-      "repairSkill": "demand_response_income_prices",
-      "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
-      "feedback": "With other determinants stable, a rise in Py that raises Qx is consistent with substitutes.",
-      "source": "engine2_expansion",
-      "aHash": "b072faf47abc0486fb459eb0b84202a2362e94e1e75492d394f15d644df72780"
+      "aHash": "a5bded69d6349217191baa9aad0bbd9d93c15e685e6691b1324a7938888a4ad5"
     },
     {
       "id": 140056,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving streaming subscriptions, a consumer buys less generic noodles as income rises but still buys more noodles when their price falls. Which statement is correct?",
+      "q": "A consumer buys less generic noodles as income rises but still buys more noodles when their price falls. Which statement is correct?",
       "options": [
-        "The good can be inferior without being Giffen",
+        "Inferior does not necessarily mean Giffen",
         "The good must be Giffen",
         "Inferior goods violate the law of demand",
         "Income effects never matter"
@@ -12602,61 +14145,15 @@ const questionBank = {
       "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
       "feedback": "Inferiority concerns the response to income. A Giffen good is a much stronger case involving an upward-sloping demand response to own price.",
       "source": "engine2_expansion",
-      "aHash": "c125c250b1c3a79a47fe84e221f4e1d826c068e44e070f883b922c0f5793a525"
-    },
-    {
-      "id": 140057,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving campus meals, a compensated price change lowers Px while adjusting income so the consumer can just reach the original utility level. What is this experiment designed to isolate?",
-      "options": [
-        "The substitution effect",
-        "The income effect",
-        "Market demand aggregation",
-        "Consumer surplus only"
-      ],
-      "tag": "substitution_effect",
-      "type": "application",
-      "objective": "LO4.3",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.3_substitution_effect",
-      "primarySkill": "substitution_effect",
-      "secondarySkills": [],
-      "repairSkill": "substitution_effect",
-      "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
-      "feedback": "Holding utility constant while changing relative prices isolates the substitution effect.",
-      "source": "engine2_expansion",
-      "aHash": "bfc1f50255362495e78201618356942c83a7883342b1ec6d6449bd76a74c5a64"
-    },
-    {
-      "id": 140058,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving concert tickets, a price fall raises Qx even though X is inferior. What can be inferred?",
-      "options": [
-        "The positive substitution effect exceeds the negative income effect",
-        "X must be normal",
-        "The income effect must be positive",
-        "The law of demand has failed"
-      ],
-      "tag": "income_effect",
-      "type": "diagnosis",
-      "objective": "LO4.3",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.3_income_effect",
-      "primarySkill": "income_effect",
-      "secondarySkills": [],
-      "repairSkill": "income_effect",
-      "commonError": "confuses_purchasing_power_with_relative_price substitution",
-      "feedback": "An inferior good still has a downward-sloping demand curve when the substitution effect dominates the opposing income effect.",
-      "source": "engine2_expansion",
-      "aHash": "3ffc99f478074f705b1ca257abc8f4b1231e43d178108331f60ed9013c7499e8"
+      "aHash": "fb749eca96246f218dc92dcfece0190c038d16b085a6858631c32942bebca017"
     },
     {
       "id": 140059,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving ride-share trips, a dataset shows an inferior good with downward-sloping demand. Why is that not contradictory?",
+      "q": "A dataset shows an inferior good with downward-sloping demand. Why is that not contradictory?",
       "options": [
-        "Most inferior goods are not Giffen because the substitution effect still dominates",
-        "All inferior goods should have upward-sloping demand",
+        "Substitution still outweighs the opposing income effect",
+        "Inferiority requires quantity to rise whenever own price rises",
         "Inferiority is defined by own-price response",
         "Substitution effects apply only to normal goods"
       ],
@@ -12671,410 +14168,14 @@ const questionBank = {
       "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
       "feedback": "Inferiority describes income response; Giffen behavior requires the income effect to be unusually strong relative to substitution.",
       "source": "engine2_expansion",
-      "aHash": "2a657502820038fc812b90d88225ec042e36536c19c6bb588bb76cc23f044de8"
-    },
-    {
-      "id": 140060,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. Between C and B, quantity rises from 30 to 45 while price falls from $12 to $10. Using the midpoint method, the elasticity coefficient is closest to...",
-      "options": [
-        "2.2",
-        "1.0",
-        "0.45",
-        "3.0"
-      ],
-      "tag": "midpoint_elasticity",
-      "type": "multi-step",
-      "objective": "LO4.7",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.7_midpoint_elasticity",
-      "primarySkill": "midpoint_elasticity",
-      "secondarySkills": [
-        "price_elasticity_fundamentals"
-      ],
-      "repairSkill": "midpoint_elasticity",
-      "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
-      "feedback": "Quantity changes 15/37.5 = 40%. Price changes 2/11 \u2248 18.2%. Elasticity is about 40/18.2 = 2.2.",
-      "source": "graph_batch_elasticity_20260816",
-      "image": "ELASTICITY-01.png",
-      "imageAlt": "Straight downward-sloping Demand line with labeled points C, B and A.",
-      "graphRequired": true,
-      "aHash": "914204c25f3f144ddec3469c61a6faea695c87590ab78a5eb25b0f3904cf84e0"
-    },
-    {
-      "id": 140061,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. When price falls from $5 to $3, total revenue rises on D1 but falls on D2. Which conclusion follows?",
-      "options": [
-        "D1 is elastic over the interval while D2 is inelastic",
-        "D1 is inelastic while D2 is elastic",
-        "Both curves are unit elastic",
-        "Both curves are perfectly inelastic"
-      ],
-      "tag": "elasticity_total_revenue",
-      "type": "integration",
-      "objective": "LO4.7",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.7_elasticity_total_revenue",
-      "primarySkill": "elasticity_total_revenue",
-      "secondarySkills": [
-        "price_elasticity_fundamentals",
-        "midpoint_elasticity"
-      ],
-      "repairSkill": "elasticity_total_revenue",
-      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
-      "feedback": "For D1, revenue rises from 175 to 225 as price falls, so demand is elastic. For D2, revenue falls from 235 to 165 as price falls, so demand is inelastic.",
-      "source": "graph_batch_elasticity_20260816",
-      "image": "ELASTICITY-03.png",
-      "imageAlt": "Two intersecting downward-sloping lines, flatter blue D1 and steeper red D2, with four labeled points.",
-      "graphRequired": true,
-      "aHash": "fcc1334068982de8b792517185c75ff76d256e70b6367a413e927cb8de2fb1b6"
-    },
-    {
-      "id": 140062,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. The movement from B to A leaves total revenue unchanged. What does the total-revenue test imply about demand over this arc?",
-      "options": [
-        "Demand is unit elastic",
-        "Demand is perfectly elastic",
-        "Demand is relatively inelastic",
-        "Demand is perfectly inelastic"
-      ],
-      "tag": "elasticity_total_revenue",
-      "type": "integration",
-      "objective": "LO4.7",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.7_elasticity_total_revenue",
-      "primarySkill": "elasticity_total_revenue",
-      "secondarySkills": [
-        "midpoint_elasticity"
-      ],
-      "repairSkill": "elasticity_total_revenue",
-      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
-      "feedback": "Price falls while quantity rises enough to leave total revenue unchanged at 140. That is the total-revenue signature of unit elasticity.",
-      "source": "graph_batch_elasticity_20260816",
-      "image": "ELASTICITY-04.png",
-      "imageAlt": "Downward-curving Demand line with B at quantity 20, price 7 and A at quantity 70, price 2.",
-      "graphRequired": true,
-      "aHash": "94c91649771132d388c42292891ef450001fc31b210b4cb4c188333b3f6c7466"
-    },
-    {
-      "id": 310005,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. The tangency at point C implies that the consumer\u2019s willingness to trade Good X for Good Y at C is...",
-      "options": [
-        "greater than the market tradeoff",
-        "less than the market tradeoff",
-        "equal to the market tradeoff shown by the budget line",
-        "unrelated to the market tradeoff"
-      ],
-      "tag": "utility_maximization_mrs",
-      "type": "graph",
-      "objective": "LO3.4",
-      "difficulty": "elite",
-      "conceptCluster": "LO3.4_utility_maximization_mrs",
-      "primarySkill": "utility_maximization_mrs",
-      "secondarySkills": [
-        "marginal_rate_substitution"
-      ],
-      "repairSkill": "utility_maximization_mrs",
-      "commonError": "separates_mrs_from_the_budget_line_slope_at_tangency",
-      "feedback": "At tangency, the slope of the indifference curve equals the slope of the budget line, so the consumer\u2019s MRS equals the market tradeoff.",
-      "source": "graph_batch_indifference_20260816",
-      "image": "IC-02.png",
-      "imageAlt": "Budget line and three indifference curves with A, B and a tangency at C.",
-      "graphRequired": true,
-      "aHash": "d3817858d5f7fa26acbdb6e7b53ecfe91d042e09af7ab3a0fce338c95a2f4a8f"
-    },
-    {
-      "id": 310015,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. These upward-sloping \u201cindifference curves\u201d could make economic sense only if...",
-      "options": [
-        "at least one axis represented a bad rather than a good",
-        "the consumer had convex preferences",
-        "the goods were perfect substitutes",
-        "income was zero"
-      ],
-      "tag": "indifference_curve_properties",
-      "type": "graph",
-      "objective": "LO3.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO3.2_indifference_curve_properties",
-      "primarySkill": "indifference_curve_properties",
-      "secondarySkills": [],
-      "repairSkill": "indifference_curve_properties",
-      "commonError": "ignores_that_upward_sloping_curves_require_bads_or_reversed_preferences",
-      "feedback": "Upward-sloping indifference curves are inconsistent with ordinary goods. They could only be rationalized if at least one item were a bad or the axes were interpreted differently.",
-      "source": "graph_batch_indifference_20260816",
-      "image": "IC-07.png",
-      "imageAlt": "Three parallel upward-sloping lines labeled IC1, IC2 and IC3.",
-      "graphRequired": true,
-      "aHash": "0dd1dce7e4edebc6994dd2c1c624f2f0879cd6b4672c2539dbf2da15ac8bb9c8"
-    },
-    {
-      "id": 310019,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. After Good X becomes cheaper, what is the consumer\u2019s final utility-maximizing choice?",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "Any point on U\u2080"
-      ],
-      "tag": "demand_response_income_prices",
-      "type": "graph",
-      "objective": "LO4.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.2_demand_response_income_prices",
-      "primarySkill": "demand_response_income_prices",
-      "secondarySkills": [
-        "substitution_effect",
-        "income_effect"
-      ],
-      "repairSkill": "demand_response_income_prices",
-      "commonError": "stops_at_the_compensated_bundle_instead_of_the_final_bundle",
-      "feedback": "The final choice is point C, where the consumer reaches the new higher utility curve U\u2081 on Budget\u2081.",
-      "source": "graph_batch_indifference_20260816",
-      "image": "INCOME-SUB-01.png",
-      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C.",
-      "graphRequired": true,
-      "aHash": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
-    },
-    {
-      "id": 310022,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. Compared with point A, point C implies that the consumer...",
-      "options": [
-        "reaches a higher utility level after the price increase",
-        "reaches a lower utility level after the price increase",
-        "faces no change in utility",
-        "is off the budget line"
-      ],
-      "tag": "income_effect",
-      "type": "graph",
-      "objective": "LO4.3",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.3_income_effect",
-      "primarySkill": "income_effect",
-      "secondarySkills": [
-        "demand_response_income_prices"
-      ],
-      "repairSkill": "income_effect",
-      "commonError": "fails_to_notice_that_the_new_choice_is_on_a_lower_indifference_curve",
-      "feedback": "Point C lies on a lower indifference curve than point A, so the consumer ends up worse off after the price increase in Good X.",
-      "source": "graph_batch_indifference_20260816",
-      "image": "INCOME-SUB-02.png",
-      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C; Budget1 is steeper.",
-      "graphRequired": true,
-      "aHash": "066a1b9e57f490e93c671d33c17b6652e1330325bb92025af0b975ef755ec366"
-    },
-    {
-      "id": 310025,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. If Good Y becomes cheaper, the compensated movement from A to B shows the consumer buying...",
-      "options": [
-        "more Good X and less Good Y",
-        "less Good X and more Good Y",
-        "more of both goods",
-        "less of both goods"
-      ],
-      "tag": "substitution_effect",
-      "type": "graph",
-      "objective": "LO4.3",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.3_substitution_effect",
-      "primarySkill": "substitution_effect",
-      "secondarySkills": [
-        "budget_line_changes"
-      ],
-      "repairSkill": "substitution_effect",
-      "commonError": "gets_the_direction_of_substitution_wrong_when_y_becomes_cheaper",
-      "feedback": "When Good Y becomes cheaper, the substitution effect pushes the consumer toward more Y and away from X. That is the A to B movement shown here.",
-      "source": "graph_batch_indifference_20260816",
-      "image": "INCOME-SUB-03.png",
-      "imageAlt": "Two budget lines sharing an X intercept, curves U0 and U1, and points A, B and C; Budget1 reaches higher on Y.",
-      "graphRequired": true,
-      "aHash": "fa66951af26b0feb75b2762a47f1a2350d498789551ae2ecfd5f11f3e8c75289"
-    },
-    {
-      "id": 310027,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. In this price-change graph, the movement from A to B isolates the substitution effect. Which change is shown?",
-      "options": [
-        "More Good X and less Good Y",
-        "Less Good X and more Good Y",
-        "More of both goods",
-        "No change in consumption"
-      ],
-      "tag": "substitution_effect",
-      "type": "graph",
-      "objective": "LO4.3",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.3_substitution_effect",
-      "primarySkill": "substitution_effect",
-      "secondarySkills": [
-        "budget_line_changes"
-      ],
-      "repairSkill": "substitution_effect",
-      "commonError": "reverses_the_direction_of_substitution_when_x_becomes_cheaper",
-      "feedback": "Because Good X became cheaper, the substitution effect moves consumption toward X and away from Y. That is the A to B move.",
-      "source": "graph_batch_indifference_20260816",
-      "image": "INCOME-SUB-04.png",
-      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and labeled bundles A, B and C.",
-      "graphRequired": true,
-      "aHash": "546f3969649081edead524a24503802a566b7aafe83d88bf29c28aaf73c3a507"
-    },
-    {
-      "id": 310049,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. After the price of Good X falls, how does the final bundle at C compare with the initial bundle at A?",
-      "options": [
-        "more Good X and the same amount of Good Y",
-        "more Good X and more Good Y",
-        "less Good X and more Good Y",
-        "the same bundle"
-      ],
-      "tag": "demand_response_income_prices",
-      "type": "graph",
-      "objective": "LO4.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.2_demand_response_income_prices",
-      "primarySkill": "demand_response_income_prices",
-      "secondarySkills": [
-        "substitution_effect",
-        "income_effect"
-      ],
-      "repairSkill": "demand_response_income_prices",
-      "commonError": "miscompares_the_initial_and_final_bundles_after_a_price_change",
-      "feedback": "Point A is about (5, 20) and point C is about (20, 20), so the consumer ends with more Good X and the same amount of Good Y.",
-      "source": "graph_batch_indifference_actual_20260816",
-      "image": "INCOME-SUB-01.png",
-      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C.",
-      "graphRequired": true,
-      "aHash": "fa7d3b4504708f977ef98c2b020f4f06fb40e19384e87fa92c90ba17ceef869c"
-    },
-    {
-      "id": 310050,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. After the price of Good Y falls, how does the final bundle at C compare with the initial bundle at A?",
-      "options": [
-        "the same amount of Good X and more Good Y",
-        "more Good X and more Good Y",
-        "less Good X and more Good Y",
-        "more Good X and the same amount of Good Y"
-      ],
-      "tag": "demand_response_income_prices",
-      "type": "graph",
-      "objective": "LO4.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.2_demand_response_income_prices",
-      "primarySkill": "demand_response_income_prices",
-      "secondarySkills": [
-        "substitution_effect",
-        "income_effect"
-      ],
-      "repairSkill": "demand_response_income_prices",
-      "commonError": "misreads_the_initial_and_final_coordinates",
-      "feedback": "Point A is about (20, 5) and point C is about (20, 20), so Good X stays the same while Good Y increases.",
-      "source": "graph_batch_indifference_actual_20260816",
-      "image": "INCOME-SUB-03.png",
-      "imageAlt": "Two budget lines sharing an X intercept, curves U0 and U1, and points A, B and C; Budget1 reaches higher on Y.",
-      "graphRequired": true,
-      "aHash": "0419e66c983c7c20c26b029f9f4a365b8216e94e67d46b7dfb871ddf93f6b3d7"
-    },
-    {
-      "id": 310051,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. After the price of Good X rises, how does the final bundle at C compare with the initial bundle at A?",
-      "options": [
-        "more Good X and the same amount of Good Y",
-        "less Good X and the same amount of Good Y",
-        "less Good X and more Good Y",
-        "more Good X and less Good Y"
-      ],
-      "tag": "demand_response_income_prices",
-      "type": "graph",
-      "objective": "LO4.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.2_demand_response_income_prices",
-      "primarySkill": "demand_response_income_prices",
-      "secondarySkills": [
-        "income_effect",
-        "substitution_effect"
-      ],
-      "repairSkill": "demand_response_income_prices",
-      "commonError": "misreads_the_coordinates_of_initial_and_final_bundles",
-      "feedback": "Point A is about (20, 20) and point C is about (5, 20), so the consumer ends with less Good X and the same amount of Good Y.",
-      "source": "graph_batch_indifference_actual_20260816",
-      "image": "INCOME-SUB-02.png",
-      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C; Budget1 is steeper.",
-      "graphRequired": true,
-      "aHash": "fd45ba3df3bf946f3686940737eff2be832969766b4bfce2b8939aca71c9a4c2"
-    },
-    {
-      "id": 310052,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. After the price of Good X falls in this graph, what happens to the consumer\u2019s chosen amounts from A to C?",
-      "options": [
-        "Good X rises and Good Y falls",
-        "both Good X and Good Y rise",
-        "Good X falls and Good Y rises",
-        "Good X rises and Good Y stays the same"
-      ],
-      "tag": "demand_response_income_prices",
-      "type": "graph",
-      "objective": "LO4.2",
-      "difficulty": "elite",
-      "conceptCluster": "LO4.2_demand_response_income_prices",
-      "primarySkill": "demand_response_income_prices",
-      "secondarySkills": [
-        "income_effect",
-        "substitution_effect"
-      ],
-      "repairSkill": "demand_response_income_prices",
-      "commonError": "cannot_compare_initial_and_final_choices_in_the_alternate_price_drop_graph",
-      "feedback": "Point A is about (10, 20) and point C is about (15, 25), so both goods increase in the final bundle.",
-      "source": "graph_batch_indifference_actual_20260816",
-      "image": "INCOME-SUB-04.png",
-      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and labeled bundles A, B and C.",
-      "graphRequired": true,
-      "aHash": "86d7604f974695a66f7b8d52d5a6f735fd179810b9ae03a2ff2056ae94a01c63"
-    },
-    {
-      "id": 310053,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. For perfect complements, where will the optimal bundle typically occur?",
-      "options": [
-        "At the kink of the highest attainable indifference curve",
-        "Anywhere along a horizontal arm",
-        "Anywhere along a vertical arm",
-        "At the highest vertical intercept"
-      ],
-      "tag": "utility_maximization_mrs",
-      "type": "graph",
-      "objective": "LO3.4",
-      "difficulty": "elite",
-      "conceptCluster": "LO3.4_utility_maximization_mrs",
-      "primarySkill": "utility_maximization_mrs",
-      "secondarySkills": [
-        "indifference_curve_properties"
-      ],
-      "repairSkill": "utility_maximization_mrs",
-      "commonError": "thinks_any_point_on_an_l_shaped_curve_is_equally_likely_to_be_optimal",
-      "feedback": "With perfect complements, extra units of only one good do not raise utility, so the optimum occurs at the kink of the highest attainable indifference curve.",
-      "source": "graph_batch_indifference_actual_20260816",
-      "image": "IC-06.png",
-      "imageAlt": "Three right-angle indifference curves with corners progressing upward and right from IC1 to IC3.",
-      "graphRequired": true,
-      "aHash": "75eaea62592320adb9e2384e69370d028f34a68c7b9bd79da240254ff64647ba"
+      "aHash": "a9f6a6adb0cd1313ed41592bfa7322caafe3d8cccdfe10370c68a0e593b756f3"
     }
   ],
   "legendary": [
     {
       "id": 150000,
       "sourceGame": "labyrinthOfChoice",
-      "q": "A monotonic transformation converts U(A)=10 and U(B)=5 into V(A)=101 and V(B)=26 while preserving every ranking. Which statement is correct?",
+      "q": "A consumer's utility index is replaced by V = U² + 1, with U positive for every feasible bundle. U(A)=10 and U(B)=5 become V(A)=101 and V(B)=26. Prices and income are unchanged. An analyst treats the larger numerical gap as a reason to predict a new choice. Which conclusion is justified?",
       "options": [
         "The consumer-choice prediction is unchanged",
         "A becomes exactly twice as desirable as B",
@@ -13090,17 +14191,17 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "theory_of_choice",
       "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
-      "feedback": "Ordinal consumer theory depends on rankings, not the size of utility-number gaps.",
+      "feedback": "Squaring a positive utility index preserves every ranking but changes numerical differences. The affordable set is unchanged, so the maximizing bundle is unchanged; neither index measures how many times happier the consumer is.",
       "source": "engine2_expansion",
       "aHash": "b16464fb096032fcb939e73f1918102c85309afbee1fb6bcdcbead4c7cdf34c7"
     },
     {
       "id": 150001,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Suppose preferences are complete but not transitive. Which part of the standard optimization story is most endangered?",
+      "q": "All pairs of bundles can be compared, but strict choices cycle: A is preferred to B, B to C, and C to A. Prices make all three bundles affordable. A proposed repair changes only the numerical utility labels. Which part of consumer optimization still cannot be recovered from these observations?",
       "options": [
-        "A stable ranking that supports a well-defined optimum",
-        "The arithmetic of budget intercepts",
+        "A consistent ranking of affordable alternatives",
+        "An affordable set defined by positive prices and income",
         "The definition of consumer surplus",
         "The sign of cross-price elasticity"
       ],
@@ -13113,17 +14214,17 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
-      "feedback": "Completeness alone does not prevent cycles; transitivity is needed for a coherent ranking and stable optimization.",
+      "feedback": "A relabeling cannot turn a strict cycle into a consistent ranking. Each affordable candidate is beaten by another. Completeness ensures comparison, while transitivity is needed to represent the comparisons with one ordered utility index.",
       "source": "engine2_expansion",
-      "aHash": "e59e1955aeab36b27ef6637dadbdadeb2dff3ac4a3167344de4e0aba2166653c"
+      "aHash": "110f15077bb97c09161ae1420505b635d9bd36498cbf60e4a24b2ad85de894e8"
     },
     {
       "id": 150002,
       "sourceGame": "labyrinthOfChoice",
-      "q": "An indifference map is internally consistent, downward sloping, and nested. Which additional feature most naturally represents a taste for balanced bundles rather than extremes?",
+      "q": "A consumer ranks bundles consistently and prefers more of either good. Two distinct bundles give equal utility, and every weighted average of those bundles is at least as desirable as the endpoints. Which property adds this last restriction without following from consistency and more-is-better alone?",
       "options": [
-        "Convexity toward the origin",
-        "Crossing curves",
+        "Convex indifference curves",
+        "Indifference curves that intersect",
         "Upward slopes",
         "Identical intercepts"
       ],
@@ -13136,17 +14237,17 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "indifference_curve_properties",
       "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
-      "feedback": "Convex indifference curves reflect diminishing willingness to substitute and a preference for diversified bundles.",
+      "feedback": "Convex preferences make mixtures of equally preferred bundles at least as desirable as the extremes. Completeness, transitivity, and monotonicity alone do not require this taste for balanced bundles.",
       "source": "engine2_expansion",
-      "aHash": "fe6f7a8cd9a93f8252812fcbdfd8b1661298215aaead554aa74387c921f75b78"
+      "aHash": "c6e1cdf1ddf32c970a7a782815268e1cde988a65c1a56feaa43e61644f366b73"
     },
     {
       "id": 150003,
       "sourceGame": "labyrinthOfChoice",
-      "q": "A consumer's MRS falls from 5 to 2 as X increases. The market price ratio Px/Py is 2. Which statement best describes the endpoint?",
+      "q": "A consumer spends the full budget on both goods and has smooth, strictly convex, monotonic preferences. Moving toward more X along the unchanged budget line lowers MRS from 5 to 2, while Px/Py remains 2. Why should the consumer stop at this endpoint rather than continue the same reallocation?",
       "options": [
-        "The consumer has moved toward a tangency where subjective and market tradeoffs match",
-        "The budget line must have become steeper",
+        "Willingness to trade now matches the market tradeoff",
+        "The budget line has rotated until its slope is zero",
         "The consumer is necessarily at a corner with zero Y",
         "Income elasticity must equal 2"
       ],
@@ -13159,132 +14260,17 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "marginal_rate_substitution",
       "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
-      "feedback": "When MRS converges to the price ratio, the subjective and market tradeoffs align at an interior optimum.",
+      "feedback": "Before the endpoint, willingness to give up Y for X exceeded the market cost. At the endpoint MRS equals the price ratio; strict convexity makes further movement toward X lower utility. Budget exhaustion and the stated preferences are essential to the conclusion.",
       "source": "engine2_expansion",
-      "aHash": "862d039a857d06b069171e66d45663eaf9fa0bd5ceadf536c3ee6f45394efb41"
-    },
-    {
-      "id": 150004,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Suppose the budget equation is 5X + 10Y = 60. Which pair of facts is simultaneously correct?",
-      "options": [
-        "X-intercept=12 and slope=-0.50",
-        "X-intercept=6 and slope=-2.00",
-        "Y-intercept=12 and slope=-0.50",
-        "X-intercept=60 and slope=-1"
-      ],
-      "tag": "budget_constraint_intercepts_slope",
-      "type": "synthesis",
-      "objective": "LO3.3",
-      "difficulty": "legendary",
-      "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
-      "primarySkill": "budget_constraint_intercepts_slope",
-      "secondarySkills": [],
-      "repairSkill": "budget_constraint_intercepts_slope",
-      "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
-      "feedback": "The X-intercept is I/Px and the slope is -Px/Py.",
-      "source": "engine2_expansion",
-      "aHash": "56bacb7f697eeb84038a42fcb6f80fb81b0d6273441486f1503f9253b41b117e"
-    },
-    {
-      "id": 150005,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "A policy doubles income, doubles Py, and leaves Px unchanged. Which description is best?",
-      "options": [
-        "The X-intercept doubles, the Y-intercept is unchanged, and the budget line becomes flatter",
-        "Both intercepts are unchanged",
-        "Both intercepts double and slope is unchanged",
-        "The X-intercept is unchanged and the line becomes steeper"
-      ],
-      "tag": "budget_line_changes",
-      "type": "integration",
-      "objective": "LO3.3",
-      "difficulty": "legendary",
-      "conceptCluster": "LO3.3_budget_line_changes",
-      "primarySkill": "budget_line_changes",
-      "secondarySkills": [],
-      "repairSkill": "budget_line_changes",
-      "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
-      "feedback": "I/Px doubles; I/Py stays constant because both I and Py double; Px/Py falls, so the line flattens.",
-      "source": "engine2_expansion",
-      "aHash": "bde5628360a137621aae1b18b9d5348f8adeb9884485a7f8cec72789305dba1f"
-    },
-    {
-      "id": 150006,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "An interior optimum satisfies MRS=Px/Py. If Px falls and preferences stay fixed, why will the original bundle generally cease to be optimal?",
-      "options": [
-        "The market tradeoff changes, so the old MRS no longer matches the new relative price",
-        "The consumer's preferences automatically reverse",
-        "The budget constraint disappears",
-        "Marginal utility becomes cardinal"
-      ],
-      "tag": "utility_maximization_mrs",
-      "type": "integration",
-      "objective": "LO3.4",
-      "difficulty": "legendary",
-      "conceptCluster": "LO3.4_utility_maximization_mrs",
-      "primarySkill": "utility_maximization_mrs",
-      "secondarySkills": [],
-      "repairSkill": "utility_maximization_mrs",
-      "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
-      "feedback": "A price change alters the budget slope and therefore the tangency condition.",
-      "source": "engine2_expansion",
-      "aHash": "0cf7e246ec94e72180d8c9e0caf9c049db809a5a97f910edc401cb70e2bdc906"
-    },
-    {
-      "id": 150007,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Why is comparing MUx with MUy directly generally insufficient for allocating a fixed budget?",
-      "options": [
-        "Goods can have different prices, so the relevant comparison is utility gained per dollar",
-        "Marginal utility is always negative",
-        "Prices affect only supply",
-        "Utility maximization requires equal quantities"
-      ],
-      "tag": "marginal_utility_per_dollar",
-      "type": "synthesis",
-      "objective": "LO3.4",
-      "difficulty": "legendary",
-      "conceptCluster": "LO3.4_marginal_utility_per_dollar",
-      "primarySkill": "marginal_utility_per_dollar",
-      "secondarySkills": [],
-      "repairSkill": "marginal_utility_per_dollar",
-      "commonError": "compares_marginal_utility_without_dividing_by_price",
-      "feedback": "Budget allocation depends on the marginal benefit from the last dollar spent, not marginal utility alone.",
-      "source": "engine2_expansion",
-      "aHash": "44e048c66b6af018b4488a9752e35ec6c9b9cc2b6d640dbeb3da339995eee6f9"
-    },
-    {
-      "id": 150008,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "An individual's Marshallian demand for X is generated by repeated utility maximization. Which object changes directly as Px changes and produces the price-quantity locus?",
-      "options": [
-        "The budget constraint and resulting optimal bundle",
-        "The preference ordering itself",
-        "The number of consumers",
-        "The definition of utility"
-      ],
-      "tag": "derive_individual_demand",
-      "type": "integration",
-      "objective": "LO4.1",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.1_derive_individual_demand",
-      "primarySkill": "derive_individual_demand",
-      "secondarySkills": [],
-      "repairSkill": "derive_individual_demand",
-      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
-      "feedback": "Changing Px changes the budget constraint; the resulting sequence of optimal X choices forms the individual demand curve.",
-      "source": "engine2_expansion",
-      "aHash": "01f11764703aa0eb784e2c03653de3155e7daba3d5c4661ff4169c7123ac5faf"
+      "aHash": "be5e255e062fd85ec2f3e21e205d1d611b4a909f4882039338f3cbb980b183f9"
     },
     {
       "id": 150009,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Suppose Px falls, income falls, and X is normal. Why can't the observed change in Qx by itself identify the own-price response?",
+      "q": "For a normal good, two observations show a fall in its own price, a fall in consumer income, and unchanged quantity purchased. Preferences and other prices are stable. Why would treating the observations as evidence of zero own-price responsiveness be invalid?",
       "options": [
-        "The price effect and income-induced demand shift occur simultaneously",
-        "Normal goods never obey the law of demand",
+        "Price movements and income shifts occur together",
+        "Normal goods cannot have a positive own-price response",
         "Income affects only supply",
         "Own-price changes always shift demand"
       ],
@@ -13297,90 +14283,17 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "demand_response_income_prices",
       "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
-      "feedback": "Simultaneous changes in own price and income combine movement along demand with a shift of demand.",
+      "feedback": "The lower own price and lower income can push quantity in opposite directions. An unchanged observed quantity may therefore conceal a positive own-price response offset by an inward demand shift; it does not identify elasticity on a fixed demand curve.",
       "source": "engine2_expansion",
-      "aHash": "4f6d1947b6031f1f5feda0cd0058804ad75d7a5b12730541bef32944bf36b6d7"
-    },
-    {
-      "id": 150010,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "A household's demand for a good falls 6% when income rises 10%, with prices unchanged. What does the sign of this response imply?",
-      "options": [
-        "The good is inferior for this household",
-        "The good is normal and a necessity",
-        "The good is a substitute",
-        "The good is perfectly inelastic"
-      ],
-      "tag": "normal_inferior_goods",
-      "type": "calculation",
-      "objective": "LO4.2",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.2_normal_inferior_goods",
-      "primarySkill": "normal_inferior_goods",
-      "secondarySkills": [
-        "income_elasticity"
-      ],
-      "repairSkill": "normal_inferior_goods",
-      "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
-      "feedback": "Income elasticity is negative, so the good is inferior.",
-      "source": "engine2_expansion",
-      "aHash": "c144ebc503e8fceda776abdc93fbae0e9ca2c37c4b9df07781f2b6848576eabb"
-    },
-    {
-      "id": 150011,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "A price decrease for X produces a positive substitution effect of +4 units and a negative income effect of -1 unit. What is the total change in quantity demanded?",
-      "options": [
-        "+3 units",
-        "+5 units",
-        "-3 units",
-        "-5 units"
-      ],
-      "tag": "substitution_effect",
-      "type": "multi-step",
-      "objective": "LO4.3",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.3_substitution_effect",
-      "primarySkill": "substitution_effect",
-      "secondarySkills": [
-        "income_effect"
-      ],
-      "repairSkill": "substitution_effect",
-      "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
-      "feedback": "Total effect = substitution effect + income effect = 4 + (-1) = 3 units.",
-      "source": "engine2_expansion",
-      "aHash": "beb5ec53ad7185cb7f133947de50348cf0aab82d9d11f931c9dc26b6297e221e"
-    },
-    {
-      "id": 150012,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "A price rise for an inferior good reduces real purchasing power. Which direction does the income effect push quantity of the inferior good?",
-      "options": [
-        "Upward",
-        "Downward",
-        "Always to zero",
-        "The direction cannot be linked to inferiority"
-      ],
-      "tag": "income_effect",
-      "type": "synthesis",
-      "objective": "LO4.3",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.3_income_effect",
-      "primarySkill": "income_effect",
-      "secondarySkills": [],
-      "repairSkill": "income_effect",
-      "commonError": "confuses_purchasing_power_with_relative_price substitution",
-      "feedback": "Lower real income raises demand for an inferior good, so the income effect of a price rise pushes its quantity upward.",
-      "source": "engine2_expansion",
-      "aHash": "69b565816811be91c81d5e62ea4e170a208433ba0eb9e8a4476536513c96bd03"
+      "aHash": "891a5815b46a4dcf47e8a004cf7cd4ac72b65fcdc31527e8732ce24deb4fd75d"
     },
     {
       "id": 150013,
       "sourceGame": "labyrinthOfChoice",
-      "q": "For a Giffen good, a rise in price makes the consumer effectively poorer. Why can that increase purchases of the good?",
+      "q": "After a staple's price rises, a household is worse off but buys more of the staple. Preferences, money income, and other prices remain unchanged. Compensating the household back to its original utility at the new prices would instead make it buy less of the staple. What explains the difference between the compensated and actual choices?",
       "options": [
-        "Because the good is so strongly inferior that the purchasing-power effect toward it outweighs substitution away from it",
-        "Because the substitution effect reverses sign",
+        "The opposing income effect is stronger than substitution",
+        "The substitution effect favors the now more expensive good",
         "Because preferences become unstable",
         "Because market demand is averaged"
       ],
@@ -13393,16 +14306,16 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "giffen_good_logic",
       "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
-      "feedback": "The strong inferior-good income effect can dominate the ordinary substitution response.",
+      "feedback": "The compensated comparison isolates substitution away from the more expensive staple. The actual price rise also lowers purchasing power. For this strongly inferior good, that income effect increases purchases by more than substitution reduces them, producing Giffen behavior.",
       "source": "engine2_expansion",
-      "aHash": "8dcf9b6d2689fd44c1f9a9a33990a0b456f4159505b1e9dbfef84d2025fceb8a"
+      "aHash": "5ed839bca5791ca86736c6fc9cf040f02f39711e6f10ebc1710761f150bf5a24"
     },
     {
       "id": 150014,
       "sourceGame": "labyrinthOfChoice",
-      "q": "A researcher estimates a demand curve but omits a major preference trend correlated with price. What problem threatens the interpretation of the estimated price-quantity relationship?",
+      "q": "A researcher observes higher prices and larger sales during a growing preference for a product. The trend is correlated with price but omitted from the analysis; income and related-good prices are controlled. Why can the positive fitted price coefficient fail to describe an upward-sloping demand curve?",
       "options": [
-        "The observed relationship may mix movements along demand with shifts of demand",
+        "Movements along demand are mixed with shifts of demand",
         "Market demand must equal average individual demand",
         "Consumer surplus becomes undefined",
         "Income elasticity must be zero"
@@ -13416,16 +14329,16 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "demand_curve_shifts",
       "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
-      "feedback": "If demand shifters move with price, the data do not isolate a single demand curve.",
+      "feedback": "Controlling some demand determinants does not hold the omitted preference trend fixed. Its outward demand shifts can accompany higher observed prices and sales. The fitted coefficient can therefore mix shifts with movement along any one demand curve.",
       "source": "engine2_expansion",
-      "aHash": "2a08fde9353d94669a23f51c35f2aa60a23075acfa1e486675a95c2179612235"
+      "aHash": "eb40a64c0f3aa303748355c544f13393cc104a3d2142634a13db3577a4f0bbba"
     },
     {
       "id": 150015,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Why does the area under a demand curve and above the market price represent consumer surplus?",
+      "q": "A buyer values successive units at $12, $9, and $5, pays a uniform price of $6, and buys only units worth at least their price. An analyst counts both the buyer's payment and the value of the unpurchased third unit as consumer surplus. Which principle correctly separates surplus from those amounts?",
       "options": [
-        "The demand curve reflects marginal willingness to pay, so the vertical gap above price measures surplus unit by unit",
+        "Each unit's surplus is willingness to pay minus price",
         "The demand curve measures sellers' marginal cost",
         "All consumers pay their exact willingness to pay",
         "Price is always equal to maximum willingness to pay"
@@ -13439,17 +14352,17 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "consumer_surplus",
       "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
-      "feedback": "Aggregating willingness-to-pay minus price across purchased units gives the area under demand above price.",
+      "feedback": "Only the first two units are bought. Their surplus is (12-6)+(9-6)=$9. The $12 payment is expenditure, and the third unit creates no realized surplus because its value is below price. Summing willingness to pay minus price over purchased units gives consumer surplus.",
       "source": "engine2_expansion",
-      "aHash": "371b1d896cb013cdfe346586b2228879ddc5cb6b3000d1b92de2c6ad86002178"
+      "aHash": "2ad5bdc08ea5b7c95f3d520f51aecbd9b89e34dff6b313684b190308b67582ea"
     },
     {
       "id": 150016,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Why can market demand have a kink even when each individual's demand is smooth over the quantities they purchase?",
+      "q": "Two buyers have individual demands Q₁=max(12-P,0) and Q₂=max(8-P,0). Each demand is smooth wherever its quantity is positive, yet the market curve changes slope at P=8. Why can horizontal aggregation create this kink without any change in either buyer's preferences?",
       "options": [
-        "Different consumers can enter or exit the market at different price thresholds, changing the horizontal sum",
-        "Market demand is a vertical sum",
+        "Buyers enter at different prices, changing the total slope",
+        "Individual price thresholds are added vertically at each quantity",
         "Consumer surplus creates kinks automatically",
         "All individual demands must be identical"
       ],
@@ -13462,16 +14375,16 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "market_demand_aggregation",
       "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
-      "feedback": "As price changes, the set of consumers with positive demand can change, altering the slope of the aggregate demand curve.",
+      "feedback": "Above P=8 only buyer 1 purchases, so market demand has dQ/dP=-1. Below P=8 both purchase, so the derivatives add to -2. The active set of buyers changes at the threshold, even though each positive-quantity segment is smooth.",
       "source": "engine2_expansion",
-      "aHash": "ec81b684cda14c494090215b5ad87bc09efd2d8f84b0ed7dc6acbfb4f53810a0"
+      "aHash": "095c1a54d4ad6ca59b0899a3b8bbb590024aec34d030285f3ed9c1842c673a12"
     },
     {
       "id": 150017,
       "sourceGame": "labyrinthOfChoice",
-      "q": "A firm's demand elasticity estimate changes along a linear demand curve even though the slope is constant. Why?",
+      "q": "Demand is Q=100-2P. At P=$40 and P=$10, the slope dQ/dP is the same, yet a small price increase lowers revenue at the first point and raises it at the second. What reconciles these responses?",
       "options": [
-        "Elasticity also depends on the price-to-quantity ratio at the point",
+        "The price-to-quantity ratio changes along the curve",
         "The slope secretly changes",
         "Linear demand must have unit elasticity everywhere",
         "Elasticity is independent of price and quantity"
@@ -13485,129 +14398,14 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "price_elasticity_fundamentals",
       "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
-      "feedback": "Point elasticity equals slope-related responsiveness multiplied by P/Q, so it varies along a linear curve.",
+      "feedback": "At P=40, Q=20 and absolute point elasticity is 2×40/20=4. At P=10, Q=80 and it is 2×10/80=0.25. The common slope does not imply common elasticity because P/Q differs. Revenue responds differently in the elastic and inelastic regions.",
       "source": "engine2_expansion",
-      "aHash": "a8c07dae721c40617c0fbb09a71baca82308693d2bd38f83f9041bc448e49c40"
-    },
-    {
-      "id": 150018,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "When midpoint elasticity is 1.00 between two points, which interpretation is best?",
-      "options": [
-        "The percentage change in quantity equals the percentage change in price in magnitude over that interval",
-        "The slope of demand is -1",
-        "Total revenue must be zero",
-        "Price and quantity levels are equal"
-      ],
-      "tag": "midpoint_elasticity",
-      "type": "synthesis",
-      "objective": "LO4.7",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.7_midpoint_elasticity",
-      "primarySkill": "midpoint_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "midpoint_elasticity",
-      "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
-      "feedback": "Unit elasticity means equal percentage changes in price and quantity, not equal levels or slope.",
-      "source": "engine2_expansion",
-      "aHash": "fa5b2591be44f36adfeaaab1ae069a2433c49c6eb45bb8ff396733c7c01161b4"
-    },
-    {
-      "id": 150019,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "On a linear demand curve, total revenue is maximized at the quantity where demand is approximately what?",
-      "options": [
-        "Unit elastic",
-        "Perfectly inelastic",
-        "Perfectly elastic",
-        "Always inelastic"
-      ],
-      "tag": "elasticity_total_revenue",
-      "type": "integration",
-      "objective": "LO4.7",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.7_elasticity_total_revenue",
-      "primarySkill": "elasticity_total_revenue",
-      "secondarySkills": [],
-      "repairSkill": "elasticity_total_revenue",
-      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
-      "feedback": "Along a linear demand curve, total revenue peaks where elasticity transitions through unit elasticity.",
-      "source": "engine2_expansion",
-      "aHash": "9a643cf5dcd22f83a67be1168305fb5af5e8a6221e1299027e74c458f4e5589c"
-    },
-    {
-      "id": 150020,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Two products have cross-price elasticity -1.2. If the price of Y rises 5%, what approximate change in Qx is predicted, holding other factors fixed?",
-      "options": [
-        "A 6% decrease",
-        "A 6% increase",
-        "A 4.2% decrease",
-        "A 1.2% decrease"
-      ],
-      "tag": "cross_price_elasticity",
-      "type": "calculation",
-      "objective": "LO4.7",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.7_cross_price_elasticity",
-      "primarySkill": "cross_price_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "cross_price_elasticity",
-      "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
-      "feedback": "%\u0394Qx \u2248 Exy \u00d7 %\u0394Py = -1.2 \u00d7 5% = -6%.",
-      "source": "engine2_expansion",
-      "aHash": "f4379d747e6bf0ab6a5cf3d03eb450c6b5a46d193ed642a9a7692e797bba682a"
-    },
-    {
-      "id": 150021,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Income falls 5% and a good's income elasticity is -0.8. What approximate change in quantity demanded is predicted?",
-      "options": [
-        "A 4% increase",
-        "A 4% decrease",
-        "An 8% increase",
-        "A 0.8% increase"
-      ],
-      "tag": "income_elasticity",
-      "type": "calculation",
-      "objective": "LO4.7",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.7_income_elasticity",
-      "primarySkill": "income_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "income_elasticity",
-      "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
-      "feedback": "%\u0394Q \u2248 Ey \u00d7 %\u0394Income = -0.8 \u00d7 -5% = +4%.",
-      "source": "engine2_expansion",
-      "aHash": "8a9dc06b6e65012609b1be11814dda93d1169c12a0d51ca090848054d700e7c9"
-    },
-    {
-      "id": 150022,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "A product is a necessity in the short run, has few immediate substitutes, but new technologies can replace it over several years. Which pattern is most plausible?",
-      "options": [
-        "Relatively inelastic short-run demand and more elastic long-run demand",
-        "Perfectly elastic demand at all horizons",
-        "More elastic short-run than long-run demand by definition",
-        "Unit elasticity at every price"
-      ],
-      "tag": "elasticity_determinants",
-      "type": "synthesis",
-      "objective": "LO4.7",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.7_elasticity_determinants",
-      "primarySkill": "elasticity_determinants",
-      "secondarySkills": [],
-      "repairSkill": "elasticity_determinants",
-      "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
-      "feedback": "Necessity and few immediate substitutes reduce short-run responsiveness; substitution possibilities can expand over time.",
-      "source": "engine2_expansion",
-      "aHash": "2a9d77534a775c9e58d10b2be9053b37f9fe98f2aa85147462ece6c2002ce3b8"
+      "aHash": "86666c58cf880e57cbd84ed4ec271789e393eb3f4efbc922caf1890cab702b55"
     },
     {
       "id": 150023,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving coffee purchases, a monotonic transformation converts U(A)=10 and U(B)=5 into V(A)=101 and V(B)=26 while preserving every ranking. Which statement is correct?",
+      "q": "A consumer's utility index is replaced by V = U² + 1, with U positive for every feasible bundle. U(A)=10 and U(B)=5 become V(A)=101 and V(B)=26. Prices and income are unchanged. An analyst treats the larger numerical gap as a reason to predict a new choice. Which conclusion is justified?",
       "options": [
         "The consumer-choice prediction is unchanged",
         "A becomes exactly twice as desirable as B",
@@ -13623,17 +14421,17 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "theory_of_choice",
       "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
-      "feedback": "Ordinal consumer theory depends on rankings, not the size of utility-number gaps.",
+      "feedback": "Squaring a positive utility index preserves every ranking but changes numerical differences. The affordable set is unchanged, so the maximizing bundle is unchanged; neither index measures how many times happier the consumer is.",
       "source": "engine2_expansion",
       "aHash": "b16464fb096032fcb939e73f1918102c85309afbee1fb6bcdcbead4c7cdf34c7"
     },
     {
       "id": 150024,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving streaming subscriptions, suppose preferences are complete but not transitive. Which part of the standard optimization story is most endangered?",
+      "q": "All pairs of bundles can be compared, but strict choices cycle: A is preferred to B, B to C, and C to A. Prices make all three bundles affordable. A proposed repair changes only the numerical utility labels. Which part of consumer optimization still cannot be recovered from these observations?",
       "options": [
-        "A stable ranking that supports a well-defined optimum",
-        "The arithmetic of budget intercepts",
+        "A consistent ranking of affordable alternatives",
+        "An affordable set defined by positive prices and income",
         "The definition of consumer surplus",
         "The sign of cross-price elasticity"
       ],
@@ -13646,17 +14444,17 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
-      "feedback": "Completeness alone does not prevent cycles; transitivity is needed for a coherent ranking and stable optimization.",
+      "feedback": "A relabeling cannot turn a strict cycle into a consistent ranking. Each affordable candidate is beaten by another. Completeness ensures comparison, while transitivity is needed to represent the comparisons with one ordered utility index.",
       "source": "engine2_expansion",
-      "aHash": "e59e1955aeab36b27ef6637dadbdadeb2dff3ac4a3167344de4e0aba2166653c"
+      "aHash": "110f15077bb97c09161ae1420505b635d9bd36498cbf60e4a24b2ad85de894e8"
     },
     {
       "id": 150025,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving campus meals, an indifference map is internally consistent, downward sloping, and nested. Which additional feature most naturally represents a taste for balanced bundles rather than extremes?",
+      "q": "A consumer ranks bundles consistently and prefers more of either good. Two distinct bundles give equal utility, and every weighted average of those bundles is at least as desirable as the endpoints. Which property adds this last restriction without following from consistency and more-is-better alone?",
       "options": [
-        "Convexity toward the origin",
-        "Crossing curves",
+        "Convex indifference curves",
+        "Indifference curves that intersect",
         "Upward slopes",
         "Identical intercepts"
       ],
@@ -13669,17 +14467,17 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "indifference_curve_properties",
       "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
-      "feedback": "Convex indifference curves reflect diminishing willingness to substitute and a preference for diversified bundles.",
+      "feedback": "Convex preferences make mixtures of equally preferred bundles at least as desirable as the extremes. Completeness, transitivity, and monotonicity alone do not require this taste for balanced bundles.",
       "source": "engine2_expansion",
-      "aHash": "fe6f7a8cd9a93f8252812fcbdfd8b1661298215aaead554aa74387c921f75b78"
+      "aHash": "c6e1cdf1ddf32c970a7a782815268e1cde988a65c1a56feaa43e61644f366b73"
     },
     {
       "id": 150026,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving concert tickets, a consumer's MRS falls from 5 to 2 as X increases. The market price ratio Px/Py is 2. Which statement best describes the endpoint?",
+      "q": "A consumer spends the full budget on both goods and has smooth, strictly convex, monotonic preferences. Moving toward more X along the unchanged budget line lowers MRS from 5 to 2, while Px/Py remains 2. Why should the consumer stop at this endpoint rather than continue the same reallocation?",
       "options": [
-        "The consumer has moved toward a tangency where subjective and market tradeoffs match",
-        "The budget line must have become steeper",
+        "Willingness to trade now matches the market tradeoff",
+        "The budget line has rotated until its slope is zero",
         "The consumer is necessarily at a corner with zero Y",
         "Income elasticity must equal 2"
       ],
@@ -13692,132 +14490,17 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "marginal_rate_substitution",
       "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
-      "feedback": "When MRS converges to the price ratio, the subjective and market tradeoffs align at an interior optimum.",
+      "feedback": "Before the endpoint, willingness to give up Y for X exceeded the market cost. At the endpoint MRS equals the price ratio; strict convexity makes further movement toward X lower utility. Budget exhaustion and the stated preferences are essential to the conclusion.",
       "source": "engine2_expansion",
-      "aHash": "862d039a857d06b069171e66d45663eaf9fa0bd5ceadf536c3ee6f45394efb41"
-    },
-    {
-      "id": 150027,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Suppose the budget equation is 10X + 15Y = 80. Which pair of facts is simultaneously correct?",
-      "options": [
-        "X-intercept=8 and slope=-0.67",
-        "X-intercept=5.33333 and slope=-1.50",
-        "Y-intercept=8 and slope=-0.67",
-        "X-intercept=80 and slope=-1"
-      ],
-      "tag": "budget_constraint_intercepts_slope",
-      "type": "synthesis",
-      "objective": "LO3.3",
-      "difficulty": "legendary",
-      "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
-      "primarySkill": "budget_constraint_intercepts_slope",
-      "secondarySkills": [],
-      "repairSkill": "budget_constraint_intercepts_slope",
-      "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
-      "feedback": "The X-intercept is I/Px and the slope is -Px/Py.",
-      "source": "engine2_expansion",
-      "aHash": "2d5b676012f4e757a5602e7a57eb67216b76ea71db2b19fa45c6eadab16c0796"
-    },
-    {
-      "id": 150028,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving textbook purchases, a policy doubles income, doubles Py, and leaves Px unchanged. Which description is best?",
-      "options": [
-        "The X-intercept doubles, the Y-intercept is unchanged, and the budget line becomes flatter",
-        "Both intercepts are unchanged",
-        "Both intercepts double and slope is unchanged",
-        "The X-intercept is unchanged and the line becomes steeper"
-      ],
-      "tag": "budget_line_changes",
-      "type": "integration",
-      "objective": "LO3.3",
-      "difficulty": "legendary",
-      "conceptCluster": "LO3.3_budget_line_changes",
-      "primarySkill": "budget_line_changes",
-      "secondarySkills": [],
-      "repairSkill": "budget_line_changes",
-      "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
-      "feedback": "I/Px doubles; I/Py stays constant because both I and Py double; Px/Py falls, so the line flattens.",
-      "source": "engine2_expansion",
-      "aHash": "bde5628360a137621aae1b18b9d5348f8adeb9884485a7f8cec72789305dba1f"
-    },
-    {
-      "id": 150029,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving gym memberships, an interior optimum satisfies MRS=Px/Py. If Px falls and preferences stay fixed, why will the original bundle generally cease to be optimal?",
-      "options": [
-        "The market tradeoff changes, so the old MRS no longer matches the new relative price",
-        "The consumer's preferences automatically reverse",
-        "The budget constraint disappears",
-        "Marginal utility becomes cardinal"
-      ],
-      "tag": "utility_maximization_mrs",
-      "type": "integration",
-      "objective": "LO3.4",
-      "difficulty": "legendary",
-      "conceptCluster": "LO3.4_utility_maximization_mrs",
-      "primarySkill": "utility_maximization_mrs",
-      "secondarySkills": [],
-      "repairSkill": "utility_maximization_mrs",
-      "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
-      "feedback": "A price change alters the budget slope and therefore the tangency condition.",
-      "source": "engine2_expansion",
-      "aHash": "0cf7e246ec94e72180d8c9e0caf9c049db809a5a97f910edc401cb70e2bdc906"
-    },
-    {
-      "id": 150030,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving movie tickets, why is comparing MUx with MUy directly generally insufficient for allocating a fixed budget?",
-      "options": [
-        "Goods can have different prices, so the relevant comparison is utility gained per dollar",
-        "Marginal utility is always negative",
-        "Prices affect only supply",
-        "Utility maximization requires equal quantities"
-      ],
-      "tag": "marginal_utility_per_dollar",
-      "type": "synthesis",
-      "objective": "LO3.4",
-      "difficulty": "legendary",
-      "conceptCluster": "LO3.4_marginal_utility_per_dollar",
-      "primarySkill": "marginal_utility_per_dollar",
-      "secondarySkills": [],
-      "repairSkill": "marginal_utility_per_dollar",
-      "commonError": "compares_marginal_utility_without_dividing_by_price",
-      "feedback": "Budget allocation depends on the marginal benefit from the last dollar spent, not marginal utility alone.",
-      "source": "engine2_expansion",
-      "aHash": "44e048c66b6af018b4488a9752e35ec6c9b9cc2b6d640dbeb3da339995eee6f9"
-    },
-    {
-      "id": 150031,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving coffee purchases, an individual's Marshallian demand for X is generated by repeated utility maximization. Which object changes directly as Px changes and produces the price-quantity locus?",
-      "options": [
-        "The budget constraint and resulting optimal bundle",
-        "The preference ordering itself",
-        "The number of consumers",
-        "The definition of utility"
-      ],
-      "tag": "derive_individual_demand",
-      "type": "integration",
-      "objective": "LO4.1",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.1_derive_individual_demand",
-      "primarySkill": "derive_individual_demand",
-      "secondarySkills": [],
-      "repairSkill": "derive_individual_demand",
-      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
-      "feedback": "Changing Px changes the budget constraint; the resulting sequence of optimal X choices forms the individual demand curve.",
-      "source": "engine2_expansion",
-      "aHash": "01f11764703aa0eb784e2c03653de3155e7daba3d5c4661ff4169c7123ac5faf"
+      "aHash": "be5e255e062fd85ec2f3e21e205d1d611b4a909f4882039338f3cbb980b183f9"
     },
     {
       "id": 150032,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving streaming subscriptions, suppose Px falls, income falls, and X is normal. Why can't the observed change in Qx by itself identify the own-price response?",
+      "q": "For a normal good, two observations show a fall in its own price, a fall in consumer income, and unchanged quantity purchased. Preferences and other prices are stable. Why would treating the observations as evidence of zero own-price responsiveness be invalid?",
       "options": [
-        "The price effect and income-induced demand shift occur simultaneously",
-        "Normal goods never obey the law of demand",
+        "Price movements and income shifts occur together",
+        "Normal goods cannot have a positive own-price response",
         "Income affects only supply",
         "Own-price changes always shift demand"
       ],
@@ -13830,90 +14513,17 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "demand_response_income_prices",
       "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
-      "feedback": "Simultaneous changes in own price and income combine movement along demand with a shift of demand.",
+      "feedback": "The lower own price and lower income can push quantity in opposite directions. An unchanged observed quantity may therefore conceal a positive own-price response offset by an inward demand shift; it does not identify elasticity on a fixed demand curve.",
       "source": "engine2_expansion",
-      "aHash": "4f6d1947b6031f1f5feda0cd0058804ad75d7a5b12730541bef32944bf36b6d7"
-    },
-    {
-      "id": 150033,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving campus meals, a household's demand for a good falls 6% when income rises 10%, with prices unchanged. What does the sign of this response imply?",
-      "options": [
-        "The good is inferior for this household",
-        "The good is normal and a necessity",
-        "The good is a substitute",
-        "The good is perfectly inelastic"
-      ],
-      "tag": "normal_inferior_goods",
-      "type": "calculation",
-      "objective": "LO4.2",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.2_normal_inferior_goods",
-      "primarySkill": "normal_inferior_goods",
-      "secondarySkills": [
-        "income_elasticity"
-      ],
-      "repairSkill": "normal_inferior_goods",
-      "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
-      "feedback": "Income elasticity is negative, so the good is inferior.",
-      "source": "engine2_expansion",
-      "aHash": "c144ebc503e8fceda776abdc93fbae0e9ca2c37c4b9df07781f2b6848576eabb"
-    },
-    {
-      "id": 150034,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving concert tickets, a price decrease for X produces a positive substitution effect of +4 units and a negative income effect of -1 unit. What is the total change in quantity demanded?",
-      "options": [
-        "+3 units",
-        "+5 units",
-        "-3 units",
-        "-5 units"
-      ],
-      "tag": "substitution_effect",
-      "type": "multi-step",
-      "objective": "LO4.3",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.3_substitution_effect",
-      "primarySkill": "substitution_effect",
-      "secondarySkills": [
-        "income_effect"
-      ],
-      "repairSkill": "substitution_effect",
-      "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
-      "feedback": "Total effect = substitution effect + income effect = 4 + (-1) = 3 units.",
-      "source": "engine2_expansion",
-      "aHash": "beb5ec53ad7185cb7f133947de50348cf0aab82d9d11f931c9dc26b6297e221e"
-    },
-    {
-      "id": 150035,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving ride-share trips, a price rise for an inferior good reduces real purchasing power. Which direction does the income effect push quantity of the inferior good?",
-      "options": [
-        "Upward",
-        "Downward",
-        "Always to zero",
-        "The direction cannot be linked to inferiority"
-      ],
-      "tag": "income_effect",
-      "type": "synthesis",
-      "objective": "LO4.3",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.3_income_effect",
-      "primarySkill": "income_effect",
-      "secondarySkills": [],
-      "repairSkill": "income_effect",
-      "commonError": "confuses_purchasing_power_with_relative_price substitution",
-      "feedback": "Lower real income raises demand for an inferior good, so the income effect of a price rise pushes its quantity upward.",
-      "source": "engine2_expansion",
-      "aHash": "69b565816811be91c81d5e62ea4e170a208433ba0eb9e8a4476536513c96bd03"
+      "aHash": "891a5815b46a4dcf47e8a004cf7cd4ac72b65fcdc31527e8732ce24deb4fd75d"
     },
     {
       "id": 150036,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving textbook purchases, for a Giffen good, a rise in price makes the consumer effectively poorer. Why can that increase purchases of the good?",
+      "q": "After a staple's price rises, a household is worse off but buys more of the staple. Preferences, money income, and other prices remain unchanged. Compensating the household back to its original utility at the new prices would instead make it buy less of the staple. What explains the difference between the compensated and actual choices?",
       "options": [
-        "Because the good is so strongly inferior that the purchasing-power effect toward it outweighs substitution away from it",
-        "Because the substitution effect reverses sign",
+        "The opposing income effect is stronger than substitution",
+        "The substitution effect favors the now more expensive good",
         "Because preferences become unstable",
         "Because market demand is averaged"
       ],
@@ -13926,16 +14536,16 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "giffen_good_logic",
       "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
-      "feedback": "The strong inferior-good income effect can dominate the ordinary substitution response.",
+      "feedback": "The compensated comparison isolates substitution away from the more expensive staple. The actual price rise also lowers purchasing power. For this strongly inferior good, that income effect increases purchases by more than substitution reduces them, producing Giffen behavior.",
       "source": "engine2_expansion",
-      "aHash": "8dcf9b6d2689fd44c1f9a9a33990a0b456f4159505b1e9dbfef84d2025fceb8a"
+      "aHash": "5ed839bca5791ca86736c6fc9cf040f02f39711e6f10ebc1710761f150bf5a24"
     },
     {
       "id": 150037,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving gym memberships, a researcher estimates a demand curve but omits a major preference trend correlated with price. What problem threatens the interpretation of the estimated price-quantity relationship?",
+      "q": "A researcher observes higher prices and larger sales during a growing preference for a product. The trend is correlated with price but omitted from the analysis; income and related-good prices are controlled. Why can the positive fitted price coefficient fail to describe an upward-sloping demand curve?",
       "options": [
-        "The observed relationship may mix movements along demand with shifts of demand",
+        "Movements along demand are mixed with shifts of demand",
         "Market demand must equal average individual demand",
         "Consumer surplus becomes undefined",
         "Income elasticity must be zero"
@@ -13949,16 +14559,16 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "demand_curve_shifts",
       "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
-      "feedback": "If demand shifters move with price, the data do not isolate a single demand curve.",
+      "feedback": "Controlling some demand determinants does not hold the omitted preference trend fixed. Its outward demand shifts can accompany higher observed prices and sales. The fitted coefficient can therefore mix shifts with movement along any one demand curve.",
       "source": "engine2_expansion",
-      "aHash": "2a08fde9353d94669a23f51c35f2aa60a23075acfa1e486675a95c2179612235"
+      "aHash": "eb40a64c0f3aa303748355c544f13393cc104a3d2142634a13db3577a4f0bbba"
     },
     {
       "id": 150038,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving movie tickets, why does the area under a demand curve and above the market price represent consumer surplus?",
+      "q": "A buyer values successive units at $12, $9, and $5, pays a uniform price of $6, and buys only units worth at least their price. An analyst counts both the buyer's payment and the value of the unpurchased third unit as consumer surplus. Which principle correctly separates surplus from those amounts?",
       "options": [
-        "The demand curve reflects marginal willingness to pay, so the vertical gap above price measures surplus unit by unit",
+        "Each unit's surplus is willingness to pay minus price",
         "The demand curve measures sellers' marginal cost",
         "All consumers pay their exact willingness to pay",
         "Price is always equal to maximum willingness to pay"
@@ -13972,17 +14582,17 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "consumer_surplus",
       "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
-      "feedback": "Aggregating willingness-to-pay minus price across purchased units gives the area under demand above price.",
+      "feedback": "Only the first two units are bought. Their surplus is (12-6)+(9-6)=$9. The $12 payment is expenditure, and the third unit creates no realized surplus because its value is below price. Summing willingness to pay minus price over purchased units gives consumer surplus.",
       "source": "engine2_expansion",
-      "aHash": "371b1d896cb013cdfe346586b2228879ddc5cb6b3000d1b92de2c6ad86002178"
+      "aHash": "2ad5bdc08ea5b7c95f3d520f51aecbd9b89e34dff6b313684b190308b67582ea"
     },
     {
       "id": 150039,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving coffee purchases, why can market demand have a kink even when each individual's demand is smooth over the quantities they purchase?",
+      "q": "Two buyers have individual demands Q₁=max(12-P,0) and Q₂=max(8-P,0). Each demand is smooth wherever its quantity is positive, yet the market curve changes slope at P=8. Why can horizontal aggregation create this kink without any change in either buyer's preferences?",
       "options": [
-        "Different consumers can enter or exit the market at different price thresholds, changing the horizontal sum",
-        "Market demand is a vertical sum",
+        "Buyers enter at different prices, changing the total slope",
+        "Individual price thresholds are added vertically at each quantity",
         "Consumer surplus creates kinks automatically",
         "All individual demands must be identical"
       ],
@@ -13995,16 +14605,16 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "market_demand_aggregation",
       "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
-      "feedback": "As price changes, the set of consumers with positive demand can change, altering the slope of the aggregate demand curve.",
+      "feedback": "Above P=8 only buyer 1 purchases, so market demand has dQ/dP=-1. Below P=8 both purchase, so the derivatives add to -2. The active set of buyers changes at the threshold, even though each positive-quantity segment is smooth.",
       "source": "engine2_expansion",
-      "aHash": "ec81b684cda14c494090215b5ad87bc09efd2d8f84b0ed7dc6acbfb4f53810a0"
+      "aHash": "095c1a54d4ad6ca59b0899a3b8bbb590024aec34d030285f3ed9c1842c673a12"
     },
     {
       "id": 150040,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving streaming subscriptions, a firm's demand elasticity estimate changes along a linear demand curve even though the slope is constant. Why?",
+      "q": "Demand is Q=100-2P. At P=$40 and P=$10, the slope dQ/dP is the same, yet a small price increase lowers revenue at the first point and raises it at the second. What reconciles these responses?",
       "options": [
-        "Elasticity also depends on the price-to-quantity ratio at the point",
+        "The price-to-quantity ratio changes along the curve",
         "The slope secretly changes",
         "Linear demand must have unit elasticity everywhere",
         "Elasticity is independent of price and quantity"
@@ -14018,129 +14628,14 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "price_elasticity_fundamentals",
       "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
-      "feedback": "Point elasticity equals slope-related responsiveness multiplied by P/Q, so it varies along a linear curve.",
+      "feedback": "At P=40, Q=20 and absolute point elasticity is 2×40/20=4. At P=10, Q=80 and it is 2×10/80=0.25. The common slope does not imply common elasticity because P/Q differs. Revenue responds differently in the elastic and inelastic regions.",
       "source": "engine2_expansion",
-      "aHash": "a8c07dae721c40617c0fbb09a71baca82308693d2bd38f83f9041bc448e49c40"
-    },
-    {
-      "id": 150041,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving campus meals, when midpoint elasticity is 1.00 between two points, which interpretation is best?",
-      "options": [
-        "The percentage change in quantity equals the percentage change in price in magnitude over that interval",
-        "The slope of demand is -1",
-        "Total revenue must be zero",
-        "Price and quantity levels are equal"
-      ],
-      "tag": "midpoint_elasticity",
-      "type": "synthesis",
-      "objective": "LO4.7",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.7_midpoint_elasticity",
-      "primarySkill": "midpoint_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "midpoint_elasticity",
-      "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
-      "feedback": "Unit elasticity means equal percentage changes in price and quantity, not equal levels or slope.",
-      "source": "engine2_expansion",
-      "aHash": "fa5b2591be44f36adfeaaab1ae069a2433c49c6eb45bb8ff396733c7c01161b4"
-    },
-    {
-      "id": 150042,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving concert tickets, on a linear demand curve, total revenue is maximized at the quantity where demand is approximately what?",
-      "options": [
-        "Unit elastic",
-        "Perfectly inelastic",
-        "Perfectly elastic",
-        "Always inelastic"
-      ],
-      "tag": "elasticity_total_revenue",
-      "type": "integration",
-      "objective": "LO4.7",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.7_elasticity_total_revenue",
-      "primarySkill": "elasticity_total_revenue",
-      "secondarySkills": [],
-      "repairSkill": "elasticity_total_revenue",
-      "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
-      "feedback": "Along a linear demand curve, total revenue peaks where elasticity transitions through unit elasticity.",
-      "source": "engine2_expansion",
-      "aHash": "9a643cf5dcd22f83a67be1168305fb5af5e8a6221e1299027e74c458f4e5589c"
-    },
-    {
-      "id": 150043,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving ride-share trips, two products have cross-price elasticity -1.2. If the price of Y rises 5%, what approximate change in Qx is predicted, holding other factors fixed?",
-      "options": [
-        "A 6% decrease",
-        "A 6% increase",
-        "A 4.2% decrease",
-        "A 1.2% decrease"
-      ],
-      "tag": "cross_price_elasticity",
-      "type": "calculation",
-      "objective": "LO4.7",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.7_cross_price_elasticity",
-      "primarySkill": "cross_price_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "cross_price_elasticity",
-      "commonError": "reverses_the_sign_interpretation_for_substitutes_and_complements",
-      "feedback": "%\u0394Qx \u2248 Exy \u00d7 %\u0394Py = -1.2 \u00d7 5% = -6%.",
-      "source": "engine2_expansion",
-      "aHash": "f4379d747e6bf0ab6a5cf3d03eb450c6b5a46d193ed642a9a7692e797bba682a"
-    },
-    {
-      "id": 150044,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving textbook purchases, income falls 5% and a good's income elasticity is -0.8. What approximate change in quantity demanded is predicted?",
-      "options": [
-        "A 4% increase",
-        "A 4% decrease",
-        "An 8% increase",
-        "A 0.8% increase"
-      ],
-      "tag": "income_elasticity",
-      "type": "calculation",
-      "objective": "LO4.7",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.7_income_elasticity",
-      "primarySkill": "income_elasticity",
-      "secondarySkills": [],
-      "repairSkill": "income_elasticity",
-      "commonError": "reverses_the_sign_or_magnitude_interpretation_of_income_elasticity",
-      "feedback": "%\u0394Q \u2248 Ey \u00d7 %\u0394Income = -0.8 \u00d7 -5% = +4%.",
-      "source": "engine2_expansion",
-      "aHash": "8a9dc06b6e65012609b1be11814dda93d1169c12a0d51ca090848054d700e7c9"
-    },
-    {
-      "id": 150045,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving gym memberships, a product is a necessity in the short run, has few immediate substitutes, but new technologies can replace it over several years. Which pattern is most plausible?",
-      "options": [
-        "Relatively inelastic short-run demand and more elastic long-run demand",
-        "Perfectly elastic demand at all horizons",
-        "More elastic short-run than long-run demand by definition",
-        "Unit elasticity at every price"
-      ],
-      "tag": "elasticity_determinants",
-      "type": "synthesis",
-      "objective": "LO4.7",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.7_elasticity_determinants",
-      "primarySkill": "elasticity_determinants",
-      "secondarySkills": [],
-      "repairSkill": "elasticity_determinants",
-      "commonError": "assumes_elasticity_is_only_about_slope_and_ignores_substitutes_time_and_budget_share",
-      "feedback": "Necessity and few immediate substitutes reduce short-run responsiveness; substitution possibilities can expand over time.",
-      "source": "engine2_expansion",
-      "aHash": "2a9d77534a775c9e58d10b2be9053b37f9fe98f2aa85147462ece6c2002ce3b8"
+      "aHash": "86666c58cf880e57cbd84ed4ec271789e393eb3f4efbc922caf1890cab702b55"
     },
     {
       "id": 150046,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving movie tickets, a monotonic transformation converts U(A)=10 and U(B)=5 into V(A)=101 and V(B)=26 while preserving every ranking. Which statement is correct?",
+      "q": "A consumer's utility index is replaced by V = U² + 1, with U positive for every feasible bundle. U(A)=10 and U(B)=5 become V(A)=101 and V(B)=26. Prices and income are unchanged. An analyst treats the larger numerical gap as a reason to predict a new choice. Which conclusion is justified?",
       "options": [
         "The consumer-choice prediction is unchanged",
         "A becomes exactly twice as desirable as B",
@@ -14156,17 +14651,17 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "theory_of_choice",
       "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
-      "feedback": "Ordinal consumer theory depends on rankings, not the size of utility-number gaps.",
+      "feedback": "Squaring a positive utility index preserves every ranking but changes numerical differences. The affordable set is unchanged, so the maximizing bundle is unchanged; neither index measures how many times happier the consumer is.",
       "source": "engine2_expansion",
       "aHash": "b16464fb096032fcb939e73f1918102c85309afbee1fb6bcdcbead4c7cdf34c7"
     },
     {
       "id": 150047,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving coffee purchases, suppose preferences are complete but not transitive. Which part of the standard optimization story is most endangered?",
+      "q": "All pairs of bundles can be compared, but strict choices cycle: A is preferred to B, B to C, and C to A. Prices make all three bundles affordable. A proposed repair changes only the numerical utility labels. Which part of consumer optimization still cannot be recovered from these observations?",
       "options": [
-        "A stable ranking that supports a well-defined optimum",
-        "The arithmetic of budget intercepts",
+        "A consistent ranking of affordable alternatives",
+        "An affordable set defined by positive prices and income",
         "The definition of consumer surplus",
         "The sign of cross-price elasticity"
       ],
@@ -14179,17 +14674,17 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
-      "feedback": "Completeness alone does not prevent cycles; transitivity is needed for a coherent ranking and stable optimization.",
+      "feedback": "A relabeling cannot turn a strict cycle into a consistent ranking. Each affordable candidate is beaten by another. Completeness ensures comparison, while transitivity is needed to represent the comparisons with one ordered utility index.",
       "source": "engine2_expansion",
-      "aHash": "e59e1955aeab36b27ef6637dadbdadeb2dff3ac4a3167344de4e0aba2166653c"
+      "aHash": "110f15077bb97c09161ae1420505b635d9bd36498cbf60e4a24b2ad85de894e8"
     },
     {
       "id": 150048,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving streaming subscriptions, an indifference map is internally consistent, downward sloping, and nested. Which additional feature most naturally represents a taste for balanced bundles rather than extremes?",
+      "q": "A consumer ranks bundles consistently and prefers more of either good. Two distinct bundles give equal utility, and every weighted average of those bundles is at least as desirable as the endpoints. Which property adds this last restriction without following from consistency and more-is-better alone?",
       "options": [
-        "Convexity toward the origin",
-        "Crossing curves",
+        "Convex indifference curves",
+        "Indifference curves that intersect",
         "Upward slopes",
         "Identical intercepts"
       ],
@@ -14202,17 +14697,17 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "indifference_curve_properties",
       "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
-      "feedback": "Convex indifference curves reflect diminishing willingness to substitute and a preference for diversified bundles.",
+      "feedback": "Convex preferences make mixtures of equally preferred bundles at least as desirable as the extremes. Completeness, transitivity, and monotonicity alone do not require this taste for balanced bundles.",
       "source": "engine2_expansion",
-      "aHash": "fe6f7a8cd9a93f8252812fcbdfd8b1661298215aaead554aa74387c921f75b78"
+      "aHash": "c6e1cdf1ddf32c970a7a782815268e1cde988a65c1a56feaa43e61644f366b73"
     },
     {
       "id": 150049,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving campus meals, a consumer's MRS falls from 5 to 2 as X increases. The market price ratio Px/Py is 2. Which statement best describes the endpoint?",
+      "q": "A consumer spends the full budget on both goods and has smooth, strictly convex, monotonic preferences. Moving toward more X along the unchanged budget line lowers MRS from 5 to 2, while Px/Py remains 2. Why should the consumer stop at this endpoint rather than continue the same reallocation?",
       "options": [
-        "The consumer has moved toward a tangency where subjective and market tradeoffs match",
-        "The budget line must have become steeper",
+        "Willingness to trade now matches the market tradeoff",
+        "The budget line has rotated until its slope is zero",
         "The consumer is necessarily at a corner with zero Y",
         "Income elasticity must equal 2"
       ],
@@ -14225,132 +14720,17 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "marginal_rate_substitution",
       "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
-      "feedback": "When MRS converges to the price ratio, the subjective and market tradeoffs align at an interior optimum.",
+      "feedback": "Before the endpoint, willingness to give up Y for X exceeded the market cost. At the endpoint MRS equals the price ratio; strict convexity makes further movement toward X lower utility. Budget exhaustion and the stated preferences are essential to the conclusion.",
       "source": "engine2_expansion",
-      "aHash": "862d039a857d06b069171e66d45663eaf9fa0bd5ceadf536c3ee6f45394efb41"
-    },
-    {
-      "id": 150050,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Suppose the budget equation is 15X + 20Y = 100. Which pair of facts is simultaneously correct?",
-      "options": [
-        "X-intercept=6.66667 and slope=-0.75",
-        "X-intercept=5 and slope=-1.33",
-        "Y-intercept=6.66667 and slope=-0.75",
-        "X-intercept=100 and slope=-1"
-      ],
-      "tag": "budget_constraint_intercepts_slope",
-      "type": "synthesis",
-      "objective": "LO3.3",
-      "difficulty": "legendary",
-      "conceptCluster": "LO3.3_budget_constraint_intercepts_slope",
-      "primarySkill": "budget_constraint_intercepts_slope",
-      "secondarySkills": [],
-      "repairSkill": "budget_constraint_intercepts_slope",
-      "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
-      "feedback": "The X-intercept is I/Px and the slope is -Px/Py.",
-      "source": "engine2_expansion",
-      "aHash": "b0c38cafc5a4b88494b281c20e8dbcc8afa7565a3d57ac46cdad33a5323a4aba"
-    },
-    {
-      "id": 150051,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving ride-share trips, a policy doubles income, doubles Py, and leaves Px unchanged. Which description is best?",
-      "options": [
-        "The X-intercept doubles, the Y-intercept is unchanged, and the budget line becomes flatter",
-        "Both intercepts are unchanged",
-        "Both intercepts double and slope is unchanged",
-        "The X-intercept is unchanged and the line becomes steeper"
-      ],
-      "tag": "budget_line_changes",
-      "type": "integration",
-      "objective": "LO3.3",
-      "difficulty": "legendary",
-      "conceptCluster": "LO3.3_budget_line_changes",
-      "primarySkill": "budget_line_changes",
-      "secondarySkills": [],
-      "repairSkill": "budget_line_changes",
-      "commonError": "confuses_parallel_income_shifts_with_single_price_rotations",
-      "feedback": "I/Px doubles; I/Py stays constant because both I and Py double; Px/Py falls, so the line flattens.",
-      "source": "engine2_expansion",
-      "aHash": "bde5628360a137621aae1b18b9d5348f8adeb9884485a7f8cec72789305dba1f"
-    },
-    {
-      "id": 150052,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving textbook purchases, an interior optimum satisfies MRS=Px/Py. If Px falls and preferences stay fixed, why will the original bundle generally cease to be optimal?",
-      "options": [
-        "The market tradeoff changes, so the old MRS no longer matches the new relative price",
-        "The consumer's preferences automatically reverse",
-        "The budget constraint disappears",
-        "Marginal utility becomes cardinal"
-      ],
-      "tag": "utility_maximization_mrs",
-      "type": "integration",
-      "objective": "LO3.4",
-      "difficulty": "legendary",
-      "conceptCluster": "LO3.4_utility_maximization_mrs",
-      "primarySkill": "utility_maximization_mrs",
-      "secondarySkills": [],
-      "repairSkill": "utility_maximization_mrs",
-      "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
-      "feedback": "A price change alters the budget slope and therefore the tangency condition.",
-      "source": "engine2_expansion",
-      "aHash": "0cf7e246ec94e72180d8c9e0caf9c049db809a5a97f910edc401cb70e2bdc906"
-    },
-    {
-      "id": 150053,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving gym memberships, why is comparing MUx with MUy directly generally insufficient for allocating a fixed budget?",
-      "options": [
-        "Goods can have different prices, so the relevant comparison is utility gained per dollar",
-        "Marginal utility is always negative",
-        "Prices affect only supply",
-        "Utility maximization requires equal quantities"
-      ],
-      "tag": "marginal_utility_per_dollar",
-      "type": "synthesis",
-      "objective": "LO3.4",
-      "difficulty": "legendary",
-      "conceptCluster": "LO3.4_marginal_utility_per_dollar",
-      "primarySkill": "marginal_utility_per_dollar",
-      "secondarySkills": [],
-      "repairSkill": "marginal_utility_per_dollar",
-      "commonError": "compares_marginal_utility_without_dividing_by_price",
-      "feedback": "Budget allocation depends on the marginal benefit from the last dollar spent, not marginal utility alone.",
-      "source": "engine2_expansion",
-      "aHash": "44e048c66b6af018b4488a9752e35ec6c9b9cc2b6d640dbeb3da339995eee6f9"
-    },
-    {
-      "id": 150054,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving movie tickets, an individual's Marshallian demand for X is generated by repeated utility maximization. Which object changes directly as Px changes and produces the price-quantity locus?",
-      "options": [
-        "The budget constraint and resulting optimal bundle",
-        "The preference ordering itself",
-        "The number of consumers",
-        "The definition of utility"
-      ],
-      "tag": "derive_individual_demand",
-      "type": "integration",
-      "objective": "LO4.1",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.1_derive_individual_demand",
-      "primarySkill": "derive_individual_demand",
-      "secondarySkills": [],
-      "repairSkill": "derive_individual_demand",
-      "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
-      "feedback": "Changing Px changes the budget constraint; the resulting sequence of optimal X choices forms the individual demand curve.",
-      "source": "engine2_expansion",
-      "aHash": "01f11764703aa0eb784e2c03653de3155e7daba3d5c4661ff4169c7123ac5faf"
+      "aHash": "be5e255e062fd85ec2f3e21e205d1d611b4a909f4882039338f3cbb980b183f9"
     },
     {
       "id": 150055,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving coffee purchases, suppose Px falls, income falls, and X is normal. Why can't the observed change in Qx by itself identify the own-price response?",
+      "q": "For a normal good, two observations show a fall in its own price, a fall in consumer income, and unchanged quantity purchased. Preferences and other prices are stable. Why would treating the observations as evidence of zero own-price responsiveness be invalid?",
       "options": [
-        "The price effect and income-induced demand shift occur simultaneously",
-        "Normal goods never obey the law of demand",
+        "Price movements and income shifts occur together",
+        "Normal goods cannot have a positive own-price response",
         "Income affects only supply",
         "Own-price changes always shift demand"
       ],
@@ -14363,90 +14743,17 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "demand_response_income_prices",
       "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
-      "feedback": "Simultaneous changes in own price and income combine movement along demand with a shift of demand.",
+      "feedback": "The lower own price and lower income can push quantity in opposite directions. An unchanged observed quantity may therefore conceal a positive own-price response offset by an inward demand shift; it does not identify elasticity on a fixed demand curve.",
       "source": "engine2_expansion",
-      "aHash": "4f6d1947b6031f1f5feda0cd0058804ad75d7a5b12730541bef32944bf36b6d7"
-    },
-    {
-      "id": 150056,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving streaming subscriptions, a household's demand for a good falls 6% when income rises 10%, with prices unchanged. What does the sign of this response imply?",
-      "options": [
-        "The good is inferior for this household",
-        "The good is normal and a necessity",
-        "The good is a substitute",
-        "The good is perfectly inelastic"
-      ],
-      "tag": "normal_inferior_goods",
-      "type": "calculation",
-      "objective": "LO4.2",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.2_normal_inferior_goods",
-      "primarySkill": "normal_inferior_goods",
-      "secondarySkills": [
-        "income_elasticity"
-      ],
-      "repairSkill": "normal_inferior_goods",
-      "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
-      "feedback": "Income elasticity is negative, so the good is inferior.",
-      "source": "engine2_expansion",
-      "aHash": "c144ebc503e8fceda776abdc93fbae0e9ca2c37c4b9df07781f2b6848576eabb"
-    },
-    {
-      "id": 150057,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving campus meals, a price decrease for X produces a positive substitution effect of +4 units and a negative income effect of -1 unit. What is the total change in quantity demanded?",
-      "options": [
-        "+3 units",
-        "+5 units",
-        "-3 units",
-        "-5 units"
-      ],
-      "tag": "substitution_effect",
-      "type": "multi-step",
-      "objective": "LO4.3",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.3_substitution_effect",
-      "primarySkill": "substitution_effect",
-      "secondarySkills": [
-        "income_effect"
-      ],
-      "repairSkill": "substitution_effect",
-      "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
-      "feedback": "Total effect = substitution effect + income effect = 4 + (-1) = 3 units.",
-      "source": "engine2_expansion",
-      "aHash": "beb5ec53ad7185cb7f133947de50348cf0aab82d9d11f931c9dc26b6297e221e"
-    },
-    {
-      "id": 150058,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving concert tickets, a price rise for an inferior good reduces real purchasing power. Which direction does the income effect push quantity of the inferior good?",
-      "options": [
-        "Upward",
-        "Downward",
-        "Always to zero",
-        "The direction cannot be linked to inferiority"
-      ],
-      "tag": "income_effect",
-      "type": "synthesis",
-      "objective": "LO4.3",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.3_income_effect",
-      "primarySkill": "income_effect",
-      "secondarySkills": [],
-      "repairSkill": "income_effect",
-      "commonError": "confuses_purchasing_power_with_relative_price substitution",
-      "feedback": "Lower real income raises demand for an inferior good, so the income effect of a price rise pushes its quantity upward.",
-      "source": "engine2_expansion",
-      "aHash": "69b565816811be91c81d5e62ea4e170a208433ba0eb9e8a4476536513c96bd03"
+      "aHash": "891a5815b46a4dcf47e8a004cf7cd4ac72b65fcdc31527e8732ce24deb4fd75d"
     },
     {
       "id": 150059,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a consumer-choice scenario involving ride-share trips, for a Giffen good, a rise in price makes the consumer effectively poorer. Why can that increase purchases of the good?",
+      "q": "After a staple's price rises, a household is worse off but buys more of the staple. Preferences, money income, and other prices remain unchanged. Compensating the household back to its original utility at the new prices would instead make it buy less of the staple. What explains the difference between the compensated and actual choices?",
       "options": [
-        "Because the good is so strongly inferior that the purchasing-power effect toward it outweighs substitution away from it",
-        "Because the substitution effect reverses sign",
+        "The opposing income effect is stronger than substitution",
+        "The substitution effect favors the now more expensive good",
         "Because preferences become unstable",
         "Because market demand is averaged"
       ],
@@ -14459,19 +14766,19 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "giffen_good_logic",
       "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
-      "feedback": "The strong inferior-good income effect can dominate the ordinary substitution response.",
+      "feedback": "The compensated comparison isolates substitution away from the more expensive staple. The actual price rise also lowers purchasing power. For this strongly inferior good, that income effect increases purchases by more than substitution reduces them, producing Giffen behavior.",
       "source": "engine2_expansion",
-      "aHash": "8dcf9b6d2689fd44c1f9a9a33990a0b456f4159505b1e9dbfef84d2025fceb8a"
+      "aHash": "5ed839bca5791ca86736c6fc9cf040f02f39711e6f10ebc1710761f150bf5a24"
     },
     {
       "id": 150060,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. Which statement correctly compares the B\u2192A interval with the C\u2192B interval on the same linear demand curve?",
+      "q": "Refer to the graph. Which statement correctly compares the B→A interval with the C→B interval on the same linear demand curve?",
       "options": [
-        "B\u2192A is unit elastic, while C\u2192B is elastic",
+        "B→A is unit elastic, while C→B is elastic",
         "Both intervals are unit elastic",
-        "B\u2192A is elastic, while C\u2192B is inelastic",
-        "B\u2192A is perfectly inelastic, while C\u2192B is unit elastic"
+        "B→A is elastic, while C→B is inelastic",
+        "B→A is perfectly inelastic, while C→B is unit elastic"
       ],
       "tag": "midpoint_elasticity",
       "type": "synthesis",
@@ -14485,7 +14792,7 @@ const questionBank = {
       ],
       "repairSkill": "midpoint_elasticity",
       "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
-      "feedback": "B\u2192A has midpoint elasticity 1. C\u2192B has midpoint elasticity about 2.2. Elasticity therefore declines as the movement proceeds down the linear curve.",
+      "feedback": "B→A has midpoint elasticity 1. C→B has midpoint elasticity about 2.2. Elasticity therefore declines as the movement proceeds down the linear curve.",
       "source": "graph_batch_elasticity_20260816",
       "image": "ELASTICITY-01.png",
       "imageAlt": "Straight downward-sloping Demand line with labeled points C, B and A.",
@@ -14497,8 +14804,8 @@ const questionBank = {
       "sourceGame": "labyrinthOfChoice",
       "q": "Refer to the graph. Which pair of midpoint elasticity estimates best matches D1 and D2 over the $5-to-$3 price change?",
       "options": [
-        "D1 \u2248 1.45 and D2 \u2248 0.31",
-        "D1 \u2248 0.31 and D2 \u2248 1.45",
+        "D1 ≈ 1.45 and D2 ≈ 0.31",
+        "D1 ≈ 0.31 and D2 ≈ 1.45",
         "D1 = 1 and D2 = 1",
         "D1 = 0 and D2 = infinity"
       ],
@@ -14522,319 +14829,12 @@ const questionBank = {
       "aHash": "85feb8ad028b3a521ff6c3dfb78fa93064117719ad3ec319bb805d78da1a8406"
     },
     {
-      "id": 150062,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. A student claims that the horizontal line must be perfectly inelastic because price never changes between A and B. What is the best critique?",
-      "options": [
-        "The student has it backward: a horizontal demand curve is perfectly elastic because an arbitrarily small price increase causes quantity demanded to collapse",
-        "The student is correct because price is fixed",
-        "The curve is unit elastic because A and B share the same price",
-        "Elasticity cannot be classified from the graph"
-      ],
-      "tag": "price_elasticity_fundamentals",
-      "type": "critique",
-      "objective": "LO4.7",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.7_price_elasticity_fundamentals",
-      "primarySkill": "price_elasticity_fundamentals",
-      "secondarySkills": [],
-      "repairSkill": "price_elasticity_fundamentals",
-      "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
-      "feedback": "Slope orientation matters here: vertical demand is perfectly inelastic, while horizontal demand is perfectly elastic.",
-      "source": "graph_batch_elasticity_20260816",
-      "image": "ELASTICITY-05.png",
-      "imageAlt": "Horizontal Demand line at price 10 with A at quantity 50 and B at quantity 100.",
-      "graphRequired": true,
-      "aHash": "8d831302e3a137e0797df55a24f56efe0ff4c238c40c8690fcc903b35e27fd7b"
-    },
-    {
-      "id": 310009,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. The tangency at point A means the slope of IC2 at A must equal...",
-      "options": [
-        "the consumer\u2019s income",
-        "the slope of the budget line",
-        "the vertical intercept",
-        "zero"
-      ],
-      "tag": "utility_maximization_mrs",
-      "type": "graph",
-      "objective": "LO3.4",
-      "difficulty": "legendary",
-      "conceptCluster": "LO3.4_utility_maximization_mrs",
-      "primarySkill": "utility_maximization_mrs",
-      "secondarySkills": [
-        "marginal_rate_substitution"
-      ],
-      "repairSkill": "utility_maximization_mrs",
-      "commonError": "cannot_translate_a_tangency_picture_into_the_mrs_equals_price_ratio_condition",
-      "feedback": "At an interior optimum, the indifference curve and the budget line share a common slope. That is the MRS = price ratio condition.",
-      "source": "graph_batch_indifference_20260816",
-      "image": "IC-04.png",
-      "imageAlt": "Budget line and downward-curving IC2 touching at point A, Good X 15 and Good Y 10.",
-      "graphRequired": true,
-      "aHash": "5eb06c0d47f7167b3d1a732d987e9643b5e84946a95601b46633f662148a6b5d"
-    },
-    {
-      "id": 310028,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. After Good X becomes cheaper, the movement from B to C indicates that the income effect causes the consumer to...",
-      "options": [
-        "buy less X and more Y",
-        "buy less of both goods",
-        "buy less X and less Y",
-        "buy fewer units of X than at B but more Y than at B"
-      ],
-      "tag": "income_effect",
-      "type": "graph",
-      "objective": "LO4.3",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.3_income_effect",
-      "primarySkill": "income_effect",
-      "secondarySkills": [
-        "substitution_effect"
-      ],
-      "repairSkill": "income_effect",
-      "commonError": "ignores_that_income_effect_can_partially_offset_the_substitution_effect",
-      "feedback": "From B to C, the consumer gives up some X but buys more Y. The income effect partly offsets the substitution effect for X while increasing Y.",
-      "source": "graph_batch_indifference_20260816",
-      "image": "INCOME-SUB-04.png",
-      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and labeled bundles A, B and C.",
-      "graphRequired": true,
-      "aHash": "82f2b3dc96d8a8f8c53ff2dfa46467d17372ebad5eda90396c0cc5cbe2d6920c"
-    },
-    {
-      "id": 310029,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. Comparing the initial and final optima, which statement is correct?",
-      "options": [
-        "At C the consumer buys less X and more Y than at A",
-        "At C the consumer buys more X and less Y than at A",
-        "At C the consumer buys more X and more Y than at A",
-        "At C the consumer buys the same amounts as at A"
-      ],
-      "tag": "demand_response_income_prices",
-      "type": "graph",
-      "objective": "LO4.2",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.2_demand_response_income_prices",
-      "primarySkill": "demand_response_income_prices",
-      "secondarySkills": [
-        "income_effect",
-        "substitution_effect"
-      ],
-      "repairSkill": "demand_response_income_prices",
-      "commonError": "cannot_compare_initial_and_final_optima_after_a_price_change",
-      "feedback": "Point A is about (10, 20) and point C is about (15, 25), so the final bundle contains more of both goods than the initial bundle.",
-      "source": "graph_batch_indifference_20260816",
-      "image": "INCOME-SUB-04.png",
-      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and labeled bundles A, B and C.",
-      "graphRequired": true,
-      "aHash": "cab23d63ec3db6c65dc608a509e6beda3ce0bfbbc72c70d35438c1c731a689d9"
-    },
-    {
-      "id": 310030,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. Which statement best describes point B in the price-increase graph?",
-      "options": [
-        "It is the final optimum on the new lower indifference curve",
-        "It is the compensated bundle that isolates the substitution effect",
-        "It is unaffordable",
-        "It is the initial optimum before prices change"
-      ],
-      "tag": "substitution_effect",
-      "type": "graph",
-      "objective": "LO4.3",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.3_substitution_effect",
-      "primarySkill": "substitution_effect",
-      "secondarySkills": [
-        "income_effect"
-      ],
-      "repairSkill": "substitution_effect",
-      "commonError": "mistakes_the_compensated_bundle_for_the_final_choice",
-      "feedback": "Point B sits on the compensated budget line tangent to the original utility level, so it isolates the substitution effect.",
-      "source": "graph_batch_indifference_20260816",
-      "image": "INCOME-SUB-02.png",
-      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C; Budget1 is steeper.",
-      "graphRequired": true,
-      "aHash": "8f2565d7a0c4d42ee4ecc9ceaba32d8472b7bbbf3bf04eb2c5a98d1f2ca1e5e3"
-    },
-    {
-      "id": 310031,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. In the Y-price-drop graph, which point represents the substitution-effect bundle?",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "No point does"
-      ],
-      "tag": "substitution_effect",
-      "type": "graph",
-      "objective": "LO4.3",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.3_substitution_effect",
-      "primarySkill": "substitution_effect",
-      "secondarySkills": [
-        "budget_line_changes"
-      ],
-      "repairSkill": "substitution_effect",
-      "commonError": "cannot_identify_the_compensated_tangency_bundle",
-      "feedback": "Point B is the compensated bundle: it lies on the dashed line and the original indifference curve, isolating the substitution effect.",
-      "source": "graph_batch_indifference_20260816",
-      "image": "INCOME-SUB-03.png",
-      "imageAlt": "Two budget lines sharing an X intercept, curves U0 and U1, and points A, B and C; Budget1 reaches higher on Y.",
-      "graphRequired": true,
-      "aHash": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d"
-    },
-    {
-      "id": 310032,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. Why does point C lie on a higher indifference curve than point A?",
-      "options": [
-        "Because the consumer became less efficient",
-        "Because the price change and resulting income effect let the consumer reach a higher utility level",
-        "Because point C is off the budget line",
-        "Because point A violates the budget constraint"
-      ],
-      "tag": "income_effect",
-      "type": "graph",
-      "objective": "LO4.3",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.3_income_effect",
-      "primarySkill": "income_effect",
-      "secondarySkills": [
-        "demand_response_income_prices"
-      ],
-      "repairSkill": "income_effect",
-      "commonError": "fails_to_link_real_income_gain_with_higher_utility",
-      "feedback": "The lower price raises real purchasing power, so after substitution and income effects the consumer reaches a higher indifference curve at C.",
-      "source": "graph_batch_indifference_20260816",
-      "image": "INCOME-SUB-01.png",
-      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C.",
-      "graphRequired": true,
-      "aHash": "1f0a5da8b1ef9e94161a17a3f0833f9c19ea4e3642d3aa997c350fa2f517e348"
-    },
-    {
-      "id": 310054,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. In the price-drop-for-Good-X graph, the movement from point B to point C means the income effect causes the consumer to...",
-      "options": [
-        "buy more Good X and more Good Y",
-        "buy more Good X and the same amount of Good Y",
-        "buy less Good X and more Good Y",
-        "buy less of both goods"
-      ],
-      "tag": "income_effect",
-      "type": "graph",
-      "objective": "LO4.3",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.3_income_effect",
-      "primarySkill": "income_effect",
-      "secondarySkills": [
-        "substitution_effect"
-      ],
-      "repairSkill": "income_effect",
-      "commonError": "cannot_trace_the_income_effect_from_the_compensated_bundle_to_the_final_bundle",
-      "feedback": "From B to C, Good X rises from 10 to 20 and Good Y rises from 10 to 20. The income effect raises consumption of both goods in this graph.",
-      "source": "graph_batch_indifference_actual_20260816",
-      "image": "INCOME-SUB-01.png",
-      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C.",
-      "graphRequired": true,
-      "aHash": "83e984e191fcb7e862cde7dc74a0f636dd5a9d072ac0d70ba8a4742634570fba"
-    },
-    {
-      "id": 310055,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. In the price-drop-for-Good-Y graph, what does the move from point B to point C show?",
-      "options": [
-        "the substitution effect reduces both goods",
-        "the income effect raises both goods from the compensated bundle",
-        "the final bundle is on the original utility curve",
-        "Good Y falls while Good X rises"
-      ],
-      "tag": "income_effect",
-      "type": "graph",
-      "objective": "LO4.3",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.3_income_effect",
-      "primarySkill": "income_effect",
-      "secondarySkills": [
-        "substitution_effect"
-      ],
-      "repairSkill": "income_effect",
-      "commonError": "fails_to_separate_the_income_effect_from_the_substitution_effect",
-      "feedback": "From B at (10, 10) to C at (20, 20), the consumer buys more of both goods. That is the income effect after Good Y becomes cheaper.",
-      "source": "graph_batch_indifference_actual_20260816",
-      "image": "INCOME-SUB-03.png",
-      "imageAlt": "Two budget lines sharing an X intercept, curves U0 and U1, and points A, B and C; Budget1 reaches higher on Y.",
-      "graphRequired": true,
-      "aHash": "cfaae0b55e001e397e1b58b21c054b4ea393c90f71f5dfe46b4e1b77ceff1466"
-    },
-    {
-      "id": 310056,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. In the price-rise-for-Good-X graph, what does the movement from point A to point B show?",
-      "options": [
-        "more Good X and less Good Y",
-        "less Good X and more Good Y",
-        "less Good X and less Good Y",
-        "more of both goods"
-      ],
-      "tag": "substitution_effect",
-      "type": "graph",
-      "objective": "LO4.3",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.3_substitution_effect",
-      "primarySkill": "substitution_effect",
-      "secondarySkills": [
-        "budget_line_changes"
-      ],
-      "repairSkill": "substitution_effect",
-      "commonError": "gets_the_direction_of_substitution_wrong_when_good_x_becomes_more_expensive",
-      "feedback": "From A at (20, 20) to B at (10, 40), Good X falls and Good Y rises. The substitution effect pushes the consumer away from the now more expensive Good X.",
-      "source": "graph_batch_indifference_actual_20260816",
-      "image": "INCOME-SUB-02.png",
-      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C; Budget1 is steeper.",
-      "graphRequired": true,
-      "aHash": "fa66951af26b0feb75b2762a47f1a2350d498789551ae2ecfd5f11f3e8c75289"
-    },
-    {
-      "id": 310057,
-      "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. In the same price-rise-for-Good-X graph, what does the movement from point B to point C show?",
-      "options": [
-        "more Good X and less Good Y",
-        "less Good X and less Good Y",
-        "less Good X and more Good Y",
-        "more of both goods"
-      ],
-      "tag": "income_effect",
-      "type": "graph",
-      "objective": "LO4.3",
-      "difficulty": "legendary",
-      "conceptCluster": "LO4.3_income_effect",
-      "primarySkill": "income_effect",
-      "secondarySkills": [
-        "substitution_effect"
-      ],
-      "repairSkill": "income_effect",
-      "commonError": "cannot_read_the_income_effect_after_a_price_increase",
-      "feedback": "From B at (10, 40) to C at (5, 20), both goods decrease. The income effect lowers real purchasing power.",
-      "source": "graph_batch_indifference_actual_20260816",
-      "image": "INCOME-SUB-02.png",
-      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and points A, B and C; Budget1 is steeper.",
-      "graphRequired": true,
-      "aHash": "565aa66afe948be1602a81fd1d34e5d52d79f23db3d44d526abd698b224f406b"
-    },
-    {
       "id": 310058,
       "sourceGame": "labyrinthOfChoice",
-      "q": "Refer to the graph. Why is point B not the consumer\u2019s final choice after the price of Good X falls?",
+      "q": "Refer to the graph. Why is point B not the consumer’s final choice after the price of Good X falls?",
       "options": [
         "Because it is not on any indifference curve",
-        "Because it stays on the original utility curve U\u2080 and only isolates the substitution effect",
+        "It holds utility fixed to isolate substitution",
         "Because it lies outside the new budget set",
         "Because it gives higher utility than point C"
       ],
@@ -14850,19 +14850,19 @@ const questionBank = {
       ],
       "repairSkill": "substitution_effect",
       "commonError": "mistakes_the_compensated_bundle_for_the_final_utility_maximizing_bundle",
-      "feedback": "Point B is the compensated bundle on the original utility curve U\u2080. The final choice is point C on the new budget line and higher utility curve U\u2081.",
+      "feedback": "B=(20,5) maximizes utility on the compensated budget X+Y=25 and remains on U0. Actual income permits X+Y=40; its optimum C=(15,25) lies on the higher U1. B isolates substitution rather than the full price-change response.",
       "source": "graph_batch_indifference_actual_20260816",
       "image": "INCOME-SUB-04.png",
-      "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and labeled bundles A, B and C.",
+      "imageAlt": "Convex indifference curves with original optimum A (10,20), compensated optimum B (20,5), and final optimum C (15,25).",
       "graphRequired": true,
-      "aHash": "f22b31925da5c739bd742058cc16d5f0df19b71101365f9444625f5c66fc774f"
+      "aHash": "8340f8d6b55c89a49753a719eb2d56fd1d2fe3a17071e01f83e92294bd5aef04"
     }
   ],
   "legendaryBoss": [
     {
       "id": 210000,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial \u2014 A monotonic transformation converts U(A)=10 and U(B)=5 into V(A)=101 and V(B)=26 while preserving every ranking. Which statement is correct?",
+      "q": "A consumer's utility index is replaced by V = U² + 1, with U positive for every feasible bundle. U(A)=10 and U(B)=5 become V(A)=101 and V(B)=26. Prices and income are unchanged. An analyst treats the larger numerical gap as a reason to predict a new choice. Which conclusion is justified?",
       "options": [
         "The consumer-choice prediction is unchanged",
         "A becomes exactly twice as desirable as B",
@@ -14878,14 +14878,14 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "theory_of_choice",
       "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
-      "feedback": "Ordinal consumer theory depends on rankings, not the size of utility-number gaps.",
+      "feedback": "Squaring a positive utility index preserves every ranking but changes numerical differences. The affordable set is unchanged, so the maximizing bundle is unchanged; neither index measures how many times happier the consumer is.",
       "source": "engine2_legendary_boss",
       "aHash": "b16464fb096032fcb939e73f1918102c85309afbee1fb6bcdcbead4c7cdf34c7"
     },
     {
       "id": 210001,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a new trial involving campus meals, the Sovereign's final trial \u2014 A monotonic transformation converts U(A)=10 and U(B)=5 into V(A)=101 and V(B)=26 while preserving every ranking. Which statement is correct?",
+      "q": "A consumer's utility index is replaced by V = U² + 1, with U positive for every feasible bundle. U(A)=10 and U(B)=5 become V(A)=101 and V(B)=26. Prices and income are unchanged. An analyst treats the larger numerical gap as a reason to predict a new choice. Which conclusion is justified?",
       "options": [
         "The consumer-choice prediction is unchanged",
         "A becomes exactly twice as desirable as B",
@@ -14901,14 +14901,14 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "theory_of_choice",
       "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
-      "feedback": "Ordinal consumer theory depends on rankings, not the size of utility-number gaps.",
+      "feedback": "Squaring a positive utility index preserves every ranking but changes numerical differences. The affordable set is unchanged, so the maximizing bundle is unchanged; neither index measures how many times happier the consumer is.",
       "source": "engine2_legendary_boss",
       "aHash": "b16464fb096032fcb939e73f1918102c85309afbee1fb6bcdcbead4c7cdf34c7"
     },
     {
       "id": 210002,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a new trial involving concert tickets, the Sovereign's final trial \u2014 A monotonic transformation converts U(A)=10 and U(B)=5 into V(A)=101 and V(B)=26 while preserving every ranking. Which statement is correct?",
+      "q": "A consumer's utility index is replaced by V = U² + 1, with U positive for every feasible bundle. U(A)=10 and U(B)=5 become V(A)=101 and V(B)=26. Prices and income are unchanged. An analyst treats the larger numerical gap as a reason to predict a new choice. Which conclusion is justified?",
       "options": [
         "The consumer-choice prediction is unchanged",
         "A becomes exactly twice as desirable as B",
@@ -14924,14 +14924,14 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "theory_of_choice",
       "commonError": "treats_choice_as_random_or_ignores_feasibility_and_preferences",
-      "feedback": "Ordinal consumer theory depends on rankings, not the size of utility-number gaps.",
+      "feedback": "Squaring a positive utility index preserves every ranking but changes numerical differences. The affordable set is unchanged, so the maximizing bundle is unchanged; neither index measures how many times happier the consumer is.",
       "source": "engine2_legendary_boss",
       "aHash": "b16464fb096032fcb939e73f1918102c85309afbee1fb6bcdcbead4c7cdf34c7"
     },
     {
       "id": 210003,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial \u2014 Suppose preferences are complete but not transitive. Which part of the standard optimization story is most endangered?",
+      "q": "All pairs of bundles can be compared, but strict choices cycle: A is preferred to B, B to C, and C to A. Prices make all three bundles affordable. A proposed repair changes only the numerical utility labels. Which part of consumer optimization still cannot be recovered from these observations?",
       "options": [
         "A stable ranking that supports a well-defined optimum",
         "The arithmetic of budget intercepts",
@@ -14947,14 +14947,14 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "preferences_complete_transitive",
       "commonError": "confuses_completeness_with_transitivity_or_accepts_inconsistent_rankings",
-      "feedback": "Completeness alone does not prevent cycles; transitivity is needed for a coherent ranking and stable optimization.",
+      "feedback": "A relabeling cannot turn a strict cycle into a consistent ranking. Each affordable candidate is beaten by another. Completeness ensures comparison, while transitivity is needed to represent the comparisons with one ordered utility index.",
       "source": "engine2_legendary_boss",
       "aHash": "e59e1955aeab36b27ef6637dadbdadeb2dff3ac4a3167344de4e0aba2166653c"
     },
     {
       "id": 210004,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial \u2014 An indifference map is internally consistent, downward sloping, and nested. Which additional feature most naturally represents a taste for balanced bundles rather than extremes?",
+      "q": "A consumer ranks bundles consistently and prefers more of either good. Two distinct bundles give equal utility, and every weighted average of those bundles is at least as desirable as the endpoints. Which property adds this last restriction without following from consistency and more-is-better alone?",
       "options": [
         "Convexity toward the origin",
         "Crossing curves",
@@ -14970,14 +14970,14 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "indifference_curve_properties",
       "commonError": "treats_indifference_curves_as_budget_lines_or_allows_crossing_curves",
-      "feedback": "Convex indifference curves reflect diminishing willingness to substitute and a preference for diversified bundles.",
+      "feedback": "Convex preferences make mixtures of equally preferred bundles at least as desirable as the extremes. Completeness, transitivity, and monotonicity alone do not require this taste for balanced bundles.",
       "source": "engine2_legendary_boss",
       "aHash": "fe6f7a8cd9a93f8252812fcbdfd8b1661298215aaead554aa74387c921f75b78"
     },
     {
       "id": 210005,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial \u2014 A consumer's MRS falls from 5 to 2 as X increases. The market price ratio Px/Py is 2. Which statement best describes the endpoint?",
+      "q": "A consumer spends the full budget on both goods and has smooth, strictly convex, monotonic preferences. Moving toward more X along the unchanged budget line lowers MRS from 5 to 2, while Px/Py remains 2. Why should the consumer stop at this endpoint rather than continue the same reallocation?",
       "options": [
         "The consumer has moved toward a tangency where subjective and market tradeoffs match",
         "The budget line must have become steeper",
@@ -14993,19 +14993,19 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "marginal_rate_substitution",
       "commonError": "confuses_mrs_with_a_price_or_reverses_the_tradeoff_between_goods",
-      "feedback": "When MRS converges to the price ratio, the subjective and market tradeoffs align at an interior optimum.",
+      "feedback": "Before the endpoint, willingness to give up Y for X exceeded the market cost. At the endpoint MRS equals the price ratio; strict convexity makes further movement toward X lower utility. Budget exhaustion and the stated preferences are essential to the conclusion.",
       "source": "engine2_legendary_boss",
       "aHash": "862d039a857d06b069171e66d45663eaf9fa0bd5ceadf536c3ee6f45394efb41"
     },
     {
       "id": 210006,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial \u2014 Suppose the budget equation is 5X + 10Y = 60. Which pair of facts is simultaneously correct?",
+      "q": "A consumer starts with 5X + 10Y = 60. A policy doubles income and both prices. An analyst predicts that the X-intercept doubles and the line steepens. Which description of the post-policy budget line is correct?",
       "options": [
         "X-intercept=12 and slope=-0.50",
-        "X-intercept=6 and slope=-2.00",
-        "Y-intercept=12 and slope=-0.50",
-        "X-intercept=60 and slope=-1"
+        "X-intercept=24 and slope=-0.50",
+        "X-intercept=12 and slope=-2.00",
+        "X-intercept=24 and slope=-2.00"
       ],
       "tag": "budget_constraint_intercepts_slope",
       "type": "synthesis",
@@ -15016,14 +15016,14 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "budget_constraint_intercepts_slope",
       "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
-      "feedback": "The X-intercept is I/Px and the slope is -Px/Py.",
+      "feedback": "The new equation is 10X+20Y=120, which is the original feasible set multiplied by two. The X-intercept is 120/10=12 and the slope is -10/20=-0.50.",
       "source": "engine2_legendary_boss",
       "aHash": "56bacb7f697eeb84038a42fcb6f80fb81b0d6273441486f1503f9253b41b117e"
     },
     {
       "id": 210007,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial \u2014 A policy doubles income, doubles Py, and leaves Px unchanged. Which description is best?",
+      "q": "A policy doubles income, doubles Py, and leaves Px unchanged. Which description is best?",
       "options": [
         "The X-intercept doubles, the Y-intercept is unchanged, and the budget line becomes flatter",
         "Both intercepts are unchanged",
@@ -15046,12 +15046,12 @@ const questionBank = {
     {
       "id": 210008,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial \u2014 Suppose the budget equation is 15X + 20Y = 100. Which pair of facts is simultaneously correct?",
+      "q": "A consumer initially has income $60 with Px=$5 and Py=$10. A policy doubles income and Py but leaves Px unchanged. Another analyst calls this a pure income increase that preserves relative prices. Which description correctly accounts for both changes?",
       "options": [
-        "X-intercept=6.66667 and slope=-0.75",
-        "X-intercept=5 and slope=-1.33",
-        "Y-intercept=6.66667 and slope=-0.75",
-        "X-intercept=100 and slope=-1"
+        "The X-intercept doubles, the Y-intercept stays fixed, and the line flattens",
+        "Both intercepts double and the slope stays fixed because income doubles",
+        "Both intercepts stay fixed and the slope stays fixed because Py doubles",
+        "The X-intercept stays fixed, the Y-intercept doubles, and the line steepens"
       ],
       "tag": "budget_constraint_intercepts_slope",
       "type": "synthesis",
@@ -15062,19 +15062,19 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "budget_constraint_intercepts_slope",
       "commonError": "confuses_income_with_price_ratio_or_miscalculates_intercepts",
-      "feedback": "The X-intercept is I/Px and the slope is -Px/Py.",
+      "feedback": "I/Px doubles, while I/Py is unchanged. The absolute slope Px/Py halves. The policy expands opportunities for X without being a parallel income shift.",
       "source": "engine2_legendary_boss",
-      "aHash": "b0c38cafc5a4b88494b281c20e8dbcc8afa7565a3d57ac46cdad33a5323a4aba"
+      "aHash": "7b87f8c48668664e54e840e8f44ed123a0dd2864ba3652040cc428b89f1e6cb2"
     },
     {
       "id": 210009,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial \u2014 An interior optimum satisfies MRS=Px/Py. If Px falls and preferences stay fixed, why will the original bundle generally cease to be optimal?",
+      "q": "A consumer initially exhausts the budget at a smooth interior optimum. Px then falls with money income and Py unchanged. The old bundle becomes affordable with money left over, and preferences at that bundle are unchanged. Why is repeating the old choice generally not optimal?",
       "options": [
-        "The market tradeoff changes, so the old MRS no longer matches the new relative price",
-        "The consumer's preferences automatically reverse",
-        "The budget constraint disappears",
-        "Marginal utility becomes cardinal"
+        "The price ratio changes while the old bundle's MRS stays fixed",
+        "The price fall changes the old bundle's preferences by the same amount",
+        "The old bundle becomes unaffordable despite the lower price",
+        "The lower price requires the consumer to buy equal quantities"
       ],
       "tag": "utility_maximization_mrs",
       "type": "integration",
@@ -15085,19 +15085,19 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "utility_maximization_mrs",
       "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
-      "feedback": "A price change alters the budget slope and therefore the tangency condition.",
+      "feedback": "The price fall changes the market tradeoff and releases budget. At the old bundle its MRS is unchanged and exceeds the new price ratio, so a feasible reallocation toward X can improve utility.",
       "source": "engine2_legendary_boss",
-      "aHash": "0cf7e246ec94e72180d8c9e0caf9c049db809a5a97f910edc401cb70e2bdc906"
+      "aHash": "d790b1c442857f52b1f2399496f8ed20696cc14a26bf7a8ef6a085a0de21a089"
     },
     {
       "id": 210010,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial \u2014 Why is comparing MUx with MUy directly generally insufficient for allocating a fixed budget?",
+      "q": "A consumer buys both goods. Initially MUx=30, MUy=20, Px=$10, and Py=$4. A voucher then cuts the consumer's price of X to $5. At the original quantities, why can the direction of a utility-improving spending adjustment reverse even though marginal utilities have not yet changed?",
       "options": [
-        "Goods can have different prices, so the relevant comparison is utility gained per dollar",
-        "Marginal utility is always negative",
-        "Prices affect only supply",
-        "Utility maximization requires equal quantities"
+        "The relevant comparison is marginal utility per dollar, which prices change",
+        "The higher marginal utility always identifies the better use of a dollar",
+        "The voucher changes the ranking of bundles before consumption adjusts",
+        "The optimal allocation always gives equal quantities of both goods"
       ],
       "tag": "marginal_utility_per_dollar",
       "type": "synthesis",
@@ -15108,19 +15108,19 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "marginal_utility_per_dollar",
       "commonError": "compares_marginal_utility_without_dividing_by_price",
-      "feedback": "Budget allocation depends on the marginal benefit from the last dollar spent, not marginal utility alone.",
+      "feedback": "Initially X yields 3 utility units per dollar and Y yields 5. After the voucher X yields 6 per dollar. Comparing unadjusted marginal utilities would miss the reversal.",
       "source": "engine2_legendary_boss",
-      "aHash": "44e048c66b6af018b4488a9752e35ec6c9b9cc2b6d640dbeb3da339995eee6f9"
+      "aHash": "3ba7d4a5d6204c38dcce8c0ebe42249c9503398dc39d3e801b62d555ad47da7b"
     },
     {
       "id": 210011,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a new trial involving ride-share trips, the Sovereign's final trial \u2014 An interior optimum satisfies MRS=Px/Py. If Px falls and preferences stay fixed, why will the original bundle generally cease to be optimal?",
+      "q": "A consumer initially exhausts the budget at a smooth interior optimum. Px then falls with money income and Py unchanged. The old bundle becomes affordable with money left over, and preferences at that bundle are unchanged. Why is repeating the old choice generally not optimal?",
       "options": [
-        "The market tradeoff changes, so the old MRS no longer matches the new relative price",
-        "The consumer's preferences automatically reverse",
-        "The budget constraint disappears",
-        "Marginal utility becomes cardinal"
+        "The price ratio changes while the old bundle's MRS stays fixed",
+        "The price fall changes the old bundle's preferences by the same amount",
+        "The old bundle becomes unaffordable despite the lower price",
+        "The lower price requires the consumer to buy equal quantities"
       ],
       "tag": "utility_maximization_mrs",
       "type": "integration",
@@ -15131,19 +15131,19 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "utility_maximization_mrs",
       "commonError": "uses_equal_quantities_or_equal_marginal_utilities_instead_of_the_relative_price_condition",
-      "feedback": "A price change alters the budget slope and therefore the tangency condition.",
+      "feedback": "The price fall changes the market tradeoff and releases budget. At the old bundle its MRS is unchanged and exceeds the new price ratio, so a feasible reallocation toward X can improve utility.",
       "source": "engine2_legendary_boss",
-      "aHash": "0cf7e246ec94e72180d8c9e0caf9c049db809a5a97f910edc401cb70e2bdc906"
+      "aHash": "d790b1c442857f52b1f2399496f8ed20696cc14a26bf7a8ef6a085a0de21a089"
     },
     {
       "id": 210012,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial \u2014 An individual's Marshallian demand for X is generated by repeated utility maximization. Which object changes directly as Px changes and produces the price-quantity locus?",
+      "q": "A researcher derives two optimal bundles after changing Px, and another pair after changing consumer income. Preferences and other prices are unchanged. Which object changes in the first experiment to trace a single individual demand curve, while the second experiment shifts that curve?",
       "options": [
-        "The budget constraint and resulting optimal bundle",
-        "The preference ordering itself",
-        "The number of consumers",
-        "The definition of utility"
+        "The budget line and resulting optimal bundle as own price changes",
+        "The consumer's preference ranking whenever the own price changes",
+        "The number of buyers whose quantities enter aggregate demand",
+        "The utility scale, which changes the meaning of every ranking"
       ],
       "tag": "derive_individual_demand",
       "type": "integration",
@@ -15154,19 +15154,19 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "derive_individual_demand",
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
-      "feedback": "Changing Px changes the budget constraint; the resulting sequence of optimal X choices forms the individual demand curve.",
+      "feedback": "Varying own price rotates the budget line and traces optimal quantities along individual demand. Changing income also changes the budget set but shifts the demand relationship instead.",
       "source": "engine2_legendary_boss",
-      "aHash": "01f11764703aa0eb784e2c03653de3155e7daba3d5c4661ff4169c7123ac5faf"
+      "aHash": "9c537be15b518b4c3d0d120ab86c21958d1ce477d7ef7cf091d454f8c45fabb7"
     },
     {
       "id": 210013,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a new trial involving gym memberships, the Sovereign's final trial \u2014 An individual's Marshallian demand for X is generated by repeated utility maximization. Which object changes directly as Px changes and produces the price-quantity locus?",
+      "q": "A researcher derives two optimal bundles after changing Px, and another pair after changing consumer income. Preferences and other prices are unchanged. Which object changes in the first experiment to trace a single individual demand curve, while the second experiment shifts that curve?",
       "options": [
-        "The budget constraint and resulting optimal bundle",
-        "The preference ordering itself",
-        "The number of consumers",
-        "The definition of utility"
+        "The budget line and resulting optimal bundle as own price changes",
+        "The consumer's preference ranking whenever the own price changes",
+        "The number of buyers whose quantities enter aggregate demand",
+        "The utility scale, which changes the meaning of every ranking"
       ],
       "tag": "derive_individual_demand",
       "type": "integration",
@@ -15177,19 +15177,19 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "derive_individual_demand",
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
-      "feedback": "Changing Px changes the budget constraint; the resulting sequence of optimal X choices forms the individual demand curve.",
+      "feedback": "Varying own price rotates the budget line and traces optimal quantities along individual demand. Changing income also changes the budget set but shifts the demand relationship instead.",
       "source": "engine2_legendary_boss",
-      "aHash": "01f11764703aa0eb784e2c03653de3155e7daba3d5c4661ff4169c7123ac5faf"
+      "aHash": "9c537be15b518b4c3d0d120ab86c21958d1ce477d7ef7cf091d454f8c45fabb7"
     },
     {
       "id": 210014,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a new trial involving movie tickets, the Sovereign's final trial \u2014 An individual's Marshallian demand for X is generated by repeated utility maximization. Which object changes directly as Px changes and produces the price-quantity locus?",
+      "q": "A researcher derives two optimal bundles after changing Px, and another pair after changing consumer income. Preferences and other prices are unchanged. Which object changes in the first experiment to trace a single individual demand curve, while the second experiment shifts that curve?",
       "options": [
-        "The budget constraint and resulting optimal bundle",
-        "The preference ordering itself",
-        "The number of consumers",
-        "The definition of utility"
+        "The budget line and resulting optimal bundle as own price changes",
+        "The consumer's preference ranking whenever the own price changes",
+        "The number of buyers whose quantities enter aggregate demand",
+        "The utility scale, which changes the meaning of every ranking"
       ],
       "tag": "derive_individual_demand",
       "type": "integration",
@@ -15200,14 +15200,14 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "derive_individual_demand",
       "commonError": "confuses_a_price_induced_movement_with_a_nonprice_demand shift",
-      "feedback": "Changing Px changes the budget constraint; the resulting sequence of optimal X choices forms the individual demand curve.",
+      "feedback": "Varying own price rotates the budget line and traces optimal quantities along individual demand. Changing income also changes the budget set but shifts the demand relationship instead.",
       "source": "engine2_legendary_boss",
-      "aHash": "01f11764703aa0eb784e2c03653de3155e7daba3d5c4661ff4169c7123ac5faf"
+      "aHash": "9c537be15b518b4c3d0d120ab86c21958d1ce477d7ef7cf091d454f8c45fabb7"
     },
     {
       "id": 210015,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial \u2014 Suppose Px falls, income falls, and X is normal. Why can't the observed change in Qx by itself identify the own-price response?",
+      "q": "For a normal good, two observations show a fall in its own price, a fall in consumer income, and unchanged quantity purchased. Preferences and other prices are stable. Why would treating the observations as evidence of zero own-price responsiveness be invalid?",
       "options": [
         "The price effect and income-induced demand shift occur simultaneously",
         "Normal goods never obey the law of demand",
@@ -15223,19 +15223,19 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "demand_response_income_prices",
       "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
-      "feedback": "Simultaneous changes in own price and income combine movement along demand with a shift of demand.",
+      "feedback": "The lower own price and lower income can push quantity in opposite directions. An unchanged observed quantity may therefore conceal a positive own-price response offset by an inward demand shift; it does not identify elasticity on a fixed demand curve.",
       "source": "engine2_legendary_boss",
       "aHash": "4f6d1947b6031f1f5feda0cd0058804ad75d7a5b12730541bef32944bf36b6d7"
     },
     {
       "id": 210016,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial \u2014 A household's demand for a good falls 6% when income rises 10%, with prices unchanged. What does the sign of this response imply?",
+      "q": "With prices fixed, a household buys 6% less of a good after a 10% income rise. In a separate experiment with income fixed, it buys more when the own price falls. Which conclusion follows without confusing inferiority with Giffen behavior?",
       "options": [
-        "The good is inferior for this household",
-        "The good is normal and a necessity",
-        "The good is a substitute",
-        "The good is perfectly inelastic"
+        "The good is inferior but the evidence does not make it Giffen",
+        "The good is normal because it obeys the law of demand",
+        "The good is a substitute because its income elasticity is negative",
+        "The good is Giffen whenever its income elasticity is below zero"
       ],
       "tag": "normal_inferior_goods",
       "type": "calculation",
@@ -15248,14 +15248,14 @@ const questionBank = {
       ],
       "repairSkill": "normal_inferior_goods",
       "commonError": "reverses_the_income_response_of_normal_and_inferior_goods",
-      "feedback": "Income elasticity is negative, so the good is inferior.",
+      "feedback": "The income response gives elasticity -0.6, identifying an inferior good. The downward own-price response is consistent with substitution outweighing the opposing income effect; it is not Giffen behavior.",
       "source": "engine2_legendary_boss",
-      "aHash": "c144ebc503e8fceda776abdc93fbae0e9ca2c37c4b9df07781f2b6848576eabb"
+      "aHash": "1f47542512ba951e7f34027d479888901f4deb83d611067f661e92667dc753f5"
     },
     {
       "id": 210017,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a new trial involving campus meals, the Sovereign's final trial \u2014 Suppose Px falls, income falls, and X is normal. Why can't the observed change in Qx by itself identify the own-price response?",
+      "q": "For a normal good, two observations show a fall in its own price, a fall in consumer income, and unchanged quantity purchased. Preferences and other prices are stable. Why would treating the observations as evidence of zero own-price responsiveness be invalid?",
       "options": [
         "The price effect and income-induced demand shift occur simultaneously",
         "Normal goods never obey the law of demand",
@@ -15271,19 +15271,19 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "demand_response_income_prices",
       "commonError": "confuses_own_price_changes_with_income_or_related_good effects",
-      "feedback": "Simultaneous changes in own price and income combine movement along demand with a shift of demand.",
+      "feedback": "The lower own price and lower income can push quantity in opposite directions. An unchanged observed quantity may therefore conceal a positive own-price response offset by an inward demand shift; it does not identify elasticity on a fixed demand curve.",
       "source": "engine2_legendary_boss",
       "aHash": "4f6d1947b6031f1f5feda0cd0058804ad75d7a5b12730541bef32944bf36b6d7"
     },
     {
       "id": 210018,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial \u2014 A price decrease for X produces a positive substitution effect of +4 units and a negative income effect of -1 unit. What is the total change in quantity demanded?",
+      "q": "After the price of X falls, the compensated move adds 4 units of X and the income effect removes 1 unit. An analyst claims that any negative income effect must make quantity fall after a price cut. What net quantity change contradicts that claim?",
       "options": [
-        "+3 units",
-        "+5 units",
-        "-3 units",
-        "-5 units"
+        "An increase of 3 units",
+        "An increase of 5 units",
+        "A decrease of 3 units",
+        "A decrease of 5 units"
       ],
       "tag": "substitution_effect",
       "type": "multi-step",
@@ -15296,19 +15296,19 @@ const questionBank = {
       ],
       "repairSkill": "substitution_effect",
       "commonError": "reverses_the_substitution_effect_or_treats_it_as_an_income_change",
-      "feedback": "Total effect = substitution effect + income effect = 4 + (-1) = 3 units.",
+      "feedback": "Adding the two effects gives +4-1=+3. The negative income effect identifies inferiority, but it is too small to overturn substitution, so X is not Giffen over this change.",
       "source": "engine2_legendary_boss",
-      "aHash": "beb5ec53ad7185cb7f133947de50348cf0aab82d9d11f931c9dc26b6297e221e"
+      "aHash": "dca3be419027101d4a617bde62e7ba814b4e5a454c176d5fa77cd51d64c1f5b4"
     },
     {
       "id": 210019,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial \u2014 A price rise for an inferior good reduces real purchasing power. Which direction does the income effect push quantity of the inferior good?",
+      "q": "A price rise for an inferior good creates a compensated reduction of 2 units. Actual purchases fall by only 1 unit, with money income and all other prices unchanged. In which direction must the income effect act to reconcile the two observations?",
       "options": [
-        "Upward",
-        "Downward",
-        "Always to zero",
-        "The direction cannot be linked to inferiority"
+        "It raises purchases by 1 unit",
+        "It lowers purchases by 1 unit",
+        "It has no effect on purchases",
+        "It raises purchases by 3 units"
       ],
       "tag": "income_effect",
       "type": "synthesis",
@@ -15319,14 +15319,14 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "income_effect",
       "commonError": "confuses_purchasing_power_with_relative_price substitution",
-      "feedback": "Lower real income raises demand for an inferior good, so the income effect of a price rise pushes its quantity upward.",
+      "feedback": "The total change is -1 and substitution is -2, so the income effect is +1. The loss of purchasing power raises demand for an inferior good but does not fully offset substitution here.",
       "source": "engine2_legendary_boss",
-      "aHash": "69b565816811be91c81d5e62ea4e170a208433ba0eb9e8a4476536513c96bd03"
+      "aHash": "06bf31209cc9fdbf7a6046d3e1333d815cf205a0b100cd471ca8b56abdfc31b1"
     },
     {
       "id": 210020,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial \u2014 For a Giffen good, a rise in price makes the consumer effectively poorer. Why can that increase purchases of the good?",
+      "q": "After a staple's price rises, a household is worse off but buys more of the staple. Preferences, money income, and other prices remain unchanged. Compensating the household back to its original utility at the new prices would instead make it buy less of the staple. What explains the difference between the compensated and actual choices?",
       "options": [
         "Because the good is so strongly inferior that the purchasing-power effect toward it outweighs substitution away from it",
         "Because the substitution effect reverses sign",
@@ -15342,14 +15342,14 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "giffen_good_logic",
       "commonError": "labels_any_inferior_good_as_giffen_without_income_effect_dominance",
-      "feedback": "The strong inferior-good income effect can dominate the ordinary substitution response.",
+      "feedback": "The compensated comparison isolates substitution away from the more expensive staple. The actual price rise also lowers purchasing power. For this strongly inferior good, that income effect increases purchases by more than substitution reduces them, producing Giffen behavior.",
       "source": "engine2_legendary_boss",
       "aHash": "8dcf9b6d2689fd44c1f9a9a33990a0b456f4159505b1e9dbfef84d2025fceb8a"
     },
     {
       "id": 210021,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial \u2014 A researcher estimates a demand curve but omits a major preference trend correlated with price. What problem threatens the interpretation of the estimated price-quantity relationship?",
+      "q": "A researcher observes higher prices and larger sales during a growing preference for a product. The trend is correlated with price but omitted from the analysis; income and related-good prices are controlled. Why can the positive fitted price coefficient fail to describe an upward-sloping demand curve?",
       "options": [
         "The observed relationship may mix movements along demand with shifts of demand",
         "Market demand must equal average individual demand",
@@ -15365,14 +15365,14 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "demand_curve_shifts",
       "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
-      "feedback": "If demand shifters move with price, the data do not isolate a single demand curve.",
+      "feedback": "Controlling some demand determinants does not hold the omitted preference trend fixed. Its outward demand shifts can accompany higher observed prices and sales. The fitted coefficient can therefore mix shifts with movement along any one demand curve.",
       "source": "engine2_legendary_boss",
       "aHash": "2a08fde9353d94669a23f51c35f2aa60a23075acfa1e486675a95c2179612235"
     },
     {
       "id": 210022,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a new trial involving movie tickets, the Sovereign's final trial \u2014 A researcher estimates a demand curve but omits a major preference trend correlated with price. What problem threatens the interpretation of the estimated price-quantity relationship?",
+      "q": "A researcher observes higher prices and larger sales during a growing preference for a product. The trend is correlated with price but omitted from the analysis; income and related-good prices are controlled. Why can the positive fitted price coefficient fail to describe an upward-sloping demand curve?",
       "options": [
         "The observed relationship may mix movements along demand with shifts of demand",
         "Market demand must equal average individual demand",
@@ -15388,14 +15388,14 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "demand_curve_shifts",
       "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
-      "feedback": "If demand shifters move with price, the data do not isolate a single demand curve.",
+      "feedback": "Controlling some demand determinants does not hold the omitted preference trend fixed. Its outward demand shifts can accompany higher observed prices and sales. The fitted coefficient can therefore mix shifts with movement along any one demand curve.",
       "source": "engine2_legendary_boss",
       "aHash": "2a08fde9353d94669a23f51c35f2aa60a23075acfa1e486675a95c2179612235"
     },
     {
       "id": 210023,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a new trial involving coffee purchases, the Sovereign's final trial \u2014 A researcher estimates a demand curve but omits a major preference trend correlated with price. What problem threatens the interpretation of the estimated price-quantity relationship?",
+      "q": "A researcher observes higher prices and larger sales during a growing preference for a product. The trend is correlated with price but omitted from the analysis; income and related-good prices are controlled. Why can the positive fitted price coefficient fail to describe an upward-sloping demand curve?",
       "options": [
         "The observed relationship may mix movements along demand with shifts of demand",
         "Market demand must equal average individual demand",
@@ -15411,14 +15411,14 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "demand_curve_shifts",
       "commonError": "confuses_changes_in_quantity_demanded_with_demand shifts",
-      "feedback": "If demand shifters move with price, the data do not isolate a single demand curve.",
+      "feedback": "Controlling some demand determinants does not hold the omitted preference trend fixed. Its outward demand shifts can accompany higher observed prices and sales. The fitted coefficient can therefore mix shifts with movement along any one demand curve.",
       "source": "engine2_legendary_boss",
       "aHash": "2a08fde9353d94669a23f51c35f2aa60a23075acfa1e486675a95c2179612235"
     },
     {
       "id": 210024,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial \u2014 Why does the area under a demand curve and above the market price represent consumer surplus?",
+      "q": "A buyer values successive units at $12, $9, and $5, pays a uniform price of $6, and buys only units worth at least their price. An analyst counts both the buyer's payment and the value of the unpurchased third unit as consumer surplus. Which principle correctly separates surplus from those amounts?",
       "options": [
         "The demand curve reflects marginal willingness to pay, so the vertical gap above price measures surplus unit by unit",
         "The demand curve measures sellers' marginal cost",
@@ -15434,14 +15434,14 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "consumer_surplus",
       "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
-      "feedback": "Aggregating willingness-to-pay minus price across purchased units gives the area under demand above price.",
+      "feedback": "Only the first two units are bought. Their surplus is (12-6)+(9-6)=$9. The $12 payment is expenditure, and the third unit creates no realized surplus because its value is below price. Summing willingness to pay minus price over purchased units gives consumer surplus.",
       "source": "engine2_legendary_boss",
       "aHash": "371b1d896cb013cdfe346586b2228879ddc5cb6b3000d1b92de2c6ad86002178"
     },
     {
       "id": 210025,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a new trial involving campus meals, the Sovereign's final trial \u2014 Why does the area under a demand curve and above the market price represent consumer surplus?",
+      "q": "A buyer values successive units at $12, $9, and $5, pays a uniform price of $6, and buys only units worth at least their price. An analyst counts both the buyer's payment and the value of the unpurchased third unit as consumer surplus. Which principle correctly separates surplus from those amounts?",
       "options": [
         "The demand curve reflects marginal willingness to pay, so the vertical gap above price measures surplus unit by unit",
         "The demand curve measures sellers' marginal cost",
@@ -15457,14 +15457,14 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "consumer_surplus",
       "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
-      "feedback": "Aggregating willingness-to-pay minus price across purchased units gives the area under demand above price.",
+      "feedback": "Only the first two units are bought. Their surplus is (12-6)+(9-6)=$9. The $12 payment is expenditure, and the third unit creates no realized surplus because its value is below price. Summing willingness to pay minus price over purchased units gives consumer surplus.",
       "source": "engine2_legendary_boss",
       "aHash": "371b1d896cb013cdfe346586b2228879ddc5cb6b3000d1b92de2c6ad86002178"
     },
     {
       "id": 210026,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a new trial involving concert tickets, the Sovereign's final trial \u2014 Why does the area under a demand curve and above the market price represent consumer surplus?",
+      "q": "A buyer values successive units at $12, $9, and $5, pays a uniform price of $6, and buys only units worth at least their price. An analyst counts both the buyer's payment and the value of the unpurchased third unit as consumer surplus. Which principle correctly separates surplus from those amounts?",
       "options": [
         "The demand curve reflects marginal willingness to pay, so the vertical gap above price measures surplus unit by unit",
         "The demand curve measures sellers' marginal cost",
@@ -15480,14 +15480,14 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "consumer_surplus",
       "commonError": "confuses_willingness_to_pay_with_price_or_uses_price_minus_wtp",
-      "feedback": "Aggregating willingness-to-pay minus price across purchased units gives the area under demand above price.",
+      "feedback": "Only the first two units are bought. Their surplus is (12-6)+(9-6)=$9. The $12 payment is expenditure, and the third unit creates no realized surplus because its value is below price. Summing willingness to pay minus price over purchased units gives consumer surplus.",
       "source": "engine2_legendary_boss",
       "aHash": "371b1d896cb013cdfe346586b2228879ddc5cb6b3000d1b92de2c6ad86002178"
     },
     {
       "id": 210027,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial \u2014 Why can market demand have a kink even when each individual's demand is smooth over the quantities they purchase?",
+      "q": "Two buyers have individual demands Q₁=max(12-P,0) and Q₂=max(8-P,0). Each demand is smooth wherever its quantity is positive, yet the market curve changes slope at P=8. Why can horizontal aggregation create this kink without any change in either buyer's preferences?",
       "options": [
         "Different consumers can enter or exit the market at different price thresholds, changing the horizontal sum",
         "Market demand is a vertical sum",
@@ -15503,14 +15503,14 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "market_demand_aggregation",
       "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
-      "feedback": "As price changes, the set of consumers with positive demand can change, altering the slope of the aggregate demand curve.",
+      "feedback": "Above P=8 only buyer 1 purchases, so market demand has dQ/dP=-1. Below P=8 both purchase, so the derivatives add to -2. The active set of buyers changes at the threshold, even though each positive-quantity segment is smooth.",
       "source": "engine2_legendary_boss",
       "aHash": "ec81b684cda14c494090215b5ad87bc09efd2d8f84b0ed7dc6acbfb4f53810a0"
     },
     {
       "id": 210028,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a new trial involving textbook purchases, the Sovereign's final trial \u2014 Why can market demand have a kink even when each individual's demand is smooth over the quantities they purchase?",
+      "q": "Two buyers have individual demands Q₁=max(12-P,0) and Q₂=max(8-P,0). Each demand is smooth wherever its quantity is positive, yet the market curve changes slope at P=8. Why can horizontal aggregation create this kink without any change in either buyer's preferences?",
       "options": [
         "Different consumers can enter or exit the market at different price thresholds, changing the horizontal sum",
         "Market demand is a vertical sum",
@@ -15526,14 +15526,14 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "market_demand_aggregation",
       "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
-      "feedback": "As price changes, the set of consumers with positive demand can change, altering the slope of the aggregate demand curve.",
+      "feedback": "Above P=8 only buyer 1 purchases, so market demand has dQ/dP=-1. Below P=8 both purchase, so the derivatives add to -2. The active set of buyers changes at the threshold, even though each positive-quantity segment is smooth.",
       "source": "engine2_legendary_boss",
       "aHash": "ec81b684cda14c494090215b5ad87bc09efd2d8f84b0ed7dc6acbfb4f53810a0"
     },
     {
       "id": 210029,
       "sourceGame": "labyrinthOfChoice",
-      "q": "In a new trial involving gym memberships, the Sovereign's final trial \u2014 Why can market demand have a kink even when each individual's demand is smooth over the quantities they purchase?",
+      "q": "Two buyers have individual demands Q₁=max(12-P,0) and Q₂=max(8-P,0). Each demand is smooth wherever its quantity is positive, yet the market curve changes slope at P=8. Why can horizontal aggregation create this kink without any change in either buyer's preferences?",
       "options": [
         "Different consumers can enter or exit the market at different price thresholds, changing the horizontal sum",
         "Market demand is a vertical sum",
@@ -15549,14 +15549,14 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "market_demand_aggregation",
       "commonError": "averages_individual_quantities_instead_of_summing_them_horizontally",
-      "feedback": "As price changes, the set of consumers with positive demand can change, altering the slope of the aggregate demand curve.",
+      "feedback": "Above P=8 only buyer 1 purchases, so market demand has dQ/dP=-1. Below P=8 both purchase, so the derivatives add to -2. The active set of buyers changes at the threshold, even though each positive-quantity segment is smooth.",
       "source": "engine2_legendary_boss",
       "aHash": "ec81b684cda14c494090215b5ad87bc09efd2d8f84b0ed7dc6acbfb4f53810a0"
     },
     {
       "id": 210030,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial \u2014 A firm's demand elasticity estimate changes along a linear demand curve even though the slope is constant. Why?",
+      "q": "Demand is Q=100-2P. At P=$40 and P=$10, the slope dQ/dP is the same, yet a small price increase lowers revenue at the first point and raises it at the second. What reconciles these responses?",
       "options": [
         "Elasticity also depends on the price-to-quantity ratio at the point",
         "The slope secretly changes",
@@ -15572,19 +15572,19 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "price_elasticity_fundamentals",
       "commonError": "reverses_elastic_and_inelastic_or_ignores_absolute_value",
-      "feedback": "Point elasticity equals slope-related responsiveness multiplied by P/Q, so it varies along a linear curve.",
+      "feedback": "At P=40, Q=20 and absolute point elasticity is 2×40/20=4. At P=10, Q=80 and it is 2×10/80=0.25. The common slope does not imply common elasticity because P/Q differs. Revenue responds differently in the elastic and inelastic regions.",
       "source": "engine2_legendary_boss",
       "aHash": "a8c07dae721c40617c0fbb09a71baca82308693d2bd38f83f9041bc448e49c40"
     },
     {
       "id": 210031,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial \u2014 When midpoint elasticity is 1.00 between two points, which interpretation is best?",
+      "q": "A price change leaves total expenditure unchanged, and midpoint elasticity between the endpoints equals one. A student infers that the slope is -1 and that every point between the endpoints has unit elasticity. Which interpretation is actually supported by the interval calculation?",
       "options": [
-        "The percentage change in quantity equals the percentage change in price in magnitude over that interval",
-        "The slope of demand is -1",
-        "Total revenue must be zero",
-        "Price and quantity levels are equal"
+        "The midpoint percentage changes have equal magnitudes over the interval",
+        "The absolute price and quantity changes are equal over the interval",
+        "Every point between the endpoints must have identical point elasticity",
+        "Every demand curve through the endpoints must have a slope of minus one"
       ],
       "tag": "midpoint_elasticity",
       "type": "synthesis",
@@ -15595,19 +15595,19 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "midpoint_elasticity",
       "commonError": "uses_one_endpoint_as_the_percentage_base_or_reverses_percentage_changes",
-      "feedback": "Unit elasticity means equal percentage changes in price and quantity, not equal levels or slope.",
+      "feedback": "Equal expenditure at the endpoints implies equal midpoint percentage changes in magnitude. Neither the units-dependent slope nor point elasticity everywhere between the endpoints is determined.",
       "source": "engine2_legendary_boss",
-      "aHash": "fa5b2591be44f36adfeaaab1ae069a2433c49c6eb45bb8ff396733c7c01161b4"
+      "aHash": "29f3c495eed432c54a60b0ba4400961c804e22ea9a1ed8e07ea5bdc92c169c18"
     },
     {
       "id": 210032,
       "sourceGame": "labyrinthOfChoice",
-      "q": "The Sovereign's final trial \u2014 On a linear demand curve, total revenue is maximized at the quantity where demand is approximately what?",
+      "q": "For Q=100-2P, a manager compares price increases from a low-price region and a high-price region. Revenue first rises and then falls as price increases. What elasticity characterizes the interior revenue maximum, rather than either endpoint?",
       "options": [
-        "Unit elastic",
-        "Perfectly inelastic",
-        "Perfectly elastic",
-        "Always inelastic"
+        "Unit elastic demand",
+        "Perfectly inelastic demand",
+        "Perfectly elastic demand",
+        "Inelastic demand throughout the curve"
       ],
       "tag": "elasticity_total_revenue",
       "type": "integration",
@@ -15618,9 +15618,9 @@ const questionBank = {
       "secondarySkills": [],
       "repairSkill": "elasticity_total_revenue",
       "commonError": "reverses_the_total_revenue_test_for_elastic_and_inelastic_demand",
-      "feedback": "Along a linear demand curve, total revenue peaks where elasticity transitions through unit elasticity.",
+      "feedback": "Revenue is P(100-2P). It peaks at P=25 and Q=50, where absolute elasticity is 2×25/50=1. Below that price demand is inelastic; above it demand is elastic.",
       "source": "engine2_legendary_boss",
-      "aHash": "9a643cf5dcd22f83a67be1168305fb5af5e8a6221e1299027e74c458f4e5589c"
+      "aHash": "b97dfd0c514a097407c3bce8e436be9eceae9f13a26d402ca20fb565a63761a1"
     }
   ]
 },
@@ -15717,8 +15717,8 @@ const questionAssetMetadata = {
     "graphDescription": "Good X is horizontal and Good Y vertical, each from 0 to 50 in steps of 5, with no further units named. Blue Budget0 joins (0, 10) to (40, 0). Green Budget1 joins (0, 40) to (40, 0), sharing the horizontal intercept and reaching higher on the vertical axis. Purple U0 and dark-green U1 slope downward and flatten to the right; U1 lies above U0. In X-Y order, A is (20, 5), B is (10, 10), and C is (20, 20), with dashed guides to the axes. Budget0 touches U0 at A; Budget1 touches U1 at C. An unlabeled dashed orange line joins (0, 20) to (20, 0), runs parallel to Budget1 and touches U0 at B. No arrows or named effect labels appear."
   },
   "INCOME-SUB-04.png": {
-    "imageAlt": "Two budget lines sharing a Y intercept, curves U0 and U1, and labeled bundles A, B and C.",
-    "graphDescription": "Good X is horizontal and Good Y vertical, each from 0 to 50 in steps of 5, with no further units named. Blue Budget0 joins (0, 40) to (20, 0); green Budget1 joins (0, 40) to (40, 0), sharing the vertical intercept and extending farther right. In X-Y order, A is (10, 20), B is (20, 10), and C is (15, 25), with dashed guides to the axes. Purple U0 slopes downward through A and B, while dark-green U1 lies above it and touches Budget1 at C. Budget0 touches U0 at A. An unlabeled dashed orange line joins (0, 30) to (30, 0), runs parallel to Budget1, passes through A and touches U0 at B. No arrows or named effect labels are drawn."
+    "imageAlt": "Convex indifference curves with original optimum A (10,20), compensated optimum B (20,5), and final optimum C (15,25).",
+    "graphDescription": "Good X is horizontal and Good Y vertical, each from 0 to 50. Original blue Budget 0 is 2X+Y=40, tangent to purple U0 at A=(10,20). Green Budget 1 is X+Y=40, tangent to dark green U1 at C=(15,25). The orange dashed compensated budget is X+Y=25, parallel to Budget 1 and tangent to U0 at B=(20,5); it supports U0 rather than crossing it. Both indifference curves are decreasing and strictly convex, and U1 lies above U0. The price of X falls from 2 to 1 with income 40 and Py=1. Substitution A to B raises X by 10 and lowers Y by 15. Income B to C lowers X by 5 and raises Y by 20, showing inferior X. Total A to C raises both X and Y by 5. Dotted guides mark all three coordinate pairs."
   }
 };
 

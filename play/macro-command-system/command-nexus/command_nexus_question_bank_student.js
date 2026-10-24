@@ -53,60 +53,60 @@ const questionBanks = {
     },
     {
       "id": 2,
-      "q": "Why does the IS curve slope downward in the basic model?",
+      "q": "In the IS–LM model, why does the IS curve slope downward when interest-sensitive investment is included in planned expenditure?",
       "options": [
-        "lower income raises saving at every rate",
-        "lower rs raise I spending",
-        "higher prices raise autonomous spending",
-        "tax collections rise whenever r falls"
+        "Lower income raises saving at every rate",
+        "Lower interest rates raise investment spending",
+        "Higher prices raise autonomous spending",
+        "Tax collections rise whenever the interest rate falls"
       ],
       "tag": "is_curve",
       "type": "definition",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
-      "feedback": "Investment is interest-sensitive. A lower r raises I, planned expenditure, and equilibrium Y.",
-      "aHash": "9e6c949fbc5c1abe6e5b2010148befa656c62e89bdf8bcd73be8aaab94bcf188"
+      "feedback": "Investment is interest-sensitive. A lower interest rate raises investment, planned expenditure, and equilibrium output.",
+      "aHash": "8bf7656fccbd90d0205e3f82b4753618ae0bc0339aa403f80b2af954be5c5bc8"
     },
     {
       "id": 3,
       "q": "A wave of business optimism raises planned investment at every interest rate. What happens to IS?",
       "options": [
-        "IS shifts left",
-        "LM shifts right",
-        "IS shifts right",
-        "LRAS shifts left"
+        "The IS curve shifts to the left",
+        "The LM curve shifts to the right",
+        "The IS curve shifts to the right",
+        "The LRAS curve shifts to the left"
       ],
       "tag": "is_curve",
       "type": "application",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
       "feedback": "Higher autonomous investment raises equilibrium income at each interest rate, so IS moves right.",
-      "aHash": "69d3bd1c331870d35b7e69208ebfc8d0068884083e69cfd1118e31f3651ed9b5"
+      "aHash": "f713a51176694d7c4c9d597bbfd7128c38ad53ea06301dfec9baadc5ff6f749f"
     },
     {
       "id": 4,
       "q": "A drop in consumer confidence reduces autonomous consumption. What is the IS effect?",
       "options": [
-        "LM shifts left",
+        "The LM curve shifts to the left",
         "IS becomes vertical",
         "movement down along IS",
-        "IS shifts left"
+        "The IS curve shifts to the left"
       ],
       "tag": "is_curve",
       "type": "application",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
-      "feedback": "Lower autonomous consumption reduces planned expenditure at each interest rate, so IS shifts left.",
-      "aHash": "b771bcc5050e268b04291777123975f64737ece1b772600fa99ef2e8beabcb24"
+      "feedback": "Lower autonomous consumption reduces planned expenditure at each interest rate, so the IS curve shifts to the left.",
+      "aHash": "c4cf64fb8598fc492df65f87650bc57499d6e6377b89da6d9d81aeb37390760e"
     },
     {
       "id": 5,
       "q": "Which change is a movement along a fixed IS curve rather than an IS shift?",
       "options": [
-        "r falls & I rises",
-        "government purchases increase",
-        "autonomous consumption falls",
-        "taxes fall and consumption rises"
+        "The interest rate falls and investment rises",
+        "Government purchases increase",
+        "Autonomous consumption falls",
+        "Taxes fall and consumption rises"
       ],
       "tag": "is_curve",
       "type": "trap",
@@ -114,11 +114,11 @@ const questionBanks = {
       "primarySkill": "is_curve_goods_market",
       "feedback": "Interest-rate changes move along IS. Autonomous spending or fiscal changes shift IS.",
       "commonError": "calling movement along IS a shift of IS",
-      "aHash": "cf66272cb4b047ee258c938dec3ea947319371c2285ab7ef6fcff7856a539308"
+      "aHash": "84bb9fce2c282682ec2519cf5aa5c864bd0d19748203013d7e05c00f13816c72"
     },
     {
       "id": 6,
-      "q": "On the IS graph, at interest rate r2, which IS curve produces the highest income?",
+      "q": "Refer to the IS graph. At interest rate r2, which IS curve produces the highest income?",
       "options": [
         "IS1",
         "IS3",
@@ -152,7 +152,7 @@ const questionBanks = {
     },
     {
       "id": 8,
-      "q": "Autonomous spending rises by $20 billion and MPC = 0.5. What is the simple-cross change in income?",
+      "q": "Autonomous spending rises by $20 billion and MPC = 0.5. What is the simple Keynesian-cross change in income?",
       "options": [
         "$20 billion",
         "$10 billion",
@@ -171,101 +171,101 @@ const questionBanks = {
       "id": 9,
       "q": "What makes the IS curve flatter?",
       "options": [
-        "investment responds more strongly to r",
-        "consumption no longer depends on income",
-        "government spending becomes zero",
-        "money demand becomes perfectly fixed"
+        "Investment responds more strongly to the interest rate",
+        "Consumption no longer depends on income",
+        "Government spending becomes zero",
+        "Money demand becomes perfectly fixed"
       ],
       "tag": "is_curve",
       "type": "interpretation",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
-      "feedback": "When investment is very interest-sensitive, a small change in r creates a larger change in equilibrium income.",
-      "aHash": "e0eddb2d28d87370d7a749af632523163e846ba4d5bbed0e699823f45fb7d389"
+      "feedback": "When investment is very interest-sensitive, a small change in the interest rate creates a larger change in equilibrium income.",
+      "aHash": "b69e11d820db1b40ab535ccc384cb005f22e130220441411ede5bf0e9e6194b1"
     },
     {
       "id": 10,
       "q": "In the Keynesian cross, inventories rise unexpectedly when what happens?",
       "options": [
-        "planned spending exceeds output",
-        "Y exceeds planned spending",
-        "money demand exceeds money supply",
-        "taxes equal government spending"
+        "Planned spending exceeds output",
+        "Output exceeds planned spending",
+        "Money demand exceeds money supply",
+        "Taxes equal government spending"
       ],
       "tag": "is_curve",
       "type": "definition",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
       "feedback": "If firms produce more than buyers plan to purchase, unsold inventories accumulate.",
-      "aHash": "3ce3b4ae1f5438ea45f5645436d28b4d08b60b007d2de0f9a3d290662d119784"
+      "aHash": "c01ca15e7aaafedfe8bb1ea6717be6517d43c852bf45430c240e240ab8caf175"
     },
     {
       "id": 11,
-      "q": "A tax cut shifts IS right because it first raises what?",
+      "q": "A tax cut shifts the IS curve to the right because it first raises what?",
       "options": [
-        "real money balances",
-        "natural output",
-        "disposable Y & C",
-        "the required reserve ratio"
+        "Real money balances",
+        "Natural output",
+        "Disposable income and consumption",
+        "The required reserve ratio"
       ],
       "tag": "is_curve",
       "type": "application",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
       "feedback": "Lower taxes raise disposable income, which raises consumption and planned expenditure.",
-      "aHash": "e96e8e7d2f1c1d59370b37f7965c15a4599b57af4412365621d308904f4be4c8"
+      "aHash": "9d488e0d07b8def11490e203c86a862debe60f193ffca0833c245aefc167587f"
     },
     {
       "id": 12,
       "q": "What market does the LM curve summarize?",
       "options": [
-        "goods-market equilibrium",
-        "labor-market equilibrium",
-        "foreign-trade equilibrium",
-        "money-market equilibrium"
+        "Goods-market equilibrium",
+        "Labor-market equilibrium",
+        "Foreign-trade equilibrium",
+        "Money-market equilibrium"
       ],
       "tag": "lm_curve",
       "type": "definition",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
-      "feedback": "LM shows combinations of Y and r where money demand equals real money supply.",
+      "feedback": "LM shows combinations of output and the interest rate where money demand equals real money supply.",
       "aHash": "82eed8bce557a74e37be7ddc14e4f8a5f0eca6d300e5a14dac6b3ecc4e91a2cd"
     },
     {
       "id": 13,
       "q": "Why does LM slope upward when real balances are fixed?",
       "options": [
-        "higher income raises money demand",
-        "higher income lowers all transactions",
-        "higher prices shift IS right",
-        "higher taxes raise investment"
+        "Higher income raises money demand",
+        "Higher income lowers all transactions",
+        "Higher prices shift the IS curve to the right",
+        "Higher taxes raise investment"
       ],
       "tag": "lm_curve",
       "type": "definition",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
-      "feedback": "More income means more transactions demand for money; r must rise to restore money-market equilibrium.",
+      "feedback": "More income means more transactions demand for money; the interest rate must rise to restore money-market equilibrium.",
       "aHash": "cf5400fa8e8ba227bc8c6169ae961f2511d2727005e10cb0ee83cf3e3c78d4a5"
     },
     {
       "id": 14,
-      "q": "If nominal M rises while P is fixed, what happens to LM?",
+      "q": "If nominal money supply rises while the price level is fixed, what happens to LM?",
       "options": [
-        "LM shifts left",
-        "LM shifts right",
-        "IS shifts left",
-        "LRAS shifts right"
+        "The LM curve shifts to the left",
+        "The LM curve shifts to the right",
+        "The IS curve shifts to the left",
+        "The LRAS curve shifts to the right"
       ],
       "tag": "lm_curve",
       "type": "application",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
-      "feedback": "A higher M raises M/P and lowers the interest rate needed at each income.",
-      "aHash": "6e1f8a919b85b829e9ba43a66b3c0c65f5206e8e541d40d477946f1f8efdd29a"
+      "feedback": "A higher nominal money supply raises M/P and lowers the interest rate needed at each income.",
+      "aHash": "e02b02d3b5d106df9065a6f9be8d21714d848a5a9807c791fb5b4db41186b9ba"
     },
     {
       "id": 15,
-      "q": "If P rises while M is fixed, what happens to real balances?",
+      "q": "If the price level rises while the nominal money supply is fixed, what happens to real balances?",
       "options": [
         "M/P rises",
         "M/P is unchanged",
@@ -283,10 +283,10 @@ const questionBanks = {
       "id": 16,
       "q": "Which change is movement along LM rather than an LM shift?",
       "options": [
-        "the central bank increases M",
-        "the price level falls",
-        "the central bank reduces M",
-        "Y rises & Md rises"
+        "The central bank increases the nominal money supply",
+        "The price level falls",
+        "The central bank reduces the nominal money supply",
+        "Output rises and money demand rises"
       ],
       "tag": "lm_curve",
       "type": "trap",
@@ -294,11 +294,11 @@ const questionBanks = {
       "primarySkill": "lm_curve_money_market",
       "feedback": "Income changes move along LM; changes in real money supply shift LM.",
       "commonError": "calling income-driven money demand an LM shift",
-      "aHash": "a88694e9cac41433d842ecec11777fa10975c6ecb4eec4fca45ce5f48177099c"
+      "aHash": "e17267c054a79218b9720407c4ae30e4353a07c1acc763e415a91b54d59c816d"
     },
     {
       "id": 17,
-      "q": "On the LM graph, at a fixed Y, which LM curve gives the lowest interest rate?",
+      "q": "Refer to the LM graph. At a fixed output, which LM curve gives the lowest interest rate?",
       "options": [
         "LM3",
         "LM1",
@@ -310,7 +310,7 @@ const questionBanks = {
       "objective": "LO12.2",
       "image": "lm_curves.webp",
       "primarySkill": "lm_curve_money_market",
-      "feedback": "The farthest-right LM curve reflects more real balances and a lower r at the same Y.",
+      "feedback": "The farthest-right LM curve reflects more real balances and a lower interest rate at the same Y.",
       "aHash": "68e2e614646f07b79277957c6bfbbb7a379881bb24dc4342956f0af071be8b6c"
     },
     {
@@ -351,49 +351,49 @@ const questionBanks = {
       "id": 20,
       "q": "In liquidity preference, what clears the money market?",
       "options": [
-        "the wage rate",
-        "the tax rate",
-        "natural output",
-        "r"
+        "The wage rate",
+        "The tax rate",
+        "Natural output",
+        "The interest rate"
       ],
       "tag": "lm_curve",
       "type": "definition",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
       "feedback": "The interest rate adjusts until people are willing to hold the available real money balances.",
-      "aHash": "454349e422f05297191ead13e21d3db520e5abef52055e4964b82fb213f593a1"
+      "aHash": "6de2a0a37ae8aa854cea6749347699cc578903d1431face342bea373d61404b8"
     },
     {
       "id": 21,
-      "q": "A higher demand for money at each Y and r shifts LM how?",
+      "q": "How does an increase in money demand at each combination of output and the interest rate affect the LM curve?",
       "options": [
-        "left",
-        "right",
-        "nowhere",
-        "into the IS curve"
+        "The LM curve shifts to the left",
+        "The LM curve shifts to the right",
+        "The LM curve remains unchanged",
+        "Into the IS curve"
       ],
       "tag": "lm_curve",
       "type": "application",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
-      "feedback": "If people want to hold more money, r must be higher at each Y, so LM shifts left.",
-      "aHash": "360f84035942243c6a36537ae2f8673485e6c04455a0a85a0db19690f2541480"
+      "feedback": "If people want to hold more money, the interest rate must be higher at each output, so the LM curve shifts to the left.",
+      "aHash": "7209f245e9557768815d2614dc39197a10a4c027c4a4c3740a441280bb52ae76"
     },
     {
       "id": 22,
       "q": "What does a point on LM tell you?",
       "options": [
-        "planned spending exceeds output",
-        "Md equals real M at that Y & r",
-        "inflation equals expected inflation",
-        "output equals natural output"
+        "Planned spending exceeds output",
+        "Money demand equals real money supply at that output and the interest rate",
+        "Inflation equals expected inflation",
+        "Output equals natural output"
       ],
       "tag": "lm_curve",
       "type": "interpretation",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
       "feedback": "Each point on LM is a money-market equilibrium combination.",
-      "aHash": "c89ddecca591d9cd42cb9359db63358d97ec7f88ffd5c15a69d797a3f7f8d9f6"
+      "aHash": "ae12cad50ed8cadb9015a43738b33aef0bbb4a5aed6fa8978153327f7fd8ba70"
     },
     {
       "id": 23,
@@ -415,58 +415,58 @@ const questionBanks = {
       "id": 24,
       "q": "What two endogenous variables are solved in the basic IS-LM diagram?",
       "options": [
-        "price level and inflation",
-        "taxes and government purchases",
-        "capital and labor",
-        "income and the interest rate"
+        "Price level and inflation",
+        "Taxes and government purchases",
+        "Capital and labor",
+        "Income and the interest rate"
       ],
       "tag": "is_lm_equilibrium",
       "type": "definition",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
-      "feedback": "The short-run IS-LM model solves for Y and r when P is fixed.",
+      "feedback": "The short-run IS-LM model solves for output and the interest rate when the price level is fixed.",
       "aHash": "24275fd451b0bb0b9b4a55bbabc701fd015806ba609c9f16bcb962213ad58d7e"
     },
     {
       "id": 25,
-      "q": "If IS shifts right while LM stays fixed, what usually happens to Y and r?",
+      "q": "If the IS curve shifts to the right while LM stays fixed, what usually happens to output and the interest rate?",
       "options": [
-        "Y rises and r rises",
-        "Y rises and r falls",
-        "Y falls and r falls",
-        "Y falls and r rises"
+        "Output rises and the interest rate rises",
+        "Output rises and the interest rate falls",
+        "Output falls and the interest rate falls",
+        "Output falls and the interest rate rises"
       ],
       "tag": "is_lm_equilibrium",
       "type": "application",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
-      "feedback": "IS-right increases income, which raises money demand and the interest rate along LM.",
-      "aHash": "c84522fb5a61409586c18a3eebe66bbdd014bf2de9e8103093ca9bf109cbb208"
+      "feedback": "A rightward shift of the IS curve increases income, which raises money demand and the interest rate along LM.",
+      "aHash": "f2bf8158751b088c239cea6d34cd16bb424ae0c4c02b61222e44e788a3cec953"
     },
     {
       "id": 26,
-      "q": "If LM shifts right while IS stays fixed, what usually happens to Y and r?",
+      "q": "If the LM curve shifts to the right while IS stays fixed, what usually happens to output and the interest rate?",
       "options": [
-        "Y falls and r rises",
-        "Y rises and r falls",
-        "Y rises and r rises",
-        "Y falls and r falls"
+        "Output falls and the interest rate rises",
+        "Output rises and the interest rate falls",
+        "Output rises and the interest rate rises",
+        "Output falls and the interest rate falls"
       ],
       "tag": "is_lm_equilibrium",
       "type": "application",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
-      "feedback": "LM-right lowers r, raising investment and income along IS.",
-      "aHash": "68721b975c99b9fe331ed7f2e678db5f145f0140c333a070fe60b3186adf41f5"
+      "feedback": "A rightward shift of the LM curve lowers the interest rate, raising investment and income along IS.",
+      "aHash": "e2301a21ef1378bb6dbde9aa3d973147b90d912ebcae9d379e908511e5c3e2c4"
     },
     {
       "id": 27,
       "q": "Which statement wrongly treats an equilibrium outcome as the original shock?",
       "options": [
-        "higher G shifts IS right",
-        "higher M shifts LM right",
-        "Y rises, therefore IS must have shifted right",
-        "lower money demand shifts LM right"
+        "Higher government purchases shift the IS curve to the right",
+        "Higher nominal money supply shifts the LM curve to the right",
+        "Output rises, therefore IS must have shifted right",
+        "Lower money demand shifts the LM curve to the right"
       ],
       "tag": "is_lm_equilibrium",
       "type": "trap",
@@ -474,11 +474,11 @@ const questionBanks = {
       "primarySkill": "is_lm_equilibrium",
       "feedback": "The same income change can come from different shocks; identify the curve movement first.",
       "commonError": "inferring the shock only from Y",
-      "aHash": "b3f83f98e0fa7cc36d5d8ce45c1c4e173c84968b157d9c25582b4e751413105d"
+      "aHash": "e5faa0824d6bd41606dad1a7d3399a6ca475bd0f8d2fed6ee690cecd761aa237"
     },
     {
       "id": 28,
-      "q": "In the IS-LM graph, which point is the intersection of IS1 and LM1?",
+      "q": "Refer to the IS–LM graph. Which point is the intersection of IS1 and LM1?",
       "options": [
         "D",
         "E",
@@ -530,134 +530,134 @@ const questionBanks = {
       "id": 31,
       "q": "What does it mean if an economy is not at the IS-LM intersection?",
       "options": [
-        "both markets must be exactly balanced",
-        "natural output has shifted",
-        "at least one market is not in eq.",
-        "money supply is zero"
+        "Both markets must be exactly balanced",
+        "Natural output has shifted",
+        "At least one market is not in equilibrium",
+        "Money supply is zero"
       ],
       "tag": "is_lm_equilibrium",
       "type": "interpretation",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
-      "feedback": "Away from the intersection, either planned spending, money holdings, or both are inconsistent with the current Y-r pair.",
-      "aHash": "46772243ce56eabf15751e08901c0dca07a7efaf2591f458b2c2c4b18652d1bc"
+      "feedback": "Away from the intersection, either planned spending, money holdings, or both are inconsistent with the current combination of output and the interest rate.",
+      "aHash": "6e5da0483c4eaaa33d9ce12ad4012483fc1fba98c7ed0d0461ca0d4caf3c2206"
     },
     {
       "id": 32,
       "q": "Why is the price level treated as fixed in basic short-run IS-LM?",
       "options": [
-        "to force Y to equal LRAS",
-        "to remove money from the model",
-        "to make taxes endogenous",
-        "to focus on demand-side Y & interest-rate adjustment"
+        "To force output to equal LRAS",
+        "To remove money from the model",
+        "To make taxes endogenous",
+        "To focus on demand-side output and interest-rate adjustment"
       ],
       "tag": "is_lm_equilibrium",
       "type": "definition",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
-      "feedback": "The fixed-price assumption lets the model explain short-run fluctuations in Y and r.",
-      "aHash": "e889904b32fa899db728d020986925d8337d65830ee114b65d690d456c1b17f0"
+      "feedback": "The fixed-price assumption lets the model explain short-run fluctuations in output and the interest rate.",
+      "aHash": "9dc48b4de57f09d193af983896e1379b654036a1f960e94310f04bf09d52dc39"
     },
     {
       "id": 33,
-      "q": "A simultaneous IS-right and LM-right shift has what clear effect on income?",
+      "q": "If the IS and LM curves both shift to the right, what happens to equilibrium output?",
       "options": [
-        "Y rises",
-        "Y falls",
-        "Y is unchanged",
-        "Y must equal zero"
+        "Output rises",
+        "Output falls",
+        "Output is unchanged",
+        "Output must equal zero"
       ],
       "tag": "is_lm_equilibrium",
       "type": "application",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
-      "feedback": "Both shifts raise income; their effects on r can offset each other.",
-      "aHash": "62cee539c6a46f267a6b7d30687ef88f43b79869cfacd02130f60e91f24e3434"
+      "feedback": "Both shifts raise income; their effects on the interest rate can offset each other.",
+      "aHash": "0b6435b356cbf9a46ccef412035e920828aae4da02b1f677261baf2c83ae9224"
     },
     {
       "id": 34,
       "q": "In IS-LM, what is a shock?",
       "options": [
-        "a point chosen after solving",
-        "a label for the old equilibrium",
-        "a required movement of LRAS",
-        "an outside change that a curve"
+        "A point chosen after solving",
+        "A label for the old equilibrium",
+        "A required movement of LRAS",
+        "An exogenous change that shifts a curve"
       ],
       "tag": "shocks",
       "type": "definition",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "A shock is an exogenous change; Y and r are outcomes after the model adjusts.",
-      "aHash": "b4fd0c7dd183377426156c16ee807715f7c35bf016b8e7102f5db73767b6dca5"
+      "feedback": "A shock is an exogenous change; output and the interest rate are outcomes after the model adjusts.",
+      "aHash": "5ff4f63dd12fb11f1e660decffcb81222ce6c9d028ec42ae758e43dfd0193265"
     },
     {
       "id": 35,
       "q": "A sudden fall in planned investment is first shown how?",
       "options": [
-        "IS shifts left",
-        "LM shifts right",
-        "IS shifts right",
-        "LRAS shifts right"
+        "The IS curve shifts to the left",
+        "The LM curve shifts to the right",
+        "The IS curve shifts to the right",
+        "The LRAS curve shifts to the right"
       ],
       "tag": "shocks",
       "type": "application",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "Investment is part of planned expenditure, so weaker investment demand shifts IS left.",
-      "aHash": "b771bcc5050e268b04291777123975f64737ece1b772600fa99ef2e8beabcb24"
+      "feedback": "Investment is part of planned expenditure, so weaker investment demand shifts the IS curve to the left.",
+      "aHash": "c4cf64fb8598fc492df65f87650bc57499d6e6377b89da6d9d81aeb37390760e"
     },
     {
       "id": 36,
       "q": "A sudden rise in money demand is first shown how?",
       "options": [
-        "IS shifts right",
-        "LM shifts left",
-        "LM shifts right",
-        "AD shifts right"
+        "The IS curve shifts to the right",
+        "The LM curve shifts to the left",
+        "The LM curve shifts to the right",
+        "The AD curve shifts to the right"
       ],
       "tag": "shocks",
       "type": "application",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "More money demand raises the interest rate needed at each income, shifting LM left.",
-      "aHash": "5cf2b5cc03745222042b5bad245ed091beaa60173bd472562add855374faa077"
+      "feedback": "More money demand raises the interest rate needed at each income, shifting the LM curve to the left.",
+      "aHash": "7209f245e9557768815d2614dc39197a10a4c027c4a4c3740a441280bb52ae76"
     },
     {
       "id": 37,
-      "q": "Why is “Y fell” alone not enough to identify a shock?",
+      "q": "Why is “output fell” alone not enough to identify a shock?",
       "options": [
-        "only IS can affect Y",
-        "only LM can affect Y",
-        "both IS-left & LM-left can reduce Y",
-        "Y never changes in IS-LM"
+        "Only IS can affect output",
+        "Only LM can affect output",
+        "Both a leftward shift of the IS curve and a leftward shift of the LM curve can reduce output",
+        "Output never changes in IS-LM"
       ],
       "tag": "shocks",
       "type": "trap",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "Different shocks can produce the same output direction, so r and the shifted curve matter.",
+      "feedback": "Different shocks can produce the same output direction, so the interest rate and the shifted curve matter.",
       "commonError": "diagnosing from output alone",
-      "aHash": "653132c741f190337dd355a7f9bb61ff5f2cbf95155e5ffdeddc9be89838442a"
+      "aHash": "05af9bc4ac87a8d5650bc8c1b9bbef017e75190aaf2803bc086b631ccf309a2b"
     },
     {
       "id": 38,
       "q": "If business confidence rises, what happens in the basic IS-LM model?",
       "options": [
-        "LM shifts left, lowering Y and raising r",
-        "IS shifts left, lowering Y and r",
-        "LM shifts right, raising Y and lowering r",
-        "IS shifts right, raising Y and r"
+        "The LM curve shifts to the left, lowering output and raising the interest rate",
+        "The IS curve shifts to the left, lowering output and the interest rate",
+        "The LM curve shifts to the right, raising output and lowering the interest rate",
+        "The IS curve shifts to the right, raising output and the interest rate"
       ],
       "tag": "shocks",
       "type": "application",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "Higher confidence raises investment demand, shifting IS right.",
-      "aHash": "b9f018b757a9bf9aab737ab3829b1dc8011208c9e93be7f8004a646b9ca08014"
+      "feedback": "Higher confidence raises investment demand, shifting the IS curve to the right.",
+      "aHash": "ebe9d9c07cf7ded7a02fb617d33614430921ae966b5d01b732a318ace8fddef4"
     },
     {
       "id": 39,
-      "q": "On the IS-LM graph, moving from A to B is caused by what?",
+      "q": "Refer to the IS–LM graph. Which curve shift moves the equilibrium from A to B?",
       "options": [
         "an IS curve shifting right",
         "an LM curve shifting right",
@@ -674,7 +674,7 @@ const questionBanks = {
     },
     {
       "id": 40,
-      "q": "An autonomous spending shock lowers demand by $30 billion. If MPC=0.75, what is the simple-cross output change?",
+      "q": "An autonomous spending shock lowers demand by $30 billion. If MPC=0.75, what is the simple Keynesian-cross output change?",
       "options": [
         "−$90 billion",
         "−$120 billion",
@@ -691,7 +691,7 @@ const questionBanks = {
     },
     {
       "id": 41,
-      "q": "Money demand rises by 25 in real terms and P=8. How much must nominal M rise to fully offset it?",
+      "q": "Money demand rises by 25 in real terms and P=8. How much must nominal money supply rise to fully offset it?",
       "options": [
         "25",
         "100",
@@ -708,23 +708,23 @@ const questionBanks = {
     },
     {
       "id": 42,
-      "q": "If a shock lowers Y and lowers r, which curve most likely shifted left?",
+      "q": "If a shock lowers output and lowers the interest rate, which curve most likely shifted left?",
       "options": [
         "LM",
         "LRAS",
-        "money supply",
+        "Money supply",
         "IS"
       ],
       "tag": "shocks",
       "type": "interpretation",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "IS-left lowers spending and output; lower income reduces money demand and r.",
+      "feedback": "A leftward shift of the IS curve lowers spending and output; lower income reduces money demand and the interest rate.",
       "aHash": "fa51fd49abf67705d6a35d18218c115ff5633aec1f9ebfdc9d5d4956416f57f6"
     },
     {
       "id": 43,
-      "q": "If a shock lowers Y and raises r, which curve most likely shifted left?",
+      "q": "If a shock lowers output and raises the interest rate, which curve most likely shifted left?",
       "options": [
         "LM",
         "IS",
@@ -735,7 +735,7 @@ const questionBanks = {
       "type": "interpretation",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "LM-left tightens money markets, raising r and reducing investment and Y.",
+      "feedback": "A leftward shift of the LM curve tightens money markets, raising the interest rate and reducing investment and output.",
       "aHash": "599af8b0b1a3ddc2cc5b01de2261b5b441b410878fe4752a850b811939de4671"
     },
     {
@@ -758,103 +758,103 @@ const questionBanks = {
       "id": 45,
       "q": "Which policy is fiscal policy in the IS-LM model?",
       "options": [
-        "changes in M",
-        "changes in money demand",
-        "changes in G or T",
-        "changes in reserve demand"
+        "Changes in the nominal money supply",
+        "Changes in money demand",
+        "Changes in government purchases or taxes",
+        "Changes in reserve demand"
       ],
       "tag": "fiscal_policy",
       "type": "definition",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
       "feedback": "Fiscal policy works through government purchases, taxes, and transfers.",
-      "aHash": "e6ca5190853c6b79466da86050e7bc9b134c5fa925f06afcc840ad588cbf33af"
+      "aHash": "044ff9a33c321229b23762ef3b6f047a20d7a4c2f8f5a2561ef9c61950bd28b0"
     },
     {
       "id": 46,
       "q": "An increase in government purchases first shifts which curve?",
       "options": [
-        "LM right",
-        "LM left",
-        "LRAS left",
-        "IS right"
+        "The LM curve shifts to the right",
+        "The LM curve shifts to the left",
+        "The LRAS curve shifts to the left",
+        "The IS curve shifts to the right"
       ],
       "tag": "fiscal_policy",
       "type": "application",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
       "feedback": "Government purchases enter planned expenditure directly.",
-      "aHash": "3490f6d555bf8212f2008596fd94dce30d0657bbebab3dad5f698c740acdffd7"
+      "aHash": "f713a51176694d7c4c9d597bbfd7128c38ad53ea06301dfec9baadc5ff6f749f"
     },
     {
       "id": 47,
       "q": "A tax increase first shifts which curve?",
       "options": [
-        "IS left",
-        "LM left",
-        "AD right",
-        "LRAS right"
+        "The IS curve shifts to the left",
+        "The LM curve shifts to the left",
+        "The AD curve shifts to the right",
+        "The LRAS curve shifts to the right"
       ],
       "tag": "fiscal_policy",
       "type": "application",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
       "feedback": "Higher taxes reduce disposable income and consumption.",
-      "aHash": "aecb3d7903579eb1db0deab40a432e2dfe68f0f6c338891cf5b0a37e9a57ad37"
+      "aHash": "c4cf64fb8598fc492df65f87650bc57499d6e6377b89da6d9d81aeb37390760e"
     },
     {
       "id": 48,
       "q": "Which statement confuses fiscal and monetary policy?",
       "options": [
-        "higher G shifts IS right",
-        "higher G LM right directly",
-        "higher taxes shift IS left",
-        "tax cuts raise consumption"
+        "Higher government purchases shift the IS curve to the right",
+        "Higher government purchases directly shift LM to the right",
+        "Higher taxes shift the IS curve to the left",
+        "Tax cuts raise consumption"
       ],
       "tag": "fiscal_policy",
       "type": "trap",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "G and T are goods-market variables; they shift IS first.",
+      "feedback": "Government purchases and taxes are goods-market variables; they shift IS first.",
       "commonError": "putting fiscal policy on LM",
-      "aHash": "2916fe797af9fa78f2fa2a81d0b9d05ba116474841bc5468405d1cf66a9038f4"
+      "aHash": "ff25db7ab8d4c39cab6bdf3d27f4ea70505c453f2e5affede88e1f0736368b26"
     },
     {
       "id": 49,
       "q": "Why can fiscal expansion crowd out investment?",
       "options": [
-        "it lowers r through higher money supply",
-        "it cuts taxes automatically",
-        "it raises r through higher money demand",
-        "it shifts LRAS left"
+        "It lowers the interest rate through higher money supply",
+        "It cuts taxes automatically",
+        "It raises the interest rate through higher money demand",
+        "It shifts the LRAS curve to the left"
       ],
       "tag": "fiscal_policy",
       "type": "interpretation",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "Higher Y raises transactions demand for money, raising r and reducing some investment.",
-      "aHash": "db292b2cd3f614f1eaf70297a928d821fd3f3565774642a6e92adafa5b119bdf"
+      "feedback": "Higher output raises transactions demand for money, raising the interest rate and reducing some investment.",
+      "aHash": "2f378d3ca5203ccb98d85caaf09309e514753bcb6cd69014f3390b291c7ac5c0"
     },
     {
       "id": 50,
-      "q": "On the IS-LM graph, A to B is consistent with what policy?",
+      "q": "Refer to the IS–LM graph. A to B is consistent with what policy?",
       "options": [
         "open-market bond sales",
         "higher money demand",
         "lower nominal money supply",
-        "higher G"
+        "Higher government purchases"
       ],
       "tag": "fiscal_policy",
       "type": "graph",
       "objective": "LO13.2",
       "image": "is_lm_curves.webp",
       "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "A to B is an IS-right shift with LM fixed.",
-      "aHash": "5b994e0d08a7550403fed33dcd1ab6afcfc4ff0da38fa84ca1a1d1405ee20e74"
+      "feedback": "A to B is a rightward shift of the IS curve with LM fixed.",
+      "aHash": "93128be92cf97ee7a9cc01070dfa4209330d341b0da7480b5381144ea2283a2e"
     },
     {
       "id": 51,
-      "q": "If MPC=0.75, a $10 billion rise in G raises simple-cross Y by how much?",
+      "q": "The marginal propensity to consume is 0.75. In the simple Keynesian-cross model, how much does output rise when government purchases increase by $10 billion?",
       "options": [
         "$40 billion",
         "$10 billion",
@@ -890,147 +890,147 @@ const questionBanks = {
       "id": 53,
       "q": "What is crowding out?",
       "options": [
-        "monetary expansion raises taxes",
-        "prices fall and raise output",
-        "fiscal expansion raises r & reduces some I",
-        "LRAS shifts whenever G changes"
+        "Monetary expansion raises taxes",
+        "Prices fall and raise output",
+        "Fiscal expansion raises the interest rate and reduces some investment",
+        "LRAS shifts whenever government purchases change"
       ],
       "tag": "fiscal_policy",
       "type": "definition",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
       "feedback": "Crowding out is the interest-rate feedback that offsets part of the spending increase.",
-      "aHash": "69cae7272d268b90652e37f9f54ff577d49a39f6a3e4e9802e7a9a5e1c9b2c85"
+      "aHash": "0d7395ffcbf842ae8d5b76e4ad1b9eb7256cf1e4240f8c248a1c92480611c474"
     },
     {
       "id": 54,
-      "q": "A transfer increase shifts IS right because it does what first?",
+      "q": "Through which initial change does an increase in transfers shift the IS curve to the right?",
       "options": [
-        "raises nominal money supply",
-        "lowers the price level",
-        "raises natural output",
-        "raises disposable Y for recipients"
+        "Raises nominal money supply",
+        "Lowers the price level",
+        "Raises natural output",
+        "Raises disposable income for recipients"
       ],
       "tag": "fiscal_policy",
       "type": "application",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
       "feedback": "Transfers can raise consumption by increasing disposable income.",
-      "aHash": "f61345973603d4f66ca69d7b1d23f19b80dd111afea62eb9c44b025262b087be"
+      "aHash": "ddc03a89e2832d3a7eb64ad5d9e11ea920a0537234d6d798a09cc6395affb0c5"
     },
     {
       "id": 55,
       "q": "If the Fed accommodates fiscal expansion, what does it change?",
       "options": [
-        "money supply",
-        "government purchases",
-        "tax law",
-        "natural output"
+        "Money supply",
+        "Government purchases",
+        "Tax law",
+        "Natural output"
       ],
       "tag": "fiscal_policy",
       "type": "interpretation",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "Accommodation means the central bank shifts LM right to limit the rise in r.",
+      "feedback": "Accommodation means the central bank shifts the LM curve to the right to limit the rise in the interest rate.",
       "aHash": "d908af39902a40acd9c270333160114e982040f20365f07e718741613ce42b85"
     },
     {
       "id": 56,
       "q": "Which action is expansionary monetary policy?",
       "options": [
-        "the government raises G",
-        "the Fed increases the M",
+        "The government raises government purchases",
+        "The Fed increases the nominal money supply",
         "Congress cuts taxes",
-        "firms raise investment plans"
+        "Firms raise investment plans"
       ],
       "tag": "monetary_policy",
       "type": "definition",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
-      "feedback": "Expansionary monetary policy raises M and shifts LM right.",
-      "aHash": "db6abe4edf5bc6ef7a68d3e8f79273c1c0cba1394807a16e9b6366d6d4600f1c"
+      "feedback": "Expansionary monetary policy raises the nominal money supply and shifts the LM curve to the right.",
+      "aHash": "31ad57de1906025be032786c0a920323161ecd0aa936015cb2152da25cbed74c"
     },
     {
       "id": 57,
       "q": "If the Fed buys bonds in an open-market operation, what happens to LM?",
       "options": [
-        "LM shifts left",
-        "IS shifts left",
-        "LM shifts right",
-        "LRAS shifts left"
+        "The LM curve shifts to the left",
+        "The IS curve shifts to the left",
+        "The LM curve shifts to the right",
+        "The LRAS curve shifts to the left"
       ],
       "tag": "monetary_policy",
       "type": "application",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
       "feedback": "Bond purchases increase reserves and the money supply.",
-      "aHash": "6e1f8a919b85b829e9ba43a66b3c0c65f5206e8e541d40d477946f1f8efdd29a"
+      "aHash": "e02b02d3b5d106df9065a6f9be8d21714d848a5a9807c791fb5b4db41186b9ba"
     },
     {
       "id": 58,
-      "q": "If the Fed sells bonds, what happens to r and Y in the basic model?",
+      "q": "In the IS–LM model with a fixed price level and an unchanged IS curve, how do central-bank bond sales affect equilibrium output and the interest rate?",
       "options": [
-        "r falls and Y rises",
-        "r rises and Y rises",
-        "r falls and Y falls",
-        "r rises and Y falls"
+        "The interest rate falls and output rises",
+        "The interest rate rises and output rises",
+        "The interest rate falls and output falls",
+        "The interest rate rises and output falls"
       ],
       "tag": "monetary_policy",
       "type": "application",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
-      "feedback": "Bond sales reduce M, shift LM left, raise r, and reduce investment.",
-      "aHash": "37088a4b00158e3f97d2da2ef21f565dd87fee369296e1570f8d425a2bdc45f3"
+      "feedback": "Bond sales reduce the nominal money supply, shift the LM curve to the left, raise the interest rate, and reduce investment.",
+      "aHash": "ebec74f6a1fbf5cc51ed92ad615fb18400b5e86907076c0263776e608332f79e"
     },
     {
       "id": 59,
       "q": "Which statement puts monetary policy on the wrong curve?",
       "options": [
-        "a money-supply increase IS right directly",
-        "a money-supply increase shifts LM right",
-        "a money-supply cut shifts LM left",
-        "lower r can raise investment"
+        "A money-supply increase directly shifts IS to the right",
+        "A money-supply increase shifts the LM curve to the right",
+        "A money-supply cut shifts the LM curve to the left",
+        "A lower interest rate can raise investment"
       ],
       "tag": "monetary_policy",
       "type": "trap",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
-      "feedback": "The first curve affected by M is LM, not IS.",
+      "feedback": "The first curve affected by the nominal money supply is LM, not IS.",
       "commonError": "shifting IS directly from M",
-      "aHash": "373eed5d97a0ad4d17862be06f03a103e7d2901c9f5e3653045281e0b4bd1bb8"
+      "aHash": "7dc3c95917642d74fe6cc2c2b816b87dcde0241034a904eac2cb51fe68bda777"
     },
     {
       "id": 60,
       "q": "Why does monetary expansion raise output when prices are fixed?",
       "options": [
-        "G rises automatically",
-        "M/P rises, r falls, & I rises",
-        "taxes fall automatically",
+        "Government purchases rise automatically",
+        "Real money balances rise, the interest rate falls, and investment rises",
+        "Taxes fall automatically",
         "LRAS moves right immediately"
       ],
       "tag": "monetary_policy",
       "type": "interpretation",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
-      "feedback": "With P fixed, higher M means higher real balances and lower r.",
-      "aHash": "6ea3741e09cf1cb860df5678a9ffafb7186689f0656e409ec778d5c110acaaaa"
+      "feedback": "With the price level fixed, higher nominal money supply means higher real balances and a lower interest rate.",
+      "aHash": "8d489a435c6487bd04d532e54e2d60f095c6adee28ed891618eb310544e66473"
     },
     {
       "id": 61,
-      "q": "On the IS-LM graph, D to G is caused by what?",
+      "q": "Refer to the IS–LM graph. Which curve shift moves the equilibrium from D to G?",
       "options": [
-        "IS shifts right with LM2 fixed",
-        "LM shifts left with IS2 fixed",
-        "LM shifts right with IS2 fixed",
-        "IS shifts left with LM2 fixed"
+        "The IS curve shifts to the right with LM2 fixed",
+        "The LM curve shifts to the left with IS2 fixed",
+        "The LM curve shifts to the right with IS2 fixed",
+        "The IS curve shifts to the left with LM2 fixed"
       ],
       "tag": "monetary_policy",
       "type": "graph",
       "objective": "LO13.3",
       "image": "is_lm_curves.webp",
       "primarySkill": "monetary_policy_lm_shift",
-      "feedback": "D and G share IS2, while LM shifts right.",
-      "aHash": "fc3f30e8f63c6fd7d70e7b962982e58070d55f85344971f12fdebe0753f305e0"
+      "feedback": "D and G share IS2, while the LM curve shifts to the right.",
+      "aHash": "9a82a229110a928285ebb07620d6d1b55f6245c81636266f0655330c863d99f6"
     },
     {
       "id": 62,
@@ -1051,7 +1051,7 @@ const questionBanks = {
     },
     {
       "id": 63,
-      "q": "If M rises from 2,000 to 2,500 while P=10, how much do real balances rise?",
+      "q": "If the nominal money supply rises from 2,000 to 2,500 while P=10, how much do real balances rise?",
       "options": [
         "50",
         "500",
@@ -1070,9 +1070,9 @@ const questionBanks = {
       "id": 64,
       "q": "What is the money-market channel of monetary policy?",
       "options": [
-        "taxes change consumption first",
-        "M changes move r, then I changes",
-        "G changes planned spending first",
+        "Taxes change consumption first",
+        "The changes in nominal money supply move the interest rate, then investment changes",
+        "Government purchases change planned spending first",
         "LRAS changes capacity first"
       ],
       "tag": "monetary_policy",
@@ -1080,7 +1080,7 @@ const questionBanks = {
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
       "feedback": "Monetary policy transmits through liquidity, interest rates, and investment.",
-      "aHash": "d062a08b738787ac875b080f5d2906b09c85f0031fac41619902937f30cdd18e"
+      "aHash": "58a3d06ecbc21eeca22813d9fc335578a5d98d767bfdfadcf0fb9982775d6ffa"
     },
     {
       "id": 65,
@@ -1100,104 +1100,104 @@ const questionBanks = {
     },
     {
       "id": 66,
-      "q": "What limits monetary policy in the basic IS-LM setup if investment is insensitive to r?",
+      "q": "What limits monetary policy in the basic IS-LM setup if investment is insensitive to the interest rate?",
       "options": [
-        "money supply cannot shift LM",
-        "taxes stop affecting consumption",
-        "income cannot move along IS",
-        "lower r produces little extra I"
+        "Money supply cannot shift LM",
+        "Taxes stop affecting consumption",
+        "Income cannot move along IS",
+        "A lower interest rate produces little extra investment"
       ],
       "tag": "monetary_policy",
       "type": "interpretation",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
-      "feedback": "The policy can move r, but output needs investment to respond.",
-      "aHash": "23c7c1b81fc7f958d731ad7edfee8a23d6ff968767da25e79d5036b3c37bf60b"
+      "feedback": "The policy can move the interest rate, but output needs investment to respond.",
+      "aHash": "0415b88c1a7f01a13dbf19f12d542cf3933ccd7eee56374abc06778b449c377e"
     },
     {
       "id": 67,
       "q": "In this unit, the AD curve is derived from which model?",
       "options": [
         "IS-LM at different price levels",
-        "the PPF at different wages",
-        "labor supply at different taxes",
+        "The PPF at different wages",
+        "Labor supply at different taxes",
         "LRAS at different interest rates"
       ],
       "tag": "aggregate_demand",
       "type": "definition",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "Changing P changes real balances, which shifts LM and changes Y in IS-LM.",
+      "feedback": "Changing the price level changes real balances, which shifts LM and changes output in IS-LM.",
       "aHash": "b39fff8f95301e8bb19ad103604af278f05b4216477fb52ebfcdec9fee3d1830"
     },
     {
       "id": 68,
       "q": "Why does AD slope downward in the IS-LM derivation?",
       "options": [
-        "lower P shifts IS left",
-        "lower P raises M/P & LM right",
-        "lower P lowers real balances",
-        "lower P makes LRAS horizontal"
+        "Lower price level shifts the IS curve to the left",
+        "A lower price level raises real money balances and shifts LM to the right",
+        "Lower price level lowers real balances",
+        "Lower price level makes LRAS horizontal"
       ],
       "tag": "aggregate_demand",
       "type": "definition",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "A lower price level raises real balances, lowers r, and raises income.",
-      "aHash": "62d2e0c75521e62fbe12786fc13cfa678d2c9b5411213015779d295bb826733c"
+      "feedback": "A lower price level raises real balances, lowers the interest rate, and raises income.",
+      "aHash": "3cc2c3d3f4cdc50cf0e9766fc0c568018fcc2348692e4dc3b055f7820839f51e"
     },
     {
       "id": 69,
-      "q": "A fall in P with fixed M first affects which curve?",
+      "q": "A fall in the price level with fixed nominal money supply first affects which curve?",
       "options": [
-        "IS shifts left",
-        "LRAS shifts left",
-        "LM shifts right",
-        "taxes rise"
+        "The IS curve shifts to the left",
+        "The LRAS curve shifts to the left",
+        "The LM curve shifts to the right",
+        "Taxes rise"
       ],
       "tag": "aggregate_demand",
       "type": "application",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
       "feedback": "The price level changes real money balances, so the first IS-LM curve affected is LM.",
-      "aHash": "6e1f8a919b85b829e9ba43a66b3c0c65f5206e8e541d40d477946f1f8efdd29a"
+      "aHash": "e02b02d3b5d106df9065a6f9be8d21714d848a5a9807c791fb5b4db41186b9ba"
     },
     {
       "id": 70,
       "q": "Which answer confuses movement along AD with a shift of AD?",
       "options": [
-        "higher G shifts AD right",
-        "higher M shifts AD right",
-        "lower investment demand shifts AD left",
-        "a lower P moves down along AD"
+        "Higher government purchases shift the AD curve to the right",
+        "Higher nominal money supply shifts the AD curve to the right",
+        "Lower investment demand shifts the AD curve to the left",
+        "A lower price level shifts the AD curve to the right"
       ],
       "tag": "aggregate_demand",
       "type": "trap",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "A change in P moves along a given AD curve; policy or spending changes shift AD.",
+      "feedback": "A change in the price level causes a movement along a fixed AD curve. Changes in government purchases, nominal money or autonomous investment can shift the curve.",
       "commonError": "calling a price-level movement an AD shift",
-      "aHash": "8a9d0fecbe35e457c3a73518ca1cc5473ee0e92a7bd2996832421af16210ae42"
+      "aHash": "6a47031e7588f4567412630a0acd71eb80b25818f6b66fa99f3fa6ca59cbd936"
     },
     {
       "id": 71,
       "q": "If government purchases rise at each price level, what happens to AD?",
       "options": [
-        "AD shifts right",
-        "AD shifts left",
-        "movement down along AD",
-        "LRAS shifts left only"
+        "The AD curve shifts to the right",
+        "The AD curve shifts to the left",
+        "Movement down along AD",
+        "The LRAS curve shifts to the left only"
       ],
       "tag": "aggregate_demand",
       "type": "application",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "Higher G shifts IS right at each price level, so AD shifts right.",
-      "aHash": "09d5db62cd4aa2c1ddbe483dfc57826189236fd7b1cb2716828ccc65e8923bfd"
+      "feedback": "Higher government purchases shift the IS curve to the right at each price level, so the AD curve shifts to the right.",
+      "aHash": "0fa35cb97d3bc116503b25a39d0d14259dc0bc6c89deb21cfe8c6090f8022d7d"
     },
     {
       "id": 72,
-      "q": "On the AD graph, along AD1, which point is at the highest price level?",
+      "q": "Refer to the IS–LM and aggregate demand graph. Along AD1, which point is at the highest price level?",
       "options": [
         "4",
         "1",
@@ -1214,7 +1214,7 @@ const questionBanks = {
     },
     {
       "id": 73,
-      "q": "If M=2,000 and P falls from 10 to 8, what happens to M/P?",
+      "q": "If M=2,000 and the price level falls from 10 to 8, what happens to M/P?",
       "options": [
         "it falls from 250 to 200",
         "it stays at 200",
@@ -1248,50 +1248,50 @@ const questionBanks = {
     },
     {
       "id": 75,
-      "q": "What happens to r when P falls in the AD derivation?",
+      "q": "What happens to the interest rate when the price level falls in the AD derivation?",
       "options": [
-        "r falls since LM right",
-        "r rises because IS shifts left",
-        "r is fixed by LRAS",
-        "r disappears from the model"
+        "The interest rate falls because LM shifts to the right",
+        "The interest rate rises because the IS curve shifts to the left",
+        "The interest rate is fixed by LRAS",
+        "The interest rate disappears from the model"
       ],
       "tag": "aggregate_demand",
       "type": "interpretation",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "Higher real balances lower the interest rate in IS-LM.",
-      "aHash": "f97c510c6505dc327e2d1d4ccad3d5f74f570c966befc97408053b56eb4d0d72"
+      "feedback": "Higher real money balances lower the interest rate in IS-LM.",
+      "aHash": "d10d6d30a3c80f310a93e3cdcc06b0ac4d50d339b5d7b85f5b771fc9d6b2cdfd"
     },
     {
       "id": 76,
-      "q": "A shift of AD means what?",
+      "q": "What changes when the aggregate demand curve shifts?",
       "options": [
-        "movement to another point on the same AD",
-        "different Y at each price level",
-        "a change only in graph scale",
-        "output fixed at natural output"
+        "Movement to another point on the same AD",
+        "Different output at each price level",
+        "A change only in graph scale",
+        "Output fixed at natural output"
       ],
       "tag": "aggregate_demand",
       "type": "definition",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "An AD shift changes aggregate demand for any given P.",
-      "aHash": "2026b179499f03dc68af5c614bf25980c73289b2093fe92447007dc6c4a5ba05"
+      "feedback": "An AD shift changes aggregate demand for any given price level.",
+      "aHash": "45621da94a910c7ee1e06c4eba8b0b80333d79d27f630ab96a52ff027604f38d"
     },
     {
       "id": 77,
-      "q": "A monetary expansion shifts AD right because it does what at each P?",
+      "q": "How does monetary expansion increase aggregate demand at each price level?",
       "options": [
-        "lowers real balances",
-        "cuts government purchases",
-        "raises M/P relative to the old M",
-        "raises taxes"
+        "Lowers real balances",
+        "Cuts government purchases",
+        "Raises M/P relative to the old M",
+        "Raises taxes"
       ],
       "tag": "aggregate_demand",
       "type": "application",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "For any price level, higher M means higher M/P and more demand.",
+      "feedback": "For any price level, higher nominal money supply means higher M/P and more demand.",
       "aHash": "b89f60cb4f714e3c46a7a0c4bbb6d4e88e45f72a7c66d5cce208232a55eb4c6e"
     },
     {
@@ -1314,56 +1314,56 @@ const questionBanks = {
       "id": 79,
       "q": "How can expected deflation reduce investment?",
       "options": [
-        "it raises real r for a given nominal rate",
-        "it lowers real debt burdens",
-        "it shifts LM right without limit",
-        "it raises government purchases automatically"
+        "It raises the real interest rate for a given nominal rate",
+        "It lowers real debt burdens",
+        "It shifts the LM curve to the right without limit",
+        "It raises government purchases automatically"
       ],
       "tag": "great_depression",
       "type": "definition",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "If prices are expected to fall, borrowing is more expensive in real terms.",
-      "aHash": "0768b11dcdcfa560c62996c336aa0993ea2fbad2ad9f93e98375518351be260f"
+      "aHash": "34722ecf351f37fd1e740d3ce4a69c3d91ff9b235bb3a8d1dd8bf358dec41cf0"
     },
     {
       "id": 80,
       "q": "A collapse in investment confidence during the Depression is shown first as what?",
       "options": [
-        "LM shifts right",
-        "IS shifts left",
-        "AD shifts right",
-        "LRAS shifts right"
+        "The LM curve shifts to the right",
+        "The IS curve shifts to the left",
+        "The AD curve shifts to the right",
+        "The LRAS curve shifts to the right"
       ],
       "tag": "great_depression",
       "type": "application",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "Lower investment demand reduces planned expenditure.",
-      "aHash": "b771bcc5050e268b04291777123975f64737ece1b772600fa99ef2e8beabcb24"
+      "aHash": "c4cf64fb8598fc492df65f87650bc57499d6e6377b89da6d9d81aeb37390760e"
     },
     {
       "id": 81,
-      "q": "Bank failures that make people hold more currency can affect IS-LM how?",
+      "q": "How can bank failures that lead people to hold more currency affect the IS–LM model?",
       "options": [
-        "government purchases rise",
-        "taxes fall automatically",
-        "Md rises or effective M falls",
-        "investment demand rises"
+        "Government purchases rise",
+        "Taxes fall automatically",
+        "Money demand rises or effective nominal money supply falls",
+        "Investment demand rises"
       ],
       "tag": "great_depression",
       "type": "application",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
-      "feedback": "Banking panic can tighten monetary conditions and shift LM left.",
-      "aHash": "d4a5ecab2f9a2bb34aabc57a01c652b295cd6033f1532c4799db92f3b4eed6f9"
+      "feedback": "Banking panic can tighten monetary conditions and shift the LM curve to the left.",
+      "aHash": "08a2c1eaf9472ec46b6f3d116e3c64b1de9f260fb16ae0ae5e276484b3698dc4"
     },
     {
       "id": 82,
       "q": "Which explanation is too narrow for Depression analysis?",
       "options": [
         "monetary contraction can reduce demand",
-        "spending collapse can shift IS left",
+        "Spending collapse can shift the IS curve to the left",
         "deflation can raise real debt burdens",
         "one bad event must explain every part of the Depression"
       ],
@@ -1377,12 +1377,12 @@ const questionBanks = {
     },
     {
       "id": 83,
-      "q": "On the AD-SRAS panel, moving from A to B changes output how?",
+      "q": "Refer to the IS–LM and aggregate demand–aggregate supply graph. How does output change as the economy moves from A to B?",
       "options": [
-        "Y rises from Y1 to Y2",
-        "Y falls from Y2 to Y1",
-        "Y stays at Y1",
-        "Y rises from Y2 to Y3"
+        "Output rises from Y1 to Y2",
+        "Output falls from Y2 to Y1",
+        "Output stays at Y1",
+        "Output rises from Y2 to Y3"
       ],
       "tag": "great_depression",
       "type": "graph",
@@ -1390,11 +1390,11 @@ const questionBanks = {
       "image": "is_lm_lras.webp",
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "Point B lies to the right of A on the output axis.",
-      "aHash": "7e981d4898fd78af63714bb3adf7295c49c6f60e179ddab3d8bcb178c60a0ca9"
+      "aHash": "fa7924b69e971bd4a2ce23e098de20a025f5ae9ba1c88fc372c03380d4fcc0c4"
     },
     {
       "id": 84,
-      "q": "If nominal debt is $1,000 and P falls from 100 to 80, what happens to the real debt burden measured as debt/P?",
+      "q": "If nominal debt is $1,000 and the price level falls from 100 to 80, what happens to the real debt burden measured as debt/P?",
       "options": [
         "it falls from 12.5 to 10",
         "it rises from 10 to 12.5",
@@ -1430,49 +1430,49 @@ const questionBanks = {
       "id": 86,
       "q": "Why can falling prices fail to quickly restore full employment?",
       "options": [
-        "falling prices always shift IS right",
-        "money demand disappears",
+        "Falling prices always shift the IS curve to the right",
+        "Money demand disappears",
         "LRAS must shift right immediately",
-        "deflation can worsen debt burdens & real rates"
+        "Deflation can worsen debt burdens and real rates"
       ],
       "tag": "great_depression",
       "type": "interpretation",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "Several Depression mechanisms turn deflation into a contractionary force.",
-      "aHash": "b17c362e27145e26c36e999f3c343ee391d778f3832d91d8ba9b741f1f07620a"
+      "aHash": "612a5e70c5e000394dc57210ea8a453a5a21f0704f62f7ca6e9aebe4683b558e"
     },
     {
       "id": 87,
       "q": "What does a banking panic do to credit conditions?",
       "options": [
-        "it makes borrowing harder & spending weaker",
-        "it guarantees higher investment",
-        "it makes taxes irrelevant",
-        "it fixes output at LRAS"
+        "It makes borrowing harder and spending weaker",
+        "It guarantees higher investment",
+        "It makes taxes irrelevant",
+        "It fixes output at LRAS"
       ],
       "tag": "great_depression",
       "type": "definition",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "Credit disruption can depress investment and consumption.",
-      "aHash": "dfb78638cfdb4f01a7ccb59033a4e854ceb6644c686a694daf9e2bfa2172a2a0"
+      "aHash": "dae61f672f2eb2c8de7129f0857c9d39868a3adc3f18c69c2b20f63b9c11fc20"
     },
     {
       "id": 88,
       "q": "A money supply contraction in the Depression story shifts which curve in IS-LM?",
       "options": [
-        "IS right",
-        "LM left",
-        "LM right",
-        "LRAS right"
+        "The IS curve shifts to the right",
+        "The LM curve shifts to the left",
+        "The LM curve shifts to the right",
+        "The LRAS curve shifts to the right"
       ],
       "tag": "great_depression",
       "type": "application",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "Lower money supply reduces real balances and tightens monetary conditions.",
-      "aHash": "102c83df09fe66e9d7ed64cb5f8c8894bb057d70b3ed5a00ec3da4bf2387579b"
+      "aHash": "7209f245e9557768815d2614dc39197a10a4c027c4a4c3740a441280bb52ae76"
     }
   ],
   "medium": [
@@ -1528,10 +1528,10 @@ const questionBanks = {
     },
     {
       "id": 103,
-      "q": "Why can the simple-cross multiplier overstate the IS-LM fiscal effect?",
+      "q": "Why can the simple Keynesian-cross multiplier overstate the IS-LM fiscal effect?",
       "options": [
         "it treats taxes as zero",
-        "it assumes investment never changes with r",
+        "it assumes consumption never responds to income",
         "it ignores the interest-rate response",
         "it makes output equal natural output"
       ],
@@ -1546,27 +1546,27 @@ const questionBanks = {
       "id": 104,
       "q": "A student says a tax cut moves the economy along IS because interest rates change afterward. What is wrong?",
       "options": [
-        "tax cuts shift LM before IS",
-        "interest rates cannot move in IS-LM",
-        "taxes affect only LRAS",
-        "the T cut IS before r adjusts"
+        "Tax cuts shift LM before IS",
+        "Interest rates cannot move in IS-LM",
+        "Taxes affect only LRAS",
+        "The tax cut shifts IS before the interest rate adjusts"
       ],
       "tag": "is_curve",
       "type": "trap",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
-      "feedback": "Policy changes that alter autonomous spending shift IS; the new r is an equilibrium result.",
+      "feedback": "Policy changes that alter autonomous spending shift IS; the new interest rate is an equilibrium result.",
       "commonError": "treating a fiscal shock as a movement along IS",
-      "aHash": "e0b13b38518a468f603f7ea892fbc9d9103ee3cfaa8216a76ed62127d9129967"
+      "aHash": "c06d3cc8cddf1dfe59c571265a189dfae207996253ea3f8c5a244e9e010d5a55"
     },
     {
       "id": 105,
-      "q": "In the IS graph, moving from IS1 to IS2 at the same r represents what?",
+      "q": "Refer to the IS graph. Moving from IS1 to IS2 at the same r represents what?",
       "options": [
-        "higher auto. PE",
-        "lower money supply",
-        "higher price level",
-        "a movement along one IS curve"
+        "Higher autonomous PE",
+        "Lower money supply",
+        "Higher price level",
+        "A movement along one IS curve"
       ],
       "tag": "is_curve",
       "type": "graph",
@@ -1574,27 +1574,27 @@ const questionBanks = {
       "image": "is_curves.webp",
       "primarySkill": "is_curve_goods_market",
       "feedback": "A rightward IS shift means higher equilibrium income at each interest rate.",
-      "aHash": "2bf583c28e39470984a23278fb595cde5cb9c866940075760a65f94f06fb6a36"
+      "aHash": "6cd4f103d9a28d68ef1cc6902e18db0329f0557484899835932b7c0f2838f8e7"
     },
     {
       "id": 106,
       "q": "What is the role of the loanable-funds intuition in deriving IS?",
       "options": [
-        "it fixes output at natural output",
-        "it links higher r to lower I",
-        "it makes money demand vertical",
-        "it removes consumption from PE"
+        "It fixes output at natural output",
+        "It links a higher interest rate to lower investment",
+        "It makes money demand vertical",
+        "It removes consumption from planned expenditure"
       ],
       "tag": "is_curve",
       "type": "definition",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
       "feedback": "The investment channel is the bridge from the interest rate to planned expenditure.",
-      "aHash": "de2260006a3001906a7599f39714060c7a822f8cac092238131874c5b4c1a86b"
+      "aHash": "be479d60f7b9111c4a754052e1a9d9a8b887b89ea9c7040e6de08644ed86b0df"
     },
     {
       "id": 107,
-      "q": "If investment is I = 500 − 20r, what happens when r rises by 3 points?",
+      "q": "If investment is I = 500 − 20r, what happens when the interest rate rises by 3 points?",
       "options": [
         "investment rises by 60",
         "investment falls by 20",
@@ -1614,7 +1614,7 @@ const questionBanks = {
       "options": [
         "it becomes infinite",
         "it turns negative automatically",
-        "it shifts LM right",
+        "It shifts the LM curve to the right",
         "it gets smaller"
       ],
       "tag": "is_curve",
@@ -1626,7 +1626,7 @@ const questionBanks = {
     },
     {
       "id": 109,
-      "q": "How does an IS-right shift appear in a Keynesian-cross diagram?",
+      "q": "Refer to the planned and actual expenditure graph. How would the increase in autonomous spending that shifts the IS curve to the right appear in a Keynesian-cross diagram?",
       "options": [
         "the PE line shifts upward",
         "the 45-degree line shifts down",
@@ -1643,19 +1643,19 @@ const questionBanks = {
     },
     {
       "id": 110,
-      "q": "Government purchases rise, then the IS-LM model solves for Y and r. What is the causal order?",
+      "q": "Government purchases rise, then the IS-LM model solves for output and the interest rate. What is the causal order?",
       "options": [
-        "r changes first; G reacts; IS is unchanged",
-        "G changes first; IS shifts; the intersection gives Y & r",
-        "Y changes first; PE is ignored; LM shifts",
-        "prices change first; IS must shift left"
+        "The interest rate changes first; government purchases react; IS is unchanged",
+        "Government purchases change first; IS shifts; the intersection gives output and the interest rate",
+        "Output changes first; planned expenditure is ignored; LM shifts",
+        "Prices change first; IS must shift left"
       ],
       "tag": "is_curve",
       "type": "multi-step",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
       "feedback": "Start with the exogenous fiscal change, then trace the curve shift and equilibrium outcome.",
-      "aHash": "95c1819d254bb00d41507c3ccef253991a72ea55aba36fda37d546424c714487"
+      "aHash": "6cba50ff57785ab177f89a9dd1c35031106b85500b40e8a66c380e6dcf8cdf62"
     },
     {
       "id": 111,
@@ -1693,7 +1693,7 @@ const questionBanks = {
     },
     {
       "id": 113,
-      "q": "An open-market purchase shifts LM right because it does what?",
+      "q": "Through which change does an open-market purchase shift the LM curve to the right?",
       "options": [
         "raises the money supply",
         "raises government purchases",
@@ -1709,28 +1709,28 @@ const questionBanks = {
     },
     {
       "id": 114,
-      "q": "Why does higher income put upward pressure on r?",
+      "q": "Why does higher income put upward pressure on the interest rate?",
       "options": [
-        "investment becomes unrelated to rates",
-        "transaction demand for money rises",
-        "real balances rise automatically",
-        "prices must fall immediately"
+        "Investment becomes unrelated to rates",
+        "Transaction demand for money rises",
+        "Real balances rise automatically",
+        "Prices must fall immediately"
       ],
       "tag": "lm_curve",
       "type": "interpretation",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
-      "feedback": "With real balances fixed, higher money demand requires a higher r to reduce desired money holdings.",
+      "feedback": "With real balances fixed, higher money demand requires a higher interest rate to reduce desired money holdings.",
       "aHash": "d0366a61893ec807c4fcc9969d61a008fb9262e546bed90ac0c2d9de50668cb5"
     },
     {
       "id": 115,
-      "q": "A student says a fall in P moves the economy along LM. What is wrong?",
+      "q": "A student says a fall in the price level moves the economy along LM. What is wrong?",
       "options": [
-        "a fall in P shifts IS left directly",
-        "price changes cannot affect money markets",
-        "a fall in P raises M/P & LM right",
-        "a fall in P lowers real balances"
+        "A fall in the price level shifts the IS curve to the left directly",
+        "Price changes cannot affect money markets",
+        "A lower price level raises real money balances and shifts the LM curve to the right",
+        "A fall in the price level lowers real balances"
       ],
       "tag": "lm_curve",
       "type": "trap",
@@ -1738,24 +1738,24 @@ const questionBanks = {
       "primarySkill": "lm_curve_money_market",
       "feedback": "A price-level change alters real balances when nominal money is fixed.",
       "commonError": "treating a real-balance change as movement along LM",
-      "aHash": "dcdaa6789e49e46e76b769ab79806ef0577722e0d7a7245f6e0b8e246d75e0e5"
+      "aHash": "320c8692f3901f029361f4df963124ac96d1ff36da45d51cf569bf86a0c8fed5"
     },
     {
       "id": 116,
-      "q": "On the LM graph, moving from LM1 to LM2 at the same Y means what?",
+      "q": "Refer to the LM graph. What does a shift from LM1 to LM2 imply for the interest rate at the same level of output?",
       "options": [
         "the interest rate rises as money falls",
-        "IS shifts left at the same time",
+        "The IS curve shifts to the left at the same time",
         "natural output decreases",
-        "r falls as M/P rise"
+        "The interest rate falls as M/P rise"
       ],
       "tag": "lm_curve",
       "type": "graph",
       "objective": "LO12.2",
       "image": "lm_curves.webp",
       "primarySkill": "lm_curve_money_market",
-      "feedback": "A rightward LM shift lowers r at a given income.",
-      "aHash": "fcd274f66229a7b5147ad7f015dcd158c8add79e067668c9f8ccc753dfa44121"
+      "feedback": "A rightward LM shift lowers the interest rate at a given income.",
+      "aHash": "f2896a062bdc35a1be6e4d69aacce1ccc253a07a377f0ad0c20d4498e70a65a4"
     },
     {
       "id": 117,
@@ -1786,7 +1786,7 @@ const questionBanks = {
       "type": "application",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
-      "feedback": "A larger income effect on money demand requires a bigger r increase when Y rises.",
+      "feedback": "A larger income effect on money demand requires a larger increase in the interest rate when output rises.",
       "aHash": "b561c3abf52127d0891c84fc2888351b560f3015fa6247a40b6c3c4aa6bfcd19"
     },
     {
@@ -1794,15 +1794,15 @@ const questionBanks = {
       "q": "If money demand becomes more sensitive to the interest rate, what happens to LM?",
       "options": [
         "LM becomes steeper",
-        "LM shifts left automatically",
+        "The LM curve shifts to the left automatically",
         "LM becomes flatter",
-        "IS shifts right automatically"
+        "The IS curve shifts to the right automatically"
       ],
       "tag": "lm_curve",
       "type": "application",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
-      "feedback": "When money demand responds strongly to r, a smaller rate change clears the market after Y changes.",
+      "feedback": "When money demand responds strongly to the interest rate, a smaller rate change clears the market after output changes.",
       "aHash": "35a6758ea2bda62adfee669fb8cfec9924573bffc43c419c213655ccd16fe3cb"
     },
     {
@@ -1823,19 +1823,19 @@ const questionBanks = {
     },
     {
       "id": 121,
-      "q": "If M rises and then investment rises, what variable links the two events?",
+      "q": "If the nominal money supply rises and then investment rises, what variable links the two events?",
       "options": [
-        "r falls first",
-        "taxes rise first",
+        "The interest rate falls first",
+        "Taxes rise first",
         "LRAS shifts first",
-        "consumption becomes zero"
+        "Consumption becomes zero"
       ],
       "tag": "lm_curve",
       "type": "multi-step",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
-      "feedback": "Monetary expansion lowers r, and lower r stimulates investment.",
-      "aHash": "16cc84246beeba1dce4a34f9490bfa9f78d3f31262fba9ca4f2afbf58dd236ed"
+      "feedback": "Monetary expansion lowers the interest rate, and a lower interest rate stimulates investment.",
+      "aHash": "41e8663aa3d6569f0f29b750844774257e0a9793a985794333f83c38f9d58c96"
     },
     {
       "id": 122,
@@ -1872,44 +1872,44 @@ const questionBanks = {
     },
     {
       "id": 124,
-      "q": "If IS shifts left while LM stays fixed, what happens in the standard case?",
+      "q": "In the IS–LM model with a downward-sloping IS curve and an upward-sloping LM curve, IS shifts to the left while LM stays fixed. How do equilibrium output and the interest rate change?",
       "options": [
-        "Y rises and r rises",
-        "Y falls and r rises",
-        "Y rises and r falls",
-        "Y falls and r falls"
+        "Output rises and the interest rate rises",
+        "Output falls and the interest rate rises",
+        "Output rises and the interest rate falls",
+        "Output falls and the interest rate falls"
       ],
       "tag": "is_lm_equilibrium",
       "type": "application",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
-      "feedback": "A fall in planned expenditure lowers Y; lower Y reduces money demand and r.",
-      "aHash": "3ced2cc98206d59b071a5fcff2444ccf666325843cd650c40f7737f6f935799b"
+      "feedback": "A fall in planned expenditure lowers output; lower output reduces money demand and the interest rate.",
+      "aHash": "5d65b68e7ff655b9326bc3a2d428e9d9bf90574ddc74d8f08ca90653c25a149d"
     },
     {
       "id": 125,
-      "q": "If LM shifts left while IS stays fixed, what happens in the standard case?",
+      "q": "In the IS–LM model with a downward-sloping IS curve and an upward-sloping LM curve, LM shifts to the left while IS stays fixed. How do equilibrium output and the interest rate change?",
       "options": [
-        "Y falls and r rises",
-        "Y rises and r falls",
-        "Y rises and r rises",
-        "Y falls and r falls"
+        "Output falls and the interest rate rises",
+        "Output rises and the interest rate falls",
+        "Output rises and the interest rate rises",
+        "Output falls and the interest rate falls"
       ],
       "tag": "is_lm_equilibrium",
       "type": "application",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
-      "feedback": "Tighter money raises r and lowers investment and income.",
-      "aHash": "de743c3604b6a9a658a1cfa5b34d95658f6997c56b7d14109416b766bc3881fd"
+      "feedback": "Tighter money raises the interest rate and lowers investment and income.",
+      "aHash": "c7b4b9b485e78b339894ed5e0d156e5122fdb390f2d4e0d923aeaddd017e3198"
     },
     {
       "id": 126,
-      "q": "On the IS-LM graph, moving from A to B means which curve shifted?",
+      "q": "Refer to the IS–LM graph. Moving from A to B means which curve shifted?",
       "options": [
-        "LM shifted right while IS1 stayed fixed",
-        "IS shifted right while LM1 stayed fixed",
-        "IS shifted left while LM1 stayed fixed",
-        "LM shifted left while IS1 stayed fixed"
+        "The LM curve shifted to the right while IS1 stayed fixed",
+        "The IS curve shifted to the right while LM1 stayed fixed",
+        "The IS curve shifted to the left while LM1 stayed fixed",
+        "The LM curve shifted to the left while IS1 stayed fixed"
       ],
       "tag": "is_lm_equilibrium",
       "type": "graph",
@@ -1917,87 +1917,87 @@ const questionBanks = {
       "image": "is_lm_curves.webp",
       "primarySkill": "is_lm_equilibrium",
       "feedback": "A and B are both on LM1, but B is on a farther-right IS curve.",
-      "aHash": "11ab671c84e22ba141fbeb90297e82e8be1e6858cf0522e41085aa1d554304f3"
+      "aHash": "6bd90c777584f9d13d6b2c446f06197598802cbaccbe54aee3b2cd1d634a0dab"
     },
     {
       "id": 127,
-      "q": "Why can the interest-rate effect be ambiguous when both IS and LM shift right?",
+      "q": "Why can the equilibrium interest-rate effect be ambiguous when the IS and LM curves both shift to the right?",
       "options": [
-        "both shifts always raise r",
-        "both shifts always lower r",
-        "IS-right raises r, while LM-right lowers r",
-        "neither curve affects r"
+        "Both shifts always raise the interest rate",
+        "Both shifts always lower the interest rate",
+        "A rightward shift of the IS curve raises the interest rate, while a rightward shift of the LM curve lowers the interest rate",
+        "Neither curve affects the interest rate"
       ],
       "tag": "is_lm_equilibrium",
       "type": "trap",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
-      "feedback": "The output effect is positive, but r depends on which shift is stronger.",
-      "aHash": "606ace85e88dd65b5e58a3f6a74268707069317beb7d4ce476d796e0ec03eb01"
+      "feedback": "The output effect is positive, but the interest rate depends on which shift is stronger.",
+      "aHash": "96df66ff18f21e4c78cb02b7265215db79cd9f41d21ab4e97556d62c3077de0b"
     },
     {
       "id": 128,
       "q": "What does holding LM fixed mean in an IS-shock question?",
       "options": [
-        "government purchases cannot change",
-        "investment cannot respond to r",
-        "the IS curve is vertical",
-        "M, P, & money-demand behavior are unchanged"
+        "Government purchases cannot change",
+        "Investment cannot respond to the interest rate",
+        "The IS curve is vertical",
+        "The nominal money supply, the price level, and money-demand behavior are unchanged"
       ],
       "tag": "is_lm_equilibrium",
       "type": "definition",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
       "feedback": "A fixed LM curve means the money-market schedule itself has not shifted.",
-      "aHash": "d73bce08e66b20e49b4ca5592a105179122c2f9dcd48dff301a69aa08961a9a4"
+      "aHash": "5b17e38a167c5962560c77a79b38d25602f38cc26a95e3c9ac812ade844c0096"
     },
     {
       "id": 129,
       "q": "Investment confidence falls and the Fed responds with easier money. What is the output effect if the shifts are equal in strength?",
       "options": [
-        "Y could stay near its initial level while r falls",
-        "Y must rise and r must rise",
-        "Y must fall and r must rise",
-        "Y must be fixed at natural output"
+        "Output could stay near its initial level while the interest rate falls",
+        "Output must rise and the interest rate must rise",
+        "Output must fall and the interest rate must rise",
+        "Output must be fixed at natural output"
       ],
       "tag": "is_lm_equilibrium",
       "type": "multi-step",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
-      "feedback": "IS-left lowers Y and r; LM-right raises Y and lowers r. Equal output effects can offset, while both lower r.",
-      "aHash": "ae06f37ccb922688ef61be4c63e763701f4c07e3ab61074e548bf2cc5dd9816f"
+      "feedback": "A leftward shift of the IS curve lowers output and the interest rate; a rightward shift of the LM curve raises output and lowers the interest rate. Equal output effects can offset, while both lower the interest rate.",
+      "aHash": "ebedd673d70d2d284f1053061cb5cc750ae2f4366612f3d6193b6849c2bb868e"
     },
     {
       "id": 130,
       "q": "Why does IS-LM create crowding out after fiscal expansion?",
       "options": [
-        "higher Y lowers money demand and r",
-        "higher Y raises Md & r, reducing I",
-        "higher G directly lowers investment by law",
-        "higher taxes shift LM left"
+        "Higher output lowers money demand and the interest rate",
+        "Higher output raises money demand and the interest rate, reducing investment",
+        "Higher government purchases directly lower investment by law",
+        "Higher taxes shift the LM curve to the left"
       ],
       "tag": "is_lm_equilibrium",
       "type": "interpretation",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
       "feedback": "The money-market response turns part of the fiscal expansion into a higher interest rate.",
-      "aHash": "6a964579becfe5b0e5b03eb5ad972545cfcad65c2c0b49a92c0ac6b13f5e9c56"
+      "aHash": "79d8a1bda040619b7dc3bdc1bd43533eea42d48c1d553757142160d5aa79ce4d"
     },
     {
       "id": 131,
-      "q": "If the Fed wants to keep r unchanged after IS shifts right, what must it do?",
+      "q": "If the Fed wants to keep the interest rate unchanged after the IS curve shifts to the right, what must it do?",
       "options": [
-        "shift LM left",
-        "shift IS left further",
-        "shift LM right",
-        "shift LRAS right"
+        "Shift the LM curve to the left",
+        "Shift the IS curve to the left further",
+        "Shift the LM curve to the right",
+        "Shift the LRAS curve to the right"
       ],
       "tag": "is_lm_equilibrium",
       "type": "application",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
-      "feedback": "IS-right tends to raise r. Monetary expansion offsets that pressure.",
-      "aHash": "1e7630c208160ab7c9f66c462a9320528efc4b8e6d26319ff74b6a44f00d7f96"
+      "feedback": "A rightward shift of the IS curve tends to raise the interest rate. Monetary expansion offsets that pressure.",
+      "aHash": "68cfcc1be12d21483f2b0d81a86052c72a5cf36c62ed90b790fd6e59eabbfa68"
     },
     {
       "id": 132,
@@ -2020,42 +2020,42 @@ const questionBanks = {
       "id": 133,
       "q": "A stock-market crash reduces household wealth and consumption. What is the IS-LM effect?",
       "options": [
-        "LM shifts right; Y rises and r falls",
-        "IS shifts right; Y and r rise",
-        "IS shifts left; Y and r fall",
-        "LM shifts left; Y falls and r rises"
+        "The LM curve shifts to the right; output rises and the interest rate falls",
+        "The IS curve shifts to the right; output and the interest rate rise",
+        "The IS curve shifts to the left; output and the interest rate fall",
+        "The LM curve shifts to the left; output falls and the interest rate rises"
       ],
       "tag": "shocks",
       "type": "application",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "Lower consumption reduces planned expenditure and moves IS left.",
-      "aHash": "d2b4237f60a04ab2a12fad7c773c9bd0c973274203dbe2dd5e9c3f1597366951"
+      "feedback": "Lower consumption reduces planned expenditure and moves the IS curve to the left.",
+      "aHash": "656d4f7ad9a139b0c8dd904b04e00d91c2ab79f3fd9a92f46f756229054fb445"
     },
     {
       "id": 134,
       "q": "A payment-system panic makes people hold more money at every income. What happens?",
       "options": [
-        "IS shifts left; Y and r fall",
-        "LM shifts right; Y rises and r falls",
-        "IS shifts right; Y and r rise",
-        "LM shifts left; Y falls and r rises"
+        "The IS curve shifts to the left; output and the interest rate fall",
+        "The LM curve shifts to the right; output rises and the interest rate falls",
+        "The IS curve shifts to the right; output and the interest rate rise",
+        "The LM curve shifts to the left; output falls and the interest rate rises"
       ],
       "tag": "shocks",
       "type": "application",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "Higher liquidity demand shifts LM left.",
-      "aHash": "ed066579745aa24575ac8ca22f453d71773268408db249051e72cf30a702a84d"
+      "feedback": "Higher liquidity demand shifts the LM curve to the left.",
+      "aHash": "5e6adf5689c4749b0256cff66a537830ef935e86a301e8af03234612bac2386a"
     },
     {
       "id": 135,
       "q": "Which response confuses a spending shock with a money shock?",
       "options": [
-        "a collapse in investment shifts LM left",
-        "a collapse in investment shifts IS left",
-        "a rise in money demand shifts LM left",
-        "a fall in money supply shifts LM left"
+        "A collapse in investment shifts the LM curve to the left",
+        "A collapse in investment shifts the IS curve to the left",
+        "A rise in money demand shifts the LM curve to the left",
+        "A fall in money supply shifts the LM curve to the left"
       ],
       "tag": "shocks",
       "type": "trap",
@@ -2063,16 +2063,16 @@ const questionBanks = {
       "primarySkill": "shock_transmission",
       "feedback": "Investment demand belongs in planned expenditure, so its direct curve is IS.",
       "commonError": "putting spending shocks on LM",
-      "aHash": "a70a0ab88ab427a35ad25edfb7f61788839d1db7fc741c747305c0f8af8b5a68"
+      "aHash": "4f897d32722c5f83a348bced9ddaf0220111bde4aec8c762ae358d30cd54203e"
     },
     {
       "id": 136,
-      "q": "On the IS-LM graph, moving from D to F reflects which shock?",
+      "q": "Refer to the IS–LM graph. Moving from D to F reflects which shock?",
       "options": [
-        "LM shifts left with IS2 fixed",
-        "IS shifts left with LM2 fixed",
-        "IS shifts right with LM2 fixed",
-        "LM shifts right with IS2 fixed"
+        "The LM curve shifts to the left with IS2 fixed",
+        "The IS curve shifts to the left with LM2 fixed",
+        "The IS curve shifts to the right with LM2 fixed",
+        "The LM curve shifts to the right with IS2 fixed"
       ],
       "tag": "shocks",
       "type": "graph",
@@ -2080,11 +2080,11 @@ const questionBanks = {
       "image": "is_lm_curves.webp",
       "primarySkill": "shock_transmission",
       "feedback": "D and F share LM2; the IS curve moves from IS2 to IS1.",
-      "aHash": "25669eb8a5a27616a352489e465086d3c4fe78a5ecf105733fe97d3b39786320"
+      "aHash": "2e67cfa61543f4458aefc7b7420b74db5eb5b2d28a97b61d424722c2a47c5774"
     },
     {
       "id": 137,
-      "q": "Autonomous spending falls by 50 and MPC=0.6. What is the simple-cross output effect?",
+      "q": "Autonomous spending falls by 50 and MPC=0.6. What is the simple Keynesian-cross output effect?",
       "options": [
         "−80",
         "−50",
@@ -2118,87 +2118,87 @@ const questionBanks = {
     },
     {
       "id": 139,
-      "q": "An IS-left shock and LM-right shock occur together. What is definitely true?",
+      "q": "The IS curve shifts to the left and the LM curve shifts to the right. Which equilibrium outcome is certain?",
       "options": [
-        "r falls",
-        "Y rises",
-        "Y falls",
-        "r rises"
+        "The interest rate falls",
+        "Output rises",
+        "Output falls",
+        "The interest rate rises"
       ],
       "tag": "shocks",
       "type": "integration",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "Both shocks push r downward; the output effects oppose each other.",
-      "aHash": "ed3189d93878f10be0a3c07170141cf8c9edb6c05aa77882e1e0e1a2925157e5"
+      "feedback": "Both shocks push the interest rate downward; the output effects oppose each other.",
+      "aHash": "504ba25f9205f99fb7cbe7a80a42d41e9878d9e59bae0e62f9fcb38af42ef749"
     },
     {
       "id": 140,
-      "q": "An IS-right shock and LM-left shock occur together. What is definitely true?",
+      "q": "The IS curve shifts to the right and the LM curve shifts to the left. Which equilibrium outcome is certain?",
       "options": [
-        "Y rises",
-        "r rises",
-        "Y falls",
-        "r falls"
+        "Output rises",
+        "The interest rate rises",
+        "Output falls",
+        "The interest rate falls"
       ],
       "tag": "shocks",
       "type": "integration",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "Both shocks push r upward; output depends on relative strength.",
-      "aHash": "050fb4b2fe956f56240f466531c0394f4d4d8a45991d35abbe2f598685811f4e"
+      "feedback": "Both shocks push the interest rate upward; output depends on relative strength.",
+      "aHash": "7ba75e7932ae87b7fdbf8c6dfb26f14813a361d21a4dbb1df7be2d4373d29e43"
     },
     {
       "id": 141,
-      "q": "A shock raises Y but leaves r roughly unchanged. Which combination can explain it?",
+      "q": "A shock raises output but leaves the interest rate roughly unchanged. Which combination can explain it?",
       "options": [
-        "IS-left plus LM-left",
-        "IS-right plus LM-left",
-        "IS-right plus LM-right",
-        "IS-left plus LM-right"
+        "A leftward shift of the IS curve plus a leftward shift of the LM curve",
+        "A rightward shift of the IS curve plus a leftward shift of the LM curve",
+        "A rightward shift of the IS curve plus a rightward shift of the LM curve",
+        "A leftward shift of the IS curve plus a rightward shift of the LM curve"
       ],
       "tag": "shocks",
       "type": "interpretation",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "Both rightward shifts raise Y while their effects on r offset.",
-      "aHash": "d4956d92ad5625bdf4c7ff4b79b8975396efae0077fd3fb2c5b902c14e5fe50b"
+      "feedback": "Both rightward shifts raise output while their effects on the interest rate offset.",
+      "aHash": "8ace551b4cdf8b1a42dbb2b4ba4038027189f6c496f053c42dffc237cd5ae193"
     },
     {
       "id": 142,
-      "q": "A shock to money demand raises r; then investment falls. What is the chain?",
+      "q": "A shock to money demand raises the interest rate; then investment falls. What is the chain?",
       "options": [
-        "investment falls, LM shifts right, r falls, Y rises",
-        "G rises, IS shifts left, r rises, I falls",
-        "P falls, IS shifts left, r rises, Y falls",
-        "Md rises, LM left, r rises, I falls"
+        "Investment falls, the LM curve shifts to the right, the interest rate falls, output rises",
+        "Government purchases rise, the IS curve shifts to the left, the interest rate rises, investment falls",
+        "The price level falls, the IS curve shifts to the left, the interest rate rises, output falls",
+        "Money demand rises, the LM curve shifts to the left, the interest rate rises, investment falls"
       ],
       "tag": "shocks",
       "type": "multi-step",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
       "feedback": "The monetary disturbance hits LM first; investment responds to the higher interest rate.",
-      "aHash": "c113dee9fc060b540c27972c84a9d6b3a02e89b9dc9fa1a5b37d69179dbd64b0"
+      "aHash": "229cf51776e7f7ed13c45e796bb4babb87965567b9fb41bbcb66f0f61720e21d"
     },
     {
       "id": 143,
       "q": "Why does shock analysis separate cause from result?",
       "options": [
-        "since curve are causes & intersections are outcomes",
-        "because labels determine policy",
-        "because outcomes are chosen before shocks",
-        "because only one variable can change"
+        "Because curve shifts represent causes and new intersections represent outcomes",
+        "Because labels determine policy",
+        "Because outcomes are chosen before shocks",
+        "Because only one variable can change"
       ],
       "tag": "shocks",
       "type": "definition",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "This keeps the model from becoming a story invented after the answer.",
-      "aHash": "ebbae905cb7f4f59365b353382fd3f0b5ba8d77205f5e99ad9fd57e854137850"
+      "feedback": "An exogenous spending or money change shifts IS or LM. The new intersection then determines output and the interest rate; their observed changes are outcomes to explain, not the original cause.",
+      "aHash": "ded67d1b0ab4dd89a3d4fd90ea90a205fc275f93d65639606f5c41cda8b06fea"
     },
     {
       "id": 144,
-      "q": "MPC=0.8. G rises by $25 billion. What is the simple-cross ΔY before crowding out?",
+      "q": "The marginal propensity to consume is 0.8 and government purchases rise by $25 billion. In the simple Keynesian-cross model, what is the increase in output before any crowding out?",
       "options": [
         "$100 billion",
         "$125 billion",
@@ -2215,7 +2215,7 @@ const questionBanks = {
     },
     {
       "id": 145,
-      "q": "MPC=0.6. Taxes fall by $40 billion. What is the simple-cross ΔY?",
+      "q": "The marginal propensity to consume is 0.6 and taxes fall by $40 billion. What is the change in output in the simple Keynesian-cross model?",
       "options": [
         "+$100 billion",
         "+$40 billion",
@@ -2232,39 +2232,39 @@ const questionBanks = {
     },
     {
       "id": 146,
-      "q": "Why does a tax cut usually shift IS less than an equal rise in G?",
+      "q": "Why does a tax cut usually shift IS less than an equal rise in government purchases?",
       "options": [
-        "tax cuts shift LM instead of IS",
-        "G has no multiplier",
-        "taxes change natural output only",
-        "only MPC times the T cut becomes first-round spending"
+        "Tax cuts shift LM instead of IS",
+        "Government purchases have no multiplier",
+        "Taxes change natural output only",
+        "Only MPC times the tax cut becomes first-round spending"
       ],
       "tag": "fiscal_policy",
       "type": "application",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "Government purchases enter PE directly; tax changes work through consumption.",
-      "aHash": "f54b86798c741b730f1561d522bab8bb7a5eaee18a34b9b1299bc4c123015df9"
+      "feedback": "Government purchases enter planned expenditure directly; tax changes work through consumption.",
+      "aHash": "e98141ab7484a1d9f5098090d6f5d81fb2e46a75bd69d197fe0ea7ecf235eb1c"
     },
     {
       "id": 147,
-      "q": "If fiscal contraction occurs while LM is fixed, what happens to Y and r?",
+      "q": "If fiscal contraction occurs while LM is fixed, what happens to output and the interest rate?",
       "options": [
-        "both fall",
-        "both rise",
-        "Y rises and r falls",
-        "Y falls and r rises"
+        "Output and the interest rate both fall",
+        "Output and the interest rate both rise",
+        "Output rises and the interest rate falls",
+        "Output falls and the interest rate rises"
       ],
       "tag": "fiscal_policy",
       "type": "application",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "IS-left lowers output and reduces money demand, lowering r.",
-      "aHash": "3af9f286ad887a50bd70392adc7e5620541ffad8d794b7f20b00a55531386a5d"
+      "feedback": "A leftward shift of the IS curve lowers output and reduces money demand, lowering the interest rate.",
+      "aHash": "4cc3dc8f0701083c71df013e5c522161b8bce82a9a99fe4a9fdc11d6f6c3fbda"
     },
     {
       "id": 148,
-      "q": "On the IS-LM graph, moving from B back to A could be caused by what?",
+      "q": "Refer to the IS–LM graph. Which change could move the equilibrium from B back to A?",
       "options": [
         "an open-market purchase",
         "a reduction in G",
@@ -2276,17 +2276,17 @@ const questionBanks = {
       "objective": "LO13.2",
       "image": "is_lm_curves.webp",
       "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "B to A is an IS-left shift along LM1.",
+      "feedback": "B to A is a leftward shift of the IS curve along LM1.",
       "aHash": "026644f726c54f0e0e287db9769e2de1e415b435dff988dfc0d71cebb7e40738"
     },
     {
       "id": 149,
       "q": "Which answer overstates expansionary fiscal policy in IS-LM?",
       "options": [
-        "it shifts IS right",
-        "it may raise r",
-        "it gives the full simple-cross multiplier even when LM slopes upward",
-        "it may crowd out investment"
+        "It shifts the IS curve to the right",
+        "It may raise the interest rate",
+        "It gives the full simple Keynesian-cross multiplier even when LM slopes upward",
+        "It may crowd out investment"
       ],
       "tag": "fiscal_policy",
       "type": "trap",
@@ -2294,43 +2294,43 @@ const questionBanks = {
       "primarySkill": "fiscal_policy_is_shift",
       "feedback": "The money-market response reduces the output gain when LM slopes upward.",
       "commonError": "ignoring crowding out",
-      "aHash": "f78f9cf712bf9d83abdf4d12f92d1c6a7bcacf5a8884ccc6269671ac2e7c7923"
+      "aHash": "e3191e6f71b3d301e8b5cb2e24b46da3ab4a3abd7a6bd9d66d493393eb686ac6"
     },
     {
       "id": 150,
-      "q": "Fiscal expansion plus monetary accommodation has what effect relative to fiscal expansion alone?",
+      "q": "Compared with fiscal expansion alone, how does fiscal expansion accompanied by monetary accommodation affect output and the interest rate?",
       "options": [
-        "less Y gain and more r increase",
-        "no IS movement",
-        "a required LRAS shift",
-        "more Y gain and less r increase"
+        "Less output gain and a larger increase in the interest rate",
+        "No IS movement",
+        "A required LRAS shift",
+        "More output gain and a smaller increase in the interest rate"
       ],
       "tag": "fiscal_policy",
       "type": "integration",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "LM-right support reduces crowding out.",
-      "aHash": "b75dac909f86304f5830df52c3712db2833d577f2aae6acbebbe70dc1069dd75"
+      "feedback": "Monetary accommodation shifts the LM curve to the right, limiting the interest-rate increase and reducing the investment crowded out by fiscal expansion.",
+      "aHash": "84cef423c4d6417e33dc1e46259365b69c6934c23f44606fc4e3cccdecbf8fe4"
     },
     {
       "id": 151,
       "q": "What does a balanced-budget expansion mean?",
       "options": [
-        "G and T rise together",
-        "M and P rise together",
+        "Government purchases and taxes rise together",
+        "The nominal money supply and the price level rise together",
         "IS and LM both fall",
-        "Y and r are fixed"
+        "Output and the interest rate are fixed"
       ],
       "tag": "fiscal_policy",
       "type": "definition",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
       "feedback": "The government raises spending and taxes by the same amount.",
-      "aHash": "f358d4484247370ec7aa769bd31a8ccd3a3909b90d522d078939e206c1a1fe6c"
+      "aHash": "237ea9e35646005082b684465cec101f2de5907f70ec2718c59fde9bbc53f7ef"
     },
     {
       "id": 152,
-      "q": "MPC=0.75. G rises by 40 and T rises by 40. What is the simple balanced-budget ΔY?",
+      "q": "The marginal propensity to consume is 0.75. Government purchases and taxes both rise by 40. What is the change in output in the simple Keynesian-cross model?",
       "options": [
         "0",
         "40",
@@ -2349,37 +2349,37 @@ const questionBanks = {
       "id": 153,
       "q": "Why does automatic stabilization reduce IS volatility?",
       "options": [
-        "money demand disappears",
+        "Money demand disappears",
         "LM becomes vertical",
-        "T & transfers move against Y changes",
-        "investment no longer responds to r"
+        "Taxes and transfers move against output changes",
+        "Investment no longer responds to the interest rate"
       ],
       "tag": "fiscal_policy",
       "type": "interpretation",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
       "feedback": "Built-in fiscal responses cushion changes in disposable income.",
-      "aHash": "0b586b5f2c55d6d5bea331f5c04b05e01ce7bb19254464dc1a2cd3da87fa23ef"
+      "aHash": "f2a6ba70299e55c94ea97b4cfc3196bd068fa7446a00d9ce050bb35f1efb99c7"
     },
     {
       "id": 154,
-      "q": "A tax cut raises Y, then r rises, then investment falls. What is the sequence?",
+      "q": "A tax cut raises output, then the interest rate rises, then investment falls. What is the sequence?",
       "options": [
-        "LM right, movement along IS, lower investment",
-        "IS left, movement down LM, more investment",
-        "LRAS right, AD left, lower Y",
-        "IS right, movement up LM, partial crowding out"
+        "The LM curve shifts to the right, movement along IS, lower investment",
+        "The IS curve shifts to the left, movement down LM, more investment",
+        "The LRAS curve shifts to the right, the AD curve shifts to the left, lower output",
+        "The IS curve shifts to the right, movement up LM, partial crowding out"
       ],
       "tag": "fiscal_policy",
       "type": "multi-step",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
       "feedback": "Fiscal expansion starts in IS; the interest-rate response comes from LM.",
-      "aHash": "2eda5c511ba2e83e24738bb317e822ec7c70458fc108f7ba21240f1fad855320"
+      "aHash": "9c0595621b8fd6b6155444e1db666886d7c6518d7124896cc4cd193d184e0adb"
     },
     {
       "id": 155,
-      "q": "Money demand is L(r)=400−40r and P=20. If the Fed targets r=5, what nominal M is required?",
+      "q": "Money demand is L(r)=400−40r and P=20. If the Fed targets r=5, what nominal money supply is required?",
       "options": [
         "4,000",
         "200",
@@ -2413,39 +2413,39 @@ const questionBanks = {
     },
     {
       "id": 157,
-      "q": "An open-market sale is contractionary because it does what?",
+      "q": "Why is an open-market sale contractionary?",
       "options": [
-        "raises G directly",
-        "cuts taxes through Congress",
-        "reduces bank reserves & the M",
-        "raises investment demand directly"
+        "Raises government purchases directly",
+        "Cuts taxes through Congress",
+        "Reduces bank reserves and the nominal money supply",
+        "Raises investment demand directly"
       ],
       "tag": "monetary_policy",
       "type": "application",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
       "feedback": "Selling bonds drains reserves and lowers the money supply.",
-      "aHash": "0fb86044a321d473fdad6f75c4b21921924ddc3dde7dae9fe0deaebcec519a35"
+      "aHash": "6bdfad583915939c94c1446deeb55e088b6dcc4dbd24f3c250e3e8c8a8cf773b"
     },
     {
       "id": 158,
       "q": "If monetary expansion is successful in basic IS-LM, which variable rises through the investment channel?",
       "options": [
-        "the price level first",
-        "taxes first",
-        "natural output first",
-        "income"
+        "The price level first",
+        "Taxes first",
+        "Natural output first",
+        "Income"
       ],
       "tag": "monetary_policy",
       "type": "application",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
-      "feedback": "Lower r raises investment and planned expenditure, increasing short-run income.",
+      "feedback": "A lower interest rate raises investment and planned expenditure, increasing short-run income.",
       "aHash": "00cf141f881d4b5572d4d5ce73db9657f5e6087f9f31a6527a9f3e212dfa4e70"
     },
     {
       "id": 159,
-      "q": "On the IS-LM graph, E to C represents what policy?",
+      "q": "Refer to the IS–LM graph. E to C represents what policy?",
       "options": [
         "monetary contraction with IS3 fixed",
         "monetary expansion with IS3 fixed",
@@ -2464,75 +2464,75 @@ const questionBanks = {
       "id": 160,
       "q": "Which claim confuses a rate target with a money target?",
       "options": [
-        "a lower rate target requires more money supply",
-        "the Fed can lower r without changing M when Md is unchanged",
-        "money demand affects how much M is needed",
-        "P matters for real balances"
+        "A lower rate target requires more money supply",
+        "The Fed can lower the interest rate without changing money supply when money demand is unchanged",
+        "Money demand affects how much the nominal money supply is needed",
+        "The price level matters for real balances"
       ],
       "tag": "monetary_policy",
       "type": "trap",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
-      "feedback": "If money demand is unchanged, lower r requires more supplied balances.",
+      "feedback": "If money demand is unchanged, a lower interest rate requires more supplied balances.",
       "commonError": "forgetting implementation of a rate target",
-      "aHash": "d92ab0cfafa357bf37fbd0e735ab431f25fcd67377bd9fdb48d2d5b0ee1d299a"
+      "aHash": "76a29983896a575f917714fae2db49338a8a8e5666c46143f85089a325489bae"
     },
     {
       "id": 161,
-      "q": "Monetary expansion after fiscal expansion is called accommodation because it does what?",
+      "q": "How does monetary expansion accommodate a preceding fiscal expansion?",
       "options": [
-        "shifts IS left",
-        "raises taxes",
-        "limits the rise in r",
-        "reduces planned expenditure"
+        "Shifts the IS curve to the left",
+        "Raises taxes",
+        "Limits the rise in the interest rate",
+        "Reduces planned expenditure"
       ],
       "tag": "monetary_policy",
       "type": "integration",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
-      "feedback": "LM-right movement offsets the interest-rate pressure from IS-right movement.",
-      "aHash": "9f3edbc0a633e28c479fbcaab7a61c9c795c5f765d0c56d643e4c1459446f9ef"
+      "feedback": "A rightward shift of the LM curve offsets the interest-rate pressure from a rightward shift of the IS curve.",
+      "aHash": "feef7c9557e3490f5dded44979644d7f1f56ce2aea813abd58e782f6411daaaf"
     },
     {
       "id": 162,
       "q": "What is an interest-rate peg?",
       "options": [
-        "a fixed value of G",
-        "a tax rule that fixes Y",
-        "a price level chosen by firms",
-        "a central bank defends a chosen r by adjusting M"
+        "A fixed value of government purchases",
+        "A tax rule that fixes output",
+        "A price level chosen by firms",
+        "A central bank defends a chosen interest rate by adjusting the nominal money supply"
       ],
       "tag": "monetary_policy",
       "type": "definition",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
       "feedback": "A peg is maintained by supplying whatever money balances are needed at that rate.",
-      "aHash": "5dce7e712cbbd1f40796b6568b36a9331c4dbd9955e930c3b8b11674dafc43e3"
+      "aHash": "553692701b52cd6fbc2d764a5190364550fc86c6a750631e2e4dfeb822e8a594"
     },
     {
       "id": 163,
-      "q": "M rises, r falls, investment rises, Y rises. Which curve shift starts that sequence?",
+      "q": "The nominal money supply rises, the interest rate falls, investment rises, output rises. Which curve shift starts that sequence?",
       "options": [
-        "LM right",
-        "IS left",
-        "LRAS right",
-        "AD left"
+        "The LM curve shifts to the right",
+        "The IS curve shifts to the left",
+        "The LRAS curve shifts to the right",
+        "The AD curve shifts to the left"
       ],
       "tag": "monetary_policy",
       "type": "multi-step",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
       "feedback": "The monetary shock begins by changing real money balances.",
-      "aHash": "3210fe5e51abe1cee997576a62ddc6ba0b3038faf22c9ac121c07710400a2591"
+      "aHash": "e02b02d3b5d106df9065a6f9be8d21714d848a5a9807c791fb5b4db41186b9ba"
     },
     {
       "id": 164,
-      "q": "Why does a higher P weaken monetary expansion if M does not change enough?",
+      "q": "Why does a higher price level weaken monetary expansion if the nominal money supply does not change enough?",
       "options": [
-        "it raises M/P",
-        "it reduces M/P",
-        "it shifts IS right",
-        "it eliminates money demand"
+        "It raises M/P",
+        "It reduces M/P",
+        "It shifts the IS curve to the right",
+        "It eliminates money demand"
       ],
       "tag": "monetary_policy",
       "type": "interpretation",
@@ -2543,23 +2543,23 @@ const questionBanks = {
     },
     {
       "id": 165,
-      "q": "If money demand rises at the same time the Fed expands M, what is ambiguous?",
+      "q": "If money demand rises at the same time the Fed expands the nominal money supply, what is ambiguous?",
       "options": [
-        "the IS shift",
-        "the definition of M/P",
-        "the net LM shift",
-        "whether taxes change"
+        "The IS shift",
+        "The definition of M/P",
+        "The net LM shift",
+        "Whether taxes change"
       ],
       "tag": "monetary_policy",
       "type": "application",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
-      "feedback": "Higher demand shifts LM left; higher supply shifts LM right.",
+      "feedback": "Higher demand shifts the LM curve to the left; higher supply shifts the LM curve to the right.",
       "aHash": "19430fca438615476452823ef144674c1c72f1bee963b4f43f836879f285ba7d"
     },
     {
       "id": 166,
-      "q": "M=2,400. If P falls from 12 to 8, what is the change in real balances?",
+      "q": "M=2,400. If the price level falls from 12 to 8, what is the change in real balances?",
       "options": [
         "+50",
         "−100",
@@ -2587,7 +2587,7 @@ const questionBanks = {
       "type": "calculation",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "At 150, r=5.5. At 200, r=3. Lower P raises real balances and lowers r.",
+      "feedback": "At 150, r=5.5. At 200, r=3. Lower price level raises real balances and lowers the interest rate.",
       "hint": "Solve money demand at each real balance.",
       "aHash": "f21f3df8ca1897459f9c7b161dee85cf700fec72e4ea914e3635c037608cd7dd"
     },
@@ -2595,41 +2595,41 @@ const questionBanks = {
       "id": 168,
       "q": "If taxes increase at every price level, what happens to AD?",
       "options": [
-        "AD shifts right",
-        "AD shifts left",
-        "movement down along AD",
-        "LM shifts right at every P"
+        "The AD curve shifts to the right",
+        "The AD curve shifts to the left",
+        "Movement down along AD",
+        "The LM curve shifts to the right at every price level"
       ],
       "tag": "aggregate_demand",
       "type": "application",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "Higher taxes shift IS left at each price level, lowering demand.",
-      "aHash": "922d0125a121552dff4c2b51e96cc9c6768fefdb1574fa4942145e9c2e28b2f9"
+      "feedback": "Higher taxes shift the IS curve to the left at each price level, lowering demand.",
+      "aHash": "bbf984088e51e6186ab738820db5022a24af03e25022a772478ecb33bc3fba27"
     },
     {
       "id": 169,
       "q": "If the nominal money supply falls, what happens to AD?",
       "options": [
-        "AD shifts right",
+        "The AD curve shifts to the right",
         "movement along AD only",
-        "AD shifts left",
-        "LRAS shifts right"
+        "The AD curve shifts to the left",
+        "The LRAS curve shifts to the right"
       ],
       "tag": "aggregate_demand",
       "type": "application",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "Lower M reduces M/P at each price level, shifting LM left and AD left.",
-      "aHash": "922d0125a121552dff4c2b51e96cc9c6768fefdb1574fa4942145e9c2e28b2f9"
+      "feedback": "Lower nominal money supply reduces M/P at each price level, shifting the LM curve to the left and the AD curve shifts to the left.",
+      "aHash": "bbf984088e51e6186ab738820db5022a24af03e25022a772478ecb33bc3fba27"
     },
     {
       "id": 170,
-      "q": "On the AD graph, a movement from point 1 to point 4 on AD1 means what changed?",
+      "q": "Refer to the IS–LM and aggregate demand graph. What changes as the economy moves from point 1 to point 4 on AD1?",
       "options": [
-        "AD shifted right",
-        "AD shifted left",
-        "LRAS shifted right",
+        "The AD curve shifted to the right",
+        "The AD curve shifted to the left",
+        "The LRAS curve shifted to the right",
         "the P fell along the same AD curve"
       ],
       "tag": "aggregate_demand",
@@ -2642,12 +2642,12 @@ const questionBanks = {
     },
     {
       "id": 171,
-      "q": "A student says higher P shifts AD left. What is the correction?",
+      "q": "A student says higher price level shifts the AD curve to the left. What is the correction?",
       "options": [
-        "higher P moves up along AD if AD itself is unchanged",
-        "higher P shifts IS right",
-        "higher P shifts LRAS right",
-        "higher P raises M/P"
+        "Higher price level moves up along AD if AD itself is unchanged",
+        "Higher price level shifts the IS curve to the right",
+        "Higher price level shifts the LRAS curve to the right",
+        "Higher price level raises M/P"
       ],
       "tag": "aggregate_demand",
       "type": "trap",
@@ -2655,87 +2655,87 @@ const questionBanks = {
       "primarySkill": "aggregate_demand_from_islm",
       "feedback": "Price-level changes explain the slope of AD, not shifts of AD.",
       "commonError": "turning AD movements into shifts",
-      "aHash": "d4c1a13676157b69b122e5e589f0852933dbc577ba346fdb6a7932055af6f6b6"
+      "aHash": "9af0ad10cb017c82a1effdf1c01fcf35b51533d4b6e9f8e46bad087fbeeb806b"
     },
     {
       "id": 172,
       "q": "How does a fiscal expansion show up in the IS-LM-to-AD derivation?",
       "options": [
-        "LM shifts left at each P, so AD shifts left",
-        "IS right at each P, so AD right",
-        "LRAS shifts right first",
-        "P changes before policy changes"
+        "The LM curve shifts to the left at each price level, so the AD curve shifts to the left",
+        "The IS curve shifts to the right at each price level, so the AD curve shifts to the right",
+        "The LRAS curve shifts to the right first",
+        "The price level changes before policy changes"
       ],
       "tag": "aggregate_demand",
       "type": "integration",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
       "feedback": "Fiscal expansion raises equilibrium income for any given price level.",
-      "aHash": "85dd96d111778fc10eafe86cf86d6b4be7976d5cb60d05ce44e54b6cb48db8d6"
+      "aHash": "3c051abda9b7c92f1446f1b3c41456138bd464995460d97f2430bc9e0b1a59f6"
     },
     {
       "id": 173,
-      "q": "P falls, M/P rises, LM shifts right. What is the next link in deriving AD?",
+      "q": "The price level falls, M/P rises, the LM curve shifts to the right. What is the next link in deriving AD?",
       "options": [
-        "G falls and IS shifts left",
-        "LRAS shifts right",
-        "r falls & Y rises along IS",
-        "taxes rise automatically"
+        "Government purchases fall and the IS curve shifts to the left",
+        "The LRAS curve shifts to the right",
+        "The interest rate falls and output rises along IS",
+        "Taxes rise automatically"
       ],
       "tag": "aggregate_demand",
       "type": "multi-step",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
       "feedback": "The lower interest rate stimulates investment and output.",
-      "aHash": "dcf5b62234e3d752acc89a2d5b5ec3698e69d12b7e78926cd867cf592bafb99b"
+      "aHash": "cc3cb7707b9c19b62f828159fad63ac75ff84916855efc11d75aa179e86fe0e7"
     },
     {
       "id": 174,
       "q": "Why is AD not the same curve as IS?",
       "options": [
-        "AD plots r against Y",
+        "AD plots the interest rate against output",
         "AD ignores money markets",
         "AD is a production frontier",
-        "AD plots P against Y after solving IS-LM"
+        "AD plots the price level against output after solving IS-LM"
       ],
       "tag": "aggregate_demand",
       "type": "interpretation",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "AD is derived by changing P and finding the resulting IS-LM equilibrium Y.",
-      "aHash": "86c56bd92563c022a3116e22bd9a5f96022aa248d709d279f4b78bee9bfabfe5"
+      "feedback": "AD is derived by changing the price level and finding the resulting IS-LM equilibrium output.",
+      "aHash": "2c603157a74223e876a66e2fe047578d4e12d0f73f4a8ce92d80e5064d55eb0f"
     },
     {
       "id": 175,
       "q": "What variable is on the vertical axis of the AD diagram?",
       "options": [
-        "price level",
-        "interest rate",
-        "government purchases",
-        "real money balances"
+        "Price level",
+        "Interest rate",
+        "Government purchases",
+        "Real money balances"
       ],
       "tag": "aggregate_demand",
       "type": "definition",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "AD is plotted in P-Y space.",
+      "feedback": "AD is plotted in price-level and output space.",
       "aHash": "5dd92ac834f497f7e3b4cf136be46d43bdf36ef10bd409a6050b681712a225c2"
     },
     {
       "id": 176,
-      "q": "If investment demand falls at every r, what happens to AD?",
+      "q": "If investment demand falls at every interest rate, what happens to AD?",
       "options": [
-        "AD shifts right",
-        "AD shifts left",
-        "movement down along AD",
-        "LM shifts right"
+        "The AD curve shifts to the right",
+        "The AD curve shifts to the left",
+        "Movement down along AD",
+        "The LM curve shifts to the right"
       ],
       "tag": "aggregate_demand",
       "type": "application",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "Lower investment shifts IS left at each P, reducing AD.",
-      "aHash": "922d0125a121552dff4c2b51e96cc9c6768fefdb1574fa4942145e9c2e28b2f9"
+      "feedback": "Lower investment shifts the IS curve to the left at each price level, reducing AD.",
+      "aHash": "bbf984088e51e6186ab738820db5022a24af03e25022a772478ecb33bc3fba27"
     },
     {
       "id": 177,
@@ -2756,18 +2756,18 @@ const questionBanks = {
     },
     {
       "id": 178,
-      "q": "Nominal debt is 500 and P falls from 50 to 40. How much does debt/P rise?",
+      "q": "Nominal debt is 500 and the price level falls from 50 to 40. How much does debt/P rise?",
       "options": [
-        "from 12.5 to 10",
-        "from 500 to 540",
-        "from 50 to 40",
-        "from 10 to 12.5"
+        "From 12.5 to 10",
+        "From 500 to 540",
+        "From 50 to 40",
+        "From 10 to 12.5"
       ],
       "tag": "great_depression",
       "type": "calculation",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
-      "feedback": "Real debt burden rises as P falls.",
+      "feedback": "Real debt burden rises as the price level falls.",
       "hint": "Debt/P before and after.",
       "aHash": "87de7b728967a05b97a52607b9854ae8725f21f1346e46e8e58c4268e7bede1b"
     },
@@ -2775,42 +2775,42 @@ const questionBanks = {
       "id": 179,
       "q": "A stock-market crash lowers wealth and consumption. What Depression channel is this closest to in IS-LM?",
       "options": [
-        "IS-left spending collapse",
-        "LM-right monetary expansion",
-        "LRAS-right productivity boom",
-        "movement down along AD only"
+        "A collapse in spending that shifts the IS curve to the left",
+        "Monetary expansion that shifts the LM curve to the right",
+        "A productivity boom that shifts the LRAS curve to the right",
+        "A movement down along the existing aggregate demand curve"
       ],
       "tag": "great_depression",
       "type": "application",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "Lower consumption reduces planned expenditure.",
-      "aHash": "a730bb7e85198d6e648f6d855a1a2c712b90630cb4f63cc550996857ec167f9e"
+      "aHash": "0590dc1483d144477d24f09f0a633f1c1fd75d7a12ba9f538820c8a6ec89c069"
     },
     {
       "id": 180,
       "q": "Bank failures reduce deposits and lending. Which two curves may be hit?",
       "options": [
-        "IS right and LM right",
-        "LM left and IS left",
-        "LRAS right and AD right",
-        "LM right and SRAS right"
+        "The IS curve shifts to the right and the LM curve shifts to the right",
+        "The LM curve shifts to the left and the IS curve shifts to the left",
+        "The LRAS curve shifts to the right and the AD curve shifts to the right",
+        "The LM curve shifts to the right and the SRAS curve shifts to the right"
       ],
       "tag": "great_depression",
       "type": "application",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "Money/credit contraction can tighten LM and reduce investment spending.",
-      "aHash": "5cea1b9860841302e9022b40af03bde193a9c520a9793f5d1b1940af86590928"
+      "aHash": "8b494a4d34ad58e11eb1f9dfa5308a2d77b14054365c6b17fe7fa0fdb14b10de"
     },
     {
       "id": 181,
-      "q": "On the AD-SRAS panel, moving from C to B changes output and P how?",
+      "q": "Refer to the IS–LM and aggregate demand–aggregate supply graph. How do output and the price level change as the economy moves from C to B?",
       "options": [
-        "Y rises and P falls",
-        "Y falls and P falls",
-        "Y falls and P rises",
-        "Y stays fixed and P rises"
+        "Output rises and the price level falls",
+        "Output falls and the price level falls",
+        "Output falls and the price level rises",
+        "Output stays fixed and the price level rises"
       ],
       "tag": "great_depression",
       "type": "graph",
@@ -2818,16 +2818,16 @@ const questionBanks = {
       "image": "is_lm_lras.webp",
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "C to B moves left in output and up in price level.",
-      "aHash": "149dc811286a8e20f5db6b6781f0d278ac4f8127ce8b5f0bb1bfdd0124002863"
+      "aHash": "1623bcef00189ef2c57385eeb224a10a6e9e98affea3a7383d06b5c9bb90d0b9"
     },
     {
       "id": 182,
       "q": "Which claim wrongly treats deflation as always expansionary?",
       "options": [
-        "lower P can raise M/P",
+        "Lower price level can raise M/P",
         "expected deflation can raise real rates",
         "debt-deflation can reduce spending",
-        "lower P always raises Y since M/P rise"
+        "Lower price level always raises output since M/P rise"
       ],
       "tag": "great_depression",
       "type": "trap",
@@ -2835,47 +2835,47 @@ const questionBanks = {
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "The real-balance effect can be offset by debt and expectation channels.",
       "commonError": "assuming real balances are the only deflation channel",
-      "aHash": "7031fb2c7072848768d0d2c5c85a41ec9645171ff19a1fdb67246045fc6aeec4"
+      "aHash": "e24f67bcf2e0aef5f7aa3fce0eaf2836a213896d9594c1a83fbb6e9865e01c17"
     },
     {
       "id": 183,
       "q": "How can monetary contraction and expected deflation reinforce each other?",
       "options": [
-        "LM left & IS can shift left through higher real rates",
-        "both shift IS right",
-        "both lower real rates",
-        "both reduce debt burdens"
+        "The LM curve shifts to the left and IS can shift left through higher real rates",
+        "Both shift the IS curve to the right",
+        "Both lower real rates",
+        "Both reduce debt burdens"
       ],
       "tag": "great_depression",
       "type": "integration",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "Tight money raises rates; expected deflation can raise real borrowing costs further.",
-      "aHash": "21eb855efeeea1d9e4f0434b172ffe5b2982b5299c2f27df0d47f59f5c87c246"
+      "aHash": "57e01923d5556ab97d7a83286f9ec3db017692efafb9420a6dd3e2036320b3ed"
     },
     {
       "id": 184,
       "q": "What is the spending-collapse view of the Depression?",
       "options": [
         "LRAS rose too quickly",
-        "auto. demand fell sharply",
-        "taxes were always zero",
-        "money demand vanished"
+        "Autonomous demand fell sharply",
+        "Taxes were always zero",
+        "Money demand vanished"
       ],
       "tag": "great_depression",
       "type": "definition",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
-      "feedback": "A demand collapse shifts IS/AD left.",
-      "aHash": "28689eb3ba9d397bdc4e0f973db2ea59b8b2be6b7c543faeb562a3af60a5d602"
+      "feedback": "A demand collapse shifts IS/the AD curve shifts to the left.",
+      "aHash": "c6b0f6c440aaa238ecd5c7c9407c1329bd442d1b11b067b303c7e3aa283d640a"
     },
     {
       "id": 185,
       "q": "Expected deflation rises, real rates rise, investment falls. Which curve moves?",
       "options": [
-        "LM shifts right",
-        "LRAS shifts right",
-        "IS shifts left",
+        "The LM curve shifts to the right",
+        "The LRAS curve shifts to the right",
+        "The IS curve shifts to the left",
         "AD moves down only"
       ],
       "tag": "great_depression",
@@ -2883,39 +2883,480 @@ const questionBanks = {
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "Higher real borrowing costs weaken investment demand.",
-      "aHash": "b771bcc5050e268b04291777123975f64737ece1b772600fa99ef2e8beabcb24"
+      "aHash": "c4cf64fb8598fc492df65f87650bc57499d6e6377b89da6d9d81aeb37390760e"
     },
     {
       "id": 186,
       "q": "Why does the Depression objective not reduce to one multiplier problem?",
       "options": [
-        "multipliers never matter",
-        "graphs cannot show recessions",
-        "money has no role",
-        "it includes banking, money, expectations, debt, & spending channels"
+        "Multipliers never matter",
+        "Graphs cannot show recessions",
+        "Money has no role",
+        "It includes banking, money, expectations, debt, and spending channels"
       ],
       "tag": "great_depression",
       "type": "interpretation",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "The Depression mechanisms are several distinct causal stories.",
-      "aHash": "1bc049202b4b95ab48a19ce87bc0fb906f00a5231ba8d91e98be85dda95c7348"
+      "aHash": "fe56e2c2861c2aa84fcabda789da68df8c1b832a7819c442ca21d11f97e18ebc"
     },
     {
       "id": 187,
       "q": "If policy expands money enough to stop deflation expectations, what happens to demand?",
       "options": [
-        "it can support IS & LM recovery",
-        "it must lower Y",
-        "it shifts LRAS left",
-        "it raises real debt burdens"
+        "It can support IS and LM recovery",
+        "It must lower output",
+        "It shifts the LRAS curve to the left",
+        "It raises real debt burdens"
       ],
       "tag": "great_depression",
       "type": "application",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "Stabilizing money and expectations can reduce contractionary pressure.",
-      "aHash": "137196071013e8460ceb42c7e6380c88ad4efcb146d46263b0d596a79545b49e"
+      "aHash": "756366be5010db9fb716175b7cae8930b39dcde213983e6a0b83a6a2944b3c24"
+    },
+    {
+      "id": 301,
+      "q": "In the IS equation Y = 5,000 − 100r, what happens to goods-market equilibrium income if the interest rate rises from 3 to 5?",
+      "options": [
+        "Output rises by 200",
+        "Output falls by 100",
+        "Output falls by 200",
+        "Output rises by 500"
+      ],
+      "tag": "is_curve",
+      "type": "calculation",
+      "objective": "LO12.1",
+      "primarySkill": "is_curve_goods_market",
+      "feedback": "The interest-rate increase is 2 points, and −100×2 = −200.",
+      "aHash": "e997ba2df162a5b4c0dbbcb1146095f1bcdf7e02ccb78dceeb9c552d1574d84e"
+    },
+    {
+      "id": 315,
+      "q": "Refer to the LM graph. If the economy is at a given Y and moves from LM3 to LM1, what happens to r?",
+      "options": [
+        "The interest rate rises",
+        "The interest rate falls",
+        "The interest rate is fixed by IS",
+        "Y must be zero"
+      ],
+      "tag": "lm_curve",
+      "type": "graph",
+      "objective": "LO12.2",
+      "image": "lm_curves.webp",
+      "primarySkill": "lm_curve_money_market",
+      "feedback": "Moving leftward across LM curves at a fixed income means tighter real balances and a higher interest rate.",
+      "aHash": "7ba75e7932ae87b7fdbf8c6dfb26f14813a361d21a4dbb1df7be2d4373d29e43"
+    },
+    {
+      "id": 9004,
+      "q": "Using the IS graph, which comparison identifies a pure shift rather than movement along a curve?",
+      "options": [
+        "Same interest rate, different IS curves",
+        "Different interest rate, same IS curve",
+        "Same point, different label",
+        "Same curve, different axis title"
+      ],
+      "tag": "is_curve",
+      "type": "graph",
+      "objective": "LO12.1",
+      "primarySkill": "is_curve_goods_market",
+      "feedback": "A curve shift changes income at a given interest rate.",
+      "aHash": "03abf0b05ccef58edf1dd2e403b67d9a9bdb640eb3603dc9e819f765bf1a823b"
+    },
+    {
+      "id": 9018,
+      "q": "Why does the price-level channel behind AD run through LM rather than IS first?",
+      "options": [
+        "The price level directly changes government purchases",
+        "The price level fixes investment at zero",
+        "P changes real balances M/P",
+        "The price level changes taxes automatically"
+      ],
+      "tag": "lm_curve",
+      "type": "interpretation",
+      "objective": "LO12.2",
+      "primarySkill": "lm_curve_money_market",
+      "feedback": "A lower price level raises M/P, shifts the LM curve to the right, lowers the interest rate, and raises output along AD.",
+      "aHash": "8d69abf217370a19f2040e92aed23b12cb788798102790c71929cae7e4d11440"
+    },
+    {
+      "id": 9067,
+      "q": "At price level P1, real money balances are 250 and output is 1,400. At P2, real balances are 300 and output is 1,550. What is the implied increase in output per additional unit of real money balances?",
+      "options": [
+        "1.5",
+        "3",
+        "5",
+        "50"
+      ],
+      "tag": "aggregate_demand",
+      "type": "calculation",
+      "objective": "LO13.4",
+      "primarySkill": "aggregate_demand_from_islm",
+      "feedback": "Real balances rise by 50 and output rises by 150, so 150/50=3.",
+      "hint": "Compute slope of the response, not the AD slope.",
+      "aHash": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
+    },
+    {
+      "id": 304,
+      "q": "Refer to the IS graph. The economy moves from a point on IS1 to a point on IS3 at the same interest rate. Which change could explain the difference in goods-market equilibrium output?",
+      "options": [
+        "The interest rate fell along IS1 without shifting the curve",
+        "Autonomous planned spending increased, shifting the IS curve to the right from IS1 to IS3",
+        "Money demand fell, shifting only the LM curve",
+        "Only the axis scale changed, leaving planned spending unchanged"
+      ],
+      "tag": "is_curve",
+      "type": "graph",
+      "objective": "LO12.1",
+      "image": "is_curves.webp",
+      "primarySkill": "is_curve_goods_market",
+      "feedback": "A new IS curve at the same interest rate indicates a shift in planned spending, not a movement along one curve.",
+      "aHash": "c136e2cf80790cc122af79c2062f6c5474197bc30a5bc00e4337d6166bf98a73"
+    },
+    {
+      "id": 305,
+      "q": "A firm tax credit raises investment at each interest rate. In IS-LM, what is the first curve movement?",
+      "options": [
+        "The LM curve shifts to the right",
+        "AD moves down along itself",
+        "The IS curve shifts to the right",
+        "The LRAS curve shifts to the left"
+      ],
+      "tag": "is_curve",
+      "type": "application",
+      "objective": "LO12.1",
+      "primarySkill": "is_curve_goods_market",
+      "feedback": "The credit changes investment demand directly, which is an IS shift.",
+      "aHash": "f713a51176694d7c4c9d597bbfd7128c38ad53ea06301dfec9baadc5ff6f749f"
+    },
+    {
+      "id": 309,
+      "q": "In the IS–LM model, households decide to save more and consume less at each income level. How does this change the IS curve?",
+      "options": [
+        "The IS curve shifts to the right because saving is investment",
+        "The LM curve shifts to the right because money balances rise",
+        "The IS curve shifts to the left because spending falls",
+        "The LRAS curve shifts to the right because thrift raises capacity"
+      ],
+      "tag": "is_curve",
+      "type": "application",
+      "objective": "LO12.1",
+      "primarySkill": "is_curve_goods_market",
+      "feedback": "Higher desired saving means lower consumption demand at a given income, reducing planned expenditure.",
+      "aHash": "aa5fa4838e3e8d5de8d168fecac5c14573c49d9d0d42e2d1244314a564309d26"
+    },
+    {
+      "id": 310,
+      "q": "Which phrase best captures the IS curve?",
+      "options": [
+        "Money-market equilibrium traced across income",
+        "Long-run output determined by technology",
+        "Inflation adjustment through expected prices",
+        "Goods-market equilibrium at different interest rates"
+      ],
+      "tag": "is_curve",
+      "type": "definition",
+      "objective": "LO12.1",
+      "primarySkill": "is_curve_goods_market",
+      "feedback": "IS connects interest rates to goods-market equilibrium income.",
+      "aHash": "6d901c64a59ace234fead7bf714c985035657aa483f327759bff4b4b664babc1"
+    },
+    {
+      "id": 318,
+      "q": "Why is LM not a money-supply curve?",
+      "options": [
+        "LM ignores money demand",
+        "LM plots price against output",
+        "LM only shows government purchases",
+        "LM shows combinations of output and the interest rate that balance money supply and money demand"
+      ],
+      "tag": "lm_curve",
+      "type": "interpretation",
+      "objective": "LO12.2",
+      "primarySkill": "lm_curve_money_market",
+      "feedback": "LM combines the fixed real money supply with the money-demand schedule to find equilibrium rates.",
+      "aHash": "7af6f4fbbec16d103c0c1128186a4521d23de724a8c24a59db044990fda9d5d1"
+    },
+    {
+      "id": 319,
+      "q": "Which answer incorrectly says LM shifts because output changes?",
+      "options": [
+        "Higher output shifts the LM curve to the left",
+        "Higher nominal money supply shifts the LM curve to the right",
+        "Higher price level shifts the LM curve to the left",
+        "Higher money demand shifts the LM curve to the left"
+      ],
+      "tag": "lm_curve",
+      "type": "trap",
+      "objective": "LO12.2",
+      "primarySkill": "lm_curve_money_market",
+      "feedback": "Y is on the horizontal axis. A new Y is movement along LM unless M/P or money demand behavior changes.",
+      "commonError": "shifting LM when moving along LM",
+      "aHash": "0a4f58283c8bbc7bf548ba8c42a0bf6b0552342359d63bca602eeb9b26364f3c"
+    },
+    {
+      "id": 321,
+      "q": "At a given level of income, what does a rightward shift of the LM curve imply about the interest rate that clears the money market?",
+      "options": [
+        "a higher equilibrium interest rate",
+        "a lower price level is impossible",
+        "a lower equilibrium interest rate",
+        "planned spending is unchanged by definition"
+      ],
+      "tag": "lm_curve",
+      "type": "definition",
+      "objective": "LO12.2",
+      "primarySkill": "lm_curve_money_market",
+      "feedback": "At the same income, more real money balances or lower money demand reduce the interest rate needed to clear the money market. The comparison holds income fixed; a new joint IS–LM equilibrium can also involve a change in income.",
+      "aHash": "1a8487e97a93525fbd0bf36b0963aec42687fa0a66287bd7beeef8f24d9b3fb9"
+    },
+    {
+      "id": 326,
+      "q": "Refer to the IS–LM graph. Which point is consistent with IS3 and LM2?",
+      "options": [
+        "C",
+        "B",
+        "E",
+        "G"
+      ],
+      "tag": "is_lm_equilibrium",
+      "type": "graph",
+      "objective": "LO12.3",
+      "image": "is_lm_curves.webp",
+      "primarySkill": "is_lm_equilibrium",
+      "feedback": "Point C is the intersection of IS3 and LM2.",
+      "aHash": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
+    },
+    {
+      "id": 332,
+      "q": "What makes IS-LM a simultaneous-equilibrium model?",
+      "options": [
+        "The price level changes every second",
+        "Only the goods market is solved",
+        "Output and the interest rate must satisfy both markets at once",
+        "Natural output is chosen first"
+      ],
+      "tag": "is_lm_equilibrium",
+      "type": "definition",
+      "objective": "LO12.3",
+      "primarySkill": "is_lm_equilibrium",
+      "feedback": "Neither curve alone gives the full short-run equilibrium.",
+      "aHash": "15b9b2e1c4c85235f2800a75b6a0ebeea1fb7c2e45f844983cf81172ddf5d23e"
+    },
+    {
+      "id": 351,
+      "q": "Why is a tax multiplier smaller in absolute value than the government purchases multiplier?",
+      "options": [
+        "Taxes do not affect disposable income",
+        "Government purchases change money supply directly",
+        "Taxes work through MPC before the multiplier process",
+        "Investment ignores interest rates"
+      ],
+      "tag": "fiscal_policy",
+      "type": "interpretation",
+      "objective": "LO13.2",
+      "primarySkill": "fiscal_policy_is_shift",
+      "feedback": "A dollar of tax change changes first-round consumption by less than a dollar.",
+      "aHash": "7aec4cd7450414f540a199f0e4287b6b5f4cd24ccc5a7f200316d7431f0d0f95"
+    },
+    {
+      "id": 354,
+      "q": "In the IS–LM model, which statement describes the crowding out of private investment following an increase in government purchases?",
+      "options": [
+        "Fiscal expansion lowers the interest rate, reducing money supply",
+        "Fiscal expansion raises the interest rate, reducing interest-sensitive investment",
+        "Tax cuts lower consumption through MPC",
+        "Government purchases change LRAS immediately"
+      ],
+      "tag": "fiscal_policy",
+      "type": "definition",
+      "objective": "LO13.2",
+      "primarySkill": "fiscal_policy_is_shift",
+      "feedback": "Crowding out is the investment offset created by the interest-rate response.",
+      "aHash": "9cee3dc76f4b69a1aaba867fb2ee04e7a916b8be3356ead967bc83b78da89b19"
+    },
+    {
+      "id": 360,
+      "q": "How must a central bank adjust the nominal money supply to maintain its interest-rate target after money demand rises?",
+      "options": [
+        "Cut the nominal money supply to reduce liquidity",
+        "Raise government purchases to shift IS",
+        "Raise taxes to lower consumption",
+        "Increase the nominal money supply enough to satisfy higher demand"
+      ],
+      "tag": "monetary_policy",
+      "type": "integration",
+      "objective": "LO13.3",
+      "primarySkill": "monetary_policy_lm_shift",
+      "feedback": "At the same target rate, higher demand requires more supplied balances.",
+      "aHash": "a60c3730935fbf6cb2052ffe4f2c153e50b31c48efdeb370071c4696b50e2b2c"
+    },
+    {
+      "id": 361,
+      "q": "The nominal money supply rises but the price level rises proportionally at the same time. What happens to LM?",
+      "options": [
+        "It may not shift if M/P is unchanged",
+        "It must shift right",
+        "It must shift left",
+        "It becomes vertical"
+      ],
+      "tag": "monetary_policy",
+      "type": "multi-step",
+      "objective": "LO13.3",
+      "primarySkill": "monetary_policy_lm_shift",
+      "feedback": "LM depends on real balances, not nominal money by itself.",
+      "aHash": "ba2294119c41529454515694a320be157a0eaa50c17a9f931184678572b40c9d"
+    },
+    {
+      "id": 365,
+      "q": "What separates monetary policy from a money-demand shock?",
+      "options": [
+        "Policy changes supply; demand shocks change desired holdings",
+        "Both always shift IS",
+        "Both always raise government purchases",
+        "Neither affects the interest rate"
+      ],
+      "tag": "monetary_policy",
+      "type": "definition",
+      "objective": "LO13.3",
+      "primarySkill": "monetary_policy_lm_shift",
+      "feedback": "Supply and demand changes can move LM in opposite directions.",
+      "aHash": "ac759c0d45bfa510a1865434739ffaef9f59d4aa08ac5919d2ad6dc5c73d0e00"
+    },
+    {
+      "id": 370,
+      "q": "Refer to the IS–LM and aggregate demand graph. Which point is on AD3 at P1?",
+      "options": [
+        "1",
+        "3",
+        "2",
+        "6"
+      ],
+      "tag": "aggregate_demand",
+      "type": "graph",
+      "objective": "LO13.4",
+      "image": "is_lm_ad.webp",
+      "primarySkill": "aggregate_demand_from_islm",
+      "feedback": "Point 3 lies on AD3 at the highest shown price level.",
+      "aHash": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
+    },
+    {
+      "id": 371,
+      "q": "If the central bank raises the nominal money supply exactly as the price level rises, what happens to the LM position for AD derivation?",
+      "options": [
+        "It must shift left",
+        "It must shift right",
+        "It may stay unchanged if M/P is unchanged",
+        "IS must shift left"
+      ],
+      "tag": "aggregate_demand",
+      "type": "application",
+      "objective": "LO13.4",
+      "primarySkill": "aggregate_demand_from_islm",
+      "feedback": "LM depends on real balances, so proportional M and P changes can leave M/P unchanged.",
+      "aHash": "b093ae7b2c6d26b5b2a19da77e029a41b8b5abd030624b1f1e3ac99db4de4133"
+    },
+    {
+      "id": 375,
+      "q": "What two diagrams are being connected in the AD derivation graph?",
+      "options": [
+        "PPF and labor market",
+        "Money demand and loanable funds only",
+        "IS-LM and the price level-output aggregate demand",
+        "LRAS and Phillips curve only"
+      ],
+      "tag": "aggregate_demand",
+      "type": "definition",
+      "objective": "LO13.4",
+      "primarySkill": "aggregate_demand_from_islm",
+      "feedback": "The derivation maps IS-LM equilibria into points in price-level and output space.",
+      "aHash": "7ac8c2b3b2f65254b2b645ee60cf04c3a099833ac93d6bd2239267b89a555626"
+    },
+    {
+      "id": 377,
+      "q": "Nominal r is 1%, expected inflation moves from 0% to −5%. How much does the real rate change?",
+      "options": [
+        "It rises by 5 pp",
+        "It falls by 5 points",
+        "It rises by 1 point",
+        "It is unchanged"
+      ],
+      "tag": "great_depression",
+      "type": "calculation",
+      "objective": "LO13.5",
+      "primarySkill": "depression_crisis_mechanisms",
+      "feedback": "Real interest rate moves from 1% to 6%.",
+      "hint": "Real r ≈ i − πe.",
+      "aHash": "70c01a8415e54c396e81f7b5d6d772b1890c2d04e2657613582338811dd8a3ce"
+    },
+    {
+      "id": 378,
+      "q": "Debt/P rises from 40 to 50 after deflation. What is the percentage increase in real debt burden?",
+      "options": [
+        "10%",
+        "25%",
+        "20%",
+        "50%"
+      ],
+      "tag": "great_depression",
+      "type": "calculation",
+      "objective": "LO13.5",
+      "primarySkill": "depression_crisis_mechanisms",
+      "feedback": "The increase is 10/40 = 25%.",
+      "hint": "Percentage change = change/original.",
+      "aHash": "72da55d317fd997b93138b8646a2238e806a4c4566d1e854277b5a583d8aef23"
+    },
+    {
+      "id": 381,
+      "q": "Refer to the IS–LM and aggregate demand–aggregate supply graph. How do the price level and output change as the economy moves from A to C along the AD curve?",
+      "options": [
+        "both P and Y rise",
+        "The price level rises and output falls",
+        "The price level falls and output rises",
+        "Output stays at natural output"
+      ],
+      "tag": "great_depression",
+      "type": "graph",
+      "objective": "LO13.5",
+      "image": "is_lm_lras.webp",
+      "primarySkill": "depression_crisis_mechanisms",
+      "feedback": "On the right-hand AD-SRAS panel, A to C moves down and right along AD. The price level falls to P1 and output rises from Y1 to Y3.",
+      "aHash": "7186f4842c9fa1e1c46f9261776f5df69f10fbf9eaa4a6046c54bd7a045425ab"
+    },
+    {
+      "id": 382,
+      "q": "If expected deflation is severe while nominal rates are near zero, what happens to real rates?",
+      "options": [
+        "they must be negative",
+        "they can remain high",
+        "they equal zero automatically",
+        "they stop affecting investment"
+      ],
+      "tag": "great_depression",
+      "type": "application",
+      "objective": "LO13.5",
+      "primarySkill": "depression_crisis_mechanisms",
+      "feedback": "Zero nominal rates do not guarantee low real rates when expected inflation is negative.",
+      "aHash": "ff20c6deea2ed4834338343d309e04ff5a069abc401ae3d0d7ca0535000bd9b0"
+    },
+    {
+      "id": 386,
+      "q": "What is the monetary explanation associated with a severe slump?",
+      "options": [
+        "Government spending rose too much",
+        "Money contraction and banking failure reduced aggregate demand",
+        "LRAS grew too fast",
+        "Tax cuts overheated demand"
+      ],
+      "tag": "great_depression",
+      "type": "definition",
+      "objective": "LO13.5",
+      "primarySkill": "depression_crisis_mechanisms",
+      "feedback": "The monetary channel emphasizes falling money supply/credit and tighter LM conditions.",
+      "aHash": "f7d9e56b7973fa1c890ca305ce19aa0b03baf5b5ee0ffedc8a29d24daa6dd5c9"
     }
   ],
   "hard": [
@@ -2938,7 +3379,7 @@ const questionBanks = {
     },
     {
       "id": 201,
-      "q": "MPC = 0.8. Taxes rise by $25 billion. What is the simple-cross change in income?",
+      "q": "MPC = 0.8. Taxes rise by $25 billion. What is the simple Keynesian-cross change in income?",
       "options": [
         "−$125 billion",
         "−$25 billion",
@@ -2957,24 +3398,24 @@ const questionBanks = {
       "id": 202,
       "q": "If the IS curve is steep, what does that usually imply about investment demand?",
       "options": [
-        "investment is not very sensitive to r",
-        "investment is extremely sensitive to r",
-        "money demand is perfectly elastic",
-        "taxes are fixed at zero"
+        "Investment is not very sensitive to the interest rate",
+        "Investment is extremely sensitive to the interest rate",
+        "Money demand is perfectly elastic",
+        "Taxes are fixed at zero"
       ],
       "tag": "is_curve",
       "type": "application",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
-      "feedback": "A steep IS means r must change a lot to move income much, so investment is weakly interest-sensitive.",
-      "aHash": "bbaa23d6c1cb94c44ea154ea13fc75f45c0592cb611f09a9d7263ddc99a5cf74"
+      "feedback": "A steep IS means the interest rate must change a lot to move income much, so investment is weakly interest-sensitive.",
+      "aHash": "65d847a967069d7092351b692a5bff931b64bf7fa301f243a3506d8b4387bdef"
     },
     {
       "id": 203,
       "q": "Which mistake would exaggerate the effect of a tax cut on IS?",
       "options": [
-        "counting induced consumption after the first round",
-        "using the government-purchases multiplier instead of the tax multiplier",
+        "including induced consumption after the initial increase",
+        "applying the government-purchases multiplier",
         "recognizing that disposable income rises",
         "noting that investment may be crowded out"
       ],
@@ -2984,11 +3425,11 @@ const questionBanks = {
       "primarySkill": "is_curve_goods_market",
       "feedback": "A tax cut first changes consumption by MPC times the tax change, not by the full tax change.",
       "commonError": "using the wrong multiplier",
-      "aHash": "1d7486954942e90676484e3044c8f52d723dcbf952c6c45e2f8514318c901131"
+      "aHash": "df018ff2b01c6f416e3f71d9309d4d78fb53f4b16be70fd023752113d411d4f6"
     },
     {
       "id": 204,
-      "q": "On the IS graph, which movement best shows lower autonomous spending at every interest rate?",
+      "q": "Refer to the IS graph. Which movement best shows lower autonomous spending at every interest rate?",
       "options": [
         "from IS1 to IS2",
         "from IS2 to IS3",
@@ -3007,37 +3448,37 @@ const questionBanks = {
       "id": 205,
       "q": "Why does an increase in the interest rate reduce equilibrium income on IS?",
       "options": [
-        "it raises real balances, which shifts LM",
-        "it raises consumption through taxes",
-        "it shifts LRAS left by assumption",
-        "it lowers I, which lowers PE"
+        "It raises real balances, which shifts LM",
+        "It raises consumption through taxes",
+        "It shifts the LRAS curve to the left by assumption",
+        "It lowers investment, which lowers planned expenditure"
       ],
       "tag": "is_curve",
       "type": "interpretation",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
       "feedback": "The IS mechanism runs through interest-sensitive investment and planned expenditure.",
-      "aHash": "e78a267436c8d8a9b6597ac7a55cef7770e28e698b878d4fbad274f39c9220a3"
+      "aHash": "71651b85221f1bab12b4d3694e40350ba79213fef5b649521d70e95170cf80b5"
     },
     {
       "id": 206,
       "q": "If autonomous consumption falls and the central bank holds the interest rate fixed, what still happens to IS?",
       "options": [
-        "IS left; monetary policy may offset the Y loss",
-        "IS stays fixed because r is fixed",
-        "LM shifts left before IS can move",
-        "LRAS shifts right automatically"
+        "IS shifts left, reducing income at the pegged rate",
+        "IS stays fixed because the interest rate is fixed",
+        "The LM curve shifts to the left before IS can move",
+        "The LRAS curve shifts to the right automatically"
       ],
       "tag": "is_curve",
       "type": "multi-step",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
-      "feedback": "Holding r fixed does not prevent the spending shock; it only changes the policy response.",
-      "aHash": "76d9458ba208dc752976fd2f619f049df1fe658ad07230b9b5b1f3bc5a6637e7"
+      "feedback": "Lower autonomous consumption shifts the IS curve to the left. At an unchanged interest rate, goods-market equilibrium income falls. Holding the interest rate fixed prevents an interest-rate adjustment from offsetting that spending loss; it does not hold income fixed.",
+      "aHash": "73a46272ddf944f61b122a36a6ea50c5479a19aba5f22bba857fae1c9d1c3b04"
     },
     {
       "id": 207,
-      "q": "Which policy mix shifts IS right without directly shifting LM?",
+      "q": "Which policy mix shifts the IS curve to the right without directly shifting LM?",
       "options": [
         "open-market purchases",
         "higher government purchases",
@@ -3048,12 +3489,12 @@ const questionBanks = {
       "type": "application",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
-      "feedback": "Government purchases enter planned expenditure, so the direct curve shift is IS right.",
+      "feedback": "Government purchases enter planned expenditure, so the direct curve shift is the IS curve shifts to the right.",
       "aHash": "93128be92cf97ee7a9cc01070dfa4209330d341b0da7480b5381144ea2283a2e"
     },
     {
       "id": 208,
-      "q": "A fall in r raises investment by 80, and MPC = 0.6. What is the total simple-cross income effect from that investment change?",
+      "q": "A fall in the interest rate raises investment by 80, and MPC = 0.6. What is the total simple Keynesian-cross income effect from that investment change?",
       "options": [
         "80",
         "128",
@@ -3075,7 +3516,7 @@ const questionBanks = {
         "IS shows goods-market equilibrium combinations",
         "IS is shifted by autonomous spending",
         "IS can be derived from the Keynesian cross",
-        "IS shows how much Y firms can produce at each r"
+        "IS shows productive capacity at each interest rate"
       ],
       "tag": "is_curve",
       "type": "trap",
@@ -3083,23 +3524,23 @@ const questionBanks = {
       "primarySkill": "is_curve_goods_market",
       "feedback": "IS is about planned demand and goods-market equilibrium, not productive capacity.",
       "commonError": "confusing demand equilibrium with productive capacity",
-      "aHash": "fde35ff559e4b6a3c2432f312696403be0b72bdd703fb766ba24a5c524ff516a"
+      "aHash": "ec8d4b56243c04fbc26d2f547594190a27107c3340672a2a28618d60bfc1a579"
     },
     {
       "id": 210,
       "q": "What information does one point on the IS curve contain?",
       "options": [
-        "one Y-r pair where planned spending equals Y",
-        "one price-output pair on AD",
-        "one money supply chosen by the Fed",
-        "one natural-output point only"
+        "Output and interest rate that equate planned spending and output",
+        "Price level and output that equate money supply and money demand alone",
+        "One money supply chosen by the Fed",
+        "One natural-output point only"
       ],
       "tag": "is_curve",
       "type": "definition",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
       "feedback": "Each point on IS is a goods-market equilibrium combination.",
-      "aHash": "b94ab24de506a862b61983c8752ffb44de77628f53870d94fa379deedf6ca94a"
+      "aHash": "b46f7e0f800323da41e4678f7dd78a318e9586b8208b6715cd762f6f7eb48145"
     },
     {
       "id": 211,
@@ -3120,7 +3561,7 @@ const questionBanks = {
     },
     {
       "id": 212,
-      "q": "The Fed wants r=3 when money demand is L(r)=180−30r and P=20. What nominal M is required?",
+      "q": "The Fed wants r=3 when money demand is L(r)=180−30r and P=20. What nominal money supply is required?",
       "options": [
         "90",
         "2,400",
@@ -3139,38 +3580,38 @@ const questionBanks = {
       "id": 213,
       "q": "If banks become more cautious and households hold more money, what happens in liquidity preference?",
       "options": [
-        "money demand falls and LM shifts right",
-        "IS shifts right through investment",
-        "LRAS shifts right through productivity",
-        "money demand rises and LM shifts left"
+        "Money demand falls and the LM curve shifts to the right",
+        "The IS curve shifts to the right through investment",
+        "The LRAS curve shifts to the right through productivity",
+        "Money demand rises and the LM curve shifts to the left"
       ],
       "tag": "lm_curve",
       "type": "application",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
       "feedback": "A liquidity scramble raises money demand at each income and interest rate.",
-      "aHash": "6f7eb1d36f21ae177f651c20923b962fdc5211f83222ab26618e0d3d64d2222a"
+      "aHash": "d36a2649689d26fbfa25b8f17a406b1128a2e17eaf06fae4718fadadb0fed72e"
     },
     {
       "id": 214,
       "q": "Which claim incorrectly describes monetary contraction?",
       "options": [
-        "it directly lowers planned G",
-        "it lowers M/P when P is fixed",
-        "it shifts LM left",
-        "it raises r at a given Y"
+        "It directly lowers planned government purchases",
+        "It lowers M/P when the price level is fixed",
+        "It shifts the LM curve to the left",
+        "It raises the interest rate at a given output"
       ],
       "tag": "lm_curve",
       "type": "trap",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
-      "feedback": "Monetary contraction works through the money market, not by directly changing G.",
+      "feedback": "Monetary contraction works through the money market, not by directly changing government purchases.",
       "commonError": "placing monetary policy inside planned expenditure",
-      "aHash": "1affb48649f94aee61fa6c08a2e9cca8cf0f5ae21cbd630331e26a6a7cdaea4c"
+      "aHash": "c958be060149a5b15adad9cbb22a156be5c95f3dd672dc07ce83175f0230d9dd"
     },
     {
       "id": 215,
-      "q": "In the LM graph, which shift matches a decrease in nominal money supply with P fixed?",
+      "q": "Refer to the LM graph. Which shift matches a decrease in nominal money supply with P fixed?",
       "options": [
         "LM1 to LM2",
         "LM2 to LM1",
@@ -3182,105 +3623,105 @@ const questionBanks = {
       "objective": "LO12.2",
       "image": "lm_curves.webp",
       "primarySkill": "lm_curve_money_market",
-      "feedback": "A lower nominal money supply lowers M/P and shifts LM left.",
+      "feedback": "A lower nominal money supply lowers M/P and shifts the LM curve to the left.",
       "aHash": "08b9370a2a497175619dc7105bc2259e009170dc0d01a7693178416139d61f2a"
     },
     {
       "id": 216,
-      "q": "Why can a higher price level tighten monetary conditions even with unchanged M?",
+      "q": "Why can a higher price level tighten monetary conditions even with unchanged nominal money supply?",
       "options": [
-        "it raises real balances",
-        "it raises G directly",
-        "it lowers real balances",
-        "it lowers money demand at every r"
+        "It raises real balances",
+        "It raises government purchases directly",
+        "It lowers real balances",
+        "It lowers money demand at every interest rate"
       ],
       "tag": "lm_curve",
       "type": "interpretation",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
-      "feedback": "When P rises, each nominal dollar buys fewer goods, so M/P falls.",
+      "feedback": "When the price level rises, each nominal dollar buys fewer goods, so M/P falls.",
       "aHash": "0f869c4012b6aed80b199bc942e7067c077f8a7e1414b0c604925fa091e3b83d"
     },
     {
       "id": 217,
-      "q": "Income rises after an IS-right shift while M/P is fixed. What happens inside the money market?",
+      "q": "Income rises after a rightward shift of the IS curve while M/P is fixed. What happens inside the money market?",
       "options": [
-        "money supply rises automatically",
-        "money demand falls, lowering r",
-        "LM shifts right before income changes",
-        "money demand rises, pushing r upward"
+        "Money supply rises automatically",
+        "Money demand falls, lowering the interest rate",
+        "The LM curve shifts to the right before income changes",
+        "Money demand rises, pushing the interest rate upward"
       ],
       "tag": "lm_curve",
       "type": "multi-step",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
-      "feedback": "The IS shift raises Y; higher Y raises money demand and pulls the economy up along LM.",
-      "aHash": "64330fe0c4c85f923f37d6e7298765b56b568b8e26c6d29f38d37570dcc41e66"
+      "feedback": "The IS shift raises output; higher output raises money demand and pulls the economy up along LM.",
+      "aHash": "ffb55f28da2696b2e9ec27f634b0cc8b36a6e064d4906903cf510cfa69091efe"
     },
     {
       "id": 218,
-      "q": "Which change shifts LM right without using open-market operations?",
+      "q": "Which change shifts the LM curve to the right without using open-market operations?",
       "options": [
-        "a lower P with fixed M",
-        "a tax cut",
-        "higher government purchases",
-        "lower business confidence"
+        "Lower prices with nominal money unchanged",
+        "A tax cut",
+        "Higher government purchases financed by additional borrowing",
+        "Lower business confidence"
       ],
       "tag": "lm_curve",
       "type": "application",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
-      "feedback": "A lower price level raises real money balances, shifting LM right.",
-      "aHash": "2d00d752cad6d6720f0a81ba5744eef69ccbb0faa2bcff32f95aa2d333b18fc5"
+      "feedback": "A lower price level raises real money balances, shifting the LM curve to the right.",
+      "aHash": "ecc39e73762c3a1dac20f8821e5b426e50762ebe48bc99b4dd49526b85ed859e"
     },
     {
       "id": 219,
-      "q": "If money demand is highly interest-sensitive, why is monetary policy less powerful through r?",
+      "q": "If money demand is highly interest-sensitive, why is monetary policy less powerful through the interest rate?",
       "options": [
-        "extra money shifts IS instead",
-        "extra money causes a smaller fall in r",
-        "investment no longer depends on r",
-        "prices must rise immediately"
+        "Extra money shifts IS instead",
+        "Extra money produces a smaller interest-rate decline",
+        "Investment no longer depends on the interest rate",
+        "Prices must rise immediately"
       ],
       "tag": "lm_curve",
       "type": "integration",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
       "feedback": "When money demand absorbs more balances with little rate movement, the stimulus to investment is weaker.",
-      "aHash": "acb196c7ecb86e175c02e9049d48174c1d7e8cb5e2ebbba6e3b0b8af414e7766"
+      "aHash": "2794448872228f32a19358a36d9a83e28e846ed83a63bc62116647e40c665267"
     },
     {
       "id": 220,
-      "q": "A student uses nominal M instead of M/P to locate LM. What is the consequence?",
+      "q": "A student uses nominal money supply instead of M/P to locate LM. What is the consequence?",
       "options": [
-        "they correctly derive AD every time",
-        "they turn IS into a vertical curve",
-        "they miss price-level effects on real liquidity",
-        "they remove income from money demand"
+        "They correctly derive AD every time",
+        "They turn IS into a vertical curve",
+        "They ignore prices’ effect on real balances",
+        "They remove income’s influence on the demand for money"
       ],
       "tag": "lm_curve",
       "type": "trap",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
-      "feedback": "LM depends on real balances, so P matters.",
+      "feedback": "LM depends on real balances, so the price level matters.",
       "commonError": "using nominal money when real balances are needed",
-      "aHash": "98de7198f803b5ab77a44ddaad0d4f16490008f68b569d6ddeedbfe9d524b5d3"
+      "aHash": "93d0d6065c8902b9c2b3b7af3ddab3616591196025d763a0184993c3ad259029"
     },
     {
       "id": 221,
       "q": "Which pair of variables appears on the LM graph axes?",
       "options": [
-        "P and Y",
-        "G and T",
-        "C and I",
-        "Y and r"
+        "The price level and output",
+        "Government purchases and taxes",
+        "Consumption and investment",
+        "Output and the interest rate"
       ],
       "tag": "lm_curve",
       "type": "definition",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
       "feedback": "The IS-LM diagram uses income on the horizontal axis and the interest rate on the vertical axis.",
-      "aHash": "39afa879f1849af26aa7ba27818285da8fe09cf260a4bcd2c7ff9e2e487abbdb"
+      "aHash": "3137de65835ce5973c7dc2c177957ed0eeb7d94ae605e241b977cd69483c80d5"
     },
     {
       "id": 222,
@@ -3317,44 +3758,44 @@ const questionBanks = {
     },
     {
       "id": 224,
-      "q": "If IS shifts left and LM shifts right, what is definitely true in the standard diagram?",
+      "q": "In the IS–LM model with a downward-sloping IS curve and an upward-sloping LM curve, IS shifts to the left and LM shifts to the right. Which change in the new equilibrium is certain?",
       "options": [
-        "Y rises",
-        "Y falls",
-        "r rises",
-        "r falls"
+        "Output rises",
+        "Output falls",
+        "The interest rate rises",
+        "The interest rate falls"
       ],
       "tag": "is_lm_equilibrium",
       "type": "application",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
-      "feedback": "Both IS-left and LM-right push r downward; their effects on Y oppose each other.",
-      "aHash": "ed3189d93878f10be0a3c07170141cf8c9edb6c05aa77882e1e0e1a2925157e5"
+      "feedback": "Both a leftward shift of the IS curve and a rightward shift of the LM curve push the interest rate downward; their effects on output oppose each other.",
+      "aHash": "504ba25f9205f99fb7cbe7a80a42d41e9878d9e59bae0e62f9fcb38af42ef749"
     },
     {
       "id": 225,
-      "q": "If IS shifts right and LM shifts left, what is definitely true?",
+      "q": "If the IS curve shifts to the right and the LM curve shifts to the left, what is definitely true?",
       "options": [
-        "r rises",
-        "Y rises",
-        "Y falls",
-        "Y stays fixed"
+        "The interest rate rises",
+        "Equilibrium output increases",
+        "Equilibrium output decreases",
+        "Output stays fixed"
       ],
       "tag": "is_lm_equilibrium",
       "type": "application",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
       "feedback": "Both shifts push the interest rate upward; income depends on the relative sizes.",
-      "aHash": "050fb4b2fe956f56240f466531c0394f4d4d8a45991d35abbe2f598685811f4e"
+      "aHash": "7ba75e7932ae87b7fdbf8c6dfb26f14813a361d21a4dbb1df7be2d4373d29e43"
     },
     {
       "id": 226,
-      "q": "On the IS-LM graph, moving from D to G uses which curve movement?",
+      "q": "Refer to the IS–LM graph. Moving from D to G uses which curve movement?",
       "options": [
-        "IS shifts right while LM2 stays fixed",
-        "LM shifts right while IS2 stays fixed",
-        "LM shifts left while IS2 stays fixed",
-        "IS shifts left while LM2 stays fixed"
+        "The IS curve shifts to the right while LM2 stays fixed",
+        "The LM curve shifts to the right while IS2 stays fixed",
+        "The LM curve shifts to the left while IS2 stays fixed",
+        "The IS curve shifts to the left while LM2 stays fixed"
       ],
       "tag": "is_lm_equilibrium",
       "type": "graph",
@@ -3362,63 +3803,63 @@ const questionBanks = {
       "image": "is_lm_curves.webp",
       "primarySkill": "is_lm_equilibrium",
       "feedback": "D and G are on IS2; the movement is from LM2 to LM3.",
-      "aHash": "41947b76e018772b5bfe6d9aba1c23f5bf6d3cc17370d8a19137779eedca4e24"
+      "aHash": "558f93db9de4c1854a86b26184b994b3dcbf3844148f68a47a938f171f7a2511"
     },
     {
       "id": 227,
-      "q": "A student says every fall in r proves monetary expansion. What is the flaw?",
+      "q": "A student says every fall in the interest rate proves monetary expansion. What is the flaw?",
       "options": [
-        "IS-left shocks always raise r",
-        "LM-right shocks lower Y only",
-        "IS-left shocks can also lower r",
-        "r never changes in IS-LM"
+        "Leftward shifts of the IS curve always raise the interest rate",
+        "Rightward shifts of the LM curve lower output only",
+        "A leftward IS shift can also lower the interest rate",
+        "The interest rate never changes in IS-LM"
       ],
       "tag": "is_lm_equilibrium",
       "type": "trap",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
-      "feedback": "A lower interest rate can result from weaker goods demand or easier money. Check Y and the shifted curve.",
+      "feedback": "A lower interest rate can result from weaker goods demand or easier money. Check output and the shifted curve.",
       "commonError": "identifying policy from r alone",
-      "aHash": "a57776ed26440822d8da2e6a61cfa42a90d4aee19a38d91db5c3a3a58490ac5e"
+      "aHash": "3eff24acaa93068caca8671a41310b78e6bde30ca85efa120a6b25b27b092fc1"
     },
     {
       "id": 228,
       "q": "Government purchases rise while the central bank reduces money supply. What is the most likely conflict?",
       "options": [
-        "both shifts lower r",
-        "both shifts lower Y",
+        "Both policies lower the interest rate, making their effects reinforce each other",
+        "Both shifts lower output",
         "IS and LM must both shift right",
-        "IS-right raises Y, LM-left lowers Y, & both raise r"
+        "Their output effects conflict, but both raise the interest rate"
       ],
       "tag": "is_lm_equilibrium",
       "type": "multi-step",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
       "feedback": "The output effects oppose; the interest-rate effects reinforce upward.",
-      "aHash": "01a442f2278f1b1773b8251dd337154c0fc99e6ab5d4afe727c4f8422592ebd6"
+      "aHash": "d939b1ca1a95622897581bcfaf3f0feb5a01b42bccccbe9444f547d0a1f32f95"
     },
     {
       "id": 229,
       "q": "Why does the IS-LM intersection not have to equal natural output?",
       "options": [
-        "the P is fixed in the short run",
+        "Short-run prices are fixed",
         "LRAS is ignored forever",
-        "money demand is zero",
-        "investment is fixed by law"
+        "Money demand is zero",
+        "Investment is fixed by legislation"
       ],
       "tag": "is_lm_equilibrium",
       "type": "interpretation",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
       "feedback": "With prices fixed, demand shocks can move output away from long-run potential.",
-      "aHash": "318a7f732931dc17c5e2ad0adeb9621a27574fef81fbc612118efd7742951953"
+      "aHash": "e4d19a2cabf0b85e0676b39ef8d91172241b7f88e125a4c5e24b22d6bc27454c"
     },
     {
       "id": 230,
       "q": "If a tax cut and a rise in money demand happen together, what is ambiguous?",
       "options": [
-        "r must fall",
-        "Y may rise or fall",
+        "The interest rate must fall",
+        "Output may rise or fall",
         "IS must shift left",
         "LM must shift right"
       ],
@@ -3426,24 +3867,24 @@ const questionBanks = {
       "type": "integration",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
-      "feedback": "Tax cuts shift IS right; higher money demand shifts LM left. These have opposite effects on Y.",
-      "aHash": "915768dce9632a1a755f86da60010cc2036e0d4f5b4ef5c0ea4ed5c7e1bb776a"
+      "feedback": "Tax cuts shift the IS curve to the right; higher money demand shifts the LM curve to the left. These have opposite effects on output.",
+      "aHash": "7606c7f62afeba1fec486cd85882349fa655e05a2b9a3b9038cd99e73965458c"
     },
     {
       "id": 231,
       "q": "What does comparative statics ask in IS-LM?",
       "options": [
-        "how to redraw axes without variables",
-        "how to keep all curves fixed forever",
-        "how eq. changes after an exogenous shift",
-        "how to calculate only natural output"
+        "How to redraw axes without variables",
+        "How to keep all curves fixed forever",
+        "How a shock changes equilibrium",
+        "How to calculate only natural output"
       ],
       "tag": "is_lm_equilibrium",
       "type": "definition",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
       "feedback": "Comparative statics compares old and new equilibria after a change in policy or behavior.",
-      "aHash": "86dcffc33293e73707e5caeeb5cfb751846871e304400bbc39f83c9778ff6de1"
+      "aHash": "3f88a85f24168b4baf2acb0da65d4aa634d07356d34cab4ff4a8953f273a000b"
     },
     {
       "id": 232,
@@ -3465,17 +3906,17 @@ const questionBanks = {
       "id": 233,
       "q": "Oil prices rise and firms postpone investment projects. In this IS-LM framing, what is the demand-side effect?",
       "options": [
-        "LM shifts right through real balances",
-        "IS shifts left through lower investment",
-        "IS shifts right through higher consumption",
-        "LRAS shifts right through productivity"
+        "The LM curve shifts to the right through real balances",
+        "The IS curve shifts to the left through lower investment",
+        "The IS curve shifts to the right through higher consumption",
+        "The LRAS curve shifts to the right through productivity"
       ],
       "tag": "shocks",
       "type": "application",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
       "feedback": "When the prompt emphasizes investment demand, the IS channel is the relevant short-run demand effect.",
-      "aHash": "51b4959109acb8f441faa96488cd2aee472ecf74c0caa8b8f54d58ba612909e7"
+      "aHash": "015933dc69bc2dfde1c0e4b3564d32b22aca395f281a0c4835ed58adb249712f"
     },
     {
       "id": 234,
@@ -3490,17 +3931,17 @@ const questionBanks = {
       "type": "application",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "More money supply can shift LM right against the money-demand increase.",
+      "feedback": "More money supply can shift the LM curve to the right against the money-demand increase.",
       "aHash": "112ead39065fea6cc200c16f369e112596ed5bc101bf0b75dd0b606fbdfa594d"
     },
     {
       "id": 235,
-      "q": "On the IS-LM graph, moving from E to C reflects what?",
+      "q": "Refer to the IS–LM graph. Moving from E to C reflects what?",
       "options": [
-        "IS shifts left while LM3 stays fixed",
-        "LM shifts right while IS3 stays fixed",
-        "IS shifts right while LM3 stays fixed",
-        "LM shifts left while IS3 stays fixed"
+        "The IS curve shifts to the left while LM3 stays fixed",
+        "The LM curve shifts to the right while IS3 stays fixed",
+        "The IS curve shifts to the right while LM3 stays fixed",
+        "The LM curve shifts to the left while IS3 stays fixed"
       ],
       "tag": "shocks",
       "type": "graph",
@@ -3508,24 +3949,24 @@ const questionBanks = {
       "image": "is_lm_curves.webp",
       "primarySkill": "shock_transmission",
       "feedback": "E and C are both on IS3, while LM moves left.",
-      "aHash": "77cffad93d2807cdb5b387dfde5e41633e337b20e85fbb3fabb9437bca126a85"
+      "aHash": "45af1a05e0314cc09dbb3bbc856af8a1ca9b4cbf6d1e300a73f3cc60bdb8d40b"
     },
     {
       "id": 236,
-      "q": "A student says a recession with falling r must be monetary contraction. What is wrong?",
+      "q": "A student says a recession with a falling interest rate must be monetary contraction. What is wrong?",
       "options": [
-        "monetary contraction raises r in the basic model",
-        "IS-left shocks raise r",
-        "falling r proves LM-left",
-        "Y cannot fall when r falls"
+        "Monetary contraction raises the interest rate in the basic model",
+        "Leftward shifts of the IS curve raise the interest rate",
+        "A falling interest rate proves a leftward shift of the LM curve",
+        "Output cannot fall when the interest rate falls"
       ],
       "tag": "shocks",
       "type": "trap",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "Falling output with falling r is the classic IS-left pattern, not LM-left.",
+      "feedback": "Falling output together with a falling interest rate is consistent with a leftward shift of the IS curve. A leftward shift of the LM curve instead lowers output and raises the interest rate in the IS–LM model.",
       "commonError": "wrong sign for monetary contraction",
-      "aHash": "258aedfcdb422a7ffa9514e4ecbda6a6694327dc91c179b85fc1b5dbc126618a"
+      "aHash": "431db13ff2601d338545f13d97b64c672062aeb0546e940c800898abf0a2d6b4"
     },
     {
       "id": 237,
@@ -3557,7 +3998,7 @@ const questionBanks = {
       "type": "calculation",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "Real demand is 60 higher at every r, so nominal M must rise by 60×10=600.",
+      "feedback": "Real demand is 60 higher at every r, so nominal money supply must rise by 60×10=600.",
       "hint": "Hold r fixed by matching the real demand increase.",
       "aHash": "284b7e6d788f363f910f7beb1910473e23ce9d6c871f1ce0f31f22a982d48ad4"
     },
@@ -3565,74 +4006,74 @@ const questionBanks = {
       "id": 239,
       "q": "A negative IS shock and a leftward LM shock hit together. What is certain?",
       "options": [
-        "r falls",
-        "r is unchanged",
-        "Y rises",
-        "Y falls"
+        "The interest rate falls",
+        "The interest rate is unchanged",
+        "Output rises",
+        "Output falls"
       ],
       "tag": "shocks",
       "type": "integration",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
       "feedback": "Both shocks reduce output; their interest-rate effects oppose one another.",
-      "aHash": "2a64a035db24e7fda3c230abb4402fa885f919744f8151b7748f1e246fd2ee95"
+      "aHash": "4b58d6b239820abdc0f850046d67a87a4c7d163f3d8f16595253706254c95f45"
     },
     {
       "id": 240,
       "q": "A positive IS shock and a rightward LM shock hit together. What is certain?",
       "options": [
-        "Y rises",
-        "r rises",
-        "r falls",
-        "Y falls"
+        "Output rises",
+        "The interest rate rises",
+        "The interest rate falls",
+        "Output falls"
       ],
       "tag": "shocks",
       "type": "integration",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
       "feedback": "Both shifts raise output; the interest-rate result is ambiguous.",
-      "aHash": "62cee539c6a46f267a6b7d30687ef88f43b79869cfacd02130f60e91f24e3434"
+      "aHash": "0b6435b356cbf9a46ccef412035e920828aae4da02b1f677261baf2c83ae9224"
     },
     {
       "id": 241,
-      "q": "If confidence collapses and the Fed expands money aggressively, what determines whether Y falls?",
+      "q": "If confidence collapses and the Fed expands money aggressively, what determines whether output falls?",
       "options": [
-        "the color of the IS curve",
-        "relative size of IS-left & LM-right shifts",
-        "whether taxes are labeled first",
-        "the old equilibrium only"
+        "The color of the IS curve",
+        "Whether the spending decline outweighs monetary stimulus",
+        "Whether taxes are labeled first",
+        "The old output level alone, regardless of the size of either change"
       ],
       "tag": "shocks",
       "type": "multi-step",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
       "feedback": "The output effects oppose, so the larger shift dominates.",
-      "aHash": "2d859de478a6c424e0e109a3875abc971731c690bd3468386d541df2716b5932"
+      "aHash": "8ecdec258212ecfdfb1094bdbacf15116083a2649eb33905f2bc591739fd97b3"
     },
     {
       "id": 242,
       "q": "Why can the same shock have a larger output effect in one economy than another?",
       "options": [
-        "equilibrium points do not matter",
-        "money demand is identical everywhere",
-        "curve slopes & interest sensitivities differ",
-        "all shocks move LRAS first"
+        "Equilibrium points do not matter",
+        "Money demand responds identically to income and interest in every economy",
+        "Interest sensitivities and curve slopes differ",
+        "All shocks move LRAS first"
       ],
       "tag": "shocks",
       "type": "interpretation",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "The transmission from curve shifts to Y depends on IS and LM slopes.",
-      "aHash": "64b5f6a212825de7ca07cfdb9f76a112369b76b06e4318c5b81970455f15cd3a"
+      "feedback": "The transmission from curve shifts to output depends on IS and LM slopes.",
+      "aHash": "c052c2c0fa685005e783ccb8e8782979f012206f93f75ba926de8f0d7ee3e80e"
     },
     {
       "id": 243,
       "q": "Which answer treats all shocks as policy?",
       "options": [
-        "a central-bank bond sale is monetary contraction",
-        "higher G is fiscal expansion",
-        "higher money demand is a liquidity shock",
-        "a private I collapse is called monetary contraction"
+        "A central-bank bond sale is monetary contraction",
+        "An increase in government purchases is fiscal expansion",
+        "Higher money demand is a liquidity shock",
+        "A private investment collapse is called monetary contraction"
       ],
       "tag": "shocks",
       "type": "trap",
@@ -3640,11 +4081,11 @@ const questionBanks = {
       "primarySkill": "shock_transmission",
       "feedback": "Not every curve shift is a policy choice; private behavior can shift curves too.",
       "commonError": "calling every shock policy",
-      "aHash": "81bfc8ad59bc08299258696e57d4d0cadc734131589e2c03cd67d0d46cffe1f3"
+      "aHash": "934f5a96965dc46b642ec3b5a15a00179e4c2c9e12f63ef202ee47e8e79b295e"
     },
     {
       "id": 244,
-      "q": "PE = 500 + 0.8(Y−200)+300+G. If G rises from 400 to 450, what is simple-cross ΔY?",
+      "q": "Planned expenditure is PE = 500 + 0.8(Y − 200) + 300 + G, where Y is output and G is government purchases. If G rises from 400 to 450, what is the change in equilibrium output in the Keynesian-cross model?",
       "options": [
         "250",
         "50",
@@ -3661,7 +4102,7 @@ const questionBanks = {
     },
     {
       "id": 245,
-      "q": "MPC=0.7. Taxes rise by 30. What is the simple-cross change in Y?",
+      "q": "The marginal propensity to consume is 0.7 and taxes rise by 30. What is the change in output in the simple Keynesian-cross model?",
       "options": [
         "−30",
         "−70",
@@ -3678,12 +4119,12 @@ const questionBanks = {
     },
     {
       "id": 246,
-      "q": "A student treats a tax cut as if it enters PE dollar-for-dollar. What is wrong?",
+      "q": "A student treats a tax cut as if it enters planned expenditure dollar-for-dollar. What is wrong?",
       "options": [
-        "tax cuts never affect consumption",
-        "tax cuts shift LM only",
-        "C rises by MPC times the T cut first",
-        "tax cuts reduce disposable income"
+        "Tax cuts leave consumption unchanged because disposable income cannot change",
+        "Tax cuts shift LM only",
+        "Households initially spend only the MPC share",
+        "Tax cuts reduce disposable income"
       ],
       "tag": "fiscal_policy",
       "type": "trap",
@@ -3691,43 +4132,43 @@ const questionBanks = {
       "primarySkill": "fiscal_policy_is_shift",
       "feedback": "Taxes affect consumption through disposable income, not direct government purchases.",
       "commonError": "using G multiplier for taxes",
-      "aHash": "d437aef170fbba0b7c263846b654d3e673a4010a989b52b9cbd50373101a1649"
+      "aHash": "39b99108e6a2650c5187a0dde04b29a403ac278f0c9cbee3e0ff6602ae1efdb3"
     },
     {
       "id": 247,
       "q": "If LM is very steep, what happens to fiscal expansion?",
       "options": [
-        "crowding out disappears",
+        "Crowding out disappears",
         "IS cannot shift",
-        "r cannot change",
-        "crowding out is stronger"
+        "The interest rate cannot change",
+        "Crowding out is stronger"
       ],
       "tag": "fiscal_policy",
       "type": "application",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "A steep LM means Y increases create large interest-rate pressure.",
+      "feedback": "A steep LM means output increases create large interest-rate pressure.",
       "aHash": "a2b06c6d319cd9666a5b7494624662f179cb159508523b2fee2d1ce8a7718510"
     },
     {
       "id": 248,
-      "q": "If LM is horizontal, what happens to crowding out from G?",
+      "q": "If LM is horizontal, what happens to crowding out from government purchases?",
       "options": [
-        "little or none through r",
-        "complete crowding out",
-        "IS shifts left",
-        "taxes rise automatically"
+        "Little or no interest-rate crowding out",
+        "Complete displacement of private investment",
+        "The IS curve shifts to the left",
+        "Taxes rise automatically"
       ],
       "tag": "fiscal_policy",
       "type": "application",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "If r does not rise, investment is not crowded out through the interest-rate channel.",
-      "aHash": "65354b5b649c4cbef723024a44e266e639ef17ca8200e27df646c4dde8735ae3"
+      "feedback": "If the interest rate does not rise, investment is not crowded out through the interest-rate channel.",
+      "aHash": "ba9c548bea67ddc307c9d1f53aecb50233fefef4c864874cd3546bef33a8fb99"
     },
     {
       "id": 249,
-      "q": "On the IS-LM graph, A to B followed by B to E represents what mix?",
+      "q": "Refer to the IS–LM graph. A to B followed by B to D represents what mix?",
       "options": [
         "monetary contraction followed by fiscal contraction",
         "fiscal expansion followed by monetary expansion",
@@ -3739,89 +4180,89 @@ const questionBanks = {
       "objective": "LO13.2",
       "image": "is_lm_curves.webp",
       "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "A to B is IS-right; B to E is LM-right at the new IS.",
+      "feedback": "A to B shifts IS1 to IS2 with LM1 fixed. B to D then shifts LM1 to LM2 with IS2 fixed: monetary accommodation lowers the interest rate and raises output further.",
       "aHash": "82ab8d12de3b65aaedbf43e73d824fc74f8e6fbaa94db057f7fab05fed40eb76"
     },
     {
       "id": 250,
       "q": "Fiscal expansion and monetary contraction together have what definite effect?",
       "options": [
-        "Y rises",
-        "Y falls",
-        "r rises",
-        "r falls"
+        "Output rises",
+        "Output falls",
+        "The interest rate rises",
+        "The interest rate falls"
       ],
       "tag": "fiscal_policy",
       "type": "integration",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "Both shifts raise r; output depends on which shift dominates.",
-      "aHash": "050fb4b2fe956f56240f466531c0394f4d4d8a45991d35abbe2f598685811f4e"
+      "feedback": "Both shifts raise the interest rate; output depends on which shift dominates.",
+      "aHash": "7ba75e7932ae87b7fdbf8c6dfb26f14813a361d21a4dbb1df7be2d4373d29e43"
     },
     {
       "id": 251,
       "q": "What is the policy goal of fiscal stimulus in a recessionary gap?",
       "options": [
-        "shift LM left to raise r",
-        "shift LRAS left to lower capacity",
-        "make money demand higher",
-        "shift IS right to raise short-run Y"
+        "Shift the LM curve to the left to raise the interest rate",
+        "Shift the LRAS curve to the left to lower capacity",
+        "Make money demand higher",
+        "Shift the IS curve to the right to raise short-run output"
       ],
       "tag": "fiscal_policy",
       "type": "definition",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
       "feedback": "Fiscal stimulus attempts to increase aggregate demand through planned expenditure.",
-      "aHash": "e23bdb40468e5e3bd5f44d4d14c26e7e4114e1b4fd156dbf3f347bfb37f3ad45"
+      "aHash": "e0c6cf8cf299bcef1850ad00156afcc1b8a741174ed9cb8d6d7cabf038072725"
     },
     {
       "id": 252,
-      "q": "A rise in G is financed by higher taxes of the same amount. Why can Y still rise?",
+      "q": "A rise in government purchases is financed by higher taxes of the same amount. Why can output still rise?",
       "options": [
-        "G enters PE fully while T reduce C by MPC times T",
-        "taxes shift LM right",
-        "G has no spending effect",
-        "consumption rises when taxes rise"
+        "Purchases rise more than consumption falls",
+        "Taxes shift LM to the right",
+        "Government purchases leave total planned spending unchanged",
+        "Consumption rises when taxes rise"
       ],
       "tag": "fiscal_policy",
       "type": "multi-step",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "The balanced-budget result depends on MPC being less than one.",
-      "aHash": "5e17da43a224e3dc377a1a32c6690128ea3caa08c62ab9550113545c995f6af2"
+      "feedback": "An extra dollar of government purchases adds a full dollar to initial spending. A dollar of extra tax reduces consumption by only the marginal propensity to consume, which is less than one here. The combined initial effect is positive, so equal spending and tax increases can raise output.",
+      "aHash": "c3cd5c2a4d753b7405ce8ed2e75847c79a415f1c32540a481d9a7167421a3607"
     },
     {
       "id": 253,
-      "q": "Why does fiscal policy affect r even though it does not directly change money supply?",
+      "q": "Why does fiscal policy affect the interest rate even though it does not directly change money supply?",
       "options": [
-        "G enters the money supply equation",
-        "higher Y changes money demand",
-        "taxes set the price level",
-        "investment demand vanishes"
+        "Government purchases enter the money supply equation",
+        "Higher output changes money demand",
+        "Taxes set the price level",
+        "Investment demand vanishes"
       ],
       "tag": "fiscal_policy",
       "type": "interpretation",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "Money demand responds to income, so goods-market changes spill into r.",
-      "aHash": "b8f066d0b3656467804d4c58fb4f234504bde95bff8d835878dab91baf2e9bdc"
+      "feedback": "Money demand responds to income, so goods-market changes spill into the interest rate.",
+      "aHash": "8029ea80980ab521647af7e0458598b4325c8cb230161996c0f7db41f3068c89"
     },
     {
       "id": 254,
-      "q": "MPC=0.8. G rises by 50, and crowding out later reduces investment by 80 in simple-cross terms. What is net ΔY before further feedback?",
+      "q": "The marginal propensity to consume is 0.8. Government purchases rise by 50, but crowding out subsequently reduces investment spending by 80. Applying the Keynesian-cross multiplier to both spending changes, what is the net change in output before any further feedback?",
       "options": [
-        "250",
-        "80",
-        "170",
-        "330"
+        "+250",
+        "+80",
+        "−150",
+        "+330"
       ],
       "tag": "fiscal_policy",
       "type": "calculation",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "G multiplier effect is +250. Subtract 80 to get +170.",
+      "feedback": "The spending multiplier is 1/(1−0.8)=5. Net autonomous spending changes by ΔG+ΔI=50−80=−30, so ΔY=5×(−30)=−150. Investment spending is multiplied too.",
       "hint": "Keep the crowding-out adjustment separate.",
-      "aHash": "734d0759cdb4e0d0a35e4fd73749aee287e4fdcc8648b71a8d6ed591b7d4cb3f"
+      "aHash": "9373cc6ed71d44e80097ed58430b6789a32090a91e23cdb3d48bb008ec18413f"
     },
     {
       "id": 255,
@@ -3842,7 +4283,7 @@ const questionBanks = {
     },
     {
       "id": 256,
-      "q": "The Fed raises M from 2,400 to 3,000 while P=12. Money demand is 350−25r. What happens to r?",
+      "q": "The Fed raises the nominal money supply from 2,400 to 3,000 while P=12. Money demand is 350−25r. What happens to r?",
       "options": [
         "falls from 6 to 4",
         "rises from 4 to 6",
@@ -3861,38 +4302,38 @@ const questionBanks = {
       "id": 257,
       "q": "If IS is very steep, what happens to monetary policy output effects?",
       "options": [
-        "they are stronger because r cannot move",
-        "they are weaker since Y responds little to r",
+        "They are stronger because the interest rate cannot move",
+        "They weaken because output responds little to interest rates",
         "LM cannot shift",
-        "investment demand is more sensitive"
+        "Investment demand is more sensitive"
       ],
       "tag": "monetary_policy",
       "type": "application",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
-      "feedback": "A steep IS means lower r produces a smaller change in income.",
-      "aHash": "9a6dfbc5176c0f770252224bbf88e801bee62ea6ad4e317f0b603328c5db71e4"
+      "feedback": "A steep IS means a lower interest rate produces a smaller change in income.",
+      "aHash": "593199fad885c5a8e2c38d5566edeed8d4092e3cc6727c30282046645882baba"
     },
     {
       "id": 258,
-      "q": "Which statement ignores the price-level assumption?",
+      "q": "In the IS–LM model, real money balances equal the nominal money supply divided by the price level (M/P). Which statement incorrectly treats the price level as irrelevant to the effect of a monetary expansion?",
       "options": [
-        "with fixed P, higher M raises M/P",
-        "with higher P, the same M buys fewer goods",
-        "a higher M always raises M/P by the same amount regardless of P",
+        "With fixed price level, higher nominal money supply raises M/P",
+        "With higher price level, the same nominal money supply buys fewer goods",
+        "More nominal money always raises M/P equally, whatever the price level",
         "LM depends on real balances"
       ],
       "tag": "monetary_policy",
       "type": "trap",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
-      "feedback": "Real balances depend on both M and P.",
+      "feedback": "For a fixed price level, an increase in nominal money M raises real balances by ΔM/P. If the price level differs or changes, the same nominal increase need not produce the same increase in purchasing power.",
       "commonError": "ignoring P in M/P",
-      "aHash": "0a00e2e4554d8e4d14a102910187f88b7cf0f22466241a68fd81b6a18d8e8f83"
+      "aHash": "612fdc206c418a199e2679f5cadab566cc45a210f11cb7a117c212045305d88b"
     },
     {
       "id": 259,
-      "q": "On the IS-LM graph, moving from B to E after an IS-right shift shows what?",
+      "q": "Refer to the IS–LM graph. Which policy response is represented by a move from B to D after fiscal expansion moves the equilibrium from A to B?",
       "options": [
         "monetary contraction",
         "fiscal contraction",
@@ -3904,63 +4345,63 @@ const questionBanks = {
       "objective": "LO13.3",
       "image": "is_lm_curves.webp",
       "primarySkill": "monetary_policy_lm_shift",
-      "feedback": "B to E shifts LM right on the new IS curve.",
+      "feedback": "A to B shifts IS1 to IS2 with LM1 fixed. B to D then shifts LM1 to LM2 with IS2 fixed: monetary accommodation lowers the interest rate and raises output further.",
       "aHash": "643506108135ab0a5143034e72165593fe6e68fa7ec16e9294e4f9a47ba2c278"
     },
     {
       "id": 260,
-      "q": "Monetary contraction during fiscal expansion has what definite result?",
+      "q": "If monetary contraction accompanies fiscal expansion, which equilibrium outcome is certain?",
       "options": [
-        "r rises",
-        "Y rises",
-        "Y falls",
-        "r falls"
+        "The interest rate rises",
+        "Output rises",
+        "Output falls",
+        "The interest rate falls"
       ],
       "tag": "monetary_policy",
       "type": "integration",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
-      "feedback": "IS-right and LM-left both raise the interest rate.",
-      "aHash": "050fb4b2fe956f56240f466531c0394f4d4d8a45991d35abbe2f598685811f4e"
+      "feedback": "A rightward shift of the IS curve and a leftward shift of the LM curve both raise the interest rate.",
+      "aHash": "7ba75e7932ae87b7fdbf8c6dfb26f14813a361d21a4dbb1df7be2d4373d29e43"
     },
     {
       "id": 261,
-      "q": "A lower money supply raises r, which lowers investment. What curve records the final reduction in Y?",
+      "q": "A lower money supply raises the interest rate, which lowers investment. What curve records the final reduction in output?",
       "options": [
-        "shift of IS right",
-        "movement along IS",
-        "movement along LRAS",
-        "shift of taxes"
+        "Shift of the IS curve shifts to the right",
+        "Movement along IS",
+        "Movement along LRAS",
+        "Shift of taxes"
       ],
       "tag": "monetary_policy",
       "type": "multi-step",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
-      "feedback": "The LM shift changes r; the economy moves along the existing IS curve as investment responds.",
+      "feedback": "The LM shift changes the interest rate; the economy moves along the existing IS curve as investment responds.",
       "aHash": "f924fc85b108e04b6fa8a90af0407e54334464608127e52b46b24cb18eb8a53e"
     },
     {
       "id": 262,
       "q": "Why might monetary policy have little effect in a liquidity trap?",
       "options": [
-        "IS must be vertical at all rates",
-        "taxes cannot affect demand",
-        "LM may be very flat at low r",
-        "money demand is zero"
+        "IS must be vertical regardless of the level of interest rates",
+        "Taxes cannot affect demand",
+        "LM may be nearly flat at low interest rates",
+        "Money demand is zero"
       ],
       "tag": "monetary_policy",
       "type": "interpretation",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
       "feedback": "Additional money may not lower rates much when people willingly hold it.",
-      "aHash": "a22b612f43bab442140313312c7be5575ad22435cf69b90913056e4eaca51da7"
+      "aHash": "aa495841257dad88209f62bdc64442201019da17d043525542c71ea5c9ea4753"
     },
     {
       "id": 263,
       "q": "If the central bank offsets a money-demand increase exactly, what happens to LM?",
       "options": [
-        "it shifts left",
-        "it shifts right",
+        "The LM curve shifts to the left",
+        "The LM curve shifts to the right",
         "it becomes IS",
         "it remains in its original position"
       ],
@@ -3973,7 +4414,7 @@ const questionBanks = {
     },
     {
       "id": 264,
-      "q": "What is the direct variable controlled by open-market operations in the model?",
+      "q": "In the IS–LM model, which policy variable changes when the central bank conducts open-market purchases or sales of government bonds?",
       "options": [
         "nominal money supply",
         "government purchases",
@@ -3984,17 +4425,17 @@ const questionBanks = {
       "type": "definition",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
-      "feedback": "Open-market operations change reserves and the money supply.",
+      "feedback": "Open-market purchases add bank reserves, while sales remove them. The IS–LM model represents this monetary policy channel as a change in the nominal money supply.",
       "aHash": "237fbec4e9d0eb32b44f0a8537c04f11a4d7dce60c154e32bb1e0028f4d412f5"
     },
     {
       "id": 265,
-      "q": "M/P must rise by 75 to hit a lower target r. If P=16, what nominal M increase is needed?",
+      "q": "M/P must rise by 75 to hit a lower target r. If P=16, what nominal money supply increase is needed?",
       "options": [
         "75",
         "1,200",
         "480",
-        "1600"
+        "1,600"
       ],
       "tag": "monetary_policy",
       "type": "calculation",
@@ -4006,7 +4447,7 @@ const questionBanks = {
     },
     {
       "id": 266,
-      "q": "M=4,000. P falls from 20 to 16. If money demand is 300−25r, what happens to r?",
+      "q": "M=4,000. The price level falls from 20 to 16. If money demand is 300−25r, what happens to r?",
       "options": [
         "rises from 2 to 4",
         "falls from 5 to 4",
@@ -4017,50 +4458,50 @@ const questionBanks = {
       "type": "calculation",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "M/P rises from 200 to 250. Set 300−25r to each value: r falls from 4 to 2.",
+      "feedback": "M/P rises from 200 to 250. Set 300−25r to each value: the interest rate falls from 4 to 2.",
       "hint": "Lower P raises M/P.",
       "aHash": "809c04d24f6979e82a522396c72b4b66c7d56e69bdfed6f06f2adc379feb0549"
     },
     {
       "id": 267,
-      "q": "At P=10, Y=1,500. At P=5, real balances double and Y rises to 1,900. Which AD slope logic is shown?",
+      "q": "At P=10, Y=1,500. At P=5, real balances double and output rises to 1,900. Which AD slope logic is shown?",
       "options": [
-        "lower P is associated with lower Y",
-        "P changes shift LRAS only",
-        "Y is unrelated to P",
-        "lower P is associated with higher Y"
+        "Lower price level is associated with lower output",
+        "The price level changes shift LRAS only",
+        "Output is unrelated to the price level",
+        "Lower price level is associated with higher output"
       ],
       "tag": "aggregate_demand",
       "type": "calculation",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "The AD curve slopes downward because lower P raises demand-side output in IS-LM.",
-      "aHash": "5bfba32062c04ff09ec338c2cd6d0a9c39c9d1d4e58bc7276f85b1a8e8392fec"
+      "feedback": "The AD curve slopes downward because lower price level raises demand-side output in IS-LM.",
+      "aHash": "72c2b0c7cb42d78e041a66840f2ee87df4aae06b08146e404a9889c5e302eb3c"
     },
     {
       "id": 268,
-      "q": "A rise in expected future income raises consumption at each P. What happens to AD?",
+      "q": "A rise in expected future income raises consumption at each price level. What happens to AD?",
       "options": [
-        "AD right through IS",
-        "AD shifts left through LM",
-        "movement up along AD",
-        "LRAS shifts left"
+        "The AD curve shifts to the right through IS",
+        "The AD curve shifts to the left through LM",
+        "Movement up along AD",
+        "The LRAS curve shifts to the left"
       ],
       "tag": "aggregate_demand",
       "type": "application",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "Higher consumption shifts IS right at every price level.",
-      "aHash": "2a9cedc285a8d8caebcf08294b230f27402cf40a34737ce77997fcfb8f4744cf"
+      "feedback": "Higher consumption shifts the IS curve to the right at every price level.",
+      "aHash": "36d75fd038e450049786ba6d9c1c086de7571338ee4d9411122e1c33bbbd01a2"
     },
     {
       "id": 269,
       "q": "Which answer wrongly says AD slopes down because goods are cheaper only?",
       "options": [
-        "using M/P in the derivation",
-        "ignoring real-balance & interest-rate channel",
-        "tracing LM shifts as P changes",
-        "connecting lower r to higher investment"
+        "Using M/P in the derivation",
+        "Ignoring real-balance and interest-rate channel",
+        "Tracing LM shifts as the price level changes",
+        "Connecting a lower interest rate to higher investment"
       ],
       "tag": "aggregate_demand",
       "type": "trap",
@@ -4068,11 +4509,11 @@ const questionBanks = {
       "primarySkill": "aggregate_demand_from_islm",
       "feedback": "In this IS-LM derivation, the formal channel is M/P, LM, r, and investment.",
       "commonError": "using a vague price story instead of IS-LM logic",
-      "aHash": "40f2d27d318498bb035d6613f8c407597f767d98a465de826b92d69d161a75d0"
+      "aHash": "a1c6a08b7173d16e8d10deb64d8ca639cca22bc3e8fba4a28afeedee8683fc27"
     },
     {
       "id": 270,
-      "q": "In the AD panel, moving from AD1 to AD2 at price P2 changes output from what to what?",
+      "q": "Refer to the IS–LM and aggregate demand graph. Moving from AD1 to AD2 at price P2 changes output from what to what?",
       "options": [
         "Y3 to Y2",
         "Y1 to Y2",
@@ -4089,28 +4530,28 @@ const questionBanks = {
     },
     {
       "id": 271,
-      "q": "If P falls but taxes rise at the same time, what is ambiguous?",
+      "q": "If the price level falls but taxes rise at the same time, what is ambiguous?",
       "options": [
-        "M/P because P fell",
-        "the direction of IS from taxes",
-        "whether AD has axes",
-        "Y since LM-right & IS-left oppose"
+        "Real money balances, because the price level fell",
+        "The direction of the IS shift caused by higher taxes",
+        "Whether the aggregate demand graph has axes",
+        "Output, because the two changes have opposing effects"
       ],
       "tag": "aggregate_demand",
       "type": "integration",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "Lower P stimulates through LM; higher taxes contract through IS.",
-      "aHash": "4efc3e51976fdf95d0e34d77f64ebfd5e8524a8d8210fc0104f2aa5cb985d90e"
+      "feedback": "Lower price level stimulates through LM; higher taxes contract through IS.",
+      "aHash": "d768b8cee77810cc6dd7a61e33fa2b33fd65ac077342df04510ab458c0c9e050"
     },
     {
       "id": 272,
       "q": "How do you derive one point on AD from IS-LM?",
       "options": [
-        "choose P, compute M/P, solve IS-LM for Y, plot P-Y",
-        "choose r, plot it against taxes, then infer P",
-        "choose G, ignore LM, plot r-Y",
-        "choose LRAS, set all demand shocks to zero"
+        "Choose P, compute M/P, solve IS-LM for Y, plot P-Y",
+        "Choose the interest rate, plot it against taxes, then infer the price level",
+        "Choose government purchases, ignore LM, and plot the interest rate against output",
+        "Choose LRAS, set all demand shocks to zero"
       ],
       "tag": "aggregate_demand",
       "type": "multi-step",
@@ -4123,33 +4564,33 @@ const questionBanks = {
       "id": 273,
       "q": "Why does monetary expansion shift AD rather than move along AD?",
       "options": [
-        "P changes with no policy shift",
-        "M changes at every price level",
-        "the economy moves to another point on AD",
+        "The price level changes with no policy shift",
+        "Money supply changes at every price level",
+        "The economy moves to another point on AD",
         "LRAS changes automatically"
       ],
       "tag": "aggregate_demand",
       "type": "interpretation",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "A new nominal money supply changes real balances for every possible P.",
-      "aHash": "437b9100eafd22338bbf7f680ffa27a6b80a856ff484dfa721e1f418a7223fba"
+      "feedback": "A new nominal money supply changes real balances for every possible price level.",
+      "aHash": "c0eee63d745e4cb2cb9726e81bde37c76bec6f0a2346b91c20e8e31a1db31cdd"
     },
     {
       "id": 274,
-      "q": "What happens to AD if money demand rises at each Y and r?",
+      "q": "What happens to AD if money demand rises at each combination of output and the interest rate?",
       "options": [
-        "AD shifts right",
-        "movement down AD",
-        "AD shifts left",
-        "LRAS shifts right"
+        "The AD curve shifts to the right",
+        "Movement down AD",
+        "The AD curve shifts to the left",
+        "The LRAS curve shifts to the right"
       ],
       "tag": "aggregate_demand",
       "type": "application",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "Higher money demand shifts LM left at each price level, lowering Y.",
-      "aHash": "922d0125a121552dff4c2b51e96cc9c6768fefdb1574fa4942145e9c2e28b2f9"
+      "feedback": "Higher money demand shifts the LM curve to the left at each price level, lowering output.",
+      "aHash": "bbf984088e51e6186ab738820db5022a24af03e25022a772478ecb33bc3fba27"
     },
     {
       "id": 275,
@@ -4158,31 +4599,31 @@ const questionBanks = {
         "AD is guessed from consumer tastes only",
         "AD is a supply curve with a new name",
         "AD is independent of IS-LM",
-        "AD is built from eq. outcomes in another model"
+        "AD is derived from IS–LM equilibrium"
       ],
       "tag": "aggregate_demand",
       "type": "definition",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
       "feedback": "The AD curve is generated by solving IS-LM at different price levels.",
-      "aHash": "a7a90e32b01364a65fd2b3114f6795f0a77c0a5a213381cfb071da9c90b00688"
+      "aHash": "4292e40cd40454f0c488e81471b319401df1e45ef42a4695cdee181ae480e950"
     },
     {
       "id": 276,
       "q": "Which answer incorrectly shifts LRAS during AD derivation?",
       "options": [
-        "lower P raises productive capacity immediately",
-        "lower P raises M/P",
-        "lower P shifts LM right",
-        "lower P raises Y through demand"
+        "Lower prices immediately raise productive capacity",
+        "Lower price level raises M/P",
+        "Lower price level shifts the LM curve to the right",
+        "Lower price level raises output through demand"
       ],
       "tag": "aggregate_demand",
       "type": "trap",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "Changing P in this short-run derivation changes demand conditions, not potential output.",
+      "feedback": "Changing the price level in this short-run derivation changes demand conditions, not potential output.",
       "commonError": "confusing demand with long-run supply",
-      "aHash": "577fa762c0eb4fd90c484901c58e1f6fe4b5a007892744709c6e61515e26be73"
+      "aHash": "d12832877e522b7c27dcc687b85ecef6a6fe875fc7143e6e4871fe4847fa2c56"
     },
     {
       "id": 277,
@@ -4203,12 +4644,12 @@ const questionBanks = {
     },
     {
       "id": 278,
-      "q": "Debt is 2,000. P falls from 100 to 75. By what percent does debt/P rise?",
+      "q": "Debt is 2,000. The price level falls from 100 to 75. By what percent does debt/P rise?",
       "options": [
-        "25%",
-        "75%",
+        "about 25.0%",
+        "about 75.0%",
         "about 33.3%",
-        "100%"
+        "about 100.0%"
       ],
       "tag": "great_depression",
       "type": "calculation",
@@ -4222,26 +4663,26 @@ const questionBanks = {
       "id": 279,
       "q": "If banking panic raises money demand and reduces lending, what IS-LM pattern is likely?",
       "options": [
-        "LM-right plus IS-right",
-        "IS-right only",
-        "LM-right only",
-        "LM-left plus IS-left"
+        "A rightward shift of the LM curve plus a rightward shift of the IS curve",
+        "A rightward shift of the IS curve only",
+        "A rightward shift of the LM curve only",
+        "A leftward shift of the LM curve plus a leftward shift of the IS curve"
       ],
       "tag": "great_depression",
       "type": "application",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "Liquidity demand tightens money markets; credit disruption lowers spending.",
-      "aHash": "8b4f7af20b1f67ba7d88c69946c618bfd91f33bb02dde6bcd0197a9decbfb126"
+      "aHash": "7505727ae84b298d526c7e5cc6767ffa34eabb10dae9bc3aeef16731c1ec80d9"
     },
     {
       "id": 280,
       "q": "Which response misuses the AD graph for Depression mechanisms?",
       "options": [
-        "label any fall in Y as a movement along AD caused by lower P",
-        "show AD shifting left from spending collapse",
-        "show LM-left from money contraction",
-        "show IS-left from investment collapse"
+        "Explain every output fall as movement along AD due to lower prices",
+        "Show the AD curve shifting to the left from spending collapse",
+        "Show a leftward shift of the LM curve from money contraction",
+        "Show a leftward shift of the IS curve from investment collapse"
       ],
       "tag": "great_depression",
       "type": "trap",
@@ -4249,11 +4690,11 @@ const questionBanks = {
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "A recessionary demand collapse is an AD shift, not merely movement along AD.",
       "commonError": "turning demand collapse into AD movement",
-      "aHash": "800f1b6f07223177ce8ef3776c53c3c9fb20ff6d85945cb3176cf30c1dd17bc1"
+      "aHash": "b5272d029d9454a4acdcef7239f095fe31f7394b096fe342ac7da2a7e3a417d7"
     },
     {
       "id": 281,
-      "q": "On the AD-SRAS panel, which point has output Y1?",
+      "q": "Refer to the IS–LM and aggregate demand–aggregate supply graph. Which point has output Y1?",
       "options": [
         "B",
         "A",
@@ -4272,85 +4713,85 @@ const questionBanks = {
       "id": 282,
       "q": "Why can monetary expansion fight a Depression slump through two channels?",
       "options": [
-        "it raises taxes and lowers consumption",
-        "it reduces real balances",
-        "LM-right lowers r & expectations may improve IS",
-        "it shifts LRAS left"
+        "It raises taxes while reducing household consumption at each income level",
+        "It reduces real balances",
+        "It lowers interest rates and may improve spending expectations",
+        "It shifts the LRAS curve to the left"
       ],
       "tag": "great_depression",
       "type": "integration",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "Money growth can ease current rates and reduce deflation expectations.",
-      "aHash": "26197cd3d8506ef569758dbdbe865fab20a71bbbd9dbd026989cf68b51076bf6"
+      "aHash": "a967418900affe7f42650fd6b08310d68013d4c310a645932d636653118f078f"
     },
     {
       "id": 283,
       "q": "Deflation raises real debt burdens, defaults rise, banks fail, lending falls. What is the demand effect?",
       "options": [
-        "IS shifts right",
-        "LM shifts right only",
-        "LRAS shifts right",
-        "IS shifts left"
+        "The IS curve shifts to the right",
+        "The LM curve shifts to the right only",
+        "The LRAS curve shifts to the right",
+        "The IS curve shifts to the left"
       ],
       "tag": "great_depression",
       "type": "multi-step",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "Credit distress reduces spending and investment.",
-      "aHash": "b771bcc5050e268b04291777123975f64737ece1b772600fa99ef2e8beabcb24"
+      "aHash": "c4cf64fb8598fc492df65f87650bc57499d6e6377b89da6d9d81aeb37390760e"
     },
     {
       "id": 284,
       "q": "Why is “prices fell” not a complete Depression explanation?",
       "options": [
-        "the effect depends on M/P, debts, expectations, & banking",
-        "prices cannot affect demand",
-        "prices always fix recessions",
-        "prices only change LRAS"
+        "Real balances, debts, expectations and banks also matter",
+        "Prices cannot affect spending because every household’s real income is fixed",
+        "Prices always fix recessions",
+        "Prices only change LRAS"
       ],
       "tag": "great_depression",
       "type": "interpretation",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "Falling prices can help through M/P but hurt through other channels.",
-      "aHash": "ecee6f4d77364770df0a0242bdb32850f2c365ab6d3cf3e934dc933b95452225"
+      "aHash": "e1c3b228fc3bfc504239ca9f655b4f2003521930d32870b0dea7a2247e28e404"
     },
     {
       "id": 285,
       "q": "If the central bank lets M fall while P also falls, what happens to M/P?",
       "options": [
         "must rise",
-        "ambiguous without magnitudes",
+        "It may rise or fall",
         "must fall",
-        "must stay fixed"
+        "It must remain unchanged"
       ],
       "tag": "great_depression",
       "type": "application",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "M/P depends on the relative changes in nominal money and the price level.",
-      "aHash": "38dd270789c01d67ddf3e1e26099406551477b4510dc4fe7c7e2323b8d965f2d"
+      "aHash": "2ecce0cefb09247819a4b5efd1ab7a484841873100f7ee3519f84a1d3b041323"
     },
     {
       "id": 286,
       "q": "What does debt-deflation shift most directly through?",
       "options": [
-        "government purchases only",
-        "labor productivity only",
-        "spending & financial distress",
-        "the graph scale only"
+        "Changes in government purchases alone",
+        "Labor productivity only",
+        "Financial distress and spending",
+        "The graph scale only"
       ],
       "tag": "great_depression",
       "type": "definition",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "Higher real debt burdens weaken borrower spending and balance sheets.",
-      "aHash": "07f31b1aa63cb65c34e06adffbbee597f0d165cb5bc5838110e8a836c8e3fd6c"
+      "aHash": "7134cceabda9e791a87ffbfdb455fe37a1d3490610f18f332fcca8d51241aed1"
     },
     {
       "id": 287,
-      "q": "M falls from 1,000 to 800 while P falls from 10 to 8. What happens to M/P?",
+      "q": "The nominal money supply falls from 1,000 to 800 while the price level falls from 10 to 8. What happens to M/P?",
       "options": [
         "it falls to 80",
         "it rises to 125",
@@ -4364,9 +4805,7 @@ const questionBanks = {
       "feedback": "Old M/P=100; new M/P=100.",
       "hint": "Both M and P fell by 20%.",
       "aHash": "06fc7d1fb9ae31e6fa4fe2a86a3ef6e8d5b6c179d84b7b1201ade940f13cdb92"
-    }
-  ],
-  "elite": [
+    },
     {
       "id": 300,
       "q": "C = 400 + 0.8(Y − 500), I = 700 − 40r, G = 900. What is the IS equation solved for Y?",
@@ -4385,27 +4824,11 @@ const questionBanks = {
       "aHash": "17610e916d8b16bda6342509460a9838397d5a42da8e963b37e5353270961197"
     },
     {
-      "id": 301,
-      "q": "In the IS equation Y = 5,000 − 100r, what happens to goods-market equilibrium income if r rises from 3 to 5?",
-      "options": [
-        "Y rises by 200",
-        "Y falls by 100",
-        "Y falls by 200",
-        "Y rises by 500"
-      ],
-      "tag": "is_curve",
-      "type": "calculation",
-      "objective": "LO12.1",
-      "primarySkill": "is_curve_goods_market",
-      "feedback": "The interest-rate increase is 2 points, and −100×2 = −200.",
-      "aHash": "eda8206b98ab559eb4c0b2162a97dee3fe7a9ae2c422a8859153ca9bddf728c3"
-    },
-    {
       "id": 302,
       "q": "If investment becomes less interest-sensitive while autonomous spending is unchanged, what changes on the IS diagram?",
       "options": [
-        "IS shifts right automatically",
-        "IS shifts left by the multiplier",
+        "The IS curve shifts to the right automatically",
+        "The IS curve shifts to the left by the multiplier",
         "LM rotates into IS",
         "IS becomes steeper without a required shift"
       ],
@@ -4417,76 +4840,26 @@ const questionBanks = {
       "aHash": "7b33d0e81267c551df65a86a8c0c2a5879cb952421832c29940b36b21614d614"
     },
     {
-      "id": 303,
-      "q": "Which answer best avoids double-counting a fiscal shock in IS-LM?",
-      "options": [
-        "shift IS once, then let the new intersection determine r & Y",
-        "shift IS and then add the full multiplier again",
-        "shift LM because G is government policy",
-        "move along IS and also shift IS left"
-      ],
-      "tag": "is_curve",
-      "type": "trap",
-      "objective": "LO12.1",
-      "primarySkill": "is_curve_goods_market",
-      "feedback": "The curve shift summarizes the spending effect. The intersection handles the endogenous variables.",
-      "commonError": "double-counting the multiplier after shifting IS",
-      "aHash": "2751b5b65536dab8a44ddf5d3c0f0852424759f2857afb2616ca673f206db618"
-    },
-    {
-      "id": 304,
-      "q": "On the IS graph, suppose the economy moves from a point on IS1 to the same interest rate on IS3. What changed?",
-      "options": [
-        "r fell along IS1 only",
-        "auto. spending rose enough to shift IS right twice",
-        "money demand fell along LM",
-        "the axis scale changed but behavior did not"
-      ],
-      "tag": "is_curve",
-      "type": "graph",
-      "objective": "LO12.1",
-      "image": "is_curves.webp",
-      "primarySkill": "is_curve_goods_market",
-      "feedback": "A new IS curve at the same interest rate indicates a shift in planned spending, not a movement along one curve.",
-      "aHash": "5b6a97c045f5f1229438ba5aa2fef62c572bb57a250544a3e5652071640e0685"
-    },
-    {
-      "id": 305,
-      "q": "A firm tax credit raises investment at each interest rate. In IS-LM, what is the first curve movement?",
-      "options": [
-        "LM shifts right",
-        "AD moves down along itself",
-        "IS shifts right",
-        "LRAS shifts left"
-      ],
-      "tag": "is_curve",
-      "type": "application",
-      "objective": "LO12.1",
-      "primarySkill": "is_curve_goods_market",
-      "feedback": "The credit changes investment demand directly, which is an IS shift.",
-      "aHash": "69d3bd1c331870d35b7e69208ebfc8d0068884083e69cfd1118e31f3651ed9b5"
-    },
-    {
       "id": 306,
       "q": "A cut in taxes raises consumption, then higher income raises money demand. Which curve shift comes first?",
       "options": [
-        "LM shifts right before IS moves",
+        "The LM curve shifts to the right before IS moves",
         "LRAS shifts first because taxes changed",
         "AD moves along before IS-LM changes",
-        "IS right before the movement along LM"
+        "IS shifts right before the economy moves along LM"
       ],
       "tag": "is_curve",
       "type": "multi-step",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
       "feedback": "Taxes act through spending first; money demand rises after income increases.",
-      "aHash": "769944525e3b06807f177f593187e7c6acc6ea9c5d18e82ef63f209ebae760eb"
+      "aHash": "c66f121bc1164ba84e8382bdce3563c684efaf0685365c4dabed0da52d660d53"
     },
     {
       "id": 307,
       "q": "Why is the IS curve not the same as the investment demand curve?",
       "options": [
-        "IS includes the multiplier effect on total Y",
+        "IS includes the multiplier effect on total output",
         "IS excludes consumption and government spending",
         "IS uses price instead of interest rate",
         "IS is vertical whenever investment slopes down"
@@ -4496,55 +4869,7 @@ const questionBanks = {
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
       "feedback": "Investment demand is one component; IS maps interest-rate changes through spending into equilibrium income.",
-      "aHash": "d0e799e7510b04ed8212504c98e4586cbf9988420b6efcfcc7bbfa6a6d620417"
-    },
-    {
-      "id": 308,
-      "q": "A student argues that an IS-right shift must raise output by the full simple multiplier in IS-LM. What is missing?",
-      "options": [
-        "prices must be flexible immediately",
-        "higher r can crowd out part of I",
-        "LRAS must also shift right",
-        "money demand must be zero"
-      ],
-      "tag": "is_curve",
-      "type": "trap",
-      "objective": "LO12.1",
-      "primarySkill": "is_curve_goods_market",
-      "feedback": "With an upward-sloping LM curve, the interest-rate increase dampens the output gain.",
-      "aHash": "f8f99f7b8b1fb753f3a63d5eeb5e43521913500c9c3f6e9052e6ad0950c1dab4"
-    },
-    {
-      "id": 309,
-      "q": "If desired saving rises at each income level, what happens to the IS curve in the standard setup?",
-      "options": [
-        "IS shifts right because saving is investment",
-        "LM shifts right because money balances rise",
-        "IS shifts left because spending falls",
-        "LRAS shifts right because thrift raises capacity"
-      ],
-      "tag": "is_curve",
-      "type": "application",
-      "objective": "LO12.1",
-      "primarySkill": "is_curve_goods_market",
-      "feedback": "Higher desired saving means lower consumption demand at a given income, reducing planned expenditure.",
-      "aHash": "68fffe3160aee59a6dbd5b1c78f9625ebb64eea48fbe128c782b6e0fc4f548f4"
-    },
-    {
-      "id": 310,
-      "q": "Which phrase best captures the IS curve?",
-      "options": [
-        "money-market equilibrium traced across income",
-        "long-run output determined by technology",
-        "inflation adjustment through expected prices",
-        "goods-market eq. traced across rs"
-      ],
-      "tag": "is_curve",
-      "type": "definition",
-      "objective": "LO12.1",
-      "primarySkill": "is_curve_goods_market",
-      "feedback": "IS connects interest rates to goods-market equilibrium income.",
-      "aHash": "429f44d875c7b0617433ee782a4b98ded361b0e9c9181d4ec24ab455f62f02f6"
+      "aHash": "931ec8e361ab67b98d016e71f1690249427d531baf2bbd50f2df8a0525189618"
     },
     {
       "id": 311,
@@ -4582,28 +4907,28 @@ const questionBanks = {
     },
     {
       "id": 313,
-      "q": "A money-demand shock raises r while output falls. Which curve moved first?",
+      "q": "A money-demand shock raises the interest rate while output falls. Which curve moved first?",
       "options": [
-        "IS shifted right",
-        "AD shifted right first",
-        "LM shifted left",
-        "LRAS shifted right"
+        "The IS curve shifted to the right",
+        "The AD curve shifted to the right first",
+        "The LM curve shifted to the left",
+        "The LRAS curve shifted to the right"
       ],
       "tag": "lm_curve",
       "type": "integration",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
-      "feedback": "Higher money demand tightens money markets, raising r and lowering income through investment.",
-      "aHash": "06f945bd24de52fb8311bb2052d6547e1137d65ea5db392c80c7b3d795cdb8d3"
+      "feedback": "Higher money demand tightens money markets, raising the interest rate and lowering income through investment.",
+      "aHash": "de02a67897444aad5a23d6a3886b829abfe6e9834d6e030651586196d98f0dbf"
     },
     {
       "id": 314,
       "q": "Which response confuses a money-demand shock with a money-supply shock?",
       "options": [
-        "higher money demand shifts LM left",
-        "higher M shifts LM right",
-        "lower M shifts LM left",
-        "higher Md is treated as if the Fed increased M"
+        "Higher money demand shifts the LM curve to the left",
+        "Higher nominal money supply shifts the LM curve to the right",
+        "Lower nominal money supply shifts the LM curve to the left",
+        "Treating higher money demand as a Fed money-supply increase"
       ],
       "tag": "lm_curve",
       "type": "trap",
@@ -4611,137 +4936,55 @@ const questionBanks = {
       "primarySkill": "lm_curve_money_market",
       "feedback": "A rise in money demand and a rise in money supply move LM in opposite directions.",
       "commonError": "mixing money demand and money supply shocks",
-      "aHash": "a30a8ea885af5680230fbffe17acff4b12eab3e6cb110415d261b1f685c1aea8"
-    },
-    {
-      "id": 315,
-      "q": "On the LM graph, if the economy is at a given Y and moves from LM3 to LM1, what happens to r?",
-      "options": [
-        "r rises",
-        "r falls",
-        "r is fixed by IS",
-        "Y must be zero"
-      ],
-      "tag": "lm_curve",
-      "type": "graph",
-      "objective": "LO12.2",
-      "image": "lm_curves.webp",
-      "primarySkill": "lm_curve_money_market",
-      "feedback": "Moving leftward across LM curves at a fixed income means tighter real balances and a higher interest rate.",
-      "aHash": "050fb4b2fe956f56240f466531c0394f4d4d8a45991d35abbe2f598685811f4e"
+      "aHash": "e82e893efd8b6d79b5d648789fccbe721874d63740f251cce0e253e454a0895a"
     },
     {
       "id": 316,
-      "q": "If the central bank prevents r from rising after an IS-right shock, what must happen to LM?",
+      "q": "If the central bank prevents the interest rate from rising after a rightward shift of the IS curve, what must happen to LM?",
       "options": [
-        "LM shifts left",
-        "LM shifts right",
-        "IS shifts left",
-        "LRAS shifts left"
+        "The LM curve shifts to the left",
+        "The LM curve shifts to the right",
+        "The IS curve shifts to the left",
+        "The LRAS curve shifts to the left"
       ],
       "tag": "lm_curve",
       "type": "application",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
-      "feedback": "To hold r down when money demand rises with income, the central bank expands money supply.",
-      "aHash": "6e1f8a919b85b829e9ba43a66b3c0c65f5206e8e541d40d477946f1f8efdd29a"
+      "feedback": "To hold the interest rate down when money demand rises with income, the central bank expands money supply.",
+      "aHash": "e02b02d3b5d106df9065a6f9be8d21714d848a5a9807c791fb5b4db41186b9ba"
     },
     {
       "id": 317,
-      "q": "P rises, M is unchanged, and investment later falls. What links those events?",
+      "q": "The price level rises, the nominal money supply is unchanged, and investment later falls. What links those events?",
       "options": [
-        "M/P rises, LM shifts right, and r falls",
-        "IS shifts right before money changes",
-        "M/P falls, LM shifts left, and r rises",
-        "LRAS shifts right and lowers r"
+        "M/P rises, the LM curve shifts to the right, and the interest rate falls",
+        "The IS curve shifts to the right before money changes",
+        "M/P falls, the LM curve shifts to the left, and the interest rate rises",
+        "The LRAS curve shifts to the right and lowers the interest rate"
       ],
       "tag": "lm_curve",
       "type": "multi-step",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
       "feedback": "A higher price level reduces real balances, tightening the money market.",
-      "aHash": "7159d7b36529ac45b2fb01b51bd609fe56c0816dd60004e2fd12d75f9302ef7a"
-    },
-    {
-      "id": 318,
-      "q": "Why is LM not a money-supply curve?",
-      "options": [
-        "LM ignores money demand",
-        "LM plots price against output",
-        "LM only shows government purchases",
-        "LM is an eq. locus using both M & Md"
-      ],
-      "tag": "lm_curve",
-      "type": "interpretation",
-      "objective": "LO12.2",
-      "primarySkill": "lm_curve_money_market",
-      "feedback": "LM combines the fixed real money supply with the money-demand schedule to find equilibrium rates.",
-      "aHash": "9a6d48cef48da0f2520c74641d76ff1da6fb17fbbb4c44099a258daa0daa40c0"
-    },
-    {
-      "id": 319,
-      "q": "Which answer incorrectly says LM shifts because Y changes?",
-      "options": [
-        "higher Y shifts LM left",
-        "higher M shifts LM right",
-        "higher P shifts LM left",
-        "higher money demand shifts LM left"
-      ],
-      "tag": "lm_curve",
-      "type": "trap",
-      "objective": "LO12.2",
-      "primarySkill": "lm_curve_money_market",
-      "feedback": "Y is on the horizontal axis. A new Y is movement along LM unless M/P or money demand behavior changes.",
-      "commonError": "shifting LM when moving along LM",
-      "aHash": "1e709f4bbdaefee916831d61381784ae019eb1a03337d9c6b327922b76490ecb"
+      "aHash": "83cc5751dab5a51309300fbb769a38968c067b48b7beb4e42c010f7021f936f7"
     },
     {
       "id": 320,
-      "q": "What makes LM steep in the classic diagram?",
+      "q": "An LM curve plots the money-market-clearing interest rate vertically and output horizontally, holding real money balances fixed. Which pattern of money demand makes this curve relatively steep?",
       "options": [
-        "investment changes strongly with r",
-        "Md changes strongly with Y & weakly with r",
-        "taxes respond to inflation",
-        "consumption is independent of income"
+        "Investment demand reacts strongly to changes in the interest rate",
+        "Money demand reacts strongly to output but weakly to interest",
+        "Taxes respond to inflation",
+        "Consumption is independent of income"
       ],
       "tag": "lm_curve",
       "type": "application",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
-      "feedback": "A steep LM means income changes require large rate movements to clear the money market.",
-      "aHash": "8fa5f04f1e440ab863561837370d964bd08a693e9e775cf18b154bb29b10c340"
-    },
-    {
-      "id": 321,
-      "q": "What does an LM-right shift mean at the same income level?",
-      "options": [
-        "a higher equilibrium interest rate",
-        "a lower price level is impossible",
-        "a lower equilibrium interest rate",
-        "planned spending is unchanged by definition"
-      ],
-      "tag": "lm_curve",
-      "type": "definition",
-      "objective": "LO12.2",
-      "primarySkill": "lm_curve_money_market",
-      "feedback": "More real balances or lower money demand reduce the rate needed to clear the money market.",
-      "aHash": "1a8487e97a93525fbd0bf36b0963aec42687fa0a66287bd7beeef8f24d9b3fb9"
-    },
-    {
-      "id": 322,
-      "q": "IS: Y=4,000−200r. LM: r=0.005Y−6. If autonomous spending raises the IS intercept to 4,600, what is new Y?",
-      "options": [
-        "2,900",
-        "2,700",
-        "3,100",
-        "3,300"
-      ],
-      "tag": "is_lm_equilibrium",
-      "type": "calculation",
-      "objective": "LO12.3",
-      "primarySkill": "is_lm_equilibrium",
-      "feedback": "New IS: Y=4,600−200(0.005Y−6)=5,800−Y, so Y=2,900.",
-      "aHash": "4b40c73859d3d066d0acb862c4ffdf58e01388ddb879281e51ee6c2ef12b11be"
+      "feedback": "With real money balances fixed, a strong rise in money demand as output increases requires a large interest-rate increase if money demand responds only weakly to that rate. The LM curve is therefore relatively steep.",
+      "aHash": "a8dbf47cf03480faaf0394ddbbfd194f7fb494cc4fa0956ee51ef4fd023c2775"
     },
     {
       "id": 323,
@@ -4760,187 +5003,56 @@ const questionBanks = {
       "aHash": "e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683"
     },
     {
-      "id": 324,
-      "q": "A fiscal expansion with full monetary accommodation does what compared with no accommodation?",
-      "options": [
-        "raises r more and Y less",
-        "leaves IS unchanged",
-        "raises Y more & raises r less",
-        "moves only along AD"
-      ],
-      "tag": "is_lm_equilibrium",
-      "type": "integration",
-      "objective": "LO12.3",
-      "primarySkill": "is_lm_equilibrium",
-      "feedback": "Accommodation shifts LM right, reducing crowding out.",
-      "aHash": "8fdc155242ae67ab712f93d367923c2c6d2b9d42a25059b77afa0413e14e8709"
-    },
-    {
-      "id": 325,
-      "q": "Which interpretation incorrectly treats policy accommodation as the original fiscal shock?",
-      "options": [
-        "calling higher G the IS-right shock",
-        "calling LM-right the central-bank response",
-        "calling the new point the equilibrium",
-        "calling the LM-right shift the cause of higher G"
-      ],
-      "tag": "is_lm_equilibrium",
-      "type": "trap",
-      "objective": "LO12.3",
-      "primarySkill": "is_lm_equilibrium",
-      "feedback": "The fiscal shock and monetary response are separate steps.",
-      "commonError": "merging the shock with the policy response",
-      "aHash": "32266121efa7876fbb8c5c65c96b77acdbbc500048ec06b58f4ec849b29446bc"
-    },
-    {
-      "id": 326,
-      "q": "On the IS-LM graph, which point is consistent with IS3 and LM2?",
-      "options": [
-        "C",
-        "B",
-        "E",
-        "G"
-      ],
-      "tag": "is_lm_equilibrium",
-      "type": "graph",
-      "objective": "LO12.3",
-      "image": "is_lm_curves.webp",
-      "primarySkill": "is_lm_equilibrium",
-      "feedback": "Point C is the intersection of IS3 and LM2.",
-      "aHash": "2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6"
-    },
-    {
       "id": 327,
       "q": "If the economy begins below natural output, what can IS-LM show?",
       "options": [
         "LRAS must instantly shift right",
-        "demand-side policy can raise short-run Y",
-        "the price level cannot matter later",
-        "money demand is irrelevant"
+        "Demand policy can raise output temporarily",
+        "The price level cannot affect any subsequent adjustment",
+        "Money demand is irrelevant"
       ],
       "tag": "is_lm_equilibrium",
       "type": "application",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
       "feedback": "IS-LM explains short-run demand management before long-run price adjustment is complete.",
-      "aHash": "2c3cfa8070d655ab8666e6578494b2e257c471c10d96a45e3fbd193312020448"
+      "aHash": "dbc1d8127e3b1fb12e650a8b024c8fe4f8d9520b697ae67ac7865a427034a32a"
     },
     {
       "id": 328,
-      "q": "A negative IS shock lowers Y. Automatic stabilizers raise transfers. What does that response do in IS-LM?",
+      "q": "A negative IS shock lowers output. Automatic stabilizers raise transfers. What does that response do in IS-LM?",
       "options": [
-        "shifts LM left by definition",
-        "moves the economy down a fixed IS curve",
-        "partly shifts IS back right",
-        "shifts LRAS left immediately"
+        "Shifts the LM curve to the left by definition",
+        "Moves the economy down a fixed IS curve",
+        "Partly shifts IS back right",
+        "Shifts the LRAS curve to the left immediately"
       ],
       "tag": "is_lm_equilibrium",
       "type": "multi-step",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
-      "feedback": "Transfers raise disposable income and consumption, cushioning the IS-left movement.",
+      "feedback": "Transfers raise disposable income and consumption, cushioning the leftward shift of the IS curve.",
       "aHash": "64b93982085bdbe6eb2b90cad4a6b8cb453bf2e453e09988ca46fd43d1f6ef2c"
     },
     {
-      "id": 329,
-      "q": "Why can the same final Y appear after different shocks?",
-      "options": [
-        "the axes have no meaning",
-        "IS and LM cannot both shift",
-        "Y alone identifies every shock",
-        "r & curve positions may differ"
-      ],
-      "tag": "is_lm_equilibrium",
-      "type": "interpretation",
-      "objective": "LO12.3",
-      "primarySkill": "is_lm_equilibrium",
-      "feedback": "A full diagnosis uses both variables and the shifted curves, not output alone.",
-      "aHash": "a7a15c39459e75006bbded001cae56aa53592ce917f13ddb8faa10360b81ff7d"
-    },
-    {
-      "id": 330,
-      "q": "Which answer ignores the endogeneity of r?",
-      "options": [
-        "assume r stays fixed after IS unless the prompt says otherwise",
-        "read r from the new IS-LM intersection",
-        "let LM determine how r changes",
-        "use r to infer investment changes"
-      ],
-      "tag": "is_lm_equilibrium",
-      "type": "trap",
-      "objective": "LO12.3",
-      "primarySkill": "is_lm_equilibrium",
-      "feedback": "In the standard model, r is solved inside the system unless policy pegs it.",
-      "commonError": "holding r fixed without a reason",
-      "aHash": "e541eebc5ef34021bfe10ed42a9dcc842e62436eafbf8edeee09a22be9b63ad0"
-    },
-    {
-      "id": 331,
-      "q": "Which combination most clearly raises Y without changing r much?",
-      "options": [
-        "IS shifts right and LM shifts left",
-        "IS right & LM right together",
-        "IS shifts left and LM shifts left",
-        "LM shifts left alone"
-      ],
-      "tag": "is_lm_equilibrium",
-      "type": "application",
-      "objective": "LO12.3",
-      "primarySkill": "is_lm_equilibrium",
-      "feedback": "The two rightward shifts both raise output while their interest-rate effects offset.",
-      "aHash": "31008fc38e0046c0e75ec6b5db68f915e1b29c8542be62e5aed6bb68ee3d211f"
-    },
-    {
-      "id": 332,
-      "q": "What makes IS-LM a simultaneous-equilibrium model?",
-      "options": [
-        "the price level changes every second",
-        "only the goods market is solved",
-        "Y & r must satisfy both markets at once",
-        "natural output is chosen first"
-      ],
-      "tag": "is_lm_equilibrium",
-      "type": "definition",
-      "objective": "LO12.3",
-      "primarySkill": "is_lm_equilibrium",
-      "feedback": "Neither curve alone gives the full short-run equilibrium.",
-      "aHash": "053fa64ba485168a403739a6a99b7cc26411a0bd913224719f66d1172b75c4b5"
-    },
-    {
       "id": 333,
-      "q": "A foreign recession reduces exports in a closed-economy-style IS-LM practice item. Which domestic curve moves first?",
+      "q": "In an IS–LM model that includes export demand in planned expenditure, a foreign recession reduces exports. Which domestic curve shifts first?",
       "options": [
-        "IS shifts left",
-        "LM shifts left",
-        "LM shifts right",
-        "LRAS shifts right"
+        "The IS curve shifts to the left",
+        "The LM curve shifts to the left",
+        "The LM curve shifts to the right",
+        "The LRAS curve shifts to the right"
       ],
       "tag": "shocks",
       "type": "application",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
       "feedback": "Lower net export demand acts like lower autonomous spending.",
-      "aHash": "b771bcc5050e268b04291777123975f64737ece1b772600fa99ef2e8beabcb24"
-    },
-    {
-      "id": 334,
-      "q": "A safe-asset panic raises money demand while firms cut investment. What happens to Y?",
-      "options": [
-        "Y rises from both forces",
-        "Y falls from both IS-left & LM-left forces",
-        "Y is unchanged by definition",
-        "Y rises unless P changes"
-      ],
-      "tag": "shocks",
-      "type": "application",
-      "objective": "LO13.1",
-      "primarySkill": "shock_transmission",
-      "feedback": "Both curve shifts reduce output.",
-      "aHash": "b27a4fde666e287bde950d310840268bef7360d4cbd965f55cd83bc4dc849533"
+      "aHash": "c4cf64fb8598fc492df65f87650bc57499d6e6377b89da6d9d81aeb37390760e"
     },
     {
       "id": 335,
-      "q": "On the IS-LM graph, which move shows a liquidity shock at unchanged IS2?",
+      "q": "Refer to the IS–LM graph. Which move shows a liquidity shock at unchanged IS2?",
       "options": [
         "D to B",
         "D to F",
@@ -4952,29 +5064,12 @@ const questionBanks = {
       "objective": "LO13.1",
       "image": "is_lm_curves.webp",
       "primarySkill": "shock_transmission",
-      "feedback": "D and C share IS2; the LM curve shifts left.",
-      "aHash": "3dbb9aceed106a6ac5bd91dd45da7c0f5c8846db1aa3ea91b657811a5cdfaa18"
-    },
-    {
-      "id": 336,
-      "q": "Which diagnosis is underidentified from the observation “Y fell”?",
-      "options": [
-        "identifying LM-left when r rose",
-        "identifying IS-left when r fell",
-        "using both Y and r to infer a curve",
-        "choosing IS-left without checking r"
-      ],
-      "tag": "shocks",
-      "type": "trap",
-      "objective": "LO13.1",
-      "primarySkill": "shock_transmission",
-      "feedback": "Output alone is not enough; the interest-rate direction helps identify the shock.",
-      "commonError": "using one outcome to identify the shock",
-      "aHash": "d13f727415ed0efe19a99f928bcd3530e1c8ee75fcee962f61575e68352bddeb"
+      "feedback": "D and B both lie on IS2. Moving D to B changes LM2 to LM1: a liquidity contraction raises the interest rate and lowers output while IS remains fixed.",
+      "aHash": "fa4c658f9bfc4a2a5bc0b184ac646a672cbfe261a9dd9cd33495ccc74d81710f"
     },
     {
       "id": 337,
-      "q": "A negative investment shock is 90, MPC=0.7, and the LM response crowds out none because r falls enough to support I. What is the simple-cross ΔY?",
+      "q": "Autonomous investment falls by 90 and the marginal propensity to consume is 0.7. Calculate the direct Keynesian-cross output effect before adding any offset from the interest-rate response. What is that change in output?",
       "options": [
         "−300",
         "−90",
@@ -4985,13 +5080,13 @@ const questionBanks = {
       "type": "calculation",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "The multiplier is 1/(0.3)=3.333, so 90×3.333=300.",
+      "feedback": "The spending multiplier is 1/(1 − 0.7) = 1/0.3. Multiplying the initial investment decline by this multiplier gives −90/0.3 = −300. This is the direct Keynesian-cross effect before any interest-rate offset.",
       "hint": "Round to the nearest whole number.",
       "aHash": "2cbe723003a136d9388cf1c93ee1bb5440c3c3b39740948e44b72172348c0979"
     },
     {
       "id": 338,
-      "q": "At the initial r, a money-demand shock raises desired real balances by 45. P=12. The central bank increases M by 360. How much real shock remains?",
+      "q": "At the initial r, a money-demand shock raises desired real balances by 45. P=12. The central bank increases the nominal money supply by 360. How much real shock remains?",
       "options": [
         "0",
         "15",
@@ -5007,89 +5102,24 @@ const questionBanks = {
       "aHash": "e629fa6598d732768f7c726b4b621285f9c3b85303900aa912017db7617d8bdb"
     },
     {
-      "id": 339,
-      "q": "A shock lowers Y and raises r. Which policy can offset both movements?",
-      "options": [
-        "tax increase",
-        "money-supply cut",
-        "monetary expansion",
-        "lower transfers"
-      ],
-      "tag": "shocks",
-      "type": "integration",
-      "objective": "LO13.1",
-      "primarySkill": "shock_transmission",
-      "feedback": "The initial pattern is LM-left; monetary expansion shifts LM back right.",
-      "aHash": "d92279d6504f43718aa73f69adabe1f64e7954615b2dc8e219f40934da4316e5"
-    },
-    {
-      "id": 340,
-      "q": "A shock lowers Y and lowers r. Which policy most directly offsets the original curve shift?",
-      "options": [
-        "money-supply cut",
-        "tax increase",
-        "higher money demand",
-        "fiscal expansion"
-      ],
-      "tag": "shocks",
-      "type": "integration",
-      "objective": "LO13.1",
-      "primarySkill": "shock_transmission",
-      "feedback": "The initial pattern is IS-left; fiscal expansion pushes IS back right.",
-      "aHash": "625e37e2ddfcdb5542876e2ece7425f3891bf898abcfba8a55eb3f29aa750f81"
-    },
-    {
       "id": 341,
-      "q": "A spending shock lowers Y, which lowers money demand, which changes r. What is endogenous in that chain?",
+      "q": "A spending shock lowers output, which lowers money demand, which changes the interest rate. What is endogenous in that chain?",
       "options": [
-        "Y and r",
-        "the initial spending shock",
-        "the policy label",
-        "the axis names"
+        "Output and the interest rate",
+        "The initial spending shock",
+        "The policy label",
+        "The axis names"
       ],
       "tag": "shocks",
       "type": "multi-step",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
       "feedback": "The shock is imposed; income and interest rates are solved inside the model.",
-      "aHash": "39afa879f1849af26aa7ba27818285da8fe09cf260a4bcd2c7ff9e2e487abbdb"
-    },
-    {
-      "id": 342,
-      "q": "Why can an IS-left shock look like “easier money” if you only watch r?",
-      "options": [
-        "money supply must have increased",
-        "r falls since Md falls with Y",
-        "LM must have shifted right",
-        "prices must have risen"
-      ],
-      "tag": "shocks",
-      "type": "interpretation",
-      "objective": "LO13.1",
-      "primarySkill": "shock_transmission",
-      "feedback": "Lower income reduces transactions demand for money, lowering r along LM.",
-      "aHash": "f9b20d6cc3853c3111e98354d6942baf606fb9fed135e16615a8f8f9aac0b2cd"
-    },
-    {
-      "id": 343,
-      "q": "Which answer would corrupt an adaptive diagnosis of shocks?",
-      "options": [
-        "separating money-demand and IS shocks",
-        "using r to distinguish curve shifts",
-        "tagging a pure multiplier exercise as a Depression banking shock",
-        "recording the objective tied to the causal mechanism"
-      ],
-      "tag": "shocks",
-      "type": "trap",
-      "objective": "LO13.1",
-      "primarySkill": "shock_transmission",
-      "feedback": "A diagnostic tag should match the mechanism being tested, not just any calculation.",
-      "commonError": "cross-tagging unrelated skills",
-      "aHash": "3756a71d3cd06f0b741ec141df1f720c1df925d5345e8dd083d827303c57c338"
+      "aHash": "3137de65835ce5973c7dc2c177957ed0eeb7d94ae605e241b977cd69483c80d5"
     },
     {
       "id": 344,
-      "q": "C=300+0.75(Y−400), I=500−40r, G rises by 80. What is the horizontal IS shift before LM feedback?",
+      "q": "C=300+0.75(Y−400), I=500−40r, government purchases rise by 80. What is the horizontal IS shift before LM feedback?",
       "options": [
         "80",
         "240",
@@ -5106,7 +5136,7 @@ const questionBanks = {
     },
     {
       "id": 345,
-      "q": "MPC=0.6. A tax cut of 75 is paired with a G cut of 30. What is simple-cross net ΔY?",
+      "q": "The marginal propensity to consume is 0.6. Taxes fall by 75 while government purchases fall by 30. What is the net change in output in the simple Keynesian-cross model?",
       "options": [
         "37.5",
         "75",
@@ -5122,41 +5152,8 @@ const questionBanks = {
       "aHash": "a17d96c0774054d9ce702f1e5d17d886e8e95de0eca544dd5421d8f3ae821c09"
     },
     {
-      "id": 346,
-      "q": "Which answer hides the financing side of fiscal policy?",
-      "options": [
-        "noting G shifts IS right",
-        "claiming deficits have no possible effect beyond the initial IS shift",
-        "noting taxes affect consumption",
-        "noting r may crowd out investment"
-      ],
-      "tag": "fiscal_policy",
-      "type": "trap",
-      "objective": "LO13.2",
-      "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "IS-LM often abstracts from debt dynamics, but financing assumptions can matter in broader analysis.",
-      "commonError": "ignoring stated financing assumptions",
-      "aHash": "45fc208eabd8db0f1639107e452d265e54be5dbf32e0ab2e023d899ed038f92a"
-    },
-    {
-      "id": 347,
-      "q": "If households expect future taxes after a deficit-financed G increase, what can weaken IS-right movement?",
-      "options": [
-        "higher money supply automatically",
-        "lower money demand by law",
-        "higher saving out of current Y",
-        "a required LM-right shift"
-      ],
-      "tag": "fiscal_policy",
-      "type": "application",
-      "objective": "LO13.2",
-      "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "Forward-looking saving can offset some consumption response.",
-      "aHash": "d511abd99783519805d89cd675b725d82fcd22dbb34e56b139a26290c0d33b8b"
-    },
-    {
       "id": 348,
-      "q": "On the IS-LM graph, which point shows fiscal expansion with no monetary accommodation from A?",
+      "q": "Refer to the IS–LM graph. Which point shows fiscal expansion with no monetary accommodation from A?",
       "options": [
         "E",
         "G",
@@ -5168,105 +5165,40 @@ const questionBanks = {
       "objective": "LO13.2",
       "image": "is_lm_curves.webp",
       "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "A to B shifts IS right while LM1 stays fixed.",
+      "feedback": "A to B shifts the IS curve to the right while LM1 stays fixed.",
       "aHash": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d"
     },
     {
-      "id": 349,
-      "q": "A fiscal expansion aimed at raising Y while holding r fixed requires what mix?",
-      "options": [
-        "IS right & LM right",
-        "IS right and LM left",
-        "IS left and LM right",
-        "IS left and LM left"
-      ],
-      "tag": "fiscal_policy",
-      "type": "integration",
-      "objective": "LO13.2",
-      "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "The LM-right shift offsets upward pressure on r.",
-      "aHash": "a99fb94817b6aa5af52afabc53e8a06995cfd2a7f7034b7205641e8c746b5aea"
-    },
-    {
       "id": 350,
-      "q": "G rises, Y rises, money demand rises, and r rises. Which part is endogenous?",
+      "q": "Government purchases rise, output rises, money demand rises, and the interest rate rises. Which part is endogenous?",
       "options": [
-        "the initial G increase",
-        "Y and r adjustments",
-        "the policy announcement only",
-        "the axis labels"
+        "The initial government purchases increase",
+        "Output and the interest rate adjustments",
+        "The policy announcement only",
+        "The axis labels"
       ],
       "tag": "fiscal_policy",
       "type": "multi-step",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
       "feedback": "Fiscal policy shifts IS; income and interest rates are solved after the shift.",
-      "aHash": "02c3ebf6288963386811d7e13398c57e4ecf6f8be6ad403b0d13c94e6a21c714"
-    },
-    {
-      "id": 351,
-      "q": "Why is a tax multiplier smaller in absolute value than the G multiplier?",
-      "options": [
-        "taxes do not affect disposable income",
-        "G changes money supply directly",
-        "T work through MPC before the multiplier process",
-        "investment ignores interest rates"
-      ],
-      "tag": "fiscal_policy",
-      "type": "interpretation",
-      "objective": "LO13.2",
-      "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "A dollar of tax change changes first-round consumption by less than a dollar.",
-      "aHash": "334838b85441ec98c0acf76cc954013846cf55e3c3f392e39039ab39b89af7b7"
+      "aHash": "ffcb20483b8bf1a70edbbdd1a8c1a1f78a27f93d865c7c1e04ecc2d8509f7d96"
     },
     {
       "id": 352,
-      "q": "If the economy is at the zero lower bound in a richer model, what happens to fiscal crowding out?",
+      "q": "In a liquidity trap, fiscal expansion raises output while the central bank keeps the nominal interest rate near zero. How does the limited interest-rate response affect crowding out of private investment?",
       "options": [
-        "it must be complete",
+        "Investment must be fully crowded out despite the stable interest rate",
         "IS cannot shift",
-        "taxes stop affecting consumption",
-        "it may be weaker since r cannot rise much"
+        "Taxes stop affecting consumption",
+        "Limited rate increases can weaken crowding out"
       ],
       "tag": "fiscal_policy",
       "type": "application",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "When interest rates are constrained, the usual r-based crowding-out channel weakens.",
-      "aHash": "659585e0ea53835d11d69d26808a806d8a59a1df36a7475bc5d3818e122dc855"
-    },
-    {
-      "id": 353,
-      "q": "Which answer confuses deficit size with the IS shift?",
-      "options": [
-        "larger deficit always means a larger IS-right shift",
-        "larger G can shift IS right",
-        "higher T can shift IS left",
-        "transfers may raise consumption"
-      ],
-      "tag": "fiscal_policy",
-      "type": "trap",
-      "objective": "LO13.2",
-      "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "The composition of the deficit matters: G, T, and transfers have different demand effects.",
-      "commonError": "using deficit size instead of policy composition",
-      "aHash": "1387796d0a68f4611ac619b218eac072d4b78d8fba32bfaa54b99a8868c74ee6"
-    },
-    {
-      "id": 354,
-      "q": "What is the clean IS-LM statement of crowding out?",
-      "options": [
-        "fiscal expansion lowers r, reducing money supply",
-        "fiscal expansion raises r, reducing interest-sensitive I",
-        "tax cuts lower consumption through MPC",
-        "G changes LRAS immediately"
-      ],
-      "tag": "fiscal_policy",
-      "type": "definition",
-      "objective": "LO13.2",
-      "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "Crowding out is the investment offset created by the interest-rate response.",
-      "aHash": "ec38780874a584f4427937b647866505601a702c0da839ba1516d1b8e87dc94a"
+      "feedback": "If monetary policy keeps the interest rate from rising as fiscal spending expands, less private investment is displaced through higher borrowing costs. This conclusion depends on the stated policy response.",
+      "aHash": "108fa863aa7e1ecf53178d63d6df401f2562593734a767014164e41956cf5c6d"
     },
     {
       "id": 355,
@@ -5287,7 +5219,7 @@ const questionBanks = {
     },
     {
       "id": 356,
-      "q": "Money demand is 700−50r. P=10. To lower r from 8 to 6, how much must M increase?",
+      "q": "Money demand is 700−50r. P=10. To lower interest rate from 8 to 6, how much must M increase?",
       "options": [
         "100",
         "500",
@@ -5306,38 +5238,22 @@ const questionBanks = {
       "id": 357,
       "q": "Which answer wrongly treats monetary expansion as increasing output without an investment channel?",
       "options": [
-        "Y rises even if r & I do not change",
-        "lower r can raise investment",
-        "higher M/P shifts LM right",
-        "investment response affects Y"
+        "Output rises with interest and investment unchanged",
+        "A decline in the interest rate can stimulate private investment",
+        "Higher M/P shifts the LM curve to the right",
+        "Investment response affects output"
       ],
       "tag": "monetary_policy",
       "type": "trap",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
-      "feedback": "In IS-LM, output rises because lower r stimulates planned expenditure.",
+      "feedback": "In IS-LM, output rises because a lower interest rate stimulates planned expenditure.",
       "commonError": "skipping the transmission channel",
-      "aHash": "5ef3250c272dac83c8ea0cf606c8fc016a853cbcbc44c90675adcb44edae49c2"
-    },
-    {
-      "id": 358,
-      "q": "If expected inflation rises, how can monetary policy transmission change in a richer model?",
-      "options": [
-        "nominal money stops mattering",
-        "real rs may fall for a given nominal r",
-        "G must fall automatically",
-        "IS becomes irrelevant"
-      ],
-      "tag": "monetary_policy",
-      "type": "application",
-      "objective": "LO13.3",
-      "primarySkill": "monetary_policy_lm_shift",
-      "feedback": "Expected inflation affects real borrowing costs, which influence investment.",
-      "aHash": "2cb8dddc6a4802928884f2220505d0383395790b1aaec2c1614ae274729f4b7d"
+      "aHash": "a2c00d0df5b7335d7d152571b1fdeb5d3ead6bf8fcf649dfd06dba1f46cab138"
     },
     {
       "id": 359,
-      "q": "On the IS-LM graph, which point shows monetary expansion from D while IS2 stays fixed?",
+      "q": "Refer to the IS–LM graph. Which point shows monetary expansion from D while IS2 stays fixed?",
       "options": [
         "C",
         "B",
@@ -5353,105 +5269,57 @@ const questionBanks = {
       "aHash": "cd0aa9856147b6c5b4ff2b7dfee5da20aa38253099ef1b4a64aced233c9afe29"
     },
     {
-      "id": 360,
-      "q": "A central bank defending r after money demand rises must do what?",
-      "options": [
-        "cut M to reduce liquidity",
-        "raise G to shift IS",
-        "raise taxes to lower consumption",
-        "increase M enough to satisfy higher demand"
-      ],
-      "tag": "monetary_policy",
-      "type": "integration",
-      "objective": "LO13.3",
-      "primarySkill": "monetary_policy_lm_shift",
-      "feedback": "At the same target rate, higher demand requires more supplied balances.",
-      "aHash": "1b7f7efacf6b0819297560ca1b75fea82c7fe63b415106b9091325081848c9a9"
-    },
-    {
-      "id": 361,
-      "q": "M rises but P rises proportionally at the same time. What happens to LM?",
-      "options": [
-        "it may not shift if M/P is unchanged",
-        "it must shift right",
-        "it must shift left",
-        "it becomes vertical"
-      ],
-      "tag": "monetary_policy",
-      "type": "multi-step",
-      "objective": "LO13.3",
-      "primarySkill": "monetary_policy_lm_shift",
-      "feedback": "LM depends on real balances, not nominal money by itself.",
-      "aHash": "ba2294119c41529454515694a320be157a0eaa50c17a9f931184678572b40c9d"
-    },
-    {
       "id": 362,
       "q": "Why can a contractionary monetary policy lower inflationary pressure later?",
       "options": [
-        "it raises G directly",
-        "it reduces AD by lowering I & Y",
-        "it shifts LRAS right",
-        "it raises consumption immediately"
+        "It raises government purchases directly",
+        "It lowers investment and aggregate demand",
+        "It shifts the LRAS curve to the right",
+        "It raises consumption immediately"
       ],
       "tag": "monetary_policy",
       "type": "interpretation",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
       "feedback": "Tighter money lowers demand through the interest-rate channel.",
-      "aHash": "157e748649fda2d8d3b004aeb2b2673a1977e993c42cbb55dbd287c87f280497"
+      "aHash": "c6fd84441259496be1556012be8bcf541ae115d176b5814a29ceba7b2b276ad7"
     },
     {
       "id": 363,
-      "q": "If investment demand is extremely interest-sensitive, monetary expansion does what to Y?",
+      "q": "If investment demand is highly responsive to the interest rate, how does a given interest-rate reduction following monetary expansion affect output?",
       "options": [
-        "barely changes Y",
-        "must lower Y",
-        "raises Y strongly for a given fall in r",
-        "only changes taxes"
+        "It leaves output almost unchanged",
+        "Must lower output",
+        "It raises output substantially",
+        "Only changes taxes"
       ],
       "tag": "monetary_policy",
       "type": "application",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
       "feedback": "A given rate reduction produces a large investment response.",
-      "aHash": "88d6864a7f8a20078ebf9366f2e64596e1794fb690e9e5e9c3e01ce42e912be8"
+      "aHash": "8c13393288fb813d4a364f59a92d30839981b7697445c40f6c8ba0d14d4794aa"
     },
     {
       "id": 364,
-      "q": "Which statement misreads an LM-right shift?",
+      "q": "Which statement misreads a rightward shift of the LM curve?",
       "options": [
-        "it means r is lower at each income",
-        "it can result from higher M/P",
-        "it can support higher Y through lower r",
-        "it means Y is higher at every r on the LM graph"
+        "It means the interest rate is lower at each income",
+        "It can result from higher M/P",
+        "It can support higher output through a lower interest rate",
+        "It means the interest rate is higher at every output"
       ],
       "tag": "monetary_policy",
       "type": "trap",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
-      "feedback": "LM is drawn with r as a function of Y; rightward means lower r at the same Y.",
+      "feedback": "A rightward shift of the LM curve means a lower interest rate at any given income, equivalently higher income at a given interest rate. It can follow an increase in real balances M/P.",
       "commonError": "reading the LM shift at the wrong fixed variable",
-      "aHash": "bda01eaad6a79035042d9499793459c3240d004a3f7c09037d10fb1911caca0a"
-    },
-    {
-      "id": 365,
-      "q": "What separates monetary policy from a money-demand shock?",
-      "options": [
-        "policy changes supply; demand shocks change desired holdings",
-        "both always shift IS",
-        "both always raise G",
-        "neither affects r"
-      ],
-      "tag": "monetary_policy",
-      "type": "definition",
-      "objective": "LO13.3",
-      "primarySkill": "monetary_policy_lm_shift",
-      "feedback": "Supply and demand changes can move LM in opposite directions.",
-      "aHash": "ac759c0d45bfa510a1865434739ffaef9f59d4aa08ac5919d2ad6dc5c73d0e00"
+      "aHash": "b7ee8a655f60e88c624abe81d872c2ebd886eaa8f717afd4859eb98aebea3ee9"
     },
     {
       "id": 366,
-      "q": "M=5,000. P falls from 25 to 20. Money demand is 350−30r. What happens to r?",
+      "q": "M=5,000. The price level falls from 25 to 20. Money demand is 350−30r. What happens to r?",
       "options": [
         "rises from 3.33 to 5",
         "falls from 5 to 3.33",
@@ -5462,13 +5330,13 @@ const questionBanks = {
       "type": "calculation",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "M/P rises from 200 to 250. Set 350−30r equal to each; r falls from 5 to about 3.33.",
+      "feedback": "M/P rises from 200 to 250. Set 350−30r equal to each; the interest rate falls from 5 to about 3.33.",
       "hint": "Compute both real balances first.",
       "aHash": "999da8de57face9c4e4a71512a2f51ec4362a542f3211bf2ced8e90d88d5dafd"
     },
     {
       "id": 367,
-      "q": "At P=8, M/P=300. At P=6, M/P=400. If IS gives ΔY=2×Δ(M/P) through the LM channel in this simplified item, what is ΔY?",
+      "q": "In a simplified IS–LM example, the nominal money supply is fixed at 2,400. The price level falls from 8 to 6, raising real money balances from 300 to 400. The resulting equilibrium output change is twice the increase in real balances. By how much does output rise?",
       "options": [
         "+100",
         "−200",
@@ -5484,210 +5352,456 @@ const questionBanks = {
       "aHash": "9fef937cfd51f1c37516ac79b524d42baea39f9eaa41bfe9875f49db6d7ac085"
     },
     {
-      "id": 368,
-      "q": "Expansionary fiscal policy and a higher price level occur together. What is ambiguous?",
-      "options": [
-        "r because both forces lower it",
-        "M/P because P does not matter",
-        "IS because fiscal policy cannot shift it",
-        "Y because IS-right and LM-left oppose"
-      ],
-      "tag": "aggregate_demand",
-      "type": "integration",
-      "objective": "LO13.4",
-      "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "Fiscal expansion raises demand; higher P lowers real balances.",
-      "aHash": "ab818fb3d9aba01e1f6588df375c91febcfc07f1652e0004787e88af135149e3"
-    },
-    {
       "id": 369,
       "q": "Which answer confuses an AD shift with a movement along AD?",
       "options": [
-        "saying a lower P shifts AD right",
-        "saying higher G shifts AD right",
-        "saying lower M shifts AD left",
-        "saying lower investment shifts AD left"
+        "Saying a lower price level shifts the AD curve to the right",
+        "Saying higher government purchases shift the AD curve to the right",
+        "Saying lower nominal money supply shifts the AD curve to the left",
+        "Saying lower investment shifts the AD curve to the left"
       ],
       "tag": "aggregate_demand",
       "type": "trap",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "A lower P moves along AD unless another determinant changes.",
+      "feedback": "A lower price level moves along AD unless another determinant changes.",
       "commonError": "price-level movement mistaken for AD shift",
-      "aHash": "b97b5113627fc78c185f034b68ef64bec33377fab163f763325fc7e1a5e9f101"
-    },
-    {
-      "id": 370,
-      "q": "On the AD graph, which point is on AD3 at P1?",
-      "options": [
-        "1",
-        "3",
-        "2",
-        "6"
-      ],
-      "tag": "aggregate_demand",
-      "type": "graph",
-      "objective": "LO13.4",
-      "image": "is_lm_ad.webp",
-      "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "Point 3 lies on AD3 at the highest shown price level.",
-      "aHash": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
-    },
-    {
-      "id": 371,
-      "q": "If the central bank raises M exactly as P rises, what happens to the LM position for AD derivation?",
-      "options": [
-        "it must shift left",
-        "it must shift right",
-        "it may stay unchanged if M/P is unchanged",
-        "IS must shift left"
-      ],
-      "tag": "aggregate_demand",
-      "type": "application",
-      "objective": "LO13.4",
-      "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "LM depends on real balances, so proportional M and P changes can leave M/P unchanged.",
-      "aHash": "b093ae7b2c6d26b5b2a19da77e029a41b8b5abd030624b1f1e3ac99db4de4133"
+      "aHash": "4a96bf55de4880f0679c8e678b0f7efdd3a21d4cafe48ba1a2b6d07de73555d3"
     },
     {
       "id": 372,
-      "q": "A fall in P raises real balances. Why does that not shift IS directly?",
+      "q": "A fall in the price level raises real balances. Why does that not shift IS directly?",
       "options": [
-        "P directly changes G",
-        "P directly changes taxes",
-        "P makes investment autonomous",
-        "P affects money markets first in this derivation"
+        "The price level directly changes government purchases",
+        "The price level directly changes taxes",
+        "The price level makes investment autonomous",
+        "Prices affect the money market first"
       ],
       "tag": "aggregate_demand",
       "type": "multi-step",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "The IS effect comes after r changes; the first curve movement is LM.",
-      "aHash": "379b75b72cdaad0a3f5df1c1b09aa98e15ff1e3254cd6a2352335ab3e09ab6a1"
+      "feedback": "The IS effect comes after the interest rate changes; the first curve movement is LM.",
+      "aHash": "cc08c8a3157cc99622793bf49e5bb601b1398dbd2d04c16d734a0f285069f61c"
     },
     {
       "id": 373,
       "q": "Why does a demand shock shift the entire AD curve?",
       "options": [
-        "it changes eq. Y at any given P",
-        "it changes only the current P point",
-        "it changes the vertical axis",
-        "it fixes Y at LRAS"
+        "Output changes at each given price level",
+        "It changes only the current price level point",
+        "It changes the vertical axis",
+        "It fixes output at LRAS"
       ],
       "tag": "aggregate_demand",
       "type": "interpretation",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "A shift means the P-Y relationship changes for every price level.",
-      "aHash": "cd9f396a360d2bbe6352313528a25a7dd326606751687d007625c30878830761"
+      "feedback": "A shift means the price level-output relationship changes for every price level.",
+      "aHash": "d00f9fc7b86a5bb13291501d3d2b7513bd2d3de889d11cd8b62fd4ab0aca7586"
     },
     {
       "id": 374,
-      "q": "If investment becomes more sensitive to r, how can the AD curve change?",
+      "q": "If investment becomes more sensitive to the interest rate, how can the AD curve change?",
       "options": [
         "AD becomes vertical",
-        "AD becomes flatter since P-induced r changes move Y more",
-        "AD shifts left automatically",
+        "AD flattens: price-induced rate changes affect output more",
+        "AD shifts left automatically, without any change in its slope",
         "LRAS becomes horizontal"
       ],
       "tag": "aggregate_demand",
       "type": "application",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "The real-balance channel has a stronger output response when investment reacts more to r.",
-      "aHash": "f59c62dffd284d29a6b3b302cea2f9de0c52e17d2205ed476951843b20027c4e"
-    },
-    {
-      "id": 375,
-      "q": "What two diagrams are being connected in the AD derivation graph?",
-      "options": [
-        "PPF and labor market",
-        "money demand and loanable funds only",
-        "IS-LM and P-Y aggregate demand",
-        "LRAS and Phillips curve only"
-      ],
-      "tag": "aggregate_demand",
-      "type": "definition",
-      "objective": "LO13.4",
-      "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "The derivation maps IS-LM equilibria into points in P-Y space.",
-      "aHash": "eab18f5c2519a87562508592ea2cd4739925096d099cbf2fd7a9ac1212631783"
+      "feedback": "The real-balance channel has a stronger output response when investment reacts more to the interest rate.",
+      "aHash": "5cee9aacdc292a2788324d5cdf82e7dd38c1bfdf1c7568d25520f5087a92cc2c"
     },
     {
       "id": 376,
-      "q": "Which answer loses the fixed-M assumption behind downward AD?",
+      "q": "When deriving the downward-sloping aggregate demand curve from IS–LM, the nominal money supply is held fixed as the price level changes. Which statement violates that assumption?",
       "options": [
-        "computing M/P after P changes",
-        "holding IS fixed while P changes",
-        "moving along AD after a price change",
-        "assuming M changes whenever P changes"
+        "Computing M/P after P changes",
+        "Holding IS fixed while the price level changes",
+        "Moving along AD after a price change",
+        "Changing nominal money whenever prices change"
       ],
       "tag": "aggregate_demand",
       "type": "trap",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "To derive a given AD curve, nominal M is held fixed while P varies.",
+      "feedback": "To derive a given AD curve, nominal money supply is held fixed while the price level varies.",
       "commonError": "letting M move during movement along AD",
-      "aHash": "b7508aebd2531f5e1efdd37fc76e75546ab5671dd5a2ae2d2589a18791d12895"
+      "aHash": "6f29ae1f2508de5ce33c9277380da477ce24e2a45bd85beea88bd4dc64e101f6"
     },
     {
-      "id": 377,
-      "q": "Nominal r is 1%, expected inflation moves from 0% to −5%. How much does the real rate change?",
+      "id": 385,
+      "q": "Through which effect can credible reflation support demand?",
       "options": [
-        "it rises by 5 pp",
-        "it falls by 5 points",
-        "it rises by 1 point",
-        "it is unchanged"
+        "Lower expected real interest rates",
+        "A rise in the real burden of existing debts",
+        "Shifting the IS curve to the left",
+        "Reducing M/P"
       ],
       "tag": "great_depression",
-      "type": "calculation",
+      "type": "application",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
-      "feedback": "Real r moves from 1% to 6%.",
-      "hint": "Real r ≈ i − πe.",
-      "aHash": "70c01a8415e54c396e81f7b5d6d772b1890c2d04e2657613582338811dd8a3ce"
+      "feedback": "Higher expected inflation lowers real borrowing costs for a given nominal rate.",
+      "aHash": "2069d50d5eedc5a3582aa7be9a883d3e62639303a768c23fc32bc05460e9aeea"
+    }
+  ],
+  "elite": [
+    {
+      "id": 303,
+      "q": "Which answer best avoids double-counting a fiscal shock in IS-LM?",
+      "options": [
+        "Shift IS once and obtain output and interest from the new intersection",
+        "Shift IS and then add the full multiplier again",
+        "Shift LM because government purchases are a government policy choice",
+        "Move along IS and also shift the IS curve to the left"
+      ],
+      "tag": "is_curve",
+      "type": "trap",
+      "objective": "LO12.1",
+      "primarySkill": "is_curve_goods_market",
+      "feedback": "The curve shift summarizes the spending effect. The intersection handles the endogenous variables.",
+      "commonError": "double-counting the multiplier after shifting IS",
+      "aHash": "953635bdd21282113dad9dc835425acbde1b67a4203c028e1d9105678060866f"
     },
     {
-      "id": 378,
-      "q": "Debt/P rises from 40 to 50 after deflation. What is the percentage increase in real debt burden?",
+      "id": 308,
+      "q": "A student argues that a rightward shift of the IS curve must raise output by the full simple multiplier in IS-LM. What is missing?",
       "options": [
-        "10%",
-        "25%",
-        "20%",
-        "50%"
+        "Prices must become fully flexible before output can respond",
+        "Higher interest can crowd out investment",
+        "LRAS must also shift right",
+        "Money demand must be zero"
       ],
-      "tag": "great_depression",
+      "tag": "is_curve",
+      "type": "trap",
+      "objective": "LO12.1",
+      "primarySkill": "is_curve_goods_market",
+      "feedback": "With an upward-sloping LM curve, the interest-rate increase dampens the output gain.",
+      "aHash": "4ea0f8142109598977d6dd0fadfbf43e6ebef7a5092be1b291e34e9f023b5fee"
+    },
+    {
+      "id": 322,
+      "q": "IS: Y=4,000−200r. LM: r=0.005Y−6. If autonomous spending raises the IS intercept to 4,600, what is new Y?",
+      "options": [
+        "2,900",
+        "2,700",
+        "3,100",
+        "3,300"
+      ],
+      "tag": "is_lm_equilibrium",
       "type": "calculation",
-      "objective": "LO13.5",
-      "primarySkill": "depression_crisis_mechanisms",
-      "feedback": "The increase is 10/40 = 25%.",
-      "hint": "Percentage change = change/original.",
-      "aHash": "72da55d317fd997b93138b8646a2238e806a4c4566d1e854277b5a583d8aef23"
+      "objective": "LO12.3",
+      "primarySkill": "is_lm_equilibrium",
+      "feedback": "New IS: Y=4,600−200(0.005Y−6)=5,800−Y, so Y=2,900.",
+      "aHash": "4b40c73859d3d066d0acb862c4ffdf58e01388ddb879281e51ee6c2ef12b11be"
+    },
+    {
+      "id": 324,
+      "q": "Compared with fiscal expansion without monetary accommodation, how does fiscal expansion with full accommodation affect output and the interest rate?",
+      "options": [
+        "Raises the interest rate more and output less",
+        "Leaves IS unchanged",
+        "Output rises more; the interest rate rises less",
+        "Moves only along AD"
+      ],
+      "tag": "is_lm_equilibrium",
+      "type": "integration",
+      "objective": "LO12.3",
+      "primarySkill": "is_lm_equilibrium",
+      "feedback": "Accommodation shifts the LM curve to the right, reducing crowding out.",
+      "aHash": "5fbe16261fa94d2f6bca2f15fa457ab73ebfba15e982bf108d10486ffe3c7173"
+    },
+    {
+      "id": 325,
+      "q": "Which interpretation incorrectly treats policy accommodation as the original fiscal shock?",
+      "options": [
+        "Calling higher government purchases the rightward shift of the IS curve",
+        "Calling a rightward shift of the LM curve the central-bank response",
+        "Calling the new point the equilibrium",
+        "Treating the LM shift as the cause of higher government purchases"
+      ],
+      "tag": "is_lm_equilibrium",
+      "type": "trap",
+      "objective": "LO12.3",
+      "primarySkill": "is_lm_equilibrium",
+      "feedback": "The fiscal shock and monetary response are separate steps.",
+      "commonError": "merging the shock with the policy response",
+      "aHash": "a2bb17870b3b7d0c2680dcfbaf41e87873ddd34aa36a34a4a9f14e245f57cb5a"
+    },
+    {
+      "id": 329,
+      "q": "Why can the same final output appear after different shocks?",
+      "options": [
+        "The axes have no meaning",
+        "IS and LM cannot both shift",
+        "Final output alone reveals exactly which shock occurred",
+        "Interest rates and curve positions can differ"
+      ],
+      "tag": "is_lm_equilibrium",
+      "type": "interpretation",
+      "objective": "LO12.3",
+      "primarySkill": "is_lm_equilibrium",
+      "feedback": "A full diagnosis uses both variables and the shifted curves, not output alone.",
+      "aHash": "ad24f928f14f6c52ddcd2c81f7b7f407fc43f91dd6933e6dd4372ce6f00c1daf"
+    },
+    {
+      "id": 330,
+      "q": "In the IS–LM model with a fixed nominal money supply and price level, the interest rate adjusts to clear both markets. Which statement incorrectly treats it as fixed?",
+      "options": [
+        "Keep the interest rate fixed after an IS shift",
+        "Read the interest rate from the new IS-LM intersection",
+        "Let LM determine how the interest rate changes",
+        "Use the interest rate to infer investment changes"
+      ],
+      "tag": "is_lm_equilibrium",
+      "type": "trap",
+      "objective": "LO12.3",
+      "primarySkill": "is_lm_equilibrium",
+      "feedback": "With the money supply and price level fixed, output and the interest rate adjust jointly to satisfy goods-market and money-market equilibrium. Holding the interest rate fixed would require a separate policy assumption.",
+      "commonError": "holding r fixed without a reason",
+      "aHash": "7d66d93ee2978064b92b334d7bddfb30ffb8abaf4ce75489331c7b49816b9820"
+    },
+    {
+      "id": 331,
+      "q": "Which combination most clearly raises output without changing the interest rate much?",
+      "options": [
+        "The IS curve shifts to the right and the LM curve shifts to the left",
+        "The IS and LM curves both shift to the right",
+        "The IS curve shifts to the left and the LM curve shifts to the left",
+        "The LM curve shifts to the left alone"
+      ],
+      "tag": "is_lm_equilibrium",
+      "type": "application",
+      "objective": "LO12.3",
+      "primarySkill": "is_lm_equilibrium",
+      "feedback": "The two rightward shifts both raise output while their interest-rate effects offset.",
+      "aHash": "60b3bd7d44306baefb7af882443861dc561a1eb45d3b657a5f1c670376ffef9c"
+    },
+    {
+      "id": 334,
+      "q": "A safe-asset panic raises money demand while firms cut investment. What happens to output?",
+      "options": [
+        "Output rises as a result of both changes",
+        "Both changes reduce equilibrium output",
+        "Output is unchanged by definition",
+        "Output rises unless the price level changes"
+      ],
+      "tag": "shocks",
+      "type": "application",
+      "objective": "LO13.1",
+      "primarySkill": "shock_transmission",
+      "feedback": "Both curve shifts reduce output.",
+      "aHash": "ac449cd0b4a849ecee323503e72746583b596f7b8303607445cbda29830888e5"
+    },
+    {
+      "id": 336,
+      "q": "Which diagnosis is underidentified from the observation “output fell”?",
+      "options": [
+        "Identifying a leftward shift of the LM curve when the interest rate rose",
+        "Identifying a leftward shift of the IS curve when the interest rate fell",
+        "Using both output and the interest rate to infer a curve",
+        "Choosing a leftward shift of the IS curve without checking the interest rate"
+      ],
+      "tag": "shocks",
+      "type": "trap",
+      "objective": "LO13.1",
+      "primarySkill": "shock_transmission",
+      "feedback": "Output alone is not enough; the interest-rate direction helps identify the shock.",
+      "commonError": "using one outcome to identify the shock",
+      "aHash": "7ea31b1e649258560f388bf900df387b805fe011f4d917ee33b19eca271aba3d"
+    },
+    {
+      "id": 339,
+      "q": "A shock lowers output and raises the interest rate. Which policy can offset both movements?",
+      "options": [
+        "An increase in taxes",
+        "A cut in the money supply",
+        "Monetary expansion",
+        "Lower transfers"
+      ],
+      "tag": "shocks",
+      "type": "integration",
+      "objective": "LO13.1",
+      "primarySkill": "shock_transmission",
+      "feedback": "The initial pattern is a leftward shift of the LM curve; monetary expansion shifts LM back right.",
+      "aHash": "d92279d6504f43718aa73f69adabe1f64e7954615b2dc8e219f40934da4316e5"
+    },
+    {
+      "id": 340,
+      "q": "A shock lowers output and lowers the interest rate. Which policy most directly offsets the original curve shift?",
+      "options": [
+        "Money-supply cut",
+        "Tax increase",
+        "Higher money demand",
+        "Fiscal expansion"
+      ],
+      "tag": "shocks",
+      "type": "integration",
+      "objective": "LO13.1",
+      "primarySkill": "shock_transmission",
+      "feedback": "The initial pattern is a leftward shift of the IS curve; fiscal expansion pushes IS back right.",
+      "aHash": "625e37e2ddfcdb5542876e2ece7425f3891bf898abcfba8a55eb3f29aa750f81"
+    },
+    {
+      "id": 342,
+      "q": "Why can a leftward shift of the IS curve look like “easier money” if you only watch the interest rate?",
+      "options": [
+        "A lower interest rate proves the central bank increased money supply",
+        "Lower output reduces money demand and interest",
+        "LM must have shifted right",
+        "Prices must have risen"
+      ],
+      "tag": "shocks",
+      "type": "interpretation",
+      "objective": "LO13.1",
+      "primarySkill": "shock_transmission",
+      "feedback": "Lower income reduces transactions demand for money, lowering the interest rate along LM.",
+      "aHash": "194383eea530ef439e717160b9861da9fa0350e9bbda1817581c348b9b414c59"
+    },
+    {
+      "id": 343,
+      "q": "Households cut autonomous consumption, while banks also contract the money supply. Prices and fiscal policy are fixed. In IS–LM, which conclusion uses both shocks correctly?",
+      "options": [
+        "The IS curve shifts to the right and the LM curve shifts to the left, so income must rise",
+        "Only LM shifts because both shocks involve money",
+        "Both curves shift left; income falls, but the interest-rate effect is ambiguous",
+        "Both curves stay fixed because government purchases are unchanged"
+      ],
+      "tag": "shocks",
+      "type": "trap",
+      "objective": "LO13.1",
+      "primarySkill": "shock_transmission",
+      "feedback": "Lower autonomous consumption shifts the IS curve to the left; lower real money balances shift the LM curve to the left. Both reduce income, but a leftward shift of the IS curve lowers the interest rate while a leftward shift of the LM curve raises it. The interest-rate result depends on the relative shifts.",
+      "commonError": "cross-tagging unrelated skills",
+      "aHash": "abe5bd7e98b50bc47edbcf6d1883a003024144adb98c540dea7002ac0bd37014"
+    },
+    {
+      "id": 346,
+      "q": "Which answer hides the financing side of fiscal policy?",
+      "options": [
+        "Noting government purchases shift the IS curve to the right",
+        "Treating the initial IS shift as the deficit’s sole effect",
+        "Noting taxes affect consumption",
+        "Noting the interest rate may crowd out investment"
+      ],
+      "tag": "fiscal_policy",
+      "type": "trap",
+      "objective": "LO13.2",
+      "primarySkill": "fiscal_policy_is_shift",
+      "feedback": "IS-LM often abstracts from debt dynamics, but financing assumptions can matter in broader analysis.",
+      "commonError": "ignoring stated financing assumptions",
+      "aHash": "00d41a2212170fee547da28725ca2c48894cb59c4fa29b37d62110b0417d1469"
+    },
+    {
+      "id": 347,
+      "q": "If households expect future taxes after a deficit-financed government purchases increase, what can weaken a rightward shift of the IS curve?",
+      "options": [
+        "Higher money supply automatically",
+        "Lower money demand by law",
+        "Higher saving out of current output",
+        "A required rightward shift of the LM curve"
+      ],
+      "tag": "fiscal_policy",
+      "type": "application",
+      "objective": "LO13.2",
+      "primarySkill": "fiscal_policy_is_shift",
+      "feedback": "Forward-looking saving can offset some consumption response.",
+      "aHash": "15d62f3cbb9a53fafa6790efbae2e2fa3f92824c72c23b46ad77df71e8ec9813"
+    },
+    {
+      "id": 349,
+      "q": "Which combination of curve shifts allows fiscal expansion to raise equilibrium output while the interest rate remains unchanged?",
+      "options": [
+        "The IS curve shifts to the right and the LM curve shifts to the right",
+        "The IS curve shifts to the right and the LM curve shifts to the left",
+        "The IS curve shifts to the left and the LM curve shifts to the right",
+        "The IS curve shifts to the left and the LM curve shifts to the left"
+      ],
+      "tag": "fiscal_policy",
+      "type": "integration",
+      "objective": "LO13.2",
+      "primarySkill": "fiscal_policy_is_shift",
+      "feedback": "The rightward shift of the LM curve offsets upward pressure on the interest rate.",
+      "aHash": "30faf0bb5840012fc884b13aba61657cd19ac45cfe22400e4a3d215e22bf0b2c"
+    },
+    {
+      "id": 353,
+      "q": "Which answer confuses deficit size with the IS shift?",
+      "options": [
+        "Larger deficit always means a larger rightward shift of the IS curve",
+        "Larger government purchases can shift the IS curve to the right",
+        "Higher taxes can shift the IS curve to the left",
+        "Transfers may raise consumption"
+      ],
+      "tag": "fiscal_policy",
+      "type": "trap",
+      "objective": "LO13.2",
+      "primarySkill": "fiscal_policy_is_shift",
+      "feedback": "The composition of the deficit matters: government purchases, taxes, and transfers have different demand effects.",
+      "commonError": "using deficit size instead of policy composition",
+      "aHash": "c5133b204f86f4b2b756684fd228a5de220612fa10ff0084fe787ba45768a679"
+    },
+    {
+      "id": 358,
+      "q": "If expected inflation rises while the nominal interest rate stays fixed, how can the change in real borrowing costs affect monetary policy transmission?",
+      "options": [
+        "Nominal money stops mattering",
+        "Real borrowing costs fall despite the fixed nominal rate",
+        "Government purchases must decline automatically as expected inflation rises",
+        "IS becomes irrelevant"
+      ],
+      "tag": "monetary_policy",
+      "type": "application",
+      "objective": "LO13.3",
+      "primarySkill": "monetary_policy_lm_shift",
+      "feedback": "Expected inflation affects real borrowing costs, which influence investment.",
+      "aHash": "d3f616cec9ed3bd66e32ff131220c344a952e601b2e493eba8e53845a2eb9f83"
+    },
+    {
+      "id": 368,
+      "q": "Expansionary fiscal policy and a higher price level occur together. What is ambiguous?",
+      "options": [
+        "The interest rate, because both changes lower it",
+        "Real money balances, because the price level does not affect them",
+        "The IS curve, because fiscal policy cannot shift it",
+        "Output: the IS and LM shifts have opposing effects"
+      ],
+      "tag": "aggregate_demand",
+      "type": "integration",
+      "objective": "LO13.4",
+      "primarySkill": "aggregate_demand_from_islm",
+      "feedback": "Fiscal expansion raises demand; higher price level lowers real balances.",
+      "aHash": "fcf449aa8996a48cc2e0aabf991f4855b20cd4fde3971ebbfb40bb77cd9f1192"
     },
     {
       "id": 379,
-      "q": "Money contraction lowers M, but falling P partly offsets it. What must you compare?",
+      "q": "Money contraction lowers the nominal money supply, but a falling price level partly offsets it. What must you compare?",
       "options": [
-        "nominal debt and taxes only",
-        "G and LRAS only",
-        "percentage changes in M and P",
-        "the old equilibrium point only"
+        "Nominal debt and taxes only",
+        "Government purchases and productive capacity alone",
+        "The percentage declines in money and prices",
+        "The old equilibrium point only"
       ],
       "tag": "great_depression",
       "type": "integration",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "Real balances depend on M/P.",
-      "aHash": "b48129cd66b09bf134600d2084fee58a6026049d4174b74c4c97fd7ed519b780"
+      "aHash": "f5245436d9280294921a34737957a8f3767901d319d56debada97a7455faf9a3"
     },
     {
       "id": 380,
-      "q": "Which answer turns a Depression mechanism into a generic IS-LM slogan?",
+      "q": "Which explanation of a depression fails to identify how the shock changes spending or monetary conditions?",
       "options": [
-        "banking panic can shift LM left",
-        "spending collapse can shift IS left",
-        "expected deflation can shift IS left",
-        "all bad events shift LM left"
+        "Banking panic can shift the LM curve to the left",
+        "Spending collapse can shift the IS curve to the left",
+        "Expected deflation can shift the IS curve to the left",
+        "All bad events shift the LM curve to the left"
       ],
       "tag": "great_depression",
       "type": "trap",
@@ -5695,113 +5809,48 @@ const questionBanks = {
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "Different mechanisms hit different curves.",
       "commonError": "generic curve assignment",
-      "aHash": "cbd9b884beb9b3003c8859ae7c1b7bdf8b70e9fd97fb76fee73a18587c803f85"
-    },
-    {
-      "id": 381,
-      "q": "On the AD-SRAS panel, moving from A to C along AD changes what?",
-      "options": [
-        "both P and Y rise",
-        "P rises and Y falls",
-        "P falls and Y rises",
-        "Y stays at natural output"
-      ],
-      "tag": "great_depression",
-      "type": "graph",
-      "objective": "LO13.5",
-      "image": "is_lm_lras.webp",
-      "primarySkill": "depression_crisis_mechanisms",
-      "feedback": "A to C moves to a higher price level and higher output on the shown AD line.",
-      "aHash": "0c0bced23c424f318f152b30f2348fd3fb00d31d8256004abd04eda2bbbcf1fb"
-    },
-    {
-      "id": 382,
-      "q": "If expected deflation is severe while nominal rates are near zero, what happens to real rates?",
-      "options": [
-        "they must be negative",
-        "they can remain high",
-        "they equal zero automatically",
-        "they stop affecting investment"
-      ],
-      "tag": "great_depression",
-      "type": "application",
-      "objective": "LO13.5",
-      "primarySkill": "depression_crisis_mechanisms",
-      "feedback": "Zero nominal rates do not guarantee low real rates when expected inflation is negative.",
-      "aHash": "ff20c6deea2ed4834338343d309e04ff5a069abc401ae3d0d7ca0535000bd9b0"
+      "aHash": "e06bf74abb6f4a24b7eb050af9b45702e816bdf5fcafeff49d3f6abf273d1b65"
     },
     {
       "id": 383,
       "q": "A bank panic causes deposit losses, money contraction, and weaker lending. Which combined effect is plausible?",
       "options": [
-        "LM right and IS right, raising Y",
-        "AD right only",
-        "LM left & IS left, reducing Y strongly",
-        "LRAS right only"
+        "The LM curve shifts to the right and the IS curve shifts to the right, raising output",
+        "The AD curve shifts to the right only",
+        "The LM curve shifts to the left and the IS curve shifts to the left, reducing output strongly",
+        "The LRAS curve shifts to the right only"
       ],
       "tag": "great_depression",
       "type": "multi-step",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "The monetary and credit channels reinforce the downturn.",
-      "aHash": "bcc51d3235704829ad8b442f8f8020d0a2729da635d83473112e0cf7a46b7a52"
+      "aHash": "2d33662c444ee8bbf6bc947aa8fa63ea69057e8bcc15b5ee3834d6b5670745ea"
     },
     {
       "id": 384,
-      "q": "Why should Depression feedback not be tagged as a plain fiscal-policy item?",
+      "q": "During a depression, falling prices raise the real burden of fixed nominal debts. Borrowers cut spending more than creditors increase it. With government purchases and taxes unchanged, which channel reduces demand?",
       "options": [
-        "fiscal tags are always better",
-        "calculations cannot use Depression data",
-        "IS-LM cannot discuss history",
-        "the mechanism is debt, banking, money, or expectations, not G/T"
+        "A rise in government purchases",
+        "A tax cut that raises disposable income",
+        "A rightward IS shift caused by higher borrower consumption",
+        "Debt deflation cuts spending, shifting IS left"
       ],
       "tag": "great_depression",
       "type": "interpretation",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
-      "feedback": "Diagnostic tags should match the causal channel being tested.",
-      "aHash": "222200cd1f48e64be0c79ec3763d8f1bed0a653f5fef9b6b158829a5488e93b1"
-    },
-    {
-      "id": 385,
-      "q": "A credible reflation policy can help by doing what?",
-      "options": [
-        "lowering expected real rates & raising demand",
-        "raising real debt burdens",
-        "shifting IS left",
-        "reducing M/P"
-      ],
-      "tag": "great_depression",
-      "type": "application",
-      "objective": "LO13.5",
-      "primarySkill": "depression_crisis_mechanisms",
-      "feedback": "Higher expected inflation lowers real borrowing costs for a given nominal rate.",
-      "aHash": "39d7e7aadec38b59d08430db35aa3b061f3984ea9de062e97d114e53f0540d9a"
-    },
-    {
-      "id": 386,
-      "q": "What is the monetary explanation associated with a severe slump?",
-      "options": [
-        "government spending rose too much",
-        "money contraction & banking failure reduced aggregate demand",
-        "LRAS grew too fast",
-        "tax cuts overheated demand"
-      ],
-      "tag": "great_depression",
-      "type": "definition",
-      "objective": "LO13.5",
-      "primarySkill": "depression_crisis_mechanisms",
-      "feedback": "The monetary channel emphasizes falling money supply/credit and tighter LM conditions.",
-      "aHash": "544af13799e1c769ec971ea277564d72746b921c7e4f6b157b66df4c6f2721a6"
+      "feedback": "Deflation raises debt/P. Under the stated asymmetric spending response, redistribution from borrowers to creditors reduces aggregate demand, shifting the IS curve to the left. No change in G or T is needed.",
+      "aHash": "6cb69d0b3025f4843cce0a368f11fa3196dfd062045860dcb2196819dfcbc53e"
     },
     {
       "id": 387,
       "q": "Which claim confuses correlation with mechanism?",
       "options": [
-        "expected deflation can reduce investment",
-        "debt-deflation can reduce spending",
-        "prices fell, so falling prices alone caused every change",
-        "lower P can raise real balances"
+        "Expected deflation can reduce investment",
+        "Debt-deflation can reduce spending",
+        "Falling prices alone explain every observed change",
+        "Lower prices can increase real balances when nominal money is fixed"
       ],
       "tag": "great_depression",
       "type": "trap",
@@ -5809,7 +5858,7 @@ const questionBanks = {
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "Observed timing is not enough; the model channel must be specified.",
       "commonError": "correlation without mechanism",
-      "aHash": "ad77fbac22884d5b8682cca39f744c24d5eb671aa3620d99c4e191d83355a91b"
+      "aHash": "0c3b98e7531dd9c0f02e4fde8440aad7dc5b2471ffdf62b6df749008c640d1f1"
     }
   ],
   "legendary": [
@@ -5848,56 +5897,40 @@ const questionBanks = {
     },
     {
       "id": 9002,
-      "q": "Investment demand becomes more interest-sensitive while the Fed holds the money supply fixed. What is most likely true after an IS-right fiscal shock?",
+      "q": "Investment demand becomes more sensitive to the interest rate while the central bank keeps the money supply fixed. How does this affect the crowding-out mechanism after a fiscal expansion shifts the IS curve to the right?",
       "options": [
         "IS must shift left instead of right",
         "LM becomes horizontal automatically",
-        "crowding-out pressure depends more sharply on r response",
-        "fiscal policy no longer affects goods demand"
+        "Investment falls more for a given interest-rate rise",
+        "Fiscal policy can no longer change demand in the goods market"
       ],
       "tag": "is_curve",
       "type": "integration",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
-      "feedback": "A flatter IS means r changes translate into larger investment changes, so the feedback matters more.",
-      "aHash": "e3a206f145509387996a1419395d8b98e1c41ac9149a880167c9135290ccb760"
+      "feedback": "A flatter IS means the interest rate changes translate into larger investment changes, so the feedback matters more.",
+      "aHash": "4d6e6747f90d7d23daf510f1a320ce138da989b2ae76eb192b14a3765b5e92b1"
     },
     {
       "id": 9003,
       "q": "Which answer incorrectly mixes the Keynesian-cross and IS diagrams?",
       "options": [
-        "a lower r raises investment and shifts PE up",
-        "higher G shifts PE up at each Y",
-        "lower taxes raise consumption and shift PE up",
-        "a higher r the PE line up since borrowing is costlier"
+        "A lower interest rate raises investment and shifts planned expenditure upward",
+        "Higher government purchases shift planned expenditure upward at each output level",
+        "Lower taxes raise consumption and shift planned expenditure upward",
+        "A higher interest rate shifts planned expenditure upward because borrowing is costlier"
       ],
       "tag": "is_curve",
       "type": "trap",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
-      "feedback": "A higher r reduces investment, shifting PE down, not up.",
+      "feedback": "A higher interest rate reduces investment, shifting planned expenditure down, not up.",
       "commonError": "wrong sign on interest-sensitive investment",
-      "aHash": "269e77c09083f48a04fc9ad053c0b5e9a6f5f7f3a50c28007cddcf51f1e78f4a"
-    },
-    {
-      "id": 9004,
-      "q": "Using the IS graph, which comparison identifies a pure shift rather than movement along a curve?",
-      "options": [
-        "same r, different IS curves",
-        "different r, same IS curve",
-        "same point, different label",
-        "same curve, different axis title"
-      ],
-      "tag": "is_curve",
-      "type": "graph",
-      "objective": "LO12.1",
-      "primarySkill": "is_curve_goods_market",
-      "feedback": "A curve shift changes income at a given interest rate.",
-      "aHash": "83408da367b396d871beef3c0a4d20cb44cdb2de97212a908388e2172346fb0e"
+      "aHash": "47d942b8895b4ecfce62ed39e6ebb934d1c707f18655729ecc08c07160d0bc30"
     },
     {
       "id": 9005,
-      "q": "A tax cut raises consumption by 60, and the spending multiplier is 5 before crowding out. What is the initial IS shift in Y-units?",
+      "q": "A tax cut raises consumption by 60, and the spending multiplier is 5 before crowding out. What is the initial IS shift in output-units?",
       "options": [
         "60 to the right",
         "300 to right",
@@ -5915,49 +5948,49 @@ const questionBanks = {
       "id": 9006,
       "q": "Why can two economies with the same IS intercept respond differently to monetary policy?",
       "options": [
-        "their IS curves must have identical slopes",
-        "the money market never affects IS-LM",
-        "their investment sensitivity can differ",
-        "taxes cannot affect consumption"
+        "Their IS curves must have identical slopes",
+        "The money market never affects IS-LM",
+        "Their investment sensitivity can differ",
+        "Taxes cannot affect consumption"
       ],
       "tag": "is_curve",
       "type": "application",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
-      "feedback": "Monetary policy moves r; the IS slope determines how strongly Y responds through investment.",
+      "feedback": "Monetary policy moves the interest rate; the IS slope determines how strongly output responds through investment.",
       "aHash": "9117deefd172feed8cce69ac6219015d339e4648c0fd7c76caf3f7a2366ddf72"
     },
     {
       "id": 9007,
       "q": "In deriving IS from the Keynesian cross, what does each lower interest rate do before the IS point is plotted?",
       "options": [
-        "lowers investment and shifts PE downward",
-        "raises money demand and shifts LM left",
-        "changes LRAS and fixes Y",
-        "raises investment and shifts PE upward"
+        "Lowers investment and shifts planned expenditure downward",
+        "Raises money demand and shifts the LM curve to the left",
+        "Changes LRAS and fixes output",
+        "Raises investment and shifts planned expenditure upward"
       ],
       "tag": "is_curve",
       "type": "interpretation",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
-      "feedback": "Each r produces a separate Keynesian-cross equilibrium level of income.",
-      "aHash": "1ca78fc6525d0801524a5449669ddb14c445c06f2ffb43c9bc7293cb4e624f9b"
+      "feedback": "Each interest rate produces a separate Keynesian-cross equilibrium level of income.",
+      "aHash": "95d19bcd141e69fb3c83360375d27c9cf188b9b3af0ceb2f3e7d3d264ca17b01"
     },
     {
       "id": 9008,
-      "q": "A higher G and a higher T of equal size occur together. Which simple-cross result is most consistent when MPC<1?",
+      "q": "A higher government purchases and a higher taxes of equal size occur together. Which simple Keynesian-cross result is most consistent when MPC<1?",
       "options": [
-        "Y rises by less than the G-only multiplier effect",
-        "income must fall by the tax multiplier alone",
-        "income is unchanged because G equals T",
-        "LM shifts right by the balanced-budget amount"
+        "Output rises less than with the purchases increase alone",
+        "Income must fall by the tax multiplier alone",
+        "Income is unchanged because government purchases equal taxes",
+        "The LM curve shifts to the right by the balanced-budget amount"
       ],
       "tag": "is_curve",
       "type": "trap",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
-      "feedback": "G enters PE dollar-for-dollar; taxes reduce consumption only by MPC times the tax change.",
-      "aHash": "7dc2838383a4ede859cab8ffa0934b4b8471111dd62e02f6cb9ec086daf29432"
+      "feedback": "Government purchases enter planned expenditure dollar-for-dollar; taxes reduce consumption only by MPC times the tax change.",
+      "aHash": "2ef4eeac179493c9efd1242d3b358478757b8dd4ccf92abdf0a4839c2a331481"
     },
     {
       "id": 9009,
@@ -5978,23 +6011,23 @@ const questionBanks = {
     },
     {
       "id": 9010,
-      "q": "What is the cleanest way to tell whether an IS change is slope or intercept?",
+      "q": "What is the most accurate way to tell whether an IS change is slope or intercept?",
       "options": [
-        "check whether the curve is drawn in blue",
-        "assume every policy changes both slope and intercept",
-        "ask whether interest sensitivity or auto. spending changed",
-        "look only at the final interest rate"
+        "Check whether the curve is drawn in blue",
+        "Assume every policy changes both slope and intercept",
+        "Distinguish interest sensitivity from autonomous spending",
+        "Look only at the final interest rate"
       ],
       "tag": "is_curve",
       "type": "integration",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
       "feedback": "Interest sensitivity changes slope; autonomous spending changes the intercept.",
-      "aHash": "bd464d8c1562bd4d1d028c4ee99ae4f852251cbeb395e6a3a4f8d8ffb710ec5c"
+      "aHash": "419f80806adf9f5a99199a29f62150c5da973dd3305fb6888330ca2522a40184"
     },
     {
       "id": 9011,
-      "q": "L(Y,r)=0.5Y−50r, M=3,000, P=10. If Y rises from 800 to 1,000 along LM, how much must r change?",
+      "q": "L(Y,r)=0.5Y−50r, M=3,000, P=10. If output rises from 800 to 1,000 along LM, how much must r change?",
       "options": [
         "fall by 2",
         "rise by 4",
@@ -6011,45 +6044,45 @@ const questionBanks = {
     },
     {
       "id": 9012,
-      "q": "A central bank wants to cut r from 6 to 4. Money demand is 1,000 − 60r and P=5. How much must nominal M change?",
+      "q": "A central bank wants to cut r from 6 to 4. Money demand is 1,000 − 60r and P=5. How much must nominal money supply change?",
       "options": [
-        "increase by 600",
-        "increase by 120",
-        "decrease by 600",
-        "decrease by 120"
+        "Increase by 600",
+        "Increase by 120",
+        "Decrease by 600",
+        "Decrease by 120"
       ],
       "tag": "lm_curve",
       "type": "calculation",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
-      "feedback": "Real demand rises from 640 to 760, so real balances must rise by 120. Nominal M rises by 120×5=600.",
+      "feedback": "Real demand rises from 640 to 760, so real balances must rise by 120. Nominal the nominal money supply rises by 120×5=600.",
       "hint": "Lower r requires people to hold more real balances.",
       "aHash": "2440db334d5eecf72d3eb66c5ca0b260511089ba687de9ac24c741f53a1e2f26"
     },
     {
       "id": 9013,
-      "q": "A fall in P shifts LM right, but expectations of deflation reduce investment demand. What is ambiguous?",
+      "q": "A fall in the price level shifts the LM curve to the right, but expectations of deflation reduce investment demand. What is ambiguous?",
       "options": [
-        "the direction of LM",
-        "the final change in Y",
-        "the definition of real balances",
-        "whether money demand exists"
+        "The direction of LM",
+        "The final change in output",
+        "The definition of real balances",
+        "Whether money demand exists"
       ],
       "tag": "lm_curve",
       "type": "integration",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
-      "feedback": "LM-right raises Y, while IS-left from weaker investment lowers Y; the net output effect depends on size.",
-      "aHash": "8a4053f5769f9625606c6224dc8c7595025fa5a9678181aa2585dbc1e65e2eba"
+      "feedback": "A rightward shift of the LM curve raises output, while a leftward shift of the IS curve from weaker investment lowers output; the net output effect depends on size.",
+      "aHash": "7d908f41a30addbc8e2ce8b0fe913f58669f8e19b02658a8b345ece207fab7a2"
     },
     {
       "id": 9014,
       "q": "Which statement incorrectly interprets an interest-rate peg?",
       "options": [
-        "the Fed must change M to defend the target",
-        "money demand can change at the target rate",
-        "the LM curve becomes irrelevant since the Fed chooses r",
-        "output can change while the Fed accommodates"
+        "The Fed must change the nominal money supply to defend the target",
+        "Money demand can change at the target rate",
+        "The LM curve becomes irrelevant since the Fed chooses the interest rate",
+        "Output can change while the Fed accommodates"
       ],
       "tag": "lm_curve",
       "type": "trap",
@@ -6057,47 +6090,47 @@ const questionBanks = {
       "primarySkill": "lm_curve_money_market",
       "feedback": "A rate target is implemented through money supply adjustments; money-market logic still matters.",
       "commonError": "thinking a rate target eliminates money-market equilibrium",
-      "aHash": "9cfd3b4aa045fbae6599c7506f1256bb66a9e46ce018289edbff3c8fd1707edd"
+      "aHash": "0900e6bcff6e653476f7e0b3b01f5c74923c12a7e2ee1f26945ed93da0fce322"
     },
     {
       "id": 9015,
       "q": "Using the LM graph, which comparison isolates a money-supply expansion?",
       "options": [
-        "same LM curve, higher Y and higher r",
-        "higher r on a leftward LM curve",
-        "same point with a new label",
-        "same Y, lower r on a rightward LM curve"
+        "Same LM curve, higher output and higher interest rate",
+        "Higher interest rate on a leftward LM curve",
+        "Same point with a new label",
+        "Same output, lower interest rate on a rightward LM curve"
       ],
       "tag": "lm_curve",
       "type": "graph",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
-      "feedback": "At a fixed income, monetary expansion lowers the interest rate by shifting LM right.",
-      "aHash": "4b6b059b4323cac8c5b14670770f9afbd0124fc1e2de7170c9a944b8281f2a6a"
+      "feedback": "At a fixed income, monetary expansion lowers the interest rate by shifting the LM curve to the right.",
+      "aHash": "2353183107bc304bee94371e55c43e9a68ebb860a27e5f287b7e7011602530c5"
     },
     {
       "id": 9016,
-      "q": "If Y rises because IS shifted right and the Fed does nothing, what happens to r and why?",
+      "q": "If output rises because the IS curve shifted to the right and the Fed does nothing, what happens to the interest rate and why?",
       "options": [
-        "r rises because money demand increases",
-        "r falls because investment rises",
-        "r is unchanged because LM shifts right automatically",
-        "r falls because taxes rise"
+        "The interest rate rises because money demand increases",
+        "The interest rate falls because investment rises",
+        "The interest rate is unchanged because the LM curve shifts to the right automatically",
+        "The interest rate falls because taxes rise"
       ],
       "tag": "lm_curve",
       "type": "multi-step",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
       "feedback": "With M/P fixed, higher income pulls the economy upward along LM.",
-      "aHash": "32e2a8509aff596e76d63f834a21fbf0c2840af5b62cc0a63780e2cf2600fb14"
+      "aHash": "39610dfb155b0e3e85251d67c18182e97b9cf90cad9a88a9e6806dfee331dd0a"
     },
     {
       "id": 9017,
       "q": "If money demand becomes less interest-sensitive, what happens to LM and monetary policy transmission?",
       "options": [
-        "LM gets flatter and r moves less",
-        "LM gets steeper & a money shift moves r more",
-        "IS gets steeper and Y cannot move",
+        "LM gets flatter and the interest rate moves less",
+        "LM steepens; a money change moves interest rates more",
+        "IS gets steeper and output cannot move",
         "AD becomes vertical by definition"
       ],
       "tag": "lm_curve",
@@ -6105,44 +6138,28 @@ const questionBanks = {
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
       "feedback": "Less interest sensitivity means the interest rate must adjust more to clear money markets.",
-      "aHash": "22b7b506db9a4a70f2497e9b7fad7c9a16f8172aae8802e243d6f01e6436959d"
-    },
-    {
-      "id": 9018,
-      "q": "Why does the price-level channel behind AD run through LM rather than IS first?",
-      "options": [
-        "P directly changes government purchases",
-        "P fixes investment at zero",
-        "P changes real balances M/P",
-        "P changes taxes automatically"
-      ],
-      "tag": "lm_curve",
-      "type": "interpretation",
-      "objective": "LO12.2",
-      "primarySkill": "lm_curve_money_market",
-      "feedback": "A lower P raises M/P, shifts LM right, lowers r, and raises Y along AD.",
-      "aHash": "8d69abf217370a19f2040e92aed23b12cb788798102790c71929cae7e4d11440"
+      "aHash": "cb7d61d5b4aed76912977a511d70602f0dfd52392702935c020776a823a626ac"
     },
     {
       "id": 9019,
-      "q": "A student says higher P raises nominal money demand, so LM shifts right. What is the best correction?",
+      "q": "A student says higher price level raises nominal money demand, so the LM curve shifts to the right. What is the best correction?",
       "options": [
-        "higher P always shifts IS right",
-        "higher P raises real balances one-for-one",
-        "higher P leaves M/P unchanged",
-        "higher P lowers M/P when M is fixed, so LM left"
+        "Higher prices always raise autonomous spending and shift IS to the right",
+        "Higher price level raises real balances one-for-one",
+        "Higher price level leaves M/P unchanged",
+        "With nominal money fixed, higher prices reduce M/P and shift LM left"
       ],
       "tag": "lm_curve",
       "type": "trap",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
-      "feedback": "In the basic model, LM is drawn with real balances. Fixed M and higher P reduce M/P.",
+      "feedback": "The LM curve describes money-market equilibrium in real balances. With nominal money fixed, a higher price level reduces M/P and shifts LM to the left.",
       "commonError": "wrong sign on the price-level effect",
-      "aHash": "fbc46b62b057230f6ff5ef90864b58376547af1a3514cc415b49782511b4c7e5"
+      "aHash": "6f333f6db92b0b21257bd8d3f292b8fa04c2c4e1c9ca0c790d2fce27d0a51846"
     },
     {
       "id": 9020,
-      "q": "Money demand is L = 0.3Y + 200 − 20r. At Y=2,000 and r=10, what nominal M is needed if P=4?",
+      "q": "Money demand is L = 0.3Y + 200 − 20r. At Y=2,000 and r=10, what nominal money supply is needed if P=4?",
       "options": [
         "2,400",
         "600",
@@ -6161,34 +6178,34 @@ const questionBanks = {
       "id": 9021,
       "q": "Which policy keeps LM from shifting left after a higher price level?",
       "options": [
-        "raise taxes in proportion to P",
-        "increase nominal M in proportion to P",
-        "lower G by the change in P",
-        "reduce investment demand"
+        "Raise taxes in proportion to the price level",
+        "Increase nominal money supply in proportion to the price level",
+        "Lower government purchases by the change in the price level",
+        "Reduce investment demand"
       ],
       "tag": "lm_curve",
       "type": "integration",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
-      "feedback": "To hold real balances steady when P rises, M must rise as well.",
-      "aHash": "d586024be2537d9bf462195c31c210a96a158ea7356b877e78658869e8eff593"
+      "feedback": "To hold real balances steady when the price level rises, the nominal money supply must rise as well.",
+      "aHash": "44a484a0866b5f99fa32d492420bddd7bbce4122d356ef0dffac59dfb9a15d6a"
     },
     {
       "id": 9022,
       "q": "C=200+0.75(Y−200), I=600−50r, G=525, and LM is r=0.01Y−12. What is equilibrium Y?",
       "options": [
-        "2,400",
-        "2,200",
-        "2,600",
-        "2,800"
+        "About 2,366.67",
+        "About 2,200.00",
+        "About 2,600.00",
+        "About 2,800.00"
       ],
       "tag": "is_lm_equilibrium",
       "type": "calculation",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
-      "feedback": "Goods market gives Y=4,700−200r. Substitute r=0.01Y−12: Y=4,700−2Y+2,400, so 3Y=7,200 and Y=2,400.",
+      "feedback": "Substitute LM into IS: Y=4700−200(0.01Y−12)=7100−2Y. Thus 3Y=7100 and Y=7100/3≈2366.67.",
       "hint": "Derive IS, then substitute LM.",
-      "aHash": "e50de96a9c363587c021b4a65a8f1846b2f3484819649bdd244f496d9033dc14"
+      "aHash": "11fba3aa37a33bce7d53754215a5dbe9b4b27bccbb9148c90678cd4bec2af819"
     },
     {
       "id": 9023,
@@ -6208,28 +6225,28 @@ const questionBanks = {
     },
     {
       "id": 9024,
-      "q": "IS shifts right, LM shifts left, and Y is unchanged. What must happen to r?",
+      "q": "The IS curve shifts to the right, the LM curve shifts to the left, and output is unchanged. What must happen to the interest rate?",
       "options": [
-        "r falls",
-        "r is unchanged",
-        "r rises",
-        "r becomes negative by necessity"
+        "The interest rate falls",
+        "The interest rate is unchanged",
+        "The interest rate rises",
+        "The interest rate becomes negative by necessity"
       ],
       "tag": "is_lm_equilibrium",
       "type": "integration",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
-      "feedback": "Both shifts raise the interest rate; equal output effects can leave Y unchanged.",
-      "aHash": "050fb4b2fe956f56240f466531c0394f4d4d8a45991d35abbe2f598685811f4e"
+      "feedback": "Both shifts raise the interest rate; equal output effects can leave output unchanged.",
+      "aHash": "7ba75e7932ae87b7fdbf8c6dfb26f14813a361d21a4dbb1df7be2d4373d29e43"
     },
     {
       "id": 9025,
       "q": "Which answer mistakes a new equilibrium for a disequilibrium path?",
       "options": [
-        "the economy moves to the intersection",
-        "r and Y are read at the crossing point",
-        "curve shifts are compared by old and new intersections",
-        "the economy stays between the curves after adjustment is complete"
+        "The economy moves to the intersection",
+        "The interest rate and output are read at the crossing point",
+        "Curve shifts are compared by old and new intersections",
+        "Adjustment ends with the economy between the curves"
       ],
       "tag": "is_lm_equilibrium",
       "type": "trap",
@@ -6237,13 +6254,13 @@ const questionBanks = {
       "primarySkill": "is_lm_equilibrium",
       "feedback": "The model solution is the new intersection, not a permanent off-curve position.",
       "commonError": "stopping before the new intersection",
-      "aHash": "d839d17896924273dfac4a6ce4c2a7bfcd777eaa989cb8df65321b8d4117bc51"
+      "aHash": "b88d073f1cf40840695dad9d7e197d68725b1901b3f35a5b1b8b958f23a99d20"
     },
     {
       "id": 9026,
-      "q": "On the IS-LM graph, which move shows fiscal expansion followed by monetary tightening that leaves Y at Y3?",
+      "q": "Refer to the IS–LM graph. Starting at H on the IS-LM graph, which move combines fiscal expansion and monetary tightening while leaving income at Y3?",
       "options": [
-        "A to D",
+        "H to D",
         "A to B",
         "D to G",
         "H to E"
@@ -6253,76 +6270,76 @@ const questionBanks = {
       "objective": "LO12.3",
       "image": "is_lm_curves.webp",
       "primarySkill": "is_lm_equilibrium",
-      "feedback": "A to D combines IS moving right and LM moving left, ending at the same Y but higher r.",
-      "aHash": "a1029f6c82ff63b6ba6822852f8ff5aae89377e02d6f9ee5123991c8c60e22d4"
+      "feedback": "H is IS1∩LM3 and D is IS2∩LM2. The IS curve shifts to the right and the LM curve shifts to the left; output stays at Y3 while the interest rate rises from r4 to r2.",
+      "aHash": "8653774a13c2e963b46d2c0183786224623320c97c204aefc9a272c488bad5cc"
     },
     {
       "id": 9027,
-      "q": "A spending boom raises Y and r. If the central bank wants the original Y restored, what curve movement can do it?",
+      "q": "A spending boom raises output and the interest rate. If the central bank wants the original output restored, what curve movement can do it?",
       "options": [
-        "LM shifts right further",
-        "LM left enough to offset IS-right",
-        "IS shifts right again",
+        "Shift LM farther right to reinforce the initial spending increase",
+        "Shift LM far enough left to restore the original output",
+        "The IS curve shifts to the right again",
         "AD moves down with no curve shift"
       ],
       "tag": "is_lm_equilibrium",
       "type": "multi-step",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
-      "feedback": "Tighter money can counter the demand expansion by raising r and lowering investment.",
-      "aHash": "964bbf32f9a4e5e373089330c2547d13bde4a4e8b9006f121910373526b0b1f6"
+      "feedback": "Tighter money can counter the demand expansion by raising the interest rate and lowering investment.",
+      "aHash": "4097c4829c0ce3b22ce1769c04f3b6447fc70b557a1691d46f66aa4a4d5e173a"
     },
     {
       "id": 9028,
-      "q": "Why can stabilizing r fail to stabilize Y after an IS shock?",
+      "q": "Why can stabilizing the interest rate fail to stabilize output after an IS shock?",
       "options": [
-        "Y depends only on LM",
+        "Output depends only on LM",
         "IS shocks cannot change spending",
-        "the IS shift can change Y even at the old r",
-        "r determines natural output"
+        "IS shifts can change output at a fixed interest rate",
+        "The interest rate alone determines the economy’s natural output"
       ],
       "tag": "is_lm_equilibrium",
       "type": "application",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
-      "feedback": "Holding r constant removes one channel but does not erase the direct spending shift.",
-      "aHash": "4b6985c855dcc662dc4095e995daf23024b5a86c2eb7c1eb5b437104602c00b7"
+      "feedback": "Holding the interest rate constant removes one channel but does not erase the direct spending shift.",
+      "aHash": "d67221095828e6a64cd28c55b73af49d1f1066b335ca41b3606b49a1ef0a3391"
     },
     {
       "id": 9029,
       "q": "What should be reported when both curves shift and one variable is ambiguous?",
       "options": [
-        "only the old equilibrium",
-        "nothing because ambiguity means failure",
-        "only the first variable mentioned",
-        "the definite variable & the condition for the ambiguous one"
+        "Only the old equilibrium",
+        "Report no result because an ambiguous effect makes the entire analysis invalid",
+        "Only the first variable mentioned",
+        "What is certain and what determines the uncertain result"
       ],
       "tag": "is_lm_equilibrium",
       "type": "interpretation",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
       "feedback": "A good IS-LM answer separates what is determinate from what depends on relative shift size.",
-      "aHash": "596c9a63d81507cb2003fdde188387c73e2c9e457ab691813e6116fa1dabeeda"
+      "aHash": "fa7e2f91ed105d74e3842d533f70988761d61bae0321c9a1cc88327ab31baca0"
     },
     {
       "id": 9030,
-      "q": "A student says IS-right plus LM-left must raise Y because one curve shifts right. What is missing?",
+      "q": "A student claims that a rightward shift of the IS curve combined with a leftward shift of the LM curve must raise equilibrium output. What does this claim overlook?",
       "options": [
-        "LM-left pushes Y down & may dominate",
-        "IS-right always lowers Y",
-        "LM-left always raises Y",
-        "the graph has no income axis"
+        "The LM shift lowers output and may outweigh the IS shift",
+        "A rightward shift of the IS curve always lowers output",
+        "A leftward shift of the LM curve always raises output",
+        "The graph has no income axis"
       ],
       "tag": "is_lm_equilibrium",
       "type": "trap",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
-      "feedback": "Opposing output effects make Y ambiguous unless the relative magnitudes are known.",
-      "aHash": "7a6f6b285dd1efda4c4b2fbba941ffcec9074249975cfc0d494ff31d5af730a4"
+      "feedback": "Opposing output effects make output ambiguous unless the relative magnitudes are known.",
+      "aHash": "a7f08481ea2840d08f48456e23d7ca85db8ce7848af18d7de41b750586ef48bd"
     },
     {
       "id": 9031,
-      "q": "IS is Y=6,000−300r and LM is Y=1,500+450r. If IS shifts left by 750, what is the new equilibrium r?",
+      "q": "IS is Y=6,000−300r and LM is Y=1,500+450r. If the IS curve shifts to the left by 750, what is the new equilibrium r?",
       "options": [
         "4",
         "5",
@@ -6341,53 +6358,53 @@ const questionBanks = {
       "id": 9032,
       "q": "Which statement best handles a two-policy mix in IS-LM?",
       "options": [
-        "average the two policy names",
-        "ignore the smaller-looking curve",
-        "state each curve shift, then read the net effect on Y & r",
-        "assume all policy mixes raise Y"
+        "Average the two policy names",
+        "Ignore the smaller-looking curve",
+        "Combine both shifts to assess output and interest",
+        "Assume that any combination of policies increases output"
       ],
       "tag": "is_lm_equilibrium",
       "type": "integration",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
       "feedback": "Mixed policy analysis starts with separate curve shifts and then compares their effects.",
-      "aHash": "7154110897fb5452e1d70d1e0965bc49cbc62344b34992b5860e31db0d05f589"
+      "aHash": "55520cd00cdaf57188c1b5baab8c8fb166d50d07fa98e3fd7eaef4965d8668d3"
     },
     {
       "id": 9033,
       "q": "A recession follows two forces: autonomous spending falls, but the price level also falls. What is ambiguous in IS-LM?",
       "options": [
-        "r, because both forces raise it",
-        "the LM shift, because P has no effect",
-        "the IS shift, because spending cannot fall",
-        "Y, because IS-left and LM-right oppose"
+        "The interest rate, because both changes raise it",
+        "The direction of the LM shift, because the price level has no effect",
+        "The direction of the IS shift, because spending cannot fall",
+        "Output: the IS and LM shifts have opposing effects"
       ],
       "tag": "shocks",
       "type": "application",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "Lower spending shifts IS left; lower P raises real balances and shifts LM right.",
-      "aHash": "03cde2971fa7f1d76b26ddf1761aab9d8e63b9da1d61d0b5967e1ff9128b2d99"
+      "feedback": "Lower spending shifts the IS curve to the left; lower price level raises real balances and shifts the LM curve to the right.",
+      "aHash": "fcf449aa8996a48cc2e0aabf991f4855b20cd4fde3971ebbfb40bb77cd9f1192"
     },
     {
       "id": 9034,
-      "q": "A policy response raises G while a banking panic raises money demand. What is the sure effect on r?",
+      "q": "A policy response raises government purchases while a banking panic raises money demand. What is the sure effect on the interest rate?",
       "options": [
-        "r rises",
-        "r falls",
-        "r is unchanged",
-        "r disappears from the model"
+        "The interest rate rises",
+        "The interest rate falls",
+        "The interest rate is unchanged",
+        "The interest rate disappears from the model"
       ],
       "tag": "shocks",
       "type": "application",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "Fiscal expansion and LM-left both push r upward; Y is ambiguous.",
-      "aHash": "050fb4b2fe956f56240f466531c0394f4d4d8a45991d35abbe2f598685811f4e"
+      "feedback": "Fiscal expansion and a leftward shift of the LM curve both push the interest rate upward; output is ambiguous.",
+      "aHash": "7ba75e7932ae87b7fdbf8c6dfb26f14813a361d21a4dbb1df7be2d4373d29e43"
     },
     {
       "id": 9035,
-      "q": "On the IS-LM graph, which move keeps Y at Y3 but raises r?",
+      "q": "Refer to the IS–LM graph. Which move keeps Y at Y3 but raises the interest rate?",
       "options": [
         "D to G",
         "H to D",
@@ -6404,12 +6421,12 @@ const questionBanks = {
     },
     {
       "id": 9036,
-      "q": "A student sees lower P during a slump and says falling prices always fix the shock. What is missing?",
+      "q": "A student sees lower price level during a slump and says falling prices always fix the shock. What is missing?",
       "options": [
-        "lower P cannot affect real balances",
-        "falling prices always shift IS right",
-        "deflation can raise real rs & reduce spending",
-        "money demand must be zero"
+        "Lower price level cannot affect real balances",
+        "Falling prices always shift the IS curve to the right",
+        "Deflation can raise real rates and depress spending",
+        "Money demand must be zero"
       ],
       "tag": "shocks",
       "type": "trap",
@@ -6417,11 +6434,11 @@ const questionBanks = {
       "primarySkill": "shock_transmission",
       "feedback": "Real-balance effects can help, but expected deflation can depress IS.",
       "commonError": "assuming one channel dominates without evidence",
-      "aHash": "f6f92cbfc5e961b3c8bd8aac3fb79ea65ed7883411904d3f2ade3d02223bfb5f"
+      "aHash": "a191bc548e78d05caece947a867f35278011dea173d01a69caf288ba128fcf2c"
     },
     {
       "id": 9037,
-      "q": "Autonomous spending falls by 60 with MPC=0.75, while monetary expansion independently raises demand by 120 in Y-units. What is net ΔY before further feedback?",
+      "q": "Autonomous spending falls by 60 and the marginal propensity to consume is 0.75. Separately, monetary expansion raises output by 120 before any further interaction between the policies. Combining these initial effects, what is the net change in output?",
       "options": [
         "−240",
         "−60",
@@ -6438,7 +6455,7 @@ const questionBanks = {
     },
     {
       "id": 9038,
-      "q": "Money demand rises by 80 real units. P=5. The Fed raises M by 250. What is the remaining real shortage?",
+      "q": "Money demand rises by 80 real units. P=5. The Fed raises the nominal money supply by 250. What is the remaining real shortage?",
       "options": [
         "30",
         "0",
@@ -6455,44 +6472,44 @@ const questionBanks = {
     },
     {
       "id": 9039,
-      "q": "Which two-shock case makes Y definitely fall but r ambiguous?",
+      "q": "Which combination of shifts definitely lowers equilibrium output but has an interest-rate effect that depends on the relative sizes of the shifts?",
       "options": [
-        "IS-right plus LM-right",
-        "IS-left plus LM-left",
-        "IS-right plus LM-left",
-        "IS-left plus LM-right"
+        "A rightward shift of the IS curve plus a rightward shift of the LM curve",
+        "A leftward shift of the IS curve plus a leftward shift of the LM curve",
+        "A rightward shift of the IS curve plus a leftward shift of the LM curve",
+        "A leftward shift of the IS curve plus a rightward shift of the LM curve"
       ],
       "tag": "shocks",
       "type": "integration",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "Both leftward shifts reduce Y, but IS-left lowers r while LM-left raises r.",
-      "aHash": "41fc147be0f2671769180fcf99e9eb561b6a84d02d6536a65d75dbc3b0f728a3"
+      "feedback": "Both leftward shifts reduce output, but a leftward shift of the IS curve lowers the interest rate while a leftward shift of the LM curve raises the interest rate.",
+      "aHash": "1850fd3df8eed3db31595a53d1ad259d471f362d52b1ad81bd454fb36874df63"
     },
     {
       "id": 9040,
-      "q": "Which two-shock case makes r definitely fall but Y ambiguous?",
+      "q": "Which two-shock case makes the interest rate definitely fall but output ambiguous?",
       "options": [
-        "IS-right plus LM-left",
-        "IS-left plus LM-left",
-        "IS-left plus LM-right",
-        "IS-right plus LM-right"
+        "A rightward shift of the IS curve plus a leftward shift of the LM curve",
+        "A leftward shift of the IS curve plus a leftward shift of the LM curve",
+        "A leftward shift of the IS curve plus a rightward shift of the LM curve",
+        "A rightward shift of the IS curve plus a rightward shift of the LM curve"
       ],
       "tag": "shocks",
       "type": "integration",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "Both shifts lower r, but their output effects oppose.",
-      "aHash": "ee771bd4a293e408297fcd55511f4966c2c2d242e4ff03e41e8ab79ebfd489ff"
+      "feedback": "Both shifts lower the interest rate, but their output effects oppose each other.",
+      "aHash": "50c936d58a8f9e8f73cb6eb1d17328bf177475a4f641a3f0297e8c93f58bb247"
     },
     {
       "id": 9041,
-      "q": "A crisis raises money demand, then higher r lowers investment, then Y falls. Which market transmits the first step?",
+      "q": "A crisis raises money demand. The resulting higher interest rate reduces investment, and output falls. Which market transmits the first step?",
       "options": [
-        "the goods market through G",
-        "the labor market through wages",
-        "the long-run supply side",
-        "the money market"
+        "The goods market through government purchases",
+        "The labor market through wages",
+        "The long-run supply side",
+        "The money market"
       ],
       "tag": "shocks",
       "type": "multi-step",
@@ -6505,7 +6522,7 @@ const questionBanks = {
       "id": 9042,
       "q": "Why should a shock answer include both curve and variable movement?",
       "options": [
-        "curve movement identifies cause; variables describe outcome",
+        "Shifts identify causes; variables show outcomes",
         "variables alone identify every cause",
         "curve movement replaces the need for outcomes",
         "neither matters if a graph is present"
@@ -6515,44 +6532,44 @@ const questionBanks = {
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
       "feedback": "Good diagnosis separates mechanism from result.",
-      "aHash": "5a9b49b6fdcd7cd6523cb3a4b71674ac29bde91fa79880e7162507e69b0d3565"
+      "aHash": "cff4f2de7f2dc31335122445b4fa532f4c2d0f446a2f7a1b27f7d13f3e73b478"
     },
     {
       "id": 9043,
       "q": "Which response is too confident without shift sizes?",
       "options": [
-        "IS-right plus LM-left means r rises",
-        "IS-right plus LM-left means Y must rise",
-        "IS-left plus LM-left means Y falls",
-        "IS-left plus LM-right means r falls"
+        "A rightward shift of the IS curve plus a leftward shift of the LM curve means the interest rate rises",
+        "A rightward shift of the IS curve plus a leftward shift of the LM curve means output must rise",
+        "A leftward shift of the IS curve plus a leftward shift of the LM curve means output falls",
+        "A leftward shift of the IS curve plus a rightward shift of the LM curve means the interest rate falls"
       ],
       "tag": "shocks",
       "type": "trap",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "With opposing output effects, Y needs relative magnitudes.",
-      "aHash": "30613549b8532bd11cefa401b18f5d6550f5439627b0820d24cc4556f9a5d11b"
+      "feedback": "With opposing output effects, output needs relative magnitudes.",
+      "aHash": "22496caeac95d362312bf4b88f6fbb56a88729a35cf6ac035070ca863b829394"
     },
     {
       "id": 9044,
-      "q": "MPC=0.75. G rises by 60, T rises by 20, and investment later falls by 50. What is net ΔY using simple multiplier logic?",
+      "q": "The marginal propensity to consume is 0.75. Government purchases rise by 60, taxes rise by 20, and investment spending subsequently falls by 50. Applying the simple Keynesian-cross multipliers to these changes, what is the net change in output?",
       "options": [
         "190",
         "240",
-        "130",
+        "−20",
         "310"
       ],
       "tag": "fiscal_policy",
       "type": "calculation",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "G effect=240; tax effect=−60; investment offset=−50; net=130.",
+      "feedback": "With MPC=0.75, ΔY=(ΔG−0.75ΔT+ΔI)/(1−0.75)=(60−15−50)/0.25=−20. The fall in investment is a spending change, not an already-multiplied output loss.",
       "hint": "Apply each component once.",
-      "aHash": "38d66d9692ac590000a91b03a88da1c88d51fab2b78f63171f553ecc551a0c6f"
+      "aHash": "79c3378d277dccd9b0d3fa275aa3b54c66e92f0bf118ee5ddef2ee904af89563"
     },
     {
       "id": 9045,
-      "q": "MPC=0.8. A tax rebate of 100 has only 60% spent in the first round. What is the simple-cross ΔY?",
+      "q": "The marginal propensity to consume is 0.8. A tax rebate of 100 generates first-round spending of only 60% of the rebate. Applying the spending multiplier to that initial spending, what is the total change in output?",
       "options": [
         "500",
         "400",
@@ -6569,28 +6586,28 @@ const questionBanks = {
     },
     {
       "id": 9046,
-      "q": "Fiscal expansion plus central-bank tightening has what certain effect?",
+      "q": "If fiscal expansion is accompanied by central-bank monetary tightening, which equilibrium outcome is certain?",
       "options": [
-        "r rises",
-        "Y rises",
-        "Y falls",
-        "r falls"
+        "The interest rate rises",
+        "Output rises",
+        "Output falls",
+        "The interest rate falls"
       ],
       "tag": "fiscal_policy",
       "type": "integration",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "IS-right and LM-left both raise r; output is ambiguous.",
-      "aHash": "050fb4b2fe956f56240f466531c0394f4d4d8a45991d35abbe2f598685811f4e"
+      "feedback": "A rightward shift of the IS curve and a leftward shift of the LM curve both raise the interest rate; output is ambiguous.",
+      "aHash": "7ba75e7932ae87b7fdbf8c6dfb26f14813a361d21a4dbb1df7be2d4373d29e43"
     },
     {
       "id": 9047,
       "q": "Which conclusion is unjustified without knowing LM slope?",
       "options": [
-        "G shifts IS right",
-        "the fiscal multiplier in IS-LM equals the simple-cross multiplier",
-        "tax cuts work through consumption",
-        "higher Y can raise money demand"
+        "Government purchases raise planned spending and shift IS to the right",
+        "IS–LM gives the full simple spending multiplier",
+        "Tax cuts work through consumption",
+        "Higher output can raise money demand"
       ],
       "tag": "fiscal_policy",
       "type": "trap",
@@ -6598,81 +6615,81 @@ const questionBanks = {
       "primarySkill": "fiscal_policy_is_shift",
       "feedback": "The IS-LM multiplier depends on the interest-rate feedback.",
       "commonError": "assuming no crowding out",
-      "aHash": "fbd4c06fc494d7aaeaa89e3c8a436e48ae0c208eb98211ef3d4aad7108569acb"
+      "aHash": "a5195af737036989cd7f38b908a677f38d2c8e9d5796d17fcff4134f9323a563"
     },
     {
       "id": 9048,
-      "q": "On the IS-LM graph, A to D combines which forces?",
+      "q": "Refer to the IS–LM graph. A to D combines which forces?",
       "options": [
-        "IS left and LM right",
-        "IS right and LM right",
-        "IS right and LM left",
-        "IS left and LM left"
+        "The IS curve shifts to the left and the LM curve shifts to the right",
+        "The IS curve shifts to the right and the LM curve shifts to the right",
+        "The IS curve shifts to the right and the LM curve shifts to the left",
+        "The IS curve shifts to the left and the LM curve shifts to the left"
       ],
       "tag": "fiscal_policy",
       "type": "graph",
       "objective": "LO13.2",
       "image": "is_lm_curves.webp",
       "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "A to D has higher r at the same Y, consistent with fiscal expansion offset by monetary contraction.",
-      "aHash": "ed63717bbcd12bcb8c159472f9fb88cc3c7ea7564d67e23478e211ca16643c0a"
+      "feedback": "A is IS1∩LM1 and D is IS2∩LM2. IS and LM both shift right. Income rises from Y1 to Y3, while the two policies offset each other’s interest-rate effects at r2.",
+      "aHash": "30faf0bb5840012fc884b13aba61657cd19ac45cfe22400e4a3d215e22bf0b2c"
     },
     {
       "id": 9049,
-      "q": "A temporary G increase occurs when consumers expect future taxes. What should be checked before predicting the IS shift size?",
+      "q": "A temporary government purchases increase occurs when consumers expect future taxes. What should be checked before predicting the IS shift size?",
       "options": [
         "LM must shift left first",
-        "money supply must rise automatically",
+        "The money supply must rise without any central-bank response",
         "LRAS must change before IS",
-        "private C may fall from expected tax burdens"
+        "Expected taxes may lower consumption"
       ],
       "tag": "fiscal_policy",
       "type": "multi-step",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
       "feedback": "Expectations can reduce the net demand effect of fiscal expansion.",
-      "aHash": "2f2ce424bdc40739459ee353e6323697466cafeedb6106ceaff720cf460b9437"
+      "aHash": "00121acf4075970028db78d8e7386cab631ca5f1ad34f5036b1a6a01e5fe47e9"
     },
     {
       "id": 9050,
-      "q": "If policymakers want maximum short-run Y from fiscal expansion, which supporting policy helps?",
+      "q": "If policymakers want maximum short-run output from fiscal expansion, which supporting policy helps?",
       "options": [
-        "monetary accommodation",
-        "monetary contraction",
-        "higher money demand",
-        "lower transfers"
+        "Monetary accommodation",
+        "Monetary contraction",
+        "Higher money demand",
+        "Lower transfers"
       ],
       "tag": "fiscal_policy",
       "type": "application",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "Accommodation limits r increases and investment crowding out.",
+      "feedback": "Accommodation limits interest-rate increases and investment crowding out.",
       "aHash": "643506108135ab0a5143034e72165593fe6e68fa7ec16e9294e4f9a47ba2c278"
     },
     {
       "id": 9051,
       "q": "Why does fiscal policy have both direct and indirect effects in IS-LM?",
       "options": [
-        "it directly changes money supply and indirectly changes G",
-        "it directly spending & indirectly changes r through Md",
-        "it directly moves LRAS and indirectly moves taxes",
-        "it directly sets inflation expectations only"
+        "It directly changes money supply and indirectly changes government purchases",
+        "It changes spending, then interest rates through money demand",
+        "It directly shifts LRAS and indirectly changes taxes",
+        "It directly sets only inflation expectations"
       ],
       "tag": "fiscal_policy",
       "type": "interpretation",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "Goods-market policy spills into money markets through income.",
-      "aHash": "2bc82033c11615937c90adaf4c3e0cc547c9895e130d265445753d79b7a81873"
+      "feedback": "Fiscal policy first changes planned spending and shifts IS. The resulting income change affects money demand, which changes the interest rate along LM. That interest-rate response can then affect investment.",
+      "aHash": "89f1a14535a8b7ea5c2374bafb74f6985a9de6a73f12ad18861fe6d7fdd00bc5"
     },
     {
       "id": 9052,
       "q": "Which answer double counts a tax cut?",
       "options": [
-        "derive the IS shift from the tax multiplier",
-        "solve the new IS-LM intersection",
-        "shift IS right & then add the tax multiplier again after solving",
-        "separate policy shock from equilibrium result"
+        "Use the tax multiplier to derive the IS shift before solving for equilibrium",
+        "Solve the new IS-LM intersection",
+        "Add the tax multiplier again after solving the shifted IS–LM system",
+        "Separate policy shock from equilibrium result"
       ],
       "tag": "fiscal_policy",
       "type": "trap",
@@ -6680,11 +6697,11 @@ const questionBanks = {
       "primarySkill": "fiscal_policy_is_shift",
       "feedback": "Once the IS shift is built into the curve, do not add it again.",
       "commonError": "double-counting fiscal effects",
-      "aHash": "309a4a39de08044af0f96747da21ed798009a3756168c9d751a338ee02cea08d"
+      "aHash": "c7726c528a33621330e52500581bce109a86a29be7913e3443d49a4fcf4cbe3f"
     },
     {
       "id": 9053,
-      "q": "MPC=0.6. A balanced-budget increase of 90 changes simple-cross Y by how much?",
+      "q": "In the simple Keynesian-cross model, the marginal propensity to consume is 0.6. Government purchases and lump-sum taxes both rise by 90. How much does equilibrium output change?",
       "options": [
         "0",
         "135",
@@ -6701,19 +6718,19 @@ const questionBanks = {
     },
     {
       "id": 9054,
-      "q": "Which policy mix can raise Y while leaving investment roughly unchanged?",
+      "q": "Which policy mix can raise output while leaving investment roughly unchanged?",
       "options": [
-        "fiscal expansion with enough monetary accommodation to hold r steady",
-        "fiscal expansion with monetary contraction",
-        "tax increases with money contraction",
-        "G cuts with higher money demand"
+        "Fiscal expansion with money growth sufficient to keep interest stable",
+        "Fiscal expansion combined with a monetary contraction that raises interest",
+        "Tax increases with money contraction",
+        "Government purchases cuts with higher money demand"
       ],
       "tag": "fiscal_policy",
       "type": "integration",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "If r is held steady, the interest-sensitive investment offset is muted.",
-      "aHash": "6f6c07b6110078412b86b8eb3cae6c59e87ee08ec46c2faaf4ba3fb5087095ec"
+      "feedback": "If the interest rate is held steady, the interest-sensitive investment offset is muted.",
+      "aHash": "a0373fc76e088d6a9dc1432ba2d37ade625dcef2cb4583565d354e0dfac25d9e"
     },
     {
       "id": 9055,
@@ -6734,12 +6751,12 @@ const questionBanks = {
     },
     {
       "id": 9056,
-      "q": "M rises 20%, P rises 10%, and initial M/P is 500. What is new M/P?",
+      "q": "The nominal money supply rises 20%, the price level rises 10%, and initial M/P is 500. What is new M/P?",
       "options": [
-        "550",
-        "600",
+        "about 550.0",
+        "about 600.0",
         "about 545.5",
-        "500"
+        "about 500.0"
       ],
       "tag": "monetary_policy",
       "type": "calculation",
@@ -6753,26 +6770,26 @@ const questionBanks = {
       "id": 9057,
       "q": "Monetary expansion and expected deflation occur together. What is ambiguous?",
       "options": [
-        "the direction of the money-supply change",
-        "whether M/P appears in LM",
-        "the definition of output",
-        "I response if nominal r falls but real r may rise"
+        "Whether the central bank increases or decreases the nominal money supply",
+        "Whether M/P appears in LM",
+        "The definition of output",
+        "Investment, if nominal rates fall but real rates rise"
       ],
       "tag": "monetary_policy",
       "type": "integration",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
       "feedback": "Borrowing decisions depend on real rates, not just nominal rates.",
-      "aHash": "a299da49d5cc465d1c68b5423c95ba1051b2d35dd2c955694a4499b7501c36af"
+      "aHash": "a75a2c91f31d29b12fa6ce9d2582125e50bf9c3e2ee842903c8371cf55b9338c"
     },
     {
       "id": 9058,
       "q": "Which answer double counts monetary policy?",
       "options": [
-        "shift LM right & then separately add another I increase after solving",
-        "shift LM right from higher M",
-        "solve the new intersection",
-        "explain lower r raises investment"
+        "Shift LM, solve, then add an investment increase a second time",
+        "Shift the LM curve to the right from higher nominal money supply",
+        "Solve the new intersection",
+        "Explain how a lower interest rate raises investment"
       ],
       "tag": "monetary_policy",
       "type": "trap",
@@ -6780,14 +6797,14 @@ const questionBanks = {
       "primarySkill": "monetary_policy_lm_shift",
       "feedback": "The investment response is already reflected in movement along IS to the new equilibrium.",
       "commonError": "double-counting monetary transmission",
-      "aHash": "e338396084520054fc8fef977775c25289302c5c74bf408d55507c9f37b1f6f6"
+      "aHash": "d60256dc87e8953e29c7207f555f99c98f49753dbfd2a41357031da7caa80c75"
     },
     {
       "id": 9059,
-      "q": "On the IS-LM graph, which move shows monetary contraction after fiscal expansion from B?",
+      "q": "Refer to the IS–LM graph. After fiscal expansion moves the economy from F to D on the IS-LM graph, which move shows monetary contraction with IS2 fixed?",
       "options": [
         "B to E",
-        "B to D",
+        "D to B",
         "A to B",
         "D to H"
       ],
@@ -6796,65 +6813,65 @@ const questionBanks = {
       "objective": "LO13.3",
       "image": "is_lm_curves.webp",
       "primarySkill": "monetary_policy_lm_shift",
-      "feedback": "B to D shifts LM left while holding IS2 fixed.",
-      "aHash": "e4b94f65e481fceadb1489b40322d31ebb43859635fd396928f9f53b87663849"
+      "feedback": "F to D shifts IS1 to IS2. D to B then shifts LM2 to LM1 at unchanged IS2, reducing income and raising the interest rate.",
+      "aHash": "fa4c658f9bfc4a2a5bc0b184ac646a672cbfe261a9dd9cd33495ccc74d81710f"
     },
     {
       "id": 9060,
-      "q": "A rate target is lowered while money demand also rises. What must happen to nominal M?",
+      "q": "A rate target is lowered while money demand also rises. What must happen to nominal money supply?",
       "options": [
-        "it must fall because r is lower",
-        "it can stay fixed if P is fixed",
-        "it must rise by enough to cover both forces",
-        "it must change taxes first"
+        "It must fall because the interest rate is lower",
+        "It can stay fixed if the price level is fixed",
+        "It must rise by enough to cover both forces",
+        "It must change taxes first"
       ],
       "tag": "monetary_policy",
       "type": "multi-step",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
-      "feedback": "Lower r requires more real balances, and higher money demand requires still more.",
+      "feedback": "Supporting a lower interest rate requires more real money balances. The simultaneous increase in money demand requires an additional increase in supply.",
       "aHash": "65ba8bddd1de28f141f1c14f3f972305786299fb29a766b8a3d81f0af6dc8e9d"
     },
     {
       "id": 9061,
-      "q": "If the Fed expands M but banks hoard reserves in a richer setting, what weakens transmission?",
+      "q": "If the Fed expands the nominal money supply but banks hoard reserves in a richer setting, what weakens transmission?",
       "options": [
         "IS must shift right fully",
-        "tax multipliers become infinite",
-        "P must fall by law",
-        "the money multiplier & lending channel may weaken"
+        "The tax multiplier becomes infinitely large",
+        "The price level must fall by law",
+        "Weaker deposit creation and lending"
       ],
       "tag": "monetary_policy",
       "type": "application",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
       "feedback": "Policy implementation can fail to translate into broader money and credit growth.",
-      "aHash": "53684e3dabd2e5078c2ea23ab7a859e041296bfed1aabd446c84c5e16d91337a"
+      "aHash": "5fa6bc2fab5397f01ed17f2629e8132072934f1703c6bcf7596b68c3ba628a5f"
     },
     {
       "id": 9062,
       "q": "Why is “the Fed cut rates” incomplete in IS-LM mechanics?",
       "options": [
-        "the model should show how M adjusts to support that rate",
-        "rates are not part of IS-LM",
-        "rate cuts are fiscal policy",
-        "investment cannot respond to rates"
+        "Money supply must adjust to support that rate",
+        "Rates are not part of IS-LM",
+        "Rate cuts are fiscal policy",
+        "Investment cannot respond to any change in the interest rate"
       ],
       "tag": "monetary_policy",
       "type": "interpretation",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
       "feedback": "A lower target rate is implemented by supplying more money balances.",
-      "aHash": "ba4e8de053d562a62658fbeca92678cb6aa98e3c3625b361414dd7e01a66c635"
+      "aHash": "56ea43a676657e24b6570237d72e941cd0aed2a0ec52131da0f7269ab550bbaa"
     },
     {
       "id": 9063,
-      "q": "A student says monetary expansion raises Y because people are richer from holding money. What is the standard IS-LM correction?",
+      "q": "A student says monetary expansion raises output because people are richer from holding money. What is the standard IS-LM correction?",
       "options": [
-        "the main channel is higher taxes",
-        "the main channel is lower r & higher I",
-        "the main channel is lower G",
-        "the main channel is lower LRAS"
+        "The main channel is higher taxes",
+        "Lower interest rates stimulate investment",
+        "The main channel is lower government purchases",
+        "The main channel is lower LRAS"
       ],
       "tag": "monetary_policy",
       "type": "trap",
@@ -6862,44 +6879,44 @@ const questionBanks = {
       "primarySkill": "monetary_policy_lm_shift",
       "feedback": "The standard transmission mechanism is the interest-rate channel.",
       "commonError": "using a wealth story instead of LM transmission",
-      "aHash": "787b49d6d9feabd079294cae498dd45821158abb2df13917c5950e743954dcbb"
+      "aHash": "c146351e1ac63c3da145d862e4fd74bdee94871aba33b52c3d2eabe83d5d29e9"
     },
     {
       "id": 9064,
-      "q": "At target r, real money demand rises from 250 to 310. P rises from 8 to 10. How much must nominal M change?",
+      "q": "At the central bank’s target interest rate, real money demand rises from 250 to 310 units. The price level also rises from 8 to 10. How much must nominal money supply change to maintain the target?",
       "options": [
-        "increase by 60",
-        "increase by 620",
-        "increase by 1,100",
-        "decrease by 1,100"
+        "Increase by 60",
+        "Increase by 620",
+        "Increase by 1,100",
+        "Decrease by 1,100"
       ],
       "tag": "monetary_policy",
       "type": "calculation",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
-      "feedback": "Old M=250×8=2,000. New M=310×10=3,100. Increase=1,100.",
+      "feedback": "Initially, the required nominal supply is 250 × 8 = 2,000. After both changes, it is 310 × 10 = 3,100. The central bank must increase nominal supply by 1,100 to satisfy the new real demand at the higher price level.",
       "hint": "Compute old and new nominal money.",
       "aHash": "b4f16dc3006737b49048291847b473d7bff26da7ac55ea9c345bd8244e436d29"
     },
     {
       "id": 9065,
-      "q": "Which monetary policy offsets an AD-left shock from lower investment without raising G?",
+      "q": "Which monetary policy offsets a leftward shift of the AD curve from lower investment without raising government purchases?",
       "options": [
-        "sell bonds to shift LM left",
-        "raise taxes to shift IS left",
-        "cut transfers to reduce C",
-        "expand money to shift LM right"
+        "Sell bonds to shift the LM curve to the left",
+        "Raise taxes to shift the IS curve to the left",
+        "Cut transfers to reduce consumption",
+        "Expand money to shift the LM curve to the right"
       ],
       "tag": "monetary_policy",
       "type": "integration",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
-      "feedback": "LM-right can lower r and support investment without fiscal expansion.",
-      "aHash": "a6f61c11d1ad4b4dc88965576dca2734df4e211991552e400118e386ada7f1fe"
+      "feedback": "A rightward LM shift can lower the interest rate and support investment without increasing government purchases.",
+      "aHash": "cd71f04cb1bc024dd18a90e72eaf5d75a4cbbebb678d56753c1a546b725372ea"
     },
     {
       "id": 9066,
-      "q": "M=6,000. P falls from 12 to 10. Money demand is 700−50r. What happens to r?",
+      "q": "M=6,000. The price level falls from 12 to 10. Money demand is 700−50r. What happens to r?",
       "options": [
         "falls from 4 to 2",
         "rises from 2 to 4",
@@ -6915,58 +6932,41 @@ const questionBanks = {
       "aHash": "809c04d24f6979e82a522396c72b4b66c7d56e69bdfed6f06f2adc379feb0549"
     },
     {
-      "id": 9067,
-      "q": "At P1, M/P=250 and Y=1,400. At P2, M/P=300 and Y=1,550. What is the implied ΔY per extra real balance?",
-      "options": [
-        "1.5",
-        "3",
-        "5",
-        "50"
-      ],
-      "tag": "aggregate_demand",
-      "type": "calculation",
-      "objective": "LO13.4",
-      "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "Real balances rise by 50 and Y rises by 150, so 150/50=3.",
-      "hint": "Compute slope of the response, not the AD slope.",
-      "aHash": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
-    },
-    {
       "id": 9068,
       "q": "A monetary expansion and a fall in business confidence occur together. What is ambiguous for AD?",
       "options": [
-        "the direction of the M change",
-        "whether IS-LM can be solved",
-        "the net AD shift",
-        "the meaning of P"
+        "The direction of the nominal money supply change",
+        "Whether IS-LM can be solved",
+        "The net AD shift",
+        "The meaning of the price level"
       ],
       "tag": "aggregate_demand",
       "type": "integration",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "Monetary expansion shifts AD right; lower confidence shifts AD left.",
+      "feedback": "Monetary expansion shifts the AD curve to the right; lower confidence shifts the AD curve to the left.",
       "aHash": "030263790e5d938ee42472818b3c0e7342f1c92fe74f6941cbbce1233aad7520"
     },
     {
       "id": 9069,
-      "q": "Which conclusion is invalid from seeing a lower P and higher Y?",
+      "q": "Which conclusion is invalid from seeing a lower price level and higher output?",
       "options": [
-        "movement along AD could explain it",
-        "lower P raises M/P",
-        "LM-right can raise Y",
+        "Movement along AD could explain it",
+        "Lower price level raises M/P",
+        "A rightward shift of the LM curve can raise output",
         "AD must have shifted right"
       ],
       "tag": "aggregate_demand",
       "type": "trap",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "Lower P and higher Y may simply be movement along a fixed downward-sloping AD.",
+      "feedback": "Lower price level and higher output may simply be movement along a fixed downward-sloping AD.",
       "commonError": "mistaking movement for shift",
       "aHash": "7de1a29c5fcb45be5a4182f17ee502d705eea1046dfa5d864b6ba293017884e1"
     },
     {
       "id": 9070,
-      "q": "On the AD graph, which move shows AD shifting right at constant P2?",
+      "q": "Refer to the IS–LM and aggregate demand graph. Which move shows the AD curve shifting to the right at constant P2?",
       "options": [
         "5 to 6",
         "2 to 5",
@@ -6978,63 +6978,63 @@ const questionBanks = {
       "objective": "LO13.4",
       "image": "is_lm_ad.webp",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "At P2, moving from AD2 to AD3 raises Y from Y3 to Y4.",
+      "feedback": "At P2, moving from AD2 to AD3 raises output from Y3 to Y4.",
       "aHash": "c0604f6162550b49aabc5e5dcf72b23fb14800f629bd94b4c94702cbe8bca210"
     },
     {
       "id": 9071,
-      "q": "To compare two AD curves at the same P, what should be held fixed?",
+      "q": "To compare two AD curves at the same price level, what should be held fixed?",
       "options": [
-        "the nominal money supply always",
-        "the price level",
-        "the IS curve always",
-        "the output value always"
+        "The nominal money supply always",
+        "The price level",
+        "The IS curve always",
+        "The output value always"
       ],
       "tag": "aggregate_demand",
       "type": "multi-step",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "Holding P fixed isolates the shift in demand at that price level.",
+      "feedback": "Holding the price level fixed isolates the shift in demand at that price level.",
       "aHash": "6f992ca834e8e8515901c778761876337b2121ff84cec2f0f7b26554cf80de95"
     },
     {
       "id": 9072,
-      "q": "If the Fed increases M but money demand also rises, when does AD shift right?",
+      "q": "If the Fed increases the nominal money supply but money demand also rises, when does the AD curve shift to the right?",
       "options": [
-        "whenever money demand rises",
-        "only if taxes rise",
-        "when the M increase dominates the money-demand increase",
-        "never, because AD cannot shift"
+        "Whenever money demand rises, regardless of money-supply growth",
+        "Only if taxes rise",
+        "When money supply grows more than money demand",
+        "Never, because AD cannot shift"
       ],
       "tag": "aggregate_demand",
       "type": "application",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
       "feedback": "Opposing LM forces determine the net AD movement.",
-      "aHash": "4c83c8fae783b8d43951405d65cff84daf72c6c690845f903aa8b00e3b84d9eb"
+      "aHash": "17f4f61e032072a36cc4c96377b1fe65aef0683624a35e99b7965a4e9e04c458"
     },
     {
       "id": 9073,
       "q": "Why does expected deflation complicate the simple AD derivation?",
       "options": [
-        "it eliminates M/P",
-        "it makes P irrelevant",
-        "it shifts LRAS right automatically",
-        "it may shift IS left through higher real rs"
+        "It eliminates M/P",
+        "It makes the price level irrelevant",
+        "It shifts the LRAS curve to the right automatically",
+        "Higher real rates can reduce spending and shift IS left"
       ],
       "tag": "aggregate_demand",
       "type": "interpretation",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
       "feedback": "The basic real-balance channel may be offset by spending effects from expected deflation.",
-      "aHash": "7cc3b775b543e6afacb1fb8aed2165344cd7d61a2075dac41142d91339804096"
+      "aHash": "3d724d7d477b829d48720890698ec2e7ceb12dfcb485deefd61fbdbb03216559"
     },
     {
       "id": 9074,
       "q": "Which answer treats AD as long-run supply?",
       "options": [
-        "higher AD means the economy can produce more at every price forever",
-        "higher AD means more demanded output at each P",
+        "Higher AD permanently increases productive capacity",
+        "Higher AD means more demanded output at each price level",
         "AD can shift from fiscal policy",
         "AD can shift from monetary policy"
       ],
@@ -7044,11 +7044,11 @@ const questionBanks = {
       "primarySkill": "aggregate_demand_from_islm",
       "feedback": "AD is demand, not permanent productive capacity.",
       "commonError": "confusing demand with capacity",
-      "aHash": "ef22bad677e4c6716a87c386cce89ec7c39bec2c0acaa853f2ec26233a5bc60a"
+      "aHash": "d1e9b04dae48d891b0b3b2f65a6c8093ecd6771980e162412bcaaeb20c9f5823"
     },
     {
       "id": 9075,
-      "q": "M rises from 4,000 to 4,800 while P rises from 10 to 12. What happens to M/P?",
+      "q": "The nominal money supply rises from 4,000 to 4,800 while the price level rises from 10 to 12. What happens to M/P?",
       "options": [
         "it rises to 480",
         "it stays at 400",
@@ -7067,17 +7067,17 @@ const questionBanks = {
       "id": 9076,
       "q": "Which statement correctly separates movement and shift?",
       "options": [
-        "P changes shift AD; policy moves along AD",
-        "all changes are movements along AD",
-        "P changes move along AD; non-price demand determinants shift AD",
-        "all changes are shifts of AD"
+        "A price change shifts AD; a fiscal policy change moves the economy along it",
+        "All changes are movements along AD",
+        "Prices move the economy along AD; other demand factors shift it",
+        "All changes are shifts of AD"
       ],
       "tag": "aggregate_demand",
       "type": "integration",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
       "feedback": "That distinction is the whole point of the AD derivation.",
-      "aHash": "38eb00d1ead66f484dd46ceb371909128b6726440f56e0c2022ac4ececb51865"
+      "aHash": "54e9db6d1959b9820905bd4e863e5aafdaa1464904b39260a4c9c273862248d5"
     },
     {
       "id": 9077,
@@ -7098,12 +7098,12 @@ const questionBanks = {
     },
     {
       "id": 9078,
-      "q": "M falls 30% and P falls 20%. If initial M/P is 500, what is new M/P?",
+      "q": "The nominal money supply falls 30% and the price level falls 20%. If initial M/P is 500, what is new M/P?",
       "options": [
         "437.5",
-        "500",
-        "625",
-        "350"
+        "500.0",
+        "625.0",
+        "350.0"
       ],
       "tag": "great_depression",
       "type": "calculation",
@@ -7117,9 +7117,9 @@ const questionBanks = {
       "id": 9079,
       "q": "Deflation raises M/P but also raises real debt burdens. What is the net effect on Y?",
       "options": [
-        "always positive",
-        "ambiguous without knowing which channel dominates",
-        "always negative",
+        "It must always be positive",
+        "Either sign is possible",
+        "It must always be negative",
         "always zero"
       ],
       "tag": "great_depression",
@@ -7127,16 +7127,16 @@ const questionBanks = {
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "Real balances can stimulate demand; debt-deflation can contract it.",
-      "aHash": "995e786310b0f42492fcb4e5d9fa6ae0a74f160efe258c617b33059965d560ab"
+      "aHash": "4496f5566116b1388509adfd0ca8da8137656a90ea49ef8747c2fac7c7746141"
     },
     {
       "id": 9080,
       "q": "Which answer incorrectly treats Depression recovery as only a movement along AD?",
       "options": [
-        "reflation expectations can shift IS right",
-        "monetary expansion can shift AD right",
-        "higher demand from reflation is just a lower-P movement",
-        "bank stabilization can raise spending"
+        "Expected reflation can improve spending and shift the IS curve to the right",
+        "Monetary expansion can shift the AD curve to the right",
+        "Reflation raises demand only through a price-driven movement along AD",
+        "Bank stabilization can raise spending"
       ],
       "tag": "great_depression",
       "type": "trap",
@@ -7144,11 +7144,11 @@ const questionBanks = {
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "Recovery mechanisms often shift curves; they are not merely price-level movements.",
       "commonError": "mistaking recovery policy for movement along AD",
-      "aHash": "42374bab4ba16e7a92212a2c8e9b4d6b2e29bb8499bd38ed39bdae17ffb83e80"
+      "aHash": "367f93ea41880d9efd7abc569ac73276c865ebdab9eaaca0ff822731c06ccd74"
     },
     {
       "id": 9081,
-      "q": "On the AD-SRAS panel, which movement shows output rising from Y1 to the natural level Y2 while the price level falls?",
+      "q": "Refer to the IS–LM and aggregate demand–aggregate supply graph. Which movement shows output rising from Y1 to the natural level Y2 while the price level falls?",
       "options": [
         "B to A",
         "C to A",
@@ -7167,41 +7167,41 @@ const questionBanks = {
       "id": 9082,
       "q": "Expected deflation raises real rates, investment falls, defaults increase, banks contract lending. What curve movement best summarizes demand?",
       "options": [
-        "IS left, possibly reinforced by LM-left",
-        "IS shifts right only",
-        "LM shifts right only",
-        "LRAS shifts right"
+        "IS shifts left; tighter lending may also shift LM left",
+        "IS shifts right, with no possible change in the money market",
+        "The LM curve shifts to the right only",
+        "The LRAS curve shifts to the right"
       ],
       "tag": "great_depression",
       "type": "multi-step",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "The spending and credit channels can reinforce each other.",
-      "aHash": "bd2a1bb2909ed5a21c129af7866efecc225b43fb5eebbb6a25a62fa16f0d0ef2"
+      "aHash": "534357a7d698e1672d5ef6acdb0dc38c18bb2ba26e2e0b5029c52c9432742852"
     },
     {
       "id": 9083,
       "q": "If deposit insurance reduces panic, which Depression channel is weakened?",
       "options": [
-        "government-purchase multiplier",
-        "liquidity hoarding & bank-run pressure",
-        "technology growth in LRAS",
-        "tax collection from imports"
+        "Government-purchase multiplier",
+        "Cash hoarding and bank runs",
+        "Technology growth in LRAS",
+        "Tax collection from imports"
       ],
       "tag": "great_depression",
       "type": "application",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "Stabilizing banks reduces the money-demand and credit-crunch forces.",
-      "aHash": "462cc14c9f57c9f3f5157dc418b172551ba4be0c0660ebed92d61ac7c562c85a"
+      "aHash": "60c1899292e8c3406d2d8841a259066ef4510b733dde95c419ae795acf9b2efa"
     },
     {
       "id": 9084,
       "q": "Why can monetary recovery work even before full price flexibility?",
       "options": [
-        "it requires LRAS to shift first",
+        "Recovery requires productive capacity to increase before spending can rise",
         "it works only by raising taxes",
-        "it LM right & can improve expectations",
+        "More money and better expectations can raise demand",
         "it eliminates debt instantly"
       ],
       "tag": "great_depression",
@@ -7209,24 +7209,24 @@ const questionBanks = {
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "Short-run demand can recover through money and expectations channels.",
-      "aHash": "e1f125608302d24f530f9771d5efefefb9e62de6a07abd0cb978a3226db9af09"
+      "aHash": "7a6d5a0a2dfa067dc6b7f1584a93434d6bea745b9379cd4df8a82ba3b52acb24"
     },
     {
       "id": 9085,
-      "q": "Which answer pollutes a Depression diagnostic tag?",
+      "q": "The nominal interest rate falls from 4% to 2%, but expected inflation falls from 1% to −3%. Outstanding nominal debts are fixed. Which assessment best explains why demand may remain weak during the depression?",
       "options": [
-        "using real-rate calculation from deflation",
-        "using M/P under money contraction",
-        "using debt/P under deflation",
-        "using a generic G multiplier with no Depression mechanism"
+        "The expected real interest rate falls from 3% to −1%",
+        "Lower nominal interest proves borrowing became cheaper in real terms",
+        "Expected deflation cancels every effect of outstanding debt",
+        "The real rate rises from 3% to 5%; real debt burdens may also rise"
       ],
       "tag": "great_depression",
       "type": "trap",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
-      "feedback": "A Depression item should test a Depression mechanism, not a random macro calculation.",
+      "feedback": "The approximate expected real rate is i−πe: initially 4−1=3%, then 2−(−3)=5%. Lower nominal rates need not mean easier real borrowing conditions. Falling actual prices also raise fixed debt/P.",
       "commonError": "cross-topic calculation leakage",
-      "aHash": "3310c3e018807f0ae09ea298078a60ab3cd58a7e0140d5a4de2a46b2e1171b1c"
+      "aHash": "97b6d53b62d8823407b9cec802d95dcc89aa59f7f1aed06908a4836efad58640"
     },
     {
       "id": 9086,
@@ -7249,17 +7249,17 @@ const questionBanks = {
       "id": 9087,
       "q": "Which answer best combines monetary and debt-deflation theories?",
       "options": [
-        "higher G lowers debt burdens through LM",
-        "falling M tightens LM while falling P can raise real debt burdens",
-        "tax cuts directly raise M/P",
-        "LRAS shifts right when banks fail"
+        "Higher government purchases reduce existing real debts by shifting the LM curve",
+        "Less money tightens liquidity; deflation can raise real debt burdens",
+        "Tax cuts directly raise M/P",
+        "The LRAS curve shifts to the right when banks fail"
       ],
       "tag": "great_depression",
       "type": "integration",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "The two mechanisms can jointly depress demand and finance.",
-      "aHash": "68711262c17d29aabb456f50aba5acced3290fd074bdefc14f4eacc1beafdc50"
+      "aHash": "a435c5a2e6b14460f08f0c78d93e4f697d61ccf79d4b2d8eef6653a8a7922f8b"
     }
   ],
   "easyBoss": [
@@ -7281,23 +7281,23 @@ const questionBanks = {
     },
     {
       "id": 2001,
-      "q": "A rise in autonomous investment shifts IS how?",
+      "q": "How does an increase in autonomous investment affect the IS curve?",
       "options": [
-        "left",
-        "nowhere",
-        "into LM",
-        "right"
+        "The IS curve shifts to the left",
+        "The IS curve remains unchanged",
+        "Into LM",
+        "The IS curve shifts to the right"
       ],
       "tag": "is_curve",
       "type": "application",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
-      "feedback": "Higher planned investment raises Y at each r.",
-      "aHash": "27042f4e6eca7d0b2a7ee4026df2ecfa51d3339e6d122aa099118ecd8563bad9"
+      "feedback": "Higher planned investment raises output at each interest rate.",
+      "aHash": "f713a51176694d7c4c9d597bbfd7128c38ad53ea06301dfec9baadc5ff6f749f"
     },
     {
       "id": 2002,
-      "q": "MPC=0.75 and G rises by 20. Simple-cross ΔY?",
+      "q": "The marginal propensity to consume is 0.75 and government purchases rise by 20. What is the change in output in the simple Keynesian-cross model?",
       "options": [
         "80",
         "20",
@@ -7315,33 +7315,33 @@ const questionBanks = {
       "id": 2003,
       "q": "LM shows combinations where what clears?",
       "options": [
-        "planned spending equals output",
-        "M equals Md",
+        "Planned spending equals output",
+        "Real money supply equals real money demand",
         "LRAS equals AD",
-        "taxes equal transfers"
+        "Taxes equal transfers"
       ],
       "tag": "lm_curve",
       "type": "definition",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
-      "feedback": "LM is money-market equilibrium.",
-      "aHash": "05e41a6a311266df85d1c9fc65589935a813f72952ea459d47ced1a9e496d726"
+      "feedback": "The LM curve shows combinations of output and the interest rate at which people want to hold the available real money supply. Money supply and demand must be measured in the same units.",
+      "aHash": "9fa57be494c6c550a782c0d66ac66ae308007c37dfe8619d699675dea0157ca4"
     },
     {
       "id": 2004,
-      "q": "Higher nominal M with fixed P shifts LM how?",
+      "q": "How does an increase in the nominal money supply affect the LM curve when the price level is fixed?",
       "options": [
-        "left",
-        "nowhere",
-        "right",
-        "into IS"
+        "The LM curve shifts to the left",
+        "The LM curve remains unchanged",
+        "The LM curve shifts to the right",
+        "Into IS"
       ],
       "tag": "lm_curve",
       "type": "application",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
       "feedback": "Real balances rise.",
-      "aHash": "27042f4e6eca7d0b2a7ee4026df2ecfa51d3339e6d122aa099118ecd8563bad9"
+      "aHash": "e02b02d3b5d106df9065a6f9be8d21714d848a5a9807c791fb5b4db41186b9ba"
     },
     {
       "id": 2005,
@@ -7356,44 +7356,44 @@ const questionBanks = {
       "type": "calculation",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
-      "feedback": "Divide M by P.",
+      "feedback": "Divide the nominal money supply by the price level.",
       "aHash": "27badc983df1780b60c2b3fa9d3a19a00e46aac798451f0febdca52920faaddf"
     },
     {
       "id": 2006,
       "q": "What does the IS-LM intersection solve?",
       "options": [
-        "Y and r",
-        "P and LRAS",
-        "G and T",
-        "C and S"
+        "Output and the interest rate",
+        "The price level and long-run aggregate supply",
+        "Government purchases and taxes",
+        "Consumption and saving"
       ],
       "tag": "is_lm_equilibrium",
       "type": "definition",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
       "feedback": "The model solves income and interest rate.",
-      "aHash": "39afa879f1849af26aa7ba27818285da8fe09cf260a4bcd2c7ff9e2e487abbdb"
+      "aHash": "3137de65835ce5973c7dc2c177957ed0eeb7d94ae605e241b977cd69483c80d5"
     },
     {
       "id": 2007,
-      "q": "IS-right with fixed LM changes Y and r how?",
+      "q": "If the IS curve shifts to the right while the LM curve remains unchanged, how do equilibrium output and the interest rate change?",
       "options": [
-        "both fall",
-        "both rise",
-        "Y rises and r falls",
-        "Y falls and r rises"
+        "Output and the interest rate both fall",
+        "Output and the interest rate both rise",
+        "Output rises and the interest rate falls",
+        "Output falls and the interest rate rises"
       ],
       "tag": "is_lm_equilibrium",
       "type": "application",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
-      "feedback": "IS-right moves up along LM.",
-      "aHash": "5f55acb1db4f47eb0046e6fe87eddb8dd9c42353939422ea822a8f20bd79b24a"
+      "feedback": "A rightward shift of the IS curve raises planned spending. With the LM curve unchanged, higher output raises money demand, so the new equilibrium has both higher output and a higher interest rate. This is a movement up along the existing LM curve.",
+      "aHash": "11c7a1e17cd893d64a4e939f3c6d951b05f3c57e90e2fe376e1482afea8449b4"
     },
     {
       "id": 2008,
-      "q": "IS Y=1200−50r and LM Y=700+50r. What is r?",
+      "q": "The IS curve is Y = 1,200 − 50r and the LM curve is Y = 700 + 50r. What interest rate r gives the same output Y in both markets?",
       "options": [
         "4",
         "6",
@@ -7404,7 +7404,7 @@ const questionBanks = {
       "type": "calculation",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
-      "feedback": "Set equations equal.",
+      "feedback": "Set the two expressions for output equal: 1,200 − 50r = 700 + 50r. Rearranging gives 500 = 100r, so r = 5. Both equations then give output of 950.",
       "aHash": "ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d"
     },
     {
@@ -7427,69 +7427,69 @@ const questionBanks = {
       "id": 2010,
       "q": "A rise in money demand shifts which curve?",
       "options": [
-        "LM left",
-        "IS left",
-        "LM right",
-        "IS right"
+        "The LM curve shifts to the left",
+        "The IS curve shifts to the left",
+        "The LM curve shifts to the right",
+        "The IS curve shifts to the right"
       ],
       "tag": "shocks",
       "type": "application",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "More money demand raises r at each Y.",
-      "aHash": "102c83df09fe66e9d7ed64cb5f8c8894bb057d70b3ed5a00ec3da4bf2387579b"
+      "feedback": "More money demand raises the interest rate at each output.",
+      "aHash": "7209f245e9557768815d2614dc39197a10a4c027c4a4c3740a441280bb52ae76"
     },
     {
       "id": 2011,
-      "q": "Why is a fall in Y alone not diagnostic?",
+      "q": "Why is a fall in output alone not diagnostic?",
       "options": [
-        "only IS affects Y",
-        "IS-left & LM-left can both lower Y",
-        "only LM affects Y",
-        "r never moves"
+        "Only IS affects output",
+        "A leftward shift of the IS curve and a leftward shift of the LM curve can both lower output",
+        "Only LM affects output",
+        "The interest rate never moves"
       ],
       "tag": "shocks",
       "type": "trap",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "Use r and the curve shift too.",
-      "aHash": "61844463acd00fbb0536ac53840c19a4c0689b06fa64446d1fb8bf160e9100e4"
+      "feedback": "Use the interest rate and the curve shift too.",
+      "aHash": "e2d5c8c424b028dcd3fa72587a6ac26400a7b1b9f7be07649217652dc107a761"
     },
     {
       "id": 2012,
       "q": "Fiscal policy directly changes which part of the model?",
       "options": [
-        "real money supply only",
-        "money demand only",
-        "PE through G, T, or transfers",
-        "natural output only"
+        "Real money supply only",
+        "Money demand only",
+        "Planned expenditure through government purchases, taxes, or transfers",
+        "Natural output only"
       ],
       "tag": "fiscal_policy",
       "type": "definition",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
       "feedback": "Fiscal policy begins in the goods market.",
-      "aHash": "5b655274b50acbe08987c99370ea7fe0b495587411cafe7341533be4d06ea438"
+      "aHash": "3dd180d8fa8fbdfb5f96ef91268d4ff4788ec79481049d7f5705f461a10a5539"
     },
     {
       "id": 2013,
-      "q": "Higher G with fixed LM usually does what to r?",
+      "q": "With the LM curve unchanged, how does an increase in government purchases affect the equilibrium interest rate?",
       "options": [
-        "lowers r",
-        "leaves r fixed",
-        "removes r",
-        "raises r"
+        "Lowers the interest rate",
+        "Leaves the interest rate fixed",
+        "Removes the interest rate",
+        "Raises the interest rate"
       ],
       "tag": "fiscal_policy",
       "type": "application",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "Higher Y raises money demand.",
-      "aHash": "28cbf376f0e92ebdcd080eecc3cc8865628047973da69af93c96d9ab07faea7e"
+      "feedback": "Higher output raises money demand.",
+      "aHash": "57789982ca5cd1d18198ba9202c12ed20fc90806c7d65ed240f8bdddc413e5ee"
     },
     {
       "id": 2014,
-      "q": "MPC=0.6 and G rises by 50. Simple-cross ΔY?",
+      "q": "The marginal propensity to consume is 0.6 and government purchases rise by 50. What is the change in output in the simple Keynesian-cross model?",
       "options": [
         "125",
         "50",
@@ -7521,11 +7521,11 @@ const questionBanks = {
     },
     {
       "id": 2016,
-      "q": "Open-market sales are contractionary because they shift LM how?",
+      "q": "How do open-market sales affect the LM curve?",
       "options": [
-        "right",
-        "nowhere",
-        "left",
+        "The LM curve shifts to the right",
+        "The LM curve remains unchanged",
+        "The LM curve shifts to the left",
         "into IS"
       ],
       "tag": "monetary_policy",
@@ -7533,7 +7533,7 @@ const questionBanks = {
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
       "feedback": "Sales reduce money supply.",
-      "aHash": "360f84035942243c6a36537ae2f8673485e6c04455a0a85a0db19690f2541480"
+      "aHash": "7209f245e9557768815d2614dc39197a10a4c027c4a4c3740a441280bb52ae76"
     },
     {
       "id": 2017,
@@ -7569,23 +7569,23 @@ const questionBanks = {
     },
     {
       "id": 2019,
-      "q": "Lower P with fixed M moves the economy how on AD?",
+      "q": "With the nominal money supply and other demand determinants unchanged, how does a lower price level move the economy along the aggregate demand curve?",
       "options": [
-        "AD shifts left",
-        "down along AD toward higher Y",
-        "AD shifts right",
-        "LRAS shifts left"
+        "The AD curve shifts to the left",
+        "Down along AD toward higher output",
+        "The AD curve shifts to the right",
+        "The LRAS curve shifts to the left"
       ],
       "tag": "aggregate_demand",
       "type": "application",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "Changing P moves along a fixed AD curve.",
-      "aHash": "b1ad8b6c925604c37039e47e401dd46060bb0c9ce191a03178ca5403866e4022"
+      "feedback": "Changing the price level moves along a fixed AD curve.",
+      "aHash": "fb611868a3036d5d42ab8bd18427b1292154fa686ed4242e02814f1838947fb3"
     },
     {
       "id": 2020,
-      "q": "M=2400 and P falls from 12 to 8. M/P changes how?",
+      "q": "M=2400 and the price level falls from 12 to 8. M/P changes how?",
       "options": [
         "300 to 200",
         "200 to 240",
@@ -7603,17 +7603,17 @@ const questionBanks = {
       "id": 2021,
       "q": "Debt-deflation focuses on what?",
       "options": [
-        "higher G crowding out I",
-        "tax cuts raising LM",
-        "LRAS shifting right",
-        "falling P raising real debt burdens"
+        "Higher government purchases crowding out investment",
+        "Tax cuts raising LM",
+        "The LRAS curve shifting to the right",
+        "A falling price level raising real debt burdens"
       ],
       "tag": "great_depression",
       "type": "definition",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "Deflation makes nominal debts heavier.",
-      "aHash": "898f9a268f59f52d4985eff9f44a03c1bbf317307ad103f3ca53e78ab4e8cd0f"
+      "aHash": "351e9b453a341c0f88e69e39ae0ce3b7c6d973ab084623b4869c20fd936eb139"
     },
     {
       "id": 2022,
@@ -7653,26 +7653,26 @@ const questionBanks = {
       "id": 3000,
       "q": "Which mistake exaggerates a tax cut?",
       "options": [
-        "using MPC in consumption",
-        "shifting IS right",
-        "using the G multiplier instead of the tax multiplier",
-        "allowing r to rise"
+        "Using MPC in consumption",
+        "Shifting the IS curve to the right",
+        "Using the government purchases multiplier instead of the tax multiplier",
+        "Allowing the interest rate to rise"
       ],
       "tag": "is_curve",
       "type": "trap",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
       "feedback": "Tax changes first affect consumption by MPC×ΔT.",
-      "aHash": "20e7906856f9978aa8eb791652b7fd65c852d05903cc3fa50e34df1ffb1efdb2"
+      "aHash": "71f1266c87fd556e3202669c8a45e5a8d9e1cc182e0613afa286536092c31701"
     },
     {
       "id": 3001,
-      "q": "On the IS graph, IS1 to IS3 at the same r means what?",
+      "q": "Refer to the IS graph. What change is represented by a shift from IS1 to IS3 at the same interest rate?",
       "options": [
-        "lower real balances",
-        "movement along IS1",
-        "higher P only",
-        "higher auto. spending"
+        "Lower real balances",
+        "Movement along IS1",
+        "Higher price level only",
+        "Higher autonomous spending"
       ],
       "tag": "is_curve",
       "type": "graph",
@@ -7680,7 +7680,7 @@ const questionBanks = {
       "image": "is_curves.webp",
       "primarySkill": "is_curve_goods_market",
       "feedback": "A new IS curve means a spending shift.",
-      "aHash": "dfbe44a3199d48809bec4716ac013046151015f485c91bd8598a48016d0d4bad"
+      "aHash": "64eb07daf71d2afb07f06318640bf538d090c99badde25614175e5641f96bb88"
     },
     {
       "id": 3002,
@@ -7702,34 +7702,34 @@ const questionBanks = {
       "id": 3003,
       "q": "Which change is not an LM shifter?",
       "options": [
-        "M rises",
-        "Y rises",
-        "P rises",
-        "money demand rises"
+        "The nominal money supply rises",
+        "Output rises",
+        "The price level rises",
+        "Money demand rises"
       ],
       "tag": "lm_curve",
       "type": "trap",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
-      "feedback": "Y is on the axis; it moves along LM.",
-      "aHash": "62cee539c6a46f267a6b7d30687ef88f43b79869cfacd02130f60e91f24e3434"
+      "feedback": "Output is on the axis; it moves along LM.",
+      "aHash": "0b6435b356cbf9a46ccef412035e920828aae4da02b1f677261baf2c83ae9224"
     },
     {
       "id": 3004,
-      "q": "On the LM graph, LM2 to LM1 at same Y means what?",
+      "q": "Refer to the LM graph. What does a shift from LM2 to LM1 imply for monetary conditions and the money-market clearing interest rate at the same output?",
       "options": [
-        "easier money and lower r",
-        "higher G",
-        "tighter M/P & higher r",
-        "lower taxes"
+        "Easier money and lower interest rate",
+        "Higher government purchases",
+        "Tighter M/P and higher interest rate",
+        "Lower taxes"
       ],
       "tag": "lm_curve",
       "type": "graph",
       "objective": "LO12.2",
       "image": "lm_curves.webp",
       "primarySkill": "lm_curve_money_market",
-      "feedback": "Leftward LM raises r at a given Y.",
-      "aHash": "88a0ed4a2a694065140217d5cec8430378e535112908ce6e7c4bab93469907b5"
+      "feedback": "Leftward LM raises the interest rate at a given Y.",
+      "aHash": "687e166464b5d698b33ba534dfbcaecffcc7093934d9234a899f7e0bb9dd7002"
     },
     {
       "id": 3005,
@@ -7749,23 +7749,23 @@ const questionBanks = {
     },
     {
       "id": 3006,
-      "q": "IS-left plus LM-right definitely changes r how?",
+      "q": "If the IS curve shifts to the left and the LM curve shifts to the right, what happens to the equilibrium interest rate?",
       "options": [
-        "r falls",
-        "r rises",
-        "r unchanged",
-        "r ambiguous"
+        "The interest rate falls",
+        "The interest rate rises",
+        "The interest rate is unchanged",
+        "The interest rate is ambiguous"
       ],
       "tag": "is_lm_equilibrium",
       "type": "application",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
-      "feedback": "Both shifts lower r.",
-      "aHash": "ed3189d93878f10be0a3c07170141cf8c9edb6c05aa77882e1e0e1a2925157e5"
+      "feedback": "Both shifts lower the interest rate.",
+      "aHash": "504ba25f9205f99fb7cbe7a80a42d41e9878d9e59bae0e62f9fcb38af42ef749"
     },
     {
       "id": 3007,
-      "q": "On the IS-LM graph, point C is what intersection?",
+      "q": "Refer to the IS–LM graph. Which curves intersect at point C?",
       "options": [
         "IS2 and LM2",
         "IS3 and LM2",
@@ -7798,35 +7798,35 @@ const questionBanks = {
     },
     {
       "id": 3009,
-      "q": "An IS-left shock and LM-left shock have what definite effect?",
+      "q": "If the IS and LM curves both shift to the left, which equilibrium outcome is certain?",
       "options": [
-        "Y rises",
-        "r falls",
-        "r unchanged",
-        "Y falls"
+        "Output rises",
+        "The interest rate falls",
+        "The interest rate is unchanged",
+        "Output falls"
       ],
       "tag": "shocks",
       "type": "application",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "Both shifts reduce Y.",
-      "aHash": "2a64a035db24e7fda3c230abb4402fa885f919744f8151b7748f1e246fd2ee95"
+      "feedback": "Both shifts reduce output.",
+      "aHash": "4b58d6b239820abdc0f850046d67a87a4c7d163f3d8f16595253706254c95f45"
     },
     {
       "id": 3010,
       "q": "Which observation cannot identify the shock by itself?",
       "options": [
-        "Y fell",
-        "Y fell and r rose",
-        "Y fell and r fell",
-        "IS shifted left"
+        "Output fell",
+        "Output fell and the interest rate rose",
+        "Output fell and the interest rate fell",
+        "The IS curve shifted to the left"
       ],
       "tag": "shocks",
       "type": "trap",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
       "feedback": "Output alone is underidentified.",
-      "aHash": "17714a022b30908a5be1cbc7430b69412014c4aec83fd575735a44b09e003a7b"
+      "aHash": "4cdf9363f10974734ead1d71fe2b8e0e96b27792b5308bb6629c9bdf44123052"
     },
     {
       "id": 3011,
@@ -7846,39 +7846,39 @@ const questionBanks = {
     },
     {
       "id": 3012,
-      "q": "Fiscal expansion with Fed accommodation changes LM how?",
+      "q": "How does monetary accommodation of a fiscal expansion affect the LM curve?",
       "options": [
-        "LM shifts left",
-        "IS shifts left",
-        "LM shifts right",
-        "LRAS shifts left"
+        "The LM curve shifts to the left",
+        "The IS curve shifts to the left",
+        "The LM curve shifts to the right",
+        "The LRAS curve shifts to the left"
       ],
       "tag": "fiscal_policy",
       "type": "application",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "Accommodation expands money to limit r increases.",
-      "aHash": "6e1f8a919b85b829e9ba43a66b3c0c65f5206e8e541d40d477946f1f8efdd29a"
+      "feedback": "Accommodation expands money to limit interest-rate increases.",
+      "aHash": "e02b02d3b5d106df9065a6f9be8d21714d848a5a9807c791fb5b4db41186b9ba"
     },
     {
       "id": 3013,
       "q": "Which claim ignores crowding out?",
       "options": [
-        "fiscal expansion shifts IS right",
-        "higher Y can raise money demand",
-        "higher r can reduce investment",
-        "fiscal expansion always gives the full simple-cross multiplier in IS-LM"
+        "Fiscal expansion shifts the IS curve to the right",
+        "Higher output can raise money demand",
+        "A higher interest rate can reduce investment",
+        "Fiscal expansion always gives the full simple Keynesian-cross multiplier in IS-LM"
       ],
       "tag": "fiscal_policy",
       "type": "trap",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
       "feedback": "IS-LM adds the interest-rate response.",
-      "aHash": "0a587a35ae46dddf96344f4dbb52ac12f72d5b5f85a1b1af2361f02f6578f0bf"
+      "aHash": "98ec7d5d20a5020fdf5693c538f2097450534148edcaa242c1b71e69fae747d3"
     },
     {
       "id": 3014,
-      "q": "MPC=0.75. Taxes fall by 40. Simple-cross ΔY?",
+      "q": "The marginal propensity to consume is 0.75 and taxes fall by 40. What is the change in output in the simple Keynesian-cross model?",
       "options": [
         "120",
         "160",
@@ -7894,12 +7894,12 @@ const questionBanks = {
     },
     {
       "id": 3015,
-      "q": "If P rises while M is unchanged, what happens to monetary conditions?",
+      "q": "If the price level rises while the nominal money supply is unchanged, what happens to monetary conditions?",
       "options": [
-        "they ease because M/P rises",
-        "they tighten since M/P falls",
-        "they do not change",
-        "IS shifts right directly"
+        "They ease because M/P rises",
+        "They tighten since M/P falls",
+        "They do not change",
+        "The IS curve shifts to the right directly"
       ],
       "tag": "monetary_policy",
       "type": "application",
@@ -7912,17 +7912,17 @@ const questionBanks = {
       "id": 3016,
       "q": "Which statement skips the transmission mechanism?",
       "options": [
-        "M rises, LM shifts right",
-        "r falls and investment rises",
-        "M rises so Y rises without r or I changing",
-        "Y rises through planned spending"
+        "The nominal money supply rises, the LM curve shifts to the right",
+        "The interest rate falls and investment rises",
+        "The nominal money supply rises so output rises without the interest rate or investment changing",
+        "Output rises through planned spending"
       ],
       "tag": "monetary_policy",
       "type": "trap",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
-      "feedback": "Monetary policy works through r and investment.",
-      "aHash": "ebc6ef00eb1074e0819297e49f4f8cf04cb62c38401071d3d065bcbcc2881048"
+      "feedback": "Monetary policy works through the interest rate and investment.",
+      "aHash": "88d769675aa29e92d9415a5c269f850c09ba4da16c709ded343b13d7bd46b077"
     },
     {
       "id": 3017,
@@ -7942,10 +7942,10 @@ const questionBanks = {
     },
     {
       "id": 3018,
-      "q": "Higher money supply shifts AD how?",
+      "q": "How does an increase in the nominal money supply affect the aggregate demand curve?",
       "options": [
-        "right",
-        "left",
+        "The aggregate demand curve shifts to the right",
+        "The aggregate demand curve shifts to the left",
         "movement up along AD",
         "movement down along AD"
       ],
@@ -7953,73 +7953,73 @@ const questionBanks = {
       "type": "application",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "Higher M raises M/P at each P.",
-      "aHash": "27042f4e6eca7d0b2a7ee4026df2ecfa51d3339e6d122aa099118ecd8563bad9"
+      "feedback": "Higher nominal money supply raises M/P at each P.",
+      "aHash": "21252f0b107e0281407954f9bdeee3b7061b11e561623b08facfecb4ab80045d"
     },
     {
       "id": 3019,
       "q": "Which is movement along AD, not a shift?",
       "options": [
-        "G rises",
-        "P falls with M & policy unchanged",
-        "M rises",
-        "investment demand falls"
+        "Government purchases rise",
+        "The price level falls with the nominal money supply and policy unchanged",
+        "The nominal money supply rises",
+        "Investment demand falls"
       ],
       "tag": "aggregate_demand",
       "type": "trap",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
       "feedback": "Price-level changes move along AD.",
-      "aHash": "83cba98bb7545d060c190aecdcc41736448de60b1863e69a348d3d19860bc75c"
+      "aHash": "408b590b41d54e1fd33999c32ad8e6f6077e383f5faa778e55e74305d5f36881"
     },
     {
       "id": 3020,
-      "q": "On AD1, point 1 to 4 shows what?",
+      "q": "Refer to the IS–LM and aggregate demand graph. On AD1, what changes as the economy moves from point 1 to point 4?",
       "options": [
-        "higher P and lower Y",
-        "AD-right shift",
-        "lower P and higher Y",
-        "AD-left shift"
+        "Higher price level and lower output",
+        "A rightward shift of the AD curve",
+        "Lower price level and higher output",
+        "A leftward shift of the AD curve"
       ],
       "tag": "aggregate_demand",
       "type": "graph",
       "objective": "LO13.4",
       "image": "is_lm_ad.webp",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "Both points are on AD1.",
-      "aHash": "710b17968928529b9116b057e8045f1661640f47a8bab3b92d05ae43dc18e679"
+      "feedback": "Points 1 and 4 lie on the same aggregate demand curve, AD1. The price level changes as the economy moves between them; the curve itself does not shift.",
+      "aHash": "8cacbf58ffe8712455d82dd5663caeaa9b47d678eaaf0a86e564a12f9b129579"
     },
     {
       "id": 3021,
       "q": "Bank failures can hit demand through which pair?",
       "options": [
-        "higher G and lower taxes",
+        "Higher government purchases and lower taxes",
         "LRAS growth and lower wages",
-        "AD-right and LM-right only",
-        "credit contraction & Md pressure"
+        "A rightward shift of the AD curve and a rightward shift of the LM curve only",
+        "Credit contraction and money demand pressure"
       ],
       "tag": "great_depression",
       "type": "application",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "Banking panic can weaken spending and tighten money.",
-      "aHash": "d2a083c0b7d8234c69434ea83d0028204f73440f7af2f0dc7c3338f5b7eb5252"
+      "aHash": "379222ed71ef1a7c63d04da4f183de2dc4f517d063d33418c0e81b8a2f98ad85"
     },
     {
       "id": 3022,
       "q": "Which answer is too simple?",
       "options": [
-        "deflation always raises Y through M/P",
-        "deflation can raise real balances",
-        "deflation can raise real debt burdens",
-        "expected deflation can raise real rates"
+        "Deflation always raises output through M/P",
+        "Deflation can raise real balances",
+        "Deflation can raise real debt burdens",
+        "Expected deflation can raise real rates"
       ],
       "tag": "great_depression",
       "type": "trap",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
-      "feedback": "Deflation has competing channels.",
-      "aHash": "5eb5e400146d9b6fa81359176227fbe26c030136fc54a492a5ccbfe047aa0499"
+      "feedback": "Falling prices can increase real money balances, but they also make fixed nominal debts harder to repay. Expected deflation can raise real borrowing costs, so lower prices do not guarantee recovery.",
+      "aHash": "cc787ac2a8a8ff4180180848b62dcab76058a58c07e7d47799f8859c217d387a"
     },
     {
       "id": 3023,
@@ -8041,23 +8041,23 @@ const questionBanks = {
   "finalBoss": [
     {
       "id": 4000,
-      "q": "In IS-LM, why is the simple G multiplier not the whole fiscal story?",
+      "q": "In IS-LM, why is the simple government purchases multiplier not the whole fiscal story?",
       "options": [
-        "G has no multiplier",
+        "Government purchases have no multiplier",
         "IS cannot shift",
-        "LM feedback can raise r & crowd out I",
-        "money demand is fixed at zero"
+        "LM feedback can raise the interest rate and crowd out investment",
+        "Money demand is fixed at zero"
       ],
       "tag": "is_curve",
       "type": "integration",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
       "feedback": "The goods-market shift interacts with the money market.",
-      "aHash": "9aa4911eeee66e7ef046f7e35f43c891fd7bb91c6d2bf7139ae1248bd4df5eea"
+      "aHash": "31182806bef5570fdcb27edb66976ebdc6241ed09e2da1540dd8fab8bb96418c"
     },
     {
       "id": 4001,
-      "q": "IS equation Y=6000−200r. If r rises from 4 to 6, ΔY?",
+      "q": "The IS curve is Y = 6,000 − 200r, where Y is output and r is the interest rate. If r rises from 4 to 6, how much does output change along this curve?",
       "options": [
         "−200",
         "+400",
@@ -8075,7 +8075,7 @@ const questionBanks = {
       "id": 4002,
       "q": "What is wrong with saying IS shows productive capacity?",
       "options": [
-        "IS shows demand-side goods-market eq.",
+        "IS shows where planned spending equals output",
         "IS is always LRAS",
         "IS is money supply",
         "IS is a price index"
@@ -8085,23 +8085,23 @@ const questionBanks = {
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
       "feedback": "Capacity belongs to LRAS, not IS.",
-      "aHash": "89e2ef98e0aeeaeab3c5b023a1e36e73c824c7135cf66dc9fe8c570da2095e24"
+      "aHash": "e022b7ce54c6360f152814b04f7cf84dd527698755c58c71fee194aa8971ac35"
     },
     {
       "id": 4003,
-      "q": "How can higher P reduce Y through LM?",
+      "q": "How can higher price level reduce output through LM?",
       "options": [
-        "higher P raises M/P and lowers r",
-        "higher P lowers M/P, LM left, raises r",
-        "higher P shifts IS right",
-        "higher P cuts taxes"
+        "Higher price level raises M/P and lowers the interest rate",
+        "Higher price level lowers M/P, the LM curve shifts to the left, raises the interest rate",
+        "Higher price level shifts the IS curve to the right",
+        "Higher price level cuts taxes"
       ],
       "tag": "lm_curve",
       "type": "integration",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
       "feedback": "Price-level increases tighten real liquidity.",
-      "aHash": "550e144154005e504403d67738c41e49ce6c994ff84974b18984b995c575bb60"
+      "aHash": "dbca79845b608252697734cc3c3ab2b01260cd02f4f4889690c2489deca56b75"
     },
     {
       "id": 4004,
@@ -8121,11 +8121,11 @@ const questionBanks = {
     },
     {
       "id": 4005,
-      "q": "What is wrong with using nominal M alone to place LM?",
+      "q": "What is wrong with using nominal money supply alone to place LM?",
       "options": [
-        "P never changes real balances",
+        "The price level never changes real balances",
         "M/P is for IS only",
-        "nominal M equals r",
+        "Nominal money supply equals the interest rate",
         "LM depends on M/P"
       ],
       "tag": "lm_curve",
@@ -8137,19 +8137,19 @@ const questionBanks = {
     },
     {
       "id": 4006,
-      "q": "IS-right and LM-left leave Y unchanged. What must happen to r?",
+      "q": "The IS curve shifts to the right and the LM curve shifts to the left, leaving equilibrium output unchanged. What happens to the equilibrium interest rate?",
       "options": [
-        "r rises",
-        "r falls",
-        "r unchanged",
-        "r ambiguous"
+        "The interest rate rises",
+        "The interest rate falls",
+        "The interest rate is unchanged",
+        "The interest rate is ambiguous"
       ],
       "tag": "is_lm_equilibrium",
       "type": "integration",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
-      "feedback": "Both shifts raise r.",
-      "aHash": "050fb4b2fe956f56240f466531c0394f4d4d8a45991d35abbe2f598685811f4e"
+      "feedback": "Both shifts raise the interest rate.",
+      "aHash": "7ba75e7932ae87b7fdbf8c6dfb26f14813a361d21a4dbb1df7be2d4373d29e43"
     },
     {
       "id": 4007,
@@ -8169,39 +8169,39 @@ const questionBanks = {
     },
     {
       "id": 4008,
-      "q": "Why is holding r fixed after a shock dangerous?",
+      "q": "Why is holding the interest rate fixed after a shock dangerous?",
       "options": [
-        "r never matters",
+        "The interest rate never matters",
         "LM cannot move",
-        "r is endogenous unless policy targets it",
+        "The interest rate is endogenous unless policy targets it",
         "IS cannot move"
       ],
       "tag": "is_lm_equilibrium",
       "type": "trap",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
-      "feedback": "The intersection solves r.",
-      "aHash": "56bbfde116edc1c823d0adf64e372eb476f0b4720b9890bed28d7d4db41042dc"
+      "feedback": "The intersection solves the interest rate.",
+      "aHash": "829a9841f319107998b9f5fa517250053b42001567ac9898ac18c4c84c26612c"
     },
     {
       "id": 4009,
-      "q": "IS-left plus LM-right makes what ambiguous?",
+      "q": "If the IS curve shifts to the left and the LM curve shifts to the right, which equilibrium outcome depends on the relative sizes of the shifts?",
       "options": [
-        "r",
-        "the IS direction",
-        "the LM direction",
-        "Y"
+        "The interest rate",
+        "The IS direction",
+        "The LM direction",
+        "Output"
       ],
       "tag": "shocks",
       "type": "integration",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "Output effects oppose while both lower r.",
-      "aHash": "a1fce4363854ff888cff4b8e7875d600c2682390412a8cf79b37d0b11148b0fa"
+      "feedback": "Output effects oppose while both lower the interest rate.",
+      "aHash": "e0ee8bb50685e05fa0f47ed04203ae953fdfd055f5bd2892ea186504254f8c3a"
     },
     {
       "id": 4010,
-      "q": "Spending falls by 60, multiplier 4, policy adds +100 to Y. Net ΔY?",
+      "q": "Autonomous spending falls by 60 and the spending multiplier is 4. A separate policy adds 100 to output. Combining these stated effects, what is the net change in output?",
       "options": [
         "−140",
         "−240",
@@ -8212,44 +8212,44 @@ const questionBanks = {
       "type": "calculation",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "Spending effect −240 plus policy +100.",
+      "feedback": "The spending decline reduces output by 60 × 4 = 240. The separate policy adds 100 to output, so the net change is −240 + 100 = −140. The stated policy effect is already an output change and should not be multiplied again.",
       "aHash": "d72ebe759537ea378c6bdc92db9e917021965389aecc471ac8b738d3551a0de6"
     },
     {
       "id": 4011,
       "q": "Which answer confuses correlation with mechanism?",
       "options": [
-        "Y fell and r rose suggests LM-left",
-        "Y fell, so whichever curve I prefer shifted",
-        "Y fell and r fell suggests IS-left",
-        "curve shift should match stated shock"
+        "Output fell and the interest rate rose suggests a leftward shift of the LM curve",
+        "Output fell, so whichever curve I prefer must have shifted",
+        "Output fell and the interest rate fell suggests a leftward shift of the IS curve",
+        "Curve shift should match stated shock"
       ],
       "tag": "shocks",
       "type": "trap",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
       "feedback": "Mechanism must be tied to the stated shock.",
-      "aHash": "951ccae556a2ca3bfd4f80a5363584957db1d77ac7493008820394c0ff6f16cb"
+      "aHash": "de9fdae612fa226d33dabf76b9199f4005fa6ae3d5ab4e996c118630bc62a3e1"
     },
     {
       "id": 4012,
       "q": "Fiscal expansion plus monetary contraction has what certain result?",
       "options": [
-        "Y rises",
-        "Y falls",
-        "r rises",
-        "r falls"
+        "Output rises",
+        "Output falls",
+        "The interest rate rises",
+        "The interest rate falls"
       ],
       "tag": "fiscal_policy",
       "type": "integration",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "Both shifts raise r.",
-      "aHash": "050fb4b2fe956f56240f466531c0394f4d4d8a45991d35abbe2f598685811f4e"
+      "feedback": "Both shifts raise the interest rate.",
+      "aHash": "7ba75e7932ae87b7fdbf8c6dfb26f14813a361d21a4dbb1df7be2d4373d29e43"
     },
     {
       "id": 4013,
-      "q": "MPC=.8, G rises 40, T rises 20. Simple-cross net ΔY?",
+      "q": "The marginal propensity to consume is 0.8. Government purchases rise by 40 and taxes rise by 20. What is the net change in output in the simple Keynesian-cross model?",
       "options": [
         "200",
         "80",
@@ -8267,37 +8267,37 @@ const questionBanks = {
       "id": 4014,
       "q": "What is double-counting fiscal policy?",
       "options": [
-        "shifting IS & then adding the same multiplier effect again",
-        "deriving the IS shift",
-        "solving the new intersection",
-        "checking crowding out"
+        "Shifting IS and then adding the same multiplier effect again",
+        "Deriving the IS shift",
+        "Solving the new intersection",
+        "Checking crowding out"
       ],
       "tag": "fiscal_policy",
       "type": "trap",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
       "feedback": "The IS shift already embeds the spending effect.",
-      "aHash": "a6d85e38c366bd2ce11f8366b8690b1486553b4f7e5a7bf8df012f2c7a74f546"
+      "aHash": "1615faa179773d2d3c1d643e110aa1634f353a538378460c223406751625f7c2"
     },
     {
       "id": 4015,
       "q": "Monetary expansion with falling investment confidence has what ambiguous result?",
       "options": [
-        "direction of M",
-        "net Y change",
-        "direction of IS",
-        "definition of LM"
+        "Direction of the nominal money supply",
+        "Net output change",
+        "Direction of IS",
+        "Definition of LM"
       ],
       "tag": "monetary_policy",
       "type": "integration",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
-      "feedback": "LM-right raises Y; IS-left lowers Y.",
-      "aHash": "126c771d57332e61457bdf9d3f97e44ddafdf87ffeb0d699910be41620d3bed1"
+      "feedback": "A rightward shift of the LM curve raises output; a leftward shift of the IS curve lowers output.",
+      "aHash": "0002c6777f1d3bb455da82fc2a19e1db8bd69f87a22271d96f3a1799c3031e7a"
     },
     {
       "id": 4016,
-      "q": "Real money demand at target r rises from 260 to 340 and P=5. Required ΔM?",
+      "q": "Real money demand at target the interest rate rises from 260 to 340 and P=5. Required ΔM?",
       "options": [
         "80",
         "1,300",
@@ -8315,37 +8315,37 @@ const questionBanks = {
       "id": 4017,
       "q": "Why is a rate cut not just a label change?",
       "options": [
-        "taxes must rise first",
+        "Taxes must rise first",
         "IS must shift left",
-        "P must be zero",
-        "the Fed must supply money balances to support it"
+        "The price level must be zero",
+        "The Fed must supply money balances to support it"
       ],
       "tag": "monetary_policy",
       "type": "trap",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
-      "feedback": "A target rate requires implementation through M.",
+      "feedback": "A target rate requires implementation through the nominal money supply.",
       "aHash": "361470667c051e33a655750acd33702577ba950c1396e02b7ecb5a3be01edbe3"
     },
     {
       "id": 4018,
-      "q": "Lower P and higher taxes together make output what?",
+      "q": "If the price level falls while taxes rise, what can be concluded about the change in equilibrium output without knowing the sizes of the changes?",
       "options": [
-        "ambiguous",
-        "definitely higher",
-        "definitely lower",
-        "unchanged"
+        "Ambiguous",
+        "Definitely higher",
+        "Definitely lower",
+        "Unchanged"
       ],
       "tag": "aggregate_demand",
       "type": "integration",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "LM-right and IS-left oppose.",
+      "feedback": "The lower price level raises real money balances and shifts the LM curve to the right, supporting higher output. Higher taxes reduce consumption and shift the IS curve to the left, reducing output. The net output change depends on the relative sizes of these opposing effects.",
       "aHash": "6a651134eb4b24becd9ad2eb0eebbc48114c8df2f9fdf737eee59154098952b1"
     },
     {
       "id": 4019,
-      "q": "M rises 20% and P rises 20%. What happens to M/P?",
+      "q": "The nominal money supply rises 20% and the price level rises 20%. What happens to M/P?",
       "options": [
         "rises 20%",
         "unchanged",
@@ -8361,39 +8361,39 @@ const questionBanks = {
     },
     {
       "id": 4020,
-      "q": "What is wrong with saying AD shifts right because P falls?",
+      "q": "What is wrong with saying the AD curve shifts to the right because the price level falls?",
       "options": [
-        "lower P can raise M/P",
-        "lower P can lower r",
-        "P changes move along AD",
-        "lower P can raise Y"
+        "Lower price level can raise M/P",
+        "A lower price level can lower the interest rate",
+        "The price level changes move along AD",
+        "Lower price level can raise output"
       ],
       "tag": "aggregate_demand",
       "type": "trap",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
       "feedback": "The curve shifts only when a non-price determinant changes.",
-      "aHash": "fd673afe373e1fec08233f0bc7e678d8a96fc20e2b007ea17c0c584b859bb3cd"
+      "aHash": "f1eb527a987e7feca13134884e1163fbc198bbcaba4eeb919ca4c0998f1805f8"
     },
     {
       "id": 4021,
-      "q": "Deflation can both help and hurt demand because what?",
+      "q": "Why can deflation have both positive and negative effects on demand?",
       "options": [
-        "G and T both disappear",
+        "Government purchases and taxes both disappear",
         "LRAS always shifts right",
-        "money demand becomes zero",
-        "M/P rises while real debt & real rates may rise"
+        "Money demand becomes zero",
+        "M/P rises while real debt and real rates may rise"
       ],
       "tag": "great_depression",
       "type": "integration",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "The net effect depends on competing channels.",
-      "aHash": "fb3fcc61241a64eadaf04b684419af04d3b7c29bb3cecd74f89b8e38295cec95"
+      "aHash": "b8f08db23f682f03ad7e7527bdf80771ba8ff626912828369206dde66f90a274"
     },
     {
       "id": 4022,
-      "q": "M falls 25% and P falls 10%. Initial M/P=400. New M/P?",
+      "q": "The nominal money supply falls 25% and the price level falls 10%. Initial M/P=400. New M/P?",
       "options": [
         "about 333.3",
         "400",
@@ -8411,17 +8411,17 @@ const questionBanks = {
       "id": 4023,
       "q": "Which Depression answer is generic filler?",
       "options": [
-        "bank panic can shift LM left",
-        "every bad event shifts LM left",
-        "spending collapse shifts IS left",
-        "expected deflation can shift IS left"
+        "Bank panic can shift the LM curve to the left",
+        "Every bad event shifts the LM curve to the left",
+        "Spending collapse shifts the IS curve to the left",
+        "Expected deflation can shift the IS curve to the left"
       ],
       "tag": "great_depression",
       "type": "trap",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "feedback": "Different mechanisms hit different curves.",
-      "aHash": "20f1d8ff2a5e870f5e91d355d9dfc6af7342cef6f1e2d70ea63880b7473fd7e5"
+      "aHash": "c98be0221463a793227944ab5e2358b7d068c09c6869a8d343ecf9fcef143f01"
     }
   ],
   "legendaryBoss": [
@@ -8445,37 +8445,37 @@ const questionBanks = {
       "id": 9101,
       "q": "Which IS change affects slope rather than intercept?",
       "options": [
-        "G rises",
-        "taxes fall",
-        "autonomous consumption rises",
-        "I becomes more interest-sensitive"
+        "Government purchases rise",
+        "Taxes fall",
+        "Autonomous consumption rises",
+        "Investment becomes more interest-sensitive"
       ],
       "tag": "is_curve",
       "type": "integration",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
       "feedback": "Interest sensitivity changes slope.",
-      "aHash": "5551b2f997710f6ac83267ef59c6a83e9b08a14b7079134cc8ec3470f2e4487d"
+      "aHash": "a26e11c80648d737a2e0261a12b3618b886be33fe98ce83bcf9b8e9810356db1"
     },
     {
       "id": 9102,
       "q": "Which answer has the wrong sign?",
       "options": [
-        "higher r raises I & PE up",
-        "lower r raises investment",
-        "higher G shifts PE up",
-        "lower taxes can shift PE up"
+        "A higher interest rate raises investment and shifts planned expenditure upward",
+        "A lower interest rate raises investment",
+        "Higher government purchases shift planned expenditure upward",
+        "Lower taxes can shift planned expenditure upward"
       ],
       "tag": "is_curve",
       "type": "trap",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
-      "feedback": "Higher r lowers investment.",
-      "aHash": "715d0ef4e5161ed4f4d066afc91790a8849ecd1c2a43202e723b2dc38fb3cb29"
+      "feedback": "A higher interest rate makes investment more expensive, reducing investment and shifting planned expenditure downward. The option claiming an upward shift has the sign reversed.",
+      "aHash": "364bde54250bb094738293bba1634216ea1a20e4c68ba7f1c336f8b4537bb49b"
     },
     {
       "id": 9103,
-      "q": "M rises 10%, P rises 25%, initial M/P=800. New M/P?",
+      "q": "The nominal money supply rises 10%, the price level rises 25%, initial M/P=800. New M/P?",
       "options": [
         "880",
         "704",
@@ -8494,38 +8494,38 @@ const questionBanks = {
       "q": "Why can a price increase mimic monetary contraction?",
       "options": [
         "it raises real balances",
-        "it shifts IS right",
-        "it lowers M/P when M is fixed",
+        "It shifts the IS curve to the right",
+        "It lowers M/P when the nominal money supply is fixed",
         "it lowers money demand automatically"
       ],
       "tag": "lm_curve",
       "type": "integration",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
-      "feedback": "Higher P shifts LM left through M/P.",
-      "aHash": "501ca853bccb77b02ce7350c02f54b7e53f5ec5856656e8c00a24271c499c8cb"
+      "feedback": "Higher price level shifts the LM curve to the left through M/P.",
+      "aHash": "49c40c216636d3bb6261846c079dc09dc646ce9237aeb7d5b3941d6dad701419"
     },
     {
       "id": 9105,
       "q": "Which claim misreads a rate peg?",
       "options": [
-        "the Fed adjusts M to defend r",
-        "money demand affects needed M",
-        "output can still change",
-        "LM no longer matters if the Fed names r"
+        "The Fed adjusts the nominal money supply to defend the interest rate",
+        "Money demand affects needed nominal money supply",
+        "Output can still change",
+        "LM no longer matters if the Fed names the interest rate"
       ],
       "tag": "lm_curve",
       "type": "trap",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
       "feedback": "The peg is implemented through money-market operations.",
-      "aHash": "0cad5b23736ee402cfd9837827a034bb68f91ea8d191fff7c58db59a252df270"
+      "aHash": "a3401cebe8e720cafa97ca003497ac54fd5b6cb3344843712118f9bb9b1e400c"
     },
     {
       "id": 9106,
       "q": "IS Y=4700−200r, LM r=.01Y−12. Find Y.",
       "options": [
-        "2,400",
+        "Approximately 2,366.67",
         "2,300",
         "2,500",
         "2,700"
@@ -8534,44 +8534,44 @@ const questionBanks = {
       "type": "calculation",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
-      "feedback": "Y=4700−200(.01Y−12)=7100−2Y, so 3Y=7200.",
-      "aHash": "e50de96a9c363587c021b4a65a8f1846b2f3484819649bdd244f496d9033dc14"
+      "feedback": "Substitute LM into IS: Y=4700−200(0.01Y−12)=7100−2Y. Thus 3Y=7100 and Y=7100/3≈2366.67.",
+      "aHash": "6a37bb19853769ebf931f4ff1f13a3486400aac1e1db71fb4bacb052b4635c00"
     },
     {
       "id": 9107,
-      "q": "IS-left and LM-left make what variable determinate?",
+      "q": "If the IS and LM curves both shift to the left, which equilibrium outcome is certain?",
       "options": [
-        "r falls",
-        "Y falls",
-        "r rises",
-        "r unchanged"
+        "The interest rate falls",
+        "Output falls",
+        "The interest rate rises",
+        "The interest rate is unchanged"
       ],
       "tag": "is_lm_equilibrium",
       "type": "integration",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
-      "feedback": "Both shifts reduce Y; r is ambiguous.",
-      "aHash": "2a64a035db24e7fda3c230abb4402fa885f919744f8151b7748f1e246fd2ee95"
+      "feedback": "Both shifts reduce output; the interest rate is ambiguous.",
+      "aHash": "4b58d6b239820abdc0f850046d67a87a4c7d163f3d8f16595253706254c95f45"
     },
     {
       "id": 9108,
       "q": "What is wrong with stopping between curves?",
       "options": [
-        "disequilibrium is the final answer",
-        "old Y must remain fixed",
-        "eq. is at the new intersection",
-        "r is read before shifts"
+        "Disequilibrium is the final answer",
+        "Old output must remain fixed",
+        "Equilibrium is at the new intersection",
+        "The interest rate is read before shifts"
       ],
       "tag": "is_lm_equilibrium",
       "type": "trap",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
       "feedback": "IS-LM solves at the crossing.",
-      "aHash": "21b37b65c8b2889bd5c3d81c77130d2d58bcc8783784796b9a9d81eec77e09df"
+      "aHash": "4e6c0b6cdfbef62ac4064f6a6c1577ad4674ce0ad6a7db1d27ae36d373dd4475"
     },
     {
       "id": 9109,
-      "q": "Spending shock −70, multiplier 5, monetary support +180. Net ΔY?",
+      "q": "Autonomous spending falls by 70 and the spending multiplier is 5. Monetary support separately raises output by 180. Combining these stated effects, what is the net change in output?",
       "options": [
         "−350",
         "−180",
@@ -8582,44 +8582,44 @@ const questionBanks = {
       "type": "calculation",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "−350+180=−170.",
+      "feedback": "The spending decline reduces output by 70 × 5 = 350. Monetary support adds 180 to output, giving a net change of −350 + 180 = −170. The stated monetary effect is already measured in output units.",
       "aHash": "96e56f73d06006a91294b3245db41391166562aea814f17b6e10eed7b1ef58ab"
     },
     {
       "id": 9110,
-      "q": "Which two-shock case makes r fall but Y ambiguous?",
+      "q": "Which two-shock case makes the interest rate fall but output ambiguous?",
       "options": [
-        "IS-left plus LM-right",
-        "IS-right plus LM-left",
-        "IS-left plus LM-left",
-        "IS-right plus LM-right"
+        "A leftward shift of the IS curve plus a rightward shift of the LM curve",
+        "A rightward shift of the IS curve plus a leftward shift of the LM curve",
+        "A leftward shift of the IS curve plus a leftward shift of the LM curve",
+        "A rightward shift of the IS curve plus a rightward shift of the LM curve"
       ],
       "tag": "shocks",
       "type": "integration",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "Both lower r; Y effects oppose.",
-      "aHash": "ee771bd4a293e408297fcd55511f4966c2c2d242e4ff03e41e8ab79ebfd489ff"
+      "feedback": "Both shifts lower the interest rate, while their effects on output oppose each other.",
+      "aHash": "50c936d58a8f9e8f73cb6eb1d17328bf177475a4f641a3f0297e8c93f58bb247"
     },
     {
       "id": 9111,
       "q": "Which answer overclaims without magnitudes?",
       "options": [
-        "IS-right plus LM-left means r rises",
-        "IS-right plus LM-left means Y rises",
-        "IS-left plus LM-left means Y falls",
-        "IS-left plus LM-right means r falls"
+        "A rightward shift of the IS curve plus a leftward shift of the LM curve means the interest rate rises",
+        "A rightward shift of the IS curve plus a leftward shift of the LM curve means output rises",
+        "A leftward shift of the IS curve plus a leftward shift of the LM curve means output falls",
+        "A leftward shift of the IS curve plus a rightward shift of the LM curve means the interest rate falls"
       ],
       "tag": "shocks",
       "type": "trap",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
-      "feedback": "Opposing Y effects require shift sizes.",
-      "aHash": "62028c05b189f26618f52c8ab68121d8c41f21a1aee917d07abd7736c7cd682f"
+      "feedback": "Opposing output effects require shift sizes.",
+      "aHash": "3480e14a34b170ecda017973483047cc822a9fff56b3aea31ee8b5880ce819fc"
     },
     {
       "id": 9112,
-      "q": "MPC=.6, G +100, T +50. Simple-cross net ΔY?",
+      "q": "The marginal propensity to consume is 0.6. Government purchases rise by 100 and taxes rise by 50. What is the net change in output in the simple Keynesian-cross model?",
       "options": [
         "250",
         "125",
@@ -8635,28 +8635,28 @@ const questionBanks = {
     },
     {
       "id": 9113,
-      "q": "How can fiscal expansion raise Y without much crowding out?",
+      "q": "How can fiscal expansion raise output without much crowding out?",
       "options": [
-        "money contraction raises r",
-        "higher taxes erase spending",
-        "investment becomes zero",
-        "monetary accommodation holds r down"
+        "Money contraction raises the interest rate",
+        "Higher taxes erase spending",
+        "Investment becomes zero",
+        "Monetary accommodation holds the interest rate down"
       ],
       "tag": "fiscal_policy",
       "type": "integration",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
-      "feedback": "LM-right support limits r increases.",
-      "aHash": "3cfd8b48cd9ad19a921b8ce5c128a1e05c8828fe81e4152957c81b50168e1619"
+      "feedback": "Monetary accommodation shifts the LM curve to the right, limiting the interest-rate increase that would otherwise crowd out investment during fiscal expansion.",
+      "aHash": "fbaff065b44ac41879728ceced098cf28cfa3a8f51a9604db30cf4c63b5b4d9e"
     },
     {
       "id": 9114,
       "q": "Which answer mistakes deficit size for demand impact?",
       "options": [
-        "same deficit always means same IS shift",
-        "G and T composition matters",
-        "transfers depend on MPC",
-        "crowding out depends on LM"
+        "Same deficit always means same IS shift",
+        "Government purchases and taxes composition matters",
+        "Transfers depend on MPC",
+        "Crowding out depends on LM"
       ],
       "tag": "fiscal_policy",
       "type": "trap",
@@ -8686,8 +8686,8 @@ const questionBanks = {
       "q": "Monetary expansion plus expected deflation has what possible conflict?",
       "options": [
         "M/P cannot change",
-        "investment must rise fully",
-        "nominal r may fall while real r stays high",
+        "Investment must rise fully",
+        "Nominal interest rate may fall while real interest rate stays high",
         "IS must shift right"
       ],
       "tag": "monetary_policy",
@@ -8695,27 +8695,27 @@ const questionBanks = {
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
       "feedback": "Expected deflation can blunt the investment response.",
-      "aHash": "223104655a0608b937952b4c002d7c425719559d5e6ec6b688587bc234c3643a"
+      "aHash": "b0c6b98596d193cb87b65546f8350123ad308f4e2281b0a8f5bb5226310f265e"
     },
     {
       "id": 9117,
       "q": "Which answer double counts money?",
       "options": [
-        "shift LM from higher M",
-        "read new r and Y",
-        "explain lower r raises I",
-        "shift LM right & then add the same I boost again"
+        "Shift LM from higher nominal money supply",
+        "Read new interest rate and output",
+        "Explain how a lower interest rate raises investment",
+        "Shift the LM curve to the right and then add the same investment boost again"
       ],
       "tag": "monetary_policy",
       "type": "trap",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
       "feedback": "The new intersection already includes the investment response.",
-      "aHash": "ceb96a966860f099173697322a685a62a8472722531acae070366c2dec50d0ba"
+      "aHash": "27edb869fb0a02247c790784f3cea9c465e1277871c27b0389fa03e7e9fb2c17"
     },
     {
       "id": 9118,
-      "q": "M rises from 4000 to 4800 while P rises from 10 to 12. What happens to M/P?",
+      "q": "The nominal money supply rises from 4000 to 4800 while the price level rises from 10 to 12. What happens to M/P?",
       "options": [
         "unchanged at 400",
         "rises to 480",
@@ -8731,35 +8731,35 @@ const questionBanks = {
     },
     {
       "id": 9119,
-      "q": "Monetary expansion and lower confidence together make AD do what?",
+      "q": "Monetary expansion occurs while consumer confidence falls. Without knowing the relative sizes of these changes, what can be concluded about the aggregate demand curve?",
       "options": [
-        "definitely right",
-        "ambiguous net shift",
-        "definitely left",
-        "no possible shift"
+        "The aggregate demand curve definitely shifts to the right",
+        "The net shift of aggregate demand is uncertain",
+        "The aggregate demand curve definitely shifts to the left",
+        "The aggregate demand curve cannot shift"
       ],
       "tag": "aggregate_demand",
       "type": "integration",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "Money shifts AD right; lower confidence shifts AD left.",
-      "aHash": "037aeceda7469f620b5990f3c3eb9bdf03fc1321c9abf21fa7bc2a51cc580740"
+      "feedback": "Money shifts the AD curve to the right; lower confidence shifts the AD curve to the left.",
+      "aHash": "8c08206828f464bb5045a54281af213861b0d17c63aed119f49e235698201921"
     },
     {
       "id": 9120,
       "q": "Which answer mistakes movement for shift?",
       "options": [
-        "higher M shifts AD right",
-        "higher G shifts AD right",
-        "lower P shifts AD right",
-        "lower investment shifts AD left"
+        "Higher nominal money supply shifts the AD curve to the right",
+        "Higher government purchases shift the AD curve to the right",
+        "Lower price level shifts the AD curve to the right",
+        "Lower investment shifts the AD curve to the left"
       ],
       "tag": "aggregate_demand",
       "type": "trap",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
-      "feedback": "P changes move along AD.",
-      "aHash": "5829f27f9c469ebe080dd2c75eba88a4c317fce1db0a87e833674eadbd75141b"
+      "feedback": "The price level changes move along AD.",
+      "aHash": "9cdade51e1442705c5db24a7027a608c9f57065b52bdf7993f1563d1aaed33cf"
     },
     {
       "id": 9121,
@@ -8779,12 +8779,12 @@ const questionBanks = {
     },
     {
       "id": 9122,
-      "q": "Falling P during the Depression can have what mixed effect?",
+      "q": "A falling price level during the Depression can have what mixed effect?",
       "options": [
-        "higher M/P but heavier real debts",
-        "lower M/P and lighter debts",
-        "higher G and lower taxes",
-        "higher LRAS and lower r only"
+        "Higher M/P but heavier real debts",
+        "Lower M/P and lighter debts",
+        "Higher government purchases and lower taxes",
+        "Higher LRAS and lower interest rate only"
       ],
       "tag": "great_depression",
       "type": "integration",
@@ -8795,19 +8795,19 @@ const questionBanks = {
     },
     {
       "id": 9123,
-      "q": "Which answer pollutes the Depression objective?",
+      "q": "A depression response holds the nominal rate at 1%, but expected inflation changes from 0% to −2%. Actual prices also fall 10%, with nominal debts fixed. Which diagnosis distinguishes the two deflation channels?",
       "options": [
-        "debt/P under deflation",
-        "a generic G multiplier with no Depression mechanism",
-        "real r under expected deflation",
-        "money contraction through LM"
+        "The expected real rate falls, and debt/P falls",
+        "The expected real rate rises to 3%, and debt/P rises by about 11.1%",
+        "The expected real rate stays at 1%, and debt/P rises exactly 10%",
+        "Only government purchases can change demand in this situation"
       ],
       "tag": "great_depression",
       "type": "trap",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
-      "feedback": "The item should test a Depression mechanism.",
-      "aHash": "dd0325645b376aba07dd922efd27e2b98bd5266491db3d95eb0c7298972f289b"
+      "feedback": "The expected real rate changes from 1−0=1% to 1−(−2)=3%. Separately, a 10% price-level fall raises the real burden of fixed debt by 1/0.9−1≈11.1%. Both can weaken spending without a fiscal-policy change.",
+      "aHash": "6917bd5831c9ee4becc980f1ddaff9385e0f913727629c895764bed41c5d83ab"
     }
   ]
 };
@@ -8816,29 +8816,29 @@ const microSkillRepairPools = {
   "is_curve_goods_market": [
     {
       "id": 5000,
-      "q": "What does IS stand for in the goods-market model?",
+      "q": "What do the letters IS refer to in the goods-market model?",
       "options": [
-        "money-market equilibrium",
-        "long-run supply equilibrium",
-        "I-saving eq.",
-        "price-level equilibrium"
+        "Money-market equilibrium",
+        "Long-run supply equilibrium",
+        "Investment and saving",
+        "Price-level equilibrium"
       ],
       "tag": "is_curve",
       "type": "definition",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
       "repairSkill": "is_curve_goods_market",
-      "feedback": "IS is the goods-market equilibrium relationship.",
-      "aHash": "bd0c59f72d5f806e190576954a435f999573dc1b3d79003a5891244e77b30d44"
+      "feedback": "IS stands for investment and saving. In the basic closed-economy model, goods-market equilibrium requires planned investment to equal national saving. The IS curve shows the combinations of income and the interest rate at which this condition holds.",
+      "aHash": "82674c14d05394a6ee82c60d782f346287b72dded61b660340563f8e4dab4cd6"
     },
     {
       "id": 5001,
-      "q": "Which spending component is directly reduced when r rises?",
+      "q": "Which spending component is directly reduced when the interest rate rises?",
       "options": [
-        "government purchases",
-        "tax collections",
-        "real balances",
-        "investment"
+        "Government purchases",
+        "Tax collections",
+        "Real balances",
+        "Investment"
       ],
       "tag": "is_curve",
       "type": "definition",
@@ -8850,28 +8850,28 @@ const microSkillRepairPools = {
     },
     {
       "id": 5002,
-      "q": "Higher government purchases shift IS which way?",
+      "q": "How does an increase in government purchases affect the IS curve?",
       "options": [
-        "right",
-        "left",
-        "nowhere",
-        "down along LM"
+        "The IS curve shifts to the right",
+        "The IS curve shifts to the left",
+        "The IS curve remains unchanged",
+        "Down along LM"
       ],
       "tag": "is_curve",
       "type": "application",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
       "repairSkill": "is_curve_goods_market",
-      "feedback": "Higher G raises planned expenditure.",
-      "aHash": "27042f4e6eca7d0b2a7ee4026df2ecfa51d3339e6d122aa099118ecd8563bad9"
+      "feedback": "Higher government purchases raise planned expenditure.",
+      "aHash": "f713a51176694d7c4c9d597bbfd7128c38ad53ea06301dfec9baadc5ff6f749f"
     },
     {
       "id": 5003,
-      "q": "Higher taxes shift IS which way?",
+      "q": "How does an increase in taxes affect the IS curve?",
       "options": [
-        "right",
-        "left",
-        "nowhere",
+        "The IS curve shifts to the right",
+        "The IS curve shifts to the left",
+        "The IS curve remains unchanged",
         "up along LM"
       ],
       "tag": "is_curve",
@@ -8880,16 +8880,16 @@ const microSkillRepairPools = {
       "primarySkill": "is_curve_goods_market",
       "repairSkill": "is_curve_goods_market",
       "feedback": "Higher taxes lower disposable income and consumption.",
-      "aHash": "360f84035942243c6a36537ae2f8673485e6c04455a0a85a0db19690f2541480"
+      "aHash": "c4cf64fb8598fc492df65f87650bc57499d6e6377b89da6d9d81aeb37390760e"
     },
     {
       "id": 5004,
-      "q": "A change in r usually causes what on IS?",
+      "q": "When the determinants of the IS curve are unchanged, how is a change in the interest rate represented on that curve?",
       "options": [
-        "a required IS shift",
-        "a required LM shift",
-        "movement along IS",
-        "a change in LRAS"
+        "A required IS shift",
+        "A required LM shift",
+        "Movement along IS",
+        "A change in LRAS"
       ],
       "tag": "is_curve",
       "type": "trap",
@@ -8902,7 +8902,7 @@ const microSkillRepairPools = {
     },
     {
       "id": 5005,
-      "q": "If MPC=0.5, what is the spending multiplier?",
+      "q": "In the simple Keynesian-cross model, households spend half of each additional dollar of disposable income. What is the spending multiplier?",
       "options": [
         "1",
         "0.5",
@@ -8914,13 +8914,13 @@ const microSkillRepairPools = {
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
       "repairSkill": "is_curve_goods_market",
-      "feedback": "1/(1−0.5)=2.",
+      "feedback": "The spending multiplier is 1/(1 − MPC). With MPC = 0.5, it is 1/0.5 = 2. Each initial dollar of spending ultimately raises output by two dollars in this model.",
       "hint": "Multiplier = 1/(1−MPC).",
       "aHash": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
     },
     {
       "id": 5006,
-      "q": "If G rises by 10 and the multiplier is 3, what is ΔY?",
+      "q": "Government purchases rise by 10, and the spending multiplier is 3. In the simple Keynesian-cross model, how much does output rise?",
       "options": [
         "30",
         "10",
@@ -8932,17 +8932,17 @@ const microSkillRepairPools = {
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
       "repairSkill": "is_curve_goods_market",
-      "feedback": "ΔY = 3×10.",
+      "feedback": "Multiply the initial spending increase by the multiplier: 10 × 3 = 30. The total output increase exceeds the initial purchase because recipients spend part of their additional income.",
       "aHash": "624b60c58c9d8bfb6ff1886c2fd605d2adeb6ea4da576068201b6c6958ce93f4"
     },
     {
       "id": 5007,
       "q": "Why does IS slope down?",
       "options": [
-        "lower r raises taxes",
-        "lower r raises I & Y",
-        "higher r raises investment",
-        "income cannot change"
+        "A lower interest rate raises taxes",
+        "A lower interest rate raises investment and output",
+        "A higher interest rate raises investment",
+        "Income cannot change"
       ],
       "tag": "is_curve",
       "type": "interpretation",
@@ -8950,11 +8950,11 @@ const microSkillRepairPools = {
       "primarySkill": "is_curve_goods_market",
       "repairSkill": "is_curve_goods_market",
       "feedback": "The investment channel gives IS its negative slope.",
-      "aHash": "866a24d3894df1ea28d53236dce71c016642dcab798daefe5ce88f5a3e72833e"
+      "aHash": "41f849d9dd560a4e5124b6598cb4fe09548cb36d0589f55250146a89d3e47ed6"
     },
     {
       "id": 5008,
-      "q": "On the IS graph, which curve is farthest right?",
+      "q": "Refer to the IS graph. Which curve is farthest right?",
       "options": [
         "IS1",
         "IS2",
@@ -8967,17 +8967,17 @@ const microSkillRepairPools = {
       "image": "is_curves.webp",
       "primarySkill": "is_curve_goods_market",
       "repairSkill": "is_curve_goods_market",
-      "feedback": "The rightmost IS gives higher Y at a given r.",
+      "feedback": "The rightmost IS gives higher output at a given r.",
       "aHash": "10c92c565db1fb63f997d6b3e7c59bc8621f962634c893f0da850d00c0b0f673"
     },
     {
       "id": 5009,
-      "q": "Keynesian-cross equilibrium requires what?",
+      "q": "What condition must hold for equilibrium in the Keynesian-cross model?",
       "options": [
-        "M equals P",
-        "r equals tax revenue",
-        "P equals expected inflation",
-        "Y equals PE"
+        "The nominal money supply equals the price level",
+        "The interest rate equals tax revenue",
+        "The price level equals expected inflation",
+        "Output equals planned expenditure"
       ],
       "tag": "is_curve",
       "type": "definition",
@@ -8985,24 +8985,24 @@ const microSkillRepairPools = {
       "primarySkill": "is_curve_goods_market",
       "repairSkill": "is_curve_goods_market",
       "feedback": "The goods market clears where output equals planned spending.",
-      "aHash": "f1eb31c1d8ab4f080e611e26a71553336560e16b0c55f4d578eff9ce57c0da58"
+      "aHash": "5b60091a173f79ce6671689f4716a384b13e02c1dbe3c5acabfd67f86ddbaf3a"
     },
     {
       "id": 5010,
-      "q": "Lower consumer confidence shifts IS how?",
+      "q": "How does a decline in consumer confidence affect the IS curve?",
       "options": [
-        "left",
-        "right",
-        "vertical",
-        "horizontal"
+        "The IS curve shifts to the left",
+        "The IS curve shifts to the right",
+        "The IS curve becomes vertical",
+        "The IS curve becomes horizontal"
       ],
       "tag": "is_curve",
       "type": "application",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
       "repairSkill": "is_curve_goods_market",
-      "feedback": "Lower autonomous spending shifts IS left.",
-      "aHash": "360f84035942243c6a36537ae2f8673485e6c04455a0a85a0db19690f2541480"
+      "feedback": "Lower autonomous spending shifts the IS curve to the left.",
+      "aHash": "c4cf64fb8598fc492df65f87650bc57499d6e6377b89da6d9d81aeb37390760e"
     }
   ],
   "lm_curve_money_market": [
@@ -9042,45 +9042,45 @@ const microSkillRepairPools = {
     },
     {
       "id": 5013,
-      "q": "Higher M with fixed P shifts LM how?",
+      "q": "How does an increase in the nominal money supply affect the LM curve when the price level is fixed?",
       "options": [
-        "left",
-        "nowhere",
-        "into IS",
-        "right"
+        "The LM curve shifts to the left",
+        "The LM curve remains unchanged",
+        "Into IS",
+        "The LM curve shifts to the right"
       ],
       "tag": "lm_curve",
       "type": "application",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
       "repairSkill": "lm_curve_money_market",
-      "feedback": "Higher real balances shift LM right.",
-      "aHash": "27042f4e6eca7d0b2a7ee4026df2ecfa51d3339e6d122aa099118ecd8563bad9"
+      "feedback": "Higher real balances shift the LM curve to the right.",
+      "aHash": "e02b02d3b5d106df9065a6f9be8d21714d848a5a9807c791fb5b4db41186b9ba"
     },
     {
       "id": 5014,
-      "q": "Higher P with fixed M shifts LM how?",
+      "q": "How does a higher price level affect the LM curve when the nominal money supply is fixed?",
       "options": [
-        "left",
-        "right",
-        "nowhere",
-        "into IS"
+        "The LM curve shifts to the left",
+        "The LM curve shifts to the right",
+        "The LM curve remains unchanged",
+        "Into IS"
       ],
       "tag": "lm_curve",
       "type": "application",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
       "repairSkill": "lm_curve_money_market",
-      "feedback": "Higher P lowers real balances.",
-      "aHash": "360f84035942243c6a36537ae2f8673485e6c04455a0a85a0db19690f2541480"
+      "feedback": "Higher price level lowers real balances.",
+      "aHash": "7209f245e9557768815d2614dc39197a10a4c027c4a4c3740a441280bb52ae76"
     },
     {
       "id": 5015,
-      "q": "Higher Y causes what on LM?",
+      "q": "With real money supply and the money-demand relationship unchanged, how is an increase in output represented on the LM curve?",
       "options": [
-        "LM shifts right",
-        "movement up along LM",
-        "LM shifts left",
+        "The LM curve shifts to the right",
+        "Movement up along LM",
+        "The LM curve shifts to the left",
         "IS disappears"
       ],
       "tag": "lm_curve",
@@ -9094,7 +9094,7 @@ const microSkillRepairPools = {
     },
     {
       "id": 5016,
-      "q": "If M=1,000 and P=5, what is M/P?",
+      "q": "The nominal money supply is 1,000 and the price level is 5. What is the real money supply?",
       "options": [
         "5,000",
         "995",
@@ -9106,13 +9106,13 @@ const microSkillRepairPools = {
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
       "repairSkill": "lm_curve_money_market",
-      "feedback": "M/P=200.",
+      "feedback": "Divide nominal money by the price level: 1,000/5 = 200. Real money balances measure the purchasing power of the money supply.",
       "hint": "Divide M by P.",
       "aHash": "27badc983df1780b60c2b3fa9d3a19a00e46aac798451f0febdca52920faaddf"
     },
     {
       "id": 5017,
-      "q": "If money demand is 100−10r and M/P=70, what is r?",
+      "q": "Real money demand is 100 − 10r, where r is the interest rate. Real money supply is 70. What interest rate clears the money market?",
       "options": [
         "7",
         "10",
@@ -9124,29 +9124,29 @@ const microSkillRepairPools = {
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
       "repairSkill": "lm_curve_money_market",
-      "feedback": "100−10r=70, so r=3.",
+      "feedback": "Set real money demand equal to supply: 100 − 10r = 70. Subtracting 70 gives 30 = 10r, so r = 3. At that rate, people want to hold exactly the 70 units supplied.",
       "aHash": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
     },
     {
       "id": 5018,
       "q": "Why does LM slope up?",
       "options": [
-        "higher Y raises Md & r",
-        "higher Y lowers money demand",
-        "higher r raises investment",
-        "taxes rise automatically"
+        "Higher output raises money demand and the interest rate",
+        "Higher output lowers money demand",
+        "A higher interest rate raises investment",
+        "Taxes rise automatically"
       ],
       "tag": "lm_curve",
       "type": "interpretation",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
       "repairSkill": "lm_curve_money_market",
-      "feedback": "At fixed M/P, higher income requires a higher r.",
-      "aHash": "3b0efb4221175e6c344a848728fc2fc67e16f4066440fe7faed3ba933555c24e"
+      "feedback": "At fixed M/P, higher income requires a higher interest rate.",
+      "aHash": "027938953343bbf1cdfc4d39d7afddb573217a17aa15bb9126cf915a38b0daaf"
     },
     {
       "id": 5019,
-      "q": "On the LM graph, which curve is farthest right?",
+      "q": "Refer to the LM graph. Which curve is farthest right?",
       "options": [
         "LM1",
         "LM3",
@@ -9166,127 +9166,127 @@ const microSkillRepairPools = {
       "id": 5020,
       "q": "Liquidity preference uses which price to clear money demand?",
       "options": [
-        "the wage",
-        "the tax rate",
-        "r",
-        "natural output"
+        "The wage",
+        "The tax rate",
+        "The interest rate",
+        "Natural output"
       ],
       "tag": "lm_curve",
       "type": "definition",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
       "repairSkill": "lm_curve_money_market",
-      "feedback": "r adjusts to equilibrate money supply and demand.",
-      "aHash": "454349e422f05297191ead13e21d3db520e5abef52055e4964b82fb213f593a1"
+      "feedback": "The interest rate adjusts to equilibrate money supply and demand.",
+      "aHash": "6de2a0a37ae8aa854cea6749347699cc578903d1431face342bea373d61404b8"
     },
     {
       "id": 5021,
-      "q": "Higher money demand shifts LM how?",
+      "q": "How does an increase in money demand at each output and interest rate affect the LM curve?",
       "options": [
-        "right",
-        "nowhere",
-        "down AD",
-        "left"
+        "The LM curve shifts to the right",
+        "The LM curve remains unchanged",
+        "Down AD",
+        "The LM curve shifts to the left"
       ],
       "tag": "lm_curve",
       "type": "application",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
       "repairSkill": "lm_curve_money_market",
-      "feedback": "More money demand raises r at each Y.",
-      "aHash": "360f84035942243c6a36537ae2f8673485e6c04455a0a85a0db19690f2541480"
+      "feedback": "More money demand raises the interest rate at each output.",
+      "aHash": "7209f245e9557768815d2614dc39197a10a4c027c4a4c3740a441280bb52ae76"
     }
   ],
   "is_lm_equilibrium": [
     {
       "id": 5022,
-      "q": "The IS-LM equilibrium is where what crosses?",
+      "q": "Which curves intersect at the equilibrium of the IS–LM model?",
       "options": [
         "IS and LM",
         "AD and SRAS only",
         "LRAS and PPF",
-        "taxes and transfers"
+        "Taxes and transfers"
       ],
       "tag": "is_lm_equilibrium",
       "type": "definition",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
       "repairSkill": "is_lm_equilibrium",
-      "feedback": "The intersection solves both markets.",
+      "feedback": "At the intersection, planned spending equals output and money demand equals the available real money supply. The same output and interest rate satisfy both markets.",
       "aHash": "7b165d872c98a3b904c03ae8a72ddf7edef29539ff132443b35a5156346026c5"
     },
     {
       "id": 5023,
       "q": "What two variables are solved in IS-LM?",
       "options": [
-        "P and inflation",
-        "Y and r",
-        "G and T",
-        "wages and labor"
+        "The price level and inflation",
+        "Output and the interest rate",
+        "Government purchases and taxes",
+        "Wages and labor"
       ],
       "tag": "is_lm_equilibrium",
       "type": "definition",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
       "repairSkill": "is_lm_equilibrium",
-      "feedback": "Income and interest rate are endogenous.",
-      "aHash": "39afa879f1849af26aa7ba27818285da8fe09cf260a4bcd2c7ff9e2e487abbdb"
+      "feedback": "The model determines income and the interest rate together at the IS-LM intersection. They are outcomes of the model, whereas policy settings such as government purchases and nominal money supply are taken as given.",
+      "aHash": "3137de65835ce5973c7dc2c177957ed0eeb7d94ae605e241b977cd69483c80d5"
     },
     {
       "id": 5024,
-      "q": "IS-right with fixed LM does what?",
+      "q": "If the IS curve shifts to the right while the LM curve remains unchanged, how do equilibrium output and the interest rate change?",
       "options": [
-        "lowers Y and r",
-        "raises Y and lowers r",
-        "raises Y and r",
-        "lowers Y and raises r"
+        "Equilibrium output and the interest rate both fall",
+        "Equilibrium output rises and the interest rate falls",
+        "Equilibrium output and the interest rate both rise",
+        "Equilibrium output falls and the interest rate rises"
       ],
       "tag": "is_lm_equilibrium",
       "type": "application",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
       "repairSkill": "is_lm_equilibrium",
-      "feedback": "IS-right moves the economy up along LM.",
-      "aHash": "b09c3ed69cd12c457de8331a0bd4b113b149a10d81a55f9ed0f83d03a43eafed"
+      "feedback": "A rightward shift of the IS curve raises planned spending. With the LM curve unchanged, higher output raises money demand, so the new equilibrium has both higher output and a higher interest rate. This is a movement up along the existing LM curve.",
+      "aHash": "4ae793950520b21bd9be0fa22b3efea5a9ae8bf0027bce4deb372d00b56a9723"
     },
     {
       "id": 5025,
-      "q": "LM-right with fixed IS does what?",
+      "q": "If the LM curve shifts to the right while the IS curve remains unchanged, how do equilibrium output and the interest rate change?",
       "options": [
-        "lowers Y and raises r",
-        "raises Y and r",
-        "lowers Y and r",
-        "raises Y and lowers r"
+        "Equilibrium output falls and the interest rate rises",
+        "Equilibrium output and the interest rate both rise",
+        "Equilibrium output and the interest rate both fall",
+        "Equilibrium output rises and the interest rate falls"
       ],
       "tag": "is_lm_equilibrium",
       "type": "application",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
       "repairSkill": "is_lm_equilibrium",
-      "feedback": "LM-right lowers r and raises investment.",
-      "aHash": "8645c038b87bc3170886374dda52421f525f516300a758a3ecf2836517c59d67"
+      "feedback": "A rightward shift of the LM curve lowers the interest rate. With the IS curve unchanged, the lower rate stimulates investment, so the new equilibrium has higher output and a lower interest rate. This is a movement along the existing IS curve.",
+      "aHash": "5dfe082c662ec76fee0617c25b03f2ecf9be4ba83b41d8f6127e7dd8cef953e7"
     },
     {
       "id": 5026,
       "q": "Why is output alone not enough to identify a shift?",
       "options": [
-        "different can produce the same Y direction",
-        "only IS changes Y",
-        "only LM changes Y",
-        "r never changes"
+        "Different shocks can produce the same direction of output change",
+        "Only IS changes output",
+        "Only LM changes output",
+        "The interest rate never changes"
       ],
       "tag": "is_lm_equilibrium",
       "type": "trap",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
       "repairSkill": "is_lm_equilibrium",
-      "feedback": "Use both Y and r to diagnose shocks.",
+      "feedback": "Fiscal expansion and monetary expansion can both raise output, but they have opposite interest-rate effects in standard IS–LM. Use the joint changes in output and the interest rate to distinguish the shifts.",
       "commonError": "diagnosing from Y alone",
-      "aHash": "6b013eac3d9ce5ce8644fd3f55b30cb71c6443b21adfa8e4f2430a4044767dd8"
+      "aHash": "5072ceee402bebda88d9e07421aa232e76693e48c546009800cb484f24371cc6"
     },
     {
       "id": 5027,
-      "q": "IS is Y=1000−50r and LM is Y=500+50r. What is r?",
+      "q": "The IS curve is Y = 1,000 − 50r and the LM curve is Y = 500 + 50r, where Y is output and r is the interest rate. What interest rate satisfies both equations?",
       "options": [
         "4",
         "5",
@@ -9298,7 +9298,7 @@ const microSkillRepairPools = {
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
       "repairSkill": "is_lm_equilibrium",
-      "feedback": "Set equations equal: 1000−50r=500+50r.",
+      "feedback": "Both equations must give the same output: 1,000 − 50r = 500 + 50r. Therefore 500 = 100r and r = 5. Either equation then gives output of 750.",
       "aHash": "ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d"
     },
     {
@@ -9320,24 +9320,24 @@ const microSkillRepairPools = {
     },
     {
       "id": 5029,
-      "q": "What does the intersection represent?",
+      "q": "What condition holds at the intersection of the IS and LM curves?",
       "options": [
-        "only goods clear",
-        "only money clears",
-        "natural output always holds",
-        "both goods & money markets clear"
+        "Only goods clear",
+        "Only money clears",
+        "Natural output always holds",
+        "Both goods and money markets clear"
       ],
       "tag": "is_lm_equilibrium",
       "type": "interpretation",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
       "repairSkill": "is_lm_equilibrium",
-      "feedback": "The model solves simultaneous equilibrium.",
-      "aHash": "5965cb35b1a7eb96f40f1eec933e160dce02ec63055a5e0b09e2ee5ddbe5b819"
+      "feedback": "A point on IS satisfies goods-market equilibrium, and a point on LM satisfies money-market equilibrium. Their intersection satisfies both conditions at once.",
+      "aHash": "854d5cc2094de9f960ee72dba4808a263cbfcb2765008b19a2fa769ebeefc67c"
     },
     {
       "id": 5030,
-      "q": "On the IS-LM graph, which point is IS1 with LM1?",
+      "q": "Refer to the IS–LM graph. Which point lies at the intersection of IS1 and LM1?",
       "options": [
         "A",
         "D",
@@ -9367,53 +9367,53 @@ const microSkillRepairPools = {
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
       "repairSkill": "is_lm_equilibrium",
-      "feedback": "P is fixed so M/P changes only when M changes.",
+      "feedback": "The price level is fixed so M/P changes only when M changes.",
       "aHash": "6f992ca834e8e8515901c778761876337b2121ff84cec2f0f7b26554cf80de95"
     },
     {
       "id": 5032,
-      "q": "IS-left with fixed LM does what?",
+      "q": "If the IS curve shifts to the left while the LM curve remains unchanged, how do equilibrium output and the interest rate change?",
       "options": [
-        "raises Y and r",
-        "lowers Y and raises r",
-        "lowers Y and r",
-        "raises Y and lowers r"
+        "Output and the interest rate both rise",
+        "Output falls and the interest rate rises",
+        "Output and the interest rate both fall",
+        "Output rises and the interest rate falls"
       ],
       "tag": "is_lm_equilibrium",
       "type": "application",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
       "repairSkill": "is_lm_equilibrium",
-      "feedback": "IS-left reduces output and money demand.",
-      "aHash": "93cdf3f15a91aa074d4e4809e16d6720d312a7b3fecef20257c0ff47e6292282"
+      "feedback": "A leftward shift of the IS curve reduces output and money demand.",
+      "aHash": "4cc3dc8f0701083c71df013e5c522161b8bce82a9a99fe4a9fdc11d6f6c3fbda"
     }
   ],
   "shock_transmission": [
     {
       "id": 5033,
-      "q": "A shock is what?",
+      "q": "What is a shock in an economic model?",
       "options": [
-        "the final equilibrium",
-        "the graph title",
-        "a random answer",
-        "an outside change to the model"
+        "The final equilibrium",
+        "The graph title",
+        "A random answer",
+        "An outside change to the model"
       ],
       "tag": "shocks",
       "type": "definition",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
       "repairSkill": "shock_transmission",
-      "feedback": "A shock is an exogenous cause.",
+      "feedback": "A shock is a change introduced from outside the model, such as a tax increase or a loss of consumer confidence. The resulting changes in output and the interest rate are the model’s response.",
       "aHash": "d9e4db190a7a10836b811b632afac575f1125f506d0ed28192486d7420832e0d"
     },
     {
       "id": 5034,
-      "q": "Lower investment confidence shifts what?",
+      "q": "Which curve shifts, and in which direction, when firms become less confident about future investment returns?",
       "options": [
-        "IS left",
-        "LM right",
-        "IS right",
-        "LRAS right"
+        "The IS curve shifts to the left",
+        "The LM curve shifts to the right",
+        "The IS curve shifts to the right",
+        "The LRAS curve shifts to the right"
       ],
       "tag": "shocks",
       "type": "application",
@@ -9421,16 +9421,16 @@ const microSkillRepairPools = {
       "primarySkill": "shock_transmission",
       "repairSkill": "shock_transmission",
       "feedback": "Investment is part of planned expenditure.",
-      "aHash": "aecb3d7903579eb1db0deab40a432e2dfe68f0f6c338891cf5b0a37e9a57ad37"
+      "aHash": "c4cf64fb8598fc492df65f87650bc57499d6e6377b89da6d9d81aeb37390760e"
     },
     {
       "id": 5035,
-      "q": "Higher money demand shifts what?",
+      "q": "Which curve shifts, and in which direction, when money demand increases at each output and interest rate?",
       "options": [
-        "IS left",
-        "LM left",
-        "LM right",
-        "AD right"
+        "The IS curve shifts to the left",
+        "The LM curve shifts to the left",
+        "The LM curve shifts to the right",
+        "The AD curve shifts to the right"
       ],
       "tag": "shocks",
       "type": "application",
@@ -9438,16 +9438,16 @@ const microSkillRepairPools = {
       "primarySkill": "shock_transmission",
       "repairSkill": "shock_transmission",
       "feedback": "More money demand tightens the money market.",
-      "aHash": "102c83df09fe66e9d7ed64cb5f8c8894bb057d70b3ed5a00ec3da4bf2387579b"
+      "aHash": "7209f245e9557768815d2614dc39197a10a4c027c4a4c3740a441280bb52ae76"
     },
     {
       "id": 5036,
-      "q": "Why not identify a shock from Y alone?",
+      "q": "Why not identify a shock from output alone?",
       "options": [
-        "Y never moves",
-        "only fiscal shocks move Y",
-        "IS & LM shocks can both move Y",
-        "r is irrelevant"
+        "Output never moves",
+        "Only fiscal shocks move output",
+        "IS and LM shocks can both move output",
+        "The interest rate is irrelevant"
       ],
       "tag": "shocks",
       "type": "trap",
@@ -9456,11 +9456,11 @@ const microSkillRepairPools = {
       "repairSkill": "shock_transmission",
       "feedback": "Interest-rate movement helps identify the curve.",
       "commonError": "using one variable only",
-      "aHash": "cde576749ddfa245012bbc097c18507453a051d18e9765aa5d55afcdfacfe1d6"
+      "aHash": "8e220879c38a6a2232f48532327bb7a068ede33a1a8e4b5b1f64f1ac1daec8f0"
     },
     {
       "id": 5037,
-      "q": "Autonomous spending falls by 20 and multiplier is 4. What is ΔY?",
+      "q": "Autonomous spending falls by 20 and the spending multiplier is 4. In the simple Keynesian-cross model, what is the change in output?",
       "options": [
         "−20",
         "−40",
@@ -9472,12 +9472,12 @@ const microSkillRepairPools = {
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
       "repairSkill": "shock_transmission",
-      "feedback": "Multiply the shock by the multiplier.",
+      "feedback": "The initial spending change is −20. Multiply by 4 to obtain a change in output of −80. The negative sign means output falls.",
       "aHash": "b903ac550ed4d396c0e3429e42727611f684eb1d182949d081511efa97d19989"
     },
     {
       "id": 5038,
-      "q": "Money demand rises by 10 real units and P=6. Required ΔM?",
+      "q": "People want to hold 10 more units of real money balances at the current output and interest rate. The price level is 6. How much must nominal money supply rise to meet that extra demand without changing the interest rate?",
       "options": [
         "60",
         "10",
@@ -9489,17 +9489,17 @@ const microSkillRepairPools = {
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
       "repairSkill": "shock_transmission",
-      "feedback": "ΔM=10×6.",
+      "feedback": "Nominal money equals real balances times the price level. Supplying 10 extra real units requires 10 × 6 = 60 extra nominal units.",
       "aHash": "39fa9ec190eee7b6f4dff1100d6343e10918d044c75eac8f9e9a2596173f80c9"
     },
     {
       "id": 5039,
-      "q": "IS-left usually changes Y and r how?",
+      "q": "If the IS curve shifts to the left while the LM curve remains unchanged, how do equilibrium output and the interest rate change?",
       "options": [
-        "both rise",
-        "both fall",
-        "Y falls and r rises",
-        "Y rises and r falls"
+        "Output and the interest rate both rise",
+        "Output and the interest rate both fall",
+        "Output falls and the interest rate rises",
+        "Output rises and the interest rate falls"
       ],
       "tag": "shocks",
       "type": "interpretation",
@@ -9507,28 +9507,28 @@ const microSkillRepairPools = {
       "primarySkill": "shock_transmission",
       "repairSkill": "shock_transmission",
       "feedback": "Lower spending reduces income and money demand.",
-      "aHash": "3af9f286ad887a50bd70392adc7e5620541ffad8d794b7f20b00a55531386a5d"
+      "aHash": "4cc3dc8f0701083c71df013e5c522161b8bce82a9a99fe4a9fdc11d6f6c3fbda"
     },
     {
       "id": 5040,
-      "q": "LM-left usually changes Y and r how?",
+      "q": "If the LM curve shifts to the left while the IS curve remains unchanged, how do equilibrium output and the interest rate change?",
       "options": [
-        "both fall",
-        "both rise",
-        "Y falls and r rises",
-        "Y rises and r falls"
+        "Output and the interest rate both fall",
+        "Output and the interest rate both rise",
+        "Output falls and the interest rate rises",
+        "Output rises and the interest rate falls"
       ],
       "tag": "shocks",
       "type": "interpretation",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
       "repairSkill": "shock_transmission",
-      "feedback": "Tighter money raises r and lowers investment.",
-      "aHash": "de743c3604b6a9a658a1cfa5b34d95658f6997c56b7d14109416b766bc3881fd"
+      "feedback": "Tighter money raises the interest rate and lowers investment.",
+      "aHash": "c7b4b9b485e78b339894ed5e0d156e5122fdb390f2d4e0d923aeaddd017e3198"
     },
     {
       "id": 5041,
-      "q": "On the IS-LM graph, A to B is what kind of shock?",
+      "q": "Refer to the IS–LM graph. Which type of shock moves the equilibrium from A to B?",
       "options": [
         "negative IS shock",
         "positive LM shock",
@@ -9548,46 +9548,46 @@ const microSkillRepairPools = {
       "id": 5042,
       "q": "What comes first, shock or outcome?",
       "options": [
-        "shock first",
-        "outcome first",
-        "old equilibrium first",
-        "new label first"
+        "Shock first",
+        "Outcome first",
+        "Old equilibrium first",
+        "New label first"
       ],
       "tag": "shocks",
       "type": "definition",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
       "repairSkill": "shock_transmission",
-      "feedback": "Cause precedes result.",
+      "feedback": "First identify the outside change, such as a fall in consumer confidence. Then shift the affected curve and find the new output and interest rate. Those outcomes do not, by themselves, identify the original cause.",
       "aHash": "43a53f9b09c0023f9798c60be2fa56eaa7853a26e58bf9b14f646424a4e396e9"
     },
     {
       "id": 5043,
-      "q": "A money-supply cut shifts what?",
+      "q": "Which curve shifts, and in which direction, when the nominal money supply falls while the price level is fixed?",
       "options": [
-        "LM right",
-        "LM left",
-        "IS right",
-        "IS left"
+        "The LM curve shifts to the right",
+        "The LM curve shifts to the left",
+        "The IS curve shifts to the right",
+        "The IS curve shifts to the left"
       ],
       "tag": "shocks",
       "type": "application",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
       "repairSkill": "shock_transmission",
-      "feedback": "Less M lowers real balances.",
-      "aHash": "102c83df09fe66e9d7ed64cb5f8c8894bb057d70b3ed5a00ec3da4bf2387579b"
+      "feedback": "With the price level fixed, a smaller nominal money supply means fewer real money balances, shifting LM to the left.",
+      "aHash": "7209f245e9557768815d2614dc39197a10a4c027c4a4c3740a441280bb52ae76"
     }
   ],
   "fiscal_policy_is_shift": [
     {
       "id": 5044,
-      "q": "Fiscal policy changes what?",
+      "q": "Which government decisions are instruments of fiscal policy?",
       "options": [
-        "money supply only",
-        "money demand only",
-        "G, T, or transfers",
-        "price labels only"
+        "Money supply only",
+        "Money demand only",
+        "Government purchases, taxes, or transfers",
+        "Price labels only"
       ],
       "tag": "fiscal_policy",
       "type": "definition",
@@ -9595,16 +9595,16 @@ const microSkillRepairPools = {
       "primarySkill": "fiscal_policy_is_shift",
       "repairSkill": "fiscal_policy_is_shift",
       "feedback": "Fiscal policy operates through the government budget.",
-      "aHash": "8e665b04a8a081900212ddd9c791d5120ab6b4bd9b58d944d3a26c41a9f03717"
+      "aHash": "cfa4ed3ff42f96c3bab8bcd798b643afa96830394bfe281e7c90623847297714"
     },
     {
       "id": 5045,
-      "q": "Higher G shifts which curve?",
+      "q": "Higher government purchases shift which curve?",
       "options": [
-        "LM right",
-        "IS left",
-        "LM left",
-        "IS right"
+        "The LM curve shifts to the right",
+        "The IS curve shifts to the left",
+        "The LM curve shifts to the left",
+        "The IS curve shifts to the right"
       ],
       "tag": "fiscal_policy",
       "type": "application",
@@ -9612,16 +9612,16 @@ const microSkillRepairPools = {
       "primarySkill": "fiscal_policy_is_shift",
       "repairSkill": "fiscal_policy_is_shift",
       "feedback": "Government purchases enter planned expenditure.",
-      "aHash": "3490f6d555bf8212f2008596fd94dce30d0657bbebab3dad5f698c740acdffd7"
+      "aHash": "f713a51176694d7c4c9d597bbfd7128c38ad53ea06301dfec9baadc5ff6f749f"
     },
     {
       "id": 5046,
       "q": "Higher taxes shift which curve?",
       "options": [
-        "IS left",
-        "LM left",
-        "IS right",
-        "LM right"
+        "The IS curve shifts to the left",
+        "The LM curve shifts to the left",
+        "The IS curve shifts to the right",
+        "The LM curve shifts to the right"
       ],
       "tag": "fiscal_policy",
       "type": "application",
@@ -9629,16 +9629,16 @@ const microSkillRepairPools = {
       "primarySkill": "fiscal_policy_is_shift",
       "repairSkill": "fiscal_policy_is_shift",
       "feedback": "Taxes reduce disposable income.",
-      "aHash": "aecb3d7903579eb1db0deab40a432e2dfe68f0f6c338891cf5b0a37e9a57ad37"
+      "aHash": "c4cf64fb8598fc492df65f87650bc57499d6e6377b89da6d9d81aeb37390760e"
     },
     {
       "id": 5047,
-      "q": "Why is a tax cut not identical to higher G?",
+      "q": "Why is a tax cut not identical to higher government purchases?",
       "options": [
-        "taxes do not affect people",
-        "only MPC times the T cut is first-round spending",
-        "G shifts LM",
-        "tax cuts reduce consumption"
+        "Taxes do not affect people",
+        "Only MPC times the tax cut is first-round spending",
+        "Government purchases shift LM",
+        "Tax cuts reduce consumption"
       ],
       "tag": "fiscal_policy",
       "type": "trap",
@@ -9647,7 +9647,7 @@ const microSkillRepairPools = {
       "repairSkill": "fiscal_policy_is_shift",
       "feedback": "Tax policy works through consumption.",
       "commonError": "using G multiplier for taxes",
-      "aHash": "008906e1e5855ac3c4bd56d024d1fc2512bdf8db9b81d88a9eb100b495142cb5"
+      "aHash": "bde4fff063a8ef21b1938d530efd5fad704aa041a7f4ed45cc847e1e740acd95"
     },
     {
       "id": 5048,
@@ -9668,7 +9668,7 @@ const microSkillRepairPools = {
     },
     {
       "id": 5049,
-      "q": "G rises by 15 and multiplier is 2. What is ΔY?",
+      "q": "Government purchases rise by 15 and the spending multiplier is 2. What is the resulting change in output in the simple Keynesian-cross model?",
       "options": [
         "15",
         "17",
@@ -9687,39 +9687,39 @@ const microSkillRepairPools = {
       "id": 5050,
       "q": "What is crowding out?",
       "options": [
-        "higher r reduces some I",
-        "higher taxes raise investment",
-        "lower r reduces consumption",
-        "LRAS shifts left"
+        "A higher interest rate reduces some investment",
+        "Higher taxes raise investment",
+        "A lower interest rate reduces consumption",
+        "The LRAS curve shifts to the left"
       ],
       "tag": "fiscal_policy",
       "type": "interpretation",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
       "repairSkill": "fiscal_policy_is_shift",
-      "feedback": "Fiscal expansion can raise r and crowd out I.",
-      "aHash": "86d2cedb2e51781230f919d63a572075198f560646514da0f6dd3304f239c901"
+      "feedback": "Fiscal expansion can raise the interest rate and crowd out investment.",
+      "aHash": "f03e24195a3c13b4b24587d8b066a4fcae0cbf5f22bb3b9575ec332eaccd1a9e"
     },
     {
       "id": 5051,
-      "q": "Fed accommodation of fiscal expansion shifts what?",
+      "q": "Which curve shift represents central-bank monetary accommodation of a fiscal expansion?",
       "options": [
-        "IS left",
-        "LM right",
-        "LM left",
-        "LRAS left"
+        "The IS curve shifts to the left",
+        "The LM curve shifts to the right",
+        "The LM curve shifts to the left",
+        "The LRAS curve shifts to the left"
       ],
       "tag": "fiscal_policy",
       "type": "application",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
       "repairSkill": "fiscal_policy_is_shift",
-      "feedback": "The central bank expands money to limit the r increase.",
-      "aHash": "3210fe5e51abe1cee997576a62ddc6ba0b3038faf22c9ac121c07710400a2591"
+      "feedback": "The central bank expands money to limit interest-rate increase.",
+      "aHash": "e02b02d3b5d106df9065a6f9be8d21714d848a5a9807c791fb5b4db41186b9ba"
     },
     {
       "id": 5052,
-      "q": "On the IS-LM graph, A to B fits what?",
+      "q": "Refer to the IS–LM graph. Which policy could move the equilibrium from A to B?",
       "options": [
         "monetary expansion",
         "fiscal contraction",
@@ -9732,17 +9732,17 @@ const microSkillRepairPools = {
       "image": "is_lm_curves.webp",
       "primarySkill": "fiscal_policy_is_shift",
       "repairSkill": "fiscal_policy_is_shift",
-      "feedback": "IS shifts right with LM fixed.",
+      "feedback": "The IS curve shifts to the right with LM fixed.",
       "aHash": "625e37e2ddfcdb5542876e2ece7425f3891bf898abcfba8a55eb3f29aa750f81"
     },
     {
       "id": 5053,
-      "q": "A balanced-budget expansion changes what two items?",
+      "q": "Which two fiscal variables increase in a balanced-budget expansion?",
       "options": [
-        "M and P both rise",
+        "The nominal money supply and the price level both rise",
         "IS and LM both disappear",
-        "r and Y are fixed",
-        "G and T both rise"
+        "The interest rate and output are fixed",
+        "Government purchases and taxes both rise"
       ],
       "tag": "fiscal_policy",
       "type": "definition",
@@ -9750,35 +9750,35 @@ const microSkillRepairPools = {
       "primarySkill": "fiscal_policy_is_shift",
       "repairSkill": "fiscal_policy_is_shift",
       "feedback": "Spending and taxes rise together.",
-      "aHash": "47f1cd2a77b5cbcb1936ca9c2cf2b198f9bff39e65a4e7d80191a202f103c30e"
+      "aHash": "b5dbe98dbc7c1b66d691678ec92f7020838fd34f3dfe8df6b48bba7925f4e244"
     },
     {
       "id": 5054,
-      "q": "A cut in G shifts IS how?",
+      "q": "How does a cut in government purchases affect the IS curve?",
       "options": [
-        "left",
-        "right",
-        "nowhere",
-        "into LM"
+        "The IS curve shifts to the left",
+        "The IS curve shifts to the right",
+        "The IS curve remains unchanged",
+        "Into LM"
       ],
       "tag": "fiscal_policy",
       "type": "application",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
       "repairSkill": "fiscal_policy_is_shift",
-      "feedback": "Lower G reduces planned expenditure.",
-      "aHash": "360f84035942243c6a36537ae2f8673485e6c04455a0a85a0db19690f2541480"
+      "feedback": "Government purchases are part of planned spending. Reducing them lowers equilibrium output at each interest rate, so IS shifts to the left.",
+      "aHash": "c4cf64fb8598fc492df65f87650bc57499d6e6377b89da6d9d81aeb37390760e"
     }
   ],
   "monetary_policy_lm_shift": [
     {
       "id": 5055,
-      "q": "Monetary policy changes what first?",
+      "q": "Which monetary policy variable or operating target can the central bank change directly?",
       "options": [
-        "G directly",
-        "M or target rate implementation",
-        "tax law directly",
-        "natural output directly"
+        "Government purchases directly",
+        "The nominal money supply or target rate implementation",
+        "Tax law directly",
+        "Natural output directly"
       ],
       "tag": "monetary_policy",
       "type": "definition",
@@ -9786,15 +9786,15 @@ const microSkillRepairPools = {
       "primarySkill": "monetary_policy_lm_shift",
       "repairSkill": "monetary_policy_lm_shift",
       "feedback": "Monetary policy works through the money market.",
-      "aHash": "98156c9685ea0e599f703f899d4149b5c4dae22ac1e3db8e0cbb766cda5dfb99"
+      "aHash": "6279391ee730d4a5a5378af7206516d9e834d73a69835076ed3ec33db796efd4"
     },
     {
       "id": 5056,
-      "q": "Open-market purchases shift LM how?",
+      "q": "How do open-market purchases affect the LM curve?",
       "options": [
-        "left",
-        "nowhere",
-        "right",
+        "The LM curve shifts to the left",
+        "The LM curve remains unchanged",
+        "The LM curve shifts to the right",
         "into IS"
       ],
       "tag": "monetary_policy",
@@ -9803,16 +9803,16 @@ const microSkillRepairPools = {
       "primarySkill": "monetary_policy_lm_shift",
       "repairSkill": "monetary_policy_lm_shift",
       "feedback": "Purchases increase money supply.",
-      "aHash": "27042f4e6eca7d0b2a7ee4026df2ecfa51d3339e6d122aa099118ecd8563bad9"
+      "aHash": "e02b02d3b5d106df9065a6f9be8d21714d848a5a9807c791fb5b4db41186b9ba"
     },
     {
       "id": 5057,
-      "q": "Open-market sales shift LM how?",
+      "q": "How do open-market sales affect the LM curve?",
       "options": [
-        "right",
-        "nowhere",
+        "The LM curve shifts to the right",
+        "The LM curve remains unchanged",
         "into IS",
-        "left"
+        "The LM curve shifts to the left"
       ],
       "tag": "monetary_policy",
       "type": "application",
@@ -9820,7 +9820,7 @@ const microSkillRepairPools = {
       "primarySkill": "monetary_policy_lm_shift",
       "repairSkill": "monetary_policy_lm_shift",
       "feedback": "Sales reduce money supply.",
-      "aHash": "360f84035942243c6a36537ae2f8673485e6c04455a0a85a0db19690f2541480"
+      "aHash": "7209f245e9557768815d2614dc39197a10a4c027c4a4c3740a441280bb52ae76"
     },
     {
       "id": 5058,
@@ -9842,7 +9842,7 @@ const microSkillRepairPools = {
     },
     {
       "id": 5059,
-      "q": "M rises from 1000 to 1200, P=10. Δ(M/P)?",
+      "q": "Nominal money supply rises from 1,000 to 1,200 while the price level remains 10. How much do real money balances, M/P, increase?",
       "options": [
         "200",
         "20",
@@ -9876,41 +9876,41 @@ const microSkillRepairPools = {
     },
     {
       "id": 5061,
-      "q": "Monetary expansion changes Y through what channel?",
+      "q": "Monetary expansion changes output through what channel?",
       "options": [
-        "higher taxes raise consumption",
-        "higher G raises PE",
-        "LRAS shifts right",
-        "lower r raises investment"
+        "Higher taxes raise consumption",
+        "Higher government purchases raise planned expenditure",
+        "The LRAS curve shifts to the right",
+        "A lower interest rate raises investment"
       ],
       "tag": "monetary_policy",
       "type": "interpretation",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
       "repairSkill": "monetary_policy_lm_shift",
-      "feedback": "The standard channel is r to I to Y.",
-      "aHash": "4c3427d9893d5c3fec422bf4787ff5df2026e04f89d7f29db3a68ec3e14aa6d9"
+      "feedback": "The standard channel is the interest rate to investment to output.",
+      "aHash": "8ac80463417269dcb8b40f63b90f712caef62de6832c8588edc1bddfe6e18ac2"
     },
     {
       "id": 5062,
-      "q": "To lower a target rate, the Fed usually does what?",
+      "q": "In the basic fixed-price money-market model, which action supports a lower interest-rate target at a given output?",
       "options": [
-        "increase M",
-        "decrease M",
-        "raise taxes",
-        "cut G"
+        "Increase the nominal money supply",
+        "Decrease the nominal money supply",
+        "Raise taxes",
+        "Cut government purchases"
       ],
       "tag": "monetary_policy",
       "type": "application",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
       "repairSkill": "monetary_policy_lm_shift",
-      "feedback": "Lower r requires more real balances supplied.",
-      "aHash": "0ac256d6a4ad2bd7b82f793e1449f70a7618fe3b0eab4f5765b85e268b4ba498"
+      "feedback": "To support a lower interest rate at a given output, the central bank must supply more real money balances.",
+      "aHash": "ad35aed4eeebe04875f538a77cf8d550ded1825204722e3224f03acd82cae639"
     },
     {
       "id": 5063,
-      "q": "On the IS-LM graph, D to G is what?",
+      "q": "Refer to the IS–LM graph. Which policy could move the equilibrium from D to G?",
       "options": [
         "fiscal expansion",
         "monetary expansion",
@@ -9923,17 +9923,17 @@ const microSkillRepairPools = {
       "image": "is_lm_curves.webp",
       "primarySkill": "monetary_policy_lm_shift",
       "repairSkill": "monetary_policy_lm_shift",
-      "feedback": "LM shifts right on IS2.",
+      "feedback": "The LM curve shifts to the right on IS2.",
       "aHash": "d92279d6504f43718aa73f69adabe1f64e7954615b2dc8e219f40934da4316e5"
     },
     {
       "id": 5064,
       "q": "What matters for LM, nominal money or real balances?",
       "options": [
-        "nominal money alone",
-        "tax receipts",
-        "real balances",
-        "G alone"
+        "Nominal money alone",
+        "Tax receipts",
+        "Real balances",
+        "Government purchases alone"
       ],
       "tag": "monetary_policy",
       "type": "definition",
@@ -9945,10 +9945,10 @@ const microSkillRepairPools = {
     },
     {
       "id": 5065,
-      "q": "Higher P with unchanged M weakens monetary conditions because what falls?",
+      "q": "With nominal money supply unchanged, which variable falls when the price level rises, tightening monetary conditions?",
       "options": [
-        "G",
-        "taxes",
+        "Government purchases",
+        "Taxes",
         "LRAS",
         "M/P"
       ],
@@ -9966,10 +9966,10 @@ const microSkillRepairPools = {
       "id": 5066,
       "q": "AD is plotted with which axes?",
       "options": [
-        "P and Y",
-        "r and Y",
-        "G and T",
-        "M and P"
+        "The price level and output",
+        "The interest rate and output",
+        "Government purchases and taxes",
+        "The nominal money supply and the price level"
       ],
       "tag": "aggregate_demand",
       "type": "definition",
@@ -9977,33 +9977,33 @@ const microSkillRepairPools = {
       "primarySkill": "aggregate_demand_from_islm",
       "repairSkill": "aggregate_demand_from_islm",
       "feedback": "AD is in price-output space.",
-      "aHash": "bd3cad416002570c7403a36718d80d28e0615247be1613facabbd48c1784f5a0"
+      "aHash": "7133db56ab031ca0f8adcf93873c77531944b380afb5d0675fc59fa36b25a072"
     },
     {
       "id": 5067,
-      "q": "AD slopes down in IS-LM because lower P does what?",
+      "q": "Which effect of a lower price level helps explain the downward slope of aggregate demand in the IS–LM model?",
       "options": [
-        "lowers M/P",
-        "raises M/P",
-        "raises taxes",
-        "cuts G"
+        "Lowers M/P",
+        "Raises M/P",
+        "Raises taxes",
+        "Cuts government purchases"
       ],
       "tag": "aggregate_demand",
       "type": "definition",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
       "repairSkill": "aggregate_demand_from_islm",
-      "feedback": "Lower P increases real balances.",
+      "feedback": "Lower price level increases real balances.",
       "aHash": "4e161ff8089b01f016d904cc0b0a9f90771e369e3ced87ac0b8c59a628d03613"
     },
     {
       "id": 5068,
-      "q": "A lower P causes what on a fixed AD curve?",
+      "q": "With other demand determinants unchanged, how is a lower price level represented on the aggregate demand curve?",
       "options": [
-        "AD shifts right",
-        "AD shifts left",
-        "movement along AD",
-        "LRAS shifts left"
+        "The AD curve shifts to the right",
+        "The AD curve shifts to the left",
+        "Movement along AD",
+        "The LRAS curve shifts to the left"
       ],
       "tag": "aggregate_demand",
       "type": "application",
@@ -10015,42 +10015,42 @@ const microSkillRepairPools = {
     },
     {
       "id": 5069,
-      "q": "Higher M shifts AD how?",
+      "q": "How does an increase in the nominal money supply affect the aggregate demand curve?",
       "options": [
-        "left",
-        "nowhere",
-        "down along itself",
-        "right"
+        "The aggregate demand curve shifts to the left",
+        "The aggregate demand curve remains unchanged",
+        "Down along itself",
+        "The aggregate demand curve shifts to the right"
       ],
       "tag": "aggregate_demand",
       "type": "application",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
       "repairSkill": "aggregate_demand_from_islm",
-      "feedback": "Higher M raises M/P at every P.",
-      "aHash": "27042f4e6eca7d0b2a7ee4026df2ecfa51d3339e6d122aa099118ecd8563bad9"
+      "feedback": "Higher nominal money supply raises M/P at every P.",
+      "aHash": "21252f0b107e0281407954f9bdeee3b7061b11e561623b08facfecb4ab80045d"
     },
     {
       "id": 5070,
       "q": "What is the common AD mistake?",
       "options": [
-        "calling a price change an AD shift",
-        "using M/P",
-        "drawing P on the vertical axis",
-        "linking LM to AD"
+        "Calling a price change an AD shift",
+        "Using M/P",
+        "Drawing the price level on the vertical axis",
+        "Linking LM to AD"
       ],
       "tag": "aggregate_demand",
       "type": "trap",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
       "repairSkill": "aggregate_demand_from_islm",
-      "feedback": "P changes move along AD unless another determinant changes.",
+      "feedback": "The price level changes move along AD unless another determinant changes.",
       "commonError": "movement versus shift",
       "aHash": "07c350605461c8a2eed7a01ed6eb9fe7fe5aa68824abb755034da9080078348b"
     },
     {
       "id": 5071,
-      "q": "M=2000 and P=10. M/P?",
+      "q": "The nominal money supply is 2,000 and the price level is 10. What is the real money supply?",
       "options": [
         "20",
         "200",
@@ -10062,12 +10062,12 @@ const microSkillRepairPools = {
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
       "repairSkill": "aggregate_demand_from_islm",
-      "feedback": "M/P=200.",
+      "feedback": "Divide the nominal supply by the price level: 2,000/10 = 200. This converts money into purchasing-power units.",
       "aHash": "27badc983df1780b60c2b3fa9d3a19a00e46aac798451f0febdca52920faaddf"
     },
     {
       "id": 5072,
-      "q": "M=2000 and P falls from 10 to 8. M/P rises to what?",
+      "q": "Nominal money supply stays at 2,000 while the price level falls from 10 to 8. What is the new real money supply?",
       "options": [
         "200",
         "160",
@@ -10079,34 +10079,34 @@ const microSkillRepairPools = {
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
       "repairSkill": "aggregate_demand_from_islm",
-      "feedback": "2000/8=250.",
+      "feedback": "Real money supply rises from 2,000/10 = 200 to 2,000/8 = 250. The same nominal money buys more when prices fall.",
       "aHash": "1e472b39b105d349bcd069c4a711b44a2fffb8e274714bb07ecfff69a9a7f67b"
     },
     {
       "id": 5073,
-      "q": "Lower P shifts which IS-LM curve first?",
+      "q": "Lower price level shifts which IS-LM curve first?",
       "options": [
-        "IS right",
-        "LRAS left",
-        "taxes right",
-        "LM right"
+        "The IS curve shifts to the right",
+        "The LRAS curve shifts to the left",
+        "Taxes right",
+        "The LM curve shifts to the right"
       ],
       "tag": "aggregate_demand",
       "type": "interpretation",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
       "repairSkill": "aggregate_demand_from_islm",
-      "feedback": "Lower P raises real balances.",
-      "aHash": "3210fe5e51abe1cee997576a62ddc6ba0b3038faf22c9ac121c07710400a2591"
+      "feedback": "Lower price level raises real balances.",
+      "aHash": "e02b02d3b5d106df9065a6f9be8d21714d848a5a9807c791fb5b4db41186b9ba"
     },
     {
       "id": 5074,
-      "q": "On AD1, moving from point 1 to point 4 means what?",
+      "q": "Refer to the IS–LM and aggregate demand graph. On AD1, how do the price level and output change as the economy moves from point 1 to point 4?",
       "options": [
-        "P falls and Y rises",
-        "P rises and Y falls",
-        "AD shifts right",
-        "Y stays fixed"
+        "The price level falls and output rises",
+        "The price level rises and output falls",
+        "The AD curve shifts to the right",
+        "Output stays fixed"
       ],
       "tag": "aggregate_demand",
       "type": "graph",
@@ -10115,52 +10115,52 @@ const microSkillRepairPools = {
       "primarySkill": "aggregate_demand_from_islm",
       "repairSkill": "aggregate_demand_from_islm",
       "feedback": "It is movement along the same AD curve.",
-      "aHash": "90b83bfdcd7adb5690698a6a29527e7d69b242df0d8f80618953283916f1705c"
+      "aHash": "7186f4842c9fa1e1c46f9261776f5df69f10fbf9eaa4a6046c54bd7a045425ab"
     },
     {
       "id": 5075,
-      "q": "What shifts AD right through fiscal policy?",
+      "q": "What shifts the AD curve to the right through fiscal policy?",
       "options": [
-        "higher P",
-        "higher G",
-        "lower M",
-        "higher taxes"
+        "Higher price level",
+        "Higher government purchases",
+        "Lower nominal money supply",
+        "Higher taxes"
       ],
       "tag": "aggregate_demand",
       "type": "definition",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
       "repairSkill": "aggregate_demand_from_islm",
-      "feedback": "Higher G shifts IS right at every P.",
-      "aHash": "5b994e0d08a7550403fed33dcd1ab6afcfc4ff0da38fa84ca1a1d1405ee20e74"
+      "feedback": "Higher government purchases shift the IS curve to the right at every price level.",
+      "aHash": "93128be92cf97ee7a9cc01070dfa4209330d341b0da7480b5381144ea2283a2e"
     },
     {
       "id": 5076,
-      "q": "Lower investment demand shifts AD how?",
+      "q": "How does a decline in investment demand at each interest rate affect the aggregate demand curve?",
       "options": [
-        "right",
-        "nowhere",
-        "left",
-        "up along AD"
+        "The aggregate demand curve shifts to the right",
+        "The aggregate demand curve remains unchanged",
+        "The aggregate demand curve shifts to the left",
+        "Up along AD"
       ],
       "tag": "aggregate_demand",
       "type": "application",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
       "repairSkill": "aggregate_demand_from_islm",
-      "feedback": "IS-left at every P shifts AD left.",
-      "aHash": "360f84035942243c6a36537ae2f8673485e6c04455a0a85a0db19690f2541480"
+      "feedback": "A leftward shift of the IS curve at every price level shifts the AD curve to the left.",
+      "aHash": "b190423c1f0637403a7464927f45d2445dc552ed6e0726d2838a42835178ffec"
     }
   ],
   "depression_crisis_mechanisms": [
     {
       "id": 5077,
-      "q": "Debt-deflation means what?",
+      "q": "What is debt-deflation?",
       "options": [
-        "higher P raises real balances",
-        "taxes lower debt directly",
-        "G equals T",
-        "falling P raises real debt burdens"
+        "Higher price level raises real balances",
+        "Taxes lower debt directly",
+        "Government purchases equal taxes",
+        "A falling price level raises real debt burdens"
       ],
       "tag": "great_depression",
       "type": "definition",
@@ -10168,7 +10168,7 @@ const microSkillRepairPools = {
       "primarySkill": "depression_crisis_mechanisms",
       "repairSkill": "depression_crisis_mechanisms",
       "feedback": "Nominal debts become harder to repay when prices fall.",
-      "aHash": "2cd522e44541c63807d9a65a0897e940bc5c970b611601e7346e56d308c7ee7b"
+      "aHash": "23d0a14c765618d2742546573c9f934e8cfcf052499ebaf9c9be2e2644bff26d"
     },
     {
       "id": 5078,
@@ -10189,28 +10189,28 @@ const microSkillRepairPools = {
     },
     {
       "id": 5079,
-      "q": "A spending collapse shifts which curve?",
+      "q": "Which curve shifts, and in which direction, after a collapse in autonomous spending?",
       "options": [
-        "LM right",
-        "IS left",
-        "IS right",
-        "LRAS right"
+        "The LM curve shifts to the right",
+        "The IS curve shifts to the left",
+        "The IS curve shifts to the right",
+        "The LRAS curve shifts to the right"
       ],
       "tag": "great_depression",
       "type": "application",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "repairSkill": "depression_crisis_mechanisms",
-      "feedback": "Lower autonomous demand shifts IS left.",
-      "aHash": "aecb3d7903579eb1db0deab40a432e2dfe68f0f6c338891cf5b0a37e9a57ad37"
+      "feedback": "Lower autonomous demand shifts the IS curve to the left.",
+      "aHash": "c4cf64fb8598fc492df65f87650bc57499d6e6377b89da6d9d81aeb37390760e"
     },
     {
       "id": 5080,
-      "q": "Bank panic can shift LM how?",
+      "q": "How can a banking panic that increases money demand or reduces the effective money supply affect the LM curve?",
       "options": [
-        "right",
-        "nowhere",
-        "left",
+        "The LM curve shifts to the right",
+        "The LM curve remains unchanged",
+        "The LM curve shifts to the left",
         "into IS"
       ],
       "tag": "great_depression",
@@ -10219,29 +10219,29 @@ const microSkillRepairPools = {
       "primarySkill": "depression_crisis_mechanisms",
       "repairSkill": "depression_crisis_mechanisms",
       "feedback": "Panic raises money demand or reduces effective money supply.",
-      "aHash": "360f84035942243c6a36537ae2f8673485e6c04455a0a85a0db19690f2541480"
+      "aHash": "7209f245e9557768815d2614dc39197a10a4c027c4a4c3740a441280bb52ae76"
     },
     {
       "id": 5081,
       "q": "What is wrong with “deflation always helps”?",
       "options": [
         "M/P never changes",
-        "real debt falls when P falls",
-        "investment ignores real rates",
-        "debt & real-rate channels can hurt demand"
+        "Real debt falls when the price level falls",
+        "Investment ignores real rates",
+        "Debt and real-rate channels can hurt demand"
       ],
       "tag": "great_depression",
       "type": "trap",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "repairSkill": "depression_crisis_mechanisms",
-      "feedback": "Deflation has competing effects.",
+      "feedback": "Falling prices raise real money balances when nominal money is fixed, but they also increase the burden of fixed nominal debts. Expected deflation can raise real borrowing costs. Those effects can weaken spending even as real balances rise.",
       "commonError": "one-channel deflation story",
-      "aHash": "046dbb75d39ce0d212be311972ae81d9aeaded78be7970e0e547a4886dfec162"
+      "aHash": "505c2d46bbc8a31ed67c84c280b889a9d1c0128c6f706702146547de0abf3639"
     },
     {
       "id": 5082,
-      "q": "Nominal r=2%, expected inflation=−2%. Real r?",
+      "q": "A loan has a nominal interest rate of 2%, and prices are expected to fall by 2%. Using the approximate Fisher relation, what is the expected real interest rate?",
       "options": [
         "4%",
         "0%",
@@ -10253,12 +10253,12 @@ const microSkillRepairPools = {
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "repairSkill": "depression_crisis_mechanisms",
-      "feedback": "2−(−2)=4.",
+      "feedback": "Subtract expected inflation from the nominal rate: 2% − (−2%) = 4%. Expected deflation raises the real borrowing cost above the stated nominal rate.",
       "aHash": "461a6b36b3afb28bdfbb23408223a5c35e33b4cfb0ba20e55d88de69cd9c622e"
     },
     {
       "id": 5083,
-      "q": "Debt=1000 and P falls from 100 to 50. Debt/P changes from 10 to what?",
+      "q": "A debt remains fixed at 1,000 nominal units while the price level falls from 100 to 50. Its real burden was 1,000/100 = 10. What is the new real burden?",
       "options": [
         "5",
         "20",
@@ -10270,7 +10270,7 @@ const microSkillRepairPools = {
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "repairSkill": "depression_crisis_mechanisms",
-      "feedback": "1000/50=20.",
+      "feedback": "Divide the unchanged debt by the new price level: 1,000/50 = 20. The real burden doubles because each nominal unit is worth more after prices fall.",
       "aHash": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b"
     },
     {
@@ -10292,7 +10292,7 @@ const microSkillRepairPools = {
     },
     {
       "id": 5085,
-      "q": "On the AD-SRAS panel, which point is at Y1?",
+      "q": "Refer to the IS–LM and aggregate demand–aggregate supply graph. Which point is at Y1?",
       "options": [
         "B",
         "C",
@@ -10310,12 +10310,12 @@ const microSkillRepairPools = {
     },
     {
       "id": 5086,
-      "q": "Monetary contraction in the Depression shifts what?",
+      "q": "Which curve shift represents monetary contraction during the Depression?",
       "options": [
-        "LM left",
-        "IS right",
-        "LM right",
-        "LRAS right"
+        "The LM curve shifts to the left",
+        "The IS curve shifts to the right",
+        "The LM curve shifts to the right",
+        "The LRAS curve shifts to the right"
       ],
       "tag": "great_depression",
       "type": "definition",
@@ -10323,16 +10323,16 @@ const microSkillRepairPools = {
       "primarySkill": "depression_crisis_mechanisms",
       "repairSkill": "depression_crisis_mechanisms",
       "feedback": "Lower money supply tightens money markets.",
-      "aHash": "102c83df09fe66e9d7ed64cb5f8c8894bb057d70b3ed5a00ec3da4bf2387579b"
+      "aHash": "7209f245e9557768815d2614dc39197a10a4c027c4a4c3740a441280bb52ae76"
     },
     {
       "id": 5087,
-      "q": "Recovery policy that raises money supply can shift what?",
+      "q": "Which curve shift can result from a recovery policy that increases the money supply?",
       "options": [
-        "LM left",
-        "LM right",
-        "IS left",
-        "LRAS left"
+        "The LM curve shifts to the left",
+        "The LM curve shifts to the right",
+        "The IS curve shifts to the left",
+        "The LRAS curve shifts to the left"
       ],
       "tag": "great_depression",
       "type": "application",
@@ -10340,7 +10340,7 @@ const microSkillRepairPools = {
       "primarySkill": "depression_crisis_mechanisms",
       "repairSkill": "depression_crisis_mechanisms",
       "feedback": "More money can ease monetary conditions.",
-      "aHash": "3210fe5e51abe1cee997576a62ddc6ba0b3038faf22c9ac121c07710400a2591"
+      "aHash": "e02b02d3b5d106df9065a6f9be8d21714d848a5a9807c791fb5b4db41186b9ba"
     }
   ]
 };
@@ -10349,7 +10349,7 @@ const microSkillBridgePools = {
   "is_curve_goods_market": [
     {
       "id": 6000,
-      "q": "If a tax cut raises consumption by 40 and MPC=0.8, what is the simple-cross IS shift in Y-units?",
+      "q": "A tax cut initially raises consumption by 40. If the marginal propensity to consume is 0.8, how much does equilibrium output rise in the simple Keynesian-cross model, before any interest-rate response?",
       "options": [
         "40",
         "160",
@@ -10361,29 +10361,29 @@ const microSkillBridgePools = {
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
       "repairSkill": "is_curve_goods_market",
-      "feedback": "The multiplier is 5, so 40 becomes 200.",
+      "feedback": "The spending multiplier is 1/(1 − 0.8) = 5. The given 40 is already the initial increase in consumption, so multiply it by 5 to obtain 200. Do not apply the marginal propensity to consume a second time.",
       "aHash": "27badc983df1780b60c2b3fa9d3a19a00e46aac798451f0febdca52920faaddf"
     },
     {
       "id": 6001,
       "q": "What distinguishes IS slope from IS position?",
       "options": [
-        "taxes change only LM",
-        "r changes always shift IS",
-        "income changes always shift IS",
-        "interest sensitivity changes slope; auto. spending changes position"
+        "Taxes change only LM",
+        "The interest rate changes always shift IS",
+        "Income changes always shift IS",
+        "How strongly investment responds to interest rates affects the slope; autonomous spending affects the position"
       ],
       "tag": "is_curve",
       "type": "trap",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
       "repairSkill": "is_curve_goods_market",
-      "feedback": "Slope and shift are different skills.",
-      "aHash": "432ef7ffdd4b4ee78a424974ea39851bccce7a3597915ee1b1afddda33d9b4b0"
+      "feedback": "The IS slope describes how output responds to a change in the interest rate. A change in autonomous spending changes output at a given interest rate and shifts the curve.",
+      "aHash": "a64e3eaa01b0fb972b4e8acb8318972ac48e00a63bccd8edb700fa268070ea35"
     },
     {
       "id": 6002,
-      "q": "IS is Y=3000−100r. If r falls from 6 to 4, what happens to Y along IS?",
+      "q": "IS is Y=3000−100r. If the interest rate falls from 6 to 4, what happens to Y along IS?",
       "options": [
         "rises by 200",
         "falls by 200",
@@ -10395,17 +10395,17 @@ const microSkillBridgePools = {
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
       "repairSkill": "is_curve_goods_market",
-      "feedback": "Lower r raises Y by 100×2.",
+      "feedback": "Lower interest rate raises output by 100×2.",
       "aHash": "54d69da2a4d36752b16b6309ff9ecf13f8073f996f50d7119393b33c3872667e"
     },
     {
       "id": 6003,
-      "q": "On the IS graph, moving from IS2 to IS3 at the same r shows what?",
+      "q": "Refer to the IS graph. What change is represented by a shift from IS2 to IS3 at the same interest rate?",
       "options": [
         "r rose along IS2",
-        "auto. spending increased",
-        "money supply fell",
-        "LRAS shifted left"
+        "Autonomous spending increased",
+        "Money supply fell",
+        "The LRAS curve shifted to the left"
       ],
       "tag": "is_curve",
       "type": "graph",
@@ -10414,15 +10414,15 @@ const microSkillBridgePools = {
       "primarySkill": "is_curve_goods_market",
       "repairSkill": "is_curve_goods_market",
       "feedback": "A new IS curve means a spending determinant changed.",
-      "aHash": "1c38725865cacc951d4de036047dc677b02f10cad42ee152f0cac8ecc54e865b"
+      "aHash": "e37c1f7d03d708648fabbfdc1453e696c3e29c1075e91b7a298f42629672a47e"
     },
     {
       "id": 6004,
       "q": "Why does a fiscal IS shift produce less output in IS-LM than in the simple cross?",
       "options": [
-        "r falls and boosts saving",
+        "The interest rate falls and boosts saving",
         "M/P rises automatically",
-        "r rises & offsets some I",
+        "The interest rate rises and offsets some investment",
         "LRAS moves first"
       ],
       "tag": "is_curve",
@@ -10430,8 +10430,8 @@ const microSkillBridgePools = {
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
       "repairSkill": "is_curve_goods_market",
-      "feedback": "The LM response creates crowding out.",
-      "aHash": "ae265ebebfeec8320aef1e491d5b1a5f0ad907a08c38435f935782715a6fd070"
+      "feedback": "Fiscal expansion raises output and the demand for money. With money supply fixed, the interest rate rises, reducing some investment. This offsets part of the output gain predicted by the simple Keynesian cross.",
+      "aHash": "dbb9099ac9232d8a9b919541144c7b8f45a06fa809f2322c5990ebc89860c000"
     },
     {
       "id": 6005,
@@ -10454,39 +10454,39 @@ const microSkillBridgePools = {
       "id": 6006,
       "q": "If investment becomes more interest-sensitive, what happens to IS?",
       "options": [
-        "it becomes flatter",
-        "it shifts right automatically",
-        "it becomes vertical",
-        "it becomes LM"
+        "It becomes flatter",
+        "It shifts right automatically",
+        "It becomes vertical",
+        "It becomes LM"
       ],
       "tag": "is_curve",
       "type": "application",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
       "repairSkill": "is_curve_goods_market",
-      "feedback": "Y responds more to a given r change.",
+      "feedback": "Output responds more to a given interest rate change.",
       "aHash": "e895f8098fc100c8630378f6024497d4ba9675a6867fb5d1dcb132dbebce4649"
     },
     {
       "id": 6007,
-      "q": "Which answer wrongly treats r as exogenous in IS-LM?",
+      "q": "Which answer wrongly treats the interest rate as exogenous in IS-LM?",
       "options": [
-        "letting r change at the intersection",
-        "holding r fixed after an IS shift without a policy peg",
-        "using LM to find r",
-        "explaining investment response"
+        "Letting the interest rate change at the intersection",
+        "Holding the interest rate fixed after an IS shift without a policy peg",
+        "Using LM to find the interest rate",
+        "Explaining investment response"
       ],
       "tag": "is_curve",
       "type": "trap",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
       "repairSkill": "is_curve_goods_market",
-      "feedback": "r is normally solved by IS-LM.",
-      "aHash": "d2910e9f5d46d6cc0b507d3bbf34242aa78722a63df0f339bb70c34fadac8601"
+      "feedback": "The interest rate is normally solved by IS-LM.",
+      "aHash": "27842bf81df6590d9ddf183774ba964139de1663db488ce25fc863bd226e2db5"
     },
     {
       "id": 6008,
-      "q": "MPC=0.75 and autonomous investment falls by 30. ΔY before LM feedback?",
+      "q": "The marginal propensity to consume is 0.75, and autonomous investment falls by 30. Before any interest-rate response, how much does equilibrium output change in the simple Keynesian-cross model?",
       "options": [
         "−30",
         "−90",
@@ -10498,17 +10498,17 @@ const microSkillBridgePools = {
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
       "repairSkill": "is_curve_goods_market",
-      "feedback": "Multiplier is 4.",
+      "feedback": "The spending multiplier is 1/(1 − 0.75) = 4. A fall of 30 in investment therefore changes output by −30 × 4 = −120.",
       "aHash": "294518db892e389080b8da0481554ce34f5df27c07a8cbd99025eeb03a76b3d0"
     },
     {
       "id": 6009,
       "q": "What is the IS mechanism in one sentence?",
       "options": [
-        "P changes LRAS, which fixes Y",
-        "taxes change M/P directly",
-        "money demand sets G",
-        "r changes I, which changes planned spending & Y"
+        "The price level changes LRAS, which fixes output",
+        "Taxes change M/P directly",
+        "Money demand sets government purchases",
+        "The interest rate changes investment, which changes planned spending and output"
       ],
       "tag": "is_curve",
       "type": "interpretation",
@@ -10516,23 +10516,23 @@ const microSkillBridgePools = {
       "primarySkill": "is_curve_goods_market",
       "repairSkill": "is_curve_goods_market",
       "feedback": "This is the goods-market channel.",
-      "aHash": "c171a2379e6411aedf7bc6483b0f8b8bfa73d09f6e559d7bcc5da3b6d56d7eb4"
+      "aHash": "daae876316a22cf42a3ff52f4ba0e8504202a4cd5b51318daa2966184b53e5fa"
     },
     {
       "id": 6010,
-      "q": "Which shock shifts IS left but does not directly shift LM?",
+      "q": "Which shock shifts the IS curve to the left but does not directly shift LM?",
       "options": [
-        "lower consumer confidence",
-        "lower money supply",
-        "higher money demand",
-        "higher price level"
+        "Lower consumer confidence",
+        "Lower money supply",
+        "Higher money demand",
+        "Higher price level"
       ],
       "tag": "is_curve",
       "type": "application",
       "objective": "LO12.1",
       "primarySkill": "is_curve_goods_market",
       "repairSkill": "is_curve_goods_market",
-      "feedback": "Confidence is a spending determinant.",
+      "feedback": "Lower consumer confidence reduces planned consumption at a given income. Planned spending falls, shifting IS to the left without directly changing real money supply or money demand.",
       "aHash": "0f9a9b862c87fd03518c7122db34a209d5b0efa41fcee497ca9a2feb91b164bb"
     }
   ],
@@ -10556,11 +10556,11 @@ const microSkillBridgePools = {
     },
     {
       "id": 6012,
-      "q": "What is wrong with saying higher Y shifts LM left?",
+      "q": "What is wrong with saying higher output shifts the LM curve to the left?",
       "options": [
-        "higher Y raises money demand",
-        "LM includes Y and r",
-        "higher Y moves along LM",
+        "Higher output raises money demand",
+        "LM includes output and the interest rate",
+        "Higher output moves along LM",
         "M/P can shift LM"
       ],
       "tag": "lm_curve",
@@ -10568,29 +10568,29 @@ const microSkillBridgePools = {
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
       "repairSkill": "lm_curve_money_market",
-      "feedback": "Y is an axis variable, not a shifter.",
-      "aHash": "6312cd66b81b908b1454e10e8830679c9cf4a89c96fa10eca498e83365be7baf"
+      "feedback": "Output is an axis variable, not a shifter.",
+      "aHash": "fddbc4b3e297357ebb981b1f41fdee147422b4ea1fbd20297f6c4426ab69e52b"
     },
     {
       "id": 6013,
-      "q": "If P doubles and M is unchanged, what happens to M/P?",
+      "q": "If P doubles and the nominal money supply is unchanged, what happens to M/P?",
       "options": [
-        "it doubles",
-        "it stays fixed",
-        "it becomes zero",
-        "it is cut in half"
+        "It doubles",
+        "It stays fixed",
+        "It becomes zero",
+        "It is cut in half"
       ],
       "tag": "lm_curve",
       "type": "application",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
       "repairSkill": "lm_curve_money_market",
-      "feedback": "Real balances fall when P rises.",
+      "feedback": "Real balances fall when the price level rises.",
       "aHash": "8d89ad0b16ecc65e91e77dc58e3ebeb9ed2c1d185d5d555bcf81b58c9b90a2d7"
     },
     {
       "id": 6014,
-      "q": "On the LM graph, LM1 to LM3 at the same Y means what?",
+      "q": "Refer to the LM graph. Which change can shift the curve from LM1 to LM3, lowering the interest rate at a given output?",
       "options": [
         "monetary expansion or lower Md",
         "higher taxes",
@@ -10603,46 +10603,46 @@ const microSkillBridgePools = {
       "image": "lm_curves.webp",
       "primarySkill": "lm_curve_money_market",
       "repairSkill": "lm_curve_money_market",
-      "feedback": "Rightward LM means lower r at the same income.",
+      "feedback": "Rightward LM means lower interest rate at the same income.",
       "aHash": "3f778946e92badbbe7f3f49d2cc37a96eeb5a8a2bf5a1342fb0b19967428e0a7"
     },
     {
       "id": 6015,
-      "q": "Why does a money-demand increase reduce Y?",
+      "q": "Why does a money-demand increase reduce output?",
       "options": [
-        "it shifts IS right",
-        "it LM left, raises r, & lowers I",
-        "it lowers r and investment",
-        "it raises G"
+        "It shifts the IS curve to the right",
+        "It shifts LM to the left, raises the interest rate, and reduces investment",
+        "It lowers the interest rate and investment",
+        "It raises government purchases"
       ],
       "tag": "lm_curve",
       "type": "integration",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
       "repairSkill": "lm_curve_money_market",
-      "feedback": "The monetary shock transmits through r.",
-      "aHash": "279c726fbb3aec1efd5ca737ec7639739b9a46cd87c3761391d88bea5e8725c5"
+      "feedback": "Higher money demand raises the interest rate at any given output, shifting LM to the left. More expensive borrowing reduces investment, which lowers planned spending and equilibrium output.",
+      "aHash": "468124d5db66bc2458f75fea6c8c5150ba4c51e0aaf557e4e456074137ab8013"
     },
     {
       "id": 6016,
       "q": "What is fixed on a given LM curve?",
       "options": [
-        "government purchases",
-        "taxes only",
-        "real M & money-demand behavior",
-        "natural output only"
+        "Government purchases",
+        "Taxes only",
+        "Real money supply and money-demand behavior",
+        "Natural output only"
       ],
       "tag": "lm_curve",
       "type": "definition",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
       "repairSkill": "lm_curve_money_market",
-      "feedback": "LM shifts when those determinants change.",
-      "aHash": "7a9e7b50de5cd6443bf0311efc4a67b948da43b5331d0aa0d57a7d836ae1e27d"
+      "feedback": "A given LM curve holds real money supply and money-demand behavior fixed. Changing income moves the economy along that curve; changing either of those determinants shifts the curve.",
+      "aHash": "d9dede70dbf29c95ab5f1db91407385664ac947117d460ddff0803667a6117dd"
     },
     {
       "id": 6017,
-      "q": "M rises by 500 while P=5. What is Δ(M/P)?",
+      "q": "Nominal money supply rises by 500 while the price level stays at 5. How much do real money balances increase?",
       "options": [
         "500",
         "2500",
@@ -10654,16 +10654,16 @@ const microSkillBridgePools = {
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
       "repairSkill": "lm_curve_money_market",
-      "feedback": "500/5=100.",
+      "feedback": "Real balances are nominal money divided by the price level. The increase is 500/5 = 100 real units.",
       "aHash": "ad57366865126e55649ecb23ae1d48887544976efea46a48eb5d85a6eeb4d306"
     },
     {
       "id": 6018,
-      "q": "If money demand becomes more interest-sensitive, LM becomes what?",
+      "q": "How does greater sensitivity of money demand to the interest rate affect the slope of the LM curve?",
       "options": [
-        "flatter",
-        "steeper",
-        "vertical",
+        "Flatter",
+        "Steeper",
+        "Vertical",
         "IS3"
       ],
       "tag": "lm_curve",
@@ -10671,17 +10671,17 @@ const microSkillBridgePools = {
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
       "repairSkill": "lm_curve_money_market",
-      "feedback": "r moves less for a given Y change.",
+      "feedback": "The interest rate moves less for a given output change.",
       "aHash": "d92d2c2d4bb1810fda3325fdcef38adafe57b12a24fef4232c2a8b8e0c577904"
     },
     {
       "id": 6019,
       "q": "Which answer confuses money demand and money supply?",
       "options": [
-        "higher money supply shifts LM right",
-        "higher money demand shifts LM right",
-        "higher money demand shifts LM left",
-        "lower money supply shifts LM left"
+        "Higher money supply shifts the LM curve to the right",
+        "Higher money demand shifts the LM curve to the right",
+        "Higher money demand shifts the LM curve to the left",
+        "Lower money supply shifts the LM curve to the left"
       ],
       "tag": "lm_curve",
       "type": "trap",
@@ -10689,47 +10689,47 @@ const microSkillBridgePools = {
       "primarySkill": "lm_curve_money_market",
       "repairSkill": "lm_curve_money_market",
       "feedback": "Demand and supply shocks move LM in opposite directions.",
-      "aHash": "280926ff3a474b8dfab2bbcaf752881b58d9b92c52c8b94e6504a98cb061f058"
+      "aHash": "99bf82187bed20e4d7f9562a026314bfcdebfa10287ad9d626fbaaa2aa2fe819"
     },
     {
       "id": 6020,
-      "q": "What does LM-right mean at fixed Y?",
+      "q": "At a fixed level of output, what does a rightward shift of the LM curve imply about the interest rate that clears the money market?",
       "options": [
-        "higher r",
-        "higher taxes",
-        "lower r",
-        "lower consumption"
+        "The money-market clearing interest rate is higher at that output",
+        "Taxes are higher at that output",
+        "The money-market clearing interest rate is lower at that output",
+        "Consumption is lower at that output"
       ],
       "tag": "lm_curve",
       "type": "interpretation",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
       "repairSkill": "lm_curve_money_market",
-      "feedback": "More liquidity lowers the clearing interest rate.",
-      "aHash": "500b5db411eec53a7c311ea43bc73bfe4bfd3c436306faf35b3261d086106222"
+      "feedback": "At the same output, a rightward shift of the LM curve means that a lower interest rate clears the money market. This can result from more real money balances or lower money demand. This comparison holds output fixed; it does not describe the full adjustment to a new IS–LM equilibrium.",
+      "aHash": "9155eee528125c0f5a24c68f67f336e26733bfb2efc69cf0ffebebaf1cf8e0c6"
     },
     {
       "id": 6021,
-      "q": "Which price-level change shifts LM right with fixed M?",
+      "q": "Which price-level change shifts the LM curve to the right with fixed nominal money supply?",
       "options": [
-        "higher P",
-        "higher T",
-        "higher G",
-        "lower P"
+        "Higher price level",
+        "Higher taxes",
+        "Higher government purchases",
+        "Lower price level"
       ],
       "tag": "lm_curve",
       "type": "application",
       "objective": "LO12.2",
       "primarySkill": "lm_curve_money_market",
       "repairSkill": "lm_curve_money_market",
-      "feedback": "Lower P raises M/P.",
-      "aHash": "38edfb2ce7a4350da933fb20c52cccba92d73d70aecd5b10dab5fedea85b7752"
+      "feedback": "Lower price level raises M/P.",
+      "aHash": "ecb92c3547f760ea96b4ba0d36eca5c1dee41b264bc2624be30485851ef762cc"
     }
   ],
   "is_lm_equilibrium": [
     {
       "id": 6022,
-      "q": "IS Y=2000−100r and LM Y=800+200r. Find r.",
+      "q": "The IS curve is Y = 2,000 − 100r and the LM curve is Y = 800 + 200r, where Y is output and r is the interest rate. What is the equilibrium interest rate?",
       "options": [
         "4",
         "3",
@@ -10741,51 +10741,51 @@ const microSkillBridgePools = {
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
       "repairSkill": "is_lm_equilibrium",
-      "feedback": "Set equations equal.",
+      "feedback": "Set the two expressions for output equal: 2,000 − 100r = 800 + 200r. This gives 1,200 = 300r, so r = 4. Both markets are in equilibrium at that rate and output of 1,600.",
       "aHash": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
     },
     {
       "id": 6023,
-      "q": "IS-right and LM-left together definitely do what to r?",
+      "q": "If the IS curve shifts to the right and the LM curve shifts to the left, what happens to the equilibrium interest rate?",
       "options": [
-        "lower r",
-        "raise r",
-        "leave r fixed",
-        "make r irrelevant"
+        "The interest rate falls",
+        "The interest rate rises",
+        "The interest rate remains unchanged",
+        "The interest rate becomes irrelevant"
       ],
       "tag": "is_lm_equilibrium",
       "type": "application",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
       "repairSkill": "is_lm_equilibrium",
-      "feedback": "Both forces increase r.",
-      "aHash": "8382170b45fe0dd4189e6b1fb67645df11fda8168f2fe435f2fc6bc7a0de9218"
+      "feedback": "Both forces increase the interest rate.",
+      "aHash": "7ba75e7932ae87b7fdbf8c6dfb26f14813a361d21a4dbb1df7be2d4373d29e43"
     },
     {
       "id": 6024,
-      "q": "IS-left and LM-right together definitely do what to r?",
+      "q": "If the IS curve shifts to the left and the LM curve shifts to the right, what happens to the equilibrium interest rate?",
       "options": [
-        "raise r",
-        "leave r fixed",
-        "lower r",
-        "make r irrelevant"
+        "The interest rate rises",
+        "The interest rate remains unchanged",
+        "The interest rate falls",
+        "The interest rate becomes irrelevant"
       ],
       "tag": "is_lm_equilibrium",
       "type": "application",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
       "repairSkill": "is_lm_equilibrium",
-      "feedback": "Both forces reduce r.",
-      "aHash": "500b5db411eec53a7c311ea43bc73bfe4bfd3c436306faf35b3261d086106222"
+      "feedback": "Both forces reduce the interest rate.",
+      "aHash": "504ba25f9205f99fb7cbe7a80a42d41e9878d9e59bae0e62f9fcb38af42ef749"
     },
     {
       "id": 6025,
-      "q": "On the IS-LM graph, D to G means what?",
+      "q": "Refer to the IS–LM graph. Which curve shift moves the equilibrium from D to G?",
       "options": [
-        "IS shifts right on LM2",
-        "LM shifts left on IS2",
-        "IS shifts left on LM2",
-        "LM shifts right on IS2"
+        "The IS curve shifts to the right on LM2",
+        "The LM curve shifts to the left on IS2",
+        "The IS curve shifts to the left on LM2",
+        "The LM curve shifts to the right on IS2"
       ],
       "tag": "is_lm_equilibrium",
       "type": "graph",
@@ -10794,15 +10794,15 @@ const microSkillBridgePools = {
       "primarySkill": "is_lm_equilibrium",
       "repairSkill": "is_lm_equilibrium",
       "feedback": "D and G share IS2.",
-      "aHash": "8c29430a785a729b968c497340da8d629acdf21ee79948bc4dbe4243225c0447"
+      "aHash": "b68796e391ba7c84d667581bf3613d3be313bb006bf3142ea7a9754ea414cfb0"
     },
     {
       "id": 6026,
-      "q": "What is wrong with choosing a shock from Y alone?",
+      "q": "What is wrong with choosing a shock from output alone?",
       "options": [
-        "different curve can produce the same Y direction",
-        "Y never changes",
-        "r never changes",
+        "Different curve shifts can produce the same direction of output change",
+        "Output never changes",
+        "The interest rate never changes",
         "LM cannot shift"
       ],
       "tag": "is_lm_equilibrium",
@@ -10810,25 +10810,25 @@ const microSkillBridgePools = {
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
       "repairSkill": "is_lm_equilibrium",
-      "feedback": "Use both Y and r.",
-      "aHash": "400206ff838d7fadb4cb67993ae5daca71c07c4ea59f601cbdbd414c405b9bba"
+      "feedback": "Fiscal expansion and monetary expansion can both raise output, but they have opposite interest-rate effects in standard IS–LM. Use the joint changes in output and the interest rate to distinguish the shifts.",
+      "aHash": "9599e840076adeee2e3baa0d0df844b98c76d0feff25c0ede729b88b31959c92"
     },
     {
       "id": 6027,
-      "q": "Fiscal expansion with monetary accommodation does what?",
+      "q": "Compared with fiscal expansion alone, how does adding monetary accommodation affect equilibrium output and the interest rate?",
       "options": [
-        "lowers Y more",
-        "raises Y more & r less than fiscal alone",
-        "raises r more",
-        "leaves IS fixed"
+        "Lowers output more",
+        "Raises output more and the interest rate less than fiscal alone",
+        "Raises the interest rate more",
+        "Leaves IS fixed"
       ],
       "tag": "is_lm_equilibrium",
       "type": "integration",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
       "repairSkill": "is_lm_equilibrium",
-      "feedback": "LM-right reduces crowding out.",
-      "aHash": "77381e5817be03070fe84037ac86ec7cddcebaf062590c9794b9a99f5690f2d5"
+      "feedback": "Monetary expansion shifts LM to the right and limits the interest-rate increase caused by fiscal expansion. Less investment is crowded out, so output rises more than with fiscal expansion alone.",
+      "aHash": "c5581b3f96af6837cacfcb36efe336263d5150ec4837efd43a97954e3fdf1861"
     },
     {
       "id": 6028,
@@ -10849,12 +10849,12 @@ const microSkillBridgePools = {
     },
     {
       "id": 6029,
-      "q": "Why can Y differ from natural output in IS-LM?",
+      "q": "Why can output differ from natural output in IS-LM?",
       "options": [
         "LRAS is always shifting",
-        "money demand is zero",
-        "taxes force full employment",
-        "P is fixed in the short run"
+        "Money demand is zero",
+        "Taxes force full employment",
+        "The price level is fixed in the short run"
       ],
       "tag": "is_lm_equilibrium",
       "type": "definition",
@@ -10862,86 +10862,86 @@ const microSkillBridgePools = {
       "primarySkill": "is_lm_equilibrium",
       "repairSkill": "is_lm_equilibrium",
       "feedback": "Demand can move output away from potential.",
-      "aHash": "10c1ab749ce0b99f0aabe668783103821781a23563b0cbecf57c458b147ad4fc"
+      "aHash": "6adca2a4cd1a9adef773ada08b3df2c0c40df7365c621c28253b2767d91b7e2e"
     },
     {
       "id": 6030,
-      "q": "If LM shifts right and IS shifts left, what is ambiguous?",
+      "q": "If the LM curve shifts to the right and the IS curve shifts to the left, what is ambiguous?",
       "options": [
-        "Y",
-        "r",
-        "the LM direction",
-        "the IS direction"
+        "Output",
+        "The interest rate",
+        "The LM direction",
+        "The IS direction"
       ],
       "tag": "is_lm_equilibrium",
       "type": "application",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
       "repairSkill": "is_lm_equilibrium",
-      "feedback": "The Y effects oppose.",
-      "aHash": "a1fce4363854ff888cff4b8e7875d600c2682390412a8cf79b37d0b11148b0fa"
+      "feedback": "A rightward LM shift raises output, while a leftward IS shift lowers it. Without knowing the relative sizes of these shifts, the net output change is uncertain; both shifts lower the interest rate.",
+      "aHash": "e0ee8bb50685e05fa0f47ed04203ae953fdfd055f5bd2892ea186504254f8c3a"
     },
     {
       "id": 6031,
-      "q": "What does the new intersection give?",
+      "q": "After a curve shift, which equilibrium values are given by the new IS–LM intersection?",
       "options": [
-        "new G and T",
-        "new Y and r",
-        "new P and LRAS only",
-        "old money demand"
+        "New government purchases and taxes",
+        "New output and the interest rate",
+        "New price level and LRAS only",
+        "Old money demand"
       ],
       "tag": "is_lm_equilibrium",
       "type": "interpretation",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
       "repairSkill": "is_lm_equilibrium",
-      "feedback": "Read outcomes at the new crossing.",
-      "aHash": "4c14374de7a9af42048d9e8dbc3e7418234cceda2f2624ea63d2e01c95d1d99e"
+      "feedback": "After shifting the affected curve, find the new IS-LM intersection. Its horizontal coordinate gives output and its vertical coordinate gives the interest rate.",
+      "aHash": "41be057cf94bb589b8b23b8638f3b5d811500dc9b8cafbba60326baddf37c1ea"
     },
     {
       "id": 6032,
       "q": "What order should an IS-LM answer follow?",
       "options": [
-        "read Y first, invent shock, ignore r",
-        "choose policy label, skip graph",
-        "identify shock, shift curve, read Y & r",
-        "calculate multiplier twice"
+        "Read output first, invent shock, ignore the interest rate",
+        "Choose policy label, skip graph",
+        "Identify shock, shift curve, read output and the interest rate",
+        "Calculate multiplier twice"
       ],
       "tag": "is_lm_equilibrium",
       "type": "multi-step",
       "objective": "LO12.3",
       "primarySkill": "is_lm_equilibrium",
       "repairSkill": "is_lm_equilibrium",
-      "feedback": "Mechanism before outcome.",
-      "aHash": "5568113d4d4b60635f02bb66a530cb1715a92498223be7063a65429380212411"
+      "feedback": "Start with the change imposed on the economy, identify which curve it shifts, and then read output and the interest rate at the new intersection.",
+      "aHash": "75807594d8d758ebea88549bef38e96817dbea8e42f98dbb21fb720124290816"
     }
   ],
   "shock_transmission": [
     {
       "id": 6033,
-      "q": "A fall in investment confidence and a rise in money demand together do what to Y?",
+      "q": "If investment confidence falls while money demand rises, what happens to equilibrium output?",
       "options": [
-        "raise Y",
-        "leave Y fixed",
-        "make Y ambiguous upward only",
-        "lower Y"
+        "Output rises",
+        "Output remains unchanged",
+        "Output may rise or remain unchanged, but cannot fall",
+        "Output falls"
       ],
       "tag": "shocks",
       "type": "application",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
       "repairSkill": "shock_transmission",
-      "feedback": "IS-left and LM-left both reduce output.",
-      "aHash": "dea0f6698cc94bbdb07367cb1f14ab0216fe0b75b3f0d931c72ca0f23b6ce570"
+      "feedback": "A leftward shift of the IS curve and a leftward shift of the LM curve both reduce output.",
+      "aHash": "4b58d6b239820abdc0f850046d67a87a4c7d163f3d8f16595253706254c95f45"
     },
     {
       "id": 6034,
-      "q": "IS-right plus LM-right definitely changes Y how?",
+      "q": "If the IS and LM curves both shift to the right, what happens to equilibrium output?",
       "options": [
-        "raises Y",
-        "lowers Y",
-        "leaves Y fixed",
-        "makes Y negative"
+        "Output rises",
+        "Output falls",
+        "Output remains unchanged",
+        "Output becomes negative"
       ],
       "tag": "shocks",
       "type": "application",
@@ -10949,28 +10949,28 @@ const microSkillBridgePools = {
       "primarySkill": "shock_transmission",
       "repairSkill": "shock_transmission",
       "feedback": "Both shifts raise income.",
-      "aHash": "318f88cbf2be39930416905eed867b80f5906a3d526eb0b832c9f9c54f645a90"
+      "aHash": "0b6435b356cbf9a46ccef412035e920828aae4da02b1f677261baf2c83ae9224"
     },
     {
       "id": 6035,
       "q": "Which error confuses an IS shock with an LM shock?",
       "options": [
-        "treating higher money demand as LM-left",
-        "treating lower I as lower M",
-        "treating lower G as IS-left",
-        "treating higher M as LM-right"
+        "Treating higher money demand as a leftward shift of the LM curve",
+        "Treating lower investment as lower nominal money supply",
+        "Treating lower government purchases as a leftward shift of the IS curve",
+        "Treating higher nominal money supply as a rightward shift of the LM curve"
       ],
       "tag": "shocks",
       "type": "trap",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
       "repairSkill": "shock_transmission",
-      "feedback": "Investment is a spending channel.",
-      "aHash": "94bceecd68d38d10ce975ab8471eedfd890a8a6258a72c9e62a4d89a38232d57"
+      "feedback": "Investment is a component of planned spending, so a fall in autonomous investment shifts IS to the left. A fall in money supply instead shifts LM to the left; the two changes are not the same shock.",
+      "aHash": "532c5d22ac0b962f46f915629b1a85fc2d6c20a9566a4ba2f056fee7c91f0cb8"
     },
     {
       "id": 6036,
-      "q": "Autonomous demand falls by 45 and multiplier is 4. ΔY?",
+      "q": "Autonomous spending falls by 45 and the spending multiplier is 4. What is the change in output in the simple Keynesian-cross model?",
       "options": [
         "−45",
         "−90",
@@ -10982,12 +10982,12 @@ const microSkillBridgePools = {
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
       "repairSkill": "shock_transmission",
-      "feedback": "45×4=180.",
+      "feedback": "The spending change is −45. Multiplying by 4 gives −180, so output falls by 180. Using +180 would reverse the direction of the shock.",
       "aHash": "f5a4654a7b70f4973102af6b3fb2f033ef8b695b7bf79e5c2d3821a0aca79a2e"
     },
     {
       "id": 6037,
-      "q": "A money-demand shock is +35 real balances; P=4. Required ΔM to offset?",
+      "q": "At the current output and interest rate, real money demand rises by 35 units. The price level stays at 4. How much must nominal money supply increase to offset the extra demand?",
       "options": [
         "35",
         "39",
@@ -10999,17 +10999,17 @@ const microSkillBridgePools = {
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
       "repairSkill": "shock_transmission",
-      "feedback": "35×4=140.",
+      "feedback": "Multiply the additional real balances by the price level: 35 × 4 = 140. That nominal increase supplies exactly 35 more real units, offsetting the demand change.",
       "aHash": "dbae772db29058a88f9bd830e957c695347c41b6162a7eb9a9ea13def34be56b"
     },
     {
       "id": 6038,
-      "q": "On the IS-LM graph, E to C is what?",
+      "q": "Refer to the IS–LM graph. Which curve shift moves the equilibrium from E to C?",
       "options": [
-        "LM-left shock",
-        "IS-left shock",
-        "LM-right shock",
-        "IS-right shock"
+        "A leftward shift of the LM curve",
+        "A leftward shift of the IS curve",
+        "A rightward shift of the LM curve",
+        "A rightward shift of the IS curve"
       ],
       "tag": "shocks",
       "type": "graph",
@@ -11017,68 +11017,68 @@ const microSkillBridgePools = {
       "image": "is_lm_curves.webp",
       "primarySkill": "shock_transmission",
       "repairSkill": "shock_transmission",
-      "feedback": "E and C are on IS3; LM shifts left.",
-      "aHash": "3ec87ed2db789fa2b6093640d0f9df562b17372663322a4b9ff436cbfba9b93c"
+      "feedback": "E and C are on IS3; the LM curve shifts to the left.",
+      "aHash": "8825b0b5ce89c7fdadb75d1c098aac788ecf451899643581252dd4b72b87aaac"
     },
     {
       "id": 6039,
-      "q": "IS-left plus LM-left makes r ambiguous because what?",
+      "q": "Why does the interest-rate effect of simultaneous leftward shifts of the IS and LM curves depend on the relative sizes of the shifts?",
       "options": [
-        "both lower r",
-        "one lowers r & the other raises r",
-        "both raise r",
-        "neither affects r"
+        "Both lower the interest rate",
+        "One lowers the interest rate and the other raises the interest rate",
+        "Both raise the interest rate",
+        "Neither affects the interest rate"
       ],
       "tag": "shocks",
       "type": "integration",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
       "repairSkill": "shock_transmission",
-      "feedback": "The interest-rate effects oppose.",
-      "aHash": "96f23d689915f54ca0856bfee21d14af7689ee6b910ef28e1f9804a173740488"
+      "feedback": "A leftward IS shift lowers the interest rate by reducing income and money demand. A leftward LM shift raises the interest rate by tightening money conditions. Their combined interest-rate effect depends on the relative strength of the shifts.",
+      "aHash": "b47e772fdbaad17565daac13c51feb303ba055f599a0c4a49bbbe99400cf462c"
     },
     {
       "id": 6040,
       "q": "Banking panic raises money demand before investment falls. Which curve moves first?",
       "options": [
-        "IS right",
-        "LRAS right",
-        "LM left",
-        "AD right"
+        "The IS curve shifts to the right",
+        "The LRAS curve shifts to the right",
+        "The LM curve shifts to the left",
+        "The AD curve shifts to the right"
       ],
       "tag": "shocks",
       "type": "multi-step",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
       "repairSkill": "shock_transmission",
-      "feedback": "The first stated channel is money demand.",
-      "aHash": "102c83df09fe66e9d7ed64cb5f8c8894bb057d70b3ed5a00ec3da4bf2387579b"
+      "feedback": "The panic first increases the demand to hold money. With supply unchanged, LM shifts to the left and the interest rate rises. Investment then falls in response to the higher rate.",
+      "aHash": "7209f245e9557768815d2614dc39197a10a4c027c4a4c3740a441280bb52ae76"
     },
     {
       "id": 6041,
       "q": "Why name the shock source?",
       "options": [
-        "answers are graded by word count",
-        "graphs require colors",
-        "all shocks are fiscal",
-        "same outcome can have different mechanisms"
+        "Answers are graded by word count",
+        "Graphs require colors",
+        "All shocks are fiscal",
+        "Same outcome can have different mechanisms"
       ],
       "tag": "shocks",
       "type": "interpretation",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
       "repairSkill": "shock_transmission",
-      "feedback": "Mechanism drives remediation.",
+      "feedback": "Different shocks can produce the same output change. Identifying the source tells you which curve moves and why, rather than guessing from the final outcome.",
       "aHash": "639c1ddec221aab3be6dac4c900e7ee78640030cb8b2efca42b423891cac4c7b"
     },
     {
       "id": 6042,
       "q": "What is an exogenous change?",
       "options": [
-        "a cause imposed from outside the model",
-        "a solved value of r",
-        "a graph label",
-        "an old equilibrium"
+        "A cause imposed from outside the model",
+        "A solved value of the interest rate",
+        "A graph label",
+        "An old equilibrium"
       ],
       "tag": "shocks",
       "type": "definition",
@@ -11090,26 +11090,26 @@ const microSkillBridgePools = {
     },
     {
       "id": 6043,
-      "q": "Which shock lowers Y and r?",
+      "q": "Which shock lowers output and the interest rate?",
       "options": [
-        "LM-left",
-        "IS-left",
-        "IS-right",
-        "LM-right"
+        "A leftward shift of the LM curve",
+        "A leftward shift of the IS curve",
+        "A rightward shift of the IS curve",
+        "A rightward shift of the LM curve"
       ],
       "tag": "shocks",
       "type": "application",
       "objective": "LO13.1",
       "primarySkill": "shock_transmission",
       "repairSkill": "shock_transmission",
-      "feedback": "IS-left reduces spending and money demand.",
-      "aHash": "4d0c3c8112b84b4f1b955a23c3894ab1560cc0009c55ff0968e85e5c5e229e69"
+      "feedback": "A leftward shift of the IS curve reduces spending and money demand.",
+      "aHash": "ab5bd01e7ab3f6129b51d68b8e2cad9b19c32e293a261d0dbcb4c52570c77af5"
     }
   ],
   "fiscal_policy_is_shift": [
     {
       "id": 6044,
-      "q": "MPC=0.8 and G rises by 20. Simple-cross ΔY?",
+      "q": "The marginal propensity to consume is 0.8, and government purchases rise by 20. What is the output increase in the simple Keynesian-cross model?",
       "options": [
         "20",
         "80",
@@ -11121,12 +11121,12 @@ const microSkillBridgePools = {
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
       "repairSkill": "fiscal_policy_is_shift",
-      "feedback": "Multiplier is 5.",
+      "feedback": "The spending multiplier is 1/(1 − 0.8) = 5. Government purchases enter planned spending directly, so output rises by 20 × 5 = 100.",
       "aHash": "ad57366865126e55649ecb23ae1d48887544976efea46a48eb5d85a6eeb4d306"
     },
     {
       "id": 6045,
-      "q": "MPC=0.75 and T rises by 40. Simple-cross ΔY?",
+      "q": "The marginal propensity to consume is 0.75, and lump-sum taxes rise by 40. What is the output change in the simple Keynesian-cross model?",
       "options": [
         "−160",
         "−40",
@@ -11138,17 +11138,17 @@ const microSkillBridgePools = {
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
       "repairSkill": "fiscal_policy_is_shift",
-      "feedback": "Tax multiplier is −3.",
+      "feedback": "The tax increase first reduces consumption by 0.75 × 40 = 30. With a spending multiplier of 4, output changes by −30 × 4 = −120. Equivalently, the tax multiplier is −0.75/(1 − 0.75) = −3.",
       "aHash": "294518db892e389080b8da0481554ce34f5df27c07a8cbd99025eeb03a76b3d0"
     },
     {
       "id": 6046,
-      "q": "What is wrong with saying G shifts LM?",
+      "q": "What is wrong with saying government purchases shift LM?",
       "options": [
-        "G enters PE, so IS shifts",
-        "G is monetary policy",
+        "Government purchases enter planned expenditure, so IS shifts",
+        "Government purchases are a form of monetary policy",
         "LM contains only taxes",
-        "G changes P first"
+        "Government purchases change the price level first"
       ],
       "tag": "fiscal_policy",
       "type": "trap",
@@ -11156,28 +11156,28 @@ const microSkillBridgePools = {
       "primarySkill": "fiscal_policy_is_shift",
       "repairSkill": "fiscal_policy_is_shift",
       "feedback": "Fiscal policy starts in the goods market.",
-      "aHash": "af96013a651d2202db787acb50fcb7f82cd6648a26d1764e27b6304f96cbe91b"
+      "aHash": "41b87dfe9561d4e631724f3d266c2b523577c98ff37ca917576d962e0292e358"
     },
     {
       "id": 6047,
-      "q": "Fiscal contraction with fixed LM changes Y and r how?",
+      "q": "If fiscal contraction shifts the IS curve to the left while the LM curve remains unchanged, how do equilibrium output and the interest rate change?",
       "options": [
-        "both rise",
-        "both fall",
-        "Y rises and r falls",
-        "Y falls and r rises"
+        "Output and the interest rate both rise",
+        "Output and the interest rate both fall",
+        "Output rises and the interest rate falls",
+        "Output falls and the interest rate rises"
       ],
       "tag": "fiscal_policy",
       "type": "application",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
       "repairSkill": "fiscal_policy_is_shift",
-      "feedback": "IS-left moves down LM.",
-      "aHash": "3af9f286ad887a50bd70392adc7e5620541ffad8d794b7f20b00a55531386a5d"
+      "feedback": "Fiscal contraction shifts the IS curve to the left. With the LM curve unchanged, lower output reduces money demand, so the equilibrium moves down along LM and the interest rate falls.",
+      "aHash": "4cc3dc8f0701083c71df013e5c522161b8bce82a9a99fe4a9fdc11d6f6c3fbda"
     },
     {
       "id": 6048,
-      "q": "On the IS-LM graph, B to A shows what?",
+      "q": "Refer to the IS–LM graph. Which policy could move the equilibrium from B to A?",
       "options": [
         "monetary expansion",
         "fiscal expansion",
@@ -11190,50 +11190,50 @@ const microSkillBridgePools = {
       "image": "is_lm_curves.webp",
       "primarySkill": "fiscal_policy_is_shift",
       "repairSkill": "fiscal_policy_is_shift",
-      "feedback": "IS shifts left on LM1.",
+      "feedback": "The IS curve shifts to the left on LM1.",
       "aHash": "750183068f610e1f0a67d8bb89e598b8432751edda2aee4833fe7b4150eb3fa1"
     },
     {
       "id": 6049,
-      "q": "G increase plus money-supply cut definitely does what to r?",
+      "q": "Government purchases rise while the central bank cuts the money supply. What definite effect do these changes have on the interest rate?",
       "options": [
-        "lowers r",
-        "leaves r fixed",
-        "makes r zero",
-        "raises r"
+        "Lowers the interest rate",
+        "Leaves the interest rate fixed",
+        "Makes the interest rate zero",
+        "Raises the interest rate"
       ],
       "tag": "fiscal_policy",
       "type": "integration",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
       "repairSkill": "fiscal_policy_is_shift",
-      "feedback": "Both shifts push r up.",
-      "aHash": "28cbf376f0e92ebdcd080eecc3cc8865628047973da69af93c96d9ab07faea7e"
+      "feedback": "Both shifts push the interest rate up.",
+      "aHash": "57789982ca5cd1d18198ba9202c12ed20fc90806c7d65ed240f8bdddc413e5ee"
     },
     {
       "id": 6050,
-      "q": "Tax cut, higher Y, higher money demand, higher r. What is the offset?",
+      "q": "A tax cut raises output, increasing money demand and the interest rate. Which effect of the higher interest rate partly offsets the fiscal stimulus?",
       "options": [
-        "crowding out of investment",
-        "higher LRAS",
-        "lower consumption from the tax cut",
-        "lower money demand"
+        "Crowding out of investment",
+        "Higher LRAS",
+        "Lower consumption from the tax cut",
+        "Lower money demand"
       ],
       "tag": "fiscal_policy",
       "type": "multi-step",
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
       "repairSkill": "fiscal_policy_is_shift",
-      "feedback": "r rises and reduces some investment.",
+      "feedback": "The interest rate rises and reduces some investment.",
       "aHash": "cc26a0c13890245cda63c5aa42bce9faba0e2668f56bcfaed5389f62f19a3695"
     },
     {
       "id": 6051,
       "q": "Why does accommodation strengthen fiscal stimulus?",
       "options": [
-        "IS-left limits spending",
-        "LM-right limits crowding out",
-        "taxes rise automatically",
+        "A leftward shift of the IS curve limits spending",
+        "A rightward shift of the LM curve limits crowding out",
+        "Taxes rise automatically",
         "M/P falls"
       ],
       "tag": "fiscal_policy",
@@ -11241,17 +11241,17 @@ const microSkillBridgePools = {
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
       "repairSkill": "fiscal_policy_is_shift",
-      "feedback": "Lower r pressure means less investment offset.",
-      "aHash": "b4c71cd8a355d1116c195147e16f2da734ed2317cda4357dddc1ad3973b4ec50"
+      "feedback": "By limiting the interest-rate increase, monetary accommodation reduces the investment that would otherwise be crowded out.",
+      "aHash": "b365b5a0e49949da7ecf9ba01cd1c94f060ac730770437da955ec273369cf368"
     },
     {
       "id": 6052,
       "q": "What is the first-round spending effect of a tax cut?",
       "options": [
-        "the full tax cut",
-        "zero always",
-        "MPC times the T cut",
-        "G times the tax cut"
+        "The full tax cut",
+        "Zero always",
+        "MPC times the tax cut",
+        "Government purchases times the tax cut"
       ],
       "tag": "fiscal_policy",
       "type": "definition",
@@ -11259,16 +11259,16 @@ const microSkillBridgePools = {
       "primarySkill": "fiscal_policy_is_shift",
       "repairSkill": "fiscal_policy_is_shift",
       "feedback": "Only part of new disposable income is consumed.",
-      "aHash": "73a8de104b7d0a1eb5202db64e9a266c0cc6adebc9155dfbe67af787ba9a432e"
+      "aHash": "d4ed0f1eac271160be0397e6b161de2b06a981eeaea888d7c05b62801ed97283"
     },
     {
       "id": 6053,
-      "q": "Which fiscal change shifts IS left?",
+      "q": "Which fiscal change shifts the IS curve to the left?",
       "options": [
-        "higher G",
-        "lower T",
-        "higher transfers",
-        "higher taxes"
+        "Higher government purchases",
+        "Lower taxes",
+        "Higher transfers",
+        "Higher taxes"
       ],
       "tag": "fiscal_policy",
       "type": "application",
@@ -11280,7 +11280,7 @@ const microSkillBridgePools = {
     },
     {
       "id": 6054,
-      "q": "Balanced-budget G and T rise by 25. Simple model ΔY?",
+      "q": "In the simple Keynesian-cross model with lump-sum taxes, government purchases and taxes both rise by 25. What is the change in output?",
       "options": [
         "25",
         "0",
@@ -11292,14 +11292,14 @@ const microSkillBridgePools = {
       "objective": "LO13.2",
       "primarySkill": "fiscal_policy_is_shift",
       "repairSkill": "fiscal_policy_is_shift",
-      "feedback": "Balanced-budget multiplier is 1.",
+      "feedback": "The spending multiplier is 1/(1 − MPC), while the tax multiplier is −MPC/(1 − MPC). Their sum is 1, so equal increases in spending and taxes raise output by 25 × 1 = 25.",
       "aHash": "b7a56873cd771f2c446d369b649430b65a756ba278ff97ec81bb6f55b2e73569"
     }
   ],
   "monetary_policy_lm_shift": [
     {
       "id": 6055,
-      "q": "L=400−40r, P=10, target r=5. Required M?",
+      "q": "Real money demand is L = 400 − 40r, where r is the interest rate. The price level is 10, and the central bank wants an interest rate of 5. What nominal money supply is needed?",
       "options": [
         "200",
         "2,000",
@@ -11311,17 +11311,17 @@ const microSkillBridgePools = {
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
       "repairSkill": "monetary_policy_lm_shift",
-      "feedback": "Real demand=200; M=200×10.",
+      "feedback": "At the target interest rate of 5, real money demand is 400 − 40 × 5 = 200. With a price level of 10, the central bank must supply nominal money of 200 × 10 = 2,000.",
       "aHash": "eaba2fc8b501189b8e9abfa2e0feab57e75819331a3bb7886e11a41ca0f9ec19"
     },
     {
       "id": 6056,
-      "q": "Open-market sale shifts what?",
+      "q": "Which curve shifts, and in which direction, after an open-market sale?",
       "options": [
-        "LM right",
-        "IS right",
-        "LM left",
-        "IS left"
+        "The LM curve shifts to the right",
+        "The IS curve shifts to the right",
+        "The LM curve shifts to the left",
+        "The IS curve shifts to the left"
       ],
       "tag": "monetary_policy",
       "type": "application",
@@ -11329,28 +11329,28 @@ const microSkillBridgePools = {
       "primarySkill": "monetary_policy_lm_shift",
       "repairSkill": "monetary_policy_lm_shift",
       "feedback": "Sales reduce money supply.",
-      "aHash": "102c83df09fe66e9d7ed64cb5f8c8894bb057d70b3ed5a00ec3da4bf2387579b"
+      "aHash": "7209f245e9557768815d2614dc39197a10a4c027c4a4c3740a441280bb52ae76"
     },
     {
       "id": 6057,
-      "q": "What is wrong with saying M raises Y directly?",
+      "q": "What is wrong with saying the nominal money supply raises output directly?",
       "options": [
-        "M shifts IS directly",
-        "M changes G first",
-        "M changes taxes first",
-        "M first LM & lowers r"
+        "The nominal money supply shifts IS directly",
+        "The nominal money supply changes government purchases first",
+        "The nominal money supply changes taxes first",
+        "The nominal money supply first shifts the LM curve to the right and lowers the interest rate"
       ],
       "tag": "monetary_policy",
       "type": "trap",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
       "repairSkill": "monetary_policy_lm_shift",
-      "feedback": "The transmission channel matters.",
-      "aHash": "cc09b0c9c94fc08b14f56f4ebb2a0593f4239e54de15160c9475ce773f769a0f"
+      "feedback": "Higher money at fixed prices raises M/P and shifts the LM curve to the right. The lower interest rate stimulates investment, raising goods demand and income along IS.",
+      "aHash": "e9ec2dd8e81ffb2d7fef6244fa1c33fd0f855eeb033eaa92dd041c8fcf97623c"
     },
     {
       "id": 6058,
-      "q": "On the IS-LM graph, D to C shows what?",
+      "q": "Refer to the IS–LM graph. Which policy could move the equilibrium from D to B while IS2 remains unchanged?",
       "options": [
         "monetary contraction",
         "monetary expansion",
@@ -11363,12 +11363,12 @@ const microSkillBridgePools = {
       "image": "is_lm_curves.webp",
       "primarySkill": "monetary_policy_lm_shift",
       "repairSkill": "monetary_policy_lm_shift",
-      "feedback": "LM shifts left on IS2.",
+      "feedback": "D is IS2∩LM2 and B is IS2∩LM1. The leftward LM shift is monetary contraction: income falls and the interest rate rises.",
       "aHash": "b41f56cd35a4114ceee098681b4ce6b0a9dbd32ce5177b0486d3124194a6a593"
     },
     {
       "id": 6059,
-      "q": "M rises by 300 and P=6. Δ(M/P)?",
+      "q": "Nominal money supply increases by 300 while the price level remains 6. How much do real money balances rise?",
       "options": [
         "300",
         "50",
@@ -11380,68 +11380,68 @@ const microSkillBridgePools = {
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
       "repairSkill": "monetary_policy_lm_shift",
-      "feedback": "300/6=50.",
+      "feedback": "Divide the nominal increase by the unchanged price level: 300/6 = 50. Real money balances rise by 50 units.",
       "aHash": "1a6562590ef19d1045d06c4055742d38288e9e6dcd71ccde5cee80f1d5a774eb"
     },
     {
       "id": 6060,
-      "q": "Monetary expansion after IS-right fiscal policy does what?",
+      "q": "After fiscal expansion shifts the IS curve to the right, how does monetary expansion affect the resulting increase in the interest rate?",
       "options": [
-        "raises r further",
-        "shifts IS left",
-        "reduces rise in r",
-        "lowers G"
+        "Raises the interest rate further",
+        "Shifts the IS curve to the left",
+        "Reduces rise in the interest rate",
+        "Lowers government purchases"
       ],
       "tag": "monetary_policy",
       "type": "integration",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
       "repairSkill": "monetary_policy_lm_shift",
-      "feedback": "LM-right accommodates fiscal expansion.",
-      "aHash": "9b4187c6c363fac154a9ffb7abb7858dcad5916d03e33a4ab1ffd3f9bf369746"
+      "feedback": "A rightward shift of the LM curve accommodates fiscal expansion.",
+      "aHash": "a499b00ab0b12a2e754bd6be77f7eb5a8ba9f8910b9ef8196024d36f9798eac1"
     },
     {
       "id": 6061,
-      "q": "Money expansion causes which sequence?",
+      "q": "Which sequence describes the transmission of monetary expansion to output in the basic fixed-price IS–LM model?",
       "options": [
-        "IS left, r up, I down, Y down",
-        "LM left, r down, I down, Y up",
-        "LRAS right, P down, Y fixed",
-        "LM right, r down, I up, Y up"
+        "The IS curve shifts to the left; the interest rate rises, investment falls, and output falls",
+        "The LM curve shifts to the left; the interest rate falls, investment falls, and output falls",
+        "The LRAS curve shifts to the right; the price level falls and output remains fixed",
+        "The LM curve shifts to the right; the interest rate falls, investment rises, and output rises"
       ],
       "tag": "monetary_policy",
       "type": "multi-step",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
       "repairSkill": "monetary_policy_lm_shift",
-      "feedback": "That is the basic monetary transmission mechanism.",
-      "aHash": "94b24ab2cb3655683a6b32faf33385ab802a6e6ae0b360064259747a03d64599"
+      "feedback": "More real money balances lower the interest rate. Borrowing becomes cheaper, investment rises, and the extra planned spending raises output. This is the monetary transmission mechanism in the basic fixed-price model.",
+      "aHash": "422ab93cd57c73d912d73222a25523a8cc98c5c8c7bf4f955c85de3caccb1608"
     },
     {
       "id": 6062,
-      "q": "Why does P matter for monetary policy?",
+      "q": "Why does the price level matter for monetary policy?",
       "options": [
-        "policy works through M/P",
-        "policy works through G/P",
-        "taxes are indexed to P only",
-        "investment ignores r"
+        "Policy works through M/P",
+        "Policy works through G/P",
+        "Taxes are indexed to the price level only",
+        "Investment ignores the interest rate"
       ],
       "tag": "monetary_policy",
       "type": "interpretation",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
       "repairSkill": "monetary_policy_lm_shift",
-      "feedback": "Real balances determine LM.",
+      "feedback": "The nominal money supply must be divided by the price level to find its purchasing power. LM depends on these real money balances, so the same nominal supply can support different conditions at different price levels.",
       "aHash": "79b4ee1dc09632f9bc9f706ed440dae2f22a87613eeb6b1891012705c01cf536"
     },
     {
       "id": 6063,
-      "q": "If money demand rises and M is unchanged, what happens?",
+      "q": "If money demand rises and the nominal money supply is unchanged, what happens?",
       "options": [
-        "LM shifts right",
-        "LM shifts left",
-        "IS shifts right",
-        "AD shifts right"
+        "The LM curve shifts to the right",
+        "The LM curve shifts to the left",
+        "The IS curve shifts to the right",
+        "The AD curve shifts to the right"
       ],
       "tag": "monetary_policy",
       "type": "application",
@@ -11449,16 +11449,16 @@ const microSkillBridgePools = {
       "primarySkill": "monetary_policy_lm_shift",
       "repairSkill": "monetary_policy_lm_shift",
       "feedback": "Higher money demand tightens money markets.",
-      "aHash": "5cf2b5cc03745222042b5bad245ed091beaa60173bd472562add855374faa077"
+      "aHash": "7209f245e9557768815d2614dc39197a10a4c027c4a4c3740a441280bb52ae76"
     },
     {
       "id": 6064,
       "q": "What is rate-target implementation?",
       "options": [
-        "adjusting G to defend chosen Y",
-        "fixing taxes at zero",
-        "adjusting M to defend chosen r",
-        "choosing LRAS directly"
+        "Adjusting government purchases to defend chosen output",
+        "Fixing taxes at zero",
+        "Adjusting the nominal money supply to defend chosen interest rate",
+        "Choosing LRAS directly"
       ],
       "tag": "monetary_policy",
       "type": "definition",
@@ -11466,69 +11466,69 @@ const microSkillBridgePools = {
       "primarySkill": "monetary_policy_lm_shift",
       "repairSkill": "monetary_policy_lm_shift",
       "feedback": "The Fed supplies balances to hit the target.",
-      "aHash": "9fb01c2e5b06fa0bcd974b484c2013ad6244db624d262788386ba3caa33e3b54"
+      "aHash": "2b3656e473a58058651e7bf4f8aa639ffc8eb76a143d018a7e476aab5ddcef97"
     },
     {
       "id": 6065,
-      "q": "If investment is very interest-sensitive, monetary expansion has what output effect?",
+      "q": "For a given reduction in the interest rate, how does greater interest sensitivity of investment affect the output response to monetary expansion?",
       "options": [
-        "weaker",
-        "zero",
-        "negative by definition",
-        "stronger"
+        "Weaker",
+        "Zero",
+        "Negative by definition",
+        "Stronger"
       ],
       "tag": "monetary_policy",
       "type": "application",
       "objective": "LO13.3",
       "primarySkill": "monetary_policy_lm_shift",
       "repairSkill": "monetary_policy_lm_shift",
-      "feedback": "Lower r triggers a larger I response.",
+      "feedback": "When investment is very responsive to interest rates, a given rate cut produces a larger increase in investment and output.",
       "aHash": "106fd9a818d29fb29bc13c6be0a24f6abe0597f43afa1f3904c0019bdf5c9139"
     }
   ],
   "aggregate_demand_from_islm": [
     {
       "id": 6066,
-      "q": "M=3000, P falls from 15 to 10. M/P changes how?",
+      "q": "Nominal money supply stays at 3,000 while the price level falls from 15 to 10. How do real money balances change?",
       "options": [
         "200 to 300",
         "300 to 200",
         "200 to 250",
-        "stays 200"
+        "Stays 200"
       ],
       "tag": "aggregate_demand",
       "type": "calculation",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
       "repairSkill": "aggregate_demand_from_islm",
-      "feedback": "Real balances rise.",
+      "feedback": "Initially, real balances are 3,000/15 = 200. After the price decline they are 3,000/10 = 300. The nominal supply is unchanged, but its purchasing power increases.",
       "aHash": "b1d6bb915f98bf15244917e9047c42c68ce7348dc1333fdfd9152e3de6f9670f"
     },
     {
       "id": 6067,
-      "q": "Higher G at every P shifts AD how?",
+      "q": "Government purchases rise at every price level. How does aggregate demand change?",
       "options": [
-        "left",
-        "right",
-        "movement along AD",
-        "vertical"
+        "The aggregate demand curve shifts to the left",
+        "The aggregate demand curve shifts to the right",
+        "The economy moves along the existing aggregate demand curve",
+        "The aggregate demand curve becomes vertical"
       ],
       "tag": "aggregate_demand",
       "type": "application",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
       "repairSkill": "aggregate_demand_from_islm",
-      "feedback": "Fiscal expansion shifts IS right at each P.",
-      "aHash": "27042f4e6eca7d0b2a7ee4026df2ecfa51d3339e6d122aa099118ecd8563bad9"
+      "feedback": "Fiscal expansion shifts the IS curve to the right at each price level.",
+      "aHash": "21252f0b107e0281407954f9bdeee3b7061b11e561623b08facfecb4ab80045d"
     },
     {
       "id": 6068,
-      "q": "What is wrong with saying lower P shifts AD right?",
+      "q": "What is wrong with saying lower price level shifts the AD curve to the right?",
       "options": [
-        "lower P raises M/P",
-        "lower P shifts LM right",
-        "lower P moves along AD",
-        "lower P can raise Y"
+        "Lower price level raises M/P",
+        "Lower price level shifts the LM curve to the right",
+        "Lower price level moves along AD",
+        "Lower price level can raise output"
       ],
       "tag": "aggregate_demand",
       "type": "trap",
@@ -11536,16 +11536,16 @@ const microSkillBridgePools = {
       "primarySkill": "aggregate_demand_from_islm",
       "repairSkill": "aggregate_demand_from_islm",
       "feedback": "A price-level change is movement along a given AD curve.",
-      "aHash": "8465014a49065fe2dbd42fc7a64bb0700eb3d76a9e750766b878a3d503a966a3"
+      "aHash": "8de5f22cb70ecf087c10c4d31674669c1c18872f70992ec69c028a226dd407be"
     },
     {
       "id": 6069,
-      "q": "On AD1, point 1 to point 4 means what?",
+      "q": "Refer to the IS–LM and aggregate demand graph. On AD1, what change is represented by a move from point 1 to point 4?",
       "options": [
-        "AD shifts right",
-        "AD shifts left",
-        "LRAS shifts right",
-        "movement along AD as P falls"
+        "The AD curve shifts to the right",
+        "The AD curve shifts to the left",
+        "The LRAS curve shifts to the right",
+        "Movement along AD as the price level falls"
       ],
       "tag": "aggregate_demand",
       "type": "graph",
@@ -11553,97 +11553,97 @@ const microSkillBridgePools = {
       "image": "is_lm_ad.webp",
       "primarySkill": "aggregate_demand_from_islm",
       "repairSkill": "aggregate_demand_from_islm",
-      "feedback": "Both points are on AD1.",
-      "aHash": "b1ce54188e998203dfe95e9b25981f7e8056f0dee53e2515783ac5ba4a5e3804"
+      "feedback": "Points 1 and 4 lie on the same aggregate demand curve, AD1. The price level changes as the economy moves between them; the curve itself does not shift.",
+      "aHash": "bb10232a9955ed1aab844daa68abee4b9bed20ad87ad1cb75dc45b5c07719745"
     },
     {
       "id": 6070,
-      "q": "Tax increase and lower P together make Y what?",
+      "q": "If taxes rise while the price level falls, what can be concluded about the change in equilibrium output without knowing the sizes of the changes?",
       "options": [
-        "ambiguous",
-        "definitely higher",
-        "definitely lower",
-        "unchanged"
+        "Ambiguous",
+        "Definitely higher",
+        "Definitely lower",
+        "Unchanged"
       ],
       "tag": "aggregate_demand",
       "type": "integration",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
       "repairSkill": "aggregate_demand_from_islm",
-      "feedback": "IS-left and LM-right oppose.",
+      "feedback": "Higher taxes lower consumption and shift IS to the left, reducing output. A lower price level raises real money balances and shifts LM to the right, increasing output. The net output change depends on which effect is larger.",
       "aHash": "6a651134eb4b24becd9ad2eb0eebbc48114c8df2f9fdf737eee59154098952b1"
     },
     {
       "id": 6071,
-      "q": "Deriving AD starts with P. What comes next?",
+      "q": "To derive aggregate demand from IS-LM, start by choosing a price level. What should you do next?",
       "options": [
-        "shift IS by taxes",
-        "compute M/P & shift LM",
-        "shift LRAS by output",
-        "choose Y before P"
+        "Shift IS by taxes",
+        "Compute M/P and shift LM",
+        "Shift LRAS by output",
+        "Choose output before the price level"
       ],
       "tag": "aggregate_demand",
       "type": "multi-step",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
       "repairSkill": "aggregate_demand_from_islm",
-      "feedback": "P affects real balances.",
-      "aHash": "6e5858a495e96cc53ec497c5925a2bbca451a1aa5cdda1c69587d080c753ca1d"
+      "feedback": "Divide nominal money supply by the chosen price level to obtain real money balances. Use those balances to locate LM, then find the IS-LM intersection and its output. Repeating this for different price levels traces aggregate demand.",
+      "aHash": "085d2b604a35520ea210587f6144b125042270c8a9cee6ed6831e2daeace6ffe"
     },
     {
       "id": 6072,
-      "q": "Why does monetary expansion shift AD right?",
+      "q": "Why does monetary expansion shift the AD curve to the right?",
       "options": [
-        "higher P lowers M/P",
-        "taxes rise automatically",
-        "higher M raises M/P at every P",
-        "LRAS shifts right"
+        "Higher price level lowers M/P",
+        "Taxes rise automatically",
+        "Higher nominal money supply raises M/P at every P",
+        "The LRAS curve shifts to the right"
       ],
       "tag": "aggregate_demand",
       "type": "interpretation",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
       "repairSkill": "aggregate_demand_from_islm",
-      "feedback": "Every price level now has easier money.",
-      "aHash": "d734124a93712033c4f6ed2ff9134db3bdaf1f9c1ea94f947473b113a1257027"
+      "feedback": "With more nominal money, real money balances are higher at every given price level. The lower interest rate stimulates investment and output, so aggregate demand shifts to the right.",
+      "aHash": "3740c91a93407453038bb956e03bd81e4a5b424fe456efbfffd6acc94774995d"
     },
     {
       "id": 6073,
       "q": "What is an AD shift?",
       "options": [
-        "new P on same AD",
-        "same graph with new labels",
-        "movement only",
-        "new Y at each P"
+        "New price level on same AD",
+        "Same graph with new labels",
+        "Movement only",
+        "New output at each price level"
       ],
       "tag": "aggregate_demand",
       "type": "definition",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
       "repairSkill": "aggregate_demand_from_islm",
-      "feedback": "Non-price determinants shift AD.",
-      "aHash": "c654ba7e5b082c834329dc14fe9dc2570b478c36ba069b0208f528982809402e"
+      "feedback": "An aggregate demand shift changes the output demanded at each given price level. A change in the price level alone moves the economy along the existing curve.",
+      "aHash": "b2787ee56a07b379b8123154c02515104a207ea8bdcaba9516362576f3d5eb74"
     },
     {
       "id": 6074,
-      "q": "Lower investment demand shifts AD how?",
+      "q": "How does a decline in investment demand at each interest rate affect the aggregate demand curve?",
       "options": [
-        "left",
-        "right",
-        "down along AD",
-        "up along AD"
+        "The aggregate demand curve shifts to the left",
+        "The aggregate demand curve shifts to the right",
+        "Down along AD",
+        "Up along AD"
       ],
       "tag": "aggregate_demand",
       "type": "application",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
       "repairSkill": "aggregate_demand_from_islm",
-      "feedback": "IS-left at every P shifts AD left.",
-      "aHash": "360f84035942243c6a36537ae2f8673485e6c04455a0a85a0db19690f2541480"
+      "feedback": "A leftward shift of the IS curve at every price level shifts the AD curve to the left.",
+      "aHash": "b190423c1f0637403a7464927f45d2445dc552ed6e0726d2838a42835178ffec"
     },
     {
       "id": 6075,
-      "q": "M/P rises from 180 to 240. If Y rises 2 per real balance, ΔY?",
+      "q": "Real money balances rise from 180 to 240. In this example, output rises by 2 units for each additional unit of real balances. How much does output rise?",
       "options": [
         "60",
         "120",
@@ -11655,31 +11655,31 @@ const microSkillBridgePools = {
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
       "repairSkill": "aggregate_demand_from_islm",
-      "feedback": "Real balances rise 60; output response is 120.",
+      "feedback": "Real balances increase by 240 − 180 = 60. Multiply the increase, rather than the final level, by 2: output rises by 60 × 2 = 120.",
       "aHash": "2abaca4911e68fa9bfbf3482ee797fd5b9045b841fdff7253557c5fe15de6477"
     },
     {
       "id": 6076,
       "q": "What must stay fixed when moving along one AD curve?",
       "options": [
-        "the price level",
-        "the output level",
-        "non-price determinants of demand",
-        "the graph title only"
+        "The price level",
+        "The output level",
+        "Non-price determinants of demand",
+        "The graph title only"
       ],
       "tag": "aggregate_demand",
       "type": "trap",
       "objective": "LO13.4",
       "primarySkill": "aggregate_demand_from_islm",
       "repairSkill": "aggregate_demand_from_islm",
-      "feedback": "P changes; other demand shifters do not.",
+      "feedback": "The price level changes; other demand shifters do not.",
       "aHash": "e86d75463ef49fbe21ddc1acde5b1f03e705b25b528573cb2b82d02f98a7b9b1"
     }
   ],
   "depression_crisis_mechanisms": [
     {
       "id": 6077,
-      "q": "Nominal r=1%, expected inflation=−3%. Real r?",
+      "q": "A loan has a nominal interest rate of 1%, and expected inflation is −3%. Using the approximate Fisher relation, what is the expected real interest rate?",
       "options": [
         "−2%",
         "1%",
@@ -11691,12 +11691,12 @@ const microSkillBridgePools = {
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "repairSkill": "depression_crisis_mechanisms",
-      "feedback": "1−(−3)=4.",
+      "feedback": "The expected real rate is the nominal rate minus expected inflation: 1% − (−3%) = 4%. A negative inflation rate increases the real cost of borrowing.",
       "aHash": "461a6b36b3afb28bdfbb23408223a5c35e33b4cfb0ba20e55d88de69cd9c622e"
     },
     {
       "id": 6078,
-      "q": "Debt=1200 and P falls from 100 to 80. Debt/P rises from 12 to what?",
+      "q": "A debt remains at 1,200 nominal units while the price level falls from 100 to 80. Its initial real burden was 12. What is the new real burden?",
       "options": [
         "15",
         "9.6",
@@ -11708,46 +11708,46 @@ const microSkillBridgePools = {
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "repairSkill": "depression_crisis_mechanisms",
-      "feedback": "1200/80=15.",
+      "feedback": "Divide the unchanged nominal debt by the new price level: 1,200/80 = 15. The real burden rises from 12 to 15 even though the amount owed in nominal units does not change.",
       "aHash": "e629fa6598d732768f7c726b4b621285f9c3b85303900aa912017db7617d8bdb"
     },
     {
       "id": 6079,
-      "q": "Bank panic likely shifts which curves?",
+      "q": "Which combination of curve shifts can result when a banking panic raises money demand and reduces lending?",
       "options": [
-        "LM right and IS right",
-        "LM left and IS left",
-        "AD right only",
-        "LRAS right only"
+        "The LM curve shifts to the right and the IS curve shifts to the right",
+        "The LM curve shifts to the left and the IS curve shifts to the left",
+        "The AD curve shifts to the right only",
+        "The LRAS curve shifts to the right only"
       ],
       "tag": "great_depression",
       "type": "application",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "repairSkill": "depression_crisis_mechanisms",
-      "feedback": "Liquidity and credit channels can both contract demand.",
-      "aHash": "5cea1b9860841302e9022b40af03bde193a9c520a9793f5d1b1940af86590928"
+      "feedback": "A panic can increase the demand to hold money or reduce effective money supply, shifting LM to the left. Disrupted lending can also reduce planned consumption and investment, shifting IS to the left.",
+      "aHash": "8b494a4d34ad58e11eb1f9dfa5308a2d77b14054365c6b17fe7fa0fdb14b10de"
     },
     {
       "id": 6080,
-      "q": "What is wrong with “falling P always fixes recession”?",
+      "q": "What is wrong with “a falling price level always fixes recession”?",
       "options": [
-        "falling P never affects M/P",
-        "debt disappears when P falls",
-        "deflation can raise real debt & real rates",
-        "real rates ignore expectations"
+        "Falling P never affects M/P",
+        "Debt disappears when the price level falls",
+        "Deflation can raise real debt and real rates",
+        "Real rates ignore expectations"
       ],
       "tag": "great_depression",
       "type": "trap",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "repairSkill": "depression_crisis_mechanisms",
-      "feedback": "Deflation has competing channels.",
-      "aHash": "d95097fa71dbd55cb2928ec57a03b638c6b1ff6b7e95d5bf34f97399d55856b2"
+      "feedback": "Falling prices can increase real money balances, but they also make fixed nominal debts harder to repay. Expected deflation can raise real borrowing costs, so lower prices do not guarantee recovery.",
+      "aHash": "c0b1d42a1bd7d0fb24848d96fc4f12b5e85ca7726b915df5e47cc23c2364c92a"
     },
     {
       "id": 6081,
-      "q": "On the AD-SRAS panel, point A is at which output?",
+      "q": "Refer to the IS–LM and aggregate demand–aggregate supply graph. Point A is at which output?",
       "options": [
         "Y2",
         "Y3",
@@ -11765,12 +11765,12 @@ const microSkillBridgePools = {
     },
     {
       "id": 6082,
-      "q": "Money contraction and debt-deflation together do what to demand?",
+      "q": "How do monetary contraction and debt-deflation affect aggregate demand when they occur together?",
       "options": [
-        "weaken it through money & balance-sheet channels",
-        "strengthen it through higher G",
-        "leave it unchanged",
-        "only shift LRAS"
+        "Weaken it through money and balance-sheet channels",
+        "Strengthen it through higher government purchases",
+        "Leave it unchanged",
+        "Only shift LRAS"
       ],
       "tag": "great_depression",
       "type": "integration",
@@ -11778,16 +11778,16 @@ const microSkillBridgePools = {
       "primarySkill": "depression_crisis_mechanisms",
       "repairSkill": "depression_crisis_mechanisms",
       "feedback": "Both mechanisms can reduce spending.",
-      "aHash": "4190ae0dd8b2516bfa18895d719fc711663a37d997854b3298c716f5075e8fd9"
+      "aHash": "504a9dce6cb127794a8a7b3e08c02bc75b0f7ccf7c57bb8333e314a285bb7f37"
     },
     {
       "id": 6083,
-      "q": "Expected deflation raises real r. What happens next?",
+      "q": "Expected deflation raises the real interest rate for a given nominal rate. What happens to investment and the IS curve?",
       "options": [
-        "investment rises and IS shifts right",
-        "investment falls and IS shifts left",
-        "LM shifts right automatically",
-        "taxes fall to zero"
+        "Investment rises and the IS curve shifts to the right",
+        "Investment falls and the IS curve shifts to the left",
+        "The LM curve shifts to the right automatically",
+        "Taxes fall to zero"
       ],
       "tag": "great_depression",
       "type": "multi-step",
@@ -11795,33 +11795,33 @@ const microSkillBridgePools = {
       "primarySkill": "depression_crisis_mechanisms",
       "repairSkill": "depression_crisis_mechanisms",
       "feedback": "Higher real borrowing costs reduce investment.",
-      "aHash": "f018abe0a59d95ae6327de3640654f304b630d9d703e5c986ce28375f9c09d69"
+      "aHash": "ac3f01db03f7e2df959fa1059e1e4f6f69ec815886f4b6e25c59e80b23ab2a4c"
     },
     {
       "id": 6084,
       "q": "Why is Depression analysis not just one IS-LM shock?",
       "options": [
-        "graphs cannot handle recessions",
-        "money never matters",
-        "several mechanisms reinforce or offset each other",
-        "spending never matters"
+        "Graphs cannot handle recessions",
+        "Money never matters",
+        "Several mechanisms reinforce or offset each other",
+        "Spending never matters"
       ],
       "tag": "great_depression",
       "type": "interpretation",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "repairSkill": "depression_crisis_mechanisms",
-      "feedback": "The key is mechanism-specific reasoning.",
+      "feedback": "A recession can combine falling spending, disrupted credit, and changes in money demand or supply. Trace each channel separately before combining their effects on output and interest rates.",
       "aHash": "e8136847f8d00cc1af09ae7c647d94df85b41c9951297bb2f74684eca1950fde"
     },
     {
       "id": 6085,
       "q": "What is debt-deflation?",
       "options": [
-        "inflation lowers real balances",
-        "taxes equal debt",
-        "G raises debt automatically",
-        "deflation raises real debt burdens"
+        "Inflation lowers real balances",
+        "Taxes equal debt",
+        "Government purchases raise debt automatically",
+        "Deflation raises real debt burdens"
       ],
       "tag": "great_depression",
       "type": "definition",
@@ -11833,7 +11833,7 @@ const microSkillBridgePools = {
     },
     {
       "id": 6086,
-      "q": "Credible reflation helps by doing what?",
+      "q": "Through which change in expected real interest rates can credible reflation support recovery?",
       "options": [
         "lowering expected real rates",
         "raising expected real rates",
@@ -11850,20 +11850,20 @@ const microSkillBridgePools = {
     },
     {
       "id": 6087,
-      "q": "Which tag would be wrong for a Depression item?",
+      "q": "After a banking panic, the nominal borrowing rate is 2% and expected inflation is −1%. What expected real rate should a borrower use when evaluating the cost of a one-year loan?",
       "options": [
-        "expected-deflation real-rate item",
-        "a plain G multiplier with no Depression mechanism",
-        "debt/P calculation",
-        "banking panic LM item"
+        "1%",
+        "3%",
+        "−3%",
+        "2%"
       ],
       "tag": "great_depression",
       "type": "trap",
       "objective": "LO13.5",
       "primarySkill": "depression_crisis_mechanisms",
       "repairSkill": "depression_crisis_mechanisms",
-      "feedback": "The tag should match the Depression mechanism.",
-      "aHash": "705ca6b26130be5240cd61de2e400ca4a5ed6f9618375933ec6877213e06fea1"
+      "feedback": "Using the approximate Fisher relation, the expected real rate is 2−(−1)=3%. Expected deflation raises the real borrowing cost above the nominal rate.",
+      "aHash": "d1e1d77ec17c3b55a3a1c4fd8458c91ece57671e1e49964e8549eb7d3f10e741"
     }
   ]
 };

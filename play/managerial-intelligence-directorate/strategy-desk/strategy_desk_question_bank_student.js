@@ -84,7 +84,7 @@ window.questionBanks = {
     {
       "id": 3,
       "sourceGame": "strategyDesk",
-      "q": "A market demand curve is constructed by",
+      "q": "How is a market demand curve constructed?",
       "options": [
         "adding prices across consumers",
         "averaging each consumer’s income at every observed market price",
@@ -153,7 +153,7 @@ window.questionBanks = {
     {
       "id": 6,
       "sourceGame": "strategyDesk",
-      "q": "If the number of buyers in a market increases while each buyer’s demand is unchanged, market demand will generally",
+      "q": "The number of buyers increases while each buyer’s demand stays unchanged. How does market demand change?",
       "options": [
         "shift left",
         "shift right",
@@ -176,7 +176,7 @@ window.questionBanks = {
     {
       "id": 7,
       "sourceGame": "strategyDesk",
-      "q": "When setting a price, a profit-maximizing firm should focus primarily on",
+      "q": "Which economic relationships should a profit-maximizing firm consider when setting its price?",
       "options": [
         "the price charged by the largest and oldest competitor in the market",
         "the relationship among demand, marginal revenue, and marginal cost",
@@ -199,9 +199,9 @@ window.questionBanks = {
     {
       "id": 8,
       "sourceGame": "strategyDesk",
-      "q": "With other costs unchanged, a proposed price cut will increase sales. Before approving it, the manager should ask",
+      "q": "With other costs unchanged, a proposed price cut will increase sales. Which comparison should determine whether the firm approves it?",
       "options": [
-        "the extra contribution from added sales exceeds the contribution lost on existing sales",
+        "Whether the extra contribution from additional sales exceeds the contribution lost on existing sales",
         "whether total sales revenue rises, regardless of variable cost",
         "whether the old price covered an allocated fixed cost",
         "whether the percentage price cut equals the percentage volume gain"
@@ -216,13 +216,13 @@ window.questionBanks = {
       "repairSkill": "optimal_pricing",
       "commonError": "focuses_only_on_unit_sales",
       "feedback": "A price cut is worthwhile only when the contribution from additional sales exceeds the margin surrendered on existing sales.",
-      "aHash": "cd33eb55a04ddd49ff8bd1e16bdd4206a17dfde3023ff909c91cbd0d03f89f6c",
+      "aHash": "a661e43a73d9877c8a0a3f4e5baef655340eb2b063cdb99576b8bc4292975e8e",
       "canonicalDifficulty": "easy"
     },
     {
       "id": 9,
       "sourceGame": "strategyDesk",
-      "q": "For a single product with locally inelastic demand and nonnegative marginal cost, an immediate profit opportunity may exist from",
+      "q": "A single product has locally inelastic demand and nonnegative marginal cost. Which price change offers an immediate opportunity to raise profit, all else equal?",
       "options": [
         "lowering price while leaving product quality unchanged",
         "raising price",
@@ -245,7 +245,7 @@ window.questionBanks = {
     {
       "id": 10,
       "sourceGame": "strategyDesk",
-      "q": "For smooth downward-sloping demand with an interior total-revenue maximum, marginal revenue equals zero when",
+      "q": "For smooth downward-sloping demand, what occurs where marginal revenue is zero and total revenue has an interior maximum?",
       "options": [
         "total revenue is maximized",
         "total cost is minimized",
@@ -268,7 +268,7 @@ window.questionBanks = {
     {
       "id": 11,
       "sourceGame": "strategyDesk",
-      "q": "Two customer groups have different willingness to pay, and resale can be prevented. A firm may increase profit by",
+      "q": "Two customer groups have different willingness to pay, and resale can be prevented. Which pricing approach may increase profit?",
       "options": [
         "charging different prices",
         "using one price for both groups",
@@ -314,7 +314,7 @@ window.questionBanks = {
     {
       "id": 15,
       "sourceGame": "strategyDesk",
-      "q": "Price elasticity of demand measures",
+      "q": "How is price elasticity of demand measured?",
       "options": [
         "the percentage change in quantity demanded divided by the percentage change in price",
         "the change in price divided by total revenue",
@@ -337,7 +337,7 @@ window.questionBanks = {
     {
       "id": 16,
       "sourceGame": "strategyDesk",
-      "q": "A price elasticity of demand of −1.5 means that a small 1% increase in price causes quantity demanded to change by approximately",
+      "q": "Price elasticity of demand is −1.5. Approximately how will quantity demanded change after a small 1% price increase?",
       "options": [
         "increase by 1.5%",
         "decrease by 1.5%",
@@ -360,7 +360,7 @@ window.questionBanks = {
     {
       "id": 17,
       "sourceGame": "strategyDesk",
-      "q": "A discounted concert ticket is printed with the buyer’s name and cannot be transferred. The restriction is meant to",
+      "q": "A discounted concert ticket bears the buyer’s name and cannot be transferred. What is the purpose of this restriction?",
       "options": [
         "identify which buyers prefer premium seating",
         "block ticket resale",
@@ -429,7 +429,7 @@ window.questionBanks = {
     {
       "id": 20,
       "sourceGame": "strategyDesk",
-      "q": "The Robinson-Patman Act is most closely concerned with certain price differences between",
+      "q": "The Robinson–Patman Act addresses certain discriminatory prices in sales between which parties?",
       "options": [
         "employees performing the same job",
         "consumers buying unrelated services",
@@ -475,7 +475,7 @@ window.questionBanks = {
     {
       "id": 22,
       "sourceGame": "strategyDesk",
-      "q": "If a firm lowers price when demand is elastic, total revenue will generally",
+      "q": "If a firm lowers its price when demand is elastic, how does total revenue change, all else equal?",
       "options": [
         "increase",
         "decrease",
@@ -498,7 +498,7 @@ window.questionBanks = {
     {
       "id": 23,
       "sourceGame": "strategyDesk",
-      "q": "Airlines often charge business travelers more because their demand is usually",
+      "q": "Business travelers often pay higher airfares than leisure travelers. Which description of business travelers’ demand helps explain this difference?",
       "options": [
         "less elastic",
         "perfectly elastic",
@@ -567,7 +567,7 @@ window.questionBanks = {
     {
       "id": 27,
       "sourceGame": "strategyDesk",
-      "q": "Income elasticity of demand measures how quantity demanded responds to a change in",
+      "q": "Income elasticity measures how quantity demanded responds to a change in which variable?",
       "options": [
         "the product’s price",
         "consumer income",
@@ -636,7 +636,7 @@ window.questionBanks = {
     {
       "id": 30,
       "sourceGame": "strategyDesk",
-      "q": "Cross-price elasticity is positive for",
+      "q": "Which relationship between two goods produces a positive cross-price elasticity?",
       "options": [
         "complements",
         "substitutes",
@@ -659,7 +659,7 @@ window.questionBanks = {
     {
       "id": 31,
       "sourceGame": "strategyDesk",
-      "q": "A software firm disables some features in its low-price edition so premium buyers still prefer the full version. This is an example of",
+      "q": "A software firm disables features in its low-price edition so premium buyers still prefer the full version. Which pricing strategy does this illustrate?",
       "options": [
         "a damaged-good strategy",
         "raising quality for every customer",
@@ -682,7 +682,7 @@ window.questionBanks = {
     {
       "id": 32,
       "sourceGame": "strategyDesk",
-      "q": "A copier is inexpensive, but users must buy proprietary toner as they print. This pricing approach uses",
+      "q": "A copier is inexpensive, but customers must buy proprietary toner as they use it. Which pricing approach does this illustrate?",
       "options": [
         "pure bundling",
         "metering",
@@ -705,7 +705,7 @@ window.questionBanks = {
     {
       "id": 33,
       "sourceGame": "strategyDesk",
-      "q": "The price of printers falls, and demand for ink cartridges rises. Printers and ink cartridges are most likely",
+      "q": "The price of printers falls, and demand for ink cartridges rises. What relationship between these products is suggested?",
       "options": [
         "substitutes",
         "complements",
@@ -774,7 +774,7 @@ window.questionBanks = {
     {
       "id": 37,
       "sourceGame": "strategyDesk",
-      "q": "Stay-even analysis asks how much sales volume must change to",
+      "q": "What does stay-even analysis determine about the sales-volume response required after a price change?",
       "options": [
         "preserve contribution after a price change",
         "eliminate all fixed costs",
@@ -820,7 +820,7 @@ window.questionBanks = {
     {
       "id": 40,
       "sourceGame": "strategyDesk",
-      "q": "A streaming service sells sports and movies separately and also offers them together at one package price. This is",
+      "q": "A streaming service sells sports and movies separately and also offers them together at one package price. Which pricing strategy is this?",
       "options": [
         "pure bundling",
         "mixed bundling",
@@ -843,7 +843,7 @@ window.questionBanks = {
     {
       "id": 41,
       "sourceGame": "strategyDesk",
-      "q": "If a proposed price cut requires a 40% sales increase to stay even, but the firm expects only a 15% increase, the firm should conclude that the cut will",
+      "q": "A proposed price cut requires a 40% sales increase to preserve contribution, but the firm expects only a 15% increase. What is the expected effect of the cut?",
       "options": [
         "increase contribution",
         "reduce contribution",
@@ -889,7 +889,7 @@ window.questionBanks = {
     {
       "id": 43,
       "sourceGame": "strategyDesk",
-      "q": "Game theory is most useful when a firm’s profit depends on",
+      "q": "Under what circumstances is game theory especially useful for analyzing a firm’s profit?",
       "options": [
         "only its own accounting records",
         "rivals’ actions",
@@ -912,7 +912,7 @@ window.questionBanks = {
     {
       "id": 45,
       "sourceGame": "strategyDesk",
-      "q": "Two products owned by the same firm are substitutes. When pricing them, the firm should maximize",
+      "q": "A firm owns two substitute products. What should it maximize when choosing their prices?",
       "options": [
         "profit on each product separately before adding the two results together",
         "combined profit from both products",
@@ -935,7 +935,7 @@ window.questionBanks = {
     {
       "id": 46,
       "sourceGame": "strategyDesk",
-      "q": "A firm lowers the price of its basic software, causing customers to switch away from its premium software. This effect is called",
+      "q": "A firm lowers the price of its basic software, causing customers to switch away from its premium software. What is this effect called?",
       "options": [
         "capacity rationing",
         "cannibalization",
@@ -958,7 +958,7 @@ window.questionBanks = {
     {
       "id": 47,
       "sourceGame": "strategyDesk",
-      "q": "Two separately priced substitute products merge under common ownership. Starting from their separate profit-maximizing prices, with costs and other demand conditions unchanged, internalizing positive cross-price effects generally creates an incentive to",
+      "q": "Two substitute products come under common ownership. Starting from separate profit-maximizing prices, with costs and other demand conditions unchanged, how does accounting for sales diverted between the products affect pricing incentives?",
       "options": [
         "raise prices on both products",
         "lower prices on both products",
@@ -1004,7 +1004,7 @@ window.questionBanks = {
     {
       "id": 49,
       "sourceGame": "strategyDesk",
-      "q": "A price cut is profitable only if a rival does not match it. This situation illustrates",
+      "q": "A price cut is profitable only if a rival does not match it. Which feature of the decision does this illustrate?",
       "options": [
         "strategic interdependence",
         "market demand aggregation",
@@ -1027,7 +1027,7 @@ window.questionBanks = {
     {
       "id": 51,
       "sourceGame": "strategyDesk",
-      "q": "A division manager prices only to maximize her own product’s profit, even though the price harms another product owned by the company. The company should evaluate",
+      "q": "A division manager maximizes her product’s profit even though its price harms another product owned by the company. Which outcome should the company evaluate?",
       "options": [
         "only revenue from the manager’s division",
         "total portfolio profit",
@@ -1050,7 +1050,7 @@ window.questionBanks = {
     {
       "id": 52,
       "sourceGame": "strategyDesk",
-      "q": "In a sequential game with observed actions, a later player",
+      "q": "In a sequential game with observed actions, what information is available to a player who moves later?",
       "options": [
         "moves after observing an earlier action",
         "must choose without seeing any prior move",
@@ -1073,7 +1073,7 @@ window.questionBanks = {
     {
       "id": 53,
       "sourceGame": "strategyDesk",
-      "q": "When a firm owns two complementary products, it should price them to maximize",
+      "q": "A firm owns two complementary products. What should it maximize when choosing their prices?",
       "options": [
         "combined profit from the product pair",
         "profit on the higher-priced product only",
@@ -1096,7 +1096,7 @@ window.questionBanks = {
     {
       "id": 54,
       "sourceGame": "strategyDesk",
-      "q": "A game console and the games played on it are complements. A lower console price may be profitable because it can",
+      "q": "A game console and its games are complements. How can a lower console price increase the manufacturer’s profit?",
       "options": [
         "increase demand for games",
         "reduce demand for games as console ownership rises",
@@ -1119,7 +1119,7 @@ window.questionBanks = {
     {
       "id": 55,
       "sourceGame": "strategyDesk",
-      "q": "A printer maker acquires its proprietary-ink supplier. Starting from separate profit-maximizing prices, with costs and other demand conditions unchanged, internalizing complementary demand effects generally creates an incentive to",
+      "q": "A printer maker acquires its proprietary-ink supplier. Starting from separate profit-maximizing prices, with costs and other demand conditions unchanged, how does accounting for complementary demand affect pricing incentives?",
       "options": [
         "lower prices on both products",
         "raise prices on both products",
@@ -1142,7 +1142,7 @@ window.questionBanks = {
     {
       "id": 56,
       "sourceGame": "strategyDesk",
-      "q": "A printer manufacturer earns most of its profit from ink. When setting the printer price, it should include",
+      "q": "A printer manufacturer earns most of its profit from ink. Which effect should it include when setting the printer price?",
       "options": [
         "the future contribution from ink sales",
         "only the printer’s manufacturing cost",
@@ -1165,7 +1165,7 @@ window.questionBanks = {
     {
       "id": 57,
       "sourceGame": "strategyDesk",
-      "q": "Two firms set prices without observing the other firm’s current choice. The game is",
+      "q": "Two firms set prices without observing the other firm’s current choice. What type of game is this?",
       "options": [
         "sequential",
         "simultaneous",
@@ -1211,7 +1211,7 @@ window.questionBanks = {
     {
       "id": 60,
       "sourceGame": "strategyDesk",
-      "q": "A Nash equilibrium is an outcome in which",
+      "q": "Which condition characterizes a Nash equilibrium?",
       "options": [
         "no player gains by changing strategy alone",
         "every player receives the same payoff",
@@ -1257,7 +1257,7 @@ window.questionBanks = {
     {
       "id": 62,
       "sourceGame": "strategyDesk",
-      "q": "An airline has empty seats on a flight that leaves tonight. A discounted fare can be sensible when it",
+      "q": "An airline has empty seats on a flight departing tonight. Under what conditions is a discounted fare economically sensible?",
       "options": [
         "covers the incremental cost and does not displace a higher-paying traveler",
         "covers an allocated share of historical aircraft costs",
@@ -1372,7 +1372,7 @@ window.questionBanks = {
     {
       "id": 67,
       "sourceGame": "strategyDesk",
-      "q": "A hotel has 100 rooms and expects only 65 bookings. A discount would cover incremental cost and would not displace higher-paying guests. It may therefore consider",
+      "q": "A hotel expects to fill 65 of its 100 rooms. A discount covers incremental cost without displacing higher-paying guests. Which response should it consider?",
       "options": [
         "lowering price or offering targeted discounts",
         "raising price sharply",
@@ -1395,7 +1395,7 @@ window.questionBanks = {
     {
       "id": 69,
       "sourceGame": "strategyDesk",
-      "q": "A demand forecast should influence price because it helps the firm anticipate",
+      "q": "What information from a demand forecast is useful for setting a price?",
       "options": [
         "scarcity and available capacity",
         "only the average of prices charged last year",
@@ -1418,7 +1418,7 @@ window.questionBanks = {
     {
       "id": 70,
       "sourceGame": "strategyDesk",
-      "q": "An event organizer forecasts a large last-minute surge in demand for limited seats. The pricing implication is to",
+      "q": "An organizer expects a large last-minute increase in demand for limited seats. Which pricing response should be considered?",
       "options": [
         "raise price as scarcity increases",
         "cut price immediately",
@@ -1441,7 +1441,7 @@ window.questionBanks = {
     {
       "id": 71,
       "sourceGame": "strategyDesk",
-      "q": "A restaurant forecasts unusually weak demand for Tuesday evening. A reasonable response is to",
+      "q": "A restaurant expects weak demand for Tuesday evening. Which pricing response should it consider?",
       "options": [
         "use targeted discounts to fill otherwise empty tables",
         "raise every menu price",
@@ -1464,7 +1464,7 @@ window.questionBanks = {
     {
       "id": 72,
       "sourceGame": "strategyDesk",
-      "q": "If a forecast is highly uncertain, the manager should",
+      "q": "How should a manager use a highly uncertain demand forecast when setting prices?",
       "options": [
         "consider multiple demand scenarios before setting price",
         "price for the highest-demand scenario alone",
@@ -1510,7 +1510,7 @@ window.questionBanks = {
     {
       "id": 75,
       "sourceGame": "strategyDesk",
-      "q": "The strategic view of bargaining emphasizes",
+      "q": "Which factors does the strategic approach to bargaining emphasize?",
       "options": [
         "move order and credible commitments",
         "outside options and surplus without modeling an offer sequence",
@@ -1556,7 +1556,7 @@ window.questionBanks = {
     {
       "id": 77,
       "sourceGame": "strategyDesk",
-      "q": "Promotional advertising primarily emphasizes",
+      "q": "What is the main focus of promotional advertising?",
       "options": [
         "the product’s price or a temporary deal",
         "nonprice product benefits and distinctive features",
@@ -1579,7 +1579,7 @@ window.questionBanks = {
     {
       "id": 78,
       "sourceGame": "strategyDesk",
-      "q": "If advertising makes demand more elastic while marginal cost is unchanged, the profit-maximizing firm generally has an incentive to",
+      "q": "Advertising makes demand more elastic while marginal cost stays unchanged. How does this affect the firm’s profit-maximizing pricing incentive?",
       "options": [
         "lower price",
         "raise its markup",
@@ -1602,7 +1602,7 @@ window.questionBanks = {
     {
       "id": 80,
       "sourceGame": "strategyDesk",
-      "q": "A campaign raises unit sales but also requires a large discount. The manager should evaluate",
+      "q": "A campaign raises unit sales but requires a large discount. Which result should the manager evaluate?",
       "options": [
         "incremental contribution after promotion cost",
         "unit sales alone",
@@ -1625,7 +1625,7 @@ window.questionBanks = {
     {
       "id": 81,
       "sourceGame": "strategyDesk",
-      "q": "A buyer announces a final offer but can revise it freely tomorrow. The seller expects another offer if it refuses. Which change would most strengthen the claim that this offer is final?",
+      "q": "A buyer says an offer is final but is free to make another offer tomorrow. The seller expects the buyer to try again if the seller rejects today’s offer. Which change would make the claim of finality more credible?",
       "options": [
         "Repeat the announcement without changing the buyer’s alternatives",
         "Reveal that the buyer can extend the deadline without cost",
@@ -1641,7 +1641,7 @@ window.questionBanks = {
       "secondarySkills": [],
       "repairSkill": "strategic_bargaining",
       "commonError": "confuses_announcement_with_commitment",
-      "feedback": "A binding limit changes the continuation game by removing later offers. Repetition alone leaves the buyer free to revise, so the seller can rationally discount the announcement.",
+      "feedback": "An enforceable rule preventing another offer changes the seller’s alternatives: rejecting now really would end negotiations. Simply repeating that an offer is final does not remove the buyer’s ability to revise it tomorrow.",
       "aHash": "2362231dc399ea2f1e15f42f7a7b106dc680576efd4c8fc2bcd6109dd25b60ac",
       "canonicalDifficulty": "easy"
     },
@@ -1671,7 +1671,7 @@ window.questionBanks = {
     {
       "id": 84,
       "sourceGame": "strategyDesk",
-      "q": "A store lists a product at $9.99 instead of $10.00 to influence perception. This is an example of",
+      "q": "A store prices a product at $9.99 instead of $10.00 to influence customer perception. Which practice does this illustrate?",
       "options": [
         "psychological pricing",
         "perfect price discrimination",
@@ -1694,7 +1694,7 @@ window.questionBanks = {
     {
       "id": 85,
       "sourceGame": "strategyDesk",
-      "q": "Showing a $200 “regular price” beside a $140 sale price mainly creates",
+      "q": "A store displays a $200 regular price beside a $140 sale price. What does the regular price provide for customers?",
       "options": [
         "a reference price",
         "a measure of marginal production cost",
@@ -1717,7 +1717,7 @@ window.questionBanks = {
     {
       "id": 87,
       "sourceGame": "strategyDesk",
-      "q": "In bargaining, an outside option is",
+      "q": "What is an outside option in bargaining?",
       "options": [
         "the fallback payoff if talks fail",
         "the gross value of the proposed agreement",
@@ -1740,7 +1740,7 @@ window.questionBanks = {
     {
       "id": 88,
       "sourceGame": "strategyDesk",
-      "q": "A bookkeeper receives a better-paying outside job offer. Compared with before, staying means giving up more. Her opportunity cost has",
+      "q": "A bookkeeper receives a better-paying outside job offer. How does this change the opportunity cost of remaining in her current job?",
       "options": [
         "decreased",
         "increased",
@@ -1763,7 +1763,7 @@ window.questionBanks = {
     {
       "id": 89,
       "sourceGame": "strategyDesk",
-      "q": "A party’s agreement value is $8 million and its disagreement value is $3 million. Its gain from agreement is",
+      "q": "A party’s agreement value is $8 million and its disagreement value is $3 million. What is its gain from agreement?",
       "options": [
         "$3 million",
         "$5 million",
@@ -1786,7 +1786,7 @@ window.questionBanks = {
     {
       "id": 90,
       "sourceGame": "strategyDesk",
-      "q": "A firm changes only the wording from “90% success” to “10% failure,” and customer reactions change. This demonstrates",
+      "q": "A firm changes only its wording from “90% success” to “10% failure,” and customer reactions change. What does this illustrate?",
       "options": [
         "framing effects",
         "arbitrage",
@@ -1924,7 +1924,7 @@ window.questionBanks = {
     {
       "id": 204,
       "sourceGame": "strategyDesk",
-      "q": "Call a strategy always-best if it maximizes its player’s payoff against every rival action, allowing ties. Such a strategy",
+      "q": "A strategy maximizes a player’s payoff against every possible rival action, allowing ties. Which statement describes this strategy?",
       "options": [
         "produces at least as high a payoff as every alternative regardless of the rival’s action",
         "maximizes the combined payoff of all players",
@@ -1947,7 +1947,7 @@ window.questionBanks = {
     {
       "id": 205,
       "sourceGame": "strategyDesk",
-      "q": "A best response is the strategy that",
+      "q": "What makes a strategy a best response to another player’s chosen action?",
       "options": [
         "always creates an equal division of profit",
         "gives a player the highest payoff for a specified action by the other player",
@@ -1993,7 +1993,7 @@ window.questionBanks = {
     {
       "id": 217,
       "sourceGame": "strategyDesk",
-      "q": "Two firms submit sealed bids without seeing the other bid. Even if one bid is submitted five minutes earlier, the game is best modeled as",
+      "q": "Two firms submit sealed bids without seeing the other bid. One submits five minutes earlier. How should the strategic interaction be modeled?",
       "options": [
         "sequential because the clock times differ",
         "simultaneous because neither firm observes the other’s choice",
@@ -2016,7 +2016,7 @@ window.questionBanks = {
     {
       "id": 218,
       "sourceGame": "strategyDesk",
-      "q": "In a finite sequential game with perfect information, backward induction solves the game by",
+      "q": "How does backward induction solve a finite sequential game with perfect information?",
       "options": [
         "averaging all terminal payoffs",
         "choosing the first branch with the highest total payoff without checking later players’ best responses",
@@ -2039,7 +2039,7 @@ window.questionBanks = {
     {
       "id": 219,
       "sourceGame": "strategyDesk",
-      "q": "A threat in a sequential game is credible only when",
+      "q": "What makes a threat credible in a sequential game?",
       "options": [
         "it sounds costly to the opponent",
         "it is announced before the game begins",
@@ -2108,7 +2108,7 @@ window.questionBanks = {
     {
       "id": 245,
       "sourceGame": "strategyDesk",
-      "q": "A commitment changes a game most effectively when it",
+      "q": "Which condition makes a commitment effective at changing a rival’s behavior?",
       "options": [
         "keeps all later choices reversible at no cost",
         "removes a future option and makes a threatened or promised action credible",
@@ -2154,7 +2154,7 @@ window.questionBanks = {
     {
       "id": 254,
       "sourceGame": "strategyDesk",
-      "q": "A strategy is weakly dominated when another strategy",
+      "q": "When is one strategy weakly dominated by another?",
       "options": [
         "has a lower payoff in every outcome than the strategy it supposedly dominates",
         "maximizes total surplus",
@@ -2177,7 +2177,7 @@ window.questionBanks = {
     {
       "id": 257,
       "sourceGame": "strategyDesk",
-      "q": "Repeated interaction can support cooperation because",
+      "q": "How can repeated interaction support cooperation?",
       "options": [
         "repetition eliminates strategic incentives because future actions never affect current choices",
         "today’s action can affect future rewards or punishments",
@@ -2200,12 +2200,12 @@ window.questionBanks = {
     {
       "id": 360,
       "sourceGame": "strategyDesk",
-      "q": "Firm A has selected High Price in gametreetwo. Which continuation action maximizes Firm B's payoff?",
+      "q": "Refer to the sequential pricing game graph. Firm A has chosen High Price in the sequential pricing game. Which response gives Firm B the higher payoff?",
       "options": [
-        "Not Match; B prefers its second-coordinate payoff there",
-        "Match; B prefers its second-coordinate payoff there",
-        "Either action; B receives equal payoffs",
-        "Match; maximizing A’s payoff also maximizes B’s payoff"
+        "Not Match; Firm B receives 6 rather than 3",
+        "Match; Firm B receives 3 rather than 6",
+        "Either action; Firm B receives the same payoff",
+        "Match; Firm B should maximize Firm A’s payoff"
       ],
       "tag": "backward_induction",
       "type": "graph/tree interpretation",
@@ -2216,21 +2216,21 @@ window.questionBanks = {
       "secondarySkills": [],
       "repairSkill": "backward_induction",
       "commonError": "reads_first_payoff_as_firm_b",
-      "feedback": "After High Price, Firm B compares 3 from Match with 6 from Not Match, so it chooses Not Match.",
+      "feedback": "The second number in each payoff pair belongs to Firm B. After High Price, Match gives Firm B 3 and Not Match gives 6. Firm B chooses Not Match because 6 is higher, regardless of which outcome Firm A prefers.",
       "image": "gametreetwo.webp",
       "graphRequired": true,
-      "aHash": "4440fdfb9d40d21d9a7201539ab713bddd613ade52fd8aed8fb905da1d114bb9",
+      "aHash": "6f405b9b49b1eb0817ed38ec40857e855dd46a8be8a1968aa1d60b87bbcb7d3b",
       "canonicalDifficulty": "easy"
     },
     {
       "id": 361,
       "sourceGame": "strategyDesk",
-      "q": "At the Medium Price node in gametreetwo, compare Firm B's two payoffs. Which branch does backward induction retain?",
+      "q": "Refer to the sequential pricing game graph. Firm A has chosen Medium Price in the sequential pricing game. Which response should Firm B choose when solving the game by backward induction?",
       "options": [
-        "Not Match; B prefers its second-coordinate payoff there",
-        "Match; B prefers its second-coordinate payoff there",
-        "Either action; B receives equal payoffs",
-        "Not Match; maximizing A’s payoff also maximizes B’s payoff"
+        "Not Match; Firm B receives 4 rather than 5",
+        "Match; Firm B receives 5 rather than 4",
+        "Either action; Firm B receives the same payoff",
+        "Not Match; Firm B should maximize Firm A’s payoff"
       ],
       "tag": "backward_induction",
       "type": "graph/tree interpretation",
@@ -2241,16 +2241,16 @@ window.questionBanks = {
       "secondarySkills": [],
       "repairSkill": "backward_induction",
       "commonError": "reads_wrong_branch_payoff",
-      "feedback": "After Medium Price, Firm B receives 5 from Match and 4 from Not Match, so Match is optimal.",
+      "feedback": "Read Firm B’s payoff, the second number in each pair. After Medium Price, Match gives 5 and Not Match gives 4, so Firm B chooses Match. Backward induction uses the responding firm’s own incentives at this decision.",
       "image": "gametreetwo.webp",
       "graphRequired": true,
-      "aHash": "ea3238baca1ce01bf6162cf30a29c5a7ef990f5ea4f17bc91fe28ce82d10203b",
+      "aHash": "1ff2c824b45e65973179b900c0b39f4ab11cce3f59cf6a83f9faf38beec66230",
       "canonicalDifficulty": "easy"
     },
     {
       "id": 362,
       "sourceGame": "strategyDesk",
-      "q": "Suppose play reaches Low Price in gametreetwo. Which response is sequentially rational for Firm B?",
+      "q": "Refer to the sequential pricing game graph. Suppose play reaches Low Price in the sequential pricing game. Which response is sequentially rational for Firm B?",
       "options": [
         "Either action; B receives equal payoffs",
         "Match; B prefers its second-coordinate payoff there",
@@ -2429,7 +2429,7 @@ window.questionBanks = {
       "secondarySkills": [],
       "repairSkill": "nonstrategic_bargaining",
       "commonError": "uses_gain_instead_of_disagreement_value",
-      "feedback": "The seller's reservation payoff is its own $9 million outside option. Receiving exactly that amount makes the seller indifferent; the stated tie rule allows agreement.",
+      "feedback": "The seller can receive $9 million if negotiations fail, so an agreement must provide at least $9 million. The seller is equally well off at that amount and accepts under the stated rule. The buyer’s $7 million alternative does not determine the seller’s minimum.",
       "aHash": "c7e844477746e60eace11ec934348bc34886da200cd78b3702126192d7dce0da",
       "canonicalDifficulty": "easy"
     },
@@ -2459,7 +2459,7 @@ window.questionBanks = {
     {
       "id": 155,
       "sourceGame": "strategyDesk",
-      "q": "In an extensive-form game, two decision nodes joined by an information set mean the player",
+      "q": "In an extensive-form game, what does it mean when two decision nodes are joined by one information set?",
       "options": [
         "moves twice at the same node",
         "knows exactly which prior path occurred",
@@ -2505,7 +2505,7 @@ window.questionBanks = {
     {
       "id": 220,
       "sourceGame": "strategyDesk",
-      "q": "Using gametreeone, what action will Player 2 choose after Player 1 invests?",
+      "q": "Refer to the sequential investment game graph. What action will Player 2 choose after Player 1 invests?",
       "options": [
         "Low Price; it gives Player 2 the larger payoff",
         "High Price; it gives Player 2 the larger payoff",
@@ -2553,7 +2553,7 @@ window.questionBanks = {
     {
       "id": 249,
       "sourceGame": "strategyDesk",
-      "q": "Moving first creates an advantage only when",
+      "q": "Under what condition can moving first provide an advantage?",
       "options": [
         "the first mover always receives the larger payoff",
         "the first action changes the later player’s best response in a favorable way",
@@ -3013,7 +3013,7 @@ window.questionBanks = {
     {
       "id": 158,
       "sourceGame": "strategyDesk",
-      "q": "A gym offers a monthly pass and a pay-per-visit option. The menu can sort customers mainly by",
+      "q": "A gym offers a monthly pass and a pay-per-visit option. Which customer differences can this menu help reveal?",
       "options": [
         "each customer’s verified age alone",
         "the date the gym was constructed",
@@ -3105,7 +3105,7 @@ window.questionBanks = {
     {
       "id": 177,
       "sourceGame": "strategyDesk",
-      "q": "A firm threatens a lockout but would lose far more from carrying it out than from accepting the union’s offer. The threat is likely",
+      "q": "A firm threatens a lockout but would lose far more by carrying it out than by accepting the union’s offer. How should the threat be assessed?",
       "options": [
         "credible because it sounds costly",
         "credible because it was announced first",
@@ -3128,7 +3128,7 @@ window.questionBanks = {
     {
       "id": 180,
       "sourceGame": "strategyDesk",
-      "q": "Pure bundling means the seller",
+      "q": "What does a seller do under pure bundling?",
       "options": [
         "offers the products only as a package",
         "offers each product separately and as a package",
@@ -3174,7 +3174,7 @@ window.questionBanks = {
     {
       "id": 267,
       "sourceGame": "strategyDesk",
-      "q": "A deadline is strategically useful to a negotiator only if",
+      "q": "Under what condition is a deadline strategically useful to a negotiator?",
       "options": [
         "the deadline is announced loudly",
         "both parties ignore the passage of time",
@@ -3243,7 +3243,7 @@ window.questionBanks = {
     {
       "id": 275,
       "sourceGame": "strategyDesk",
-      "q": "The nonstrategic view of bargaining begins by identifying",
+      "q": "What does the nonstrategic approach to bargaining identify first?",
       "options": [
         "the order in which threats are announced",
         "the first mover’s dominant strategy",
@@ -3266,7 +3266,7 @@ window.questionBanks = {
     {
       "id": 280,
       "sourceGame": "strategyDesk",
-      "q": "A firm can replace striking workers with machinery at low cost. In a nonstrategic bargaining analysis, this change",
+      "q": "A firm can replace striking workers with machinery at low cost. How does this affect its position in a nonstrategic bargaining analysis?",
       "options": [
         "raises the firm’s disagreement value",
         "raises the union’s agreement value",
@@ -3473,7 +3473,7 @@ window.questionBanks = {
     {
       "id": 387,
       "sourceGame": "strategyDesk",
-      "q": "A party's agreement value rises by $3 million while its disagreement value rises by the same amount. What happens to its gain from agreement?",
+      "q": "A party's agreement value rises by $3 million while their disagreement value rises by the same amount. What happens to their gain from agreement?",
       "options": [
         "It rises by $6 million",
         "It rises by $3 million",
@@ -3544,7 +3544,7 @@ window.questionBanks = {
     {
       "id": 112,
       "sourceGame": "strategyDesk",
-      "q": "Price falls from $20 to $18 while quantity demanded rises from 100 to 120. Using the midpoint formula, the absolute price elasticity is approximately",
+      "q": "Price falls from $20 to $18 while quantity demanded rises from 100 to 120. Using the midpoint formula, what is the approximate absolute price elasticity?",
       "options": [
         "1.73, so demand is elastic",
         "0.58, so demand is inelastic",
@@ -3728,7 +3728,7 @@ window.questionBanks = {
     {
       "id": 137,
       "sourceGame": "strategyDesk",
-      "q": "A hotel has empty rooms tonight. A last-minute booking adds $70 in revenue and $18 in cleaning and service cost without displacing another guest. The booking should generally be",
+      "q": "A hotel has empty rooms tonight. A last-minute booking adds $70 in revenue and $18 in service costs without displacing another guest. How should the hotel evaluate it?",
       "options": [
         "rejected because the room has fixed costs",
         "rejected unless the booking covers full average total cost",
@@ -3797,7 +3797,7 @@ window.questionBanks = {
     {
       "id": 141,
       "sourceGame": "strategyDesk",
-      "q": "An airline requires a Saturday-night stay for a lower fare. The restriction is designed mainly to separate",
+      "q": "An airline requires a Saturday-night stay for its lower fare. Which customer groups is this restriction designed to separate?",
       "options": [
         "Residents from nonresidents through verified identity",
         "Customers with equal willingness to pay and identical schedules",
@@ -4050,7 +4050,7 @@ window.questionBanks = {
     {
       "id": 182,
       "sourceGame": "strategyDesk",
-      "q": "Bundling is especially attractive when customer valuations for two products are",
+      "q": "Which pattern of customer valuations can make bundling especially attractive?",
       "options": [
         "always zero for one product",
         "unrelated to willingness to pay and identical across every customer group",
@@ -4073,7 +4073,7 @@ window.questionBanks = {
     {
       "id": 183,
       "sourceGame": "strategyDesk",
-      "q": "A buyer can reject an offer and make a counteroffer in the next round. Compared with a final take-it-or-leave-it offer, this gives the buyer",
+      "q": "A buyer can reject an offer and make a counteroffer in the next round. Compared with a final take-it-or-leave-it offer, how does this affect the buyer’s bargaining position?",
       "options": [
         "no change in the feasible sequence of offers",
         "a guarantee of receiving the entire surplus",
@@ -4096,7 +4096,7 @@ window.questionBanks = {
     {
       "id": 184,
       "sourceGame": "strategyDesk",
-      "q": "A store sells coffee only if the buyer also purchases a specific filter. This is best classified as",
+      "q": "A store sells coffee only if the buyer also purchases a particular filter. How is this arrangement classified?",
       "options": [
         "a requirement tie-in sale",
         "mixed bundling",
@@ -4211,12 +4211,12 @@ window.questionBanks = {
     {
       "id": 189,
       "sourceGame": "strategyDesk",
-      "q": "The union’s disagreement value rises while all agreement values remain unchanged. What follows?",
+      "q": "A union improves what it can obtain if negotiations fail, while the value of reaching an agreement stays the same. What happens to the minimum benefit the union is willing to accept from an agreement?",
       "options": [
-        "The union must accept a lower payoff",
-        "The total surplus necessarily increases",
-        "The firm’s disagreement value also rises",
-        "The union’s reservation payoff rises"
+        "The union must accept a lower benefit",
+        "The total gain available from agreement necessarily increases",
+        "The firm’s alternative to agreement also improves",
+        "The union’s minimum acceptable benefit rises"
       ],
       "tag": "nonstrategic_bargaining",
       "type": "interpretation",
@@ -4227,8 +4227,8 @@ window.questionBanks = {
       "secondarySkills": [],
       "repairSkill": "nonstrategic_bargaining",
       "commonError": "reverses_effect_of_better_outside_option",
-      "feedback": "A better fallback raises the union’s reservation payoff. With total agreement value fixed, incremental surplus above both fallback payoffs falls; bargaining power and the size of gains are different concepts.",
-      "aHash": "e4d68bb4ae41b949ad4031f0e958709b4f7bda20ef4fb68df43c39221b4e3afd",
+      "feedback": "A better alternative makes the union less willing to accept a low offer. Its minimum acceptable benefit rises because an agreement must be at least as attractive as that alternative. This does not create more total value from agreement; it reduces the extra value available above the parties’ alternatives.",
+      "aHash": "527ef86e229a76871868703ffb3393dab1e4d46f13de996ac3a3bf4699c1109e",
       "canonicalDifficulty": "medium"
     },
     {
@@ -4280,7 +4280,7 @@ window.questionBanks = {
     {
       "id": 222,
       "sourceGame": "strategyDesk",
-      "q": "Using gametreeone and backward induction, what will Player 1 choose?",
+      "q": "Refer to the sequential investment game graph. And backward induction, what will Player 1 choose?",
       "options": [
         "Either initial action; their induced payoffs are equal",
         "Invest; its induced payoff exceeds the noninvestment payoff",
@@ -4305,7 +4305,7 @@ window.questionBanks = {
     {
       "id": 224,
       "sourceGame": "strategyDesk",
-      "q": "In gametreeone, Player 2 threatens to choose High Price if Player 1 invests. Is that threat credible?",
+      "q": "Refer to the sequential investment game graph. Player 2 threatens to choose High Price if Player 1 invests. Is that threat credible?",
       "options": [
         "No; Player 2 would prefer Low after investment",
         "Yes; Player 2 would prefer High after investment",
@@ -4514,7 +4514,7 @@ window.questionBanks = {
     {
       "id": 363,
       "sourceGame": "strategyDesk",
-      "q": "Using backward induction in gametreetwo, what is the subgame-perfect equilibrium outcome?",
+      "q": "Refer to the sequential pricing game graph. Using backward induction in the sequential pricing game, what is the subgame-perfect equilibrium outcome?",
       "options": [
         "High Price, Not Match",
         "Low Price, Not Match",
@@ -4539,7 +4539,7 @@ window.questionBanks = {
     {
       "id": 364,
       "sourceGame": "strategyDesk",
-      "q": "In gametreetwo, which statement best explains why High Price, Match is not subgame perfect?",
+      "q": "Refer to the sequential pricing game graph. Which statement best explains why High Price, Match is not subgame perfect?",
       "options": [
         "Firm B would switch to Not Match after High",
         "Firm B would switch to Not Match after Medium",
@@ -4633,7 +4633,7 @@ window.questionBanks = {
     {
       "id": 9058,
       "sourceGame": "strategyDesk",
-      "q": "In gametreeone, suppose Player 2's payoff after Invest–Low Price falls from 5 to 3. What becomes the subgame-perfect outcome?",
+      "q": "Refer to the sequential investment game graph. Suppose Player 2's payoff after Invest–Low Price falls from 5 to 3. What becomes the subgame-perfect outcome?",
       "options": [
         "Invest, Low Price",
         "Don't Invest, High Price",
@@ -4658,7 +4658,7 @@ window.questionBanks = {
     {
       "id": 9061,
       "sourceGame": "strategyDesk",
-      "q": "In gametreeone, what is the smallest integer increase in Player 1’s payoff at Invest–Low Price that makes Invest strictly optimal under the original continuation choices?",
+      "q": "Refer to the sequential investment game graph. What is the smallest integer increase in Player 1’s payoff at Invest–Low Price that makes Invest strictly optimal under the original continuation choices?",
       "options": [
         "1 payoff unit",
         "3 payoff units",
@@ -4683,7 +4683,7 @@ window.questionBanks = {
     {
       "id": 9062,
       "sourceGame": "strategyDesk",
-      "q": "In gametreeone, change only Player 2's payoff at Don't Invest–High Price from 3 to 1. What is the new subgame-perfect outcome?",
+      "q": "Refer to the sequential investment game graph. Change only Player 2's payoff at Don't Invest–High Price from 3 to 1. What is the new subgame-perfect outcome?",
       "options": [
         "Invest, High Price",
         "Don't Invest, High Price",
@@ -4708,7 +4708,7 @@ window.questionBanks = {
     {
       "id": 9064,
       "sourceGame": "strategyDesk",
-      "q": "In gametreetwo, suppose Firm B's payoff from Not Match after Medium Price rises from 4 to 6. What is the new subgame-perfect outcome?",
+      "q": "Refer to the sequential pricing game graph. Suppose Firm B's payoff from Not Match after Medium Price rises from 4 to 6. What is the new subgame-perfect outcome?",
       "options": [
         "High Price, Not Match",
         "Medium Price, Match",
@@ -4733,7 +4733,7 @@ window.questionBanks = {
     {
       "id": 9065,
       "sourceGame": "strategyDesk",
-      "q": "In gametreetwo, Firm A can pay Firm B a nonnegative bonus only if B matches after High Price. Which condition is both necessary and sufficient to make Match strictly optimal for B?",
+      "q": "Refer to the sequential pricing game graph. Firm A can pay Firm B a nonnegative bonus only if B matches after High Price. Which condition is both necessary and sufficient to make Match strictly optimal for B?",
       "options": [
         "Exactly 2 payoff units",
         "More than 3 payoff units",
@@ -4850,7 +4850,7 @@ window.questionBanks = {
     {
       "id": 9170,
       "sourceGame": "strategyDesk",
-      "q": "In gametreetwo, suppose Firm B’s payoff from Match after High rises from 3 to 7. All other payoffs remain unchanged. What is the new subgame-perfect outcome?",
+      "q": "Refer to the sequential pricing game graph. Suppose Firm B’s payoff from Match after High rises from 3 to 7. All other payoffs remain unchanged. What is the new subgame-perfect outcome?",
       "options": [
         "Medium Price, Match",
         "High Price, Not Match",
@@ -4898,7 +4898,7 @@ window.questionBanks = {
     {
       "id": 9071,
       "sourceGame": "strategyDesk",
-      "q": "A payoff matrix has two Nash equilibria: (A,X) with (9,4) and (B,Y) with (5,8). Which equilibrium is risk dominant cannot be determined from these two cells alone because",
+      "q": "A payoff matrix has Nash equilibria (A,X), with payoffs (9,4), and (B,Y), with payoffs (5,8). Why are these two cells insufficient to determine which equilibrium is risk dominant?",
       "options": [
         "Risk dominance is zero-sum only",
         "The equilibrium with the largest combined payoff is always risk dominant",
@@ -5031,29 +5031,6 @@ window.questionBanks = {
       "commonError": "uses_raw_treated_change_without_control",
       "feedback": "The treated market rises $7,000 and the comparison market rises $4,000, so the incremental effect is $3,000. The causal interpretation relies on parallel untreated trends.",
       "aHash": "50e5c930578954e631f9c75bfe0ef0b7d0f0b5c27638d20ec1049649881f0acc",
-      "canonicalDifficulty": "medium"
-    },
-    {
-      "id": 206,
-      "sourceGame": "strategyDesk",
-      "q": "Buyer A has demand QA = 40 − 2P and Buyer B has demand QB = 30 − P. At a market price of $10, what is aggregate quantity demanded?",
-      "options": [
-        "40 units",
-        "30 units",
-        "50 units",
-        "70 units"
-      ],
-      "tag": "market_demand",
-      "type": "calculation",
-      "objective": "LO6.1",
-      "difficulty": "medium",
-      "conceptCluster": "medium_strategyDesk_market_demand",
-      "primarySkill": "market_demand",
-      "secondarySkills": [],
-      "repairSkill": "market_demand",
-      "commonError": "adds_intercepts_without_evaluating_each_demand",
-      "feedback": "At P = 10, Buyer A demands 20 units and Buyer B demands 20 units. Market demand is 20 + 20 = 40 units.",
-      "aHash": "36ebe0425d5dd2a9a3acf9ce39a1c0264e2a4990822c8ba77839516f6709fc7a",
       "canonicalDifficulty": "medium"
     },
     {
@@ -5243,12 +5220,12 @@ window.questionBanks = {
     {
       "id": 265,
       "sourceGame": "strategyDesk",
-      "q": "Why can the ability to make a take-it-or-leave-it offer create bargaining power?",
+      "q": "Why can making a single, final offer give a seller bargaining power?",
       "options": [
-        "The responder is forced to accept a negative payoff.",
-        "The proposer can design the offer around the responder’s minimum acceptable payoff.",
-        "The proposer no longer needs to know the responder’s outside option.",
-        "The available surplus becomes unlimited."
+        "The buyer is forced to accept a loss",
+        "The seller can set terms that leave the buyer just as well off as the buyer’s best alternative",
+        "The seller no longer needs to consider the buyer’s alternatives",
+        "The offer creates an unlimited amount of value"
       ],
       "tag": "strategic_bargaining",
       "type": "interpretation",
@@ -5259,8 +5236,8 @@ window.questionBanks = {
       "secondarySkills": [],
       "repairSkill": "strategic_bargaining",
       "commonError": "assumes_responder_accepts_any_offer",
-      "feedback": "With commitment to a single offer, the proposer can capture surplus while leaving the responder just willing to accept.",
-      "aHash": "3099aad44de4b0b593bda491a6ec063c3651ff58cb78210b4fdd6958a267c945",
+      "feedback": "If the offer is genuinely final, the seller can propose terms that give the buyer just enough benefit to accept instead of walking away. The buyer’s alternative still limits what the seller can demand; making the offer does not force acceptance.",
+      "aHash": "480b5cb432e73bf4c4b3335fc13cfe9845c6fdc549c7e0a52100e74bec228081",
       "canonicalDifficulty": "medium"
     },
     {
@@ -5335,7 +5312,7 @@ window.questionBanks = {
     {
       "id": 282,
       "sourceGame": "strategyDesk",
-      "q": "An outside association promises workers payments only while a strike lasts; the payments are not drawn from the workers’ own savings. In the nonstrategic framework, this support primarily",
+      "q": "An outside association promises workers payments only while a strike lasts; these payments do not come from workers’ own savings. How does this affect their position in the nonstrategic bargaining framework?",
       "options": [
         "raises the firm’s agreement value",
         "reduces the total value of production",
@@ -5703,7 +5680,7 @@ window.questionBanks = {
     {
       "id": 385,
       "sourceGame": "strategyDesk",
-      "q": "A negotiator reveals that its outside option expires tomorrow. What strategic effect can this disclosure have?",
+      "q": "A negotiator reveals that their best alternative to an agreement will no longer be available tomorrow. How might this information affect the negotiation?",
       "options": [
         "It guarantees a higher agreement value",
         "It can weaken the negotiator by revealing time pressure",
@@ -5768,6 +5745,29 @@ window.questionBanks = {
       "feedback": "Strategic analysis studies how the bargaining process changes behavior, while the nonstrategic view measures and divides gains relative to fallback positions.",
       "aHash": "d2a19d8f12070c2d593f4d1eb9acbd3cb35389f3e6b8c05507e8e1bb03018af2",
       "canonicalDifficulty": "medium"
+    },
+    {
+      "id": 40206,
+      "sourceGame": "strategyDesk",
+      "q": "At a given price, two customer groups each want to buy some units of a product. How should the seller construct market demand at that price?",
+      "options": [
+        "Add the quantities demanded by both groups",
+        "Add the prices each group is willing to pay",
+        "Use only the larger group’s purchases",
+        "Average the two quantities regardless of group size"
+      ],
+      "tag": "market_demand",
+      "type": "application",
+      "objective": "LO6.1",
+      "difficulty": "medium",
+      "conceptCluster": "medium_strategyDesk_market_demand",
+      "primarySkill": "market_demand",
+      "secondarySkills": [],
+      "repairSkill": "market_demand",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "Market demand adds purchases across buyers at the same price. Summing prices instead would not measure the total units buyers want.",
+      "aHash": "5a617ea4557725d7498858ec7f9b8a698b61c07a3808932426db017a9a0ff80d",
+      "canonicalDifficulty": "medium"
     }
   ],
   "hard": [
@@ -5820,7 +5820,7 @@ window.questionBanks = {
     {
       "id": 214,
       "sourceGame": "strategyDesk",
-      "q": "A product has income elasticity 1.5, cross-price elasticity 0.8 with a rival product, and advertising elasticity 0.3. Income rises 4%, the rival’s price rises 5%, and advertising rises 10%. Using the additive approximation, demand changes by",
+      "q": "A product has income elasticity 1.5, cross-price elasticity 0.8 with a rival product, and advertising elasticity 0.3. Income rises 4%, the rival’s price rises 5%, and advertising rises 10%. Using the additive approximation, what is the change in demand?",
       "options": [
         "about 7%",
         "about 13%",
@@ -6066,7 +6066,7 @@ window.questionBanks = {
       "secondarySkills": [],
       "repairSkill": "strategic_bargaining",
       "commonError": "ignores_responder_outside_option",
-      "feedback": "The buyer needs 90 − price ≥ 8, so the highest accepted price is 82. Seller profit is 82−30=52, above its 10 fallback. Offering 90 would violate the buyer’s participation constraint.",
+      "feedback": "The buyer needs 90 − price ≥ 8, so the highest accepted price is 82. Seller profit is 82−30=52, above the seller’s $10 alternative. Offering 90 would violate the buyer’s participation constraint.",
       "aHash": "2251942721e0990b0fbc16a2ff1ea17f6c9423276779c140ec65449c4cf480ae",
       "canonicalDifficulty": "hard"
     },
@@ -6186,55 +6186,9 @@ window.questionBanks = {
       "canonicalDifficulty": "hard"
     },
     {
-      "id": 19177,
-      "sourceGame": "strategyDesk",
-      "q": "One hundred identical consumers each have demand q = 10 - P. Marginal cost is $2 and fixed cost is zero. Under a two-part tariff that preserves efficient usage and extracts all consumer surplus, what usage price and membership fee should the monopolist set? Assume consumers join when indifferent and resale is impossible.",
-      "options": [
-        "Usage price $6 and membership fee $16",
-        "Usage price $2 and membership fee $32 per consumer",
-        "Usage price $10 and membership fee $0",
-        "Usage price $2 and membership fee $64"
-      ],
-      "tag": "self_selection",
-      "type": "calculation",
-      "objective": "LO14.3",
-      "difficulty": "hard",
-      "conceptCluster": "hard_strategyDesk_consumer_surplus_extraction",
-      "primarySkill": "consumer_surplus_extraction",
-      "secondarySkills": [],
-      "repairSkill": "consumer_surplus_extraction",
-      "commonError": "confuses_usage_price_with_membership_fee",
-      "feedback": "Set usage price equal to MC for q=8. Consumer surplus is .5(10-2)8=$32, which becomes the fee.",
-      "aHash": "2a587345e295e03974b237087df4f57fe31052735f0d4b1034b59516530b4e82",
-      "canonicalDifficulty": "hard"
-    },
-    {
-      "id": 19284,
-      "sourceGame": "strategyDesk",
-      "q": "A seller can verify membership in two separate markets and prevent resale. Market A has demand P = 80 - Q and market B has P = 50 - 0.5Q. MC is $20 in both markets. What prices maximize total profit?",
-      "options": [
-        "$50 in A and $35 in B",
-        "$40 in A and $30 in B",
-        "$60 in A and $40 in B",
-        "$50 in both markets"
-      ],
-      "tag": "direct_price_discrimination",
-      "type": "calculation",
-      "objective": "LO13.2",
-      "difficulty": "hard",
-      "conceptCluster": "hard_strategyDesk_direct_price_discrimination",
-      "primarySkill": "direct_price_discrimination",
-      "secondarySkills": [],
-      "repairSkill": "direct_price_discrimination",
-      "commonError": "fails_to_equalize_mr_with_mc_by_segment",
-      "feedback": "Set each market’s marginal revenue to $20: QA = 30 and QB = 30, giving prices $50 and $35.",
-      "aHash": "2a9e98bdf86a8cf0f937b7571f78fd2f2174f379481092a2ba726536340fd216",
-      "canonicalDifficulty": "hard"
-    },
-    {
       "id": 9057,
       "sourceGame": "strategyDesk",
-      "q": "A repeated prisoner's dilemma has one-period temptation gain of 4 and permanent future cooperation benefit of 1 per period above a credible punishment payoff. For an infinite horizon with 0 ≤ δ < 1, grim-trigger cooperation is sustainable when",
+      "q": "In an infinitely repeated prisoner’s dilemma, deviating provides a one-period gain of 4. Cooperation provides a benefit of 1 per future period above the credible permanent punishment payoff. For 0 ≤ δ < 1, which discount-factor condition sustains grim-trigger cooperation?",
       "options": [
         "δ ≥ 0.2",
         "δ ≥ 0.8",
@@ -6257,7 +6211,7 @@ window.questionBanks = {
     {
       "id": 9059,
       "sourceGame": "strategyDesk",
-      "q": "In gametreeone under the original payoffs, Player 2 can publicly commit to High Price after Invest but cannot commit after Don't Invest. What is the value of this commitment to Player 2?",
+      "q": "Refer to the sequential investment game graph. Under the original payoffs, Player 2 can publicly commit to High Price after Invest but cannot commit after Don't Invest. What is the value of this commitment to Player 2?",
       "options": [
         "0 payoff units",
         "2 payoff units",
@@ -6282,7 +6236,7 @@ window.questionBanks = {
     {
       "id": 9067,
       "sourceGame": "strategyDesk",
-      "q": "In gametreetwo, Firm A commits to High Price before Firm B moves and pays a commitment cost of 2. Relative to the original equilibrium, what happens to Firm A's payoff?",
+      "q": "Refer to the sequential pricing game graph. Firm A commits to High Price before Firm B moves and pays a commitment cost of 2. Relative to the original equilibrium, what happens to Firm A's payoff?",
       "options": [
         "It rises by 1",
         "It falls by 1",
@@ -6305,37 +6259,14 @@ window.questionBanks = {
       "canonicalDifficulty": "hard"
     },
     {
-      "id": 9068,
-      "sourceGame": "strategyDesk",
-      "q": "Player 1 chooses Up or Down against Player 2's Left or Right. Player 1's payoffs are 4/0 against Left/Right for Up and 1/3 for Down. What probability of Left makes Player 1 indifferent? No claim about Player 2's incentives is made.",
-      "options": [
-        "50%",
-        "25%",
-        "60%",
-        "75%"
-      ],
-      "tag": "nash_equilibrium",
-      "type": "calculation",
-      "objective": "LO15.3",
-      "difficulty": "hard",
-      "conceptCluster": "hard_strategyDesk_nash_equilibrium",
-      "primarySkill": "nash_equilibrium",
-      "secondarySkills": [],
-      "repairSkill": "nash_equilibrium",
-      "commonError": "equates_expected_payoffs_in_wrong_variable",
-      "feedback": "Indifference requires 4p = 1p + 3(1−p), so 6p = 3 and p = 0.5.",
-      "aHash": "28fdae8deae31d6eafd18b70d878f6d8a3136f267ce273777c089a42ac590438",
-      "canonicalDifficulty": "hard"
-    },
-    {
       "id": 9160,
       "sourceGame": "strategyDesk",
       "q": "Two firms have reaction functions q1=40−0.5q2 and q2=30−0.25q1. What is Firm 1’s equilibrium quantity?",
       "options": [
         "About 28.57 units",
-        "20.00 units",
-        "25.00 units",
-        "32.00 units"
+        "About 20.00 units",
+        "About 25.00 units",
+        "About 32.00 units"
       ],
       "tag": "strategic_interdependence",
       "type": "calculation",
@@ -6353,7 +6284,7 @@ window.questionBanks = {
     {
       "id": 9163,
       "sourceGame": "strategyDesk",
-      "q": "Using gametreeone, which complete strategy profile is the subgame-perfect equilibrium?",
+      "q": "Refer to the sequential investment game graph. Which complete strategy profile is the subgame-perfect equilibrium?",
       "options": [
         "Player 1 chooses Invest; Player 2 chooses High after both actions",
         "Player 1 chooses Don’t Invest; Player 2 chooses High after Invest and High after Don’t Invest in both subgames",
@@ -6378,7 +6309,7 @@ window.questionBanks = {
     {
       "id": 9164,
       "sourceGame": "strategyDesk",
-      "q": "Using gametreetwo, which complete subgame-perfect strategy profile is correct?",
+      "q": "Refer to the sequential pricing game graph. Which complete subgame-perfect strategy profile is correct?",
       "options": [
         "Firm A chooses Medium; Firm B chooses Not Match after High, Match after Medium, and Not Match after Low",
         "Firm A chooses High; Firm B matches every price",
@@ -6403,7 +6334,7 @@ window.questionBanks = {
     {
       "id": 9165,
       "sourceGame": "strategyDesk",
-      "q": "Trace every decision node in gametreethree. Which complete strategy profile survives backward induction?",
+      "q": "Refer to the sequential bargaining game graph. Trace every decision node in the sequential bargaining game. Which complete strategy profile survives backward induction?",
       "options": [
         "Company chooses Stand Firm and Refuse after Demand More; Union chooses Accept after Stand Firm and Demand More after Compromise",
         "Company chooses Compromise and Concede after Demand More; Union chooses Strike after Stand Firm and Accept after Compromise",
@@ -6423,29 +6354,6 @@ window.questionBanks = {
       "image": "gametreethree.webp",
       "graphRequired": true,
       "aHash": "cbdd62626d4838e1c0a6eeed0d4f44eafab05532777bf792678f20cb592992ce",
-      "canonicalDifficulty": "hard"
-    },
-    {
-      "id": 9166,
-      "sourceGame": "strategyDesk",
-      "q": "In a 2×2 game, Player 1 payoffs are 3 at (Up,Left), 0 at (Up,Right), 0 at (Down,Left), and 1 at (Down,Right). Player 2 receives 0,2,2,0 in those same cells. In the mixed equilibrium, what probability does Player 2 assign to Left?",
-      "options": [
-        "0.40",
-        "0.50",
-        "0.25",
-        "0.75"
-      ],
-      "tag": "nash_equilibrium",
-      "type": "multi-step",
-      "objective": "LO15.3",
-      "difficulty": "hard",
-      "conceptCluster": "hard_strategyDesk_nash_equilibrium",
-      "primarySkill": "nash_equilibrium",
-      "secondarySkills": [],
-      "repairSkill": "nash_equilibrium",
-      "commonError": "sets_wrong_players_indifference_condition",
-      "feedback": "Player 1 is indifferent when 3q=1−q, so q=0.25.",
-      "aHash": "a30a043314fa89294fa2c1c989a01fbb5329e5c085a5c5a8d27317656de24ae0",
       "canonicalDifficulty": "hard"
     },
     {
@@ -6497,7 +6405,7 @@ window.questionBanks = {
     {
       "id": 9171,
       "sourceGame": "strategyDesk",
-      "q": "In gametreethree, the company can commit to Refuse after Demand More, and its payoff from Compromise–Accept falls from 5 to 0. What is the resulting equilibrium path?",
+      "q": "Refer to the sequential bargaining game graph. The company can commit to Refuse after Demand More, and its payoff from Compromise–Accept falls from 5 to 0. What is the resulting equilibrium path?",
       "options": [
         "Compromise, Accept",
         "Compromise, Demand More, Refuse",
@@ -6525,7 +6433,7 @@ window.questionBanks = {
       "q": "<table style=\"border-collapse:collapse;margin:12px auto\"><caption>Payoffs (row player, column player)</caption><thead><tr><th style=\"padding:5px 8px;border:1px solid currentColor\">Row / Column</th><th scope=\"col\" style=\"padding:5px 8px;border:1px solid currentColor\">X</th><th scope=\"col\" style=\"padding:5px 8px;border:1px solid currentColor\">Y</th><th scope=\"col\" style=\"padding:5px 8px;border:1px solid currentColor\">Z</th></tr></thead><tbody><tr><th scope=\"row\" style=\"padding:5px 8px;border:1px solid currentColor\">A</th><td style=\"padding:5px 8px;border:1px solid currentColor\">(9, 8)</td><td style=\"padding:5px 8px;border:1px solid currentColor\">(2, 3)</td><td style=\"padding:5px 8px;border:1px solid currentColor\">(4, 1)</td></tr><tr><th scope=\"row\" style=\"padding:5px 8px;border:1px solid currentColor\">B</th><td style=\"padding:5px 8px;border:1px solid currentColor\">(4, 2)</td><td style=\"padding:5px 8px;border:1px solid currentColor\">(8, 9)</td><td style=\"padding:5px 8px;border:1px solid currentColor\">(6, 4)</td></tr><tr><th scope=\"row\" style=\"padding:5px 8px;border:1px solid currentColor\">C</th><td style=\"padding:5px 8px;border:1px solid currentColor\">(1, 6)</td><td style=\"padding:5px 8px;border:1px solid currentColor\">(8, 5)</td><td style=\"padding:5px 8px;border:1px solid currentColor\">(3, 7)</td></tr></tbody></table>Which statement distinguishes a best response from a Nash equilibrium in this game?",
       "options": [
         "C cannot be a best response because it is weakly dominated",
-        "C is a best response to Y, but (C,Y) is not Nash because the column player prefers Z",
+        "C responds best to Y, but the column player then prefers Z",
         "Every row best response makes its cell a Nash equilibrium",
         "(C,Y) is Nash because the row player earns 8"
       ],
@@ -6539,7 +6447,7 @@ window.questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "ignores_ties_or_opponents_best_response",
       "feedback": "At (C,Y), the column payoff is 5; switching alone to Z gives 7. A row best response is necessary but not sufficient.",
-      "aHash": "998210dca43b893d2889d8d2e6cb19d12d346f77cae577a41105b9b9a5d6c4d0",
+      "aHash": "3d96e47f881349a60f2be2effb50db4204bb84280859a19f74b82d3eb18d9c04",
       "canonicalDifficulty": "hard"
     },
     {
@@ -6547,9 +6455,9 @@ window.questionBanks = {
       "sourceGame": "strategyDesk",
       "q": "<table style=\"border-collapse:collapse;margin:12px auto\"><caption>Payoffs (row player, column player)</caption><thead><tr><th style=\"padding:5px 8px;border:1px solid currentColor\">Row / Column</th><th scope=\"col\" style=\"padding:5px 8px;border:1px solid currentColor\">X</th><th scope=\"col\" style=\"padding:5px 8px;border:1px solid currentColor\">Y</th><th scope=\"col\" style=\"padding:5px 8px;border:1px solid currentColor\">Z</th></tr></thead><tbody><tr><th scope=\"row\" style=\"padding:5px 8px;border:1px solid currentColor\">A</th><td style=\"padding:5px 8px;border:1px solid currentColor\">(9, 8)</td><td style=\"padding:5px 8px;border:1px solid currentColor\">(2, 3)</td><td style=\"padding:5px 8px;border:1px solid currentColor\">(4, 1)</td></tr><tr><th scope=\"row\" style=\"padding:5px 8px;border:1px solid currentColor\">B</th><td style=\"padding:5px 8px;border:1px solid currentColor\">(4, 2)</td><td style=\"padding:5px 8px;border:1px solid currentColor\">(8, 9)</td><td style=\"padding:5px 8px;border:1px solid currentColor\">(6, 4)</td></tr><tr><th scope=\"row\" style=\"padding:5px 8px;border:1px solid currentColor\">C</th><td style=\"padding:5px 8px;border:1px solid currentColor\">(1, 6)</td><td style=\"padding:5px 8px;border:1px solid currentColor\">(8, 5)</td><td style=\"padding:5px 8px;border:1px solid currentColor\">(3, 7)</td></tr></tbody></table>A manager recommends (A,Y) because the column player gains from Y relative to Z. What profitable unilateral deviations refute equilibrium there?",
       "options": [
-        "Only the row player can change profitably",
+        "Only the row player can gain; the column player already responds best",
         "Only the column player can change profitably",
-        "The row player can choose B or C; the column player can choose X",
+        "Both: the row player can choose B or C, the column player X",
         "Neither player can change profitably"
       ],
       "tag": "nash_equilibrium",
@@ -6562,7 +6470,7 @@ window.questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "ignores_ties_or_opponents_best_response",
       "feedback": "At (A,Y), row payoff 2 rises to 8 at B or C. Holding A fixed, column payoff 3 rises to 8 at X.",
-      "aHash": "833d8f731e8c38df0ec6725015cd6331355c7eeb553f41688670c9762c7c6ece",
+      "aHash": "337053751faab1c06c1e5480354d561eccd8d85c94c6369aa83e6d00cbe84ad3",
       "canonicalDifficulty": "hard"
     },
     {
@@ -6687,7 +6595,7 @@ window.questionBanks = {
       "options": [
         "All columns become equivalent once one row is strictly dominated",
         "Any column with a small payoff in one row is weakly dominated",
-        "At A, B and D, X beats both other columns; the payoff at C alone cannot establish dominance over X",
+        "X beats Y and Z at A, B and D; C alone cannot justify deleting X",
         "Strict dominance compares the two players' payoffs within one cell"
       ],
       "tag": "nash_equilibrium",
@@ -6700,7 +6608,7 @@ window.questionBanks = {
       "repairSkill": "weak_dominance",
       "commonError": "ignores_ties_or_opponents_best_response",
       "feedback": "Dominance compares one player's alternative strategies across every opponent choice. X is not dominated merely because it pays 2 at row C.",
-      "aHash": "5d97c8213646479b1aa6fc1390cb0238a37d45f6d2213f02390a54f65c43e0ab",
+      "aHash": "5278b366c985e7a0f27f93c5a43f3e696ea37788bbb155b0ab219bf6fe4b7de6",
       "canonicalDifficulty": "hard"
     },
     {
@@ -6798,7 +6706,7 @@ window.questionBanks = {
     {
       "id": 301,
       "sourceGame": "strategyDesk",
-      "q": "Buyer A demands max (40−P,0) and B demands max (24−0.5 P,0). Price rises from $35 to $45. Aggregate each buyer’s nonnegative demand, then use the midpoint formula. What is the absolute market price elasticity?",
+      "q": "Two customers buy the same divisible product. At a price of $35 per unit, Customer A buys 5 units and Customer B buys 6.5 units. At $45, Customer A buys none and Customer B buys 1.5 units. Using total purchases at each price and the midpoint method, what is the absolute value of market price elasticity?",
       "options": [
         "About 2.00",
         "About 6.15",
@@ -6814,7 +6722,7 @@ window.questionBanks = {
       "secondarySkills": [],
       "repairSkill": "market_demand",
       "commonError": "adds_negative_individual_demand",
-      "feedback": "At 35, demand is 5+6.5=11.5. At 45 it is 0+1.5=1.5. Absolute midpoint elasticity is (10/6.5)/(10/40)=80/13, about 6.15. Negative individual quantities must be truncated.",
+      "feedback": "Add the customers’ purchases at each price: 5 + 6.5 = 11.5 units at $35, and 0 + 1.5 = 1.5 units at $45. The midpoint quantity is 6.5 and the midpoint price is $40. Elasticity is (10/6.5) ÷ (10/40), or about 6.15. A customer who stops buying contributes zero to market quantity.",
       "aHash": "1cf3a3d368e1cf463cc74571eaea52b75408498fc65e24e2b4f06364a3908b3b",
       "canonicalDifficulty": "hard"
     },
@@ -7003,35 +6911,12 @@ window.questionBanks = {
       "canonicalDifficulty": "hard"
     },
     {
-      "id": 330,
-      "sourceGame": "strategyDesk",
-      "q": "A monopolist can separate two markets. Market H has demand P = 100 − Q and Market L has demand P = 60 − Q. Marginal cost is zero. What prices maximize profit in the two markets? Groups are verifiable and resale is impossible.",
-      "options": [
-        "$100 in H and $60 in L",
-        "$40 in H and $40 in L",
-        "$50 in H and $30 in L",
-        "$70 in H and $20 in L"
-      ],
-      "tag": "direct_price_discrimination",
-      "type": "multi-step",
-      "objective": "LO13.2",
-      "difficulty": "hard",
-      "conceptCluster": "hard_strategyDesk_direct_price_discrimination",
-      "primarySkill": "direct_price_discrimination",
-      "secondarySkills": [],
-      "repairSkill": "direct_price_discrimination",
-      "commonError": "uses_choke_price_instead_of_mr_equals_mc",
-      "feedback": "For linear demand with zero marginal cost, MR = 0 at half the choke price, giving $50 and $30.",
-      "aHash": "1981d5fac98b09ac86c363eda97934e2e7ce3234436e935fb40a16a065cb5515",
-      "canonicalDifficulty": "hard"
-    },
-    {
       "id": 337,
       "sourceGame": "strategyDesk",
       "q": "A supplier charges two competing purchasers $10 and $12 for identical commodities. Assume the other statutory conditions would be met. Documented per-unit savings for the cheaper order are $0.80 in handling and $0.70 in delivery. What can this cost evidence alone establish about the $2 difference?",
       "options": [
         "It explains the full $2 because any positive saving justifies the whole difference",
-        "It explains $1.50; the remaining $0.50 needs another applicable justification or further analysis",
+        "It explains $1.50; the other $0.50 needs separate justification or analysis",
         "It explains $0.80; delivery savings never count",
         "It proves a violation of exactly $0.50 without considering other defenses"
       ],
@@ -7045,7 +6930,7 @@ window.questionBanks = {
       "repairSkill": "robinson_patman",
       "commonError": "treats_partial_cost_justification_as_complete",
       "feedback": "The documented savings sum to 1.50, leaving 0.50 unexplained by this evidence. This arithmetic does not itself establish liability: other conditions and defenses still matter.",
-      "aHash": "1c3dde374f7c4da6720aa4e28a40b25707665f4d32742a0fe9f21c153cfe5281",
+      "aHash": "9c06447f60b0d3a46b36272078b3c75865b5eeb5eddc85e4de8a78ecb2db16af",
       "canonicalDifficulty": "hard"
     },
     {
@@ -7143,12 +7028,12 @@ window.questionBanks = {
     {
       "id": 379,
       "sourceGame": "strategyDesk",
-      "q": "A deal creates $100. A and B have outside options $20 and $30. A receives 60% of incremental surplus. A can first pay $4, unrecoverable in either outcome, to raise its outside option to $30; agreement value and B’s option stay fixed. What is A’s net gain from investing?",
+      "q": "A deal creates $100. A and B have outside options $20 and $30. A receives 60% of incremental surplus. A can first pay $4, unrecoverable in either outcome, to raise their outside option to $30; agreement value and B’s option stay fixed. What is A’s net gain from investing?",
       "options": [
         "−$4; outside options never affect the settlement",
-        "$6; it receives 60% of the $10 outside-option rise",
+        "$6; A receives 60% of the $10 outside-option rise",
         "$10; the full outside-option rise is added to the old settlement",
-        "$0; its gross negotiated payoff rises $4 and the cost is $4"
+        "$0; A’s gross negotiated payoff rises $4 and the cost is $4"
       ],
       "tag": "nonstrategic_bargaining",
       "type": "multi-step",
@@ -7159,8 +7044,8 @@ window.questionBanks = {
       "secondarySkills": [],
       "repairSkill": "nonstrategic_bargaining",
       "commonError": "ignores_bargaining_weight_or_investment_cost",
-      "feedback": "Before investment A gets 20+.6×50=50. After investment it gets 30+.6×40−4=50. The stronger fallback adds 10 but reduces A’s surplus share by 6; cost 4 exactly offsets the gross gain.",
-      "aHash": "ad13a7dd7c87e73c65357e4e505513b68eb3dd80fc4ae2d11f870bff9aa9cf07",
+      "feedback": "Before investment A gets 20+.6×50=50. After investment A gets 30+.6×40−4=50. The stronger fallback adds 10 but reduces A’s surplus share by 6; cost 4 exactly offsets the gross gain.",
+      "aHash": "5ee89ceee86739b692ab43a6a4ec1b96c06de60c32977467f3ae2fd08c78ee3e",
       "canonicalDifficulty": "hard"
     },
     {
@@ -7182,7 +7067,7 @@ window.questionBanks = {
       "secondarySkills": [],
       "repairSkill": "strategic_bargaining",
       "commonError": "ignores_seller_opportunity_cost_in_final_offer",
-      "feedback": "The minimum acceptable price is 35+25=60. The buyer prefers that to any higher accepted price and receives 95−60=35, a gain 25 over fallback 10. Seller payoff 60−35=25 equals its fallback.",
+      "feedback": "The minimum acceptable price is 35+25=60. The buyer prefers that to any higher accepted price and receives 95−60=35, a gain 25 over fallback 10. Seller payoff 60−35=25 equals the seller’s alternative.",
       "aHash": "199d6657c880ed143d78072cc9a692cbec58811919f1ef39961248cd20c77132",
       "canonicalDifficulty": "hard"
     },
@@ -7208,13 +7093,128 @@ window.questionBanks = {
       "feedback": "Initial gains are 4 and 7, totaling 11. Equal gains require 5.5 each. A 1.5 transfer from retailer to supplier yields agreement payoffs 13.5 and 8.5, leaving both 5.5 above fallback.",
       "aHash": "af42d2aa115b453b2b0744a158df3811c7de2810d78d9ff2b8d8e8c409de7483",
       "canonicalDifficulty": "hard"
+    },
+    {
+      "id": 59177,
+      "sourceGame": "strategyDesk",
+      "q": "A club serves identical customers and can prevent resale. It can charge a membership fee and a price per use. Why can a usage price equal to marginal cost, together with a membership fee, increase profit relative to recovering all costs through a high usage price?",
+      "options": [
+        "The membership fee makes customers ignore every future payment",
+        "Low usage prices preserve beneficial uses; the fee captures customer surplus",
+        "A membership fee makes marginal cost disappear",
+        "A higher price per use always increases use by reducing the membership fee"
+      ],
+      "tag": "self_selection",
+      "type": "application",
+      "objective": "LO14.3",
+      "difficulty": "hard",
+      "conceptCluster": "hard_strategyDesk_consumer_surplus_extraction",
+      "primarySkill": "consumer_surplus_extraction",
+      "secondarySkills": [],
+      "repairSkill": "consumer_surplus_extraction",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "A high per-use price discourages uses that customers value above marginal cost. A fixed fee can capture value without raising the marginal price, provided customers still prefer joining.",
+      "aHash": "54439e83ab2049932276a8dcadc345d31f937b196ed7564e70d45dfa68e26e87",
+      "canonicalDifficulty": "hard"
+    },
+    {
+      "id": 59284,
+      "sourceGame": "strategyDesk",
+      "q": "A seller can verify two customer groups and prevent resale. The groups have the same service cost, but Group A responds less strongly to price than Group B. Which pricing approach is best supported?",
+      "options": [
+        "Charge a larger percentage markup to Group A, while checking each group’s demand response",
+        "Charge the same markup because marginal cost is the same",
+        "Charge a larger percentage markup to Group B because its customers are more price sensitive",
+        "Ignore demand and charge both groups their highest imaginable price"
+      ],
+      "tag": "direct_price_discrimination",
+      "type": "application",
+      "objective": "LO13.2",
+      "difficulty": "hard",
+      "conceptCluster": "hard_strategyDesk_direct_price_discrimination",
+      "primarySkill": "direct_price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "direct_price_discrimination",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "With comparable marginal costs and separate pricing, a less price-sensitive group can support a larger markup. Equal cost alone does not make the profit-maximizing prices equal.",
+      "aHash": "dd3a119c7df8511bd6c784091d1c6e282a884ebcbc65be3593892df3077470df",
+      "canonicalDifficulty": "hard"
+    },
+    {
+      "id": 40330,
+      "sourceGame": "strategyDesk",
+      "q": "A theater can verify customer eligibility for a discount and prevent ticket resale. Its discount customers have more price-sensitive demand than other customers. Why can separate prices raise profit without changing the production cost of a seat?",
+      "options": [
+        "Different prices necessarily mean different production costs",
+        "The highest price should be charged to the most price-sensitive group",
+        "It attracts price-sensitive buyers while keeping other buyers’ prices higher",
+        "Resale prevention makes every customer’s willingness to pay identical"
+      ],
+      "tag": "direct_price_discrimination",
+      "type": "application",
+      "objective": "LO13.2",
+      "difficulty": "hard",
+      "conceptCluster": "hard_strategyDesk_direct_price_discrimination",
+      "primarySkill": "direct_price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "direct_price_discrimination",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "A targeted discount can add sales while protecting contribution from customers who would pay more. Identification and resale controls are needed to maintain that separation.",
+      "aHash": "bf15cef8fa3455f79e792a1a19aa679ffe98f84674b725fd64ccff7e4709ae48",
+      "canonicalDifficulty": "hard"
+    },
+    {
+      "id": 49068,
+      "sourceGame": "strategyDesk",
+      "q": "Two competing shops choose either an extended-hours schedule or a standard schedule. If both extend hours, each earns $40,000. If both use standard hours, each earns $55,000. A shop that extends while its rival uses standard hours earns $65,000; its rival earns $30,000. The shops cannot enforce an agreement. Which prediction follows from their individual incentives?",
+      "options": [
+        "Both extend hours, although both would earn more with standard hours",
+        "Both use standard hours because a joint profit gain prevents deviation",
+        "One extends and one stays standard; neither then wants to change",
+        "Either shared schedule is stable because matching the rival is best"
+      ],
+      "tag": "nash_equilibrium",
+      "type": "application",
+      "objective": "LO15.3",
+      "difficulty": "hard",
+      "conceptCluster": "hard_strategyDesk_nash_equilibrium",
+      "primarySkill": "nash_equilibrium",
+      "secondarySkills": [],
+      "repairSkill": "nash_equilibrium",
+      "commonError": "Confusing joint profit or matching choices with mutual best responses",
+      "feedback": "Extending hours is each shop’s best response to either rival choice: $65,000 exceeds $55,000, and $40,000 exceeds $30,000. Both extending is the Nash equilibrium, even though both would earn more with standard hours. Joint profitability alone does not make an unenforceable agreement stable.",
+      "aHash": "742c3f74e54e0f2ee38479211e3c97ee2a24a8312afb19af6d0e0395bdab0714",
+      "canonicalDifficulty": "hard"
+    },
+    {
+      "id": 49166,
+      "sourceGame": "strategyDesk",
+      "q": "Two delivery firms simultaneously choose Downtown or Suburbs. Their profits are listed as (Firm A, Firm B): both Downtown earns (8, 6), A Downtown with B Suburbs earns (10, 9), A Suburbs with B Downtown earns (7, 8), and both Suburbs earns (5, 4). A manager recommends both Downtown because A earns more there than when both choose Suburbs. Which recommendation correctly applies best-response reasoning?",
+      "options": [
+        "Keep both Downtown; Firm A’s preference between shared locations is decisive",
+        "Move both to Suburbs; avoiding the central area makes either firm unwilling to leave",
+        "Keep A Downtown and move B to Suburbs; neither then gains by changing alone",
+        "Move A to Suburbs and keep B Downtown; a different location always ensures stability"
+      ],
+      "tag": "nash_equilibrium",
+      "type": "application",
+      "objective": "LO15.3",
+      "difficulty": "hard",
+      "conceptCluster": "hard_strategyDesk_nash_equilibrium",
+      "primarySkill": "nash_equilibrium",
+      "secondarySkills": [],
+      "repairSkill": "nash_equilibrium",
+      "commonError": "Confusing joint profit or matching choices with mutual best responses",
+      "feedback": "At both Downtown, B can raise its profit from 6 to 9 by moving to Suburbs. At (A Downtown, B Suburbs), A prefers 10 to 5 and B prefers 9 to 6, so neither benefits from a unilateral change. The alternative split is not stable because A would gain by moving Downtown. Comparing only the two shared-location outcomes misses these deviations.",
+      "aHash": "53c4c8f276b4d7d8114da7665582b640c329ebb50051fe99273cb24de89bee26",
+      "canonicalDifficulty": "hard"
     }
   ],
   "elite": [
     {
       "id": 302,
       "sourceGame": "strategyDesk",
-      "q": "Two buyers have quantities q A=max (30−P,0) and q B=max (18−P,0). A firm has marginal cost $6, capacity 20, and one uniform price chosen from $12, $16, $20, $24. It sells the lesser of demand and capacity. Which price maximizes contribution?",
+      "q": "A seller serves two customers and can supply at most 20 units. At prices of $12, $16, $20, and $24, Customer A would buy 18, 14, 10, and 6 units, respectively; Customer B would buy 6, 2, 0, and 0 units. Each unit sold costs $6 to supply. The seller must charge both customers the same price. Which price maximizes revenue minus variable cost?",
       "options": [
         "$20, with contribution $140",
         "$12, with contribution $144",
@@ -7230,7 +7230,7 @@ window.questionBanks = {
       "secondarySkills": [],
       "repairSkill": "market_demand",
       "commonError": "ignores_zero_demand_or_capacity_branches",
-      "feedback": "At 12 demand 24 but sales 20, contribution 120. At 16 demand 16, contribution 160. At 20 only A buys 10, contribution 140. At 24 only A buys 6, contribution 108. Correct aggregation truncates negative quantities and applies the capacity limit.",
+      "feedback": "At $12, demand is 24 units but capacity limits sales to 20, giving ($12 − $6) × 20 = $120. At $16, all 16 demanded units can be sold, giving $160. The $20 and $24 prices give $140 and $108. The best choice is $16; add both customers’ demand before applying the capacity limit.",
       "aHash": "4119bdd6cf4461d940725d5a2817c3eb1553c1eb661910673bd875f3abfde2ea",
       "canonicalDifficulty": "elite"
     },
@@ -7350,29 +7350,6 @@ window.questionBanks = {
       "canonicalDifficulty": "elite"
     },
     {
-      "id": 333,
-      "sourceGame": "strategyDesk",
-      "q": "Two verifiable buyer groups cannot resell. Their demands are X=max (80−P,0) and Y=max (40−P,0); marginal cost is $20. Compare separate profit-maximizing prices, with a $150 implementation fee, against the best single price from $30, $40, $50. Which policy earns more net profit?",
-      "options": [
-        "Separate prices $50/$30 earn $1,000 net of the fee",
-        "Uniform $50 earns $900 and beats segmentation’s $850",
-        "Uniform $40 earns $1,600 and beats segmentation",
-        "Separate prices $40/$20 earn $1,050 after the fee"
-      ],
-      "tag": "direct_price_discrimination",
-      "type": "integration",
-      "objective": "LO13.2",
-      "difficulty": "elite",
-      "conceptCluster": "elite_strategyDesk_direct_price_discrimination",
-      "primarySkill": "direct_price_discrimination",
-      "secondarySkills": [],
-      "repairSkill": "direct_price_discrimination",
-      "commonError": "omits_segmentation_cost_or_quantity_corner",
-      "feedback": "Separate optima are X price 50, quantity 30 and Y price 30, quantity 10. Gross profit 900+100=1000, less 150 implementation gives 850. Uniform 30 gives 600; uniform 40 gives 800; uniform 50 gives 900 because Y demand is zero. Choose uniform 50. Segment-specific gross optimization alone misses the implementation cost and demand corner.",
-      "aHash": "bf7b854b16f785f39b38d4319986df2cf4c2fbaac2e54518b1ea08ccd46b8b93",
-      "canonicalDifficulty": "elite"
-    },
-    {
       "id": 334,
       "sourceGame": "strategyDesk",
       "q": "Group A buys 100 units at any price up to $50; Group B buys 100 units up to $30. Cost is $10 per unit. With transferable goods, A can buy through B at B’s price plus $5, and chooses the direct seller when indifferent. Prices may be any whole dollars; the seller may also serve only A. An effective nontransferability system costs $1,800. Which policy is best?",
@@ -7391,7 +7368,7 @@ window.questionBanks = {
       "secondarySkills": [],
       "repairSkill": "arbitrage_control",
       "commonError": "ignores_binding_resale_constraint",
-      "feedback": "Serving both without control binds A price at 30+5=35: profit 100×25+100×20=4500. Control gives gross 100×40+100×20=6000 less 1800=4200. A-only or uniform 30 gives 4000. The seller should tolerate the binding resale constraint rather than overpay for perfect control.",
+      "feedback": "Without resale controls, the highest price that Group A will pay directly is $30 + $5 = $35. Serving both groups then yields 100 × ($35 − $10) + 100 × ($30 − $10) = $4,500. With controls, charging A $50 and B $30 yields $6,000 before the $1,800 implementation cost, or $4,200 net. Serving only A at $50 or charging both groups $30 yields $4,000. The best policy is to serve both groups without purchasing the control system.",
       "aHash": "cff5e95635dcea44f15ee056d489381fa5cc19a9d0fe9580f69d46a18f295872",
       "canonicalDifficulty": "elite"
     },
@@ -7400,10 +7377,10 @@ window.questionBanks = {
       "sourceGame": "strategyDesk",
       "q": "Two verifiable groups cannot resell. X buys 500 units at $50 or 650 at $40; Y buys 200 at $50 or 500 at $40. Unit marginal cost is $20. Separate segment pricing costs $3,000 to implement; uniform pricing has no extra cost. Among these prices, what policy maximizes net contribution?",
       "options": [
-        "Separate X $40/Y $50; net contribution $16,000",
-        "Separate X $50/Y $40; net contribution $22,000",
-        "Uniform $50; contribution $21,000",
-        "Uniform $40; contribution $23,000"
+        "Charge X $40 and Y $50; net contribution is $16,000",
+        "Charge X $50 and Y $40; net contribution is $22,000",
+        "Charge both groups $50; contribution is $21,000",
+        "Charge both groups $40; contribution is $23,000"
       ],
       "tag": "price_discrimination",
       "type": "integration",
@@ -7414,8 +7391,8 @@ window.questionBanks = {
       "secondarySkills": [],
       "repairSkill": "price_discrimination",
       "commonError": "ignores_segmentation_implementation_cost",
-      "feedback": "Uniform 50 gives 700×30=21000; uniform 40 gives 1150×20=23000. Best segmentation is X 50/Y 40:15000+10000−3000=22000. Its gross gain is insufficient to cover implementation, so uniform 40 wins.",
-      "aHash": "33da0fea89c65b2ee1138101c4778b893db43ff9ab097c870b0d4e65108c87d7",
+      "feedback": "At a uniform price of $50, contribution is 700 × ($50 − $20) = $21,000. At $40, it is 1,150 × ($40 − $20) = $23,000. The best separate prices are $50 for X and $40 for Y, yielding $15,000 + $10,000 − $3,000 = $22,000 after implementation costs. A uniform price of $40 therefore yields the highest net contribution.",
+      "aHash": "e30b1ce73ece9922afb651057f0bf97151681eee15a0eb753c65e2ffea136a3d",
       "canonicalDifficulty": "elite"
     },
     {
@@ -7515,7 +7492,7 @@ window.questionBanks = {
       "sourceGame": "strategyDesk",
       "q": "A supplier demands a price, then a buyer accepts or rejects. Payoffs are (buyer, supplier). At price High, acceptance gives (2,10); at Low,(6,6). Rejection gives (0,2). Before the demand, the buyer can publicly adopt a binding rule rejecting High, at cost 1 paid in every outcome. The supplier observes the rule. Should the buyer commit?",
       "options": [
-        "Yes; Low is induced and buyer net payoff 5 exceeds 2 without commitment",
+        "Yes; inducing Low gives the buyer 5 net instead of 2",
         "No; High is still accepted and buyer net payoff 1",
         "Yes; rejection is induced and buyer net payoff−1 exceeds 2",
         "No; binding commitments can never change a supplier’s choice"
@@ -7530,13 +7507,13 @@ window.questionBanks = {
       "repairSkill": "credible_threats",
       "commonError": "ignores_how_binding_rejection_changes_offer",
       "feedback": "Without the rule the buyer accepts either positive payoff; supplier demands High for 10, giving buyer 2. With the rule, High yields supplier 2 from rejection while Low yields 6, so it demands Low. Buyer net 6−1=5 exceeds 2.",
-      "aHash": "192e0a98d85b0e7c2875472bd6dbb2a82279448fff8a368ab4a7d4d686260d69",
+      "aHash": "4f4649e009b516ff7e9c7c90ebf413e49a9d206e5cda536ac962248e6fd18464",
       "canonicalDifficulty": "elite"
     },
     {
       "id": 388,
       "sourceGame": "strategyDesk",
-      "q": "A buyer values a good at $100, seller cost is $20, and both fallback payoffs are zero. In round 1 the seller names a whole-dollar price. After rejection, the buyer makes a final offer in round 2. Both discount round 2 payoffs by 0.75 and accept when indifferent. The seller may pay a binding commitment fee of $8 before round 1 that eliminates round 2, so rejection ends bargaining. Should it commit?",
+      "q": "A buyer values an item at $100, and supplying it costs the seller $20. If no deal is reached, each receives zero. The seller names a whole-dollar price today. If the buyer rejects it, the buyer makes a final offer tomorrow. Both value tomorrow’s benefits at 75% of today’s and accept a deal when it is as good as their alternative. Before bargaining, the seller can pay $8 to make today’s offer binding and final. Should the seller pay this fee?",
       "options": [
         "Yes; seller net payoff rises from $20 to $72",
         "No; eliminating round 2 reduces seller net payoff from $80 to $72",
@@ -7552,7 +7529,7 @@ window.questionBanks = {
       "secondarySkills": [],
       "repairSkill": "strategic_bargaining",
       "commonError": "ignores_discounted_reservation_payoff",
-      "feedback": "Without commitment the final offer is 20; buyer continuation surplus 80 is worth 60 today. Seller asks 40 now and nets 20. With finality the buyer accepts price 100 at indifference, so seller nets 100−20−8=72. Binding removal of the counteroffer round changes the acceptance threshold.",
+      "feedback": "Without the fee, the buyer can offer $20 tomorrow, just covering the seller’s cost and leaving the buyer $80. That $80 is worth $60 today, so the seller can charge only $40 today and earn $20. Paying the fee removes tomorrow’s counteroffer: the buyer will accept a final price of $100, leaving the seller $100 − $20 − $8 = $72. The fee is worthwhile because $72 exceeds $20.",
       "aHash": "76f4357dbb8412ee2adbc8e2459a2e02b8b434bba5ce2bf6f35fa5d86208d7e4",
       "canonicalDifficulty": "elite"
     },
@@ -7647,13 +7624,36 @@ window.questionBanks = {
       "feedback": "Without a side payment, A earns 40 under X and 35 under Y, so 5 is needed. B earns 50 under X and 60 before the transfer under Y; after paying 5 it earns 55, a gain 5. A is held harmless while the net joint gain 5 goes to B.",
       "aHash": "246d50a3025406cf7fd3e41eb8cc5721e75a3ebf04b565990967446a8f6e4eba",
       "canonicalDifficulty": "elite"
+    },
+    {
+      "id": 40333,
+      "sourceGame": "strategyDesk",
+      "q": "A seller can verify two customer groups and prevent resale. A uniform price yields $12,000 contribution. Separate prices yield $15,000 before verification costs of $2,000. An alternative self-selection menu yields $14,000 before administration costs of $500. These forecasts include all customer responses and other costs. Which policy gives the highest profit contribution after implementation costs?",
+      "options": [
+        "Use the menu: it nets $13,500, compared with $13,000 and $12,000",
+        "Use verified separate prices because their contribution before costs is highest",
+        "Use uniform pricing because every form of segmentation lowers profit",
+        "Both forms of segmentation net $15,000 because implementation costs are fixed"
+      ],
+      "tag": "direct_price_discrimination",
+      "type": "integration",
+      "objective": "LO13.2",
+      "difficulty": "elite",
+      "conceptCluster": "elite_strategyDesk_direct_price_discrimination",
+      "primarySkill": "direct_price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "direct_price_discrimination",
+      "commonError": "Confusing a change in incentives or constraints with the resulting economic outcome",
+      "feedback": "Net contribution is $15,000 − $2,000 = $13,000 for verified separate prices and $14,000 − $500 = $13,500 for self-selection. Comparing all three policies makes the self-selection menu best on the stated forecasts.",
+      "aHash": "5a5911f393b2a5712048c895adb6512ee393f077e267168b32e263448be3480f",
+      "canonicalDifficulty": "elite"
     }
   ],
   "legendary": [
     {
       "id": 9000,
       "sourceGame": "strategyDesk",
-      "q": "Three buyer groups have demands Q1 = max(0, 40 − P), Q2 = max(0, 30 − 0.5P), and Q3 = max(0, 18 − 0.25P). What is aggregate quantity at P = $24?",
+      "q": "Three groups buy the same product. At a price of P dollars, their quantities demanded are 40 − P, 30 − 0.5P, and 18 − 0.25P units. A group buys nothing if its calculated quantity is negative. What is total market quantity demanded when the price is $24?",
       "options": [
         "40 units",
         "34 units",
@@ -7669,8 +7669,8 @@ window.questionBanks = {
       "secondarySkills": [],
       "repairSkill": "market_demand",
       "commonError": "fails_to_apply_choke_prices_and_sum_quantities",
-      "feedback": "At $24, the groups demand 16, 18, and 6 units. Aggregate demand is 40.",
-      "aHash": "36ebe0425d5dd2a9a3acf9ce39a1c0264e2a4990822c8ba77839516f6709fc7a"
+      "feedback": "At $24, the groups demand 40 − 24 = 16 units, 30 − 0.5 × 24 = 18 units, and 18 − 0.25 × 24 = 12 units. Add quantities at the same price: 16 + 18 + 12 = 46 units. All three quantities are positive, so every group contributes to the total.",
+      "aHash": "2f12193dfba59eefcf37608da267875a027a4d65daeca5d35b1b3e3dc53cd07d"
     },
     {
       "id": 9001,
@@ -7785,7 +7785,7 @@ window.questionBanks = {
     {
       "id": 9006,
       "sourceGame": "strategyDesk",
-      "q": "Own-price elasticity is −2.1, income elasticity is 0.8, cross-price elasticity with a substitute is 0.5, and advertising elasticity is 0.25. Own price falls 4%, income falls 3%, the rival's price rises 6%, and advertising rises 8%. Using the additive approximation, demand changes by",
+      "q": "Own-price elasticity is −2.1, income elasticity is 0.8, cross-price elasticity with a substitute is 0.5, and advertising elasticity is 0.25. Own price falls 4%, income falls 3%, the rival’s price rises 6%, and advertising rises 8%. Using the additive approximation, what is the change in demand?",
       "options": [
         "about +5.0%",
         "about +15.8%",
@@ -7961,7 +7961,7 @@ window.questionBanks = {
     {
       "id": 9014,
       "sourceGame": "strategyDesk",
-      "q": "A firm owns two substitutes. A $5 price cut on Product A adds 8,000 units at a $12 margin but diverts 3,000 units from Product B, where margin is $28. It also creates $18,000 in extra service cost. What is the portfolio contribution change?",
+      "q": "A firm owns two substitutes. A $5 price cut on Product A adds 8,000 units at a $12 margin but diverts 3,000 units from Product B, where margin is $28. It also creates $18,000 in extra service cost. What is the portfolio contribution change? The discount applies only to the additional units; all existing A sales retain their previous price.",
       "options": [
         "a $12,000 gain",
         "a $30,000 loss",
@@ -8027,7 +8027,7 @@ window.questionBanks = {
     {
       "id": 9017,
       "sourceGame": "strategyDesk",
-      "q": "A printer maker lowers printer price by $25. Each incremental printer yields an expected 2.5 years of ink contribution worth $18 per year, but 30% of new buyers use third-party ink. What is expected net contribution per incremental printer before printer production cost?",
+      "q": "A printer maker offers a $25 promotional discount per additional printer. Each additional buyer is expected to buy 2.5 years of ink with $18 annual contribution, but 30% use third-party ink. What is expected ink contribution net of the promotional discount per additional printer?",
       "options": [
         "$20.00",
         "$6.50",
@@ -8043,7 +8043,7 @@ window.questionBanks = {
       "secondarySkills": [],
       "repairSkill": "complement_pricing",
       "commonError": "ignores_leakage_to_third_party_complements",
-      "feedback": "Expected ink contribution is 2.5×$18×0.70 = $31.50. After the $25 price concession, net contribution is $6.50.",
+      "feedback": "Expected ink contribution is 2.5×$18×0.70=$31.50. Subtract the $25 promotion to get $6.50. This is ink contribution net of the discount, not total printer-and-ink contribution.",
       "aHash": "1611c4ccd4ef3692f7ef01d9f878129cc0e9b62a60cdf56f5bba0f993327dd7a"
     },
     {
@@ -8841,7 +8841,7 @@ window.questionBanks = {
     {
       "id": 9060,
       "sourceGame": "strategyDesk",
-      "q": "In the independent investment game shown, Player 2 chooses a price without observing Player 1’s investment decision. The dashed information set requires the same price choice at both Player 2 nodes. What is the pure-strategy Nash equilibrium?",
+      "q": "Refer to the investment game graph. In the independent investment game shown, Player 2 chooses a price without observing Player 1’s investment decision. The dashed information set requires the same price choice at both Player 2 nodes. What is the pure-strategy Nash equilibrium?",
       "options": [
         "Invest, Low Price",
         "Invest, High Price",
@@ -8881,7 +8881,7 @@ window.questionBanks = {
       "secondarySkills": [],
       "repairSkill": "nonstrategic_bargaining",
       "commonError": "splits_total_payoffs_instead_of_gains",
-      "feedback": "The buyer receives 55% of $20 million, or $11 million, above its $18 million disagreement payoff. The seller receives $9 million above $16 million.",
+      "feedback": "First allocate the $20 million gain above the parties’ alternatives: the buyer receives 55%, or $11 million, and the seller receives 45%, or $9 million. Add each share to that person’s fallback: the buyer receives $18 million + $11 million = $29 million, and the seller receives $16 million + $9 million = $25 million.",
       "aHash": "39ecd17e5bcd2a37d29c9edb868228d60d5051cac0d681928969aa81f564aaad"
     },
     {
@@ -8953,7 +8953,7 @@ window.questionBanks = {
     {
       "id": 9080,
       "sourceGame": "strategyDesk",
-      "q": "In gametreethree, suppose the union's payoff from Accept after Compromise falls from 4 to 2. What becomes the subgame-perfect outcome?",
+      "q": "Refer to the sequential bargaining game graph. Suppose the union's payoff from Accept after Compromise falls from 4 to 2. What becomes the subgame-perfect outcome?",
       "options": [
         "Compromise, Demand More, then Concede",
         "Stand Firm, followed by a union Strike",
@@ -8977,7 +8977,7 @@ window.questionBanks = {
     {
       "id": 9081,
       "sourceGame": "strategyDesk",
-      "q": "In gametreethree under the original payoffs, the company can irrevocably commit to Refuse after Demand More. What happens to the equilibrium path?",
+      "q": "Refer to the sequential bargaining game graph. Under the original payoffs, the company can irrevocably commit to Refuse after Demand More. What happens to the equilibrium path?",
       "options": [
         "The union demands more and the company refuses",
         "Nothing; Compromise–Accept remains the outcome",
@@ -9001,7 +9001,7 @@ window.questionBanks = {
     {
       "id": 9082,
       "sourceGame": "strategyDesk",
-      "q": "In gametreethree, lower the company's payoff from Compromise–Accept from 5 to 0. With all other payoffs unchanged, what is the new subgame-perfect outcome?",
+      "q": "Refer to the sequential bargaining game graph. Lower the company's payoff from Compromise–Accept from 5 to 0. With all other payoffs unchanged, what is the new subgame-perfect outcome?",
       "options": [
         "Stand Firm, Accept",
         "Compromise, Accept",
@@ -9025,7 +9025,7 @@ window.questionBanks = {
     {
       "id": 9083,
       "sourceGame": "strategyDesk",
-      "q": "In gametreethree, what is the smallest integer increase in the union’s payoff from Accept after Stand Firm that makes Accept strictly optimal at that node?",
+      "q": "Refer to the sequential bargaining game graph. What is the smallest integer increase in the union’s payoff from Accept after Stand Firm that makes Accept strictly optimal at that node?",
       "options": [
         "2 payoff units",
         "3 payoff units",
@@ -9049,7 +9049,7 @@ window.questionBanks = {
     {
       "id": 9084,
       "sourceGame": "strategyDesk",
-      "q": "In gametreethree, suppose Strike lowers the company's payoff from 1 to −3 but leaves the union payoff at 5. Does that change the original equilibrium?",
+      "q": "Refer to the sequential bargaining game graph. Suppose Strike lowers the company's payoff from 1 to −3 but leaves the union payoff at 5. Does that change the original equilibrium?",
       "options": [
         "No; the original path remains Compromise–Accept",
         "Yes; the union accepts",
@@ -9223,6 +9223,167 @@ window.questionBanks = {
       "commonError": "ignores_ties_or_opponents_best_response",
       "feedback": "At (A,X), the row player ties A and B at 7, and the column player ties X and Y at 6. This is an original Nash equilibrium even though A is weakly dominated.",
       "aHash": "c647b0546070ca9aca76125885374232cc2eda296a41ea0727b66a1119eeea57"
+    },
+    {
+      "id": 206,
+      "sourceGame": "strategyDesk",
+      "q": "Buyer A has demand QA = 40 − 2P and Buyer B has demand QB = 30 − P. At a market price of $10, what is aggregate quantity demanded?",
+      "options": [
+        "40 units",
+        "30 units",
+        "50 units",
+        "70 units"
+      ],
+      "tag": "market_demand",
+      "type": "calculation",
+      "objective": "LO6.1",
+      "difficulty": "legendary",
+      "conceptCluster": "legendary_strategyDesk_market_demand",
+      "primarySkill": "market_demand",
+      "secondarySkills": [],
+      "repairSkill": "market_demand",
+      "commonError": "adds_intercepts_without_evaluating_each_demand",
+      "feedback": "At P = 10, Buyer A demands 20 units and Buyer B demands 20 units. Market demand is 20 + 20 = 40 units.",
+      "aHash": "36ebe0425d5dd2a9a3acf9ce39a1c0264e2a4990822c8ba77839516f6709fc7a",
+      "canonicalDifficulty": "legendary"
+    },
+    {
+      "id": 19177,
+      "sourceGame": "strategyDesk",
+      "q": "One hundred identical consumers each have demand q = 10 - P. Marginal cost is $2 and fixed cost is zero. Under a two-part tariff that preserves efficient usage and extracts all consumer surplus, what usage price and membership fee should the monopolist set? Assume consumers join when indifferent and resale is impossible.",
+      "options": [
+        "Usage price $6 and membership fee $16",
+        "Usage price $2 and membership fee $32",
+        "Usage price $10 and membership fee $0",
+        "Usage price $2 and membership fee $64"
+      ],
+      "tag": "self_selection",
+      "type": "calculation",
+      "objective": "LO14.3",
+      "difficulty": "legendary",
+      "conceptCluster": "legendary_strategyDesk_consumer_surplus_extraction",
+      "primarySkill": "consumer_surplus_extraction",
+      "secondarySkills": [],
+      "repairSkill": "consumer_surplus_extraction",
+      "commonError": "confuses_usage_price_with_membership_fee",
+      "feedback": "Set usage price equal to MC for q=8. Consumer surplus is .5(10-2)8=$32, which becomes the fee.",
+      "aHash": "d42572938772ffcfbaeecb13b77e733b1a616695855011a63e7bedd20a214656",
+      "canonicalDifficulty": "legendary"
+    },
+    {
+      "id": 19284,
+      "sourceGame": "strategyDesk",
+      "q": "A seller can verify membership in two separate markets and prevent resale. Market A has demand P = 80 - Q and market B has P = 50 - 0.5Q. MC is $20 in both markets. What prices maximize total profit?",
+      "options": [
+        "$50 in A and $35 in B",
+        "$40 in A and $30 in B",
+        "$60 in A and $40 in B",
+        "$50 in both markets"
+      ],
+      "tag": "direct_price_discrimination",
+      "type": "calculation",
+      "objective": "LO13.2",
+      "difficulty": "legendary",
+      "conceptCluster": "legendary_strategyDesk_direct_price_discrimination",
+      "primarySkill": "direct_price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "direct_price_discrimination",
+      "commonError": "fails_to_equalize_mr_with_mc_by_segment",
+      "feedback": "Set each market’s marginal revenue to $20: QA = 30 and QB = 30, giving prices $50 and $35.",
+      "aHash": "2a9e98bdf86a8cf0f937b7571f78fd2f2174f379481092a2ba726536340fd216",
+      "canonicalDifficulty": "legendary"
+    },
+    {
+      "id": 330,
+      "sourceGame": "strategyDesk",
+      "q": "A monopolist can separate two markets. Market H has demand P = 100 − Q and Market L has demand P = 60 − Q. Marginal cost is zero. What prices maximize profit in the two markets? Groups are verifiable and resale is impossible.",
+      "options": [
+        "$100 in H and $60 in L",
+        "$40 in H and $40 in L",
+        "$50 in H and $30 in L",
+        "$70 in H and $20 in L"
+      ],
+      "tag": "direct_price_discrimination",
+      "type": "multi-step",
+      "objective": "LO13.2",
+      "difficulty": "legendary",
+      "conceptCluster": "legendary_strategyDesk_direct_price_discrimination",
+      "primarySkill": "direct_price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "direct_price_discrimination",
+      "commonError": "uses_choke_price_instead_of_mr_equals_mc",
+      "feedback": "For linear demand with zero marginal cost, MR = 0 at half the choke price, giving $50 and $30.",
+      "aHash": "1981d5fac98b09ac86c363eda97934e2e7ce3234436e935fb40a16a065cb5515",
+      "canonicalDifficulty": "legendary"
+    },
+    {
+      "id": 333,
+      "sourceGame": "strategyDesk",
+      "q": "A seller serves two identifiable customer groups, X and Y, whose members cannot resell the product. At price P, group X demands 80 − P units and group Y demands 40 − P units; a group buys nothing if its calculated quantity is negative. Marginal cost is $20. Charging separate prices costs an additional $150. Should the seller use each group’s profit-maximizing price or the best single price from $30, $40, and $50?",
+      "options": [
+        "Separate prices $50/$30 earn $1,000 net of the fee",
+        "Uniform $50 earns $900 and beats segmentation’s $850",
+        "Uniform $40 earns $1,600 and beats segmentation",
+        "Separate prices $40/$20 earn $1,050 after the fee"
+      ],
+      "tag": "direct_price_discrimination",
+      "type": "integration",
+      "objective": "LO13.2",
+      "difficulty": "legendary",
+      "conceptCluster": "legendary_strategyDesk_direct_price_discrimination",
+      "primarySkill": "direct_price_discrimination",
+      "secondarySkills": [],
+      "repairSkill": "direct_price_discrimination",
+      "commonError": "omits_segmentation_cost_or_quantity_corner",
+      "feedback": "For group X, the best separate price is $50 and sales are 30 units, giving ($50 − $20) × 30 = $900. For group Y, $30 sells 10 units and gives $100. After the $150 fee, separate pricing earns $850. A single price of $30 earns $600, $40 earns $800, and $50 earns $900 because only group X buys. The $50 single price earns more after implementation costs.",
+      "aHash": "bf7b854b16f785f39b38d4319986df2cf4c2fbaac2e54518b1ea08ccd46b8b93",
+      "canonicalDifficulty": "legendary"
+    },
+    {
+      "id": 9068,
+      "sourceGame": "strategyDesk",
+      "q": "Player 1 chooses Up or Down against Player 2's Left or Right. Player 1's payoffs are 4/0 against Left/Right for Up and 1/3 for Down. What probability of Left makes Player 1 indifferent? No claim about Player 2's incentives is made.",
+      "options": [
+        "50%",
+        "25%",
+        "60%",
+        "75%"
+      ],
+      "tag": "nash_equilibrium",
+      "type": "calculation",
+      "objective": "LO15.3",
+      "difficulty": "legendary",
+      "conceptCluster": "hard_strategyDesk_nash_equilibrium",
+      "primarySkill": "nash_equilibrium",
+      "secondarySkills": [],
+      "repairSkill": "nash_equilibrium",
+      "commonError": "equates_expected_payoffs_in_wrong_variable",
+      "feedback": "Indifference requires 4p = 1p + 3(1−p), so 6p = 3 and p = 0.5.",
+      "aHash": "28fdae8deae31d6eafd18b70d878f6d8a3136f267ce273777c089a42ac590438",
+      "canonicalDifficulty": "legendary"
+    },
+    {
+      "id": 9166,
+      "sourceGame": "strategyDesk",
+      "q": "In a 2×2 game, Player 1 payoffs are 3 at (Up,Left), 0 at (Up,Right), 0 at (Down,Left), and 1 at (Down,Right). Player 2 receives 0,2,2,0 in those same cells. In the mixed equilibrium, what probability does Player 2 assign to Left?",
+      "options": [
+        "0.40",
+        "0.50",
+        "0.25",
+        "0.75"
+      ],
+      "tag": "nash_equilibrium",
+      "type": "multi-step",
+      "objective": "LO15.3",
+      "difficulty": "legendary",
+      "conceptCluster": "hard_strategyDesk_nash_equilibrium",
+      "primarySkill": "nash_equilibrium",
+      "secondarySkills": [],
+      "repairSkill": "nash_equilibrium",
+      "commonError": "sets_wrong_players_indifference_condition",
+      "feedback": "Player 1 is indifferent when 3q=1−q, so q=0.25.",
+      "aHash": "a30a043314fa89294fa2c1c989a01fbb5329e5c085a5c5a8d27317656de24ae0",
+      "canonicalDifficulty": "legendary"
     }
   ],
   "easyBoss": [
@@ -9268,7 +9429,7 @@ window.questionBanks = {
       "secondarySkills": [],
       "repairSkill": "nonstrategic_bargaining",
       "commonError": "adds_gross_values_instead_of_net_surplus",
-      "feedback": "Protect both fallback payoffs:60000−14000−18000=28000.",
+      "feedback": "The agreement must cover both parties’ fallback payoffs. The additional surplus is $60,000 − $14,000 − $18,000 = $28,000.",
       "bossStage": "middle",
       "aHash": "ca38f0383832842849fa3322b93b12d4cdc3dcf0042d5ac1e7b5134e741acd49"
     },
@@ -9371,7 +9532,7 @@ window.questionBanks = {
     {
       "id": 2006,
       "sourceGame": "strategyDesk",
-      "q": "A price elasticity of demand of −1.8 means that demand is",
+      "q": "How should demand with a price elasticity of −1.8 be classified?",
       "options": [
         "unit elastic because its absolute value is near 2",
         "inelastic because its signed value is below 1",
@@ -9511,7 +9672,7 @@ window.questionBanks = {
     {
       "id": 2012,
       "sourceGame": "strategyDesk",
-      "q": "Stay-even analysis after a price cut determines",
+      "q": "What does stay-even analysis determine after a price cut?",
       "options": [
         "how much unit volume must rise to preserve contribution.",
         "how much volume preserves revenue regardless of variable cost",
@@ -9582,7 +9743,7 @@ window.questionBanks = {
     {
       "id": 2015,
       "sourceGame": "strategyDesk",
-      "q": "When one firm owns two substitute products, a price cut on one product should include",
+      "q": "A firm owns two substitute products. Which effect should it include when evaluating a price cut on one of them?",
       "options": [
         "only the additional sales of the discounted product even when a higher-value alternative may be displaced.",
         "the fixed cost assigned to both products.",
@@ -9653,7 +9814,7 @@ window.questionBanks = {
     {
       "id": 2018,
       "sourceGame": "strategyDesk",
-      "q": "For commonly owned complements, the price of one product should be evaluated partly by",
+      "q": "A firm owns two complementary products. Which cross-product effect should it consider when setting the price of one product?",
       "options": [
         "the contribution from only the product whose price changes",
         "whether both products have identical allocated fixed costs",
@@ -9724,7 +9885,7 @@ window.questionBanks = {
     {
       "id": 2021,
       "sourceGame": "strategyDesk",
-      "q": "When capacity would otherwise go unused and cannot be stored, the minimum acceptable short-run price generally must cover",
+      "q": "Capacity would otherwise go unused and cannot be stored. Which cost should a sale at least cover in the short run if it displaces no better sale?",
       "options": [
         "full average cost including all allocated fixed cost.",
         "the incremental cost of serving the customer.",
@@ -9866,7 +10027,7 @@ window.questionBanks = {
     {
       "id": 2027,
       "sourceGame": "strategyDesk",
-      "q": "A promotion should be judged primarily by whether it",
+      "q": "Which criterion should determine whether a promotion is profitable?",
       "options": [
         "raises gross sales regardless of margin.",
         "increases website traffic.",
@@ -9937,7 +10098,7 @@ window.questionBanks = {
     {
       "id": 2030,
       "sourceGame": "strategyDesk",
-      "q": "A reference price affects purchasing because customers often evaluate the current price relative to",
+      "q": "When a reference price influences a purchase, what do customers use to assess the current price?",
       "options": [
         "the product’s accumulated depreciation",
         "the seller’s marginal cost alone",
@@ -10079,7 +10240,7 @@ window.questionBanks = {
     {
       "id": 3003,
       "sourceGame": "strategyDesk",
-      "q": "Direct price discrimination differs from indirect price discrimination because direct discrimination primarily relies on",
+      "q": "What distinguishes direct price discrimination from indirect price discrimination?",
       "options": [
         "buyer self-selection among deliberately designed versions.",
         "bundling unrelated products at one common price.",
@@ -10217,7 +10378,7 @@ window.questionBanks = {
     {
       "id": 3009,
       "sourceGame": "strategyDesk",
-      "q": "For commodities of like grade and quality, Robinson–Patman price-discrimination concerns include certain price differences that",
+      "q": "For commodities of like grade and quality, which price differences can raise Robinson–Patman concerns?",
       "options": [
         "reflect temporary markdowns available to all buyers.",
         "result from verified differences in selling or delivery cost.",
@@ -10355,7 +10516,7 @@ window.questionBanks = {
     {
       "id": 3015,
       "sourceGame": "strategyDesk",
-      "q": "Indirect price discrimination works mainly by",
+      "q": "How does indirect price discrimination induce customers to reveal their willingness to pay?",
       "options": [
         "requiring the seller to know each buyer’s exact willingness to pay.",
         "designing options that cause customers to reveal their own type.",
@@ -10424,7 +10585,7 @@ window.questionBanks = {
     {
       "id": 3018,
       "sourceGame": "strategyDesk",
-      "q": "A damaged-good strategy prevents cannibalization by",
+      "q": "How does a damaged-good strategy limit customers switching from the premium product to the cheaper version?",
       "options": [
         "making the low-price version deliberately less attractive to high-value buyers.",
         "raising the quality of the low-price version above the premium version.",
@@ -10562,7 +10723,7 @@ window.questionBanks = {
     {
       "id": 3024,
       "sourceGame": "strategyDesk",
-      "q": "Bundling can raise profit when customers’ valuations for the included goods are",
+      "q": "Which pattern of customer valuations can make bundling profitable?",
       "options": [
         "negatively or imperfectly correlated across customers.",
         "identical for every product and every customer.",
@@ -10649,7 +10810,7 @@ window.questionBanks = {
       "secondarySkills": [],
       "repairSkill": "forecast_driven_pricing",
       "commonError": "uses_mean_demand_without_capacity_cap",
-      "feedback": "Cap sales within each state before averaging:0.5×100+0.5×40=70. Capping average demand 90 would overstate expected sales.",
+      "feedback": "Sales are limited by capacity in each demand state. Expected sales are 0.5 × 100 + 0.5 × 40 = 70 seats. Averaging demand first would give 90 and overlook the lost sales in the high-demand state.",
       "bossStage": "opening",
       "aHash": "5745d091ffd56109bca12f5f290ef588507c51ab97710b4cafb0023aac51e625"
     },
@@ -10725,7 +10886,7 @@ window.questionBanks = {
     {
       "id": 4004,
       "sourceGame": "strategyDesk",
-      "q": "Using gametreeone, what will Player 2 choose after Invest and after Don't Invest?",
+      "q": "Refer to the sequential investment game graph. What will Player 2 choose after Invest and after Don't Invest?",
       "options": [
         "Low after Invest; High after Don't Invest",
         "High after Invest; Low after Don't Invest",
@@ -10750,7 +10911,7 @@ window.questionBanks = {
     {
       "id": 4005,
       "sourceGame": "strategyDesk",
-      "q": "Using gametreeone, which complete strategy profile is subgame perfect?",
+      "q": "Refer to the sequential investment game graph. Which complete strategy profile is subgame perfect?",
       "options": [
         "Invest; Player 2 chooses High after Invest and Low after Don't Invest in the two subgames",
         "Don't Invest; Player 2 chooses Low after Invest and High after Don't Invest",
@@ -10867,7 +11028,7 @@ window.questionBanks = {
     {
       "id": 4010,
       "sourceGame": "strategyDesk",
-      "q": "Using gametreetwo, Firm B's best responses after High, Medium, and Low are respectively",
+      "q": "Refer to the sequential pricing game graph. What are Firm B’s best responses after Firm A chooses High, Medium, and Low, respectively?",
       "options": [
         "Match, Match, Match",
         "Match, Not Match, Match",
@@ -10892,7 +11053,7 @@ window.questionBanks = {
     {
       "id": 4011,
       "sourceGame": "strategyDesk",
-      "q": "In gametreetwo, suppose Firm A can sign an enforceable contract that requires Firm B to Match after High, and the contract costs Firm A 1 payoff unit. All other branches are unchanged. What should Firm A do? Treat this binding device as available without further negotiation; its cost is paid on any branch if adopted.",
+      "q": "Refer to the sequential pricing game graph. Suppose Firm A can sign an enforceable contract that requires Firm B to Match after High, and the contract costs Firm A 1 payoff unit. All other branches are unchanged. What should Firm A do? Treat this binding device as available without further negotiation; its cost is paid on any branch if adopted.",
       "options": [
         "Choose Medium, because its payoff remains 6 and avoids the contracting cost entirely.",
         "Choose Low, because Not Match still follows Low and the contract does not alter that branch.",
@@ -10917,7 +11078,7 @@ window.questionBanks = {
     {
       "id": 4012,
       "sourceGame": "strategyDesk",
-      "q": "In gametreethree, all prior actions are observed and payoffs are ordered (Company, Union). If play reaches the Company’s final decision after Demand More, what action does backward induction prescribe?",
+      "q": "Refer to the sequential bargaining game graph. All prior actions are observed and payoffs are ordered (Company, Union). If play reaches the Company’s final decision after Demand More, what action does backward induction prescribe?",
       "options": [
         "Concede",
         "Refuse",
@@ -10942,7 +11103,7 @@ window.questionBanks = {
     {
       "id": 4013,
       "sourceGame": "strategyDesk",
-      "q": "Using gametreethree, what does the union choose after Stand Firm and after Compromise?",
+      "q": "Refer to the sequential bargaining game graph. What does the union choose after Stand Firm and after Compromise?",
       "options": [
         "Accept after Stand Firm; Demand More after Compromise",
         "Strike after Stand Firm; Accept after Compromise",
@@ -10967,7 +11128,7 @@ window.questionBanks = {
     {
       "id": 4014,
       "sourceGame": "strategyDesk",
-      "q": "In gametreethree, suppose the union can commit before the game to Demand More after Compromise. The company would then Concede. What opening action does the company choose, and why?",
+      "q": "Refer to the sequential bargaining game graph. Suppose the union can commit before the game to Demand More after Compromise. The company would then Concede. What opening action does the company choose, and why?",
       "options": [
         "Compromise, anticipating Demand More and then Concede",
         "Stand Firm, anticipating Strike",
@@ -11063,7 +11224,7 @@ window.questionBanks = {
     {
       "id": 9100,
       "sourceGame": "strategyDesk",
-      "q": "Three groups have demands Q1=max(0,80−2P), Q2=max(0,50−P), and Q3=max(0,30−0.5P). What is market quantity demanded at P=$30?",
+      "q": "Three groups buy the same product. At a price of P dollars, their quantities demanded are 80 − 2P, 50 − P, and 30 − 0.5P units. A group buys nothing if its calculated quantity is negative. What is total market quantity demanded at a price of $30?",
       "options": [
         "55 units",
         "45 units",
@@ -11079,7 +11240,7 @@ window.questionBanks = {
       "secondarySkills": [],
       "repairSkill": "market_demand",
       "commonError": "fails_to_apply_choke_prices",
-      "feedback": "The three quantities are 20, 20, and 15, so market demand is 55 units.",
+      "feedback": "At $30, the groups demand 80 − 2 × 30 = 20 units, 50 − 30 = 20 units, and 30 − 0.5 × 30 = 15 units. Market quantity is their sum at that price: 20 + 20 + 15 = 55 units. Market demand adds quantities rather than averaging them.",
       "aHash": "519468302a1015f79cf2ab5719c71e4c7243816588a1e3162455caa0a29bb4b4"
     },
     {
@@ -11283,7 +11444,7 @@ window.questionBanks = {
     {
       "id": 9110,
       "sourceGame": "strategyDesk",
-      "q": "A forecast already includes a 4% demand increase from expected income growth. Income elasticity is 1.5 and the new income forecast is +6% instead of the +4% originally assumed. What incremental revision is appropriate?",
+      "q": "A forecast already includes a 6% demand increase from expected income growth. Income elasticity is 1.5 and the new income forecast is +6% instead of the +4% originally assumed. What incremental revision is appropriate?",
       "options": [
         "Add 9 percentage points",
         "Add 6 percentage points",
@@ -11393,7 +11554,7 @@ window.questionBanks = {
     {
       "id": 9115,
       "sourceGame": "strategyDesk",
-      "q": "A $4 price cut on Product A adds 9,000 units at a new margin of $11. Forty percent of those units are diverted from Product B, whose margin is $24. The cut also adds $8,000 in service cost. What is the portfolio contribution change?",
+      "q": "A $4 price cut on Product A adds 9,000 units at a new margin of $11. Forty percent of those units are diverted from Product B, whose margin is $24. The cut also adds $8,000 in service cost. What is the portfolio contribution change? The discount applies only to the additional units; all existing A sales retain their previous price.",
       "options": [
         "A loss of $4,600",
         "A gain of $12,600",
@@ -11463,7 +11624,7 @@ window.questionBanks = {
       "options": [
         "A loss of $120,000",
         "A gain of $600,000",
-        "A gain of $120,000",
+        "A gain of $320,000",
         "A loss of $480,000"
       ],
       "tag": "complement_pricing",
@@ -11475,13 +11636,13 @@ window.questionBanks = {
       "secondarySkills": [],
       "repairSkill": "complement_pricing",
       "commonError": "applies_margin_loss_only_to_incremental_units",
-      "feedback": "The device-margin loss is 20,000×$30=$600,000. Added service contribution is 4,000×$180=$720,000, for a $120,000 gain.",
-      "aHash": "b9b7f2f6d0915c95b2e1581f03107761b22114eec11ebdcd17d1df056a3e01e3"
+      "feedback": "There were 16,000 old device sales. Their margin loss is 16,000×$30=$480,000. The 4,000 new devices add 4,000×$20=$80,000 and services add 4,000×$180=$720,000. Net change: −$480,000+$80,000+$720,000=$320,000.",
+      "aHash": "cdf800d452a916f0264f8e15a89ff287691f9e2f737f9c6747791c44269070b8"
     },
     {
       "id": 9119,
       "sourceGame": "strategyDesk",
-      "q": "A printer price increase adds $8 margin on 30,000 retained printer sales but reduces printer sales by 5,000. Each lost printer would have generated $70 in cartridge contribution. Ignoring other effects, what is the portfolio contribution change?",
+      "q": "A printer price increase adds $8 margin on 30,000 retained printer sales but reduces printer sales by 5,000. Each lost printer would have generated $70 in cartridge contribution. Ignoring other effects, what is the portfolio contribution change? Before the price change, each printer earned zero contribution.",
       "options": [
         "A gain of $110,000",
         "A loss of $350,000",
@@ -11704,7 +11865,7 @@ window.questionBanks = {
       "q": "A campaign raises this month’s sales by 12,000 units, but 7,000 are pulled forward from next month and 2,000 are diverted from an owned product. Contribution is $9 on the promoted item and $14 on the owned product. Campaign cost is $30,000. What is net incremental contribution?",
       "options": [
         "A gain of $31,000",
-        "A loss of $31,000",
+        "A loss of $13,000",
         "A loss of $3,000",
         "A gain of $50,000"
       ],
@@ -11717,8 +11878,8 @@ window.questionBanks = {
       "secondarySkills": [],
       "repairSkill": "promotion_response",
       "commonError": "counts_pull_forward_as_incremental",
-      "feedback": "Only 3,000 units are truly incremental, adding $27,000. Diversion loses $28,000 and campaign cost is $30,000, for −$31,000.",
-      "aHash": "5e5ca11b80076fb3b4a1b81d678341e9fd3b55c060216eb1b6b07f8ad8279327"
+      "feedback": "The 7,000 pulled-forward sales cancel across periods. The 3,000 truly new sales add $27,000. Diverted units still earn $9 on the promoted item but lose $14 on the owned product: 2,000×($9−$14)=−$10,000. Subtracting $30,000 campaign cost gives −$13,000.",
+      "aHash": "231f28750e8a85b9b4650fa35d26559880a0f2436ca6966f7f6f195fa584f006"
     },
     {
       "id": 9130,
@@ -12405,7 +12566,7 @@ window.questionBanks = {
     {
       "id": 9173,
       "sourceGame": "strategyDesk",
-      "q": "A buyer threatens to walk away unless price falls by $10. Walking away would cost the buyer $6, while accepting the current price costs only $4 relative to its best alternative. Is the threat credible?",
+      "q": "A buyer threatens to walk away unless the seller cuts the price by $10. After accounting for all consequences, walking away would leave the buyer $6 worse off than a common benchmark, while accepting the current price would leave the buyer only $4 worse off. Is the threat credible?",
       "options": [
         "Yes; any announced walk-away threat is credible once the buyer states it before bargaining begins",
         "No; carrying it out is worse for the buyer than accepting",
@@ -12421,13 +12582,13 @@ window.questionBanks = {
       "secondarySkills": [],
       "repairSkill": "strategic_bargaining",
       "commonError": "evaluates_threat_by_opponents_loss",
-      "feedback": "A threat is credible only if carrying it out is optimal when the decision point arrives.",
+      "feedback": "Compare the buyer’s two choices using the same benchmark. Accepting loses $4, while walking away loses $6, so accepting is better by $2. The buyer would not want to carry out the threat when the decision arrives.",
       "aHash": "09a964aab80717b6a36c323877a2721788cd16d55724af0d093d5e98a1e845ea"
     },
     {
       "id": 9174,
       "sourceGame": "strategyDesk",
-      "q": "In gametreethree, suppose the union’s payoff from Accept after Compromise falls to 2, while all other payoffs remain unchanged. What is the subgame-perfect outcome?",
+      "q": "Refer to the sequential bargaining game graph. Suppose the union’s payoff from Accept after Compromise falls to 2, while all other payoffs remain unchanged. What is the subgame-perfect outcome?",
       "options": [
         "Compromise, Accept",
         "Stand Firm, Strike",
@@ -12636,7 +12797,7 @@ window.microSkillRepairPools = {
     {
       "id": 5006,
       "sourceGame": "strategyDesk",
-      "q": "Price elasticity of demand compares",
+      "q": "Which comparison measures price elasticity of demand?",
       "options": [
         "the percentage price change divided by percentage quantity change",
         "the dollar revenue change with allocated fixed cost",
@@ -12680,7 +12841,7 @@ window.microSkillRepairPools = {
     {
       "id": 5008,
       "sourceGame": "strategyDesk",
-      "q": "Demand is elastic when",
+      "q": "When is demand classified as elastic?",
       "options": [
         "quantity changes by a larger percentage than price",
         "quantity changes by a smaller percentage than price",
@@ -12726,7 +12887,7 @@ window.microSkillRepairPools = {
     {
       "id": 5010,
       "sourceGame": "strategyDesk",
-      "q": "A rival's price rises and demand for your product rises. A positive cross-price elasticity suggests the products are",
+      "q": "A rival’s price rises and demand for your product increases. What relationship is indicated by this positive cross-price elasticity?",
       "options": [
         "complements",
         "unrelated by definition",
@@ -12748,7 +12909,7 @@ window.microSkillRepairPools = {
     {
       "id": 5011,
       "sourceGame": "strategyDesk",
-      "q": "Advertising elasticity measures the percentage change in demand caused by a percentage change in",
+      "q": "Advertising elasticity measures the percentage demand response to a percentage change in which variable?",
       "options": [
         "consumer income",
         "a complement's price",
@@ -12818,7 +12979,7 @@ window.microSkillRepairPools = {
     {
       "id": 5015,
       "sourceGame": "strategyDesk",
-      "q": "When a firm owns two substitute products, pricing one product should account for",
+      "q": "A firm owns two substitute products. Which cross-product effect should it consider when pricing either product?",
       "options": [
         "only allocated corporate overhead",
         "only total unit sales across both products",
@@ -12840,7 +13001,7 @@ window.microSkillRepairPools = {
     {
       "id": 5016,
       "sourceGame": "strategyDesk",
-      "q": "A discount on Brand A steals customers from the firm's Brand B. The lost profit on Brand B is",
+      "q": "A discount on Brand A draws customers away from the firm’s Brand B. How should the lost profit on Brand B be treated?",
       "options": [
         "a cannibalization cost of the discount",
         "irrelevant because Brand A gained sales",
@@ -12864,7 +13025,7 @@ window.microSkillRepairPools = {
     {
       "id": 5018,
       "sourceGame": "strategyDesk",
-      "q": "When a firm owns complementary products, it should price them by considering",
+      "q": "A firm owns complementary products. Which profits should it consider when setting their prices?",
       "options": [
         "only the product with the higher price",
         "each product as unrelated",
@@ -12886,7 +13047,7 @@ window.microSkillRepairPools = {
     {
       "id": 5019,
       "sourceGame": "strategyDesk",
-      "q": "A lower printer price raises cartridge sales. The cartridge contribution is",
+      "q": "A lower printer price raises cartridge sales. How should the resulting cartridge contribution be treated in the printer-pricing decision?",
       "options": [
         "irrelevant to printer pricing",
         "a sunk cost",
@@ -12910,7 +13071,7 @@ window.microSkillRepairPools = {
     {
       "id": 5021,
       "sourceGame": "strategyDesk",
-      "q": "With unused capacity, a discounted sale is attractive when",
+      "q": "A firm has unused capacity. Under what conditions does a discounted sale increase profit?",
       "options": [
         "it covers all historical fixed cost",
         "incremental revenue exceeds incremental cost and no better sale is displaced",
@@ -12932,7 +13093,7 @@ window.microSkillRepairPools = {
     {
       "id": 5022,
       "sourceGame": "strategyDesk",
-      "q": "A hotel room is empty tonight. A booking adds $90 revenue and $25 cleaning cost. No full-price guest is displaced. The booking should generally be",
+      "q": "A hotel room is empty tonight. A booking adds $90 in revenue and $25 in cleaning cost without displacing a full-price guest. How should the hotel evaluate the booking?",
       "options": [
         "rejected unless it covers full average total cost",
         "rejected because the building has fixed cost",
@@ -13114,7 +13275,7 @@ window.microSkillRepairPools = {
     {
       "id": 5030,
       "sourceGame": "strategyDesk",
-      "q": "Psychological pricing works mainly through",
+      "q": "Through which mechanisms does psychological pricing affect purchasing decisions?",
       "options": [
         "verified assignment of customers to demographic groups",
         "changes in physical marginal cost",
@@ -13136,7 +13297,7 @@ window.microSkillRepairPools = {
     {
       "id": 5031,
       "sourceGame": "strategyDesk",
-      "q": "A $9.99 price is perceived differently from $10.00 even though the difference is small. This is an example of",
+      "q": "Customers perceive $9.99 differently from $10.00 even though the difference is small. Which pricing practice uses this effect?",
       "options": [
         "market demand aggregation",
         "capacity pricing",
@@ -13204,7 +13365,7 @@ window.microSkillRepairPools = {
     {
       "id": 5034,
       "sourceGame": "strategyDesk",
-      "q": "Price discrimination is most feasible when customer groups differ in willingness to pay and",
+      "q": "Customer groups differ in willingness to pay. What additional condition helps make price discrimination feasible?",
       "options": [
         "resale is easy",
         "marginal cost is always zero",
@@ -13272,7 +13433,7 @@ window.microSkillRepairPools = {
     {
       "id": 5037,
       "sourceGame": "strategyDesk",
-      "q": "A theater checks student identification before applying a discount. This is",
+      "q": "A theater checks student identification before applying a discount. What type of pricing does this illustrate?",
       "options": [
         "indirect price discrimination",
         "direct price discrimination",
@@ -13318,7 +13479,7 @@ window.microSkillRepairPools = {
     {
       "id": 5040,
       "sourceGame": "strategyDesk",
-      "q": "A discounted ticket is tied to a verified name and cannot be transferred. This rule mainly",
+      "q": "A discounted ticket is tied to a verified name and cannot be transferred. What is the main purpose of this rule?",
       "options": [
         "limits arbitrage",
         "measures demand elasticity directly",
@@ -13364,7 +13525,7 @@ window.microSkillRepairPools = {
     {
       "id": 5042,
       "sourceGame": "strategyDesk",
-      "q": "For commodities of like grade and quality, Robinson–Patman concerns include certain price differences that",
+      "q": "For commodities of like grade and quality, which price differences may raise Robinson–Patman concerns?",
       "options": [
         "are fully explained by documented selling-cost differences",
         "simply reflect different order sizes, even with matching cost savings",
@@ -13408,7 +13569,7 @@ window.microSkillRepairPools = {
     {
       "id": 5044,
       "sourceGame": "strategyDesk",
-      "q": "A lower price justified by genuine cost savings is",
+      "q": "A lower price reflects genuine savings in the cost of serving the buyer. How should that fact affect the assessment of price discrimination?",
       "options": [
         "potentially distinguishable from harmful discrimination",
         "automatically unlawful whenever buyers compete",
@@ -13454,7 +13615,7 @@ window.microSkillRepairPools = {
     {
       "id": 5046,
       "sourceGame": "strategyDesk",
-      "q": "A hardcover is released before a cheaper paperback. The timing can sort",
+      "q": "A hardcover is released before a cheaper paperback. Which customer groups can this timing help separate?",
       "options": [
         "readers with identical values and identical patience",
         "suppliers by marginal cost",
@@ -13500,7 +13661,7 @@ window.microSkillRepairPools = {
     {
       "id": 5048,
       "sourceGame": "strategyDesk",
-      "q": "Indirect price discrimination relies on customers",
+      "q": "How do customers reveal their willingness to pay under indirect price discrimination?",
       "options": [
         "self-selecting among versions or packages",
         "being directly identified before purchase",
@@ -13590,7 +13751,7 @@ window.microSkillRepairPools = {
     {
       "id": 5052,
       "sourceGame": "strategyDesk",
-      "q": "Charging by the number of uses is called",
+      "q": "What is pricing based on the number of uses called?",
       "options": [
         "metering",
         "bundling",
@@ -13612,7 +13773,7 @@ window.microSkillRepairPools = {
     {
       "id": 5053,
       "sourceGame": "strategyDesk",
-      "q": "A basic software plan caps monthly usage while premium is unlimited. The cap mainly helps",
+      "q": "A basic software plan caps monthly usage while a premium plan is unlimited. What is the main purpose of the cap?",
       "options": [
         "make the versions identical for all usage levels",
         "sort light users from heavy users",
@@ -13842,9 +14003,9 @@ window.microSkillRepairPools = {
     {
       "id": 5066,
       "sourceGame": "strategyDesk",
-      "q": "A Nash equilibrium is a set of strategies in which",
+      "q": "Which condition characterizes a Nash equilibrium?",
       "options": [
-        "Call an outcome an equilibrium whenever total profit is high even if one player wants to deviate",
+        "An outcome qualifies whenever total profit is high, even if a player wants to change strategy",
         "all players choose the same action",
         "no player can gain by changing alone, given the others' choices",
         "the highest joint payoff is always achieved"
@@ -13926,7 +14087,7 @@ window.microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "strategic_rule_design",
       "commonError": "fails_to_update_action_payoff",
-      "feedback": "Subtract the action-specific penalty from its original payoff:6−2=4. A rule can change incentives even without changing the action labels.",
+      "feedback": "The penalty applies to this action, so subtract it from the original payoff: 6 − 2 = 4. Use the payoff of 4 when comparing this action with the alternatives.",
       "aHash": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
     }
   ],
@@ -13934,7 +14095,7 @@ window.microSkillRepairPools = {
     {
       "id": 5072,
       "sourceGame": "strategyDesk",
-      "q": "Strategic bargaining focuses on",
+      "q": "Which features does strategic bargaining analyze?",
       "options": [
         "offers, threats, timing, information, and outside options",
         "an equal split without modeling an offer sequence",
@@ -13956,12 +14117,12 @@ window.microSkillRepairPools = {
     {
       "id": 5073,
       "sourceGame": "strategyDesk",
-      "q": "At the final decision, a negotiator receives 7 by accepting and 3 by carrying out a threatened refusal. No other consequences follow. Is refusal credible?",
+      "q": "A negotiator threatens to reject an offer. Accepting would provide a benefit worth $7, while rejecting would provide only $3. There are no later offers or other consequences. Is the threat credible?",
       "options": [
-        "Yes; the opponent dislikes refusal",
-        "No; accepting gives 4 more",
+        "Yes; the other party dislikes rejection",
+        "No; accepting provides $4 more",
         "Yes; the threat was announced first",
-        "No; all refusals are noncredible"
+        "No; threats to reject an offer are never credible"
       ],
       "tag": "bargaining",
       "type": "calculation",
@@ -13972,18 +14133,18 @@ window.microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "strategic_bargaining",
       "commonError": "judges_threat_by_harm_to_opponent",
-      "feedback": "Credibility uses the threatening party’s own payoff at the decision node. Here 7>3, so refusal is not optimal.",
-      "aHash": "7eb2d83facc4e5e82fd826ee8e30f16fe18cf2867011eaf4b78ddcf53c728881"
+      "feedback": "The negotiator would receive $7 by accepting and $3 by rejecting. Once the decision arrives, accepting is better by $4, so the negotiator has no incentive to carry out the threat. An announcement alone does not make a threat credible.",
+      "aHash": "de9b4c7a91235a9412e49d8b4bca78de2a6cc528ed07dd414a56bae0d0f5005f"
     },
     {
       "id": 5074,
       "sourceGame": "strategyDesk",
-      "q": "A buyer values an item at 60 and gets 10 if no deal occurs. It accepts when indifferent. What is the highest price it accepts in a final offer?",
+      "q": "A buyer values an item at $60 and would receive a $10 benefit from their best alternative if no deal is reached. The buyer will accept a deal that is at least as good as that alternative. What is the highest price the buyer will accept?",
       "options": [
-        "10",
-        "60",
-        "50",
-        "70"
+        "$10",
+        "$60",
+        "$50",
+        "$70"
       ],
       "tag": "bargaining",
       "type": "calculation",
@@ -13994,15 +14155,15 @@ window.microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "strategic_bargaining",
       "commonError": "ignores_responder_participation_constraint",
-      "feedback": "The buyer needs 60−price≥10. Its outside option reduces the maximum acceptable price to 50.",
-      "aHash": "1a6562590ef19d1045d06c4055742d38288e9e6dcd71ccde5cee80f1d5a774eb"
+      "feedback": "The buyer compares the benefit from buying with the $10 available without a deal. At a price of $50, buying leaves $60 − $50 = $10, so the buyer is willing to accept. Any higher price would leave less than the alternative.",
+      "aHash": "a4bb5df8e940d605f1da0c93c8d6085681c561a9edd47904da0c8bbf59ef97dd"
     }
   ],
   "nonstrategic_bargaining": [
     {
       "id": 5075,
       "sourceGame": "strategyDesk",
-      "q": "Nonstrategic bargaining begins by identifying",
+      "q": "What does nonstrategic bargaining identify before considering how gains are divided?",
       "options": [
         "the identity of the party speaking first",
         "the historical order of announced threats",
@@ -14164,7 +14325,7 @@ window.microSkillRepairPools = {
     {
       "id": 5070,
       "sourceGame": "strategyDesk",
-      "q": "A commitment changes a game only if it is",
+      "q": "What makes a commitment capable of changing another player’s incentives?",
       "options": [
         "costly to the opponent even if harmful to its sender",
         "merely announced in advance",
@@ -14191,7 +14352,7 @@ window.microSkillBridgePools = {
     {
       "id": 6000,
       "sourceGame": "strategyDesk",
-      "q": "At price $12, two buyers have demands max (20−P,0) and max (8−P,0). What market quantity is demanded?",
+      "q": "Two customers are shopping for the same product. At a price of $12, Customer A is willing to purchase 8 units, while Customer B is unwilling to purchase any units at that price. What is the total market quantity demanded at $12?",
       "options": [
         "12 units",
         "4 units",
@@ -14207,7 +14368,7 @@ window.microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "market_demand",
       "commonError": "includes_negative_quantity_in_aggregate",
-      "feedback": "The first buyer demands 8 and the second 0; negative calculated quantities are truncated at zero before adding.",
+      "feedback": "Market demand is the sum of the quantities demanded by individual buyers at a given price. Customer A demands 8 units and Customer B demands zero, so total market quantity demanded is 8 units.",
       "aHash": "505defb71cf4e0964cbe1a4c94bcb1c997fcabe9e827b31da7b9f3da211f2194"
     },
     {
@@ -14327,7 +14488,7 @@ window.microSkillBridgePools = {
     {
       "id": 6007,
       "sourceGame": "strategyDesk",
-      "q": "A product has an elasticity of -0.6 at its current price. All else equal, a small price increase will most likely",
+      "q": "A product has an elasticity of −0.6 at its current price. All else equal, how will a small price increase affect total revenue?",
       "options": [
         "lower total revenue",
         "raise total revenue",
@@ -15077,7 +15238,7 @@ window.microSkillBridgePools = {
     {
       "id": 6044,
       "sourceGame": "strategyDesk",
-      "q": "Which case is least likely to raise the classic Robinson-Patman concern?",
+      "q": "Which case is least likely to raise a Robinson–Patman concern about discriminatory prices for comparable commodities?",
       "options": [
         "Competing retailers receive unexplained different prices for the same commodity",
         "A favored retailer uses the discount to undercut a rival",
@@ -15321,7 +15482,7 @@ window.microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "consumer_surplus_extraction",
       "commonError": "compares_values_instead_of_surplus",
-      "feedback": "The viewer compares value minus price:20 versus 15. A high-value version does not guarantee an upgrade if its extra price exceeds its added value.",
+      "feedback": "The viewer receives surplus of 30 − 10 = 20 from ad-supported access and 50 − 35 = 15 from ad-free access. Ad-supported access provides the larger surplus.",
       "aHash": "31938f2d6d09ddd8397b99f58b9b7c7ee3d91bfb4cdce2d69e659b33c690eda3"
     },
     {
@@ -15479,7 +15640,7 @@ window.microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "strategic_interdependence",
       "commonError": "uses_other_player_or_joint_payoff",
-      "feedback": "Use the second payoff for the seller:5 from Reject is higher than 3 from Accept.",
+      "feedback": "The seller receives the second payoff in each pair: 3 from accepting and 5 from rejecting. Rejecting is the seller’s best response because 5 exceeds 3.",
       "aHash": "4b9731ab98c8178e854a836d240f4cea2c783d469cabbef2f6a039aa3335f62a"
     }
   ],
@@ -15603,12 +15764,12 @@ window.microSkillBridgePools = {
     {
       "id": 6072,
       "sourceGame": "strategyDesk",
-      "q": "A supplier’s production cost is 20 and its payoff from an alternative contract is 12. A buyer makes one final price offer, and the supplier accepts when indifferent. What is the minimum accepted price?",
+      "q": "A supplier would spend $20 to fill a buyer’s order. If the supplier turns down this order, another contract would earn $12 in profit. The buyer makes one final offer, and the supplier will accept if the profit is at least as high as the alternative. What is the lowest price the supplier will accept?",
       "options": [
-        "12",
-        "20",
-        "32",
-        "8"
+        "$12",
+        "$20",
+        "$32",
+        "$8"
       ],
       "tag": "bargaining",
       "type": "calculation",
@@ -15619,18 +15780,18 @@ window.microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "strategic_bargaining",
       "commonError": "confuses_price_with_net_fallback_payoff",
-      "feedback": "Supplier profitprice−20 must cover fallback 12, so price must be at least 32. Reservation payoff and sale price are different.",
-      "aHash": "e29c9c180c6279b0b02abd6a1801c7c04082cf486ec027aa13515e4f3884bb6b"
+      "feedback": "The supplier needs to cover the $20 production cost and earn at least the $12 available from the other contract. A price of $32 leaves $32 − $20 = $12 in profit. Offering only $20 covers production but leaves no profit, so the supplier would choose the other contract.",
+      "aHash": "f2011dae707ee9b1141a0de1147a115f9c05e41022d8c363087de560734e87c7"
     },
     {
       "id": 6073,
       "sourceGame": "strategyDesk",
-      "q": "At a final bargaining node, settlement pays a union 9. Striking pays 6 plus a guaranteed external support benefit 4 available only during the strike. Other consequences are zero. Is a strike threat credible?",
+      "q": "A union is deciding whether to accept a settlement or carry out a threatened strike. The settlement would provide benefits worth $9 million. A strike would provide benefits worth $6 million, plus a guaranteed $4 million support payment available only if the union strikes. These amounts include all costs and benefits. Is the strike threat credible?",
       "options": [
-        "No; outside support never affects incentives",
-        "No; the strike’s operating payoff 6 is below 9",
+        "No; outside support never affects the decision",
+        "No; the $6 million from striking is less than the $9 million settlement",
         "Yes; every costly threat is credible",
-        "Yes; striking pays 10 versus 9"
+        "Yes; striking provides $10 million in benefits compared with $9 million from settling"
       ],
       "tag": "bargaining",
       "type": "calculation",
@@ -15641,18 +15802,18 @@ window.microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "strategic_bargaining",
       "commonError": "omits_contingent_disagreement_benefit",
-      "feedback": "Include the conditional external benefit:6+4=10 exceeds 9, making strike optimal at that node.",
-      "aHash": "a554a99a3003032fc9795efcbfccde542d185f8fd9dae3db694fdb823fd9b3d2"
+      "feedback": "The union would compare the $9 million settlement with the full benefit of striking: $6 million + $4 million = $10 million. Because striking leaves the union better off, the union has a reason to follow through. The threat is credible because of that incentive, not simply because it was announced.",
+      "aHash": "06d3adf8e1df2a153ac3844ef411348a612f51fc1200ca7fc3a1e2dfef067f16"
     },
     {
       "id": 6074,
       "sourceGame": "strategyDesk",
-      "q": "Rejecting today’s offer gives a buyer the right to make a final offer tomorrow. Tomorrow it can obtain payoff 80; its discount factor is 0.75. Today’s payoff from accepting is 55. Should it accept if only payoffs matter?",
+      "q": "A buyer can accept an offer worth $55 today or wait until tomorrow to make a final counteroffer worth $80. The buyer values each dollar received tomorrow at $0.75 today. Considering only these benefits, should the buyer accept today’s offer?",
       "options": [
-        "No; waiting is worth 60 today",
-        "Yes;55 exceeds tomorrow’s discounted payoff 20",
-        "Yes; future payoffs have zero current value",
-        "Indifferent; move order cannot affect value"
+        "No; waiting is worth $60 today",
+        "Yes; $55 exceeds the $20 present value of waiting",
+        "Yes; future benefits have no value today",
+        "The buyer is indifferent because the order of offers does not affect value"
       ],
       "tag": "bargaining",
       "type": "calculation",
@@ -15663,8 +15824,8 @@ window.microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "strategic_bargaining",
       "commonError": "ignores_discounted_continuation_payoff",
-      "feedback": "Discount the continuation payoff 80×.75=60, above 55. The counteroffer option changes today’s reservation payoff.",
-      "aHash": "8edaf415095dc3f3edfe8ffcc8c6f66b6a209837f48245b2b0d0b79670dd6ed9"
+      "feedback": "Convert tomorrow’s $80 benefit to today’s value: $80 × 0.75 = $60. Waiting is worth $5 more than the $55 available today, so the buyer should reject today’s offer. Comparing $55 with the undiscounted $80 would overlook the cost of waiting.",
+      "aHash": "e92098e1214d9789b898d72210e1a3ea7082f859c554dc6d30f0d2e3e5ac61b7"
     }
   ],
   "nonstrategic_bargaining": [
@@ -15731,7 +15892,7 @@ window.microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "nonstrategic_bargaining",
       "commonError": "confuses_bargaining_power_with_surplus_creation",
-      "feedback": "The better fallback strengthens A’s reservation position but reduces gains from agreement:50−14−12=24 rather than 30.",
+      "feedback": "The original surplus is 50 − 8 − 12 = 30. After A’s outside option improves, it is 50 − 14 − 12 = 24. A has a stronger fallback position, but the total gains from agreement are smaller.",
       "aHash": "565bf9e179d963733537b35e0a1e7504987e44cccfb9656d0535ef90c08f3825"
     }
   ],
@@ -15809,12 +15970,12 @@ window.microSkillBridgePools = {
     {
       "id": 6065,
       "sourceGame": "strategyDesk",
-      "q": "A seller first posts High or Low; a buyer observes it. Accept/Reject payoffs (Buyer, Seller) are High:(1,8)/(3,0), Low:(5,4)/(3,0). What is the buyer’s complete best-response strategy?",
+      "q": "A seller can post a high or low price, and a buyer sees the price before responding. At the high price, accepting gives the buyer a benefit of $1 and the seller a profit of $8. At the low price, these amounts are $5 and $4. Rejecting either price gives the buyer $3 and the seller zero. What is the buyer’s best response to each possible price?",
       "options": [
-        "Reject after both prices",
-        "Accept after Low only; omit the other node",
-        "Accept after both prices",
-        "Reject after High; Accept after Low"
+        "Reject both prices",
+        "Accept the low price without specifying a response to the high price",
+        "Accept both prices",
+        "Reject the high price and accept the low price"
       ],
       "tag": "complete_strategy",
       "type": "strategy",
@@ -15825,8 +15986,8 @@ window.microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "complete_strategy",
       "commonError": "omits_off_path_contingency",
-      "feedback": "Buyer compares its own payoff with 3 at each node:High 1<3 so Reject, Low 5>3 so Accept. Include both contingencies even if one is off path.",
-      "aHash": "ff0a44477f852dea3591f0d7c39c7d75662ec005624ad0d65816cd882755c10e"
+      "feedback": "At the high price, the buyer gets $1 by accepting but $3 by rejecting, so rejection is better. At the low price, accepting gives $5 instead of $3, so acceptance is better. A complete strategy states what the buyer would do at either price, even if only one is actually offered.",
+      "aHash": "26e4e0cf3a5588cc784f0921295fb2641fb975b8c55d0d3d16e0053faf834c4d"
     }
   ],
   "credible_threats": [
@@ -15849,7 +16010,7 @@ window.microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "credible_threats",
       "commonError": "judges_threat_by_announcement",
-      "feedback": "A threat that is not optimal to carry out at the future node is not credible.",
+      "feedback": "A threat is credible only if carrying it out would be in the company’s interest when the time comes. Here, accommodating entry is better than starting the price war, so a rational rival has reason to doubt the threat.",
       "aHash": "179ca67ddcfef4c8a0dad55e84bbf6c3b6fda89bb8ecea35411fda3b61ddcf97"
     }
   ]
