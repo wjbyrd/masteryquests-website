@@ -43,18 +43,20 @@
       const key=s?JSON.stringify([gameKey(r,s),run]):candidates?.size===1?[...candidates][0]:null;
       if(!key||!runs.has(key))continue;
       const event=r.event||r.event_type,terminal=event==='complete'||event==='run_completed'||event==='timed_ended_early'||/_(?:complete|bust|ended_by_student)$/.test(event||'');
-      const item=observed.get(key)||{time:null,streak:null};
+      const item=observed.get(key)||{time:null,completionTime:null,streak:null};
       // Clocks and streaks are cumulative: take one maximum per run, never sum rows.
       const total=terminal?numeric(r.totalTimeMs):null;
       const time=total>0?total:numeric(r.elapsedTimeMs??r.elapsed_time_ms);
       if(time>0)item.time=Math.max(item.time??0,time);
+      if(terminal&&time>0)item.completionTime=Math.max(item.completionTime??0,time);
       const peak=terminal?numeric(r.maxStreak):null,current=terminal||accepted(r)?numeric(r.streak):null;
       const streak=peak===null?current:Math.max(peak,current??0);
       if(streak!==null&&Number.isInteger(streak))item.streak=Math.max(item.streak??0,streak);
       observed.set(key,item);
     }
     const times=[...observed.values()].map(r=>r.time).filter(v=>v!==null),streaks=[...observed.values()].map(r=>r.streak).filter(v=>v!==null);
-    return {recordedTimeMs:times.length?times.reduce((a,b)=>a+b,0):null,medianRunTimeMs:median(times),timedRuns:times.length,bestStreak:streaks.length?Math.max(...streaks):null,streakRuns:streaks.length};
+    const completionTimes=[...observed.values()].map(r=>r.completionTime).filter(v=>v!==null);
+    return {recordedTimeMs:times.length?times.reduce((a,b)=>a+b,0):null,medianRunTimeMs:median(times),timedRuns:times.length,averageCompletionTimeMs:completionTimes.length?completionTimes.reduce((a,b)=>a+b,0)/completionTimes.length:null,completionRuns:completionTimes.length,bestStreak:streaks.length?Math.max(...streaks):null,streakRuns:streaks.length};
   }
   function analyze(rows,filters={}){
     const prepared=rows.map(normalizeRow),metadata=new Map();
@@ -130,7 +132,7 @@
   function duration(ms){if(ms===null||ms===undefined)return 'Not recorded';const seconds=Math.round(ms/1000),hours=Math.floor(seconds/3600),minutes=Math.floor(seconds%3600/60);return [hours?hours+'h':'',minutes?minutes+'m':'',seconds%60||!seconds?(seconds%60)+'s':''].filter(Boolean).join(' ');}
   function responseDuration(ms){return ms==null?'Not recorded':ms<100?'less than 0.1s':ms<60000?`${Number((ms/1000).toFixed(1))}s`:duration(ms);}
   const reviewMinimum=value=>Math.max(1,Math.floor(Number(value)||5));
-  function runContextText(o){return `Whole-run context: recorded run time ${duration(o.recordedTimeMs)}; median run time ${duration(o.medianRunTimeMs)}; longest recorded correct-answer streak ${o.bestStreak===null?'not recorded':o.bestStreak}. Time recorded for ${o.timedRuns}/${o.runs} runs; streaks for ${o.streakRuns}/${o.runs}. Includes answers outside the filters; incomplete exports may understate these values.`;}
+  function runContextText(o){return `Whole-run context: recorded run time ${duration(o.recordedTimeMs)}; median run time ${duration(o.medianRunTimeMs)}; longest recorded correct-answer streak ${o.bestStreak===null?'not recorded':o.bestStreak}. Average completion time: ${duration(o.averageCompletionTimeMs)}, based on ${plural(o.completionRuns,'run')} with a recorded end time (including runs ended early). Time recorded for ${o.timedRuns}/${o.runs} runs; streaks for ${o.streakRuns}/${o.runs}. Includes answers outside the filters; incomplete exports may understate these values.`;}
   function objectiveLabel(group){
     const clean=value=>String(value||'').replace(/^LO\s*\d+(?:\.\d+)*(?:\s*[—–:_-]\s*|\s+|$)/i,'').replaceAll('_',' ').trim();
     const labels=[...new Set((group.labels||[]).map(clean).filter(Boolean))];
@@ -165,10 +167,10 @@
     const review=reviewQuestions(result,min).slice(0,2),reviewArea=eligible.find(a=>a.correct<a.knownCorrectness);
     if(!s.keyConflicts&&!s.objectiveConflicts){
       if(review.length){
-        lines.push('Questions to discuss:\n'+review.map(q=>{
+        lines.push('Questions to discuss:\n'+review.map((q,i)=>{
           const wrong=q.options.filter(o=>o.knownCorrectness>o.correct),max=Math.max(...wrong.map(o=>o.knownCorrectness-o.correct)),common=wrong.filter(o=>o.knownCorrectness-o.correct===max);
           const choice=common.length===1?` Most common choice marked incorrect: “${common[0].text}” (${plural(max,'response')}).`:` ${plural(common.length,'incorrect choice')} tied at ${plural(max,'response')} each; see the choice counts.`;
-          return `- ${q.prompt} — ${accuracy(q)} (${q.correct}/${q.knownCorrectness}; ${plural(q.runCount,'run')}${sufficient(q)?'':'; limited evidence'}).${choice}`;
+          return `- Review ${i+1}: ${q.prompt} — ${accuracy(q)} (${q.correct}/${q.knownCorrectness}; ${plural(q.runCount,'run')}${sufficient(q)?'':'; limited evidence'}).${choice}`;
         }).join('\n'));
         lines.push('Suggested next step: ask the class to explain the reasoning behind these choices, work through an example, then check understanding with a fresh question.');
       }else if(o.knownCorrectness&&o.correct===o.knownCorrectness)lines.push('All shown answers with a recorded result were correct. A fresh question or application can help check whether that understanding carries over.');

@@ -7,7 +7,7 @@
 #file-list span{overflow-wrap:anywhere;min-width:0}
 #file-list button{flex-shrink:0}
 .metrics{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.8rem}
-.run-metrics{grid-template-columns:repeat(3,minmax(0,1fr))}
+.run-metrics{grid-template-columns:repeat(4,minmax(0,1fr))}
 .metric{background:#eef7f8;border:1px solid #c9e4e5;border-radius:12px;padding:1rem;display:flex;flex-direction:column;gap:.4rem}
 .metric strong{font-size:1.8rem;color:#062454;overflow-wrap:anywhere}
 .metric span{font-size:.95rem}
@@ -21,11 +21,16 @@
 .question summary{cursor:pointer}
 .question summary h3{display:inline;font-size:1.1rem;white-space:pre-wrap;overflow-wrap:anywhere}
 .question summary p{margin:.5rem 0 0}
+.question{scroll-margin-top:1.5rem}
+.question.review-question{border-color:#8aafbd;border-left:4px solid #007e7a}
+.review-badge{display:inline-block;margin:0 .6rem .4rem 0;padding:.2rem .55rem;border-radius:6px;background:#dff5f3;color:#075c59;font-size:.85rem;font-weight:700;vertical-align:middle}
+.review-link{color:#075c59;text-underline-offset:3px}
 button{cursor:pointer;border:1px solid #8aafbd;border-radius:8px;background:#fff;color:#062454}
 button:disabled{cursor:default;opacity:.55}
 #download-summary{background:#062454;color:#fff}
 #summary-text{width:100%;font:inherit;line-height:1.5;padding:1rem;resize:vertical}
 .integrity-note{color:#8b2515;font-weight:600}
-.table-wrap:focus-visible,button:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #009f9a;outline-offset:3px}
+.table-wrap:focus-visible,button:focus-visible,select:focus-visible,summary:focus-visible,.review-link:focus-visible{outline:3px solid #009f9a;outline-offset:3px}
 .topic-results table{min-width:640px}
-@media(max-width:700px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.metric:last-child{grid-column:1/-1}.filters{gap:.4rem}main{padding:1.4rem 1rem}}
+@media(max-width:900px){.run-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.metric:last-child:nth-child(odd){grid-column:1/-1}.filters{gap:.4rem}main{padding:1.4rem 1rem}}

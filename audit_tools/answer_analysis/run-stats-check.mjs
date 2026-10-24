@@ -10,15 +10,23 @@ export function statsRows(){
 }
 const rows=statsRows(),result=a.analyze(rows),o=result.overview;
 assert.equal(o.recordedTimeMs,1260000);assert.equal(o.medianRunTimeMs,210000);assert.equal(o.timedRuns,6);assert.equal(o.bestStreak,3);assert.equal(o.streakRuns,6);
+assert.equal(o.averageCompletionTimeMs,210000);assert.equal(o.completionRuns,6);
 assert.deepEqual(a.analyze([...rows,...rows]).overview,o,'Overlapping exports must not inflate time or streaks');
 assert.equal(a.analyze(rows,{exposure:'first'}).overview.recordedTimeMs,o.recordedTimeMs,'Exposure filters retain whole-run context');
 assert.equal(a.analyze(rows,{mode:'quiz'}).overview.recordedTimeMs,540000);assert.equal(a.analyze(rows,{mode:'quiz'}).overview.medianRunTimeMs,180000);
 assert.equal(a.analyze(rows,{assistance:'assisted'}).overview.recordedTimeMs,360000);assert.equal(a.analyze(rows,{assistance:'assisted'}).overview.bestStreak,1);
 const early=rows.slice(0,8).map(({streak,elapsedTimeMs,...r})=>r);early.push({...rows[8],event:'timed_ended_early',elapsedTimeMs:0});assert.equal(a.analyze(early).overview.recordedTimeMs,60000);assert.equal(a.analyze(early).overview.bestStreak,3);
 const partial=a.analyze(rows.filter(r=>r.event==='question'));assert.equal(partial.overview.recordedTimeMs,312000);assert.equal(partial.overview.bestStreak,3);
+assert.equal(partial.overview.averageCompletionTimeMs,null,'Partial clocks are not completion times');assert.equal(partial.overview.completionRuns,0);
 const missing=a.analyze(releaseRows()).overview;assert.equal(missing.recordedTimeMs,null);assert.equal(missing.bestStreak,null);assert.equal(missing.timedRuns,0);
 const mixed=a.analyze([...rows.slice(0,9),...releaseRows().slice(8)]).overview;assert.equal(mixed.runs,6);assert.equal(mixed.timedRuns,1);assert.equal(mixed.streakRuns,1);
+assert.equal(mixed.averageCompletionTimeMs,60000);assert.equal(mixed.completionRuns,1,'Missing completion times do not enter the denominator');
+assert.equal(a.analyze(rows,{mode:'quiz'}).overview.averageCompletionTimeMs,180000);
+assert.equal(a.analyze(early).overview.averageCompletionTimeMs,60000,'Recorded early endings count once');
+assert.equal(a.analyze(rows.map(r=>({...r,totalTimeMs:'',elapsedTimeMs:r.event==='quiz_complete'?120000:r.elapsedTimeMs}))).overview.averageCompletionTimeMs,120000,'End records can use the elapsed clock');
+assert.equal(a.analyze(rows.map(r=>({...r,totalTimeMs:0,elapsedTimeMs:r.event==='quiz_complete'?0:r.elapsedTimeMs}))).overview.averageCompletionTimeMs,null,'Unmeasured end clocks must not fall back to partial answers');
 const admin=rows.map(({event,eventID,runID,elapsedTimeMs,...r})=>({...r,event_type:event==='question'?'answer_evaluated':'run_completed',event_id:eventID,run_id:runID,elapsed_time_ms:elapsedTimeMs}));assert.equal(a.analyze(admin).overview.recordedTimeMs,o.recordedTimeMs);
+assert.equal(a.analyze(admin).overview.averageCompletionTimeMs,o.averageCompletionTimeMs);
 assert.equal(a.analyze(rows.map(r=>({...r,runID:''}))).overview.timedRuns,0,'No anonymous run identity may be invented');
 assert.equal(a.analyze(rows.map(r=>({...r,elapsedTimeMs:'NaN',totalTimeMs:-1,streak:'invalid',maxStreak:-1}))).overview.recordedTimeMs,null);
 assert.equal(a.analyze(rows.map(r=>({...r,streak:0,maxStreak:0}))).overview.bestStreak,0,'Recorded zero differs from missing');
@@ -28,6 +36,8 @@ assert(one.includes('Review minimum: 1 response'));assert(one.includes('Results 
 assert(a.feedbackSummary(small,{fileCount:1,minResponses:5}).includes('selected minimum of 5 responses'));
 assert(a.feedbackSummary(small,{fileCount:1,minResponses:10}).includes('selected minimum of 10 responses'));
 assert(a.feedbackSummary(result,{fileCount:6}).includes('recorded run time 21m; median run time 3m 30s; longest recorded correct-answer streak 3'));
+assert(a.feedbackSummary(result,{fileCount:6}).includes('Average completion time: 3m 30s, based on 6 runs'));
+assert(a.feedbackSummary(result,{fileCount:6}).includes('Review 1: '+a.reviewQuestions(result)[0].prompt));
 console.log('PASS: time/streak totals, overlapping exports, partial and missing data, zero values, filters, private fields, and shared 1/5/10 response thresholds.');
 assert.equal(o.averageResponseTimeMs,6500);assert.equal(o.medianResponseTimeMs,6500);assert.equal(o.timedResponses,48);
 const first=a.analyze(rows,{exposure:'first'}).overview;assert.equal(first.averageResponseTimeMs,4500);assert.equal(first.timedResponses,24);

@@ -5,12 +5,21 @@ const byId=id=>document.getElementById(id);
 function el(tag,text,className){const node=document.createElement(tag);node.textContent=text;if(className)node.className=className;return node;}
 const percent=(correct,total)=>total?Math.round(100*correct/total)+'%':'Unavailable';
 const plural=MQAnswerAnalysis.plural;
+const questionAnchor=g=>'question-'+summary.groups.indexOf(g);
+function reviewLink(g,index){
+  const link=el('a',`Review ${index+1}: ${g.prompt}`,'review-link');link.href='#'+questionAnchor(g);
+  link.addEventListener('click',event=>{
+    event.preventDefault();const card=byId(questionAnchor(g));card.open=true;
+    card.querySelector('summary').focus({preventScroll:true});card.scrollIntoView({block:'start'});
+  });
+  return link;
+}
 function summaryText(){return MQAnswerAnalysis.feedbackSummary(summary,{fileCount:collection.entries().length,minResponses:Number(byId('minimum').value),grouping:byId('grouping').value});}
 function table(headers,rows){
   const wrap=el('div','','table-wrap'),node=el('table',''),head=el('thead',''),tr=el('tr','');
   wrap.tabIndex=0;wrap.setAttribute('role','region');wrap.setAttribute('aria-label',headers.join(', ')+' table');
   for(const label of headers){const th=el('th',label);th.scope='col';tr.append(th);}head.append(tr);node.append(head);
-  const body=el('tbody','');for(const values of rows){const row=el('tr','');for(const value of values)row.append(el('td',String(value)));body.append(row);}node.append(body);wrap.append(node);return wrap;
+  const body=el('tbody','');for(const values of rows){const row=el('tr','');for(const value of values){const cell=el('td','');cell.append(value instanceof Node?value:String(value));row.append(cell);}body.append(row);}node.append(body);wrap.append(node);return wrap;
 }
 function renderOverview(){
   const o=summary.overview,container=byId('overview');container.replaceChildren();
@@ -25,10 +34,11 @@ function renderOverview(){
   if(!summary.groups.length)return;
   container.append(el('h3','Time and streaks'));
   const runMetrics=el('div','','metrics run-metrics');
-  for(const [label,value] of [['Average time per question',MQAnswerAnalysis.responseDuration(o.averageResponseTimeMs)],['Recorded run time',MQAnswerAnalysis.duration(o.recordedTimeMs)],['Longest correct-answer streak',o.bestStreak??'Not recorded']]){
+  for(const [label,value] of [['Average time per question',MQAnswerAnalysis.responseDuration(o.averageResponseTimeMs)],['Average completion time',MQAnswerAnalysis.duration(o.averageCompletionTimeMs)],['Recorded run time',MQAnswerAnalysis.duration(o.recordedTimeMs)],['Longest correct-answer streak',o.bestStreak??'Not recorded']]){
     const metric=el('div','','metric');metric.append(el('strong',String(value)),el('span',label));runMetrics.append(metric);
   }
   container.append(runMetrics,el('p',`Question timing: ${o.timedResponses} of ${plural(summary.stats.included,'shown answer')} have a recorded time. Median (middle value): ${MQAnswerAnalysis.responseDuration(o.medianResponseTimeMs)}. Each answered attempt counts once. Times may include idle time.`,'meta'),el('p',`Whole runs: time recorded for ${o.timedRuns} of ${o.runs}; streaks for ${o.streakRuns} of ${o.runs}. Median run time: ${MQAnswerAnalysis.duration(o.medianRunTimeMs)}. Includes answers outside your filters. Incomplete exports may understate time and streaks.`,'meta'));
+  container.append(el('p',`Average completion time uses ${plural(o.completionRuns,'run')} with a recorded end time, including runs ended early. Each run counts once; runs without a recorded end time are excluded.`,'meta'));
   const objectiveView=byId('grouping').value==='objectives';
   const topics=[...(objectiveView?summary.objectives:summary.topics)].sort((a,b)=>(a.knownCorrectness?a.correct/a.knownCorrectness:2)-(b.knownCorrectness?b.correct/b.knownCorrectness:2)||b.count-a.count);
   const multipleGames=new Set(topics.map(t=>t.game)).size>1;
@@ -40,10 +50,11 @@ function renderOverview(){
   if(summary.stats.missingObjectives||summary.stats.objectiveConflicts)container.append(el('p',`${plural(summary.stats.missingObjectives,'response')} without an objective; ${plural(summary.stats.objectiveConflicts,'question version')} with inconsistent objective assignments. Original labels remain in the tables.`,'meta'));
   const lowest=MQAnswerAnalysis.reviewQuestions(summary,Number(byId('minimum').value));
   if(lowest.length){
-    container.append(el('h3','Questions to review'),el('p',`Showing up to five questions with at least ${plural(Number(byId('minimum').value),'response')} with a recorded result. All question distributions remain below. Small samples and repeated practice within one run provide limited evidence.`,'meta'));
-    container.append(table(['Question','Responses','Runs','Accuracy','Most common choice marked incorrect'],lowest.map(g=>{
+    const reviewHeading=el('h3','Questions to review');reviewHeading.id='questions-to-review';
+    container.append(reviewHeading,el('p',`Select a question to open its answer choices below. Review numbers match the feedback summary and the first questions in the answer list. Showing up to five questions with at least ${plural(Number(byId('minimum').value),'response')} with a recorded result, lowest accuracy first. Small samples and repeated practice within one run provide limited evidence.`,'meta'));
+    container.append(table(['Question','Responses','Runs','Accuracy','Most common choice marked incorrect'],lowest.map((g,i)=>{
       const wrong=g.options.filter(o=>o.knownCorrectness>o.correct),max=Math.max(...wrong.map(o=>o.knownCorrectness-o.correct));
-      return [g.prompt,g.count,g.runCount,percent(g.correct,g.knownCorrectness),wrong.filter(o=>o.knownCorrectness-o.correct===max).map(o=>`${o.text} (${max})`).join(' / ')];
+      return [reviewLink(g,i),g.count,g.runCount,percent(g.correct,g.knownCorrectness),wrong.filter(o=>o.knownCorrectness-o.correct===max).map(o=>`${o.text} (${max})`).join(' / ')];
     })));
   }else container.append(el('p','No questions meet the current review threshold. All imported question results remain available below.','meta'));
 }
@@ -59,9 +70,13 @@ function refresh(){
   if(!byId('summary-editor').hidden){byId('summary-text').value=summaryText();byId('copy-status').textContent='Summary updated for the current selection. Copy it again to use these results.';}
   byId('download-summary').disabled=!summary.groups.length;
   byId('download').disabled=!summary.groups.length;byId('results').replaceChildren();
-  if(summary.groups.length)byId('results').append(el('h2','Answer choices by question'),el('p','Open a question to see its choice counts.','meta'));
-  for(const g of summary.groups){
+  const review=MQAnswerAnalysis.reviewQuestions(summary,Number(byId('minimum').value)),reviewRanks=new Map(review.map((g,i)=>[g,i+1]));
+  const remaining=summary.groups.filter(g=>!reviewRanks.has(g)).sort((a,b)=>(a.knownCorrectness?a.correct/a.knownCorrectness:2)-(b.knownCorrectness?b.correct/b.knownCorrectness:2)||a.prompt.localeCompare(b.prompt));
+  if(summary.groups.length)byId('results').append(el('h2','Answer choices by question'),el('p',`${review.length?'Review questions appear first, in the same numbered order as Questions to review. Remaining questions are':'Questions are'} sorted by accuracy, lowest first; ties are alphabetical, and questions without a recorded result appear last. Open a question to see its choice counts.`,'meta'));
+  for(const g of [...review,...remaining]){
     const card=el('details','','question'),heading=el('summary','');
+    card.id=questionAnchor(g);
+    if(reviewRanks.has(g)){card.classList.add('review-question');heading.append(el('span','Review '+reviewRanks.get(g),'review-badge'));}
     heading.append(el('h3',g.prompt),el('p',`${plural(g.count,'answer')} · ${percent(g.correct,g.knownCorrectness)} correct`,'meta'));card.append(heading);
     card.append(el('p',`${g.first} first, ${g.repeat} repeat, ${g.unknown} exposure unknown · ${g.assisted} with choices removed`));
     card.append(el('p',g.timedResponses?`Time per answer: ${MQAnswerAnalysis.responseDuration(g.averageResponseTimeMs)} average · ${MQAnswerAnalysis.responseDuration(g.medianResponseTimeMs)} median · recorded for ${g.timedResponses} of ${g.count} answers`:'Time per answer: not recorded','meta'));
@@ -131,9 +146,9 @@ byId('download').addEventListener('click',()=>{
 });
 byId('download-summary').addEventListener('click',()=>{
   const filters=[byId('exposure').value,byId('assistance').value,byId('mode').value];
-  const rows=[['section','game','topicOrQuestion','questionID','questionRevision','answers','correct','knownCorrectness','accuracy','gameRuns','files','exposureFilter','assistanceFilter','modeFilter','objectiveID','keyStatus','recordedRunTimeMs','medianRunTimeMs','runsWithRecordedTime','longestRecordedStreak','runsWithRecordedStreak','reviewMinimumResponses','averageResponseTimeMs','medianResponseTimeMs','responsesWithRecordedTime']];
+  const rows=[['section','game','topicOrQuestion','questionID','questionRevision','answers','correct','knownCorrectness','accuracy','gameRuns','files','exposureFilter','assistanceFilter','modeFilter','objectiveID','keyStatus','recordedRunTimeMs','medianRunTimeMs','runsWithRecordedTime','longestRecordedStreak','runsWithRecordedStreak','reviewMinimumResponses','averageResponseTimeMs','medianResponseTimeMs','responsesWithRecordedTime','averageCompletionTimeMs','runsWithCompletionTime']];
   const o=summary.overview;
-  rows.push(['class','','','','',summary.stats.included,o.correct,o.knownCorrectness,o.knownCorrectness?o.correct/o.knownCorrectness:'',o.runs,o.files,...filters,'','',o.recordedTimeMs??'',o.medianRunTimeMs??'',o.timedRuns,o.bestStreak??'',o.streakRuns,byId('minimum').value,o.averageResponseTimeMs??'',o.medianResponseTimeMs??'',o.timedResponses]);
+  rows.push(['class','','','','',summary.stats.included,o.correct,o.knownCorrectness,o.knownCorrectness?o.correct/o.knownCorrectness:'',o.runs,o.files,...filters,'','',o.recordedTimeMs??'',o.medianRunTimeMs??'',o.timedRuns,o.bestStreak??'',o.streakRuns,byId('minimum').value,o.averageResponseTimeMs??'',o.medianResponseTimeMs??'',o.timedResponses,o.averageCompletionTimeMs??'',o.completionRuns]);
   for(const t of summary.topics)rows.push(['topic',t.game,t.topic,'','',t.count,t.correct,t.knownCorrectness,t.knownCorrectness?t.correct/t.knownCorrectness:'',t.runCount,'',...filters,'','']);
   for(const t of summary.objectives)rows.push(['objective',t.game,MQAnswerAnalysis.objectiveLabel(t),'','',t.count,t.correct,t.knownCorrectness,t.knownCorrectness?t.correct/t.knownCorrectness:'',t.runCount,'',...filters,t.objective,'']);
   for(const g of summary.groups)rows.push(['question',g.games.join(', '),g.prompt,g.questionID,g.revision,g.count,g.correct,g.knownCorrectness,g.knownCorrectness?g.correct/g.knownCorrectness:'',g.runCount,'',...filters,'',g.keyStatus,'','','','','','',g.averageResponseTimeMs??'',g.medianResponseTimeMs??'',g.timedResponses]);
