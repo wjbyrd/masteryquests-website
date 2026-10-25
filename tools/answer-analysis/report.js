@@ -47,6 +47,7 @@ function refresh(){
   byId('copy-summary').disabled=!s.accepted;byId('download-feedback').disabled=!s.accepted;
   byId('download-summary').disabled=!summary.groups.length;byId('download').disabled=!summary.groups.length;
   byId('feedback-preview').textContent=summaryText();
+  renderSummaryHighlights(byId('feedback-preview').textContent);
   if(!byId('summary-editor').hidden){byId('summary-text').value=summaryText();byId('copy-status').textContent='Summary updated for the current selection. Copy it again to use these results.';}
 }
 function renderFiles(){

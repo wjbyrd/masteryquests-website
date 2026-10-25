@@ -75,7 +75,7 @@ After:
 
 - Compact import area, collapsible file list, explicit imported-file versus represented-run counts, game/run filters, active-selection description, and reset controls.
 - Six compact headline cards, with median response time and accuracy numerator/denominator emphasized.
-- Instructor summary immediately after performance, with its preview open by default; Questions to review comes next, before topic results. Difficulty follows the review section; practice and instructional support are paired; outcomes are separated from response timing.
+- Instructor summary immediately after performance, with three visible highlights and a collapsible full summary; Questions to review comes next, before topic results. Difficulty follows the review section; practice and instructional support are paired; outcomes are separated from response timing.
 - Coverage depth, timing distribution, sortable topics/objectives, and direct topic-to-question browsing.
 - Numbered review links, stable game/question/revision anchors, compatibility with the old `question-N` anchors, and keyboard-operable “Review next.”
 - Question IDs, full stems, topic/objective, recorded difficulty, type/role, runs, timing, saved version, and choice-count bars. Cards remain collapsible.
@@ -176,6 +176,12 @@ This regenerates the repository's `dist/` output; it does not deploy. Keep fixtu
 
 Local CSV difficulty is now included in the main breakdown, question cards, teaching summary, and CSV download. The previous blanket private-contract requirement incorrectly hid populated local difficulty fields. Empty labels and contradictory labels for one saved question version remain Unknown. CSV output uses `difficulty` / `recorded_difficulty` sections and a `difficulty` column in place of the misleading authored/unverified names. No gameplay or telemetry changes were needed.
 
-The instructor summary now follows the overview with its preview expanded. Questions to review follows the summary, ahead of Results by topic. Navigation follows the same reading order. The live Cost Directive screenshot documents the reported issue; exact live totals still require the source CSVs, which are not attached.
+The instructor summary now follows the overview with three visible highlights and a collapsible full summary. Questions to review follows the summary, ahead of Results by topic. Navigation follows the same reading order. The live Cost Directive screenshot documents the reported issue; exact live totals still require the source CSVs, which are not attached.
 
 Correction validation passed: the existing answer-analysis validation suite, dashboard calculation checks across all 11 registered CSV schemas, browser checks for difficulty totals/cards/feedback/CSV exports and the new section order, desktop/tablet/mobile accessibility scans, and the local publication build (2,411 files; no forbidden files). Refreshed dashboard screenshots and browser evidence are saved alongside the existing evidence.
+
+## Visual polish
+
+The instructor summary now shows class performance, the priority topic/objective, and a teaching action above a collapsed full narrative. Copy and download still use the complete summary. Review priorities use responsive cards with full question wording, visible accuracy/response counts, the observed incorrect choice, and direct answer-choice links. Boss difficulty names are spaced for display without merging categories or changing exports, and accuracy bars are more prominent. Secondary definitions and unavailable-metric notes are in expandable sections. Review rankings, filters, counts, and measurement rules are unchanged.
+
+Validation: dashboard calculation and existing analysis suites, desktop/mobile browser checks, keyboard review navigation, WCAG A/AA scans, and contrast checks passed. The compact highlights were checked for filtered/empty selections, review thresholds, objective grouping, and all-correct results.

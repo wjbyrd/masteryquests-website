@@ -12,6 +12,24 @@ function metric(label,value,detail='',primary=false){const node=el('div','','met
 function panel(id,title){const node=byId(id);node.replaceChildren(el('h2',title));return node;}
 function fold(label,...children){const node=el('details','');node.append(el('summary',label),...children);return node;}
 function smallTable(headers,rows){const node=table(headers,rows);node.classList.add('compact-table');return node;}
+function difficultyLabel(value){
+  if(!/boss$/i.test(value))return value;
+  const spaced=value.replace(/([a-z])([A-Z])/g,'$1 $2').replace(/[_-]+/g,' ').replace(/\s*boss$/i,' boss').toLowerCase();
+  return spaced.charAt(0).toUpperCase()+spaced.slice(1);
+}
+function renderSummaryHighlights(text){
+  const node=byId('summary-highlights'),o=summary.overview,parts=text.split('\n\n');node.replaceChildren();
+  const conflict=Boolean(summary.stats.keyConflicts||summary.stats.objectiveConflicts);
+  const priority=parts.find(p=>p.startsWith('Start the review with '));
+  const next=parts.find(p=>p.startsWith('Suggested next step: '));
+  const allCorrect=o.knownCorrectness>0&&o.correct===o.knownCorrectness;
+  const items=[
+    ['Class performance',o.knownCorrectness?`${percent(o.correct,o.knownCorrectness)} accuracy`:'No graded responses',`${o.correct} / ${o.knownCorrectness} graded responses · ${plural(o.runs,'run')}`],
+    [byId('grouping').value==='objectives'?'Priority objective':'Priority topic',conflict?'Check conflicting records':priority?priority.replace('Start the review with ',''):allCorrect?'No review priority identified':'More evidence needed',conflict?'Answer-key or objective conflicts prevent a comparison.':priority?'Based on the current filters and review minimum.':allCorrect?'All graded responses in this selection were correct.':'No topic or objective with incorrect answers meets the selected review minimum.'],
+    ['Teaching action',conflict?'Resolve the conflicting records before drawing conclusions.':next?next.replace('Suggested next step: ',''):allCorrect?'Check understanding with a fresh question or application.':'Collect more responses before choosing a teaching intervention.','']
+  ];
+  for(const [label,value,detail] of items){const card=el('div','','summary-highlight');card.append(el('h3',label),el('p',value,'highlight-value'));if(detail)card.append(note(detail));node.append(card);}
+}
 function renderDashboard(){
   const o=summary.overview,p=summary.progression,coverage=summary.coverage;
   const node=panel('overview','How is the class performing?'),metrics=el('div','','metrics');
@@ -23,13 +41,13 @@ function renderDashboard(){
   if(!summary.stats.included)node.append(unavailable('No usable responses match this selection. Reset filters or add exports with saved question details.'));
   const difficulty=panel('difficulty','Performance by difficulty');
   const reliable=summary.difficulties.filter(g=>g.label!=='Unknown').reduce((n,g)=>n+g.count,0);
-  difficulty.append(note(`${reliable} of ${summary.stats.included} responses have recorded difficulty. Missing or conflicting question-version labels are Unknown.`),
-    table(['Difficulty','Responses','Unique questions','Runs','Accuracy','Median response time'],summary.difficulties.map(g=>[g.label,g.count||'No observed responses',g.count?g.questionCount:'—',g.count?g.runCount:'—',accuracyCell(g),displayTime(g.medianResponseTimeMs)])));
+  difficulty.append(note(`${reliable} of ${summary.stats.included} responses have recorded difficulty.`),
+    table(['Difficulty','Responses','Unique questions','Runs','Accuracy','Median response time'],summary.difficulties.map(g=>[difficultyLabel(g.label),g.count||'No observed responses',g.count?g.questionCount:'—',g.count?g.runCount:'—',accuracyCell(g),displayTime(g.medianResponseTimeMs)])),
+    fold('How to read difficulty',note('Missing or conflicting question-version labels are Unknown. Boss labels are spaced for readability; their recorded categories and counts are unchanged.')));
   if(summary.quality.difficultyConflicts)difficulty.append(fold('Conflicting difficulty labels',note('Some saved question versions have different difficulty labels across imported responses. Those versions are classified as Unknown above. The exported labels are shown below.'),table(['Recorded label','Responses','Accuracy','Median time'],summary.reportedDifficulties.map(g=>[g.label,g.count,accuracyCell(g),displayTime(g.medianResponseTimeMs)]))));
   const encounter=panel('encounters','First and repeat encounters');
   encounter.append(note('Exact question version within a run. Retained history only; unknown ordering stays unavailable.'),smallTable(['Question encounter','Responses','Accuracy'],summary.encounters.question.map(g=>[g.label,g.count,accuracyCell(g)])),
-    unavailable('Skill first/repeat performance: Not available. These exports do not provide a consistent skill identifier and reliable skill-encounter history.'),
-    fold('Original exposure-counter results',note('Used by the Attempts filter. This question-ID counter also includes earlier rapid guesses and may span revisions.'),smallTable(['Recorded exposure','Responses','Accuracy'],summary.encounters.recorded.map(g=>[g.label,g.count,accuracyCell(g)]))));
+    fold('Encounter definitions and data limits',unavailable('Skill first/repeat performance: Not available. These exports do not provide a consistent skill identifier and reliable skill-encounter history.'),note('The original exposure counter is used by the Attempts filter. This question-ID counter also includes earlier rapid guesses and may span revisions.'),smallTable(['Recorded exposure','Responses','Accuracy'],summary.encounters.recorded.map(g=>[g.label,g.count,accuracyCell(g)]))));
   const remediation=panel('remediation','Instructional support');
   remediation.append(note('Immediate support responses are separate from subsequent retests.'),smallTable(['Recorded role','Responses','Accuracy'],summary.remediation.roles.map(g=>[g.label[0].toUpperCase()+g.label.slice(1),g.count||'Not available',accuracyCell(g)])));
   const linked=summary.remediation.linkedRetests;
@@ -37,7 +55,7 @@ function renderDashboard(){
     fold('Sequence support and limits',note(`${summary.remediation.linkedGroups||'No'} linked remediation groups observed. A group is not proof of a complete sequence.`),unavailable('Sequences initiated, completed, and abandoned: Not available. The current exports do not consistently mark those lifecycle events.'),note('Correct repair answers and retests do not establish mastery or a causal learning gain.')));
   const progression=panel('progression','Game completion and progression'),runMetrics=el('div','','metrics run-metrics');
   runMetrics.append(metric('Successful completions',p.successful,`${p.represented} represented runs`),metric('Ended early',p.early),metric('Unsuccessful endings',p.unsuccessful),metric('Unknown status',p.unknown));
-  progression.append(runMetrics,note('Whole-run context for the runs represented above. Response filters do not shorten these runs. A successful ending means normal mode completion, not mastery.'));
+  progression.append(runMetrics);
   progression.append(table(['Whole-run measure','Value','Coverage / denominator'],[
     ['Successful completion rate',p.successfulRate===null?'Not available':percent(p.successful,p.represented),`${p.successful} successful / ${p.represented} represented; ${p.unknown} unknown included in denominator`],
     ['Median successful completion time',runTime(p.medianSuccessfulTimeMs),`${p.successfulTimedRuns} of ${p.successful} successful runs have end times`],
@@ -45,19 +63,19 @@ function renderDashboard(){
     ['Median overall run duration',runTime(o.medianRunTimeMs),`${o.timedRuns} of ${o.runs} runs; partial clocks may understate duration`],
     ['Mean ended-run duration',runTime(o.averageCompletionTimeMs),`${o.completionRuns} recorded endings, including early / unsuccessful endings`],
     ['Recorded run time',runTime(o.recordedTimeMs),'Total of one maximum clock per represented run'],
-    ['Longest correct-answer streak',o.bestStreak??'Not available',`${o.streakRuns} of ${o.runs} runs have recorded streaks`],
-    ['Checkpoint / boss retry rate','Not available','Explicit, consistently identified retry attempts are not available']
+    ['Longest correct-answer streak',o.bestStreak??'Not available',`${o.streakRuns} of ${o.runs} runs have recorded streaks`]
   ]));
+  progression.append(fold('Completion definitions and data limits',note('Whole-run context for the runs represented above. Response filters do not shorten these runs. A successful ending means normal mode completion, not mastery.'),unavailable('Checkpoint / boss retry rate: Not available. Explicit, consistently identified retry attempts are not available.')));
   progression.append(fold('Review individual runs',table(['Run','Game','Status','Recorded duration','Observed answers','Inspect'],summary.runs.map(r=>{
     const button=el('button','Inspect run');button.type='button';button.addEventListener('click',()=>{byId('run').value=r.key;refresh();byId('overview').scrollIntoView();});
     return [r.runID,r.gameID,outcomeLabel[r.status]+(r.conflict?' (conflicting endings)':''),runTime(r.time),r.answerCount,button];
   }))));
   const timing=panel('timing','Response-time distribution'),bins=el('ul','','distribution');
   for(const bin of summary.distribution){const row=el('li','');row.append(el('span',bin.label),bar(bin.count,o.timedResponses),el('span',`${bin.count} · ${o.timedResponses?percent(bin.count,o.timedResponses):'—'}`,'bin-value'));bins.append(row);}
-  timing.append(note(`Median ${displayTime(o.medianResponseTimeMs)} · Mean ${displayTime(o.averageResponseTimeMs)} · ${o.timedResponses}/${summary.stats.included} timed responses`),bins,note('All positive recorded times are retained. Times can include idle periods, accommodations, and interruptions.'));
+  timing.append(note(`Median ${displayTime(o.medianResponseTimeMs)} · Mean ${displayTime(o.averageResponseTimeMs)} · ${o.timedResponses}/${summary.stats.included} timed responses`),bins,fold('About recorded times',note('All positive recorded times are retained. Times can include idle periods, accommodations, and interruptions.')));
   const cov=panel('coverage','Question-bank coverage'),depth=el('div','','mini-stats');
   for(const [value,label] of [[coverage.encountered,'versions encountered'],[coverage.atLeastFive,'with ≥5 graded responses'],[coverage.atLeastTen,'with ≥10 graded responses']]){const item=el('div','');item.append(el('strong',value),el('span',label));depth.append(item);}
-  cov.append(depth,note('Breadth shows how much content was encountered. Depth shows how many versions have enough responses to review.'),unavailable('Percentage of the bank: Not available. No authoritative complete inventory was supplied.'),el('a','See coverage by topic or learning objective'));
+  cov.append(depth,fold('Coverage definitions and data limits',note('Breadth shows how much content was encountered. Depth shows how many versions have enough responses to review.'),unavailable('Percentage of the bank: Not available. No authoritative complete inventory was supplied.')),el('a','See coverage by topic or learning objective'));
   cov.lastChild.href='#topics';renderTopics();renderReview();
 }
 function topicLabel(g){return byId('grouping').value==='objectives'?MQAnswerAnalysis.objectiveLabel(g):g.topic.replaceAll('_',' ').replaceAll('-',' ');}
@@ -80,13 +98,20 @@ function renderTopics(){
 }
 function renderReview(){
   const groups=MQAnswerAnalysis.reviewQuestions(summary,Number(byId('minimum').value)),node=byId('review-results');node.replaceChildren();
-  byId('review-note').textContent=`Up to five questions with at least ${plural(Number(byId('minimum').value),'graded response')}, lowest accuracy first. Select a question to open its choices. Fewer than five responses or two runs is limited evidence.`;
+  byId('review-note').textContent=`Lowest accuracy first · At least ${plural(Number(byId('minimum').value),'graded response')} per question · Up to five priorities`;
   if(!groups.length){node.append(note('No questions meet the current review threshold. All imported question results remain available below.'));return;}
-  node.append(table(['Question','Responses','Runs','Accuracy','Most common choice marked incorrect'],groups.map((g,i)=>{
+  const list=el('ol','','review-list');
+  for(const [i,g] of groups.entries()){
     const wrong=g.options.filter(o=>o.knownCorrectness>o.correct),max=Math.max(...wrong.map(o=>o.knownCorrectness-o.correct));
-    const cell=el('div','');cell.append(reviewLink(g,i),note(MQAnswerAnalysis.sufficient(g)?'Broader sample':'Limited evidence'));
-    return [cell,g.count,g.runCount,accuracyCell(g),wrong.filter(o=>o.knownCorrectness-o.correct===max).map(o=>`${o.text} (${max})`).join(' / ')];
-  })),note('These are observed answer patterns, not proven misconceptions. Review the wording and reasoning before deciding on a classroom intervention.'));
+    const card=el('li','','review-card'),body=el('div','','review-body'),heading=el('h3',''),stats=el('div','','review-stats');
+    heading.append(reviewLink(g,i));body.append(heading,note(MQAnswerAnalysis.sufficient(g)?'Broader sample':'Limited evidence — fewer than five graded responses or two runs'));
+    const common=wrong.filter(o=>o.knownCorrectness-o.correct===max),choice=el('p','','review-choice');
+    choice.append(el('strong',common.length===1?'Most common incorrect choice: ':'Tied incorrect choices: '),document.createTextNode(common.map(o=>`${o.text} (${max})`).join(' / ')));body.append(choice);
+    stats.append(metric('Accuracy',percent(g.correct,g.knownCorrectness),`${g.correct} / ${g.knownCorrectness} correct`),metric('Responses',g.count,plural(g.runCount,'run')));
+    const link=el('a','View answer choices →','review-action');link.href='#'+questionAnchor(g);link.setAttribute('aria-label',`View answer choices for Review ${i+1}`);link.addEventListener('click',event=>{event.preventDefault();openQuestion(g);});
+    body.append(link);card.append(body,stats);list.append(card);
+  }
+  node.append(list,fold('How review priorities are selected',note('Questions must meet the selected review minimum and have an incorrect response. Fewer than five graded responses or two runs is limited evidence. These are observed answer patterns, not proven misconceptions. Review the wording and reasoning before deciding on a classroom intervention.')));
 }
 function openQuestion(g){
   questionScope=null;byId('question-search').value='';questionPage=Math.floor(orderedQuestions().indexOf(g)/questionPageSize);renderQuestions();
@@ -112,7 +137,7 @@ function renderQuestions(){
     heading.append(el('h3',g.prompt),note(`${plural(g.count,'answer')} · ${percent(g.correct,g.knownCorrectness)} correct (${g.correct}/${g.knownCorrectness}) · ${plural(g.runCount,'run')} · Median ${displayTime(g.medianResponseTimeMs)}`));card.append(heading);
     const legacy=el('span','');legacy.id='question-'+summary.groups.indexOf(g);card.append(legacy);
     const metadata=el('dl','','question-meta');
-    for(const [label,value] of [['Question ID',g.questionID],['Game',g.games.join(', ')],['Topic',g.topics.join(' / ')||'Not supplied'],['Learning objective',g.objectives.join(' / ')||'Not supplied'],['Difficulty',g.difficulty],['Question type',g.types.join(' / ')||'Not supplied'],['Gameplay role',[...g.roles,...g.bossStages].join(' / ')||'Not supplied'],['Saved version',g.revision]]){const pair=el('div','');pair.append(el('dt',label),el('dd',String(value)));metadata.append(pair);}card.append(metadata);
+    for(const [label,value] of [['Question ID',g.questionID],['Game',g.games.join(', ')],['Topic',g.topics.join(' / ')||'Not supplied'],['Learning objective',g.objectives.join(' / ')||'Not supplied'],['Difficulty',difficultyLabel(g.difficulty)],['Question type',g.types.join(' / ')||'Not supplied'],['Gameplay role',[...g.roles,...g.bossStages].join(' / ')||'Not supplied'],['Saved version',g.revision]]){const pair=el('div','');pair.append(el('dt',label),el('dd',String(value)));metadata.append(pair);}card.append(metadata);
     card.append(note(`Exact-version encounters: ${g.encounters.map(e=>`${e.count} ${e.label.toLowerCase()}`).join(' · ')}. ${g.assisted} responses with choices removed.`),note(`Time per answer: median ${displayTime(g.medianResponseTimeMs)} · mean ${displayTime(g.averageResponseTimeMs)} · ${g.timedResponses}/${g.count} timed.`));
     if(g.reportedDifficulties.length&&g.difficulty==='Unknown')card.append(note('Conflicting recorded difficulty labels: '+g.reportedDifficulties.join(' / ')));
     if(g.optionOrder==='displayed')card.append(note('Original answer order was unavailable. Choices are grouped by the order shown.'));
