@@ -1,0 +1,40 @@
+[
+  {
+    "engine": "chromium",
+    "status": "passed",
+    "checks": [
+      "CSV/XLSX/Numbers equivalence",
+      "cross-format duplicates",
+      "Numbers drag/drop",
+      "filters",
+      "multiple tables",
+      "malformed/empty files",
+      "clear during read",
+      "no external requests"
+    ],
+    "accessibility": [
+      {
+        "width": 1440,
+        "violations": []
+      },
+      {
+        "width": 768,
+        "violations": []
+      },
+      {
+        "width": 390,
+        "violations": []
+      }
+    ]
+  },
+  {
+    "engine": "firefox",
+    "status": "unavailable",
+    "reason": "browserType.launch: Executable doesn't exist at C:\\Users\\Jennings\\AppData\\Local\\ms-playwright\\firefox-1538\\firefox\\firefox.exe"
+  },
+  {
+    "engine": "webkit",
+    "status": "unavailable",
+    "reason": "browserType.launch: Executable doesn't exist at C:\\Users\\Jennings\\AppData\\Local\\ms-playwright\\webkit-2336\\Playwright.exe"
+  }
+]

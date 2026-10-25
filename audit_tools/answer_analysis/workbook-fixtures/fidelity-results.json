@@ -1,0 +1,22 @@
+{
+  "synthetic": true,
+  "results": [
+    {
+      "format": "xlsx",
+      "rows": 61,
+      "columns": 88,
+      "identicalCells": true,
+      "identicalAnalysis": true,
+      "bytes": 72907
+    },
+    {
+      "format": "numbers",
+      "rows": 61,
+      "columns": 88,
+      "identicalCells": true,
+      "identicalAnalysis": true,
+      "bytes": 119720
+    }
+  ],
+  "checks": "exact cell strings, 88 headers, all events, analysis equality, cross-format duplicates, text IDs, precision, empty, malformed, missing headers, formulas, dates, errors, archive limits, multiple tables"
+}

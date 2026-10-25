@@ -1,0 +1,15 @@
+SheetJS Community Edition -- https://sheetjs.com/
+Copyright (C) 2012-present SheetJS LLC
+Licensed under the Apache License, Version 2.0.
+See LICENSE.sheetjs.txt for the complete license.
+
+Version: 0.20.3
+Source: https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js
+SHA-256: cc015130aa8521e7f088f88898eba949ccdcbfb38df0bd129b44b7273c3a6f41
+Size: 951904 bytes. Vendored unchanged; no runtime CDN requests.
+Downloaded and reviewed: 2026-10-24.
+
+Used only to read local workbook data in an isolated Web Worker. SheetJS HTML
+rendering, formula execution, macros, and external-link retrieval are not used.
+Check https://cdn.sheetjs.com/advisories/ and the official release page before
+upgrading. Re-run workbook-import-check.mjs and workbook-import-browser.mjs.

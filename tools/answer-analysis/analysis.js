@@ -215,12 +215,16 @@
   // Preserve each import so faculty can add or remove files without losing earlier work.
   function createCollection(){
     const files=new Map(),contents=new Map();let nextID=0;
+    function addRows(name,rows,metadata={}){
+      // Canonical cell contents detect identical imports across CSV and workbook formats.
+      const text=JSON.stringify(rows.map(row=>Object.keys(row).sort().map(k=>[k,String(row[k]??'')])));
+      if(contents.has(text))return false;
+      const id=++nextID;
+      files.set(id,{id,name,format:metadata.format||'CSV',tables:metadata.tables||[],ignored:metadata.ignored||[],rows:rows.map(row=>({...row,__sourceFile:id})),text,answers:analyze(rows).stats.accepted});contents.set(text,id);return true;
+    }
     return {
-      add(name,text){
-        if(contents.has(text))return false;
-        const rows=parseCSV(text),id=++nextID;
-        files.set(id,{id,name,rows:rows.map(row=>({...row,__sourceFile:id})),text,answers:analyze(rows).stats.accepted});contents.set(text,id);return true;
-      },
+      add(name,text){return addRows(name,parseCSV(text));},
+      addRows,
       remove(id){const file=files.get(id);if(file){contents.delete(file.text);files.delete(id);}},
       clear(){files.clear();contents.clear();},
       entries(){return [...files.values()].map(({text,rows,...file})=>file);},

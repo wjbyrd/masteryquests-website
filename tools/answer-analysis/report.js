@@ -54,7 +54,9 @@ function renderFiles(){
   byId('file-count').textContent='('+collection.entries().length+')';
   for(const file of collection.entries()){
     const item=el('li',''),remove=el('button','Remove');remove.type='button';remove.setAttribute('aria-label','Remove '+file.name);
-    item.append(el('span',`${file.name} (${plural(file.answers,'recorded answer')})`),remove);
+    const details=file.tables.length?' · Tables: '+file.tables.join('; '):'';
+    const ignored=file.ignored.length?' · Skipped: '+file.ignored.join('; '):'';
+    item.append(el('span',`${file.name} · ${file.format} (${plural(file.answers,'recorded answer')})${details}${ignored}`),remove);
     remove.addEventListener('click',()=>{collection.remove(file.id);update();});list.append(item);
   }
 }
@@ -79,13 +81,14 @@ function addFiles(files){
     if(generation!==loadGeneration)return;
     byId('import-status').textContent='Reading files…';const errors=[];let added=0,duplicates=0;
     for(const file of files){try{
-      const text=await file.text();if(generation!==loadGeneration)return;
-      if(collection.add(file.name,text))added++;else duplicates++;
+      const imported=await MQFileImport.read(file);if(generation!==loadGeneration)return;
+      const accepted=imported.format==='CSV'?collection.add(file.name,imported.text):collection.addRows(file.name,imported.tables.flatMap(t=>t.rows),{format:imported.format,tables:imported.tables.map(t=>t.name),ignored:imported.ignored});
+      if(accepted)added++;else duplicates++;
     }catch(e){errors.push(`${file.name}: ${e.message}`);}}
     if(generation!==loadGeneration)return;
     byId('errors').textContent=errors.join('\n');
     byId('files').setAttribute('aria-invalid',String(errors.length>0));
-    byId('files').setAttribute('aria-describedby','errors import-status');
+    byId('files').setAttribute('aria-describedby','import-help errors import-status');
     byId('import-status').textContent=`${plural(added,'file')} added. ${plural(duplicates,'identical file')} already loaded. ${plural(collection.entries().length,'file')} in this report.`;
     update();
   });
@@ -101,7 +104,7 @@ byId('question-search').addEventListener('input',()=>{questionPage=0;renderQuest
 byId('show-all-questions').addEventListener('click',()=>{questionScope=null;questionPage=0;byId('question-search').value='';renderQuestions();});
 function resetFilters(){for(const id of ['exposure','assistance','mode','game','run'])byId(id).value='all';byId('minimum').value='5';byId('question-search').value='';questionScope=null;}
 byId('reset-filters').addEventListener('click',()=>{resetFilters();refresh();});
-byId('clear').addEventListener('click',()=>{loadGeneration++;collection.clear();byId('files').value='';byId('files').removeAttribute('aria-invalid');byId('errors').textContent='';byId('import-status').textContent='';byId('summary-editor').hidden=true;byId('summary-text').value='';byId('copy-status').textContent='';resetFilters();update();});
+byId('clear').addEventListener('click',()=>{loadGeneration++;MQFileImport.cancel();collection.clear();byId('files').value='';byId('files').removeAttribute('aria-invalid');byId('errors').textContent='';byId('import-status').textContent='';byId('summary-editor').hidden=true;byId('summary-text').value='';byId('copy-status').textContent='';resetFilters();update();});
 byId('copy-summary').addEventListener('click',async()=>{
   const text=summaryText();byId('summary-editor').hidden=false;byId('summary-text').value=text;
   try{await navigator.clipboard.writeText(text);byId('copy-status').textContent='Class summary copied. You can edit the text below before using it.';}

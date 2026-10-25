@@ -2591,6 +2591,14 @@ body.game-active #soundToggle {
     min-width:150px;
 }
 
+.game-data-help{
+    flex-basis:100%;
+    order:1;
+    font-size:0.85rem;
+    line-height:1.5;
+    margin:6px 0 12px;
+}
+
 .concept-review-section{border-color:rgba(45,212,191,.48);}
 .concept-review-intro{margin:0 0 12px;color:rgba(224,242,254,.82);line-height:1.5;}
 .concept-review-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px;}
@@ -6924,7 +6932,7 @@ function endTimedModeRun(){
     `;
 
     document.getElementById("answers").innerHTML = `
-        <button class="continue-btn" onclick="downloadTelemetryCsv()">Download Game Data</button>
+        <button class="continue-btn" onclick="downloadTelemetryCsv()">Download Game Data (.csv)</button><p class="game-data-help">Submit the original downloaded file. Do not open and resave it in spreadsheet software.</p>
         <button class="continue-btn" onclick="showMasteryReportScreen()">View Mastery Report</button>
         <button class="continue-btn" onclick="restartTimedMode()">Retry Timed Trial</button>
         <button class="continue-btn" onclick="returnToModeSelectFromRun()">Choose Another Assignment</button>
@@ -9465,7 +9473,7 @@ function handleLegendaryVictory(){
     `;
 
     document.getElementById("answers").innerHTML = `
-        <button class="continue-btn" onclick="downloadTelemetryCsv()">Download Game Data</button>
+        <button class="continue-btn" onclick="downloadTelemetryCsv()">Download Game Data (.csv)</button><p class="game-data-help">Submit the original downloaded file. Do not open and resave it in spreadsheet software.</p>
         <button class="continue-btn" onclick="showMasteryReportScreen()">View Mastery Report</button>
         <button class="continue-btn" onclick="startSelectedMode('legendary')">Replay Legendary Mode</button>
         <button class="continue-btn" onclick="returnToModeSelectFromRun()">Choose Another Assignment</button>
@@ -9553,7 +9561,7 @@ function handleScoreAttackVictory(){
     `;
 
     document.getElementById("answers").innerHTML = `
-        <button class="continue-btn" onclick="downloadTelemetryCsv()">Download Game Data</button>
+        <button class="continue-btn" onclick="downloadTelemetryCsv()">Download Game Data (.csv)</button><p class="game-data-help">Submit the original downloaded file. Do not open and resave it in spreadsheet software.</p>
         <button class="continue-btn" onclick="showMasteryReportScreen()">View Mastery Report</button>
         <button class="continue-btn" onclick="restartScoreAttackMode()">Retry Score Attack</button>
         <button class="continue-btn" onclick="returnToModeSelectFromRun()">Choose Another Assignment</button>
@@ -9690,7 +9698,7 @@ function handlePracticeModeComplete(options = {}){
             : `<button class="continue-btn" onclick="startSelectedMode('exam')">Replay Exam Drill</button>`;
 
     document.getElementById("answers").innerHTML = `
-        <button class="continue-btn" onclick="downloadTelemetryCsv()">Download Game Data</button>
+        <button class="continue-btn" onclick="downloadTelemetryCsv()">Download Game Data (.csv)</button><p class="game-data-help">Submit the original downloaded file. Do not open and resave it in spreadsheet software.</p>
         <button class="continue-btn" onclick="showMasteryReportScreen()">View Mastery Report</button>
         ${replayButton}
         <button class="continue-btn" onclick="returnToModeSelectFromRun()">Choose Another Assignment</button>
@@ -9920,9 +9928,7 @@ else if(accuracy < 75){
             <button id="shareBtn" onclick="copyResults()" style="background:linear-gradient(180deg,#f0c86a,#9a6b1f); color:#111827; font-weight:bold; padding:12px 24px; border:1px solid rgba(255,255,255,0.25); border-radius:6px; cursor:pointer;">
                 Copy Results
             </button>
-            <button onclick="downloadTelemetryCsv()" style="background:linear-gradient(180deg,#1d4d73,#04101f); color:#f7d982; font-weight:bold; padding:12px 24px; border:1px solid rgba(247,217,130,0.55); border-radius:6px; cursor:pointer;">
-                Download Game Data
-            </button>
+            <button onclick="downloadTelemetryCsv()" style="background:linear-gradient(180deg,#1d4d73,#04101f); color:#f7d982; font-weight:bold; padding:12px 24px; border:1px solid rgba(247,217,130,0.55); border-radius:6px; cursor:pointer;">Download Game Data (.csv)</button><p class="game-data-help">Submit the original downloaded file. Do not open and resave it in spreadsheet software.</p>
             <button onclick="showMasteryReportScreen()" style="background:linear-gradient(180deg,#1d4d73,#04101f); color:#f7d982; font-weight:bold; padding:12px 24px; border:1px solid rgba(247,217,130,0.55); border-radius:6px; cursor:pointer;">
                 View Mastery Report
             </button>
@@ -10646,7 +10652,7 @@ async function showMasteryReportScreen(options = {}){
 
             <div class="mastery-actions">
                 <button class="continue-btn" onclick="copyMasteryReport()">Copy Report</button>
-                <button class="continue-btn" onclick="downloadTelemetryCsv()">Download Game Data</button>
+                <button class="continue-btn" onclick="downloadTelemetryCsv()">Download Game Data (.csv)</button><p class="game-data-help">Submit the original downloaded file. Do not open and resave it in spreadsheet software.</p>
                 ${report.noMajorWeakness && gameMode !== "legendary" && isFacultyModeSupported("legendary") ? `<button class="continue-btn" onclick="startSelectedMode('legendary')">Enter Legendary Mode</button>` : ""}
                 <button class="continue-btn secondary-modal-btn" onclick="restoreResultsScreen()">Back to Results</button>
                 <button class="continue-btn secondary-modal-btn" onclick="returnToModeSelectFromRun()">Choose Another Assignment</button>
