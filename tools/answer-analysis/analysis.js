@@ -188,8 +188,8 @@
     }
     const supportedDifficulty=result.difficulties.filter(g=>g.label!=='Unknown'&&sufficient(g,Math.max(5,min)));
     if(!s.keyConflicts&&!result.quality.difficultyConflicts&&supportedDifficulty.length>1){
-      lines.push('Authored difficulty observations: '+supportedDifficulty.map(g=>`${g.label}: ${accuracy(g)} (${g.correct}/${g.knownCorrectness}), median response ${responseDuration(g.medianResponseTimeMs)}`).join('; ')+'. Different question mixes and runs may explain these differences.');
-    }else lines.push('Difficulty comparison: insufficient verified authored difficulty or response coverage for a comparison. Unverified recorded labels are kept separate.');
+      lines.push('Difficulty observations: '+supportedDifficulty.map(g=>`${g.label}: ${accuracy(g)} (${g.correct}/${g.knownCorrectness}), median response ${responseDuration(g.medianResponseTimeMs)}`).join('; ')+'. Different question mixes and runs may explain these differences.');
+    }else lines.push('Difficulty comparison: insufficient consistent difficulty data or response coverage for a comparison.');
     const support=result.remediation.roles.filter(g=>g.count);
     if(support.length){
       lines.push('Instructional support observations: '+support.map(g=>`${g.label}: ${accuracy(g)} (${g.correct}/${g.knownCorrectness}; ${plural(g.runCount,'run')}${sufficient(g)?'':'; limited evidence'})`).join('; ')+'. Repair success does not establish mastery.');

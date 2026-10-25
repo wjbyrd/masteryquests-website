@@ -32,8 +32,8 @@ The new `dashboard-analysis.js` enriches the existing analysis result with deter
 | Accuracy | Correct / graded accepted responses with usable snapshots; numerator and denominator remain visible. |
 | Timing | Median is primary; mean and timed-response coverage remain visible. Positive finite times are retained without trimming. |
 | Response distribution | `(0,15s)`, `[15s,30s)`, `[30s,60s)`, `[60s,120s]`, and `(120s,infinity)`. Fractional milliseconds are covered without overlap. |
-| Authored difficulty | Trusted question difficulty from the inspected contract-1 private answer adapter, requiring `answer_evaluated`, `contractID=mq-measurement/1`, and `sourceEvent=question`. Missing or conflicting provenance is Unknown. Standard and game-specific labels are preserved. |
-| Recorded difficulty context | Separate expandable breakdown of exported labels. Explicitly unverified where a local exporter may substitute mode. Never used as authored difficulty or in authored-difficulty feedback comparisons. |
+| Difficulty | Recorded `difficulty` from accepted answers in local and private CSVs. Missing or conflicting labels for an exact question version are Unknown. Mode is not used to fill missing labels. Standard and game-specific labels are preserved. |
+| Conflicting difficulty labels | An expandable raw-label breakdown appears when question versions have conflicting difficulty labels. |
 | Exact-version encounters | Within-run saved question ID + revision, positive integer sequence ordering, and recorded prior exposure. A prior count of zero identifies the first retained encounter. Repeats require an earlier matching revision. A changed version can be first when the earlier ID history is fully accounted for. Otherwise unavailable. |
 | Original exposure counts | Retained separately for compatibility with the existing Attempts filter; includes earlier retained answers and rapid guesses for the question ID. |
 | Repair / bridge / retest accuracy | Response counts and graded accuracy using explicit stage fields, including private snake-case aliases. Conflicting simultaneous roles are not assigned to a normal role. |
@@ -49,12 +49,12 @@ Response filters apply to accuracy, response timing, difficulty, encounter perfo
 
 ## Field-support matrix and deferrals
 
-| Format / family | Responses and timing | Authored difficulty | Exact question encounters | Remediation | Outcomes |
+| Format / family | Responses and timing | Difficulty | Exact question encounters | Remediation | Outcomes |
 |---|---|---|---|---|---|
-| Current Managerial local | Snapshot-based | Unknown unless corroborated by trusted imported metadata for that exact version; raw labels shown separately | Conditional on retained counters, revisions, and ordering | Explicit stage roles; linked retests when origin/order exists | Recognized named endings |
-| Current Composer local | Same | Same local fallback limitation | Same | Same field-based rules | Recognized named endings |
-| Current Macro / Micro / Economic Realm local | Same shared response contract where supplied | Same local fallback limitation | Same field-based rules | Same field-based rules; no inferred missing roles | Recognized named endings |
-| Contract-1 private CSV | Flattened fields or `extras_json` with snapshots | Supported on the verified adapter source-answer path | Conditional on snapshots and ordering | Separate stage columns + origin linkage | Explicit completion status or source ending; generic end event is insufficient |
+| Current Managerial local | Snapshot-based | Supported from the recorded difficulty field | Conditional on retained counters, revisions, and ordering | Explicit stage roles; linked retests when origin/order exists | Recognized named endings |
+| Current Composer local | Same | Supported from the recorded difficulty field | Same | Same field-based rules | Recognized named endings |
+| Current Macro / Micro / Economic Realm local | Same shared response contract where supplied | Supported from the recorded difficulty field | Same field-based rules | Same field-based rules; no inferred missing roles | Recognized named endings |
+| Contract-1 private CSV | Flattened fields or `extras_json` with snapshots | Supported from the recorded difficulty field | Conditional on snapshots and ordering | Separate stage columns + origin linkage | Explicit completion status or source ending; generic end event is insufficient |
 | Historical layouts without snapshots | Accepted records reported as unavailable; no reconstructed answer analysis | Unavailable | Unavailable | Unavailable in question analysis | Not inferred for unrepresented runs |
 
 The matrix is also available in the dashboard's expandable methodology section.
@@ -65,7 +65,6 @@ Deferred measurements are displayed as **Not available**, not manufactured zeroe
 - **Sequences initiated, completed, or abandoned:** stage roles and origin links do not define those lifecycle states. The tool reports observed linked groups without calling them completed sequences. A missing follow-up is not an abandonment event.
 - **Checkpoint/boss retry rate:** checkpoint starts and repeated stage labels do not consistently identify distinct retry attempts. Question IDs, room numbers, or temporal proximity are not used to invent a retry denominator.
 - **Bank percentage:** no authoritative complete, version-matched bank inventory was supplied. No private keys or current banks are downloaded to reconstruct historical content.
-- **Authored difficulty for unverified local records:** the same CSV field can originate from authored question metadata or the mode fallback. The snapshot does not preserve that provenance. A future versioned metadata inventory or explicit provenance field could resolve this; this implementation does not alter telemetry or games.
 - **Unique students and cross-run learning trajectories:** no appropriate identity assumptions are introduced.
 
 ## Layout and workflow changes
@@ -76,10 +75,10 @@ After:
 
 - Compact import area, collapsible file list, explicit imported-file versus represented-run counts, game/run filters, active-selection description, and reset controls.
 - Six compact headline cards, with median response time and accuracy numerator/denominator emphasized.
-- Difficulty immediately after performance; practice and instructional support paired; outcomes separated from response timing.
+- Instructor summary immediately after performance, with its preview open by default; Questions to review comes next, before topic results. Difficulty follows the review section; practice and instructional support are paired; outcomes are separated from response timing.
 - Coverage depth, timing distribution, sortable topics/objectives, and direct topic-to-question browsing.
 - Numbered review links, stable game/question/revision anchors, compatibility with the old `question-N` anchors, and keyboard-operable “Review next.”
-- Question IDs, full stems, topic/objective, difficulty provenance, type/role, runs, timing, saved version, and choice-count bars. Cards remain collapsible.
+- Question IDs, full stems, topic/objective, recorded difficulty, type/role, runs, timing, saved version, and choice-count bars. Cards remain collapsible.
 - Search and 25-card pagination for large banks. Browsing/pagination never changes dashboard totals or exports.
 - Instructor feedback preview, editable copy workflow, plain-text teaching-summary download, and expanded CSV outputs.
 - Persistent data-quality warnings; secondary definitions and support limitations in expandable sections.
@@ -91,7 +90,7 @@ No external charting library is used. Decorative bars are hidden from assistive 
 Passed:
 
 1. `node build/faculty-build-composer/tests/run_answer_analysis_validation.mjs` — existing parser, snapshot, deduplication, filters, timing, feedback, and 17-engine integration regressions.
-2. `node audit_tools/answer_analysis/dashboard-check.mjs` — outcomes/denominators, early and unsuccessful endings, duplicate/conflicting endings, authored-difficulty provenance, aliases and unknown labels, question revisions, sequence ordering, explicit remediation links, filtered linkage, timing boundaries, missing data, and all 11 registered CSV layouts.
+2. `node audit_tools/answer_analysis/dashboard-check.mjs` — outcomes/denominators, early and unsuccessful endings, duplicate/conflicting endings, recorded difficulty across local/private exports, aliases and unknown labels, question revisions, sequence ordering, explicit remediation links, filtered linkage, timing boundaries, missing data, and all 11 registered CSV layouts.
 3. `node audit_tools/answer_analysis/class-browser.mjs` — cumulative imports, duplicate imports, removal, malformed files, 30-file batches, filters, clear during pending reads, rapid sequential imports, drag/drop, and responsive layout.
 4. `node audit_tools/answer_analysis/review-browser.mjs` — five review links, duplicate stems across revisions, keyboard focus, summary numbering, filtered links, exports, unknown outcomes, and mobile layout.
 5. `node audit_tools/answer_analysis/release-browser.mjs` — native clipboard and denied-clipboard fallback, exported totals, authoritative zero-selected correct answers, table keyboard scrolling, long strings, labels/headings, malformed import alerts, and existing resource links.
@@ -172,3 +171,11 @@ node audit_tools/public_site_publication/build-dist.mjs
 ```
 
 This regenerates the repository's `dist/` output; it does not deploy. Keep fixtures and student files outside public source trees. The unchanged builder explicitly excludes audit tooling, temporary data, private-course sources, faculty exports, and test directories.
+
+## Difficulty and instructor workflow correction
+
+Local CSV difficulty is now included in the main breakdown, question cards, teaching summary, and CSV download. The previous blanket private-contract requirement incorrectly hid populated local difficulty fields. Empty labels and contradictory labels for one saved question version remain Unknown. CSV output uses `difficulty` / `recorded_difficulty` sections and a `difficulty` column in place of the misleading authored/unverified names. No gameplay or telemetry changes were needed.
+
+The instructor summary now follows the overview with its preview expanded. Questions to review follows the summary, ahead of Results by topic. Navigation follows the same reading order. The live Cost Directive screenshot documents the reported issue; exact live totals still require the source CSVs, which are not attached.
+
+Correction validation passed: the existing answer-analysis validation suite, dashboard calculation checks across all 11 registered CSV schemas, browser checks for difficulty totals/cards/feedback/CSV exports and the new section order, desktop/tablet/mobile accessibility scans, and the local publication build (2,411 files; no forbidden files). Refreshed dashboard screenshots and browser evidence are saved alongside the existing evidence.

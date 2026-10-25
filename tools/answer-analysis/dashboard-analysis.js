@@ -14,11 +14,9 @@
     return new Set(roles).size>1?'Conflicting roles':roles[0]||'Not supplied';
   }
   const difficultyName=value=>{const v=text(value);if(!v||/^(unknown|none|null|undefined|n\/a|not supplied|not available|\d+)$/i.test(v))return 'Unknown';const common=['Easy','Medium','Hard','Elite','Legendary'].find(label=>label.toLowerCase()===v.toLowerCase());return common||v[0].toUpperCase()+v.slice(1);};
-  // The inspected local exporters fall back to game mode. Only the contract-1
-  // private answer adapter reads question.difficulty without that fallback.
-  function authoredDifficulty(r){
-    return event(r)==='answer_evaluated'&&r.contractID==='mq-measurement/1'&&r.sourceEvent==='question'?difficultyName(r.difficulty):'Unknown';
-  }
+  // Accepted answers in both local and private exports carry difficulty.
+  // Read that field directly; do not infer a missing value from mode.
+  function recordedDifficulty(r){return difficultyName(r.difficulty);}
   function stats(items){
     const times=items.map(a=>responseTime(a.row)).filter(v=>v>0),graded=items.filter(a=>known(a.row.correct));
     return {count:items.length,correct:graded.filter(a=>correct(a.row.correct)).length,knownCorrectness:graded.length,
@@ -73,7 +71,7 @@
     let difficultyConflicts=0,roleConflicts=0;
     const metadata=new Map();
     for(const [k,items] of grouped){
-      const levels=[...new Set(items.map(a=>authoredDifficulty(a.row)).filter(v=>v!=='Unknown'))];
+      const levels=[...new Set(items.map(a=>recordedDifficulty(a.row)).filter(v=>v!=='Unknown'))];
       const roles=[...new Set(items.map(a=>role(a.row)).filter(v=>v!=='Not supplied'))];
       const conflict=levels.length>1;if(conflict)difficultyConflicts++;
       if(roles.includes('Conflicting roles'))roleConflicts++;
@@ -154,6 +152,6 @@
       runs:[...new Map(allAnswers.filter(a=>a.runKey).map(a=>[a.runKey,{id:a.runKey,label:(a.row.game||a.row.game_id||JSON.parse(a.key)[0])+' · '+(a.row.runID||a.row.run_id)}])).values()]};
     return result;
   }
-  const api={enrich,median,stats,authoredDifficulty,endStatus};
+  const api={enrich,median,stats,recordedDifficulty,endStatus};
   if(typeof module==='object'&&module.exports)module.exports=api;else root.MQDashboardAnalysis=api;
 })(globalThis);

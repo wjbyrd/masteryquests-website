@@ -8,7 +8,15 @@ const rows=dashboardRows(),result=a.analyze(rows),p=result.progression;
 assert.equal(result.stats.included,48);assert.equal(result.overview.correct,20);assert.equal(result.overview.runs,6);
 assert.deepEqual([p.successful,p.early,p.unsuccessful,p.unknown],[3,1,1,1]);assert.equal(p.successfulRate,.5);
 assert.equal(p.medianSuccessfulTimeMs,660000);assert.equal(p.medianAnswersPerSuccess,8);assert.equal(result.overview.averageCompletionTimeMs,720000);
-assert.equal(result.difficulties.find(g=>g.label==='Unknown').count,48,'Mode-fallback local difficulty is unverified');
+assert.deepEqual(result.difficulties.filter(g=>g.count).map(g=>[g.label,g.count]),[['Easy',12],['Medium',12],['Hard',12],['Legendary',12]],'Local difficulty must populate the main breakdown');
+assert.equal(result.difficulties.reduce((n,g)=>n+g.count,0),48);
+assert.equal(result.difficulties.find(g=>g.label==='Easy').correct,12);
+assert.equal(result.difficulties.find(g=>g.label==='Easy').medianResponseTimeMs,34500);
+assert(a.feedbackSummary(result).includes('Difficulty observations:'));
+assert.deepEqual(a.analyze(rows.map(r=>({...r,mode:'legendary'}))).difficulties,result.difficulties,'Mode must not override recorded difficulty');
+assert.equal(a.analyze(rows.map(r=>({...r,difficulty:'',mode:'hard'}))).difficulties.find(g=>g.label==='Unknown').count,48,'Missing difficulty must not be inferred from mode');
+const localConflict=structuredClone(rows);localConflict.find(r=>r.event==='question').difficulty='hard';
+assert.equal(a.analyze(localConflict).difficulties.find(g=>g.label==='Unknown').count,12,'Conflicting labels remain visible as Unknown');
 assert.deepEqual(result.encounters.question.map(g=>g.count),[24,24,0]);assert.equal(result.encounters.skill,null);
 assert.deepEqual(result.remediation.roles.map(g=>g.count),[6,6,6]);assert.equal(result.remediation.linkedRetests.count,6);assert.equal(result.remediation.linkedRetests.correct,1);
 assert.equal(result.remediation.completed,null);assert.equal(result.coverage.atLeastFive,4);assert.equal(result.coverage.atLeastTen,4);assert.equal(result.coverage.bankTotal,null);
@@ -53,6 +61,8 @@ const missingPrefix=revised.slice(4);assert.equal(a.analyze(missingPrefix).encou
 const missingTopic=structuredClone(firstEight);missingTopic[0].tag='';assert(a.analyze(missingTopic).groups.find(g=>g.questionID==='S1').topics.includes('Topic unavailable'));
 for(const game of ['Cost Directive','National Engine','Labyrinth of Choice','Market Gate','Faculty Composer']){
   const result=a.analyze(a.parseCSV(csv(rows.map(r=>({...r,game})))));assert.equal(result.stats.included,48);assert.equal(result.overview.correct,20);
+  assert.equal(result.difficulties.find(g=>g.label==='Legendary').count,12,game+' local CSV difficulty');
+  assert.equal(result.groups.find(g=>g.questionID==='S1').difficulty,'Easy',game+' question card difficulty');
 }
 const schemas=JSON.parse(fs.readFileSync(new URL('../telemetry_contract/schema.json',import.meta.url),'utf8')).schemas;
 for(const schema of schemas){
@@ -66,7 +76,7 @@ for(const schema of schemas){
   const parsed=a.analyze(a.parseCSV(csv(records)));
   assert.equal(parsed.stats.accepted,48,schema.id);assert.equal(parsed.stats.included,hasSnapshots?48:0,schema.id);
   assert.equal(parsed.stats.unresolved,hasSnapshots?0:48,schema.id);
-  if(hasSnapshots)assert.equal(parsed.overview.correct,20,schema.id);
+  if(hasSnapshots){assert.equal(parsed.overview.correct,20,schema.id);assert.equal(parsed.difficulties.find(g=>g.label==='Easy').count,12,schema.id+' difficulty');}
 }
 const reference=a.analyze(referenceShapeRows());
 assert.deepEqual([reference.overview.runs,reference.stats.included,reference.groups.length,reference.overview.correct,reference.overview.medianResponseTimeMs,reference.overview.averageResponseTimeMs],[18,881,354,787,33000,94000]);
