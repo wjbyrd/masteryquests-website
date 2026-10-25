@@ -1,0 +1,113 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import http from 'node:http';
+import assert from 'node:assert/strict';
+import {createRequire} from 'node:module';
+import {dashboardRows} from './dashboard-fixtures.mjs';
+import {csv} from './release-fixtures.mjs';
+
+const require=createRequire(import.meta.url),root=process.cwd();
+const out=path.join(root,'tmp/answer-release/onboarding');fs.mkdirSync(out,{recursive:true});
+const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
+const server=http.createServer((req,res)=>{try{
+  let file=path.resolve(root,'.'+new URL(req.url,'http://local').pathname);
+  if(!file.startsWith(root+path.sep))throw Error('path');
+  if(fs.statSync(file).isDirectory())file=path.join(file,'index.html');
+  res.setHeader('Content-Type',({'.html':'text/html','.js':'text/javascript','.css':'text/css'})[path.extname(file)]||'application/octet-stream');
+  res.end(fs.readFileSync(file));
+}catch{res.writeHead(404).end();}});
+await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+const origin='http://127.0.0.1:'+server.address().port;let browser;
+try{
+  browser=await chromium.launch({channel:'msedge',headless:true});
+  const context=await browser.newContext({viewport:{width:1440,height:1000},permissions:['clipboard-read','clipboard-write'],acceptDownloads:true});
+  const page=await context.newPage(),errors=[],external=[],accessibility=[];
+  page.on('pageerror',error=>errors.push(error.message));
+  await context.route('**/*',route=>{if(route.request().url().startsWith(origin))return route.continue();external.push(route.request().url());return route.abort();});
+  await page.goto(origin+'/tools/answer-analysis/');
+  assert(await page.locator('#selection-controls').isHidden());
+  assert(await page.locator('#loaded-files').isHidden());
+  assert((await page.locator('#getting-started').innerText()).includes('Download Game Data (.csv)'));
+  assert.equal(await page.locator('.welcome-steps li').count(),3);
+  await page.addScriptTag({path:process.env.AXE_MODULE||path.join(root,'tmp/answer-release/a11y/node_modules/axe-core/axe.min.js')});
+  async function inspect(state){
+    for(const width of [1440,768,390]){
+      await page.setViewportSize({width,height:1000});
+      assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),state+' overflow at '+width);
+      await page.evaluate(()=>scrollTo(0,0));
+      await page.screenshot({path:path.join(out,`${state}-${width}.png`),fullPage:state==='welcome'});
+      const violations=await page.evaluate(async()=>{const results=await axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','best-practice']}});return results.violations.map(v=>({id:v.id,targets:v.nodes.map(n=>n.target)}));});
+      accessibility.push({state,width,violations});assert.deepEqual(violations,[]);
+    }
+  }
+  await inspect('welcome');await page.setViewportSize({width:1440,height:1000});
+  await page.locator('#try-sample').focus();await page.keyboard.press('Enter');
+  assert(await page.locator('#sample-notice').isVisible());
+  assert(await page.locator('#selection-controls').isVisible());
+  assert(await page.locator('#exposure').isHidden());
+  assert((await page.locator('#status').innerText()).startsWith('48 recorded answers'));
+  assert.equal(await page.locator('#file-list li').count(),1);
+  assert((await page.locator('#overview').innerText()).includes('not a mastery score'));
+  assert.equal(await page.locator('.review-card').count(),3);
+  await inspect('sample');await page.setViewportSize({width:1440,height:1000});
+  await page.getByRole('link',{name:'View answer choices for Review 1',exact:true}).click();
+  assert(await page.locator('.question[open] summary').evaluate(node=>document.activeElement===node));
+  await page.locator('#edit-summary').click();
+  assert(await page.locator('#summary-text').evaluate(node=>document.activeElement===node));
+  assert((await page.locator('#summary-text').inputValue()).startsWith('SAMPLE DATA'));
+  const draft='Instructor edits: revisit tax incidence, then use a new example.';
+  await page.locator('#summary-text').fill(draft);
+  for(let i=0;i<2;i++){
+    await page.locator('#copy-summary').click();
+    await page.waitForFunction(()=>document.querySelector('#copy-status').textContent==='Your edited summary was copied.');
+    assert.equal(await page.evaluate(()=>navigator.clipboard.readText()),draft);
+    assert.equal(await page.locator('#summary-text').inputValue(),draft);
+  }
+  await page.locator('#mode').selectOption('quiz');
+  assert.equal(await page.locator('#summary-text').inputValue(),draft);
+  assert((await page.locator('#draft-status').innerText()).includes('results have changed'));
+  await page.locator('#copy-summary').click();assert.equal(await page.evaluate(()=>navigator.clipboard.readText()),draft);
+  const [download]=await Promise.all([page.waitForEvent('download'),page.locator('#download-feedback').click()]);
+  const destination=path.join(out,'edited-summary.txt');await download.saveAs(destination);assert.equal(fs.readFileSync(destination,'utf8'),draft);
+  await page.locator('#regenerate-summary').click();
+  assert((await page.locator('#summary-text').inputValue()).includes('24 accepted responses'));
+  await page.locator('#undo-summary').click();assert.equal(await page.locator('#summary-text').inputValue(),draft);
+  assert((await page.locator('#draft-status').innerText()).includes('results have changed'));
+  await page.locator('#more-options > summary').click();
+  await page.locator('#minimum').selectOption('20');
+  assert((await page.locator('#advanced-filter-count').innerText()).includes('1 changed'));
+  await page.locator('#grouping').selectOption('objectives');
+  await page.locator('#reset-filters').click();
+  assert.equal(await page.locator('#grouping').inputValue(),'topics');
+  assert.equal(await page.locator('#advanced-filter-count').innerText(),'');
+  assert.equal(await page.locator('#summary-text').inputValue(),draft);
+  await page.locator('.export-options > summary').click();
+  await inspect('editing');await page.setViewportSize({width:1440,height:1000});
+  await page.locator('#instructor-summary').screenshot({path:path.join(out,'summary-editor.png')});
+  await page.locator('#files').setInputFiles({name:'invalid.csv',mimeType:'text/csv',buffer:Buffer.from('not game data')});
+  await page.waitForFunction(()=>document.querySelector('#errors').textContent.includes('invalid.csv'));
+  assert(await page.locator('#sample-notice').isVisible());
+  assert((await page.locator('#status').innerText()).startsWith('48 recorded answers'));
+  await page.locator('#files').setInputFiles({name:'class.csv',mimeType:'text/csv',buffer:Buffer.from(csv(dashboardRows().filter(r=>r.runID==='run-0')))});
+  await page.waitForFunction(()=>document.querySelector('#status').textContent.startsWith('8 recorded answers'));
+  assert(await page.locator('#sample-notice').isHidden());
+  assert(await page.locator('#try-sample').isHidden());
+  assert.equal(await page.locator('#file-list li').count(),1);
+  assert((await page.locator('#file-list').textContent()).includes('class.csv'));
+  assert.equal(await page.locator('#summary-text').inputValue(),draft);
+  assert((await page.locator('#draft-status').innerText()).includes('results have changed'));
+  await page.locator('#regenerate-summary').click();
+  assert(!(await page.locator('#summary-text').inputValue()).includes('SAMPLE DATA'));
+  await page.evaluate(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async()=>{throw Error('Denied');}}}));
+  await page.locator('#summary-text').fill(draft);await page.locator('#copy-summary').click();
+  await page.waitForFunction(()=>document.querySelector('#copy-status').textContent.includes('Clipboard access is unavailable'));
+  assert(await page.locator('#summary-text').evaluate(node=>document.activeElement===node&&node.selectionEnd===node.value.length));
+  assert.equal(await page.locator('#summary-text').inputValue(),draft);
+  await page.locator('#clear').click();assert(await page.locator('#empty-state').isVisible());
+  await page.locator('#try-sample').click();await page.locator('#leave-sample').click();
+  assert(await page.locator('#try-sample').evaluate(node=>document.activeElement===node));
+  assert(await page.locator('#selection-controls').isHidden());
+  assert.deepEqual(errors,[]);assert.deepEqual(external,[]);
+  fs.writeFileSync(path.join(out,'results.json'),JSON.stringify({accessibility,errors,external},null,2));
+  console.log('PASS: first-use guidance, keyboard sample, sample isolation/replacement, review links, draft edit/copy/filter/download/regenerate/undo, clipboard fallback, reset, responsive layout and nine accessibility scans.');
+}finally{await browser?.close();server.close();}

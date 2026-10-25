@@ -1,5 +1,6 @@
 'use strict';
 let records=[],summary=null;
+let sampleMode=false,draftBase='',draftEdited=false,previousDraft=null;
 const collection=MQAnswerAnalysis.createCollection();
 const byId=id=>document.getElementById(id);
 function el(tag,text,className){const node=document.createElement(tag);node.textContent=text;if(className)node.className=className;return node;}
@@ -13,7 +14,17 @@ function reviewLink(g,index){
   });
   return link;
 }
-function summaryText(){return MQAnswerAnalysis.feedbackSummary(summary,{fileCount:collection.entries().length,minResponses:Number(byId('minimum').value),grouping:byId('grouping').value});}
+function summaryText(){return (sampleMode?'SAMPLE DATA — Fictional economics class\n\n':'')+MQAnswerAnalysis.feedbackSummary(summary,{fileCount:collection.entries().length,minResponses:Number(byId('minimum').value),grouping:byId('grouping').value});}
+function draftText(){return byId('summary-editor').hidden?summaryText():byId('summary-text').value;}
+function updateDraftStatus(){
+  const stale=draftEdited&&draftBase!==summaryText();
+  byId('draft-status').textContent=stale?'The results have changed since you edited this draft. Your edits are preserved; copy and download still use this draft. Review it or replace it with the current results.':draftEdited?'Your edits are preserved. Copy and download will use this draft.':'';
+  byId('draft-status').classList.toggle('stale',stale);
+}
+function openSummaryEditor(){
+  if(byId('summary-editor').hidden){draftBase=summaryText();byId('summary-text').value=draftBase;draftEdited=false;byId('summary-editor').hidden=false;}
+  updateDraftStatus();
+}
 function table(headers,rows){
   const wrap=el('div','','table-wrap'),node=el('table',''),head=el('thead',''),tr=el('tr','');
   wrap.tabIndex=0;wrap.setAttribute('role','region');wrap.setAttribute('aria-label',headers.join(', ')+' table');
@@ -26,8 +37,16 @@ function refresh(){
   const filters=Object.fromEntries(['exposure','assistance','mode','game','run'].map(id=>[id,byId(id).value]));
   summary=MQAnswerAnalysis.analyze(records,filters);
   const s=summary.stats,o=summary.overview,q=summary.quality;
+  document.body.classList.toggle('has-report',Boolean(records.length));
   byId('dashboard').hidden=!records.length;byId('dashboard-nav').hidden=!records.length;byId('empty-state').hidden=Boolean(records.length);
+  byId('selection-controls').hidden=!records.length;byId('loaded-files').hidden=!collection.entries().length;
+  byId('sample-start').hidden=Boolean(collection.entries().length);byId('sample-notice').hidden=!sampleMode;
+  byId('getting-started').hidden=Boolean(records.length);
+  byId('import-heading').textContent=records.length?'Your class files':'Start with your class’s game files';
+  const advancedCount=['exposure','assistance'].filter(id=>byId(id).value!=='all').length+(byId('minimum').value!=='5'?1:0);
+  byId('advanced-filter-count').textContent=advancedCount?`(${advancedCount} changed)`:'';
   byId('status').textContent=`${plural(s.accepted,'recorded answer')} · ${s.included} shown · ${s.unresolved} without usable saved question details · ${plural(s.duplicates,'duplicate row')} skipped · ${plural(s.rapidGuesses,'rapid guess','rapid guesses')} and ${plural(s.drafts,'exam draft')} excluded.`;
+  if(!records.length)byId('status').textContent='';
   const warnings=[];
   if(s.unresolved)warnings.push(`${s.unresolved} accepted responses lack usable saved question details and are excluded.`);
   if(s.keyConflicts)warnings.push(`${s.keyConflicts} question versions have conflicting answer-key or grading information. Correct answers are withheld.`);
@@ -45,10 +64,15 @@ function refresh(){
   questionScope=null;questionPage=0;
   renderOverview();renderQuestions();
   byId('copy-summary').disabled=!s.accepted;byId('download-feedback').disabled=!s.accepted;
+  byId('edit-summary').disabled=!s.accepted;
   byId('download-summary').disabled=!summary.groups.length;byId('download').disabled=!summary.groups.length;
   byId('feedback-preview').textContent=summaryText();
   renderSummaryHighlights(byId('feedback-preview').textContent);
-  if(!byId('summary-editor').hidden){byId('summary-text').value=summaryText();byId('copy-status').textContent='Summary updated for the current selection. Copy it again to use these results.';}
+  if(!byId('summary-editor').hidden){
+    if(!draftEdited){draftBase=summaryText();byId('summary-text').value=draftBase;}
+    updateDraftStatus();
+  }
+  byId('copy-status').textContent='';
 }
 function renderFiles(){
   const list=byId('file-list');list.replaceChildren();
@@ -58,7 +82,7 @@ function renderFiles(){
     const details=file.tables.length?' · Tables: '+file.tables.join('; '):'';
     const ignored=file.ignored.length?' · Skipped: '+file.ignored.join('; '):'';
     item.append(el('span',`${file.name} · ${file.format} (${plural(file.answers,'recorded answer')})${details}${ignored}`),remove);
-    remove.addEventListener('click',()=>{collection.remove(file.id);update();});list.append(item);
+    remove.addEventListener('click',()=>{collection.remove(file.id);if(!collection.entries().length)sampleMode=false;update();});list.append(item);
   }
 }
 function update(){
@@ -80,10 +104,14 @@ function addFiles(files){
   const generation=loadGeneration;
   importQueue=importQueue.then(async()=>{
     if(generation!==loadGeneration)return;
+    const firstImport=!collection.entries().length;
     byId('import-status').textContent='Reading files…';const errors=[];let added=0,duplicates=0;
     for(const file of files){try{
       const imported=await MQFileImport.read(file);if(generation!==loadGeneration)return;
-      const accepted=imported.format==='CSV'?collection.add(file.name,imported.text):collection.addRows(file.name,imported.tables.flatMap(t=>t.rows),{format:imported.format,tables:imported.tables.map(t=>t.name),ignored:imported.ignored});
+      // Validate before replacing the sample so an invalid upload leaves it usable.
+      const rows=imported.format==='CSV'?MQAnswerAnalysis.parseCSV(imported.text):imported.tables.flatMap(t=>t.rows);
+      if(sampleMode){collection.clear();sampleMode=false;resetFilters();}
+      const accepted=collection.addRows(file.name,rows,imported.format==='CSV'?{}:{format:imported.format,tables:imported.tables.map(t=>t.name),ignored:imported.ignored});
       if(accepted)added++;else duplicates++;
     }catch(e){errors.push(`${file.name}: ${e.message}`);}}
     if(generation!==loadGeneration)return;
@@ -92,6 +120,7 @@ function addFiles(files){
     byId('files').setAttribute('aria-describedby','import-help errors import-status');
     byId('import-status').textContent=`${plural(added,'file')} added. ${plural(duplicates,'identical file')} already loaded. ${plural(collection.entries().length,'file')} in this report.`;
     update();
+    if(firstImport&&added&&summary.stats.included&&!errors.length){byId('overview').tabIndex=-1;byId('overview').focus();}
   });
 }
 byId('files').addEventListener('change',event=>{const files=Array.from(event.target.files);event.target.value='';addFiles(files);});
@@ -103,12 +132,32 @@ for(const id of ['exposure','assistance','mode','game','run','grouping','minimum
 byId('topic-sort').addEventListener('change',renderTopics);
 byId('question-search').addEventListener('input',()=>{questionPage=0;renderQuestions();});
 byId('show-all-questions').addEventListener('click',()=>{questionScope=null;questionPage=0;byId('question-search').value='';renderQuestions();});
-function resetFilters(){for(const id of ['exposure','assistance','mode','game','run'])byId(id).value='all';byId('minimum').value='5';byId('question-search').value='';questionScope=null;}
+function resetFilters(){for(const id of ['exposure','assistance','mode','game','run'])byId(id).value='all';byId('grouping').value='topics';byId('minimum').value='5';byId('question-search').value='';questionScope=null;}
 byId('reset-filters').addEventListener('click',()=>{resetFilters();refresh();});
-byId('clear').addEventListener('click',()=>{loadGeneration++;MQFileImport.cancel();collection.clear();byId('files').value='';byId('files').removeAttribute('aria-invalid');byId('errors').textContent='';byId('import-status').textContent='';byId('summary-editor').hidden=true;byId('summary-text').value='';byId('copy-status').textContent='';resetFilters();update();});
+function clearReport(){loadGeneration++;MQFileImport.cancel();collection.clear();sampleMode=false;draftBase='';draftEdited=false;previousDraft=null;byId('undo-summary').hidden=true;byId('files').value='';byId('files').removeAttribute('aria-invalid');byId('errors').textContent='';byId('import-status').textContent='';byId('summary-editor').hidden=true;byId('summary-text').value='';byId('copy-status').textContent='';byId('more-options').open=false;resetFilters();update();}
+byId('clear').addEventListener('click',clearReport);
+byId('leave-sample').addEventListener('click',()=>{clearReport();byId('try-sample').focus();});
+byId('try-sample').addEventListener('click',()=>{
+  if(collection.entries().length)return;
+  collection.addRows('Sample economics class (fictional)',MQSampleData());sampleMode=true;resetFilters();update();
+  byId('import-status').textContent='Sample loaded. Start with the class overview, then explore the instructor summary and review questions.';
+  byId('overview').tabIndex=-1;byId('overview').focus();
+});
+byId('edit-summary').addEventListener('click',()=>{openSummaryEditor();byId('summary-text').focus();});
+byId('summary-text').addEventListener('input',()=>{draftEdited=byId('summary-text').value!==draftBase;updateDraftStatus();});
+byId('regenerate-summary').addEventListener('click',()=>{
+  previousDraft={text:byId('summary-text').value,base:draftBase,edited:draftEdited};
+  draftBase=summaryText();byId('summary-text').value=draftBase;draftEdited=false;byId('undo-summary').hidden=false;
+  updateDraftStatus();byId('copy-status').textContent='Draft replaced with the current results. You can undo this replacement.';
+});
+byId('undo-summary').addEventListener('click',()=>{
+  if(!previousDraft)return;
+  byId('summary-text').value=previousDraft.text;draftBase=previousDraft.base;draftEdited=previousDraft.edited;previousDraft=null;byId('undo-summary').hidden=true;
+  updateDraftStatus();byId('copy-status').textContent='Previous draft restored.';
+});
 byId('copy-summary').addEventListener('click',async()=>{
-  const text=summaryText();byId('summary-editor').hidden=false;byId('summary-text').value=text;
-  try{await navigator.clipboard.writeText(text);byId('copy-status').textContent='Class summary copied. You can edit the text below before using it.';}
+  openSummaryEditor();const text=draftText();
+  try{await navigator.clipboard.writeText(text);byId('copy-status').textContent=draftEdited?'Your edited summary was copied.':'Class summary copied.';}
   catch(_){byId('copy-status').textContent='Clipboard access is unavailable. Select the summary below and use your device’s Copy command.';byId('summary-text').focus();byId('summary-text').select();}
 });
 function downloadCSV(rows,name){
@@ -118,7 +167,7 @@ function downloadCSV(rows,name){
   byId('copy-status').textContent=`Download prepared: ${name}.`;
 }
 byId('download-feedback').addEventListener('click',()=>{
-  const content=byId('summary-editor').hidden?summaryText():byId('summary-text').value;
+  const content=draftText();
   const url=URL.createObjectURL(new Blob([content],{type:'text/plain;charset=utf-8'})),link=el('a','');link.href=url;link.download='mastery-quests-teaching-summary.txt';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
   byId('copy-status').textContent='Teaching summary download prepared.';
 });

@@ -47,6 +47,7 @@ try{
     assert((await page.locator('#summary-highlights').innerText()).includes('tax incidence less elastic side'));
     assert.equal(await page.locator('#review-results table').count(),0);
     assert.equal(await page.locator('.review-card').count(),3);
+    await page.locator('#more-options > summary').click();
     await page.locator('#minimum').selectOption('20');assert((await page.locator('#summary-highlights').innerText()).includes('More evidence needed'));await page.locator('#minimum').selectOption('5');
     await page.locator('#grouping').selectOption('objectives');assert((await page.locator('#summary-highlights').innerText()).includes('Priority objective'));await page.locator('#grouping').selectOption('topics');
     await page.getByRole('link',{name:'View answer choices for Review 1',exact:true}).click();
@@ -77,6 +78,7 @@ try{
     await page.locator('#copy-summary').click();
     const feedback=await page.locator('#summary-text').inputValue();assert(feedback.includes('Game progression: 3 successful completions'));assert(feedback.includes('Time per answered question:'));
     assert(feedback.includes('Difficulty observations:'));
+    await page.locator('.export-options > summary').click();
     const [download]=await Promise.all([page.waitForEvent('download'),page.locator('#download-summary').click()]);
     const csvPath=path.join(out,'filtered-summary.csv');await download.saveAs(csvPath);
     const table=parseCSV(fs.readFileSync(csvPath,'utf8')),header=table.shift().map(v=>v.replace(/^\uFEFF/,''));assert(table.every(row=>row.length===header.length));

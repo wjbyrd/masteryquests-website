@@ -8,10 +8,22 @@
         "impact": "serious",
         "targets": [
           [
+            "a[href$=\"how-to/\"]"
+          ],
+          [
+            "h1"
+          ],
+          [
+            ".local-note"
+          ],
+          [
             "#summary-text"
           ]
         ],
         "summary": [
+          "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
           "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         ]
       }
@@ -27,10 +39,26 @@
         "impact": "serious",
         "targets": [
           [
+            "a[href$=\"how-to/\"]"
+          ],
+          [
+            "h1"
+          ],
+          [
+            ".local-note"
+          ],
+          [
+            "#feedback-preview"
+          ],
+          [
             "#summary-text"
           ]
         ],
         "summary": [
+          "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
           "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         ]
       }
@@ -45,6 +73,15 @@
         "id": "color-contrast",
         "impact": "serious",
         "targets": [
+          [
+            "a[href$=\"how-to/\"]"
+          ],
+          [
+            "h1"
+          ],
+          [
+            ".local-note"
+          ],
           [
             "#summary-text"
           ],
@@ -86,6 +123,9 @@
           ],
           [
             "#encounters > .compact-table.table-wrap[role=\"region\"] > table > tbody > tr:nth-child(3) > td:nth-child(3) > .rate"
+          ],
+          [
+            "#remediation > .compact-table.table-wrap[role=\"region\"] > table > tbody > tr:nth-child(1) > td:nth-child(3) > .rate"
           ],
           [
             "#progression > .table-wrap[role=\"region\"] > table > tbody > tr:nth-child(1) > td:nth-child(3)"
@@ -154,9 +194,6 @@
             "tr:nth-child(4) > td:nth-child(7) > .evidence"
           ],
           [
-            "#q-WyJzeW50aGV0aWMtbWFya2V0IiwiVDEiLCJjYzJhM2UwMzMzNmU4ZjcwZDcyMjBiYzg4YzMxMGI0ZmE4N2IwMzljMWE0OGNkMWZjYmQyZjBmYTI0NmEyMDNiIl0 > summary > h3"
-          ],
-          [
             "caption"
           ],
           [
@@ -185,6 +222,9 @@
           ]
         ],
         "summary": [
+          "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+          "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
           "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
           "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
           "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
@@ -221,7 +261,7 @@
           "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
           "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
           "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
-          "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements",
+          "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
           "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
           "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
           "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",

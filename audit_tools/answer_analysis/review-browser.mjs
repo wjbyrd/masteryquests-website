@@ -36,7 +36,7 @@ try{
     answerSnapshotJSON:JSON.stringify({...JSON.parse(row.answerSnapshotJSON),questionRevision:version.repeat(64)})
   })));
   async function load(data){
-    await page.locator('#clear').click();
+    if(await page.locator('#clear').isVisible())await page.locator('#clear').click();
     await page.locator('#files').setInputFiles({name:'synthetic-review.csv',mimeType:'text/csv',buffer:Buffer.from(csv(data))});
     await page.waitForFunction(()=>document.querySelector('#import-status').textContent.startsWith('1 file added.'));
   }
@@ -65,9 +65,11 @@ try{
   await page.locator('#overview').screenshot({path:path.join(out,'overview-desktop.png')});
   await page.locator('#results').screenshot({path:path.join(out,'review-desktop.png')});
   await page.locator('#mode').selectOption('quiz');
+  await page.locator('#more-options > summary').click();
   await page.locator('#minimum').selectOption('1');
   await checkLinks();
   assert.equal(await completion.innerText(),'3m');
+  await page.locator('.export-options > summary').click();
   const [download]=await Promise.all([page.waitForEvent('download'),page.locator('#download-summary').click()]);
   const downloaded=path.join(out,'summary.csv');await download.saveAs(downloaded);
   const exported=parseCSV(fs.readFileSync(downloaded,'utf8')),headers=exported.shift().map(value=>value.replace(/^\uFEFF/,''));

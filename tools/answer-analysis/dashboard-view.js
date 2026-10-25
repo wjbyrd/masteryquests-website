@@ -34,9 +34,9 @@ function renderDashboard(){
   const o=summary.overview,p=summary.progression,coverage=summary.coverage;
   const node=panel('overview','How is the class performing?'),metrics=el('div','','metrics');
   metrics.append(metric('Overall accuracy',percent(o.correct,o.knownCorrectness),`${o.correct} / ${o.knownCorrectness} graded responses`,true),
-    metric('Answered responses',summary.stats.included,'Accepted responses in this selection'),metric('Question versions',o.questions,'Distinct saved versions'),metric('Represented runs',o.runs,'Runs are not unique students'),
+    metric('Answers analyzed',summary.stats.included,'Includes repeated practice'),metric('Questions seen',o.questions,'Revised versions count separately'),metric('Game runs',o.runs,'One play session; a student may have several'),
     metric('Median response time',displayTime(o.medianResponseTimeMs),`Mean ${displayTime(o.averageResponseTimeMs)} · ${o.timedResponses} timed`,true),
-    metric('Successful completion',p.successfulRate===null?'Not available':percent(p.successful,p.represented),`${p.successful} / ${p.represented} runs · ${p.unknown} unknown`));
+    metric('Game completion',p.successfulRate===null?'Not available':percent(p.successful,p.represented),`${p.successful} / ${p.represented} runs · ${p.unknown} unknown. Finished the game; not a mastery score.`));
   node.append(metrics);
   if(!summary.stats.included)node.append(unavailable('No usable responses match this selection. Reset filters or add exports with saved question details.'));
   const difficulty=panel('difficulty','Performance by difficulty');
@@ -46,10 +46,10 @@ function renderDashboard(){
     fold('How to read difficulty',note('Missing or conflicting question-version labels are Unknown. Boss labels are spaced for readability; their recorded categories and counts are unchanged.')));
   if(summary.quality.difficultyConflicts)difficulty.append(fold('Conflicting difficulty labels',note('Some saved question versions have different difficulty labels across imported responses. Those versions are classified as Unknown above. The exported labels are shown below.'),table(['Recorded label','Responses','Accuracy','Median time'],summary.reportedDifficulties.map(g=>[g.label,g.count,accuracyCell(g),displayTime(g.medianResponseTimeMs)]))));
   const encounter=panel('encounters','First and repeat encounters');
-  encounter.append(note('Exact question version within a run. Retained history only; unknown ordering stays unavailable.'),smallTable(['Question encounter','Responses','Accuracy'],summary.encounters.question.map(g=>[g.label,g.count,accuracyCell(g)])),
+  encounter.append(note('Compare the first time a question was answered with later tries in the same game run. Only the same saved version is compared; missing history stays unavailable.'),smallTable(['Question encounter','Responses','Accuracy'],summary.encounters.question.map(g=>[g.label,g.count,accuracyCell(g)])),
     fold('Encounter definitions and data limits',unavailable('Skill first/repeat performance: Not available. These exports do not provide a consistent skill identifier and reliable skill-encounter history.'),note('The original exposure counter is used by the Attempts filter. This question-ID counter also includes earlier rapid guesses and may span revisions.'),smallTable(['Recorded exposure','Responses','Accuracy'],summary.encounters.recorded.map(g=>[g.label,g.count,accuracyCell(g)]))));
   const remediation=panel('remediation','Instructional support');
-  remediation.append(note('Immediate support responses are separate from subsequent retests.'),smallTable(['Recorded role','Responses','Accuracy'],summary.remediation.roles.map(g=>[g.label[0].toUpperCase()+g.label.slice(1),g.count||'Not available',accuracyCell(g)])));
+  remediation.append(note('Some games offer extra practice after an incorrect answer. Repair targets the missed idea, bridge practice connects it to the next challenge, and a retest checks it again.'),smallTable(['Recorded support stage','Responses','Accuracy'],summary.remediation.roles.map(g=>[g.label[0].toUpperCase()+g.label.slice(1),g.count||'Not available',accuracyCell(g)])));
   const linked=summary.remediation.linkedRetests;
   remediation.append(note(`Post-remediation retest accuracy: ${linked.count?percent(linked.correct,linked.knownCorrectness)+` (${linked.correct}/${linked.knownCorrectness} graded; ${linked.count} linked responses)`:'Not available — no reliably linked retests in this selection'}.`),
     fold('Sequence support and limits',note(`${summary.remediation.linkedGroups||'No'} linked remediation groups observed. A group is not proof of a complete sequence.`),unavailable('Sequences initiated, completed, and abandoned: Not available. The current exports do not consistently mark those lifecycle events.'),note('Correct repair answers and retests do not establish mastery or a causal learning gain.')));
