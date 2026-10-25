@@ -40,9 +40,11 @@ function refresh(){
   document.body.classList.toggle('has-report',Boolean(records.length));
   byId('dashboard').hidden=!records.length;byId('dashboard-nav').hidden=!records.length;byId('empty-state').hidden=Boolean(records.length);
   byId('selection-controls').hidden=!records.length;byId('loaded-files').hidden=!collection.entries().length;
+  byId('selection-context-container').hidden=!collection.entries().length;
+  if(!records.length)byId('data-settings').open=true;
   byId('sample-start').hidden=Boolean(collection.entries().length);byId('sample-notice').hidden=!sampleMode;
   byId('getting-started').hidden=Boolean(records.length);
-  byId('import-heading').textContent=records.length?'Your class files':'Start with your class’s game files';
+  byId('import-heading').textContent=records.length?'Files and filters':'Start with your class’s game files';
   const advancedCount=['exposure','assistance'].filter(id=>byId(id).value!=='all').length+(byId('minimum').value!=='5'?1:0);
   byId('advanced-filter-count').textContent=advancedCount?`(${advancedCount} changed)`:'';
   byId('status').textContent=`${plural(s.accepted,'recorded answer')} · ${s.included} shown · ${s.unresolved} without usable saved question details · ${plural(s.duplicates,'duplicate row')} skipped · ${plural(s.rapidGuesses,'rapid guess','rapid guesses')} and ${plural(s.drafts,'exam draft')} excluded.`;
@@ -58,11 +60,11 @@ function refresh(){
   if(q.outcomeConflicts)warnings.push(`${q.outcomeConflicts} runs have conflicting endings; classified as Unknown.`);
   byId('integrity').textContent=warnings.join('\n');
   const modes=[...new Set(summary.groups.flatMap(g=>g.modes))];
-  byId('dataset-context').textContent=`${collection.entries().length} files imported · ${o.files} files represented · ${o.runs} distinct runs · ${s.included} included responses. Games: ${o.games.join(', ')||'None'}. Modes: ${modes.join(', ')||'None'}.`;
+  byId('dataset-context').textContent=`${plural(collection.entries().length,'file')} imported · ${plural(o.files,'file')} contributing answers · ${o.runs} game runs · ${s.included} answers analyzed. Games: ${o.games.join(', ')||'None'}. Modes: ${modes.join(', ')||'None'}.`;
   const active=Object.entries(filters).filter(([,v])=>v!=='all').map(([id])=>byId(id).selectedOptions[0].textContent);
   byId('active-filters').textContent=active.length?'Filtered selection: '+active.join(' · '):'All imported responses selected. Review minimum affects suggestions only.';byId('active-filters').classList.toggle('filtered',Boolean(active.length));
   questionScope=null;questionPage=0;
-  renderOverview();renderQuestions();
+  renderOverview();renderQuestions();renderFiles();
   byId('copy-summary').disabled=!s.accepted;byId('download-feedback').disabled=!s.accepted;
   byId('edit-summary').disabled=!s.accepted;
   byId('download-summary').disabled=!summary.groups.length;byId('download').disabled=!summary.groups.length;
@@ -81,7 +83,13 @@ function renderFiles(){
     const item=el('li',''),remove=el('button','Remove');remove.type='button';remove.setAttribute('aria-label','Remove '+file.name);
     const details=file.tables.length?' · Tables: '+file.tables.join('; '):'';
     const ignored=file.ignored.length?' · Skipped: '+file.ignored.join('; '):'';
-    item.append(el('span',`${file.name} · ${file.format} (${plural(file.answers,'recorded answer')})${details}${ignored}`),remove);
+    const counts=summary.fileContributions.find(entry=>entry.id===file.id)||{included:0,duplicates:0,unresolved:0,filtered:0,otherRows:0};
+    const explanation=[`${plural(counts.included,'answer')} included in the current results`,counts.duplicates?`${plural(counts.duplicates,'duplicate row')} already counted from an earlier record`:'',counts.filtered?`${plural(counts.filtered,'answer')} outside the current filters`:'',counts.unresolved?`${plural(counts.unresolved,'answer')} without usable or consistent question details`:'',counts.otherRows?`${plural(counts.otherRows,'non-answer row')} (may provide run context)`:''].filter(Boolean).join(' · ');
+    const description=el('div','','file-contribution');description.append(el('strong',`${file.name} · ${file.format}`),el('p',explanation,'meta'));
+    if(!Object.entries(counts).some(([key,value])=>key!=='id'&&value>0))description.append(el('p','No data rows were found in this file.','meta'));
+    if(!counts.included)description.append(el('p','No answers from this file contribute to the selected results.','evidence'));
+    if(details||ignored)description.append(el('p',details+ignored,'meta'));
+    item.append(description,remove);
     remove.addEventListener('click',()=>{collection.remove(file.id);if(!collection.entries().length)sampleMode=false;update();});list.append(item);
   }
 }
@@ -96,7 +104,7 @@ function update(){
     for(const item of items)control.append(new Option(item.label,item.id));
     if([...control.options].some(o=>o.value===value))control.value=value;
   }
-  renderFiles();refresh();
+  refresh();
   openHashQuestion();
 }
 let loadGeneration=0,importQueue=Promise.resolve();
@@ -120,7 +128,8 @@ function addFiles(files){
     byId('files').setAttribute('aria-describedby','import-help errors import-status');
     byId('import-status').textContent=`${plural(added,'file')} added. ${plural(duplicates,'identical file')} already loaded. ${plural(collection.entries().length,'file')} in this report.`;
     update();
-    if(firstImport&&added&&summary.stats.included&&!errors.length){byId('overview').tabIndex=-1;byId('overview').focus();}
+    if(firstImport&&added&&summary.stats.included&&!errors.length){byId('data-settings').open=false;byId('overview').tabIndex=-1;byId('overview').focus();}
+    if(errors.length)byId('data-settings').open=true;
   });
 }
 byId('files').addEventListener('change',event=>{const files=Array.from(event.target.files);event.target.value='';addFiles(files);});
@@ -136,11 +145,13 @@ function resetFilters(){for(const id of ['exposure','assistance','mode','game','
 byId('reset-filters').addEventListener('click',()=>{resetFilters();refresh();});
 function clearReport(){loadGeneration++;MQFileImport.cancel();collection.clear();sampleMode=false;draftBase='';draftEdited=false;previousDraft=null;byId('undo-summary').hidden=true;byId('files').value='';byId('files').removeAttribute('aria-invalid');byId('errors').textContent='';byId('import-status').textContent='';byId('summary-editor').hidden=true;byId('summary-text').value='';byId('copy-status').textContent='';byId('more-options').open=false;resetFilters();update();}
 byId('clear').addEventListener('click',clearReport);
+byId('show-contributions').addEventListener('click',()=>{byId('data-settings').open=true;byId('loaded-files').open=true;byId('loaded-files').querySelector('summary').focus();});
 byId('leave-sample').addEventListener('click',()=>{clearReport();byId('try-sample').focus();});
 byId('try-sample').addEventListener('click',()=>{
   if(collection.entries().length)return;
   collection.addRows('Sample economics class (fictional)',MQSampleData());sampleMode=true;resetFilters();update();
   byId('import-status').textContent='Sample loaded. Start with the class overview, then explore the instructor summary and review questions.';
+  byId('data-settings').open=false;
   byId('overview').tabIndex=-1;byId('overview').focus();
 });
 byId('edit-summary').addEventListener('click',()=>{openSummaryEditor();byId('summary-text').focus();});
@@ -177,13 +188,13 @@ byId('download').addEventListener('click',()=>{
   downloadCSV(rows,'mastery-quests-answer-analysis.csv');
 });
 byId('download-summary').addEventListener('click',()=>{
-  const headers=['section','game','topicOrQuestion','questionID','questionRevision','answers','correct','knownCorrectness','accuracy','gameRuns','files','exposureFilter','assistanceFilter','modeFilter','objectiveID','keyStatus','recordedRunTimeMs','medianRunTimeMs','runsWithRecordedTime','longestRecordedStreak','runsWithRecordedStreak','reviewMinimumResponses','averageResponseTimeMs','medianResponseTimeMs','responsesWithRecordedTime','averageCompletionTimeMs','runsWithCompletionTime','gameFilter','runFilter','uniqueQuestionVersions','questionVersionsWithFiveResponses','questionVersionsWithTenResponses','difficulty','reportedDifficulty','questionType','gameplayRole','successfulRuns','earlyEndedRuns','unsuccessfulRuns','unknownOutcomeRuns','successfulCompletionRate','medianSuccessfulCompletionTimeMs','medianAnswersPerSuccessfulRun','runsWithSuccessfulTime','runsWithSuccessfulAnswerCount','meanEndedRunDurationMs','metric','value'];
+  const headers=['section','game','topicOrQuestion','questionID','questionRevision','answers','correct','knownCorrectness','accuracy','gameRuns','files','exposureFilter','assistanceFilter','modeFilter','objectiveID','keyStatus','recordedRunTimeMs','medianRunTimeMs','runsWithRecordedTime','longestRecordedStreak','runsWithRecordedStreak','medianBestStreak','reviewMinimumResponses','averageResponseTimeMs','medianResponseTimeMs','responsesWithRecordedTime','averageCompletionTimeMs','runsWithCompletionTime','gameFilter','runFilter','uniqueQuestionVersions','questionVersionsWithFiveResponses','questionVersionsWithTenResponses','difficulty','reportedDifficulty','questionType','gameplayRole','successfulRuns','earlyEndedRuns','unsuccessfulRuns','unknownOutcomeRuns','successfulCompletionRate','medianSuccessfulCompletionTimeMs','medianAnswersPerSuccessfulRun','runsWithSuccessfulTime','runsWithSuccessfulAnswerCount','meanEndedRunDurationMs','metric','value'];
   const selection={exposureFilter:byId('exposure').value,assistanceFilter:byId('assistance').value,modeFilter:byId('mode').value,gameFilter:byId('game').value,runFilter:byId('run').value};
   const rows=[headers];
   const append=record=>rows.push(headers.map(h=>({...selection,...record})[h]??''));
   const stats=g=>({answers:g.count,correct:g.correct,knownCorrectness:g.knownCorrectness,accuracy:g.knownCorrectness?g.correct/g.knownCorrectness:null,gameRuns:g.runCount,uniqueQuestionVersions:g.questionCount,averageResponseTimeMs:g.averageResponseTimeMs,medianResponseTimeMs:g.medianResponseTimeMs,responsesWithRecordedTime:g.timedResponses});
   const o=summary.overview,p=summary.progression;
-  append({section:'class',...stats({...o,count:summary.stats.included,runCount:o.runs,questionCount:o.questions}),files:o.files,recordedRunTimeMs:o.recordedTimeMs,medianRunTimeMs:o.medianRunTimeMs,runsWithRecordedTime:o.timedRuns,longestRecordedStreak:o.bestStreak,runsWithRecordedStreak:o.streakRuns,reviewMinimumResponses:byId('minimum').value,averageCompletionTimeMs:o.averageCompletionTimeMs,meanEndedRunDurationMs:o.averageCompletionTimeMs,runsWithCompletionTime:o.completionRuns,questionVersionsWithFiveResponses:summary.coverage.atLeastFive,questionVersionsWithTenResponses:summary.coverage.atLeastTen,successfulRuns:p.successful,earlyEndedRuns:p.early,unsuccessfulRuns:p.unsuccessful,unknownOutcomeRuns:p.unknown,successfulCompletionRate:p.successfulRate,medianSuccessfulCompletionTimeMs:p.medianSuccessfulTimeMs,medianAnswersPerSuccessfulRun:p.medianAnswersPerSuccess,runsWithSuccessfulTime:p.successfulTimedRuns,runsWithSuccessfulAnswerCount:p.successfulCountedRuns});
+  append({section:'class',...stats({...o,count:summary.stats.included,runCount:o.runs,questionCount:o.questions}),files:o.files,recordedRunTimeMs:o.recordedTimeMs,medianRunTimeMs:o.medianRunTimeMs,runsWithRecordedTime:o.timedRuns,longestRecordedStreak:o.bestStreak,runsWithRecordedStreak:o.streakRuns,medianBestStreak:o.medianBestStreak,reviewMinimumResponses:byId('minimum').value,averageCompletionTimeMs:o.averageCompletionTimeMs,meanEndedRunDurationMs:o.averageCompletionTimeMs,runsWithCompletionTime:o.completionRuns,questionVersionsWithFiveResponses:summary.coverage.atLeastFive,questionVersionsWithTenResponses:summary.coverage.atLeastTen,successfulRuns:p.successful,earlyEndedRuns:p.early,unsuccessfulRuns:p.unsuccessful,unknownOutcomeRuns:p.unknown,successfulCompletionRate:p.successfulRate,medianSuccessfulCompletionTimeMs:p.medianSuccessfulTimeMs,medianAnswersPerSuccessfulRun:p.medianAnswersPerSuccess,runsWithSuccessfulTime:p.successfulTimedRuns,runsWithSuccessfulAnswerCount:p.successfulCountedRuns});
   for(const t of summary.topics)append({section:'topic',game:t.game,topicOrQuestion:t.topic,...stats(t),questionVersionsWithFiveResponses:t.atLeastFive,questionVersionsWithTenResponses:t.atLeastTen});
   for(const t of summary.objectives)append({section:'objective',game:t.game,topicOrQuestion:MQAnswerAnalysis.objectiveLabel(t),objectiveID:t.objective,...stats(t),questionVersionsWithFiveResponses:t.atLeastFive,questionVersionsWithTenResponses:t.atLeastTen});
   for(const g of summary.groups)append({section:'question',game:g.games.join(', '),topicOrQuestion:g.prompt,questionID:g.questionID,questionRevision:g.revision,keyStatus:g.keyStatus,...stats(g),difficulty:g.difficulty,reportedDifficulty:g.reportedDifficulties.join(' / '),questionType:g.types.join(' / '),gameplayRole:[...g.roles,...g.bossStages].join(' / ')});
@@ -192,6 +203,7 @@ byId('download-summary').addEventListener('click',()=>{
   for(const g of summary.encounters.question)append({section:'question_encounter',topicOrQuestion:g.label,...stats(g)});
   for(const g of summary.remediation.roles)append({section:'remediation_role',topicOrQuestion:g.label,...stats(g)});
   append({section:'post_remediation_retest',topicOrQuestion:'Explicitly linked ordered retests',...stats(summary.remediation.linkedRetests)});
+  for(const g of summary.remediation.incorrectLinkedRetests){const question=summary.groups.find(q=>JSON.stringify([q.gameID,String(q.questionID),q.revision])===g.key);if(question)append({section:'incorrect_linked_retest',game:question.games.join(', '),topicOrQuestion:question.prompt,questionID:question.questionID,questionRevision:question.revision,...stats(g)});}
   for(const bin of summary.distribution)append({section:'response_time_distribution',topicOrQuestion:bin.label,answers:bin.count});
   for(const [metric,value] of [['skill_encounters',null],['remediation_sequences_initiated',null],['remediation_sequences_completed',null],['remediation_sequences_abandoned',null],['checkpoint_retry_rate',null],['total_bank_percentage',null]])append({section:'unavailable',metric,value});
   downloadCSV(rows,'mastery-quests-class-summary.csv');

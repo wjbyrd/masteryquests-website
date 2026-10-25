@@ -57,7 +57,7 @@
     }
     const times=[...observed.values()].map(r=>r.time).filter(v=>v!==null),streaks=[...observed.values()].map(r=>r.streak).filter(v=>v!==null);
     const completionTimes=[...observed.values()].map(r=>r.completionTime).filter(v=>v!==null);
-    return {recordedTimeMs:times.length?times.reduce((a,b)=>a+b,0):null,medianRunTimeMs:median(times),timedRuns:times.length,averageCompletionTimeMs:completionTimes.length?completionTimes.reduce((a,b)=>a+b,0)/completionTimes.length:null,completionRuns:completionTimes.length,bestStreak:streaks.length?Math.max(...streaks):null,streakRuns:streaks.length};
+    return {recordedTimeMs:times.length?times.reduce((a,b)=>a+b,0):null,medianRunTimeMs:median(times),timedRuns:times.length,averageCompletionTimeMs:completionTimes.length?completionTimes.reduce((a,b)=>a+b,0)/completionTimes.length:null,completionRuns:completionTimes.length,bestStreak:streaks.length?Math.max(...streaks):null,medianBestStreak:median(streaks),streakRuns:streaks.length};
   }
   function analyze(rows,filters={}){
     const prepared=rows.map(normalizeRow),metadata=new Map();
@@ -82,28 +82,33 @@
       const a=map.get(key);a.count++;if(run)a.runs.add(run);
       if(knownCorrect(r.correct)){a.knownCorrectness++;if(flag(r.correct))a.correct++;}return a;
     }
+    const fileContributions=new Map();
+    for(const r of prepared){
+      if(r.__sourceFile!=null&&!fileContributions.has(r.__sourceFile))fileContributions.set(r.__sourceFile,{id:r.__sourceFile,included:0,duplicates:0,unresolved:0,filtered:0,otherRows:0});
+    }
     for(const r of prepared){
       const event=r.event||r.event_type,isAccepted=accepted(r),s=snapshot(r),run=r.runID||r.run_id;
-      if(isAccepted&&s&&matches(conditions(r,s),filters)&&r.__sourceFile!=null)files.add(r.__sourceFile);
+      const contribution=fileContributions.get(r.__sourceFile);
       const id=isAccepted?(r.attemptID||r.eventID||r.event_id):(r.eventID||r.event_id);
       const scope=/^[a-f0-9]{8}-[a-f0-9-]{27}$/i.test(String(id))?'':gameKey(r,s);
       const identity=id?JSON.stringify([isAccepted?'answer':event,scope,run||'',id]):null;
       const eventId=r.eventID||r.event_id;
       const eventScope=/^[a-f0-9]{8}-[a-f0-9-]{27}$/i.test(String(eventId))?'':gameKey(r,s);
       const eventIdentity=eventId?JSON.stringify(['event',eventScope,run||'',eventId]):null;
-      if((identity&&seen.has(identity))||(eventIdentity&&seen.has(eventIdentity))){stats.duplicates++;continue;}
+      if((identity&&seen.has(identity))||(eventIdentity&&seen.has(eventIdentity))){stats.duplicates++;if(contribution)contribution.duplicates++;continue;}
       if(identity)seen.add(identity);if(eventIdentity)seen.add(eventIdentity);
       events.push(r);
-      if(!isAccepted){if(['rapid_guessing','rapid_guess_detected'].includes(event)||event==='answer_evaluated'&&(flag(r.rapid_guess)||flag(r.rapidGuess)))stats.rapidGuesses++;if(['exam_answer_initial','exam_answer_revision'].includes(event))stats.drafts++;continue;}
+      if(!isAccepted){if(contribution)contribution.otherRows++;if(['rapid_guessing','rapid_guess_detected'].includes(event)||event==='answer_evaluated'&&(flag(r.rapid_guess)||flag(r.rapidGuess)))stats.rapidGuesses++;if(['exam_answer_initial','exam_answer_revision'].includes(event))stats.drafts++;continue;}
       stats.accepted++;if(!id)stats.unverifiableIDs++;
-      if(!s){stats.unresolved++;continue;}
+      if(!s){stats.unresolved++;if(contribution)contribution.unresolved++;continue;}
       const c=conditions(r,s);
       const key=groupKey(r,s),m=metadata.get(key);
-      if(m.signatures.size>1){if(matches(c,filters))stats.unresolved++;continue;}
+      if(m.signatures.size>1){if(matches(c,filters))stats.unresolved++;if(contribution)contribution.unresolved++;continue;}
       const item={row:r,snapshot:s,key,runKey:run?JSON.stringify([gameKey(r,s),run]):null,exposure:c.exposure};
       allAnswers.push(item);
-      if(!matches(c,filters))continue;
+      if(!matches(c,filters)){if(contribution)contribution.filtered++;continue;}
       answers.push(item);
+      if(contribution){contribution.included++;files.add(r.__sourceFile);}
       stats.included++;
       const game=r.game||r.game_id||s.gameID||'Unknown game',gameID=gameKey(r,s);games.add(game);
       if(!groups.has(key)){
@@ -131,7 +136,7 @@
     }
     const rollup=map=>[...map.values()].map(({runs,labels,...a})=>({...a,runCount:runs.size,labels:[...labels],labelConflict:labels.size>1}));
     const objectiveResults=rollup(objectives);
-    const result={stats,filters:{...filters},overview:{...overview,...timing(responseTimes),...runContext(prepared,runs,runAliases),runs:runs.size,questions:groups.size,files:files.size,games:[...games]},topics:rollup(topics),objectives:objectiveResults,
+    const result={stats,fileContributions:[...fileContributions.values()],filters:{...filters},overview:{...overview,...timing(responseTimes),...runContext(prepared,runs,runAliases),runs:runs.size,questions:groups.size,files:files.size,games:[...games]},topics:rollup(topics),objectives:objectiveResults,
       groups:[...groups.values()].map(({runs,responseTimes,...g})=>({...g,...timing(responseTimes),runCount:runs.size,games:[...g.games],modes:[...g.modes]}))};
     return dashboard.enrich(result,{allAnswers,answers,events,runEvents:prepared,runAliases,snapshot,gameKey,runAlias});
   }
@@ -148,12 +153,38 @@
   const accuracy=a=>a.knownCorrectness?`${Math.round(100*a.correct/a.knownCorrectness)}%`:'unavailable';
   const sufficient=(a,min=5)=>a.knownCorrectness>=min&&a.runCount>=2;
   function reviewQuestions(result,min=5){return result.groups.filter(g=>g.keyStatus!=='conflict'&&g.knownCorrectness>=min&&g.correct<g.knownCorrectness).sort((a,b)=>a.correct/a.knownCorrectness-b.correct/b.knownCorrectness||b.runCount-a.runCount||b.count-a.count).slice(0,5);}
+  const priorityRules='Relative priorities are up to three lowest-accuracy topics or objectives per game below the response-weighted average of eligible groups in that game. Eligibility requires at least five graded responses (or the selected review minimum, if higher) and two runs. These are descriptive comparisons, not mastery thresholds or statistical confidence claims.';
+  function teachingGuidance(result,minResponses=5,grouping='topics'){
+    const min=reviewMinimum(minResponses),objective=grouping==='objectives',conflict=Boolean(result.stats.keyConflicts||result.stats.objectiveConflicts);
+    const label=g=>(result.overview.games.length>1?g.game+' — ':'')+(objective?objectiveLabel(g):g.topic.replaceAll('_',' ').replaceAll('-',' '));
+    const source=(objective?result.objectives:result.topics).filter(g=>objective?g.objective&&!g.labelConflict:g.topic!=='Topic unavailable');
+    const compare=(a,b)=>a.correct/a.knownCorrectness-b.correct/b.knownCorrectness||b.runCount-a.runCount||b.knownCorrectness-a.knownCorrectness||label(a).localeCompare(label(b));
+    const eligible=source.filter(g=>sufficient(g,Math.max(5,min))).sort(compare),priorities=[];
+    const baselines=new Map();
+    for(const gameID of new Set(eligible.map(g=>g.gameID))){
+      const peers=eligible.filter(g=>g.gameID===gameID),total=peers.reduce((n,g)=>n+g.knownCorrectness,0),correct=peers.reduce((n,g)=>n+g.correct,0);
+      if(peers.length<2)continue;
+      baselines.set(gameID,correct/total);
+      if(!conflict)priorities.push(...peers.filter(g=>g.correct*total<correct*g.knownCorrectness).slice(0,3));
+    }
+    priorities.sort(compare);
+    const focus=conflict?null:priorities[0]||eligible.find(g=>g.correct<g.knownCorrectness)||null;
+    const questions=result.groups.filter(g=>g.keyStatus!=='conflict'&&g.knownCorrectness>=min&&g.correct<g.knownCorrectness).sort((a,b)=>a.correct/a.knownCorrectness-b.correct/b.knownCorrectness||b.runCount-a.runCount||b.knownCorrectness-a.knownCorrectness||a.prompt.localeCompare(b.prompt));
+    const question=conflict?null:focus?questions.find(g=>g.gameID===focus.gameID&&(objective?g.objectiveIDs.includes(focus.objective):g.topics.includes(focus.topic)))||null:questions[0]||null;
+    const evidence=g=>`${accuracy(g)} (${g.correct}/${g.knownCorrectness} graded responses across ${plural(g.runCount,'run')})`;
+    const state=g=>conflict?'Check conflicting records':!source.includes(g)||!sufficient(g,Math.max(5,min))?'Insufficient evidence':priorities.includes(g)?'Relative priority':g.correct===g.knownCorrectness?'No recorded errors':'Some errors observed';
+    const allCorrect=result.overview.knownCorrectness>0&&result.overview.correct===result.overview.knownCorrectness;
+    const pattern=conflict?'Check conflicting records before comparing performance.':focus?(priorities.includes(focus)?`${label(focus)} has lower accuracy than the response-weighted average for eligible ${objective?'objectives':'topics'} in the same game (${Math.round(100*baselines.get(focus.gameID))}%).`:`Errors were recorded in ${label(focus)}; there is no relative priority identified for that group.`):allCorrect?'All graded responses in this selection were correct.':questions.length?'Individual questions offer discussion prompts; topic-level evidence is insufficient for a comparison.':'More evidence is needed to choose a teaching focus.';
+    const action=conflict?'Resolve the conflicting records before drawing conclusions.':question?`Discuss “${question.prompt}” Ask students to explain their choices, work through an example, then check understanding with a fresh question.`:focus?`Revisit ${label(focus)} with a worked example, then use a fresh question to check understanding. No matching question with an error meets the review minimum.`:allCorrect?'Check understanding with a fresh question or application.':'Collect more responses before choosing a teaching intervention.';
+    return {priorities,focus,question,pattern,action,label,evidence,state,baselines,conflict,allCorrect};
+  }
   function feedbackSummary(result,{fileCount=0,minResponses=5,grouping='topics'}={}){
     const o=result.overview,s=result.stats,f=result.filters;
     const filters={exposure:{all:'all attempts',first:'first recorded exposures',repeat:'repeat exposures',unknown:'exposure unknown'},assistance:{all:'all responses regardless of choice removal',assisted:'one or more choices removed',unassisted:'no choices removed',unknown:'choice removal not recorded'}};
     const lines=[`Class Practice Summary${o.games.length?' — '+o.games.join(', '):''}`,
       `Overall accuracy: ${accuracy(o)} (${o.correct} of ${o.knownCorrectness} responses with a recorded result). ${plural(o.runs,'game run')} represented ${plural(s.included,'accepted response')} across ${plural(o.questions,'question version')}.`];
-    const min=reviewMinimum(minResponses);
+    const min=reviewMinimum(minResponses),guidance=teachingGuidance(result,min,grouping);
+    lines.push('Teaching focus: '+guidance.pattern);
     const source=grouping==='objectives'?result.objectives.filter(a=>a.objective&&!a.labelConflict):result.topics.filter(a=>a.topic!=='Topic unavailable');
     const eligible=source.filter(a=>a.knownCorrectness>=min).sort((a,b)=>a.correct/a.knownCorrectness-b.correct/b.knownCorrectness||b.runCount-a.runCount);
     const label=a=>(o.games.length>1?a.game+' — ':'')+(grouping==='objectives'?objectiveLabel(a):a.topic.replaceAll('_',' '));
@@ -162,16 +193,16 @@
     else if(eligible.length){
       const low=eligible[0],high=eligible.at(-1);
       const differentRates=low.correct/low.knownCorrectness<high.correct/high.knownCorrectness;
-      const priorities=eligible.filter(a=>a.correct<a.knownCorrectness&&(!differentRates||a.correct/a.knownCorrectness<high.correct/high.knownCorrectness));
+      const priorities=guidance.priorities.length?guidance.priorities:guidance.focus?[guidance.focus]:[];
       if(priorities.length){
         lines.push(`Start the review with ${describe(priorities[0])}.`);
         if(priorities.length>1)lines.push('Also review:\n'+priorities.slice(1,3).map(a=>`- ${describe(a)}.`).join('\n'));
         if(priorities.length>3)lines.push(`${plural(priorities.length-3,grouping==='objectives'?'additional learning objective':'additional topic')} with incorrect answers also ${priorities.length===4?'meets':'meet'} the review minimum. See the report for those results.`);
       }else lines.push(`Results meeting the review minimum: ${eligible.slice(0,3).map(describe).join('; ')}.${eligible.length>3?' See the report for the other results.':''}`);
-      if(differentRates)lines.push(`Stronger results in this selection: ${describe(high)}.`);
+      if(differentRates&&low.gameID===high.gameID)lines.push(`Stronger results in this selection: ${describe(high)}.`);
       if(eligible.some(a=>!sufficient(a)))lines.push('Limited evidence: results below five responses or two identified runs are starting points for discussion.');
     }else lines.push(`There is too little evidence for a comparison at the selected minimum of ${plural(min,'response')}. No available ${grouping==='objectives'?'learning objectives':'topics'} meet that minimum.`);
-    const review=reviewQuestions(result,min).slice(0,2),reviewArea=eligible.find(a=>a.correct<a.knownCorrectness);
+    const review=reviewQuestions(result,min).slice(0,2),reviewArea=guidance.focus||eligible.find(a=>a.correct<a.knownCorrectness);
     if(!s.keyConflicts&&!s.objectiveConflicts){
       if(review.length){
         lines.push('Questions to discuss:\n'+review.map((q,i)=>{
@@ -179,13 +210,14 @@
           const choice=common.length===1?` Most common choice marked incorrect: “${common[0].text}” (${plural(max,'response')}).`:` ${plural(common.length,'incorrect choice')} tied at ${plural(max,'response')} each; see the choice counts.`;
           return `- Review ${i+1}: ${q.prompt} — ${accuracy(q)} (${q.correct}/${q.knownCorrectness}; ${plural(q.runCount,'run')}${sufficient(q)?'':'; limited evidence'}).${choice}`;
         }).join('\n'));
-        lines.push('Suggested next step: ask the class to explain the reasoning behind these choices, work through an example, then check understanding with a fresh question.');
+        lines.push('Suggested next step: '+guidance.action);
       }else if(o.knownCorrectness&&o.correct===o.knownCorrectness)lines.push('All shown answers with a recorded result were correct. A fresh question or application can help check whether that understanding carries over.');
       else if(reviewArea){
         lines.push(`The ${grouping==='objectives'?'learning-objective':'topic'} results support a review, even though no individual question with an incorrect answer reaches the selected minimum of ${plural(min,'response')}.`);
         lines.push(`Suggested next step: ${sufficient(reviewArea)?'revisit':'explore'} ${label(reviewArea)} with a worked example, ask students to explain each step, then use a fresh question to check understanding.${sufficient(reviewArea)?'':' Treat this as an initial discussion because the evidence is limited.'}`);
       }else if(s.included)lines.push(`More responses are needed to choose a specific question or ${grouping==='objectives'?'learning objective':'topic'} to revisit at the selected review minimum.`);
     }
+    lines.push('Review interpretation: '+priorityRules+' Question samples below 20 graded responses are labeled small; larger samples still do not establish class-wide understanding.');
     const supportedDifficulty=result.difficulties.filter(g=>g.label!=='Unknown'&&sufficient(g,Math.max(5,min)));
     if(!s.keyConflicts&&!result.quality.difficultyConflicts&&supportedDifficulty.length>1){
       lines.push('Difficulty observations: '+supportedDifficulty.map(g=>`${g.label}: ${accuracy(g)} (${g.correct}/${g.knownCorrectness}), median response ${responseDuration(g.medianResponseTimeMs)}`).join('; ')+'. Different question mixes and runs may explain these differences.');
@@ -195,6 +227,7 @@
       lines.push('Instructional support observations: '+support.map(g=>`${g.label}: ${accuracy(g)} (${g.correct}/${g.knownCorrectness}; ${plural(g.runCount,'run')}${sufficient(g)?'':'; limited evidence'})`).join('; ')+'. Repair success does not establish mastery.');
       const retest=result.remediation.linkedRetests;
       lines.push(retest.count?`Post-remediation retest accuracy: ${accuracy(retest)} (${retest.correct}/${retest.knownCorrectness}; ${plural(retest.runCount,'run')}${sufficient(retest)?'':'; limited evidence'}), using explicitly linked, ordered responses. This does not establish a causal learning gain.`:'Post-remediation retest accuracy: not available without an observed incorrect origin and a linked, ordered repair or bridge.');
+      if(retest.knownCorrectness)lines.push(`${retest.knownCorrectness-retest.correct} of ${retest.knownCorrectness} graded, linked retest responses were still incorrect after support. These are responses, not unique students. Use Instructional support to locate the questions.`);
     }else lines.push('Remediation outcomes: not available in this selection.');
     lines.push('Sequence initiation, completion and abandonment, skill encounters, and checkpoint retry rates are not available from consistent explicit records.');
     const p=result.progression;
@@ -202,6 +235,7 @@
     lines.push(`Coverage depth: ${result.coverage.encountered} question versions encountered; ${result.coverage.atLeastFive} with at least five graded responses; ${result.coverage.atLeastTen} with at least ten. Total-bank percentage is unavailable without an authoritative inventory.`);
     lines.push(o.timedResponses?`Time per answered question: ${responseDuration(o.medianResponseTimeMs)} median (middle value); ${responseDuration(o.averageResponseTimeMs)} average, based on ${o.timedResponses} of ${plural(s.included,'shown answer')}.`:'Time per answered question: not recorded in the shown answers.');
     lines.push(runContextText(o));
+    lines.push(`Typical best streak: ${o.medianBestStreak??'not recorded'} (median of each represented run’s highest recorded correct-answer streak; ${o.streakRuns} runs with data). First and repeat encounter groups may contain different questions and runs; their accuracy difference does not establish learning gain or decline.`);
     lines.push(`Selection: ${plural(fileCount,'file')} loaded; ${plural(o.files,'file')} represented. Filters: ${filters.exposure[f.exposure||'all']||'all attempts'}; ${filters.assistance[f.assistance||'all']||'all responses regardless of choice removal'}; mode ${f.mode&&f.mode!=='all'?f.mode:'all modes'}. Review minimum: ${plural(min,'response')} with a recorded result per topic, objective, or question.`);
     if(f.game&&f.game!=='all'||f.run&&f.run!=='all')lines.push(`Additional selection: game ${f.game&&f.game!=='all'?f.game:'all games'}; run ${f.run&&f.run!=='all'?f.run:'all runs'}.`);
     if(s.unresolved)lines.push(`${plural(s.unresolved,'accepted response')} lacked usable saved question details; this analysis excludes those records.`);
@@ -231,5 +265,5 @@
       rows(){return [...files.values()].flatMap(file=>file.rows);}
     };
   }
-  const api={parseCSV,analyze,createCollection,normalizeRow,plural,duration,responseDuration,runContextText,reviewMinimum,objectiveLabel,accuracy,sufficient,reviewQuestions,feedbackSummary};if(typeof module==='object'&&module.exports)module.exports=api;else root.MQAnswerAnalysis=api;
+  const api={parseCSV,analyze,createCollection,normalizeRow,plural,duration,responseDuration,runContextText,reviewMinimum,objectiveLabel,accuracy,sufficient,reviewQuestions,teachingGuidance,priorityRules,feedbackSummary};if(typeof module==='object'&&module.exports)module.exports=api;else root.MQAnswerAnalysis=api;
 })(globalThis);

@@ -113,6 +113,7 @@
       return allAnswers.some(p=>p.runKey===a.runKey&&p.row.originAttemptID===a.row.originAttemptID&&['repair','bridge'].includes(role(p.row))&&seq(p.row)!==null&&seq(origin.row)<seq(p.row)&&seq(p.row)<seq(a.row));
     });
     result.remediation={roles:['repair','bridge','retest'].map(label=>({label,...stats(answers.filter(a=>role(a.row)===label))})),linkedRetests:stats(linkedRetests),
+      incorrectLinkedRetests:group(linkedRetests.filter(a=>known(a.row.correct)&&!correct(a.row.correct)),a=>a.key).map(({label,...counts})=>({key:label,...counts})),
       linkedGroups:new Set(answers.filter(a=>a.runKey&&a.row.originAttemptID&&['repair','bridge','retest'].includes(role(a.row))).map(a=>JSON.stringify([a.runKey,a.row.originAttemptID]))).size,
       initiated:null,completed:null,incomplete:null};
     const bins=[['Under 15 s',t=>t<15000],['15–<30 s',t=>t>=15000&&t<30000],['30–<60 s',t=>t>=30000&&t<60000],['1–2 min (inclusive)',t=>t>=60000&&t<=120000],['Over 2 min',t=>t>120000]];

@@ -78,10 +78,10 @@ const coverageRows=Array.from({length:8},(_,topic)=>Array.from({length:8},(_,run
 const coverage=a.analyze(coverageRows),coverageText=a.feedbackSummary(coverage);
 assert(coverageText.includes('Start the review with topic 0: 0% (0/8; 8 runs)'));
 assert(coverageText.includes('Also review:\n- topic 1: 13% (1/8; 8 runs).\n- topic 2: 25% (2/8; 8 runs).'));
-assert(coverageText.includes('4 additional topics'));assert(coverageText.includes('Stronger results in this selection: topic 7: 88% (7/8; 8 runs)'));
+assert(!coverageText.includes('additional topics'));assert.equal(a.teachingGuidance(coverage).priorities.length,3);assert(coverageText.includes('Stronger results in this selection: topic 7: 88% (7/8; 8 runs)'));
 assert(a.feedbackSummary(coverage,{grouping:'objectives'}).includes('Also review:\n- Objective 1:'));
 assert(!a.feedbackSummary(coverage,{minResponses:10}).includes('Also review:'));
 const tiedCoverage=a.analyze(coverageRows.filter(r=>r.correct===0).map(r=>({...r,tag:JSON.parse(r.answerSnapshotJSON).objectiveID})));
-assert(a.feedbackSummary(tiedCoverage).includes('Also review:'),'Equal low rates should still surface multiple eligible topics');
+assert.equal(a.teachingGuidance(tiedCoverage).priorities.length,0,'Tied rates cannot establish a relative priority');assert(a.feedbackSummary(tiedCoverage).includes('with a worked example'),'Errors still deserve follow-up without a relative-priority flag');
 assert(!a.feedbackSummary(a.analyze(coverageRows.filter(r=>r.correct===1))).includes('Also review:'),'All-correct topics should not be review priorities');
 console.log('PASS: multiple well-covered topics and objectives appear in a compact three-priority summary; threshold, ties and all-correct selections are respected.');

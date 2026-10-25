@@ -1,3 +1,4 @@
+import {settingsControl} from './browser-controls.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import http from 'node:http';
@@ -43,12 +44,27 @@ try{
   await inspect('welcome');await page.setViewportSize({width:1440,height:1000});
   await page.locator('#try-sample').focus();await page.keyboard.press('Enter');
   assert(await page.locator('#sample-notice').isVisible());
-  assert(await page.locator('#selection-controls').isVisible());
+  assert(!await page.locator('#data-settings').evaluate(node=>node.open));
   assert(await page.locator('#exposure').isHidden());
   assert((await page.locator('#status').innerText()).startsWith('48 recorded answers'));
   assert.equal(await page.locator('#file-list li').count(),1);
-  assert((await page.locator('#overview').innerText()).includes('not a mastery score'));
+  assert((await page.locator('#overview').innerText()).includes('not a mastery score'));assert.equal(await page.locator('#overview .metric').count(),4);
   assert.equal(await page.locator('.review-card').count(),3);
+  assert.deepEqual(await page.locator('#dashboard > section').evaluateAll(nodes=>nodes.slice(0,4).map(node=>node.id)),['overview','instructor-summary','review','topics']);
+  assert((await page.locator('#overview').innerText()).includes('11m'));
+  assert((await page.locator('.streak-summary').innerText()).includes('Typical best streak: 3'));
+  assert((await page.locator('.review-card').first().innerText()).includes('Small question sample'));
+  assert(!(await page.locator('#review').innerText()).includes('Broader sample'));
+  assert((await page.locator('#topic-results').innerText()).includes('Relative priority'));
+  assert((await page.locator('#topic-results').innerText()).includes('Some errors observed'));
+  assert(!(await page.locator('#topic-results').innerText()).includes('Review candidate'));
+  await page.locator('#summary-highlights a').click();
+  assert((await page.locator('.question[open] h3').innerText()).includes('Which side of a market'));
+  assert((await page.locator('#encounters').innerText()).includes('does not show learning gain or decline'));
+  assert((await page.locator('.support-finding').innerText()).includes('5 of 6'));
+  await page.getByText('Questions missed after support',{exact:true}).click();
+  await page.locator('.retest-questions a').first().click();
+  assert((await page.locator('.question[open] h3').innerText()).includes('Who bears more of a tax'));
   await inspect('sample');await page.setViewportSize({width:1440,height:1000});
   await page.getByRole('link',{name:'View answer choices for Review 1',exact:true}).click();
   assert(await page.locator('.question[open] summary').evaluate(node=>document.activeElement===node));
@@ -63,7 +79,7 @@ try{
     assert.equal(await page.evaluate(()=>navigator.clipboard.readText()),draft);
     assert.equal(await page.locator('#summary-text').inputValue(),draft);
   }
-  await page.locator('#mode').selectOption('quiz');
+  await (await settingsControl(page,'#mode')).selectOption('quiz');
   assert.equal(await page.locator('#summary-text').inputValue(),draft);
   assert((await page.locator('#draft-status').innerText()).includes('results have changed'));
   await page.locator('#copy-summary').click();assert.equal(await page.evaluate(()=>navigator.clipboard.readText()),draft);
@@ -73,11 +89,11 @@ try{
   assert((await page.locator('#summary-text').inputValue()).includes('24 accepted responses'));
   await page.locator('#undo-summary').click();assert.equal(await page.locator('#summary-text').inputValue(),draft);
   assert((await page.locator('#draft-status').innerText()).includes('results have changed'));
-  await page.locator('#more-options > summary').click();
-  await page.locator('#minimum').selectOption('20');
+  await (await settingsControl(page,'#more-options > summary')).click();
+  await (await settingsControl(page,'#minimum')).selectOption('20');
   assert((await page.locator('#advanced-filter-count').innerText()).includes('1 changed'));
-  await page.locator('#grouping').selectOption('objectives');
-  await page.locator('#reset-filters').click();
+  await (await settingsControl(page,'#grouping')).selectOption('objectives');
+  await (await settingsControl(page,'#reset-filters')).click();
   assert.equal(await page.locator('#grouping').inputValue(),'topics');
   assert.equal(await page.locator('#advanced-filter-count').innerText(),'');
   assert.equal(await page.locator('#summary-text').inputValue(),draft);
@@ -103,7 +119,27 @@ try{
   await page.waitForFunction(()=>document.querySelector('#copy-status').textContent.includes('Clipboard access is unavailable'));
   assert(await page.locator('#summary-text').evaluate(node=>document.activeElement===node&&node.selectionEnd===node.value.length));
   assert.equal(await page.locator('#summary-text').inputValue(),draft);
-  await page.locator('#clear').click();assert(await page.locator('#empty-state').isVisible());
+  const classRows=dashboardRows().filter(r=>r.runID==='run-0');
+  const badSnapshot={...classRows.find(r=>r.event==='question'),attemptID:'missing-snapshot',eventID:'missing-snapshot',answerSnapshotJSON:''};
+  await page.locator('#files').setInputFiles([
+    {name:'overlap.csv',mimeType:'text/csv',buffer:Buffer.from(csv(classRows.map(r=>({...r,containerNote:'overlap'}))))},
+    {name:'no-question-details.csv',mimeType:'text/csv',buffer:Buffer.from(csv([badSnapshot]))},
+    {name:'run-context.csv',mimeType:'text/csv',buffer:Buffer.from(csv([{event:'start',eventID:'context-only',runID:'other'}]))}
+  ]);
+  await page.waitForFunction(()=>document.querySelector('#file-list').children.length===4);
+  await page.locator('#show-contributions').click();
+  assert(await page.locator('#loaded-files > summary').evaluate(node=>document.activeElement===node));
+  assert((await page.locator('#dataset-context').innerText()).includes('4 files imported · 1 file contributing answers'));
+  const contribution=name=>page.locator('#file-list li').filter({hasText:name});
+  assert((await contribution('overlap.csv').innerText()).includes('duplicate rows'));
+  assert((await contribution('no-question-details.csv').innerText()).includes('without usable or consistent question details'));
+  assert((await contribution('run-context.csv').innerText()).includes('may provide run context'));
+  await (await settingsControl(page,'#exposure')).selectOption('repeat');
+  assert((await contribution('class.csv').innerText()).includes('4 answers outside the current filters'));
+  await contribution('class.csv').getByRole('button',{name:'Remove class.csv',exact:true}).click();
+  assert((await contribution('overlap.csv').innerText()).includes('4 answers included'));
+  await (await settingsControl(page,'#reset-filters')).click();
+  await (await settingsControl(page,'#clear')).click();assert(await page.locator('#empty-state').isVisible());
   await page.locator('#try-sample').click();await page.locator('#leave-sample').click();
   assert(await page.locator('#try-sample').evaluate(node=>document.activeElement===node));
   assert(await page.locator('#selection-controls').isHidden());

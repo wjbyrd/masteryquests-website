@@ -1,3 +1,4 @@
+import {settingsControl} from './browser-controls.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import http from 'node:http';
@@ -36,7 +37,7 @@ try{
     answerSnapshotJSON:JSON.stringify({...JSON.parse(row.answerSnapshotJSON),questionRevision:version.repeat(64)})
   })));
   async function load(data){
-    if(await page.locator('#clear').isVisible())await page.locator('#clear').click();
+    if(await page.locator('#file-list li').count())await (await settingsControl(page,'#clear')).click();
     await page.locator('#files').setInputFiles({name:'synthetic-review.csv',mimeType:'text/csv',buffer:Buffer.from(csv(data))});
     await page.waitForFunction(()=>document.querySelector('#import-status').textContent.startsWith('1 file added.'));
   }
@@ -64,9 +65,9 @@ try{
   assert((await page.locator('#summary-text').inputValue()).includes('Mean ended-run duration: 3m 30s'));
   await page.locator('#overview').screenshot({path:path.join(out,'overview-desktop.png')});
   await page.locator('#results').screenshot({path:path.join(out,'review-desktop.png')});
-  await page.locator('#mode').selectOption('quiz');
-  await page.locator('#more-options > summary').click();
-  await page.locator('#minimum').selectOption('1');
+  await (await settingsControl(page,'#mode')).selectOption('quiz');
+  await (await settingsControl(page,'#more-options > summary')).click();
+  await (await settingsControl(page,'#minimum')).selectOption('1');
   await checkLinks();
   assert.equal(await completion.innerText(),'3m');
   await page.locator('.export-options > summary').click();
@@ -76,12 +77,12 @@ try{
   assert(exported.every(row=>row.length===headers.length));
   const overall=Object.fromEntries(headers.map((name,i)=>[name,exported.find(row=>row[0]==='class')[i]]));
   assert.equal(overall.averageCompletionTimeMs,'180000');assert.equal(overall.runsWithCompletionTime,'3');
-  await page.locator('#minimum').selectOption('20');
+  await (await settingsControl(page,'#minimum')).selectOption('20');
   assert.equal(await page.locator('.review-link').count(),0);assert.equal(await page.locator('.review-badge').count(),0);
   const rates=await page.locator('.question summary p').allTextContents();
   const numbers=rates.map(text=>Number(text.match(/(\d+)% correct/)[1]));
   assert.deepEqual(numbers,[...numbers].sort((a,b)=>a-b));
-  await page.locator('#minimum').selectOption('5');await page.locator('#mode').selectOption('all');
+  await (await settingsControl(page,'#minimum')).selectOption('5');await (await settingsControl(page,'#mode')).selectOption('all');
   await page.setViewportSize({width:390,height:844});
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   await checkLinks();
@@ -93,7 +94,7 @@ try{
   await load(releaseRows().map(row=>({...row,correct:''})));
   assert.equal(await page.locator('.review-link').count(),0);
   assert((await page.locator('.question summary p').first().innerText()).includes('Unavailable'));
-  await page.locator('#clear').click();
+  await (await settingsControl(page,'#clear')).click();
   assert.equal(await page.locator('.question').count(),0);
   assert.deepEqual(errors,[]);
   console.log('PASS: completion card and CSV; five review links, duplicate prompts and revisions, keyboard focus, summary numbers, filtered links, no-review sorting, unknown results, partial runs, mobile grid and clear.');

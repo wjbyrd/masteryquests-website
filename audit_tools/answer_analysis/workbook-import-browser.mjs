@@ -1,3 +1,4 @@
+import {settingsControl} from './browser-controls.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import http from 'node:http';
@@ -23,20 +24,19 @@ try{for(const [engine,options] of [['chromium',{channel:'msedge'}],['firefox',{}
     await context.route('**/*',route=>route.request().url().startsWith(origin)?route.continue():route.abort());
     await page.goto(origin+'/tools/answer-analysis/');
     assert((await page.locator('label[for="files"]').innerText()).includes('CSV, Excel, or Apple Numbers'));
-    const add=async file=>{await page.locator('#files').setInputFiles(file);await page.waitForFunction(()=>!document.querySelector('#import-status').textContent.startsWith('Reading'));await page.evaluate(()=>importQueue);};
+    const add=async file=>{await page.locator('#files').setInputFiles(file);await page.waitForFunction(()=>!document.querySelector('#import-status').textContent.startsWith('Reading'));await page.evaluate(()=>importQueue);if(await page.locator('#show-contributions').isVisible())await page.locator('#show-contributions').click();};
     await add(path.join(fixtures,'synthetic-cost.numbers'));
     assert.equal(await page.locator('#errors').innerText(),'');assert((await page.locator('#status').innerText()).startsWith('48 recorded answers'));
-    await page.locator('#loaded-files summary').click();
     assert((await page.locator('#file-list').innerText()).includes('Apple Numbers'));
     const numbers=await page.locator('#overview').innerText();
     await add(path.join(fixtures,'synthetic-cost.xlsx'));assert((await page.locator('#import-status').innerText()).includes('1 identical file'));
     await add({name:'original.csv',mimeType:'text/csv',buffer:Buffer.from(csv(telemetryRows()))});assert((await page.locator('#import-status').innerText()).includes('1 identical file'));
-    await page.locator('#clear').click();await add(path.join(fixtures,'synthetic-cost.xlsx'));assert.equal(await page.locator('#overview').innerText(),numbers);assert((await page.locator('#file-list').innerText()).includes('Excel'));
-    await page.locator('#clear').click();
+    await (await settingsControl(page,'#clear')).click();await add(path.join(fixtures,'synthetic-cost.xlsx'));assert.equal(await page.locator('#overview').innerText(),numbers);assert((await page.locator('#file-list').innerText()).includes('Excel'));
+    await (await settingsControl(page,'#clear')).click();
     // Genuine binary Numbers file through the drag/drop path.
     await page.evaluate(async bytes=>{const dt=new DataTransfer();dt.items.add(new File([new Uint8Array(bytes)],'dropped.numbers',{type:'application/vnd.apple.numbers'}));document.querySelector('#drop-zone').dispatchEvent(new DragEvent('drop',{bubbles:true,dataTransfer:dt}));await importQueue;},[...fs.readFileSync(path.join(fixtures,'synthetic-cost.numbers'))]);
     assert.equal(await page.locator('#overview').innerText(),numbers);
-    await page.locator('#run').selectOption({index:1});assert((await page.locator('#status').innerText()).includes('8 shown'));await page.locator('#reset-filters').click();
+    await (await settingsControl(page,'#run')).selectOption({index:1});assert((await page.locator('#status').innerText()).includes('8 shown'));await (await settingsControl(page,'#reset-filters')).click();
     const accessibility=[];
     await page.addScriptTag({path:path.join(root,'tmp/answer-release/a11y/node_modules/axe-core/axe.min.js')});
     for(const width of [1440,768,390]){
@@ -48,8 +48,8 @@ try{for(const [engine,options] of [['chromium',{channel:'msedge'}],['firefox',{}
     await add({name:'renamed.numbers',mimeType:'application/vnd.apple.numbers',buffer:Buffer.from(csv(telemetryRows()))});assert((await page.locator('#errors').innerText()).includes('not a genuine'));assert.equal(await page.locator('#overview').innerText(),numbers);
     await add({name:'empty.numbers',mimeType:'application/vnd.apple.numbers',buffer:Buffer.alloc(0)});assert((await page.locator('#errors').innerText()).includes('empty'));
     await add({name:'bad.xlsx',mimeType:'application/octet-stream',buffer:Buffer.from('broken')});assert((await page.locator('#errors').innerText()).includes('not a genuine'));
-    await page.locator('#clear').click();await add(path.join(fixtures,'synthetic-multiple.numbers'));assert((await page.locator('#status').innerText()).includes('48 shown'));assert((await page.locator('#file-list').innerText()).includes('Second Table'));
-    await page.locator('#clear').click();
+    await (await settingsControl(page,'#clear')).click();await add(path.join(fixtures,'synthetic-multiple.numbers'));assert((await page.locator('#status').innerText()).includes('48 shown'));assert((await page.locator('#file-list').innerText()).includes('Second Table'));
+    await (await settingsControl(page,'#clear')).click();
     // Clear must invalidate a binary read that has not started its worker yet.
     await page.evaluate(async()=>{let begin,finish;const started=new Promise(r=>begin=r);addFiles([{name:'slow.numbers',size:1,arrayBuffer:()=>{begin();return new Promise(r=>finish=r);}}]);await started;document.querySelector('#clear').click();finish(new ArrayBuffer(1));await importQueue;});
     assert.equal(await page.locator('#file-list li').count(),0);
