@@ -229,3 +229,28 @@ build/faculty-build-composer/DEPLOYMENT_AUDIT.txt
    and test Student View. The new code targets the newly published file.
 6. For another assignment, choose Start a different game and publish under a
    separate folder, such as /test/game-two/. Keep the first game's files/links.
+
+8. Production follow-up: Step 1 startup failure
+----------------------------------------------
+After the requested push of e1a98704, GitHub Pages run 40735465283 completed
+successfully. Its direct project-hosted Composer was verified through course-area
+selection and advancement to Step 2 without a console error.
+
+masteryquests.org is separately deployed by Cloudflare using the curated dist
+builder. That builder omitted the new deployment.js dependency from its allowlist.
+The production URL returned HTTP 404, and the browser reported an undefined
+MQDeployment.newId during Composer startup, leaving Step 1 noninteractive. The
+source-directory browser tests did not cover this production packaging boundary.
+
+The correction adds deployment.js to audit_tools/public_site_publication/build-dist.mjs
+and changes its script URL version to avoid a cached missing-file response. The
+builder now calls verify-composer-runtime.mjs to check every local entry script
+and stylesheet against the actual output, including script compilation. Publication
+tests include missing-file and HTML-fallback negative controls. The existing
+deployment browser regression can now serve dist via MQ_COMPOSER_SITE_ROOT and
+exercises course-area selection and Next before its package-generation checks.
+
+Validation: the rebuilt production artifact contains 2,419 files, all 14 Composer
+entry dependencies and 151 Concept Review PDFs, with no forbidden/incoming files.
+Both new publication tests and the four-package browser regression against dist
+passed. No gameplay or question-bank code was changed in this correction.

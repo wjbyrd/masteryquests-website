@@ -32,6 +32,18 @@ copy) and Edge or MQ_BROWSER_EXECUTABLE. It serves local fixtures, simulates a
 cache retaining old deployments, generates real ZIPs, and tests saves and embeds.
 It does not verify a live Canvas course or publish to GitHub.
 
+Production publication regression (October 28, 2026)
+---------------------------------------------------
+The masteryquests.org Cloudflare build uses a curated file allowlist, separate
+from GitHub Pages. deployment.js must be included in that allowlist. The site
+builder now verifies every local script and stylesheet referenced by the Composer
+entry HTML and rejects missing files or invalid script contents before publication.
+Run the publication build, then:
+  node --test audit_tools/public_site_publication/composer-runtime.test.mjs
+Set MQ_COMPOSER_SITE_ROOT to the generated dist directory when running the
+deployment browser regression, to cover the artifact that production actually
+serves. The test exercises course-area selection and advancement to Step 2.
+
 Current composer version: 4.5s.2m
 Canonical questions: 8,163
 Selectable concepts/family slices: 126

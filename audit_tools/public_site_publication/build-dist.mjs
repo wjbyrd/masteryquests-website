@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import {publishSignalHouse} from '../econ_rpg/publish-signal-house.mjs';
 import {publishGamesPreview} from '../econ_rpg/publish-games-preview.mjs';
+import {verifyComposerRuntime} from './verify-composer-runtime.mjs';
 
 const root = path.resolve(process.argv[2] || ".");
 const dist = path.join(root, "dist");
@@ -109,6 +110,7 @@ for (const name of [
   "composer.css",
   "composer.js",
   "composer-core.js",
+  "deployment.js",
   "concept-review-runtime.js",
   "course-area-model.js",
   "custom-asset-core.js",
@@ -226,11 +228,16 @@ if (reviewPdfs.length !== 151) {
   );
 }
 
+// Validate the deployed artifact, not just the source checkout. A missing
+// boot script otherwise ships a page whose course-area controls cannot work.
+const composerRuntimeFiles = verifyComposerRuntime(dist);
+
 console.log(JSON.stringify({
   ok: true,
   dist,
   fileCount: files.length,
   composerConceptReviewPdfCount: reviewPdfs.length,
+  composerRuntimeFileCount: composerRuntimeFiles.length,
   forbiddenFileCount: forbidden.length,
   incomingQuestionAssetCount: incoming.length
 }, null, 2));

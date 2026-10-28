@@ -6,6 +6,8 @@ const http = require('node:http'), assert = require('node:assert/strict');
 const {chromium} = require(process.env.MQ_PLAYWRIGHT_MODULE || 'playwright');
 const Deployment = require('../deployment.js');
 const repo = path.resolve(__dirname, '../../..');
+// Point at dist to exercise the actual production artifact and its allowlist.
+const siteRoot = path.resolve(process.env.MQ_COMPOSER_SITE_ROOT || repo);
 const output = process.env.MQ_COMPOSER_TEST_OUTPUT_DIR || fs.mkdtempSync(path.join(os.tmpdir(),'mq-deployment-browser-'));
 fs.mkdirSync(output,{recursive:true});
 const deployed = new Map(), requests = [], errors = [];
@@ -19,8 +21,8 @@ const server = http.createServer((req,res) => {
     res.writeHead(200,{'Content-Type':mime[path.extname(lookup)] || 'text/plain','Cache-Control':'public, max-age=31536000, immutable'});
     res.end(deployed.get(lookup)); return;
   }
-  const file = path.resolve(repo,'.'+lookup);
-  if(!file.startsWith(repo+path.sep)){res.writeHead(403).end();return;}
+  const file = path.resolve(siteRoot,'.'+lookup);
+  if(!file.startsWith(siteRoot+path.sep)){res.writeHead(403).end();return;}
   fs.readFile(file,(err,data)=>{
     if(err){res.writeHead(404).end();return;}
     res.writeHead(200,{'Content-Type':mime[path.extname(file)] || 'application/octet-stream','Cache-Control':'no-cache'});res.end(data);
@@ -52,6 +54,11 @@ function deploy(entries, folder='/test/'){
     const dialogs=[];page.on('dialog',async dialog=>{dialogs.push(dialog.message());await dialog.dismiss();});
     await page.goto(origin+'/build/faculty-build-composer/');
     await page.waitForFunction(()=>window.MQDeployment && window.MQComposerCore);
+    await page.locator('#areaFilter').selectOption('micro');
+    await page.locator('[data-concept="demand"]').waitFor({state:'visible'});
+    await page.locator('[data-concept="demand"]').check();
+    await page.locator('#nextStep').click();
+    await page.locator('#gameTitle').waitFor({state:'visible'});
     async function importRecipe(recipe){
       await page.locator('#importRecipe').setInputFiles({name:'recipe.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(recipe))});
       await page.waitForFunction(title=>document.getElementById('gameTitle').value===title,recipe.title);
