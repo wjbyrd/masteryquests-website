@@ -1037,7 +1037,45 @@ button.maze-box.exam-nav-room:disabled{cursor:not-allowed;opacity:.34;filter:sat
   box-sizing: border-box;
 }
 
-/* Transition overlay — appears between rooms (controlled by JS) */	
+/* Optional build details stay separate from the main start controls. */
+#mq-build-info{
+  position:absolute;
+  right:max(12px,env(safe-area-inset-right));
+  bottom:max(12px,env(safe-area-inset-bottom));
+  max-width:calc(100% - 24px);
+  box-sizing:border-box;
+  color:#b6c5d6;
+  font:12px/1.5 system-ui;
+  text-align:left;
+  text-shadow:none;
+}
+#mq-build-info summary{
+  cursor:pointer;
+  min-height:28px;
+  padding:5px 9px;
+  box-sizing:border-box;
+  border-radius:5px;
+  background:rgba(2,6,23,.9);
+}
+#mq-build-info summary:hover{color:#fff}
+#mq-build-info summary:focus-visible{outline:3px solid #8bdcff;outline-offset:3px}
+#mq-build-info[open]{
+  width:360px;
+  max-height:calc(100% - 24px);
+  overflow:auto;
+  padding:10px;
+  border:1px solid #40536b;
+  border-radius:8px;
+  background:#07111f;
+}
+#mq-build-info p{margin:10px 0 0;color:#d7e3f0;overflow-wrap:anywhere}
+@media(max-height:600px){
+  #startScreen:has(#mq-build-info){justify-content:flex-start}
+  #mq-build-info{position:static;flex-shrink:0;align-self:flex-end;margin:12px 0}
+  #mq-build-info[open]{max-height:none}
+}
+
+/* Transition overlay — appears between rooms (controlled by JS) */
 #hallwayTransition {
   position: fixed;
   top: 0;
@@ -3220,8 +3258,8 @@ Respect structure strictly.
     <button class="start-btn" onclick="showModeSelect()">START GAME</button>
 	<button id="continueRunBtn" class="start-btn secondary-start-btn" onclick="continueSavedRun()" style="display:none;">
     CONTINUE STANDARD RUN</button>
-    <div id="facultyBuildInfo"></div>
   </div>
+  <div id="facultyBuildInfo"></div>
 </div>
 
 <div id="modeSelectScreen" class="mode-select-screen" style="display:none;">

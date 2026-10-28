@@ -2107,7 +2107,7 @@ function buildHtml(template, composition, config, metadata, activation=null){
   }
   const build = {gameId:config.gameId,buildId:config.buildId,generatedAt:config.generatedAt,title:config.title};
   const buildJson = JSON.stringify(build).replace(/</g, '\\u003c');
-  const buildInfo = `<details id="mq-build-info" style="padding:1rem;font:12px/1.5 system-ui;overflow-wrap:anywhere"><summary>Game build information</summary><p>Build: ${config.buildId}<br>Game: ${config.gameId}<br>Generated: ${config.generatedAt}</p></details>`;
+  const buildInfo = `<details id="mq-build-info"><summary>Game details</summary><p><strong>Game build information</strong><br>Build: ${config.buildId}<br>Game: ${config.gameId}<br>Generated: ${config.generatedAt}</p></details>`;
   output = output.replace('<div id="facultyBuildInfo"></div>', buildInfo);
   output = output.replace('</body>', `<script>globalThis.MQ_BUILD = Object.freeze(${buildJson});</script>\n</body>`);
   return output;
