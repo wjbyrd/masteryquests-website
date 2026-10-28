@@ -31,6 +31,8 @@
     <section class="step" data-step-panel="2">
       <div class="panel">
         <h2>Game details</h2>
+        <p>Updating a game? Import its saved composition recipe in Generate to keep its identity. For a separate assignment, start a different game.</p>
+        <button id="startDifferentGame" type="button" class="secondary">Start a different game (keep these settings)</button>
         <div class="collection-setting">
             <h3>Anonymous gameplay data</h3>
             <label><input id="allowAnonymousDataCollection" type="checkbox" aria-describedby="anonymousCollectionHelp"> Allow anonymous gameplay data collection</label>
@@ -221,6 +223,21 @@
           <button id="clearComposition" class="danger">Clear Composition</button>
         </div>
         <details class="advanced" style="margin-top:16px">
+          <summary>Publish to GitHub Pages and Canvas</summary>
+          <ol>
+            <li>Extract the ZIP. Upload <code>index.html</code> and its <code>game-mqb-….html</code> file together to your Pages folder. Keep the filenames. Enable Pages if needed.</li>
+            <li>After deployment, enter the public folder URL below, or open the package’s <code>publish.html</code> helper later. Verify the versioned game before copying the Canvas HTML.</li>
+            <li>For updates, import the saved recipe, generate and publish again, then replace the iframe code in Canvas. An unchanged iframe can keep loading an older build.</li>
+            <li>For a different game, choose <strong>Start a different game</strong> and use a separate folder, such as <code>/test/game-two/</code>. Keep old game files while assignments still use them.</li>
+          </ol>
+          <p>Compatible saves survive updates. Changes to question content use separate save slots and retain earlier saves. Legacy recipes get a new Game ID; use the original game file to resume their old saves. <a href="/how-to/canvas/" target="_blank" rel="noopener">Publishing and troubleshooting guide</a></p>
+        </details>
+        <section id="publicationPanel" hidden aria-labelledby="publicationHeading" style="margin-top:16px">
+          <h3 id="publicationHeading">Canvas embed for your downloaded package</h3>
+          <p id="publicationStatus"></p>
+          <div id="embedGenerator"></div>
+        </section>
+        <details class="advanced" style="margin-top:16px">
           <summary>Advanced technical details</summary>
           <pre id="technicalDetails"></pre>
         </details>
@@ -242,11 +259,12 @@
   <script src="ingest-activation.js?v=20260914-stage3"></script>
   <script src="measurement-build.js?v=20260914-stage3"></script>
   <script src="telemetry-activation.js?v=20260914-stage3"></script>
-  <script src="composer-core.js?v=20260913-telemetry-ux"></script>
+  <script src="deployment.js?v=20261028-build-versioning"></script>
+  <script src="composer-core.js?v=20261028-build-versioning"></script>
   <script src="course-area-model.js?v=20260910-faculty-lo"></script>
   <script src="data/composer_library.js?v=20260910-faculty-lo"></script>
   <script src="data/official_theme_library.js?v=20260830-official-mode-cards"></script>
   <script src="custom-asset-core.js?v=20260824-phase3b"></script>
-  <script src="composer.js?v=20260913-telemetry-ux"></script>
+  <script src="composer.js?v=20261028-build-versioning"></script>
 </body>
 </html>

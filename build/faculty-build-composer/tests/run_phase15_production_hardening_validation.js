@@ -156,7 +156,7 @@ function testClockSemantics(){
 
 function testSaveIsolationAndWording(){
   const template = source(MODERN_FILES[1]);
-  const context = {runPhase:'question', gameMode:'standard', saves:0};
+  const context = {runPhase:'question', gameMode:'standard', runID:'started-run', saves:0};
   context.runEnding = false;
   context.phase15CompletionLocked = false;
   context.modeAllowsSave = () => context.gameMode === 'standard';
@@ -172,6 +172,10 @@ function testSaveIsolationAndWording(){
   context.phase15CompletionLocked = true;
   context.persist('complete');
   assert.strictEqual(context.saves, 1, 'Completion/pagehide must not recreate a cleared save.');
+  context.phase15CompletionLocked = false;
+  context.runID = '';
+  context.persist('transition');
+  assert.strictEqual(context.saves, 1, 'An unstarted title screen must not overwrite existing progress.');
 
   const wordingContext = {};
   vm.createContext(wordingContext);

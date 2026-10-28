@@ -2,6 +2,7 @@
 'use strict';
 
 const Core = window.MQComposerCore;
+const Deployment = window.MQDeployment;
 const Activation = window.MQTelemetryActivation;
 let inputVersion=0, generationPending=false, previousRecipeSnapshot=null;
 const activationSession=Activation.createSession({challenge:Activation.browserChallenge,hash:value=>Core.sha256Hex(Core.stableStringify(value))});
@@ -210,6 +211,7 @@ const PRESETS = [
 ];
 
 const state = {
+  gameId: Deployment.newId('game'),
   title: 'My Faculty Mastery Quest',
   slug: 'my-faculty-mastery-quest',
   guideName: '',
@@ -1219,6 +1221,7 @@ function recipe(){
   cleanCustomAssetState();
   return {
     schemaVersion: Core.RECIPE_SCHEMA_VERSION,
+    gameId: state.gameId,
     title: state.title.trim(),
     slug: state.slug.trim(),
     guideName: state.guideName.trim(),
@@ -1617,7 +1620,7 @@ async function sha256BytesHex(bytes){
 async function loadEmbeddedQuestionAssets(assets){
   const embedded = {};
   for(const asset of assets || []){
-    const response = await fetch(asset.sourceUrl);
+    const response = await fetch(asset.sourceUrl, {cache:'no-cache'});
     if(!response.ok) throw new Error(`Could not load ${asset.sourceUrl}`);
     const bytes = new Uint8Array(await response.arrayBuffer());
     const actualSha = await sha256BytesHex(bytes);
@@ -1721,8 +1724,12 @@ async function prepareGeneratedGame({verifyAnswerHashes = false, reportProgress 
   const resolvedTheme = Core.resolveThemeSelection(activeRecipe.appearance, ThemeLibrary, activeRecipe.customAssets);
   const selectedThemeAssets = Core.themeAssetsForSelection(resolvedTheme, activeRecipe.supportedModes);
   const selectedCustomAssets = Core.customAssetsForSelection(resolvedTheme, activeRecipe.supportedModes);
-  const config = await Core.createConfig(activeRecipe, Library, state.templateSha256, ThemeLibrary);
+  const config = await Core.createConfig(activeRecipe, Library, state.templateSha256, ThemeLibrary, composition);
   const metadata = {
+    gameId: config.gameId,
+    buildId: config.buildId,
+    generatedAt: config.generatedAt,
+    saveCompatibilityId: config.saveCompatibilityId,
     schemaVersion: Core.RECIPE_SCHEMA_VERSION,
     composerVersion: Core.COMPOSER_VERSION,
     title: config.title,
@@ -1813,7 +1820,10 @@ async function generateGameDownload(){
   if(activated){const label=[...$('readinessMessage').querySelectorAll('span')].find(node=>node.textContent.includes('Anonymous data collection: ON'));if(label)label.textContent='Anonymous data collection: ON — telemetry link activated for this build until '+new Date(activated.expiresAt).toLocaleDateString()+'. The generated game is authorized for anonymous telemetry. External-host portability will be validated separately.';}
   const manifest = {
     ...metadata,
-    generatedFilename: `${config.slug}.html`,
+    generatedFilename: Deployment.filename(config.buildId),
+    entryFilename: 'index.html',
+    publishingHelper: 'publish.html',
+    cacheStrategy: 'immutable-self-contained-build-filename',
     poolCounts: composition.counts,
     routeCounts: {
       repair: Object.keys(composition.microSkillRepairPools).length,
@@ -1863,12 +1873,27 @@ async function generateGameDownload(){
     preflight: composition.validation,
     warnings: [...state.importWarnings, ...composition.warnings],
     answerVerification: {passed: true, questionCount: answerCheck.questionCount},
-    generationTimestamp: '1980-01-01T00:00:00.000Z',
-    timestampPolicy: 'Fixed for deterministic ZIP output'
+    generationTimestamp: config.generatedAt,
+    timestampPolicy: 'Actual generation time; ZIP entry dates remain fixed'
   };
   const readme = `${config.title}
 
-Open ${config.slug}.html directly in a modern browser. The game HTML is self-contained; graph images and Concept Review routing are embedded, so no sibling asset or concept-reviews folder is required.
+Open ${Deployment.filename(config.buildId)} directly in a modern browser. The game HTML is self-contained; JavaScript, CSS, questions, artwork, graph images and Concept Review routing are embedded.
+
+Game ID: ${config.gameId}
+Build ID: ${config.buildId}
+
+PUBLISH TO GITHUB PAGES / CANVAS
+1. Upload index.html and ${Deployment.filename(config.buildId)} together to your Pages publishing folder. Keep their filenames. You may also upload publish.html.
+2. Enable Pages in Settings > Pages if it is not already enabled. Wait for deployment to finish.
+3. Open publish.html from this package in your browser and enter your public folder URL, for example https://wjbyrd.github.io/test/.
+4. Open the generated versioned game URL. Check Game build information, modes, questions, graphs and saving. Then copy the Canvas embed HTML into the Canvas page HTML editor and test Student View.
+5. To update this game, import composition_recipe.json into the Composer, edit and download. Upload the new files, verify the new build and replace the Canvas iframe with the new code. No automatic Canvas update is performed.
+6. For a different game, choose Start a different game (or Clear Composition) in the Composer. Use a separate folder such as /test/game-one/ and /test/game-two/ to keep assignments available. Retain older game-*.html files while assignments link to them. Removing an old file breaks its old link; new embeds never silently redirect to another game.
+
+If an old version appears, use this package's publish.html to copy its exact build URL, verify that its game file exists at that path, and compare Game build information to this manifest. An unchanged iframe URL or index.html can remain cached. Waiting for deployment or refreshing cannot promise an instant update at an unchanged URL.
+
+Save this recipe to update the same Game ID later. Compatible sessions survive regeneration and presentation edits. Changed questions, graphs or checkpoint routes use a separate save slot; older sessions stay stored and can be resumed using their retained original game file. Legacy packages have no reliable Game ID: imported legacy recipes get a new identity and do not automatically adopt ambiguous old browser saves. Do not clear browser data to fix a stale deployment.
 
 Concept Review PDFs open from ${Core.CONCEPT_REVIEW_PUBLIC_BASE_URL} and require internet access only when a learner opens a recommended review. The game itself can still run from the downloaded HTML file.
 
@@ -1879,7 +1904,9 @@ Enabled modes: ${config.supportedModes.map(mode => MODE_LABELS[mode]).join(', ')
 Checkpoint questions are assigned by their published difficulty. Optional checkpoint focus only narrows which eligible concepts supply a checkpoint; it never changes ordinary-question availability or question difficulty.
 `;
   const entries = [
-    {name: `${config.slug}.html`, data: html},
+    {name: Deployment.filename(config.buildId), data: html},
+    {name: 'index.html', data: Deployment.launcher(config)},
+    {name: 'publish.html', data: Deployment.publishingPage(config)},
     {name: 'composition_recipe.json', data: Core.stableStringify(Core.canonicalRecipe(activeRecipe, Library, ThemeLibrary), 2) + '\n'},
     {name: 'composition_manifest.json', data: Core.stableStringify(manifest, 2) + '\n'},
     {name: 'README.txt', data: readme}
@@ -1888,6 +1915,11 @@ Checkpoint questions are assigned by their published difficulty. Optional checkp
 
   const zip = deterministicZip(entries);
   downloadBlob(zip, `${config.slug}.zip`);
+  const publication = $('publicationPanel');
+  publication.hidden = false;
+  $('embedGenerator').innerHTML = Deployment.panel();
+  Deployment.bindPanel($('embedGenerator'), config);
+  $('publicationStatus').textContent = 'Embed code below belongs to the last downloaded package. Generate again after further edits.';
   announce('Game download ready.');
   }finally{generationPending=false;renderFinal();}
 }
@@ -1901,6 +1933,8 @@ async function importRecipe(file){
   }
   const migrated = Core.migrateRecipe(imported, Library, ThemeLibrary);
   const next = migrated.recipe;
+  state.gameId = next.gameId || Deployment.newId('game');
+  $('publicationPanel').hidden = true;
   const verifiedCustomAssets = {};
   const customWarnings = [];
   const rejectedCustomAssets = new Map();
@@ -1966,6 +2000,12 @@ async function importRecipe(file){
 }
 
 async function init(){
+  $('startDifferentGame').addEventListener('click', () => {
+    state.gameId = Deployment.newId('game');
+    $('publicationPanel').hidden = true;
+    invalidateActivation(); recalculate();
+    announce('New game identity created. Current settings retained. Use a separate publishing folder to preserve earlier assignments.');
+  });
   $('allowAnonymousDataCollection').checked=false;
   $('allowAnonymousDataCollection').addEventListener('change',event=>{state.allowAnonymousDataCollection=event.target.checked===true;recalculate();});
   renderModeOptions();
@@ -2022,6 +2062,8 @@ async function init(){
   });
   $('clearComposition').addEventListener('click', () => {
     if(!confirm('Clear the current composition?')) return;
+    state.gameId = Deployment.newId('game');
+    $('publicationPanel').hidden = true;
     state.selectedConceptIds = [];
     state.contentScopes = {};
     state.checkpointFocus = emptyCheckpointFocus();
@@ -2054,9 +2096,9 @@ async function init(){
   if(location.protocol === 'file:') $('protocolWarning').classList.add('show');
   try{
     const [templateResponse, conceptReviewResponse, conceptReviewRuntimeResponse] = await Promise.all([
-      fetch('template/mastery-quests-faculty-template-composer-ready.html'),
-      fetch('data/concept-reviews/manifest.json'),
-      fetch('concept-review-runtime.js')
+      fetch('template/mastery-quests-faculty-template-composer-ready.html', {cache:'no-cache'}),
+      fetch('data/concept-reviews/manifest.json', {cache:'no-cache'}),
+      fetch('concept-review-runtime.js', {cache:'no-cache'})
     ]);
     if(!templateResponse.ok) throw new Error(`Template HTTP ${templateResponse.status}`);
     if(!conceptReviewResponse.ok) throw new Error(`Concept Review manifest HTTP ${conceptReviewResponse.status}`);

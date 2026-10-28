@@ -3,6 +3,35 @@ Mastery Quests Faculty Concept Composer — Micro Granularity Working Release
 Public deployment folder. Replace the contents of build/faculty-build-composer with these files.
 The public route remains /build/faculty-build-composer/.
 
+Deployment reliability (October 28, 2026)
+-----------------------------------------
+Each downloaded package has a random Build ID and a uniquely named self-contained
+game-mqb-....html. Keep that filename. Upload it with the supplied index.html.
+Enter the public folder URL in Generate or open the package's publish.html to
+copy the exact build's Canvas iframe. Replace the iframe when assigning a new
+build; an unchanged URL is not guaranteed to update immediately.
+
+The composition recipe retains a random Game ID. Import it to update the same
+game; use Start a different game or Clear Composition for a new identity.
+Keep different assignments in separate folders and retain earlier game files
+while they are linked. All gameplay assets remain embedded in the game HTML.
+
+Browser storage uses Game ID plus a session compatibility hash. Regeneration,
+title changes and artwork changes preserve compatible progress. Changed question
+content or routes use another save slot and leave earlier saves intact. Legacy
+recipes have no trustworthy identity and do not automatically adopt old saves.
+Keep the original legacy game to resume those sessions. Shared published suite
+integrations and the site-wide decorative-motion preference are unchanged.
+
+Regression commands (from repository root):
+  node build/faculty-build-composer/tests/run_deployment_versioning_validation.cjs
+  node build/faculty-build-composer/tests/run_deployment_browser_validation.cjs
+  node build/faculty-build-composer/tests/run_active_composer_suite.js
+The browser test needs Playwright (MQ_PLAYWRIGHT_MODULE may point to an installed
+copy) and Edge or MQ_BROWSER_EXECUTABLE. It serves local fixtures, simulates a
+cache retaining old deployments, generates real ZIPs, and tests saves and embeds.
+It does not verify a live Canvas course or publish to GitHub.
+
 Current composer version: 4.5s.2m
 Canonical questions: 8,163
 Selectable concepts/family slices: 126

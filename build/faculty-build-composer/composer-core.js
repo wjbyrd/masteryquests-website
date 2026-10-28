@@ -1,8 +1,8 @@
 (function(root, factory){
-  const api = factory(typeof module === 'object' && module.exports ? require('./faculty-outcome-core.js') : root.MQFacultyOutcomes, typeof module === 'object' && module.exports ? require('./anonymous-telemetry-source.js') : root.MQAnonymousTelemetrySource, typeof module === 'object' && module.exports ? require('./ingest-activation.js') : root.MQIngestActivation, typeof module === 'object' && module.exports ? require('./measurement-build.js') : root.MQMeasurementBuild);
+  const api = factory(typeof module === 'object' && module.exports ? require('./faculty-outcome-core.js') : root.MQFacultyOutcomes, typeof module === 'object' && module.exports ? require('./anonymous-telemetry-source.js') : root.MQAnonymousTelemetrySource, typeof module === 'object' && module.exports ? require('./ingest-activation.js') : root.MQIngestActivation, typeof module === 'object' && module.exports ? require('./measurement-build.js') : root.MQMeasurementBuild, typeof module === 'object' && module.exports ? require('./deployment.js') : root.MQDeployment);
   if(typeof module === 'object' && module.exports) module.exports = api;
   else root.MQComposerCore = api;
-})(typeof globalThis !== 'undefined' ? globalThis : this, function(FacultyOutcomes, AnonymousTelemetrySource, IngestActivation, MeasurementBuild){
+})(typeof globalThis !== 'undefined' ? globalThis : this, function(FacultyOutcomes, AnonymousTelemetrySource, IngestActivation, MeasurementBuild, Deployment){
 'use strict';
 
 const COMPOSER_VERSION = '4.5s.3k';
@@ -785,7 +785,7 @@ async function loadEmbeddedThemeAssets(assets, fetchAsset = globalThis.fetch?.bi
   if(typeof fetchAsset !== 'function') throw new Error('Official theme artwork cannot be loaded in this environment.');
   const embedded = {};
   for(const asset of assets || []){
-    const response = await fetchAsset(asset.sourceUrl);
+    const response = await fetchAsset(asset.sourceUrl, {cache:'no-cache'});
     if(!response.ok) throw new Error(`Could not load official theme artwork: ${asset.label}`);
     const bytes = new Uint8Array(await response.arrayBuffer());
     const actualSha = await sha256BytesHex(bytes);
@@ -1533,6 +1533,7 @@ function migrateRecipe(recipe, library, themeLibrary){
   return {
     recipe: {
       schemaVersion: RECIPE_SCHEMA_VERSION,
+      ...(Deployment.validGameId(source.gameId) ? {gameId:source.gameId} : {}),
       allowAnonymousDataCollection: source.allowAnonymousDataCollection === true,
       title: String(source.title || ''),
       slug: String(source.slug || ''),
@@ -2082,6 +2083,7 @@ function activationScope(config,composition){
 function buildHtml(template, composition, config, metadata, activation=null){
   // Transport permission is build configuration, never part of the event schema.
   config={...config,allowAnonymousDataCollection:config?.allowAnonymousDataCollection===true};
+  metadata={...metadata,gameId:config.gameId,buildId:config.buildId,generatedAt:config.generatedAt,saveCompatibilityId:config.saveCompatibilityId};
   let output = replaceMarkedRegion(
     template,
     '// FACULTY COMPOSITION CONFIG — GENERATED',
@@ -2103,6 +2105,11 @@ function buildHtml(template, composition, config, metadata, activation=null){
     }
     output=output.replace('</body>', '<script>\n'+AnonymousTelemetrySource.replace(/<\/script/gi,'<\\/script')+'\n</script>\n</body>');
   }
+  const build = {gameId:config.gameId,buildId:config.buildId,generatedAt:config.generatedAt,title:config.title};
+  const buildJson = JSON.stringify(build).replace(/</g, '\\u003c');
+  const buildInfo = `<details id="mq-build-info" style="padding:1rem;font:12px/1.5 system-ui;overflow-wrap:anywhere"><summary>Game build information</summary><p>Build: ${config.buildId}<br>Game: ${config.gameId}<br>Generated: ${config.generatedAt}</p></details>`;
+  output = output.replace('<div id="facultyBuildInfo"></div>', buildInfo);
+  output = output.replace('</body>', `<script>globalThis.MQ_BUILD = Object.freeze(${buildJson});</script>\n</body>`);
   return output;
 }
 
@@ -2111,6 +2118,7 @@ function canonicalRecipe(inputRecipe, library, themeLibrary){
   const customAssets = pruneCustomAssets(migrated.customAssets, migrated.appearance, themeLibrary);
   return {
     schemaVersion: RECIPE_SCHEMA_VERSION,
+    ...(Deployment.validGameId(migrated.gameId) ? {gameId:migrated.gameId} : {}),
     allowAnonymousDataCollection: migrated.allowAnonymousDataCollection === true,
     title: String(migrated.title).trim(),
     slug: safeSlug(migrated.slug),
@@ -2132,13 +2140,33 @@ function canonicalRecipe(inputRecipe, library, themeLibrary){
   };
 }
 
-async function createConfig(recipe, library, templateSha, themeLibrary){
+async function createConfig(recipe, library, templateSha, themeLibrary, preparedComposition){
   const canonical = canonicalRecipe(recipe, library, themeLibrary);
+  // Legacy recipes have no reliable identity. The UI assigns and persists an ID
+  // on import; programmatic callers should retain config.gameId in their recipe.
+  const gameId = canonical.gameId || Deployment.newId('game');
+  canonical.gameId = gameId;
   const fingerprint = await sha256Hex(stableStringify(canonical));
+  const composition = preparedComposition || compose(library, canonical);
+  // Presentation changes and regeneration do not invalidate saves. Changed
+  // questions/routes need separate sessions because saves contain full question
+  // objects, shuffled options, checkpoint pools, and remediation state.
+  const saveCompatibilityId = await sha256Hex(stableStringify({
+    saveProtocol:'faculty-session/1',
+    banks:composition.banks, challengeQuestionBanks:composition.challengeQuestionBanks,
+    repairQuestions:composition.repairQuestions, bridgeQuestions:composition.bridgeQuestions,
+    microSkillRepairPools:composition.microSkillRepairPools, skillRepairSeedPools:composition.skillRepairSeedPools,
+    microSkillBridgePools:composition.microSkillBridgePools, checkpointFocus:canonical.checkpointFocus,
+    graphAssets:(composition.assets || []).map(asset => ({path:asset.runtimePath,sha256:asset.sha256}))
+  }));
   const resolvedTheme = resolveThemeSelection(canonical.appearance, themeLibrary, canonical.customAssets);
   const {customAssets:authoringCustomAssets, ...runtimeCanonical} = canonical;
   return {
     ...runtimeCanonical,
+    gameId,
+    buildId:Deployment.newId('build'),
+    generatedAt:new Date().toISOString(),
+    saveCompatibilityId,
     composerVersion: COMPOSER_VERSION,
     compositionId: canonical.slug,
     dailyChallengesEnabled: true,
@@ -2166,7 +2194,7 @@ async function createConfig(recipe, library, templateSha, themeLibrary){
       riskReward: {strategy:'adaptive'}
     },
     visualTheme: createRuntimeThemeConfig(resolvedTheme, {}, canonical.supportedModes),
-    saveKeyNamespace: `mq-econ:${canonical.slug}:${fingerprint.slice(0, 12)}`,
+    saveKeyNamespace: `mq-econ:game:${gameId}:${saveCompatibilityId}`,
     librarySha256: library.librarySha256,
     templateSha256: templateSha,
     compositionFingerprint: fingerprint

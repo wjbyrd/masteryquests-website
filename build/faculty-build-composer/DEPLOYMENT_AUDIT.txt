@@ -1,0 +1,231 @@
+Faculty Composer deployment reliability audit
+October 28, 2026
+
+Scope and outcome
+-----------------
+Implemented locally in the existing Composer. No repository was pushed, no
+GitHub Pages configuration was changed, and no Canvas course was modified.
+Generated games remain portable, self-contained HTML with no new dependency.
+
+1. Evidence and identified issues
+---------------------------------
+composer.js prepares a composition, resolves official/custom artwork, embeds
+question images as data URLs, injects config/questions into the canonical HTML
+template via composer-core.js, and writes a stored-entry ZIP in the browser.
+Previously that ZIP contained slug.html, a recipe, a manifest, and a README.
+Publishing guidance suggested manually renaming slug.html to index.html.
+
+JavaScript, CSS, questions, graph images, theme images, and Concept Review routing
+are embedded. The template's audio system is a silent compatibility shim; there
+are no separate audio downloads to version. Concept Review PDFs are deliberate
+links to the existing centralized HTTPS library, not bundled runtime resources.
+There is no service-worker registration or Cache Storage mechanism in this path.
+
+Supported failure modes:
+- Stable HTML filenames and unchanged iframe URLs could select a cached older
+  document, including all of its embedded assets. Local browser testing reproduces
+  this with cacheable HTTP responses. Adding a version only to an unrelated
+  sibling resource would not fix that architecture.
+- The manual rename step allowed the uploaded slug.html to differ from the
+  index.html requested by the course. A successful Pages deployment alone cannot
+  verify that the iframe is requesting the updated file.
+- There was no package-specific Build ID or Canvas embed generator. The manifest
+  timestamp was fixed at 1980 for ZIP determinism. The existing recipe fingerprint
+  and telemetry measurement build identifiers were not unique download IDs.
+- Saves used mq-econ:<slug>:<recipe-fingerprint-prefix>. Identical recipes could
+  share browser state across paths, while title/artwork edits could orphan saves.
+  That fingerprint did not directly protect embedded saved question objects from
+  changed question-bank contents. Saves retain questions, option order, boss
+  pools, remediation state, mastery evidence, and their UI state.
+- Browser testing exposed title-screen pagehide/visibility autosave overwriting
+  an existing run with unstarted state. It now requires an active runID.
+
+The live https://wjbyrd.github.io/test/ example was not accessible through the
+web-read tool. No live Canvas session was available. Therefore this audit does
+not claim which browser/CDN/deployment condition caused that specific incident.
+The supported causes above come from source inspection and local reproduction.
+
+GitHub's documented static/project-site model was checked at:
+https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages
+
+2. Game identity, build identity, and package structure
+------------------------------------------------------
+deployment.js generates independent cryptographically random 128-bit identifiers
+with crypto.getRandomValues: mqg-<32 hex digits> for a game and mqb-<32 hex digits>
+for a build. A Composer session receives a Game ID; its recipe retains that ID.
+Importing the recipe keeps it. Start a different game and Clear Composition mint
+a new Game ID. An unidentified legacy recipe receives a new ID on UI import.
+Programmatic callers must retain config.gameId in subsequent recipes as well.
+
+Every createConfig/preparation call receives a new Build ID. The actual download
+uses one prepared config consistently for HTML, manifest, launcher, helper and
+embed. Preview estimates do not become the displayed downloaded-build reference.
+
+ZIP contents:
+- game-mqb-<build-id>.html: the full game, using an immutable-by-convention name.
+- index.html: a small relative launcher for the package's current build.
+- publish.html: a self-contained, offline-capable URL/Canvas HTML helper.
+- composition_recipe.json: authoring selections and the stable Game ID.
+- composition_manifest.json: Game ID, Build ID, real generation time, filenames,
+  save compatibility ID, source checksums, asset inventory and existing preflight.
+- README.txt: package-specific faculty publishing/update instructions.
+
+Runtime identity is visible in Game build information on the title screen and
+available as globalThis.MQ_BUILD and embedded facultyCompositionMetadata.
+ZIP container entry dates remain fixed, but package contents intentionally change
+on each generation. Existing anonymous telemetry contract IDs and activation
+scope semantics remain intact; they are analytical IDs, separate from the new
+package Build ID. Including Game ID in the composition fingerprint also separates
+the existing anonymous transport's storage scope between unrelated games.
+
+3. Cache-safe loading and URL handling
+-------------------------------------
+The complete game is one versioned resource. Its inline JS/CSS and embedded banks,
+images, graphs and dynamic theme references cannot mix with another build's
+cached sibling files. No unnecessary externalization of those assets was added.
+The Composer revalidates template, routing/runtime, graph and theme fetches;
+existing graph/theme checksum verification still rejects unexpected bytes.
+
+The generated Canvas iframe links directly to game-mqb-<build-id>.html and sets
+v to the actual Build ID. It bypasses a cached index.html. The launcher also
+honors a valid requested v by constructing that exact relative build filename.
+If an old build file is removed, its link fails instead of opening another game.
+
+The helper accepts HTTP/HTTPS folder URLs with or without trailing slashes and
+existing HTML filenames. It handles root, project and nested paths, URL-encoded
+spaces/special characters, existing query parameters, duplicate v parameters,
+and fragments using the URL API. Iframe attributes are HTML-escaped. Canvas
+guidance recommends HTTPS. Credentials and unsupported protocols are rejected.
+The iframe retains title, width="100%", height="900", border:0, loading="lazy",
+and allowfullscreen. A read-only game URL is distinct from the copyable iframe.
+Clipboard-denied/offline browsers receive selected text and keyboard-copy help.
+
+An unchanged iframe, cached launcher or already-open tab is NOT guaranteed to
+update immediately. Publish first, verify the new unique URL, and update the
+Canvas iframe. Use publish.html from the newest downloaded ZIP; a hosted copy
+at an unchanged URL may itself be cached. No HTML cache meta tags or custom
+GitHub response-header assumptions are used. Keep unique game filenames intact.
+
+4. Saved-progress protection and compatibility
+-----------------------------------------------
+All existing game-specific keys inherit:
+  mq-econ:game:<Game ID>:<SHA-256 save-compatibility ID>
+
+The compatibility hash covers an explicit faculty-session/1 protocol revision,
+question banks, challenge banks, repair/bridge content and routes, checkpoint
+focus, and graph paths/checksums. It excludes Build ID, generation time, title,
+slug, guide name, theme artwork and telemetry consent. Regeneration and cosmetic
+edits therefore keep compatible sessions. A content/route change conservatively
+gets a separate slot, leaving the earlier session available through its original
+game file. Future incompatible save-schema changes must bump saveProtocol.
+
+The prefix covers saves, room/progression, mastery evidence, achievements,
+artifacts, scores, streaks, player name/run ID, mode/length preferences, guide
+state, dailies, local telemetry and measurement records. Daily and achievement
+identity now prefer Game ID over a mutable slug/fingerprint. Saved records carry
+Game ID and compatibility ID, and the loader rejects mismatches. Unreadable
+saves are retained. Title-screen lifecycle events cannot replace existing saves.
+
+The global decorative-motion accessibility preference remains intentionally
+shared. Published economic/managerial/macro/micro suites and their hub/campaign
+integrations were not edited. Anonymous transport queues retain their existing
+authorized build scopes and fail-closed behavior; no queues are migrated/replayed.
+
+Legacy packages cannot reliably prove whether a same-slug save belongs to the
+same game. There is no automatic adoption or deletion of those saves. Retain the
+original game file to resume them. Returning users need the same browser profile,
+origin and permitted storage; Canvas/browser storage restrictions still apply.
+
+5. Tests and results
+--------------------
+PASS run_deployment_versioning_validation.cjs:
+  Stable/new identities, recipe round-trip, build uniqueness, compatible cosmetic
+  updates, changed questions, distinct transport scope, inline-script compilation,
+  embedded resource architecture, 7 URL shapes, stale-launcher routing, escaping,
+  unsupported URLs, legacy identity isolation and shared accessibility preference.
+
+PASS run_deployment_browser_validation.cjs (Playwright, local Edge):
+  Four real ZIPs generated through the public Composer controls; first deployment;
+  unchanged-recipe regeneration; import/update with different bank; new game with
+  retained settings. Simulated root/project/nested/special-character folders.
+  HTTP cache enabled: warmed index URL keeps opening old build, while new embed
+  opens exact current build. An old launcher honors an explicit new build request.
+  Real save/load: room, score counters, aliases, achievements, high scores, guide
+  state, preferences and local telemetry survive compatible updates; incompatible
+  or different-game namespaces do not inherit them; original saved state remains.
+  Old immutable links retain their game after repository reuse. Local iframe
+  launch, dynamic graph decode (including special-character resource keys), no
+  external game JS/CSS/image requests, offline publish.html, copy fallback and
+  mobile helper layout. Build-information disclosure was clicked and visually
+  inspected; desktop Composer and mobile helper screenshots were also inspected.
+
+Existing active Composer suite: 39/40 original runners passed, covering ten modes,
+  question/graph integrity, adaptive and remediation paths, checkpoints, themes,
+  custom assets, mastery reports, CSV/answer analysis and telemetry measurement.
+  run_phase15_production_hardening_validation.js stops at an existing obsolete
+  version-format assertion in play/micro-domains/labyrinth-of-choice/index.html.
+  The same assertion was checked against git HEAD and fails there too. That game
+  was not changed. This is NOT a fully green suite.
+  The new deployment unit runner is now registered (41 runners in the current
+  suite); it passed separately. The full long-running suite was not repeated.
+  Focused Phase 1.5 clock, save/title-screen isolation and media simulations were
+  executed independently of that blocked historical architecture assertion and
+  passed. Targeted repair, guide, checkpoint-remediation and mastery-state tests
+  were rerun after the autosave fix and passed.
+
+PASS telemetry_governance/stage3-composer-check.mjs: 11/11 activation, consent,
+  fingerprint/measurement parity, failure, stale-response, and privacy checks.
+PASS JavaScript syntax checks and git diff --check.
+
+Limits: Local browser simulation is not a live Canvas/GitHub deployment test.
+Real remote telemetry transmission/activation was not performed. The browser
+tests use synthetic state and block external network access. Published suites'
+shared state was left intact; no claim of a new full cross-game hub playthrough.
+No new scoring, adaptive/question-selection, content-bank or reporting algorithm
+was introduced. No new external library, service, authentication or host required.
+
+6. Files changed and purpose
+----------------------------
+build/faculty-build-composer/deployment.js
+  Shared ID/filename, URL, launcher, offline helper and embed-copy implementation.
+build/faculty-build-composer/composer-core.js
+  Identity persistence, compatibility hashing, runtime build information, asset
+  revalidation and build metadata.
+build/faculty-build-composer/composer.js
+  Identity workflow, versioned ZIP packaging, manifest/readme and publishing panel.
+build/faculty-build-composer/index.html
+  Different-game control, concise publishing help, embed panel, script versions.
+build/faculty-build-composer/template/mastery-quests-faculty-template-composer-ready.html
+  Build-info slot, stable identity for achievements/dailies, save checks and
+  protection from pre-start autosave; preserve unreadable saves.
+build/faculty-build-composer/README.txt
+  Maintainer/deployment notes and regression commands.
+build/faculty-build-composer/tests/run_deployment_versioning_validation.cjs
+build/faculty-build-composer/tests/run_deployment_browser_validation.cjs
+  New automated deployment, URL, cache and browser-storage regression coverage.
+build/faculty-build-composer/tests/run_active_composer_suite.js
+  Register the new deployment unit runner.
+build/faculty-build-composer/tests/run_phase15_production_hardening_validation.js
+  Model an active run in save tests and assert the title-screen autosave guard.
+build/faculty-build-composer/tests/run_phase3b_manual_qa_browser_validation.mjs
+  Locate generated game HTML through its manifest instead of the old slug name.
+how-to/canvas/index.html and how-to/composer/index.html
+  Faculty instructions aligned with package filenames, embed helper, update/new
+  game workflows, storage compatibility and stale-version diagnosis.
+build/faculty-build-composer/DEPLOYMENT_AUDIT.txt
+  This audit, test results, limitations and migration record.
+
+7. Faculty walkthrough: https://wjbyrd.github.io/test/
+-----------------------------------------------------
+1. Update an existing game by importing its saved composition_recipe.json.
+   Make edits, choose Generate, and download/extract the ZIP.
+2. Upload the supplied index.html and uniquely named game-mqb-....html to the
+   test repository's existing Pages publishing folder. Keep earlier game files
+   still used by assignments. Wait for the deployment to finish.
+3. Enter https://wjbyrd.github.io/test/ in the Composer publishing panel or in
+   publish.html from the new ZIP. The helper creates the actual build URL.
+4. Open Verify this build. Check Game build information and test gameplay.
+5. Copy Canvas embed HTML, replace the iframe in Canvas's HTML editor, save,
+   and test Student View. The new code targets the newly published file.
+6. For another assignment, choose Start a different game and publish under a
+   separate folder, such as /test/game-two/. Keep the first game's files/links.

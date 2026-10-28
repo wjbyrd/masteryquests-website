@@ -386,7 +386,8 @@ try{
     const downloadPath = path.join(artifactRoot, `${recipe.slug}.zip`);
     await download.saveAs(downloadPath);
     const entries = openStoredZip(fs.readFileSync(downloadPath));
-    const html = entries.get(`${recipe.slug}.html`)?.toString('utf8') || '';
+    const manifest = JSON.parse(entries.get('composition_manifest.json').toString('utf8'));
+    const html = entries.get(manifest.generatedFilename)?.toString('utf8') || '';
     assert(html, `Generated ${recipe.slug} HTML is missing from the ZIP`);
     assertInlineScriptsCompile(html, `${recipe.slug}.html`);
     assert.equal(Buffer.byteLength(html), sizeEstimate.totalBytes, `${recipe.slug} readiness estimate did not match generated HTML bytes`);

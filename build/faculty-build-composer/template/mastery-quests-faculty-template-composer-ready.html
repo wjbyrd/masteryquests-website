@@ -3220,6 +3220,7 @@ Respect structure strictly.
     <button class="start-btn" onclick="showModeSelect()">START GAME</button>
 	<button id="continueRunBtn" class="start-btn secondary-start-btn" onclick="continueSavedRun()" style="display:none;">
     CONTINUE STANDARD RUN</button>
+    <div id="facultyBuildInfo"></div>
   </div>
 </div>
 
@@ -4422,7 +4423,7 @@ let questionHistory = {
 };
 
 const SAVE_KEY = `${STORAGE_PREFIX}:save:v2`;
-const REALM_MISSION_KEY = FACULTY_COMPOSITION_CONFIG.slug || "facultyBlank";
+const REALM_MISSION_KEY = FACULTY_COMPOSITION_CONFIG.gameId || FACULTY_COMPOSITION_CONFIG.slug || "facultyBlank";
 const REALM_STARTED_KEY = `${STORAGE_PREFIX}:standard:started`;
 const REALM_COMPLETE_KEY = `${STORAGE_PREFIX}:standard:complete`;
 const REALM_STATUS_KEY = `${STORAGE_PREFIX}:standard:status`;
@@ -4945,6 +4946,8 @@ function saveGameState(){
     if(!modeAllowsSave()) return;
 
     const saveData = {
+        gameId: FACULTY_COMPOSITION_CONFIG.gameId,
+        saveCompatibilityId: FACULTY_COMPOSITION_CONFIG.saveCompatibilityId,
         room,
         bossHealth,
         bossCheckpoint,
@@ -5001,6 +5004,8 @@ function loadSavedGame(){
 
     try {
         const saveData = JSON.parse(rawSave);
+        if(saveData.gameId && saveData.gameId !== FACULTY_COMPOSITION_CONFIG.gameId) return false;
+        if(saveData.saveCompatibilityId && saveData.saveCompatibilityId !== FACULTY_COMPOSITION_CONFIG.saveCompatibilityId) return false;
 
         room = Number(saveData.room || 1);
         bossHealth = Number(saveData.bossHealth || 3);
@@ -5043,7 +5048,7 @@ function loadSavedGame(){
         return true;
     } catch(error){
         console.warn("Saved game could not be loaded:", error);
-        localStorage.removeItem(getSaveKey());
+        // Keep unreadable or incompatible saves available for recovery.
         return false;
     }
 }
@@ -9320,7 +9325,8 @@ function persistDailyState(){
 }
 
 function getDailyQuestIdentity(){
-    return FACULTY_COMPOSITION_CONFIG.compositionFingerprint
+    return FACULTY_COMPOSITION_CONFIG.gameId
+        || FACULTY_COMPOSITION_CONFIG.compositionFingerprint
         || FACULTY_COMPOSITION_CONFIG.compositionId
         || FACULTY_COMPOSITION_CONFIG.slug
         || FACULTY_COMPOSITION_CONFIG.title
@@ -14550,7 +14556,9 @@ saveGameState = function(...args){
 function persistStandardRunAfterStateChange(nextPhase = runPhase){
     runPhase = nextPhase || runPhase;
     const ending = typeof runEnding !== "undefined" && runEnding;
-    if(!ending && !phase15CompletionLocked && runPhase !== "complete" && gameMode === "standard" && modeAllowsSave()) saveGameState();
+    // Opening/closing a newly deployed title screen must not overwrite a saved
+    // session before the learner starts or resumes a run.
+    if(runID && !ending && !phase15CompletionLocked && runPhase !== "complete" && gameMode === "standard" && modeAllowsSave()) saveGameState();
 }
 
 function inferSafeLegacyPhase(){
