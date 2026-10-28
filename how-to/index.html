@@ -209,7 +209,7 @@
 <a href="/how-to/telemetry-data-dictionary/">Understanding Game Data</a>
 <a href="#adaptive-engine">Adaptive engine</a>
 <a href="#answer-hardening">Answer-key hardening</a>
-<a href="#prepare">Prepare the file</a>
+<a href="#prepare">Prepare the package</a>
 <a href="#repository">Create the repository</a>
 <a href="#pages">Turn on Pages</a>
 <a href="#lms">Add it to your LMS</a>
@@ -293,7 +293,7 @@
 <div class="site-container">
 <div class="section-heading">
 <p class="eyebrow">Before GitHub</p>
-<h2>Start with one finished game file.</h2>
+<h2>Start with the downloaded game package.</h2>
 <p>
         Composer-generated games are self-contained HTML activities. Graphs and runtime logic are embedded.
         Concept Reviews open from the Mastery Quests web library when recommended.
@@ -303,14 +303,17 @@
 <article class="howto-step">
 <div class="howto-step-number">01</div>
 <div class="howto-step-body">
-<h3>Rename the generated game <code>index.html</code></h3>
+<h3>Keep the supplied game and launcher together</h3>
 <p>
-            GitHub Pages will automatically serve <code>index.html</code> when someone opens the repository's
-            published web address. Keep the other Composer files as faculty records; they do not need to be hosted.
+            Extract the Composer ZIP. Upload its <code>index.html</code> launcher and uniquely named
+            <code>game-mqb-….html</code> game together, keeping both filenames unchanged. The game contains
+            its runtime, questions, artwork, and graphs. Keep the recipe, manifest, README, and
+            <code>publish.html</code> helper for your records; they do not need to be hosted.
           </p>
 <div class="howto-note">
-            If you are updating an existing game, keep the same repository and replace its old
-            <code>index.html</code>. You do not need to create a new repository every time.
+            To update the same game, import its saved composition recipe before editing. Each download
+            receives a new Build ID and game filename. Keep earlier game files while assignments still
+            link to them. See <a href="/how-to/canvas/#updating">updates and separate games</a>.
           </div>
 </div>
 </article>
@@ -348,11 +351,11 @@
 <article class="howto-step">
 <div class="howto-step-number">03</div>
 <div class="howto-step-body">
-<h3>Upload <code>index.html</code></h3>
+<h3>Upload the game and its launcher</h3>
 <ol>
 <li>Open the new repository.</li>
 <li>Select <strong>Add file → Upload files</strong>.</li>
-<li>Drag <code>index.html</code> into the upload area.</li>
+<li>Drag the supplied <code>index.html</code> and <code>game-mqb-….html</code> into the upload area together. Keep the generated filenames.</li>
 <li>Commit the upload to the repository.</li>
 </ol>
 <figure class="howto-shot">
@@ -416,8 +419,10 @@
           </p>
 <span class="howto-url-example">https://YOURUSERNAME.github.io/YOUR-REPOSITORY/</span>
 <p style="margin-top:12px;">
-            Open that URL in a private/incognito browser window and make sure the game starts before placing it in your LMS.
-            GitHub notes that a Pages deployment can take several minutes to become available after a change.
+            Wait for the Pages deployment to finish; publishing can take several minutes.
+            Enter this folder URL in the Composer's Generate step or open the downloaded <code>publish.html</code>
+            helper. It creates a <strong>Versioned game URL</strong> for that package. Open that link and compare
+            <strong>Game build information</strong> on the title screen with the package's manifest before using it in your LMS.
           </p>
 <div class="howto-note">
             Run at least one enabled mode, open a graph, complete a short run, and test a Concept Review recommendation
@@ -432,9 +437,10 @@
 <div class="site-container">
 <div class="section-heading">
 <p class="eyebrow">Course deployment</p>
-<h2>Put the public URL in your LMS.</h2>
+<h2>Use the generated game link or Canvas embed.</h2>
 <p>
-        The GitHub Pages URL is now the game. Use it as a normal course link or embed it when your LMS permits external iframes.
+        After downloading a package, enter its published folder URL in Generate or in <code>publish.html</code>.
+        Use the resulting versioned game link or copy the completed embed code. The helper fills in the build automatically.
       </p>
 </div>
 <div class="howto-step-list">
@@ -442,11 +448,12 @@
 <div class="howto-step-number">07</div>
 <div class="howto-step-body">
 <h3>Choose link or embed</h3>
-<p><strong>Option A — External link:</strong> Add the GitHub Pages URL as a module item, assignment link, button, or course resource.</p>
-<p><strong>Option B — Embed:</strong> If your LMS accepts external iframe content, use the published game URL as the iframe source.</p>
-<pre class="howto-code" tabindex="0" role="region" aria-label="Example LMS iframe code">&lt;iframe
+<p><strong>Option A — External link:</strong> Copy the <strong>Versioned game URL</strong> into a module item, assignment link, button, or course resource.</p>
+<p><strong>Option B — Embed:</strong> Choose <strong>Copy Canvas embed HTML</strong>, paste it into the Canvas page's HTML editor, save, and preview as a student. Other LMS platforms may also accept the iframe.</p>
+<p>This pattern is illustrative. Use the completed code from your own package; do not type a Build ID yourself.</p>
+<pre class="howto-code" tabindex="0" role="region" aria-label="Illustrative LMS iframe code; use the generated code for your build">&lt;iframe
   title="Mastery Quest game"
-  src="https://YOURUSERNAME.github.io/YOUR-REPOSITORY/"
+  src="https://YOURUSERNAME.github.io/YOUR-REPOSITORY/game-mqb-YOUR-BUILD-ID.html?v=mqb-YOUR-BUILD-ID"
   width="100%"
   height="900"
   style="border:0;"
@@ -454,18 +461,22 @@
   allowfullscreen&gt;
 &lt;/iframe&gt;</pre>
 <div class="howto-note">
-            LMS security policies vary. If your institution blocks the iframe, use the same public HTTPS URL as an external link instead. Embedding the Quest in an iframe also adds practical inspection friction, but the iframe should not be treated as a formal security boundary.
+            LMS security policies vary. If your institution blocks the iframe, use the same versioned HTTPS game URL as an external link instead. Preview the activity on desktop and mobile. An iframe is not a formal security boundary.
           </div>
 </div>
 </article>
 <article class="howto-step">
 <div class="howto-step-number">08</div>
 <div class="howto-step-body">
-<h3>Update the game later without changing the student link</h3>
+<h3>Publish an update and replace the course link</h3>
 <p>
-            To publish a revised build, return to the same repository, replace <code>index.html</code>,
-            commit the change, and let GitHub Pages republish. The public repository URL stays the same.
+            Import the game's saved composition recipe, edit, and download a new package. The Game ID stays the same;
+            the Build ID changes. Upload the new game file and replace the launcher, wait for deployment, and verify
+            the new versioned game URL. Then replace the Canvas iframe HTML or external course link. The Composer
+            cannot update your Canvas course automatically.
           </p>
+<p>For a different assignment, choose <strong>Start a different game</strong> in Game details. Use separate folders such as <code>game-one/</code> and <code>game-two/</code> to keep both games available. Preserve earlier game files while existing assignments use them.</p>
+<p>Compatible saves can survive updates to the same game. Changed questions, graphs, or checkpoint routes use separate saves, leaving the old saves intact. Legacy recipes receive a new Game ID; keep the original game available for its older saves. Read the <a href="/how-to/canvas/#updating">update and saved-progress guidance</a> before replacing an assigned game.</p>
 </div>
 </article>
 </div>
@@ -480,15 +491,15 @@
 <div class="howto-trouble-grid">
 <article class="howto-trouble-card">
 <h3>404 or no site</h3>
-<p>Confirm Pages is enabled, the selected source is <code>main</code> and <code>/(root)</code>, and the game file is named <code>index.html</code>.</p>
+<p>Confirm Pages is enabled, the deployment finished, and both supplied files are in the intended publishing folder. The versioned URL must match the uploaded <code>game-mqb-….html</code> filename exactly.</p>
 </article>
 <article class="howto-trouble-card">
 <h3>Old version still appears</h3>
-<p>Wait for the Pages deployment to finish, then hard-refresh or test the URL in a private browser window.</p>
+<p>Use the newest package's <code>publish.html</code> to get its versioned link. Compare <strong>Game build information</strong> with the manifest, then replace the Canvas embed or course link. An unchanged iframe can still open an older build. Do not clear student browser storage to fix a publishing problem.</p>
 </article>
 <article class="howto-trouble-card">
 <h3>The LMS will not embed it</h3>
-<p>Use the same GitHub Pages address as an external course link. The game does not require an LMS wrapper.</p>
+<p>Use the generated versioned game URL as an external course link. The link opens the self-contained game directly.</p>
 </article>
 <article class="howto-trouble-card">
 <h3>Concept Review will not open</h3>
@@ -502,7 +513,7 @@
 <div class="privacy-assurance howto-finish">
 <div>
 <p class="eyebrow">That's the whole deployment path</p>
-<h2>Build once. Publish one HTML file. Use the URL anywhere.</h2>
+<h2>Publish the package and share the verified build.</h2>
 <p>
           Build a Quest handles creation. Downloads holds the downloadable files. Faculty Resources brings together teaching guides, results interpretation, hosting help, and Understanding Game Data.
         </p>

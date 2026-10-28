@@ -21,5 +21,9 @@ for name in names:
         positions=[steps.index(t) for t in ['Concepts and scope','Game details','Modes','Checkpoints','Appearance']]
         assert positions==sorted(positions),name
         assert all(t in text for t in ['Brief','Standard','Full','Custom']),name
+        assert all(t in text for t in ['game-mqb-', 'index.html', 'publish.html', 'Copy Canvas embed HTML', 'Game build information', 'Start a different game']),name
+        assert all(t not in text for t in ['Rename it index.html', 'Rename the game index.html', 'src="https://YOURUSERNAME.github.io/YOUR-REPO/"']),name
+        assert 'The Composer cannot update Canvas automatically' in text,name
+    assert 'Build ID' in text and 'Game ID' in text,name
     results.append({'file':name,'status':'PASS'})
 print(json.dumps(results,indent=2))

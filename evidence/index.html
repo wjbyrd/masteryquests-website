@@ -39,6 +39,15 @@
 }
 
 /* Downloaded-results evidence */
+#deployment-hardening .evidence-shot,
+#deployment-hardening .evidence-shot img{
+  height:auto;
+  min-height:0;
+}
+#deployment-hardening .evidence-shot img{
+  display:block;
+  width:100%;
+}
 .evidence-csv-summary{
   display:grid;
   grid-template-columns:repeat(5,minmax(0,1fr));
@@ -125,7 +134,9 @@
 <article class="evidence-card evidence-card-feature"><a aria-label="Open full-size screenshot: Macroeconomics concept cards" class="evidence-shot evidence-shot-feature" href="/assets/images/evidence/composer-macro-concepts.webp" rel="noopener" target="_blank"><img alt="Macroeconomics Composer inventory with Aggregate Demand selected and burgundy discipline accents on Macro concept cards." loading="lazy" src="/assets/images/evidence/composer-macro-concepts.webp"/></a><div class="evidence-card-body"><h3>Select the exact concepts</h3><p>Aggregate Demand is selected while related Macro concepts remain available. Burgundy highlights identify the Macroeconomics concepts.</p><a class="evidence-full-link" href="/assets/images/evidence/composer-macro-concepts.webp" rel="noopener" target="_blank">Open full screenshot <span aria-hidden="true">→</span></a></div></article>
 </div></div></section>
 
-<section class="section section-light evidence-section" id="deployment-hardening"><div class="site-container"><h2>Publish the game for your course</h2><p>Composer games run as self-contained HTML files. For hosting, LMS embedding, and the limits of client-side answer-key hardening, use <a href="/how-to/#answer-hardening">Faculty Resources</a>.</p></div></section>
+<section class="section section-light evidence-section" id="deployment-hardening"><div class="site-container"><h2>Publish the build you want students to open</h2><p>After downloading a Composer package, enter its published folder URL to create a versioned game link and Canvas iframe code. Upload the supplied launcher and uniquely named game together, verify the public game, and copy its completed embed into Canvas. Each new download has a new build; update the course link or embed when you publish it.</p>
+<article class="evidence-card evidence-card-feature evidence-card-full"><a aria-label="Open full-size screenshot: Composer Canvas embed generator" class="evidence-shot" href="/assets/images/evidence/composer-canvas-embed-20261028.png" rel="noopener" target="_blank"><img alt="Composer Generate step showing the published folder URL, downloaded Build ID, versioned game URL, Canvas embed HTML, and Copy Canvas embed HTML button." loading="lazy" src="/assets/images/evidence/composer-canvas-embed-20261028.png"/></a><div class="evidence-card-body"><h3>Copy the embed for the downloaded package</h3><p>This screenshot shows a generated demonstration package with an example publishing address. It illustrates the Composer controls; the pictured game is not a published course assignment. Your own package's <code>publish.html</code> helper provides the same embed controls after you close the Composer.</p><a class="evidence-full-link" href="/how-to/canvas/">Follow the publishing and Canvas guide <span aria-hidden="true">→</span></a></div></article>
+<p>For the limits of client-side answer-key hardening, see <a href="/how-to/#answer-hardening">Faculty Resources</a>.</p></div></section>
 
 <section class="section evidence-section" id="modes"><div class="site-container"><div class="resource-group-heading evidence-heading"><p class="eyebrow">Choose how students practice</p><h2>Ten ways to play.</h2><p>Faculty enable the modes that fit the assignment. After selection, the chosen Guide introduces the Quest; the Game Menu can replay that introduction, manage fullscreen, and show the rotating Daily Task as it progresses alongside normal play.</p></div>
 <article class="evidence-card evidence-card-feature evidence-card-full"><a aria-label="Open full-size screenshot: all ten Mastery Quests modes" class="evidence-shot evidence-shot-mode-menu" href="/assets/images/evidence/ten-mode-selection.webp" rel="noopener" target="_blank"><img alt="Mode-selection screen showing Standard Campaign, Timed Trial, Exam Drill, Quiz, Unlimited Practice, Legendary Mode, Score Attack, Trial by Graph, Fading Fortune, and Risk and Reward." loading="lazy" src="/assets/images/evidence/ten-mode-selection.webp"/></a><div class="evidence-card-body"><h3>One menu, ten practice goals</h3><p>The generated game displays only the modes enabled by the instructor. This demonstration build enables all ten. Availability in another build or collection depends on its content and settings.</p><a class="evidence-full-link" href="/assets/images/evidence/ten-mode-selection.webp" rel="noopener" target="_blank">Open full screenshot <span aria-hidden="true">→</span></a></div></article>
