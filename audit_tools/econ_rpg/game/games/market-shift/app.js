@@ -2,7 +2,7 @@ import {clamp,initialValues,market,atPrice,STEP_LABELS,missions,isPolicy,mission
 import {plot,graphMarkup,number} from './graph.js';
 import {scene} from './scene.js';
 const root=document.getElementById('game'),KEY='mq-market-shift-prototype-v2';
-let run=freshRun(),saved=false,view='intro',tool='d',feedback=null,showHint=false;
+let run=freshRun(),saved=false,view='intro',tool='d',feedback=null,showHint=false,placing=false;
 let explore=initialValues(),explorePolicy='';
 const $=id=>document.getElementById(id),esc=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const say=text=>{$('announcement').textContent=text;},current=()=>missionText(missions(run)[run.index],run.index);
@@ -13,19 +13,50 @@ function focusHeading(){root.querySelector('h1,h2')?.focus();}
 function intro(){
   root.innerHTML=`<section class="intro"><div><p class="eyebrow">A Mastery Quests graphing game</p><h1 tabindex="-1">Markets move.<br><em>Make sense of it.</em></h1><p class="lead">You’re the new market analyst in Linden. Read the news, move the curves, and show the council what happens next.</p><div class="actions"><button class="primary" data-action="start">${saved?'Continue your market':'Enter the market'} →</button><button data-action="explore">Explore freely</button></div><small>Five missions · A quick recall quiz · Fresh stories each run</small></div><div class="intro-art"><div class="scene-frame">${scene('festival')}</div><div class="intro-stamp"><strong>Market Shift</strong><span>Your graph. Your forecast.</span></div></div></section><section class="mission-cards" aria-label="Your five missions">${STEP_LABELS.map((label,i)=>`<article><span class="number">0${i+1}</span><h3>${label}</h3><p>${['Follow the buyers.','Follow the sellers.','Two shifts in the same direction.','Two shifts in opposite directions.','A ceiling or a floor.'][i]}</p></article>`).join('')}</section>`;
 }
-const range=(key,label,min,max,step=5)=>`<div class="control-group"><label class="control-label" for="input-${key}"><span>${label}</span><output id="out-${key}" for="input-${key}"></output></label><input id="input-${key}" data-value="${key}" type="range" min="${min}" max="${max}" step="${step}"><div class="end-labels"><span>${key==='price'?'$0':'← Left'}</span><span>${key==='price'?'$120':'Right →'}</span></div></div>`;
-const numeric=(key,label,max)=>`<label for="input-${key}">${label}<input id="input-${key}" data-value="${key}" type="number" min="0" max="${max}" step="1" inputmode="decimal"></label>`;
-function graphCard(isExplore=false){
+const storyNames={
+  'festival-buyers':'Festival day','recipe-buzz':'Recipe rush','apple-sale':'Apple season','cancelled-fair':'A quiet weekend',
+  'storm-crop':'Storm watch','fuel-costs':'Fuel squeeze','bumper-crop':'Harvest time','cold-storage':'Fresh thinking',
+  'festival-harvest':'A full square','recipe-storage':'Fresh favorites','fair-storm':'Double trouble','sale-fuel':'Mixed news',
+  'festival-storm':'Crowds & clouds','recipe-fuel':'A costly favorite','sale-harvest':'Plenty to spare','fair-storage':'A quieter harvest'
+};
+const storyName=m=>storyNames[m.id]||(m.type==='ceiling'?'The price promise':'The price guarantee');
+const range=(key,label,min,max,step=5)=>`<div class="control-group"><label class="control-label" for="input-${key}"><span>${label}</span><output id="out-${key}" for="input-${key}" aria-hidden="true"></output></label><input id="input-${key}" data-value="${key}" type="range" min="${min}" max="${max}" step="${step}"></div>`;
+const numeric=(key,label,max,delta=false)=>`<label for="input-${key}"><span>${label}</span><input id="input-${key}" data-value="${key}" type="number" min="0" max="${max}" step="1" inputmode="decimal" ${delta?`aria-describedby="delta-${key}"`:''}>${delta?`<small id="delta-${key}"></small>`:''}</label>`;
+function graphHelp(isExplore=false){
   const policy=isExplore?!!explorePolicy:isPolicy(current());
-  return `<section class="graph-card" aria-labelledby="graph-heading"><div class="graph-top"><h3 id="graph-heading">${isExplore?'Market workbench':'Your forecast board'}</h3><span>Starting market: $60 · 50 crates</span></div><div id="liveValues" class="live-values" aria-label="Current graph coordinates"></div><div class="graph-legend"><span><i class="d-key"></i>D · Demand</span><span><i class="s-key"></i>S · Supply</span><span><i class="base-key"></i>Starting curves</span></div><div id="graphTools" class="graph-tools" role="group" aria-label="Graph tool"></div><svg id="graph" class="graph" viewBox="0 0 760 440" role="img" aria-labelledby="graph-title graph-desc"></svg><div id="resultStrip" class="result-strip" hidden></div><p class="graph-note">${isExplore?'Drag a curve left or right to explore.':policy?'Drag the purple price label, then place Qs and Qd on the line.':'Drag D or S left or right. Move E₁ to the new intersection.'} You can also use the controls.</p></section>`;
+  return `<details class="graph-help"><summary>Graph help</summary><p>${isExplore?'Drag either curve to explore. E follows the intersection.':policy?'Drag the purple price label, then drag Qs and Qd to the two intersections.':'Drag either curve or its D/S handle. Move E₁ to your forecast intersection.'}</p><p>${policy&&!isExplore?'Qs is the quantity sellers offer; Qd is what buyers want.':'Sliders shift curves horizontally: negative values move left, positive values move right.'} You can also ${isExplore?'use the sliders':'type values into the fields above the graph'}.</p><p>The gray dashed curves show the original market: $60 and 50 crates.</p><div id="graphTools" class="graph-tools" role="group" aria-label="Click placement tool"></div></details>`;
+}
+function graphCard(isExplore=false){
+  const policy=isExplore?!!explorePolicy:isPolicy(current()),locked=!isExplore&&run.completed;
+  const title=isExplore?'Market equilibrium':policy?'Quantities at the legal price':'Your equilibrium · E₁';
+  return `<section class="graph-card" aria-labelledby="graph-heading">
+    <div class="graph-top"><h3 id="graph-heading">${title}</h3></div>
+    ${isExplore?'<div id="liveValues" class="live-values" aria-label="Current market coordinates"></div>':`<fieldset id="forecastFields" class="forecast-fields" ${locked?'disabled':''}><legend class="sr-only">${title}</legend><div id="liveValues" class="live-values forecast-values">${policy?numeric('qs','Qs · crates offered',100)+numeric('qd','Qd · crates wanted',100):numeric('p','Price · $ per crate',120,true)+numeric('q','Quantity · crates',100,true)}</div></fieldset>`}
+    <div class="graph-legend"><span><i class="d-key"></i>D · Demand</span><span><i class="s-key"></i>S · Supply</span><span><i class="base-key"></i>Before</span></div>
+    <svg id="graph" class="graph" viewBox="0 0 760 440" role="img" aria-labelledby="graph-title graph-desc"></svg>
+    <div id="resultStrip" class="result-strip" hidden></div>
+  </section>`;
 }
 function mission(){
   const m=current(),policy=isPolicy(m);
-  root.innerHTML=`<ol class="progress" aria-label="Mission progress">${STEP_LABELS.map((label,i)=>`<li class="${i===run.index?'active':i<run.index?'done':''}" ${i===run.index?'aria-current="step"':''}>${i<run.index?'✓':i+1} · ${label}</li>`).join('')}</ol><section class="brief"><div><p class="eyebrow">Linden market bulletin · Mission ${run.index+1} of 5</p><h2 tabindex="-1">${m.title}</h2><p>${m.event}</p>${run.index>0&&!policy?'<small>Each bulletin starts from the original market: $60 and 50 crates.</small>':''}</div><div class="scene-frame">${scene(m.art,policy?m:null)}</div></section><div class="workbench">${graphCard()}<aside class="controls" aria-labelledby="task-title"><p class="eyebrow">${run.completed?'Forecast filed':'Your move'}</p><h3 id="task-title" class="task">${m.task}</h3><fieldset id="inputFields" ${run.completed?'disabled':''}><legend class="sr-only">Graph values</legend>${!policy?range('d','Demand',-30,30)+range('s','Supply',-30,30)+`<div class="control-group"><h3>Place your equilibrium E₁</h3><div class="numeric-row">${numeric('q','Quantity · crates',100)}${numeric('p','Price · $ per crate',120)}</div></div>`:range('price',m.type==='ceiling'?'Maximum price':'Minimum price',0,120,1)+`<div class="control-group"><h3>Read the two quantities</h3><div class="numeric-row">${numeric('qs','Qs · crates offered',100)}${numeric('qd','Qd · crates wanted',100)}</div></div>`}</fieldset>${run.completed?'':`<button class="primary" data-action="check">Check my forecast</button><div class="control-actions"><button data-action="hint">Give me a hint</button><button data-action="reset">Reset graph</button></div>`}<p id="feedback" class="feedback ${feedback?.ok?'success':''}" role="status" ${feedback?'':'hidden'}>${esc(feedback?.text||'')}</p><p class="hint" ${showHint?'':'hidden'}>${m.hint}</p></aside></div>${run.completed?`<section class="debrief"><div><p class="eyebrow">The economics behind your forecast</p><h3>${m.concept}</h3><p>${m.debrief}</p>${!policy?'<p class="hint">The numbers illustrate the shifts you drew. The news establishes direction, not exact size.</p>':''}</div><button class="primary" data-action="next">${run.index===4?'Try the recall quiz':'Next market day'} →</button></section>`:''}`;
+  root.innerHTML=`<ol class="progress" aria-label="Mission progress">${missions(run).map((item,i)=>`<li class="${i===run.index?'active':i<run.index?'done':''}" ${i===run.index?'aria-current="step"':''}><span class="step-number">${i<run.index?'✓':i+1}</span><span>${storyName(item)}</span></li>`).join('')}</ol>
+    <section class="brief"><div><p class="eyebrow">Linden market bulletin</p><h2 tabindex="-1">${m.title}</h2><p>${m.event}</p></div><div class="scene-frame">${scene(m.art,policy?m:null)}</div></section>
+    <div class="workbench">${graphCard()}<aside class="controls" aria-labelledby="task-title">
+      <h3 id="task-title" class="task">${run.completed?'✓ Forecast filed':policy?'Set the legal price':'Adjust the curves'}</h3>
+      <fieldset id="inputFields" ${run.completed?'disabled':''}><legend class="sr-only">Graph adjustments</legend>${policy?range('price',m.type==='ceiling'?'Maximum price':'Minimum price',0,120,1):range('d','Demand',-30,30)+range('s','Supply',-30,30)}</fieldset>
+      ${run.completed?'':`<button class="primary" data-action="check">Check forecast</button><div class="control-actions"><button data-action="hint">Hint</button><button data-action="reset">Reset</button></div>`}
+      <p id="feedback" class="feedback" role="status" ${feedback&&!feedback.ok?'':'hidden'}>${esc(feedback?.text||'')}</p><p class="hint" ${showHint&&!run.completed?'':'hidden'}>${m.hint}</p>
+      ${graphHelp()}
+    </aside></div>
+    ${run.completed?`<section class="debrief"><div><h3>${m.concept}</h3><p>${m.debrief}</p>${!policy?'<details class="model-note"><summary>About these numbers</summary><p>The numbers illustrate the shifts you drew. The news establishes direction, not exact size. Each bulletin starts from the original market.</p></details>':''}</div><button class="primary" data-action="next">${run.index===4?'Try the recall quiz':'Next market day'} →</button></section>`:''}`;
   bindGraph();update();
 }
 function exploration(){
-  root.innerHTML=`<section class="explore-head"><div><p class="eyebrow">Explore · No scores or attempts</p><h2 tabindex="-1">What moves the market?</h2><p>Change a relationship and watch the model respond.</p></div><button data-action="return">${saved?'Back to your market':'Back to Market Shift'}</button></section><div class="workbench">${graphCard(true)}<aside class="controls"><h3>Change the market</h3>${range('d','Demand',-30,30)}${range('s','Supply',-30,30)}<div class="control-group"><label for="policySelect">Price rule</label><select id="policySelect"><option value="">No price control</option><option value="ceiling" ${explorePolicy==='ceiling'?'selected':''}>Price ceiling · maximum</option><option value="floor" ${explorePolicy==='floor'?'selected':''}>Price floor · minimum</option></select><div id="explorePrice" ${explorePolicy?'':'hidden'}>${range('price','Legal price',0,120,1)}</div><p id="exploreResult" class="explore-result"></p></div><button data-action="reset">Reset market</button><p class="hint">A price rule sets a legal limit; it does not move either curve. Assume no government purchases.</p></aside></div>`;
+  root.innerHTML=`<section class="explore-head"><div><p class="eyebrow">Explore</p><h2 tabindex="-1">What moves the market?</h2></div><button data-action="return">${saved?'Back to your market':'Back to Market Shift'}</button></section>
+    <div class="workbench">${graphCard(true)}<aside class="controls"><h3>Adjust the curves</h3>${range('d','Demand',-30,30)}${range('s','Supply',-30,30)}
+      <div class="control-group"><label for="policySelect">Price rule</label><select id="policySelect"><option value="">No price control</option><option value="ceiling" ${explorePolicy==='ceiling'?'selected':''}>Price ceiling · maximum</option><option value="floor" ${explorePolicy==='floor'?'selected':''}>Price floor · minimum</option></select><div id="explorePrice" ${explorePolicy?'':'hidden'}>${range('price','Legal price',0,120,1)}</div><p id="exploreResult" class="explore-result"></p></div>
+      <button data-action="reset">Reset market</button>${graphHelp(true)}
+    </aside></div>`;
   bindGraph();update();
 }
 function quiz(){
@@ -36,33 +67,42 @@ function report(){
   const first=run.quiz.answers.filter(a=>a[0]?.correct).length;
   root.innerHTML=`<section class="report"><p class="eyebrow">Five market days, one bigger picture</p><h1 tabindex="-1">Your market<br><em>notebook.</em></h1><p>You built forecasts, explored a price rule, and explained the economics behind them.</p><div class="recall-summary"><div><span>Recall · first answers</span><strong>${first} / 5</strong></div><p>All five questions completed with feedback. Your first responses remain separate from retries.</p></div><div class="report-list">${allRecords(run).map((record,i)=>{const m=missionText(missions(run)[i],i),answers=run.quiz.answers[i];return `<article class="report-item"><p class="eyebrow">${m.tag}</p><h3>${m.title}</h3><p class="evidence">${record.attempts.length===1&&!record.hints?'Correct on your first forecast':'Completed with practice'} · ${record.attempts.length} forecast${record.attempts.length===1?'':'s'} · ${record.hints} hint${record.hints===1?'':'s'}</p><p>${m.debrief}</p><p class="recall-evidence">Recall: ${answers[0]?.correct?'correct on first answer':`correct after ${answers.length} answers`}.</p></article>`;}).join('')}</div><div class="actions"><button class="primary" data-action="explore">Keep exploring</button><button data-action="download">Download notebook</button><button data-action="replay">Play new scenarios</button></div><p class="hint">Completion after feedback is practice evidence, not a full mastery assessment.</p></section>`;
 }
-function render(){({intro,mission,explore:exploration,quiz,report}[view])();}
+function render(){placing=false;({intro,mission,explore:exploration,quiz,report}[view])();}
 function policyType(){return view==='explore'?(explorePolicy||null):(isPolicy(current())?current().type:null);}
 function update(){
   const isExplore=view==='explore',v=isExplore?explore:run.values,policy=policyType(),actual=isExplore||run.completed;
-  for(const [key,value] of Object.entries(v)){const input=$('input-'+key);if(input&&document.activeElement!==input)input.value=value;const output=$('out-'+key);if(output)output.textContent=key==='price'?'$'+number(value):value===0?'Starting position':number(Math.abs(value))+' '+(value<0?'left':'right');}
+  const e=actual?market(v.d,v.s):{q:v.q,p:v.p},data=atPrice(v.price,v.d,v.s,policy||'ceiling');
+  const displayed={...v,...(!isExplore&&run.completed?(policy?{qs:data.qs,qd:data.qd}:{q:e.q,p:e.p}):{})};
+  for(const [key,value] of Object.entries(displayed)){
+    const input=$('input-'+key);if(input&&input.value!==String(value))input.value=value;
+    const output=$('out-'+key);if(output)output.textContent=key==='price'?'$'+number(value):`${value>0?'+':''}${number(value)}`;
+    if(input?.type==='range')input.setAttribute('aria-valuetext',key==='price'?`$${number(value)} per crate`:value===0?'Original position':`${number(Math.abs(value))} crates ${value<0?'left':'right'} of the original curve`);
+  }
   $('graph').innerHTML=graphMarkup(v,{explore:isExplore,locked:!isExplore&&run.completed,policy});
-  const tools=isExplore||!policy?[['d','Move D'],['s','Move S'],...(!isExplore?[['e','Place E₁']]:[]),...(isExplore&&policy?[['price','Set price']]:[])]:[['price','Set price'],['qs','Place Qs'],['qd','Place Qd']];
+  const tools=isExplore?(policy?[['price','Set price']]:[]):policy?[['price','Set price'],['qs','Place Qs'],['qd','Place Qd']]:[['e','Place E₁']];
   if($('graphTools').dataset.signature!==tools.map(t=>t[0]).join(',')){$('graphTools').innerHTML=tools.map(([key,label])=>`<button data-tool="${key}" aria-pressed="${tool===key}">${label}</button>`).join('');$('graphTools').dataset.signature=tools.map(t=>t[0]).join(',');}
   root.querySelectorAll('[data-tool]').forEach(b=>{b.setAttribute('aria-pressed',String(b.dataset.tool===tool));b.disabled=!isExplore&&run.completed;});
-  const e=actual?market(v.d,v.s):{q:v.q,p:v.p},data=atPrice(v.price,v.d,v.s,policy||'ceiling');
-  const delta=(value,base)=>value===base?'unchanged':`${value>base?'+':'−'}${number(Math.abs(value-base))}`;
-  $('liveValues').innerHTML=policy&&!isExplore?`<div><span>${policy==='ceiling'?'Maximum':'Minimum'} price</span><strong>$${number(v.price)}</strong></div><div><span>Qs · offered</span><strong>${number(actual?data.qs:v.qs)}</strong></div><div><span>Qd · wanted</span><strong>${number(actual?data.qd:v.qd)}</strong></div>`:`<div><span>${isExplore?'Market-clearing':'Your E₁'} price</span><strong>$${number(e.p)} <small>${delta(e.p,60)}</small></strong></div><div><span>${isExplore?'Market-clearing':'Your E₁'} quantity</span><strong>${number(e.q)} <small>${delta(e.q,50)}</small></strong></div>`;
+  const delta=(value,base)=>value===base?'Unchanged':`${value>base?'+':'−'}${number(Math.abs(value-base))} from start`;
+  if(isExplore)$('liveValues').innerHTML=`<div><span>Price · $ per crate</span><strong>$${number(e.p)}</strong><small>${delta(e.p,60)}</small></div><div><span>Quantity · crates</span><strong>${number(e.q)}</strong><small>${delta(e.q,50)}</small></div>`;
+  else if(!policy){$('delta-p').textContent=delta(e.p,60);$('delta-q').textContent=delta(e.q,50);}
   const strip=$('resultStrip');strip.hidden=!(actual&&policy);
   if(!strip.hidden){const gap=policy==='ceiling'?'shortage':'surplus';strip.innerHTML=`<div>${data.binding?(gap==='shortage'?'Shortage':'Surplus'):'Price rule'}<strong>${data.binding?number(data[gap])+' crates':'Not binding'}</strong></div><div>${data.binding?'At most traded':'Equilibrium trade'}<strong>${number(data.traded)} crates</strong></div>`;}
-  if(isExplore){$('explorePrice').hidden=!policy;$('exploreResult').textContent=!policy?'E marks the intersection of your current curves.':data.binding?`At $${number(v.price)}, sellers offer ${number(data.qs)} crates and buyers want ${number(data.qd)}. At most ${number(data.traded)} trade. Quantities beyond 100 are outside this graph.`:`The $${number(v.price)} ${policy} is not binding. It does not force price ${policy==='ceiling'?'up':'down'}; trade remains at the equilibrium.`;}
+  if(isExplore){
+    $('explorePrice').hidden=!policy;$('exploreResult').hidden=!policy;
+    $('exploreResult').textContent=!policy?'':data.binding?`At $${number(v.price)}: sellers offer ${number(data.qs)} crates; buyers want ${number(data.qd)}.`:`The $${number(v.price)} ${policy} is not binding. It does not force price ${policy==='ceiling'?'up':'down'}; trade remains at the equilibrium.`;
+  }
 }
 function pointFromEvent(event){const matrix=$('graph').getScreenCTM();if(!matrix)return null;const p=new DOMPoint(event.clientX,event.clientY).matrixTransform(matrix.inverse());return {q:(p.x-plot.left)/(plot.right-plot.left)*100,p:(plot.bottom-p.y)/(plot.bottom-plot.top)*120};}
 function bindGraph(){
   const graph=$('graph');let drag=null;
   graph.addEventListener('pointerdown',event=>{
     if(event.button!==0||view==='mission'&&run.completed)return;
-    const v=view==='explore'?explore:run.values,hit=event.target.closest('[data-drag]')?.dataset.drag,kind=hit||(['e','price','qs','qd'].includes(tool)?tool:null);
+    const v=view==='explore'?explore:run.values,hit=event.target.closest('[data-drag]')?.dataset.drag,kind=placing?tool:hit||(['e','price','qs','qd'].includes(tool)?tool:null),useHandle=!placing&&!!hit;
     if(!kind||view==='explore'&&['e','qs','qd'].includes(kind)||kind==='price'&&!policyType())return;
     const start=pointFromEvent(event);if(!start)return;
-    drag={kind,start,value:v[kind],relative:!!hit};tool=kind;graph.setPointerCapture(event.pointerId);event.preventDefault();
+    placing=false;drag={kind,start,value:v[kind],relative:useHandle};tool=kind;graph.setPointerCapture(event.pointerId);event.preventDefault();
     // A label is an offset handle: picking it up must not jump the value.
-    if(!hit)move(event);
+    if(!useHandle)move(event);
   });
   function move(event){if(!drag)return;const point=pointFromEvent(event);if(!point)return;const v=view==='explore'?explore:run.values;
     if(['d','s'].includes(drag.kind))v[drag.kind]=Math.round(clamp(drag.value+point.q-drag.start.q,-30,30)/5)*5;
@@ -85,7 +125,7 @@ function download(){
 }
 root.addEventListener('click',event=>{
   const button=event.target.closest('button');if(!button)return;
-  if(button.dataset.tool){tool=button.dataset.tool;update();say(`Selected ${button.textContent}. Use the graph or its controls.`);return;}
+  if(button.dataset.tool){tool=button.dataset.tool;placing=true;update();say(`Selected ${button.textContent}. Click the graph to place it.`);return;}
   if(button.dataset.choice!==undefined){if(answerQuiz(run,Number(button.dataset.choice))){save();render();const q=quizQuestions(run)[run.quiz.index];say((run.quiz.answers[run.quiz.index].at(-1).correct?'Correct. ':'Try again. ')+q.explanation);root.querySelector('[data-action=quiz-next],.quiz-feedback')?.focus();}return;}
   const action=button.dataset.action;
   if(action==='start'){save();resume();}
