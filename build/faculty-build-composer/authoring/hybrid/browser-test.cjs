@@ -12,9 +12,18 @@ function unzip(bytes){const entries=new Map();let i=0;while(bytes.readUInt32LE(i
     const context=await browser.newContext({viewport:{width:1280,height:900},acceptDownloads:true});
     await context.route('**/*',route=>route.request().url().startsWith(origin)?route.continue():route.abort());
     const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));page.on('dialog',d=>d.dismiss());
-    await page.goto(origin+'/build/faculty-build-composer/authoring/hybrid/');await page.locator('#hybridCount').waitFor();
+    await page.goto(origin+'/build/faculty-build-composer/authoring/hybrid/');await page.locator('#hybridHeading').waitFor();
+    assert(await page.locator('[name=hybridSource][value=shared]').isChecked());
+    assert(await page.locator('#areaFilter').isVisible());
+    assert.equal(await page.locator('#hybridCustomContent').isVisible(),false);
+    await page.screenshot({path:path.join(out,'composer-default-desktop.png'),fullPage:true});
+    results.push('first visit defaults to MQ collection with custom authoring hidden');
     await page.locator('[name=hybridSource][value=own]').check();
-    assert.equal(await page.locator('[data-step-panel="1"]').isVisible(),false);
+    assert(await page.locator('[data-step-panel="1"]').isVisible());
+    assert.equal(await page.locator('#areaFilter').isVisible(),false);
+    assert.equal(await page.locator('#questionEditor').isVisible(),false);
+    await page.screenshot({path:path.join(out,'composer-custom-entry.png'),fullPage:true});
+    await page.locator('[data-method=paste]').click();
     await page.locator('#pasteInput').fill('question: Incomplete biology question\nA: First choice\nanswer: Z\nimage: diagram.png');await page.locator('#importPaste').click();
     await page.waitForFunction(()=>MQHybridUI.project().questions.length===1);
     assert((await page.locator('#hybridStatus').textContent()).includes('unsupported field'));
@@ -27,18 +36,26 @@ function unzip(bytes){const entries=new Map();let i=0;while(bytes.readUInt32LE(i
     await page.locator('[data-preview]').click();await page.locator('[data-answer=A]').click();assert((await page.locator('.hybrid-preview [role=status]').textContent()).includes('Correct.'));
     await page.locator('[data-edit]').click();await page.locator('#hq-explanation').fill('Ribosomes assemble amino acids into proteins.');await page.locator('#saveQuestion').click();
     await page.waitForFunction(()=>MQHybridUI.project().questions[0].review===null);results.push('paste errors, manual completion, preview, explicit review, edit invalidation');
-    await page.locator('#selectAllQuestions').click();await page.locator('#bulkTopic').fill('Cell biology');await page.locator('#applyBulk').click();
+    await page.locator('#bulkTools > summary').click();await page.locator('#selectAllQuestions').click();await page.locator('#bulkTopic').fill('Cell biology');await page.locator('#applyBulk').click();
     await page.waitForFunction(()=>MQHybridUI.project().questions[0].topic==='Cell biology');
     await page.locator('[name=hybridSource][value=shared]').check();assert.equal(await page.locator('[data-edit]').count(),1);
+    assert.equal(await page.locator('#hybridCustomContent').isVisible(),false);
+    await page.locator('[name=hybridSource][value=mixed]').check();
+    assert(await page.locator('#areaFilter').isVisible());await page.locator('#myQuestionsView').click();assert(await page.locator('#hybridCustomContent').isVisible());
     await page.locator('[name=hybridSource][value=own]').check();
     const before=await page.evaluate(()=>localStorage.getItem('mq-hybrid-authoring-v1'));
     await page.reload();await page.locator('#restoreDraft').waitFor();assert.equal(await page.evaluate(()=>localStorage.getItem('mq-hybrid-authoring-v1')),before);
     await page.locator('#restoreDraft').click();await page.waitForFunction(()=>MQHybridUI.project().questions.length===1);results.push('bulk assignment, source preservation, non-destructive browser draft recovery');
-    await page.locator('#csvInput').setInputFiles(path.join(__dirname,'demo-biology.csv'));await page.waitForFunction(()=>MQHybridUI.project().questions.length===16);results.push('CSV file import in browser');
-    async function openProject(name){await page.locator('#openProject').setInputFiles(path.join(out,name+'-project.json'));await page.waitForFunction(()=>document.getElementById('hybridStatus').textContent.includes('Project restored'));await page.locator('[data-step="7"]').click();await page.waitForFunction(()=>!document.getElementById('downloadPackage').disabled);}
+    await page.locator('[data-method=csv]').click();await page.locator('#csvInput').setInputFiles(path.join(__dirname,'demo-biology.csv'));await page.waitForFunction(()=>MQHybridUI.project().questions.length===16);results.push('CSV file import in browser');
+    await page.locator('#continueComposer').click();assert(await page.locator('#gameTitle').isVisible());
+    await page.screenshot({path:path.join(out,'composer-details-collapsed.png'),fullPage:true});
+    for(const step of [2,3,4,5,6,7]){await page.locator(`[data-step="${step}"]`).click();assert.equal(await page.locator('#hybridGuide').isVisible(),false);assert(await page.locator('#questionSummary').isVisible());}
+    await page.locator('#editQuestions').click();assert(await page.locator('#hybridGuide').isVisible());assert.equal(await page.locator('#questionSummary').isVisible(),false);assert.equal(await page.locator('[data-question-details]').count(),16);
+    results.push('question editor collapses to summary on every later Composer step and reopens without losing work');
+    async function openProject(name){if(await page.locator('#projectMenu').getAttribute('open')===null)await page.locator('#projectMenu > summary').click();await page.locator('#openProject').setInputFiles(path.join(out,name+'-project.json'));await page.waitForFunction(()=>document.getElementById('hybridStatus').textContent.includes('Project restored'));await page.locator('[data-step="7"]').click();await page.waitForFunction(()=>!document.getElementById('downloadPackage').disabled);}
     async function generate(name){const pending=page.waitForEvent('download',{timeout:90000});await page.locator('#downloadPackage').click();const download=await pending;await download.saveAs(path.join(out,name+'.zip'));const entries=unzip(fs.readFileSync(path.join(out,name+'.zip')));assert(!entries.has('composition_recipe.json'));assert(![...entries.values()].some(s=>s.includes('EXCLUDED_SENTINEL')||s.includes('UNFINISHED_SENTINEL')||s.includes('"hybrid":')));const manifest=JSON.parse(entries.get('composition_manifest.json'));assert(manifest.answerVerification.passed);fs.writeFileSync(path.join(out,name+'-download.html'),entries.get(manifest.generatedFilename));return {entries,manifest};}
     await openProject('own');
-    const draftDownload=page.waitForEvent('download');await page.locator('#saveProject').click();const saved=await draftDownload;await saved.saveAs(path.join(out,'roundtrip.json'));assert.equal(JSON.parse(fs.readFileSync(path.join(out,'roundtrip.json'))).hybrid.questions.length,16);
+    const draftDownload=page.waitForEvent('download');await page.locator('#downloadRecipe').click();const saved=await draftDownload;await saved.saveAs(path.join(out,'roundtrip.json'));assert.equal(JSON.parse(fs.readFileSync(path.join(out,'roundtrip.json'))).hybrid.questions.length,16);
     const own=await generate('own');assert.equal(own.manifest.poolCounts.totalCanonical,15);assert.equal(own.manifest.conceptReviewMappedPdfCount,0);results.push('instructor-only ZIP: hashes, no supplied questions, no unrelated reviews, no authoring project or excluded draft');
     const game=await context.newPage();game.on('pageerror',e=>errors.push(e.message));
     await game.goto(origin+'/tmp/hybrid-composer/own-download.html');await game.waitForFunction(()=>globalThis.MQ_BUILD);
@@ -67,15 +84,24 @@ function unzip(bytes){const entries=new Map();let i=0;while(bytes.readUInt32LE(i
     await game.goto(origin+'/tmp/hybrid-composer/mixed-download.html');await game.waitForFunction(()=>globalThis.MQ_BUILD);
     assert(await game.evaluate(()=>Object.values(questionBanks).flat().some(q=>q.source==='instructor-custom')&&Object.values(questionBanks).flat().some(q=>q.source!=='instructor-custom')));
     await game.locator('#playerNameInput').fill('Mixed QA');await game.locator('#startScreen .start-btn').first().click();await game.locator('[data-mode=quiz]').click();await game.locator('#quizQuestionCountSelect').selectOption('5');await game.getByRole('button',{name:'Launch Quiz',exact:true}).click();if(await game.locator('#guideIntroProceed').isVisible())await game.locator('#guideIntroProceed').click();await game.waitForFunction(()=>currentQuestion&&currentQuestion.id);await game.locator('#answers button').first().click();await game.waitForFunction(()=>quizQuestionsCompleted===1);results.push('mixed ZIP and runtime contain both selected sources and accept gameplay answers');
+    await page.locator('#editQuestions').click();
     await page.setViewportSize({width:390,height:844});await page.locator('#hybridHeading').scrollIntoViewIfNeeded();
-    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Narrow viewport overflow');
+    await page.screenshot({path:path.join(out,'composer-mobile-layout.png')});
+    const overflow=await page.evaluate(()=>[...document.querySelectorAll('body *')].filter(n=>n.getBoundingClientRect().width&&n.getBoundingClientRect().right>innerWidth+1).map(n=>({tag:n.tagName,id:n.id,class:n.className,right:n.getBoundingClientRect().right})).slice(0,20));
+    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Narrow viewport overflow: '+JSON.stringify(overflow));
     await page.locator('[name=hybridSource][value=own]').focus();await page.keyboard.press('Space');await page.waitForFunction(()=>MQHybridUI.project().source==='own');await page.keyboard.press('Tab');assert(await page.evaluate(()=>document.activeElement!==document.body));
+    await page.locator('[data-method=write]').focus();await page.keyboard.press('Enter');assert(await page.locator('#hq-question').isVisible());assert.equal(await page.evaluate(()=>document.activeElement.id),'hq-question');await page.locator('#cancelEdit').click();
     await page.locator('#hybridHeading').scrollIntoViewIfNeeded();
     await page.screenshot({path:path.join(out,'composer-mobile.png')});results.push('390px layout, keyboard source selection and focus traversal');
     if(process.env.MQ_AXE_MODULE){
       await page.addScriptTag({path:require.resolve(process.env.MQ_AXE_MODULE)});
-      const axe=await page.evaluate(async()=>axe.run(document.querySelector('#hybridGuide'),{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa']}}));
-      fs.writeFileSync(path.join(out,'axe-results.json'),JSON.stringify(axe.violations,null,2));assert.deepEqual(axe.violations.map(v=>({id:v.id,impact:v.impact,nodes:v.nodes.map(n=>n.target)})),[]);results.push('automated WCAG A/AA checks on Hybrid guide');
+      const violations=[];
+      for(const method of ['write','paste','csv']){
+        await page.locator(`[data-method=${method}]`).click();
+        const scan=await page.evaluate(async()=>axe.run(document.querySelector('#hybridGuide'),{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa']}}));
+        violations.push(...scan.violations.map(v=>({method,id:v.id,impact:v.impact,nodes:v.nodes.map(n=>n.target)})));
+      }
+      fs.writeFileSync(path.join(out,'axe-results.json'),JSON.stringify(violations,null,2));assert.deepEqual(violations,[]);results.push('automated WCAG A/AA checks on write, paste and CSV views');
     }
     const publicPage=await context.newPage();publicPage.on('pageerror',e=>errors.push(e.message));await publicPage.goto(origin+'/build/faculty-build-composer/');
     await publicPage.locator('[data-step="7"]').click();

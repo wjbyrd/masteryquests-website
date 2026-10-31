@@ -5,12 +5,14 @@
   "baseline": "becd0f66926ffa0c58b13c3832570efbdc0e4150",
   "focusedChecks": {"passed": 24, "failed": 0, "command": "node build/faculty-build-composer/authoring/hybrid/test.cjs"},
   "browserChecks": {
-    "passed": 9,
+    "passed": 11,
     "failed": 0,
     "browser": "Microsoft Edge via Playwright",
     "environment": "localhost; external requests blocked",
     "command": "node build/faculty-build-composer/authoring/hybrid/browser-test.cjs",
     "coverage": [
+      "MQ-first landing with custom authoring hidden until selected",
+      "question workspace collapses on all later steps and reopens without data loss",
       "paste errors, completion, preview, explicit review and edit invalidation",
       "bulk assignment, source preservation and protected browser draft recovery",
       "CSV file import",
@@ -18,7 +20,7 @@
       "instructor-only Quiz startup, correct hashed answer, feedback and next question",
       "mixed ZIP generation and gameplay answer acceptance",
       "390px layout and keyboard source selection/focus traversal",
-      "axe WCAG 2 A/AA and WCAG 2.1 AA guide scan: zero violations",
+      "axe WCAG 2 A/AA and WCAG 2.1 AA scans of write/paste/CSV views: zero violations",
       "unchanged public Composer recipe import and original ZIP behavior"
     ]
   },
@@ -39,6 +41,7 @@
     "hybridPublished": false
   },
   "publicComposerBaselineFilesUnchanged": true,
+  "uxRevision": "2026-10-31: question work integrated into step 1, progressive entry methods, larger descriptive headings, compact later-step summary; quiz requirements and core runtime unchanged",
   "localArtifacts": "tmp/hybrid-composer/ (ignored; includes JSON results, ZIPs, screenshots and synthetic projects)",
   "remaining": [
     "faculty usability and instructional/content review",

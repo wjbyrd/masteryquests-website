@@ -5,9 +5,13 @@ const here=__dirname,root=path.resolve(here,'../..');
 function replaceOnce(source,old,next){if(source.split(old).length!==2)throw new Error('Staging integration seam changed: '+old.slice(0,90));return source.replace(old,next);}
 let html=fs.readFileSync(path.join(root,'index.html'),'utf8').replace(/\r\n/g,'\n');
 html=replaceOnce(html,'<head>','<head>\n  <base href="../../">\n  <meta name="robots" content="noindex,nofollow">\n  <link rel="stylesheet" href="authoring/hybrid/hybrid.css">');
-html=html.replaceAll('Faculty Concept Composer','Hybrid Composer · Unreleased');
-html=replaceOnce(html,'Choose economics content, modes, and artwork. Check readiness, then download a polished Mastery Quest.','Local staging extension for owner review. Not released or evaluated in the submitted manuscript.');
-html=replaceOnce(html,'<nav class="step-nav"','<section id="hybridGuide" class="panel" aria-labelledby="hybridHeading"></section>\n    <nav class="step-nav"');
+html=html.replaceAll('Faculty Concept Composer','Faculty Composer');
+html=replaceOnce(html,'Choose economics content, modes, and artwork. Check readiness, then download a polished Mastery Quest.','Choose Mastery Quests questions, add your own, or combine both. <span class="hybrid-unreleased">Unreleased preview</span>');
+html=replaceOnce(html,'<nav class="step-nav"','<div id="hybridProjectTools"></div>\n    <nav class="step-nav"');
+html=replaceOnce(html,'1. Concepts &amp; scope','1. Questions');
+html=replaceOnce(html,'    <section class="step active" data-step-panel="1">\n      <div class="panel">','    <section class="step active" data-step-panel="1">\n      <section id="hybridGuide" class="panel" aria-labelledby="hybridHeading"></section>\n      <div class="panel" id="hybridSharedContent">');
+html=replaceOnce(html,'<h2>Choose concepts</h2>','<h2>2. Select Mastery Quests content</h2>');
+html=replaceOnce(html,'Choose concepts, then select the learning outcomes you teach. Use coverage presets for a quick start.','Choose a course area to browse the ready-to-use question collection.');
 html=replaceOnce(html,'<script src="composer.js?v=20261028-build-versioning"></script>','<script src="authoring/hybrid/hybrid-core.js"></script>\n  <script src="authoring/hybrid/hybrid-ui.js"></script>\n  <script src="authoring/hybrid/generated-composer.js"></script>');
 html=html.replace('import composition_recipe.json','import your separately saved authoring project');
 html=html.replace('Download Composition Recipe (.JSON)','Save Authoring Project (.JSON)');
@@ -16,6 +20,7 @@ js=replaceOnce(js,'const Core = window.MQComposerCore;',`const Hybrid = window.M
 const Core = Hybrid.engine.Core;`);
 js=replaceOnce(js,'schemaVersion: Core.RECIPE_SCHEMA_VERSION,\n    gameId: state.gameId,','schemaVersion: Core.RECIPE_SCHEMA_VERSION,\n    hybrid: Hybrid.project(),\n    gameId: state.gameId,');
 js=replaceOnce(js,'state.composition = Core.compose(Library, recipe());','state.composition = Core.compose(Library, recipe());\n  Hybrid.changed(recipe(), state.composition);');
+js=replaceOnce(js,'  state.step = Math.max(1, Math.min(7, Number(step)));','  state.step = Math.max(1, Math.min(7, Number(step)));\n  Hybrid.stepChanged(state.step);');
 js=replaceOnce(js,"  const container = $('coverageRecommendations');",`  const container = $('coverageRecommendations');
   if(Hybrid.project().source === 'own'){
     container.textContent = 'Use the pool requirements below to choose a supported mode or add your own questions. This guide does not create checkpoint, repair, bridge, or graph pools.';
