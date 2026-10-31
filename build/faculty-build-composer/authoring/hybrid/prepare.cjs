@@ -7,6 +7,7 @@ let html=fs.readFileSync(path.join(root,'index.html'),'utf8').replace(/\r\n/g,'\
 html=replaceOnce(html,'<head>','<head>\n  <base href="../../">\n  <meta name="robots" content="noindex,nofollow">\n  <link rel="stylesheet" href="authoring/hybrid/hybrid.css">');
 html=html.replaceAll('Faculty Concept Composer','Faculty Composer');
 html=replaceOnce(html,'Choose economics content, modes, and artwork. Check readiness, then download a polished Mastery Quest.','Choose Mastery Quests questions, add your own, or combine both. <span class="hybrid-unreleased">Unreleased preview</span>');
+html=replaceOnce(html,'  <header class="site-header">','  <header class="site-header">\n    <a class="hybrid-back" href="authoring/hybrid/build-preview.html" target="_top">← Build options</a>');
 html=replaceOnce(html,'<nav class="step-nav"','<div id="hybridProjectTools"></div>\n    <nav class="step-nav"');
 html=replaceOnce(html,'1. Concepts &amp; scope','1. Questions');
 html=replaceOnce(html,'    <section class="step active" data-step-panel="1">\n      <div class="panel">','    <section class="step active" data-step-panel="1">\n      <section id="hybridGuide" class="panel" aria-labelledby="hybridHeading"></section>\n      <div class="panel" id="hybridSharedContent">');
@@ -52,7 +53,7 @@ js=replaceOnce(js,'const Core = window.MQComposerCore;',`const Hybrid = window.M
 const Core = Hybrid.engine.Core;`);
 js=replaceOnce(js,'schemaVersion: Core.RECIPE_SCHEMA_VERSION,\n    gameId: state.gameId,','schemaVersion: Core.RECIPE_SCHEMA_VERSION,\n    hybrid: Hybrid.project(),\n    gameId: state.gameId,');
 js=replaceOnce(js,'state.composition = Core.compose(Library, recipe());','state.composition = Core.compose(Library, recipe());\n  Hybrid.changed(recipe(), state.composition);');
-js=replaceOnce(js,'  state.step = Math.max(1, Math.min(7, Number(step)));','  if(Hybrid.project().quizSelection.enabled && Number(step)===4)step=state.step>4?3:5;\n  state.step = Math.max(1, Math.min(7, Number(step)));\n  Hybrid.stepChanged(state.step);');
+js=replaceOnce(js,'  state.step = Math.max(1, Math.min(7, Number(step)));','  state.step = Hybrid.stepFor(step,state.step);\n  Hybrid.stepChanged(state.step);');
 js=replaceOnce(js,"    announce('New game identity created. Current settings retained. Use a separate publishing folder to preserve earlier assignments.');","    Hybrid.assignmentCopied();\n    announce('Separate assignment created. Give it a new title and file name.');");
 js=replaceOnce(js,"  const container = $('coverageRecommendations');",`  const container = $('coverageRecommendations');
   if(Hybrid.project().quizSelection.enabled){container.textContent='This Quiz uses only your selected questions. Check the selected total and questions per attempt above.';return;}
@@ -75,12 +76,29 @@ js=replaceOnce(js,"${instructionSelected.length} selected concept${instructionSe
 js=replaceOnce(js,"    {name: 'composition_recipe.json', data: Core.stableStringify(Core.canonicalRecipe(activeRecipe, Library, ThemeLibrary), 2) + '\\n'},\n",'');
 js=js.replace('import composition_recipe.json','import your separately saved authoring project');
 js=js.replace('Save this recipe to update the same Game ID later.','Save the separate authoring project from the staged Composer to update the same Game ID later.');
-js=replaceOnce(js,'  const imported = JSON.parse(await file.text());','  const imported = JSON.parse(await file.text());\n  await Hybrid.acceptRecipe(imported);');
+js=replaceOnce(js,'  const imported = JSON.parse(await file.text());','  const imported = JSON.parse(await file.text());\n  if(Hybrid.routeImported(imported))return "redirected";\n  await Hybrid.acceptRecipe(imported);');
+js=replaceOnce(js,'  state.supportedModes = [...next.supportedModes];',"  state.supportedModes = Hybrid.isQuiz() ? ['quiz'] : [...next.supportedModes];");
 js=replaceOnce(js,'  if(imported.contentScopes != null){','  if(!imported.hybrid && imported.contentScopes != null){');
 js=replaceOnce(js,'  recalculate();\n  switchStep(1);',`  await Hybrid.mount({recipe,importRecipe,recalculate,switchStep,downloadBlob,quizOnly(){state.supportedModes=['quiz'];renderModeOptions();renderThemeSlots();}});
   recalculate();
   switchStep(1);`);
 // Source uses CRLF in some checkouts; normalize before matching by reading above.
 fs.writeFileSync(path.join(here,'index.html'),html);
+let quizHtml=replaceOnce(html,'<html lang="en">','<html lang="en" data-composer-workflow="quiz">');
+quizHtml=quizHtml.replaceAll('Faculty Composer','Quiz Composer');
+quizHtml=replaceOnce(quizHtml,'href="authoring/hybrid/build-preview.html"','href="authoring/hybrid/build-preview.html?goal=quiz"');
+quizHtml=replaceOnce(quizHtml,'Choose Mastery Quests questions, add your own, or combine both.','Build a quiz with MQ questions, your own questions, or both.');
+quizHtml=replaceOnce(quizHtml,'2. Game details','2. Quiz details');
+quizHtml=replaceOnce(quizHtml,'<h2>Name your game</h2>','<h2>Name your quiz</h2>');
+quizHtml=replaceOnce(quizHtml,'<label for="gameTitle">Game title</label>','<label for="gameTitle">Quiz title</label>');
+quizHtml=replaceOnce(quizHtml,'value="My Faculty Mastery Quest"','value="My Faculty Quiz"');
+quizHtml=replaceOnce(quizHtml,'value="my-faculty-mastery-quest"','value="my-faculty-quiz"');
+for(const [step,label] of [[3,'Modes'],[4,'Checkpoints']]){
+  quizHtml=replaceOnce(quizHtml,`      <button data-step="${step}">${step}. ${label}</button>\n`,'');
+  quizHtml=replaceOnce(quizHtml,`<section class="step" data-step-panel="${step}">`,`<section class="step" data-step-panel="${step}" hidden>`);
+}
+for(const [old,next] of [['5. Appearance','3. Appearance'],['6. Readiness','4. Readiness'],['7. Generate','5. Generate']])quizHtml=replaceOnce(quizHtml,old,next);
+fs.writeFileSync(path.join(here,'quiz.html'),quizHtml);
 fs.writeFileSync(path.join(here,'generated-composer.js'),js);
-console.log('Prepared unreleased authoring/hybrid/index.html from current Composer. No public files changed.');
+require('./prepare-build.cjs')();
+console.log('Prepared private Build preview, Game Composer, and Quiz Composer. No public files changed.');

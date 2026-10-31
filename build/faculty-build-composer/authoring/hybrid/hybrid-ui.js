@@ -1,7 +1,9 @@
 (function(){
 'use strict';
-const H=window.MQHybridCore,engine=H.wrap(window.MQComposerCore),KEY='mq-hybrid-authoring-v1';
+const H=window.MQHybridCore,engine=H.wrap(window.MQComposerCore),IS_QUIZ=document.documentElement.dataset.composerWorkflow==='quiz',KEY=IS_QUIZ?'mq-hybrid-quiz-v1':'mq-hybrid-authoring-v1',HANDOFF='mq-hybrid-builder-handoff-v1';
 let current=H.fresh(),api=null,ready=false,pendingDraft=null,editing=null,lastRecipe=null,activeStep=1,questionView='shared',projectLoaded=false;
+current.quizSelection.enabled=IS_QUIZ;
+if(new URLSearchParams(location.search).get('source')==='own'){current.source='own';questionView='own';}
 const $=id=>document.getElementById(id),esc=H.escape;
 const labels={easy:'Foundational (easy)',medium:'Application (medium)',hard:'Analysis (hard)',elite:'Challenge (elite)',legendary:'Extended challenge (legendary)'};
 const sourceLabels={shared:'Mastery Quests questions',own:'My questions',mixed:'Mastery Quests + my questions'};
@@ -24,6 +26,21 @@ function summary(){
   $('questionSummary').hidden=activeStep===1;
 }
 function stepChanged(step){activeStep=step;if(ready && step!==1){say('');$('projectMenu').open=false;}summary();}
+function stepFor(requested,previous){
+  const step=Math.max(1,Math.min(7,Number(requested))),steps=IS_QUIZ?[1,2,5,6,7]:[1,2,3,4,5,6,7];
+  return steps.includes(step)?step:step<previous?[...steps].reverse().find(n=>n<step):steps.find(n=>n>step);
+}
+function routeImported(recipe){
+  if(!recipe||typeof recipe!=='object'||Array.isArray(recipe))throw new Error('Open a saved project or Composer recipe JSON file.');
+  const next=recipe.hybrid?H.restore(recipe.hybrid):H.fresh();
+  if(next.quizSelection.enabled===IS_QUIZ)return false;
+  const target=next.quizSelection.enabled?'quiz':'game';
+  // The source draft is left untouched. The target builder imports the original project.
+  try{sessionStorage.setItem(HANDOFF,JSON.stringify({target,recipe}));}
+  catch{throw new Error(`This project belongs in the ${target==='quiz'?'Quiz':'Game'} Composer. Open that builder from Build options and import the project there; browser transfer is unavailable.`);}
+  window.top.location.assign('/build/faculty-build-composer/authoring/hybrid/'+(target==='quiz'?'quiz.html':'')+'#open-project');
+  return true;
+}
 function showQuestionView(view){
   questionView=view;
   const shared=current.source==='shared'||current.source==='mixed'&&view==='shared';
@@ -88,6 +105,7 @@ function editorFields(){
 }
 async function mount(hooks){
   api=hooks;
+  if(IS_QUIZ)api.quizOnly();
   $('hybridProjectTools').innerHTML=`<div class="hybrid-project-row"><span id="draftStatus"></span><details id="projectMenu"><summary>Save or open a project</summary><div><button id="saveProject">Save project file</button><label>Open a saved project or Composer recipe <input id="openProject" type="file" accept=".json,application/json"></label><small>A project keeps your editable questions and settings. Save it separately from the student game.</small></div></details></div><div id="draftRecovery" hidden><p>A saved browser draft is available.</p><button id="restoreDraft">Restore browser draft</button><button id="keepNew">Start fresh (replace saved draft)</button><button id="downloadRecovery">Download saved draft</button></div><p id="hybridStatus" role="status" aria-live="polite"></p><div id="questionSummary" hidden><span><strong>Questions</strong> <span id="questionSummaryText"></span></span><button id="editQuestions">Edit questions</button></div>`;
   const shared=$('hybridSharedContent');
   shared.className='hybrid-shared-content';
@@ -100,7 +118,7 @@ async function mount(hooks){
   <section class="hybrid-review-section" aria-labelledby="reviewHeading"><h2 id="reviewHeading">3. Check your question bank</h2><p id="hybridCount"></p><div id="questionTools" hidden><button id="reviewAll" class="primary">Mark all included questions as reviewed</button><p class="hybrid-review-hint">Already reviewed your bank? Confirm accuracy, clarity, difficulty, and course fit with one click. Incomplete questions still need fixes.</p><p id="reviewStatus" role="status" aria-live="polite"></p><div class="hybrid-actions"><button id="toggleBulkTools" aria-expanded="false" aria-controls="bulkTools">Edit several questions</button><button id="toggleAnswers">Show all answers</button></div></div><section id="bulkTools" class="hybrid-help" hidden aria-labelledby="bulkHeading"><h3 id="bulkHeading">Assign topics, outcomes, or difficulty</h3><p>Select questions below. Blank fields keep their current values.</p><div class="hybrid-grid"><label>Topic <input id="bulkTopic" list="topicList" placeholder="e.g., Cell biology"></label><label>Learning outcome <input id="bulkOutcome" list="outcomeList" placeholder="e.g., Explain membrane transport"></label><label>Difficulty <select id="bulkDifficulty">${options()}</select></label></div><div class="hybrid-actions"><button id="selectAllQuestions">Select all questions</button><button id="applyBulk">Apply to selected questions</button></div></section><div id="questionList"></div></section></section>
   <div class="hybrid-continue"><span>Your selections are saved as you work. Check game requirements in Readiness.</span><button id="continueComposer" class="primary">Done with questions — continue</button></div><datalist id="topicList"></datalist><datalist id="outcomeList"></datalist>`;
   $('sharedContentHost').append(shared);
-  window.MQQuizUI.mount({project:()=>current,change:async selection=>{current.quizSelection=window.MQQuizSelection.restore(selection);await commit();},quizOnly:()=>api.quizOnly(),say});
+  window.MQQuizUI.mount({isQuiz:()=>IS_QUIZ,project:()=>current,change:async selection=>{current.quizSelection=window.MQQuizSelection.restore({...selection,enabled:IS_QUIZ});await commit();},say});
   // Validation belongs in the Composer's existing Readiness step, not above every step.
   const readiness=document.createElement('div');readiness.id='hybridReadiness';readiness.className='hybrid-readiness';readiness.hidden=true;
   $('readinessMessage').before(readiness);
@@ -131,17 +149,30 @@ async function mount(hooks){
   });
   $('questionList').addEventListener('change',async e=>{if(!e.target.dataset.review)return;const id=e.target.dataset.review;try{current.questions=current.questions.map(q=>q.id===id?(e.target.checked?H.acknowledge(q):{...q,review:null}):q);await commit('Instructor review updated.');document.querySelector(`[data-review="${id}"]`).focus();}catch(error){say(error.message);}});
   on('saveProject','click',()=>api.downloadBlob(new Blob([JSON.stringify({...api.recipe(),hybrid:current},null,2)],{type:'application/json'}),'hybrid-authoring-project.json'));
-  on('openProject','change',async e=>{if(!e.target.files[0])return;await api.importRecipe(e.target.files[0]);pendingDraft=null;$('draftRecovery').hidden=true;$('projectMenu').open=false;save();say('Project restored with questions, source, reviews, and game settings.');e.target.value='';});
+  on('openProject','change',async e=>{if(!e.target.files[0])return;if(await api.importRecipe(e.target.files[0])==='redirected')return;pendingDraft=null;$('draftRecovery').hidden=true;$('projectMenu').open=false;save();say('Project restored with questions, source, reviews, and game settings.');e.target.value='';});
   on('continueComposer','click',()=>{api.switchStep(2);$('gameTitle').focus();});
   on('editQuestions','click',()=>{api.switchStep(1);document.querySelector('[name=hybridSource]:checked').focus();});
   try{pendingDraft=localStorage.getItem(KEY);}catch{say('Browser storage is unavailable. Save a project file to keep your work.');}
   $('draftRecovery').hidden=!pendingDraft;
-  on('restoreDraft','click',async()=>{await api.importRecipe(new Blob([pendingDraft],{type:'application/json'}));pendingDraft=null;$('draftRecovery').hidden=true;save();say('Browser draft restored.');});
+  on('restoreDraft','click',async()=>{if(await api.importRecipe(new Blob([pendingDraft],{type:'application/json'}))==='redirected')return;pendingDraft=null;$('draftRecovery').hidden=true;save();say('Browser draft restored.');});
   on('keepNew','click',()=>{pendingDraft=null;$('draftRecovery').hidden=true;save();say('New project is now the browser draft.');});
   on('downloadRecovery','click',()=>api.downloadBlob(new Blob([pendingDraft],{type:'application/json'}),'recovered-hybrid-project.json'));
+  try{
+    const transfer=JSON.parse(sessionStorage.getItem(HANDOFF)||'null');
+    if(location.hash==='#open-project'&&transfer?.target===(IS_QUIZ?'quiz':'game')){
+      // Retain the destination's earlier draft as a downloadable recovery copy.
+      if(pendingDraft)sessionStorage.setItem(HANDOFF+'-previous-'+transfer.target,pendingDraft);
+      await api.importRecipe(new Blob([JSON.stringify(transfer.recipe)],{type:'application/json'}));
+      pendingDraft=null;$('draftRecovery').hidden=true;sessionStorage.removeItem(HANDOFF);
+      history.replaceState(null,'',location.pathname+location.search);
+      say(`Project opened in the ${IS_QUIZ?'Quiz':'Game'} Composer.`);
+    }
+    const backup=sessionStorage.getItem(HANDOFF+'-previous-'+(IS_QUIZ?'quiz':'game'));
+    if(backup){const button=document.createElement('button');button.textContent='Download earlier browser draft';button.id='downloadEarlierDraft';button.onclick=()=>api.downloadBlob(new Blob([backup],{type:'application/json'}),'earlier-browser-draft.json');document.querySelector('#projectMenu > div').append(button);}
+  }catch(error){say('The project could not be opened: '+error.message);}
   ready=true;render();
 }
-window.MQHybridUI={engine,project:()=>JSON.parse(JSON.stringify(current)),projectFrom:recipe=>recipe.hybrid||{source:'shared'},acceptRecipe,mount,stepChanged,
+window.MQHybridUI={engine,isQuiz:()=>IS_QUIZ,routeImported,stepFor,project:()=>JSON.parse(JSON.stringify(current)),projectFrom:recipe=>recipe.hybrid||{source:'shared'},acceptRecipe,mount,stepChanged,
   assignmentCopied(){$('assignmentCopyStatus').textContent='Separate assignment created. Update the title and file name above, then save your project.';$('gameTitle').focus();},
   changed(recipe,composition){lastRecipe=recipe;if(!ready)return;const customIssues=current.quizSelection.enabled?composition.errors:composition.errors.filter(e=>e.startsWith('My question '));$('hybridReadiness').hidden=!customIssues.length;$('hybridReadiness').textContent=customIssues.length?'Review your questions before export:\n'+customIssues.join('\n'):'';window.MQQuizUI.update(questionView);summary();save();}
 };

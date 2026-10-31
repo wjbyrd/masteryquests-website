@@ -37,7 +37,7 @@
     "failed": 1,
     "failure": "run_phase15_production_hardening_validation.js: play/micro-domains/labyrinth-of-choice/index.html lacks a Phase 1.5-or-later game/build version",
     "baselineEvidence": "git diff --exit-code HEAD -- play/micro-domains/labyrinth-of-choice/index.html build/faculty-build-composer/tests/run_phase15_production_hardening_validation.js returned 0 before staging commit; neither file changed",
-    "note": "Earlier staging validation; not rerun because the Quiz revision changes only the isolated staging tree. The 26 Hybrid core and 13 browser regression checks were rerun."
+    "note": "Earlier staging validation; not rerun because the private Build/Quiz revision changes only excluded staging files and generated-file ignore entries. All 26 Hybrid core, 17 Quiz core, 13 Hybrid browser, 11 Quiz browser, and 9 Build browser checks passed."
   },
   "publicationBuild": {
     "passed": true,
@@ -47,10 +47,10 @@
     "forbiddenFileCount": 0,
     "incomingQuestionAssetCount": 0,
     "hybridPublished": false,
-    "note": "Earlier staging validation; publication configuration and public files unchanged by this Quiz revision."
+    "note": "Earlier staging validation; publication configuration and public files unchanged by the private Build/Quiz revision."
   },
   "publicComposerBaselineFilesUnchanged": true,
-  "uxRevision": "2026-10-31: Hybrid usability changes plus an optional individual-question Quiz picker, saved selections, readable outcomes, fixed or sampled faculty-set lengths, and Quiz-specific readiness/runtime.",
+  "uxRevision": "2026-10-31: Private Build page adds a Quiz goal beside practice games and retains supporting resources; separate Quiz-only Composer has five steps, no mode toggle, independent drafts, and automatic saved-project routing.",
   "localArtifacts": "tmp/hybrid-composer/ (ignored; includes JSON results, ZIPs, screenshots and synthetic projects)",
   "remaining": [
     "faculty usability and instructional/content review",
@@ -94,9 +94,9 @@
       "failed": 0,
       "command": "node build/faculty-build-composer/authoring/hybrid/quiz-browser-test.cjs",
       "coverage": [
-        "explicit Quiz-only workflow selects Quiz and skips checkpoint setup",
+        "dedicated five-step Quiz Composer selects Quiz and skips mode and checkpoint setup in both directions",
         "concept/difficulty/search filters, explicit selection, selected-only view and verified answer preview",
-        "selection survives workflow switching and browser draft recovery",
+        "separate game and Quiz entries preserve Quiz selections through browser draft recovery",
         "oversized sample blocks generation and explains the exact fix",
         "separate project save and exact three-question ZIP with verified hashes",
         "use-all Quiz completes with every chosen question exactly once and faculty-locked length",
@@ -120,5 +120,33 @@
       "No selected Quiz with adaptive modes in the same package",
       "No release or remote telemetry verification"
     ]
+  },
+  "privateBuild": {
+    "status": "implemented-in-local-staging",
+    "entry": "build/faculty-build-composer/authoring/hybrid/build-preview.html",
+    "quizEntry": "build/faculty-build-composer/authoring/hybrid/quiz.html",
+    "publicBuildUnchanged": true,
+    "browserChecks": {
+      "passed": 9,
+      "failed": 0,
+      "command": "node build/faculty-build-composer/authoring/hybrid/build-browser-test.cjs",
+      "coverage": [
+        "Build quiz goal opens the five-step Quiz Composer and replaces the practice-game panel",
+        "supporting resources remain selectable and switching builders preserves the embedded question selection",
+        "goal deep links and clear selection maintain one builder and the appropriate own-question shortcut",
+        "private Build page fits a 390px viewport and passes automated WCAG A/AA checks",
+        "own-question entry selects custom authoring while protecting the existing Quiz browser draft",
+        "opening a practice project from Quiz routes to Game, preserves the Quiz draft, and offers the earlier destination draft",
+        "opening a selected Quiz project from Game routes to Quiz, locks its mode, and survives reload without overwriting the Game draft",
+        "older Quiz drafts in the original browser key reopen in the correct full-page builder from the embedded preview",
+        "public Build retains its existing goal choices and original Composer entry"
+      ]
+    },
+    "accessibility": "Zero axe WCAG 2 A/AA and 2.1 AA violations on the private Build page; tested at 390px and desktop widths",
+    "drafts": {
+      "game": "mq-hybrid-authoring-v1",
+      "quiz": "mq-hybrid-quiz-v1",
+      "transfer": "session storage; prior destination draft downloadable for the tab session"
+    }
   }
 }

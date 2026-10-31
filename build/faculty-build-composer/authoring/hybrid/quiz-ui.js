@@ -38,9 +38,9 @@ function renderList(){
   for(const item of visible)if(openIds.has(item.id))showAnswer(item.id);
 }
 function update(view){
-  if(!hooks)return;
+  if(!hooks || !hooks.isQuiz())return;
   const p=hooks.project(),s=p.quizSelection,enabled=s.enabled;
-  $('quizPickEnabled').checked=enabled;$('quizSettings').hidden=!enabled;
+  $('quizSettings').hidden=false;
   const shared=p.source==='shared'||p.source==='mixed'&&view==='shared';
   $('quizPickerPanel').hidden=!enabled||!shared;
   $('hybridSharedContent').hidden=enabled||!shared;
@@ -48,25 +48,21 @@ function update(view){
   const selected=new Set(s.questionIds),mqCount=p.source==='own'?0:catalog.filter(q=>selected.has(q.id)).length,ownCount=p.source==='shared'?0:p.questions.filter(q=>q.included).length;
   $('quizSelectionCount').textContent=`${mqCount} MQ questions + ${ownCount} of your questions = ${mqCount+ownCount} selected`;
   $('quizOwnNote').hidden=p.source==='shared';
-  $('quizModesNote').hidden=!enabled;
   document.querySelectorAll('#modeOptions input[data-mode]').forEach(input=>{input.disabled=enabled;input.closest('.mode-option').hidden=enabled&&input.dataset.mode!=='quiz';});
   document.querySelector('#modeOptions [data-mode="quiz"]').closest('.mode-option').querySelector('p').textContent=enabled?'Uses only your selected questions, with the length you set in Questions.':'Fixed-length classroom quiz. Students choose 1–15 questions; faculty-selected concepts stay locked.';
-  document.querySelector('[data-step="4"]').hidden=enabled;
   $('quizMissing').innerHTML=p.source!=='own'?s.questionIds.filter(id=>!catalog.some(q=>q.id===id)).map(id=>`<p>Unavailable question: ${escape(id)} <button data-quiz-remove="${escape(id)}">Remove unavailable question</button></p>`).join(''):'';
   const state=JSON.stringify([s.questionIds,p.source]);if(state!==lastCatalogState){lastCatalogState=state;renderList();}
 }
 async function change(changes){await hooks.change({...selection(),...changes});}
 function mount(api){
-  hooks=api;catalog=Q.catalog(Base,window.MQ_COMPOSER_LIBRARY).map(q=>({...q,search:plain([q.question.q,...q.question.options,q.title,q.outcome].join(' ')).toLowerCase()}));
+  hooks=api;if(!hooks.isQuiz())return;catalog=Q.catalog(Base,window.MQ_COMPOSER_LIBRARY).map(q=>({...q,search:plain([q.question.q,...q.question.options,q.title,q.outcome].join(' ')).toLowerCase()}));
   const controls=document.createElement('section');controls.id='quizSelectionControls';controls.className='quiz-selection-controls';
-  controls.innerHTML=`<label class="quiz-path"><input id="quizPickEnabled" type="checkbox"> Pick questions for a Quiz</label><p class="quiz-path-help">Choose individual questions and set the quiz length. Leave this off to use concept pools and other game modes.</p><div id="quizSettings" hidden><div class="hybrid-grid"><label>Questions per attempt<select id="quizDelivery"><option value="all">Use every selected question</option><option value="sample">Take a random sample from my selection</option></select></label><label id="quizSampleField" hidden>Sample size<input id="quizSampleCount" type="number" min="1" step="1" value="10"></label></div><p id="quizSelectionCount" role="status"></p><p id="quizOwnNote">Your included questions join this quiz. Use Include/Exclude in My questions to choose them.</p><p class="quiz-path-help">Students answer each question at most once. The order is shuffled, and the length is set by you. Easy, medium, and hard questions can be mixed in any proportion.</p><div id="quizMissing" role="status"></div></div>`;
+  controls.innerHTML=`<h2 class="quiz-settings-heading">Quiz length</h2><div id="quizSettings"><div class="hybrid-grid"><label>Questions per attempt<select id="quizDelivery"><option value="all">Use every selected question</option><option value="sample">Take a random sample from my selection</option></select></label><label id="quizSampleField" hidden>Sample size<input id="quizSampleCount" type="number" min="1" step="1" value="10"></label></div><p id="quizSelectionCount" role="status"></p><p id="quizOwnNote">Your included questions join this quiz. Use Include/Exclude in My questions to choose them.</p><p class="quiz-path-help">Students answer each question at most once, in a shuffled order. Easy, medium, and hard questions can be mixed in any proportion.</p><div id="quizMissing" role="status"></div></div>`;
   document.querySelector('.hybrid-source-picker').after(controls);
   const panel=document.createElement('section');panel.id='quizPickerPanel';panel.hidden=true;panel.setAttribute('aria-labelledby','quizPickerHeading');
   panel.innerHTML=`<h2 id="quizPickerHeading">2. Pick your MQ questions</h2><div class="quiz-filters"><label>Search questions or outcomes<input id="quizSearch" type="search" placeholder="e.g., opportunity cost"></label><label>Concept<select id="quizConcept"><option value="">All concepts</option>${Object.entries(window.MQ_COMPOSER_LIBRARY.concepts).filter(([id])=>catalog.some(q=>q.conceptIds.includes(id))).sort((a,b)=>a[1].title.localeCompare(b[1].title)).map(([id,m])=>`<option value="${escape(id)}">${escape(m.title)}</option>`).join('')}</select></label><label>Difficulty<select id="quizDifficulty"><option value="">All difficulties</option>${Q.LEVELS.map(d=>`<option value="${d}">${d[0].toUpperCase()+d.slice(1)}</option>`).join('')}</select></label></div><div class="quiz-list-tools"><label><input id="quizSelectedOnly" type="checkbox"> Show selected only</label><button id="quizSelectPage">Select this page</button></div><p id="quizResultsCount" role="status"></p><div id="quizQuestionList"></div><div class="hybrid-actions"><button id="quizPrev">Previous questions</button><button id="quizNext">More questions</button></div>`;
   $('sharedContentHost').append(panel);
-  const note=document.createElement('p');note.id='quizModesNote';note.hidden=true;note.textContent='Your handpicked questions will run as a Quiz. To use other modes, turn off “Pick questions for a Quiz” in Questions.';$('modeOptions').before(note);
   const on=(id,event,fn)=>$(id).addEventListener(event,async e=>{try{await fn(e);}catch(error){hooks.say(error.message);}});
-  on('quizPickEnabled','change',async e=>{if(e.target.checked)hooks.quizOnly();await change({enabled:e.target.checked});hooks.say(e.target.checked?'Quiz selection enabled. Choose your questions below.':'Concept-pool selection restored. Your handpicked list is saved.');});
   on('quizDelivery','change',e=>change({delivery:e.target.value}));
   on('quizSampleCount','change',async e=>{const count=Number(e.target.value);if(!Number.isSafeInteger(count)||count<1){e.target.value=selection().count;throw new Error('Enter a positive whole-number sample size.');}await change({count});});
   for(const id of ['quizSearch','quizConcept','quizDifficulty','quizSelectedOnly'])on(id,id==='quizSearch'?'input':'change',()=>{page=0;renderList();});

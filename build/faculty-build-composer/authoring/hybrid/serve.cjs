@@ -9,5 +9,5 @@ function server(){return http.createServer((req,res)=>{
   if(!file.startsWith(root+path.sep)||name.split('/').some(s=>s.startsWith('.'))){res.writeHead(403).end();return;}
   fs.readFile(file,(error,data)=>{if(error){res.writeHead(404).end();return;}res.writeHead(200,{'Content-Type':mime[path.extname(file)]||'application/octet-stream','Cache-Control':'no-store'});res.end(data);});
 });}
-if(require.main===module){const app=server();app.listen(Number(process.argv[2]||8765),'127.0.0.1',()=>console.log(`Local unreleased Composer: http://127.0.0.1:${app.address().port}/build/faculty-build-composer/authoring/hybrid/`));}
+if(require.main===module){const app=server();app.listen(Number(process.argv[2]||8765),'127.0.0.1',()=>console.log(`Private Build preview: http://127.0.0.1:${app.address().port}/build/faculty-build-composer/authoring/hybrid/build-preview.html`));}
 module.exports=server;

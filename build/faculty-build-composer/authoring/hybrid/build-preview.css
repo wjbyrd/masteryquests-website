@@ -1,0 +1,6 @@
+/* Only the local Build preview loads these refinements. Shared site styles stay unchanged. */
+body .goal-option-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.goal-result-panel[hidden] { display:none !important; }
+#subject-authoring [data-own-composer] { margin-top:10px; }
+@media(max-width:800px){body .goal-option-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:560px){body .goal-option-grid{grid-template-columns:1fr;}}

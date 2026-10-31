@@ -1,5 +1,9 @@
 /* Staging-only progressive question workflow. The public Composer CSS is unchanged. */
 #hybridGuide [hidden], #hybridProjectTools [hidden] { display:none !important; }
+.app-shell [data-step-panel][hidden] { display:none !important; }
+.hybrid-back { display:inline-block; color:#d9eaf6; margin-bottom:12px; font-size:.9rem; text-underline-offset:3px; }
+.hybrid-back:hover { color:#fff; }
+#hybridGuide .quiz-settings-heading { font-size:1.15rem; margin-bottom:4px; }
 .hybrid-unreleased { display:inline-block; margin-left:8px; padding:3px 8px; border:1px solid #d8bd72; border-radius:4px; color:#ffe7a0; font-size:.78rem; white-space:nowrap; }
 #hybridGuide { margin-bottom:0; }
 #hybridGuide h2, #hybridGuide .hybrid-source-picker legend { margin:0 0 12px; font-size:1.55rem; line-height:1.25; font-weight:800; color:var(--navy,#102b45); }
