@@ -86,3 +86,12 @@ body[data-view=intro] .prototype{margin-left:auto}
   .forecast-brief{gap:15px;margin-bottom:20px}.forecast-brief h2{font-size:1.6rem}.forecast-brief .scene-frame{width:106px}.forecast-brief .quiet{min-height:44px}
   .quiz-bulletin{padding-left:13px;margin-bottom:22px}.quiz-bulletin #quiz-event{font-size:.9rem}
 }
+
+/* Illustrated market scenes share one composition; policy text stays live UI. */
+.market-art{position:relative;width:100%;aspect-ratio:2;container-type:inline-size;background:#d8c1a0}
+.market-art img{display:block;width:100%;height:auto;aspect-ratio:2;object-fit:cover}
+.splash-art .market-art{height:100%;aspect-ratio:auto}
+.splash-art .market-art img{width:100%;height:100%;object-fit:cover;object-position:center}
+.policy-notice{position:absolute;right:4%;bottom:5%;width:15%;padding:1cqw .5cqw;background:#f3dfb9;color:#30271e;border:.3cqw solid #705138;box-shadow:0 .5cqw 1cqw #0004;text-align:center;transform:rotate(-3deg);line-height:1.15}
+.policy-notice span{display:block;font-size:1.8cqw;font-weight:700;letter-spacing:.03em}
+.policy-notice strong{display:block;font:700 5cqw/1.15 Georgia,serif;margin-top:.4cqw}

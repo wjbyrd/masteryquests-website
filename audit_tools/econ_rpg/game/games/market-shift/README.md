@@ -54,6 +54,12 @@ Qualitative missions accept any correctly directed shift, including unequal simu
 
 The simulation does not model rationing rules, black markets, product-quality changes, welfare maximization, or policy desirability. Street illustrations provide context, not numerical measures of supply or demand.
 
+## Linden artwork
+
+Ten illustrations share the same warm, outlined market square: terracotta roofs, arched shopfronts, green shutters, flowering plants, and naturally proportioned shoppers. Busy and quiet crowds, storms, abundant stock, and deliveries reflect the news. Combined scenes keep both visual cues for simultaneous changes. The splash, bulletin, and forecast thumbnail use this artwork; price-control signs remain live text with the mission's actual legal price.
+
+The illustrations were made with built-in image generation using the supplied style references. They are stored locally as lossless WebP assets, with decoded pixels verified against the generated originals. There are no remote image dependencies. The economic graph remains crisp white SVG. See [art direction and full prompts](assets/ART_DIRECTION.md) for asset provenance and scene mapping.
+
 ## Save and privacy
 
 The `mq-market-shift-prototype-v2` localStorage key retains the exact scenario plan, current graph, forecasts, hints, and quiz history on the same origin. The earlier three-mission v1 save is left untouched. Reload opens the splash with Continue. The saved `bulletinRead` flag resumes an unopened bulletin or the forecast board as appropriate. Earlier v2 saves migrate in memory to keep their existing place; no attempts or quiz history are discarded. Play new scenarios explicitly replaces the v2 run. Corrupt or incompatible saves produce a message and a fresh run. Storage errors leave the in-memory game playable.
@@ -69,7 +75,7 @@ node audit_tools/econ_rpg/game/games/market-shift/browser.test.cjs
 
 The browser test uses Edge via Playwright. Set `MQ_PLAYWRIGHT_MODULE` to an installed Playwright package if needed, and optionally `MQ_AXE_MODULE` to `axe-core/axe.min.js`. It starts and closes its own temporary server and blocks external requests. The accessibility scanner is served through an intercepted same-origin test URL; runtime CSP remains intact.
 
-Verification includes **12 model tests and 7 end-to-end browser scenarios**. Coverage includes all 22 scenario variants; unequal simultaneous shifts and ambiguous outcomes; policy quantities and nonbinding rules; repeat avoidance and alternating policies; corrupt saves; bulletin state and compatibility with earlier v2 saves; splash-to-bulletin-to-forecast progression; reopening the bulletin without changing evidence; mouse dragging and live fields before pointer release; keyboard graph controls; both full five-mission routes; quiz context matching every played event; retries, reload, and randomized answer order; evidence export; exploration isolation; 390px layout; coincident quantity labels and extreme prices; and mobile touch dragging. No browser runtime errors occurred. Axe WCAG 2 A/AA and 2.1 AA checks found zero violations across ten views. Desktop and mobile screenshots were visually inspected. Local artifacts are in ignored `tmp/market-shift/` (latest screenshots use the `entry-` prefix).
+Verification includes **12 model tests and 8 end-to-end browser scenarios**. The model suite passed before this artwork-only update; the browser suite was rerun after integration. Coverage includes all 22 scenario variants; unequal simultaneous shifts and ambiguous outcomes; policy quantities and nonbinding rules; repeat avoidance and alternating policies; corrupt saves; bulletin state and compatibility with earlier v2 saves; splash-to-bulletin-to-forecast progression; reopening the bulletin without changing evidence; mouse dragging and live fields before pointer release; keyboard graph controls; both full five-mission routes; quiz context matching every played event; retries, reload, and randomized answer order; evidence export; exploration isolation; 390px layout; coincident quantity labels and extreme prices; all ten illustrations loading with descriptive alternatives and live ceiling/floor labels; and mobile touch dragging. No browser runtime errors occurred. Axe WCAG 2 A/AA and 2.1 AA checks found zero violations across ten views. Desktop and mobile screenshots were visually inspected. Local artifacts are in ignored `tmp/market-shift/` (latest screenshots use the `art-` prefix).
 
 Remaining: faculty/student playtesting, screen-reader task testing, physical phones, and other browsers. Existing games' suites were not rerun because their source and shared files were not modified. Technical verification does not establish learning effectiveness.
 
@@ -77,7 +83,8 @@ Remaining: faculty/student playtesting, screen-reader task testing, physical pho
 
 - `model.js`: market equations, scenario bank, seeded run generation, forecast checks, quiz, bulletin state, save validation.
 - `graph.js`: graph geometry, label layout, vector rendering.
-- `scene.js`: illustrated market scene and contextual variants.
+- `scene.js`: contextual illustration selection and live price-control notices.
+- `assets/`: ten local market illustrations, art direction, and generation prompts.
 - `app.js`: interactions, progression, feedback, notebook and export.
 - `styles.css`: MQ navy/teal presentation, white graph, responsive workbench and quiz.
 - `index.html`: isolated shell without remote dependencies.

@@ -12,7 +12,7 @@ function save(){try{localStorage.setItem(KEY,JSON.stringify(run));saved=true;}ca
 function focusHeading(){root.querySelector('h1,h2')?.focus();}
 function intro(){
   root.innerHTML=`<section class="splash" aria-labelledby="splash-title">
-    <div class="splash-art" aria-hidden="true">${scene('festival').replace('<svg ','<svg preserveAspectRatio="xMidYMid slice" ')}</div>
+    <div class="splash-art" aria-hidden="true">${scene('festival')}</div>
     <div class="splash-copy"><h1 id="splash-title" tabindex="-1">Market<br><em>Shift.</em></h1><p>Read the news. Shape your forecast.</p>
       <div class="actions"><button class="primary" data-action="start">${saved?(run.stage==='report'?'Open your notebook':'Continue your market'):'Enter Linden'} →</button><button class="quiet" data-action="explore">Explore freely</button></div>
     </div>
@@ -22,7 +22,7 @@ function bulletin(){
   const m=current();
   root.innerHTML=`<section class="bulletin" aria-labelledby="bulletin-heading">
     <header class="bulletin-masthead"><p>Market day ${run.index+1} of 5</p><h1 id="bulletin-heading" tabindex="-1">The Linden Bulletin</h1></header>
-    <div class="bulletin-layout"><div class="scene-frame">${scene(m.art,isPolicy(m)?m:null)}</div><article><h2>${m.title}</h2><p>${m.event}</p><button class="primary" data-action="forecast">${run.bulletinRead?'Back to your forecast':'Make your forecast'} →</button></article></div>
+    <div class="bulletin-layout"><div class="scene-frame">${scene(m.art,m)}</div><article><h2>${m.title}</h2><p>${m.event}</p><button class="primary" data-action="forecast">${run.bulletinRead?'Back to your forecast':'Make your forecast'} →</button></article></div>
   </section>`;
 }
 const storyNames={
@@ -52,7 +52,7 @@ function graphCard(isExplore=false){
 function mission(){
   const m=current(),policy=isPolicy(m);
   root.innerHTML=`<ol class="progress" aria-label="Mission progress">${missions(run).map((item,i)=>`<li class="${i===run.index?'active':i<run.index?'done':''}" ${i===run.index?'aria-current="step"':''}><span class="step-number">${i<run.index?'✓':i+1}</span><span>${storyName(item)}</span></li>`).join('')}</ol>
-    <section class="forecast-brief"><div><h2 tabindex="-1">${m.title}</h2><button class="quiet" data-action="bulletin">Read bulletin</button></div><div class="scene-frame">${scene(m.art,policy?m:null)}</div></section>
+    <section class="forecast-brief"><div><h2 tabindex="-1">${m.title}</h2><button class="quiet" data-action="bulletin">Read bulletin</button></div><div class="scene-frame">${scene(m.art,m)}</div></section>
     <div class="workbench">${graphCard()}<aside class="controls" aria-labelledby="task-title">
       <h3 id="task-title" class="task">${run.completed?'✓ Forecast filed':policy?'Set the legal price':'Adjust the curves'}</h3>
       <fieldset id="inputFields" ${run.completed?'disabled':''}><legend class="sr-only">Graph adjustments</legend>${policy?range('price',m.type==='ceiling'?'Maximum price':'Minimum price',0,120,1):range('d','Demand',-30,30)+range('s','Supply',-30,30)}</fieldset>
