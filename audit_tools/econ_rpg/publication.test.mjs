@@ -7,6 +7,8 @@ import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 const root = fileURLToPath(new URL('../../', import.meta.url));
 const builder = path.join(root, 'audit_tools/public_site_publication/build-dist.mjs');
+// The deployment config uses full-line JSONC comments for its preview settings.
+const deploymentConfig = text => JSON.parse(text.replace(/^\s*\/\/.*$/gm, ''));
 test('staging confines the game library to its unlisted namespace', () => {
   const source = readFileSync(builder, 'utf8');
   assert.match(source, /file\.startsWith\("audit_tools\/"\)/);
@@ -43,10 +45,10 @@ test('staging confines the game library to its unlisted namespace', () => {
   }
 });
 test('deployment rebuilds the complete site and preserves unrelated runtime configuration', () => {
-  const config=JSON.parse(readFileSync(path.join(root,'wrangler.jsonc'),'utf8'));
+  const config=deploymentConfig(readFileSync(path.join(root,'wrangler.jsonc'),'utf8'));
   assert.equal(config.build.command,'node audit_tools/public_site_publication/build-dist.mjs');
   assert.equal(config.assets.directory,'./dist');
-  const baseline=JSON.parse(execFileSync('git',['show','HEAD:wrangler.jsonc'],{cwd:root,encoding:'utf8'}));
+  const baseline=deploymentConfig(execFileSync('git',['show','HEAD:wrangler.jsonc'],{cwd:root,encoding:'utf8'}));
   delete config.build; delete baseline.build;
   assert.deepEqual(config,baseline,'Only the mandatory build step changes');
   execFileSync('git', ['diff', '--exit-code', 'HEAD', '--', 'index.html', 'games', 'play', 'build', 'server', 'assets', '.assetsignore', ':(exclude)games/index.html', ':(exclude)assets/css/site.css', ':(exclude)assets/images/games/**'], { cwd: root, stdio: 'pipe' });

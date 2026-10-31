@@ -1,6 +1,8 @@
-# Market Shift — private graph-game prototype
+# Market Shift — beta graph game
 
-A local, unlinked Mastery Quests mini-game. The public game library, beta hub, preview allowlist, Composer, existing games, and manuscript are unchanged. Nothing in this update was published.
+A Mastery Quests mini-game in the unlisted beta collection, under Microeconomics. Its card uses the same Linden market illustration as the home screen. The main public game library, Composer, existing games, and manuscript are unchanged.
+
+Play at <https://masteryquests.org/beta-testing/october-games-b9021b0dcb5f/games/market-shift/>. The collection is <https://masteryquests.org/beta-testing/october-games-b9021b0dcb5f/games/>. Return to Games leads to that collection in the published build. The collection remains unlisted and noindex; it is not password-protected.
 
 ## Open
 
@@ -91,4 +93,6 @@ Remaining: faculty/student playtesting, screen-reader task testing, physical pho
 - `styles.css`: MQ navy/teal presentation, white graph, responsive workbench and quiz.
 - `index.html`: isolated shell without remote dependencies.
 
-The prototype remains under the excluded `audit_tools/` tree and is not in the beta-game manifest or hub. Release or beta inclusion requires a later explicit decision.
+The authoritative source remains under the excluded `audit_tools/` tree. The explicitly allowlisted publisher copies only the six runtime files and ten illustrations into the beta namespace. Tests, this README, and the art prompts remain private source material. General Economics was discussed as a possible future grouping; the current card stays under Microeconomics.
+
+The beta publication test checks the 18-game count, category, home-screen artwork, return route, and exact runtime file list. The preview smoke check exercises card → splash → bulletin → graph → collection on desktop and mobile, along with artwork responses and exclusion of development files. See `../../GAMES-PREVIEW-REPORT.md` for deployment history.

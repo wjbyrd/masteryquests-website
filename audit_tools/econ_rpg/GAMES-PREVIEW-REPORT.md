@@ -1,4 +1,16 @@
-# Unlisted 12-game hub
+# Unlisted beta games hub
+
+## October 31: Market Shift
+
+Published version `46f4400c-f851-4ea8-8e97-ec5e7c0c42fe` to the existing Worker. The collection now has 18 games. Market Shift appears under Microeconomics, after The Economy's Edge, with its home-screen market artwork. The game includes a Return to Games link rebased to this same collection.
+
+The release adds 16 runtime files and updates the hub HTML and card CSS. Development tests, README, and art prompts are excluded. The main public Games page remains unchanged. Existing Worker JavaScript bytes, bindings, variables, compatibility settings, indexing headers and access routing were retained. The deployment uses the previously running JavaScript module without its debugging source map.
+
+The first deployment was promptly rolled back after the upload log exposed access-gate responses in the protected classroom asset paths. Two deduplicated response bodies had replaced seven protected files in the staging package. The corrected package restores those seven unchanged runtime files from the repository; Cloudflare recognized all original assets without new uploads. Never synchronize protected asset URLs using unauthenticated HTTP responses, even when they return 200. The final version was uploaded inactive, checked, and then activated.
+
+Three publication checks passed, including the complete website exclusion boundary and the new game's exact runtime allowlist. Packaged and live desktop (1440px) and phone (390px) checks passed for category, artwork, launch, bulletin, keyboard graph interaction and return navigation. All 18 published files match the verified release bytes, all 10 illustrations load, development files return 404, and the classroom access gate remains present. Release scope and verification artifacts are in ignored `tmp/market-shift/release/`, with browser evidence in `tmp/market-shift/beta-local/` and `tmp/market-shift/beta-live/`.
+
+Game: https://masteryquests.org/beta-testing/october-games-b9021b0dcb5f/games/market-shift/
 
 ## October 10: Investment Desk and hub artwork
 

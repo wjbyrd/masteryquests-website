@@ -18,7 +18,7 @@ export function publishGamesPreview(root, dist) {
         if (relative === 'games' && !config.standaloneGames.includes(entry.name)) continue;
         if (['tests', 'authoring', 'node_modules'].includes(entry.name)) continue;
         visit(rel);
-      } else if (entry.isFile() && runtime.test(entry.name)) {
+      } else if (entry.isFile() && runtime.test(entry.name) && !/\.test\.[cm]?js$/i.test(entry.name)) {
         const dest = path.join(target, canonical(rel)); fs.mkdirSync(path.dirname(dest), {recursive: true});
         if (/\.(?:html|js)$/.test(entry.name)) {
           let text = fs.readFileSync(path.join(source, rel), 'utf8');
