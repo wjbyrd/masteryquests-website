@@ -3,9 +3,13 @@
   "date": "2026-10-31",
   "branch": "codex/hybrid-composer-staging",
   "baseline": "becd0f66926ffa0c58b13c3832570efbdc0e4150",
-  "focusedChecks": {"passed": 24, "failed": 0, "command": "node build/faculty-build-composer/authoring/hybrid/test.cjs"},
+  "focusedChecks": {
+    "passed": 26,
+    "failed": 0,
+    "command": "node build/faculty-build-composer/authoring/hybrid/test.cjs"
+  },
   "browserChecks": {
-    "passed": 11,
+    "passed": 13,
     "failed": 0,
     "browser": "Microsoft Edge via Playwright",
     "environment": "localhost; external requests blocked",
@@ -20,8 +24,11 @@
       "instructor-only Quiz startup, correct hashed answer, feedback and next question",
       "mixed ZIP generation and gameplay answer acceptance",
       "390px layout and keyboard source selection/focus traversal",
-      "axe WCAG 2 A/AA and WCAG 2.1 AA scans of write/paste/CSV views: zero violations",
-      "unchanged public Composer recipe import and original ZIP behavior"
+      "axe WCAG 2 A/AA and WCAG 2.1 AA scans of write/paste/CSV/Game details views: zero violations",
+      "unchanged public Composer recipe import and original ZIP behavior",
+      "bulk acknowledgement skips incomplete/excluded records; edits reopen only the affected review; acknowledgements survive draft recovery",
+      "direct question actions and show-all answers",
+      "saved-project assignment action changes game identity and preserves questions/settings"
     ]
   },
   "activeComposerSuite": {
@@ -29,7 +36,8 @@
     "passed": 40,
     "failed": 1,
     "failure": "run_phase15_production_hardening_validation.js: play/micro-domains/labyrinth-of-choice/index.html lacks a Phase 1.5-or-later game/build version",
-    "baselineEvidence": "git diff --exit-code HEAD -- play/micro-domains/labyrinth-of-choice/index.html build/faculty-build-composer/tests/run_phase15_production_hardening_validation.js returned 0 before staging commit; neither file changed"
+    "baselineEvidence": "git diff --exit-code HEAD -- play/micro-domains/labyrinth-of-choice/index.html build/faculty-build-composer/tests/run_phase15_production_hardening_validation.js returned 0 before staging commit; neither file changed",
+    "note": "Earlier staging validation; not rerun for this staging-only UI revision."
   },
   "publicationBuild": {
     "passed": true,
@@ -38,10 +46,11 @@
     "composerRuntimeFileCount": 14,
     "forbiddenFileCount": 0,
     "incomingQuestionAssetCount": 0,
-    "hybridPublished": false
+    "hybridPublished": false,
+    "note": "Earlier staging validation; publication configuration and public files unchanged by this UI revision."
   },
   "publicComposerBaselineFilesUnchanged": true,
-  "uxRevision": "2026-10-31: question work integrated into step 1, progressive entry methods, larger descriptive headings, compact later-step summary; quiz requirements and core runtime unchanged",
+  "uxRevision": "2026-10-31: integrated step 1, bulk review acknowledgement, direct question actions, automatic import form collapse, simplified Game details and contextual separate-assignment action; quiz requirements and runtime unchanged",
   "localArtifacts": "tmp/hybrid-composer/ (ignored; includes JSON results, ZIPs, screenshots and synthetic projects)",
   "remaining": [
     "faculty usability and instructional/content review",

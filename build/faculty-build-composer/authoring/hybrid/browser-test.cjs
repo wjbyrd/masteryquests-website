@@ -18,6 +18,7 @@ function unzip(bytes){const entries=new Map();let i=0;while(bytes.readUInt32LE(i
     assert.equal(await page.locator('#hybridCustomContent').isVisible(),false);
     await page.screenshot({path:path.join(out,'composer-default-desktop.png'),fullPage:true});
     results.push('first visit defaults to MQ collection with custom authoring hidden');
+    await page.locator('[data-step="2"]').click();assert.equal(await page.locator('#reuseAssignment').isVisible(),false);await page.locator('#editQuestions').click();
     await page.locator('[name=hybridSource][value=own]').check();
     assert(await page.locator('[data-step-panel="1"]').isVisible());
     assert.equal(await page.locator('#areaFilter').isVisible(),false);
@@ -28,6 +29,7 @@ function unzip(bytes){const entries=new Map();let i=0;while(bytes.readUInt32LE(i
     await page.waitForFunction(()=>MQHybridUI.project().questions.length===1);
     assert((await page.locator('#hybridStatus').textContent()).includes('unsupported field'));
     assert((await page.locator('#questionList').textContent()).includes('Set the correct answer to A'));
+    await page.locator('#reviewAll').click();assert((await page.locator('#reviewStatus').textContent()).includes('1 incomplete'));assert.equal(await page.evaluate(()=>MQHybridUI.project().questions[0].review),null);
     await page.locator('[data-edit]').click();
     await page.locator('#hq-question').fill('Which cell structure synthesizes proteins?');
     for(const [k,v] of Object.entries({A:'Ribosome',B:'Cell wall',C:'Vacuole',D:'Chromosome',explanation:'Ribosomes assemble proteins.',topic:'Biology',outcome:'Identify cell structures'}))await page.locator('#hq-'+k).fill(v);
@@ -36,7 +38,7 @@ function unzip(bytes){const entries=new Map();let i=0;while(bytes.readUInt32LE(i
     await page.locator('[data-preview]').click();await page.locator('[data-answer=A]').click();assert((await page.locator('.hybrid-preview [role=status]').textContent()).includes('Correct.'));
     await page.locator('[data-edit]').click();await page.locator('#hq-explanation').fill('Ribosomes assemble amino acids into proteins.');await page.locator('#saveQuestion').click();
     await page.waitForFunction(()=>MQHybridUI.project().questions[0].review===null);results.push('paste errors, manual completion, preview, explicit review, edit invalidation');
-    await page.locator('#bulkTools > summary').click();await page.locator('#selectAllQuestions').click();await page.locator('#bulkTopic').fill('Cell biology');await page.locator('#applyBulk').click();
+    await page.locator('#toggleBulkTools').click();await page.locator('#selectAllQuestions').click();await page.locator('#bulkTopic').fill('Cell biology');await page.locator('#applyBulk').click();
     await page.waitForFunction(()=>MQHybridUI.project().questions[0].topic==='Cell biology');
     await page.locator('[name=hybridSource][value=shared]').check();assert.equal(await page.locator('[data-edit]').count(),1);
     assert.equal(await page.locator('#hybridCustomContent').isVisible(),false);
@@ -47,7 +49,25 @@ function unzip(bytes){const entries=new Map();let i=0;while(bytes.readUInt32LE(i
     await page.reload();await page.locator('#restoreDraft').waitFor();assert.equal(await page.evaluate(()=>localStorage.getItem('mq-hybrid-authoring-v1')),before);
     await page.locator('#restoreDraft').click();await page.waitForFunction(()=>MQHybridUI.project().questions.length===1);results.push('bulk assignment, source preservation, non-destructive browser draft recovery');
     await page.locator('[data-method=csv]').click();await page.locator('#csvInput').setInputFiles(path.join(__dirname,'demo-biology.csv'));await page.waitForFunction(()=>MQHybridUI.project().questions.length===16);results.push('CSV file import in browser');
+    assert.equal(await page.locator('#csvPanel').isVisible(),false);
+    assert(await page.locator('[data-edit]').nth(1).isVisible());assert(await page.locator('[data-preview]').nth(1).isVisible());
+    await page.locator('[data-toggle]').first().click();await page.locator('#reviewAll').click();
+    await page.waitForFunction(()=>MQHybridUI.project().questions.filter(q=>q.review).length===15);assert.equal(await page.evaluate(()=>MQHybridUI.project().questions[0].review),null);
+    await page.locator('[data-toggle]').first().click();await page.locator('#reviewAll').click();await page.waitForFunction(()=>MQHybridUI.project().questions.every(q=>q.review));
+    await page.locator('[data-edit]').nth(1).click();await page.locator('#hq-explanation').fill('The nucleus contains most of the genetic material in a plant cell.');await page.locator('#saveQuestion').click();
+    await page.waitForFunction(()=>MQHybridUI.project().questions.filter(q=>q.review).length===15);assert.equal(await page.evaluate(()=>MQHybridUI.project().questions[1].review),null);
+    await page.locator('#reviewAll').click();await page.waitForFunction(()=>MQHybridUI.project().questions.every(q=>q.review));
+    await page.reload();await page.locator('#restoreDraft').click();await page.waitForFunction(()=>MQHybridUI.project().questions.length===16&&MQHybridUI.project().questions.every(q=>q.review));
+    await page.locator('#toggleAnswers').click();assert.equal(await page.locator('[data-question-details][open]').count(),16);await page.locator('#toggleAnswers').click();assert.equal(await page.locator('[data-question-details][open]').count(),0);
+    await page.locator('#reviewHeading').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(out,'composer-question-bank.png')});
+    results.push('bulk review skips incomplete and excluded questions, persists across recovery, and reopens only edited questions; direct row actions and show-all answers');
     await page.locator('#continueComposer').click();assert(await page.locator('#gameTitle').isVisible());
+    assert(await page.locator('#reuseAssignment').isVisible());assert.equal(await page.locator('#allowAnonymousDataCollection').isChecked(),false);
+    const savedAssignment=await page.evaluate(()=>JSON.parse(localStorage.getItem('mq-hybrid-authoring-v1')));
+    await page.locator('#startDifferentGame').click();const copiedAssignment=await page.evaluate(()=>JSON.parse(localStorage.getItem('mq-hybrid-authoring-v1')));
+    assert.notEqual(copiedAssignment.gameId,savedAssignment.gameId);for(const key of ['hybrid','title','slug','selectedConceptIds','supportedModes'])assert.deepEqual(copiedAssignment[key],savedAssignment[key]);
+    assert.equal(await page.evaluate(()=>document.activeElement.id),'gameTitle');assert((await page.locator('#assignmentCopyStatus').textContent()).includes('Separate assignment created'));
+    results.push('separate-assignment action appears for saved projects, changes identity and preserves questions/settings');
     await page.screenshot({path:path.join(out,'composer-details-collapsed.png'),fullPage:true});
     for(const step of [2,3,4,5,6,7]){await page.locator(`[data-step="${step}"]`).click();assert.equal(await page.locator('#hybridGuide').isVisible(),false);assert(await page.locator('#questionSummary').isVisible());}
     await page.locator('#editQuestions').click();assert(await page.locator('#hybridGuide').isVisible());assert.equal(await page.locator('#questionSummary').isVisible(),false);assert.equal(await page.locator('[data-question-details]').count(),16);
@@ -101,7 +121,11 @@ function unzip(bytes){const entries=new Map();let i=0;while(bytes.readUInt32LE(i
         const scan=await page.evaluate(async()=>axe.run(document.querySelector('#hybridGuide'),{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa']}}));
         violations.push(...scan.violations.map(v=>({method,id:v.id,impact:v.impact,nodes:v.nodes.map(n=>n.target)})));
       }
-      fs.writeFileSync(path.join(out,'axe-results.json'),JSON.stringify(violations,null,2));assert.deepEqual(violations,[]);results.push('automated WCAG A/AA checks on write, paste and CSV views');
+      await page.locator('[data-step="2"]').click();
+      await page.screenshot({path:path.join(out,'composer-details-mobile.png'),fullPage:true});
+      assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+      const detailsScan=await page.evaluate(async()=>axe.run(document.querySelector('[data-step-panel="2"]'),{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa']}}));violations.push(...detailsScan.violations.map(v=>({method:'game-details',id:v.id,impact:v.impact,nodes:v.nodes.map(n=>n.target)})));
+      fs.writeFileSync(path.join(out,'axe-results.json'),JSON.stringify(violations,null,2));assert.deepEqual(violations,[]);results.push('automated WCAG A/AA checks on write, paste, CSV and game details views');
     }
     const publicPage=await context.newPage();publicPage.on('pageerror',e=>errors.push(e.message));await publicPage.goto(origin+'/build/faculty-build-composer/');
     await publicPage.locator('[data-step="7"]').click();

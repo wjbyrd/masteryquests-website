@@ -40,6 +40,17 @@ function acknowledge(q){
   if(errors.length) throw new Error(errors.join(' '));
   return {...q,review:{signature:signature(q),at:new Date().toISOString()}};
 }
+function acknowledgeIncluded(questions){
+  let reviewedCount=0;const blocked=[];
+  const next=questions.map((q,index)=>{
+    if(!q.included)return q;
+    const errors=issues(q,false);
+    if(errors.length){blocked.push({id:q.id,number:index+1,issues:errors});return q;}
+    if(q.review?.signature===signature(q))return q;
+    reviewedCount++;return acknowledge(q);
+  });
+  return {questions:next,reviewedCount,blocked};
+}
 function restore(value){
   if(!value || value.version !== VERSION) throw new Error('Unsupported Hybrid project version. Keep the original file.');
   if(!SOURCES.includes(value.source) || !Array.isArray(value.questions)) throw new Error('Invalid project source or question list.');
@@ -166,5 +177,5 @@ function wrap(Base){
   };
   return {Core,prepare,inputs};
 }
-return {VERSION,FIELDS,LEVELS,SOURCES,fresh,draft,issues,edit,acknowledge,restore,signature,importCSV,importPaste,csvRows,escape,wrap};
+return {VERSION,FIELDS,LEVELS,SOURCES,fresh,draft,issues,edit,acknowledge,acknowledgeIncluded,restore,signature,importCSV,importPaste,csvRows,escape,wrap};
 });

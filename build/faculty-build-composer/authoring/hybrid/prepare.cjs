@@ -15,12 +15,45 @@ html=replaceOnce(html,'Choose concepts, then select the learning outcomes you te
 html=replaceOnce(html,'<script src="composer.js?v=20261028-build-versioning"></script>','<script src="authoring/hybrid/hybrid-core.js"></script>\n  <script src="authoring/hybrid/hybrid-ui.js"></script>\n  <script src="authoring/hybrid/generated-composer.js"></script>');
 html=html.replace('import composition_recipe.json','import your separately saved authoring project');
 html=html.replace('Download Composition Recipe (.JSON)','Save Authoring Project (.JSON)');
+const detailsStart=html.indexOf('    <section class="step" data-step-panel="2">');
+const detailsEnd=html.indexOf('    <section class="step" data-step-panel="3">',detailsStart);
+if(detailsStart<0||detailsEnd<0)throw new Error('Game details integration seam changed.');
+const oldDetails=html.slice(detailsStart,detailsEnd);
+// Rebuilding this entire panel must not silently discard a new upstream control or disclosure.
+if(require('node:crypto').createHash('sha256').update(oldDetails).digest('hex')!=='4c8964fae077bc7fe4266555d28b10b1ebcc6e88840e9fea01d3cf46474925fa')throw new Error('Game details baseline changed. Review the complete panel before updating this staging transformation.');
+const disclosure=oldDetails.match(/<p id="anonymousCollectionHelp">[\s\S]*?(?=\n        <\/div>)/)?.[0];
+if(!disclosure)throw new Error('Anonymous collection disclosure seam changed.');
+html=replaceOnce(html,oldDetails,`    <section class="step" data-step-panel="2">
+      <div class="panel hybrid-game-details">
+        <h2>Name your game</h2>
+        <p>Give students a title they will recognize.</p>
+        <div class="form-grid">
+          <div class="field"><label for="gameTitle">Game title</label><input id="gameTitle" value="My Faculty Mastery Quest" maxlength="100"></div>
+          <div class="field"><label for="gameSlug">File name</label><input id="gameSlug" value="my-faculty-mastery-quest" pattern="[a-z0-9\\-]+"><small>Used for your download. Lowercase letters, numbers, and hyphens.</small></div>
+        </div>
+        <section class="collection-setting hybrid-collection" aria-labelledby="collectionHeading">
+          <h3 id="collectionHeading">Optional: anonymous gameplay data</h3>
+          <label><input id="allowAnonymousDataCollection" type="checkbox" aria-describedby="anonymousCollectionSummary"> Allow anonymous gameplay data collection</label>
+          <p id="anonymousCollectionSummary">Off by default. Your game works with collection off. Enabling it asks Mastery Quests to authorize anonymous gameplay collection when you generate.</p>
+          <details><summary>Privacy and data collection details</summary>${disclosure}</details>
+        </section>
+        <section id="reuseAssignment" class="hybrid-reuse" hidden aria-labelledby="reuseHeading">
+          <h3 id="reuseHeading">Reusing this saved project for another assignment?</h3>
+          <p>Create a separate assignment with these questions and settings. Its students' saved progress stays separate from the original. Give it a new title and file name above.</p>
+          <button id="startDifferentGame" type="button" class="secondary">Create a separate assignment</button>
+          <p id="assignmentCopyStatus" role="status" aria-live="polite"></p>
+        </section>
+      </div>
+    </section>
+
+`);
 let js=fs.readFileSync(path.join(root,'composer.js'),'utf8').replace(/\r\n/g,'\n');
 js=replaceOnce(js,'const Core = window.MQComposerCore;',`const Hybrid = window.MQHybridUI;
 const Core = Hybrid.engine.Core;`);
 js=replaceOnce(js,'schemaVersion: Core.RECIPE_SCHEMA_VERSION,\n    gameId: state.gameId,','schemaVersion: Core.RECIPE_SCHEMA_VERSION,\n    hybrid: Hybrid.project(),\n    gameId: state.gameId,');
 js=replaceOnce(js,'state.composition = Core.compose(Library, recipe());','state.composition = Core.compose(Library, recipe());\n  Hybrid.changed(recipe(), state.composition);');
 js=replaceOnce(js,'  state.step = Math.max(1, Math.min(7, Number(step)));','  state.step = Math.max(1, Math.min(7, Number(step)));\n  Hybrid.stepChanged(state.step);');
+js=replaceOnce(js,"    announce('New game identity created. Current settings retained. Use a separate publishing folder to preserve earlier assignments.');","    Hybrid.assignmentCopied();\n    announce('Separate assignment created. Give it a new title and file name.');");
 js=replaceOnce(js,"  const container = $('coverageRecommendations');",`  const container = $('coverageRecommendations');
   if(Hybrid.project().source === 'own'){
     container.textContent = 'Use the pool requirements below to choose a supported mode or add your own questions. This guide does not create checkpoint, repair, bridge, or graph pools.';

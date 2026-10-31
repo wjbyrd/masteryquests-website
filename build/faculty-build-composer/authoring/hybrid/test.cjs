@@ -18,6 +18,20 @@ const recipe={title:'Cell Biology Quest',slug:'cell-biology',supportedModes:['qu
   test('paste drafts retain useful content and flag unknown keys',()=>{const p=H.importPaste('question: First\nA: Answer\nimage: no.png\n---\nquestion: Second');assert.equal(p.questions.length,2);assert.equal(p.questions[0].A,'Answer');assert(p.warnings.some(s=>s.includes('unsupported field')));assert(H.issues(p.questions[1]).some(s=>s.includes('choice B')));});
   test('HTML/media, invalid answers, and normalized duplicate choices rejected',()=>{for(const changes of [{answer:'5'},{question:'<img src=x>'},{D:'Nucleus'},{A:'Ａ',B:'A'}])assert(H.issues(H.edit(demo.questions[0],changes),false).length);});
   const project=H.fresh();project.source='own';project.questions=demo.questions.map(H.acknowledge);
+  test('bulk acknowledgement reviews complete included questions only',()=>{
+    const incomplete=H.draft({question:'Missing choices'}),excluded={...demo.questions[0],id:H.fresh().id,included:false};
+    const batch=H.acknowledgeIncluded([...demo.questions,incomplete,excluded]);
+    assert.equal(batch.reviewedCount,15);assert.equal(batch.blocked.length,1);assert.equal(batch.blocked[0].number,16);
+    assert(batch.questions.slice(0,15).every(q=>q.review));assert.equal(batch.questions[15].review,null);assert.equal(batch.questions[16].review,null);
+    assert(demo.questions.every(q=>q.review===null));
+    assert.equal(H.acknowledgeIncluded(batch.questions).reviewedCount,0);
+  });
+  test('edits after bulk review reopen only the affected acknowledgement',()=>{
+    const bank=H.acknowledgeIncluded(demo.questions).questions;
+    const edited=bank.map((q,i)=>i===2?H.edit(q,{explanation:'Updated explanation.'}):q);
+    assert.equal(edited.filter(q=>q.review).length,14);assert.equal(edited[2].review,null);
+    assert.equal(H.acknowledgeIncluded(edited).reviewedCount,1);
+  });
   await prepare(project);
   test('material edits invalidate review; inclusion preserves it',()=>{const q=project.questions[0];assert.equal(H.edit(q,{explanation:'A new explanation'}).review,null);assert.deepEqual(H.edit(q,{question:q.question}).review,q.review);assert(H.restore({...project,questions:[{...q,included:false}]}).questions[0].review);});
   test('project round trip retains IDs, exclusions, source and review',()=>assert.deepEqual(H.restore(JSON.parse(JSON.stringify(project))),project));

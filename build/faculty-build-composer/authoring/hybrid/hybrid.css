@@ -40,14 +40,22 @@
 #hybridGuide summary, #hybridProjectTools summary { cursor:pointer; font-weight:650; }
 #hybridGuide .hybrid-help summary { font-size:.95rem; }
 .hybrid-card { border:1px solid #cbd6df; border-radius:8px; background:#fff; margin:10px 0; overflow-wrap:anywhere; }
-.hybrid-card summary { padding:14px; }
-.hybrid-question-status { display:block; margin:5px 0 0 18px; font-size:.84rem; color:#475b6d; font-weight:500; }
+.hybrid-card summary { padding:10px 14px; font-size:.9rem; }
+.hybrid-card-heading { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; padding:14px 14px 0; }
+#hybridGuide .hybrid-card-heading h3 { font-size:1rem; line-height:1.45; margin:0; }
+.hybrid-question-status { flex:none; padding:3px 8px; border-radius:4px; font-size:.8rem; color:#354e64; background:#edf2f6; font-weight:600; }
+.hybrid-card-meta { margin:6px 14px; color:#475b6d; font-size:.84rem; }
+.hybrid-card-actions { margin:8px 14px 0; }
+#hybridGuide .hybrid-card-actions button { padding:5px 12px; font-size:.9rem; background:#fff; }
+.hybrid-review-hint { max-width:680px; font-size:.9rem; color:#475b6d; }
+#reviewStatus:empty { display:none; }
+#reviewStatus { color:#234d6c; }
 .hybrid-question-body { padding:0 18px 18px; }
 .hybrid-assignments { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
 .hybrid-assignments dt { font-weight:700; }
 .hybrid-assignments dd { margin:4px 0 0; }
 #hybridGuide .hybrid-bulk-choice { display:none; padding:12px 14px 0; margin:0; }
-#bulkTools[open] ~ #questionList .hybrid-bulk-choice { display:block; }
+#bulkTools:not([hidden]) ~ #questionList .hybrid-bulk-choice { display:block; }
 #hybridGuide .hybrid-review { font-size:.93rem; font-weight:500; padding:12px; background:#edf5fb; border-radius:6px; }
 .hybrid-empty { padding:16px; background:#f3f6f8; color:#475b6d; border-radius:8px; }
 .hybrid-errors { color:#8b251f; }
@@ -71,4 +79,14 @@
 #questionSummary strong { margin-right:10px; }
 #questionSummaryText { color:#475b6d; font-size:.9rem; }
 .hybrid-readiness { padding:14px; white-space:pre-wrap; background:#fff1f0; color:#8b251f; border-radius:8px; margin-bottom:14px; }
+.hybrid-game-details [hidden] { display:none !important; }
+.hybrid-game-details .form-grid { margin:24px 0; }
+.hybrid-game-details .hybrid-collection { padding:18px 0; margin:20px 0 0; border:0; border-top:1px solid #cbd6df; border-radius:0; background:transparent; }
+.hybrid-game-details h3 { font-size:1.1rem; }
+.hybrid-game-details summary { cursor:pointer; color:#234d6c; font-weight:600; }
+.hybrid-game-details .hybrid-reuse { border-top:1px solid #cbd6df; margin-top:16px; padding-top:18px; }
+.hybrid-reuse p, #anonymousCollectionSummary { font-size:.92rem; color:#475b6d; line-height:1.5; }
+#startDifferentGame { width:auto; padding:9px 14px; }
+#assignmentCopyStatus:empty { display:none; }
 @media(max-width:700px){.hybrid-source-options,#hybridGuide .hybrid-methods,.hybrid-assignments,.hybrid-grid{grid-template-columns:1fr;}#hybridGuide h2,#hybridGuide .hybrid-source-picker legend{font-size:1.35rem;}.hybrid-method-panel{padding:14px;}.hybrid-continue,.hybrid-project-row,#questionSummary{align-items:flex-start;flex-direction:column;}#hybridGuide button,#hybridProjectTools button{max-width:100%;white-space:normal;}.hybrid-unreleased{margin:8px 0 0;}.hybrid-continue button{width:100%;}}
+@media(max-width:700px){.hybrid-card-heading{flex-direction:column;gap:6px;}.hybrid-game-details button{max-width:100%;white-space:normal;}}
