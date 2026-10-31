@@ -1,0 +1,23 @@
+#hybridGuide { border:2px solid #315c89; margin-bottom:24px; }
+.step[hidden] { display:none !important; }
+#hybridGuide h2 { margin-top:0; }
+#hybridGuide fieldset { border:1px solid #b9c9da; border-radius:10px; padding:16px; margin:16px 0; min-width:0; }
+#hybridGuide legend { font-weight:700; padding:0 8px; }
+#hybridGuide label { display:block; margin:8px 0; }
+#hybridGuide input:not([type=checkbox]):not([type=radio]), #hybridGuide textarea, #hybridGuide select { width:100%; box-sizing:border-box; }
+#hybridGuide textarea { min-height:100px; }
+#hybridGuide button { margin:4px; padding:9px 14px; border:1px solid #315c89; border-radius:6px; color:#183d63; background:#eef4fb; font:inherit; cursor:pointer; }
+#hybridGuide button:hover { background:#dceaf7; }
+#hybridGuide input:not([type=checkbox]):not([type=radio]), #hybridGuide textarea, #hybridGuide select { padding:9px; border:1px solid #8498ae; border-radius:5px; font:inherit; }
+#hybridGuide .hybrid-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+#hybridGuide .hybrid-card { border-top:1px solid #b9c9da; padding:18px 0; overflow-wrap:anywhere; }
+#hybridGuide pre { white-space:pre-wrap; overflow-wrap:anywhere; background:#f0f5fa; color:#152c45; padding:12px; }
+#hybridGuide .hybrid-status { background:#edf4fb; color:#182f47; padding:12px; border-radius:8px; white-space:pre-wrap; overflow-wrap:anywhere; }
+#hybridGuide .hybrid-errors { color:#8b251f; }
+#hybridGuide :focus-visible { outline:3px solid #b45e05; outline-offset:3px; }
+#hybridGuide details { margin:12px 0; }
+#hybridGuide summary { cursor:pointer; font-weight:600; }
+#hybridGuide .hybrid-preview { background:#f4f7fb; padding:16px; }
+#hybridGuide .hybrid-preview button { display:block; text-align:left; }
+#hybridGuide .hybrid-question { white-space:pre-wrap; }
+@media(max-width:640px){#hybridGuide .hybrid-grid {grid-template-columns:1fr;}#hybridGuide {padding:14px;}#hybridGuide fieldset{padding:10px;}#hybridGuide button{max-width:100%;white-space:normal;}}

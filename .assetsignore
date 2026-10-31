@@ -24,6 +24,7 @@
 /operational-smoke-*.csv.governance.json
 
 # Source, audit, and local staging material; never publish.
+/build/faculty-build-composer/authoring/hybrid/**
 /server/**
 /audit_tools/**
 /tmp/**

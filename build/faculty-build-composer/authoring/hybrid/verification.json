@@ -1,0 +1,53 @@
+{
+  "status": "unreleased-local-staging",
+  "date": "2026-10-31",
+  "branch": "codex/hybrid-composer-staging",
+  "baseline": "becd0f66926ffa0c58b13c3832570efbdc0e4150",
+  "focusedChecks": {"passed": 24, "failed": 0, "command": "node build/faculty-build-composer/authoring/hybrid/test.cjs"},
+  "browserChecks": {
+    "passed": 9,
+    "failed": 0,
+    "browser": "Microsoft Edge via Playwright",
+    "environment": "localhost; external requests blocked",
+    "command": "node build/faculty-build-composer/authoring/hybrid/browser-test.cjs",
+    "coverage": [
+      "paste errors, completion, preview, explicit review and edit invalidation",
+      "bulk assignment, source preservation and protected browser draft recovery",
+      "CSV file import",
+      "real instructor-only ZIP generation and package content isolation",
+      "instructor-only Quiz startup, correct hashed answer, feedback and next question",
+      "mixed ZIP generation and gameplay answer acceptance",
+      "390px layout and keyboard source selection/focus traversal",
+      "axe WCAG 2 A/AA and WCAG 2.1 AA guide scan: zero violations",
+      "unchanged public Composer recipe import and original ZIP behavior"
+    ]
+  },
+  "activeComposerSuite": {
+    "total": 41,
+    "passed": 40,
+    "failed": 1,
+    "failure": "run_phase15_production_hardening_validation.js: play/micro-domains/labyrinth-of-choice/index.html lacks a Phase 1.5-or-later game/build version",
+    "baselineEvidence": "git diff --exit-code HEAD -- play/micro-domains/labyrinth-of-choice/index.html build/faculty-build-composer/tests/run_phase15_production_hardening_validation.js returned 0 before staging commit; neither file changed"
+  },
+  "publicationBuild": {
+    "passed": true,
+    "fileCount": 2420,
+    "composerConceptReviewPdfCount": 151,
+    "composerRuntimeFileCount": 14,
+    "forbiddenFileCount": 0,
+    "incomingQuestionAssetCount": 0,
+    "hybridPublished": false
+  },
+  "publicComposerBaselineFilesUnchanged": true,
+  "localArtifacts": "tmp/hybrid-composer/ (ignored; includes JSON results, ZIPs, screenshots and synthetic projects)",
+  "remaining": [
+    "faculty usability and instructional/content review",
+    "screen-reader and full keyboard workflow testing",
+    "Firefox, Safari and physical mobile devices",
+    "complete-run/report checks for all eligible mode/theme combinations",
+    "real HTTPS/LMS Student View and approved telemetry activation/ingestion",
+    "actual GitHub Pages/Jekyll build",
+    "triage baseline hardening-version assertion"
+  ],
+  "deployment": "None. No push, merge, publication or manuscript changes."
+}
