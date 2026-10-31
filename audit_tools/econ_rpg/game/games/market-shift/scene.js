@@ -1,16 +1,16 @@
 // Shared artwork keeps Linden recognizable across its different market days.
 // The pictures provide context, not numerical evidence for a graph answer.
 const descriptions={
-  market:'Shoppers browse a berry stall between terracotta and cream shopfronts, with tiled roofs, arched windows, and flowering plants.',
-  busy:'A crowd of shoppers gathers around the berry stall in Linden’s leafy market square.',
-  quiet:'One shopper visits the berry stall in a quiet market square.',
-  storm:'Shoppers in raincoats visit a rain-soaked berry stall with mostly empty crates.',
-  harvest:'Shoppers browse a berry stall overflowing with extra crates and baskets from an abundant harvest.',
-  delivery:'A driver unloads insulated produce boxes from a delivery van while shoppers browse the berry stall.',
-  'busy-harvest':'A crowd of shoppers gathers around an abundant harvest of berries, with extra crates beside the stall.',
-  'quiet-harvest':'One shopper visits a berry stall surrounded by an abundant harvest and extra produce crates.',
-  'busy-storm':'A crowd with umbrellas gathers at the rain-soaked berry stall, where only a few crates hold berries.',
-  'quiet-storm':'One shopper visits a rain-soaked berry stall with mostly empty crates.'
+  market:'Shoppers browse a covered berry pavilion beneath a clock tower, among brick and stone shops, a leafy linden tree, and a fountain.',
+  busy:'A crowd of customers gathers around the vendor in Linden’s covered berry pavilion.',
+  quiet:'A single customer visits the berry vendor in a quiet market square.',
+  storm:'Customers with umbrellas visit a rain-soaked berry pavilion with mostly empty crates.',
+  harvest:'Customers browse the berry pavilion overflowing with extra crates and baskets from an abundant harvest.',
+  delivery:'A delivery worker unloads insulated produce boxes from a van in the side lane while customers browse the berry pavilion.',
+  'busy-harvest':'A crowd of customers gathers around the berry vendor, with abundant stock and extra crates beside the pavilion.',
+  'quiet-harvest':'A single customer visits the berry vendor, surrounded by abundant stock and extra produce crates.',
+  'busy-storm':'A crowd in raincoats and carrying umbrellas gathers at the berry pavilion, where only a few crates hold berries.',
+  'quiet-storm':'A single customer with an umbrella visits the berry vendor, whose pavilion has mostly empty crates.'
 };
 const byKind={intro:'market',festival:'busy',quiet:'quiet',storm:'storm',orchard:'harvest',truck:'delivery',policy:'market'};
 const byScenario={

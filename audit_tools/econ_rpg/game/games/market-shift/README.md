@@ -56,9 +56,9 @@ The simulation does not model rationing rules, black markets, product-quality ch
 
 ## Linden artwork
 
-Ten illustrations share the same warm, outlined market square: terracotta roofs, arched shopfronts, green shutters, flowering plants, and naturally proportioned shoppers. Busy and quiet crowds, storms, abundant stock, and deliveries reflect the news. Combined scenes keep both visual cues for simultaneous changes. The splash, bulletin, and forecast thumbnail use this artwork; price-control signs remain live text with the mission's actual legal price.
+Ten illustrations share Linden's own civic market square: brick and stone shops, slate roofs, a copper-roofed clock tower, a teal-roofed timber pavilion, a linden tree, and a stone fountain. Warm colors, fine outlines, detailed plants, and naturally proportioned people retain the inviting adventure-game feel. Busy and quiet crowds, storms, abundant stock, and deliveries reflect the news; the vendor remains distinct from the shopping customers. Combined scenes keep both visual cues for simultaneous changes. The splash, bulletin, and forecast thumbnail use this artwork; price-control signs remain live text with the mission's actual legal price.
 
-The illustrations were made with built-in image generation using the supplied style references. They are stored locally as lossless WebP assets, with decoded pixels verified against the generated originals. There are no remote image dependencies. The economic graph remains crisp white SVG. See [art direction and full prompts](assets/ART_DIRECTION.md) for asset provenance and scene mapping.
+The illustrations were made with built-in image generation. The original references informed the broad illustration technique; this replacement setting was generated from a written brief, and all variants use that new base image. They are stored locally as lossless WebP assets, with decoded pixels verified against the generated originals. There are no remote image dependencies. The economic graph remains crisp white SVG. See [art direction and full prompts](assets/ART_DIRECTION.md) for asset provenance and scene mapping.
 
 ## Save and privacy
 
