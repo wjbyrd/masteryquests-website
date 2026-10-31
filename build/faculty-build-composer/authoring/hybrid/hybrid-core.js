@@ -1,7 +1,7 @@
 (function(root, factory){
-  if(typeof module === 'object' && module.exports) module.exports = factory();
-  else root.MQHybridCore = factory();
-})(typeof globalThis !== 'undefined' ? globalThis : this, function(){
+  if(typeof module === 'object' && module.exports) module.exports = factory(require('./quiz-core.js'));
+  else root.MQHybridCore = factory(root.MQQuizSelection);
+})(typeof globalThis !== 'undefined' ? globalThis : this, function(Quiz){
 'use strict';
 const VERSION = 1;
 const FIELDS = ['question','A','B','C','D','answer','explanation','topic','outcome','difficulty'];
@@ -11,7 +11,7 @@ const clone = value => JSON.parse(JSON.stringify(value));
 const uid = () => globalThis.crypto.randomUUID();
 const text = value => typeof value === 'string' ? value.trim() : '';
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-function fresh(){return {version:VERSION,id:uid(),source:'shared',questions:[]};}
+function fresh(){return {version:VERSION,id:uid(),source:'shared',questions:[],quizSelection:Quiz.defaults()};}
 function signature(q){return JSON.stringify(FIELDS.map(key => text(q[key])));}
 function draft(row = {}, used = new Set()){
   let id; do {id = uid();} while(used.has(id));
@@ -65,7 +65,7 @@ function restore(value){
     if(raw.review?.signature === signature(q) && typeof raw.review.at === 'string' && !issues(q,false).length) q.review = clone(raw.review);
     return q;
   });
-  return {version:VERSION,id:value.id,source:value.source,questions};
+  return {version:VERSION,id:value.id,source:value.source,questions,quizSelection:Quiz.restore(value.quizSelection)};
 }
 // RFC 4180-style quoted fields, including embedded newlines and CRLF/CR/LF.
 function csvRows(input){
@@ -124,7 +124,7 @@ function wrap(Base){
       if(!issues(q,false).length){const answer=escape(q[q.answer]);const normalized=Base.normalizeAnswerText(answer);hashes.set(normalized,await Base.sha256Hex(normalized));}
     }
   }
-  function inputs(library, recipe){
+  function baseInputs(library, recipe){
     if(!recipe.hybrid) return {library,recipe,errors:[]};
     const project=restore(recipe.hybrid),errors=[];
     const shared=project.source !== 'own' ? [...recipe.selectedConceptIds] : [];
@@ -152,6 +152,11 @@ function wrap(Base){
     }
     return {library:{...library,concepts:{...library.concepts,[id]:module}},recipe:runtime,errors};
   }
+  function inputs(library,recipe){
+    if(!recipe.hybrid?.quizSelection?.enabled)return baseInputs(library,recipe);
+    const selected=Quiz.selectInputs(Base,library,recipe),p=baseInputs(selected.library,selected.recipe);
+    p.errors.push(...selected.errors);return p;
+  }
   const Core={...Base,
     compose(library,recipe){
       const p=inputs(library,recipe),c=Base.compose(p.library,p.recipe);c.errors.push(...p.errors);
@@ -159,11 +164,30 @@ function wrap(Base){
       for(const q of Object.values(c.banks).flat())if(q.source==='instructor-custom'){
         c.objectiveLabels[q.tag]=q.topic;c.objectiveLabels[q.primaryConceptId]='Instructor questions';
       }
+      if(recipe.hybrid?.quizSelection?.enabled){
+        const expected=new Set(p.recipe.selectedConceptIds.flatMap(id=>Quiz.LEVELS.flatMap(level=>p.library.concepts[id]?.questions?.[level]||[])).map(Base.idOf));
+        const actual=new Set(Object.values(c.banks).flat().map(Base.idOf));
+        if(expected.size!==actual.size||[...expected].some(id=>!actual.has(id)))c.errors.push('Selected Quiz: the compiled bank differs from your selection. Generation is stopped; review the source library integration.');
+        Quiz.applyValidation(Base,c,Quiz.restore(recipe.hybrid.quizSelection));
+      }
       return c;
     },
     canonicalRecipe(recipe,library,theme){return {...Base.canonicalRecipe(recipe,library,theme),...(recipe.hybrid?{hybrid:restore(recipe.hybrid)}:{})};},
     migrateRecipe(recipe,library,theme){const out=Base.migrateRecipe(recipe,library,theme);if(recipe.hybrid)out.recipe.hybrid=restore(recipe.hybrid);return out;},
-    async createConfig(recipe,library,sha,theme,composition){const p=inputs(library,recipe);if(p.errors.length)throw new Error(p.errors.join('\n'));return Base.createConfig(p.recipe,p.library,sha,theme,composition);},
+    async createConfig(recipe,library,sha,theme,composition){
+      const p=inputs(library,recipe);if(p.errors.length)throw new Error(p.errors.join('\n'));
+      composition=composition||Core.compose(library,recipe);
+      if(composition.errors.length)throw new Error(composition.errors.join('\n'));
+      const config=await Base.createConfig(p.recipe,p.library,sha,theme,composition);
+      if(composition.quizSelection){
+        config.quizSelection=clone(composition.quizSelection);
+        config.compositionFingerprint=await Base.sha256Hex(Base.stableStringify({base:config.compositionFingerprint,quizSelection:config.quizSelection}));
+        config.saveCompatibilityId=await Base.sha256Hex(Base.stableStringify({base:config.saveCompatibilityId,quizSelection:config.quizSelection}));
+        config.saveKeyNamespace=`mq-econ:game:${config.gameId}:${config.saveCompatibilityId}`;
+        config.dailyChallengesEnabled=false;
+      }
+      return config;
+    },
     buildHtml(template,composition,config,metadata,activation){
       if(composition.errors?.length)throw new Error(composition.errors.join('\n'));
       const anchor='function remediationTransitionAllowed(question){';
@@ -172,6 +196,7 @@ function wrap(Base){
       const plan='function planRemediation(question, responseTime){';
       if(!template.includes(plan))throw new Error('Runtime remediation planning integration changed.');
       template=template.replace(plan,plan+'\n    if(question?.source === "instructor-custom") return null;');
+      if(config.quizSelection)template=Quiz.patchTemplate(template);
       return Base.buildHtml(template,composition,config,metadata,activation);
     }
   };

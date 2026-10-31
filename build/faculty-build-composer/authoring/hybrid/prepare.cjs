@@ -12,7 +12,7 @@ html=replaceOnce(html,'1. Concepts &amp; scope','1. Questions');
 html=replaceOnce(html,'    <section class="step active" data-step-panel="1">\n      <div class="panel">','    <section class="step active" data-step-panel="1">\n      <section id="hybridGuide" class="panel" aria-labelledby="hybridHeading"></section>\n      <div class="panel" id="hybridSharedContent">');
 html=replaceOnce(html,'<h2>Choose concepts</h2>','<h2>2. Select Mastery Quests content</h2>');
 html=replaceOnce(html,'Choose concepts, then select the learning outcomes you teach. Use coverage presets for a quick start.','Choose a course area to browse the ready-to-use question collection.');
-html=replaceOnce(html,'<script src="composer.js?v=20261028-build-versioning"></script>','<script src="authoring/hybrid/hybrid-core.js"></script>\n  <script src="authoring/hybrid/hybrid-ui.js"></script>\n  <script src="authoring/hybrid/generated-composer.js"></script>');
+html=replaceOnce(html,'<script src="composer.js?v=20261028-build-versioning"></script>','<script src="authoring/hybrid/quiz-core.js"></script>\n  <script src="authoring/hybrid/hybrid-core.js"></script>\n  <script src="authoring/hybrid/hybrid-ui.js"></script>\n  <script src="authoring/hybrid/quiz-ui.js"></script>\n  <script src="authoring/hybrid/generated-composer.js"></script>');
 html=html.replace('import composition_recipe.json','import your separately saved authoring project');
 html=html.replace('Download Composition Recipe (.JSON)','Save Authoring Project (.JSON)');
 const detailsStart=html.indexOf('    <section class="step" data-step-panel="2">');
@@ -52,24 +52,32 @@ js=replaceOnce(js,'const Core = window.MQComposerCore;',`const Hybrid = window.M
 const Core = Hybrid.engine.Core;`);
 js=replaceOnce(js,'schemaVersion: Core.RECIPE_SCHEMA_VERSION,\n    gameId: state.gameId,','schemaVersion: Core.RECIPE_SCHEMA_VERSION,\n    hybrid: Hybrid.project(),\n    gameId: state.gameId,');
 js=replaceOnce(js,'state.composition = Core.compose(Library, recipe());','state.composition = Core.compose(Library, recipe());\n  Hybrid.changed(recipe(), state.composition);');
-js=replaceOnce(js,'  state.step = Math.max(1, Math.min(7, Number(step)));','  state.step = Math.max(1, Math.min(7, Number(step)));\n  Hybrid.stepChanged(state.step);');
+js=replaceOnce(js,'  state.step = Math.max(1, Math.min(7, Number(step)));','  if(Hybrid.project().quizSelection.enabled && Number(step)===4)step=state.step>4?3:5;\n  state.step = Math.max(1, Math.min(7, Number(step)));\n  Hybrid.stepChanged(state.step);');
 js=replaceOnce(js,"    announce('New game identity created. Current settings retained. Use a separate publishing folder to preserve earlier assignments.');","    Hybrid.assignmentCopied();\n    announce('Separate assignment created. Give it a new title and file name.');");
 js=replaceOnce(js,"  const container = $('coverageRecommendations');",`  const container = $('coverageRecommendations');
+  if(Hybrid.project().quizSelection.enabled){container.textContent='This Quiz uses only your selected questions. Check the selected total and questions per attempt above.';return;}
   if(Hybrid.project().source === 'own'){
     container.textContent = 'Use the pool requirements below to choose a supported mode or add your own questions. This guide does not create checkpoint, repair, bridge, or graph pools.';
     return;
   }`);
-js=replaceOnce(js,"  const selectedTitles = instructionSelected.map(id => metaById.get(id)?.title || id);",`  const selectedTitles = (Hybrid.project().source === 'own' ? [] : instructionSelected).map(id => metaById.get(id)?.title || id);
+js=replaceOnce(js,"  const selectedTitles = instructionSelected.map(id => metaById.get(id)?.title || id);",`  const selectedTitles = (Hybrid.project().source === 'own' ? [] : composition.quizSelection ? composition.recipe.selectedConceptIds.filter(id=>Library.concepts[id]) : instructionSelected).map(id => metaById.get(id)?.title || id);
   if(Hybrid.project().source !== 'shared') selectedTitles.push('Instructor questions');`);
 js=replaceOnce(js,"$('downloadRecipe').disabled = !state.selectedConceptIds.length;","$('downloadRecipe').disabled = false;");
-js=replaceOnce(js,'if(instructionSelected.length === 1){',"if(Hybrid.project().source === 'shared' && instructionSelected.length === 1){");
-js=replaceOnce(js,'    activeRecipe.selectedConceptIds\n  );',"    Hybrid.projectFrom(activeRecipe).source === 'own' ? [] : activeRecipe.selectedConceptIds\n  );");
+js=replaceOnce(js,'if(instructionSelected.length === 1){',"if(!composition.quizSelection && Hybrid.project().source === 'shared' && instructionSelected.length === 1){");
+js=replaceOnce(js,'    activeRecipe.selectedConceptIds\n  );',"    Hybrid.projectFrom(activeRecipe).source === 'own' ? [] : composition.quizSelection ? composition.recipe.selectedConceptIds.filter(id=>Library.concepts[id]) : activeRecipe.selectedConceptIds\n  );");
+js=replaceOnce(js,"    const selected=activeRecipe.selectedConceptIds.filter(id=>metaById.has(id));","    const selected=composition.quizSelection ? [] : activeRecipe.selectedConceptIds.filter(id=>metaById.has(id));");
+js=replaceOnce(js,'  const thinSelected = state.selectedConceptIds','  const thinSelected = (composition.quizSelection ? [] : state.selectedConceptIds)');
+js=replaceOnce(js,'  const keyMetrics = [',`  const keyMetrics = composition.quizSelection ? [
+    ['Selected questions',counts.totalCanonical],['Questions per attempt',composition.quizSelection.count],['Easy',counts.easy],['Medium',counts.medium],['Hard',counts.hard]
+  ] : [`);
+js=replaceOnce(js,"? 'Fixed-length classroom quiz. Students choose 1–15 questions; faculty-selected concepts stay locked.'","? Hybrid.project().quizSelection.enabled ? 'Uses only your selected questions, with the length you set in Questions.' : 'Fixed-length classroom quiz. Students choose 1–15 questions; faculty-selected concepts stay locked.'");
+js=replaceOnce(js,"${instructionSelected.length} selected concept${instructionSelected.length === 1 ? '' : 's'}","${composition.quizSelection ? composition.quizSelection.count + ' questions per attempt' : instructionSelected.length + ' selected concepts'}");
 js=replaceOnce(js,"    {name: 'composition_recipe.json', data: Core.stableStringify(Core.canonicalRecipe(activeRecipe, Library, ThemeLibrary), 2) + '\\n'},\n",'');
 js=js.replace('import composition_recipe.json','import your separately saved authoring project');
 js=js.replace('Save this recipe to update the same Game ID later.','Save the separate authoring project from the staged Composer to update the same Game ID later.');
 js=replaceOnce(js,'  const imported = JSON.parse(await file.text());','  const imported = JSON.parse(await file.text());\n  await Hybrid.acceptRecipe(imported);');
 js=replaceOnce(js,'  if(imported.contentScopes != null){','  if(!imported.hybrid && imported.contentScopes != null){');
-js=replaceOnce(js,'  recalculate();\n  switchStep(1);',`  await Hybrid.mount({recipe,importRecipe,recalculate,switchStep,downloadBlob});
+js=replaceOnce(js,'  recalculate();\n  switchStep(1);',`  await Hybrid.mount({recipe,importRecipe,recalculate,switchStep,downloadBlob,quizOnly(){state.supportedModes=['quiz'];renderModeOptions();renderThemeSlots();}});
   recalculate();
   switchStep(1);`);
 // Source uses CRLF in some checkouts; normalize before matching by reading above.

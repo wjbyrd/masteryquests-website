@@ -28,15 +28,23 @@ Open <http://127.0.0.1:8765/build/faculty-build-composer/authoring/hybrid/>. Kee
 
 6. **Game details** begins with the title and file name. The optional collection setting retains all original disclosures in an expandable details section. Restoring a saved project reveals **Create a separate assignment**, with an explanation that its students' saved progress will be separate. Clicking it creates a new game identity while retaining questions and settings; update the title/file name and save the resulting project. Continuing an existing assignment does not require this action.
 
-The October 31 usability revisions integrate question work into the existing step navigation, enlarge descriptive section headings, reduce default text, add explicit bulk acknowledgement, expose common question actions, and simplify Game details. Quiz bank minimums and all runtime rules are unchanged. The distinction between the minimum bank size and a student's selected quiz length remains a separate design question for later consideration.
+The October 31 usability revisions integrate question work into the existing step navigation, enlarge descriptive section headings, reduce default text, add explicit bulk acknowledgement, expose common question actions, and simplify Game details. The original concept-pool workflow retains its Quiz minimums and runtime rules. The handpicked Quiz workflow below has its own selection and length rules.
 
 `demo-biology.csv` contains 15 non-economics questions: five each at easy, medium, and hard. Import it, inspect the bank, acknowledge review individually or in bulk, select Quiz, and generate. It starts unreviewed intentionally. Topics cover cell biology, transport, and energetics. This is demonstration content, not an externally validated curriculum or assessment.
 
-## Individual MQ selection — proposed follow-up
+## Pick individual questions for a Quiz
 
-An optional question picker is a useful next step for Quiz. Keep full-concept selection as the default; let instructors filter the supplied collection by concept, outcome, and difficulty, inspect questions, and save exact selected IDs in their project. Preview and readiness would need to use only those selected questions. An explicit choice between using every selected question and sampling from the selected bank would avoid implying that the existing balanced Quiz sampler guarantees every selected item appears.
+1. In **Questions**, turn on **Pick questions for a Quiz**. This selects Quiz as the only mode and skips Checkpoints. Turn it off to return to concept pools and enable other modes. Your handpicked list and remembered concept selections are retained separately.
+2. Search question text, choices, or learning outcomes; filter by concept and difficulty. The catalog contains 5,087 distinct ordinary easy/medium/hard MQ questions, including graph questions, in this library version. Check individual questions or **Select this page** (12 results maximum). **Show selected only** helps review the bank. Expanding a question shows choices, its verified correct answer, feedback, published learning-outcome labels, and registered graph media when present.
+3. Choose **Use every selected question** or **Take a random sample from my selection**, then set a positive whole-number sample size. Any mix of easy, medium, and hard questions works, including a one-question quiz. The sample cannot exceed the selected bank. Use-all also supports more than 15 questions.
+4. For **Combine both**, included reviewed instructor questions join the handpicked MQ selection. For **Only my questions**, remembered MQ picks are inactive; use the existing Include/Exclude controls to select custom questions. Included custom drafts and elite/legendary records block the handpicked Quiz until corrected or excluded.
+5. Continue through Game details, Modes, Appearance, Readiness, and Generate. Students see the assigned length and cannot change it. Each attempt shuffles its questions, samples without replacement when requested, and never pulls from outside the selected bank. Question options and immediate correctness feedback retain the existing Quiz behavior.
 
-The current Exam Drill also depends on checkpoint, repair, and bridge pools. A fixed assessment should have explicit rules for its question set, length, feedback, ordering, and remediation, while adaptive games retain their complete support pools. Individual MQ selection and a fixed assessment mode are recommendations only; neither is implemented in this revision.
+The compiled Quiz contains only the selected MQ questions and eligible included custom questions; it carries no checkpoint, repair, or bridge pools. Graph assets retain their normal integrity/accessibility checks, and generated answer verification remains mandatory. Daily challenges are disabled for this fixed Quiz workflow. Unknown/removed IDs, duplicate IDs, invalid records, empty selections, oversized samples, and conflicting mode settings block generation. An exact-membership guard also stops generation if a future library/compiler change changes the requested bank.
+
+Projects save the optional `hybrid.quizSelection` object (`enabled`, `questionIds`, `delivery`, `count`) under Hybrid version 1. Older projects restore with the picker disabled. Runtime config contains only the active compiled Quiz policy and IDs, never authoring drafts. Selection/delivery/count participate in the composition fingerprint and save-compatibility namespace, so changed assignment rules cannot reuse an incompatible session.
+
+The current Exam Drill still depends on checkpoint, repair, and bridge pools. Fixed exam authoring is a separate future feature; this revision adds individual selection for Quiz only. Concept-pool games and their adaptive routes retain the previous behavior.
 
 ## Runtime contract and boundaries
 
@@ -57,7 +65,7 @@ Actual initial mode minimums:
 | Legendary | 6 legendary + 3 legendary checkpoint questions |
 | Trial by Graph | 10 graph-safe questions |
 
-Consequently a text-only instructor bank can currently support Quiz, Fading Fortune, and Risk & Reward when sufficient. A mixed bank can support additional modes using eligible selected supplied content. No filler is added. A one-question draft can always be saved and previewed.
+These minimums apply to the original concept-pool workflow. A text-only instructor bank can support Quiz, Fading Fortune, and Risk & Reward when sufficient. A mixed bank can support additional modes using eligible selected supplied content. Handpicked Quiz uses the selected-total/sample-size checks described above, with a minimum of one valid question. No filler is added. A one-question draft can always be saved and previewed.
 
 ## Saved work and student packages
 
@@ -74,19 +82,23 @@ Run core checks after preparing:
 ```powershell
 node build/faculty-build-composer/authoring/hybrid/prepare.cjs
 node build/faculty-build-composer/authoring/hybrid/test.cjs
+node build/faculty-build-composer/authoring/hybrid/quiz-test.cjs
 ```
 
 Run browser checks with Playwright installed or `MQ_PLAYWRIGHT_MODULE` pointing to its package. Microsoft Edge is used, all external browser requests are blocked, and a temporary localhost server is started/stopped automatically. Optionally set `MQ_AXE_MODULE` to an installed `axe-core/axe.min.js` to include WCAG checks.
 
 ```powershell
 node build/faculty-build-composer/authoring/hybrid/browser-test.cjs
+node build/faculty-build-composer/authoring/hybrid/quiz-browser-test.cjs
 node build/faculty-build-composer/tests/run_active_composer_suite.js
 node audit_tools/public_site_publication/build-dist.mjs
 ```
 
 Core results: **26 checks passed**. Revised browser results: **13 checks passed**, including optional axe scans with zero WCAG 2 A/AA and 2.1 AA violations across write, paste, CSV, and Game details views. Browser checks cover the MQ-first landing, progressive entry methods, collapse/reopen on all later steps, paste errors/completion, CSV file input, editing/review, preview, bulk assignment and acknowledgement, incomplete/excluded review protection, per-question review invalidation, direct row actions, show-all answers, separate assignment identity with preserved settings, source preservation, browser recovery, project download/restoration, actual ZIP generation, hash validation, package isolation, instructor-only Quiz answer/feedback/advance, mixed gameplay, 390px layout, keyboard source/method selection and focus, and the original public Composer download workflow. Edge ran against localhost. Screenshots and machine-readable run results are local under `tmp/hybrid-composer/` (ignored and excluded from publication).
 
-The earlier curated publication build passed: 2,420 files, 151 review PDFs, 14 Composer runtime files, zero forbidden files. The generated public artifact contains no Hybrid staging files. This UI revision changes only the excluded staging directory; the public build and full active suite were not rerun. Git comparison confirms the six public Composer UI/core/library/template files are unchanged.
+Selected Quiz results: **17 core checks and 11 browser scenarios passed**. Core checks include exact compilation of all 5,087 selectable IDs, graph registrations, legacy-project migration, invalid/unknown selections, source isolation, custom-review enforcement, fixed/sample lengths, and fingerprint/save compatibility. Browser checks include filtering and answer previews, draft/project persistence, readiness blockers, actual ZIPs, complete use-all/sample/graph/mixed playthroughs, a 16-question runtime, keyboard interaction, 390px layout, and zero axe violations in the picker. The original 26 core and 13 browser checks were rerun with the picker present.
+
+The earlier curated publication build passed: 2,420 files, 151 review PDFs, 14 Composer runtime files, zero forbidden files. The generated public artifact contains no Hybrid staging files. The Quiz revision changes only the excluded staging directory; the public build and full active suite were not rerun. Git comparison confirms the six public Composer UI/core/library/template files are unchanged.
 
 The existing active Composer suite finished with **40 of 41 runners passing**. Its baseline failure is in `run_phase15_production_hardening_validation.js`: the untouched `play/micro-domains/labyrinth-of-choice/index.html` version string fails its old version-pattern assertion. This is unrelated to Hybrid; both files match the integration baseline. See `verification.json` for the final regression tally.
 
@@ -103,13 +115,13 @@ Changed files are limited to this directory (core adapter, guide, CSS, preparati
 These are future release steps, not actions taken in this change:
 
 1. Resolve the review/release decision with the owner and preserve the manuscript's historical evaluation boundary. Update this feature branch to the then-current integration baseline; rerun preparation and all checks, including the remaining release checks above. Review each preparation seam against the new baseline.
-2. Keep the existing Composer route as the rollback path. For an explicit opt-in release, create `build/faculty-build-composer/hybrid/` and copy only these six prepared runtime files from `authoring/hybrid/`: `index.html`, `generated-composer.js`, `hybrid-core.js`, `hybrid-ui.js`, `hybrid.css`, and `demo-biology.csv`. Do not copy projects, tests, README, or verification artifacts.
+2. Keep the existing Composer route as the rollback path. For an explicit opt-in release, create `build/faculty-build-composer/hybrid/` and copy only these eight prepared runtime files from `authoring/hybrid/`: `index.html`, `generated-composer.js`, `hybrid-core.js`, `hybrid-ui.js`, `quiz-core.js`, `quiz-ui.js`, `hybrid.css`, and `demo-biology.csv`. Do not copy projects, tests, README, or verification artifacts.
 3. In the copied index change `<base href="../../">` to `<base href="../">`. In the copied index and UI replace `authoring/hybrid/` resource paths with `hybrid/`. Keep the original authoring path exclusions. Change the unreleased UI wording only after the owner authorizes release.
-4. Add those six exact paths to the curated publisher's explicit copy list; do not replace it with a recursive source-tree copy. Add publication verification for the new entry's scripts/styles and absence of projects/keys. Generate `dist`, inspect it, and run browser tests against the release route and public fallback.
+4. Add those eight exact paths to the curated publisher's explicit copy list; do not replace it with a recursive source-tree copy. Add publication verification for the new entry's scripts/styles and absence of projects/keys. Generate `dist`, inspect it, and run browser tests against the release route and public fallback.
 5. Add the approved Hybrid link in `build/index.html` and any owner-approved navigation. Keep `/build/faculty-build-composer/` working. Review the final diff and release notes, merge only on the later instruction, then use the owner's normal deployment process. Verify the HTTPS route, telemetry setting, downloadable package, and LMS embed before announcing availability.
 
 ## Disable / rollback
 
 Before release: stop the local server with Ctrl+C and return to the public branch. No production rollback is necessary because nothing was deployed. Keep this feature branch and exported authoring projects for later consideration.
 
-After a later opt-in release: remove the Hybrid navigation link and six-file publication allowlist entry, remove the public Hybrid directory from the release source, rebuild the curated artifact, and redeploy using the owner's process. Keep all authoring exclusions. Redirect the retired Hybrid route to the original Composer only if the owner chooses; explain that Hybrid authoring files need the staged interface. Previously distributed self-contained games and their immutable URLs are separate artifacts—retain them while assignments depend on them. Archive projects before deleting browser drafts. Reverting the eventual activation commit is the equivalent Git rollback; do not revert unrelated content.
+After a later opt-in release: remove the Hybrid navigation link and eight-file publication allowlist entry, remove the public Hybrid directory from the release source, rebuild the curated artifact, and redeploy using the owner's process. Keep all authoring exclusions. Redirect the retired Hybrid route to the original Composer only if the owner chooses; explain that Hybrid authoring files need the staged interface. Previously distributed self-contained games and their immutable URLs are separate artifacts—retain them while assignments depend on them. Archive projects before deleting browser drafts. Reverting the eventual activation commit is the equivalent Git rollback; do not revert unrelated content.

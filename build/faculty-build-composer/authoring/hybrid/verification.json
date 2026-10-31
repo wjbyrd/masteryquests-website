@@ -37,7 +37,7 @@
     "failed": 1,
     "failure": "run_phase15_production_hardening_validation.js: play/micro-domains/labyrinth-of-choice/index.html lacks a Phase 1.5-or-later game/build version",
     "baselineEvidence": "git diff --exit-code HEAD -- play/micro-domains/labyrinth-of-choice/index.html build/faculty-build-composer/tests/run_phase15_production_hardening_validation.js returned 0 before staging commit; neither file changed",
-    "note": "Earlier staging validation; not rerun for this staging-only UI revision."
+    "note": "Earlier staging validation; not rerun because the Quiz revision changes only the isolated staging tree. The 26 Hybrid core and 13 browser regression checks were rerun."
   },
   "publicationBuild": {
     "passed": true,
@@ -47,10 +47,10 @@
     "forbiddenFileCount": 0,
     "incomingQuestionAssetCount": 0,
     "hybridPublished": false,
-    "note": "Earlier staging validation; publication configuration and public files unchanged by this UI revision."
+    "note": "Earlier staging validation; publication configuration and public files unchanged by this Quiz revision."
   },
   "publicComposerBaselineFilesUnchanged": true,
-  "uxRevision": "2026-10-31: integrated step 1, bulk review acknowledgement, direct question actions, automatic import form collapse, simplified Game details and contextual separate-assignment action; quiz requirements and runtime unchanged",
+  "uxRevision": "2026-10-31: Hybrid usability changes plus an optional individual-question Quiz picker, saved selections, readable outcomes, fixed or sampled faculty-set lengths, and Quiz-specific readiness/runtime.",
   "localArtifacts": "tmp/hybrid-composer/ (ignored; includes JSON results, ZIPs, screenshots and synthetic projects)",
   "remaining": [
     "faculty usability and instructional/content review",
@@ -61,5 +61,64 @@
     "actual GitHub Pages/Jekyll build",
     "triage baseline hardening-version assertion"
   ],
-  "deployment": "None. No push, merge, publication or manuscript changes."
+  "deployment": "None. No push, merge, publication or manuscript changes.",
+  "quizSelection": {
+    "status": "implemented-in-local-staging",
+    "catalogQuestions": 5087,
+    "coreChecks": {
+      "passed": 17,
+      "failed": 0,
+      "command": "node build/faculty-build-composer/authoring/hybrid/quiz-test.cjs",
+      "coverage": [
+        "catalog exposes unique ordinary easy/medium/hard questions with graph metadata",
+        "three easy questions form a ready handpicked Quiz without difficulty quotas",
+        "only exact selected IDs compile, ignoring remembered concept scopes",
+        "the entire selectable MQ catalog compiles with exact membership and valid records/assets",
+        "empty selection and oversized samples block export",
+        "invalid delivery, duplicate IDs, and noninteger sample sizes reject project restoration",
+        "unavailable IDs cannot silently expand or shrink a selection",
+        "handpicked settings reject adaptive modes instead of altering their banks",
+        "old Hybrid projects migrate with selection disabled; selected settings round trip",
+        "selected graph retains its exact registered asset and accessibility metadata",
+        "mixed Quiz includes selected MQ IDs and only included reviewed custom questions",
+        "own-only selection cannot leak remembered MQ picks",
+        "included custom drafts and unsupported difficulties remain blocking",
+        "selected published answer hashes verify without adding an answer key",
+        "sampling settings participate in build fingerprint and save compatibility",
+        "invalid selected Quiz cannot produce runtime configuration",
+        "use-all supports selections longer than the legacy student length limit"
+      ]
+    },
+    "browserChecks": {
+      "passed": 11,
+      "failed": 0,
+      "command": "node build/faculty-build-composer/authoring/hybrid/quiz-browser-test.cjs",
+      "coverage": [
+        "explicit Quiz-only workflow selects Quiz and skips checkpoint setup",
+        "concept/difficulty/search filters, explicit selection, selected-only view and verified answer preview",
+        "selection survives workflow switching and browser draft recovery",
+        "oversized sample blocks generation and explains the exact fix",
+        "separate project save and exact three-question ZIP with verified hashes",
+        "use-all Quiz completes with every chosen question exactly once and faculty-locked length",
+        "sample Quiz completes at faculty-set length using only selected IDs without repeats",
+        "graph question preview and self-contained one-question Quiz generation/playthrough",
+        "mixed selected MQ and instructor questions complete together with exclusions respected",
+        "sixteen-question use-all runtime overrides the legacy fifteen-question cap",
+        "narrow-screen layout, keyboard selection and automated WCAG A/AA checks"
+      ]
+    },
+    "accessibility": "Zero axe WCAG 2 A/AA and 2.1 AA violations in the picker",
+    "scope": "Quiz only; exact IDs; use-all or faculty-sized sample; any easy/medium/hard mix; existing concept-pool workflow unchanged",
+    "fullPlaythroughs": [
+      "use-all 3 questions",
+      "sample 2 from 3",
+      "graph-only 1 question",
+      "mixed 3 MQ plus 2 instructor questions"
+    ],
+    "limitations": [
+      "No fixed Exam authoring",
+      "No selected Quiz with adaptive modes in the same package",
+      "No release or remote telemetry verification"
+    ]
+  }
 }

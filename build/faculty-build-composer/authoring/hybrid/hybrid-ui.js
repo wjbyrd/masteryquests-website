@@ -18,7 +18,7 @@ function summary(){
   const included=current.questions.filter(q=>q.included),needsReview=included.filter(q=>H.issues(q).length).length;
   const supplied=lastRecipe?.selectedConceptIds?.length||0;
   const parts=[];
-  if(current.source!=='own')parts.push(`${supplied} MQ concept${supplied===1?'':'s'}`);
+  if(current.source!=='own')parts.push(current.quizSelection.enabled?`${current.quizSelection.questionIds.length} selected MQ questions`:`${supplied} MQ concept${supplied===1?'':'s'}`);
   if(current.source!=='shared')parts.push(`${included.length} of my questions${needsReview?` (${needsReview} need attention)`:''}`);
   $('questionSummaryText').textContent=parts.join(' · ');
   $('questionSummary').hidden=activeStep===1;
@@ -31,6 +31,7 @@ function showQuestionView(view){
   $('hybridCustomContent').hidden=shared;
   $('questionViews').hidden=current.source!=='mixed';
   document.querySelectorAll('[data-question-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.questionView===(shared?'shared':'own'))));
+  window.MQQuizUI?.update(questionView);
 }
 function showMethod(method){
   document.querySelectorAll('[data-method-panel]').forEach(p=>p.hidden=p.dataset.methodPanel!==method);
@@ -99,6 +100,7 @@ async function mount(hooks){
   <section class="hybrid-review-section" aria-labelledby="reviewHeading"><h2 id="reviewHeading">3. Check your question bank</h2><p id="hybridCount"></p><div id="questionTools" hidden><button id="reviewAll" class="primary">Mark all included questions as reviewed</button><p class="hybrid-review-hint">Already reviewed your bank? Confirm accuracy, clarity, difficulty, and course fit with one click. Incomplete questions still need fixes.</p><p id="reviewStatus" role="status" aria-live="polite"></p><div class="hybrid-actions"><button id="toggleBulkTools" aria-expanded="false" aria-controls="bulkTools">Edit several questions</button><button id="toggleAnswers">Show all answers</button></div></div><section id="bulkTools" class="hybrid-help" hidden aria-labelledby="bulkHeading"><h3 id="bulkHeading">Assign topics, outcomes, or difficulty</h3><p>Select questions below. Blank fields keep their current values.</p><div class="hybrid-grid"><label>Topic <input id="bulkTopic" list="topicList" placeholder="e.g., Cell biology"></label><label>Learning outcome <input id="bulkOutcome" list="outcomeList" placeholder="e.g., Explain membrane transport"></label><label>Difficulty <select id="bulkDifficulty">${options()}</select></label></div><div class="hybrid-actions"><button id="selectAllQuestions">Select all questions</button><button id="applyBulk">Apply to selected questions</button></div></section><div id="questionList"></div></section></section>
   <div class="hybrid-continue"><span>Your selections are saved as you work. Check game requirements in Readiness.</span><button id="continueComposer" class="primary">Done with questions — continue</button></div><datalist id="topicList"></datalist><datalist id="outcomeList"></datalist>`;
   $('sharedContentHost').append(shared);
+  window.MQQuizUI.mount({project:()=>current,change:async selection=>{current.quizSelection=window.MQQuizSelection.restore(selection);await commit();},quizOnly:()=>api.quizOnly(),say});
   // Validation belongs in the Composer's existing Readiness step, not above every step.
   const readiness=document.createElement('div');readiness.id='hybridReadiness';readiness.className='hybrid-readiness';readiness.hidden=true;
   $('readinessMessage').before(readiness);
@@ -141,6 +143,6 @@ async function mount(hooks){
 }
 window.MQHybridUI={engine,project:()=>JSON.parse(JSON.stringify(current)),projectFrom:recipe=>recipe.hybrid||{source:'shared'},acceptRecipe,mount,stepChanged,
   assignmentCopied(){$('assignmentCopyStatus').textContent='Separate assignment created. Update the title and file name above, then save your project.';$('gameTitle').focus();},
-  changed(recipe,composition){lastRecipe=recipe;if(!ready)return;const customIssues=composition.errors.filter(e=>e.startsWith('My question '));$('hybridReadiness').hidden=!customIssues.length;$('hybridReadiness').textContent=customIssues.length?'Review your questions before export:\n'+customIssues.join('\n'):'';summary();save();}
+  changed(recipe,composition){lastRecipe=recipe;if(!ready)return;const customIssues=current.quizSelection.enabled?composition.errors:composition.errors.filter(e=>e.startsWith('My question '));$('hybridReadiness').hidden=!customIssues.length;$('hybridReadiness').textContent=customIssues.length?'Review your questions before export:\n'+customIssues.join('\n'):'';window.MQQuizUI.update(questionView);summary();save();}
 };
 })();
