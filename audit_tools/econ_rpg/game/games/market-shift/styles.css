@@ -47,3 +47,42 @@ select{font:inherit;width:100%;min-height:44px;margin-top:8px;padding:8px;backgr
   .live-values small{display:block;font-size:.64rem;margin:3px 0 0}
   .graph-card .graph-legend{padding-bottom:12px}
 }
+
+/* Game cover, then a dedicated news brief before each forecast. */
+body[data-view=intro] .prototype{margin-left:auto}
+.splash{position:relative;isolation:isolate;min-height:610px;display:flex;align-items:center;overflow:hidden;border-radius:14px;border:1px solid #4d7289;background:#0b2d4a}
+.splash-art{position:absolute;inset:0;z-index:-2}
+.splash-art svg{display:block;width:100%;height:100%}
+.splash::before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#031638f5 0%,#031638db 30%,#03163855 62%,#0316380a 100%),linear-gradient(0deg,#03163875,transparent 55%)}
+.splash-copy{padding:50px;max-width:630px}
+.splash h1{font-size:clamp(5rem,8vw,7.8rem);line-height:.94;letter-spacing:-.055em;margin-bottom:25px}
+.splash-copy>p{color:#f1f5f8;font-size:1.13rem;margin-bottom:30px}
+.splash .quiet{background:#0a2b4ada}
+.bulletin{max-width:1040px;margin:20px auto;background:#fff;color:var(--ink);border-radius:12px;overflow:hidden;box-shadow:0 18px 60px #0003}
+.bulletin-masthead{text-align:center;border-bottom:3px double #8b9ba7;margin:0 32px;padding:24px 0 20px}
+.bulletin-masthead p{color:#526777;font-size:.75rem;text-transform:uppercase;letter-spacing:.16em;margin:0 0 9px}
+.bulletin h1{font:400 clamp(2rem,4vw,3.5rem)/1.1 Georgia,serif;letter-spacing:-.035em;margin:0}
+.bulletin-layout{display:grid;grid-template-columns:1.1fr 1fr;gap:30px;align-items:center;padding:32px}
+.bulletin .scene-frame{border-color:#b0c4c9;box-shadow:none}
+.bulletin h2{font-size:1.8rem;line-height:1.15;margin:0 0 16px}
+.bulletin article p{color:#40576b;font-size:1.03rem;line-height:1.65;margin-bottom:25px}
+.bulletin button.primary{background:#086d70;border-color:#086d70;color:#fff}
+.bulletin button.primary:hover{background:#095457}
+.bulletin [tabindex]:focus-visible{outline-color:#087b7a}
+.forecast-brief{display:flex;align-items:center;justify-content:space-between;gap:24px;margin:0 0 22px}
+.forecast-brief h2{font-size:clamp(1.8rem,3vw,2.5rem);margin-bottom:8px}
+.forecast-brief .quiet{font-size:.78rem;min-height:36px;padding:6px 12px}
+.forecast-brief .scene-frame{width:185px;flex-shrink:0;box-shadow:none}
+.quiz h1{font-size:clamp(2.3rem,4vw,3.3rem);margin-bottom:22px}
+.quiz-card{margin-top:0}
+.quiz-bulletin{border-left:3px solid #70b9b9;padding:2px 0 2px 18px;margin:0 0 26px}
+.quiz-bulletin .eyebrow{font-size:.65rem;margin-bottom:8px}
+.quiz-bulletin h3{font-size:1.1rem;margin:0 0 8px}
+.quiz-bulletin #quiz-event{font-size:.95rem;line-height:1.6;margin:0;color:#d8e5ef}
+@media(max-width:720px){
+  .splash{min-height:620px;align-items:flex-end}.splash-art{inset:0 0 auto;height:310px}.splash::before{background:linear-gradient(0deg,#0b2d4a 0%,#0b2d4a 48%,#0b2d4a00 80%)}
+  .splash-copy{padding:28px 24px}.splash h1{font-size:4.4rem;line-height:.95;margin-bottom:18px}.splash-copy>p{font-size:.92rem;margin-bottom:22px}.splash .actions{gap:10px}.splash button{padding:10px 12px;font-size:.9rem}
+  .bulletin{margin:0}.bulletin-masthead{margin:0 20px;padding:22px 0 18px}.bulletin h1{font-size:2rem}.bulletin-layout{grid-template-columns:1fr;gap:24px;padding:20px}.bulletin h2{font-size:1.65rem}.bulletin article p{font-size:.98rem;margin-bottom:22px}.bulletin button{width:100%}
+  .forecast-brief{gap:15px;margin-bottom:20px}.forecast-brief h2{font-size:1.6rem}.forecast-brief .scene-frame{width:106px}.forecast-brief .quiet{min-height:44px}
+  .quiz-bulletin{padding-left:13px;margin-bottom:22px}.quiz-bulletin #quiz-event{font-size:.9rem}
+}

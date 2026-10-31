@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {BANKS,SCENARIOS,initialValues,demand,supply,market,atPrice,check,freshRun,restoreRun,missions,missionText,quizQuestions,answerQuiz,advanceQuiz} from './model.js';
 const copy=v=>structuredClone(v);
 function solve(m,dSize=20,sSize=20){if(m.type==='shift'){const d=m.d*dSize,s=m.s*sSize;return {...initialValues(),d,s,...market(d,s)};}const a=atPrice(m.price,0,0,m.type);return {...initialValues(),price:m.price,qs:a.qs,qd:a.qd};}
-function finishMissions(run){for(let i=0;i<5;i++){run.index=i;run.values=solve(missions(run)[i]);run.attempts=[{...check(missions(run)[i],run.values),values:copy(run.values)}];run.completed=true;if(i<4)run.records.push({id:run.plan[i],values:copy(run.values),attempts:copy(run.attempts),hints:0});}run.stage='quiz';return run;}
+function finishMissions(run){for(let i=0;i<5;i++){run.index=i;run.values=solve(missions(run)[i]);run.attempts=[{...check(missions(run)[i],run.values),values:copy(run.values)}];run.completed=true;if(i<4)run.records.push({id:run.plan[i],values:copy(run.values),attempts:copy(run.attempts),hints:0});}run.stage='quiz';run.bulletinRead=true;return run;}
 
 test('equilibria satisfy both curves throughout allowed shifts',()=>{
   for(let d=-30;d<=30;d+=5)for(let s=-30;s<=30;s+=5){const e=market(d,s);assert(Math.abs(demand(e.q,d)-e.p)<1e-9);assert(Math.abs(supply(e.q,s)-e.p)<1e-9);assert(e.q>=0&&e.q<=100&&e.p>=0&&e.p<=120);}
@@ -42,7 +42,7 @@ test('fresh runs cover every scenario, reproduce by seed, change all stories and
   assert.equal(seen.size,22);
 });
 test('recall questions follow the run and preserve randomized answer order across reloads',()=>{
-  for(let seed=0;seed<40;seed++){const run=finishMissions(freshRun(null,seed)),questions=quizQuestions(run);assert.equal(questions.length,5);assert.equal(questions[0].correct,missions(run)[0].d>0?0:1);assert(questions[4].prompt.includes('$'+missions(run)[4].price));assert.deepEqual(restoreRun(copy(run)).quiz.orders,run.quiz.orders);}
+  for(let seed=0;seed<40;seed++){const run=finishMissions(freshRun(null,seed)),questions=quizQuestions(run);assert.equal(questions.length,5);assert.equal(questions[0].correct,missions(run)[0].d>0?0:1);assert(questions[4].explanation.includes('$'+missions(run)[4].price));assert.deepEqual(restoreRun(copy(run)).quiz.orders,run.quiz.orders);}
 });
 test('recall tracks first responses and retries, blocks duplicate answers and premature advancement',()=>{
   const run=finishMissions(freshRun(null,15));assert(!advanceQuiz(run));
@@ -57,4 +57,13 @@ test('save validation rejects incompatible runs, fabricated completion and damag
   for(const change of [{version:1},{completed:true},{index:1},{stage:'quiz'},{values:{...run.values,p:NaN}},{plan:['missing',...run.plan.slice(1)]}])assert.throws(()=>restoreRun({...copy(run),...change}));
   const done=finishMissions(freshRun(null,4)),bad=copy(done);bad.quiz.orders[0]=[0,0,2,3];assert.throws(()=>restoreRun(bad));
   bad.quiz.orders=copy(done.quiz.orders);bad.quiz.answers[0]=[{choice:quizQuestions(done)[0].correct,correct:false}];assert.throws(()=>restoreRun(bad));
+});
+
+test('bulletin state persists and earlier v2 saves resume without losing their place',()=>{
+  const run=freshRun(null,31);assert.equal(restoreRun(copy(run)).bulletinRead,false);
+  run.bulletinRead=true;assert.deepEqual(restoreRun(copy(run)),run);
+  delete run.bulletinRead;assert.deepEqual(restoreRun(copy(run)),{...run,bulletinRead:true});
+  const done=finishMissions(freshRun(null,32));delete done.bulletinRead;
+  assert.deepEqual(restoreRun(copy(done)),{...done,bulletinRead:true});
+  assert.throws(()=>restoreRun({...copy(run),bulletinRead:'yes'}));
 });

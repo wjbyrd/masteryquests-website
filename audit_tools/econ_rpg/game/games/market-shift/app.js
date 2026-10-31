@@ -1,4 +1,4 @@
-import {clamp,initialValues,market,atPrice,STEP_LABELS,missions,isPolicy,missionText,check,freshRun,restoreRun,quizQuestions,answerQuiz,advanceQuiz,allRecords} from './model.js';
+import {clamp,initialValues,market,atPrice,missions,isPolicy,missionText,check,freshRun,restoreRun,quizQuestions,answerQuiz,advanceQuiz,allRecords} from './model.js';
 import {plot,graphMarkup,number} from './graph.js';
 import {scene} from './scene.js';
 const root=document.getElementById('game'),KEY='mq-market-shift-prototype-v2';
@@ -11,7 +11,19 @@ function storageWarning(message){$('storageWarning').hidden=false;$('storageWarn
 function save(){try{localStorage.setItem(KEY,JSON.stringify(run));saved=true;}catch{storageWarning('This browser could not save progress. Keep this tab open and download your notebook at the end.');}}
 function focusHeading(){root.querySelector('h1,h2')?.focus();}
 function intro(){
-  root.innerHTML=`<section class="intro"><div><p class="eyebrow">A Mastery Quests graphing game</p><h1 tabindex="-1">Markets move.<br><em>Make sense of it.</em></h1><p class="lead">You’re the new market analyst in Linden. Read the news, move the curves, and show the council what happens next.</p><div class="actions"><button class="primary" data-action="start">${saved?'Continue your market':'Enter the market'} →</button><button data-action="explore">Explore freely</button></div><small>Five missions · A quick recall quiz · Fresh stories each run</small></div><div class="intro-art"><div class="scene-frame">${scene('festival')}</div><div class="intro-stamp"><strong>Market Shift</strong><span>Your graph. Your forecast.</span></div></div></section><section class="mission-cards" aria-label="Your five missions">${STEP_LABELS.map((label,i)=>`<article><span class="number">0${i+1}</span><h3>${label}</h3><p>${['Follow the buyers.','Follow the sellers.','Two shifts in the same direction.','Two shifts in opposite directions.','A ceiling or a floor.'][i]}</p></article>`).join('')}</section>`;
+  root.innerHTML=`<section class="splash" aria-labelledby="splash-title">
+    <div class="splash-art" aria-hidden="true">${scene('festival').replace('<svg ','<svg preserveAspectRatio="xMidYMid slice" ')}</div>
+    <div class="splash-copy"><h1 id="splash-title" tabindex="-1">Market<br><em>Shift.</em></h1><p>Read the news. Shape your forecast.</p>
+      <div class="actions"><button class="primary" data-action="start">${saved?(run.stage==='report'?'Open your notebook':'Continue your market'):'Enter Linden'} →</button><button class="quiet" data-action="explore">Explore freely</button></div>
+    </div>
+  </section>`;
+}
+function bulletin(){
+  const m=current();
+  root.innerHTML=`<section class="bulletin" aria-labelledby="bulletin-heading">
+    <header class="bulletin-masthead"><p>Market day ${run.index+1} of 5</p><h1 id="bulletin-heading" tabindex="-1">The Linden Bulletin</h1></header>
+    <div class="bulletin-layout"><div class="scene-frame">${scene(m.art,isPolicy(m)?m:null)}</div><article><h2>${m.title}</h2><p>${m.event}</p><button class="primary" data-action="forecast">${run.bulletinRead?'Back to your forecast':'Make your forecast'} →</button></article></div>
+  </section>`;
 }
 const storyNames={
   'festival-buyers':'Festival day','recipe-buzz':'Recipe rush','apple-sale':'Apple season','cancelled-fair':'A quiet weekend',
@@ -40,7 +52,7 @@ function graphCard(isExplore=false){
 function mission(){
   const m=current(),policy=isPolicy(m);
   root.innerHTML=`<ol class="progress" aria-label="Mission progress">${missions(run).map((item,i)=>`<li class="${i===run.index?'active':i<run.index?'done':''}" ${i===run.index?'aria-current="step"':''}><span class="step-number">${i<run.index?'✓':i+1}</span><span>${storyName(item)}</span></li>`).join('')}</ol>
-    <section class="brief"><div><p class="eyebrow">Linden market bulletin</p><h2 tabindex="-1">${m.title}</h2><p>${m.event}</p></div><div class="scene-frame">${scene(m.art,policy?m:null)}</div></section>
+    <section class="forecast-brief"><div><h2 tabindex="-1">${m.title}</h2><button class="quiet" data-action="bulletin">Read bulletin</button></div><div class="scene-frame">${scene(m.art,policy?m:null)}</div></section>
     <div class="workbench">${graphCard()}<aside class="controls" aria-labelledby="task-title">
       <h3 id="task-title" class="task">${run.completed?'✓ Forecast filed':policy?'Set the legal price':'Adjust the curves'}</h3>
       <fieldset id="inputFields" ${run.completed?'disabled':''}><legend class="sr-only">Graph adjustments</legend>${policy?range('price',m.type==='ceiling'?'Maximum price':'Minimum price',0,120,1):range('d','Demand',-30,30)+range('s','Supply',-30,30)}</fieldset>
@@ -48,7 +60,7 @@ function mission(){
       <p id="feedback" class="feedback" role="status" ${feedback&&!feedback.ok?'':'hidden'}>${esc(feedback?.text||'')}</p><p class="hint" ${showHint&&!run.completed?'':'hidden'}>${m.hint}</p>
       ${graphHelp()}
     </aside></div>
-    ${run.completed?`<section class="debrief"><div><h3>${m.concept}</h3><p>${m.debrief}</p>${!policy?'<details class="model-note"><summary>About these numbers</summary><p>The numbers illustrate the shifts you drew. The news establishes direction, not exact size. Each bulletin starts from the original market.</p></details>':''}</div><button class="primary" data-action="next">${run.index===4?'Try the recall quiz':'Next market day'} →</button></section>`:''}`;
+    ${run.completed?`<section class="debrief"><div><h3>${m.concept}</h3><p>${m.debrief}</p>${!policy?'<details class="model-note"><summary>About these numbers</summary><p>The numbers illustrate the shifts you drew. The news establishes direction, not exact size. Each bulletin starts from the original market.</p></details>':''}</div><button class="primary" data-action="next">${run.index===4?'Try the quiz':'Next market day'} →</button></section>`:''}`;
   bindGraph();update();
 }
 function exploration(){
@@ -60,14 +72,20 @@ function exploration(){
   bindGraph();update();
 }
 function quiz(){
-  const i=run.quiz.index,q=quizQuestions(run)[i],answers=run.quiz.answers[i],last=answers.at(-1),correct=!!last?.correct;
-  root.innerHTML=`<section class="quiz"><p class="eyebrow">Market debrief · Recall ${i+1} of 5</p><h1 tabindex="-1">What did the<br><em>market teach you?</em></h1><p>Five quick questions about the markets you just worked through. Your first answers stay in your notebook; feedback helps you try again.</p><div class="quiz-card"><p class="quiz-topic">${STEP_LABELS[i]}</p><h2 id="question-title">${q.prompt}</h2><div class="quiz-options" role="group" aria-labelledby="question-title">${run.quiz.orders[i].map((choice,n)=>{const attempted=answers.find(a=>a.choice===choice);return `<button data-choice="${choice}" class="quiz-option ${attempted?(attempted.correct?'correct':'incorrect'):''}" ${correct||attempted?'disabled':''}><span class="option-letter">${'ABCD'[n]}</span><span>${q.options[choice]}${attempted?`<small>${attempted.correct?'✓ Correct':'Try another answer'}</small>`:''}</span></button>`;}).join('')}</div>${last?`<div class="quiz-feedback ${correct?'success':''}" tabindex="-1"><strong>${correct?'That’s it.':'Take another look.'}</strong><p>${q.explanation}</p></div>`:''}${correct?`<button class="primary" data-action="quiz-next">${i===4?'Open my notebook':'Next question'} →</button>`:''}</div><p class="quiz-progress">${i} of 5 questions finished${correct?' · this one is ready to file':''}</p></section>`;
+  const i=run.quiz.index,q=quizQuestions(run)[i],m=missions(run)[i],answers=run.quiz.answers[i],last=answers.at(-1),correct=!!last?.correct;
+  root.innerHTML=`<section class="quiz"><p class="eyebrow">Market debrief · Question ${i+1} of 5</p><h1 tabindex="-1">Read the market.</h1>
+    <div class="quiz-card"><section class="quiz-bulletin" aria-labelledby="quiz-story-title"><p class="eyebrow">From the bulletin</p><h3 id="quiz-story-title">${m.title}</h3><p id="quiz-event">${m.event}</p></section>
+      <h2 id="question-title">${q.prompt}</h2><div class="quiz-options" role="group" aria-labelledby="question-title" aria-describedby="quiz-event">${run.quiz.orders[i].map((choice,n)=>{const attempted=answers.find(a=>a.choice===choice);return `<button data-choice="${choice}" class="quiz-option ${attempted?(attempted.correct?'correct':'incorrect'):''}" ${correct||attempted?'disabled':''}><span class="option-letter">${'ABCD'[n]}</span><span>${q.options[choice]}${attempted?`<small>${attempted.correct?'✓ Correct':'Try another answer'}</small>`:''}</span></button>`;}).join('')}</div>
+      ${last?`<div class="quiz-feedback ${correct?'success':''}" tabindex="-1"><strong>${correct?'That’s it.':'Take another look.'}</strong><p>${q.explanation}</p></div>`:''}
+      ${correct?`<button class="primary" data-action="quiz-next">${i===4?'Open my notebook':'Next question'} →</button>`:''}
+    </div>
+  </section>`;
 }
 function report(){
   const first=run.quiz.answers.filter(a=>a[0]?.correct).length;
-  root.innerHTML=`<section class="report"><p class="eyebrow">Five market days, one bigger picture</p><h1 tabindex="-1">Your market<br><em>notebook.</em></h1><p>You built forecasts, explored a price rule, and explained the economics behind them.</p><div class="recall-summary"><div><span>Recall · first answers</span><strong>${first} / 5</strong></div><p>All five questions completed with feedback. Your first responses remain separate from retries.</p></div><div class="report-list">${allRecords(run).map((record,i)=>{const m=missionText(missions(run)[i],i),answers=run.quiz.answers[i];return `<article class="report-item"><p class="eyebrow">${m.tag}</p><h3>${m.title}</h3><p class="evidence">${record.attempts.length===1&&!record.hints?'Correct on your first forecast':'Completed with practice'} · ${record.attempts.length} forecast${record.attempts.length===1?'':'s'} · ${record.hints} hint${record.hints===1?'':'s'}</p><p>${m.debrief}</p><p class="recall-evidence">Recall: ${answers[0]?.correct?'correct on first answer':`correct after ${answers.length} answers`}.</p></article>`;}).join('')}</div><div class="actions"><button class="primary" data-action="explore">Keep exploring</button><button data-action="download">Download notebook</button><button data-action="replay">Play new scenarios</button></div><p class="hint">Completion after feedback is practice evidence, not a full mastery assessment.</p></section>`;
+  root.innerHTML=`<section class="report"><p class="eyebrow">Five market days, one bigger picture</p><h1 tabindex="-1">Your market<br><em>notebook.</em></h1><p>You built forecasts, explored a price rule, and explained the economics behind them.</p><div class="recall-summary"><div><span>Quiz · first answers</span><strong>${first} / 5</strong></div><p>All five questions completed with feedback. Your first responses remain separate from retries.</p></div><div class="report-list">${allRecords(run).map((record,i)=>{const m=missionText(missions(run)[i],i),answers=run.quiz.answers[i];return `<article class="report-item"><p class="eyebrow">${m.tag}</p><h3>${m.title}</h3><p class="evidence">${record.attempts.length===1&&!record.hints?'Correct on your first forecast':'Completed with practice'} · ${record.attempts.length} forecast${record.attempts.length===1?'':'s'} · ${record.hints} hint${record.hints===1?'':'s'}</p><p>${m.debrief}</p><p class="recall-evidence">Quiz: ${answers[0]?.correct?'correct on first answer':`correct after ${answers.length} answers`}.</p></article>`;}).join('')}</div><div class="actions"><button class="primary" data-action="explore">Keep exploring</button><button data-action="download">Download notebook</button><button data-action="replay">Play new scenarios</button></div><p class="hint">Completion after feedback is practice evidence, not a full mastery assessment.</p></section>`;
 }
-function render(){placing=false;({intro,mission,explore:exploration,quiz,report}[view])();}
+function render(){placing=false;document.body.dataset.view=view;$('home').hidden=view==='intro';({intro,bulletin,mission,explore:exploration,quiz,report}[view])();}
 function policyType(){return view==='explore'?(explorePolicy||null):(isPolicy(current())?current().type:null);}
 function update(){
   const isExplore=view==='explore',v=isExplore?explore:run.values,policy=policyType(),actual=isExplore||run.completed;
@@ -118,9 +136,9 @@ root.addEventListener('input',event=>{if(event.target.type==='range')changeValue
 root.addEventListener('change',event=>{if(event.target.type==='number')changeValue(event.target);if(event.target.id==='policySelect'){explorePolicy=event.target.value;tool='d';update();}});
 function clearFeedback(){if(view==='mission'&&feedback&&!feedback.ok){feedback=null;$('feedback').hidden=true;}}
 function changeValue(input){const key=input.dataset.value;if(!key||view==='mission'&&run.completed)return;const v=view==='explore'?explore:run.values,value=Number(input.value);if(input.value===''||!Number.isFinite(value)){input.value=v[key];say('Enter a number within the control’s range.');return;}v[key]=clamp(value,Number(input.min),Number(input.max));input.value=v[key];clearFeedback();update();if(view==='mission')save();}
-function resume(){view=run.stage;tool=isPolicy(current())?'price':'d';render();focusHeading();}
+function resume(){view=run.stage==='mission'&&!run.bulletinRead?'bulletin':run.stage;tool=isPolicy(current())?'price':'d';render();focusHeading();}
 function download(){
-  const questions=quizQuestions(run),content=['MARKET SHIFT — MARKET NOTEBOOK','Practice prototype; no identity or verified grade.','',...allRecords(run).flatMap((r,i)=>{const m=missionText(missions(run)[i],i),q=questions[i];return [m.tag,m.title,m.event,`${r.attempts.length} forecast(s); ${r.hints} hint(s).`,...r.attempts.map((a,n)=>`Forecast ${n+1}: ${a.ok?'Accepted':a.code}. ${JSON.stringify(a.values)}`),m.debrief,'Recall: '+q.prompt,...run.quiz.answers[i].map((a,n)=>`Answer ${n+1}: ${q.options[a.choice]} (${a.correct?'correct':'retry'})`),''];})].join('\n');
+  const questions=quizQuestions(run),content=['MARKET SHIFT — MARKET NOTEBOOK','Practice prototype; no identity or verified grade.','',...allRecords(run).flatMap((r,i)=>{const m=missionText(missions(run)[i],i),q=questions[i];return [m.tag,m.title,m.event,`${r.attempts.length} forecast(s); ${r.hints} hint(s).`,...r.attempts.map((a,n)=>`Forecast ${n+1}: ${a.ok?'Accepted':a.code}. ${JSON.stringify(a.values)}`),m.debrief,'Quiz: '+q.prompt,...run.quiz.answers[i].map((a,n)=>`Answer ${n+1}: ${q.options[a.choice]} (${a.correct?'correct':'retry'})`),''];})].join('\n');
   const url=URL.createObjectURL(new Blob([content],{type:'text/plain'})),a=document.createElement('a');a.href=url;a.download='market-shift-notebook.txt';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
 }
 root.addEventListener('click',event=>{
@@ -129,14 +147,16 @@ root.addEventListener('click',event=>{
   if(button.dataset.choice!==undefined){if(answerQuiz(run,Number(button.dataset.choice))){save();render();const q=quizQuestions(run)[run.quiz.index];say((run.quiz.answers[run.quiz.index].at(-1).correct?'Correct. ':'Try again. ')+q.explanation);root.querySelector('[data-action=quiz-next],.quiz-feedback')?.focus();}return;}
   const action=button.dataset.action;
   if(action==='start'){save();resume();}
+  if(action==='forecast'){run.bulletinRead=true;save();resume();}
+  if(action==='bulletin'){view='bulletin';render();focusHeading();}
   if(action==='explore'){view='explore';explore=initialValues();explorePolicy='';tool='d';render();focusHeading();}
   if(action==='return'){if(saved)resume();else{view='intro';render();focusHeading();}}
   if(action==='reset'){if(view==='explore'){explore=initialValues();explorePolicy='';render();say('Exploration reset to the original market.');}else if(!run.completed){run.values=initialValues();feedback=null;save();render();say('Graph reset. Earlier forecasts remain in your notebook.');}}
   if(action==='hint'&&!run.completed){run.hints++;showHint=true;save();render();say(current().hint);}
   if(action==='check'&&!run.completed){feedback=check(current(),run.values);run.attempts.push({...feedback,values:{...run.values}});run.completed=feedback.ok;save();render();say(feedback.text);if(feedback.ok)root.querySelector('[data-action=next]').focus();}
-  if(action==='next'&&run.completed){if(run.index===4){run.stage='quiz';view='quiz';}else{run.records.push({id:run.plan[run.index],values:{...run.values},attempts:run.attempts,hints:run.hints});run.index++;run.values=initialValues();run.attempts=[];run.hints=0;run.completed=false;feedback=null;showHint=false;tool=isPolicy(current())?'price':'d';}save();render();focusHeading();}
+  if(action==='next'&&run.completed){if(run.index===4){run.stage='quiz';view='quiz';}else{run.records.push({id:run.plan[run.index],values:{...run.values},attempts:run.attempts,hints:run.hints});run.index++;run.bulletinRead=false;view='bulletin';run.values=initialValues();run.attempts=[];run.hints=0;run.completed=false;feedback=null;showHint=false;tool=isPolicy(current())?'price':'d';}save();render();focusHeading();}
   if(action==='quiz-next'&&advanceQuiz(run)){view=run.stage;save();render();focusHeading();}
-  if(action==='replay'){run=freshRun(run);feedback=null;showHint=false;view='mission';tool='d';save();render();focusHeading();}
+  if(action==='replay'){run=freshRun(run);feedback=null;showHint=false;view='bulletin';tool='d';save();render();focusHeading();}
   if(action==='download')download();
 });
 $('home').onclick=()=>{view='intro';render();focusHeading();};

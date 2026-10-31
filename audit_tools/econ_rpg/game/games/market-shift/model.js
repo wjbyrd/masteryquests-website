@@ -41,7 +41,7 @@ export function freshRun(previous=null,seed=Math.floor(Math.random()*4294967296)
   const plan=BANKS.map((bank,i)=>pick(bank.filter(m=>m.id!==previous?.plan[i])).id);
   const prior=SCENARIOS[previous?.plan[4]],type=prior?(prior.type==='ceiling'?'floor':'ceiling'):(random()<.5?'ceiling':'floor');
   plan.push(pick(policies.filter(m=>m.type===type)).id);
-  return {version:VERSION,seed,plan,index:0,stage:'mission',values:initialValues(),attempts:[],hints:0,completed:false,records:[],quiz:{index:0,answers:Array.from({length:5},()=>[]),orders:Array.from({length:5},()=>shuffled(random))}};
+  return {version:VERSION,seed,plan,index:0,stage:'mission',bulletinRead:false,values:initialValues(),attempts:[],hints:0,completed:false,records:[],quiz:{index:0,answers:Array.from({length:5},()=>[]),orders:Array.from({length:5},()=>shuffled(random))}};
 }
 export function missionText(m,index){
   const tag=`0${index+1} · ${STEP_LABELS[index]}`;
@@ -81,11 +81,11 @@ export function check(m,v){
 export function quizQuestions(run){
   const [d,s,b,o,p]=missions(run),up=d.d>0,ceiling=p.type==='ceiling';
   return [
-    {prompt:`Think back to “${d.title}” Which change did that event cause?`,options:['Demand shifted right; price and quantity rose.','Demand shifted left; price and quantity fell.','Only supply shifted.','The change in price caused demand to shift.'],correct:up?0:1,explanation:missionText(d,0).debrief},
-    {prompt:`In “${s.title}” why did the quantity buyers purchased change?`,options:['Buyers moved along unchanged demand as supply shifted.','Demand shifted because the price changed.','Every quantity change is a shift of both curves.','The demand curve became vertical.'],correct:0,explanation:missionText(s,1).debrief},
-    {prompt:`In “${b.title}” both curves shifted ${b.d>0?'right':'left'}. What could the news alone tell you?`,options:[`Quantity ${b.d>0?'rises':'falls'}; price depends on the relative shift sizes.`,`Both price and quantity must ${b.d>0?'rise':'fall'}.`,'Price must stay unchanged.','Nothing can be predicted about quantity.'],correct:0,explanation:missionText(b,2).debrief},
-    {prompt:`In “${o.title}” demand shifted ${o.d>0?'right':'left'} and supply shifted ${o.s>0?'right':'left'}. What follows without knowing shift sizes?`,options:[`Price ${o.d>0?'rises':'falls'}; quantity depends on the relative shift sizes.`,'Neither price nor quantity has a predictable direction.','Quantity must stay unchanged.',`Price must ${o.d>0?'fall':'rise'} and quantity must rise.`],correct:0,explanation:missionText(o,3).debrief},
-    {prompt:`At the council’s $${p.price} price ${p.type}, what limited trade?`,options:[ceiling?'A shortage: sellers offered fewer crates than buyers wanted.':'A surplus: buyers wanted fewer crates than sellers offered.','The price rule shifted both curves.','The council automatically bought every unsold crate.',ceiling?'A surplus: sellers offered more than buyers wanted.':'A shortage: buyers wanted more than sellers offered.'],correct:0,explanation:missionText(p,4).debrief}
+    {prompt:'Which market change follows from this news?',options:['Demand shifted right; price and quantity rose.','Demand shifted left; price and quantity fell.','Only supply shifted.','The change in price caused demand to shift.'],correct:up?0:1,explanation:missionText(d,0).debrief},
+    {prompt:'Why did the quantity buyers purchased change?',options:['Buyers moved along unchanged demand as supply shifted.','Demand shifted because the price changed.','Every quantity change is a shift of both curves.','The demand curve became vertical.'],correct:0,explanation:missionText(s,1).debrief},
+    {prompt:'What can you conclude without knowing the sizes of the changes?',options:[`Quantity ${b.d>0?'rises':'falls'}; price depends on the relative shift sizes.`,`Both price and quantity must ${b.d>0?'rise':'fall'}.`,'Price must stay unchanged.','Nothing can be predicted about quantity.'],correct:0,explanation:missionText(b,2).debrief},
+    {prompt:'Which outcome is certain from this news alone?',options:[`Price ${o.d>0?'rises':'falls'}; quantity depends on the relative shift sizes.`,'Neither price nor quantity has a predictable direction.','Quantity must stay unchanged.',`Price must ${o.d>0?'fall':'rise'} and quantity must rise.`],correct:0,explanation:missionText(o,3).debrief},
+    {prompt:'What limits trade under this price rule?',options:[ceiling?'A shortage: sellers offered fewer crates than buyers wanted.':'A surplus: buyers wanted fewer crates than sellers offered.','The price rule shifted both curves.','The council automatically bought every unsold crate.',ceiling?'A surplus: sellers offered more than buyers wanted.':'A shortage: buyers wanted more than sellers offered.'],correct:0,explanation:missionText(p,4).debrief}
   ];
 }
 export function answerQuiz(run,choice){
@@ -100,6 +100,7 @@ export function advanceQuiz(run){
 export const allRecords=run=>[...run.records,{id:run.plan[run.index],values:run.values,attempts:run.attempts,hints:run.hints}];
 export function restoreRun(v){
   const fail=()=>{throw new Error('Saved market is incomplete or incompatible.');};
+  if(v?.bulletinRead!==undefined&&typeof v.bulletinRead!=='boolean')fail();
   if(!v||v.version!==VERSION||!Number.isInteger(v.seed)||!Array.isArray(v.plan)||v.plan.length!==5||!BANKS.every((bank,i)=>bank.some(m=>m.id===v.plan[i]))||!policies.some(m=>m.id===v.plan[4])||!Number.isInteger(v.index)||v.index<0||v.index>4||!['mission','quiz','report'].includes(v.stage)||typeof v.completed!=='boolean'||!Array.isArray(v.records)||v.records.length!==v.index)fail();
   for(const [i,r] of allRecords(v).entries()){
     if(!r||r.id!==v.plan[i]||!validValues(r.values)||!Number.isInteger(r.hints)||r.hints<0||!Array.isArray(r.attempts))fail();
@@ -119,5 +120,6 @@ export function restoreRun(v){
     if(i<q.index&&!q.answers[i].at(-1)?.correct||i>q.index&&q.answers[i].length||v.stage==='mission'&&q.answers[i].length)fail();
   }
   if(v.stage==='mission'&&q.index!==0||v.stage==='report'&&(q.index!==4||!q.answers[4].at(-1)?.correct))fail();
-  return structuredClone(v);
+  // Earlier v2 saves already opened the forecast board. Keep their place.
+  return {...structuredClone(v),bulletinRead:v.bulletinRead??true};
 }
