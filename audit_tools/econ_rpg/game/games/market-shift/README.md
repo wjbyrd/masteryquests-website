@@ -1,6 +1,6 @@
 # Market Shift — private graph-game prototype
 
-A local, unlinked Mastery Quests mini-game. No public or beta publication was performed. The public game library, beta hub, preview allowlist, Composer, existing games, and manuscript are unchanged.
+A local, unlinked Mastery Quests mini-game. The public game library, beta hub, preview allowlist, Composer, existing games, and manuscript are unchanged. Nothing in this update was published.
 
 ## Open
 
@@ -10,23 +10,31 @@ From the repository root:
 node audit_tools/econ_rpg/serve.mjs
 ```
 
-Open <http://127.0.0.1:4179/games/market-shift/>. Keep the server terminal running while playing; Ctrl+C stops it. This development server binds to loopback. Use HTTP, not a file URL, because the game uses ES modules.
+Open <http://127.0.0.1:4179/games/market-shift/>. Keep the server running while playing; Ctrl+C stops it. The development server binds to loopback. Use HTTP, not a file URL, because the game uses ES modules. Refresh an already-open prototype to load the update.
 
-## Play
+## Five missions, then recall
 
-The player is the new market analyst in Linden. Three market bulletins lead to graph construction and feedback:
+The player is the new market analyst in Linden. Every run follows the same progression with different news:
 
-1. **The harvest:** a crop loss shifts supply left. Move the appropriate curve and place the forecast equilibrium.
-2. **The festival:** more buyers shift demand right. Keep supply fixed and construct the new equilibrium.
-3. **The price promise:** an explicit $40 price ceiling in the original market. Position the ceiling, then read quantities supplied and demanded.
+1. **Demand:** an increase or decrease in demand, with supply unchanged.
+2. **Supply:** an increase or decrease in supply, with demand unchanged.
+3. **Both together:** demand and supply shift in the same direction. Quantity has a predictable direction; price depends on relative shift sizes.
+4. **Opposing shifts:** demand and supply shift in opposite directions. Price has a predictable direction; quantity depends on relative shift sizes.
+5. **Price control:** a binding ceiling or floor, with an explicit legal price and no government purchases.
 
-Drag the labeled handles or the curve itself, use the range controls with arrow keys, or enter marker coordinates. Curve handles move horizontally. The equilibrium marker moves in two dimensions; the price line moves vertically and quantity markers move horizontally. Graph-tool buttons let students place an equilibrium, price line, or quantity marker by clicking the graph. All actions have ordinary labeled controls.
+There are four authored stories per shift family and three numerical variants per policy type: **16 shift stories plus 6 price-control variants**. The first policy type is randomly selected. Play new scenarios excludes each immediately preceding shift story and alternates ceiling/floor. A saved seed, scenario IDs, and quiz answer order keep the same run stable across reloads. Each mission starts with the original market.
 
-Students submit a forecast before receiving correctness feedback. Known error patterns receive different explanations: wrong curve, wrong direction, inconsistent intersection, incorrect legal maximum, and reversed supplied/demanded quantities. A hint is available without a timer or point penalty. Retry and reset preserve attempt history. Completed missions lock their graph and show an economic debrief.
+Drag a curve or its D/S handle horizontally. Drag E₁ to place the forecast equilibrium, the purple label to change the legal price, or Qs/Qd to read quantities. Native range and number controls offer the same actions with a keyboard. Graph-tool buttons also allow point placement by clicking the graph. Picking up an offset label does not jump its value.
 
-**Explore freely** gives immediate model results with optional price ceilings. Exploration does not modify the mission notebook. A nonbinding ceiling leaves the market-clearing price and quantity unchanged. Quantities outside the displayed 0–100 range are identified rather than plotted as false intersections at the edge.
+The white graph has crisp vector lines, separate curve-name gutters, and staggered quantity labels. Above it, price and quantity update while E₁ moves, including changes from the original equilibrium. In missions those values describe the student's forecast; free exploration calculates the actual intersection automatically. Price-control readouts display the legal price, offered quantity, and wanted quantity.
 
-The final notebook distinguishes a correct first forecast without hints from completion after practice. Its text download includes each submitted graph state, feedback code, hints used, and debrief. It is not an authenticated assessment or a file supported by Class Answer Analysis.
+Each submitted forecast gets targeted feedback. Hints, retries, and reset preserve attempt history. Completed missions lock and show a short economic debrief. Simultaneous-shift debriefs distinguish a plausible drawn case from what the news alone establishes.
+
+After all five missions, a **five-question recall quiz** refers to the stories just played. It covers curve shifts versus movements along a curve, ambiguous outcomes with simultaneous shifts, and shortages or surpluses. Answer order is shuffled once per run. Incorrect answers receive explanations and allow another choice; a correct answer unlocks the next question. First responses remain separate from retries. Quiz progress survives reloads.
+
+The notebook records all forecasts, hints, explanations, and recall responses. Its text download is practice evidence, not an authenticated grade or a Class Answer Analysis import.
+
+**Explore freely** supports both ceilings and floors, alongside demand/supply shifts. It never modifies the mission notebook. Nonbinding policies leave equilibrium trade unchanged. Quantities above 100 are labeled as outside the graph, without plotting a false intersection at 100.
 
 ## Model and interpretation
 
@@ -34,18 +42,21 @@ Price is dollars per crate; quantity is crates per market day. The illustrative 
 
 - Inverse demand: `P = 100 + 0.8d - 0.8Q`.
 - Inverse supply: `P = 20 - 0.8s + 0.8Q`.
-- Positive `d` or `s` is a rightward horizontal shift, in quantity units.
+- Positive `d` or `s` means a horizontal shift right, in quantity units.
 - Original equilibrium: `Q = 50`, `P = 60`.
 - Shifted equilibrium: `Q = 50 + (d+s)/2`, `P = 60 + 0.4(d-s)`.
-- At a $40 ceiling with original curves: `Qs = 25`, `Qd = 75`, shortage `50`; at most `25` crates trade without another intervention.
+- A $40 ceiling yields `Qs = 25`, `Qd = 75`, shortage `50`; at most `25` crates trade.
+- An $80 floor yields `Qs = 75`, `Qd = 25`, surplus `50`; without government purchases, at most `25` crates trade.
 
-The qualitative missions accept any shift in the correct direction with the other curve unchanged. They do not pretend the news establishes an exact shift magnitude. A student's chosen shift determines the illustrated intersection, checked with a 2.5-unit tolerance on each coordinate. The price-ceiling mission requires the specified price and checks quantities with the same tolerance. Coordinates are never scored by screen pixels.
+Qualitative missions accept any correctly directed shift, including unequal simultaneous shifts. The student's chosen magnitudes determine the illustrated intersection. Checks use a 2.5-unit tolerance on each coordinate and require consistent directions of change from the baseline. When an equilibrium coordinate is unchanged, it must remain within 0.5 units of that baseline coordinate. Price-control missions require the specified legal price and check quantities with a 2.5-unit tolerance. Scoring does not depend on screen pixels.
 
-Curves are a forecast representation. The council's ceiling is a policy intervention. The simulation does not model rationing rules, black markets, changes in product quality, policy desirability, or welfare maximization. The small street illustrations provide context, not numerical measures of demand or supply.
+The simulation does not model rationing rules, black markets, product-quality changes, welfare maximization, or policy desirability. Street illustrations provide context, not numerical measures of supply or demand.
 
 ## Save and privacy
 
-The versioned `mq-market-shift-prototype-v1` localStorage key retains submitted forecasts, current graph, hints, and completed missions on the same origin. Reload returns to the landing screen with Continue. Play again explicitly replaces that browser run. Corrupt/incompatible saves produce a message and a fresh run. Storage errors leave the current in-memory game playable. No personal identity, network API, analytics, account, or LMS connection is used. Keep a downloaded notebook if durable evidence is needed.
+The `mq-market-shift-prototype-v2` localStorage key retains the exact scenario plan, current graph, forecasts, hints, and recall history on the same origin. The earlier three-mission v1 save is left untouched; this expanded version begins a new run. Reload opens the landing screen with Continue. Play new scenarios explicitly replaces the v2 run. Corrupt or incompatible saves produce a message and a fresh run. Storage errors leave the in-memory game playable.
+
+No personal identity, network API, analytics, account, or LMS connection is used. Download the notebook for a durable copy.
 
 ## Verification
 
@@ -54,17 +65,19 @@ node --test audit_tools/econ_rpg/game/games/market-shift/model.test.js
 node audit_tools/econ_rpg/game/games/market-shift/browser.test.cjs
 ```
 
-The browser test uses Edge via Playwright. Set `MQ_PLAYWRIGHT_MODULE` to the installed Playwright package if needed, and optionally `MQ_AXE_MODULE` to `axe-core/axe.min.js`. It starts and closes its own temporary server and blocks external requests. The accessibility scanner is served through an intercepted same-origin test URL; the production content security policy remains intact.
+The browser test uses Edge via Playwright. Set `MQ_PLAYWRIGHT_MODULE` to an installed Playwright package if needed, and optionally `MQ_AXE_MODULE` to `axe-core/axe.min.js`. It starts and closes its own temporary server and blocks external requests. The accessibility scanner is served through an intercepted same-origin test URL; runtime CSP remains intact.
 
-Completed: **9 model tests and 6 browser scenarios**. Covered all three missions; incorrect answers and hints; mouse dragging of supply and equilibrium; keyboard range and numeric controls; price-ceiling quantities; saved progress and notebook download; Explore preserving graded attempts; nonbinding and binding ceiling behavior; replay; 390px layout; mobile touch dragging. Small shifts still require a correctly directed change in the student's equilibrium marker. Axe WCAG 2 A/AA and 2.1 AA checks found zero violations on the landing, mission, completed ceiling, and mobile mission views. Screenshots were visually inspected. Local artifacts are in ignored `tmp/market-shift/`.
+Verified for this update: **11 model tests and 6 end-to-end browser scenarios**. Tests cover all 22 scenario variants; unequal simultaneous shifts and ambiguous outcomes; policy quantities and nonbinding rules; repeat avoidance and alternating policies; corrupt saves; mouse dragging and live readouts before pointer release; keyboard graph controls; both full five-mission routes; recall retries, reload, and randomized answer order; evidence export; exploration isolation; 390px layout; coincident quantity labels and extreme price values; and mobile touch dragging. No browser runtime errors occurred. Axe WCAG 2 A/AA and 2.1 AA checks found zero violations across seven views. Desktop and mobile screenshots were visually inspected. Local artifacts are in ignored `tmp/market-shift/`.
 
-Remaining: faculty/student playtesting, screen-reader task testing, physical phones, other browsers, and a broader set of missions. Existing games' suites were not rerun because their source and shared files were not modified. Technical verification does not establish learning effectiveness.
+Remaining: faculty/student playtesting, screen-reader task testing, physical phones, and other browsers. Existing games' suites were not rerun because their source and shared files were not modified. Technical verification does not establish learning effectiveness.
 
-## Files and next integration point
+## Files and release boundary
 
-- `model.js`: equations, mission definitions, checking and save validation; independently testable.
-- `app.js`: scene rendering, graph interactions, progression, feedback and notebook.
-- `styles.css`: MQ navy/teal palette, responsive workbench and illustrated market presentation.
-- `index.html`: isolated shell with no remote dependencies.
+- `model.js`: market equations, scenario bank, seeded run generation, forecast checks, recall, save validation.
+- `graph.js`: graph geometry, label layout, vector rendering.
+- `scene.js`: illustrated market scene and contextual variants.
+- `app.js`: interactions, progression, feedback, notebook and export.
+- `styles.css`: MQ navy/teal presentation, white graph, responsive workbench and quiz.
+- `index.html`: isolated shell without remote dependencies.
 
-The shared economics functions can support later graph missions in other mini-games. This prototype deliberately does not change the Composer's multiple-choice content contract or the beta collection's declared game count. Release or beta-hub inclusion requires a later explicit decision.
+The prototype remains under the excluded `audit_tools/` tree and is not in the beta-game manifest or hub. Release or beta inclusion requires a later explicit decision.
