@@ -1,6 +1,8 @@
 # Price Points
 
-A complete local Mastery Quests elasticity game, built in the visual and interaction family of Market Shift. It has a full-story entry and independent chapter entries. It is not in the published beta allowlist or public games catalog.
+A complete Mastery Quests elasticity game in the unlisted beta collection, built in the visual and interaction family of Market Shift. It has a full-story entry and independent chapter entries. Its Microeconomics card uses the high-street cover artwork.
+
+Play at <https://masteryquests.org/beta-testing/october-games-b9021b0dcb5f/games/price-points/>. Return to Games leads to the same beta collection. The normal public Games page remains unchanged.
 
 Open <http://127.0.0.1:4179/games/price-points/> while the existing preview server is running. To start the preview from the repository root:
 
@@ -65,6 +67,7 @@ There are no remote data calls, accounts, telemetry, analytics, or LMS integrati
 node --test audit_tools/econ_rpg/game/games/price-points/model.test.js
 node audit_tools/econ_rpg/game/games/price-points/browser.test.cjs
 node audit_tools/econ_rpg/game/games/price-points/edge.test.cjs
+node audit_tools/econ_rpg/game/games/price-points/accessibility.test.cjs
 ```
 
 The browser runner requires Playwright (or `MQ_PLAYWRIGHT_MODULE`) and Edge; `MQ_AXE_MODULE` optionally supplies an existing axe-core script. It starts its own temporary local server, excludes external requests, and does not change the user's preview save. Generated evidence stays in ignored `tmp/price-points/`.
@@ -73,8 +76,10 @@ The model suite checks 1,000 scenario seeds, all 16 targets, midpoint symmetry/s
 
 The edge suite checks 48 mobile graph positions across every studio model for overlapping text, aligned demand/revenue quantity axes, a 320px graph layout, and playability when storage writes are blocked. Point labels move below high-price points to keep the price heading clear; nearby before/after labels combine without implying the points are identical.
 
+The MQ navy background matches Market Shift. Additional accessibility checks cover a keyboard-only chapter, focus moving to the result after graph submission, descriptive graph values in the browser accessibility tree, announced hints, graph/control contrast, 200% HTML text enlargement with added spacing, 320px reflow, and forced-color graph rendering. These checks are evidence, not a declaration of complete WCAG conformance.
+
 Remaining validation: student/faculty playtesting, physical phones, screen-reader task testing, and browsers beyond Edge. Automated checks do not establish learning effectiveness.
 
 ## Release boundary
 
-All source lives under excluded `audit_tools/`. Price Points is absent from `games-preview.json`, so existing publication builds omit it. The published Market Shift, other games, Composer, main website, and Worker configuration are unchanged. The local preview server is shared with the existing games and stays available for the user's review.
+All source lives under excluded `audit_tools/`. Price Points is explicitly allowed by `games-preview.json`; the beta publisher copies only five HTML/JS/CSS runtime files and four illustrations. Tests, reports, README, and art prompts stay out of the release. The published Market Shift, other games, Composer, main website, and Worker configuration are preserved. The local preview server remains available. See [verification](VERIFICATION.md) and the [collection release report](../../GAMES-PREVIEW-REPORT.md).

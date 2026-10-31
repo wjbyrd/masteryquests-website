@@ -15,7 +15,7 @@ test('Market Shift ships only its runtime in the beta Microeconomics collection'
   assert.match(html,/name="robots" content="noindex,nofollow"/);
   assert.ok(html.includes(`class="return-games" href="${config.previewRoot}games/"`));
   const hub=fs.readFileSync(path.join(dist,config.previewRoot.slice(1),'games/index.html'),'utf8');
-  assert.equal(config.gameCount,18);
+  assert.equal(config.gameCount,19);
   assert.equal((hub.match(/class="game-card"/g)||[]).length,config.gameCount);
   const micro=hub.split('aria-labelledby="microeconomics-heading"')[1].split('</section>')[0];
   assert.match(micro,/data-game="market-shift"/);

@@ -1,5 +1,17 @@
 # Unlisted beta games hub
 
+## October 31: Price Points
+
+Published final version `c192913c-da20-431c-b2fd-e4d41db156b4`. The collection now has 19 games. Price Points appears directly after Market Shift under Microeconomics, with the high-street cover image and a return link to the same beta hub. Its background and panels now use the MQ blue palette.
+
+The package changes exactly 11 paths: nine game runtime files, the hub HTML, and card CSS. All 2,434 other files in the verified prior release were retained byte-for-byte, including protected classroom assets and indexing headers. No protected URL was synchronized through unauthenticated HTTP. Worker executable bytes, bindings, variables, compatibility settings, and access routing were compared before activation and preserved. Cloudflare uploaded 11 assets for the initial release and one app file for the final horizontal-demand description refinement.
+
+Publication and model checks passed. Full desktop and phone game regressions passed, with 23 clean automated accessibility views. Additional checks completed a chapter using only the keyboard and verified result focus, hint state/announcements, browser accessibility-tree descriptions, non-text contrast, 200% HTML text enlargement with spacing changes, 320px reflow, and forced-color graph rendering. Hands-on screen-reader and disabled-user testing remain outstanding; these results are not a claim of full WCAG conformance.
+
+Packaged and live hub/card/launch/graph/return checks passed at 1440px and 390px. All four illustrations load, development documents and tests return 404, and all 11 live files match the final tested package. The normal public Games page remains unchanged. Release evidence is in ignored `tmp/price-points/release/`, browser evidence in `tmp/price-points/beta-local/` and `tmp/price-points/beta-live/`, and the expanded accessibility review in `tmp/price-points/accessibility/`.
+
+Game: https://masteryquests.org/beta-testing/october-games-b9021b0dcb5f/games/price-points/
+
 ## October 31: Market Shift
 
 Published version `46f4400c-f851-4ea8-8e97-ec5e7c0c42fe` to the existing Worker. The collection now has 18 games. Market Shift appears under Microeconomics, after The Economy's Edge, with its home-screen market artwork. The game includes a Return to Games link rebased to this same collection.

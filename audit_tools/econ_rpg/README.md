@@ -1,6 +1,6 @@
 # Mastery Quests — private economics games
 
-Local, unlinked Mastery Quests prototypes for instructor QA. **Not a public collection release.** The intended future release window is October 2026; nothing automatically unlocks or publishes on that date. All 18 games are available together in an explicitly allowlisted [unlisted testing hub](https://masteryquests.org/beta-testing/october-games-b9021b0dcb5f/games/). See [preview configuration](games-preview.json) and [deployment notes](GAMES-PREVIEW-REPORT.md). Signal House's existing standalone preview also remains available. Its public Game #12 card remains staged; see [release configuration](signal-house-release.json) and [release report](SIGNAL-HOUSE-RELEASE-REPORT.md).
+Local, unlinked Mastery Quests prototypes for instructor QA. **Not a public collection release.** The intended future release window is October 2026; nothing automatically unlocks or publishes on that date. All 19 games are available together in an explicitly allowlisted [unlisted testing hub](https://masteryquests.org/beta-testing/october-games-b9021b0dcb5f/games/). See [preview configuration](games-preview.json) and [deployment notes](GAMES-PREVIEW-REPORT.md). Signal House's existing standalone preview also remains available. Its public Game #12 card remains staged; see [release configuration](signal-house-release.json) and [release report](SIGNAL-HOUSE-RELEASE-REPORT.md).
 
 ## Play locally
 
