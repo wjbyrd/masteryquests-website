@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "added": 7,
+  "canonicalQuestions": 9802,
+  "allExistingQuestionsPreserved": true,
+  "all18PreviouslyApprovedAdditionsPreserved": true,
+  "ordinarySelectableTopicsChecked": 146,
+  "remainingEasyShortfalls": 0,
+  "excludedIntegrationBanks": [
+    "integrated-economic-analysis",
+    "integrated-macroeconomic-analysis"
+  ],
+  "topics": [
+    {
+      "conceptId": "long-run-aggregate-supply-and-potential-output",
+      "title": "Long-Run Aggregate Supply and Potential Output",
+      "added": 3,
+      "easyBefore": 2,
+      "easy": 5,
+      "medium": 1,
+      "hard": 3,
+      "remainingNeeded": {
+        "medium": 4,
+        "hard": 2
+      },
+      "standaloneQuizAvailable": false,
+      "combinedQuizWith": "long-run-macroeconomic-self-adjustment",
+      "generatedCombinedQuizCompiles": true
+    },
+    {
+      "conceptId": "market-power",
+      "title": "Market Power",
+      "added": 3,
+      "easyBefore": 2,
+      "easy": 5,
+      "medium": 2,
+      "hard": 1,
+      "remainingNeeded": {
+        "medium": 3,
+        "hard": 4
+      },
+      "standaloneQuizAvailable": false,
+      "combinedQuizWith": "competitive-markets",
+      "generatedCombinedQuizCompiles": true
+    },
+    {
+      "conceptId": "price-signals",
+      "title": "Price Signals",
+      "added": 1,
+      "easyBefore": 4,
+      "easy": 5,
+      "medium": 7,
+      "hard": 4,
+      "remainingNeeded": {
+        "medium": 0,
+        "hard": 1
+      },
+      "standaloneQuizAvailable": false,
+      "combinedQuizWith": "competitive-markets",
+      "generatedCombinedQuizCompiles": true
+    }
+  ]
+}

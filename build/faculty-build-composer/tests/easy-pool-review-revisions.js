@@ -5,6 +5,7 @@ const ledger=JSON.parse(fs.readFileSync(path.resolve(__dirname,'../../../audit_t
 const changes=new Map(ledger.changes.map(c=>[c.id,c]));
 const additions=require('./saving-identity-easy-additions.js');
 const quizAdditions=require('./quiz-easy-completion-additions.js');
+const remainingAdditions=require('./remaining-easy-completion-additions.js');
 const sha=s=>crypto.createHash('sha256').update(s).digest('hex');
 function beforeEasyPoolReviewLibrary(current){
  current=additions.beforeSavingIdentityAdditions(current);
@@ -26,7 +27,7 @@ function beforeEasyPoolReviewLibrary(current){
 function wrap(prior){
  return {...prior,easyPoolReviewLedger:ledger,beforeEasyPoolReviewLibrary,
   savingIdentityAdditions:additions.ledger.additions,beforeSavingIdentityAdditions:additions.beforeSavingIdentityAdditions,
-  approvedAdditions:[...additions.ledger.additions,...quizAdditions.ledger.additions],addedIds:new Set([...additions.addedIds,...quizAdditions.addedIds]),beforeQuizEasyAdditions:quizAdditions.beforeQuizEasyAdditions,
+  approvedAdditions:[...additions.ledger.additions,...quizAdditions.ledger.additions,...remainingAdditions.ledger.additions],addedIds:new Set([...additions.addedIds,...quizAdditions.addedIds,...remainingAdditions.addedIds]),beforeQuizEasyAdditions:quizAdditions.beforeQuizEasyAdditions,beforeRemainingEasyAdditions:remainingAdditions.beforeRemainingEasyAdditions,
   approvedIds:new Set([...prior.approvedIds,...changes.keys()]),
   assertCurrentLibrary(current){prior.assertCurrentLibrary(beforeEasyPoolReviewLibrary(current));},
   beforeFacultyValidationLibrary(current){return prior.beforeFacultyValidationLibrary(beforeEasyPoolReviewLibrary(current));},

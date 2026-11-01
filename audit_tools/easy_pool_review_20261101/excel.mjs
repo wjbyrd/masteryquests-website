@@ -54,7 +54,8 @@ for(const [area,title]of [['general','General Economics'],['micro','Microeconomi
  const target=path.join(output,info.csv_file.replace(/\.csv$/,'.xlsx'));
  await (await SpreadsheetFile.exportXlsx(wb)).save(target);
  const qcol=headers.indexOf('Question'),fcol=Math.min(headers.length-1,qcol+2);
- const previewId=process.argv.find(a=>a.startsWith('--preview-id='))?.slice(13);
+ const previewCandidates=process.argv.find(a=>a.startsWith('--preview-ids='))?.slice(14).split(',')||[];
+ const previewId=process.argv.find(a=>a.startsWith('--preview-id='))?.slice(13)||previewCandidates.find(id=>values.some(r=>r[headers.indexOf('Question ID')]===id));
  const previewRow=previewId?values.findIndex(r=>r[headers.indexOf('Question ID')]===previewId)+1:1;
  assert(previewRow>0,'Preview question exists');
  const png=await wb.render({sheetName:title,range:`${colName(qcol)}${previewRow}:${colName(fcol)}${Math.min(end,previewRow+3)}`,scale:1});

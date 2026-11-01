@@ -1,8 +1,8 @@
 'use strict';
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
 const core=require('../composer-core.js'),h=require('./composer-test-helpers.js'),con=require('./composer-integrity-contracts.js'),approved=require('./faculty-validation-revisions.js'),add=require('./quiz-easy-completion-additions.js'),style=require('./faculty-prose-candidates.js');
-const lib=h.loadComposerLibrary(),before=add.beforeQuizEasyAdditions(lib);
-con.assertCanonicalIntegrity(lib);approved.assertCurrentLibrary(lib);
+const currentLibrary=h.loadComposerLibrary(),lib=approved.beforeRemainingEasyAdditions(currentLibrary),before=add.beforeQuizEasyAdditions(lib);
+con.assertCanonicalIntegrity(currentLibrary);approved.assertCurrentLibrary(currentLibrary);
 assert.equal(lib.canonicalQuestionCount,9795);assert.equal(before.canonicalQuestionCount,9782);assert.equal(add.addedIds.size,13);
 const original=new Map(con.questionRecords(before).map(r=>[String(r.question.id),r.question])),current=new Map(con.questionRecords(lib).map(r=>[String(r.question.id),r.question]));
 for(const [id,q]of original)assert.deepEqual(current.get(id),q,'Preserve existing question '+id);

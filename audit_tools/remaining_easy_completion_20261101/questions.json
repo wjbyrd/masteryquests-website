@@ -1,0 +1,93 @@
+[
+  {
+    "id": "REC-LRAS-E-001",
+    "topic": "long-run-aggregate-supply-and-potential-output",
+    "objective": "LO34.2",
+    "primarySkill": "identify_lras",
+    "tag": "lras",
+    "type": "definition",
+    "q": "What does long-run aggregate supply represent?",
+    "options": ["The total amount consumers want to spend at current prices", "The output the economy can sustain with normal resource use", "The amount of money the government spends during a year", "The total sales firms would make if all prices were zero"],
+    "correctIndex": 1,
+    "feedback": "Long-run aggregate supply represents the economy's potential output. It reflects sustainable production using available labor, capital, natural resources, and technology.",
+    "commonError": "Confuses the economy's productive capacity with spending on its output."
+  },
+  {
+    "id": "REC-LRAS-E-002",
+    "topic": "long-run-aggregate-supply-and-potential-output",
+    "objective": "LO34.2",
+    "primarySkill": "identify_lras",
+    "tag": "lras",
+    "type": "definition",
+    "q": "Which item is physical capital that contributes to an economy's productive capacity?",
+    "options": ["Money kept in household checking accounts", "Shares traded on stock exchanges", "Government payments to retired workers", "Production equipment and factory buildings"],
+    "correctIndex": 3,
+    "feedback": "Physical capital consists of produced resources, such as equipment and buildings, used to make goods and services. These resources help determine how much the economy can produce.",
+    "commonError": "Confuses productive physical capital with money or financial assets."
+  },
+  {
+    "id": "REC-LRAS-E-003",
+    "topic": "long-run-aggregate-supply-and-potential-output",
+    "objective": "LO34.2",
+    "primarySkill": "identify_lras",
+    "tag": "lras",
+    "type": "concept",
+    "q": "Why doesn't a higher overall price level, by itself, increase long-run productive capacity?",
+    "options": ["It does not add resources or improve technology", "It reduces every firm's demand for workers", "It makes all existing machinery less productive", "It changes only the government's ability to produce"],
+    "correctIndex": 0,
+    "feedback": "Long-run productive capacity depends on real resources and technology. A change in the overall price level alone does not create more workers, equipment, or productive knowledge.",
+    "commonError": "Treats a rise in money prices as an increase in real productive capacity."
+  },
+  {
+    "id": "REC-MPOWER-E-001",
+    "topic": "market-power",
+    "objective": "GE.7.7",
+    "primarySkill": "market_power",
+    "tag": "market-power",
+    "type": "concept",
+    "q": "Which feature can help a seller maintain market power?",
+    "options": ["Easy entry for competing sellers", "Many equally appealing substitute products", "Barriers to entry for new competitors", "Buyers switching freely among identical products"],
+    "correctIndex": 2,
+    "feedback": "Barriers to entry make it harder for new sellers to compete. This can help an existing seller retain influence over price.",
+    "commonError": "Confuses conditions that protect market power with conditions that strengthen competition."
+  },
+  {
+    "id": "REC-MPOWER-E-002",
+    "topic": "market-power",
+    "objective": "LO1.6",
+    "primarySkill": "market_power_definition",
+    "tag": "market-power",
+    "type": "concept",
+    "q": "Why do close substitutes limit a seller's market power?",
+    "options": ["They require all competing sellers to charge the same price", "They give buyers alternatives when a seller raises its price", "They prevent any new sellers from entering the market", "They guarantee the seller a profit on every unit sold"],
+    "correctIndex": 1,
+    "feedback": "When buyers can easily switch to similar products, a seller risks losing sales by raising its price. Those alternatives limit the seller's pricing power.",
+    "commonError": "Overlooks buyers' ability to switch to substitutes when assessing market power."
+  },
+  {
+    "id": "REC-MPOWER-E-003",
+    "topic": "market-power",
+    "objective": "LO1.6",
+    "primarySkill": "market_power_definition",
+    "tag": "market-power",
+    "type": "concept",
+    "q": "What limits the price a firm with market power can profitably charge?",
+    "options": ["The requirement that it always match the lowest competitor price", "The rule that every product must sell at its production cost", "The guarantee that buyers will purchase its entire output", "The amount buyers are willing to purchase at each price"],
+    "correctIndex": 3,
+    "feedback": "A firm with market power still faces demand for its product. Buyers may purchase less at a higher price, so the ability to influence price does not guarantee higher profit from every price increase.",
+    "commonError": "Assumes market power lets a firm charge any price without losing sales."
+  },
+  {
+    "id": "REC-PSIG-E-001",
+    "topic": "price-signals",
+    "objective": "LO4.5",
+    "primarySkill": "price_signal_allocation",
+    "tag": "price_signal",
+    "type": "concept",
+    "q": "How can prices coordinate decisions made by people who do not know one another?",
+    "options": ["By giving buyers and sellers information they can act on", "By ensuring every buyer wants exactly the same products", "By requiring all sellers to use identical production methods", "By replacing each buyer's preferences with a common plan"],
+    "correctIndex": 0,
+    "feedback": "People do not need to know one another or receive a central set of instructions to respond to prices. Prices convey information about relative scarcity and incentives that helps coordinate their choices.",
+    "commonError": "Assumes market coordination requires personal contact or central instructions."
+  }
+]

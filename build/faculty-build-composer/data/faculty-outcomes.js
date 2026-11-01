@@ -2,7 +2,7 @@
 (function(root,data){if(typeof module==='object'&&module.exports)module.exports=data;else root.MQFacultyOutcomePolicy=data;})(typeof globalThis!=='undefined'?globalThis:this,{
   "schemaVersion": 1,
   "policyVersion": "faculty-lo-1",
-  "librarySha256": "9735363468c2d6d782de0bca303754c48952de155f8e5132f3ee2358e68d9436",
+  "librarySha256": "716c948135cf16cc6bfefaa8419157361485e1c3479e26763a8587451e2f68af",
   "concepts": {
     "ad-as-equilibrium-and-output-gaps": {
       "outcomes": [
@@ -6575,19 +6575,22 @@
             "full"
           ],
           "coverage": {
-            "ordinary": 9,
+            "ordinary": 12,
             "checkpoints": 4,
             "repair": 1,
             "bridge": 1,
             "seed": 0,
             "difficulty": {
-              "easy": 2,
+              "easy": 5,
               "medium": 1,
               "hard": 3,
               "elite": 1,
               "legendary": 2
             },
-            "supportedModes": []
+            "supportedModes": [
+              "fadingFortune",
+              "riskReward"
+            ]
           }
         }
       ],
@@ -7275,13 +7278,13 @@
             "full"
           ],
           "coverage": {
-            "ordinary": 336,
+            "ordinary": 339,
             "checkpoints": 30,
             "repair": 11,
             "bridge": 8,
             "seed": 2,
             "difficulty": {
-              "easy": 74,
+              "easy": 77,
               "medium": 132,
               "hard": 89,
               "elite": 22,
@@ -7339,19 +7342,22 @@
             "full"
           ],
           "coverage": {
-            "ordinary": 7,
+            "ordinary": 10,
             "checkpoints": 1,
             "repair": 1,
             "bridge": 0,
             "seed": 0,
             "difficulty": {
-              "easy": 2,
+              "easy": 5,
               "medium": 2,
               "hard": 1,
               "elite": 0,
               "legendary": 2
             },
-            "supportedModes": []
+            "supportedModes": [
+              "fadingFortune",
+              "riskReward"
+            ]
           }
         }
       ],
@@ -10948,13 +10954,13 @@
             "full"
           ],
           "coverage": {
-            "ordinary": 17,
+            "ordinary": 18,
             "checkpoints": 6,
             "repair": 2,
             "bridge": 1,
             "seed": 1,
             "difficulty": {
-              "easy": 4,
+              "easy": 5,
               "medium": 7,
               "hard": 4,
               "elite": 1,
@@ -13704,5 +13710,5 @@
       "hidden": false
     }
   },
-  "policySha256": "999290756f53f2502bd1c62464c5d4d5ba3f85afe4b475f1bd564277ef7162ed"
+  "policySha256": "3af5e120f356f76455b7d3bdd5e8603a3678365220f5fca33a555c68596d1151"
 });
