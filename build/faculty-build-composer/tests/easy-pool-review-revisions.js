@@ -4,6 +4,7 @@ const {questionRecords}=require('./composer-integrity-contracts.js'),core=requir
 const ledger=JSON.parse(fs.readFileSync(path.resolve(__dirname,'../../../audit_tools/easy_pool_review_20261101/expectations.json'),'utf8'));
 const changes=new Map(ledger.changes.map(c=>[c.id,c]));
 const additions=require('./saving-identity-easy-additions.js');
+const quizAdditions=require('./quiz-easy-completion-additions.js');
 const sha=s=>crypto.createHash('sha256').update(s).digest('hex');
 function beforeEasyPoolReviewLibrary(current){
  current=additions.beforeSavingIdentityAdditions(current);
@@ -24,7 +25,8 @@ function beforeEasyPoolReviewLibrary(current){
 }
 function wrap(prior){
  return {...prior,easyPoolReviewLedger:ledger,beforeEasyPoolReviewLibrary,
-  savingIdentityAdditions:additions.ledger.additions,addedIds:additions.addedIds,beforeSavingIdentityAdditions:additions.beforeSavingIdentityAdditions,
+  savingIdentityAdditions:additions.ledger.additions,beforeSavingIdentityAdditions:additions.beforeSavingIdentityAdditions,
+  approvedAdditions:[...additions.ledger.additions,...quizAdditions.ledger.additions],addedIds:new Set([...additions.addedIds,...quizAdditions.addedIds]),beforeQuizEasyAdditions:quizAdditions.beforeQuizEasyAdditions,
   approvedIds:new Set([...prior.approvedIds,...changes.keys()]),
   assertCurrentLibrary(current){prior.assertCurrentLibrary(beforeEasyPoolReviewLibrary(current));},
   beforeFacultyValidationLibrary(current){return prior.beforeFacultyValidationLibrary(beforeEasyPoolReviewLibrary(current));},

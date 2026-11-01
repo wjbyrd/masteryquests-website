@@ -6,10 +6,12 @@ worksheet visibility metadata, preserving the ZIP members and their contents.
 from pathlib import Path
 from zipfile import ZipFile
 import xml.etree.ElementTree as ET
-import re, html
+import re, html, argparse
 HERE=Path(__file__).resolve().parent
 path=HERE.parents[1]/'faculty_exports/microeconomics_manual_review.xlsx'
-baseline=HERE/'baseline/microeconomics_manual_review.xlsx'
+parser=argparse.ArgumentParser()
+parser.add_argument('--baseline-directory',type=Path,default=HERE/'baseline')
+baseline=parser.parse_args().baseline_directory/'microeconomics_manual_review.xlsx'
 ns={'s':'http://schemas.openxmlformats.org/spreadsheetml/2006/main'}
 with ZipFile(baseline) as z:
     sheets=ET.fromstring(z.read('xl/workbook.xml')).findall('s:sheets/s:sheet',ns)

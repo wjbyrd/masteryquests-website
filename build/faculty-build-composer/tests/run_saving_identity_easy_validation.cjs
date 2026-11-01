@@ -1,8 +1,8 @@
 'use strict';
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
 const core=require('../composer-core.js'),h=require('./composer-test-helpers.js'),con=require('./composer-integrity-contracts.js'),approved=require('./faculty-validation-revisions.js'),add=require('./saving-identity-easy-additions.js');
-const lib=h.loadComposerLibrary(),before=add.beforeSavingIdentityAdditions(lib),cid='saving-and-investment-identities';
-con.assertCanonicalIntegrity(lib);approved.assertCurrentLibrary(lib);
+const current=h.loadComposerLibrary(),lib=approved.beforeQuizEasyAdditions(current),before=add.beforeSavingIdentityAdditions(lib),cid='saving-and-investment-identities';
+con.assertCanonicalIntegrity(current);approved.assertCurrentLibrary(current);
 assert.equal(lib.canonicalQuestionCount,9782);assert.equal(before.canonicalQuestionCount,9777);
 assert.deepEqual([...add.addedIds].sort(),['SLF-ID-E-001','SLF-ID-E-002','SLF-ID-E-003','SLF-ID-E-004','SLF-ID-E-005']);
 const oldStems=new Set(con.questionRecords(before).map(r=>core.normalizeAnswerText(r.question.q)));

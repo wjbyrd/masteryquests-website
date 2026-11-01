@@ -1,9 +1,11 @@
 'use strict';
 const assert=require('node:assert/strict'),crypto=require('node:crypto'),core=require('../composer-core.js');
 const ledger=require('../../../audit_tools/saving_identity_easy_20261101/expectations.json');
+const latest=require('./quiz-easy-completion-additions.js');
 const addedIds=new Set(ledger.additions.map(a=>a.question.id));
 const hash=l=>{const p=structuredClone(l);delete p.librarySha256;delete p.registry.librarySha256;return crypto.createHash('sha256').update(core.stableStringify(p)).digest('hex');};
 function beforeSavingIdentityAdditions(current){
+ current=latest.beforeQuizEasyAdditions(current);
  if(current.librarySha256!==ledger.afterLibrarySha256)return current;
  assert.equal(hash(current),ledger.afterLibrarySha256,'Current bank checksum');
  const restored=structuredClone(current);

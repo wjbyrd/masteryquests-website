@@ -7,7 +7,10 @@ ROOT=HERE.parents[1]
 OUT=ROOT/'faculty_exports'
 parser=argparse.ArgumentParser()
 parser.add_argument('--report-directory',type=Path,default=HERE)
-REPORT=parser.parse_args().report_directory
+parser.add_argument('--baseline-directory',type=Path,default=HERE/'baseline')
+args=parser.parse_args()
+REPORT=args.report_directory
+BASELINE=args.baseline_directory
 NS={'s':'http://schemas.openxmlformats.org/spreadsheetml/2006/main'}
 def read_book(path):
     with ZipFile(path) as z:
@@ -43,7 +46,7 @@ for stem in ['general_economics','microeconomics','macroeconomics']:
     for i,(a,e) in enumerate(zip(actual,expected)):
         a=a+['']*(len(e)-len(a));assert a==e,(stem,i,a,e)
     report.append({'file':stem+'_question_bank.xlsx','rows':len(actual)-1,'allCellsMatchCsv':True})
-before=read_book(HERE/'baseline/microeconomics_manual_review.xlsx')
+before=read_book(BASELINE/'microeconomics_manual_review.xlsx')
 after=read_book(OUT/'microeconomics_manual_review.xlsx')
 assert list(before)==list(after)
 for name in before:
@@ -57,7 +60,7 @@ report.append({'file':'microeconomics_manual_review.xlsx','reviewerColumnsAndDro
 pages=json.loads((OUT/'validation_summary.json').read_text(encoding='utf-8'))['disciplines']['micro']['question_pages']
 for row in after['Question Review']['rows'][1:]:
     if row[2]:assert row[0]==str(pages.get(row[2],'Not in bank')),(row[2],row[0])
-with (HERE/'baseline/microeconomics_manual_review.csv').open(encoding='utf-8-sig',newline='') as f:old_csv=list(csv.reader(f))
+with (BASELINE/'microeconomics_manual_review.csv').open(encoding='utf-8-sig',newline='') as f:old_csv=list(csv.reader(f))
 with (OUT/'microeconomics_manual_review.csv').open(encoding='utf-8-sig',newline='') as f:new_csv=list(csv.reader(f))
 assert len(old_csv)==len(new_csv)
 assert old_csv[0]==new_csv[0]

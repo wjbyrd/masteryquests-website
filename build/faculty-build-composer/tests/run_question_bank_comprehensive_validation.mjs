@@ -25,7 +25,7 @@ const byId=new Map(after.map(e=>[String(e.id),e])),beforeById=new Map(before.map
 const sha=s=>crypto.createHash('sha256').update(s).digest('hex');
 const norm=s=>s.normalize('NFKC').trim().replace(/\s+/g,' ').toLowerCase();
 assert.deepEqual([...byId.keys()].sort(),[...[...beforeById.keys()].filter(id=>!micro.deletedIds.has(id)),...micro.addedIds].sort(),'Exact instructor-approved additions and deletions');
-for(const addition of micro.savingIdentityAdditions){
+for(const addition of micro.approvedAdditions){
  const q=byId.get(addition.question.id).question;
  assert.deepEqual(q,addition.question,'Exact added question');
  integrity.assertSourceProvenance(q,q);

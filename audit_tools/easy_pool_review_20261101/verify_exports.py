@@ -11,18 +11,19 @@ read=lambda p:json.loads(p.read_text(encoding='utf-8'))
 ledger=read(HERE/'expectations.json')
 parser=argparse.ArgumentParser()
 parser.add_argument('--report-directory',type=Path,default=HERE)
-parser.add_argument('--additions',type=Path)
+parser.add_argument('--additions',type=Path,action='append',default=[])
 args=parser.parse_args()
 REPORT=args.report_directory
-if args.additions:
-    additions=read(args.additions)['additions']
+for addition_path in args.additions:
+    additions=read(addition_path)['additions']
     ledger['changes'] += [{'id':a['question']['id'],'afterRecord':a['question'],'correctIndex':a['correctIndex']} for a in additions]
 report=read(OUT/'validation_summary.json')
 assert report['status']=='complete' and report['sources_unchanged']
 assert report['source_sha256']==hashlib.sha256((ROOT/'build/faculty-build-composer/data/composer_library.js').read_bytes()).hexdigest()
 norm=lambda s:re.sub(r'\s+','',unicodedata.normalize('NFKC',html.unescape(re.sub('<[^>]+>','',str(s))))).replace('−','-').replace('\u00ad','')
 samples={'general':['P77-MVM-EASYB-023','P62D-ITP-B1-012','PG2-CEIL-E-001'],'micro':['P62H-MCMP-B1-002','P62G-MON-B1-014','PM5-PC-R-043','PM8-OLI-R-073','P62F-PC-E-041','PM8-OLI-E-032'],'macro':['LG-Q-2009','PM2C2-FISH-EB-001','PMOE-RER-B1-002','PG3-AS-E-002','ECON-NL-EASYBOSS-2035']}
-if args.additions:samples['macro']=[a['question']['id'] for a in additions]
+if args.additions:
+    samples={area:[a['question']['id'] for a in additions] for area in samples}
 result={'status':'PASS','sourceSha256':report['source_sha256'],'disciplines':{}}
 (REPORT/'qa').mkdir(exist_ok=True,parents=True)
 for area,info in report['disciplines'].items():

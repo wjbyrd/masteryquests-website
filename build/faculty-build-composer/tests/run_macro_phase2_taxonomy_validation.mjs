@@ -18,8 +18,7 @@ const facultySupplementIds=micro.facultyMacroTransfers.map(r=>r.id);
 assert.deepEqual(facultySupplementIds.slice().sort(),['ECON-EC-LEGENDARYBOSS-20022','ECON-EC-LEGENDARYBOSS-20023'],'Exact faculty-directed Macro additions');
 const facultySupplementCount=facultySupplementIds.length;
 assert.equal(specialistCount,5,'Exact instructor specialist rerouting');
-const addedIds=[...micro.addedIds],addedCount=addedIds.length;
-const routeCount=id=>approvedRoutes.filter(r=>r.to===id).length+macroRoutes.filter(r=>r.to===id).length-macroRoutes.filter(r=>r.from===id).length+micro.savingIdentityAdditions.filter(a=>a.conceptId===id).length;
+const routeCount=id=>approvedRoutes.filter(r=>r.to===id).length+macroRoutes.filter(r=>r.to===id).length-macroRoutes.filter(r=>r.from===id).length+micro.approvedAdditions.filter(a=>a.conceptId===id).length;
 const {writeTestArtifact}=require('./composer-test-helpers.js');
 const composerRoot=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const repo=path.resolve(composerRoot,'..','..');
@@ -86,6 +85,7 @@ const macroFamilies=modelModule.NAVIGATION_FAMILIES.macro.filter(family=>[
   'money-banking-fed','money-growth-inflation','ad-as-equilibrium','stabilization-policy','phillips-disinflation'
 ].includes(family.id));
 const currentChildIds=macroFamilies.flatMap(family=>family.conceptIds);
+const addedIds=micro.approvedAdditions.filter(a=>currentChildIds.includes(a.conceptId)).map(a=>a.question.id),addedCount=addedIds.length;
 const supplementId='integrated-macroeconomic-analysis';
 const removedIds=['saving-investment-and-loanable-funds','federal-budgets-and-debt','bank-money-creation','aggregate-supply','macroeconomic-equilibrium-and-shocks','long-run-macroeconomic-adjustment'];
 const expectedNewCounts={

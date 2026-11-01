@@ -25,6 +25,8 @@ const selectedArea=process.argv.find(a=>a.startsWith('--area='))?.slice(7);
 assert(!selectedArea||['general','micro','macro'].includes(selectedArea),'Known course area');
 const reportDirectory=process.argv.find(a=>a.startsWith('--report-directory='))?.slice(19)||here;
 await fs.mkdir(path.join(reportDirectory,'qa'),{recursive:true});
+const baselineDirectory=path.join(reportDirectory,'baseline');
+await fs.mkdir(baselineDirectory,{recursive:true});
 for(const [area,title]of [['general','General Economics'],['micro','Microeconomics'],['macro','Macroeconomics']]){
  if(selectedArea&&area!==selectedArea)continue;
  if(process.argv.includes('--micro-only')&&area!=='micro')continue;
@@ -65,7 +67,7 @@ if(selectedArea){
 }
 // Preserve the existing manual review workbook and reviewer-entered columns.
 const manual=path.join(output,'microeconomics_manual_review.xlsx');
-try{await fs.access(path.join(here,'baseline/microeconomics_manual_review.xlsx'));}catch{await fs.copyFile(manual,path.join(here,'baseline/microeconomics_manual_review.xlsx'));}
+try{await fs.access(path.join(baselineDirectory,'microeconomics_manual_review.xlsx'));}catch{await fs.copyFile(manual,path.join(baselineDirectory,'microeconomics_manual_review.xlsx'));}
 const wb=await SpreadsheetFile.importXlsx(await FileBlob.load(manual)),sheet=wb.worksheets.getItem('Question Review');
 const original=sheet.getUsedRange().values,pages=report.disciplines.micro.question_pages;
 let updatedPages=0;const unmatched=[];
@@ -78,16 +80,16 @@ wb.recalculate();const after=sheet.getUsedRange().values;
 for(let r=0;r<original.length;r++)assert.deepEqual(after[r].slice(1),original[r].slice(1),'Preserve topic, ID, and reviewer annotations');
 await (await SpreadsheetFile.exportXlsx(wb)).save(manual);
 const png=await wb.render({sheetName:'Question Review',range:'A1:F5',scale:1});
-await fs.writeFile(path.join(here,'qa/manual-after.png'),new Uint8Array(await png.arrayBuffer()));
+await fs.writeFile(path.join(reportDirectory,'qa/manual-after.png'),new Uint8Array(await png.arrayBuffer()));
 // Keep its existing CSV companion aligned while retaining its reviewer-entered columns.
 const csvPath=path.join(output,'microeconomics_manual_review.csv');
-try{await fs.access(path.join(here,'baseline/microeconomics_manual_review.csv'));}catch{await fs.copyFile(csvPath,path.join(here,'baseline/microeconomics_manual_review.csv'));}
+try{await fs.access(path.join(baselineDirectory,'microeconomics_manual_review.csv'));}catch{await fs.copyFile(csvPath,path.join(baselineDirectory,'microeconomics_manual_review.csv'));}
 const csvWb=await Workbook.fromCSV((await fs.readFile(csvPath,'utf8')).replace(/^\uFEFF/,''),{sheetName:'Review'}),csvRows=csvWb.worksheets.getItem('Review').getUsedRange().values;
 for(let r=1;r<csvRows.length;r++){const id=String(csvRows[r][2]);if(pages[id])csvRows[r][0]=String(pages[id]);else if(id)csvRows[r][0]='Not in bank';}
 const quote=v=>'"'+String(v??'').replaceAll('"','""')+'"';
 await fs.writeFile(csvPath,'\uFEFF'+csvRows.map(r=>r.map(quote).join(',')).join('\r\n')+'\r\n');
 results.push({file:path.basename(manual),rows:original.length-1,updatedPageReferences:updatedPages,unmatchedHistoricalIds:unmatched,reviewerColumnsPreserved:true});
-let previous=[];try{previous=JSON.parse(await fs.readFile(path.join(here,'excel-validation.json'),'utf8'));}catch{}
+let previous=[];try{previous=JSON.parse(await fs.readFile(path.join(reportDirectory,'excel-validation.json'),'utf8'));}catch{}
 const merged=[...previous.filter(r=>!results.some(n=>n.file===r.file)),...results];
-await fs.writeFile(path.join(here,'excel-validation.json'),JSON.stringify(merged,null,2)+'\n');
+await fs.writeFile(path.join(reportDirectory,'excel-validation.json'),JSON.stringify(merged,null,2)+'\n');
 console.log(JSON.stringify(results.at(-1)));
