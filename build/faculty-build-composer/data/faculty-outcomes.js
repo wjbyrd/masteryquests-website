@@ -2,7 +2,7 @@
 (function(root,data){if(typeof module==='object'&&module.exports)module.exports=data;else root.MQFacultyOutcomePolicy=data;})(typeof globalThis!=='undefined'?globalThis:this,{
   "schemaVersion": 1,
   "policyVersion": "faculty-lo-1",
-  "librarySha256": "ca58924188abfe6a274244df230dca1128f6af5207512de9f9dd0efc09ece457",
+  "librarySha256": "e37b89651ea14cc039b5d9cac8a3680d979d45dbdf4f4e36e5afbd7ce79822db",
   "concepts": {
     "ad-as-equilibrium-and-output-gaps": {
       "outcomes": [
@@ -32,8 +32,8 @@
             "bridge": 1,
             "seed": 0,
             "difficulty": {
-              "easy": 9,
-              "medium": 8,
+              "easy": 10,
+              "medium": 7,
               "hard": 3,
               "elite": 0,
               "legendary": 0
@@ -431,15 +431,14 @@
             "bridge": 6,
             "seed": 0,
             "difficulty": {
-              "easy": 8,
-              "medium": 18,
+              "easy": 7,
+              "medium": 19,
               "hard": 17,
               "elite": 5,
               "legendary": 5
             },
             "supportedModes": [
               "timed",
-              "exam",
               "quiz",
               "unlimited",
               "trialGraph",
@@ -526,8 +525,8 @@
             "bridge": 4,
             "seed": 0,
             "difficulty": {
-              "easy": 7,
-              "medium": 16,
+              "easy": 6,
+              "medium": 17,
               "hard": 13,
               "elite": 4,
               "legendary": 4
@@ -842,8 +841,8 @@
             "bridge": 3,
             "seed": 0,
             "difficulty": {
-              "easy": 10,
-              "medium": 7,
+              "easy": 8,
+              "medium": 9,
               "hard": 10,
               "elite": 0,
               "legendary": 0
@@ -1720,8 +1719,8 @@
             "bridge": 3,
             "seed": 0,
             "difficulty": {
-              "easy": 20,
-              "medium": 29,
+              "easy": 18,
+              "medium": 31,
               "hard": 2,
               "elite": 0,
               "legendary": 0
@@ -2367,8 +2366,8 @@
             "bridge": 0,
             "seed": 0,
             "difficulty": {
-              "easy": 10,
-              "medium": 9,
+              "easy": 9,
+              "medium": 10,
               "hard": 7,
               "elite": 0,
               "legendary": 1
@@ -5938,8 +5937,8 @@
             "bridge": 15,
             "seed": 0,
             "difficulty": {
-              "easy": 24,
-              "medium": 28,
+              "easy": 23,
+              "medium": 29,
               "hard": 34,
               "elite": 19,
               "legendary": 44
@@ -6695,8 +6694,8 @@
             "bridge": 1,
             "seed": 0,
             "difficulty": {
-              "easy": 2,
-              "medium": 4,
+              "easy": 1,
+              "medium": 5,
               "hard": 9,
               "elite": 4,
               "legendary": 3
@@ -12002,14 +12001,13 @@
             "bridge": 3,
             "seed": 0,
             "difficulty": {
-              "easy": 5,
-              "medium": 9,
+              "easy": 4,
+              "medium": 10,
               "hard": 5,
               "elite": 3,
               "legendary": 0
             },
             "supportedModes": [
-              "quiz",
               "fadingFortune",
               "riskReward"
             ]
@@ -13455,14 +13453,13 @@
             "bridge": 3,
             "seed": 0,
             "difficulty": {
-              "easy": 5,
-              "medium": 6,
+              "easy": 4,
+              "medium": 7,
               "hard": 9,
               "elite": 7,
               "legendary": 26
             },
             "supportedModes": [
-              "quiz",
               "fadingFortune",
               "riskReward"
             ]
@@ -13700,5 +13697,5 @@
       "hidden": false
     }
   },
-  "policySha256": "b89a51eb322e553dd45a5992ecccd4ecd19dae0d4d9f8cae4ca6e66ae0a16213"
+  "policySha256": "082f22e7a02557f2ced6c748886f3a00152cc5da7dde9aea18316b94045f8c51"
 });

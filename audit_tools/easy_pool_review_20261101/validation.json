@@ -1,0 +1,794 @@
+{
+  "status": "PASS",
+  "canonicalQuestions": 9777,
+  "flaggedQuestionsAddressed": 195,
+  "changedQuestions": 409,
+  "difficultyChanges": 129,
+  "ordinaryPoolMoves": 11,
+  "contextEdits": 255,
+  "learnerReplacements": 21,
+  "algebraExplanationsChecked": 12,
+  "correctAnswerPositionsPreserved": true,
+  "allUnrelatedRecordsPreserved": true,
+  "checkpointStagesAndRepairRoutesPreserved": true,
+  "composition": [
+    {
+      "concept": "ad-as-equilibrium-and-output-gaps",
+      "beforeErrors": [
+        "Standard Campaign: hard needs 6, found 3; easyBoss needs 3, found 2; mediumBoss needs 3, found 0; finalBoss needs 3, found 1",
+        "Timed Trial: hard needs 6, found 3",
+        "Exam Drill: hard needs 6, found 3; easyBoss needs 3, found 2; mediumBoss needs 3, found 0; finalBoss needs 3, found 1",
+        "Quiz: hard needs 5, found 3",
+        "Unlimited Practice: hard needs 6, found 3",
+        "Legendary Mode: legendary needs 6, found 0; legendaryBoss needs 3, found 1",
+        "Score Attack: hard needs 6, found 3; easyBoss needs 3, found 2; mediumBoss needs 3, found 0; finalBoss needs 3, found 1",
+        "Trial by Graph: graphSafe needs 10, found 7"
+      ],
+      "afterErrors": [
+        "Standard Campaign: hard needs 6, found 3; easyBoss needs 3, found 2; mediumBoss needs 3, found 0; finalBoss needs 3, found 1",
+        "Timed Trial: hard needs 6, found 3",
+        "Exam Drill: hard needs 6, found 3; easyBoss needs 3, found 2; mediumBoss needs 3, found 0; finalBoss needs 3, found 1",
+        "Quiz: hard needs 5, found 3",
+        "Unlimited Practice: hard needs 6, found 3",
+        "Legendary Mode: legendary needs 6, found 0; legendaryBoss needs 3, found 1",
+        "Score Attack: hard needs 6, found 3; easyBoss needs 3, found 2; mediumBoss needs 3, found 0; finalBoss needs 3, found 1",
+        "Trial by Graph: graphSafe needs 10, found 7"
+      ]
+    },
+    {
+      "concept": "aggregate-demand",
+      "beforeErrors": [
+        "Legendary Mode: legendary needs 6, found 4"
+      ],
+      "afterErrors": [
+        "Legendary Mode: legendary needs 6, found 4"
+      ]
+    },
+    {
+      "concept": "bank-balance-sheets-reserves-and-capital",
+      "beforeErrors": [
+        "Standard Campaign: easyBoss needs 3, found 1; mediumBoss needs 3, found 2; finalBoss needs 3, found 2",
+        "Exam Drill: easyBoss needs 3, found 1; mediumBoss needs 3, found 2; finalBoss needs 3, found 2",
+        "Legendary Mode: legendary needs 6, found 0; legendaryBoss needs 3, found 2",
+        "Score Attack: easyBoss needs 3, found 1; mediumBoss needs 3, found 2; finalBoss needs 3, found 2",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Standard Campaign: easyBoss needs 3, found 1; mediumBoss needs 3, found 2; finalBoss needs 3, found 2",
+        "Exam Drill: easyBoss needs 3, found 1; mediumBoss needs 3, found 2; finalBoss needs 3, found 2",
+        "Legendary Mode: legendary needs 6, found 0; legendaryBoss needs 3, found 2",
+        "Score Attack: easyBoss needs 3, found 1; mediumBoss needs 3, found 2; finalBoss needs 3, found 2",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "binding-price-ceilings",
+      "beforeErrors": [
+        "Standard Campaign: easyBoss needs 3, found 0; mediumBoss needs 3, found 0",
+        "Exam Drill: easyBoss needs 3, found 0; mediumBoss needs 3, found 0",
+        "Legendary Mode: legendary needs 6, found 5; legendaryBoss needs 3, found 2",
+        "Score Attack: easyBoss needs 3, found 0; mediumBoss needs 3, found 0"
+      ],
+      "afterErrors": [
+        "Standard Campaign: easyBoss needs 3, found 0; mediumBoss needs 3, found 0",
+        "Exam Drill: easyBoss needs 3, found 0; mediumBoss needs 3, found 0",
+        "Legendary Mode: legendary needs 6, found 5; legendaryBoss needs 3, found 2",
+        "Score Attack: easyBoss needs 3, found 0; mediumBoss needs 3, found 0"
+      ]
+    },
+    {
+      "concept": "binding-price-floors",
+      "beforeErrors": [
+        "Standard Campaign: easyBoss needs 3, found 0; mediumBoss needs 3, found 0",
+        "Exam Drill: easyBoss needs 3, found 0; mediumBoss needs 3, found 0",
+        "Legendary Mode: legendary needs 6, found 4",
+        "Score Attack: easyBoss needs 3, found 0; mediumBoss needs 3, found 0"
+      ],
+      "afterErrors": [
+        "Standard Campaign: easyBoss needs 3, found 0; mediumBoss needs 3, found 0",
+        "Exam Drill: easyBoss needs 3, found 0; mediumBoss needs 3, found 0",
+        "Legendary Mode: legendary needs 6, found 4",
+        "Score Attack: easyBoss needs 3, found 0; mediumBoss needs 3, found 0"
+      ]
+    },
+    {
+      "concept": "budget-accounting-and-public-saving",
+      "beforeErrors": [
+        "Standard Campaign: hard needs 6, found 1; easyBoss needs 3, found 2; mediumBoss needs 3, found 2; finalBoss needs 3, found 1",
+        "Timed Trial: hard needs 6, found 1",
+        "Exam Drill: hard needs 6, found 1; easyBoss needs 3, found 2; mediumBoss needs 3, found 2; finalBoss needs 3, found 1",
+        "Quiz: hard needs 5, found 1",
+        "Unlimited Practice: hard needs 6, found 1",
+        "Legendary Mode: legendary needs 6, found 1; legendaryBoss needs 3, found 1",
+        "Score Attack: hard needs 6, found 1; easyBoss needs 3, found 2; mediumBoss needs 3, found 2; finalBoss needs 3, found 1",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Standard Campaign: hard needs 6, found 1; easyBoss needs 3, found 2; mediumBoss needs 3, found 2; finalBoss needs 3, found 1",
+        "Timed Trial: hard needs 6, found 1",
+        "Exam Drill: hard needs 6, found 1; easyBoss needs 3, found 2; mediumBoss needs 3, found 2; finalBoss needs 3, found 1",
+        "Quiz: hard needs 5, found 1",
+        "Unlimited Practice: hard needs 6, found 1",
+        "Legendary Mode: legendary needs 6, found 1; legendaryBoss needs 3, found 1",
+        "Score Attack: hard needs 6, found 1; easyBoss needs 3, found 2; mediumBoss needs 3, found 2; finalBoss needs 3, found 1",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "capital-flows-and-net-capital-outflow",
+      "beforeErrors": [
+        "Legendary Mode: legendary needs 6, found 4",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Legendary Mode: legendary needs 6, found 4",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "central-bank-and-federal-reserve",
+      "beforeErrors": [
+        "Legendary Mode: legendary needs 6, found 0",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Legendary Mode: legendary needs 6, found 0",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "consumer-and-producer-surplus",
+      "beforeErrors": [],
+      "afterErrors": []
+    },
+    {
+      "concept": "consumer-choice",
+      "beforeErrors": [
+        "Legendary Mode: legendary needs 6, found 0"
+      ],
+      "afterErrors": [
+        "Legendary Mode: legendary needs 6, found 0"
+      ]
+    },
+    {
+      "concept": "costs-of-production",
+      "beforeErrors": [],
+      "afterErrors": []
+    },
+    {
+      "concept": "cpi-and-inflation-measurement",
+      "beforeErrors": [
+        "Legendary Mode: legendary needs 6, found 5",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Legendary Mode: legendary needs 6, found 5",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "cpi-bias",
+      "beforeErrors": [
+        "Standard Campaign: hard needs 6, found 2",
+        "Timed Trial: hard needs 6, found 2",
+        "Exam Drill: hard needs 6, found 2",
+        "Quiz: hard needs 5, found 2",
+        "Unlimited Practice: hard needs 6, found 2",
+        "Legendary Mode: legendary needs 6, found 3",
+        "Score Attack: hard needs 6, found 2",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Standard Campaign: hard needs 6, found 2",
+        "Timed Trial: hard needs 6, found 2",
+        "Exam Drill: hard needs 6, found 2",
+        "Quiz: hard needs 5, found 2",
+        "Unlimited Practice: hard needs 6, found 2",
+        "Legendary Mode: legendary needs 6, found 3",
+        "Score Attack: hard needs 6, found 2",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "cpi-versus-gdp-deflator",
+      "beforeErrors": [
+        "Standard Campaign: hard needs 6, found 4",
+        "Timed Trial: hard needs 6, found 4",
+        "Exam Drill: hard needs 6, found 4",
+        "Quiz: hard needs 5, found 4",
+        "Unlimited Practice: hard needs 6, found 4",
+        "Legendary Mode: legendary needs 6, found 3",
+        "Score Attack: hard needs 6, found 4",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Standard Campaign: hard needs 6, found 4",
+        "Timed Trial: hard needs 6, found 4",
+        "Exam Drill: hard needs 6, found 4",
+        "Quiz: hard needs 5, found 4",
+        "Unlimited Practice: hard needs 6, found 4",
+        "Legendary Mode: legendary needs 6, found 3",
+        "Score Attack: hard needs 6, found 4",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "crowding-out-and-capital-formation",
+      "beforeErrors": [
+        "Standard Campaign: easyBoss needs 3, found 0; mediumBoss needs 3, found 0; finalBoss needs 3, found 0; repair needs 1, found 0; bridge needs 1, found 0",
+        "Timed Trial: repair needs 1, found 0; bridge needs 1, found 0",
+        "Exam Drill: easyBoss needs 3, found 0; mediumBoss needs 3, found 0; finalBoss needs 3, found 0; repair needs 1, found 0; bridge needs 1, found 0",
+        "Unlimited Practice: repair needs 1, found 0; bridge needs 1, found 0",
+        "Legendary Mode: legendary needs 6, found 1; legendaryBoss needs 3, found 0",
+        "Score Attack: easyBoss needs 3, found 0; mediumBoss needs 3, found 0; finalBoss needs 3, found 0; repair needs 1, found 0; bridge needs 1, found 0"
+      ],
+      "afterErrors": [
+        "Standard Campaign: easyBoss needs 3, found 0; mediumBoss needs 3, found 0; finalBoss needs 3, found 0; repair needs 1, found 0; bridge needs 1, found 0",
+        "Timed Trial: repair needs 1, found 0; bridge needs 1, found 0",
+        "Exam Drill: easyBoss needs 3, found 0; mediumBoss needs 3, found 0; finalBoss needs 3, found 0; repair needs 1, found 0; bridge needs 1, found 0",
+        "Unlimited Practice: repair needs 1, found 0; bridge needs 1, found 0",
+        "Legendary Mode: legendary needs 6, found 1; legendaryBoss needs 3, found 0",
+        "Score Attack: easyBoss needs 3, found 0; mediumBoss needs 3, found 0; finalBoss needs 3, found 0; repair needs 1, found 0; bridge needs 1, found 0"
+      ]
+    },
+    {
+      "concept": "debt-measures-burden-and-fiscal-data",
+      "beforeErrors": [
+        "Standard Campaign: hard needs 6, found 1; easyBoss needs 3, found 2; mediumBoss needs 3, found 2; finalBoss needs 3, found 1",
+        "Timed Trial: hard needs 6, found 1",
+        "Exam Drill: hard needs 6, found 1; easyBoss needs 3, found 2; mediumBoss needs 3, found 2; finalBoss needs 3, found 1",
+        "Quiz: hard needs 5, found 1",
+        "Unlimited Practice: hard needs 6, found 1",
+        "Legendary Mode: legendary needs 6, found 3; legendaryBoss needs 3, found 1",
+        "Score Attack: hard needs 6, found 1; easyBoss needs 3, found 2; mediumBoss needs 3, found 2; finalBoss needs 3, found 1",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Standard Campaign: hard needs 6, found 1; easyBoss needs 3, found 2; mediumBoss needs 3, found 2; finalBoss needs 3, found 1",
+        "Timed Trial: hard needs 6, found 1",
+        "Exam Drill: hard needs 6, found 1; easyBoss needs 3, found 2; mediumBoss needs 3, found 2; finalBoss needs 3, found 1",
+        "Quiz: hard needs 5, found 1",
+        "Unlimited Practice: hard needs 6, found 1",
+        "Legendary Mode: legendary needs 6, found 3; legendaryBoss needs 3, found 1",
+        "Score Attack: hard needs 6, found 1; easyBoss needs 3, found 2; mediumBoss needs 3, found 2; finalBoss needs 3, found 1",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "disinflation-and-policy",
+      "beforeErrors": [
+        "Legendary Mode: legendary needs 6, found 3",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Legendary Mode: legendary needs 6, found 3",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "economic-growth-policy",
+      "beforeErrors": [
+        "Legendary Mode: legendary needs 6, found 3",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Legendary Mode: legendary needs 6, found 3",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "factor-markets",
+      "beforeErrors": [
+        "Legendary Mode: legendary needs 6, found 0"
+      ],
+      "afterErrors": [
+        "Legendary Mode: legendary needs 6, found 0"
+      ]
+    },
+    {
+      "concept": "fiscal-multipliers-and-crowding-out",
+      "beforeErrors": [
+        "Legendary Mode: legendary needs 6, found 0",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Legendary Mode: legendary needs 6, found 0",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "fiscal-policy-and-aggregate-demand",
+      "beforeErrors": [
+        "Legendary Mode: legendary needs 6, found 3",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Legendary Mode: legendary needs 6, found 3",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "fisher-effect",
+      "beforeErrors": [
+        "Legendary Mode: legendary needs 6, found 2",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Legendary Mode: legendary needs 6, found 2",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "foreign-exchange-market",
+      "beforeErrors": [
+        "Standard Campaign: hard needs 6, found 4",
+        "Timed Trial: hard needs 6, found 4",
+        "Exam Drill: hard needs 6, found 4",
+        "Quiz: hard needs 5, found 4",
+        "Unlimited Practice: hard needs 6, found 4",
+        "Score Attack: hard needs 6, found 4"
+      ],
+      "afterErrors": [
+        "Standard Campaign: hard needs 6, found 4",
+        "Timed Trial: hard needs 6, found 4",
+        "Exam Drill: hard needs 6, found 4",
+        "Quiz: hard needs 5, found 4",
+        "Unlimited Practice: hard needs 6, found 4",
+        "Score Attack: hard needs 6, found 4"
+      ]
+    },
+    {
+      "concept": "gdp-measurement",
+      "beforeErrors": [
+        "Legendary Mode: legendary needs 6, found 5",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Legendary Mode: legendary needs 6, found 5",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "income-inequality-poverty-and-redistribution",
+      "beforeErrors": [
+        "Legendary Mode: legendary needs 6, found 0"
+      ],
+      "afterErrors": [
+        "Legendary Mode: legendary needs 6, found 0"
+      ]
+    },
+    {
+      "concept": "inflation-costs",
+      "beforeErrors": [
+        "Legendary Mode: legendary needs 6, found 1",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Legendary Mode: legendary needs 6, found 1",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "inflation-tax-and-deflation",
+      "beforeErrors": [
+        "Legendary Mode: legendary needs 6, found 2",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Legendary Mode: legendary needs 6, found 2",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "international-trade-and-trade-policy",
+      "beforeErrors": [],
+      "afterErrors": []
+    },
+    {
+      "concept": "labor-market-institutions",
+      "beforeErrors": [
+        "Legendary Mode: legendary needs 6, found 4",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Legendary Mode: legendary needs 6, found 4",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "liquidity-preference-and-money-market",
+      "beforeErrors": [
+        "Legendary Mode: legendary needs 6, found 5"
+      ],
+      "afterErrors": [
+        "Legendary Mode: legendary needs 6, found 5"
+      ]
+    },
+    {
+      "concept": "living-standards-and-growth",
+      "beforeErrors": [
+        "Standard Campaign: hard needs 6, found 5",
+        "Timed Trial: hard needs 6, found 5",
+        "Exam Drill: hard needs 6, found 5",
+        "Unlimited Practice: hard needs 6, found 5",
+        "Legendary Mode: legendary needs 6, found 4",
+        "Score Attack: hard needs 6, found 5",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Standard Campaign: hard needs 6, found 5",
+        "Timed Trial: hard needs 6, found 5",
+        "Exam Drill: hard needs 6, found 5",
+        "Unlimited Practice: hard needs 6, found 5",
+        "Legendary Mode: legendary needs 6, found 4",
+        "Score Attack: hard needs 6, found 5",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "loanable-funds-shifts",
+      "beforeErrors": [
+        "Standard Campaign: easyBoss needs 3, found 0; mediumBoss needs 3, found 0; finalBoss needs 3, found 0",
+        "Exam Drill: easyBoss needs 3, found 0; mediumBoss needs 3, found 0; finalBoss needs 3, found 0",
+        "Legendary Mode: legendary needs 6, found 3; legendaryBoss needs 3, found 0",
+        "Score Attack: easyBoss needs 3, found 0; mediumBoss needs 3, found 0; finalBoss needs 3, found 0"
+      ],
+      "afterErrors": [
+        "Standard Campaign: easyBoss needs 3, found 0; mediumBoss needs 3, found 0; finalBoss needs 3, found 0",
+        "Exam Drill: easyBoss needs 3, found 0; mediumBoss needs 3, found 0; finalBoss needs 3, found 0",
+        "Legendary Mode: legendary needs 6, found 3; legendaryBoss needs 3, found 0",
+        "Score Attack: easyBoss needs 3, found 0; mediumBoss needs 3, found 0; finalBoss needs 3, found 0"
+      ]
+    },
+    {
+      "concept": "long-run-aggregate-supply-and-potential-output",
+      "beforeErrors": [
+        "Standard Campaign: easy needs 6, found 2; medium needs 6, found 1; hard needs 6, found 3; easyBoss needs 3, found 1; mediumBoss needs 3, found 1; finalBoss needs 3, found 1",
+        "Timed Trial: easy needs 6, found 2; medium needs 6, found 1; hard needs 6, found 3",
+        "Exam Drill: easy needs 6, found 2; medium needs 6, found 1; hard needs 6, found 3; easyBoss needs 3, found 1; mediumBoss needs 3, found 1; finalBoss needs 3, found 1",
+        "Quiz: easy needs 5, found 2; medium needs 5, found 1; hard needs 5, found 3",
+        "Unlimited Practice: easy needs 6, found 2; medium needs 6, found 1; hard needs 6, found 3",
+        "Legendary Mode: legendary needs 6, found 2; legendaryBoss needs 3, found 1",
+        "Score Attack: easy needs 6, found 2; medium needs 6, found 1; hard needs 6, found 3; easyBoss needs 3, found 1; mediumBoss needs 3, found 1; finalBoss needs 3, found 1",
+        "Trial by Graph: graphSafe needs 10, found 0",
+        "Fading Fortune: fadingFortuneEligible needs 10, found 9",
+        "Risk & Reward: riskRewardEligible needs 10, found 9"
+      ],
+      "afterErrors": [
+        "Standard Campaign: easy needs 6, found 2; medium needs 6, found 1; hard needs 6, found 3; easyBoss needs 3, found 1; mediumBoss needs 3, found 1; finalBoss needs 3, found 1",
+        "Timed Trial: easy needs 6, found 2; medium needs 6, found 1; hard needs 6, found 3",
+        "Exam Drill: easy needs 6, found 2; medium needs 6, found 1; hard needs 6, found 3; easyBoss needs 3, found 1; mediumBoss needs 3, found 1; finalBoss needs 3, found 1",
+        "Quiz: easy needs 5, found 2; medium needs 5, found 1; hard needs 5, found 3",
+        "Unlimited Practice: easy needs 6, found 2; medium needs 6, found 1; hard needs 6, found 3",
+        "Legendary Mode: legendary needs 6, found 2; legendaryBoss needs 3, found 1",
+        "Score Attack: easy needs 6, found 2; medium needs 6, found 1; hard needs 6, found 3; easyBoss needs 3, found 1; mediumBoss needs 3, found 1; finalBoss needs 3, found 1",
+        "Trial by Graph: graphSafe needs 10, found 0",
+        "Fading Fortune: fadingFortuneEligible needs 10, found 9",
+        "Risk & Reward: riskRewardEligible needs 10, found 9"
+      ]
+    },
+    {
+      "concept": "long-run-macroeconomic-self-adjustment",
+      "beforeErrors": [
+        "Standard Campaign: easy needs 6, found 2; medium needs 6, found 4; easyBoss needs 3, found 1; finalBoss needs 3, found 2",
+        "Timed Trial: easy needs 6, found 2; medium needs 6, found 4",
+        "Exam Drill: easy needs 6, found 2; medium needs 6, found 4; easyBoss needs 3, found 1; finalBoss needs 3, found 2",
+        "Quiz: easy needs 5, found 2; medium needs 5, found 4",
+        "Unlimited Practice: easy needs 6, found 2; medium needs 6, found 4",
+        "Legendary Mode: legendary needs 6, found 3; legendaryBoss needs 3, found 2",
+        "Score Attack: easy needs 6, found 2; medium needs 6, found 4; easyBoss needs 3, found 1; finalBoss needs 3, found 2",
+        "Trial by Graph: graphSafe needs 10, found 1"
+      ],
+      "afterErrors": [
+        "Standard Campaign: easy needs 6, found 1; medium needs 6, found 5; easyBoss needs 3, found 1; finalBoss needs 3, found 2",
+        "Timed Trial: easy needs 6, found 1; medium needs 6, found 5",
+        "Exam Drill: easy needs 6, found 1; medium needs 6, found 5; easyBoss needs 3, found 1; finalBoss needs 3, found 2",
+        "Quiz: easy needs 5, found 1",
+        "Unlimited Practice: easy needs 6, found 1; medium needs 6, found 5",
+        "Legendary Mode: legendary needs 6, found 3; legendaryBoss needs 3, found 2",
+        "Score Attack: easy needs 6, found 1; medium needs 6, found 5; easyBoss needs 3, found 1; finalBoss needs 3, found 2",
+        "Trial by Graph: graphSafe needs 10, found 1"
+      ]
+    },
+    {
+      "concept": "long-run-phillips-curve",
+      "beforeErrors": [
+        "Legendary Mode: legendary needs 6, found 1",
+        "Trial by Graph: graphSafe needs 10, found 6"
+      ],
+      "afterErrors": [
+        "Legendary Mode: legendary needs 6, found 1",
+        "Trial by Graph: graphSafe needs 10, found 6"
+      ]
+    },
+    {
+      "concept": "market-failures",
+      "beforeErrors": [],
+      "afterErrors": []
+    },
+    {
+      "concept": "micro-versus-macro",
+      "beforeErrors": [
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "monetary-control-limits",
+      "beforeErrors": [
+        "Legendary Mode: legendary needs 6, found 1",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Legendary Mode: legendary needs 6, found 1",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "monetary-neutrality",
+      "beforeErrors": [
+        "Legendary Mode: legendary needs 6, found 0",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Legendary Mode: legendary needs 6, found 0",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "monetary-policy-tools",
+      "beforeErrors": [
+        "Legendary Mode: legendary needs 6, found 1",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Legendary Mode: legendary needs 6, found 1",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "monetary-policy-transmission",
+      "beforeErrors": [
+        "Legendary Mode: legendary needs 6, found 2"
+      ],
+      "afterErrors": [
+        "Legendary Mode: legendary needs 6, found 2"
+      ]
+    },
+    {
+      "concept": "money-functions-and-measures",
+      "beforeErrors": [
+        "Standard Campaign: hard needs 6, found 5",
+        "Timed Trial: hard needs 6, found 5",
+        "Exam Drill: hard needs 6, found 5",
+        "Unlimited Practice: hard needs 6, found 5",
+        "Legendary Mode: legendary needs 6, found 0",
+        "Score Attack: hard needs 6, found 5",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Standard Campaign: hard needs 6, found 5",
+        "Timed Trial: hard needs 6, found 5",
+        "Exam Drill: hard needs 6, found 5",
+        "Unlimited Practice: hard needs 6, found 5",
+        "Legendary Mode: legendary needs 6, found 0",
+        "Score Attack: hard needs 6, found 5",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "monopolistic-competition",
+      "beforeErrors": [],
+      "afterErrors": []
+    },
+    {
+      "concept": "monopoly",
+      "beforeErrors": [],
+      "afterErrors": []
+    },
+    {
+      "concept": "oligopoly",
+      "beforeErrors": [],
+      "afterErrors": []
+    },
+    {
+      "concept": "perfect-competition",
+      "beforeErrors": [],
+      "afterErrors": []
+    },
+    {
+      "concept": "phillips-curve-expectations",
+      "beforeErrors": [
+        "Legendary Mode: legendary needs 6, found 5",
+        "Trial by Graph: graphSafe needs 10, found 6"
+      ],
+      "afterErrors": [
+        "Legendary Mode: legendary needs 6, found 5",
+        "Trial by Graph: graphSafe needs 10, found 6"
+      ]
+    },
+    {
+      "concept": "productivity-measurement",
+      "beforeErrors": [
+        "Legendary Mode: legendary needs 6, found 4",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Legendary Mode: legendary needs 6, found 4",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "quantity-theory-of-money",
+      "beforeErrors": [
+        "Legendary Mode: legendary needs 6, found 2",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Legendary Mode: legendary needs 6, found 2",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "real-exchange-rates-and-purchasing-power",
+      "beforeErrors": [
+        "Standard Campaign: hard needs 6, found 4",
+        "Timed Trial: hard needs 6, found 4",
+        "Exam Drill: hard needs 6, found 4",
+        "Quiz: hard needs 5, found 4",
+        "Unlimited Practice: hard needs 6, found 4",
+        "Legendary Mode: legendary needs 6, found 5",
+        "Score Attack: hard needs 6, found 4",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Standard Campaign: hard needs 6, found 4",
+        "Timed Trial: hard needs 6, found 4",
+        "Exam Drill: hard needs 6, found 4",
+        "Quiz: hard needs 5, found 4",
+        "Unlimited Practice: hard needs 6, found 4",
+        "Legendary Mode: legendary needs 6, found 5",
+        "Score Attack: hard needs 6, found 4",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "real-versus-nominal-interest-rates",
+      "beforeErrors": [
+        "Legendary Mode: legendary needs 6, found 2",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Legendary Mode: legendary needs 6, found 2",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "sacrifice-ratio",
+      "beforeErrors": [
+        "Legendary Mode: legendary needs 6, found 4",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Legendary Mode: legendary needs 6, found 4",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "saving-and-investment-identities",
+      "beforeErrors": [
+        "Standard Campaign: easy needs 6, found 5; hard needs 6, found 5",
+        "Timed Trial: easy needs 6, found 5; hard needs 6, found 5",
+        "Exam Drill: easy needs 6, found 5; hard needs 6, found 5",
+        "Unlimited Practice: easy needs 6, found 5; hard needs 6, found 5",
+        "Legendary Mode: legendary needs 6, found 0",
+        "Score Attack: easy needs 6, found 5; hard needs 6, found 5",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Standard Campaign: easy needs 6, found 4; hard needs 6, found 5",
+        "Timed Trial: easy needs 6, found 4; hard needs 6, found 5",
+        "Exam Drill: easy needs 6, found 4; hard needs 6, found 5",
+        "Quiz: easy needs 5, found 4",
+        "Unlimited Practice: easy needs 6, found 4; hard needs 6, found 5",
+        "Legendary Mode: legendary needs 6, found 0",
+        "Score Attack: easy needs 6, found 4; hard needs 6, found 5",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "short-run-aggregate-supply",
+      "beforeErrors": [
+        "Standard Campaign: easyBoss needs 3, found 2; mediumBoss needs 3, found 2; finalBoss needs 3, found 2",
+        "Exam Drill: easyBoss needs 3, found 2; mediumBoss needs 3, found 2; finalBoss needs 3, found 2",
+        "Legendary Mode: legendary needs 6, found 4; legendaryBoss needs 3, found 2",
+        "Score Attack: easyBoss needs 3, found 2; mediumBoss needs 3, found 2; finalBoss needs 3, found 2"
+      ],
+      "afterErrors": [
+        "Standard Campaign: easyBoss needs 3, found 2; mediumBoss needs 3, found 2; finalBoss needs 3, found 2",
+        "Exam Drill: easyBoss needs 3, found 2; mediumBoss needs 3, found 2; finalBoss needs 3, found 2",
+        "Legendary Mode: legendary needs 6, found 4; legendaryBoss needs 3, found 2",
+        "Score Attack: easyBoss needs 3, found 2; mediumBoss needs 3, found 2; finalBoss needs 3, found 2"
+      ]
+    },
+    {
+      "concept": "short-run-phillips-curve",
+      "beforeErrors": [
+        "Legendary Mode: legendary needs 6, found 2"
+      ],
+      "afterErrors": [
+        "Legendary Mode: legendary needs 6, found 2"
+      ]
+    },
+    {
+      "concept": "sources-of-productivity",
+      "beforeErrors": [
+        "Standard Campaign: hard needs 6, found 3",
+        "Timed Trial: hard needs 6, found 3",
+        "Exam Drill: hard needs 6, found 3",
+        "Quiz: hard needs 5, found 3",
+        "Unlimited Practice: hard needs 6, found 3",
+        "Legendary Mode: legendary needs 6, found 3",
+        "Score Attack: hard needs 6, found 3",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Standard Campaign: hard needs 6, found 3",
+        "Timed Trial: hard needs 6, found 3",
+        "Exam Drill: hard needs 6, found 3",
+        "Quiz: hard needs 5, found 3",
+        "Unlimited Practice: hard needs 6, found 3",
+        "Legendary Mode: legendary needs 6, found 3",
+        "Score Attack: hard needs 6, found 3",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "stabilization-policy",
+      "beforeErrors": [
+        "Legendary Mode: legendary needs 6, found 5",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Legendary Mode: legendary needs 6, found 5",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "unemployment-measurement",
+      "beforeErrors": [
+        "Legendary Mode: legendary needs 6, found 5",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Legendary Mode: legendary needs 6, found 5",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    },
+    {
+      "concept": "unemployment-types",
+      "beforeErrors": [
+        "Standard Campaign: hard needs 6, found 3",
+        "Timed Trial: hard needs 6, found 3",
+        "Exam Drill: hard needs 6, found 3",
+        "Quiz: hard needs 5, found 3",
+        "Unlimited Practice: hard needs 6, found 3",
+        "Legendary Mode: legendary needs 6, found 3",
+        "Score Attack: hard needs 6, found 3",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ],
+      "afterErrors": [
+        "Standard Campaign: hard needs 6, found 3",
+        "Timed Trial: hard needs 6, found 3",
+        "Exam Drill: hard needs 6, found 3",
+        "Quiz: hard needs 5, found 3",
+        "Unlimited Practice: hard needs 6, found 3",
+        "Legendary Mode: legendary needs 6, found 3",
+        "Score Attack: hard needs 6, found 3",
+        "Trial by Graph: graphSafe needs 10, found 0"
+      ]
+    }
+  ]
+}

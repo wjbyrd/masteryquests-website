@@ -2,7 +2,7 @@
 const fs=require('fs'),path=require('path'),assert=require('assert/strict'),crypto=require('crypto');
 const core=require('../composer-core.js'),h=require('./composer-test-helpers.js'),con=require('./composer-integrity-contracts.js'),approved=require('./faculty-validation-revisions.js'),style=require('./faculty-prose-candidates.js');
 const root=path.resolve(__dirname,'../../..'),out=path.join(root,'audit_tools/faculty_remediation_20261008'),data=path.join(root,'build/faculty-build-composer/data');
-const lib=h.loadComposerLibrary();approved.assertCurrentLibrary(lib);const before=approved.beforeFacultyValidationLibrary(lib),ledger=approved.facultyValidationLedger;
+const current=h.loadComposerLibrary();approved.assertCurrentLibrary(current);const lib=approved.beforeEasyPoolReviewLibrary(current);const before=approved.beforeFacultyValidationLibrary(lib),ledger=approved.facultyValidationLedger;
 const records=l=>new Map(con.questionRecords(l).map(r=>[String(r.question.id),r.question]));
 const old=records(before),now=records(lib),selected=new Set(ledger.changes.map(c=>c.id)),area=require('../course-area-model.js').create(lib.registry.concepts);
 function memberships(l){const m={};for(const cid of Object.keys(l.concepts))for(const q of core.ContentScope.allQuestions(core.resolveConceptModule(l,cid))){m[String(q.id)]??=new Set();for(const a of area.areasFor(cid))m[String(q.id)].add(a);}return Object.fromEntries(Object.entries(m).map(([id,a])=>[id,[...a].sort()]));}
@@ -13,7 +13,7 @@ for(const id of ['P72-OPPC-B2-004','P62E-COP-B2-025','PM2B3-POL-EB-002'])assert.
 assert.equal(now.get('ECON-NL-HARD-236').canonicalDifficulty,'medium');assert.equal(now.get('P62B-ELAS-C-026').canonicalDifficulty,'hard');assert.equal(now.get('PMA-ITP-H-003').canonicalDifficulty,'elite');assert.equal(now.get('PG3-MEQ-M-008').canonicalDifficulty,'easy');
 for(const id of ['42660','42697'])assert(!now.has(id));
 assert.deepEqual(lib.assetInventory,before.assetInventory);
-con.assertCanonicalIntegrity(lib,{registry:JSON.parse(fs.readFileSync(path.join(data,'composer_registry.json'),'utf8')),manifest:JSON.parse(fs.readFileSync(path.join(data,'composer_library_manifest.json'),'utf8')),readBytes:a=>fs.readFileSync(path.join(data,a.runtimePath))});
+con.assertCanonicalIntegrity(current,{registry:JSON.parse(fs.readFileSync(path.join(data,'composer_registry.json'),'utf8')),manifest:JSON.parse(fs.readFileSync(path.join(data,'composer_library_manifest.json'),'utf8')),readBytes:a=>fs.readFileSync(path.join(data,a.runtimePath))});
 const checks=[];const near=(a,b)=>assert(Math.abs(a-b)<.011,`${a} != ${b}`);
 for(const c of ledger.changes){
  const q=c.afterRecord,k=q.options[c.correctIndex];

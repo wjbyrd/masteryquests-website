@@ -1,0 +1,431 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_BASELINE_FAILURE",
+  "librarySha256": "e37b89651ea14cc039b5d9cac8a3680d979d45dbdf4f4e36e5afbd7ce79822db",
+  "sourceFileSha256": "b97f42a433d87029eb8e8a7d4206f55eb89b041c9116142148cbeacad8a1224e",
+  "regressionPassed": 41,
+  "regressionTotal": 42,
+  "regressions": [
+    {
+      "runner": "run_deployment_versioning_validation.cjs",
+      "status": "PASS",
+      "seconds": 0.622,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_macro_faculty_closure_validation.js",
+      "status": "PASS",
+      "seconds": 105.698,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_content_scope_validation.js",
+      "status": "PASS",
+      "seconds": 31.034,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_default_character_set_validation.js",
+      "status": "PASS",
+      "seconds": 0.142,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_exam_navigation_boss_reveal_validation.js",
+      "status": "PASS",
+      "seconds": 0.16,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_checkpoint_artifact_exam_integrity_validation.js",
+      "status": "PASS",
+      "seconds": 0.148,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_standard_boss_progression_validation.mjs",
+      "status": "PASS",
+      "seconds": 0.437,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_guide_intro_validation.js",
+      "status": "PASS",
+      "seconds": 0.141,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_phase1_targeted_repair_validation.js",
+      "status": "PASS",
+      "seconds": 0.427,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_phase15_production_hardening_validation.js",
+      "status": "FAIL",
+      "seconds": 0.384,
+      "exitCode": 1
+    },
+    {
+      "runner": "run_visibility_aware_telemetry_validation.js",
+      "status": "PASS",
+      "seconds": 0.165,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_generated_telemetry_smoke.js",
+      "status": "PASS",
+      "seconds": 0.382,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_question_id_telemetry_validation.mjs",
+      "status": "PASS",
+      "seconds": 2.584,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_answer_analysis_validation.mjs",
+      "status": "PASS",
+      "seconds": 2.921,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_phase3a_official_theme_validation.js",
+      "status": "PASS",
+      "seconds": 11.782,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_phase3b_custom_asset_validation.js",
+      "status": "PASS",
+      "seconds": 1.991,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_phase3e_graph_question_sync_validation.mjs",
+      "status": "PASS",
+      "seconds": 10.342,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_question_quality_auditor_validation.mjs",
+      "status": "PASS",
+      "seconds": 10.537,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_macro_phase2_taxonomy_validation.mjs",
+      "status": "PASS",
+      "seconds": 25.11,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_checkpoint_remediation_design_change_validation.mjs",
+      "status": "PASS",
+      "seconds": 0.223,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_legendary_final_checkpoint_validation.mjs",
+      "status": "PASS",
+      "seconds": 0.196,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_concept_review_integration.js",
+      "status": "PASS",
+      "seconds": 12.853,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_mastery_report_concept_reviews.js",
+      "status": "PASS",
+      "seconds": 0.991,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_mastery_report_2_validation.js",
+      "status": "PASS",
+      "seconds": 1.301,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_mastery_report_state_leak_hotfix.js",
+      "status": "PASS",
+      "seconds": 0.145,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_mode_availability_fix.js",
+      "status": "PASS",
+      "seconds": 1.174,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_quiz_mode_validation.js",
+      "status": "PASS",
+      "seconds": 0.605,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_unlimited_practice_validation.js",
+      "status": "PASS",
+      "seconds": 1.569,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_trial_by_graph_validation.js",
+      "status": "PASS",
+      "seconds": 28.881,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_fading_fortune_validation.js",
+      "status": "PASS",
+      "seconds": 27.61,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_risk_reward_validation.js",
+      "status": "PASS",
+      "seconds": 26.862,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_risk_reward_state_validation.js",
+      "status": "PASS",
+      "seconds": 0.133,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_macro_faculty_voice_validation.js",
+      "status": "PASS",
+      "seconds": 95.752,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_macro_faculty_voice_pass2_validation.js",
+      "status": "PASS",
+      "seconds": 82.979,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_macro_faculty_voice_pass3_validation.js",
+      "status": "PASS",
+      "seconds": 65.131,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_micro_faculty_voice_validation.js",
+      "status": "PASS",
+      "seconds": 76.795,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_micro_faculty_voice_pass3_validation.js",
+      "status": "PASS",
+      "seconds": 44.087,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_faculty_validation_remediation.js",
+      "status": "PASS",
+      "seconds": 30.48,
+      "exitCode": 0,
+      "initialStatus": "FAIL",
+      "rerunEvidence": "remediation-final.log",
+      "note": "Historical content is restored; current registry and manifest are checked against the current library."
+    },
+    {
+      "runner": "run_repeated_game_distractors_validation.js",
+      "status": "PASS",
+      "seconds": 23.432,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_easy_pool_review_validation.cjs",
+      "status": "PASS",
+      "evidence": "validation-final.log"
+    },
+    {
+      "runner": "run_question_bank_comprehensive_validation.mjs",
+      "status": "PASS",
+      "evidence": "comprehensive-final.log"
+    },
+    {
+      "runner": "run_faculty_outcome_validation.js",
+      "status": "PASS",
+      "evidence": "outcomes.log"
+    }
+  ],
+  "knownBaselineFailure": "Untouched Labyrinth of Choice game version fails the existing Phase 1.5 version-pattern assertion; also documented in authoring/hybrid/README.md.",
+  "finalStemRefinements": [
+    "P62I-OLI-E-009",
+    "PM8-OLI-E-032",
+    "P62I-OLI-E-008",
+    "PM8-OLI-E-012"
+  ],
+  "finalReruns": [
+    "run_easy_pool_review_validation.cjs",
+    "run_question_bank_comprehensive_validation.mjs",
+    "run_faculty_validation_remediation.js"
+  ],
+  "focused": {
+    "status": "PASS",
+    "canonicalQuestions": 9777,
+    "flaggedQuestionsAddressed": 195,
+    "changedQuestions": 409,
+    "difficultyChanges": 129,
+    "ordinaryPoolMoves": 11,
+    "contextEdits": 255,
+    "learnerReplacements": 21,
+    "algebraExplanationsChecked": 12,
+    "correctAnswerPositionsPreserved": true,
+    "allUnrelatedRecordsPreserved": true,
+    "checkpointStagesAndRepairRoutesPreserved": true,
+    "composition": 59
+  },
+  "comprehensive": {
+    "status": "PASS",
+    "questions": 9777,
+    "changed": 273,
+    "legendaryCueFlags": [
+      457,
+      102
+    ],
+    "presets": 13
+  },
+  "facultyOutcomes": {
+    "ok": true,
+    "assertions": 193985,
+    "concepts": 149,
+    "outcomes": 222,
+    "combinations": 536,
+    "presets": 13,
+    "modes": 10
+  },
+  "exporterTestsPassed": 25,
+  "pdfCsvVerification": {
+    "status": "PASS",
+    "sourceSha256": "b97f42a433d87029eb8e8a7d4206f55eb89b041c9116142148cbeacad8a1224e",
+    "disciplines": {
+      "general": {
+        "rows": 1589,
+        "pdfPages": 825,
+        "changedQuestionsVerified": 7,
+        "visuallySampledQuestions": [
+          "P77-MVM-EASYB-023",
+          "P62D-ITP-B1-012",
+          "PG2-CEIL-E-001"
+        ]
+      },
+      "micro": {
+        "rows": 6297,
+        "pdfPages": 3485,
+        "changedQuestionsVerified": 292,
+        "visuallySampledQuestions": [
+          "P62H-MCMP-B1-002",
+          "P62G-MON-B1-014",
+          "PM5-PC-R-043",
+          "PM8-OLI-R-073",
+          "P62F-PC-E-041",
+          "PM8-OLI-E-032"
+        ]
+      },
+      "macro": {
+        "rows": 4747,
+        "pdfPages": 2499,
+        "changedQuestionsVerified": 121,
+        "visuallySampledQuestions": [
+          "LG-Q-2009",
+          "PM2C2-FISH-EB-001",
+          "PMOE-RER-B1-002",
+          "PG3-AS-E-002",
+          "ECON-NL-EASYBOSS-2035"
+        ]
+      }
+    }
+  },
+  "excelVerification": [
+    {
+      "file": "general_economics_question_bank.xlsx",
+      "rows": 1589,
+      "allCellsMatchCsv": true
+    },
+    {
+      "file": "microeconomics_question_bank.xlsx",
+      "rows": 6297,
+      "allCellsMatchCsv": true
+    },
+    {
+      "file": "macroeconomics_question_bank.xlsx",
+      "rows": 4747,
+      "allCellsMatchCsv": true
+    },
+    {
+      "file": "microeconomics_manual_review.xlsx",
+      "reviewerColumnsAndDropdownsPreserved": true,
+      "hiddenSheetPreserved": true,
+      "allPageReferencesVerified": true,
+      "manualCsvReviewerColumnsPreserved": true
+    }
+  ],
+  "facultyFiles": [
+    {
+      "file": "general_economics_question_bank.pdf",
+      "bytes": 3979483,
+      "sha256": "d7b7dfba5f3ab3babc24fbf3ce2563942dc3e1f3cbcc6e366e537fa15e923433"
+    },
+    {
+      "file": "general_economics_question_bank.csv",
+      "bytes": 1178380,
+      "sha256": "f12a8f57b7fa9e953a33b04bcb0c61899c1de80dd2e1b9a88282f37b46043ee7"
+    },
+    {
+      "file": "general_economics_question_bank.xlsx",
+      "bytes": 359027,
+      "sha256": "eebba4cf763258ed8bb91e52ce3183b80769bccee6f1ddf7b6a5dc749d81eebc"
+    },
+    {
+      "file": "microeconomics_question_bank.pdf",
+      "bytes": 16587046,
+      "sha256": "2cd105ac168cba7d0d3a01e25dbed69cf667e8285ed9adc1fa64f0befc736998"
+    },
+    {
+      "file": "microeconomics_question_bank.csv",
+      "bytes": 4277718,
+      "sha256": "298d25635ddc311ffd2a4c7fbbf922c2aa6ccd29d543174324a764039eec4bb1"
+    },
+    {
+      "file": "microeconomics_question_bank.xlsx",
+      "bytes": 1124112,
+      "sha256": "dabeb0f91f117a77be1163567f2386856fa02e953537cd6d44e4b5b786e4d5b1"
+    },
+    {
+      "file": "macroeconomics_question_bank.pdf",
+      "bytes": 9585503,
+      "sha256": "7add1c89925fbead459bf519cbf1b5a09a7f5c8e3f0ab25ec734ba493dc28244"
+    },
+    {
+      "file": "macroeconomics_question_bank.csv",
+      "bytes": 3602639,
+      "sha256": "7fd33e7e5becea3cbdd657f4ef544e5ab6fe43f6187796bf50df311dbaebfad9"
+    },
+    {
+      "file": "macroeconomics_question_bank.xlsx",
+      "bytes": 1058100,
+      "sha256": "4e09d6025e539b1ff34c8c7f65df74d121fd2e720022ca14c7d1af3b5cca003e"
+    },
+    {
+      "file": "microeconomics_manual_review.csv",
+      "bytes": 347971,
+      "sha256": "dd738933daaa48ee7e2fe95c797c5a32bc746c962b8954743fb91e717e9c2bc2"
+    },
+    {
+      "file": "microeconomics_manual_review.xlsx",
+      "bytes": 174055,
+      "sha256": "281904ecb499f9dd2942765f5cb26b7f1227280838fcc8ba78df31f9ec2532ee"
+    }
+  ],
+  "websiteUpdatePageChanged": false
+}
