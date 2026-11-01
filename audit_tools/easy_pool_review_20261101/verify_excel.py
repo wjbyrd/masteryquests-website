@@ -1,10 +1,13 @@
 """Read-only XLSX/CSV parity and preservation checks, independent of the authoring library."""
 from pathlib import Path
 from zipfile import ZipFile
-import csv,json,xml.etree.ElementTree as ET
+import csv,json,xml.etree.ElementTree as ET,argparse
 HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[1]
 OUT=ROOT/'faculty_exports'
+parser=argparse.ArgumentParser()
+parser.add_argument('--report-directory',type=Path,default=HERE)
+REPORT=parser.parse_args().report_directory
 NS={'s':'http://schemas.openxmlformats.org/spreadsheetml/2006/main'}
 def read_book(path):
     with ZipFile(path) as z:
@@ -62,5 +65,5 @@ for old_row,new_row in zip(old_csv[1:],new_csv[1:]):
     assert old_row[1:]==new_row[1:],'Manual CSV reviewer columns'
     if new_row[2]:assert new_row[0]==str(pages.get(new_row[2],'Not in bank'))
 report[-1].update(allPageReferencesVerified=True,manualCsvReviewerColumnsPreserved=True)
-(HERE/'excel-parity.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf8')
+(REPORT/'excel-parity.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf8')
 print(json.dumps(report))

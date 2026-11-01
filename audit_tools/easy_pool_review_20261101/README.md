@@ -38,9 +38,12 @@ Registry counts and faculty-outcome coverage were recomputed. Outcome definition
 and taxonomy are unchanged. Small standalone concepts can have insufficient
 ordinary difficulty coverage after an honest reclassification; the before/after
 mode diagnostics are retained in `validation.json`. In particular, the
-Saving and Investment Identities slice now has four Easy items, below the
-five-item standalone Quiz threshold. No filler questions were added to hide that
-shortfall. Broad course presets remain validated.
+Saving and Investment Identities slice had four Easy items at the end of this
+review, below the five-item standalone Quiz threshold. The instructor subsequently
+requested five conceptual additions; see
+[`saving_identity_easy_20261101`](../saving_identity_easy_20261101/README.md)
+for the follow-up that brings this pool to nine and restores standalone Quiz
+eligibility. Broad course presets remain validated.
 
 ## Local faculty files
 

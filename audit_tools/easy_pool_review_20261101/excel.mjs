@@ -21,7 +21,12 @@ const report=JSON.parse(await fs.readFile(path.join(output,'validation_summary.j
 assert.equal(report.status,'complete');
 const colName=i=>{let s='';for(i++;i;i=Math.floor((i-1)/26))s=String.fromCharCode(65+(i-1)%26)+s;return s;};
 const results=[];
+const selectedArea=process.argv.find(a=>a.startsWith('--area='))?.slice(7);
+assert(!selectedArea||['general','micro','macro'].includes(selectedArea),'Known course area');
+const reportDirectory=process.argv.find(a=>a.startsWith('--report-directory='))?.slice(19)||here;
+await fs.mkdir(path.join(reportDirectory,'qa'),{recursive:true});
 for(const [area,title]of [['general','General Economics'],['micro','Microeconomics'],['macro','Macroeconomics']]){
+ if(selectedArea&&area!==selectedArea)continue;
  if(process.argv.includes('--micro-only')&&area!=='micro')continue;
  const info=report.disciplines[area],csv=await fs.readFile(path.join(output,info.csv_file),'utf8');
  const wb=await Workbook.fromCSV(csv.replace(/^\uFEFF/,''),{sheetName:title}),sheet=wb.worksheets.getItem(title);
@@ -43,13 +48,20 @@ for(const [area,title]of [['general','General Economics'],['micro','Microeconomi
  assert.equal(values.length-1,info.question_count??values.length-1);
  assert.equal(new Set(values.slice(1).map(r=>r[headers.indexOf('Question ID')])).size,end-1);
  const inspection=await wb.inspect({kind:'table',range:`'${title}'!A1:${last}3`,include:'values',tableMaxRows:3,tableMaxCols:headers.length,maxChars:1800});
- await fs.writeFile(path.join(here,`qa/${area}-xlsx-inspection.json`),inspection.ndjson);
+ await fs.writeFile(path.join(reportDirectory,`qa/${area}-xlsx-inspection.json`),inspection.ndjson);
  const target=path.join(output,info.csv_file.replace(/\.csv$/,'.xlsx'));
  await (await SpreadsheetFile.exportXlsx(wb)).save(target);
  const qcol=headers.indexOf('Question'),fcol=Math.min(headers.length-1,qcol+2);
- const png=await wb.render({sheetName:title,range:`${colName(qcol)}1:${colName(fcol)}4`,scale:1});
- await fs.writeFile(path.join(here,`qa/${area}-xlsx.png`),new Uint8Array(await png.arrayBuffer()));
+ const previewId=process.argv.find(a=>a.startsWith('--preview-id='))?.slice(13);
+ const previewRow=previewId?values.findIndex(r=>r[headers.indexOf('Question ID')]===previewId)+1:1;
+ assert(previewRow>0,'Preview question exists');
+ const png=await wb.render({sheetName:title,range:`${colName(qcol)}${previewRow}:${colName(fcol)}${Math.min(end,previewRow+3)}`,scale:1});
+ await fs.writeFile(path.join(reportDirectory,`qa/${area}-xlsx.png`),new Uint8Array(await png.arrayBuffer()));
  results.push({area,file:path.basename(target),rows:end-1,columns:headers.length});console.log(JSON.stringify(results.at(-1)));
+}
+if(selectedArea){
+ await fs.writeFile(path.join(reportDirectory,'excel-validation.json'),JSON.stringify(results,null,2)+'\n');
+ process.exit(0);
 }
 // Preserve the existing manual review workbook and reviewer-entered columns.
 const manual=path.join(output,'microeconomics_manual_review.xlsx');

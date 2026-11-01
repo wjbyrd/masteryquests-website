@@ -9,6 +9,7 @@ const {spawnSync} = require('child_process');
 // proofs pinned to the prior 135-concept snapshot. They are not forward
 // regressions after Macro Phase 2; its runner validates the exact partitions.
 const ACTIVE_RUNNERS = [
+  'run_saving_identity_easy_validation.cjs',
   'run_easy_pool_review_validation.cjs',
   'run_deployment_versioning_validation.cjs',
   'run_macro_faculty_closure_validation.js',

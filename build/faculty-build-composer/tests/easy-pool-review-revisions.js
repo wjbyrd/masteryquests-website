@@ -3,8 +3,10 @@ const fs=require('node:fs'),path=require('node:path'),assert=require('node:asser
 const {questionRecords}=require('./composer-integrity-contracts.js'),core=require('../composer-core.js');
 const ledger=JSON.parse(fs.readFileSync(path.resolve(__dirname,'../../../audit_tools/easy_pool_review_20261101/expectations.json'),'utf8'));
 const changes=new Map(ledger.changes.map(c=>[c.id,c]));
+const additions=require('./saving-identity-easy-additions.js');
 const sha=s=>crypto.createHash('sha256').update(s).digest('hex');
 function beforeEasyPoolReviewLibrary(current){
+ current=additions.beforeSavingIdentityAdditions(current);
  if(current.librarySha256===ledger.beforeLibrarySha256)return structuredClone(current);
  assert.equal(current.librarySha256,ledger.afterLibrarySha256);
  const payload=structuredClone(current);delete payload.librarySha256;delete payload.registry.librarySha256;assert.equal(sha(core.stableStringify(payload)),ledger.afterLibrarySha256);
@@ -22,6 +24,7 @@ function beforeEasyPoolReviewLibrary(current){
 }
 function wrap(prior){
  return {...prior,easyPoolReviewLedger:ledger,beforeEasyPoolReviewLibrary,
+  savingIdentityAdditions:additions.ledger.additions,addedIds:additions.addedIds,beforeSavingIdentityAdditions:additions.beforeSavingIdentityAdditions,
   approvedIds:new Set([...prior.approvedIds,...changes.keys()]),
   assertCurrentLibrary(current){prior.assertCurrentLibrary(beforeEasyPoolReviewLibrary(current));},
   beforeFacultyValidationLibrary(current){return prior.beforeFacultyValidationLibrary(beforeEasyPoolReviewLibrary(current));},

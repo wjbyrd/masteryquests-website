@@ -1,0 +1,132 @@
+{
+  "status": "PASS",
+  "newQuestions": 5,
+  "quizAvailable": true,
+  "easyPool": 9,
+  "canonicalQuestions": 9782,
+  "tests": [
+    {
+      "runner": "run_saving_identity_easy_validation.cjs",
+      "status": "PASS",
+      "seconds": 36.122,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_question_bank_comprehensive_validation.mjs",
+      "status": "PASS",
+      "seconds": 54.595,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_macro_phase2_taxonomy_validation.mjs",
+      "status": "PASS",
+      "seconds": 34.602,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_faculty_outcome_validation.js",
+      "status": "PASS",
+      "seconds": 16.685,
+      "exitCode": 0
+    },
+    {
+      "runner": "run_quiz_mode_validation.js",
+      "status": "PASS",
+      "seconds": 0.717,
+      "exitCode": 0
+    }
+  ],
+  "pdfCsvVerification": {
+    "status": "PASS",
+    "sourceSha256": "b0923b72786ee0e645b7eb2e7148af961e163b4e1eafef4c4c435aa472160314",
+    "disciplines": {
+      "general": {
+        "rows": 1589,
+        "pdfPages": 825,
+        "changedQuestionsVerified": 7,
+        "visuallySampledQuestions": [
+          "P77-MVM-EASYB-023",
+          "P62D-ITP-B1-012",
+          "PG2-CEIL-E-001"
+        ]
+      },
+      "micro": {
+        "rows": 6297,
+        "pdfPages": 3485,
+        "changedQuestionsVerified": 292,
+        "visuallySampledQuestions": [
+          "P62H-MCMP-B1-002",
+          "P62G-MON-B1-014",
+          "PM5-PC-R-043",
+          "PM8-OLI-R-073",
+          "P62F-PC-E-041",
+          "PM8-OLI-E-032"
+        ]
+      },
+      "macro": {
+        "rows": 4752,
+        "pdfPages": 2502,
+        "changedQuestionsVerified": 126,
+        "visuallySampledQuestions": [
+          "SLF-ID-E-001",
+          "SLF-ID-E-002",
+          "SLF-ID-E-003",
+          "SLF-ID-E-004",
+          "SLF-ID-E-005"
+        ]
+      }
+    }
+  },
+  "excelVerification": [
+    {
+      "file": "general_economics_question_bank.xlsx",
+      "rows": 1589,
+      "allCellsMatchCsv": true
+    },
+    {
+      "file": "microeconomics_question_bank.xlsx",
+      "rows": 6297,
+      "allCellsMatchCsv": true
+    },
+    {
+      "file": "macroeconomics_question_bank.xlsx",
+      "rows": 4752,
+      "allCellsMatchCsv": true
+    },
+    {
+      "file": "microeconomics_manual_review.xlsx",
+      "reviewerColumnsAndDropdownsPreserved": true,
+      "hiddenSheetPreserved": true,
+      "allPageReferencesVerified": true,
+      "manualCsvReviewerColumnsPreserved": true
+    }
+  ],
+  "unrelatedWorkbooksUnchanged": {
+    "general_economics_question_bank.xlsx": true,
+    "microeconomics_manual_review.xlsx": true,
+    "microeconomics_question_bank.xlsx": true
+  },
+  "sourceFileSha256": "b0923b72786ee0e645b7eb2e7148af961e163b4e1eafef4c4c435aa472160314",
+  "files": {
+    "general_economics_question_bank.pdf": {
+      "bytes": 3979483,
+      "sha256": "00363d5323133908b15a29b6689967f7a128c26d2ddf6b1e714a1587f34e33d5"
+    },
+    "microeconomics_question_bank.pdf": {
+      "bytes": 16587046,
+      "sha256": "96474bcffae8bbe67523502a7408b88130661bc3ef9b62f74d97ee3734da0e20"
+    },
+    "macroeconomics_question_bank.pdf": {
+      "bytes": 9589230,
+      "sha256": "f270da8cfe9c2f9579a2d83e7197f10613a5fd0890a97cc4275f555fac762ee7"
+    },
+    "macroeconomics_question_bank.csv": {
+      "bytes": 3605592,
+      "sha256": "753fa50ccbe0f9782754f176e908777d3280e5ce847f3fba76905f6e421c0154"
+    },
+    "macroeconomics_question_bank.xlsx": {
+      "bytes": 1059014,
+      "sha256": "c2d4a7b8adfd19970502554e343a005b75ad55ff2a2c41547daeba418cb7e2ab"
+    }
+  }
+}

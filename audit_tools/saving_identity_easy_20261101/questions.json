@@ -1,0 +1,52 @@
+[
+  {
+    "id": "SLF-ID-E-001",
+    "q": "What is household saving?",
+    "options": ["Income spent on current consumption", "After-tax income not spent on consumption", "Money borrowed for current consumption", "Income paid to the government in taxes"],
+    "correctIndex": 1,
+    "objective": "SLF1",
+    "type": "definition",
+    "feedback": "Household saving is the part of after-tax income that is not used for current consumption. Saving does not require keeping the money as cash.",
+    "commonError": "Confuses saving with borrowing or current consumption."
+  },
+  {
+    "id": "SLF-ID-E-002",
+    "q": "In GDP accounting, which activity counts as investment?",
+    "options": ["Buying shares from another investor", "Buying groceries for a household", "Buying a newly produced factory machine", "Buying an existing government bond"],
+    "correctIndex": 2,
+    "objective": "SLF1",
+    "type": "concept",
+    "feedback": "The new factory machine adds to productive capital and counts as investment in GDP. Purchases of existing stocks or bonds transfer financial assets; groceries are consumption.",
+    "commonError": "Treats a purchase of an existing financial asset as investment in GDP."
+  },
+  {
+    "id": "SLF-ID-E-003",
+    "q": "A government collects more in taxes than it spends on transfers and government purchases. Its public saving is:",
+    "options": ["Positive", "Negative", "Zero", "Equal to private saving"],
+    "correctIndex": 0,
+    "objective": "SLF2",
+    "type": "concept",
+    "feedback": "Public saving is positive when tax revenue exceeds transfers and government purchases. The government has revenue left over rather than a shortfall.",
+    "commonError": "Confuses a government surplus with negative public saving."
+  },
+  {
+    "id": "SLF-ID-E-004",
+    "q": "Which two components make up national saving?",
+    "options": ["Consumption and government purchases", "Tax revenue and household consumption", "Investment and government purchases", "Private saving and public saving"],
+    "correctIndex": 3,
+    "objective": "SLF2",
+    "type": "definition",
+    "feedback": "National saving combines private saving with public saving. Negative public saving reduces national saving rather than being left out.",
+    "commonError": "Confuses components of spending with components of national saving."
+  },
+  {
+    "id": "SLF-ID-E-005",
+    "q": "In a closed economy, national saving finances which category of spending?",
+    "options": ["Household consumption", "Domestic investment", "Government purchases", "Foreign investment"],
+    "correctIndex": 1,
+    "objective": "SLF3",
+    "type": "concept",
+    "feedback": "A closed economy does not borrow from or lend to other countries. Its national saving finances domestic investment, such as new equipment, buildings, and inventories.",
+    "commonError": "Confuses the use of saved resources with current consumption or foreign investment."
+  }
+]
