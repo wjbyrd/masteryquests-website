@@ -1,0 +1,12 @@
+'use strict';
+const fs=require('fs'),path=require('path'),assert=require('assert/strict');
+const root=path.resolve(__dirname,'../..'),dir=path.join(root,'build/faculty-build-composer'),core=require(path.join(dir,'composer-core.js')),con=require(path.join(dir,'tests/composer-integrity-contracts.js')),h=require(path.join(dir,'tests/composer-test-helpers.js')),adapter=require(path.join(dir,'tests/repair-review-acceptance.js'));
+const lib=h.loadComposerLibrary(),ledger=require('./expectations.json');con.assertCanonicalIntegrity(lib);
+const before=adapter.beforeRepairAcceptance(lib),old=new Map(con.questionRecords(before).map(r=>[String(r.question.id),r.question])),now=new Map(con.questionRecords(lib).map(r=>[String(r.question.id),r.question])),id=ledger.changes[0].id,cid='cpi-and-inflation-measurement',skill='inflation_rate';
+assert.equal(now.size,9802);for(const [key,q]of now)assert.deepEqual(q,key===id?{...old.get(key),instructionalRole:'repair'}:old.get(key));
+const input={title:'Repair role',slug:'repair-role',selectedConceptIds:[cid],supportedModes:core.MODE_ORDER},a=core.compose(before,input),b=core.compose(lib,input);
+assert.deepEqual(a.banks,b.banks);assert.equal(b.repairQuestions.length,a.repairQuestions.length+1);assert.equal(b.bridgeQuestions.length,a.bridgeQuestions.length-1);
+assert(b.repairQuestions.some(q=>String(q.id)===id));assert(b.microSkillRepairPools[skill].some(q=>String(q.id)===id));assert(!b.bridgeQuestions.some(q=>String(q.id)===id));assert(!Object.values(b.microSkillBridgePools).flat().some(q=>String(q.id)===id));
+assert.deepEqual(a.validation.modes.map(m=>[m.mode,m.ok]),b.validation.modes.map(m=>[m.mode,m.ok]));
+assert.equal(con.questionRecords(lib).filter(r=>r.question.instructionalRole==='repairSeed').length,0);
+const result={status:'PASS',librarySha256:lib.librarySha256,returnedToRepair:id,canonicalQuestions:9802,unchangedOtherQuestions:9801,allQuestionContentAnswersAndDifficultyUnchanged:true,repairAndBridgeRoutesVerified:true,ordinaryBanksAndSupportedModesUnchanged:true,previousSeedPromotionPreserved:true};fs.writeFileSync(path.join(__dirname,'validation.json'),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result));

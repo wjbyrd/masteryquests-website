@@ -2,7 +2,7 @@
 (function(root,data){if(typeof module==='object'&&module.exports)module.exports=data;else root.MQFacultyOutcomePolicy=data;})(typeof globalThis!=='undefined'?globalThis:this,{
   "schemaVersion": 1,
   "policyVersion": "faculty-lo-1",
-  "librarySha256": "02ecab7d94216f1231f79bb914e5e93a25925aa0a5a5f45395a2a9bc4f4a7d90",
+  "librarySha256": "c74ce8166663260c6336339d57fbdbf0c338b4d608853d429b7116ac6c9aafc8",
   "concepts": {
     "ad-as-equilibrium-and-output-gaps": {
       "outcomes": [
@@ -2120,8 +2120,8 @@
           "coverage": {
             "ordinary": 39,
             "checkpoints": 19,
-            "repair": 3,
-            "bridge": 3,
+            "repair": 4,
+            "bridge": 2,
             "seed": 0,
             "difficulty": {
               "easy": 9,
@@ -13717,5 +13717,5 @@
       "hidden": false
     }
   },
-  "policySha256": "4de4de3d30b02c011d6e25871b6f1c6acb892ca8655ccb7d670675c00a435953"
+  "policySha256": "54f57dd729abb71fefc8a5a632ac3117a47b93c37312ccd7be655da491657fce"
 });

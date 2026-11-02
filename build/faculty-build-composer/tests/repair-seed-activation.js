@@ -3,6 +3,7 @@ const assert=require('assert/strict'),crypto=require('crypto'),core=require('../
 const ledger=require('../../../audit_tools/repair_seed_activation_20261102/expectations.json'),changes=new Map(ledger.changes.map(c=>[c.id,c]));
 const hash=l=>{const p=structuredClone(l);delete p.librarySha256;delete p.registry.librarySha256;return crypto.createHash('sha256').update(core.stableStringify(p)).digest('hex');};
 function beforeSeedActivation(current){
+ current=require('./repair-review-acceptance.js').beforeRepairAcceptance(current);
  if(current.librarySha256!==ledger.afterLibrarySha256)return current;assert.equal(hash(current),ledger.afterLibrarySha256);
  const restored=structuredClone(current),seen=new Set();
  for(const r of questionRecords(restored)){const c=changes.get(String(r.question.id));if(!c)continue;assert.deepEqual(r.question,c.afterRecord);r.question.instructionalRole=c.beforeRecord.instructionalRole;seen.add(c.id);}
