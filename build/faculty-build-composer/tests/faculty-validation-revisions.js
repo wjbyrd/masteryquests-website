@@ -47,3 +47,4 @@ function beforeApprovedRevisions(id,fallback){return prior.beforeApprovedRevisio
 module.exports=require('./easy-pool-review-revisions.js').wrap({...prior,approvedIds:new Set([...prior.approvedIds,...changes.keys()]),assertCurrentLibrary,applyApprovedRevisions,approvedQuestion,beforeApprovedRevisions,beforeFacultyValidationLibrary,facultyValidationLedger:ledger});
 module.exports=require('./elite-pool-revisions.js').wrap(module.exports);
 module.exports=require('./review-flags-20261102.js').wrap(module.exports);
+module.exports=require('./medium-review-revisions.js').wrap(module.exports);

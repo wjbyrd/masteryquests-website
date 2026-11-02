@@ -3,6 +3,7 @@ const assert=require('assert/strict'),crypto=require('crypto'),core=require('../
 const ledger=require('../../../audit_tools/review_flags_20261102/expectations.json'),changes=new Map(ledger.changes.map(c=>[c.id,c]));
 const hash=l=>{const p=structuredClone(l);delete p.librarySha256;delete p.registry.librarySha256;return crypto.createHash('sha256').update(core.stableStringify(p)).digest('hex');};
 function beforeReviewFlags(current){
+ current=require('./medium-review-revisions.js').beforeMediumReview(current);
  if(current.librarySha256!==ledger.afterLibrarySha256)return current;
  assert.equal(hash(current),ledger.afterLibrarySha256);
  const restored=structuredClone(current),seen=new Set();

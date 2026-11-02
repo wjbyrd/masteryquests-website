@@ -20,6 +20,17 @@ if(process.argv.includes('--inspect')){
 const report=JSON.parse(await fs.readFile(path.join(output,'validation_summary.json'),'utf8'));
 assert.equal(report.status,'complete');
 const colName=i=>{let s='';for(i++;i;i=Math.floor((i-1)/26))s=String.fromCharCode(65+(i-1)%26)+s;return s;};
+// Keep HTML tables usable in the faculty workbook while CSV retains bank markup.
+function readableTables(value){
+ return String(value).replace(/<table\b[^>]*>([\s\S]*?)<\/table>/gi,(_,table)=>{
+  const clean=s=>s.replace(/<\/?(?:b|strong|em|i|span)\b[^>]*>/gi,'').trim();
+  const caption=table.match(/<caption\b[^>]*>([\s\S]*?)<\/caption>/i)?.[1];
+  const rows=[...table.matchAll(/<tr\b[^>]*>([\s\S]*?)<\/tr>/gi)].map(r=>[...r[1].matchAll(/<t[dh]\b[^>]*>([\s\S]*?)<\/t[dh]>/gi)].map(c=>clean(c[1])));
+  assert(rows.length&&rows.every(r=>r.length===rows[0].length),'Rectangular question table');
+  const widths=rows[0].map((_,i)=>Math.max(...rows.map(r=>r[i].length)));
+  return '\n'+(caption?clean(caption)+'\n':'')+rows.map(r=>r.map((c,i)=>c.padEnd(widths[i])).join(' | ').trimEnd()).join('\n');
+ });
+}
 const results=[];
 const selectedArea=process.argv.find(a=>a.startsWith('--area='))?.slice(7);
 assert(!selectedArea||['general','micro','macro'].includes(selectedArea),'Known course area');
@@ -33,6 +44,8 @@ for(const [area,title]of [['general','General Economics'],['micro','Microeconomi
  const info=report.disciplines[area],csv=await fs.readFile(path.join(output,info.csv_file),'utf8');
  const wb=await Workbook.fromCSV(csv.replace(/^\uFEFF/,''),{sheetName:title}),sheet=wb.worksheets.getItem(title);
  const values=sheet.getUsedRange().values,headers=values[0],last=colName(headers.length-1),end=values.length;
+ const tableRows=[],questionColumn=headers.indexOf('Question');
+ for(let r=1;r<end;r++)if(/<table\b/i.test(String(values[r][questionColumn]))){values[r][questionColumn]=readableTables(values[r][questionColumn]);sheet.getRange(`${colName(questionColumn)}${r+1}`).values=[[values[r][questionColumn]]];tableRows.push(r+1);}
  const all=sheet.getRange(`A1:${last}${end}`);all.format.font={name:'Arial',size:10};all.format.verticalAlignment='top';
  all.format.rowHeight=32;sheet.showGridLines=false;
  sheet.getRange(`A1:${last}1`).format={fill:'#24465B',font:{name:'Arial',size:10,bold:true,color:'#FFFFFF'},rowHeight:32,wrapText:true};
@@ -46,6 +59,7 @@ for(const [area,title]of [['general','General Economics'],['micro','Microeconomi
   sheet.getRange(`A${r+1}:${last}${r+1}`).format.rowHeight=Math.min(409,Math.max(34,lines*14+8));
  }
  const table=sheet.tables.add(`A1:${last}${end}`,true,`${area}QuestionBank`);table.showFilterButton=true;
+ for(const r of tableRows){sheet.getRange(`${colName(questionColumn)}${r}`).format.font={name:'Consolas',size:10};sheet.getRange(`A${r}:${last}${r}`).format.rowHeight=Math.min(409,sheet.getRange(`A${r}:${last}${r}`).format.rowHeight+20);}
  wb.recalculate();
  assert.equal(values.length-1,info.question_count??values.length-1);
  assert.equal(new Set(values.slice(1).map(r=>r[headers.indexOf('Question ID')])).size,end-1);
@@ -60,10 +74,11 @@ for(const [area,title]of [['general','General Economics'],['micro','Microeconomi
  assert(previewRow>0,'Preview question exists');
  const png=await wb.render({sheetName:title,range:`${colName(qcol)}${previewRow}:${colName(fcol)}${Math.min(end,previewRow+3)}`,scale:1});
  await fs.writeFile(path.join(reportDirectory,`qa/${area}-xlsx.png`),new Uint8Array(await png.arrayBuffer()));
- results.push({area,file:path.basename(target),rows:end-1,columns:headers.length});console.log(JSON.stringify(results.at(-1)));
+ results.push({area,file:path.basename(target),rows:end-1,columns:headers.length,readableQuestionTables:tableRows.length});console.log(JSON.stringify(results.at(-1)));
 }
 if(selectedArea){
- await fs.writeFile(path.join(reportDirectory,'excel-validation.json'),JSON.stringify(results,null,2)+'\n');
+ let previous=[];try{previous=JSON.parse(await fs.readFile(path.join(reportDirectory,'excel-validation.json'),'utf8'));}catch{}
+ await fs.writeFile(path.join(reportDirectory,'excel-validation.json'),JSON.stringify([...previous.filter(r=>!results.some(n=>n.file===r.file)),...results],null,2)+'\n');
  process.exit(0);
 }
 // Preserve the existing manual review workbook and reviewer-entered columns.

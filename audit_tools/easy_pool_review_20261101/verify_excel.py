@@ -1,7 +1,8 @@
 """Read-only XLSX/CSV parity and preservation checks, independent of the authoring library."""
 from pathlib import Path
 from zipfile import ZipFile
-import csv,json,xml.etree.ElementTree as ET,argparse
+import csv,json,xml.etree.ElementTree as ET,argparse,re
+from html.parser import HTMLParser
 HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[1]
 OUT=ROOT/'faculty_exports'
@@ -12,6 +13,25 @@ args=parser.parse_args()
 REPORT=args.report_directory
 BASELINE=args.baseline_directory
 NS={'s':'http://schemas.openxmlformats.org/spreadsheetml/2006/main'}
+
+class QuestionTable(HTMLParser):
+    def __init__(self):super().__init__();self.rows=[];self.caption='';self.target=None
+    def handle_starttag(self,tag,attrs):
+        if tag=='tr':self.rows.append([])
+        if tag in ('td','th'):self.rows[-1].append('');self.target='cell'
+        if tag=='caption':self.target='caption'
+    def handle_endtag(self,tag):
+        if tag in ('td','th','caption'):self.target=None
+    def handle_data(self,data):
+        if self.target=='cell':self.rows[-1][-1]+=data
+        elif self.target=='caption':self.caption+=data
+
+def readable_tables(value):
+    def render(match):
+        p=QuestionTable();p.feed(match.group());rows=[[c.strip() for c in r] for r in p.rows]
+        widths=[max(len(r[i]) for r in rows) for i in range(len(rows[0]))]
+        return '\n'+(p.caption.strip()+'\n' if p.caption else '')+'\n'.join(' | '.join(c.ljust(widths[i]) for i,c in enumerate(r)).rstrip() for r in rows)
+    return re.sub(r'<table\b[^>]*>.*?</table>',render,value,flags=re.I|re.S)
 def read_book(path):
     with ZipFile(path) as z:
         shared=[]
@@ -41,11 +61,14 @@ def read_book(path):
 report=[]
 for stem in ['general_economics','microeconomics','macroeconomics']:
     with (OUT/f'{stem}_question_bank.csv').open(encoding='utf-8-sig',newline='') as f:expected=list(csv.reader(f))
+    question_column=expected[0].index('Question');table_count=0
+    for row in expected[1:]:
+        if '<table' in row[question_column].lower():row[question_column]=readable_tables(row[question_column]);table_count+=1
     actual=next(iter(read_book(OUT/f'{stem}_question_bank.xlsx').values()))['rows']
     assert len(actual)==len(expected),(stem,len(actual),len(expected))
     for i,(a,e) in enumerate(zip(actual,expected)):
         a=a+['']*(len(e)-len(a));assert a==e,(stem,i,a,e)
-    report.append({'file':stem+'_question_bank.xlsx','rows':len(actual)-1,'allCellsMatchCsv':True})
+    report.append({'file':stem+'_question_bank.xlsx','rows':len(actual)-1,'allCellsMatchCsvWithReadableTables':True,'readableQuestionTables':table_count})
 before=read_book(BASELINE/'microeconomics_manual_review.xlsx')
 after=read_book(OUT/'microeconomics_manual_review.xlsx')
 assert list(before)==list(after)
