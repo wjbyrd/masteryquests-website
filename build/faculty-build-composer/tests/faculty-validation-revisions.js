@@ -48,3 +48,4 @@ module.exports=require('./easy-pool-review-revisions.js').wrap({...prior,approve
 module.exports=require('./elite-pool-revisions.js').wrap(module.exports);
 module.exports=require('./review-flags-20261102.js').wrap(module.exports);
 module.exports=require('./medium-review-revisions.js').wrap(module.exports);
+module.exports=require('./repair-review-revisions.js').wrap(module.exports);

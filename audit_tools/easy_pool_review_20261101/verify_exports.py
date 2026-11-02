@@ -53,7 +53,9 @@ for area,info in report['disciplines'].items():
         row=by_id[c['id']];q=c['afterRecord'];assert row['Question']==q['q']
         assert [row['Choice '+x] for x in 'ABCD']==q['options']
         assert row['Feedback']==q.get('feedback','')
-        assert row['Difficulty'].lower()==q['canonicalDifficulty']
+        expected_difficulty=q.get('canonicalDifficulty',q.get('difficulty',''))
+        if expected_difficulty not in ['easy','medium','hard','elite','legendary']:expected_difficulty=''
+        assert row['Difficulty'].lower()==expected_difficulty
         assert row['Correct Answer'].startswith('ABCD'[c['correctIndex']]+' ')
         start=pages[c['id']]-1
         hay=norm(''.join(text_at(p) for p in range(start,min(start+3,len(pdf)))))
