@@ -32,7 +32,8 @@ const model=require('../course-area-model.js').create(lib.registry.concepts);
   if(entry.runtimeAdaptiveCounts)assert.deepEqual(entry.runtimeAdaptiveCounts,counts(now));
   if(entry.quiz15Status)assert.equal(entry.quiz15Status,'limited');
   for(const outcome of core.FacultyOutcomes.describe(cid).outcomes){
-   const scoped=core.compose(lib,{title:'Coverage',slug:'coverage',selectedConceptIds:[cid],supportedModes:core.MODE_ORDER,contentScopes:{[cid]:{preset:'custom',outcomeIds:[outcome.id]}}});
+   // Published coverage describes the current library, including later approved revisions.
+   const scoped=core.compose(actual,{title:'Coverage',slug:'coverage',selectedConceptIds:[cid],supportedModes:core.MODE_ORDER,contentScopes:{[cid]:{preset:'custom',outcomeIds:[outcome.id]}}});
    assert.deepEqual(outcome.coverage.difficulty,Object.fromEntries(['easy','medium','hard','elite','legendary'].map(k=>[k,scoped.banks[k].length])));
    assert.deepEqual(outcome.coverage.supportedModes,scoped.validation.modes.filter(m=>m.ok).map(m=>m.mode));
   }

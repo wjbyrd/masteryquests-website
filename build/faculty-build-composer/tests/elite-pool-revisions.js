@@ -3,6 +3,7 @@ const assert=require('assert/strict'),crypto=require('crypto'),core=require('../
 const ledger=require('../../../audit_tools/elite_pool_revision_20261101/expectations.json'),changes=new Map(ledger.changes.map(c=>[c.id,c]));
 const hash=l=>{const p=structuredClone(l);delete p.librarySha256;delete p.registry.librarySha256;return crypto.createHash('sha256').update(core.stableStringify(p)).digest('hex');};
 function beforeEliteRevisions(current){
+ current=require('./review-flags-20261102.js').beforeReviewFlags(current);
  if(current.librarySha256!==ledger.afterLibrarySha256)return current;
  assert.equal(hash(current),ledger.afterLibrarySha256,'Current elite bank checksum');
  const restored=structuredClone(current),seen=new Set();

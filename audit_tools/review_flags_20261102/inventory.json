@@ -1,0 +1,3834 @@
+{
+  "baselineCommit": "0d89ff0febcbb0565c81f303706f6a177584d080",
+  "beforeLibrarySha256": "e6b2c315f07f41b3fcf64cb7c497b8d76b36175fac63fe0861fa5cc71d95efd1",
+  "sourceSha256": "db6c1c2f1e9fbab6f58023403be51820f2644ab798a9da3360fde38191a1ae33",
+  "items": [
+    {
+      "id": "42196",
+      "topic": "Market Failures",
+      "question": {
+        "id": "42196",
+        "sourceGame": "public-goods-common-resources-authoring",
+        "q": "A third neighborhood receives a constant marginal benefit of $10,000 per fireworks display. Costs and the two existing benefit curves do not change. Treat quantity as continuous. How many displays are now efficient, and how should the third neighborhood’s benefit be included?",
+        "options": [
+          "Five displays; add the new neighborhood’s marginal benefit vertically to the existing sum.",
+          "Six displays; add the new neighborhood’s marginal benefit vertically to the existing sum.",
+          "Five displays; add its desired display quantity horizontally to the old quantity.",
+          "Six displays; add its desired display quantity horizontally to the old quantity."
+        ],
+        "tag": "excludability-and-rivalry",
+        "type": "graph_interpretation",
+        "objective": "PGCR.1",
+        "difficulty": "elite",
+        "conceptCluster": "public-goods-and-common-resources",
+        "primarySkill": "efficient_public_good_quantity",
+        "secondarySkills": [],
+        "repairSkill": "efficient_public_good_quantity",
+        "commonError": "Treating rivalry as firm competition or assuming a good's category cannot change with access rules or congestion.",
+        "feedback": "Over the relevant range, the plotted benefits sum to 90−10 Q in thousands. Adding 10 gives 100−10 Q. Equating this to the $50,000 MC yields Q = 5. The new beneficiary adds value to the same shared units.",
+        "sourceCurationPhase": "phase-public-goods-common-resources-question-pool-v1",
+        "aHash": "a4ba570e81a0b7be0fc4bfa52fae3c641c8733eb5804008e06f98597e5726786",
+        "image": "question-assets/market-failures/PUBLIC-04.webp",
+        "imageAlt": "Community fireworks graph with North MB, South MB, vertically summed MSB, and MC, with decomposition guides at four displays.",
+        "graphDescription": "The horizontal axis is community fireworks displays per summer. The vertical axis is marginal benefit and marginal cost in thousands of dollars per display. North MB is max of zero and 50 minus 5Q. South MB is max of zero and 40 minus 5Q. MSB is their vertical sum and MC equals $50,000 per display. At four displays, North MB is $30,000, South MB is $20,000, and MSB equals MC at $50,000.",
+        "graphRequired": true,
+        "publicGoodsScenario": "community-fireworks",
+        "canonicalId": "42196",
+        "sourceId": 42196,
+        "sourceChapter": [],
+        "sourcePool": "elite",
+        "sourceHash": "440f1125e8b22c1b1f9230eab6a34c13997c216aff2331e941f792657796eedd",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "public-goods-common-resources-authoring",
+            "sourceFile": "build/faculty-build-composer/authoring/public_goods_common_resources_question_pool_author.mjs",
+            "sourceGlobal": "productionQuestions",
+            "sourcePool": "elite",
+            "routeKey": "PGCR.1",
+            "sourceRecordOrder": 36,
+            "sourceId": 42196,
+            "sourceHash": "440f1125e8b22c1b1f9230eab6a34c13997c216aff2331e941f792657796eedd",
+            "sourceCurationPhase": "phase-public-goods-common-resources-question-pool-v1"
+          }
+        ],
+        "primaryConceptId": "market-failures",
+        "secondaryConceptIds": [],
+        "familyConceptId": "market-failures",
+        "subtopicIds": [
+          "public-goods-and-common-resources"
+        ],
+        "instructionalRole": "main",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Question is confusing and the graph makes it difficult to tell how to get to 5 since we have to assume the scale is in 20s.",
+        "reasons": [
+          "wording",
+          "graph"
+        ],
+        "updated": "2026-11-02T12:32:10.625Z",
+        "reviewedRevision": "",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "ECON-MG-ELITE-326",
+      "topic": "Tax Wedges and Revenue",
+      "question": {
+        "id": "ECON-MG-ELITE-326",
+        "q": "A market faces Qd=1,000−20Pb and Qs=20Ps, where Pb and Ps are buyer and seller prices. A $10 per-unit tax creates Pb−Ps=10. An official forecasts tax revenue using the untaxed quantity. Which corrected revenue and forecast error follow?",
+        "options": [
+          "Actual revenue $4,000 rather than $5,000; quantity falls from 500 to 400.",
+          "Actual revenue $4,000 rather than $5,000; quantity stays 500 but some tax is a transfer.",
+          "Actual revenue $5,000 rather than $4,000; the legal tax rate fixes quantity.",
+          "Actual revenue $6,000 rather than $5,000; adding a tax increases the supply price and quantity."
+        ],
+        "tag": "taxes",
+        "type": "integration",
+        "objective": "LO6.3",
+        "difficulty": "elite",
+        "conceptCluster": "government_policy",
+        "primarySkill": "elasticity_tax_revenue_quantity",
+        "secondarySkills": [
+          "tax_quantity_effect"
+        ],
+        "repairSkill": "tax_wedge_incidence",
+        "commonError": "assumes_higher_tax_always_means_higher_revenue",
+        "feedback": "Without tax, 1,000−20P=20P gives P=25 and Q=500. With Pb=Ps+10, 1,000−20(Ps+10)=20Ps gives Ps=20, Pb=30, and Q=400. Revenue is 10×400=$4,000, $1,000 below the unchanged-quantity forecast.",
+        "aHash": "611591f5f1aefb119e8f7cfffbef66b62ffb086723747ebef3085b29d6c7d702",
+        "canonicalId": "ECON-MG-ELITE-326",
+        "sourceId": 326,
+        "sourceGame": "market-gate",
+        "sourceChapter": [
+          6
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "1b0ca78f63abeb2987a274345ae2b8885849fead42f6005352e7f08124dd6c07",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "market-gate",
+            "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\market-gate\\market_gate_questions_student.js",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "elite",
+            "routeKey": null,
+            "sourceRecordOrder": 26,
+            "sourceId": 326,
+            "sourceHash": "1b0ca78f63abeb2987a274345ae2b8885849fead42f6005352e7f08124dd6c07"
+          }
+        ],
+        "primaryConceptId": "tax-wedges-and-revenue",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Place in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T13:20:17.735Z",
+        "reviewedRevision": "elite-20261101-979153e9fb7f",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "ECON-SP-EASYBOSS-2008",
+      "topic": "Deposit Creation and the Money Multiplier",
+      "question": {
+        "id": "ECON-SP-EASYBOSS-2008",
+        "q": "A banking system receives a fresh $5,000 deposit and requires banks to hold 20 percent as reserves. Using the simple multiplier model, identify the first bank's loan and the maximum total deposit expansion.",
+        "options": [
+          "Initial loan = $4,000; total expansion = $25,000",
+          "Initial loan = $1,000; total expansion = $5,000",
+          "Initial loan = $5,000; total expansion = $25,000",
+          "Initial loan = $4,000; total expansion = $20,000"
+        ],
+        "tag": "money_multiplier_banking",
+        "type": "calculation",
+        "objective": "30.3",
+        "difficulty": "easyboss",
+        "conceptCluster": "bank_money_creation",
+        "primarySkill": "combine_lending_and_multiplier",
+        "secondarySkills": [
+          "reserve_ratio",
+          "excess_reserves",
+          "money_multiplier"
+        ],
+        "repairSkill": "money_multiplier_application",
+        "commonError": "confusing first-round lending with total deposit expansion",
+        "feedback": "The bank lends $4,000. The multiplier is 1/0.20 = 5, so total expansion can reach $25,000.",
+        "aHash": "cb8f2f1c8f1a1cf57661f45077f635f87d90f3d713afd2cb80d92dcf5ccf207b",
+        "canonicalId": "ECON-SP-EASYBOSS-2008",
+        "sourceId": 2008,
+        "sourceGame": "stabilization-protocol",
+        "sourceChapter": [
+          30
+        ],
+        "sourcePool": "easyBoss",
+        "sourceHash": "a4d2663608331037432e5e31c294e20c46b6400117c0fad692941dc185be59a1",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "stabilization-protocol",
+            "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\stabilization-protocol\\stabilization_protocol_questions_student.js",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "easyBoss",
+            "routeKey": null,
+            "sourceRecordOrder": 8,
+            "sourceId": 2008,
+            "sourceHash": "a4d2663608331037432e5e31c294e20c46b6400117c0fad692941dc185be59a1"
+          }
+        ],
+        "primaryConceptId": "deposit-creation-and-money-multiplier",
+        "secondaryConceptIds": [
+          "bank-money-creation",
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "instructionalRole": "boss",
+        "canonicalDifficulty": "easy",
+        "originalSourcePool": "easyBoss",
+        "originalBossTier": "easyBoss",
+        "isCheckpointChallenge": true,
+        "challengeStage": "opening",
+        "requiredConceptIds": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "challengeFocusConceptIds": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "remediationConceptId": "deposit-creation-and-money-multiplier",
+        "challengePathway": "specialist-checkpoint",
+        "challengeSource": "legacy-f11-reclassified",
+        "familyConceptId": "money-banking-fed",
+        "subtopicIds": [
+          "deposit-creation-and-money-multiplier"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "medium",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T13:24:48.283Z",
+        "reviewedRevision": "",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "ECON-SP-EASYBOSS-2011",
+      "topic": "Deposit Creation and the Money Multiplier",
+      "question": {
+        "id": "ECON-SP-EASYBOSS-2011",
+        "q": "In a simple deposit-expansion model with multiplier 5, all reserve adjustments work through deposits, with no currency leakage or excess-reserve holding. A central-bank bond sale is intended to cause a maximum $100 million deposit contraction. What initial reserve change is required, and how does it compare with the total deposit change?",
+        "options": [
+          "$20 million decrease in reserves; the eventual deposit decrease is five times that initial change",
+          "$100 million decrease in reserves; the eventual deposit decrease equals the initial change",
+          "$500 million decrease in reserves; the eventual deposit decrease is one-fifth of the initial change",
+          "$20 million increase in reserves; the eventual deposit decrease offsets the reserve increase"
+        ],
+        "tag": "monetary_policy_tools",
+        "type": "calculation",
+        "objective": "30.4",
+        "difficulty": "easyboss",
+        "conceptCluster": "central_banking",
+        "primarySkill": "apply_bond_sale_multiplier",
+        "secondarySkills": [
+          "open_market_operations",
+          "money_multiplier"
+        ],
+        "repairSkill": "fed_sells_bonds_money_supply",
+        "commonError": "Confuses the desired final deposit contraction with the initial reserve withdrawal.",
+        "feedback": "Work backward from the total deposit change: 100/5=20 million. The bond sale must withdraw reserves, not add them. The initial reserve withdrawal and eventual maximum deposit contraction are different magnitudes under the stated model.",
+        "aHash": "335198e5fc543cdfe76e49a428ff51848d817ed2eb36c61c9b6fd4e7aecccc94",
+        "canonicalId": "ECON-SP-EASYBOSS-2011",
+        "sourceId": 2011,
+        "sourceGame": "stabilization-protocol",
+        "sourceChapter": [
+          30,
+          4
+        ],
+        "sourcePool": "easyBoss",
+        "sourceHash": "6bf881fe4ddfae5eca7014d6e5b02d8b549a3b871ba3751806933e55f6eb56a7",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "stabilization-protocol",
+            "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\stabilization-protocol\\stabilization_protocol_questions_student.js",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "easyBoss",
+            "routeKey": null,
+            "sourceRecordOrder": 11,
+            "sourceId": 2011,
+            "sourceHash": "6bf881fe4ddfae5eca7014d6e5b02d8b549a3b871ba3751806933e55f6eb56a7"
+          }
+        ],
+        "primaryConceptId": "deposit-creation-and-money-multiplier",
+        "secondaryConceptIds": [
+          "monetary-policy-tools",
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "instructionalRole": "boss",
+        "canonicalDifficulty": "easy",
+        "originalSourcePool": "easyBoss",
+        "originalBossTier": "easyBoss",
+        "isCheckpointChallenge": true,
+        "challengeStage": "opening",
+        "requiredConceptIds": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "challengeFocusConceptIds": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "remediationConceptId": "deposit-creation-and-money-multiplier",
+        "challengePathway": "specialist-checkpoint",
+        "challengeSource": "legacy-f11-reclassified",
+        "familyConceptId": "money-banking-fed",
+        "subtopicIds": [
+          "deposit-creation-and-money-multiplier"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "This is an easy boss question, but the question places a lot of cognitive load on the student. Revise the question to fit an easy boss as opposed to a medium boss",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T13:25:44.970Z",
+        "reviewedRevision": "",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "LG-Q-2006",
+      "topic": "Deposit Creation and the Money Multiplier",
+      "question": {
+        "id": "LG-Q-2006",
+        "q": "In a simplified system with a 20% reserve ratio, no currency leakage and no excess reserves, $100 of new reserves enters. A student calls the first bank's $80 initial loan the system's total deposit increase. What is wrong with that claim?",
+        "options": [
+          "The maximum total deposit increase is $100; banks cannot create deposits by lending",
+          "The maximum total deposit increase is $600; add the original reserve injection to the multiplier result again",
+          "The maximum total deposit increase is $500; repeated lending and redepositing extends beyond the first loan",
+          "The maximum total deposit increase is $80; later deposits are excluded from money"
+        ],
+        "tag": "banking_system",
+        "type": "analysis",
+        "objective": "30.3",
+        "difficulty": "easyboss",
+        "conceptCluster": "bank_money_creation",
+        "primarySkill": "identify_fractional_reserve_banking",
+        "secondarySkills": [
+          "reserves",
+          "lending"
+        ],
+        "repairSkill": "fractional_reserve_definition",
+        "commonError": "Incorrectly concludes “The maximum total deposit increase is $100; banks cannot create deposits by lending” in this deposit creation and money multiplier task.",
+        "feedback": "The simple maximum is ΔR/rr = 100/.20 = 500. The first-round loan is not the total expansion; the multiplier result already includes the deposits supported by the initial reserves.",
+        "aHash": "361de20627cf614db389251adfb508278668f90b8d60c471de1ba65c175efd98",
+        "schemaVersion": "2.0.0-pilot",
+        "questionId": "LG-Q-2006",
+        "originalLegacyId": 2006,
+        "sourceGlobal": "questionBanks",
+        "sourcePool": "easyBoss",
+        "sourceRecordOrder": 6,
+        "domainId": "ECON",
+        "conceptId": "ECON-MAC-FRACTIONAL-RESERVE-BANKING",
+        "outcomeIds": [
+          "OUT-MAC-FRACTIONAL-RESERVE-BANKING-01"
+        ],
+        "skillId": "identify_fractional_reserve_banking",
+        "secondarySkillIds": [
+          "reserves",
+          "lending"
+        ],
+        "repairSkillId": "fractional_reserve_definition",
+        "questionType": "boss_scaffold_definition",
+        "assessmentTier": "easy",
+        "poolRole": "boss",
+        "runtimeRole": "easy-boss",
+        "provenance": {
+          "sourceGame": "liquidityGrid",
+          "sourceBank": "liquidity-grid-student",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "easyBoss",
+          "sourceRecordOrder": 6,
+          "legacyId": 2006,
+          "legacyObjective": "30.3"
+        },
+        "answerFormat": "aHash",
+        "resourceMatching": {
+          "sourceObjective": "30.3",
+          "objectiveKey": "LO30.3",
+          "sourceAccurateRecommendationHook": false
+        },
+        "source": {
+          "bankId": "liquidity-grid-student",
+          "legacyId": 2006,
+          "legacyObjective": "30.3",
+          "legacyPool": "questionBanks.easyBoss",
+          "sourceRecordOrder": 6,
+          "sourceGame": "liquidityGrid"
+        },
+        "bossRole": "easy-boss",
+        "canonicalId": "LG-Q-2006",
+        "sourceId": 2006,
+        "sourceGame": "liquidity-grid",
+        "sourceChapter": [
+          30
+        ],
+        "sourceHash": "7dc216a69931742894708039ddd12c947227603ac50c6c78a1e508a02c790efd",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "liquidity-grid",
+            "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\liquidity-grid\\package\\questions.js",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "easyBoss",
+            "routeKey": null,
+            "sourceRecordOrder": 6,
+            "sourceId": 2006,
+            "sourceHash": "7dc216a69931742894708039ddd12c947227603ac50c6c78a1e508a02c790efd"
+          },
+          {
+            "sourceGame": "stabilization-protocol",
+            "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\stabilization-protocol\\stabilization_protocol_questions_student.js",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "easyBoss",
+            "routeKey": null,
+            "sourceRecordOrder": 6,
+            "sourceId": 2006,
+            "sourceHash": "12ea773a8719744a0c9238c2fd88e6750804984e48db48474dedd3e64094c1d9"
+          }
+        ],
+        "primaryConceptId": "deposit-creation-and-money-multiplier",
+        "secondaryConceptIds": [],
+        "instructionalRole": "boss",
+        "canonicalDifficulty": "easy",
+        "originalSourcePool": "easyBoss",
+        "originalBossTier": "easyBoss",
+        "consolidatedSourceCanonicalIds": [
+          "ECON-SP-EASYBOSS-2006"
+        ],
+        "sourcePrimaryConceptId": "bank-money-creation",
+        "familyConceptId": "money-banking-fed",
+        "subtopicIds": [
+          "deposit-creation-and-money-multiplier"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "medium",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T13:25:57.855Z",
+        "reviewedRevision": "",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "LG-Q-2008",
+      "topic": "Deposit Creation and the Money Multiplier",
+      "question": {
+        "id": "LG-Q-2008",
+        "q": "The public deposits $120 of previously held currency in a system with rr=10%, no later currency leakage and no excess reserves. At the maximum deposit expansion predicted by this model, how does total deposit expansion compare with the net increase in M1?",
+        "options": [
+          "Deposits can rise $1200, while net M1 rises $1080 because public currency initially falls $120",
+          "Deposits and net M1 both rise $1200; ignore the reduction in public currency",
+          "Deposits rise $1080 while net M1 rises $1200; subtract the currency from deposits only",
+          "Deposits and net M1 both rise $120; all subsequent loans transfer existing deposits only"
+        ],
+        "tag": "money_multiplier_banking",
+        "type": "analysis",
+        "objective": "30.3",
+        "difficulty": "easyboss",
+        "conceptCluster": "bank_money_creation",
+        "primarySkill": "combine_lending_and_multiplier",
+        "secondarySkills": [
+          "reserve_ratio",
+          "excess_reserves",
+          "money_multiplier"
+        ],
+        "repairSkill": "money_multiplier_application",
+        "commonError": "Incorrectly concludes “Deposits and net M1 both rise $1200; ignore the reduction in public currency” in this deposit creation and money multiplier task.",
+        "feedback": "The deposit maximum is 120/.1 = 1200. M1 includes public currency, which falls 120; net M1 change is 1200−120 = 1080. Deposit growth and net new money differ for an initial currency deposit.",
+        "aHash": "001fcf084b8e6236225e6c40aa38a5b28edaea2007b9b79b7179dee1f0adabc6",
+        "schemaVersion": "2.0.0-pilot",
+        "questionId": "LG-Q-2008",
+        "originalLegacyId": 2008,
+        "sourceGlobal": "questionBanks",
+        "sourcePool": "easyBoss",
+        "sourceRecordOrder": 8,
+        "domainId": "ECON",
+        "conceptId": "ECON-MAC-FRACTIONAL-RESERVE-BANKING",
+        "outcomeIds": [
+          "OUT-MAC-FRACTIONAL-RESERVE-BANKING-01"
+        ],
+        "skillId": "combine_lending_and_multiplier",
+        "secondarySkillIds": [
+          "reserve_ratio",
+          "excess_reserves",
+          "money_multiplier"
+        ],
+        "repairSkillId": "money_multiplier_application",
+        "questionType": "boss_scaffold_synthesis",
+        "assessmentTier": "easy",
+        "poolRole": "boss",
+        "runtimeRole": "easy-boss",
+        "provenance": {
+          "sourceGame": "liquidityGrid",
+          "sourceBank": "liquidity-grid-student",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "easyBoss",
+          "sourceRecordOrder": 8,
+          "legacyId": 2008,
+          "legacyObjective": "30.3"
+        },
+        "answerFormat": "aHash",
+        "resourceMatching": {
+          "sourceObjective": "30.3",
+          "objectiveKey": "LO30.3",
+          "sourceAccurateRecommendationHook": false
+        },
+        "source": {
+          "bankId": "liquidity-grid-student",
+          "legacyId": 2008,
+          "legacyObjective": "30.3",
+          "legacyPool": "questionBanks.easyBoss",
+          "sourceRecordOrder": 8,
+          "sourceGame": "liquidityGrid"
+        },
+        "bossRole": "easy-boss",
+        "canonicalId": "LG-Q-2008",
+        "sourceId": 2008,
+        "sourceGame": "liquidity-grid",
+        "sourceChapter": [
+          30
+        ],
+        "sourceHash": "567d9f29abd8daadddf249da35302a0cac069b7bb928b6aea80a1dd32ee8174d",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "liquidity-grid",
+            "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\liquidity-grid\\package\\questions.js",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "easyBoss",
+            "routeKey": null,
+            "sourceRecordOrder": 8,
+            "sourceId": 2008,
+            "sourceHash": "567d9f29abd8daadddf249da35302a0cac069b7bb928b6aea80a1dd32ee8174d"
+          },
+          {
+            "sourceGame": "stabilization-protocol",
+            "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\stabilization-protocol\\stabilization_protocol_questions_student.js",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "easyBoss",
+            "routeKey": null,
+            "sourceRecordOrder": 8,
+            "sourceId": 2008,
+            "sourceHash": "d2d5f6f35a11370b89d1c3c4c10d9c18a4548340f1a8cb5ece0d6436a4fe7641"
+          }
+        ],
+        "primaryConceptId": "deposit-creation-and-money-multiplier",
+        "secondaryConceptIds": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "instructionalRole": "boss",
+        "canonicalDifficulty": "easy",
+        "originalSourcePool": "easyBoss",
+        "originalBossTier": "easyBoss",
+        "consolidatedSourceCanonicalIds": [
+          "ECON-SP-EASYBOSS-2008"
+        ],
+        "sourcePrimaryConceptId": "bank-money-creation",
+        "familyConceptId": "money-banking-fed",
+        "subtopicIds": [
+          "deposit-creation-and-money-multiplier"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Hard",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T13:27:12.685Z",
+        "reviewedRevision": "",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "LG-Q-336",
+      "topic": "Monetary Neutrality",
+      "question": {
+        "id": "LG-Q-336",
+        "q": "In the value-of-money graph, the economy moves from a to b. Velocity may change. A nominal wage rises in the same proportion as the implied price level, with technology and labor supplies unchanged. What is consistent with monetary neutrality?",
+        "image": "question-assets/monetary-neutrality/moneys_moneyd.webp",
+        "options": [
+          "Prices and the nominal wage rise by one-third; the real wage is unchanged.",
+          "Prices and the nominal wage double; the real wage is unchanged.",
+          "Prices and the nominal wage rise by one-third; the real wage also rises by one-third.",
+          "Prices fall by one-quarter, so an unchanged real wage requires a one-quarter nominal-wage increase."
+        ],
+        "tag": "monetary_neutrality",
+        "type": "graph_synthesis",
+        "objective": "31.2",
+        "difficulty": "elite",
+        "conceptCluster": "classical_dichotomy",
+        "primarySkill": "separate_nominal_and_real_effects",
+        "secondarySkills": [
+          "price_level",
+          "real_output",
+          "monetary_neutrality"
+        ],
+        "repairSkill": "monetary_neutrality_definition",
+        "commonError": "confusing nominal price-level changes with real-output changes",
+        "feedback": "The graph gives value of money 2 at a and 1.5 at b. Their reciprocal price levels are 1/2 and 2/3, a one-third increase. Proportional nominal wage growth leaves the real wage unchanged; nominal changes alone do not raise real productive capacity. With real output fixed, this graph requires velocity to fall to two-thirds of its initial value; it is not the fixed-velocity quantity-theory case.",
+        "aHash": "e54bd6798ce64b5bb9d436aae69b1c4c8f633a851facb5aaeacf2ff7864ead81",
+        "schemaVersion": "2.0.0-pilot",
+        "questionId": "LG-Q-336",
+        "originalLegacyId": 336,
+        "sourceGlobal": "questionBanks",
+        "sourcePool": "elite",
+        "sourceRecordOrder": 36,
+        "domainId": "ECON",
+        "conceptId": "ECON-MAC-CLASSICAL-DICHOTOMY",
+        "outcomeIds": [
+          "OUT-MAC-CLASSICAL-DICHOTOMY-01"
+        ],
+        "skillId": "separate_nominal_and_real_effects",
+        "secondarySkillIds": [
+          "price_level",
+          "real_output",
+          "monetary_neutrality"
+        ],
+        "repairSkillId": "monetary_neutrality_definition",
+        "questionType": "graph_synthesis",
+        "assessmentTier": "elite",
+        "poolRole": "standard",
+        "runtimeRole": "main",
+        "provenance": {
+          "sourceGame": "liquidityGrid",
+          "sourceBank": "liquidity-grid-student",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "elite",
+          "sourceRecordOrder": 36,
+          "legacyId": 336,
+          "legacyObjective": "31.2"
+        },
+        "answerFormat": "aHash",
+        "resourceMatching": {
+          "sourceObjective": "31.2",
+          "objectiveKey": "LO31.2",
+          "sourceAccurateRecommendationHook": false
+        },
+        "source": {
+          "bankId": "liquidity-grid-student",
+          "legacyId": 336,
+          "legacyObjective": "31.2",
+          "legacyPool": "questionBanks.elite",
+          "sourceRecordOrder": 36,
+          "sourceGame": "liquidityGrid"
+        },
+        "graphImageMetadata": {
+          "present": true,
+          "asset": "moneys_moneyd.webp",
+          "sourceType": "graph_synthesis"
+        },
+        "canonicalId": "LG-Q-336",
+        "sourceId": 336,
+        "sourceGame": "liquidity-grid",
+        "sourceChapter": [
+          31,
+          2
+        ],
+        "sourceHash": "7564ea6e4804c98d696b3142dc81f27593e84da8f08bebed0502b32edb9035ae",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "liquidity-grid",
+            "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\liquidity-grid\\package\\questions.js",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "elite",
+            "routeKey": null,
+            "sourceRecordOrder": 36,
+            "sourceId": 336,
+            "sourceHash": "7564ea6e4804c98d696b3142dc81f27593e84da8f08bebed0502b32edb9035ae"
+          }
+        ],
+        "primaryConceptId": "monetary-neutrality",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "imageAlt": "Money graph with downward-sloping MD, vertical MS1 and MS2, and labeled points a, b, and c.",
+        "graphDescription": "The horizontal axis is Q_M and the vertical axis is V_M. MD slopes downward from upper left to lower right. MS1 is a vertical line at Q_M = 2,500 and MS2 is a vertical line at Q_M = 5,000. Point a lies where MS1 meets MD at V_M = 2. Point b lies where MS2 meets MD at V_M = 1.5. Point c lies on MD at Q_M = 7,500 and V_M = 1. Dashed guides mark the labeled V_M and Q_M values."
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "The velocity statement seems like a distraction. ",
+        "reasons": [
+          "wording"
+        ],
+        "updated": "2026-11-02T12:35:15.697Z",
+        "reviewedRevision": "",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "LG-Q-9072",
+      "topic": "Monetary-Policy Transmission",
+      "question": {
+        "id": "LG-Q-9072",
+        "q": "Initially, money demand is Md=500−20r and money supply is 300, with r measured in percentage points. The central bank cuts supply to 260, while a payment innovation lowers demand to Md=440−20r. Investment changes by −$10 billion for each percentage-point change in r. MPC is 0.5. With fixed prices and no other spending changes, which net result follows?",
+        "options": [
+          "The rate falls from 10% to 9%, investment rises $10 billion, and total spending rises $20 billion.",
+          "The rate rises from 10% to 12%, investment falls $20 billion, and total spending falls $40 billion.",
+          "The rate falls from 10% to 9%, investment rises $10 billion, and total spending rises only $10 billion.",
+          "The rate stays 10%, investment is unchanged, and the two money-market shifts cancel exactly."
+        ],
+        "tag": "monetary_policy_ad",
+        "type": "analysis",
+        "objective": "35.2",
+        "difficulty": "elite",
+        "conceptCluster": "monetary_policy_transmission",
+        "primarySkill": "trace_contractionary_money_graph_with_multiplier",
+        "secondarySkills": [
+          "money_supply",
+          "interest_rate",
+          "investment",
+          "mpc"
+        ],
+        "repairSkill": "contractionary_monetary_policy_chain",
+        "commonError": "stopping at the investment decline instead of applying the multiplier",
+        "feedback": "Initially 500−20r=300 gives r=10. After both shifts, 440−20r=260 gives r=9. Lower money demand more than offsets the supply cut. The one-point rate decline raises investment $10 billion and, with multiplier 2, spending $20 billion.",
+        "aHash": "9a50a7da060c3952bf6a5f20f2e461ffefb1b266a8c93dea941f6c8a79505bff",
+        "schemaVersion": "2.0.0-pilot",
+        "questionId": "LG-Q-9072",
+        "originalLegacyId": 9072,
+        "sourceGlobal": "questionBanks",
+        "sourcePool": "legendary",
+        "sourceRecordOrder": 72,
+        "domainId": "ECON",
+        "conceptId": "ECON-MAC-MONETARY-POLICY-TRANSMISSION",
+        "outcomeIds": [
+          "OUT-MAC-MONETARY-POLICY-TRANSMISSION-01"
+        ],
+        "skillId": "trace_contractionary_money_graph_with_multiplier",
+        "secondarySkillIds": [
+          "money_supply",
+          "interest_rate",
+          "investment",
+          "mpc"
+        ],
+        "repairSkillId": "contractionary_monetary_policy_chain",
+        "questionType": "legendary_contractionary_graph_multiplier_order",
+        "assessmentTier": "legendary",
+        "poolRole": "standard",
+        "runtimeRole": "legendary",
+        "provenance": {
+          "sourceGame": "liquidityGrid",
+          "sourceBank": "liquidity-grid-student",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "legendary",
+          "sourceRecordOrder": 72,
+          "legacyId": 9072,
+          "legacyObjective": "35.2"
+        },
+        "answerFormat": "aHash",
+        "resourceMatching": {
+          "sourceObjective": "35.2",
+          "objectiveKey": "LO35.2",
+          "sourceAccurateRecommendationHook": false
+        },
+        "source": {
+          "bankId": "liquidity-grid-student",
+          "legacyId": 9072,
+          "legacyObjective": "35.2",
+          "legacyPool": "questionBanks.legendary",
+          "sourceRecordOrder": 72,
+          "sourceGame": "liquidityGrid"
+        },
+        "canonicalId": "LG-Q-9072",
+        "sourceId": 9072,
+        "sourceGame": "liquidity-grid",
+        "sourceChapter": [
+          35,
+          2
+        ],
+        "sourceHash": "cb680762aee52daa97567486d8e63c21a10cc2482a81ceaaa6a81d54467aae5b",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "liquidity-grid",
+            "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\liquidity-grid\\package\\questions.js",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "legendary",
+            "routeKey": null,
+            "sourceRecordOrder": 72,
+            "sourceId": 9072,
+            "sourceHash": "cb680762aee52daa97567486d8e63c21a10cc2482a81ceaaa6a81d54467aae5b"
+          }
+        ],
+        "primaryConceptId": "monetary-policy-transmission",
+        "secondaryConceptIds": [],
+        "instructionalRole": "legendary",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "legendary",
+        "originalBossTier": null,
+        "graphRequired": false
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "This belongs in legendary now. ",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:36:00.137Z",
+        "reviewedRevision": "elite-20261101-e8ee22297fed",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P52A-AD-B2-001",
+      "topic": "Aggregate Demand",
+      "question": {
+        "id": "P52A-AD-B2-001",
+        "q": "In the liquidity-preference model, a lower price level reduces transaction money demand. At the same time the central bank independently reduces nominal money supply. The relative sizes of the changes are not given, and other investment determinants are fixed. Which interest-rate and investment conclusion is warranted?",
+        "options": [
+          "Lower money demand lowers the rate; lower supply also lowers it; investment must rise",
+          "Lower money demand raises the rate; lower supply also raises it; investment must fall",
+          "Lower money demand raises the rate; lower supply lowers it; the changes must cancel",
+          "Lower money demand lowers the rate; lower supply raises it; investment’s net change is undetermined"
+        ],
+        "tag": "aggregate_demand",
+        "type": "analysis",
+        "objective": "LO34.1",
+        "difficulty": "mediumBoss",
+        "conceptCluster": "ad_as",
+        "primarySkill": "identify_ad_shifters",
+        "repairSkill": "identify_ad_shifters",
+        "commonError": "Treats the price-level interest-rate effect as decisive despite an opposing money-supply change.",
+        "feedback": "Lower money demand tends to reduce the equilibrium rate; a lower money supply tends to increase it. Without relative magnitudes, the net rate and therefore interest-sensitive investment cannot be signed. The usual price-level channel is not a guarantee about the outcome when policy also changes.",
+        "aHash": "a3dbf0479a9c8182238e5649d7330151e18f08c0f6eb538b918bd2845d23baf5",
+        "canonicalId": "P52A-AD-B2-001",
+        "sourceId": 5200186,
+        "sourceGame": "phase5.2a-concept-expansion",
+        "sourceChapter": [],
+        "sourcePool": "mediumBoss",
+        "sourceHash": "dccb15ba57d3273e114b940b71c5ffbfe642a49a51c59570ce47d3a34ea80d48",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "phase5.2a-concept-expansion",
+            "sourceFile": "phase5.2a_authoring_questions.json",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "mediumBoss",
+            "routeKey": null,
+            "sourceRecordOrder": 185,
+            "sourceId": 5200186,
+            "sourceHash": "dccb15ba57d3273e114b940b71c5ffbfe642a49a51c59570ce47d3a34ea80d48"
+          }
+        ],
+        "primaryConceptId": "aggregate-demand",
+        "secondaryConceptIds": [],
+        "instructionalRole": "boss",
+        "canonicalDifficulty": "medium",
+        "originalSourcePool": "mediumBoss",
+        "originalBossTier": "mediumBoss",
+        "boss": "Checkpoint Two"
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "hard",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T13:30:31.358Z",
+        "reviewedRevision": "",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P52B-PSIG-EL-001",
+      "topic": "Price Signals",
+      "question": {
+        "id": "P52B-PSIG-EL-001",
+        "q": "A market initially has demand Qd=100−P and supply Qs=20+P. Later price is $45 and quantity is 75. Assume demand and supply retain their original slopes. Which changes at every price are consistent with the observed equilibrium?",
+        "options": [
+          "Demand increases by 20 and supply increases by 10; demand pressure is larger, so both price and quantity rise.",
+          "Demand increases by 20 and supply decreases by 10; both changes explain the rise in quantity.",
+          "Demand increases by 10 and supply increases by 20; stronger supply pressure raises price.",
+          "Demand is unchanged and supply increases by 30; a supply increase raises both price and quantity."
+        ],
+        "tag": "price_signals",
+        "type": "application",
+        "objective": "LO4.5",
+        "difficulty": "elite",
+        "conceptCluster": "markets",
+        "primarySkill": "price_quantity_inference",
+        "secondarySkills": [],
+        "repairSkill": "price_quantity_inference",
+        "commonError": "Confusing an equilibrium movement with movement along one curve.",
+        "feedback": "Initially P=40 and Q=60. At P=45, old demand is 55 but observed demand is 75, requiring a +20 shift. Old supply is 65 but observed supply is 75, requiring a +10 shift. Price and quantity alone do not imply only demand changed.",
+        "aHash": "74afc60a70726a9740282d555c40f6e85c7951d9f23605c827092961c5564590",
+        "canonicalId": "P52B-PSIG-EL-001",
+        "sourceId": 5220093,
+        "sourceGame": "phase5.2b-minimum-coverage-rescue",
+        "sourceChapter": [],
+        "sourcePool": "elite",
+        "sourceHash": "53261794a6efd1ad77f369ce29138b8802e39cd189db5530ab8224980dcf899a",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "phase5.2b-minimum-coverage-rescue",
+            "sourceFile": "phase5.2b_authoring_questions.json",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "elite",
+            "routeKey": null,
+            "sourceRecordOrder": 92,
+            "sourceId": 5220093,
+            "sourceHash": "53261794a6efd1ad77f369ce29138b8802e39cd189db5530ab8224980dcf899a"
+          }
+        ],
+        "primaryConceptId": "price-signals",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Place in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T13:15:59.371Z",
+        "reviewedRevision": "elite-20261101-488143168114",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P52B-S1-DIS-E-002",
+      "topic": "Disinflation and Policy",
+      "question": {
+        "id": "P52B-S1-DIS-E-002",
+        "q": "Why can a credible anti-inflation announcement reduce the short-run cost of disinflation?",
+        "options": [
+          "It permanently eliminates the natural rate of unemployment.",
+          "It guarantees that the price level falls immediately.",
+          "It makes aggregate demand irrelevant.",
+          "Expected inflation may adjust downward more quickly."
+        ],
+        "tag": "disinflation",
+        "type": "application",
+        "objective": "LO36.4",
+        "difficulty": "easy",
+        "conceptCluster": "phillips_curve",
+        "primarySkill": "disinflation_credibility",
+        "secondarySkills": [],
+        "repairSkill": "disinflation_credibility",
+        "commonError": "Ignoring the role of expected inflation in the transition.",
+        "feedback": "When expectations fall sooner, wage and price setting can adjust with less output and unemployment loss.",
+        "aHash": "b36452f6482316dfd1dd206e2be0c7332af26edfb8db82d4f34d22cfedf2871c",
+        "canonicalId": "P52B-S1-DIS-E-002",
+        "sourceId": 5220167,
+        "sourceGame": "phase5.2b-stage1-rescue",
+        "sourceChapter": [],
+        "sourcePool": "easy",
+        "sourceHash": "72adc7ee06c5698a12d4e83c77311698cda05703cad2630c81acae66451003b0",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "phase5.2b-stage1-rescue",
+            "sourceFile": "phase5.2b_stage1_authoring_questions.json",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "easy",
+            "routeKey": null,
+            "sourceRecordOrder": 7,
+            "sourceId": 5220167,
+            "sourceHash": "72adc7ee06c5698a12d4e83c77311698cda05703cad2630c81acae66451003b0"
+          }
+        ],
+        "primaryConceptId": "disinflation-and-policy",
+        "secondaryConceptIds": [],
+        "instructionalRole": "main",
+        "canonicalDifficulty": "easy",
+        "originalSourcePool": "easy",
+        "originalBossTier": null
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "medium",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T13:27:38.701Z",
+        "reviewedRevision": "",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P52B-S2-SUP-EL-001",
+      "topic": "Supply",
+      "question": {
+        "id": "P52B-S2-SUP-EL-001",
+        "q": "A competitive firm's supply before two changes is Qs=5(P−10) for P≥10. New equipment saves $3 per unit, while an environmental fee adds $5 per unit. Assume these changes shift unit costs without changing the supply slope. At a market price of $20, what happens to quantity supplied, and what price restores the original quantity?",
+        "options": [
+          "Quantity falls from 50 to 40; a price of $18 restores 50 along the new supply curve.",
+          "Quantity rises from 50 to 60; a price of $18 restores 50 along the new supply curve.",
+          "Quantity stays 50; one cost increase and one cost decrease cancel regardless of size.",
+          "Quantity falls from 50 to 40; a price of $22 restores 50 along the new supply curve."
+        ],
+        "tag": "supply",
+        "type": "multi-step",
+        "objective": "LO4.3",
+        "difficulty": "elite",
+        "conceptCluster": "supply_demand",
+        "primarySkill": "multiple_supply_shifters",
+        "secondarySkills": [],
+        "repairSkill": "multiple_supply_shifters",
+        "commonError": "Assuming one opposing supply shifter automatically dominates the other.",
+        "feedback": "Net unit cost rises by $5−$3=$2, making supply Qs=5(P−12). At $20, quantity falls from 50 to 40. Solving 50=5(P−12) gives P=$22. Compare the magnitudes of the two cost changes, not their count.",
+        "aHash": "58ac20520fa64f53d12f3bc6742b5b5791f73d6cfd1511394d7bcc2855504c4f",
+        "canonicalId": "P52B-S2-SUP-EL-001",
+        "sourceId": 5220199,
+        "sourceGame": "phase5.2b-stage2-rescue",
+        "sourceChapter": [],
+        "sourcePool": "elite",
+        "sourceHash": "8ec9690618bdc1db22b0eed9e2b00cd595f974405749c0f94bf0607e0006f28b",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "phase5.2b-stage2-rescue",
+            "sourceFile": "phase5.2b_stage2_authoring_questions.json",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "elite",
+            "routeKey": null,
+            "sourceRecordOrder": 3,
+            "sourceId": 5220199,
+            "sourceHash": "8ec9690618bdc1db22b0eed9e2b00cd595f974405749c0f94bf0607e0006f28b",
+            "sourceCurationPhase": "phaseQH4-supply-demand-equilibrium-audit-remediation-v1"
+          }
+        ],
+        "primaryConceptId": "supply",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "sourceCurationPhase": "phaseQH4-supply-demand-equilibrium-audit-remediation-v1"
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Place in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T13:19:30.318Z",
+        "reviewedRevision": "elite-20261101-6e5f730db004",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P52B-S3-MEQS-B1-001",
+      "topic": "Demand and Supply Shocks",
+      "question": {
+        "id": "P52B-S3-MEQS-B1-001",
+        "q": "Only one short-run shock occurs in an economy initially producing 20. Output and the price level both fall, with capacity and input costs initially unchanged. Which diagnosis and response fit?",
+        "options": [
+          "An adverse SRAS shock fits; demand tightening raises output",
+          "A favorable SRAS shock fits; demand support is required because supply reduced output",
+          "A leftward LRAS shift fits; unchanged productive capacity is irrelevant",
+          "A negative AD shock fits; demand support can counter the recessionary pressure"
+        ],
+        "tag": "supply_shocks",
+        "type": "analysis",
+        "objective": "LO34.4",
+        "difficulty": "easyBoss",
+        "conceptCluster": "ad_as",
+        "primarySkill": "classify_demand_shock",
+        "secondarySkills": [],
+        "repairSkill": "classify_demand_shock",
+        "commonError": "Incorrectly concludes “An adverse SRAS shock fits; demand tightening raises output” in this demand and supply shocks task.",
+        "feedback": "At unchanged supply, less demand lowers both output and prices. An adverse supply shock instead raises prices while reducing output; the evidence distinguishes them under the single-shock premise.",
+        "aHash": "8c8e2a1be2a2fde40c700ae48925bdbbfc556e32fd689a833e205bc176661b2d",
+        "canonicalId": "P52B-S3-MEQS-B1-001",
+        "sourceId": 5220253,
+        "sourceGame": "phase5.2b-stage3-rescue",
+        "sourceChapter": [],
+        "sourcePool": "easyBoss",
+        "sourceHash": "8dab5fe31ad906e8e93b28afba9a5ba2f125e69bbf0dfa3a11d72883142176f9",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "phase5.2b-stage3-rescue",
+            "sourceFile": "phase5.2b_stage3_authoring_questions.json",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "easyBoss",
+            "routeKey": null,
+            "sourceRecordOrder": 12,
+            "sourceId": 5220253,
+            "sourceHash": "8dab5fe31ad906e8e93b28afba9a5ba2f125e69bbf0dfa3a11d72883142176f9"
+          }
+        ],
+        "primaryConceptId": "demand-and-supply-shocks",
+        "secondaryConceptIds": [],
+        "instructionalRole": "boss",
+        "canonicalDifficulty": "easy",
+        "originalSourcePool": "easyBoss",
+        "originalBossTier": "easyBoss",
+        "boss": "Checkpoint One",
+        "sourcePrimaryConceptId": "macroeconomic-equilibrium-and-shocks",
+        "familyConceptId": "ad-as-equilibrium",
+        "subtopicIds": [
+          "demand-and-supply-shocks"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "medium",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T13:23:54.673Z",
+        "reviewedRevision": "",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P52B-S3-MEQS-B1-002",
+      "topic": "Demand and Supply Shocks",
+      "question": {
+        "id": "P52B-S3-MEQS-B1-002",
+        "q": "Output falls 30 units and inflation rises after an energy disruption. Which difference from a demand recession matters for stabilization?",
+        "options": [
+          "Demand expansion supports output and lowers inflation: the equivalent of improved supply.",
+          "Demand restraint supports output and lowers inflation: removing the energy disruption.",
+          "Demand expansion supports output but adds inflation pressure: a supply-shock tradeoff.",
+          "Either demand policy restores capacity directly: energy availability adjusts with spending."
+        ],
+        "tag": "supply_shocks",
+        "type": "analysis",
+        "objective": "LO34.4",
+        "difficulty": "easyBoss",
+        "conceptCluster": "ad_as",
+        "primarySkill": "classify_supply_shock",
+        "secondarySkills": [],
+        "repairSkill": "classify_supply_shock",
+        "commonError": "Incorrect inference: Demand expansion supports output and lowers inflation: the equivalent of improved supply.",
+        "feedback": "The adverse supply shift produces stagflationary pressure. AD policy can trade inflation against output but does not directly eliminate the supply constraint.",
+        "aHash": "f8a38674a28c1450f73791fd0c28f0297d9bee7dfc1f3fde9262915c2172cd91",
+        "canonicalId": "P52B-S3-MEQS-B1-002",
+        "sourceId": 5220254,
+        "sourceGame": "phase5.2b-stage3-rescue",
+        "sourceChapter": [],
+        "sourcePool": "easyBoss",
+        "sourceHash": "dcba0ae1f662e17442776b584979200278ce8bdb363960509c478c4ffcf73932",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "phase5.2b-stage3-rescue",
+            "sourceFile": "phase5.2b_stage3_authoring_questions.json",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "easyBoss",
+            "routeKey": null,
+            "sourceRecordOrder": 13,
+            "sourceId": 5220254,
+            "sourceHash": "dcba0ae1f662e17442776b584979200278ce8bdb363960509c478c4ffcf73932"
+          }
+        ],
+        "primaryConceptId": "demand-and-supply-shocks",
+        "secondaryConceptIds": [],
+        "instructionalRole": "boss",
+        "canonicalDifficulty": "easy",
+        "originalSourcePool": "easyBoss",
+        "originalBossTier": "easyBoss",
+        "boss": "Checkpoint One",
+        "sourcePrimaryConceptId": "macroeconomic-equilibrium-and-shocks",
+        "familyConceptId": "ad-as-equilibrium",
+        "subtopicIds": [
+          "demand-and-supply-shocks"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "medium",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T13:24:14.276Z",
+        "reviewedRevision": "",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P52B-S3-MEQS-B1-003",
+      "topic": "Demand and Supply Shocks",
+      "question": {
+        "id": "P52B-S3-MEQS-B1-003",
+        "q": "A productivity improvement raises supply while a confidence shock lowers demand in an economy initially producing 40. Which outcome is certain without relative magnitudes?",
+        "options": [
+          "Both output and prices stay fixed because the shifts are opposite",
+          "The price level falls; output is ambiguous because the two shifts oppose for output",
+          "Output rises; the price level is ambiguous because both shifts raise demand",
+          "The price level rises; output is ambiguous because supply growth raises prices"
+        ],
+        "tag": "supply_shocks",
+        "type": "analysis",
+        "objective": "LO34.4",
+        "difficulty": "easyBoss",
+        "conceptCluster": "ad_as",
+        "primarySkill": "trace_demand_shock",
+        "secondarySkills": [],
+        "repairSkill": "trace_demand_shock",
+        "commonError": "Incorrectly concludes “Both output and prices stay fixed because the shifts are opposite” in this demand and supply shocks task.",
+        "feedback": "Supply right and demand left both reduce the equilibrium price level. Their output effects oppose, so output needs relative magnitudes.",
+        "aHash": "ee44dfbdd0927d4eee8efd82e61eaf86a4ea2b260b0d1c5a6d3b25e539783a59",
+        "canonicalId": "P52B-S3-MEQS-B1-003",
+        "sourceId": 5220255,
+        "sourceGame": "phase5.2b-stage3-rescue",
+        "sourceChapter": [],
+        "sourcePool": "easyBoss",
+        "sourceHash": "ffef6f86a34acbdbd21dd719a66f31e5d64c97b62d967d253482d841a2c328cd",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "phase5.2b-stage3-rescue",
+            "sourceFile": "phase5.2b_stage3_authoring_questions.json",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "easyBoss",
+            "routeKey": null,
+            "sourceRecordOrder": 14,
+            "sourceId": 5220255,
+            "sourceHash": "ffef6f86a34acbdbd21dd719a66f31e5d64c97b62d967d253482d841a2c328cd"
+          }
+        ],
+        "primaryConceptId": "demand-and-supply-shocks",
+        "secondaryConceptIds": [],
+        "instructionalRole": "boss",
+        "canonicalDifficulty": "easy",
+        "originalSourcePool": "easyBoss",
+        "originalBossTier": "easyBoss",
+        "boss": "Checkpoint One",
+        "sourcePrimaryConceptId": "macroeconomic-equilibrium-and-shocks",
+        "familyConceptId": "ad-as-equilibrium",
+        "subtopicIds": [
+          "demand-and-supply-shocks"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "medium",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T13:24:24.610Z",
+        "reviewedRevision": "",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62F-PC-EL-017",
+      "topic": "Perfect Competition",
+      "question": {
+        "id": "P62F-PC-EL-017",
+        "sourceGame": "perfectCompetition",
+        "q": "A competitive firm faces price $20. At Q=10, P=MC but MC is falling: expanding to 11 raises variable cost by $18, and expanding from 11 to 12 raises it by $16. Fixed cost is unchanged. Which profit comparison evaluates a claim that Q=10 must maximize profit?",
+        "options": [
+          "Expanding to 12 raises profit by $6, so the falling-MC crossing is not a maximum.",
+          "Expanding to 12 raises profit by $6, but any P=MC crossing must still be a maximum.",
+          "Expanding to 12 lowers profit by $6 because the additional units have MC below price.",
+          "Expanding to 12 leaves profit unchanged because fixed cost does not change."
+        ],
+        "tag": "perfect_competition",
+        "type": "application",
+        "objective": "PC.3",
+        "difficulty": "elite",
+        "conceptCluster": "micro_perfect_competition",
+        "primarySkill": "rising_mc_condition",
+        "secondarySkills": [],
+        "repairSkill": "rising_mc_condition",
+        "commonError": "uses_falling_mc_intersection",
+        "feedback": "Two additional units bring $40 in revenue and $18+$16=$34 in variable cost, raising profit $6. Equality P=MC is insufficient at a falling-MC crossing: subsequent units can cost less than their revenue. The relevant interior maximum is on the rising part of MC.",
+        "aHash": "68643272b4c63c164b8e7e598ba33599ae89fb55a15fe0a8d60061ed46eee3f7",
+        "canonicalId": "P62F-PC-EL-017",
+        "sourceId": 690316,
+        "sourceChapter": [
+          "perfect-competition"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "7861d7c2a6e5cee05f40642208fea948fa74ae202d922d910268b20051dd6d69",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2f-perfect-competition-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "rising_mc_condition",
+            "sourceRecordOrder": 16,
+            "sourceId": 690316,
+            "sourceHash": "7861d7c2a6e5cee05f40642208fea948fa74ae202d922d910268b20051dd6d69",
+            "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+          }
+        ],
+        "primaryConceptId": "perfect-competition",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "perfect-competition",
+        "subtopicIds": [
+          "competitive-output-choice"
+        ],
+        "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Place in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T13:06:32.464Z",
+        "reviewedRevision": "elite-20261101-7521e6e62005",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62F-PC-EL-026",
+      "topic": "Perfect Competition",
+      "question": {
+        "id": "P62F-PC-EL-026",
+        "sourceGame": "perfectCompetition",
+        "q": "A competitive market has demand P=100−Q and private supply P=20+Q. Production causes an unpriced external cost of $20 per unit. Which market output, efficient output, and welfare conclusion follow?",
+        "options": [
+          "Market output 40, efficient output 30; private P=MC proves all 40 units are socially efficient.",
+          "Market output 40, efficient output 30; private P=MC leaves 10 units of overproduction.",
+          "Market output 30, efficient output 40; external cost increases the efficient quantity.",
+          "Market output 40, efficient output 20; subtract the external cost directly from quantity."
+        ],
+        "tag": "perfect_competition",
+        "type": "application",
+        "objective": "PC.6",
+        "difficulty": "elite",
+        "conceptCluster": "micro_perfect_competition",
+        "primarySkill": "model_limitations",
+        "secondarySkills": [],
+        "repairSkill": "model_limitations",
+        "commonError": "treats_benchmark_as_literal",
+        "feedback": "Private equilibrium solves 100−Q=20+Q, giving Q=40. Social marginal cost is 40+Q; efficient output solves 100−Q=40+Q, giving Q=30. Competitive private choices do not internalize the external cost.",
+        "aHash": "1c3be57541d1f05ac5d21be2eeffdce5d564486871daeba867b6e2f61f4f50f4",
+        "canonicalId": "P62F-PC-EL-026",
+        "sourceId": 690325,
+        "sourceChapter": [
+          "perfect-competition"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "5f4f11f5d14e25229dfe9d8b5b7558f853a494205cfe6cb449a95a59af527dc3",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2f-perfect-competition-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "model_limitations",
+            "sourceRecordOrder": 25,
+            "sourceId": 690325,
+            "sourceHash": "5f4f11f5d14e25229dfe9d8b5b7558f853a494205cfe6cb449a95a59af527dc3",
+            "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+          }
+        ],
+        "primaryConceptId": "perfect-competition",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "perfect-competition",
+        "subtopicIds": [
+          "competitive-efficiency-limits"
+        ],
+        "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Place in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T13:09:51.940Z",
+        "reviewedRevision": "elite-20261101-c002774846fd",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62G-MON-EL-002",
+      "topic": "Monopoly",
+      "question": {
+        "id": "P62G-MON-EL-002",
+        "sourceGame": "monopoly",
+        "q": "For a monopolist, demand is P=108−2Q, marginal cost is MC=20+0.25Q, and total cost is TC=300+20Q+0.125Q². Fixed cost is unavoidable this period. At the profit-maximizing output, what economic result and operating decision follow? Round only the final result.",
+        "options": [
+          "An economic profit of $611.06; shut down because fixed cost must always be avoided.",
+          "An economic profit of $911.06; operate after excluding fixed cost from economic profit.",
+          "An economic profit of $557.47; operate after treating marginal cost as average variable cost.",
+          "An economic profit of $611.06; operate because revenue covers variable cost."
+        ],
+        "tag": "monopoly",
+        "type": "calculation",
+        "objective": "MON.4",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopoly",
+        "primarySkill": "monopoly_profit",
+        "secondarySkills": [],
+        "repairSkill": "monopoly_profit",
+        "commonError": "uses_price_minus_mc",
+        "feedback": "MR=MC gives Q=(108−20)/(4+0.25)≈20.71, then P≈$66.59. Revenue is $1378.77 and total cost is $767.71, giving economic profit of $611.06. Revenue exceeds variable cost by $911.06; operating is better than paying unavoidable fixed cost with no sales.",
+        "aHash": "6c754a7c3686cca598cd4f8a92d8209dc8637fcb91f0859f361f1fbd287b50ae",
+        "canonicalId": "P62G-MON-EL-002",
+        "sourceId": 700301,
+        "sourceChapter": [
+          "monopoly"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "ab1e1e7ff85cd9968da9c93e44ff03f7c0b456c5ef6f7c2111cb7c979377686a",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2g-monopoly-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "monopoly_profit",
+            "sourceRecordOrder": 1,
+            "sourceId": 700301,
+            "sourceHash": "ab1e1e7ff85cd9968da9c93e44ff03f7c0b456c5ef6f7c2111cb7c979377686a"
+          }
+        ],
+        "primaryConceptId": "monopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopoly",
+        "subtopicIds": [
+          "monopoly-profit-loss-shutdown"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Place in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:39:53.506Z",
+        "reviewedRevision": "elite-20261101-21586a7f1253",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62G-MON-EL-004",
+      "topic": "Monopoly",
+      "question": {
+        "id": "P62G-MON-EL-004",
+        "sourceGame": "monopoly",
+        "q": "For a monopolist, demand is P=120−2.5Q, marginal cost is MC=24+0.2Q, and total cost is TC=420+24Q+0.1Q². Fixed cost is unavoidable this period. At the profit-maximizing output, what economic result and operating decision follow? Round only the final result.",
+        "options": [
+          "An economic profit of $466.15; shut down because fixed cost must always be avoided.",
+          "An economic profit of $466.15; operate because revenue covers variable cost.",
+          "An economic profit of $886.15; operate after excluding fixed cost from economic profit.",
+          "An economic profit of $432.07; operate after treating marginal cost as average variable cost."
+        ],
+        "tag": "monopoly",
+        "type": "calculation",
+        "objective": "MON.4",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopoly",
+        "primarySkill": "monopoly_profit",
+        "secondarySkills": [],
+        "repairSkill": "monopoly_profit",
+        "commonError": "uses_price_minus_mc",
+        "feedback": "MR=MC gives Q=(120−24)/(5+0.2)≈18.46, then P≈$73.85. Revenue is $1363.31 and total cost is $897.16, giving economic profit of $466.15. Revenue exceeds variable cost by $886.15; operating is better than paying unavoidable fixed cost with no sales.",
+        "aHash": "cb7917e03106092878472b4342a50ce04744e654b8aea233f0ef0afd78c41cac",
+        "canonicalId": "P62G-MON-EL-004",
+        "sourceId": 700303,
+        "sourceChapter": [
+          "monopoly"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "eaca19ea8c0bc85309a732c2fc4f48c3b843ddaf25636c97e2dc792c2e782090",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2g-monopoly-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "monopoly_profit",
+            "sourceRecordOrder": 3,
+            "sourceId": 700303,
+            "sourceHash": "eaca19ea8c0bc85309a732c2fc4f48c3b843ddaf25636c97e2dc792c2e782090"
+          }
+        ],
+        "primaryConceptId": "monopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopoly",
+        "subtopicIds": [
+          "monopoly-profit-loss-shutdown"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Place in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:40:02.178Z",
+        "reviewedRevision": "elite-20261101-d78ca1108501",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62G-MON-EL-005",
+      "topic": "Monopoly",
+      "question": {
+        "id": "P62G-MON-EL-005",
+        "sourceGame": "monopoly",
+        "q": "For a monopolist, demand is P=96−1.6Q, marginal cost is MC=18+0.35Q, and total cost is TC=350+18Q+0.175Q². Which output-price pair maximizes profit? Round only the final results.",
+        "options": [
+          "Q=40.00, P=$32.00.",
+          "Q=21.97, P=$25.69.",
+          "Q=21.97, P=$60.85.",
+          "Q=40.00, P=$60.85."
+        ],
+        "tag": "monopoly",
+        "type": "calculation",
+        "objective": "MON.3",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopoly",
+        "primarySkill": "integrated_monopoly_analysis",
+        "secondarySkills": [],
+        "repairSkill": "integrated_monopoly_analysis",
+        "commonError": "fails_to_sequence_quantity_price_profit_welfare",
+        "feedback": "MR=96−3.2Q. Set MR=MC: (3.2+0.35)Q=78, giving Q≈21.97. Demand then gives P≈$60.85. Setting P=MC instead gives the efficient output 40.00, which is not the monopolist's profit maximum.",
+        "aHash": "6f3cc3c20332d7054b98597c0ca7d387cff3d08295847e3936a68ed4d4417ed2",
+        "canonicalId": "P62G-MON-EL-005",
+        "sourceId": 700304,
+        "sourceChapter": [
+          "monopoly"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "58ee601c485351db75c818282ee639dbda4e01594cb06c84b42d874c232d15e5",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2g-monopoly-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "integrated_monopoly_analysis",
+            "sourceRecordOrder": 4,
+            "sourceId": 700304,
+            "sourceHash": "58ee601c485351db75c818282ee639dbda4e01594cb06c84b42d874c232d15e5"
+          }
+        ],
+        "primaryConceptId": "monopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopoly",
+        "subtopicIds": [
+          "monopoly-output-price"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Place in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:40:07.116Z",
+        "reviewedRevision": "elite-20261101-38fd58ab5dd5",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62G-MON-EL-006",
+      "topic": "Monopoly",
+      "question": {
+        "id": "P62G-MON-EL-006",
+        "sourceGame": "monopoly",
+        "q": "For a monopolist, demand is P=96−1.6Q, marginal cost is MC=18+0.35Q, and total cost is TC=350+18Q+0.175Q². Fixed cost is unavoidable this period. At the profit-maximizing output, what economic result and operating decision follow? Round only the final result.",
+        "options": [
+          "An economic profit of $506.90; shut down because fixed cost must always be avoided.",
+          "An economic profit of $856.90; operate after excluding fixed cost from economic profit.",
+          "An economic profit of $422.42; operate after treating marginal cost as average variable cost.",
+          "An economic profit of $506.90; operate because revenue covers variable cost."
+        ],
+        "tag": "monopoly",
+        "type": "calculation",
+        "objective": "MON.4",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopoly",
+        "primarySkill": "monopoly_profit",
+        "secondarySkills": [],
+        "repairSkill": "monopoly_profit",
+        "commonError": "uses_price_minus_mc",
+        "feedback": "MR=MC gives Q=(96−18)/(3.2+0.35)≈21.97, then P≈$60.85. Revenue is $1336.88 and total cost is $829.98, giving economic profit of $506.90. Revenue exceeds variable cost by $856.90; operating is better than paying unavoidable fixed cost with no sales.",
+        "aHash": "95074c8c0d9f264d56b827be282b0c475e1ba7f99a021ba6cd7cc3e285b46bf8",
+        "canonicalId": "P62G-MON-EL-006",
+        "sourceId": 700305,
+        "sourceChapter": [
+          "monopoly"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "f0a77e7a3d97ea53c2ab5df4536514e11dd26c29bacfd9e020f3b84e2e831976",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2g-monopoly-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "monopoly_profit",
+            "sourceRecordOrder": 5,
+            "sourceId": 700305,
+            "sourceHash": "f0a77e7a3d97ea53c2ab5df4536514e11dd26c29bacfd9e020f3b84e2e831976"
+          }
+        ],
+        "primaryConceptId": "monopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopoly",
+        "subtopicIds": [
+          "monopoly-profit-loss-shutdown"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Place in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:40:52.651Z",
+        "reviewedRevision": "elite-20261101-8ef2a8605d30",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62G-MON-EL-007",
+      "topic": "Monopoly",
+      "question": {
+        "id": "P62G-MON-EL-007",
+        "sourceGame": "monopoly",
+        "q": "For a monopolist, demand is P=112−2.2Q, marginal cost is MC=22+0.3Q, and total cost is TC=500+22Q+0.15Q². Which output-price pair maximizes profit? Round only the final results.",
+        "options": [
+          "Q=19.15, P=$69.87.",
+          "Q=36.00, P=$32.80.",
+          "Q=19.15, P=$27.74.",
+          "Q=36.00, P=$69.87."
+        ],
+        "tag": "monopoly",
+        "type": "calculation",
+        "objective": "MON.3",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopoly",
+        "primarySkill": "integrated_monopoly_analysis",
+        "secondarySkills": [],
+        "repairSkill": "integrated_monopoly_analysis",
+        "commonError": "fails_to_sequence_quantity_price_profit_welfare",
+        "feedback": "MR=112−4.4Q. Set MR=MC: (4.4+0.3)Q=90, giving Q≈19.15. Demand then gives P≈$69.87. Setting P=MC instead gives the efficient output 36.00, which is not the monopolist's profit maximum.",
+        "aHash": "5c6ad353b123a391a383080c0dfa0ed2ef9b7324aefe7bb87590c3a3b971d878",
+        "canonicalId": "P62G-MON-EL-007",
+        "sourceId": 700306,
+        "sourceChapter": [
+          "monopoly"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "7abc3e2216fa6056af20f92db9a14cdf3686965ac7aed2cdf6c7a331cedca886",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2g-monopoly-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "integrated_monopoly_analysis",
+            "sourceRecordOrder": 6,
+            "sourceId": 700306,
+            "sourceHash": "7abc3e2216fa6056af20f92db9a14cdf3686965ac7aed2cdf6c7a331cedca886"
+          }
+        ],
+        "primaryConceptId": "monopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopoly",
+        "subtopicIds": [
+          "monopoly-output-price"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Place in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:40:59.634Z",
+        "reviewedRevision": "elite-20261101-8adad896404d",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62G-MON-EL-008",
+      "topic": "Monopoly",
+      "question": {
+        "id": "P62G-MON-EL-008",
+        "sourceGame": "monopoly",
+        "q": "For a monopolist, demand is P=112−2.2Q, marginal cost is MC=22+0.3Q, and total cost is TC=500+22Q+0.15Q². Fixed cost is unavoidable this period. At the profit-maximizing output, what economic result and operating decision follow? Round only the final result.",
+        "options": [
+          "An economic profit of $361.70; shut down because fixed cost must always be avoided.",
+          "An economic profit of $361.70; operate because revenue covers variable cost.",
+          "An economic profit of $861.70; operate after excluding fixed cost from economic profit.",
+          "An economic profit of $306.70; operate after treating marginal cost as average variable cost."
+        ],
+        "tag": "monopoly",
+        "type": "calculation",
+        "objective": "MON.4",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopoly",
+        "primarySkill": "monopoly_profit",
+        "secondarySkills": [],
+        "repairSkill": "monopoly_profit",
+        "commonError": "uses_price_minus_mc",
+        "feedback": "MR=MC gives Q=(112−22)/(4.4+0.3)≈19.15, then P≈$69.87. Revenue is $1337.98 and total cost is $976.28, giving economic profit of $361.70. Revenue exceeds variable cost by $861.70; operating is better than paying unavoidable fixed cost with no sales.",
+        "aHash": "0b01ad2d0b138e163cab7516f1187f54dfa2e0f207c1fc384cf04e56c553564a",
+        "canonicalId": "P62G-MON-EL-008",
+        "sourceId": 700307,
+        "sourceChapter": [
+          "monopoly"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "c755aefb8080da6d0c04396b5cbc43c738e0697fe6018926fa38b5e6d92a060e",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2g-monopoly-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "monopoly_profit",
+            "sourceRecordOrder": 7,
+            "sourceId": 700307,
+            "sourceHash": "c755aefb8080da6d0c04396b5cbc43c738e0697fe6018926fa38b5e6d92a060e"
+          }
+        ],
+        "primaryConceptId": "monopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopoly",
+        "subtopicIds": [
+          "monopoly-profit-loss-shutdown"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Place in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:41:06.026Z",
+        "reviewedRevision": "elite-20261101-687e005310c2",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62G-MON-EL-009",
+      "topic": "Monopoly",
+      "question": {
+        "id": "P62G-MON-EL-009",
+        "sourceGame": "monopoly",
+        "q": "For a monopolist, demand is P=100−2Q, marginal cost is MC=20+0.2Q, and total cost is TC=850+20Q+0.1Q². Which output-price pair maximizes profit? Round only the final results.",
+        "options": [
+          "Q=36.36, P=$27.27.",
+          "Q=19.05, P=$23.81.",
+          "Q=19.05, P=$61.90.",
+          "Q=36.36, P=$61.90."
+        ],
+        "tag": "monopoly",
+        "type": "calculation",
+        "objective": "MON.3",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopoly",
+        "primarySkill": "integrated_monopoly_analysis",
+        "secondarySkills": [],
+        "repairSkill": "integrated_monopoly_analysis",
+        "commonError": "fails_to_sequence_quantity_price_profit_welfare",
+        "feedback": "MR=100−4Q. Set MR=MC: (4+0.2)Q=80, giving Q≈19.05. Demand then gives P≈$61.90. Setting P=MC instead gives the efficient output 36.36, which is not the monopolist's profit maximum.",
+        "aHash": "a2ae920df01089e39513b451e552051760872efe662eb9b9aacc2da6f32a5933",
+        "canonicalId": "P62G-MON-EL-009",
+        "sourceId": 700308,
+        "sourceChapter": [
+          "monopoly"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "9eb0d84dad6d72773b3118e298f86f38abd23741f130f63408c0defd98c26493",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2g-monopoly-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "integrated_monopoly_analysis",
+            "sourceRecordOrder": 8,
+            "sourceId": 700308,
+            "sourceHash": "9eb0d84dad6d72773b3118e298f86f38abd23741f130f63408c0defd98c26493"
+          }
+        ],
+        "primaryConceptId": "monopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopoly",
+        "subtopicIds": [
+          "monopoly-output-price"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Place in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:41:11.906Z",
+        "reviewedRevision": "elite-20261101-9a9392601871",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62G-MON-EL-010",
+      "topic": "Monopoly",
+      "question": {
+        "id": "P62G-MON-EL-010",
+        "sourceGame": "monopoly",
+        "q": "For a monopolist, demand is P=100−2Q, marginal cost is MC=20+0.2Q, and total cost is TC=850+20Q+0.1Q². Fixed cost is unavoidable this period. At the profit-maximizing output, what economic result and operating decision follow? Round only the final result.",
+        "options": [
+          "An economic loss of $88.10; shut down because fixed cost must always be avoided.",
+          "An economic profit of $761.90; operate after excluding fixed cost from economic profit.",
+          "An economic loss of $124.38; operate after treating marginal cost as average variable cost.",
+          "An economic loss of $88.10; operate because revenue covers variable cost."
+        ],
+        "tag": "monopoly",
+        "type": "calculation",
+        "objective": "MON.4",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopoly",
+        "primarySkill": "monopoly_loss",
+        "secondarySkills": [],
+        "repairSkill": "monopoly_loss",
+        "commonError": "assumes_monopoly_cannot_lose",
+        "feedback": "MR=MC gives Q=(100−20)/(4+0.2)≈19.05, then P≈$61.90. Revenue is $1179.14 and total cost is $1267.23, giving economic loss of $88.10. Revenue exceeds variable cost by $761.90; operating is better than paying unavoidable fixed cost with no sales.",
+        "aHash": "bdf321f4f5bb501e2d3b23263c89e120f161e625007cf48c347ad3fc63eb01c4",
+        "canonicalId": "P62G-MON-EL-010",
+        "sourceId": 700309,
+        "sourceChapter": [
+          "monopoly"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "e610f4a76f486a8989c31278c4bb12d4b6f2b4721a89822560e66ac08d9d2b30",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2g-monopoly-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "monopoly_loss",
+            "sourceRecordOrder": 9,
+            "sourceId": 700309,
+            "sourceHash": "e610f4a76f486a8989c31278c4bb12d4b6f2b4721a89822560e66ac08d9d2b30"
+          }
+        ],
+        "primaryConceptId": "monopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopoly",
+        "subtopicIds": [
+          "monopoly-profit-loss-shutdown"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Place in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:41:17.483Z",
+        "reviewedRevision": "elite-20261101-87afea9af116",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62G-MON-EL-011",
+      "topic": "Monopoly",
+      "question": {
+        "id": "P62G-MON-EL-011",
+        "sourceGame": "monopoly",
+        "q": "For a monopolist, demand is P=92−1.5Q, marginal cost is MC=18+0.35Q, and total cost is TC=780+18Q+0.175Q². Which output-price pair maximizes profit? Round only the final results.",
+        "options": [
+          "Q=22.09, P=$58.87.",
+          "Q=40.00, P=$32.00.",
+          "Q=22.09, P=$25.73.",
+          "Q=40.00, P=$58.87."
+        ],
+        "tag": "monopoly",
+        "type": "calculation",
+        "objective": "MON.3",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopoly",
+        "primarySkill": "integrated_monopoly_analysis",
+        "secondarySkills": [],
+        "repairSkill": "integrated_monopoly_analysis",
+        "commonError": "fails_to_sequence_quantity_price_profit_welfare",
+        "feedback": "MR=92−3Q. Set MR=MC: (3+0.35)Q=74, giving Q≈22.09. Demand then gives P≈$58.87. Setting P=MC instead gives the efficient output 40.00, which is not the monopolist's profit maximum.",
+        "aHash": "f974804999fdbe7938c5127d662591833763d4332d01d5c345744f0a5c8e976b",
+        "canonicalId": "P62G-MON-EL-011",
+        "sourceId": 700310,
+        "sourceChapter": [
+          "monopoly"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "9a9b2ffe908a5197fc9478d8f2b25b550984f1461a31c61314ba8abad7f9ee61",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2g-monopoly-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "integrated_monopoly_analysis",
+            "sourceRecordOrder": 10,
+            "sourceId": 700310,
+            "sourceHash": "9a9b2ffe908a5197fc9478d8f2b25b550984f1461a31c61314ba8abad7f9ee61"
+          }
+        ],
+        "primaryConceptId": "monopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopoly",
+        "subtopicIds": [
+          "monopoly-output-price"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Place in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:41:23.090Z",
+        "reviewedRevision": "elite-20261101-0d70c505c8bd",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62G-MON-EL-013",
+      "topic": "Monopoly",
+      "question": {
+        "id": "P62G-MON-EL-013",
+        "sourceGame": "monopoly",
+        "q": "For a monopolist, demand is P=116−2.4Q, marginal cost is MC=26+0.25Q, and total cost is TC=900+26Q+0.125Q². Which output-price pair maximizes profit? Round only the final results.",
+        "options": [
+          "Q=33.96, P=$34.49.",
+          "Q=17.82, P=$30.46.",
+          "Q=17.82, P=$73.23.",
+          "Q=33.96, P=$73.23."
+        ],
+        "tag": "monopoly",
+        "type": "calculation",
+        "objective": "MON.3",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopoly",
+        "primarySkill": "integrated_monopoly_analysis",
+        "secondarySkills": [],
+        "repairSkill": "integrated_monopoly_analysis",
+        "commonError": "fails_to_sequence_quantity_price_profit_welfare",
+        "feedback": "MR=116−4.8Q. Set MR=MC: (4.8+0.25)Q=90, giving Q≈17.82. Demand then gives P≈$73.23. Setting P=MC instead gives the efficient output 33.96, which is not the monopolist's profit maximum.",
+        "aHash": "e609dcaeb751547d5da17d2ac2d5ad14e0066a83e2b4aeadb29d7b767875ddf8",
+        "canonicalId": "P62G-MON-EL-013",
+        "sourceId": 700312,
+        "sourceChapter": [
+          "monopoly"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "f74088534dc86a2972460be3cad7a0daabd6efe8a529df0ab6ac97ab4b744851",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2g-monopoly-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "integrated_monopoly_analysis",
+            "sourceRecordOrder": 12,
+            "sourceId": 700312,
+            "sourceHash": "f74088534dc86a2972460be3cad7a0daabd6efe8a529df0ab6ac97ab4b744851"
+          }
+        ],
+        "primaryConceptId": "monopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopoly",
+        "subtopicIds": [
+          "monopoly-output-price"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Place in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:41:29.090Z",
+        "reviewedRevision": "elite-20261101-5194e9e247cb",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62G-MON-EL-015",
+      "topic": "Monopoly",
+      "question": {
+        "id": "P62G-MON-EL-015",
+        "sourceGame": "monopoly",
+        "q": "For a monopolist, demand is P=105−2.1Q, marginal cost is MC=18+0.3Q, and total cost is TC=650+18Q+0.15Q². Which output-price pair maximizes profit? Round only the final results.",
+        "options": [
+          "Q=19.33, P=$64.40.",
+          "Q=36.25, P=$28.88.",
+          "Q=19.33, P=$23.80.",
+          "Q=36.25, P=$64.40."
+        ],
+        "tag": "monopoly",
+        "type": "calculation",
+        "objective": "MON.3",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopoly",
+        "primarySkill": "integrated_monopoly_analysis",
+        "secondarySkills": [],
+        "repairSkill": "integrated_monopoly_analysis",
+        "commonError": "fails_to_sequence_quantity_price_profit_welfare",
+        "feedback": "MR=105−4.2Q. Set MR=MC: (4.2+0.3)Q=87, giving Q≈19.33. Demand then gives P≈$64.40. Setting P=MC instead gives the efficient output 36.25, which is not the monopolist's profit maximum.",
+        "aHash": "5a42db913464db89f09b0667ed2a0b2fc57ee27ecd576bea7ad22b0ee3754039",
+        "canonicalId": "P62G-MON-EL-015",
+        "sourceId": 700314,
+        "sourceChapter": [
+          "monopoly"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "289933aaee968392fa57c671353e17abbdf478c88628f6509301b71d31cfba90",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2g-monopoly-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "integrated_monopoly_analysis",
+            "sourceRecordOrder": 14,
+            "sourceId": 700314,
+            "sourceHash": "289933aaee968392fa57c671353e17abbdf478c88628f6509301b71d31cfba90"
+          }
+        ],
+        "primaryConceptId": "monopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopoly",
+        "subtopicIds": [
+          "monopoly-output-price"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Place in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:41:39.442Z",
+        "reviewedRevision": "elite-20261101-6f7a44e49072",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62G-MON-EL-017",
+      "topic": "Monopoly",
+      "question": {
+        "id": "P62G-MON-EL-017",
+        "sourceGame": "monopoly",
+        "q": "For a monopolist, demand is P=100−2Q and marginal cost is constant at $20. There are no externalities. What are profit-maximizing output, efficient output, and deadweight loss?",
+        "options": [
+          "Qm=20.00, Qefficient=40.00, deadweight loss $800.00.",
+          "Qm=40.00, Qefficient=20.00, deadweight loss $400.00.",
+          "Qm=20.00, Qefficient=40.00, deadweight loss $400.00.",
+          "Qm=20.00, Qefficient=40.00, deadweight loss $1200.00."
+        ],
+        "tag": "monopoly",
+        "type": "calculation",
+        "objective": "MON.5",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopoly",
+        "primarySkill": "monopoly_deadweight_loss",
+        "secondarySkills": [],
+        "repairSkill": "monopoly_deadweight_loss",
+        "commonError": "equates_dwl_and_profit",
+        "feedback": "MR=100−4Q equals MC at Q=20.00. Demand equals MC at Q=40.00. At monopoly output, price is $60.00, so the lost-surplus triangle is 0.5×(40.00−20.00)×(60.00−20)=$400.00. The transfer on units still sold is not deadweight loss.",
+        "aHash": "c2ed6f9024c4b0eefde7a75bf6987fc3c6834f7c279fc52b3cbe3d2692b8cfb7",
+        "canonicalId": "P62G-MON-EL-017",
+        "sourceId": 700316,
+        "sourceChapter": [
+          "monopoly"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "4f67b2a02d0a52686b65fd53c16ad137c3153b1ddde07f585b97a593010c1baf",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2g-monopoly-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "monopoly_deadweight_loss",
+            "sourceRecordOrder": 16,
+            "sourceId": 700316,
+            "sourceHash": "4f67b2a02d0a52686b65fd53c16ad137c3153b1ddde07f585b97a593010c1baf",
+            "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+          }
+        ],
+        "primaryConceptId": "monopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopoly",
+        "subtopicIds": [
+          "monopoly-welfare-efficiency"
+        ],
+        "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Place in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:41:52.898Z",
+        "reviewedRevision": "elite-20261101-a783ff8002c0",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62G-MON-EL-020",
+      "topic": "Monopoly",
+      "question": {
+        "id": "P62G-MON-EL-020",
+        "sourceGame": "monopoly",
+        "q": "For a monopolist, demand is P=105−1.75Q and marginal cost is constant at $21. There are no externalities. What are profit-maximizing output, efficient output, and deadweight loss?",
+        "options": [
+          "Qm=24.00, Qefficient=48.00, deadweight loss $1008.00.",
+          "Qm=24.00, Qefficient=48.00, deadweight loss $504.00.",
+          "Qm=48.00, Qefficient=24.00, deadweight loss $504.00.",
+          "Qm=24.00, Qefficient=48.00, deadweight loss $1512.00."
+        ],
+        "tag": "monopoly",
+        "type": "calculation",
+        "objective": "MON.5",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopoly",
+        "primarySkill": "monopoly_deadweight_loss",
+        "secondarySkills": [],
+        "repairSkill": "monopoly_deadweight_loss",
+        "commonError": "equates_dwl_and_profit",
+        "feedback": "MR=105−3.5Q equals MC at Q=24.00. Demand equals MC at Q=48.00. At monopoly output, price is $63.00, so the lost-surplus triangle is 0.5×(48.00−24.00)×(63.00−21)=$504.00. The transfer on units still sold is not deadweight loss.",
+        "aHash": "cd03542668b51514ced0c507482198b2a0b5beabe27664e335ae566ae208635f",
+        "canonicalId": "P62G-MON-EL-020",
+        "sourceId": 700319,
+        "sourceChapter": [
+          "monopoly"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "ecc142a368f57c522d7f4e5e528ebafa002107b902fe715cba33957813cbb242",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2g-monopoly-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "monopoly_deadweight_loss",
+            "sourceRecordOrder": 19,
+            "sourceId": 700319,
+            "sourceHash": "ecc142a368f57c522d7f4e5e528ebafa002107b902fe715cba33957813cbb242",
+            "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+          }
+        ],
+        "primaryConceptId": "monopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopoly",
+        "subtopicIds": [
+          "monopoly-welfare-efficiency"
+        ],
+        "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Place in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:42:22.394Z",
+        "reviewedRevision": "elite-20261101-f67ebcacac73",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62G-MON-EL-023",
+      "topic": "Monopoly",
+      "question": {
+        "id": "P62G-MON-EL-023",
+        "sourceGame": "monopoly",
+        "q": "A natural monopolist has demand P=100−1.2Q, constant MC=$12, and fixed cost $900. A regulator replaces unregulated monopoly pricing with P=MC. Which output comparison and subsidy requirement follow?",
+        "options": [
+          "Output rises from 36.67 to 73.33; a $900 subsidy covers the resulting loss.",
+          "Output rises from 36.67 to 73.33; no subsidy is needed because P=MC covers total cost.",
+          "Output stays 36.67 while price falls from $56.00 to $12; a $900 subsidy covers the loss.",
+          "Output rises from 36.67 to 73.33; subsidy $1780.00 is needed to cover all costs."
+        ],
+        "tag": "monopoly",
+        "type": "calculation",
+        "objective": "MON.6",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopoly",
+        "primarySkill": "marginal_cost_regulation",
+        "secondarySkills": [],
+        "repairSkill": "marginal_cost_regulation",
+        "commonError": "assumes_break_even",
+        "feedback": "Unregulated MR=100−2.4Q equals MC at Q=36.67. Marginal-cost pricing instead sets 100−1.2Q=12, giving Q=73.33. Revenue covers variable cost exactly, leaving the fixed cost $900 uncovered. A lump-sum subsidy of $900 covers that loss.",
+        "aHash": "47e389f5caa4827e882f8f406c715ce2bac1f044d547974dabd7182c20c46a1a",
+        "canonicalId": "P62G-MON-EL-023",
+        "sourceId": 700322,
+        "sourceChapter": [
+          "monopoly"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "d8fa4f5e68041e11f39d3a5de77534e0d06f85f794d0ed14ea890a5c1d20046f",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2g-monopoly-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "marginal_cost_regulation",
+            "sourceRecordOrder": 22,
+            "sourceId": 700322,
+            "sourceHash": "d8fa4f5e68041e11f39d3a5de77534e0d06f85f794d0ed14ea890a5c1d20046f",
+            "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+          }
+        ],
+        "primaryConceptId": "monopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopoly",
+        "subtopicIds": [
+          "natural-monopoly-regulation"
+        ],
+        "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Place in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:42:39.523Z",
+        "reviewedRevision": "elite-20261101-eeb363835829",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62G-MON-EL-024",
+      "topic": "Monopoly",
+      "question": {
+        "id": "P62G-MON-EL-024",
+        "sourceGame": "monopoly",
+        "q": "A natural monopolist has demand P=120−1.5Q, MC=$15, and total cost TC=1200+15Q. The two outputs where demand price equals ATC are approximately 14.38 and 55.62. A regulator wants the greatest output that covers total cost without a subsidy. Which choice and comparison with marginal-cost pricing are appropriate?",
+        "options": [
+          "Choose Q≈55.62, P≈$36.58; P=MC would raise output to 70.00 with no loss.",
+          "Choose Q≈55.62, P≈$36.58; P=MC would raise output to 70.00 but leave a $1200 loss.",
+          "Choose Q≈14.38, P≈$98.42; the smaller break-even output serves the greatest number of buyers.",
+          "Choose Q≈70.00, P=$15; equality of price and MC also covers the $1200 fixed cost."
+        ],
+        "tag": "monopoly",
+        "type": "calculation",
+        "objective": "MON.6",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopoly",
+        "primarySkill": "average_cost_regulation",
+        "secondarySkills": [],
+        "repairSkill": "average_cost_regulation",
+        "commonError": "claims_allocative_efficiency",
+        "feedback": "Both listed intersections break even, but the larger one serves more buyers. Demand gives P≈$36.58 there. P=MC instead implies Q=(120−15)/1.5≈70.00 and leaves the fixed cost $1200 uncovered. The two break-even roots are supplied so the task requires interpretation rather than quadratic solving.",
+        "aHash": "f92d5f6413c6527c33b173d5888e3c79d1972a3d5db9c2dc9e95388432566dfc",
+        "canonicalId": "P62G-MON-EL-024",
+        "sourceId": 700323,
+        "sourceChapter": [
+          "monopoly"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "8f1d3ac4c5e06b9ab2f8a8b8552ad3d7c7cfeda81ba1719405ae4e36153deaef",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2g-monopoly-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "average_cost_regulation",
+            "sourceRecordOrder": 23,
+            "sourceId": 700323,
+            "sourceHash": "8f1d3ac4c5e06b9ab2f8a8b8552ad3d7c7cfeda81ba1719405ae4e36153deaef",
+            "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+          }
+        ],
+        "primaryConceptId": "monopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopoly",
+        "subtopicIds": [
+          "natural-monopoly-regulation"
+        ],
+        "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Place in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:42:47.723Z",
+        "reviewedRevision": "elite-20261101-c7e33565029f",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62G-MON-EL-025",
+      "topic": "Monopoly",
+      "question": {
+        "id": "P62G-MON-EL-025",
+        "sourceGame": "monopoly",
+        "q": "A natural monopolist has demand P=90−1Q, constant MC=$10, and fixed cost $800. A regulator replaces unregulated monopoly pricing with P=MC. Which output comparison and subsidy requirement follow?",
+        "options": [
+          "Output rises from 40.00 to 80.00; no subsidy is needed because P=MC covers total cost.",
+          "Output stays 40.00 while price falls from $50.00 to $10; a $800 subsidy covers the loss.",
+          "Output rises from 40.00 to 80.00; a $800 subsidy covers the resulting loss.",
+          "Output rises from 40.00 to 80.00; subsidy $1600.00 is needed to cover all costs."
+        ],
+        "tag": "monopoly",
+        "type": "calculation",
+        "objective": "MON.6",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopoly",
+        "primarySkill": "marginal_cost_regulation",
+        "secondarySkills": [],
+        "repairSkill": "marginal_cost_regulation",
+        "commonError": "assumes_break_even",
+        "feedback": "Unregulated MR=90−2Q equals MC at Q=40.00. Marginal-cost pricing instead sets 90−1Q=10, giving Q=80.00. Revenue covers variable cost exactly, leaving the fixed cost $800 uncovered. A lump-sum subsidy of $800 covers that loss.",
+        "aHash": "c3c042fec5e13b48d9e33c103645100b8edfa874150b6c0c713c7a9cdb26ac3d",
+        "canonicalId": "P62G-MON-EL-025",
+        "sourceId": 700324,
+        "sourceChapter": [
+          "monopoly"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "2a46ac76d9351f63f3c3dda1ef7e980cf01988188a16752f5c6dfadf6cdf44be",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2g-monopoly-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "marginal_cost_regulation",
+            "sourceRecordOrder": 24,
+            "sourceId": 700324,
+            "sourceHash": "2a46ac76d9351f63f3c3dda1ef7e980cf01988188a16752f5c6dfadf6cdf44be",
+            "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+          }
+        ],
+        "primaryConceptId": "monopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopoly",
+        "subtopicIds": [
+          "natural-monopoly-regulation"
+        ],
+        "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Place in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:42:55.090Z",
+        "reviewedRevision": "elite-20261101-1694edb0d607",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62G-MON-EL-026",
+      "topic": "Monopoly",
+      "question": {
+        "id": "P62G-MON-EL-026",
+        "sourceGame": "monopoly",
+        "q": "A natural monopolist has demand P=110−1.25Q, MC=$14, and total cost TC=1000+14Q. The two outputs where demand price equals ATC are approximately 12.43 and 64.37. A regulator wants the greatest output that covers total cost without a subsidy. Which choice and comparison with marginal-cost pricing are appropriate?",
+        "options": [
+          "Choose Q≈64.37, P≈$29.53; P=MC would raise output to 76.80 with no loss.",
+          "Choose Q≈12.43, P≈$94.47; the smaller break-even output serves the greatest number of buyers.",
+          "Choose Q≈76.80, P=$14; equality of price and MC also covers the $1000 fixed cost.",
+          "Choose Q≈64.37, P≈$29.53; P=MC would raise output to 76.80 but leave a $1000 loss."
+        ],
+        "tag": "monopoly",
+        "type": "calculation",
+        "objective": "MON.6",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopoly",
+        "primarySkill": "average_cost_regulation",
+        "secondarySkills": [],
+        "repairSkill": "average_cost_regulation",
+        "commonError": "claims_allocative_efficiency",
+        "feedback": "Both listed intersections break even, but the larger one serves more buyers. Demand gives P≈$29.53 there. P=MC instead implies Q=(110−14)/1.25≈76.80 and leaves the fixed cost $1000 uncovered. The two break-even roots are supplied so the task requires interpretation rather than quadratic solving.",
+        "aHash": "a160266229ec2c954444fea2b12b6654c150753a205e093cd37fa0af1c49615c",
+        "canonicalId": "P62G-MON-EL-026",
+        "sourceId": 700325,
+        "sourceChapter": [
+          "monopoly"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "77c8d13db941709d9f006fbe0453c3aef4642d288fed8b992070e2dabad66e99",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2g-monopoly-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "average_cost_regulation",
+            "sourceRecordOrder": 25,
+            "sourceId": 700325,
+            "sourceHash": "77c8d13db941709d9f006fbe0453c3aef4642d288fed8b992070e2dabad66e99",
+            "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+          }
+        ],
+        "primaryConceptId": "monopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopoly",
+        "subtopicIds": [
+          "natural-monopoly-regulation"
+        ],
+        "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Place in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:43:00.628Z",
+        "reviewedRevision": "elite-20261101-97acd65e2d56",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62G-MON-EL-027",
+      "topic": "Monopoly",
+      "question": {
+        "id": "P62G-MON-EL-027",
+        "sourceGame": "monopoly",
+        "q": "A monopolist can prevent resale between two markets. Demands are PA=100−2QA and PB=80−1QB; MC is $20 in both, with no capacity constraint. Which quantities and prices maximize combined profit?",
+        "options": [
+          "A: Q=20.00, P=$60.00; B: Q=30.00, P=$50.00.",
+          "A: Q=20.00, P=$50.00; B: Q=30.00, P=$60.00.",
+          "A: Q=40.00, P=$20.00; B: Q=60.00, P=$20.00.",
+          "A: Q=20.00, P=$60.00; B: Q=60.00, P=$20.00."
+        ],
+        "tag": "monopoly",
+        "type": "calculation",
+        "objective": "MON.6",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopoly",
+        "primarySkill": "third_degree_price_discrimination",
+        "secondarySkills": [],
+        "repairSkill": "third_degree_price_discrimination",
+        "commonError": "charges_more_to_more_elastic_group",
+        "feedback": "Set each market's MR equal to the common MC: 100−4QA=20 and 80−2QB=20. Thus QA=20.00 and QB=30.00. Substituting into the separate demands gives PA=$60.00 and PB=$50.00. Equal marginal revenues need not mean equal prices.",
+        "aHash": "a48847865b1c87e7e3bd6f976f17aee2f9237a0356cd77fa11287994b32a58df",
+        "canonicalId": "P62G-MON-EL-027",
+        "sourceId": 700326,
+        "sourceChapter": [
+          "monopoly"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "4f256580daa85fdda01679fc45e1b052017e1c9ac70262f45b4d86e3e59fdf7b",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2g-monopoly-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "third_degree_price_discrimination",
+            "sourceRecordOrder": 26,
+            "sourceId": 700326,
+            "sourceHash": "4f256580daa85fdda01679fc45e1b052017e1c9ac70262f45b4d86e3e59fdf7b"
+          }
+        ],
+        "primaryConceptId": "monopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopoly",
+        "subtopicIds": [
+          "monopoly-price-discrimination"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Place in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:43:21.138Z",
+        "reviewedRevision": "elite-20261101-7c295d0ae4e7",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62G-MON-EL-028",
+      "topic": "Monopoly",
+      "question": {
+        "id": "P62G-MON-EL-028",
+        "sourceGame": "monopoly",
+        "q": "A monopolist can prevent resale between two markets. Demands are PA=120−3QA and PB=90−1.5QB; MC is $24 in both, with no capacity constraint. Which quantities and prices maximize combined profit?",
+        "options": [
+          "A: Q=16.00, P=$57.00; B: Q=22.00, P=$72.00.",
+          "A: Q=16.00, P=$72.00; B: Q=22.00, P=$57.00.",
+          "A: Q=32.00, P=$24.00; B: Q=44.00, P=$24.00.",
+          "A: Q=16.00, P=$72.00; B: Q=44.00, P=$24.00."
+        ],
+        "tag": "monopoly",
+        "type": "calculation",
+        "objective": "MON.6",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopoly",
+        "primarySkill": "third_degree_price_discrimination",
+        "secondarySkills": [],
+        "repairSkill": "third_degree_price_discrimination",
+        "commonError": "charges_more_to_more_elastic_group",
+        "feedback": "Set each market's MR equal to the common MC: 120−6QA=24 and 90−3QB=24. Thus QA=16.00 and QB=22.00. Substituting into the separate demands gives PA=$72.00 and PB=$57.00. Equal marginal revenues need not mean equal prices.",
+        "aHash": "c80dc93c45cd62979cc4078f0561c79296b8353306569e149517d125a10a8803",
+        "canonicalId": "P62G-MON-EL-028",
+        "sourceId": 700327,
+        "sourceChapter": [
+          "monopoly"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "d44f1d75445e29ad27c11b430accd44b1a4d5949b22061d430827e9540b57d69",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2g-monopoly-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "third_degree_price_discrimination",
+            "sourceRecordOrder": 27,
+            "sourceId": 700327,
+            "sourceHash": "d44f1d75445e29ad27c11b430accd44b1a4d5949b22061d430827e9540b57d69"
+          }
+        ],
+        "primaryConceptId": "monopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopoly",
+        "subtopicIds": [
+          "monopoly-price-discrimination"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Place in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:43:24.890Z",
+        "reviewedRevision": "elite-20261101-dae4b33d0fed",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62G-MON-EL-029",
+      "topic": "Monopoly",
+      "question": {
+        "id": "P62G-MON-EL-029",
+        "sourceGame": "monopoly",
+        "q": "A monopolist can prevent resale between two markets. Demands are PA=95−1.5QA and PB=110−3QB; MC is $18 in both, with no capacity constraint. Which quantities and prices maximize combined profit?",
+        "options": [
+          "A: Q=25.67, P=$64.00; B: Q=15.33, P=$56.50.",
+          "A: Q=51.33, P=$18.00; B: Q=30.67, P=$18.00.",
+          "A: Q=25.67, P=$56.50; B: Q=15.33, P=$64.00.",
+          "A: Q=25.67, P=$56.50; B: Q=30.67, P=$18.00."
+        ],
+        "tag": "monopoly",
+        "type": "calculation",
+        "objective": "MON.6",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopoly",
+        "primarySkill": "third_degree_price_discrimination",
+        "secondarySkills": [],
+        "repairSkill": "third_degree_price_discrimination",
+        "commonError": "charges_more_to_more_elastic_group",
+        "feedback": "Set each market's MR equal to the common MC: 95−3QA=18 and 110−6QB=18. Thus QA=25.67 and QB=15.33. Substituting into the separate demands gives PA=$56.50 and PB=$64.00. Equal marginal revenues need not mean equal prices.",
+        "aHash": "c46737930f8b31d2674913cac2216e322f8acc908cce3cfc6168e9d0b9e3dea6",
+        "canonicalId": "P62G-MON-EL-029",
+        "sourceId": 700328,
+        "sourceChapter": [
+          "monopoly"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "6edb36aa3ce0485e6984aa8b9d5db6e1c8f8559f797ef6e0cdfe3ea654ea1907",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2g-monopoly-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "third_degree_price_discrimination",
+            "sourceRecordOrder": 28,
+            "sourceId": 700328,
+            "sourceHash": "6edb36aa3ce0485e6984aa8b9d5db6e1c8f8559f797ef6e0cdfe3ea654ea1907"
+          }
+        ],
+        "primaryConceptId": "monopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopoly",
+        "subtopicIds": [
+          "monopoly-price-discrimination"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Place in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:43:29.586Z",
+        "reviewedRevision": "elite-20261101-c0c135887784",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62G-MON-EL-030",
+      "topic": "Monopoly",
+      "question": {
+        "id": "P62G-MON-EL-030",
+        "sourceGame": "monopoly",
+        "q": "A monopolist can prevent resale between two markets. Demands are PA=110−2QA and PB=86−1.2QB; MC is $22 in both, with no capacity constraint. Which quantities and prices maximize combined profit?",
+        "options": [
+          "A: Q=22.00, P=$54.00; B: Q=26.67, P=$66.00.",
+          "A: Q=44.00, P=$22.00; B: Q=53.33, P=$22.00.",
+          "A: Q=22.00, P=$66.00; B: Q=53.33, P=$22.00.",
+          "A: Q=22.00, P=$66.00; B: Q=26.67, P=$54.00."
+        ],
+        "tag": "monopoly",
+        "type": "calculation",
+        "objective": "MON.6",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopoly",
+        "primarySkill": "third_degree_price_discrimination",
+        "secondarySkills": [],
+        "repairSkill": "third_degree_price_discrimination",
+        "commonError": "charges_more_to_more_elastic_group",
+        "feedback": "Set each market's MR equal to the common MC: 110−4QA=22 and 86−2.4QB=22. Thus QA=22.00 and QB=26.67. Substituting into the separate demands gives PA=$66.00 and PB=$54.00. Equal marginal revenues need not mean equal prices.",
+        "aHash": "0904eab41d305ae053da42a5f06ae1779fa07cae1aa1d7bc7b104d8cec923caa",
+        "canonicalId": "P62G-MON-EL-030",
+        "sourceId": 700329,
+        "sourceChapter": [
+          "monopoly"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "3d0f44884c80082d4942ea6864bfcdded6b1af88e631bc580541c4fa749283a4",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2g-monopoly-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "third_degree_price_discrimination",
+            "sourceRecordOrder": 29,
+            "sourceId": 700329,
+            "sourceHash": "3d0f44884c80082d4942ea6864bfcdded6b1af88e631bc580541c4fa749283a4"
+          }
+        ],
+        "primaryConceptId": "monopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopoly",
+        "subtopicIds": [
+          "monopoly-price-discrimination"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Place in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:43:41.450Z",
+        "reviewedRevision": "elite-20261101-a099d329c3db",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62G-MON-EL-038",
+      "topic": "Monopoly",
+      "question": {
+        "id": "P62G-MON-EL-038",
+        "sourceGame": "monopoly",
+        "q": "Read the prices under monopoly, average-cost regulation and marginal-cost regulation. Explain the difference between the two regulatory rules.",
+        "options": [
+          "$30, about $20, $12; fair return covers ATC while marginal-cost pricing targets allocative efficiency.",
+          "$27, about $16, $10; fair return sets P = MC while marginal-cost pricing sets P = ATC.",
+          "$27, about $16, $10; fair return covers ATC while marginal-cost pricing targets allocative efficiency.",
+          "$30, about $20, $12; fair return sets P = MC while marginal-cost pricing sets P = ATC."
+        ],
+        "tag": "monopoly",
+        "type": "interpretation",
+        "objective": "MON.6",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopoly",
+        "primarySkill": "regulatory_tradeoff",
+        "secondarySkills": [],
+        "repairSkill": "regulatory_tradeoff",
+        "commonError": "misreads_monopoly_graph",
+        "feedback": "The monopoly reads price 27 at Q = 70. Demand meets ATC near Q = 116, P = 16 and MC at Q = 140, P = 10. Average-cost pricing covers costs; marginal-cost pricing expands further to the marginal-efficiency benchmark but may not cover ATC.",
+        "image": "question-assets/monopoly/MON-04.webp",
+        "aHash": "7b80d1f43205d1b14a2538bb51dbd1484c575f6bb1f2bb8dde5a97cf49e41449",
+        "canonicalId": "P62G-MON-EL-038",
+        "sourceId": 706054,
+        "sourceChapter": [
+          "monopoly"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "2809c2c0c674bdad94298bae56046492955c168be64fda59d6b0e734a785a49d",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2g-monopoly-graph-expansion-v2",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "regulatory_tradeoff",
+            "sourceRecordOrder": 54,
+            "sourceId": 706054,
+            "sourceHash": "2809c2c0c674bdad94298bae56046492955c168be64fda59d6b0e734a785a49d",
+            "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+          }
+        ],
+        "primaryConceptId": "monopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopoly",
+        "subtopicIds": [
+          "natural-monopoly-regulation"
+        ],
+        "graphRequired": true,
+        "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Rewrite the question. Seemed awkward, but the graph and answers are okay.",
+        "reasons": [
+          "wording"
+        ],
+        "updated": "2026-11-02T12:45:18.450Z",
+        "reviewedRevision": "",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62H-MCMP-EL-001",
+      "topic": "Monopolistic Competition",
+      "question": {
+        "id": "P62H-MCMP-EL-001",
+        "sourceGame": "monopolisticCompetition",
+        "q": "Summit Coffee is a monopolistically competitive firm with demand P=118−2.2Q and marginal cost MC=18+0.32Q. A new rival reduces willingness to pay by $12 at every quantity. Costs and the demand slope are unchanged. What new output and price maximize profit?",
+        "options": [
+          "Q=21.19, P=$71.39.",
+          "Q=18.64, P=$23.97.",
+          "Q=18.64, P=$64.98.",
+          "Q=34.92, P=$29.17."
+        ],
+        "tag": "monopolistic_competition",
+        "type": "calculation",
+        "objective": "MCMP.3",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopolistic_competition",
+        "primarySkill": "entry_demand_shift",
+        "secondarySkills": [],
+        "repairSkill": "entry_demand_shift",
+        "commonError": "shifts_existing_firm_demand_right",
+        "feedback": "New demand is P=106−2.2Q, so MR=106−4.4Q. Equating MR and MC gives 4.72Q=88, hence Q≈18.64. Substitution into demand gives P≈$64.98. MC at that output is not the price charged.",
+        "aHash": "f6929c9320f02e99e73be350bddeb73a0fbf64fd4d00c4e10639dd8c4ad1c90d",
+        "canonicalId": "P62H-MCMP-EL-001",
+        "sourceId": 710300,
+        "sourceChapter": [
+          "monopolistic-competition"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "545fbc5e65ef88fd8d0416f6a48666ee3c1242230dfe0bbc421074bf90965e7e",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2h-monopolistic-competition-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "entry_demand_shift",
+            "sourceRecordOrder": 0,
+            "sourceId": 710300,
+            "sourceHash": "545fbc5e65ef88fd8d0416f6a48666ee3c1242230dfe0bbc421074bf90965e7e"
+          }
+        ],
+        "primaryConceptId": "monopolistic-competition",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopolistic-competition",
+        "subtopicIds": [
+          "mcomp-entry-exit-long-run"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "I might place this in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:37:31.521Z",
+        "reviewedRevision": "elite-20261101-ebfbf2436c23",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62H-MCMP-EL-002",
+      "topic": "Monopolistic Competition",
+      "question": {
+        "id": "P62H-MCMP-EL-002",
+        "sourceGame": "monopolisticCompetition",
+        "q": "Summit Coffee operates in monopolistic competition with demand P=118−2.2Q and MC=18+0.32Q. Entry lowers willingness to pay by $12 at every quantity. Costs and the demand slope do not change, and the firm continues operating. Which price comparison and profit conclusion follow?",
+        "options": [
+          "Price falls from $71.39 to $64.98; reoptimizing preserves maximum economic profit.",
+          "Price falls from $71.39 to $59.39; output and maximum profit stay unchanged.",
+          "Price rises from $64.98 to $71.39; lower sales raise price along the original demand curve.",
+          "Price falls from $71.39 to $64.98; maximum economic profit also falls."
+        ],
+        "tag": "monopolistic_competition",
+        "type": "integration",
+        "objective": "MCMP.3",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopolistic_competition",
+        "primarySkill": "entry_after_profit",
+        "secondarySkills": [],
+        "repairSkill": "entry_after_profit",
+        "commonError": "assumes_profit_persists",
+        "feedback": "Before entry, Q=(118−18)/(4.4+0.32)≈21.19 and P≈$71.39. After entry, Q=(106−18)/(4.4+0.32)≈18.64 and P≈$64.98. Revenue is lower at every positive output while costs are unchanged, so maximum profit falls.",
+        "aHash": "46b3474ebd4acce7857b45f54bd3205b5900b57a114a6f59ee1437bafdc6f374",
+        "canonicalId": "P62H-MCMP-EL-002",
+        "sourceId": 710301,
+        "sourceChapter": [
+          "monopolistic-competition"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "ad0ac674075a01bf38828d25474af657f678a03ef988b595d76690a796407df4",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2h-monopolistic-competition-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "entry_after_profit",
+            "sourceRecordOrder": 1,
+            "sourceId": 710301,
+            "sourceHash": "ad0ac674075a01bf38828d25474af657f678a03ef988b595d76690a796407df4"
+          }
+        ],
+        "primaryConceptId": "monopolistic-competition",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopolistic-competition",
+        "subtopicIds": [
+          "mcomp-entry-exit-long-run"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "I might place this in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:37:44.186Z",
+        "reviewedRevision": "elite-20261101-4a7a89ff559a",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62H-MCMP-EL-004",
+      "topic": "Monopolistic Competition",
+      "question": {
+        "id": "P62H-MCMP-EL-004",
+        "sourceGame": "monopolisticCompetition",
+        "q": "Terra Salon is a monopolistically competitive firm with demand P=106−1.8Q and marginal cost MC=16+0.38Q. A new rival reduces willingness to pay by $12 at every quantity. Costs and the demand slope are unchanged. What new output and price maximize profit?",
+        "options": [
+          "Q=22.61, P=$65.30.",
+          "Q=19.60, P=$58.72.",
+          "Q=19.60, P=$23.45.",
+          "Q=35.78, P=$29.60."
+        ],
+        "tag": "monopolistic_competition",
+        "type": "calculation",
+        "objective": "MCMP.3",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopolistic_competition",
+        "primarySkill": "entry_demand_shift",
+        "secondarySkills": [],
+        "repairSkill": "entry_demand_shift",
+        "commonError": "shifts_existing_firm_demand_right",
+        "feedback": "New demand is P=94−1.8Q, so MR=94−3.6Q. Equating MR and MC gives 3.98Q=78, hence Q≈19.60. Substitution into demand gives P≈$58.72. MC at that output is not the price charged.",
+        "aHash": "984b022aabf60a1faa306f22bd70e7ce3a531a3234d1cbc84bd76c8444af3a35",
+        "canonicalId": "P62H-MCMP-EL-004",
+        "sourceId": 710303,
+        "sourceChapter": [
+          "monopolistic-competition"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "3271d018f09de81c9e8702b21e68a823fd702f525edef2eabfb2e15492069823",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2h-monopolistic-competition-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "entry_demand_shift",
+            "sourceRecordOrder": 3,
+            "sourceId": 710303,
+            "sourceHash": "3271d018f09de81c9e8702b21e68a823fd702f525edef2eabfb2e15492069823"
+          }
+        ],
+        "primaryConceptId": "monopolistic-competition",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopolistic-competition",
+        "subtopicIds": [
+          "mcomp-entry-exit-long-run"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "I might place this in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:37:51.298Z",
+        "reviewedRevision": "elite-20261101-6f30b4ffb9bb",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62H-MCMP-EL-005",
+      "topic": "Monopolistic Competition",
+      "question": {
+        "id": "P62H-MCMP-EL-005",
+        "sourceGame": "monopolisticCompetition",
+        "q": "Terra Salon operates in monopolistic competition with demand P=106−1.8Q and MC=16+0.38Q. Entry lowers willingness to pay by $12 at every quantity. Costs and the demand slope do not change, and the firm continues operating. Which price comparison and profit conclusion follow?",
+        "options": [
+          "Price falls from $65.30 to $58.72; reoptimizing preserves maximum economic profit.",
+          "Price falls from $65.30 to $53.30; output and maximum profit stay unchanged.",
+          "Price falls from $65.30 to $58.72; maximum economic profit also falls.",
+          "Price rises from $58.72 to $65.30; lower sales raise price along the original demand curve."
+        ],
+        "tag": "monopolistic_competition",
+        "type": "integration",
+        "objective": "MCMP.3",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopolistic_competition",
+        "primarySkill": "entry_after_profit",
+        "secondarySkills": [],
+        "repairSkill": "entry_after_profit",
+        "commonError": "assumes_profit_persists",
+        "feedback": "Before entry, Q=(106−16)/(3.6+0.38)≈22.61 and P≈$65.30. After entry, Q=(94−16)/(3.6+0.38)≈19.60 and P≈$58.72. Revenue is lower at every positive output while costs are unchanged, so maximum profit falls.",
+        "aHash": "4b02000949a8cee9e92480911deea032301780b7a4aeb5a9ead19703e48b7df0",
+        "canonicalId": "P62H-MCMP-EL-005",
+        "sourceId": 710304,
+        "sourceChapter": [
+          "monopolistic-competition"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "e7e06d2bf8ab1e83644420ca06bbe957b48ea671fa2f1ddc102f7e433cc3e142",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2h-monopolistic-competition-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "entry_after_profit",
+            "sourceRecordOrder": 4,
+            "sourceId": 710304,
+            "sourceHash": "e7e06d2bf8ab1e83644420ca06bbe957b48ea671fa2f1ddc102f7e433cc3e142"
+          }
+        ],
+        "primaryConceptId": "monopolistic-competition",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopolistic-competition",
+        "subtopicIds": [
+          "mcomp-entry-exit-long-run"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "I might place this in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:37:57.330Z",
+        "reviewedRevision": "elite-20261101-369e698e7e85",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62H-MCMP-EL-007",
+      "topic": "Monopolistic Competition",
+      "question": {
+        "id": "P62H-MCMP-EL-007",
+        "sourceGame": "monopolisticCompetition",
+        "q": "Urban Fitness is a monopolistically competitive firm with demand P=100−2Q and marginal cost MC=20+0.3Q. A new rival reduces willingness to pay by $12 at every quantity. Costs and the demand slope are unchanged. What new output and price maximize profit?",
+        "options": [
+          "Q=15.81, P=$56.37.",
+          "Q=18.60, P=$62.79.",
+          "Q=15.81, P=$24.74.",
+          "Q=29.57, P=$28.87."
+        ],
+        "tag": "monopolistic_competition",
+        "type": "calculation",
+        "objective": "MCMP.3",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopolistic_competition",
+        "primarySkill": "entry_demand_shift",
+        "secondarySkills": [],
+        "repairSkill": "entry_demand_shift",
+        "commonError": "shifts_existing_firm_demand_right",
+        "feedback": "New demand is P=88−2Q, so MR=88−4Q. Equating MR and MC gives 4.30Q=68, hence Q≈15.81. Substitution into demand gives P≈$56.37. MC at that output is not the price charged.",
+        "aHash": "b048d86d571d6c2c0d0c7c3db167d0f58ec3bac57f201f86ef2b369ca06d11e5",
+        "canonicalId": "P62H-MCMP-EL-007",
+        "sourceId": 710306,
+        "sourceChapter": [
+          "monopolistic-competition"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "5a23d81b40dfaaf1ceaf5cacf70177c1f6da1eeb63d105b1562bfa16abd40473",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2h-monopolistic-competition-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "entry_demand_shift",
+            "sourceRecordOrder": 6,
+            "sourceId": 710306,
+            "sourceHash": "5a23d81b40dfaaf1ceaf5cacf70177c1f6da1eeb63d105b1562bfa16abd40473"
+          }
+        ],
+        "primaryConceptId": "monopolistic-competition",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopolistic-competition",
+        "subtopicIds": [
+          "mcomp-entry-exit-long-run"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "I might place this in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:38:04.874Z",
+        "reviewedRevision": "elite-20261101-96d560474072",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62H-MCMP-EL-008",
+      "topic": "Monopolistic Competition",
+      "question": {
+        "id": "P62H-MCMP-EL-008",
+        "sourceGame": "monopolisticCompetition",
+        "q": "Urban Fitness operates in monopolistic competition with demand P=100−2Q and MC=20+0.3Q. Entry lowers willingness to pay by $12 at every quantity. Costs and the demand slope do not change, and the firm continues operating. Which price comparison and profit conclusion follow?",
+        "options": [
+          "Price falls from $62.79 to $56.37; reoptimizing preserves maximum economic profit.",
+          "Price falls from $62.79 to $56.37; maximum economic profit also falls.",
+          "Price falls from $62.79 to $50.79; output and maximum profit stay unchanged.",
+          "Price rises from $56.37 to $62.79; lower sales raise price along the original demand curve."
+        ],
+        "tag": "monopolistic_competition",
+        "type": "integration",
+        "objective": "MCMP.3",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopolistic_competition",
+        "primarySkill": "entry_after_profit",
+        "secondarySkills": [],
+        "repairSkill": "entry_after_profit",
+        "commonError": "assumes_profit_persists",
+        "feedback": "Before entry, Q=(100−20)/(4+0.3)≈18.60 and P≈$62.79. After entry, Q=(88−20)/(4+0.3)≈15.81 and P≈$56.37. Revenue is lower at every positive output while costs are unchanged, so maximum profit falls.",
+        "aHash": "7d9a983f5a63fcd4a22af2e3d5a205f7630e14d36a2e1b10889391d462063054",
+        "canonicalId": "P62H-MCMP-EL-008",
+        "sourceId": 710307,
+        "sourceChapter": [
+          "monopolistic-competition"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "e767984321dc7b4ed0d55cd860517d7426f671206b9b00f585bb5bb0a9d641ff",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2h-monopolistic-competition-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "entry_after_profit",
+            "sourceRecordOrder": 7,
+            "sourceId": 710307,
+            "sourceHash": "e767984321dc7b4ed0d55cd860517d7426f671206b9b00f585bb5bb0a9d641ff"
+          }
+        ],
+        "primaryConceptId": "monopolistic-competition",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopolistic-competition",
+        "subtopicIds": [
+          "mcomp-entry-exit-long-run"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "I might place this in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:38:09.954Z",
+        "reviewedRevision": "elite-20261101-7e7f2d7f1cdb",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62H-MCMP-EL-010",
+      "topic": "Monopolistic Competition",
+      "question": {
+        "id": "P62H-MCMP-EL-010",
+        "sourceGame": "monopolisticCompetition",
+        "q": "Velvet Apparel is a monopolistically competitive firm with demand P=126−2.5Q and marginal cost MC=22+0.28Q. A new rival reduces willingness to pay by $12 at every quantity. Costs and the demand slope are unchanged. What new output and price maximize profit?",
+        "options": [
+          "Q=19.70, P=$76.76.",
+          "Q=17.42, P=$26.88.",
+          "Q=33.09, P=$31.27.",
+          "Q=17.42, P=$70.44."
+        ],
+        "tag": "monopolistic_competition",
+        "type": "calculation",
+        "objective": "MCMP.3",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopolistic_competition",
+        "primarySkill": "entry_demand_shift",
+        "secondarySkills": [],
+        "repairSkill": "entry_demand_shift",
+        "commonError": "shifts_existing_firm_demand_right",
+        "feedback": "New demand is P=114−2.5Q, so MR=114−5Q. Equating MR and MC gives 5.28Q=92, hence Q≈17.42. Substitution into demand gives P≈$70.44. MC at that output is not the price charged.",
+        "aHash": "2a676c9549e2354a86a7aa3a8e9206698bb725ecd37538535a9caebe6103b2a2",
+        "canonicalId": "P62H-MCMP-EL-010",
+        "sourceId": 710309,
+        "sourceChapter": [
+          "monopolistic-competition"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "87de35b996d7c4ece2fe687776b5d9f2ca68f6ae4b9a22bc6d1ba141f3ed4917",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2h-monopolistic-competition-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "entry_demand_shift",
+            "sourceRecordOrder": 9,
+            "sourceId": 710309,
+            "sourceHash": "87de35b996d7c4ece2fe687776b5d9f2ca68f6ae4b9a22bc6d1ba141f3ed4917"
+          }
+        ],
+        "primaryConceptId": "monopolistic-competition",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopolistic-competition",
+        "subtopicIds": [
+          "mcomp-entry-exit-long-run"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "I might place this in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:38:15.370Z",
+        "reviewedRevision": "elite-20261101-0952a77c7817",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62H-MCMP-EL-011",
+      "topic": "Monopolistic Competition",
+      "question": {
+        "id": "P62H-MCMP-EL-011",
+        "sourceGame": "monopolisticCompetition",
+        "q": "Velvet Apparel operates in monopolistic competition with demand P=126−2.5Q and MC=22+0.28Q. Entry lowers willingness to pay by $12 at every quantity. Costs and the demand slope do not change, and the firm continues operating. Which price comparison and profit conclusion follow?",
+        "options": [
+          "Price falls from $76.76 to $70.44; maximum economic profit also falls.",
+          "Price falls from $76.76 to $70.44; reoptimizing preserves maximum economic profit.",
+          "Price falls from $76.76 to $64.76; output and maximum profit stay unchanged.",
+          "Price rises from $70.44 to $76.76; lower sales raise price along the original demand curve."
+        ],
+        "tag": "monopolistic_competition",
+        "type": "integration",
+        "objective": "MCMP.3",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopolistic_competition",
+        "primarySkill": "entry_after_profit",
+        "secondarySkills": [],
+        "repairSkill": "entry_after_profit",
+        "commonError": "assumes_profit_persists",
+        "feedback": "Before entry, Q=(126−22)/(5+0.28)≈19.70 and P≈$76.76. After entry, Q=(114−22)/(5+0.28)≈17.42 and P≈$70.44. Revenue is lower at every positive output while costs are unchanged, so maximum profit falls.",
+        "aHash": "af39783c9f426fcb454d7892697b1e09bf5b8af1be7dc82b3717501ab197501a",
+        "canonicalId": "P62H-MCMP-EL-011",
+        "sourceId": 710310,
+        "sourceChapter": [
+          "monopolistic-competition"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "17ffa47c467c56dea0f17d9e6e0b22aaecd27488a7502524d78717db4288954b",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2h-monopolistic-competition-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "entry_after_profit",
+            "sourceRecordOrder": 10,
+            "sourceId": 710310,
+            "sourceHash": "17ffa47c467c56dea0f17d9e6e0b22aaecd27488a7502524d78717db4288954b"
+          }
+        ],
+        "primaryConceptId": "monopolistic-competition",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopolistic-competition",
+        "subtopicIds": [
+          "mcomp-entry-exit-long-run"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "I might place this in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:38:19.659Z",
+        "reviewedRevision": "elite-20261101-65a2417b88e8",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62H-MCMP-EL-013",
+      "topic": "Monopolistic Competition",
+      "question": {
+        "id": "P62H-MCMP-EL-013",
+        "sourceGame": "monopolisticCompetition",
+        "q": "Willow Dental is a monopolistically competitive firm with demand P=112−2.1Q and marginal cost MC=24+0.3Q. A new rival reduces willingness to pay by $12 at every quantity. Costs and the demand slope are unchanged. What new output and price maximize profit?",
+        "options": [
+          "Q=19.56, P=$70.93.",
+          "Q=16.89, P=$29.07.",
+          "Q=16.89, P=$64.53.",
+          "Q=31.67, P=$33.50."
+        ],
+        "tag": "monopolistic_competition",
+        "type": "calculation",
+        "objective": "MCMP.3",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopolistic_competition",
+        "primarySkill": "entry_demand_shift",
+        "secondarySkills": [],
+        "repairSkill": "entry_demand_shift",
+        "commonError": "shifts_existing_firm_demand_right",
+        "feedback": "New demand is P=100−2.1Q, so MR=100−4.2Q. Equating MR and MC gives 4.50Q=76, hence Q≈16.89. Substitution into demand gives P≈$64.53. MC at that output is not the price charged.",
+        "aHash": "419ac22893f214298fccd6ac8ea0b59180a268c1027f473465062f62197894d5",
+        "canonicalId": "P62H-MCMP-EL-013",
+        "sourceId": 710312,
+        "sourceChapter": [
+          "monopolistic-competition"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "a17f4283e185fa2c2283340f3e798e709a2556604b902dce2e71d90b59f314ad",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2h-monopolistic-competition-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "entry_demand_shift",
+            "sourceRecordOrder": 12,
+            "sourceId": 710312,
+            "sourceHash": "a17f4283e185fa2c2283340f3e798e709a2556604b902dce2e71d90b59f314ad"
+          }
+        ],
+        "primaryConceptId": "monopolistic-competition",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopolistic-competition",
+        "subtopicIds": [
+          "mcomp-entry-exit-long-run"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "I might place this in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:38:23.851Z",
+        "reviewedRevision": "elite-20261101-bf447f47ede1",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62H-MCMP-EL-014",
+      "topic": "Monopolistic Competition",
+      "question": {
+        "id": "P62H-MCMP-EL-014",
+        "sourceGame": "monopolisticCompetition",
+        "q": "Willow Dental operates in monopolistic competition with demand P=112−2.1Q and MC=24+0.3Q. Entry lowers willingness to pay by $12 at every quantity. Costs and the demand slope do not change, and the firm continues operating. Which price comparison and profit conclusion follow?",
+        "options": [
+          "Price falls from $70.93 to $64.53; reoptimizing preserves maximum economic profit.",
+          "Price falls from $70.93 to $58.93; output and maximum profit stay unchanged.",
+          "Price rises from $64.53 to $70.93; lower sales raise price along the original demand curve.",
+          "Price falls from $70.93 to $64.53; maximum economic profit also falls."
+        ],
+        "tag": "monopolistic_competition",
+        "type": "integration",
+        "objective": "MCMP.3",
+        "difficulty": "elite",
+        "conceptCluster": "micro_monopolistic_competition",
+        "primarySkill": "entry_after_profit",
+        "secondarySkills": [],
+        "repairSkill": "entry_after_profit",
+        "commonError": "assumes_profit_persists",
+        "feedback": "Before entry, Q=(112−24)/(4.2+0.3)≈19.56 and P≈$70.93. After entry, Q=(100−24)/(4.2+0.3)≈16.89 and P≈$64.53. Revenue is lower at every positive output while costs are unchanged, so maximum profit falls.",
+        "aHash": "520875c55a9bba9a6a1ad5043ad4ff2e112c07b0129ac874c1bf428d56a48f25",
+        "canonicalId": "P62H-MCMP-EL-014",
+        "sourceId": 710313,
+        "sourceChapter": [
+          "monopolistic-competition"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "8930c535d226ffeeb9edca0a10e4e17e61195faf7264d8b922cde658c1a35c21",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2h-monopolistic-competition-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "entry_after_profit",
+            "sourceRecordOrder": 13,
+            "sourceId": 710313,
+            "sourceHash": "8930c535d226ffeeb9edca0a10e4e17e61195faf7264d8b922cde658c1a35c21"
+          }
+        ],
+        "primaryConceptId": "monopolistic-competition",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "monopolistic-competition",
+        "subtopicIds": [
+          "mcomp-entry-exit-long-run"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "I might place this in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:38:27.938Z",
+        "reviewedRevision": "elite-20261101-3ba08eff8e3b",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62I-OLI-EL-017",
+      "topic": "Oligopoly",
+      "question": {
+        "id": "P62I-OLI-EL-017",
+        "sourceGame": "oligopoly",
+        "q": "Assume the firms interact indefinitely. Cooperating pays 10 each period, starting now. Cheating pays 15 now, followed by 5 every period forever starting next period. Multiply each future payoff by 0.20 for every period ahead. Which present-value comparison and choice follow?",
+        "options": [
+          "Cooperate: 12.50; cheat: 16.25; choose cooperation.",
+          "Cooperate: 12.50; cheat: 21.25; choose cheating.",
+          "Cooperate: 12.50; cheat: 16.25; choose cheating.",
+          "Cooperate: 2.50; cheat: 3.25; choose cheating."
+        ],
+        "tag": "oligopoly",
+        "type": "application",
+        "objective": "OLI.4",
+        "difficulty": "elite",
+        "conceptCluster": "micro_oligopoly",
+        "primarySkill": "repeated_games",
+        "secondarySkills": [],
+        "repairSkill": "repeated_games",
+        "commonError": "assumes_repetition_guarantees_cooperation",
+        "feedback": "Cooperation gives 10/(1−0.2)=12.50. Cheating gives 15+0.2×5/(1−0.2)=16.25. Cheating is better by 3.75. Current payoffs are not discounted, and punishment starts next period.",
+        "aHash": "3a3e50b4ca02b532e913eb1798c7288967dcdad704fdd24a9198788f51ceb102",
+        "canonicalId": "P62I-OLI-EL-017",
+        "sourceId": 720316,
+        "sourceChapter": [
+          "oligopoly"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "f2fda9bec45a02333c915a00398da9be16e746142c0357ef2bf70e0402424714",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2i-oligopoly-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "repeated_games",
+            "sourceRecordOrder": 16,
+            "sourceId": 720316,
+            "sourceHash": "f2fda9bec45a02333c915a00398da9be16e746142c0357ef2bf70e0402424714"
+          }
+        ],
+        "primaryConceptId": "oligopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "oligopoly",
+        "subtopicIds": [
+          "oligopoly-dynamic-strategy"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Place in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:48:14.805Z",
+        "reviewedRevision": "elite-20261101-c75a83fc9b17",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62I-OLI-EL-018",
+      "topic": "Oligopoly",
+      "question": {
+        "id": "P62I-OLI-EL-018",
+        "sourceGame": "oligopoly",
+        "q": "Assume the firms interact indefinitely. Cooperating pays 11 each period, starting now. Cheating pays 16 now, followed by 5 every period forever starting next period. Multiply each future payoff by 0.35 for every period ahead. Which present-value comparison and choice follow?",
+        "options": [
+          "Cooperate: 16.92; cheat: 18.69; choose cooperation.",
+          "Cooperate: 16.92; cheat: 23.69; choose cheating.",
+          "Cooperate: 5.92; cheat: 6.54; choose cheating.",
+          "Cooperate: 16.92; cheat: 18.69; choose cheating."
+        ],
+        "tag": "oligopoly",
+        "type": "application",
+        "objective": "OLI.4",
+        "difficulty": "elite",
+        "conceptCluster": "micro_oligopoly",
+        "primarySkill": "repeated_games",
+        "secondarySkills": [],
+        "repairSkill": "repeated_games",
+        "commonError": "assumes_repetition_guarantees_cooperation",
+        "feedback": "Cooperation gives 11/(1−0.35)=16.92. Cheating gives 16+0.35×5/(1−0.35)=18.69. Cheating is better by 1.77. Current payoffs are not discounted, and punishment starts next period.",
+        "aHash": "c1f6d20f02c2bfb6f27c119d32c8793bdd6e80bed1af1fcf630d5045c8f148d4",
+        "canonicalId": "P62I-OLI-EL-018",
+        "sourceId": 720317,
+        "sourceChapter": [
+          "oligopoly"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "3b201ec72ce3233a207edd66bc124ab5e0d92eba1b4e3300bcc2968ec45141ce",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2i-oligopoly-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "repeated_games",
+            "sourceRecordOrder": 17,
+            "sourceId": 720317,
+            "sourceHash": "3b201ec72ce3233a207edd66bc124ab5e0d92eba1b4e3300bcc2968ec45141ce"
+          }
+        ],
+        "primaryConceptId": "oligopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "oligopoly",
+        "subtopicIds": [
+          "oligopoly-dynamic-strategy"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Place in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:48:22.670Z",
+        "reviewedRevision": "elite-20261101-0cdd0645b6d4",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62I-OLI-EL-019",
+      "topic": "Oligopoly",
+      "question": {
+        "id": "P62I-OLI-EL-019",
+        "sourceGame": "oligopoly",
+        "q": "Assume the firms interact indefinitely. Cooperating pays 12 each period, starting now. Cheating pays 17 now, followed by 6 every period forever starting next period. Multiply each future payoff by 0.50 for every period ahead. Which present-value comparison and choice follow?",
+        "options": [
+          "Cooperate: 24.00; cheat: 23.00; choose cooperation.",
+          "Cooperate: 24.00; cheat: 23.00; choose cheating.",
+          "Cooperate: 24.00; cheat: 29.00; choose cheating.",
+          "Cooperate: 12.00; cheat: 11.50; choose cooperation."
+        ],
+        "tag": "oligopoly",
+        "type": "application",
+        "objective": "OLI.4",
+        "difficulty": "elite",
+        "conceptCluster": "micro_oligopoly",
+        "primarySkill": "repeated_games",
+        "secondarySkills": [],
+        "repairSkill": "repeated_games",
+        "commonError": "assumes_repetition_guarantees_cooperation",
+        "feedback": "Cooperation gives 12/(1−0.5)=24.00. Cheating gives 17+0.5×6/(1−0.5)=23.00. Cooperation is better by 1.00. Current payoffs are not discounted, and punishment starts next period.",
+        "aHash": "44b76620b575ac5b3cc7bf4f93c363ff42200b9febce92e852f35b4d91d46cc6",
+        "canonicalId": "P62I-OLI-EL-019",
+        "sourceId": 720318,
+        "sourceChapter": [
+          "oligopoly"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "39ed93cc2169ba24c52c22dc15addc83b77ec9c39b3e0f9d3af613953c154520",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2i-oligopoly-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "repeated_games",
+            "sourceRecordOrder": 18,
+            "sourceId": 720318,
+            "sourceHash": "39ed93cc2169ba24c52c22dc15addc83b77ec9c39b3e0f9d3af613953c154520"
+          }
+        ],
+        "primaryConceptId": "oligopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "oligopoly",
+        "subtopicIds": [
+          "oligopoly-dynamic-strategy"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Place in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:48:27.102Z",
+        "reviewedRevision": "elite-20261101-055713802e0a",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62I-OLI-EL-020",
+      "topic": "Oligopoly",
+      "question": {
+        "id": "P62I-OLI-EL-020",
+        "sourceGame": "oligopoly",
+        "q": "Assume the firms interact indefinitely. Cooperating pays 13 each period, starting now. Cheating pays 18 now, followed by 6 every period forever starting next period. Multiply each future payoff by 0.65 for every period ahead. Which present-value comparison and choice follow?",
+        "options": [
+          "Cooperate: 37.14; cheat: 29.14; choose cheating.",
+          "Cooperate: 37.14; cheat: 29.14; choose cooperation.",
+          "Cooperate: 37.14; cheat: 35.14; choose cheating.",
+          "Cooperate: 24.14; cheat: 18.94; choose cooperation."
+        ],
+        "tag": "oligopoly",
+        "type": "application",
+        "objective": "OLI.4",
+        "difficulty": "elite",
+        "conceptCluster": "micro_oligopoly",
+        "primarySkill": "repeated_games",
+        "secondarySkills": [],
+        "repairSkill": "repeated_games",
+        "commonError": "assumes_repetition_guarantees_cooperation",
+        "feedback": "Cooperation gives 13/(1−0.65)=37.14. Cheating gives 18+0.65×6/(1−0.65)=29.14. Cooperation is better by 8.00. Current payoffs are not discounted, and punishment starts next period.",
+        "aHash": "86d3c12ff9bb305674dd1959edcbfdb4b201ffe697fe5dfa7a3523cc36818761",
+        "canonicalId": "P62I-OLI-EL-020",
+        "sourceId": 720319,
+        "sourceChapter": [
+          "oligopoly"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "517708e7388c629bef08b40211017263c921fdcea7f29e5a6fdaa66268644dba",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2i-oligopoly-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "repeated_games",
+            "sourceRecordOrder": 19,
+            "sourceId": 720319,
+            "sourceHash": "517708e7388c629bef08b40211017263c921fdcea7f29e5a6fdaa66268644dba"
+          }
+        ],
+        "primaryConceptId": "oligopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "oligopoly",
+        "subtopicIds": [
+          "oligopoly-dynamic-strategy"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Place in legendary",
+        "reasons": [
+          "difficulty"
+        ],
+        "updated": "2026-11-02T12:48:33.158Z",
+        "reviewedRevision": "elite-20261101-83ac4f9d70ac",
+        "answerRevision": ""
+      }
+    },
+    {
+      "id": "P62I-OLI-EL-029",
+      "topic": "Oligopoly",
+      "question": {
+        "id": "P62I-OLI-EL-029",
+        "sourceGame": "oligopoly",
+        "q": "A research-market policy raises expected innovation benefits by $500 million but increases annual monopoly deadweight loss by $80 million for four years. Additional research uses $100 million in real resources. Ignore discounting and other effects. Which welfare comparison and evidentiary limit follow?",
+        "options": [
+          "Estimated net benefit is $80 million; high concentration alone establishes that all consumers gain.",
+          "Estimated net benefit is $320 million; repeated price distortions are transfers and can be excluded.",
+          "Estimated net benefit is $80 million; the conclusion depends on whether the innovation estimate and duration are credible.",
+          "Estimated net loss is $80 million; any positive markup makes innovation benefits irrelevant."
+        ],
+        "tag": "oligopoly",
+        "type": "application",
+        "objective": "OLI.6",
+        "difficulty": "elite",
+        "conceptCluster": "micro_oligopoly",
+        "primarySkill": "innovation_tradeoff",
+        "secondarySkills": [],
+        "repairSkill": "innovation_tradeoff",
+        "commonError": "assumes_one_direction_only",
+        "feedback": "Static losses total 4×80=$320 million. Subtract these and the $100 million research cost from $500 million of innovation benefits: net benefit is $80 million. A positive estimate is conditional on the evidence and assumptions, not proof supplied by concentration alone.",
+        "aHash": "dd262647b4414131724bda0a4f204124af4e3e7db91afc29804f43b0e859ccb0",
+        "canonicalId": "P62I-OLI-EL-029",
+        "sourceId": 720328,
+        "sourceChapter": [
+          "oligopoly"
+        ],
+        "sourcePool": "elite",
+        "sourceHash": "d99f6d4cd0ecccfa600a27b967579717aff6b9dc87d6321ea7d601016b814be5",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2i-oligopoly-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "elite",
+            "routeKey": "innovation_tradeoff",
+            "sourceRecordOrder": 28,
+            "sourceId": 720328,
+            "sourceHash": "d99f6d4cd0ecccfa600a27b967579717aff6b9dc87d6321ea7d601016b814be5"
+          }
+        ],
+        "primaryConceptId": "oligopoly",
+        "secondaryConceptIds": [],
+        "instructionalRole": "elite",
+        "canonicalDifficulty": "elite",
+        "originalSourcePool": "elite",
+        "originalBossTier": null,
+        "familyConceptId": "oligopoly",
+        "subtopicIds": [
+          "oligopoly-welfare-policy"
+        ]
+      },
+      "review": {
+        "status": "flag",
+        "answer": null,
+        "notes": "Reconsider where this question belongs. Currently in oligopoly but asks about a monopoly. ",
+        "reasons": [],
+        "updated": "2026-11-02T12:50:22.424Z",
+        "reviewedRevision": "elite-20261101-40812bb6f95d",
+        "answerRevision": ""
+      }
+    }
+  ]
+}

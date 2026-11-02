@@ -1,0 +1,155 @@
+{
+  "status": "PASS",
+  "verifiedAt": "2026-11-02T14:41:16.333304+00:00",
+  "librarySha256": "7346c47c5112e539f93b174d639cd89f1e10ffb8e1236362bf563b94e5bdc8cf",
+  "sourceSha256": "7d3c89076570ec3f585ed706deb1117cc287e0a720c710f2b02e30e68d65f264",
+  "currentChangesVerifiedInExports": 54,
+  "reviewQuestions": 7143,
+  "pendingUserVerification": 54,
+  "priorEliteApprovalsPreserved": 65,
+  "allReviewSeedRecordsPreserved": true,
+  "testResults": {
+    "comprehensive": {
+      "status": "PASS",
+      "questions": 9802,
+      "changed": 273,
+      "legendaryCueFlags": [
+        457,
+        102
+      ],
+      "presets": 13
+    },
+    "outcomes": {
+      "ok": true,
+      "assertions": 194096,
+      "concepts": 149,
+      "outcomes": 222,
+      "combinations": 536,
+      "presets": 13,
+      "modes": 10
+    },
+    "easy-regression": {
+      "status": "PASS",
+      "added": 7,
+      "canonicalQuestions": 9802,
+      "allExistingQuestionsPreserved": true,
+      "all18PreviouslyApprovedAdditionsPreserved": true,
+      "ordinarySelectableTopicsChecked": 146,
+      "remainingEasyShortfalls": 0,
+      "excludedIntegrationBanks": [
+        "integrated-economic-analysis",
+        "integrated-macroeconomic-analysis"
+      ],
+      "topics": [
+        {
+          "conceptId": "long-run-aggregate-supply-and-potential-output",
+          "title": "Long-Run Aggregate Supply and Potential Output",
+          "added": 3,
+          "easyBefore": 2,
+          "easy": 5,
+          "medium": 1,
+          "hard": 3,
+          "remainingNeeded": {
+            "medium": 4,
+            "hard": 2
+          },
+          "standaloneQuizAvailable": false,
+          "combinedQuizWith": "long-run-macroeconomic-self-adjustment",
+          "generatedCombinedQuizCompiles": true
+        },
+        {
+          "conceptId": "market-power",
+          "title": "Market Power",
+          "added": 3,
+          "easyBefore": 2,
+          "easy": 5,
+          "medium": 2,
+          "hard": 1,
+          "remainingNeeded": {
+            "medium": 3,
+            "hard": 4
+          },
+          "standaloneQuizAvailable": false,
+          "combinedQuizWith": "competitive-markets",
+          "generatedCombinedQuizCompiles": true
+        },
+        {
+          "conceptId": "price-signals",
+          "title": "Price Signals",
+          "added": 1,
+          "easyBefore": 4,
+          "easy": 5,
+          "medium": 7,
+          "hard": 4,
+          "remainingNeeded": {
+            "medium": 0,
+            "hard": 1
+          },
+          "standaloneQuizAvailable": false,
+          "combinedQuizWith": "competitive-markets",
+          "generatedCombinedQuizCompiles": true
+        }
+      ]
+    }
+  },
+  "visualInspection": {
+    "pdf": [
+      "general-P77-MVM-EL-015.png",
+      "micro-pdf-contact.png",
+      "macro-pdf-contact.png"
+    ],
+    "xlsx": [
+      "general-xlsx.png",
+      "micro-xlsx.png",
+      "macro-xlsx.png",
+      "manual-after.png"
+    ],
+    "review": [
+      "review-reclassification.png",
+      "review-graph.png",
+      "review-mobile.png"
+    ]
+  },
+  "artifacts": [
+    {
+      "path": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/faculty_exports/general_economics_question_bank.pdf",
+      "bytes": 3989491,
+      "sha256": "9ad1889ffb71b8a5583f79c1bf7cab1d7bc5e8319e97be187c020f8896684a12"
+    },
+    {
+      "path": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/faculty_exports/general_economics_question_bank.xlsx",
+      "bytes": 363139,
+      "sha256": "e90a39be6ea7cbc3b0e487f11997ea7f522cdd69b40f9289a16ce5399ec5497d"
+    },
+    {
+      "path": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/faculty_exports/microeconomics_question_bank.pdf",
+      "bytes": 16680531,
+      "sha256": "64e80e6a20d96d59315c9b27700a3c1d1d4cec79be142bf2f7d81060019614a3"
+    },
+    {
+      "path": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/faculty_exports/microeconomics_question_bank.xlsx",
+      "bytes": 1142160,
+      "sha256": "3d7b5c6ae8d80f66f0bb9d40141ff9302664eb27ea16fc1f90210a2d1b4cafd5"
+    },
+    {
+      "path": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/faculty_exports/macroeconomics_question_bank.pdf",
+      "bytes": 9609494,
+      "sha256": "206864fc1fb430915d2c0ee2e015c30111c511da8c4d903f49d11822d6262a19"
+    },
+    {
+      "path": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/faculty_exports/macroeconomics_question_bank.xlsx",
+      "bytes": 1068325,
+      "sha256": "b67ef3ad04b2eba18f29f1633cf37a4c9d73cb00034e82b778e6726eb80bd988"
+    },
+    {
+      "path": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/faculty_exports/microeconomics_manual_review.xlsx",
+      "bytes": 173980,
+      "sha256": "b4e81365e04d264a67b421cd90aaa277f0c3de13fb41d1f49d2581d7c0f007a6"
+    },
+    {
+      "path": "C:/Users/Jennings/Documents/Mastery Quests Website/Conference_Presentation/deliverables/MasteryQuests_Question_Review.html",
+      "bytes": 21913982,
+      "sha256": "5aea06e9f5ea29573f8ce1578b74950f791decb34ff05012aee2d41fe5a3b382"
+    }
+  ]
+}

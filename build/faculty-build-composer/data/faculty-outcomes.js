@@ -2,7 +2,7 @@
 (function(root,data){if(typeof module==='object'&&module.exports)module.exports=data;else root.MQFacultyOutcomePolicy=data;})(typeof globalThis!=='undefined'?globalThis:this,{
   "schemaVersion": 1,
   "policyVersion": "faculty-lo-1",
-  "librarySha256": "e6b2c315f07f41b3fcf64cb7c497b8d76b36175fac63fe0861fa5cc71d95efd1",
+  "librarySha256": "7346c47c5112e539f93b174d639cd89f1e10ffb8e1236362bf563b94e5bdc8cf",
   "concepts": {
     "ad-as-equilibrium-and-output-gaps": {
       "outcomes": [
@@ -904,8 +904,8 @@
               "easy": 5,
               "medium": 8,
               "hard": 12,
-              "elite": 4,
-              "legendary": 8
+              "elite": 3,
+              "legendary": 9
             },
             "supportedModes": [
               "quiz",
@@ -1225,8 +1225,8 @@
               "easy": 13,
               "medium": 23,
               "hard": 14,
-              "elite": 26,
-              "legendary": 0
+              "elite": 25,
+              "legendary": 1
             },
             "supportedModes": [
               "timed",
@@ -3020,8 +3020,8 @@
             "bridge": 3,
             "seed": 0,
             "difficulty": {
-              "easy": 7,
-              "medium": 7,
+              "easy": 6,
+              "medium": 8,
               "hard": 9,
               "elite": 0,
               "legendary": 3
@@ -7542,8 +7542,8 @@
               "easy": 20,
               "medium": 48,
               "hard": 28,
-              "elite": 14,
-              "legendary": 20
+              "elite": 4,
+              "legendary": 30
             },
             "supportedModes": [
               "timed",
@@ -8365,8 +8365,8 @@
               "easy": 13,
               "medium": 21,
               "hard": 23,
-              "elite": 4,
-              "legendary": 2
+              "elite": 3,
+              "legendary": 3
             },
             "supportedModes": [
               "standard",
@@ -8670,8 +8670,8 @@
               "easy": 23,
               "medium": 36,
               "hard": 37,
-              "elite": 16,
-              "legendary": 20
+              "elite": 6,
+              "legendary": 30
             },
             "supportedModes": [
               "timed",
@@ -8781,8 +8781,8 @@
               "easy": 22,
               "medium": 26,
               "hard": 30,
-              "elite": 24,
-              "legendary": 9
+              "elite": 18,
+              "legendary": 15
             },
             "supportedModes": [
               "timed",
@@ -8826,8 +8826,8 @@
               "easy": 20,
               "medium": 41,
               "hard": 24,
-              "elite": 14,
-              "legendary": 16
+              "elite": 6,
+              "legendary": 24
             },
             "supportedModes": [
               "timed",
@@ -8863,8 +8863,8 @@
               "easy": 8,
               "medium": 19,
               "hard": 17,
-              "elite": 2,
-              "legendary": 6
+              "elite": 0,
+              "legendary": 8
             },
             "supportedModes": [
               "timed",
@@ -8901,13 +8901,14 @@
               "easy": 10,
               "medium": 13,
               "hard": 13,
-              "elite": 13,
-              "legendary": 5
+              "elite": 8,
+              "legendary": 10
             },
             "supportedModes": [
               "timed",
               "quiz",
               "unlimited",
+              "legendary",
               "trialGraph",
               "fadingFortune",
               "riskReward"
@@ -9031,8 +9032,8 @@
               "easy": 12,
               "medium": 9,
               "hard": 18,
-              "elite": 12,
-              "legendary": 8
+              "elite": 6,
+              "legendary": 14
             },
             "supportedModes": [
               "timed",
@@ -9156,8 +9157,8 @@
               "easy": 10,
               "medium": 20,
               "hard": 10,
-              "elite": 4,
-              "legendary": 5
+              "elite": 0,
+              "legendary": 9
             },
             "supportedModes": [
               "timed",
@@ -9214,13 +9215,14 @@
               "easy": 10,
               "medium": 13,
               "hard": 13,
-              "elite": 13,
-              "legendary": 5
+              "elite": 8,
+              "legendary": 10
             },
             "supportedModes": [
               "timed",
               "quiz",
               "unlimited",
+              "legendary",
               "trialGraph",
               "fadingFortune",
               "riskReward"
@@ -9276,8 +9278,8 @@
               "easy": 10,
               "medium": 25,
               "hard": 17,
-              "elite": 7,
-              "legendary": 7
+              "elite": 5,
+              "legendary": 9
             },
             "supportedModes": [
               "timed",
@@ -9339,8 +9341,8 @@
               "easy": 10,
               "medium": 16,
               "hard": 15,
-              "elite": 6,
-              "legendary": 11
+              "elite": 2,
+              "legendary": 15
             },
             "supportedModes": [
               "timed",
@@ -9696,8 +9698,8 @@
               "easy": 12,
               "medium": 11,
               "hard": 14,
-              "elite": 12,
-              "legendary": 32
+              "elite": 8,
+              "legendary": 36
             },
             "supportedModes": [
               "timed",
@@ -9867,8 +9869,8 @@
               "easy": 5,
               "medium": 5,
               "hard": 9,
-              "elite": 12,
-              "legendary": 22
+              "elite": 8,
+              "legendary": 26
             },
             "supportedModes": [
               "quiz",
@@ -10433,8 +10435,8 @@
               "easy": 32,
               "medium": 42,
               "hard": 47,
-              "elite": 30,
-              "legendary": 5
+              "elite": 28,
+              "legendary": 7
             },
             "supportedModes": [
               "standard",
@@ -10442,6 +10444,7 @@
               "exam",
               "quiz",
               "unlimited",
+              "legendary",
               "score",
               "trialGraph",
               "fadingFortune",
@@ -10963,8 +10966,8 @@
               "easy": 5,
               "medium": 7,
               "hard": 4,
-              "elite": 1,
-              "legendary": 1
+              "elite": 0,
+              "legendary": 2
             },
             "supportedModes": [
               "fadingFortune",
@@ -12855,8 +12858,8 @@
               "easy": 5,
               "medium": 9,
               "hard": 8,
-              "elite": 2,
-              "legendary": 4
+              "elite": 1,
+              "legendary": 5
             },
             "supportedModes": [
               "quiz",
@@ -13219,8 +13222,8 @@
               "easy": 5,
               "medium": 25,
               "hard": 11,
-              "elite": 3,
-              "legendary": 3
+              "elite": 2,
+              "legendary": 4
             },
             "supportedModes": [
               "quiz",
@@ -13710,5 +13713,5 @@
       "hidden": false
     }
   },
-  "policySha256": "5bc90d62c03b0942f7f23d5aab21b79143eabbb8db067cf76df7b7e056c4d214"
+  "policySha256": "06fbea146f67338e93e4cb9ebd0e83bd7c346ff760e31380fef12083832b6b72"
 });

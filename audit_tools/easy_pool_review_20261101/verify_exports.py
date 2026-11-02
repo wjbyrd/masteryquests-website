@@ -13,6 +13,7 @@ parser=argparse.ArgumentParser()
 parser.add_argument('--report-directory',type=Path,default=HERE)
 parser.add_argument('--additions',type=Path,action='append',default=[])
 parser.add_argument('--revisions',type=Path,action='append',default=[])
+parser.add_argument('--preview-id',action='append',default=[])
 args=parser.parse_args()
 REPORT=args.report_directory
 for addition_path in args.additions:
@@ -30,6 +31,8 @@ if args.additions:
     samples={area:[a['question']['id'] for a in additions] for area in samples}
 if args.revisions:
     samples={area:['P77-MVM-EL-015','P62G-MON-EL-006','P62I-OLI-EL-001','ECON-SP-ELITE-313','43217'] for area in samples}
+if args.preview_id:
+    samples={area:args.preview_id for area in samples}
 result={'status':'PASS','sourceSha256':report['source_sha256'],'disciplines':{}}
 (REPORT/'qa').mkdir(exist_ok=True,parents=True)
 for area,info in report['disciplines'].items():
