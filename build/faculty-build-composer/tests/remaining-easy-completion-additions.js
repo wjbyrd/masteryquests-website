@@ -4,6 +4,7 @@ const ledger=require('../../../audit_tools/remaining_easy_completion_20261101/ex
 const addedIds=new Set(ledger.additions.map(a=>a.question.id));
 const hash=l=>{const p=structuredClone(l);delete p.librarySha256;delete p.registry.librarySha256;return crypto.createHash('sha256').update(core.stableStringify(p)).digest('hex');};
 function beforeRemainingEasyAdditions(current){
+ current=require('./elite-pool-revisions.js').beforeEliteRevisions(current);
  if(current.librarySha256!==ledger.afterLibrarySha256)return current;
  assert.equal(hash(current),ledger.afterLibrarySha256,'Current bank checksum');
  const restored=structuredClone(current);

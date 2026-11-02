@@ -1,0 +1,23 @@
+import base64, json, mimetypes
+from pathlib import Path
+from urllib.parse import urlparse, unquote
+
+root = Path(__file__).resolve().parent.parent
+data = json.loads((root/'source/personal-review-list-data.json').read_text(encoding='utf-8-sig'))
+images, questions = {}, []
+tiers = dict(zip(['easy','medium','hard','elite','legendary'],range(5)))
+for r in sorted(data['questions'],key=lambda r:(r['topic'],tiers.get(r['q'].get('canonicalDifficulty'),5),r['id'])):
+    q = r['q']; graph = ''
+    if r['graph_url']:
+        graph = r['graph_url']
+        if graph not in images:
+            p = Path(unquote(urlparse(graph).path).lstrip('/'))
+            mime = {'.webp':'image/webp','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.svg':'image/svg+xml'}.get(p.suffix.lower()) or mimetypes.guess_type(p)[0]
+            assert mime, p
+            images[graph] = 'data:'+mime+';base64,'+base64.b64encode(p.read_bytes()).decode()
+    questions.append(dict(id=r['id'],topic=r['topic'],areas=r['areas'],difficulty=q.get('canonicalDifficulty',q.get('difficulty','unknown')),stem=q['q'],options=q['options'],answer=r['answer_index'],feedback=q.get('feedback',''),graph=graph,alt=q.get('imageAlt',q.get('graphDescription','Question graph')),revision=r.get('revision',''),previous=r.get('previous'),revisionReason=r.get('revision_reason','')))
+payload = json.dumps(dict(questions=questions,images=images,reviewSeed=data.get("reviewSeed",{}),librarySha256=data.get("librarySha256","")),ensure_ascii=False,separators=(',',':')).replace('<','\\u003c').replace('\u2028','\\u2028').replace('\u2029','\\u2029')
+template = (root/'source/review-template.html').read_text(encoding='utf-8')
+output = root/'deliverables/MasteryQuests_Question_Review.html'
+output.write_text(template.replace('__QUESTION_DATA__',payload),encoding='utf-8')
+print(json.dumps(dict(path=str(output),questions=len(questions),unique_images=len(images),bytes=output.stat().st_size)))

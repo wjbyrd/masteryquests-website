@@ -1,0 +1,242 @@
+{
+  "40043": {
+    "q": "Refer to the rideshare graph. Calculate each side's total tax burden on the 150 thousand trips still taken and the government's revenue. Which elasticity inference fits that division?",
+    "options": [
+      "Sellers bear $900,000, buyers $300,000, revenue is $1.2 million; demand is relatively less elastic.",
+      "Sellers bear $300,000, buyers $900,000, revenue is $1.2 million; supply is relatively less elastic.",
+      "Sellers bear $1.2 million, buyers $400,000, revenue is $1.6 million; use the original quantity.",
+      "Sellers bear $900,000, buyers $300,000, revenue is $1.2 million; supply is relatively less elastic."
+    ],
+    "correctIndex": 3,
+    "feedback": "Original price is $10, buyer price is $12, and seller receipt is $4. Buyers bear $2 and sellers $6 per trip. Multiply by 150,000 for $300,000 and $900,000, totaling $1.2 million. The larger seller burden is consistent with relatively less elastic supply.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "P62F-PC-EL-013": {
+    "q": "A competitive firm faces price $30 and initially has MC=10+Q. A technology improvement lowers MC to 5+Q and lowers its minimum ATC from $30 to $25. The improvement is available to all entrants, input prices remain fixed, and entry is free. Which short-run and long-run comparison follows?",
+    "options": [
+      "Output rises from 20 to 25 initially; entry later lowers price to $25 and firm output to 20.",
+      "Output rises from 20 to 25 initially; entry later leaves price at $30 because incumbents take price as given.",
+      "Output falls from 20 to 15 initially; entry later raises price to $35 to restore zero profit.",
+      "Output stays 20 initially; the lower minimum ATC affects profit but cannot change the P=MC choice."
+    ],
+    "correctIndex": 0,
+    "feedback": "At the original price, output changes from 30−10=20 to 30−5=25. Available profits invite entry. With unchanged input prices, long-run price reaches the new minimum ATC of $25; the firm's new MC equation then gives Q=25−5=20. Taking price as given does not mean market price stays fixed.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "P62F-PC-EL-017": {
+    "q": "A competitive firm faces price $20. At Q=10, P=MC but MC is falling: expanding to 11 raises variable cost by $18, and expanding from 11 to 12 raises it by $16. Fixed cost is unchanged. Which profit comparison evaluates a claim that Q=10 must maximize profit?",
+    "options": [
+      "Expanding to 12 raises profit by $6, so the falling-MC crossing is not a maximum.",
+      "Expanding to 12 raises profit by $6, but any P=MC crossing must still be a maximum.",
+      "Expanding to 12 lowers profit by $6 because the additional units have MC below price.",
+      "Expanding to 12 leaves profit unchanged because fixed cost does not change."
+    ],
+    "correctIndex": 0,
+    "feedback": "Two additional units bring $40 in revenue and $18+$16=$34 in variable cost, raising profit $6. Equality P=MC is insufficient at a falling-MC crossing: subsequent units can cost less than their revenue. The relevant interior maximum is on the rising part of MC.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "P62F-PC-EL-021": {
+    "q": "A competitive constant-cost industry initially has price and minimum ATC of $30. Market demand later becomes Qd=1,000−10P, and short-run price rises to $44. After free entry, each firm again produces 20 units at minimum ATC. What long-run market output, number of firms, and economic profit per firm follow?",
+    "options": [
+      "Output 700, 35 firms, and zero economic profit per firm.",
+      "Output 560, 28 firms, and zero economic profit per firm.",
+      "Output 700, 35 firms, and $280 profit per firm.",
+      "Output 560, 35 firms, and $280 profit per firm."
+    ],
+    "correctIndex": 0,
+    "feedback": "In a constant-cost industry, entry returns price to the unchanged $30 minimum ATC. Demand is then 1,000−10×30=700. At 20 units per firm, the industry contains 700/20=35 firms. P=minimum ATC implies zero economic profit.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "P62F-PC-EL-022": {
+    "q": "A competitive industry initially has price and minimum ATC of $20. Higher demand first raises price to $30. Entry then increases input costs, raising each firm's minimum ATC by 20%. Assume free entry and identical firms. A firm produces 50 units at its new minimum ATC. Which long-run result follows?",
+    "options": [
+      "Price $20, revenue $1,000, and zero profit; entry must restore the original price despite higher input costs.",
+      "Price $24, revenue $1,200, and zero profit; final price lies between the original and short-run prices.",
+      "Price $30, revenue $1,500, and $300 profit; entry leaves the short-run price unchanged.",
+      "Price $24, revenue $1,200, and $200 profit; the difference from the original ATC remains profit."
+    ],
+    "correctIndex": 1,
+    "feedback": "New minimum ATC is 20×1.20=$24. Free entry removes profit at P=$24, with revenue and total cost both 24×50=$1,200. The price ordering is $20<$24<$30 because expansion raises industry input costs.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "P62F-PC-EL-023": {
+    "q": "A competitive industry initially has price and minimum ATC of $40. Higher demand raises short-run price to $50. Industry expansion then creates external cost savings that lower each firm's minimum ATC by 15%. With free entry, a typical firm produces 100 units at the new minimum ATC. Which long-run result is consistent with this decreasing-cost industry?",
+    "options": [
+      "Price $46, firm revenue $4,600, and zero profit; external economies increase minimum ATC.",
+      "Price $40, firm revenue $4,000, and $600 profit; free entry preserves the original market price.",
+      "Price $34, firm revenue $3,400, and zero profit; final price is below the original price.",
+      "Price $34, firm revenue $3,400, and $1,600 profit; compare revenue with the short-run price."
+    ],
+    "correctIndex": 2,
+    "feedback": "Minimum ATC falls to 40×0.85=$34. Free entry brings price to $34, where revenue equals cost at $3,400 per firm. External economies allow the final price to fall below the original $40 despite the initial demand increase.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "P62F-PC-EL-024": {
+    "q": "A competitive firm has MC=10+Q. At price $30 it produces 20 units with ATC=$25. Free entry and unchanged input costs eventually bring price to minimum ATC of $24, attained at Q=14. Which profit and adjustment comparison follows?",
+    "options": [
+      "Current profit $100; entry raises market supply but keeps each firm's price and output fixed.",
+      "Current profit $600; entry lowers price and firm output to 14, where economic profit is zero.",
+      "Current profit $100; entry lowers price to $24 but the firm still produces 20 because it is a price taker.",
+      "Current profit $100; entry lowers price and firm output to 14, where economic profit is zero."
+    ],
+    "correctIndex": 3,
+    "feedback": "Current profit is (30−25)×20=$100. Entry increases market supply and lowers price. The incumbent follows P=MC, so at $24 it chooses Q=14. At minimum ATC, profit is zero. Price-taking firms respond to changes in the market price.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "P62F-PC-EL-025": {
+    "q": "A competitive firm produces 100 units where P=MC=$18, AVC=$12, and ATC=$22. Fixed cost is unavoidable this period. In the long run, unchanged cost conditions permit zero profit at minimum ATC of $20. Which current operating decision and industry adjustment follow?",
+    "options": [
+      "Operate with a $400 loss, better than a $1,000 shutdown loss; exit can raise price toward $20.",
+      "Shut down with no loss because price is below ATC; exit can raise price toward $20.",
+      "Operate with a $600 profit because price exceeds AVC; entry can lower price toward $12.",
+      "Operate with a $400 loss, better than a $600 shutdown loss; entry raises price toward $20."
+    ],
+    "correctIndex": 0,
+    "feedback": "Operating loss is (18−22)×100=−$400. Fixed cost is (22−12)×100=$1,000, which would remain under shutdown. The $600 contribution toward fixed cost makes operating preferable now. Long-run exit reduces market supply and raises price toward minimum ATC.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "P62F-PC-EL-026": {
+    "q": "A competitive market has demand P=100−Q and private supply P=20+Q. Production causes an unpriced external cost of $20 per unit. Which market output, efficient output, and welfare conclusion follow?",
+    "options": [
+      "Market output 40, efficient output 30; private P=MC proves all 40 units are socially efficient.",
+      "Market output 40, efficient output 30; private P=MC leaves 10 units of overproduction.",
+      "Market output 30, efficient output 40; external cost increases the efficient quantity.",
+      "Market output 40, efficient output 20; subtract the external cost directly from quantity."
+    ],
+    "correctIndex": 1,
+    "feedback": "Private equilibrium solves 100−Q=20+Q, giving Q=40. Social marginal cost is 40+Q; efficient output solves 100−Q=40+Q, giving Q=30. Competitive private choices do not internalize the external cost.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "P62F-PC-EL-027": {
+    "q": "A regulated plant-size rule leaves each competitive firm producing 100 units where P=MC=ATC=$30. A feasible alternative plant could produce 100 units at ATC=$24 with the same product quality. Ignore transition costs and externalities. What profit and cost-saving comparison evaluates efficiency?",
+    "options": [
+      "Current profit is $600, and the alternative removes it; P=MC proves productive efficiency.",
+      "Current profit is zero, and the alternative saves $6 per firm; only per-unit cost matters.",
+      "Current profit is zero, but the alternative saves $600 per firm; zero profit does not establish productive efficiency.",
+      "Current profit is zero, so changing plants cannot save resources while the market remains competitive."
+    ],
+    "correctIndex": 2,
+    "feedback": "Current profit is (30−30)×100=0. Producing the same 100 units at $6 less per unit saves $600 of resources. P=MC and zero economic profit do not by themselves prove that a firm's production method minimizes costs.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "P62F-PC-EL-028": {
+    "q": "Two competitive firms each produce 100 units where price and marginal cost are $20. Firm A has ATC=$16; Firm B has ATC=$19. An available management change would lower B's ATC to $16 at the same output, quality, and MC, with no implementation cost. Which comparison distinguishes profit from efficiency?",
+    "options": [
+      "A earns $400 and B $100; P=MC proves B has no avoidable resource costs.",
+      "Both earn zero because P=MC; improving B can change only distribution.",
+      "A earns $1,600 and B $1,900; improving B saves $300 while making price exceed MC.",
+      "A earns $400 and B $100; improving B saves $300 without changing the P=MC condition."
+    ],
+    "correctIndex": 3,
+    "feedback": "Profits are (20−16)×100=$400 and (20−19)×100=$100. The management change saves (19−16)×100=$300. Marginal allocation can satisfy P=MC while a firm still uses avoidable resources.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "P62F-PC-EL-029": {
+    "q": "Free entry initially supports 10 competitive firms, each producing 100 units at minimum ATC of $20. Greater demand brings entry, but scarce land raises minimum ATC to $25. In the new long-run equilibrium, demand is Qd=2,500−20P and each firm still produces 100 units at minimum ATC. Which comparison follows?",
+    "options": [
+      "Price rises to $25, output to 2,000, and firms to 20; input scarcity makes long-run supply slope upward.",
+      "Price stays $20, output rises to 2,100, and firms to 21; free entry prevents any price increase.",
+      "Price rises to $25, output to 2,000, and firms to 20; each firm earns $500 because original ATC was lower.",
+      "Price rises to $25, output stays 1,000, and firms stay 10; scarce inputs prevent all entry."
+    ],
+    "correctIndex": 0,
+    "feedback": "Long-run zero profit requires P=new minimum ATC=$25. Demand is then 2,500−20×25=2,000, supplied by 20 firms. Both industry output and price rise because expansion makes an input more costly.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "P62I-OLI-EL-029": {
+    "q": "A research-market policy raises expected innovation benefits by $500 million but increases annual monopoly deadweight loss by $80 million for four years. Additional research uses $100 million in real resources. Ignore discounting and other effects. Which welfare comparison and evidentiary limit follow?",
+    "options": [
+      "Estimated net benefit is $80 million; high concentration alone establishes that all consumers gain.",
+      "Estimated net benefit is $320 million; repeated price distortions are transfers and can be excluded.",
+      "Estimated net benefit is $80 million; the conclusion depends on whether the innovation estimate and duration are credible.",
+      "Estimated net loss is $80 million; any positive markup makes innovation benefits irrelevant."
+    ],
+    "correctIndex": 2,
+    "feedback": "Static losses total 4×80=$320 million. Subtract these and the $100 million research cost from $500 million of innovation benefits: net benefit is $80 million. A positive estimate is conditional on the evidence and assumptions, not proof supplied by concentration alone.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "P62I-OLI-EL-030": {
+    "q": "Three oligopolists raise prices from $20 to $24 after a shared input cost rises from $12 to $16. No information about communication or output restrictions is available. A report calls the common 20% price rise proof of collusion. Which calculation and inference are justified?",
+    "options": [
+      "The price-cost margin stays $8 and its share of price falls from 40% to about 33.3%; those facts prove collusion is impossible.",
+      "The price-cost margin rises $4 and its share of price rises to 50%; equal price changes prove an agreement.",
+      "The price-cost margin stays $8 and its share of price stays 40%; an unchanged dollar margin establishes competitive conduct.",
+      "The price-cost margin stays $8 and its share of price falls from 40% to about 33.3%; common costs can explain parallel pricing."
+    ],
+    "correctIndex": 3,
+    "feedback": "The dollar margin is 20−12=24−16=$8. As a share of price, it falls from 8/20=40% to 8/24≈33.3%. A common cost shock offers an alternative explanation for parallel prices. These data neither establish collusion nor prove it absent.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "PG4-MPT-EL-001": {
+    "q": "Refer to both panels. A central-bank action moves the economy from A to B. Which changes and explanation connect the two markets without confusing a curve shift with movement along a curve?",
+    "options": [
+      "Money rises 50, interest falls 2 percentage points, and real GDP rises 25; lower interest shifts money demand right.",
+      "Money rises 50, interest falls 2%, and real GDP rises 25; higher real GDP requires SRAS to shift right.",
+      "Money rises 50, interest falls 2 percentage points, and real GDP rises 25; spending shifts AD right while SRAS stays fixed.",
+      "Money rises 25, interest falls 2 percentage points, and real GDP rises 50; both panels show only movements along fixed curves."
+    ],
+    "correctIndex": 2,
+    "feedback": "Money rises from 100 to 150 and the interest rate falls from 6% to 4%, a 2-percentage-point drop along MD0. The spending response shifts AD0 to AD1. Real GDP rises from 100 to 125 and the price level from 50 to 56.25 along unchanged SRAS.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "PMOE-POL-EL-001": {
+    "q": "In the standard long-run open-economy model, initial national saving is $500 billion and domestic investment is $400 billion. A tariff changes import demand but leaves saving and investment unchanged by itself. A simultaneous deficit later reduces saving to $440 billion and investment to $370 billion. Which net-export comparison and tariff interpretation follow?",
+    "options": [
+      "NX falls from $100 billion to $70 billion; the tariff independently adds an equal surplus without changing NCO.",
+      "NX falls from $100 billion to $40 billion; investment must remain at its initial value after the deficit.",
+      "NX rises from $100 billion to $170 billion; lower imports and lower saving both increase net exports.",
+      "NX falls from $100 billion to $70 billion; exchange-rate adjustment offsets the tariff's direct trade effect at each given NCO."
+    ],
+    "correctIndex": 3,
+    "feedback": "The identity NX=NCO=S−I gives initial NX=500−400=$100 billion and final NX=440−370=$70 billion. The tariff alone cannot change equilibrium NX when NCO is fixed; exchange-rate appreciation offsets its direct effect. The deficit's saving and investment changes reduce NX by $30 billion.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "ECON-MG-ELITE-313": {
+    "q": "A market initially trades 1,000 units at $20. Demand elasticity is 0.25 and supply elasticity is 1.0. For a small $2 tax, use the local incidence approximation: the buyer share equals supply elasticity divided by the sum of the two elasticities. Estimate the quantity response using the initial price and demand elasticity. Which result follows?",
+    "options": [
+      "Buyers bear $1.60 and sellers $0.40; quantity falls about 20 units and revenue is about $1,960.",
+      "Buyers bear $1.60 and sellers $0.40; quantity falls about 80 units and revenue is about $1,840.",
+      "Buyers bear $0.40 and sellers $1.60; quantity falls about 20 units and revenue is about $1,960.",
+      "Buyers bear the full $2; quantity falls about 100 units and revenue is about $1,800."
+    ],
+    "correctIndex": 0,
+    "feedback": "The buyer share is 1/(1+0.25)=0.8, so buyers bear $1.60 and sellers $0.40. The buyer price rises about 1.60/20=8%; quantity falls about 0.25×8%=2%, or 20. Approximate revenue is $2×980=$1,960.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "ECON-MG-ELITE-317": {
+    "q": "A tax changes a market from price $40 and quantity 500 to buyer price $46, seller receipt $34, and quantity 420. Demand and supply are straight lines over this interval. What are the buyers' burden on continuing trades and the entire loss of consumer surplus?",
+    "options": [
+      "Burden rectangle $2,520; full surplus loss $2,760.",
+      "Burden rectangle $2,520; full surplus loss $5,040.",
+      "Burden rectangle $3,000; full surplus loss $3,240.",
+      "Burden rectangle $5,040; full surplus loss $5,520."
+    ],
+    "correctIndex": 0,
+    "feedback": "The buyer price increase is $6 per continuing unit, giving 6×420=$2,520. The lost-trade triangle is 0.5×(500−420)×6=$240. Total consumer surplus loss is $2,760. The rectangle alone excludes forgone gains on trades that disappear.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "ECON-MG-ELITE-318": {
+    "q": "A tax changes a market from price $40 and quantity 500 to buyer price $46, seller receipt $34, and quantity 420. Demand and supply are straight lines over this interval. What are the sellers' burden on continuing trades and the entire loss of producer surplus?",
+    "options": [
+      "Burden rectangle $2,520; full surplus loss $2,760.",
+      "Burden rectangle $2,520; full surplus loss $5,040.",
+      "Burden rectangle $3,000; full surplus loss $3,240.",
+      "Burden rectangle $5,040; full surplus loss $5,520."
+    ],
+    "correctIndex": 0,
+    "feedback": "The seller receipt decrease is $6 per continuing unit, giving 6×420=$2,520. The lost-trade triangle is 0.5×(500−420)×6=$240. Total producer surplus loss is $2,760. The rectangle alone excludes forgone gains on trades that disappear.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "ECON-MG-ELITE-326": {
+    "q": "A market faces Qd=1,000−20Pb and Qs=20Ps, where Pb and Ps are buyer and seller prices. A $10 per-unit tax creates Pb−Ps=10. An official forecasts tax revenue using the untaxed quantity. Which corrected revenue and forecast error follow?",
+    "options": [
+      "Actual revenue $4,000 rather than $5,000; quantity falls from 500 to 400.",
+      "Actual revenue $4,000 rather than $5,000; quantity stays 500 but some tax is a transfer.",
+      "Actual revenue $5,000 rather than $4,000; the legal tax rate fixes quantity.",
+      "Actual revenue $6,000 rather than $5,000; adding a tax increases the supply price and quantity."
+    ],
+    "correctIndex": 0,
+    "feedback": "Without tax, 1,000−20P=20P gives P=25 and Q=500. With Pb=Ps+10, 1,000−20(Ps+10)=20Ps gives Ps=20, Pb=30, and Q=400. Revenue is 10×400=$4,000, $1,000 below the unchanged-quantity forecast.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  }
+}

@@ -1,0 +1,294 @@
+{
+  "40011": {
+    "q": "Refer to the graph. The market begins at A. A popular film release changes buyers' preferences, while theaters' costs and capacity stay fixed. The market moves to B. A report attributes the extra tickets sold to an increase in supply. Which evaluation uses both the price and quantity evidence?",
+    "options": [
+      "The report is supported: theaters sell 50 thousand more tickets, so S0 must shift right.",
+      "The report is unsupported: lower ticket prices cause movement down the original demand curve.",
+      "The report is supported: stronger preferences increase both demand and supply by 50 thousand tickets.",
+      "The report is unsupported: demand shifts right, and the $2 price rise induces 50 thousand more tickets along S0."
+    ],
+    "correctIndex": 3,
+    "feedback": "Stronger preferences increase demand from D0 to D1. Equilibrium changes from $10 and 200 thousand tickets to $12 and 250 thousand. With costs and capacity fixed, theaters move along S0; the increase in quantity supplied is not a supply shift.",
+    "reason": "Infer the shock, read two graph changes, and evaluate a competing explanation."
+  },
+  "42807": {
+    "q": "Dangerous jobs pay $34 per hour and safe jobs pay $26. Adjusting for training reduces the estimated wage gap to $3. A separate comparison of workers with the same training and experience finds a $2 gap. Which conclusion best uses all three estimates?",
+    "options": [
+      "Training accounts for $5 and experience for $1; the remaining $2 proves risk is the sole remaining cause.",
+      "Training accounts for $3 and experience for $2; the remaining $3 is the identified risk premium.",
+      "Training accounts for $5 and experience for $3; the adjusted evidence leaves no residual wage difference.",
+      "Training accounts for $5 and experience for $1; the remaining $2 could reflect risk or unmeasured differences."
+    ],
+    "correctIndex": 3,
+    "feedback": "The unadjusted gap is $8. Controlling for training reduces it by $5; adding experience reduces it another $1. The remaining $2 is consistent with risk compensation, but the controls do not rule out all other causes.",
+    "reason": "Combine decomposition of wage differences with limits of causal inference; balance choices."
+  },
+  "PG1-DMD-L-001": {
+    "q": "Refer to the graph. A report attributes the A-to-B change to stronger tastes for donuts. A survey finds that quantity desired at every fixed price is unchanged. Which diagnosis fits both sources of evidence?",
+    "options": [
+      "The report confuses a movement with a shift: price falls $4 and quantity demanded rises 100 thousand along unchanged demand.",
+      "The report confuses a movement with a shift: price falls $5 and quantity demanded rises 125 thousand along unchanged demand.",
+      "The report is supported: price falls $5 and quantity demanded rises 125 thousand because demand shifts right.",
+      "The report is supported: price falls $4 and quantity demanded rises 100 thousand because demand shifts right."
+    ],
+    "correctIndex": 1,
+    "feedback": "Unchanged quantities desired at each fixed price rule out a demand shift. From A to B, price falls from $10 to $5 and quantity rises from 100 to 225 thousand. The report mistakes a price-induced movement along demand for stronger demand.",
+    "reason": "Use instructor's preferred graph reference; retain evidence reconciliation."
+  },
+  "PG1-DMD-L-002": {
+    "q": "Refer to the graph. Stronger preferences move coffee demand from D0 to D1. Price then falls from $10 to $6 along D1. Which decomposition separates the change caused by preferences at $10 from the change caused by the price fall?",
+    "options": [
+      "125→50 from preferences; 50→225 from the price fall.",
+      "125→50 from the price fall; 50→225 from preferences.",
+      "50→125 from the price fall; 125→225 from preferences.",
+      "50→125 from preferences; 125→225 from the price fall."
+    ],
+    "correctIndex": 3,
+    "feedback": "At $10, D0 shows 50 thousand and D1 shows 125 thousand. The shift adds 75 thousand. Moving from $10 to $6 along D1 adds another 100 thousand, reaching 225 thousand. The total increase is 175 thousand.",
+    "reason": "Implement the requested paired 50/125 distractors without a unique numerical clue."
+  },
+  "ECON-SP-ELITE-308": {
+    "q": "Refer to the graph. The economy begins at AD1-AS2. Government purchases increase while imported energy becomes more expensive. Each event is large enough to move the relevant curve to its other labeled position. Which comparison separates the combined outcome from the effect of higher government purchases alone?",
+    "options": [
+      "Combined: Y1/P3; purchases alone: Y2/P2, so the energy shock offsets the output increase.",
+      "Combined: Y1/P3; purchases alone: Y1/P3, so the energy shock has no separate output effect.",
+      "Combined: Y2/P2; purchases alone: Y1/P3, so the energy shock reinforces the output increase.",
+      "Combined: Y3/P2; purchases alone: Y2/P2, so the energy shock also lowers the price level."
+    ],
+    "correctIndex": 0,
+    "feedback": "Higher government purchases move AD1 to AD2. More expensive energy moves AS2 to AS1. Together they produce Y1/P3; purchases alone would produce Y2/P2. Unchanged output relative to the starting point does not imply that spending had no effect.",
+    "reason": "Infer both shifts from events and compare a counterfactual."
+  },
+  "ECON-SP-ELITE-309": {
+    "q": "Refer to the graph. The economy begins at AD2-AS1. Households cut autonomous spending, while a fall in imported energy prices lowers firms' costs. Each event moves the relevant curve to its other labeled position. A commentator says unchanged final output proves cheaper energy had no output benefit. Which comparison evaluates that claim?",
+    "options": [
+      "Combined: Y1/P1; spending decline alone: Y3/P2, so cheaper energy prevents a larger output loss.",
+      "Combined: Y1/P1; spending decline alone: Y1/P1, so cheaper energy affects neither output nor prices.",
+      "Combined: Y2/P2; spending decline alone: Y3/P2, so unchanged prices establish the energy benefit.",
+      "Combined: Y3/P2; spending decline alone: Y1/P1, so cheaper energy reduces output further."
+    ],
+    "correctIndex": 0,
+    "feedback": "Lower household spending moves AD2 to AD1. Cheaper energy moves AS1 to AS2. The combined equilibrium is Y1/P1, whereas lower spending alone would produce Y3/P2. Cheaper energy raises output relative to that counterfactual even though final output equals initial output.",
+    "reason": "Require event-to-curve inference and counterfactual reasoning."
+  },
+  "ECON-SP-ELITE-312": {
+    "q": "Refer to the graph. The economy begins at AD1-AS2. Imported oil becomes more expensive, and the government then increases purchases to restore the original output level. Each event moves the relevant curve to its other labeled position. Which sequence and policy evaluation follow?",
+    "options": [
+      "Y1/P1 → Y3/P2 → Y1/P3; output recovers, but the original price level does not.",
+      "Y1/P1 → Y3/P2 → Y1/P1; restoring output also reverses the increase in production costs.",
+      "Y1/P1 → Y2/P2 → Y1/P3; the oil shock first expands output before policy lowers it.",
+      "Y1/P1 → Y3/P2 → Y2/P2; spending restores the original price level but overshoots output."
+    ],
+    "correctIndex": 0,
+    "feedback": "Costlier oil moves AS2 to AS1, giving Y3/P2. Higher government purchases move AD1 to AD2, giving Y1/P3. Output returns to Y1, but costs remain elevated and the price level is higher than the initial P1.",
+    "reason": "Infer the supply shock and fiscal response from events."
+  },
+  "ECON-SP-ELITE-313": {
+    "q": "An economy begins at potential output of $2,000 billion. An energy disruption leaves short-run output at $1,940 billion and raises the price level. To reduce inflation, the central bank raises interest rates; investment falls by $15 billion. For the additional policy effect, assume prices stay fixed, MPC is 0.75, and there are no other spending changes. Which result captures the policy tradeoff?",
+    "options": [
+      "Output falls to $1,880 billion, 6% below potential; weaker demand reduces inflation pressure but deepens the recession.",
+      "Output falls to $1,880 billion, 3% below potential; weaker demand removes the energy disruption's output effect.",
+      "Output falls to $1,925 billion, 3.75% below potential; only the initial investment decline affects production.",
+      "Output rises to $2,000 billion, closing the gap; higher interest rates restore the supply lost to the disruption."
+    ],
+    "correctIndex": 0,
+    "feedback": "The spending multiplier is 1/(1−0.75)=4. The $15 billion investment decline reduces output another $60 billion, to $1,880 billion. The gap is 120/2,000=6%. Demand restraint can reduce inflation pressure while worsening a recession caused by a supply shock.",
+    "reason": "Add multiplier calculation and policy tradeoff under explicit assumptions."
+  },
+  "ECON-SP-ELITE-341": {
+    "q": "Refer to the graph. The economy begins at AD2-AS2. Imported fuel becomes more expensive, while autonomous spending is unchanged. The relevant supply curve moves to its other labeled position. A commentator argues that lower output proves households must have cut autonomous spending. Which diagnosis fits the graph?",
+    "options": [
+      "Y2/P2 becomes Y1/P3; the price increase supports a cost shock without requiring a demand decline.",
+      "Y2/P2 becomes Y1/P3; the output decline requires a demand decline despite unchanged autonomous spending.",
+      "Y2/P2 becomes Y3/P2; unchanged prices show that higher costs affect only the amount produced.",
+      "Y2/P2 becomes Y1/P1; lower prices show that the fuel shock operates through weaker demand."
+    ],
+    "correctIndex": 0,
+    "feedback": "Higher fuel costs move AS2 to AS1 while AD2 remains fixed. Output falls from Y2 to Y1 and the price level rises from P2 to P3. A fall in output alone does not identify a demand contraction.",
+    "reason": "Remove the supplied shift conclusion and require diagnosis from both outcomes."
+  },
+  "ECON-SP-ELITE-302": {
+    "q": "In a simplified banking system, a central-bank purchase from a bank adds $60 million of reserves without directly changing public deposits. There is no currency drain. Banks previously held reserves equal to 10% of deposits but now intend to hold 25%. Assume all added reserves support deposits at the new ratio and borrowers take the loans offered. Which comparison describes the maximum additional deposits?",
+    "options": [
+      "$240 million instead of $600 million; greater reserve retention cuts the expansion by $360 million.",
+      "$240 million instead of $600 million; the $360 million difference means the reserve injection disappeared.",
+      "$150 million instead of $600 million; multiply the injection by the new reserve percentage.",
+      "$600 million under either ratio; the reserve injection fixes deposits regardless of banks' retention."
+    ],
+    "correctIndex": 0,
+    "feedback": "With no currency drain, additional deposits equal added reserves divided by the reserve-to-deposit ratio. The old maximum is 60/0.10=$600 million; the new maximum is 60/0.25=$240 million. More cautious reserve retention reduces loan and deposit expansion by $360 million.",
+    "reason": "Quantify weakened deposit creation and distinguish reserves from deposits."
+  },
+  "P62B-ELAS-EL-004": {
+    "q": "A ceramics studio has an unchanged demand schedule: $32 for 180 sessions, $40 for 160, and $48 for 110. It can serve every scheduled buyer. Using midpoint elasticity for the two adjacent price intervals, which pricing recommendation maximizes revenue among these choices?",
+    "options": [
+      "Choose $32: elastic below $40 and inelastic above it; revenue is $5,760.",
+      "Keep $40: inelastic below $40 and elastic above it; revenue is $6,400.",
+      "Choose $48: inelastic below $40 and inelastic above it; revenue is $5,280.",
+      "Keep $40: elastic below $40 and inelastic above it; revenue is $6,400."
+    ],
+    "correctIndex": 1,
+    "feedback": "For $32–$40, elasticity is (20/170)/(8/36)≈0.53. For $40–$48, it is (50/135)/(8/44)≈2.04. Revenues are $5,760, $6,400, and $5,280. Keeping $40 maximizes revenue among the listed choices; both adjacent price changes lower revenue.",
+    "reason": "Balance options and pair the best revenue with competing elasticity diagnoses."
+  },
+  "P62B-ELAS-EL-011": {
+    "q": "A theater can sell 100 tickets at $30 or 120 tickets at $24, with other demand conditions fixed. What are midpoint demand elasticity and average marginal revenue over the extra 20 tickets, and what do they imply for revenue?",
+    "options": [
+      "Elasticity ≈0.82 and marginal revenue −$6; expanding sales lowers total revenue.",
+      "Elasticity ≈0.82 and marginal revenue +$6; expanding sales raises total revenue.",
+      "Elasticity ≈1.22 and marginal revenue −$6; expanding sales lowers total revenue.",
+      "Elasticity ≈1.22 and marginal revenue +$6; expanding sales raises total revenue."
+    ],
+    "correctIndex": 0,
+    "feedback": "Midpoint elasticity is (20/110)/(6/27)≈0.82. Revenue falls from 100×30=$3,000 to 120×24=$2,880. Average marginal revenue is −120/20=−$6 per extra ticket. Inelastic demand over this interval makes the price cut reduce revenue.",
+    "reason": "Replace out-of-topic marginal cost with a calculated elasticity–marginal revenue link."
+  },
+  "P62B-ELAS-EL-015": {
+    "q": "A tour operator can serve all customers at either price. Charging $24 attracts 250 customers; charging $20 attracts 320. Demand conditions are otherwise unchanged. Which midpoint elasticity and revenue comparison support a price choice?",
+    "options": [
+      "Elasticity ≈1.35; $20 earns $400 more, so choose $20 to increase revenue.",
+      "Elasticity ≈1.35; $24 earns $400 more, so choose $24 to increase revenue.",
+      "Elasticity ≈0.74; $20 earns $400 more, so choose $20 to increase revenue.",
+      "Elasticity ≈0.74; $24 earns $400 more, so choose $24 to increase revenue."
+    ],
+    "correctIndex": 0,
+    "feedback": "Elasticity is (70/285)/(4/22)≈1.35. Revenue is $6,400 at $20 and $6,000 at $24. The larger proportional increase in quantity outweighs the price reduction.",
+    "reason": "Use natural prose and paired numerical distractors."
+  },
+  "P62B-ELAS-EL-016": {
+    "q": "A firm sells 2,000 units at $15 and 1,700 units at $17, with other demand conditions fixed. Using the midpoint method, which elasticity and revenue change describe the price increase?",
+    "options": [
+      "Elasticity ≈0.77; revenue falls $1,100, indicating inelastic demand.",
+      "Elasticity ≈1.30; revenue falls $1,100, indicating elastic demand.",
+      "Elasticity ≈1.30; revenue rises $1,100, indicating elastic demand.",
+      "Elasticity ≈0.77; revenue rises $1,100, indicating inelastic demand."
+    ],
+    "correctIndex": 1,
+    "feedback": "Midpoint elasticity is (300/1,850)/(2/16)≈1.30. Revenue falls from $30,000 to $28,900, a $1,100 decline. The calculated elasticity and revenue test agree that demand is elastic over this interval.",
+    "reason": "Add the requested elasticity calculation with plausible reciprocal/sign errors."
+  },
+  "P62B-ELAS-EL-018": {
+    "q": "Two markets initially trade 1,000 units at $20. A $4 per-unit emissions tax raises the buyer price by $2 and lowers the seller price by $2 in each. Over these changes, Market A has demand elasticity 0.5 and supply elasticity 0.5; Market B has both elasticities 1.5. Use percentage changes relative to initial values as approximations. Which comparison follows?",
+    "options": [
+      "A cuts quantity by about 150 and B by 50; the less elastic market responds more.",
+      "Both cut quantity by about 100; equal tax wedges imply equal quantity responses.",
+      "A cuts quantity by about 50 and B by 150; the larger response gives B more tax revenue.",
+      "A cuts quantity by about 50 and B by 150; the larger response gives B less tax revenue."
+    ],
+    "correctIndex": 3,
+    "feedback": "Each side's price changes by about 10%. A's quantity falls about 5%, or 50 units; B's falls about 15%, or 150. Tax revenue is approximately 4×950=$3,800 in A and 4×850=$3,400 in B. Greater responsiveness reduces emissions more but shrinks the tax base.",
+    "reason": "Apply elasticities to quantity changes and resulting revenue."
+  },
+  "P62B-ELAS-EL-020": {
+    "q": "A city initially rents 10,000 apartments at $1,000 per month. A binding ceiling lowers rent to $900. Demand elasticity is 0.5 in both periods; supply elasticity is 0.2 in the short run and 1.0 in the long run. Use initial-value percentage changes as approximations, with other conditions fixed. Which shortage estimates and explanation follow?",
+    "options": [
+      "About 700 initially and 1,500 later; demand becomes more price elastic over time.",
+      "About 700 initially and 1,500 later; landlords reduce supply more in the long run.",
+      "About 300 initially and 500 later; quantity demanded falls as the controlled rent falls.",
+      "About 200 initially and 1,000 later; the shortage equals only the reduction in supply."
+    ],
+    "correctIndex": 1,
+    "feedback": "Rent falls 10%, raising quantity demanded about 5% to 10,500. Short-run supply falls 2% to 9,800, leaving a 700-unit shortage. Long-run supply falls 10% to 9,000, leaving a 1,500-unit shortage. Demand elasticity is unchanged; the larger supply response widens the shortage.",
+    "reason": "Replace obvious alternatives with a two-period elasticity calculation."
+  },
+  "P62B-ELAS-EL-029": {
+    "q": "A transit operator serves 10,000 trips per day at a $2 fare. It considers a 10% fare increase. Estimated demand elasticity is 0.5 in the short run and 1.5 after travelers have time to adjust. Use initial-value percentage changes as approximations. Which revenue comparison follows?",
+    "options": [
+      "Revenue rises to about $20,900 in both periods because the fare change is the same.",
+      "Revenue falls to about $18,700 in both periods because every fare increase loses riders.",
+      "Revenue rises to about $20,900 initially but falls to $18,700 after travelers adjust.",
+      "Revenue falls to about $18,700 initially but rises to $20,900 after travelers adjust."
+    ],
+    "correctIndex": 2,
+    "feedback": "The new fare is $2.20. Short-run trips fall about 5% to 9,500, yielding $20,900. Long-run trips fall about 15% to 8,500, yielding $18,700. Initial revenue was $20,000. A policy can raise revenue initially and lower it after demand becomes more elastic.",
+    "reason": "Keep the item within elasticity by replacing the tariff context with time-horizon revenue analysis.",
+    "type": "policy",
+    "primarySkill": "elasticity_policy_application",
+    "repairSkill": "elasticity_policy_application",
+    "commonError": "Ignoring how a larger long-run quantity response changes the revenue effect of a fare increase."
+  },
+  "P52A-FISCAD-EL-002": {
+    "q": "A $100 billion lump-sum tax cut is split between households that initially spend 90% of the cut and households that initially spend 30%. Plan A gives 80% to the first group; Plan B gives 20% to that group. For subsequent spending rounds, assume a common MPC of 0.75, fixed prices, and no imports or crowding out. Which output comparison is correct?",
+    "options": [
+      "A adds $78 billion and B $42 billion; later spending rounds do not change the difference.",
+      "A adds $400 billion and B $400 billion; equal tax reductions imply equal output effects.",
+      "A adds $312 billion and B $168 billion; B has the larger effect because more recipients save.",
+      "A adds $312 billion and B $168 billion; targeting the higher-spending group increases the effect."
+    ],
+    "correctIndex": 3,
+    "feedback": "Initial consumption rises 80×0.90+20×0.30=$78 billion under A and 20×0.90+80×0.30=$42 billion under B. The subsequent multiplier is 1/(1−0.75)=4, producing $312 billion and $168 billion. This common later-round MPC is a stipulated assumption, not either group's initial spending fraction.",
+    "reason": "Specify distribution and multiplier assumptions and require weighted calculations."
+  },
+  "ECON-EC-ELITE-13011": {
+    "q": "A binding rent ceiling leaves 80,000 apartments demanded and 52,000 supplied. Each housed tenant saves $300 monthly. Landlords lose $18 million monthly in producer surplus. Separately, displaced renters lose $2 million in consumer surplus, and housing searches consume $1 million in real resources. Ignore other effects. What are the shortage and monthly change in total surplus?",
+    "options": [
+      "Shortage 28,000; total surplus falls $5.4 million after gains, losses, and search costs.",
+      "Shortage 28,000; total surplus falls $4.4 million because search costs are transfers.",
+      "Shortage 28,000; total surplus rises $15.6 million because lower rents benefit housed tenants.",
+      "Shortage 52,000; total surplus falls $5.4 million after gains, losses, and search costs."
+    ],
+    "correctIndex": 0,
+    "feedback": "The shortage is 80,000−52,000=28,000. Housed tenants gain 52,000×300=$15.6 million. Net surplus changes by 15.6−18−2−1=−$5.4 million. Lower rent benefits some tenants, while rationing and resource costs matter for the overall result.",
+    "reason": "Replace an obvious winners-and-losers statement with allocation and welfare accounting."
+  },
+  "ECON-EC-ELITE-13026": {
+    "q": "A luxury market initially sells 10,000 units at $100. A $20 per-unit tax is fully passed to buyers. Demand elasticity is estimated at 2.0. Use initial-value percentage changes as an approximation. An official forecasts $200,000 of revenue by assuming sales stay fixed. Which estimate and diagnosis are appropriate?",
+    "options": [
+      "About $160,000; a 20% price increase produces a 20% quantity decline.",
+      "About $120,000; elastic demand shifts left by 40% when the tax raises price.",
+      "About $120,000; a 20% price increase produces a 40% movement down in quantity demanded.",
+      "About $200,000; full pass-through prevents buyers from reducing their purchases."
+    ],
+    "correctIndex": 2,
+    "feedback": "The buyer price rises 20%. With elasticity 2.0, quantity demanded falls approximately 40%, to 6,000. Revenue is then 20×6,000=$120,000, $80,000 below the forecast. This is movement along demand, not a demand shift.",
+    "reason": "Add explicit elasticity and pass-through assumptions and quantify the forecast error."
+  },
+  "ECON-SP-ELITE-336": {
+    "q": "Two economies begin at potential output of $1,000 billion. After prices rise, Economy A produces $1,040 billion while Economy B produces $960 billion. Assume one demand or supply shock explains each change. Policymakers consider reducing autonomous spending by $10 billion in each; MPC is 0.75 and prices are fixed for this additional multiplier calculation. Which evaluation follows?",
+    "options": [
+      "A is consistent with stronger demand and returns to potential; B is consistent with an adverse supply shock and falls to $920 billion.",
+      "A is consistent with stronger demand and falls to $1,030 billion; B is consistent with an adverse supply shock and falls to $950 billion.",
+      "Both are consistent with stronger demand and return to potential; equal inflation calls for the same output response.",
+      "A is consistent with an adverse supply shock and returns to potential; B is consistent with stronger demand and falls to $920 billion."
+    ],
+    "correctIndex": 0,
+    "feedback": "Rising prices with rising output fit stronger demand in A; rising prices with falling output fit an adverse supply shock in B. A $10 billion spending cut has a $40 billion output effect when MPC=0.75. It closes A's positive gap but deepens B's negative gap to $80 billion.",
+    "reason": "Combine shock identification, multiplier calculation, and asymmetric policy consequences."
+  },
+  "ECON-SP-FINALBOSS-4002": {
+    "q": "Assume the price level stays fixed and firms meet additional demand by changing output. MPC is 0.5, with no taxes or imports in the multiplier. Monetary easing raises investment by $40. A foreign recession separately reduces total spending and output by $120, including all induced spending effects. Which calculation distinguishes the monetary policy's effect from the net result?",
+    "options": [
+      "Policy adds $80; net output rises $80 because the foreign effect is already counted.",
+      "Policy adds $40; net output falls $80 because only initial investment affects output.",
+      "Policy adds $80; net output falls $40 because the foreign contraction is larger.",
+      "Policy adds $80; net output falls $160 because the total foreign effect is multiplied again."
+    ],
+    "correctIndex": 2,
+    "feedback": "The multiplier is 1/(1−0.5)=2, so investment raises output by $80. The foreign effect is already a total and is not multiplied again. Net output changes by 80−120=−$40. The monetary channel works but is outweighed by the foreign contraction.",
+    "reason": "Define fixed prices in plain language and pair complete calculations without embedded hints."
+  },
+  "ECON-SP-FINALBOSS-4021": {
+    "q": "Assume the price level stays fixed and firms meet additional demand by changing output. MPC is 0.5, with no taxes or imports in the multiplier. Monetary easing raises investment by $160. A foreign recession separately reduces total spending and output by $480, including all induced spending effects. Which calculation distinguishes the monetary policy's effect from the net result?",
+    "options": [
+      "Policy adds $320; net output rises $320 because the foreign effect is already counted.",
+      "Policy adds $320; net output falls $160 because the foreign contraction is larger.",
+      "Policy adds $160; net output falls $320 because only initial investment affects output.",
+      "Policy adds $320; net output falls $640 because the total foreign effect is multiplied again."
+    ],
+    "correctIndex": 1,
+    "feedback": "The multiplier is 1/(1−0.5)=2, so investment raises output by $320. The foreign effect is already a total and is not multiplied again. Net output changes by 320−480=−$160. The monetary channel works but is outweighed by the foreign contraction.",
+    "reason": "Define fixed prices in plain language and pair complete calculations without embedded hints."
+  },
+  "ECON-SP-LEGENDARYBOSS-9117": {
+    "q": "Assume the price level stays fixed and firms meet additional demand by changing output. MPC is 0.5, with no taxes or imports in the multiplier. Monetary easing raises investment by $280. A foreign recession separately reduces total spending and output by $840, including all induced spending effects. Which calculation distinguishes the monetary policy's effect from the net result?",
+    "options": [
+      "Policy adds $560; net output rises $560 because the foreign effect is already counted.",
+      "Policy adds $560; net output falls $280 because the foreign contraction is larger.",
+      "Policy adds $280; net output falls $560 because only initial investment affects output.",
+      "Policy adds $560; net output falls $1120 because the total foreign effect is multiplied again."
+    ],
+    "correctIndex": 1,
+    "feedback": "The multiplier is 1/(1−0.5)=2, so investment raises output by $560. The foreign effect is already a total and is not multiplied again. Net output changes by 560−840=−$280. The monetary channel works but is outweighed by the foreign contraction.",
+    "reason": "Define fixed prices in plain language and pair complete calculations without embedded hints."
+  }
+}

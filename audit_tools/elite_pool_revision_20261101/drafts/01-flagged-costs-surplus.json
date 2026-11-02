@@ -1,0 +1,238 @@
+{
+  "LG-Q-307": {
+    "options": [
+      "No. Capital becomes −$1 million; borrowing adds equal amounts to assets and liabilities.",
+      "Yes. Capital becomes −$1 million; the new loan then increases capital to $1 million.",
+      "Yes. The loss is 8% of initial capital, leaving positive equity after borrowing.",
+      "No. Capital remains $3 million; the asset loss creates only a liquidity shortage."
+    ],
+    "correctIndex": 0,
+    "reason": "Balance alternatives while retaining the two-step solvency versus liquidity analysis."
+  },
+  "P62C-CPS-EL-001": {
+    "q": "Each buyer purchases at most one unit. The price rises from $20 to $25. Ten buyers value the good at $30 each and continue buying; two others value it at $23 and $24 and stop buying. Which calculation correctly explains the loss of consumer surplus?",
+    "options": [
+      "$57: continuing buyers lose $50, and the two departing buyers lose $7.",
+      "$57: all of the loss is an extra payment made by continuing buyers.",
+      "$60: all twelve buyers lose $5, including those who stop buying.",
+      "$50: only the buyers who continue purchasing lose any consumer surplus."
+    ],
+    "correctIndex": 0,
+    "feedback": "The ten continuing buyers each lose $5, for $50. At the old $20 price, the departing buyers had surplus of $3 and $4; both lose that surplus when they stop buying. The total loss is $57, including $7 that is not a higher payment on continuing purchases.",
+    "reason": "Require calculation of continuing and departing buyers' losses; use plausible competing decompositions."
+  },
+  "P62C-CPS-EL-002": {
+    "q": "Each seller offers at most one unit. The price falls from $20 to $16. Eight sellers with costs of $10 continue selling; two others with costs of $18 and $19 stop selling. Which calculation correctly explains the loss of producer surplus?",
+    "options": [
+      "$40: all ten sellers lose $4, including the sellers who exit.",
+      "$35: continuing sellers lose $32, and the two exiting sellers lose $3.",
+      "$35: the entire loss comes from lower receipts on continuing sales.",
+      "$32: sellers who stop producing lose no surplus because they avoid their costs."
+    ],
+    "correctIndex": 1,
+    "feedback": "The eight continuing sellers each lose $4, totaling $32. The exiting sellers previously earned surplus of $2 and $1 and now earn none. Producer surplus falls by $35. Avoiding production costs does not preserve the surplus those sellers previously received.",
+    "reason": "Calculate two components and distinguish lost trades from transfers on continuing units."
+  },
+  "P62C-CPS-EL-005": {
+    "q": "A policy raises a product's price and reduces the quantity traded. Consumer surplus falls from $120 to $50, while producer surplus rises from $80 to $130. These figures include all affected trades, and there are no external effects or other policy costs. A supporter points to the sellers' gain as evidence that society benefits. Which assessment is correct?",
+    "options": [
+      "Total surplus falls $20; the $50 seller gain does not offset the $70 buyer loss.",
+      "Total surplus falls $20; that entire change is a transfer from buyers to sellers.",
+      "Total surplus rises $50; the buyer loss should be omitted because sellers receive the price.",
+      "Total surplus falls $70; the seller gain should be omitted when measuring overall welfare."
+    ],
+    "correctIndex": 0,
+    "feedback": "Total surplus initially equals $120 + $80 = $200 and later equals $50 + $130 = $180. Buyers lose $70 while sellers gain $50, leaving a net loss of $20. A transfer between buyers and sellers cancels in total surplus; the remaining net loss does not.",
+    "reason": "Replace a leading conceptual slogan with a welfare calculation and competing accounting errors."
+  },
+  "P62C-CPS-EL-006": {
+    "q": "A policy lowers a product's price but reduces the quantity traded. Measured consumer surplus rises from $100 to $145, while producer surplus falls from $140 to $80. The figures account for who receives the goods; there are no external effects or other policy costs. Which assessment correctly distinguishes buyer gains from the overall welfare change?",
+    "options": [
+      "Total surplus rises $45; buyers' gain establishes that the policy improves efficiency.",
+      "Total surplus falls $15; the $45 buyer gain is smaller than the $60 seller loss.",
+      "Total surplus falls $15; that entire loss is simply a transfer between buyers and sellers.",
+      "Total surplus falls $60; the buyer gain should be excluded from the welfare calculation."
+    ],
+    "correctIndex": 1,
+    "feedback": "Total surplus falls from $100 + $140 = $240 to $145 + $80 = $225. The $45 buyer gain offsets only part of the $60 seller loss, leaving a $15 net loss. A lower buyer price can benefit buyers while reducing total gains from exchange.",
+    "reason": "Require comparison of distributional gains and net surplus, with plausible distractors."
+  },
+  "P62C-CPS-EL-013": {
+    "q": "A seller receives $18 per unit and sells 100 units. Variable cost is $12 per unit, and the only fixed cost is a $1,000 license fee. Next period the fee falls to $600; price, quantity, and variable cost are unchanged. How do producer surplus and profit compare across the two periods?",
+    "options": [
+      "Producer surplus is $600 in both periods; profit rises from −$400 to $0.",
+      "Producer surplus rises from −$400 to $0; profit is $600 in both periods.",
+      "Producer surplus and profit both rise from −$400 to $0 as the fee falls.",
+      "Producer surplus rises from $600 to $1,000; profit rises from −$400 to $0."
+    ],
+    "correctIndex": 0,
+    "feedback": "Revenue is $1,800 and variable cost is $1,200, so producer surplus is $600 in either period. Profit also subtracts the fixed fee: $600 − $1,000 = −$400 initially and $600 − $600 = $0 later. Lower fixed cost changes profit without changing producer surplus at the stated price and quantity.",
+    "reason": "Strengthen to elite through calculation, a fixed-cost change, and distinction between surplus and profit."
+  },
+  "P62C-CPS-EL-019": {
+    "q": "Two water units are available at a production cost of $5 each. Each household wants at most one unit. Households A, B, and C are willing to pay $30, $25, and $10 respectively; C has an urgent medical need but little income. Compare allocating units to A and B with allocating them to A and C. Which assessment correctly separates measured surplus from equity?",
+    "options": [
+      "Measured surplus rises $15 with A and C, because urgent need replaces willingness to pay in the calculation.",
+      "Measured surplus falls $15 with A and C, proving that the allocation cannot be preferred on equity grounds.",
+      "Measured surplus falls $15 with A and C, but serving urgent need may still support that allocation on equity grounds.",
+      "Measured surplus is unchanged, because both allocations use the same number of units and incur the same production cost."
+    ],
+    "correctIndex": 2,
+    "feedback": "Using dollar willingness to pay, A and B generate $30 + $25 − $10 = $45 of total surplus. A and C generate $30 + $10 − $10 = $30, a $15 reduction. The calculation measures surplus under that convention; limited income can constrain willingness to pay, so it does not settle the equity judgment about urgent need.",
+    "reason": "Require allocation and surplus comparison before evaluating the limits of willingness-to-pay measures."
+  },
+  "P62E-COP-EL-001": {
+    "q": "An owner-operated business receives $210,000 in annual revenue and pays $80,000 in employee wages, $35,000 for materials, and $20,000 for utilities. The owner could earn $62,000 working elsewhere and rent the business's owner-owned premises to another firm for $18,000. There are no other costs. Which pair correctly states accounting profit and economic profit?",
+    "options": [
+      "Accounting profit is $75,000; economic profit is −$5,000.",
+      "Accounting profit is $75,000; economic profit is $13,000.",
+      "Accounting profit is $155,000; economic profit is $75,000.",
+      "Accounting profit is −$5,000; economic profit is −$5,000."
+    ],
+    "correctIndex": 0,
+    "feedback": "Explicit costs total $80,000 + $35,000 + $20,000 = $135,000, so accounting profit is $210,000 − $135,000 = $75,000. Implicit costs are the owner's $62,000 forgone salary and $18,000 forgone rent, totaling $80,000. Economic profit is therefore −$5,000.",
+    "reason": "Have the student calculate accounting profit and implicit cost before economic profit, as requested."
+  },
+  "P62E-COP-EL-002": {
+    "options": [
+      "Economic profit stays $0 because the two changes offset each other.",
+      "Economic profit becomes $12,000 because the two changes reinforce each other.",
+      "Economic profit becomes $6,000 because the outside salary is excluded.",
+      "Economic profit becomes −$12,000 because lower outside earnings reduce profit."
+    ],
+    "correctIndex": 1,
+    "reason": "Retain the existing multistep opportunity-cost comparison and balance the alternatives."
+  },
+  "P62E-COP-EL-007": {
+    "q": "A firm's average fixed cost is $12 when it produces 100 units. Its lease then rises by $300 for the same production period. It now produces 150 units, and variable cost remains $8 for every unit produced. Which set of costs applies at 150 units after the lease increase?",
+    "options": [
+      "AFC $12; AVC $8; ATC $20; MC $8.",
+      "AFC $10; AVC $10; ATC $20; MC $10.",
+      "AFC $10; AVC $8; ATC $18; MC $8.",
+      "AFC $8; AVC $10; ATC $18; MC $10."
+    ],
+    "correctIndex": 2,
+    "feedback": "Initially total fixed cost is $12 × 100 = $1,200. The lease increase raises it to $1,500, giving AFC of $1,500 ÷ 150 = $10. Constant variable cost of $8 per unit means AVC and MC are both $8. ATC is $10 + $8 = $18. AFC falls despite the fixed-cost increase because output also rises.",
+    "reason": "Derive total fixed cost from AFC and output, then evaluate costs at a different output."
+  },
+  "P62E-COP-EL-008": {
+    "q": "At an output of 60 units, a firm has total fixed cost of $240, average variable cost of $10, and marginal cost of $12. A new contract adds a $4 royalty to every unit produced but reduces the fixed license fee by $120 for the period. Output and all other costs stay unchanged. What are the new AFC, AVC, ATC, and MC?",
+    "options": [
+      "AFC $4; AVC $14; ATC $18; MC $16.",
+      "AFC $2; AVC $12; ATC $14; MC $14.",
+      "AFC $2; AVC $14; ATC $16; MC $12.",
+      "AFC $2; AVC $14; ATC $16; MC $16."
+    ],
+    "correctIndex": 3,
+    "feedback": "Fixed cost falls to $120, so AFC becomes $120 ÷ 60 = $2. The royalty raises AVC from $10 to $14 and MC from $12 to $16. ATC becomes $2 + $14 = $16. The fixed-fee reduction affects AFC and ATC but not marginal cost.",
+    "reason": "Combine a per-unit charge with an offsetting fixed-fee change rather than asking for one memorized rule."
+  },
+  "P62E-COP-EL-013": {
+    "q": "For the coming month, a plant can earn $18,000 in revenue by paying $15,000 in operating costs. It has already paid a $6,000 insurance premium that will be fully refunded if it closes before production starts. A separate $10,000 lease payment is nonrefundable either way. Which decision and cost classification are correct?",
+    "options": [
+      "Close; the $6,000 avoidable premium refund exceeds the $3,000 operating contribution.",
+      "Operate; the $3,000 operating contribution is positive, so the insurance refund is irrelevant.",
+      "Close; recovering both prepaid fixed costs saves $16,000 compared with operating.",
+      "Operate; the $6,000 insurance refund adds to the $3,000 contribution from production."
+    ],
+    "correctIndex": 0,
+    "feedback": "Operating generates $18,000 − $15,000 = $3,000, but requires giving up a $6,000 refund available on closure. Closing is therefore $3,000 better. The insurance payment is fixed with respect to output but avoidable through closure. The nonrefundable lease is sunk and does not differ between the choices.",
+    "reason": "Classify fixed versus sunk costs and compare actual alternatives using an avoidable fixed cost."
+  },
+  "P62E-COP-EL-015": {
+    "q": "A firm produces 100 units using 50 labor hours at $20 per hour and pays $600 in plant rent. A proposed scheduling system would produce the same output in 40 hours but add a $200 software fee for the period. Labor hours per unit are constant under each system; rent and wages are unchanged. At 100 units, which comparison is correct?",
+    "options": [
+      "AVC and MC fall $2; AFC stays $6, so ATC falls from $16 to $14.",
+      "AVC and MC fall $2; AFC rises $2, so ATC falls from $16 to $14.",
+      "AVC and MC fall $2; AFC rises $2, so ATC stays at $16.",
+      "AVC and MC stay $10; AFC rises $2, so ATC rises from $16 to $18."
+    ],
+    "correctIndex": 2,
+    "feedback": "Labor cost falls from $1,000 to $800, so AVC falls from $10 to $8. Constant labor requirements per unit make MC equal those variable costs per unit. Fixed cost rises from $600 to $800, raising AFC from $6 to $8. ATC remains $16 because the variable-cost saving offsets the added fixed fee at this output.",
+    "reason": "Require productivity and fixed-cost calculations before comparing four cost measures."
+  },
+  "P62E-COP-EL-016": {
+    "q": "A plant uses 80 labor hours and 40 machine hours to produce 800 units. A larger plant uses 120 labor hours and 60 machine hours to produce 1,200 units with the same production technology. Labor initially costs $20 per hour and machine use $40 per hour. At the larger plant, labor costs $22 per hour while the machine rate is unchanged. There are no other costs. Which assessment separates returns to scale from the input-price change?",
+    "options": [
+      "There are decreasing returns to scale; average cost rises from $4.00 to $4.20.",
+      "There are increasing returns to scale; average cost falls from $4.20 to $4.00.",
+      "There are constant returns to scale; average cost must stay at $4.00 despite the wage change.",
+      "There are constant returns to scale; average cost rises from $4.00 to $4.20 because labor becomes dearer."
+    ],
+    "correctIndex": 3,
+    "feedback": "Both inputs and output increase by a factor of 1.5, indicating constant returns to scale. Initial cost is 80 × $20 + 40 × $40 = $3,200, or $4 per unit. New cost is 120 × $22 + 60 × $40 = $5,040, or $4.20 per unit. The increase in average cost reflects the higher wage, not decreasing returns to scale.",
+    "reason": "Require proportional comparisons and cost calculation without calculus; separate technology from input prices."
+  },
+  "P62E-COP-EL-021": {
+    "q": "At unchanged input prices and technology, a firm's least-cost plant for 400 units has total cost of $4,800. Its least-cost plant for 600 units has total cost of $6,600. Both figures reflect normal operation rather than temporary underuse of a plant. What do these observations establish over this output range?",
+    "options": [
+      "Economies of scale: average cost falls from $12 to $11 even though total cost rises.",
+      "Diseconomies of scale: total cost rises $1,800 even though average cost falls from $12 to $11.",
+      "Constant returns to scale: average cost must be unchanged whenever both output and total cost rise.",
+      "No conclusion about scale: costs from different plant sizes cannot be used to compare long-run average cost."
+    ],
+    "correctIndex": 0,
+    "feedback": "Long-run average cost is $4,800 ÷ 400 = $12 at the smaller output and $6,600 ÷ 600 = $11 at the larger output. Lower average cost indicates economies of scale over this range. Total cost can rise while cost per unit falls. The stated conditions make this a comparison of least-cost long-run choices.",
+    "reason": "Strengthen the classification question by deriving average costs and assessing evidence about scale."
+  },
+  "P62E-COP-EL-025": {
+    "q": "A firm can use its current process, with fixed cost of $1,000 and variable cost of $8 per unit, or a new automated process, with fixed cost of $1,600 and variable cost of $5 per unit. Either process can produce the required output, and these are all costs. Which comparison is correct?",
+    "options": [
+      "The current process is cheaper at 100 units, automation at 300 units, and costs tie at 200 units.",
+      "Automation is cheaper at both 100 and 300 units, because its marginal cost is always lower.",
+      "The current process is cheaper at both 100 and 300 units, because its fixed cost is always lower.",
+      "The current process is cheaper at 100 units, automation at 300 units, and costs tie at 500 units."
+    ],
+    "correctIndex": 0,
+    "feedback": "At 100 units, total costs are $1,800 for the current process and $2,100 for automation. At 300 units they are $3,400 and $3,100. Automation's $600 extra fixed cost is offset by its $3 saving per unit at 200 units. Neither fixed cost nor marginal cost alone determines which process is cheaper.",
+    "reason": "Use plausible single-component and break-even errors instead of obvious distractors."
+  },
+  "P62E-COP-EL-026": {
+    "q": "A firm's $9,000 lease payment for the current period has already been paid and cannot be recovered. Operating would bring $12,000 of revenue and require $8,000 of additional costs. Next period the same revenue and operating costs are expected, but the firm can avoid another $9,000 lease payment by exiting. There are no other costs or benefits. Which plan maximizes profit across the two separate decisions?",
+    "options": [
+      "Close now and do not renew; the $9,000 lease exceeds the $4,000 operating contribution in both periods.",
+      "Operate now and do not renew; operation adds $4,000 now, but renewal would produce a $5,000 loss.",
+      "Operate now and renew; the lease is sunk in both periods, leaving a $4,000 gain from operation each time.",
+      "Close now and renew later; the paid lease matters now, while the future lease can be ignored."
+    ],
+    "correctIndex": 1,
+    "feedback": "The current lease is sunk, so operating now improves the outcome by $12,000 − $8,000 = $4,000 relative to closing. The next lease is avoidable: renewal would yield $12,000 − $8,000 − $9,000 = −$5,000. A payment can be sunk for the current decision while a similar future payment remains relevant.",
+    "reason": "Compare short-run and renewal decisions with explicit alternatives and plausible sunk-cost mistakes."
+  },
+  "P62E-COP-EL-028": {
+    "q": "Technology A costs $2,400 per period plus $4 per unit. Technology B costs $600 per period plus $10 per unit. Both can produce the same required output, with no other costs. Which comparison identifies the cheaper technology at 200 and 400 units and the output at which their total costs are equal?",
+    "options": [
+      "A is cheaper at both 200 and 400 units; equal costs occur at 300 units.",
+      "B is cheaper at both 200 and 400 units; equal costs occur at 300 units.",
+      "B is cheaper at 200 units and A at 400 units; equal costs occur at 450 units.",
+      "B is cheaper at 200 units and A at 400 units; equal costs occur at 300 units."
+    ],
+    "correctIndex": 3,
+    "feedback": "At 200 units, A costs $3,200 and B $2,600. At 400 units, A costs $4,000 and B $4,600. A's extra fixed cost is $1,800 and its per-unit saving is $6, so the costs are equal at 300 units. The cheaper choice depends on output.",
+    "reason": "Supply both technologies explicitly and require cost comparisons and a break-even calculation."
+  },
+  "P62E-COP-EL-030": {
+    "q": "A firm's fixed cost is $66. Total variable cost is $120 at 10 units, $128 at 11 units, and $144 at 12 units. For the increase from 11 to 12 units, which explanation of the changes in average variable cost and average total cost is correct?",
+    "options": [
+      "Marginal cost is $16; both averages rise because that exceeds average variable cost at 11 units.",
+      "Marginal cost is $16; AVC rises but ATC falls because $16 lies between their previous values.",
+      "Marginal cost is $16; both averages fall because that is below average total cost at 11 units.",
+      "Marginal cost is $12; AVC stays constant and ATC falls because fixed cost is spread more widely."
+    ],
+    "correctIndex": 1,
+    "feedback": "The twelfth unit adds $144 − $128 = $16 to variable cost. At 11 units, AVC is $128 ÷ 11, about $11.64, and ATC is ($128 + $66) ÷ 11, about $17.64. Marginal cost is above the former but below the latter, so AVC rises to $12 while ATC falls to $17.50 at 12 units.",
+    "reason": "Derive marginal and average costs before applying the marginal-average relationship."
+  },
+  "ECON-NL-ELITE-331": {
+    "q": "Both price indexes initially equal 100. Imported household energy accounts for 40% of the CPI basket and its price rises 10%; all other consumer prices are unchanged. Domestically produced investment equipment accounts for 25% of base-period GDP and its price falls 8%; all other domestic-output prices and all quantities are unchanged. Which result and interpretation are correct?",
+    "options": [
+      "CPI becomes 104 and the GDP deflator 98; different coverage allows the indexes to move in opposite directions.",
+      "CPI becomes 104 and the GDP deflator 98; opposite movements prove that one index has been calculated incorrectly.",
+      "CPI stays 100 and the GDP deflator becomes 98; imported products are excluded from both price indexes.",
+      "CPI becomes 104 and the GDP deflator stays 100; investment equipment is excluded from domestic output."
+    ],
+    "correctIndex": 0,
+    "feedback": "Imported household energy raises the CPI by 0.40 × 10% = 4%, giving 104. With quantities unchanged, the domestic equipment price decline lowers the GDP deflator by 0.25 × 8% = 2%, giving 98. CPI includes imported consumer purchases; the GDP deflator covers domestic production, including investment equipment. Opposite movements can therefore be consistent.",
+    "reason": "Balance choice lengths and require weighted calculations plus an interpretation of index coverage."
+  }
+}

@@ -1,0 +1,2111 @@
+{
+  "40011": {
+    "q": "Refer to the graph. The market begins at A. A popular film release changes buyers' preferences, while theaters' costs and capacity stay fixed. The market moves to B. A report attributes the extra tickets sold to an increase in supply. Which evaluation uses both the price and quantity evidence?",
+    "options": [
+      "The report is supported: theaters sell 50 thousand more tickets, so S0 must shift right.",
+      "The report is unsupported: lower ticket prices cause movement down the original demand curve.",
+      "The report is supported: stronger preferences increase both demand and supply by 50 thousand tickets.",
+      "The report is unsupported: demand shifts right, and the $2 price rise induces 50 thousand more tickets along S0."
+    ],
+    "correctIndex": 3,
+    "feedback": "Stronger preferences increase demand from D0 to D1. Equilibrium changes from $10 and 200 thousand tickets to $12 and 250 thousand. With costs and capacity fixed, theaters move along S0; the increase in quantity supplied is not a supply shift.",
+    "reason": "Infer the shock, read two graph changes, and evaluate a competing explanation."
+  },
+  "40013": {
+    "q": "Refer to the graph. The initial equilibrium is A, where D0 intersects S0 at $10 and 200 thousand tickets. Stronger buyer preferences and higher theater operating costs move the market to B. Which statement combines the general prediction with the particular outcome shown?",
+    "options": [
+      "Price is generally ambiguous and quantity must rise; here price rises $4 and quantity is unchanged.",
+      "Price must rise and quantity is generally ambiguous; here price rises $4 and quantity is unchanged.",
+      "Price must rise and quantity must stay fixed; here price rises $4 because the shifts always cancel in quantity.",
+      "Price is generally ambiguous and quantity must fall; here price rises $4 and quantity falls 200 thousand."
+    ],
+    "correctIndex": 1,
+    "feedback": "Stronger preferences increase demand; higher costs reduce supply. Both raise price, but their quantity effects oppose each other. The graph shows a particular offset: price rises from $10 to $14 while quantity stays at 200 thousand. Unchanged quantity is not a general requirement.",
+    "reason": "Supply the initial equilibrium and require event inference plus general-versus-specific reasoning."
+  },
+  "40043": {
+    "q": "Refer to the rideshare graph. Calculate each side's total tax burden on the 150 thousand trips still taken and the government's revenue. Which elasticity inference fits that division?",
+    "options": [
+      "Sellers bear $900,000, buyers $300,000, revenue is $1.2 million; demand is relatively less elastic.",
+      "Sellers bear $300,000, buyers $900,000, revenue is $1.2 million; supply is relatively less elastic.",
+      "Sellers bear $1.2 million, buyers $400,000, revenue is $1.6 million; use the original quantity.",
+      "Sellers bear $900,000, buyers $300,000, revenue is $1.2 million; supply is relatively less elastic."
+    ],
+    "correctIndex": 3,
+    "feedback": "Original price is $10, buyer price is $12, and seller receipt is $4. Buyers bear $2 and sellers $6 per trip. Multiply by 150,000 for $300,000 and $900,000, totaling $1.2 million. The larger seller burden is consistent with relatively less elastic supply.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "42126": {
+    "q": "Each of 100 units of production creates $50 in private gains from trade. The first 60 units cause $20 of external harm each; the final 40 cause $80 each. There are no other effects or enforcement costs. Compared with a total production ban, what is the welfare effect of allowing only the first 60 units?",
+    "options": [
+      "Welfare is $600 higher because the first 60 units' gains are offset by all 100 units' harm.",
+      "Welfare is $3,000 higher because allowing production restores private gains without social costs.",
+      "Welfare is $1,800 higher because each permitted unit creates $30 in net social benefit.",
+      "Welfare is $1,200 lower because any positive external harm makes a production ban efficient."
+    ],
+    "correctIndex": 2,
+    "feedback": "For each of the first 60 units, net social benefit is 50−20=$30, giving $1,800. Each of the final 40 has net benefit 50−80=−$30 and should be excluded in this example. A ban avoids harm but also sacrifices beneficial low-harm trades.",
+    "reason": "Quantify marginal social gains and distinguish selective regulation from a blanket ban."
+  },
+  "42127": {
+    "q": "Two firms must jointly eliminate four units of pollution. Firm A's successive abatement costs are $10, $20, $30, and $40; Firm B's are $40, $50, $60, and $70. A rule requires each firm to eliminate two units. Which assessment compares this rule with the least-cost way to meet the same target?",
+    "options": [
+      "The rule costs $100, matching the least-cost allocation because both firms make equal cuts.",
+      "The rule costs $120, which is $20 below assigning all four reductions to A.",
+      "The rule costs $120, and lowering the total target is the only way to save $20.",
+      "The rule costs $120; reallocating reductions can save $20 without changing total pollution."
+    ],
+    "correctIndex": 3,
+    "feedback": "Equal cuts cost (10+20)+(40+50)=$120. The four cheapest reductions cost 10+20+30+40=$100; the fourth can be at either firm because of the tie. Reallocation saves $20 while preserving the aggregate target. Meeting the target does not establish cost effectiveness.",
+    "reason": "Add marginal abatement schedules and a feasible least-cost comparison."
+  },
+  "42156": {
+    "q": "A workshop's filter costs $400 and avoids $900 of harm to one neighbor. Information is complete, bargaining is costless, rights are enforceable, and there are no wealth effects. If the workshop holds the right to emit, the neighbor offers $600 for the filter. If the neighbor holds the right to clean air, the workshop must install it at its own expense. Which comparison follows?",
+    "options": [
+      "The filter is installed in both cases; with emission rights, the workshop gains $200 and the neighbor gains $300 from bargaining.",
+      "The filter is installed in both cases; with emission rights, the workshop gains $600 and the neighbor gains $300 from bargaining.",
+      "The filter is installed only with clean-air rights; a $600 payment cannot cover a $400 filter.",
+      "The filter is installed only with emission rights; clean-air rights eliminate the $500 joint gain."
+    ],
+    "correctIndex": 0,
+    "feedback": "With emission rights, the workshop receives $600 and pays $400, gaining $200 relative to emitting. The neighbor avoids $900 of harm for $600, gaining $300. With clean-air rights, the workshop installs the filter at its own cost. The efficient physical outcome stays the same, while rights change distribution.",
+    "reason": "Add a concrete bargaining payment and calculate each party's gain."
+  },
+  "42157": {
+    "q": "A factory can install a $300 filter that prevents $800 of harm to a neighboring farm. Bargaining is costless, information is complete, and there are no wealth effects. Compare factory emission rights with farm clean-air rights. Which payment range and allocation are consistent with efficient bargaining?",
+    "options": [
+      "With emission rights, the farm can pay $0–$300 for filtering; with clean-air rights, the factory can pay $300 to emit.",
+      "With emission rights, the farm can pay $300–$800 for filtering; with clean-air rights, the factory filters without buying permission to emit.",
+      "With emission rights, the farm can pay $300–$800 for filtering; with clean-air rights, a $500 payment makes emission efficient.",
+      "With emission rights, the farm must pay exactly $500 for filtering; with clean-air rights, the physical allocation must change."
+    ],
+    "correctIndex": 1,
+    "feedback": "Under emission rights, any payment between the $300 filter cost and $800 avoided harm can support filtering. Under clean-air rights, the factory would pay at most $300 to avoid filtering, but the farm needs at least $800 to accept the harm, so no mutually beneficial emission agreement exists. Filtering remains efficient; rights alter payment and distribution.",
+    "reason": "Require bargaining bounds under both assignments of rights."
+  },
+  "42166": {
+    "q": "Refer to the graph. A council cuts siren provision from 40 to 30. Use the straight lines to calculate costs and benefits as areas over this interval. With no other effects, which budget saving and welfare change follow?",
+    "options": [
+      "The council saves $200,000 and welfare rises $25,000 because the removed sirens cost more than their benefits.",
+      "The council saves $225,000 and welfare falls $200,000 because all spending is a social benefit.",
+      "The council saves $200,000 and welfare falls $25,000 because lost benefits total $225,000.",
+      "The council saves $200,000 and welfare is unchanged because the original marginal benefit equaled cost."
+    ],
+    "correctIndex": 2,
+    "feedback": "Ten fewer sirens save 10×$20,000=$200,000. MSB falls from $25,000 at 30 to $20,000 at 40, so lost benefits are 10×(25,000+20,000)/2=$225,000. Net welfare falls $25,000. Equality at the original endpoint does not mean the entire removed interval had zero net benefit.",
+    "reason": "Calculate a welfare area and distinguish fiscal saving from efficiency."
+  },
+  "42176": {
+    "q": "Refer to the graph. Private incentives provide 40 hours of radio programming. A proposal funds expansion to 80 hours using lump-sum taxes and $10,000 of real administrative resources. Use the straight-line areas and ignore other effects. What is the net social gain, and why would private provision stop too soon?",
+    "options": [
+      "$70,000; benefits to listeners beyond those captured privately justify the additional hours.",
+      "$70,000; the private-benefit curve remains above marginal cost through all 80 hours.",
+      "$150,000; the expansion's full social benefit is a net gain before administration.",
+      "$80,000; administration is a transfer and therefore uses no social resources."
+    ],
+    "correctIndex": 0,
+    "feedback": "From 40 to 80, MSB falls from $6,000 to $2,000 per hour while MC stays $2,000. The net benefit before administration is the triangle 0.5×40×$4,000=$80,000. Subtract $10,000 to obtain $70,000. Private benefit is below MC after 40 hours, but MSB exceeds MC until 80.",
+    "reason": "Add welfare and administrative-cost calculation while preserving the private-underprovision mechanism."
+  },
+  "42189": {
+    "q": "A council budgets $700 million to expand the flood protection shown in the graph from 10 to 30 miles, with no fixed or financing costs. Which expansion cost, net benefit, and budget assessment follow?",
+    "options": [
+      "Cost $600 million and net benefit $200 million; the budget is sufficient and the expansion raises welfare.",
+      "Cost $500 million and net benefit $300 million; the budget is sufficient and the expansion raises welfare.",
+      "Cost $500 million and net benefit $300 million; the remaining budget makes expansion beyond 30 miles efficient.",
+      "Cost $600 million and net benefit $200 million; the remaining budget makes expansion beyond 30 miles efficient."
+    ],
+    "correctIndex": 1,
+    "feedback": "MC rises from $20 million to $30 million per mile, so expansion cost is 20×(20+30)/2=$500 million. MSB falls from $50 million to $30 million, so benefit is 20×(50+30)/2=$800 million. Net gain is $300 million. Beyond 30 miles MC exceeds MSB, even though the budget has funds left.",
+    "reason": "Remove the unnecessary introductory clause and retain multistep graph-area reasoning."
+  },
+  "42249": {
+    "q": "A forest cooperative excludes outsiders. Each of ten members can cut one extra tree for a private net return of $80. Each tree cut reduces every member's future timber value by $12, including the cutter's. Ignoring other effects, what incentive and welfare comparison shows whether internal harvest rules still matter?",
+    "options": [
+      "Each member gains $80 privately from cutting, and each extra cut raises total member welfare by $68.",
+      "Each member gains $68 privately from cutting, but each extra cut lowers total member welfare by $40.",
+      "Each member loses $40 privately from cutting, so excluding outsiders already prevents extra harvest.",
+      "Each member gains $68 privately from cutting, and each extra cut raises total member welfare by $68."
+    ],
+    "correctIndex": 1,
+    "feedback": "The cutter gains $80 but bears $12 of future loss, for a private gain of $68. Total loss to all ten members is $120, so the social net return is 80−120=−$40. Exclusion of outsiders does not remove rivalry or external costs within the group.",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation."
+  },
+  "42260": {
+    "q": "A shared neighborhood warning system costs $1,000. Four households each value it at $400, but no nonpayer can be excluded. Three households pledge $250 each. The fourth is asked to provide the remaining $250; if it declines, a donor will fund the system anyway. Which comparison explains voluntary underfunding without claiming nobody will ever contribute?",
+    "options": [
+      "Total benefit exceeds cost by $600, but the fourth household gains $250 by withholding its payment when provision is assured.",
+      "Total benefit exceeds cost by $600, so the fourth household gains $600 by making its payment.",
+      "Total benefit falls short of cost by $600, so withholding payment proves the system is inefficient.",
+      "Total benefit exceeds cost by $600, but nonexcludability makes every household's willingness to pay zero."
+    ],
+    "correctIndex": 0,
+    "feedback": "Total value is 4×400=$1,600, exceeding cost by $600. The fourth household receives the $400 benefit either way under the donor condition, so paying reduces its own payoff by $250. This free-rider incentive can coexist with contributions motivated by norms or concern for others.",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation."
+  },
+  "42807": {
+    "q": "Dangerous jobs pay $34 per hour and safe jobs pay $26. Adjusting for training reduces the estimated wage gap to $3. A separate comparison of workers with the same training and experience finds a $2 gap. Which conclusion best uses all three estimates?",
+    "options": [
+      "Training accounts for $5 and experience for $1; the remaining $2 proves risk is the sole remaining cause.",
+      "Training accounts for $3 and experience for $2; the remaining $3 is the identified risk premium.",
+      "Training accounts for $5 and experience for $3; the adjusted evidence leaves no residual wage difference.",
+      "Training accounts for $5 and experience for $1; the remaining $2 could reflect risk or unmeasured differences."
+    ],
+    "correctIndex": 3,
+    "feedback": "The unadjusted gap is $8. Controlling for training reduces it by $5; adding experience reduces it another $1. The remaining $2 is consistent with risk compensation, but the controls do not rule out all other causes.",
+    "reason": "Combine decomposition of wage differences with limits of causal inference; balance choices."
+  },
+  "43175": {
+    "q": "Households reduce consumption by $100,000 and use the saving to buy newly issued corporate bonds. The firm spends $60,000 on newly produced machinery and $40,000 on an existing office building. Ignoring brokerage services and all other changes, which saving, financial, and GDP-investment accounting is correct?",
+    "options": [
+      "Saving rises $100,000; the bonds and machinery together add $160,000 to GDP investment.",
+      "Saving rises $60,000; only funds spent on new machinery count as household saving.",
+      "Saving rises $100,000; both firm purchases add $100,000 to current GDP investment.",
+      "Saving rises $100,000; bonds channel financing, and current GDP investment rises $60,000."
+    ],
+    "correctIndex": 3,
+    "feedback": "Household saving rises by the $100,000 reduction in consumption. Bond purchases transfer funds to the firm; they are financial transactions. New machinery contributes $60,000 to current GDP investment. The existing building changes ownership without being current production.",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation."
+  },
+  "43217": {
+    "q": "Refer to the graph. At a temporary real interest rate of 15%, the straight supply curve passes through quantity 280 and the demand curve reaches quantity 0. A is at 8% and quantity 140. Which planned imbalance and adjustment return the market toward A?",
+    "options": [
+      "Excess supply 280; a falling rate shifts supply left by 140 and demand right by 140.",
+      "Excess supply 280; a falling rate reduces saving supplied by 140 and raises investment demanded by 140.",
+      "Excess demand 280; a rising rate reduces investment demanded by 140 and raises saving supplied by 140.",
+      "Excess supply 140; a falling rate reduces saving supplied by 280 while investment stays unchanged."
+    ],
+    "correctIndex": 1,
+    "feedback": "At 15%, planned saving is 280 and planned investment is 0, so excess supply is 280. As the rate falls to 8%, quantity supplied falls to 140 and quantity demanded rises to 140. Both adjustments are movements along unchanged curves. The coordinates are stated explicitly so estimating faint graph intersections is unnecessary.",
+    "reason": "Use clearly identified endpoints and require imbalance plus two adjustment calculations.",
+    "commonError": "Confusing movements along loanable-funds curves with shifts when the interest rate adjusts."
+  },
+  "43307": {
+    "q": "Refer to the graph. The market begins at A. Households increase saving at every real interest rate, while improved business prospects raise desired investment. The new equilibrium is B. Compare the combined outcome with the outcome if only business prospects had improved.",
+    "options": [
+      "Both events give 80 units at 6%; investment alone gives 80 units at 6%, so extra saving has no effect.",
+      "Both events give 80 units at 6%; investment alone gives 60 units at 5%, so extra saving raises the rate.",
+      "Both events give 60 units at 7%; investment alone gives 80 units at 6%, so extra saving lowers quantity.",
+      "Both events give 80 units at 6%; investment alone gives 60 units at 7%, so extra saving prevents a rate rise."
+    ],
+    "correctIndex": 3,
+    "feedback": "Higher saving moves S0 to S1; stronger business prospects move D0 to D1. Their intersection B is 80 units at 6%. With only stronger investment demand, D1 intersects S0 at 60 units and 7%. Saving's contribution is visible in the counterfactual even though the combined rate remains at 6%.",
+    "reason": "Infer shifts from events and use a graph counterfactual."
+  },
+  "LG-Q-307": {
+    "options": [
+      "No. Capital becomes −$1 million; borrowing adds equal amounts to assets and liabilities.",
+      "Yes. Capital becomes −$1 million; the new loan then increases capital to $1 million.",
+      "Yes. The loss is 8% of initial capital, leaving positive equity after borrowing.",
+      "No. Capital remains $3 million; the asset loss creates only a liquidity shortage."
+    ],
+    "correctIndex": 0,
+    "reason": "Balance alternatives while retaining the two-step solvency versus liquidity analysis."
+  },
+  "P62C-CPS-EL-001": {
+    "q": "Each buyer purchases at most one unit. The price rises from $20 to $25. Ten buyers value the good at $30 each and continue buying; two others value it at $23 and $24 and stop buying. Which calculation correctly explains the loss of consumer surplus?",
+    "options": [
+      "$57: continuing buyers lose $50, and the two departing buyers lose $7.",
+      "$57: all of the loss is an extra payment made by continuing buyers.",
+      "$60: all twelve buyers lose $5, including those who stop buying.",
+      "$50: only the buyers who continue purchasing lose any consumer surplus."
+    ],
+    "correctIndex": 0,
+    "feedback": "The ten continuing buyers each lose $5, for $50. At the old $20 price, the departing buyers had surplus of $3 and $4; both lose that surplus when they stop buying. The total loss is $57, including $7 that is not a higher payment on continuing purchases.",
+    "reason": "Require calculation of continuing and departing buyers' losses; use plausible competing decompositions."
+  },
+  "P62C-CPS-EL-002": {
+    "q": "Each seller offers at most one unit. The price falls from $20 to $16. Eight sellers with costs of $10 continue selling; two others with costs of $18 and $19 stop selling. Which calculation correctly explains the loss of producer surplus?",
+    "options": [
+      "$40: all ten sellers lose $4, including the sellers who exit.",
+      "$35: continuing sellers lose $32, and the two exiting sellers lose $3.",
+      "$35: the entire loss comes from lower receipts on continuing sales.",
+      "$32: sellers who stop producing lose no surplus because they avoid their costs."
+    ],
+    "correctIndex": 1,
+    "feedback": "The eight continuing sellers each lose $4, totaling $32. The exiting sellers previously earned surplus of $2 and $1 and now earn none. Producer surplus falls by $35. Avoiding production costs does not preserve the surplus those sellers previously received.",
+    "reason": "Calculate two components and distinguish lost trades from transfers on continuing units."
+  },
+  "P62C-CPS-EL-005": {
+    "q": "A policy raises a product's price and reduces the quantity traded. Consumer surplus falls from $120 to $50, while producer surplus rises from $80 to $130. These figures include all affected trades, and there are no external effects or other policy costs. A supporter points to the sellers' gain as evidence that society benefits. Which assessment is correct?",
+    "options": [
+      "Total surplus falls $20; the $50 seller gain does not offset the $70 buyer loss.",
+      "Total surplus falls $20; that entire change is a transfer from buyers to sellers.",
+      "Total surplus rises $50; the buyer loss should be omitted because sellers receive the price.",
+      "Total surplus falls $70; the seller gain should be omitted when measuring overall welfare."
+    ],
+    "correctIndex": 0,
+    "feedback": "Total surplus initially equals $120 + $80 = $200 and later equals $50 + $130 = $180. Buyers lose $70 while sellers gain $50, leaving a net loss of $20. A transfer between buyers and sellers cancels in total surplus; the remaining net loss does not.",
+    "reason": "Replace a leading conceptual slogan with a welfare calculation and competing accounting errors."
+  },
+  "P62C-CPS-EL-006": {
+    "q": "A policy lowers a product's price but reduces the quantity traded. Measured consumer surplus rises from $100 to $145, while producer surplus falls from $140 to $80. The figures account for who receives the goods; there are no external effects or other policy costs. Which assessment correctly distinguishes buyer gains from the overall welfare change?",
+    "options": [
+      "Total surplus rises $45; buyers' gain establishes that the policy improves efficiency.",
+      "Total surplus falls $15; the $45 buyer gain is smaller than the $60 seller loss.",
+      "Total surplus falls $15; that entire loss is simply a transfer between buyers and sellers.",
+      "Total surplus falls $60; the buyer gain should be excluded from the welfare calculation."
+    ],
+    "correctIndex": 1,
+    "feedback": "Total surplus falls from $100 + $140 = $240 to $145 + $80 = $225. The $45 buyer gain offsets only part of the $60 seller loss, leaving a $15 net loss. A lower buyer price can benefit buyers while reducing total gains from exchange.",
+    "reason": "Require comparison of distributional gains and net surplus, with plausible distractors."
+  },
+  "P62C-CPS-EL-013": {
+    "q": "A seller receives $18 per unit and sells 100 units. Variable cost is $12 per unit, and the only fixed cost is a $1,000 license fee. Next period the fee falls to $600; price, quantity, and variable cost are unchanged. How do producer surplus and profit compare across the two periods?",
+    "options": [
+      "Producer surplus is $600 in both periods; profit rises from −$400 to $0.",
+      "Producer surplus rises from −$400 to $0; profit is $600 in both periods.",
+      "Producer surplus and profit both rise from −$400 to $0 as the fee falls.",
+      "Producer surplus rises from $600 to $1,000; profit rises from −$400 to $0."
+    ],
+    "correctIndex": 0,
+    "feedback": "Revenue is $1,800 and variable cost is $1,200, so producer surplus is $600 in either period. Profit also subtracts the fixed fee: $600 − $1,000 = −$400 initially and $600 − $600 = $0 later. Lower fixed cost changes profit without changing producer surplus at the stated price and quantity.",
+    "reason": "Strengthen to elite through calculation, a fixed-cost change, and distinction between surplus and profit."
+  },
+  "P62C-CPS-EL-019": {
+    "q": "Two water units are available at a production cost of $5 each. Each household wants at most one unit. Households A, B, and C are willing to pay $30, $25, and $10 respectively; C has an urgent medical need but little income. Compare allocating units to A and B with allocating them to A and C. Which assessment correctly separates measured surplus from equity?",
+    "options": [
+      "Measured surplus rises $15 with A and C, because urgent need replaces willingness to pay in the calculation.",
+      "Measured surplus falls $15 with A and C, proving that the allocation cannot be preferred on equity grounds.",
+      "Measured surplus falls $15 with A and C, but serving urgent need may still support that allocation on equity grounds.",
+      "Measured surplus is unchanged, because both allocations use the same number of units and incur the same production cost."
+    ],
+    "correctIndex": 2,
+    "feedback": "Using dollar willingness to pay, A and B generate $30 + $25 − $10 = $45 of total surplus. A and C generate $30 + $10 − $10 = $30, a $15 reduction. The calculation measures surplus under that convention; limited income can constrain willingness to pay, so it does not settle the equity judgment about urgent need.",
+    "reason": "Require allocation and surplus comparison before evaluating the limits of willingness-to-pay measures."
+  },
+  "P62E-COP-EL-001": {
+    "q": "An owner-operated business receives $210,000 in annual revenue and pays $80,000 in employee wages, $35,000 for materials, and $20,000 for utilities. The owner could earn $62,000 working elsewhere and rent the business's owner-owned premises to another firm for $18,000. There are no other costs. Which pair correctly states accounting profit and economic profit?",
+    "options": [
+      "Accounting profit is $75,000; economic profit is −$5,000.",
+      "Accounting profit is $75,000; economic profit is $13,000.",
+      "Accounting profit is $155,000; economic profit is $75,000.",
+      "Accounting profit is −$5,000; economic profit is −$5,000."
+    ],
+    "correctIndex": 0,
+    "feedback": "Explicit costs total $80,000 + $35,000 + $20,000 = $135,000, so accounting profit is $210,000 − $135,000 = $75,000. Implicit costs are the owner's $62,000 forgone salary and $18,000 forgone rent, totaling $80,000. Economic profit is therefore −$5,000.",
+    "reason": "Have the student calculate accounting profit and implicit cost before economic profit, as requested."
+  },
+  "P62E-COP-EL-002": {
+    "options": [
+      "Economic profit stays $0 because the two changes offset each other.",
+      "Economic profit becomes $12,000 because the two changes reinforce each other.",
+      "Economic profit becomes $6,000 because the outside salary is excluded.",
+      "Economic profit becomes −$12,000 because lower outside earnings reduce profit."
+    ],
+    "correctIndex": 1,
+    "reason": "Retain the existing multistep opportunity-cost comparison and balance the alternatives."
+  },
+  "P62E-COP-EL-007": {
+    "q": "A firm's average fixed cost is $12 when it produces 100 units. Its lease then rises by $300 for the same production period. It now produces 150 units, and variable cost remains $8 for every unit produced. Which set of costs applies at 150 units after the lease increase?",
+    "options": [
+      "AFC $12; AVC $8; ATC $20; MC $8.",
+      "AFC $10; AVC $10; ATC $20; MC $10.",
+      "AFC $10; AVC $8; ATC $18; MC $8.",
+      "AFC $8; AVC $10; ATC $18; MC $10."
+    ],
+    "correctIndex": 2,
+    "feedback": "Initially total fixed cost is $12 × 100 = $1,200. The lease increase raises it to $1,500, giving AFC of $1,500 ÷ 150 = $10. Constant variable cost of $8 per unit means AVC and MC are both $8. ATC is $10 + $8 = $18. AFC falls despite the fixed-cost increase because output also rises.",
+    "reason": "Derive total fixed cost from AFC and output, then evaluate costs at a different output."
+  },
+  "P62E-COP-EL-008": {
+    "q": "At an output of 60 units, a firm has total fixed cost of $240, average variable cost of $10, and marginal cost of $12. A new contract adds a $4 royalty to every unit produced but reduces the fixed license fee by $120 for the period. Output and all other costs stay unchanged. What are the new AFC, AVC, ATC, and MC?",
+    "options": [
+      "AFC $4; AVC $14; ATC $18; MC $16.",
+      "AFC $2; AVC $12; ATC $14; MC $14.",
+      "AFC $2; AVC $14; ATC $16; MC $12.",
+      "AFC $2; AVC $14; ATC $16; MC $16."
+    ],
+    "correctIndex": 3,
+    "feedback": "Fixed cost falls to $120, so AFC becomes $120 ÷ 60 = $2. The royalty raises AVC from $10 to $14 and MC from $12 to $16. ATC becomes $2 + $14 = $16. The fixed-fee reduction affects AFC and ATC but not marginal cost.",
+    "reason": "Combine a per-unit charge with an offsetting fixed-fee change rather than asking for one memorized rule."
+  },
+  "P62E-COP-EL-013": {
+    "q": "For the coming month, a plant can earn $18,000 in revenue by paying $15,000 in operating costs. It has already paid a $6,000 insurance premium that will be fully refunded if it closes before production starts. A separate $10,000 lease payment is nonrefundable either way. Which decision and cost classification are correct?",
+    "options": [
+      "Close; the $6,000 avoidable premium refund exceeds the $3,000 operating contribution.",
+      "Operate; the $3,000 operating contribution is positive, so the insurance refund is irrelevant.",
+      "Close; recovering both prepaid fixed costs saves $16,000 compared with operating.",
+      "Operate; the $6,000 insurance refund adds to the $3,000 contribution from production."
+    ],
+    "correctIndex": 0,
+    "feedback": "Operating generates $18,000 − $15,000 = $3,000, but requires giving up a $6,000 refund available on closure. Closing is therefore $3,000 better. The insurance payment is fixed with respect to output but avoidable through closure. The nonrefundable lease is sunk and does not differ between the choices.",
+    "reason": "Classify fixed versus sunk costs and compare actual alternatives using an avoidable fixed cost."
+  },
+  "P62E-COP-EL-015": {
+    "q": "A firm produces 100 units using 50 labor hours at $20 per hour and pays $600 in plant rent. A proposed scheduling system would produce the same output in 40 hours but add a $200 software fee for the period. Labor hours per unit are constant under each system; rent and wages are unchanged. At 100 units, which comparison is correct?",
+    "options": [
+      "AVC and MC fall $2; AFC stays $6, so ATC falls from $16 to $14.",
+      "AVC and MC fall $2; AFC rises $2, so ATC falls from $16 to $14.",
+      "AVC and MC fall $2; AFC rises $2, so ATC stays at $16.",
+      "AVC and MC stay $10; AFC rises $2, so ATC rises from $16 to $18."
+    ],
+    "correctIndex": 2,
+    "feedback": "Labor cost falls from $1,000 to $800, so AVC falls from $10 to $8. Constant labor requirements per unit make MC equal those variable costs per unit. Fixed cost rises from $600 to $800, raising AFC from $6 to $8. ATC remains $16 because the variable-cost saving offsets the added fixed fee at this output.",
+    "reason": "Require productivity and fixed-cost calculations before comparing four cost measures."
+  },
+  "P62E-COP-EL-016": {
+    "q": "A plant uses 80 labor hours and 40 machine hours to produce 800 units. A larger plant uses 120 labor hours and 60 machine hours to produce 1,200 units with the same production technology. Labor initially costs $20 per hour and machine use $40 per hour. At the larger plant, labor costs $22 per hour while the machine rate is unchanged. There are no other costs. Which assessment separates returns to scale from the input-price change?",
+    "options": [
+      "There are decreasing returns to scale; average cost rises from $4.00 to $4.20.",
+      "There are increasing returns to scale; average cost falls from $4.20 to $4.00.",
+      "There are constant returns to scale; average cost must stay at $4.00 despite the wage change.",
+      "There are constant returns to scale; average cost rises from $4.00 to $4.20 because labor becomes dearer."
+    ],
+    "correctIndex": 3,
+    "feedback": "Both inputs and output increase by a factor of 1.5, indicating constant returns to scale. Initial cost is 80 × $20 + 40 × $40 = $3,200, or $4 per unit. New cost is 120 × $22 + 60 × $40 = $5,040, or $4.20 per unit. The increase in average cost reflects the higher wage, not decreasing returns to scale.",
+    "reason": "Require proportional comparisons and cost calculation without calculus; separate technology from input prices."
+  },
+  "P62E-COP-EL-021": {
+    "q": "At unchanged input prices and technology, a firm's least-cost plant for 400 units has total cost of $4,800. Its least-cost plant for 600 units has total cost of $6,600. Both figures reflect normal operation rather than temporary underuse of a plant. What do these observations establish over this output range?",
+    "options": [
+      "Economies of scale: average cost falls from $12 to $11 even though total cost rises.",
+      "Diseconomies of scale: total cost rises $1,800 even though average cost falls from $12 to $11.",
+      "Constant returns to scale: average cost must be unchanged whenever both output and total cost rise.",
+      "No conclusion about scale: costs from different plant sizes cannot be used to compare long-run average cost."
+    ],
+    "correctIndex": 0,
+    "feedback": "Long-run average cost is $4,800 ÷ 400 = $12 at the smaller output and $6,600 ÷ 600 = $11 at the larger output. Lower average cost indicates economies of scale over this range. Total cost can rise while cost per unit falls. The stated conditions make this a comparison of least-cost long-run choices.",
+    "reason": "Strengthen the classification question by deriving average costs and assessing evidence about scale."
+  },
+  "P62E-COP-EL-025": {
+    "q": "A firm can use its current process, with fixed cost of $1,000 and variable cost of $8 per unit, or a new automated process, with fixed cost of $1,600 and variable cost of $5 per unit. Either process can produce the required output, and these are all costs. Which comparison is correct?",
+    "options": [
+      "The current process is cheaper at 100 units, automation at 300 units, and costs tie at 200 units.",
+      "Automation is cheaper at both 100 and 300 units, because its marginal cost is always lower.",
+      "The current process is cheaper at both 100 and 300 units, because its fixed cost is always lower.",
+      "The current process is cheaper at 100 units, automation at 300 units, and costs tie at 500 units."
+    ],
+    "correctIndex": 0,
+    "feedback": "At 100 units, total costs are $1,800 for the current process and $2,100 for automation. At 300 units they are $3,400 and $3,100. Automation's $600 extra fixed cost is offset by its $3 saving per unit at 200 units. Neither fixed cost nor marginal cost alone determines which process is cheaper.",
+    "reason": "Use plausible single-component and break-even errors instead of obvious distractors."
+  },
+  "P62E-COP-EL-026": {
+    "q": "A firm's $9,000 lease payment for the current period has already been paid and cannot be recovered. Operating would bring $12,000 of revenue and require $8,000 of additional costs. Next period the same revenue and operating costs are expected, but the firm can avoid another $9,000 lease payment by exiting. There are no other costs or benefits. Which plan maximizes profit across the two separate decisions?",
+    "options": [
+      "Close now and do not renew; the $9,000 lease exceeds the $4,000 operating contribution in both periods.",
+      "Operate now and do not renew; operation adds $4,000 now, but renewal would produce a $5,000 loss.",
+      "Operate now and renew; the lease is sunk in both periods, leaving a $4,000 gain from operation each time.",
+      "Close now and renew later; the paid lease matters now, while the future lease can be ignored."
+    ],
+    "correctIndex": 1,
+    "feedback": "The current lease is sunk, so operating now improves the outcome by $12,000 − $8,000 = $4,000 relative to closing. The next lease is avoidable: renewal would yield $12,000 − $8,000 − $9,000 = −$5,000. A payment can be sunk for the current decision while a similar future payment remains relevant.",
+    "reason": "Compare short-run and renewal decisions with explicit alternatives and plausible sunk-cost mistakes."
+  },
+  "P62E-COP-EL-028": {
+    "q": "Technology A costs $2,400 per period plus $4 per unit. Technology B costs $600 per period plus $10 per unit. Both can produce the same required output, with no other costs. Which comparison identifies the cheaper technology at 200 and 400 units and the output at which their total costs are equal?",
+    "options": [
+      "A is cheaper at both 200 and 400 units; equal costs occur at 300 units.",
+      "B is cheaper at both 200 and 400 units; equal costs occur at 300 units.",
+      "B is cheaper at 200 units and A at 400 units; equal costs occur at 450 units.",
+      "B is cheaper at 200 units and A at 400 units; equal costs occur at 300 units."
+    ],
+    "correctIndex": 3,
+    "feedback": "At 200 units, A costs $3,200 and B $2,600. At 400 units, A costs $4,000 and B $4,600. A's extra fixed cost is $1,800 and its per-unit saving is $6, so the costs are equal at 300 units. The cheaper choice depends on output.",
+    "reason": "Supply both technologies explicitly and require cost comparisons and a break-even calculation."
+  },
+  "P62E-COP-EL-030": {
+    "q": "A firm's fixed cost is $66. Total variable cost is $120 at 10 units, $128 at 11 units, and $144 at 12 units. For the increase from 11 to 12 units, which explanation of the changes in average variable cost and average total cost is correct?",
+    "options": [
+      "Marginal cost is $16; both averages rise because that exceeds average variable cost at 11 units.",
+      "Marginal cost is $16; AVC rises but ATC falls because $16 lies between their previous values.",
+      "Marginal cost is $16; both averages fall because that is below average total cost at 11 units.",
+      "Marginal cost is $12; AVC stays constant and ATC falls because fixed cost is spread more widely."
+    ],
+    "correctIndex": 1,
+    "feedback": "The twelfth unit adds $144 − $128 = $16 to variable cost. At 11 units, AVC is $128 ÷ 11, about $11.64, and ATC is ($128 + $66) ÷ 11, about $17.64. Marginal cost is above the former but below the latter, so AVC rises to $12 while ATC falls to $17.50 at 12 units.",
+    "reason": "Derive marginal and average costs before applying the marginal-average relationship."
+  },
+  "ECON-NL-ELITE-331": {
+    "q": "Both price indexes initially equal 100. Imported household energy accounts for 40% of the CPI basket and its price rises 10%; all other consumer prices are unchanged. Domestically produced investment equipment accounts for 25% of base-period GDP and its price falls 8%; all other domestic-output prices and all quantities are unchanged. Which result and interpretation are correct?",
+    "options": [
+      "CPI becomes 104 and the GDP deflator 98; different coverage allows the indexes to move in opposite directions.",
+      "CPI becomes 104 and the GDP deflator 98; opposite movements prove that one index has been calculated incorrectly.",
+      "CPI stays 100 and the GDP deflator becomes 98; imported products are excluded from both price indexes.",
+      "CPI becomes 104 and the GDP deflator stays 100; investment equipment is excluded from domestic output."
+    ],
+    "correctIndex": 0,
+    "feedback": "Imported household energy raises the CPI by 0.40 × 10% = 4%, giving 104. With quantities unchanged, the domestic equipment price decline lowers the GDP deflator by 0.25 × 8% = 2%, giving 98. CPI includes imported consumer purchases; the GDP deflator covers domestic production, including investment equipment. Opposite movements can therefore be consistent.",
+    "reason": "Balance choice lengths and require weighted calculations plus an interpretation of index coverage."
+  },
+  "PG1-DMD-L-001": {
+    "q": "Refer to the graph. A report attributes the A-to-B change to stronger tastes for donuts. A survey finds that quantity desired at every fixed price is unchanged. Which diagnosis fits both sources of evidence?",
+    "options": [
+      "The report confuses a movement with a shift: price falls $4 and quantity demanded rises 100 thousand along unchanged demand.",
+      "The report confuses a movement with a shift: price falls $5 and quantity demanded rises 125 thousand along unchanged demand.",
+      "The report is supported: price falls $5 and quantity demanded rises 125 thousand because demand shifts right.",
+      "The report is supported: price falls $4 and quantity demanded rises 100 thousand because demand shifts right."
+    ],
+    "correctIndex": 1,
+    "feedback": "Unchanged quantities desired at each fixed price rule out a demand shift. From A to B, price falls from $10 to $5 and quantity rises from 100 to 225 thousand. The report mistakes a price-induced movement along demand for stronger demand.",
+    "reason": "Use instructor's preferred graph reference; retain evidence reconciliation."
+  },
+  "PG1-DMD-L-002": {
+    "q": "Refer to the graph. Stronger preferences move coffee demand from D0 to D1. Price then falls from $10 to $6 along D1. Which decomposition separates the change caused by preferences at $10 from the change caused by the price fall?",
+    "options": [
+      "125→50 from preferences; 50→225 from the price fall.",
+      "125→50 from the price fall; 50→225 from preferences.",
+      "50→125 from the price fall; 125→225 from preferences.",
+      "50→125 from preferences; 125→225 from the price fall."
+    ],
+    "correctIndex": 3,
+    "feedback": "At $10, D0 shows 50 thousand and D1 shows 125 thousand. The shift adds 75 thousand. Moving from $10 to $6 along D1 adds another 100 thousand, reaching 225 thousand. The total increase is 175 thousand.",
+    "reason": "Implement the requested paired 50/125 distractors without a unique numerical clue."
+  },
+  "ECON-SP-ELITE-308": {
+    "q": "Refer to the graph. The economy begins at AD1-AS2. Government purchases increase while imported energy becomes more expensive. Each event is large enough to move the relevant curve to its other labeled position. Which comparison separates the combined outcome from the effect of higher government purchases alone?",
+    "options": [
+      "Combined: Y1/P3; purchases alone: Y2/P2, so the energy shock offsets the output increase.",
+      "Combined: Y1/P3; purchases alone: Y1/P3, so the energy shock has no separate output effect.",
+      "Combined: Y2/P2; purchases alone: Y1/P3, so the energy shock reinforces the output increase.",
+      "Combined: Y3/P2; purchases alone: Y2/P2, so the energy shock also lowers the price level."
+    ],
+    "correctIndex": 0,
+    "feedback": "Higher government purchases move AD1 to AD2. More expensive energy moves AS2 to AS1. Together they produce Y1/P3; purchases alone would produce Y2/P2. Unchanged output relative to the starting point does not imply that spending had no effect.",
+    "reason": "Infer both shifts from events and compare a counterfactual."
+  },
+  "ECON-SP-ELITE-309": {
+    "q": "Refer to the graph. The economy begins at AD2-AS1. Households cut autonomous spending, while a fall in imported energy prices lowers firms' costs. Each event moves the relevant curve to its other labeled position. A commentator says unchanged final output proves cheaper energy had no output benefit. Which comparison evaluates that claim?",
+    "options": [
+      "Combined: Y1/P1; spending decline alone: Y3/P2, so cheaper energy prevents a larger output loss.",
+      "Combined: Y1/P1; spending decline alone: Y1/P1, so cheaper energy affects neither output nor prices.",
+      "Combined: Y2/P2; spending decline alone: Y3/P2, so unchanged prices establish the energy benefit.",
+      "Combined: Y3/P2; spending decline alone: Y1/P1, so cheaper energy reduces output further."
+    ],
+    "correctIndex": 0,
+    "feedback": "Lower household spending moves AD2 to AD1. Cheaper energy moves AS1 to AS2. The combined equilibrium is Y1/P1, whereas lower spending alone would produce Y3/P2. Cheaper energy raises output relative to that counterfactual even though final output equals initial output.",
+    "reason": "Require event-to-curve inference and counterfactual reasoning."
+  },
+  "ECON-SP-ELITE-312": {
+    "q": "Refer to the graph. The economy begins at AD1-AS2. Imported oil becomes more expensive, and the government then increases purchases to restore the original output level. Each event moves the relevant curve to its other labeled position. Which sequence and policy evaluation follow?",
+    "options": [
+      "Y1/P1 → Y3/P2 → Y1/P3; output recovers, but the original price level does not.",
+      "Y1/P1 → Y3/P2 → Y1/P1; restoring output also reverses the increase in production costs.",
+      "Y1/P1 → Y2/P2 → Y1/P3; the oil shock first expands output before policy lowers it.",
+      "Y1/P1 → Y3/P2 → Y2/P2; spending restores the original price level but overshoots output."
+    ],
+    "correctIndex": 0,
+    "feedback": "Costlier oil moves AS2 to AS1, giving Y3/P2. Higher government purchases move AD1 to AD2, giving Y1/P3. Output returns to Y1, but costs remain elevated and the price level is higher than the initial P1.",
+    "reason": "Infer the supply shock and fiscal response from events."
+  },
+  "ECON-SP-ELITE-313": {
+    "q": "An economy begins at potential output of $2,000 billion. An energy disruption leaves short-run output at $1,940 billion and raises the price level. To reduce inflation, the central bank raises interest rates; investment falls by $15 billion. For the additional policy effect, assume prices stay fixed, MPC is 0.75, and there are no other spending changes. Which result captures the policy tradeoff?",
+    "options": [
+      "Output falls to $1,880 billion, 6% below potential; weaker demand reduces inflation pressure but deepens the recession.",
+      "Output falls to $1,880 billion, 3% below potential; weaker demand removes the energy disruption's output effect.",
+      "Output falls to $1,925 billion, 3.75% below potential; only the initial investment decline affects production.",
+      "Output rises to $2,000 billion, closing the gap; higher interest rates restore the supply lost to the disruption."
+    ],
+    "correctIndex": 0,
+    "feedback": "The spending multiplier is 1/(1−0.75)=4. The $15 billion investment decline reduces output another $60 billion, to $1,880 billion. The gap is 120/2,000=6%. Demand restraint can reduce inflation pressure while worsening a recession caused by a supply shock.",
+    "reason": "Add multiplier calculation and policy tradeoff under explicit assumptions."
+  },
+  "ECON-SP-ELITE-341": {
+    "q": "Refer to the graph. The economy begins at AD2-AS2. Imported fuel becomes more expensive, while autonomous spending is unchanged. The relevant supply curve moves to its other labeled position. A commentator argues that lower output proves households must have cut autonomous spending. Which diagnosis fits the graph?",
+    "options": [
+      "Y2/P2 becomes Y1/P3; the price increase supports a cost shock without requiring a demand decline.",
+      "Y2/P2 becomes Y1/P3; the output decline requires a demand decline despite unchanged autonomous spending.",
+      "Y2/P2 becomes Y3/P2; unchanged prices show that higher costs affect only the amount produced.",
+      "Y2/P2 becomes Y1/P1; lower prices show that the fuel shock operates through weaker demand."
+    ],
+    "correctIndex": 0,
+    "feedback": "Higher fuel costs move AS2 to AS1 while AD2 remains fixed. Output falls from Y2 to Y1 and the price level rises from P2 to P3. A fall in output alone does not identify a demand contraction.",
+    "reason": "Remove the supplied shift conclusion and require diagnosis from both outcomes."
+  },
+  "ECON-SP-ELITE-302": {
+    "q": "In a simplified banking system, a central-bank purchase from a bank adds $60 million of reserves without directly changing public deposits. There is no currency drain. Banks previously held reserves equal to 10% of deposits but now intend to hold 25%. Assume all added reserves support deposits at the new ratio and borrowers take the loans offered. Which comparison describes the maximum additional deposits?",
+    "options": [
+      "$240 million instead of $600 million; greater reserve retention cuts the expansion by $360 million.",
+      "$240 million instead of $600 million; the $360 million difference means the reserve injection disappeared.",
+      "$150 million instead of $600 million; multiply the injection by the new reserve percentage.",
+      "$600 million under either ratio; the reserve injection fixes deposits regardless of banks' retention."
+    ],
+    "correctIndex": 0,
+    "feedback": "With no currency drain, additional deposits equal added reserves divided by the reserve-to-deposit ratio. The old maximum is 60/0.10=$600 million; the new maximum is 60/0.25=$240 million. More cautious reserve retention reduces loan and deposit expansion by $360 million.",
+    "reason": "Quantify weakened deposit creation and distinguish reserves from deposits."
+  },
+  "P62B-ELAS-EL-004": {
+    "q": "A ceramics studio has an unchanged demand schedule: $32 for 180 sessions, $40 for 160, and $48 for 110. It can serve every scheduled buyer. Using midpoint elasticity for the two adjacent price intervals, which pricing recommendation maximizes revenue among these choices?",
+    "options": [
+      "Choose $32: elastic below $40 and inelastic above it; revenue is $5,760.",
+      "Keep $40: inelastic below $40 and elastic above it; revenue is $6,400.",
+      "Choose $48: inelastic below $40 and inelastic above it; revenue is $5,280.",
+      "Keep $40: elastic below $40 and inelastic above it; revenue is $6,400."
+    ],
+    "correctIndex": 1,
+    "feedback": "For $32–$40, elasticity is (20/170)/(8/36)≈0.53. For $40–$48, it is (50/135)/(8/44)≈2.04. Revenues are $5,760, $6,400, and $5,280. Keeping $40 maximizes revenue among the listed choices; both adjacent price changes lower revenue.",
+    "reason": "Balance options and pair the best revenue with competing elasticity diagnoses."
+  },
+  "P62B-ELAS-EL-011": {
+    "q": "A theater can sell 100 tickets at $30 or 120 tickets at $24, with other demand conditions fixed. What are midpoint demand elasticity and average marginal revenue over the extra 20 tickets, and what do they imply for revenue?",
+    "options": [
+      "Elasticity ≈0.82 and marginal revenue −$6; expanding sales lowers total revenue.",
+      "Elasticity ≈0.82 and marginal revenue +$6; expanding sales raises total revenue.",
+      "Elasticity ≈1.22 and marginal revenue −$6; expanding sales lowers total revenue.",
+      "Elasticity ≈1.22 and marginal revenue +$6; expanding sales raises total revenue."
+    ],
+    "correctIndex": 0,
+    "feedback": "Midpoint elasticity is (20/110)/(6/27)≈0.82. Revenue falls from 100×30=$3,000 to 120×24=$2,880. Average marginal revenue is −120/20=−$6 per extra ticket. Inelastic demand over this interval makes the price cut reduce revenue.",
+    "reason": "Replace out-of-topic marginal cost with a calculated elasticity–marginal revenue link."
+  },
+  "P62B-ELAS-EL-015": {
+    "q": "A tour operator can serve all customers at either price. Charging $24 attracts 250 customers; charging $20 attracts 320. Demand conditions are otherwise unchanged. Which midpoint elasticity and revenue comparison support a price choice?",
+    "options": [
+      "Elasticity ≈1.35; $20 earns $400 more, so choose $20 to increase revenue.",
+      "Elasticity ≈1.35; $24 earns $400 more, so choose $24 to increase revenue.",
+      "Elasticity ≈0.74; $20 earns $400 more, so choose $20 to increase revenue.",
+      "Elasticity ≈0.74; $24 earns $400 more, so choose $24 to increase revenue."
+    ],
+    "correctIndex": 0,
+    "feedback": "Elasticity is (70/285)/(4/22)≈1.35. Revenue is $6,400 at $20 and $6,000 at $24. The larger proportional increase in quantity outweighs the price reduction.",
+    "reason": "Use natural prose and paired numerical distractors."
+  },
+  "P62B-ELAS-EL-016": {
+    "q": "A firm sells 2,000 units at $15 and 1,700 units at $17, with other demand conditions fixed. Using the midpoint method, which elasticity and revenue change describe the price increase?",
+    "options": [
+      "Elasticity ≈0.77; revenue falls $1,100, indicating inelastic demand.",
+      "Elasticity ≈1.30; revenue falls $1,100, indicating elastic demand.",
+      "Elasticity ≈1.30; revenue rises $1,100, indicating elastic demand.",
+      "Elasticity ≈0.77; revenue rises $1,100, indicating inelastic demand."
+    ],
+    "correctIndex": 1,
+    "feedback": "Midpoint elasticity is (300/1,850)/(2/16)≈1.30. Revenue falls from $30,000 to $28,900, a $1,100 decline. The calculated elasticity and revenue test agree that demand is elastic over this interval.",
+    "reason": "Add the requested elasticity calculation with plausible reciprocal/sign errors."
+  },
+  "P62B-ELAS-EL-018": {
+    "q": "Two markets initially trade 1,000 units at $20. A $4 per-unit emissions tax raises the buyer price by $2 and lowers the seller price by $2 in each. Over these changes, Market A has demand elasticity 0.5 and supply elasticity 0.5; Market B has both elasticities 1.5. Use percentage changes relative to initial values as approximations. Which comparison follows?",
+    "options": [
+      "A cuts quantity by about 150 and B by 50; the less elastic market responds more.",
+      "Both cut quantity by about 100; equal tax wedges imply equal quantity responses.",
+      "A cuts quantity by about 50 and B by 150; the larger response gives B more tax revenue.",
+      "A cuts quantity by about 50 and B by 150; the larger response gives B less tax revenue."
+    ],
+    "correctIndex": 3,
+    "feedback": "Each side's price changes by about 10%. A's quantity falls about 5%, or 50 units; B's falls about 15%, or 150. Tax revenue is approximately 4×950=$3,800 in A and 4×850=$3,400 in B. Greater responsiveness reduces emissions more but shrinks the tax base.",
+    "reason": "Apply elasticities to quantity changes and resulting revenue."
+  },
+  "P62B-ELAS-EL-020": {
+    "q": "A city initially rents 10,000 apartments at $1,000 per month. A binding ceiling lowers rent to $900. Demand elasticity is 0.5 in both periods; supply elasticity is 0.2 in the short run and 1.0 in the long run. Use initial-value percentage changes as approximations, with other conditions fixed. Which shortage estimates and explanation follow?",
+    "options": [
+      "About 700 initially and 1,500 later; demand becomes more price elastic over time.",
+      "About 700 initially and 1,500 later; landlords reduce supply more in the long run.",
+      "About 300 initially and 500 later; quantity demanded falls as the controlled rent falls.",
+      "About 200 initially and 1,000 later; the shortage equals only the reduction in supply."
+    ],
+    "correctIndex": 1,
+    "feedback": "Rent falls 10%, raising quantity demanded about 5% to 10,500. Short-run supply falls 2% to 9,800, leaving a 700-unit shortage. Long-run supply falls 10% to 9,000, leaving a 1,500-unit shortage. Demand elasticity is unchanged; the larger supply response widens the shortage.",
+    "reason": "Replace obvious alternatives with a two-period elasticity calculation."
+  },
+  "P62B-ELAS-EL-029": {
+    "q": "A transit operator serves 10,000 trips per day at a $2 fare. It considers a 10% fare increase. Estimated demand elasticity is 0.5 in the short run and 1.5 after travelers have time to adjust. Use initial-value percentage changes as approximations. Which revenue comparison follows?",
+    "options": [
+      "Revenue rises to about $20,900 in both periods because the fare change is the same.",
+      "Revenue falls to about $18,700 in both periods because every fare increase loses riders.",
+      "Revenue rises to about $20,900 initially but falls to $18,700 after travelers adjust.",
+      "Revenue falls to about $18,700 initially but rises to $20,900 after travelers adjust."
+    ],
+    "correctIndex": 2,
+    "feedback": "The new fare is $2.20. Short-run trips fall about 5% to 9,500, yielding $20,900. Long-run trips fall about 15% to 8,500, yielding $18,700. Initial revenue was $20,000. A policy can raise revenue initially and lower it after demand becomes more elastic.",
+    "reason": "Keep the item within elasticity by replacing the tariff context with time-horizon revenue analysis.",
+    "type": "policy",
+    "primarySkill": "elasticity_policy_application",
+    "repairSkill": "elasticity_policy_application",
+    "commonError": "Ignoring how a larger long-run quantity response changes the revenue effect of a fare increase."
+  },
+  "P52A-FISCAD-EL-002": {
+    "q": "A $100 billion lump-sum tax cut is split between households that initially spend 90% of the cut and households that initially spend 30%. Plan A gives 80% to the first group; Plan B gives 20% to that group. For subsequent spending rounds, assume a common MPC of 0.75, fixed prices, and no imports or crowding out. Which output comparison is correct?",
+    "options": [
+      "A adds $78 billion and B $42 billion; later spending rounds do not change the difference.",
+      "A adds $400 billion and B $400 billion; equal tax reductions imply equal output effects.",
+      "A adds $312 billion and B $168 billion; B has the larger effect because more recipients save.",
+      "A adds $312 billion and B $168 billion; targeting the higher-spending group increases the effect."
+    ],
+    "correctIndex": 3,
+    "feedback": "Initial consumption rises 80×0.90+20×0.30=$78 billion under A and 20×0.90+80×0.30=$42 billion under B. The subsequent multiplier is 1/(1−0.75)=4, producing $312 billion and $168 billion. This common later-round MPC is a stipulated assumption, not either group's initial spending fraction.",
+    "reason": "Specify distribution and multiplier assumptions and require weighted calculations."
+  },
+  "ECON-EC-ELITE-13011": {
+    "q": "A binding rent ceiling leaves 80,000 apartments demanded and 52,000 supplied. Each housed tenant saves $300 monthly. Landlords lose $18 million monthly in producer surplus. Separately, displaced renters lose $2 million in consumer surplus, and housing searches consume $1 million in real resources. Ignore other effects. What are the shortage and monthly change in total surplus?",
+    "options": [
+      "Shortage 28,000; total surplus falls $5.4 million after gains, losses, and search costs.",
+      "Shortage 28,000; total surplus falls $4.4 million because search costs are transfers.",
+      "Shortage 28,000; total surplus rises $15.6 million because lower rents benefit housed tenants.",
+      "Shortage 52,000; total surplus falls $5.4 million after gains, losses, and search costs."
+    ],
+    "correctIndex": 0,
+    "feedback": "The shortage is 80,000−52,000=28,000. Housed tenants gain 52,000×300=$15.6 million. Net surplus changes by 15.6−18−2−1=−$5.4 million. Lower rent benefits some tenants, while rationing and resource costs matter for the overall result.",
+    "reason": "Replace an obvious winners-and-losers statement with allocation and welfare accounting."
+  },
+  "ECON-EC-ELITE-13026": {
+    "q": "A luxury market initially sells 10,000 units at $100. A $20 per-unit tax is fully passed to buyers. Demand elasticity is estimated at 2.0. Use initial-value percentage changes as an approximation. An official forecasts $200,000 of revenue by assuming sales stay fixed. Which estimate and diagnosis are appropriate?",
+    "options": [
+      "About $160,000; a 20% price increase produces a 20% quantity decline.",
+      "About $120,000; elastic demand shifts left by 40% when the tax raises price.",
+      "About $120,000; a 20% price increase produces a 40% movement down in quantity demanded.",
+      "About $200,000; full pass-through prevents buyers from reducing their purchases."
+    ],
+    "correctIndex": 2,
+    "feedback": "The buyer price rises 20%. With elasticity 2.0, quantity demanded falls approximately 40%, to 6,000. Revenue is then 20×6,000=$120,000, $80,000 below the forecast. This is movement along demand, not a demand shift.",
+    "reason": "Add explicit elasticity and pass-through assumptions and quantify the forecast error."
+  },
+  "ECON-SP-ELITE-336": {
+    "q": "Two economies begin at potential output of $1,000 billion. After prices rise, Economy A produces $1,040 billion while Economy B produces $960 billion. Assume one demand or supply shock explains each change. Policymakers consider reducing autonomous spending by $10 billion in each; MPC is 0.75 and prices are fixed for this additional multiplier calculation. Which evaluation follows?",
+    "options": [
+      "A is consistent with stronger demand and returns to potential; B is consistent with an adverse supply shock and falls to $920 billion.",
+      "A is consistent with stronger demand and falls to $1,030 billion; B is consistent with an adverse supply shock and falls to $950 billion.",
+      "Both are consistent with stronger demand and return to potential; equal inflation calls for the same output response.",
+      "A is consistent with an adverse supply shock and returns to potential; B is consistent with stronger demand and falls to $920 billion."
+    ],
+    "correctIndex": 0,
+    "feedback": "Rising prices with rising output fit stronger demand in A; rising prices with falling output fit an adverse supply shock in B. A $10 billion spending cut has a $40 billion output effect when MPC=0.75. It closes A's positive gap but deepens B's negative gap to $80 billion.",
+    "reason": "Combine shock identification, multiplier calculation, and asymmetric policy consequences."
+  },
+  "ECON-SP-FINALBOSS-4002": {
+    "q": "Assume the price level stays fixed and firms meet additional demand by changing output. MPC is 0.5, with no taxes or imports in the multiplier. Monetary easing raises investment by $40. A foreign recession separately reduces total spending and output by $120, including all induced spending effects. Which calculation distinguishes the monetary policy's effect from the net result?",
+    "options": [
+      "Policy adds $80; net output rises $80 because the foreign effect is already counted.",
+      "Policy adds $40; net output falls $80 because only initial investment affects output.",
+      "Policy adds $80; net output falls $40 because the foreign contraction is larger.",
+      "Policy adds $80; net output falls $160 because the total foreign effect is multiplied again."
+    ],
+    "correctIndex": 2,
+    "feedback": "The multiplier is 1/(1−0.5)=2, so investment raises output by $80. The foreign effect is already a total and is not multiplied again. Net output changes by 80−120=−$40. The monetary channel works but is outweighed by the foreign contraction.",
+    "reason": "Define fixed prices in plain language and pair complete calculations without embedded hints."
+  },
+  "ECON-SP-FINALBOSS-4021": {
+    "q": "Assume the price level stays fixed and firms meet additional demand by changing output. MPC is 0.5, with no taxes or imports in the multiplier. Monetary easing raises investment by $160. A foreign recession separately reduces total spending and output by $480, including all induced spending effects. Which calculation distinguishes the monetary policy's effect from the net result?",
+    "options": [
+      "Policy adds $320; net output rises $320 because the foreign effect is already counted.",
+      "Policy adds $320; net output falls $160 because the foreign contraction is larger.",
+      "Policy adds $160; net output falls $320 because only initial investment affects output.",
+      "Policy adds $320; net output falls $640 because the total foreign effect is multiplied again."
+    ],
+    "correctIndex": 1,
+    "feedback": "The multiplier is 1/(1−0.5)=2, so investment raises output by $320. The foreign effect is already a total and is not multiplied again. Net output changes by 320−480=−$160. The monetary channel works but is outweighed by the foreign contraction.",
+    "reason": "Define fixed prices in plain language and pair complete calculations without embedded hints."
+  },
+  "ECON-SP-LEGENDARYBOSS-9117": {
+    "q": "Assume the price level stays fixed and firms meet additional demand by changing output. MPC is 0.5, with no taxes or imports in the multiplier. Monetary easing raises investment by $280. A foreign recession separately reduces total spending and output by $840, including all induced spending effects. Which calculation distinguishes the monetary policy's effect from the net result?",
+    "options": [
+      "Policy adds $560; net output rises $560 because the foreign effect is already counted.",
+      "Policy adds $560; net output falls $280 because the foreign contraction is larger.",
+      "Policy adds $280; net output falls $560 because only initial investment affects output.",
+      "Policy adds $560; net output falls $1120 because the total foreign effect is multiplied again."
+    ],
+    "correctIndex": 1,
+    "feedback": "The multiplier is 1/(1−0.5)=2, so investment raises output by $560. The foreign effect is already a total and is not multiplied again. Net output changes by 560−840=−$280. The monetary channel works but is outweighed by the foreign contraction.",
+    "reason": "Define fixed prices in plain language and pair complete calculations without embedded hints."
+  },
+  "ECON-SP-FINALBOSS-4003": {
+    "q": "Assume the price level stays fixed and firms meet changes in spending by changing output. Government purchases rise $50, MPC is 0.75, and there are no taxes or imports in the multiplier. Higher interest rates then reduce total spending by $100, including all induced effects. Central-bank accommodation would remove half this crowding-out effect without changing government purchases. Which net output comparison follows?",
+    "options": [
+      "Without accommodation: +$200; with it: +$200, because government purchases have the same multiplier.",
+      "Without accommodation: +$100; with it: +$150, because less private spending is crowded out.",
+      "Without accommodation: −$200; with it: $0, because each total crowding-out effect is multiplied again.",
+      "Without accommodation: +$100; with it: +$300, because accommodation doubles government purchases."
+    ],
+    "correctIndex": 1,
+    "feedback": "The gross spending effect is 50/(1−0.75)=$200. Subtract the total crowding-out effect once: 200−100=$100. Accommodation reduces the offset to $50, leaving $150. It changes the private-spending offset, not the purchases impulse.",
+    "reason": "Explain fixed prices and compare total effects at the same stage."
+  },
+  "ECON-SP-FINALBOSS-4022": {
+    "q": "Assume the price level stays fixed and firms meet changes in spending by changing output. Government purchases rise $170, MPC is 0.75, and there are no taxes or imports in the multiplier. Higher interest rates then reduce total spending by $340, including all induced effects. Central-bank accommodation would remove half this crowding-out effect without changing government purchases. Which net output comparison follows?",
+    "options": [
+      "Without accommodation: +$340; with it: +$510, because less private spending is crowded out.",
+      "Without accommodation: +$680; with it: +$680, because government purchases have the same multiplier.",
+      "Without accommodation: −$680; with it: $0, because each total crowding-out effect is multiplied again.",
+      "Without accommodation: +$340; with it: +$1020, because accommodation doubles government purchases."
+    ],
+    "correctIndex": 0,
+    "feedback": "The gross spending effect is 170/(1−0.75)=$680. Subtract the total crowding-out effect once: 680−340=$340. Accommodation reduces the offset to $170, leaving $510. It changes the private-spending offset, not the purchases impulse.",
+    "reason": "Explain fixed prices and compare total effects at the same stage."
+  },
+  "ECON-SP-LEGENDARYBOSS-9118": {
+    "q": "Assume the price level stays fixed and firms meet changes in spending by changing output. Government purchases rise $290, MPC is 0.75, and there are no taxes or imports in the multiplier. Higher interest rates then reduce total spending by $580, including all induced effects. Central-bank accommodation would remove half this crowding-out effect without changing government purchases. Which net output comparison follows?",
+    "options": [
+      "Without accommodation: +$580; with it: +$870, because less private spending is crowded out.",
+      "Without accommodation: +$1160; with it: +$1160, because government purchases have the same multiplier.",
+      "Without accommodation: −$1160; with it: $0, because each total crowding-out effect is multiplied again.",
+      "Without accommodation: +$580; with it: +$1740, because accommodation doubles government purchases."
+    ],
+    "correctIndex": 0,
+    "feedback": "The gross spending effect is 290/(1−0.75)=$1160. Subtract the total crowding-out effect once: 1160−580=$580. Accommodation reduces the offset to $290, leaving $870. It changes the private-spending offset, not the purchases impulse.",
+    "reason": "Explain fixed prices and compare total effects at the same stage."
+  },
+  "P62D-ITP-EL-001": {
+    "q": "Import access raises consumer surplus by $640 and reduces producer surplus by $390. A proposal uses a domestic lump-sum transfer of $390 to restore producers and consumes $35 in real adjustment resources. Ignoring other effects, which result separates efficiency from distribution?",
+    "options": [
+      "Net national gain $215; the compensation itself creates additional surplus worth $390.",
+      "Net national gain $250; both the transfer and adjustment resources merely change recipients.",
+      "Net national gain $215; compensation redistributes gains, while adjustment resources reduce them.",
+      "Net national loss $175; both producers' initial loss and their compensation must be subtracted."
+    ],
+    "correctIndex": 2,
+    "feedback": "Trade creates 640−390=$250 in surplus. Domestic compensation is a transfer, not another gain or resource cost. Subtract the $35 resource cost to obtain $215. Producers are compensated because the proposal explicitly provides the transfer.",
+    "reason": "Pair the $215 result with competing interpretations to remove the unique-number clue."
+  },
+  "P62D-ITP-EL-008": {
+    "q": "A small importing country faces a world price of $30. Domestic demand is Qd=100−P and supply is Qs=P−20. A $10 tariff and a quota of 40 imports initially produce the same outcome. Demand then becomes Qd=120−P; supply and world price remain unchanged. Which tariff-versus-quota comparison follows?",
+    "options": [
+      "Tariff: $40 and 40 imports; quota: $50 and 60 imports.",
+      "Tariff: $40 and 60 imports; quota: $50 and 40 imports.",
+      "Tariff: $40 and 60 imports; quota: $40 and 40 imports.",
+      "Tariff: $40 and 40 imports; quota: $40 and 60 imports."
+    ],
+    "correctIndex": 1,
+    "feedback": "The tariff keeps domestic price at $40, where demand is 80 and domestic supply is 20, so imports rise to 60. Under the quota, 120−P−(P−20)=40, giving P=$50 and imports of 40. Knowing world price plus tariff alone no longer singles out an option.",
+    "reason": "Hold the easy tariff-price fact constant and require import-gap and quota-price reasoning."
+  },
+  "P62D-ITP-EL-009": {
+    "q": "A quota allows 36 imports at a domestic price of $29 while the world price stays $24. Consumers lose $310 and domestic producers gain $94. Foreign exporters receive the quota rights free. Relative to free trade, what are the national welfare loss and global distortion loss, ignoring other effects?",
+    "options": [
+      "National loss $216; global distortion loss $180.",
+      "National loss $36; global distortion loss $36.",
+      "National loss $216; global distortion loss $36.",
+      "National loss $36; global distortion loss $216."
+    ],
+    "correctIndex": 2,
+    "feedback": "Quota rents are (29−24)×36=$180 and go abroad. National surplus falls 310−94=$216. Of this, $180 is transferred to foreign exporters; only $216−180=$36 is destroyed globally. If rents stayed domestic, national loss would instead be $36.",
+    "reason": "Pair national and global amounts so rent incidence must be reasoned through."
+  },
+  "P62D-ITP-EL-010": {
+    "q": "Two quota systems create the same domestic price and import quantity. Quota rents total $240. System A auctions the rights to domestic importers and uses $20 of real resources to administer the auction. System B gives the rights free to domestic importers at no resource cost. Ignoring other effects, which comparison of A with B is correct?",
+    "options": [
+      "Government receives $240; national surplus is $220 higher because receipts create new resources.",
+      "Government receives $220; national surplus is unchanged because administration is a domestic transfer.",
+      "Government receives $240; national surplus is unchanged because both systems retain all rents.",
+      "Government receives $240; national surplus is $20 lower because administration uses real resources."
+    ],
+    "correctIndex": 3,
+    "feedback": "Competitive auction receipts transfer the $240 domestic rent from importers to government. That changes who receives surplus without creating it. The additional $20 of real resource use reduces national surplus by $20 compared with free domestic allocation.",
+    "reason": "Make alternatives compare revenue, transfers, and resource costs on equal terms."
+  },
+  "P62D-ITP-EL-017": {
+    "q": "A country imposes a $10 import tariff. The foreign export price falls from $50 to $46, so its domestic price becomes $56. It still imports 100 units. The tariff creates $250 in domestic production and consumption distortion losses. Ignoring other effects, which national-welfare calculation and model interpretation follow?",
+    "options": [
+      "A $750 gain; add all $1,000 of tariff revenue to welfare and subtract distortions.",
+      "A $250 loss; ignore the foreign-price change because tariff models hold world prices fixed.",
+      "A $150 gain; the $400 terms-of-trade benefit exceeds distortions, requiring a large-country model.",
+      "A $150 gain; the domestic price rises only $6 because small-country tariffs reduce foreign prices."
+    ],
+    "correctIndex": 2,
+    "feedback": "The lower foreign price saves $4 on each of 100 imports, a $400 terms-of-trade gain. Subtract $250 of distortions to obtain a $150 national gain. Foreign-price effects violate the small-country price-taking assumption; tariff revenue is not entirely a net welfare gain.",
+    "reason": "Replace an obvious model-label answer with a welfare calculation and assumption diagnosis."
+  },
+  "P62D-ITP-EL-024": {
+    "q": "A small country faces a fixed world price of $16. A tariff raises its domestic price to $21. Domestic production rises from 14 to 24 units and purchases fall from 74 to 59. Which tariff revenue and import-change calculation is correct?",
+    "options": [
+      "Revenue $175; imports fall by 35 units, from 60 to 25.",
+      "Revenue $175; imports fall by 25 units, from 60 to 35.",
+      "Revenue $295; imports fall by 25 units, from 60 to 35.",
+      "Revenue $300; imports fall by 35 units, from 60 to 25."
+    ],
+    "correctIndex": 1,
+    "feedback": "The tariff is $5 per imported unit. Imports initially equal 74−14=60 and afterward equal 59−24=35, a decline of 25. Revenue is 5×35=$175. The tax base is remaining imports, not total purchases or original imports.",
+    "reason": "Pair revenue with competing import changes and use plausible tax-base errors."
+  },
+  "LG-Q-364": {
+    "q": "With nominal money supply fixed, a higher price level increases transactions demand for money. The resulting interest-rate rise reduces investment by $20 billion. MPC is 0.75, and there are no other autonomous spending changes. Use a fixed-price multiplier to estimate the spending effect at the new price level. Which calculation and AD interpretation follow?",
+    "options": [
+      "Quantity of real output demanded falls $80 billion; this is movement along the existing AD curve.",
+      "Quantity of real output demanded falls $80 billion; the original price increase shifts AD left.",
+      "Quantity of real output demanded falls $20 billion; induced consumption leaves total spending unchanged.",
+      "Quantity of real output demanded rises $80 billion; higher money demand expands the money supply."
+    ],
+    "correctIndex": 0,
+    "feedback": "Higher transactions demand raises the interest rate when nominal money supply is fixed. The $20 billion investment decline has a multiplier of 4, reducing quantity of real output demanded by $80 billion. Because the sequence starts with a price-level change, it explains movement along AD rather than an autonomous shift.",
+    "reason": "Combine money-market transmission, the multiplier, and movement-versus-shift reasoning."
+  },
+  "P52A-AS-EL-001": {
+    "q": "An economy initially produces at potential output of 1,000. A permanent productivity improvement raises potential output by 5%, while a temporary imported-energy price spike leaves current output at 1,020 and raises the price level. Which assessment distinguishes capacity from current production?",
+    "options": [
+      "Potential is 1,050 and output is 30 below it; the temporary energy shock must also shift LRAS left.",
+      "Potential is 1,000 and output is 20 above it; productivity affects current production but not capacity.",
+      "Potential is 1,050 and output is 30 above it; higher current output proves an inflationary output gap.",
+      "Potential is 1,050 and output is 30 below it; the productivity gain can coexist with short-run cost pressure."
+    ],
+    "correctIndex": 3,
+    "feedback": "Potential rises to 1,000×1.05=1,050. Current output of 1,020 is higher than before but 30 below the new potential. Productivity shifts LRAS right; the temporary energy shock creates opposing short-run supply pressure without necessarily undoing the capacity gain.",
+    "reason": "Require a new potential-output calculation and interpret simultaneous permanent and temporary shocks."
+  },
+  "P62H-MCMP-EL-001": {
+    "q": "Summit Coffee is a monopolistically competitive firm with demand P=118−2.2Q and marginal cost MC=18+0.32Q. A new rival reduces willingness to pay by $12 at every quantity. Costs and the demand slope are unchanged. What new output and price maximize profit?",
+    "options": [
+      "Q=21.19, P=$71.39.",
+      "Q=18.64, P=$23.97.",
+      "Q=18.64, P=$64.98.",
+      "Q=34.92, P=$29.17."
+    ],
+    "correctIndex": 2,
+    "feedback": "New demand is P=106−2.2Q, so MR=106−4.4Q. Equating MR and MC gives 4.72Q=88, hence Q≈18.64. Substitution into demand gives P≈$64.98. MC at that output is not the price charged.",
+    "reason": "Infer new demand, solve MR=MC, then determine price; specify market structure and explain every step."
+  },
+  "P62H-MCMP-EL-002": {
+    "q": "Summit Coffee operates in monopolistic competition with demand P=118−2.2Q and MC=18+0.32Q. Entry lowers willingness to pay by $12 at every quantity. Costs and the demand slope do not change, and the firm continues operating. Which price comparison and profit conclusion follow?",
+    "options": [
+      "Price falls from $71.39 to $64.98; reoptimizing preserves maximum economic profit.",
+      "Price falls from $71.39 to $59.39; output and maximum profit stay unchanged.",
+      "Price rises from $64.98 to $71.39; lower sales raise price along the original demand curve.",
+      "Price falls from $71.39 to $64.98; maximum economic profit also falls."
+    ],
+    "correctIndex": 3,
+    "feedback": "Before entry, Q=(118−18)/(4.4+0.32)≈21.19 and P≈$71.39. After entry, Q=(106−18)/(4.4+0.32)≈18.64 and P≈$64.98. Revenue is lower at every positive output while costs are unchanged, so maximum profit falls.",
+    "reason": "Require before-and-after pricing and distinguish reoptimization from preservation of profit."
+  },
+  "P62H-MCMP-EL-004": {
+    "q": "Terra Salon is a monopolistically competitive firm with demand P=106−1.8Q and marginal cost MC=16+0.38Q. A new rival reduces willingness to pay by $12 at every quantity. Costs and the demand slope are unchanged. What new output and price maximize profit?",
+    "options": [
+      "Q=22.61, P=$65.30.",
+      "Q=19.60, P=$58.72.",
+      "Q=19.60, P=$23.45.",
+      "Q=35.78, P=$29.60."
+    ],
+    "correctIndex": 1,
+    "feedback": "New demand is P=94−1.8Q, so MR=94−3.6Q. Equating MR and MC gives 3.98Q=78, hence Q≈19.60. Substitution into demand gives P≈$58.72. MC at that output is not the price charged.",
+    "reason": "Infer new demand, solve MR=MC, then determine price; specify market structure and explain every step."
+  },
+  "P62H-MCMP-EL-005": {
+    "q": "Terra Salon operates in monopolistic competition with demand P=106−1.8Q and MC=16+0.38Q. Entry lowers willingness to pay by $12 at every quantity. Costs and the demand slope do not change, and the firm continues operating. Which price comparison and profit conclusion follow?",
+    "options": [
+      "Price falls from $65.30 to $58.72; reoptimizing preserves maximum economic profit.",
+      "Price falls from $65.30 to $53.30; output and maximum profit stay unchanged.",
+      "Price falls from $65.30 to $58.72; maximum economic profit also falls.",
+      "Price rises from $58.72 to $65.30; lower sales raise price along the original demand curve."
+    ],
+    "correctIndex": 2,
+    "feedback": "Before entry, Q=(106−16)/(3.6+0.38)≈22.61 and P≈$65.30. After entry, Q=(94−16)/(3.6+0.38)≈19.60 and P≈$58.72. Revenue is lower at every positive output while costs are unchanged, so maximum profit falls.",
+    "reason": "Require before-and-after pricing and distinguish reoptimization from preservation of profit."
+  },
+  "P62H-MCMP-EL-007": {
+    "q": "Urban Fitness is a monopolistically competitive firm with demand P=100−2Q and marginal cost MC=20+0.3Q. A new rival reduces willingness to pay by $12 at every quantity. Costs and the demand slope are unchanged. What new output and price maximize profit?",
+    "options": [
+      "Q=15.81, P=$56.37.",
+      "Q=18.60, P=$62.79.",
+      "Q=15.81, P=$24.74.",
+      "Q=29.57, P=$28.87."
+    ],
+    "correctIndex": 0,
+    "feedback": "New demand is P=88−2Q, so MR=88−4Q. Equating MR and MC gives 4.30Q=68, hence Q≈15.81. Substitution into demand gives P≈$56.37. MC at that output is not the price charged.",
+    "reason": "Infer new demand, solve MR=MC, then determine price; specify market structure and explain every step."
+  },
+  "P62H-MCMP-EL-008": {
+    "q": "Urban Fitness operates in monopolistic competition with demand P=100−2Q and MC=20+0.3Q. Entry lowers willingness to pay by $12 at every quantity. Costs and the demand slope do not change, and the firm continues operating. Which price comparison and profit conclusion follow?",
+    "options": [
+      "Price falls from $62.79 to $56.37; reoptimizing preserves maximum economic profit.",
+      "Price falls from $62.79 to $56.37; maximum economic profit also falls.",
+      "Price falls from $62.79 to $50.79; output and maximum profit stay unchanged.",
+      "Price rises from $56.37 to $62.79; lower sales raise price along the original demand curve."
+    ],
+    "correctIndex": 1,
+    "feedback": "Before entry, Q=(100−20)/(4+0.3)≈18.60 and P≈$62.79. After entry, Q=(88−20)/(4+0.3)≈15.81 and P≈$56.37. Revenue is lower at every positive output while costs are unchanged, so maximum profit falls.",
+    "reason": "Require before-and-after pricing and distinguish reoptimization from preservation of profit."
+  },
+  "P62H-MCMP-EL-010": {
+    "q": "Velvet Apparel is a monopolistically competitive firm with demand P=126−2.5Q and marginal cost MC=22+0.28Q. A new rival reduces willingness to pay by $12 at every quantity. Costs and the demand slope are unchanged. What new output and price maximize profit?",
+    "options": [
+      "Q=19.70, P=$76.76.",
+      "Q=17.42, P=$26.88.",
+      "Q=33.09, P=$31.27.",
+      "Q=17.42, P=$70.44."
+    ],
+    "correctIndex": 3,
+    "feedback": "New demand is P=114−2.5Q, so MR=114−5Q. Equating MR and MC gives 5.28Q=92, hence Q≈17.42. Substitution into demand gives P≈$70.44. MC at that output is not the price charged.",
+    "reason": "Infer new demand, solve MR=MC, then determine price; specify market structure and explain every step."
+  },
+  "P62H-MCMP-EL-011": {
+    "q": "Velvet Apparel operates in monopolistic competition with demand P=126−2.5Q and MC=22+0.28Q. Entry lowers willingness to pay by $12 at every quantity. Costs and the demand slope do not change, and the firm continues operating. Which price comparison and profit conclusion follow?",
+    "options": [
+      "Price falls from $76.76 to $70.44; maximum economic profit also falls.",
+      "Price falls from $76.76 to $70.44; reoptimizing preserves maximum economic profit.",
+      "Price falls from $76.76 to $64.76; output and maximum profit stay unchanged.",
+      "Price rises from $70.44 to $76.76; lower sales raise price along the original demand curve."
+    ],
+    "correctIndex": 0,
+    "feedback": "Before entry, Q=(126−22)/(5+0.28)≈19.70 and P≈$76.76. After entry, Q=(114−22)/(5+0.28)≈17.42 and P≈$70.44. Revenue is lower at every positive output while costs are unchanged, so maximum profit falls.",
+    "reason": "Require before-and-after pricing and distinguish reoptimization from preservation of profit."
+  },
+  "P62H-MCMP-EL-013": {
+    "q": "Willow Dental is a monopolistically competitive firm with demand P=112−2.1Q and marginal cost MC=24+0.3Q. A new rival reduces willingness to pay by $12 at every quantity. Costs and the demand slope are unchanged. What new output and price maximize profit?",
+    "options": [
+      "Q=19.56, P=$70.93.",
+      "Q=16.89, P=$29.07.",
+      "Q=16.89, P=$64.53.",
+      "Q=31.67, P=$33.50."
+    ],
+    "correctIndex": 2,
+    "feedback": "New demand is P=100−2.1Q, so MR=100−4.2Q. Equating MR and MC gives 4.50Q=76, hence Q≈16.89. Substitution into demand gives P≈$64.53. MC at that output is not the price charged.",
+    "reason": "Infer new demand, solve MR=MC, then determine price; specify market structure and explain every step."
+  },
+  "P62H-MCMP-EL-014": {
+    "q": "Willow Dental operates in monopolistic competition with demand P=112−2.1Q and MC=24+0.3Q. Entry lowers willingness to pay by $12 at every quantity. Costs and the demand slope do not change, and the firm continues operating. Which price comparison and profit conclusion follow?",
+    "options": [
+      "Price falls from $70.93 to $64.53; reoptimizing preserves maximum economic profit.",
+      "Price falls from $70.93 to $58.93; output and maximum profit stay unchanged.",
+      "Price rises from $64.53 to $70.93; lower sales raise price along the original demand curve.",
+      "Price falls from $70.93 to $64.53; maximum economic profit also falls."
+    ],
+    "correctIndex": 3,
+    "feedback": "Before entry, Q=(112−24)/(4.2+0.3)≈19.56 and P≈$70.93. After entry, Q=(100−24)/(4.2+0.3)≈16.89 and P≈$64.53. Revenue is lower at every positive output while costs are unchanged, so maximum profit falls.",
+    "reason": "Require before-and-after pricing and distinguish reoptimization from preservation of profit."
+  },
+  "P62G-MON-EL-002": {
+    "q": "For a monopolist, demand is P=108−2Q, marginal cost is MC=20+0.25Q, and total cost is TC=300+20Q+0.125Q². Fixed cost is unavoidable this period. At the profit-maximizing output, what economic result and operating decision follow? Round only the final result.",
+    "options": [
+      "An economic profit of $611.06; shut down because fixed cost must always be avoided.",
+      "An economic profit of $911.06; operate after excluding fixed cost from economic profit.",
+      "An economic profit of $557.47; operate after treating marginal cost as average variable cost.",
+      "An economic profit of $611.06; operate because revenue covers variable cost."
+    ],
+    "correctIndex": 3,
+    "feedback": "MR=MC gives Q=(108−20)/(4+0.25)≈20.71, then P≈$66.59. Revenue is $1378.77 and total cost is $767.71, giving economic profit of $611.06. Revenue exceeds variable cost by $911.06; operating is better than paying unavoidable fixed cost with no sales.",
+    "reason": "Calculate optimal output, revenue and full cost; distinguish loss from shutdown with complete cost information."
+  },
+  "P62G-MON-EL-004": {
+    "q": "For a monopolist, demand is P=120−2.5Q, marginal cost is MC=24+0.2Q, and total cost is TC=420+24Q+0.1Q². Fixed cost is unavoidable this period. At the profit-maximizing output, what economic result and operating decision follow? Round only the final result.",
+    "options": [
+      "An economic profit of $466.15; shut down because fixed cost must always be avoided.",
+      "An economic profit of $466.15; operate because revenue covers variable cost.",
+      "An economic profit of $886.15; operate after excluding fixed cost from economic profit.",
+      "An economic profit of $432.07; operate after treating marginal cost as average variable cost."
+    ],
+    "correctIndex": 1,
+    "feedback": "MR=MC gives Q=(120−24)/(5+0.2)≈18.46, then P≈$73.85. Revenue is $1363.31 and total cost is $897.16, giving economic profit of $466.15. Revenue exceeds variable cost by $886.15; operating is better than paying unavoidable fixed cost with no sales.",
+    "reason": "Calculate optimal output, revenue and full cost; distinguish loss from shutdown with complete cost information."
+  },
+  "P62G-MON-EL-005": {
+    "q": "For a monopolist, demand is P=96−1.6Q, marginal cost is MC=18+0.35Q, and total cost is TC=350+18Q+0.175Q². Which output-price pair maximizes profit? Round only the final results.",
+    "options": [
+      "Q=40.00, P=$32.00.",
+      "Q=21.97, P=$25.69.",
+      "Q=21.97, P=$60.85.",
+      "Q=40.00, P=$60.85."
+    ],
+    "correctIndex": 2,
+    "feedback": "MR=96−3.2Q. Set MR=MC: (3.2+0.35)Q=78, giving Q≈21.97. Demand then gives P≈$60.85. Setting P=MC instead gives the efficient output 40.00, which is not the monopolist's profit maximum.",
+    "reason": "State market structure, provide costs without calculus, and distinguish monopoly and efficient outcomes."
+  },
+  "P62G-MON-EL-006": {
+    "q": "For a monopolist, demand is P=96−1.6Q, marginal cost is MC=18+0.35Q, and total cost is TC=350+18Q+0.175Q². Fixed cost is unavoidable this period. At the profit-maximizing output, what economic result and operating decision follow? Round only the final result.",
+    "options": [
+      "An economic profit of $506.90; shut down because fixed cost must always be avoided.",
+      "An economic profit of $856.90; operate after excluding fixed cost from economic profit.",
+      "An economic profit of $422.42; operate after treating marginal cost as average variable cost.",
+      "An economic profit of $506.90; operate because revenue covers variable cost."
+    ],
+    "correctIndex": 3,
+    "feedback": "MR=MC gives Q=(96−18)/(3.2+0.35)≈21.97, then P≈$60.85. Revenue is $1336.88 and total cost is $829.98, giving economic profit of $506.90. Revenue exceeds variable cost by $856.90; operating is better than paying unavoidable fixed cost with no sales.",
+    "reason": "Calculate optimal output, revenue and full cost; distinguish loss from shutdown with complete cost information."
+  },
+  "P62G-MON-EL-007": {
+    "q": "For a monopolist, demand is P=112−2.2Q, marginal cost is MC=22+0.3Q, and total cost is TC=500+22Q+0.15Q². Which output-price pair maximizes profit? Round only the final results.",
+    "options": [
+      "Q=19.15, P=$69.87.",
+      "Q=36.00, P=$32.80.",
+      "Q=19.15, P=$27.74.",
+      "Q=36.00, P=$69.87."
+    ],
+    "correctIndex": 0,
+    "feedback": "MR=112−4.4Q. Set MR=MC: (4.4+0.3)Q=90, giving Q≈19.15. Demand then gives P≈$69.87. Setting P=MC instead gives the efficient output 36.00, which is not the monopolist's profit maximum.",
+    "reason": "State market structure, provide costs without calculus, and distinguish monopoly and efficient outcomes."
+  },
+  "P62G-MON-EL-008": {
+    "q": "For a monopolist, demand is P=112−2.2Q, marginal cost is MC=22+0.3Q, and total cost is TC=500+22Q+0.15Q². Fixed cost is unavoidable this period. At the profit-maximizing output, what economic result and operating decision follow? Round only the final result.",
+    "options": [
+      "An economic profit of $361.70; shut down because fixed cost must always be avoided.",
+      "An economic profit of $361.70; operate because revenue covers variable cost.",
+      "An economic profit of $861.70; operate after excluding fixed cost from economic profit.",
+      "An economic profit of $306.70; operate after treating marginal cost as average variable cost."
+    ],
+    "correctIndex": 1,
+    "feedback": "MR=MC gives Q=(112−22)/(4.4+0.3)≈19.15, then P≈$69.87. Revenue is $1337.98 and total cost is $976.28, giving economic profit of $361.70. Revenue exceeds variable cost by $861.70; operating is better than paying unavoidable fixed cost with no sales.",
+    "reason": "Calculate optimal output, revenue and full cost; distinguish loss from shutdown with complete cost information."
+  },
+  "P62G-MON-EL-009": {
+    "q": "For a monopolist, demand is P=100−2Q, marginal cost is MC=20+0.2Q, and total cost is TC=850+20Q+0.1Q². Which output-price pair maximizes profit? Round only the final results.",
+    "options": [
+      "Q=36.36, P=$27.27.",
+      "Q=19.05, P=$23.81.",
+      "Q=19.05, P=$61.90.",
+      "Q=36.36, P=$61.90."
+    ],
+    "correctIndex": 2,
+    "feedback": "MR=100−4Q. Set MR=MC: (4+0.2)Q=80, giving Q≈19.05. Demand then gives P≈$61.90. Setting P=MC instead gives the efficient output 36.36, which is not the monopolist's profit maximum.",
+    "reason": "State market structure, provide costs without calculus, and distinguish monopoly and efficient outcomes."
+  },
+  "P62G-MON-EL-010": {
+    "q": "For a monopolist, demand is P=100−2Q, marginal cost is MC=20+0.2Q, and total cost is TC=850+20Q+0.1Q². Fixed cost is unavoidable this period. At the profit-maximizing output, what economic result and operating decision follow? Round only the final result.",
+    "options": [
+      "An economic loss of $88.10; shut down because fixed cost must always be avoided.",
+      "An economic profit of $761.90; operate after excluding fixed cost from economic profit.",
+      "An economic loss of $124.38; operate after treating marginal cost as average variable cost.",
+      "An economic loss of $88.10; operate because revenue covers variable cost."
+    ],
+    "correctIndex": 3,
+    "feedback": "MR=MC gives Q=(100−20)/(4+0.2)≈19.05, then P≈$61.90. Revenue is $1179.14 and total cost is $1267.23, giving economic loss of $88.10. Revenue exceeds variable cost by $761.90; operating is better than paying unavoidable fixed cost with no sales.",
+    "reason": "Calculate optimal output, revenue and full cost; distinguish loss from shutdown with complete cost information."
+  },
+  "P62G-MON-EL-011": {
+    "q": "For a monopolist, demand is P=92−1.5Q, marginal cost is MC=18+0.35Q, and total cost is TC=780+18Q+0.175Q². Which output-price pair maximizes profit? Round only the final results.",
+    "options": [
+      "Q=22.09, P=$58.87.",
+      "Q=40.00, P=$32.00.",
+      "Q=22.09, P=$25.73.",
+      "Q=40.00, P=$58.87."
+    ],
+    "correctIndex": 0,
+    "feedback": "MR=92−3Q. Set MR=MC: (3+0.35)Q=74, giving Q≈22.09. Demand then gives P≈$58.87. Setting P=MC instead gives the efficient output 40.00, which is not the monopolist's profit maximum.",
+    "reason": "State market structure, provide costs without calculus, and distinguish monopoly and efficient outcomes."
+  },
+  "P62G-MON-EL-013": {
+    "q": "For a monopolist, demand is P=116−2.4Q, marginal cost is MC=26+0.25Q, and total cost is TC=900+26Q+0.125Q². Which output-price pair maximizes profit? Round only the final results.",
+    "options": [
+      "Q=33.96, P=$34.49.",
+      "Q=17.82, P=$30.46.",
+      "Q=17.82, P=$73.23.",
+      "Q=33.96, P=$73.23."
+    ],
+    "correctIndex": 2,
+    "feedback": "MR=116−4.8Q. Set MR=MC: (4.8+0.25)Q=90, giving Q≈17.82. Demand then gives P≈$73.23. Setting P=MC instead gives the efficient output 33.96, which is not the monopolist's profit maximum.",
+    "reason": "State market structure, provide costs without calculus, and distinguish monopoly and efficient outcomes."
+  },
+  "P62G-MON-EL-015": {
+    "q": "For a monopolist, demand is P=105−2.1Q, marginal cost is MC=18+0.3Q, and total cost is TC=650+18Q+0.15Q². Which output-price pair maximizes profit? Round only the final results.",
+    "options": [
+      "Q=19.33, P=$64.40.",
+      "Q=36.25, P=$28.88.",
+      "Q=19.33, P=$23.80.",
+      "Q=36.25, P=$64.40."
+    ],
+    "correctIndex": 0,
+    "feedback": "MR=105−4.2Q. Set MR=MC: (4.2+0.3)Q=87, giving Q≈19.33. Demand then gives P≈$64.40. Setting P=MC instead gives the efficient output 36.25, which is not the monopolist's profit maximum.",
+    "reason": "State market structure, provide costs without calculus, and distinguish monopoly and efficient outcomes."
+  },
+  "P62I-OLI-EL-017": {
+    "q": "Assume the firms interact indefinitely. Cooperating pays 10 each period, starting now. Cheating pays 15 now, followed by 5 every period forever starting next period. Multiply each future payoff by 0.20 for every period ahead. Which present-value comparison and choice follow?",
+    "options": [
+      "Cooperate: 12.50; cheat: 16.25; choose cooperation.",
+      "Cooperate: 12.50; cheat: 21.25; choose cheating.",
+      "Cooperate: 12.50; cheat: 16.25; choose cheating.",
+      "Cooperate: 2.50; cheat: 3.25; choose cheating."
+    ],
+    "correctIndex": 2,
+    "feedback": "Cooperation gives 10/(1−0.2)=12.50. Cheating gives 15+0.2×5/(1−0.2)=16.25. Cheating is better by 3.75. Current payoffs are not discounted, and punishment starts next period.",
+    "reason": "Replace irrelevant distractors with full present-value calculations and timing errors."
+  },
+  "P62I-OLI-EL-018": {
+    "q": "Assume the firms interact indefinitely. Cooperating pays 11 each period, starting now. Cheating pays 16 now, followed by 5 every period forever starting next period. Multiply each future payoff by 0.35 for every period ahead. Which present-value comparison and choice follow?",
+    "options": [
+      "Cooperate: 16.92; cheat: 18.69; choose cooperation.",
+      "Cooperate: 16.92; cheat: 23.69; choose cheating.",
+      "Cooperate: 5.92; cheat: 6.54; choose cheating.",
+      "Cooperate: 16.92; cheat: 18.69; choose cheating."
+    ],
+    "correctIndex": 3,
+    "feedback": "Cooperation gives 11/(1−0.35)=16.92. Cheating gives 16+0.35×5/(1−0.35)=18.69. Cheating is better by 1.77. Current payoffs are not discounted, and punishment starts next period.",
+    "reason": "Replace irrelevant distractors with full present-value calculations and timing errors."
+  },
+  "P62I-OLI-EL-019": {
+    "q": "Assume the firms interact indefinitely. Cooperating pays 12 each period, starting now. Cheating pays 17 now, followed by 6 every period forever starting next period. Multiply each future payoff by 0.50 for every period ahead. Which present-value comparison and choice follow?",
+    "options": [
+      "Cooperate: 24.00; cheat: 23.00; choose cooperation.",
+      "Cooperate: 24.00; cheat: 23.00; choose cheating.",
+      "Cooperate: 24.00; cheat: 29.00; choose cheating.",
+      "Cooperate: 12.00; cheat: 11.50; choose cooperation."
+    ],
+    "correctIndex": 0,
+    "feedback": "Cooperation gives 12/(1−0.5)=24.00. Cheating gives 17+0.5×6/(1−0.5)=23.00. Cooperation is better by 1.00. Current payoffs are not discounted, and punishment starts next period.",
+    "reason": "Replace irrelevant distractors with full present-value calculations and timing errors."
+  },
+  "P62I-OLI-EL-020": {
+    "q": "Assume the firms interact indefinitely. Cooperating pays 13 each period, starting now. Cheating pays 18 now, followed by 6 every period forever starting next period. Multiply each future payoff by 0.65 for every period ahead. Which present-value comparison and choice follow?",
+    "options": [
+      "Cooperate: 37.14; cheat: 29.14; choose cheating.",
+      "Cooperate: 37.14; cheat: 29.14; choose cooperation.",
+      "Cooperate: 37.14; cheat: 35.14; choose cheating.",
+      "Cooperate: 24.14; cheat: 18.94; choose cooperation."
+    ],
+    "correctIndex": 1,
+    "feedback": "Cooperation gives 13/(1−0.65)=37.14. Cheating gives 18+0.65×6/(1−0.65)=29.14. Cooperation is better by 8.00. Current payoffs are not discounted, and punishment starts next period.",
+    "reason": "Replace irrelevant distractors with full present-value calculations and timing errors."
+  },
+  "P62F-PC-EL-005": {
+    "q": "Evergreen Resin is a competitive price-taking firm facing a price of $42. Output increases in 10-unit blocks with marginal cost per unit of $9, $14, $25, $33, $42, $52. Fixed cost of $440 is unavoidable this period. If two outputs earn the same maximum profit, choose the larger output. Which output and economic result should it choose?",
+    "options": [
+      "Produce 50 units; profit $430.",
+      "Produce 40 units; profit $430.",
+      "Produce 60 units; profit $330.",
+      "Shut down; loss $440, because a fixed cost remains unpaid by marginal revenue."
+    ],
+    "correctIndex": 0,
+    "feedback": "Include each block whose marginal cost is no greater than the $42 price, using the stated tie rule for the block with MC=P. At Q=50, revenue is $2100, variable cost is $1230, and total cost is $1670, giving profit $430. Shutdown would lose the entire $440 fixed cost.",
+    "reason": "Specify the competitive setting, resolve equal-profit output ties, and explain full cost and shutdown comparison."
+  },
+  "P62F-PC-EL-006": {
+    "q": "Falcon Wool is a competitive price-taking firm facing a price of $26. Output increases in 10-unit blocks with marginal cost per unit of $10, $15, $21, $34, $38, $53. Fixed cost of $475 is unavoidable this period. Which output and economic result should it choose?",
+    "options": [
+      "Produce 20 units; loss $205.",
+      "Produce 30 units; loss $155.",
+      "Produce 40 units; loss $235.",
+      "Shut down; loss $475, because a fixed cost remains unpaid by marginal revenue."
+    ],
+    "correctIndex": 1,
+    "feedback": "Include each block whose marginal cost is no greater than the $26 price. At Q=30, revenue is $780, variable cost is $460, and total cost is $935, giving loss $155. Shutdown would lose the entire $475 fixed cost.",
+    "reason": "Specify the competitive setting, resolve equal-profit output ties, and explain full cost and shutdown comparison."
+  },
+  "P62F-PC-EL-008": {
+    "q": "Helix Corn is a competitive price-taking firm facing a price of $34. Output increases in 10-unit blocks with marginal cost per unit of $9, $17, $23, $30, $40, $49. Fixed cost of $545 is unavoidable this period. Which output and economic result should it choose?",
+    "options": [
+      "Produce 30 units; loss $15.",
+      "Produce 50 units; loss $35.",
+      "Shut down; loss $545, because a fixed cost remains unpaid by marginal revenue.",
+      "Produce 40 units; profit $25."
+    ],
+    "correctIndex": 3,
+    "feedback": "Include each block whose marginal cost is no greater than the $34 price. At Q=40, revenue is $1360, variable cost is $790, and total cost is $1335, giving profit $25. Shutdown would lose the entire $545 fixed cost.",
+    "reason": "Specify the competitive setting, resolve equal-profit output ties, and explain full cost and shutdown comparison."
+  },
+  "P62F-PC-EL-009": {
+    "q": "Ion Copper is a competitive price-taking firm facing a price of $38. Output increases in 10-unit blocks with marginal cost per unit of $10, $14, $24, $31, $41, $50. Fixed cost of $580 is unavoidable this period. Which output and economic result should it choose?",
+    "options": [
+      "Produce 40 units; profit $150.",
+      "Produce 30 units; profit $80.",
+      "Produce 50 units; profit $120.",
+      "Shut down; loss $580, because a fixed cost remains unpaid by marginal revenue."
+    ],
+    "correctIndex": 0,
+    "feedback": "Include each block whose marginal cost is no greater than the $38 price. At Q=40, revenue is $1520, variable cost is $790, and total cost is $1370, giving profit $150. Shutdown would lose the entire $580 fixed cost.",
+    "reason": "Specify the competitive setting, resolve equal-profit output ties, and explain full cost and shutdown comparison."
+  },
+  "P62F-PC-EL-010": {
+    "q": "Jasper Milk is a competitive price-taking firm facing a price of $42. Output increases in 10-unit blocks with marginal cost per unit of $8, $15, $25, $32, $42, $51. Fixed cost of $615 is unavoidable this period. If two outputs earn the same maximum profit, choose the larger output. Which output and economic result should it choose?",
+    "options": [
+      "Produce 40 units; profit $265.",
+      "Produce 50 units; profit $265.",
+      "Produce 60 units; profit $175.",
+      "Shut down; loss $615, because a fixed cost remains unpaid by marginal revenue."
+    ],
+    "correctIndex": 1,
+    "feedback": "Include each block whose marginal cost is no greater than the $42 price, using the stated tie rule for the block with MC=P. At Q=50, revenue is $2100, variable cost is $1220, and total cost is $1835, giving profit $265. Shutdown would lose the entire $615 fixed cost.",
+    "reason": "Specify the competitive setting, resolve equal-profit output ties, and explain full cost and shutdown comparison."
+  },
+  "ECON-MG-ELITE-300": {
+    "q": "Before a rent ceiling, 1,000 apartments rent for $900 monthly. Afterward, 900 apartments rent for $800 while 1,200 households seek apartments. Each continuing tenant also spends $120 monthly in extra search and waiting time, and maintenance reductions cost that tenant another $30 in value. Ignoring other changes, what are the shortage and net monthly benefit to a continuing tenant?",
+    "options": [
+      "Shortage 300 apartments; net benefit −$50 after nonmoney costs.",
+      "Shortage 300 apartments; net benefit +$100 because only rent enters the comparison.",
+      "Shortage 100 apartments; net benefit −$50 after nonmoney costs.",
+      "Shortage 200 apartments; net benefit +$50 after nonmoney costs."
+    ],
+    "correctIndex": 0,
+    "feedback": "The shortage is 1,200−900=300 apartments. A continuing tenant saves $100 in rent but incurs $120+$30=$150 in other costs, for a net loss of $50. The reduction in units supplied is 100, which is different from the shortage.",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation."
+  },
+  "ECON-MG-ELITE-308": {
+    "q": "A parking ceiling lowers the daily fee from $10 to $4. A driver who still finds a space now searches for 30 extra minutes and values time at $18 per hour. The driver can instead reserve an off-site space for $12 with no additional search. Which comparison identifies the cheaper option and the ceiling's effect on the driver's full cost?",
+    "options": [
+      "Capped parking costs $13 in money and time; reservation is $1 cheaper, and the capped option costs $3 more than before.",
+      "Capped parking costs $13 in money and time; reservation is $1 cheaper, but the ceiling lowered full cost by $6.",
+      "Capped parking costs $9 in money and time; reservation is $3 dearer, and the ceiling lowered full cost by $1.",
+      "Capped parking costs $4 in money and time; reservation is $8 dearer, because time has no posted price."
+    ],
+    "correctIndex": 0,
+    "feedback": "Search costs 0.5×$18=$9. Add the $4 fee for a full cost of $13, compared with $12 for the reservation and $10 before the ceiling. A lower money price can be offset by nonmoney rationing costs.",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation."
+  },
+  "ECON-MG-ELITE-311": {
+    "q": "Before a rent ceiling, 60,000 households rent apartments. Afterward, 52,000 apartments are rented, while 80,000 households want one. Of the new occupants, 46,000 are former tenants and 6,000 are newcomers. Each former tenant who stays saves $300 monthly. Which comparison is correct?",
+    "options": [
+      "The shortage is 28,000, former tenants losing access number 14,000, and continuing former tenants save $13.8 million.",
+      "The shortage is 28,000, former tenants losing access number 28,000, and continuing former tenants save $13.8 million.",
+      "The shortage is 8,000, former tenants losing access number 14,000, and continuing former tenants save $15.6 million.",
+      "The shortage is 28,000, former tenants losing access number 8,000, and continuing former tenants save $15.6 million."
+    ],
+    "correctIndex": 0,
+    "feedback": "Excess demand is 80,000−52,000=28,000. Former tenants losing access number 60,000−46,000=14,000. Rent savings for continuing former tenants are 46,000×$300=$13.8 million. The shortage does not by itself measure displacement.",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation."
+  },
+  "PG2-CEIL-EL-001": {
+    "q": "Refer to the apartment graph. Assume every apartment offered is rented. Calculate the maximum rentals and shortage under the ceiling, then compare landlords' total rent receipts with the uncontrolled equilibrium.",
+    "options": [
+      "50 rentals, shortage 200; receipts fall from $300,000 to $50,000.",
+      "50 rentals, shortage 200; receipts fall from $300,000 to $250,000.",
+      "250 rentals, shortage 200; receipts fall from $300,000 to $250,000.",
+      "50 rentals, shortage 100; receipts fall from $150,000 to $50,000."
+    ],
+    "correctIndex": 0,
+    "feedback": "Without the ceiling, 150 apartments rent for $2,000, yielding $300,000. At the $1,000 ceiling, 50 are offered and 250 demanded. Rentals are limited to 50, the shortage is 200, and receipts are $50,000.",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation."
+  },
+  "ECON-MG-ELITE-301": {
+    "q": "In a competitive labor market, 100 workers each work 40 hours weekly at the initial $10 equilibrium wage. A $12 minimum wage leaves 90 workers employed and 120 seeking jobs; hours per employed worker remain 40. Which labor-surplus and payroll comparison follows?",
+    "options": [
+      "Labor surplus 30; weekly payroll rises $3,200 even though employment falls.",
+      "Labor surplus 30; weekly payroll falls $3,200 because employment falls.",
+      "Labor surplus 10; weekly payroll rises $8,000 because every original worker earns more.",
+      "Labor surplus 20; weekly payroll rises $17,600 because every job seeker is paid."
+    ],
+    "correctIndex": 0,
+    "feedback": "The surplus is 120−90=30 workers. Initial payroll is 100×40×10=$40,000; new payroll is 90×40×12=$43,200. Aggregate payroll rises $3,200, while ten formerly employed workers lose jobs under the stated comparison.",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation."
+  },
+  "ECON-MG-ELITE-312": {
+    "q": "A competitive labor market initially employs 100,000 workers for 30 hours weekly at $10 per hour. After a $15 minimum wage, firms employ 70,000 workers for 25 hours weekly while 120,000 workers seek jobs. Which comparison follows?",
+    "options": [
+      "Labor surplus 50,000; total weekly hours fall 1.25 million and payroll falls $3.75 million.",
+      "Labor surplus 50,000; total weekly hours fall 0.9 million and payroll rises $1.5 million.",
+      "Labor surplus 30,000; total weekly hours fall 1.25 million and payroll falls $3.75 million.",
+      "Labor surplus 120,000; total weekly hours rise 0.5 million and payroll rises $15 million."
+    ],
+    "correctIndex": 0,
+    "feedback": "The labor surplus is 120,000−70,000=50,000. Hours fall from 3 million to 1.75 million. Payroll falls from $30 million to $26.25 million, a $3.75 million decline. Both employment and hours per employee matter.",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation."
+  },
+  "PG2-FLR-EL-001": {
+    "q": "Refer to the graph. All workers hired supply one hour. A student predicts that the $10 minimum wage increases payroll to $2.5 million because 250 thousand people want work. What employment, unemployment among job seekers, and payroll actually follow from the model?",
+    "options": [
+      "Employment 100 thousand, excess labor supply 150 thousand, payroll $2.5 million.",
+      "Employment 250 thousand, excess labor supply zero, payroll $2.5 million.",
+      "Employment 100 thousand, excess labor supply 150 thousand, payroll $1 million.",
+      "Employment 175 thousand, excess labor supply 75 thousand, payroll $1.75 million."
+    ],
+    "correctIndex": 2,
+    "feedback": "At $10, firms demand 100 thousand workers while 250 thousand offer labor. With all demanded jobs filled, employment is 100 thousand and excess labor supply is 150 thousand. Payroll is 100,000×$10=$1 million; willingness to work does not guarantee employment.",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation."
+  },
+  "P77-MVM-EL-015": {
+    "q": "A retail chain cuts 2,000 jobs in each of three regions. Over the same period, all other employers add 10,000 jobs in Region A, lose 1,000 in B, and add 500 in C. Which national and regional comparison reconciles the firm's cuts with the aggregate?",
+    "options": [
+      "National employment rises 3,500; each region must rise because the national total rises.",
+      "National employment falls 6,000; other employers cannot offset a chain that cuts in every region.",
+      "National employment rises 3,500; A rises 8,000 while B and C fall 3,000 and 1,500.",
+      "National employment rises 9,500; the chain's losses belong only to microeconomic analysis."
+    ],
+    "correctIndex": 2,
+    "feedback": "The chain loses 6,000 jobs in total, while other employers gain 9,500, leaving a national gain of 3,500. Regional changes are 10,000−2,000=8,000; −1,000−2,000=−3,000; and 500−2,000=−1,500. Aggregate growth can coexist with firm-level and regional declines.",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation."
+  },
+  "ECON-NL-ELITE-379": {
+    "q": "Two economies each have a labor force of one million and a 5% natural unemployment rate. A has 1% frictional and 4% structural unemployment; B has 3% frictional and 2% structural. A matching program halves frictional unemployment without changing structural unemployment or participation. Which comparison follows?",
+    "options": [
+      "A's natural rate falls to 4.5% and B's to 3.5%; the same program removes 5,000 versus 15,000 unemployed workers.",
+      "Both natural rates fall to 2.5%; equal initial totals imply equal gains from halving one component.",
+      "A's natural rate falls to 3% and B's to 4%; the program halves structural rather than frictional unemployment.",
+      "A's natural rate falls to 4.5% and B's to 3.5%; equal initial totals imply equal numbers finding jobs."
+    ],
+    "correctIndex": 0,
+    "feedback": "A becomes 0.5%+4%=4.5%, a decline of 0.5 percentage point or 5,000 people. B becomes 1.5%+2%=3.5%, a decline of 1.5 points or 15,000. Equal overall rates conceal different policy-relevant components.",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation."
+  },
+  "PMOE-NER-EL-002": {
+    "q": "Initially, one U.S. dollar buys €0.80 or ¥100. Later it buys 10% more euros and 5% fewer yen. What happens to the euro price of one yen, and what does this imply about the yen against the euro?",
+    "options": [
+      "It rises from €0.008 to about €0.00926, a yen appreciation of about 15.8%.",
+      "It rises from €0.008 to about €0.00920, a yen appreciation of exactly 15.0%.",
+      "It falls from €0.008 to about €0.00691, a yen depreciation of about 13.6%.",
+      "It rises from €0.008 to about €0.00926, a yen depreciation of about 15.8%."
+    ],
+    "correctIndex": 0,
+    "feedback": "The later dollar quotes are €0.88 and ¥95. Euros per yen are therefore 0.88/95≈0.009263, compared with 0.80/100=0.008. The ratio 1.10/0.95≈1.1579 implies a 15.8% yen appreciation against the euro.",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation."
+  },
+  "P52A-OPPC-EL-001": {
+    "q": "A county has one emergency team. Wildfire prevention yields $1.4 million in benefits with $0.3 million in additional cost; flood preparation yields $1.1 million with $0.1 million in additional cost; inspections yield $0.8 million with $0.05 million in additional cost. All are feasible, and the county chooses flood preparation. What net opportunity cost and comparative net result follow?",
+    "options": [
+      "It forgoes $1.1 million of net wildfire benefit; flood preparation yields $0.1 million less.",
+      "It forgoes $1.4 million of gross wildfire benefit; flood preparation yields $0.4 million less.",
+      "It forgoes $1.85 million from both rejected net benefits; flood preparation yields $0.85 million less.",
+      "It forgoes $0.75 million of net inspection benefit; flood preparation yields $0.25 million more."
+    ],
+    "correctIndex": 0,
+    "feedback": "Net benefits are $1.1 million for wildfire prevention, $1 million for flood preparation, and $0.75 million for inspections. The next-best feasible alternative is wildfire prevention, so its $1.1 million net benefit is forgone. The chosen use is $0.1 million worse on this measure.",
+    "reason": "Clarify feasible alternatives and require net-benefit ranking before identifying opportunity cost."
+  },
+  "P77-PVN-EL-022": {
+    "q": "Policy A gives a low-income group $80 of benefit and a high-income group $120. Policy B gives them $130 and $50. There are no other effects. Analyst 1 sums unweighted benefits; Analyst 2 gives low-income benefits twice the weight. Which calculation and distinction follow?",
+    "options": [
+      "Analyst 1 ranks A above B, 200 to 180; Analyst 2 ranks B above A, 310 to 280; the different rankings prove factual disagreement.",
+      "Analyst 1 ranks A above B, 200 to 180; Analyst 2 ranks B above A, 310 to 280; choosing weights is normative.",
+      "Both rank A above B, 200 to 180; assigning weights changes measurement units but cannot change rankings.",
+      "Analyst 1 ranks B above A, 180 to 200; Analyst 2 ranks A above B, 280 to 310; choosing weights is normative."
+    ],
+    "correctIndex": 1,
+    "feedback": "Unweighted totals are A=80+120=200 and B=130+50=180. Weighted totals are A=2×80+120=280 and B=2×130+50=310. The consequences can be agreed upon while the normative choice of weights reverses the recommendation.",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation."
+  },
+  "P52B-PSIG-EL-001": {
+    "q": "A market initially has demand Qd=100−P and supply Qs=20+P. Later price is $45 and quantity is 75. Assume demand and supply retain their original slopes. Which changes at every price are consistent with the observed equilibrium?",
+    "options": [
+      "Demand increases by 20 and supply increases by 10; demand pressure is larger, so both price and quantity rise.",
+      "Demand increases by 20 and supply decreases by 10; both changes explain the rise in quantity.",
+      "Demand increases by 10 and supply increases by 20; stronger supply pressure raises price.",
+      "Demand is unchanged and supply increases by 30; a supply increase raises both price and quantity."
+    ],
+    "correctIndex": 0,
+    "feedback": "Initially P=40 and Q=60. At P=45, old demand is 55 but observed demand is 75, requiring a +20 shift. Old supply is 65 but observed supply is 75, requiring a +10 shift. Price and quantity alone do not imply only demand changed.",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation."
+  },
+  "LG-Q-328": {
+    "q": "In a long-run quantity-theory model, money is 500, velocity is 4, and real output is 2000. Money then rises 20%, velocity falls 10%, and real output is fixed by productive capacity. Which price-level and purchasing-power comparison follows from MV=PY?",
+    "options": [
+      "The price level rises 8.0% to 1.08; one unit of money buys about 0.926 units of output.",
+      "The price level rises 8.0% to 1.08; one unit of money buys 1.08 units of output.",
+      "The price level rises 20.0% to 1.200; velocity and real output do not affect prices.",
+      "The price level stays 1.00; all additional nominal spending permanently raises real output."
+    ],
+    "correctIndex": 0,
+    "feedback": "Initially P=MV/Y=1.00. Later P=(600×3.6)/2000=1.08, a 8.0% rise. The value of money is the reciprocal, 1/P≈0.926. Long-run real output follows the stated real-capacity assumption, not nominal money alone.",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation."
+  },
+  "LG-Q-329": {
+    "q": "In a long-run quantity-theory model, money is 400, velocity is 5, and real output is 2000. Money then rises 15.5%, velocity is unchanged, and real output rises 5% because of productivity growth. Which price-level and purchasing-power comparison follows from MV=PY?",
+    "options": [
+      "The price level rises 10.0% to 1.10; one unit of money buys about 0.909 units of output.",
+      "The price level rises 10.0% to 1.10; one unit of money buys 1.10 units of output.",
+      "The price level rises 15.5% to 1.155; velocity and real output do not affect prices.",
+      "The price level stays 1.00; all additional nominal spending permanently raises real output."
+    ],
+    "correctIndex": 0,
+    "feedback": "Initially P=MV/Y=1.00. Later P=(462×5)/2100=1.10, a 10.0% rise. The value of money is the reciprocal, 1/P≈0.909. Long-run real output follows the stated real-capacity assumption, not nominal money alone.",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation."
+  },
+  "LG-Q-331": {
+    "q": "In a long-run quantity-theory model, money is 600, velocity is 3, and real output is 1800. Money then rises 10%, velocity is unchanged, and real output is fixed by productive capacity. Which price-level and purchasing-power comparison follows from MV=PY?",
+    "options": [
+      "The price level rises 10.0% to 1.10; one unit of money buys about 0.909 units of output.",
+      "The price level rises 10.0% to 1.10; one unit of money buys 1.10 units of output.",
+      "The price level falls to 0.909; extra money increases each unit's purchasing power.",
+      "The price level stays 1.00; all additional nominal spending permanently raises real output."
+    ],
+    "correctIndex": 0,
+    "feedback": "Initially P=MV/Y=1.00. Later P=(660×3)/1800=1.10, a 10.0% rise. The value of money is the reciprocal, 1/P≈0.909. Long-run real output follows the stated real-capacity assumption, not nominal money alone.",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation."
+  },
+  "PMOE-RER-EL-001": {
+    "q": "Initially, the nominal exchange rate is 2 foreign-currency units per domestic unit and both price indexes are 100. Domestic prices rise 10% and foreign prices rise 4%. What nominal exchange rate keeps the real exchange rate eP/P* unchanged, and how should the currency change be described?",
+    "options": [
+      "About 1.891 foreign units per domestic unit; domestic currency appreciates about 5.45%.",
+      "About 1.891 foreign units per domestic unit; domestic currency depreciates about 5.45%.",
+      "About 2.115 foreign units per domestic unit; domestic currency appreciates about 5.77%.",
+      "Exactly 1.880 foreign units per domestic unit; subtracting inflation rates gives the exact adjustment."
+    ],
+    "correctIndex": 1,
+    "feedback": "The original real rate is 2. Keeping it fixed requires e×110/104=2, hence e=208/110≈1.891. The domestic unit buys fewer foreign units, a depreciation of (2−1.891)/2≈5.45%. The exact adjustment uses a ratio rather than simply subtracting inflation rates.",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation."
+  },
+  "ECON-NL-ELITE-315": {
+    "q": "Real GDP rises 5% and nominal GDP rises 15.5%. A worker's nominal pay rises 8%. Use the GDP deflator as the price index for this comparison. Which result describes inflation and the worker's real pay?",
+    "options": [
+      "The deflator rises 10%; real pay falls about 1.82% despite higher nominal pay.",
+      "The deflator rises 10%; real pay rises 8% because pay is measured in current dollars.",
+      "The deflator rises 10.5%; real pay falls exactly 2.5% by subtracting the growth rates.",
+      "The deflator rises 15.5%; real pay falls about 6.49% because real GDP does not enter the index."
+    ],
+    "correctIndex": 0,
+    "feedback": "The deflator's growth factor is 1.155/1.05=1.10. Real pay's growth factor is 1.08/1.10≈0.9818, a decline of about 1.82%. Nominal output growth combines price and real-output changes multiplicatively.",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation."
+  },
+  "ECON-MG-ELITE-335": {
+    "q": "Before a redistribution policy, lower-income households receive $200 of surplus and higher-income households $800. Afterward they receive $350 and $600. One evaluator gives both groups equal weight; another gives lower-income surplus twice the weight. Which comparison describes the tradeoff?",
+    "options": [
+      "Total surplus falls $50, but the weighted score rises $100; different equity weights can reverse the ranking.",
+      "Total surplus falls $50, so both evaluators must reject the policy regardless of their weights.",
+      "Total surplus rises $150 and the weighted score rises $300; gains to the lower-income group are the whole effect.",
+      "Total surplus falls $50 and the weighted score falls $50; redistribution cannot change a weighted ranking."
+    ],
+    "correctIndex": 0,
+    "feedback": "Total surplus falls from 1,000 to 950. The weighted score rises from 2×200+800=1,200 to 2×350+600=1,300. The $50 efficiency loss and distributional gain are separate facts; the preferred outcome depends on the evaluator's weights.",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation."
+  },
+  "P52A-SCAR-EL-001": {
+    "q": "A city must devote one indivisible parcel to flood protection, housing, or commerce. Benefits and real resource costs are respectively $12m and $5m, $10m and $4m, and $11m and $6m. Net benefits received by low-income residents are $1m, $4m, and $0.5m, already included in those totals. Which choice maximizes total net benefit, and how does double-weighting low-income net benefits change the choice?",
+    "options": [
+      "Flood protection maximizes total net benefit at $7m; double-weighting selects housing with a score of $10m.",
+      "Flood protection maximizes total net benefit at $7m; double-weighting selects housing with a score of $14m.",
+      "Commerce maximizes total net benefit at $11m; double-weighting selects flood protection with a score of $14m.",
+      "Housing maximizes total net benefit at $10m; double-weighting leaves the ranking unchanged."
+    ],
+    "correctIndex": 0,
+    "feedback": "Unweighted net benefits are flood protection 7, housing 6, and commerce 5 million. Double-weighting low-income net benefits adds one extra copy of that already-included component: scores are 8, 10, and 5.5 million. Scarcity requires choosing among feasible uses, and distributional weights can change the ranking.",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation."
+  },
+  "ECON-MG-ELITE-323": {
+    "q": "A market initially trades 100 units at $10. Stronger buyer preferences move equilibrium to 140 units at $14. Producers' supply schedule remains Qs=10P. A student calls the 40 extra units an increase in supply. Which counterfactual best evaluates the statement?",
+    "options": [
+      "At the original $10 price, producers still offer 100; all 40 extra units are movement along the unchanged supply curve.",
+      "At the original $10 price, producers now offer 140; higher actual output proves supply shifted right.",
+      "At the new $14 price, producers would offer 100; stronger demand changes only willingness to buy.",
+      "At the original $10 price, producers still offer 100; all 40 extra units represent a shift of supply."
+    ],
+    "correctIndex": 0,
+    "feedback": "The unchanged schedule gives Qs=100 at $10 and Qs=140 at $14. Quantity supplied rises because price rises. A supply increase would mean more offered at the same price, which this evidence rules out.",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation."
+  },
+  "P52B-S2-SUP-EL-001": {
+    "q": "A competitive firm's supply before two changes is Qs=5(P−10) for P≥10. New equipment saves $3 per unit, while an environmental fee adds $5 per unit. Assume these changes shift unit costs without changing the supply slope. At a market price of $20, what happens to quantity supplied, and what price restores the original quantity?",
+    "options": [
+      "Quantity falls from 50 to 40; a price of $18 restores 50 along the new supply curve.",
+      "Quantity rises from 50 to 60; a price of $18 restores 50 along the new supply curve.",
+      "Quantity stays 50; one cost increase and one cost decrease cancel regardless of size.",
+      "Quantity falls from 50 to 40; a price of $22 restores 50 along the new supply curve."
+    ],
+    "correctIndex": 3,
+    "feedback": "Net unit cost rises by $5−$3=$2, making supply Qs=5(P−12). At $20, quantity falls from 50 to 40. Solving 50=5(P−12) gives P=$22. Compare the magnitudes of the two cost changes, not their count.",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation."
+  },
+  "P52B-S2-SUP-EL-002": {
+    "q": "Initially, 80 identical firms each supply 50 units at a price of $20. Twenty new firms enter, but a cost increase reduces each firm's supply at that same price to 35 units. What happens to market supply at $20, and how much would each of the 100 firms need to supply to restore the old market quantity?",
+    "options": [
+      "Market supply falls by 500 units; each firm would need to supply 40 units to restore 4,000.",
+      "Market supply rises by 1,000 units; each firm would need to supply 50 units to restore 4,000.",
+      "Market supply falls by 1,200 units; each firm would need to supply 40 units to restore 4,000.",
+      "Market supply stays at 4,000 units; entry exactly offsets any decline in individual supply."
+    ],
+    "correctIndex": 0,
+    "feedback": "Initially market supply is 80×50=4,000. After both events it is 100×35=3,500, a decline of 500 at the same price. Restoring 4,000 with 100 firms requires 40 units each. Entry alone does not determine the net market-supply shift.",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation."
+  },
+  "P62H-MCMP-EL-026": {
+    "q": "A platform lists 100 differentiated sellers, but two brands receive 70% of sales. New sellers can obtain storefronts cheaply yet must spend heavily to attract buyers away from established user networks. After several years, the two brands still earn economic profits. Which combination of evidence limits the monopolistic-competition benchmark?",
+    "options": [
+      "The remaining 98 sellers share 30%; the number of storefronts alone establishes easy effective entry and zero long-run profit.",
+      "The two brands each necessarily have 35%; equal shares prove they jointly form a single-price monopoly.",
+      "The remaining 98 sellers share 70%; product differentiation alone explains why entry cannot erode any firm's profit.",
+      "The remaining 98 sellers share 30%; concentrated sales and costly access to customers weaken the assumptions behind easy entry and zero long-run profit."
+    ],
+    "correctIndex": 3,
+    "feedback": "The other sellers collectively receive 100−70=30% of sales. Cheap registration does not mean cheap effective entry when buyer networks concentrate attention. Persistent profits and costly customer acquisition can make the many-independent-firms/free-entry benchmark a poor fit.",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation."
+  },
+  "P62H-MCMP-EL-027": {
+    "q": "A monopolistically competitive restaurant sells 100 meals at $30, with ATC of $24 at its profit-maximizing output. Entry would normally eliminate its profit, but the city caps permits and renews existing permits without a fee. With demand and costs otherwise unchanged, what profit and long-run conclusion follow?",
+    "options": [
+      "Economic profit is $600; restricted entry can prevent the demand erosion that would normally eliminate it.",
+      "Economic profit is $600; differentiated products require entry to eliminate profit even when permits prohibit it.",
+      "Economic profit is $3,000; restricted entry converts all sales revenue into economic profit.",
+      "Economic profit is zero; free renewal makes a binding permit limit economically irrelevant."
+    ],
+    "correctIndex": 0,
+    "feedback": "Profit is (30−24)×100=$600. Monopolistic competition's zero-profit tendency relies on effective entry. A binding cap can block new rivals from drawing customers away, so product differentiation alone does not guarantee zero profit.",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation."
+  },
+  "P62H-MCMP-EL-028": {
+    "q": "For a monopolistically competitive seller, an advertising campaign changes the profit-maximizing outcome from 100 units at $20 to 80 units at $24. MC stays $12, and the campaign costs $100 in real resources. Assume it creates no informational or product-value benefit. Which profit and welfare interpretation is warranted?",
+    "options": [
+      "Contribution after advertising rises $60, while markup rises from $8 to $12; the profit gain proves consumers receive new product value.",
+      "Contribution after advertising rises $60, while markup rises from $8 to $12; higher private profit alone does not establish a welfare gain.",
+      "Contribution after advertising rises $160, while markup rises from $8 to $12; advertising expense is a transfer.",
+      "Contribution after advertising falls $60, while markup falls from $12 to $8; less elastic demand reduces market power."
+    ],
+    "correctIndex": 1,
+    "feedback": "Initial contribution is (20−12)×100=$800. Afterward it is (24−12)×80−100=$860, a $60 rise. Markup rises from $8 to $12. Under the stated absence of added value, increased private profit cannot by itself establish higher social welfare.",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation."
+  },
+  "P62H-MCMP-EL-029": {
+    "q": "A monopolistically competitive firm improves a product. At the unchanged sales quantity of 1,000, each buyer values the improvement at $6, production costs rise $4 per unit, and development uses $1,500 in real resources. Price rises $5 per unit. Ignore other effects. Which changes in consumer surplus, profit, and total surplus follow?",
+    "options": [
+      "Consumer surplus +$6,000; profit −$500; total surplus +$5,500.",
+      "Consumer surplus +$1,000; profit +$1,000; total surplus +$2,000.",
+      "Consumer surplus +$1,000; profit −$500; total surplus +$500.",
+      "Consumer surplus −$5,000; profit +$3,500; total surplus −$1,500."
+    ],
+    "correctIndex": 2,
+    "feedback": "Buyers gain (6−5)×1,000=$1,000. The firm's profit changes by (5−4)×1,000−1,500=−$500. Total surplus rises $500, also equal to 6,000−4,000−1,500. Price payments redistribute value; real costs reduce it.",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation."
+  },
+  "P62H-MCMP-EL-030": {
+    "q": "A monopolistically competitive firm sells 80 units where P=ATC=$25 and MC=$15. Minimum ATC is $20 at 120 units. Which profit, markup, and capacity comparison evaluates a claim that zero profit establishes efficiency?",
+    "options": [
+      "Profit is zero, markup is $5, and excess capacity is 40 units; the price-minus-minimum-ATC gap measures allocative inefficiency.",
+      "Profit is $800, markup is $10, and excess capacity is 40 units; positive price minus MC equals profit per unit.",
+      "Profit is zero, markup is $10, and excess capacity is 80 units; current output measures unused capacity.",
+      "Profit is zero, markup is $10, and excess capacity is 40 units; zero profit does not establish either efficiency benchmark."
+    ],
+    "correctIndex": 3,
+    "feedback": "Profit is (P−ATC)Q=0. Markup is P−MC=25−15=$10; excess capacity is 120−80=40 units. The price-cost margin indicates an allocative issue, while output below minimum ATC indicates productive inefficiency within this firm benchmark.",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation."
+  },
+  "P62G-MON-EL-017": {
+    "q": "For a monopolist, demand is P=100−2Q and marginal cost is constant at $20. There are no externalities. What are profit-maximizing output, efficient output, and deadweight loss?",
+    "options": [
+      "Qm=20.00, Qefficient=40.00, deadweight loss $800.00.",
+      "Qm=40.00, Qefficient=20.00, deadweight loss $400.00.",
+      "Qm=20.00, Qefficient=40.00, deadweight loss $400.00.",
+      "Qm=20.00, Qefficient=40.00, deadweight loss $1200.00."
+    ],
+    "correctIndex": 2,
+    "feedback": "MR=100−4Q equals MC at Q=20.00. Demand equals MC at Q=40.00. At monopoly output, price is $60.00, so the lost-surplus triangle is 0.5×(40.00−20.00)×(60.00−20)=$400.00. The transfer on units still sold is not deadweight loss.",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation."
+  },
+  "P62G-MON-EL-020": {
+    "q": "For a monopolist, demand is P=105−1.75Q and marginal cost is constant at $21. There are no externalities. What are profit-maximizing output, efficient output, and deadweight loss?",
+    "options": [
+      "Qm=24.00, Qefficient=48.00, deadweight loss $1008.00.",
+      "Qm=24.00, Qefficient=48.00, deadweight loss $504.00.",
+      "Qm=48.00, Qefficient=24.00, deadweight loss $504.00.",
+      "Qm=24.00, Qefficient=48.00, deadweight loss $1512.00."
+    ],
+    "correctIndex": 1,
+    "feedback": "MR=105−3.5Q equals MC at Q=24.00. Demand equals MC at Q=48.00. At monopoly output, price is $63.00, so the lost-surplus triangle is 0.5×(48.00−24.00)×(63.00−21)=$504.00. The transfer on units still sold is not deadweight loss.",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation."
+  },
+  "P62G-MON-EL-018": {
+    "q": "A patent policy creates expected innovation benefits of $900, uses $150 of additional real research resources, and creates $400 of static deadweight loss from monopoly output restriction. It also transfers $500 from buyers to a domestic patent holder. All amounts are present values; ignore other effects. Which welfare calculation and distributional conclusion follow?",
+    "options": [
+      "Net social gain $350; the $500 transfer proves every buyer is compensated by innovation.",
+      "Net social loss $150; subtract the transfer as well as the deadweight loss.",
+      "Net social gain $500; research resources are excluded because innovation creates future benefits.",
+      "Net social gain $350; the $500 transfer affects distribution but is not an additional resource loss."
+    ],
+    "correctIndex": 3,
+    "feedback": "Net welfare changes by 900−150−400=$350. The domestic transfer changes who receives surplus without itself destroying it. A positive total does not establish that every consumer or group gains.",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation."
+  },
+  "P62G-MON-EL-021": {
+    "q": "A patent policy creates expected innovation benefits of $700, uses $100 of additional real research resources, and creates $450 of static deadweight loss from monopoly output restriction. It also transfers $500 from buyers to a domestic patent holder. All amounts are present values; ignore other effects. Which welfare calculation and distributional conclusion follow?",
+    "options": [
+      "Net social gain $150; the $500 transfer proves every buyer is compensated by innovation.",
+      "Net social loss $350; subtract the transfer as well as the deadweight loss.",
+      "Net social gain $150; the $500 transfer affects distribution but is not an additional resource loss.",
+      "Net social gain $250; research resources are excluded because innovation creates future benefits."
+    ],
+    "correctIndex": 2,
+    "feedback": "Net welfare changes by 700−100−450=$150. The domestic transfer changes who receives surplus without itself destroying it. A positive total does not establish that every consumer or group gains.",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation."
+  },
+  "P62G-MON-EL-019": {
+    "q": "Extending a monopoly license creates $300 in lost gains from trade. The firm spends $120 of real legal and lobbying resources obtaining the extension and pays a $500 license fee to the domestic government. The extension creates no new product or other benefits. Which total social cost and treatment of the fee are correct?",
+    "options": [
+      "Social cost $420; the fee is a domestic transfer, while lobbying uses resources.",
+      "Social cost $920; both lobbying and the fee destroy resources dollar for dollar.",
+      "Social cost $300; lobbying and the fee are both transfers because domestic recipients receive payment.",
+      "Social cost $420; the fee is excluded because it automatically compensates every harmed consumer."
+    ],
+    "correctIndex": 0,
+    "feedback": "Add the $300 lost-surplus area and $120 real resource use for $420. The license fee transfers purchasing power to government. Payments to workers or lawyers do not make the labor they use costless to society.",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation."
+  },
+  "P62G-MON-EL-022": {
+    "q": "Extending a monopoly license creates $450 in lost gains from trade. The firm spends $180 of real legal and lobbying resources obtaining the extension and pays a $700 license fee to the domestic government. The extension creates no new product or other benefits. Which total social cost and treatment of the fee are correct?",
+    "options": [
+      "Social cost $1330; both lobbying and the fee destroy resources dollar for dollar.",
+      "Social cost $450; lobbying and the fee are both transfers because domestic recipients receive payment.",
+      "Social cost $630; the fee is excluded because it automatically compensates every harmed consumer.",
+      "Social cost $630; the fee is a domestic transfer, while lobbying uses resources."
+    ],
+    "correctIndex": 3,
+    "feedback": "Add the $450 lost-surplus area and $180 real resource use for $630. The license fee transfers purchasing power to government. Payments to workers or lawyers do not make the labor they use costless to society.",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation."
+  },
+  "P62G-MON-EL-023": {
+    "q": "A natural monopolist has demand P=100−1.2Q, constant MC=$12, and fixed cost $900. A regulator replaces unregulated monopoly pricing with P=MC. Which output comparison and subsidy requirement follow?",
+    "options": [
+      "Output rises from 36.67 to 73.33; a $900 subsidy covers the resulting loss.",
+      "Output rises from 36.67 to 73.33; no subsidy is needed because P=MC covers total cost.",
+      "Output stays 36.67 while price falls from $56.00 to $12; a $900 subsidy covers the loss.",
+      "Output rises from 36.67 to 73.33; subsidy $1780.00 is needed to cover all costs."
+    ],
+    "correctIndex": 0,
+    "feedback": "Unregulated MR=100−2.4Q equals MC at Q=36.67. Marginal-cost pricing instead sets 100−1.2Q=12, giving Q=73.33. Revenue covers variable cost exactly, leaving the fixed cost $900 uncovered. A lump-sum subsidy of $900 covers that loss.",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation."
+  },
+  "P62G-MON-EL-025": {
+    "q": "A natural monopolist has demand P=90−1Q, constant MC=$10, and fixed cost $800. A regulator replaces unregulated monopoly pricing with P=MC. Which output comparison and subsidy requirement follow?",
+    "options": [
+      "Output rises from 40.00 to 80.00; no subsidy is needed because P=MC covers total cost.",
+      "Output stays 40.00 while price falls from $50.00 to $10; a $800 subsidy covers the loss.",
+      "Output rises from 40.00 to 80.00; a $800 subsidy covers the resulting loss.",
+      "Output rises from 40.00 to 80.00; subsidy $1600.00 is needed to cover all costs."
+    ],
+    "correctIndex": 2,
+    "feedback": "Unregulated MR=90−2Q equals MC at Q=40.00. Marginal-cost pricing instead sets 90−1Q=10, giving Q=80.00. Revenue covers variable cost exactly, leaving the fixed cost $800 uncovered. A lump-sum subsidy of $800 covers that loss.",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation."
+  },
+  "P62G-MON-EL-024": {
+    "q": "A natural monopolist has demand P=120−1.5Q, MC=$15, and total cost TC=1200+15Q. The two outputs where demand price equals ATC are approximately 14.38 and 55.62. A regulator wants the greatest output that covers total cost without a subsidy. Which choice and comparison with marginal-cost pricing are appropriate?",
+    "options": [
+      "Choose Q≈55.62, P≈$36.58; P=MC would raise output to 70.00 with no loss.",
+      "Choose Q≈55.62, P≈$36.58; P=MC would raise output to 70.00 but leave a $1200 loss.",
+      "Choose Q≈14.38, P≈$98.42; the smaller break-even output serves the greatest number of buyers.",
+      "Choose Q≈70.00, P=$15; equality of price and MC also covers the $1200 fixed cost."
+    ],
+    "correctIndex": 1,
+    "feedback": "Both listed intersections break even, but the larger one serves more buyers. Demand gives P≈$36.58 there. P=MC instead implies Q=(120−15)/1.5≈70.00 and leaves the fixed cost $1200 uncovered. The two break-even roots are supplied so the task requires interpretation rather than quadratic solving.",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation."
+  },
+  "P62G-MON-EL-026": {
+    "q": "A natural monopolist has demand P=110−1.25Q, MC=$14, and total cost TC=1000+14Q. The two outputs where demand price equals ATC are approximately 12.43 and 64.37. A regulator wants the greatest output that covers total cost without a subsidy. Which choice and comparison with marginal-cost pricing are appropriate?",
+    "options": [
+      "Choose Q≈64.37, P≈$29.53; P=MC would raise output to 76.80 with no loss.",
+      "Choose Q≈12.43, P≈$94.47; the smaller break-even output serves the greatest number of buyers.",
+      "Choose Q≈76.80, P=$14; equality of price and MC also covers the $1000 fixed cost.",
+      "Choose Q≈64.37, P≈$29.53; P=MC would raise output to 76.80 but leave a $1000 loss."
+    ],
+    "correctIndex": 3,
+    "feedback": "Both listed intersections break even, but the larger one serves more buyers. Demand gives P≈$29.53 there. P=MC instead implies Q=(110−14)/1.25≈76.80 and leaves the fixed cost $1000 uncovered. The two break-even roots are supplied so the task requires interpretation rather than quadratic solving.",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation."
+  },
+  "P62G-MON-EL-027": {
+    "q": "A monopolist can prevent resale between two markets. Demands are PA=100−2QA and PB=80−1QB; MC is $20 in both, with no capacity constraint. Which quantities and prices maximize combined profit?",
+    "options": [
+      "A: Q=20.00, P=$60.00; B: Q=30.00, P=$50.00.",
+      "A: Q=20.00, P=$50.00; B: Q=30.00, P=$60.00.",
+      "A: Q=40.00, P=$20.00; B: Q=60.00, P=$20.00.",
+      "A: Q=20.00, P=$60.00; B: Q=60.00, P=$20.00."
+    ],
+    "correctIndex": 0,
+    "feedback": "Set each market's MR equal to the common MC: 100−4QA=20 and 80−2QB=20. Thus QA=20.00 and QB=30.00. Substituting into the separate demands gives PA=$60.00 and PB=$50.00. Equal marginal revenues need not mean equal prices.",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation."
+  },
+  "P62G-MON-EL-028": {
+    "q": "A monopolist can prevent resale between two markets. Demands are PA=120−3QA and PB=90−1.5QB; MC is $24 in both, with no capacity constraint. Which quantities and prices maximize combined profit?",
+    "options": [
+      "A: Q=16.00, P=$57.00; B: Q=22.00, P=$72.00.",
+      "A: Q=16.00, P=$72.00; B: Q=22.00, P=$57.00.",
+      "A: Q=32.00, P=$24.00; B: Q=44.00, P=$24.00.",
+      "A: Q=16.00, P=$72.00; B: Q=44.00, P=$24.00."
+    ],
+    "correctIndex": 1,
+    "feedback": "Set each market's MR equal to the common MC: 120−6QA=24 and 90−3QB=24. Thus QA=16.00 and QB=22.00. Substituting into the separate demands gives PA=$72.00 and PB=$57.00. Equal marginal revenues need not mean equal prices.",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation."
+  },
+  "P62G-MON-EL-029": {
+    "q": "A monopolist can prevent resale between two markets. Demands are PA=95−1.5QA and PB=110−3QB; MC is $18 in both, with no capacity constraint. Which quantities and prices maximize combined profit?",
+    "options": [
+      "A: Q=25.67, P=$64.00; B: Q=15.33, P=$56.50.",
+      "A: Q=51.33, P=$18.00; B: Q=30.67, P=$18.00.",
+      "A: Q=25.67, P=$56.50; B: Q=15.33, P=$64.00.",
+      "A: Q=25.67, P=$56.50; B: Q=30.67, P=$18.00."
+    ],
+    "correctIndex": 2,
+    "feedback": "Set each market's MR equal to the common MC: 95−3QA=18 and 110−6QB=18. Thus QA=25.67 and QB=15.33. Substituting into the separate demands gives PA=$56.50 and PB=$64.00. Equal marginal revenues need not mean equal prices.",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation."
+  },
+  "P62G-MON-EL-030": {
+    "q": "A monopolist can prevent resale between two markets. Demands are PA=110−2QA and PB=86−1.2QB; MC is $22 in both, with no capacity constraint. Which quantities and prices maximize combined profit?",
+    "options": [
+      "A: Q=22.00, P=$54.00; B: Q=26.67, P=$66.00.",
+      "A: Q=44.00, P=$22.00; B: Q=53.33, P=$22.00.",
+      "A: Q=22.00, P=$66.00; B: Q=53.33, P=$22.00.",
+      "A: Q=22.00, P=$66.00; B: Q=26.67, P=$54.00."
+    ],
+    "correctIndex": 3,
+    "feedback": "Set each market's MR equal to the common MC: 110−4QA=22 and 86−2.4QB=22. Thus QA=22.00 and QB=26.67. Substituting into the separate demands gives PA=$66.00 and PB=$54.00. Equal marginal revenues need not mean equal prices.",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation."
+  },
+  "P62G-MON-EL-035": {
+    "q": "Refer to the natural-monopoly graph. At Q=90, ATC is $22. Compare the unregulated profit-maximizing outcome with a requirement to charge P=MC. What are the quantity change and subsidy needed to cover the regulated loss?",
+    "options": [
+      "Output rises by 45 to 90; a $1,035 subsidy replaces all previous monopoly profit.",
+      "Output rises by 45 to 90; a $180 subsidy covers the regulated loss.",
+      "Output rises by 90 to 135; a $180 subsidy covers the regulated loss.",
+      "Output stays at 45; no subsidy is needed because marginal revenue equals marginal cost."
+    ],
+    "correctIndex": 1,
+    "feedback": "Unregulated MR=MC occurs at Q=45, with price $47. Marginal-cost pricing uses demand=MC at Q=90 and price $20. Output rises 45 units. At Q=90, loss is (ATC−P)Q=(22−20)×90=$180. Replacing lost monopoly profit is different from covering regulated costs.",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation."
+  },
+  "P62F-PC-EL-013": {
+    "q": "A competitive firm faces price $30 and initially has MC=10+Q. A technology improvement lowers MC to 5+Q and lowers its minimum ATC from $30 to $25. The improvement is available to all entrants, input prices remain fixed, and entry is free. Which short-run and long-run comparison follows?",
+    "options": [
+      "Output rises from 20 to 25 initially; entry later lowers price to $25 and firm output to 20.",
+      "Output rises from 20 to 25 initially; entry later leaves price at $30 because incumbents take price as given.",
+      "Output falls from 20 to 15 initially; entry later raises price to $35 to restore zero profit.",
+      "Output stays 20 initially; the lower minimum ATC affects profit but cannot change the P=MC choice."
+    ],
+    "correctIndex": 0,
+    "feedback": "At the original price, output changes from 30−10=20 to 30−5=25. Available profits invite entry. With unchanged input prices, long-run price reaches the new minimum ATC of $25; the firm's new MC equation then gives Q=25−5=20. Taking price as given does not mean market price stays fixed.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "P62F-PC-EL-017": {
+    "q": "A competitive firm faces price $20. At Q=10, P=MC but MC is falling: expanding to 11 raises variable cost by $18, and expanding from 11 to 12 raises it by $16. Fixed cost is unchanged. Which profit comparison evaluates a claim that Q=10 must maximize profit?",
+    "options": [
+      "Expanding to 12 raises profit by $6, so the falling-MC crossing is not a maximum.",
+      "Expanding to 12 raises profit by $6, but any P=MC crossing must still be a maximum.",
+      "Expanding to 12 lowers profit by $6 because the additional units have MC below price.",
+      "Expanding to 12 leaves profit unchanged because fixed cost does not change."
+    ],
+    "correctIndex": 0,
+    "feedback": "Two additional units bring $40 in revenue and $18+$16=$34 in variable cost, raising profit $6. Equality P=MC is insufficient at a falling-MC crossing: subsequent units can cost less than their revenue. The relevant interior maximum is on the rising part of MC.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "P62F-PC-EL-021": {
+    "q": "A competitive constant-cost industry initially has price and minimum ATC of $30. Market demand later becomes Qd=1,000−10P, and short-run price rises to $44. After free entry, each firm again produces 20 units at minimum ATC. What long-run market output, number of firms, and economic profit per firm follow?",
+    "options": [
+      "Output 700, 35 firms, and zero economic profit per firm.",
+      "Output 560, 28 firms, and zero economic profit per firm.",
+      "Output 700, 35 firms, and $280 profit per firm.",
+      "Output 560, 35 firms, and $280 profit per firm."
+    ],
+    "correctIndex": 0,
+    "feedback": "In a constant-cost industry, entry returns price to the unchanged $30 minimum ATC. Demand is then 1,000−10×30=700. At 20 units per firm, the industry contains 700/20=35 firms. P=minimum ATC implies zero economic profit.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "P62F-PC-EL-022": {
+    "q": "A competitive industry initially has price and minimum ATC of $20. Higher demand first raises price to $30. Entry then increases input costs, raising each firm's minimum ATC by 20%. Assume free entry and identical firms. A firm produces 50 units at its new minimum ATC. Which long-run result follows?",
+    "options": [
+      "Price $20, revenue $1,000, and zero profit; entry must restore the original price despite higher input costs.",
+      "Price $24, revenue $1,200, and zero profit; final price lies between the original and short-run prices.",
+      "Price $30, revenue $1,500, and $300 profit; entry leaves the short-run price unchanged.",
+      "Price $24, revenue $1,200, and $200 profit; the difference from the original ATC remains profit."
+    ],
+    "correctIndex": 1,
+    "feedback": "New minimum ATC is 20×1.20=$24. Free entry removes profit at P=$24, with revenue and total cost both 24×50=$1,200. The price ordering is $20<$24<$30 because expansion raises industry input costs.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "P62F-PC-EL-023": {
+    "q": "A competitive industry initially has price and minimum ATC of $40. Higher demand raises short-run price to $50. Industry expansion then creates external cost savings that lower each firm's minimum ATC by 15%. With free entry, a typical firm produces 100 units at the new minimum ATC. Which long-run result is consistent with this decreasing-cost industry?",
+    "options": [
+      "Price $46, firm revenue $4,600, and zero profit; external economies increase minimum ATC.",
+      "Price $40, firm revenue $4,000, and $600 profit; free entry preserves the original market price.",
+      "Price $34, firm revenue $3,400, and zero profit; final price is below the original price.",
+      "Price $34, firm revenue $3,400, and $1,600 profit; compare revenue with the short-run price."
+    ],
+    "correctIndex": 2,
+    "feedback": "Minimum ATC falls to 40×0.85=$34. Free entry brings price to $34, where revenue equals cost at $3,400 per firm. External economies allow the final price to fall below the original $40 despite the initial demand increase.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "P62F-PC-EL-024": {
+    "q": "A competitive firm has MC=10+Q. At price $30 it produces 20 units with ATC=$25. Free entry and unchanged input costs eventually bring price to minimum ATC of $24, attained at Q=14. Which profit and adjustment comparison follows?",
+    "options": [
+      "Current profit $100; entry raises market supply but keeps each firm's price and output fixed.",
+      "Current profit $600; entry lowers price and firm output to 14, where economic profit is zero.",
+      "Current profit $100; entry lowers price to $24 but the firm still produces 20 because it is a price taker.",
+      "Current profit $100; entry lowers price and firm output to 14, where economic profit is zero."
+    ],
+    "correctIndex": 3,
+    "feedback": "Current profit is (30−25)×20=$100. Entry increases market supply and lowers price. The incumbent follows P=MC, so at $24 it chooses Q=14. At minimum ATC, profit is zero. Price-taking firms respond to changes in the market price.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "P62F-PC-EL-025": {
+    "q": "A competitive firm produces 100 units where P=MC=$18, AVC=$12, and ATC=$22. Fixed cost is unavoidable this period. In the long run, unchanged cost conditions permit zero profit at minimum ATC of $20. Which current operating decision and industry adjustment follow?",
+    "options": [
+      "Operate with a $400 loss, better than a $1,000 shutdown loss; exit can raise price toward $20.",
+      "Shut down with no loss because price is below ATC; exit can raise price toward $20.",
+      "Operate with a $600 profit because price exceeds AVC; entry can lower price toward $12.",
+      "Operate with a $400 loss, better than a $600 shutdown loss; entry raises price toward $20."
+    ],
+    "correctIndex": 0,
+    "feedback": "Operating loss is (18−22)×100=−$400. Fixed cost is (22−12)×100=$1,000, which would remain under shutdown. The $600 contribution toward fixed cost makes operating preferable now. Long-run exit reduces market supply and raises price toward minimum ATC.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "P62F-PC-EL-026": {
+    "q": "A competitive market has demand P=100−Q and private supply P=20+Q. Production causes an unpriced external cost of $20 per unit. Which market output, efficient output, and welfare conclusion follow?",
+    "options": [
+      "Market output 40, efficient output 30; private P=MC proves all 40 units are socially efficient.",
+      "Market output 40, efficient output 30; private P=MC leaves 10 units of overproduction.",
+      "Market output 30, efficient output 40; external cost increases the efficient quantity.",
+      "Market output 40, efficient output 20; subtract the external cost directly from quantity."
+    ],
+    "correctIndex": 1,
+    "feedback": "Private equilibrium solves 100−Q=20+Q, giving Q=40. Social marginal cost is 40+Q; efficient output solves 100−Q=40+Q, giving Q=30. Competitive private choices do not internalize the external cost.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "P62F-PC-EL-027": {
+    "q": "A regulated plant-size rule leaves each competitive firm producing 100 units where P=MC=ATC=$30. A feasible alternative plant could produce 100 units at ATC=$24 with the same product quality. Ignore transition costs and externalities. What profit and cost-saving comparison evaluates efficiency?",
+    "options": [
+      "Current profit is $600, and the alternative removes it; P=MC proves productive efficiency.",
+      "Current profit is zero, and the alternative saves $6 per firm; only per-unit cost matters.",
+      "Current profit is zero, but the alternative saves $600 per firm; zero profit does not establish productive efficiency.",
+      "Current profit is zero, so changing plants cannot save resources while the market remains competitive."
+    ],
+    "correctIndex": 2,
+    "feedback": "Current profit is (30−30)×100=0. Producing the same 100 units at $6 less per unit saves $600 of resources. P=MC and zero economic profit do not by themselves prove that a firm's production method minimizes costs.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "P62F-PC-EL-028": {
+    "q": "Two competitive firms each produce 100 units where price and marginal cost are $20. Firm A has ATC=$16; Firm B has ATC=$19. An available management change would lower B's ATC to $16 at the same output, quality, and MC, with no implementation cost. Which comparison distinguishes profit from efficiency?",
+    "options": [
+      "A earns $400 and B $100; P=MC proves B has no avoidable resource costs.",
+      "Both earn zero because P=MC; improving B can change only distribution.",
+      "A earns $1,600 and B $1,900; improving B saves $300 while making price exceed MC.",
+      "A earns $400 and B $100; improving B saves $300 without changing the P=MC condition."
+    ],
+    "correctIndex": 3,
+    "feedback": "Profits are (20−16)×100=$400 and (20−19)×100=$100. The management change saves (19−16)×100=$300. Marginal allocation can satisfy P=MC while a firm still uses avoidable resources.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "P62F-PC-EL-029": {
+    "q": "Free entry initially supports 10 competitive firms, each producing 100 units at minimum ATC of $20. Greater demand brings entry, but scarce land raises minimum ATC to $25. In the new long-run equilibrium, demand is Qd=2,500−20P and each firm still produces 100 units at minimum ATC. Which comparison follows?",
+    "options": [
+      "Price rises to $25, output to 2,000, and firms to 20; input scarcity makes long-run supply slope upward.",
+      "Price stays $20, output rises to 2,100, and firms to 21; free entry prevents any price increase.",
+      "Price rises to $25, output to 2,000, and firms to 20; each firm earns $500 because original ATC was lower.",
+      "Price rises to $25, output stays 1,000, and firms stay 10; scarce inputs prevent all entry."
+    ],
+    "correctIndex": 0,
+    "feedback": "Long-run zero profit requires P=new minimum ATC=$25. Demand is then 2,500−20×25=2,000, supplied by 20 firms. Both industry output and price rise because expansion makes an input more costly.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "P62I-OLI-EL-029": {
+    "q": "A research-market policy raises expected innovation benefits by $500 million but increases annual monopoly deadweight loss by $80 million for four years. Additional research uses $100 million in real resources. Ignore discounting and other effects. Which welfare comparison and evidentiary limit follow?",
+    "options": [
+      "Estimated net benefit is $80 million; high concentration alone establishes that all consumers gain.",
+      "Estimated net benefit is $320 million; repeated price distortions are transfers and can be excluded.",
+      "Estimated net benefit is $80 million; the conclusion depends on whether the innovation estimate and duration are credible.",
+      "Estimated net loss is $80 million; any positive markup makes innovation benefits irrelevant."
+    ],
+    "correctIndex": 2,
+    "feedback": "Static losses total 4×80=$320 million. Subtract these and the $100 million research cost from $500 million of innovation benefits: net benefit is $80 million. A positive estimate is conditional on the evidence and assumptions, not proof supplied by concentration alone.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "P62I-OLI-EL-030": {
+    "q": "Three oligopolists raise prices from $20 to $24 after a shared input cost rises from $12 to $16. No information about communication or output restrictions is available. A report calls the common 20% price rise proof of collusion. Which calculation and inference are justified?",
+    "options": [
+      "The price-cost margin stays $8 and its share of price falls from 40% to about 33.3%; those facts prove collusion is impossible.",
+      "The price-cost margin rises $4 and its share of price rises to 50%; equal price changes prove an agreement.",
+      "The price-cost margin stays $8 and its share of price stays 40%; an unchanged dollar margin establishes competitive conduct.",
+      "The price-cost margin stays $8 and its share of price falls from 40% to about 33.3%; common costs can explain parallel pricing."
+    ],
+    "correctIndex": 3,
+    "feedback": "The dollar margin is 20−12=24−16=$8. As a share of price, it falls from 8/20=40% to 8/24≈33.3%. A common cost shock offers an alternative explanation for parallel prices. These data neither establish collusion nor prove it absent.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "PG4-MPT-EL-001": {
+    "q": "Refer to both panels. A central-bank action moves the economy from A to B. Which changes and explanation connect the two markets without confusing a curve shift with movement along a curve?",
+    "options": [
+      "Money rises 50, interest falls 2 percentage points, and real GDP rises 25; lower interest shifts money demand right.",
+      "Money rises 50, interest falls 2%, and real GDP rises 25; higher real GDP requires SRAS to shift right.",
+      "Money rises 50, interest falls 2 percentage points, and real GDP rises 25; spending shifts AD right while SRAS stays fixed.",
+      "Money rises 25, interest falls 2 percentage points, and real GDP rises 50; both panels show only movements along fixed curves."
+    ],
+    "correctIndex": 2,
+    "feedback": "Money rises from 100 to 150 and the interest rate falls from 6% to 4%, a 2-percentage-point drop along MD0. The spending response shifts AD0 to AD1. Real GDP rises from 100 to 125 and the price level from 50 to 56.25 along unchanged SRAS.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "PMOE-POL-EL-001": {
+    "q": "In the standard long-run open-economy model, initial national saving is $500 billion and domestic investment is $400 billion. A tariff changes import demand but leaves saving and investment unchanged by itself. A simultaneous deficit later reduces saving to $440 billion and investment to $370 billion. Which net-export comparison and tariff interpretation follow?",
+    "options": [
+      "NX falls from $100 billion to $70 billion; the tariff independently adds an equal surplus without changing NCO.",
+      "NX falls from $100 billion to $40 billion; investment must remain at its initial value after the deficit.",
+      "NX rises from $100 billion to $170 billion; lower imports and lower saving both increase net exports.",
+      "NX falls from $100 billion to $70 billion; exchange-rate adjustment offsets the tariff's direct trade effect at each given NCO."
+    ],
+    "correctIndex": 3,
+    "feedback": "The identity NX=NCO=S−I gives initial NX=500−400=$100 billion and final NX=440−370=$70 billion. The tariff alone cannot change equilibrium NX when NCO is fixed; exchange-rate appreciation offsets its direct effect. The deficit's saving and investment changes reduce NX by $30 billion.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "ECON-MG-ELITE-313": {
+    "q": "A market initially trades 1,000 units at $20. Demand elasticity is 0.25 and supply elasticity is 1.0. For a small $2 tax, use the local incidence approximation: the buyer share equals supply elasticity divided by the sum of the two elasticities. Estimate the quantity response using the initial price and demand elasticity. Which result follows?",
+    "options": [
+      "Buyers bear $1.60 and sellers $0.40; quantity falls about 20 units and revenue is about $1,960.",
+      "Buyers bear $1.60 and sellers $0.40; quantity falls about 80 units and revenue is about $1,840.",
+      "Buyers bear $0.40 and sellers $1.60; quantity falls about 20 units and revenue is about $1,960.",
+      "Buyers bear the full $2; quantity falls about 100 units and revenue is about $1,800."
+    ],
+    "correctIndex": 0,
+    "feedback": "The buyer share is 1/(1+0.25)=0.8, so buyers bear $1.60 and sellers $0.40. The buyer price rises about 1.60/20=8%; quantity falls about 0.25×8%=2%, or 20. Approximate revenue is $2×980=$1,960.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "ECON-MG-ELITE-317": {
+    "q": "A tax changes a market from price $40 and quantity 500 to buyer price $46, seller receipt $34, and quantity 420. Demand and supply are straight lines over this interval. What are the buyers' burden on continuing trades and the entire loss of consumer surplus?",
+    "options": [
+      "Burden rectangle $2,520; full surplus loss $2,760.",
+      "Burden rectangle $2,520; full surplus loss $5,040.",
+      "Burden rectangle $3,000; full surplus loss $3,240.",
+      "Burden rectangle $5,040; full surplus loss $5,520."
+    ],
+    "correctIndex": 0,
+    "feedback": "The buyer price increase is $6 per continuing unit, giving 6×420=$2,520. The lost-trade triangle is 0.5×(500−420)×6=$240. Total consumer surplus loss is $2,760. The rectangle alone excludes forgone gains on trades that disappear.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "ECON-MG-ELITE-318": {
+    "q": "A tax changes a market from price $40 and quantity 500 to buyer price $46, seller receipt $34, and quantity 420. Demand and supply are straight lines over this interval. What are the sellers' burden on continuing trades and the entire loss of producer surplus?",
+    "options": [
+      "Burden rectangle $2,520; full surplus loss $2,760.",
+      "Burden rectangle $2,520; full surplus loss $5,040.",
+      "Burden rectangle $3,000; full surplus loss $3,240.",
+      "Burden rectangle $5,040; full surplus loss $5,520."
+    ],
+    "correctIndex": 0,
+    "feedback": "The seller receipt decrease is $6 per continuing unit, giving 6×420=$2,520. The lost-trade triangle is 0.5×(500−420)×6=$240. Total producer surplus loss is $2,760. The rectangle alone excludes forgone gains on trades that disappear.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "ECON-MG-ELITE-326": {
+    "q": "A market faces Qd=1,000−20Pb and Qs=20Ps, where Pb and Ps are buyer and seller prices. A $10 per-unit tax creates Pb−Ps=10. An official forecasts tax revenue using the untaxed quantity. Which corrected revenue and forecast error follow?",
+    "options": [
+      "Actual revenue $4,000 rather than $5,000; quantity falls from 500 to 400.",
+      "Actual revenue $4,000 rather than $5,000; quantity stays 500 but some tax is a transfer.",
+      "Actual revenue $5,000 rather than $4,000; the legal tax rate fixes quantity.",
+      "Actual revenue $6,000 rather than $5,000; adding a tax increases the supply price and quantity."
+    ],
+    "correctIndex": 0,
+    "feedback": "Without tax, 1,000−20P=20P gives P=25 and Q=500. With Pb=Ps+10, 1,000−20(Ps+10)=20Ps gives Ps=20, Pb=30, and Q=400. Revenue is 10×400=$4,000, $1,000 below the unchanged-quantity forecast.",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation."
+  },
+  "P62I-OLI-EL-001": {
+    "q": "Refer to the payoff matrix, with payoffs ordered (Row, Column). Suppose the two oligopolists propose A/X. Calculate each firm's gain from deviating alone, then compare the resulting Nash equilibrium with the highest joint payoff.",
+    "options": [
+      "Row gains 3 and Column gains 6; equilibrium A/X totals 20, because the largest joint payoff prevents deviation.",
+      "Row gains 6 and Column gains 3; equilibrium B/X totals 17, and Column has no profitable response.",
+      "Row gains 3 and Column gains 6; equilibrium B/Y totals 12, below the joint maximum 20 at A/X.",
+      "Row gains 3 and Column gains 6; equilibrium B/Y totals 12, which is also the largest joint payoff."
+    ],
+    "correctIndex": 2,
+    "feedback": "Starting at A/X, Row gains 15−12=3 by switching to B, and Column gains 14−8=6 by switching to Y. Row also prefers B against Y (6>3), and Column prefers Y against B (6>2). Thus B/Y is the unique equilibrium, with total 12; A/X totals 20. Joint payoff maximization does not remove unilateral incentives.",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph."
+  },
+  "P62I-OLI-EL-003": {
+    "q": "Refer to the payoff matrix, with payoffs ordered (Row, Column). Suppose the two oligopolists propose A/X. Calculate each firm's gain from deviating alone, then compare the resulting Nash equilibrium with the highest joint payoff.",
+    "options": [
+      "Row gains 3 and Column gains 5; equilibrium B/Y totals 11, below the joint maximum 16 at A/X.",
+      "Row gains 3 and Column gains 5; equilibrium A/X totals 16, because the largest joint payoff prevents deviation.",
+      "Row gains 5 and Column gains 3; equilibrium B/X totals 15, and Column has no profitable response.",
+      "Row gains 3 and Column gains 5; equilibrium B/Y totals 11, which is also the largest joint payoff."
+    ],
+    "correctIndex": 0,
+    "feedback": "Starting at A/X, Row gains 12−9=3 by switching to B, and Column gains 12−7=5 by switching to Y. Row also prefers B against Y (6>4), and Column prefers Y against B (5>3). Thus B/Y is the unique equilibrium, with total 11; A/X totals 16. Joint payoff maximization does not remove unilateral incentives.",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph."
+  },
+  "P62I-OLI-EL-005": {
+    "q": "Refer to the payoff matrix, with payoffs ordered (Row, Column). Suppose the two oligopolists propose A/X. Calculate each firm's gain from deviating alone, then compare the resulting Nash equilibrium with the highest joint payoff.",
+    "options": [
+      "Row gains 4 and Column gains 4; equilibrium A/X totals 26, because the largest joint payoff prevents deviation.",
+      "Row gains 4 and Column gains 4; equilibrium B/X totals 21, and Column has no profitable response.",
+      "Row gains 4 and Column gains 4; equilibrium B/Y totals 16, below the joint maximum 26 at A/X.",
+      "Row gains 4 and Column gains 4; equilibrium B/Y totals 16, which is also the largest joint payoff."
+    ],
+    "correctIndex": 2,
+    "feedback": "Starting at A/X, Row gains 17−13=4 by switching to B, and Column gains 17−13=4 by switching to Y. Row also prefers B against Y (8>4), and Column prefers Y against B (8>4). Thus B/Y is the unique equilibrium, with total 16; A/X totals 26. Joint payoff maximization does not remove unilateral incentives.",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph."
+  },
+  "P62I-OLI-EL-009": {
+    "q": "Refer to the payoff matrix, with payoffs ordered (Row, Column). Suppose the two oligopolists propose A/X. Calculate each firm's gain from deviating alone, then compare the resulting Nash equilibrium with the highest joint payoff.",
+    "options": [
+      "Row gains 4 and Column gains 4; equilibrium A/X totals 28, because the largest joint payoff prevents deviation.",
+      "Row gains 4 and Column gains 4; equilibrium B/X totals 23, and Column has no profitable response.",
+      "Row gains 4 and Column gains 4; equilibrium B/Y totals 18, below the joint maximum 28 at A/X.",
+      "Row gains 4 and Column gains 4; equilibrium B/Y totals 18, which is also the largest joint payoff."
+    ],
+    "correctIndex": 2,
+    "feedback": "Starting at A/X, Row gains 18−14=4 by switching to B, and Column gains 18−14=4 by switching to Y. Row also prefers B against Y (9>5), and Column prefers Y against B (9>5). Thus B/Y is the unique equilibrium, with total 18; A/X totals 28. Joint payoff maximization does not remove unilateral incentives.",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph."
+  },
+  "P62I-OLI-EL-007": {
+    "q": "Refer to the matrix, with payoffs ordered (Row, Column). Find all pure-strategy Nash equilibria and compare their joint payoffs. Would maximizing the joint payoff eliminate the other equilibrium?",
+    "options": [
+      "A/X and B/Y are equilibria, totaling 18 and 19; the higher total at B/Y does not eliminate A/X.",
+      "A/X and B/Y are equilibria, totaling 18 and 19; the higher total at B/Y makes A/X fail the Nash condition.",
+      "A/Y and B/X are equilibria, totaling 2 and 4; the higher total at B/X does not eliminate A/Y.",
+      "Only B/Y is an equilibrium, totaling 19; a cell with a smaller joint payoff cannot be stable."
+    ],
+    "correctIndex": 0,
+    "feedback": "At A/X, Row prefers 11 to 2 and Column prefers 7 to 1. At B/Y, Row prefers 7 to 1 and Column prefers 12 to 2. Both are mutual best responses. Their totals are 18 and 19. Nash stability concerns unilateral deviations, not the ranking of joint totals.",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph."
+  },
+  "P62H-MCMP-EL-034": {
+    "q": "For the monopolistically competitive firm shown, calculate the firm’s markup over marginal cost and its excess capacity. What does each tell us about allocative and productive efficiency?",
+    "correctIndex": 2,
+    "reason": "Retain multistep graph calculations and policy interpretation; explicitly name the market structure for mixed quests."
+  },
+  "P62H-MCMP-EL-037": {
+    "q": "For the monopolistically competitive firm shown, a policymaker says zero profit rules out further gains from trade. Calculate the markup and excess capacity shown. What can the graph establish about efficiency, and what information about cost recovery and product variety would a policy judgment still require?",
+    "correctIndex": 1,
+    "reason": "Retain multistep graph calculations and policy interpretation; explicitly name the market structure for mixed quests."
+  },
+  "P62H-MCMP-L-095": {
+    "q": "For the monopolistically competitive firm shown, a proposal would require output at minimum ATC and price equal to MC. Calculate the firm’s current markup and excess capacity. What do these reveal, and what limits on the graph’s evidence matter when evaluating the proposal?",
+    "correctIndex": 0,
+    "reason": "Retain multistep graph calculations and policy interpretation; explicitly name the market structure for mixed quests."
+  },
+  "P62F-PC-EL-038": {
+    "q": "For the competitive price-taking firm shown, using the firm panel, calculate current economic profit. Assume free entry, identical firms and unchanged input prices and cost curves. How will entry affect market supply, the price facing each firm, and incumbent output until profit is zero?",
+    "correctIndex": 2,
+    "reason": "Retain multistep graph calculations and policy interpretation; explicitly name the market structure for mixed quests."
+  },
+  "LG-Q-9055": {
+    "q": "Assume prices stay fixed and firms meet changes in spending by changing output, with no taxes or imports. Monetary easing lowers interest rates and raises autonomous investment $40 billion. A separate loss of business confidence reduces autonomous investment $25 billion. MPC is 0.5. Which policy contribution and net output change follow?",
+    "options": [
+      "Monetary contribution +$80 billion; net change +$80 billion because the rate reduction offsets confidence automatically.",
+      "Monetary contribution +$40 billion; net change +$15 billion because induced spending is already included.",
+      "Monetary contribution +$80 billion; net change +$55 billion after subtracting only the initial confidence loss.",
+      "Monetary contribution +$80 billion; net change +$30 billion after the confidence shock."
+    ],
+    "correctIndex": 3,
+    "feedback": "The multiplier is 2. Monetary easing contributes 40×2=$80 billion; the confidence shock contributes −25×2=−$50 billion. Net output rises $30 billion. Both initial autonomous changes must be treated at the same stage.",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph."
+  },
+  "LG-Q-9059": {
+    "q": "Assume prices stay fixed, MPC is 0.8, and there are no taxes or imports. A temporary monetary contraction reduces autonomous investment $40 billion. A fiscal program would add $200 billion to total spending after all induced effects. Compare immediate implementation with implementation after the original output gap has closed and no new gap exists.",
+    "options": [
+      "Immediate implementation offsets a $200 billion loss; delayed implementation also leaves output unchanged because the totals are equal.",
+      "Immediate implementation adds $800 billion net; delayed implementation adds $1,000 billion after multiplying the fiscal total.",
+      "Immediate implementation leaves a $160 billion gain; delayed implementation adds $200 billion because investment has no multiplier.",
+      "Immediate implementation offsets a $200 billion loss; delayed implementation instead adds $200 billion beyond the recovered baseline."
+    ],
+    "correctIndex": 3,
+    "feedback": "The monetary effect is −40/(1−0.8)=−$200 billion. The fiscal amount is already a total, so immediate implementation offsets it. After recovery, that original negative effect is absent; the same fiscal program adds $200 billion relative to the recovered baseline.",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph."
+  },
+  "LG-Q-9072": {
+    "q": "Initially, money demand is Md=500−20r and money supply is 300, with r measured in percentage points. The central bank cuts supply to 260, while a payment innovation lowers demand to Md=440−20r. Investment changes by −$10 billion for each percentage-point change in r. MPC is 0.5. With fixed prices and no other spending changes, which net result follows?",
+    "options": [
+      "The rate falls from 10% to 9%, investment rises $10 billion, and total spending rises $20 billion.",
+      "The rate rises from 10% to 12%, investment falls $20 billion, and total spending falls $40 billion.",
+      "The rate falls from 10% to 9%, investment rises $10 billion, and total spending rises only $10 billion.",
+      "The rate stays 10%, investment is unchanged, and the two money-market shifts cancel exactly."
+    ],
+    "correctIndex": 0,
+    "feedback": "Initially 500−20r=300 gives r=10. After both shifts, 440−20r=260 gives r=9. Lower money demand more than offsets the supply cut. The one-point rate decline raises investment $10 billion and, with multiplier 2, spending $20 billion.",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph."
+  },
+  "P52B-MODL-EL-002": {
+    "q": "Two models fit an office's original 30-minute average wait. Model A attributes 20 minutes to clustered arrivals and 10 to service time; Model B attributes 5 to clustering and 25 to service time. Appointments eliminate the modeled clustering delay without changing service speed. The observed wait becomes 11 minutes. Which prediction comparison best evaluates the models?",
+    "options": [
+      "A predicts 10 minutes and B 25; the evidence favors A's mechanism, without proving every part of A correct.",
+      "A predicts 10 minutes and B 25; the evidence proves A's assumptions literal and eliminates all other mechanisms.",
+      "A predicts 20 minutes and B 5; the evidence favors B because 11 lies nearer its prediction.",
+      "Both predict 30 minutes; matching the original wait means the intervention cannot distinguish them."
+    ],
+    "correctIndex": 0,
+    "feedback": "Removing the clustering component leaves A with 30−20=10 minutes and B with 30−5=25. An observed 11 is much closer to A. Intervention evidence discriminates between mechanisms that fit the same original outcome, but does not prove a complete model uniquely true.",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph."
+  },
+  "P76-MODL-EL-004": {
+    "q": "Two models both predict a policy will raise employment from 1,000 to 1,100, which occurs. Model A attributes 80 jobs to training and 20 to hiring subsidies; Model B attributes 20 to training and 80 to subsidies. A new trial removes subsidies while holding training and other conditions fixed. Employment becomes 1,075. Which assessment combines the original and trial evidence?",
+    "options": [
+      "Original outcomes prove both mechanisms; the new trial cannot distinguish models that predicted the original total.",
+      "Original outcomes do not distinguish the models; trial predictions of 1,080 versus 1,020 favor A's mechanism.",
+      "Original outcomes do not distinguish the models; trial predictions of 1,020 versus 1,080 favor B's mechanism.",
+      "Original outcomes favor A because its training component is larger; the trial proves all of A's assumptions exact."
+    ],
+    "correctIndex": 1,
+    "feedback": "Both models fit the initial 100-job gain. Without subsidies, A predicts an 80-job gain and B a 20-job gain, giving 1,080 and 1,020. The observed 1,075 favors A's mechanism. Prediction success on the original total alone could not establish that mechanism.",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph."
+  },
+  "P62I-OLI-EL-027": {
+    "q": "Before a merger, two close rivals charge $100 and have marginal cost $60. Verified efficiencies would lower MC by 20%. Analysts estimate that 50% of the dollar saving reaches buyers, while lost rivalry independently adds $9 to price. Treat those effects as additive estimates. Which predicted price and interpretation follow?",
+    "options": [
+      "Price rises to $103; a real cost saving can coexist with a consumer price increase.",
+      "Price falls to $94; the cost-saving channel alone determines the merger's price effect.",
+      "Price falls to $89; a 20% marginal-cost reduction is a 20% price reduction before rivalry effects.",
+      "Price rises to $109; efficiencies affect fixed costs and cannot offset pricing incentives."
+    ],
+    "correctIndex": 0,
+    "feedback": "MC falls by 0.20×60=$12. Half passed through reduces price $6, while weaker rivalry adds $9. Predicted price is 100−6+9=$103. The estimate depends on both channels and their evidence, not the efficiency percentage alone.",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph."
+  },
+  "P62I-OLI-EL-028": {
+    "q": "A platform's network effects create an $8 monthly user benefit relative to a new rival. A user can retain that benefit while also using the rival at a $2 monthly inconvenience cost. The rival offers a $5 monthly service benefit unavailable on the incumbent. Ignore other differences. Which user decision and market-power inference follow?",
+    "options": [
+      "Using both creates a net extra $3 benefit; the incumbent therefore has no network advantage or possible market power.",
+      "Using both creates a net extra $3 benefit; network effects need not prevent the rival from attracting users.",
+      "Using only the incumbent is better by $5; joining a second platform necessarily sacrifices the $8 network benefit.",
+      "Using only the rival is better by $3; using both requires paying the $8 network benefit as a fee."
+    ],
+    "correctIndex": 1,
+    "feedback": "Keeping the incumbent while adding the rival preserves the $8 network benefit. Adding the rival yields 5−2=$3 of extra value. This ability to use multiple platforms weakens exclusivity from network effects, but does not prove market power absent.",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph."
+  },
+  "P77-PVN-EL-023": {
+    "q": "Two analysts assess a preservation plan costing $2 million. A permanent record loss would cause $20 million of damage. Analyst A estimates that the plan lowers loss probability from 20% to 5%; Analyst B estimates a decline from 10% to 5%. Both use expected monetary benefits, but they also disagree on how much to value delayed public access. Which comparison separates their factual and value disagreements?",
+    "options": [
+      "A estimates $1 million net preservation benefit and B −$1 million; different numerical probabilities are themselves ethical rankings.",
+      "Both estimate $1 million net benefit; only their values can explain different recommendations.",
+      "A estimates $1 million net preservation benefit and B −$1 million; the probabilities are factual judgments, while the access weights are value judgments.",
+      "A estimates $3 million net benefit and B $1 million; plan cost is a value judgment and should not enter factual calculations."
+    ],
+    "correctIndex": 2,
+    "feedback": "A estimates avoided loss of (0.20−0.05)×20=$3 million, netting $1 million after cost. B estimates (0.10−0.05)×20=$1 million, netting −$1 million. Probabilities are empirical assessments; how delayed access is weighted is normative.",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph."
+  }
+}

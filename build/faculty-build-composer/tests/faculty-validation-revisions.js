@@ -45,3 +45,4 @@ function applyApprovedRevisions(historical){const q=prior.applyApprovedRevisions
 function approvedQuestion(id){return changes.has(String(id))?structuredClone(changes.get(String(id)).afterRecord):prior.approvedQuestion(id);}
 function beforeApprovedRevisions(id,fallback){return prior.beforeApprovedRevisions(id,changes.has(String(id))?structuredClone(changes.get(String(id)).beforeRecord):fallback);}
 module.exports=require('./easy-pool-review-revisions.js').wrap({...prior,approvedIds:new Set([...prior.approvedIds,...changes.keys()]),assertCurrentLibrary,applyApprovedRevisions,approvedQuestion,beforeApprovedRevisions,beforeFacultyValidationLibrary,facultyValidationLedger:ledger});
+module.exports=require('./elite-pool-revisions.js').wrap(module.exports);

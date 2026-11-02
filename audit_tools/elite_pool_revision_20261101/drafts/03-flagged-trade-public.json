@@ -1,0 +1,255 @@
+{
+  "40013": {
+    "q": "Refer to the graph. The initial equilibrium is A, where D0 intersects S0 at $10 and 200 thousand tickets. Stronger buyer preferences and higher theater operating costs move the market to B. Which statement combines the general prediction with the particular outcome shown?",
+    "options": [
+      "Price is generally ambiguous and quantity must rise; here price rises $4 and quantity is unchanged.",
+      "Price must rise and quantity is generally ambiguous; here price rises $4 and quantity is unchanged.",
+      "Price must rise and quantity must stay fixed; here price rises $4 because the shifts always cancel in quantity.",
+      "Price is generally ambiguous and quantity must fall; here price rises $4 and quantity falls 200 thousand."
+    ],
+    "correctIndex": 1,
+    "feedback": "Stronger preferences increase demand; higher costs reduce supply. Both raise price, but their quantity effects oppose each other. The graph shows a particular offset: price rises from $10 to $14 while quantity stays at 200 thousand. Unchanged quantity is not a general requirement.",
+    "reason": "Supply the initial equilibrium and require event inference plus general-versus-specific reasoning."
+  },
+  "42126": {
+    "q": "Each of 100 units of production creates $50 in private gains from trade. The first 60 units cause $20 of external harm each; the final 40 cause $80 each. There are no other effects or enforcement costs. Compared with a total production ban, what is the welfare effect of allowing only the first 60 units?",
+    "options": [
+      "Welfare is $600 higher because the first 60 units' gains are offset by all 100 units' harm.",
+      "Welfare is $3,000 higher because allowing production restores private gains without social costs.",
+      "Welfare is $1,800 higher because each permitted unit creates $30 in net social benefit.",
+      "Welfare is $1,200 lower because any positive external harm makes a production ban efficient."
+    ],
+    "correctIndex": 2,
+    "feedback": "For each of the first 60 units, net social benefit is 50−20=$30, giving $1,800. Each of the final 40 has net benefit 50−80=−$30 and should be excluded in this example. A ban avoids harm but also sacrifices beneficial low-harm trades.",
+    "reason": "Quantify marginal social gains and distinguish selective regulation from a blanket ban."
+  },
+  "42127": {
+    "q": "Two firms must jointly eliminate four units of pollution. Firm A's successive abatement costs are $10, $20, $30, and $40; Firm B's are $40, $50, $60, and $70. A rule requires each firm to eliminate two units. Which assessment compares this rule with the least-cost way to meet the same target?",
+    "options": [
+      "The rule costs $100, matching the least-cost allocation because both firms make equal cuts.",
+      "The rule costs $120, which is $20 below assigning all four reductions to A.",
+      "The rule costs $120, and lowering the total target is the only way to save $20.",
+      "The rule costs $120; reallocating reductions can save $20 without changing total pollution."
+    ],
+    "correctIndex": 3,
+    "feedback": "Equal cuts cost (10+20)+(40+50)=$120. The four cheapest reductions cost 10+20+30+40=$100; the fourth can be at either firm because of the tie. Reallocation saves $20 while preserving the aggregate target. Meeting the target does not establish cost effectiveness.",
+    "reason": "Add marginal abatement schedules and a feasible least-cost comparison."
+  },
+  "42156": {
+    "q": "A workshop's filter costs $400 and avoids $900 of harm to one neighbor. Information is complete, bargaining is costless, rights are enforceable, and there are no wealth effects. If the workshop holds the right to emit, the neighbor offers $600 for the filter. If the neighbor holds the right to clean air, the workshop must install it at its own expense. Which comparison follows?",
+    "options": [
+      "The filter is installed in both cases; with emission rights, the workshop gains $200 and the neighbor gains $300 from bargaining.",
+      "The filter is installed in both cases; with emission rights, the workshop gains $600 and the neighbor gains $300 from bargaining.",
+      "The filter is installed only with clean-air rights; a $600 payment cannot cover a $400 filter.",
+      "The filter is installed only with emission rights; clean-air rights eliminate the $500 joint gain."
+    ],
+    "correctIndex": 0,
+    "feedback": "With emission rights, the workshop receives $600 and pays $400, gaining $200 relative to emitting. The neighbor avoids $900 of harm for $600, gaining $300. With clean-air rights, the workshop installs the filter at its own cost. The efficient physical outcome stays the same, while rights change distribution.",
+    "reason": "Add a concrete bargaining payment and calculate each party's gain."
+  },
+  "42157": {
+    "q": "A factory can install a $300 filter that prevents $800 of harm to a neighboring farm. Bargaining is costless, information is complete, and there are no wealth effects. Compare factory emission rights with farm clean-air rights. Which payment range and allocation are consistent with efficient bargaining?",
+    "options": [
+      "With emission rights, the farm can pay $0–$300 for filtering; with clean-air rights, the factory can pay $300 to emit.",
+      "With emission rights, the farm can pay $300–$800 for filtering; with clean-air rights, the factory filters without buying permission to emit.",
+      "With emission rights, the farm can pay $300–$800 for filtering; with clean-air rights, a $500 payment makes emission efficient.",
+      "With emission rights, the farm must pay exactly $500 for filtering; with clean-air rights, the physical allocation must change."
+    ],
+    "correctIndex": 1,
+    "feedback": "Under emission rights, any payment between the $300 filter cost and $800 avoided harm can support filtering. Under clean-air rights, the factory would pay at most $300 to avoid filtering, but the farm needs at least $800 to accept the harm, so no mutually beneficial emission agreement exists. Filtering remains efficient; rights alter payment and distribution.",
+    "reason": "Require bargaining bounds under both assignments of rights."
+  },
+  "42166": {
+    "q": "Refer to the graph. A council cuts siren provision from 40 to 30. Use the straight lines to calculate costs and benefits as areas over this interval. With no other effects, which budget saving and welfare change follow?",
+    "options": [
+      "The council saves $200,000 and welfare rises $25,000 because the removed sirens cost more than their benefits.",
+      "The council saves $225,000 and welfare falls $200,000 because all spending is a social benefit.",
+      "The council saves $200,000 and welfare falls $25,000 because lost benefits total $225,000.",
+      "The council saves $200,000 and welfare is unchanged because the original marginal benefit equaled cost."
+    ],
+    "correctIndex": 2,
+    "feedback": "Ten fewer sirens save 10×$20,000=$200,000. MSB falls from $25,000 at 30 to $20,000 at 40, so lost benefits are 10×(25,000+20,000)/2=$225,000. Net welfare falls $25,000. Equality at the original endpoint does not mean the entire removed interval had zero net benefit.",
+    "reason": "Calculate a welfare area and distinguish fiscal saving from efficiency."
+  },
+  "42176": {
+    "q": "Refer to the graph. Private incentives provide 40 hours of radio programming. A proposal funds expansion to 80 hours using lump-sum taxes and $10,000 of real administrative resources. Use the straight-line areas and ignore other effects. What is the net social gain, and why would private provision stop too soon?",
+    "options": [
+      "$70,000; benefits to listeners beyond those captured privately justify the additional hours.",
+      "$70,000; the private-benefit curve remains above marginal cost through all 80 hours.",
+      "$150,000; the expansion's full social benefit is a net gain before administration.",
+      "$80,000; administration is a transfer and therefore uses no social resources."
+    ],
+    "correctIndex": 0,
+    "feedback": "From 40 to 80, MSB falls from $6,000 to $2,000 per hour while MC stays $2,000. The net benefit before administration is the triangle 0.5×40×$4,000=$80,000. Subtract $10,000 to obtain $70,000. Private benefit is below MC after 40 hours, but MSB exceeds MC until 80.",
+    "reason": "Add welfare and administrative-cost calculation while preserving the private-underprovision mechanism."
+  },
+  "42189": {
+    "q": "A council budgets $700 million to expand the flood protection shown in the graph from 10 to 30 miles, with no fixed or financing costs. Which expansion cost, net benefit, and budget assessment follow?",
+    "options": [
+      "Cost $600 million and net benefit $200 million; the budget is sufficient and the expansion raises welfare.",
+      "Cost $500 million and net benefit $300 million; the budget is sufficient and the expansion raises welfare.",
+      "Cost $500 million and net benefit $300 million; the remaining budget makes expansion beyond 30 miles efficient.",
+      "Cost $600 million and net benefit $200 million; the remaining budget makes expansion beyond 30 miles efficient."
+    ],
+    "correctIndex": 1,
+    "feedback": "MC rises from $20 million to $30 million per mile, so expansion cost is 20×(20+30)/2=$500 million. MSB falls from $50 million to $30 million, so benefit is 20×(50+30)/2=$800 million. Net gain is $300 million. Beyond 30 miles MC exceeds MSB, even though the budget has funds left.",
+    "reason": "Remove the unnecessary introductory clause and retain multistep graph-area reasoning."
+  },
+  "43217": {
+    "q": "Refer to the graph. At a temporary real interest rate of 15%, the straight supply curve passes through quantity 280 and the demand curve reaches quantity 0. A is at 8% and quantity 140. Which planned imbalance and adjustment return the market toward A?",
+    "options": [
+      "Excess supply 280; a falling rate shifts supply left by 140 and demand right by 140.",
+      "Excess supply 280; a falling rate reduces saving supplied by 140 and raises investment demanded by 140.",
+      "Excess demand 280; a rising rate reduces investment demanded by 140 and raises saving supplied by 140.",
+      "Excess supply 140; a falling rate reduces saving supplied by 280 while investment stays unchanged."
+    ],
+    "correctIndex": 1,
+    "feedback": "At 15%, planned saving is 280 and planned investment is 0, so excess supply is 280. As the rate falls to 8%, quantity supplied falls to 140 and quantity demanded rises to 140. Both adjustments are movements along unchanged curves. The coordinates are stated explicitly so estimating faint graph intersections is unnecessary.",
+    "reason": "Use clearly identified endpoints and require imbalance plus two adjustment calculations.",
+    "commonError": "Confusing movements along loanable-funds curves with shifts when the interest rate adjusts."
+  },
+  "43307": {
+    "q": "Refer to the graph. The market begins at A. Households increase saving at every real interest rate, while improved business prospects raise desired investment. The new equilibrium is B. Compare the combined outcome with the outcome if only business prospects had improved.",
+    "options": [
+      "Both events give 80 units at 6%; investment alone gives 80 units at 6%, so extra saving has no effect.",
+      "Both events give 80 units at 6%; investment alone gives 60 units at 5%, so extra saving raises the rate.",
+      "Both events give 60 units at 7%; investment alone gives 80 units at 6%, so extra saving lowers quantity.",
+      "Both events give 80 units at 6%; investment alone gives 60 units at 7%, so extra saving prevents a rate rise."
+    ],
+    "correctIndex": 3,
+    "feedback": "Higher saving moves S0 to S1; stronger business prospects move D0 to D1. Their intersection B is 80 units at 6%. With only stronger investment demand, D1 intersects S0 at 60 units and 7%. Saving's contribution is visible in the counterfactual even though the combined rate remains at 6%.",
+    "reason": "Infer shifts from events and use a graph counterfactual."
+  },
+  "ECON-SP-FINALBOSS-4003": {
+    "q": "Assume the price level stays fixed and firms meet changes in spending by changing output. Government purchases rise $50, MPC is 0.75, and there are no taxes or imports in the multiplier. Higher interest rates then reduce total spending by $100, including all induced effects. Central-bank accommodation would remove half this crowding-out effect without changing government purchases. Which net output comparison follows?",
+    "options": [
+      "Without accommodation: +$200; with it: +$200, because government purchases have the same multiplier.",
+      "Without accommodation: +$100; with it: +$150, because less private spending is crowded out.",
+      "Without accommodation: −$200; with it: $0, because each total crowding-out effect is multiplied again.",
+      "Without accommodation: +$100; with it: +$300, because accommodation doubles government purchases."
+    ],
+    "correctIndex": 1,
+    "feedback": "The gross spending effect is 50/(1−0.75)=$200. Subtract the total crowding-out effect once: 200−100=$100. Accommodation reduces the offset to $50, leaving $150. It changes the private-spending offset, not the purchases impulse.",
+    "reason": "Explain fixed prices and compare total effects at the same stage."
+  },
+  "ECON-SP-FINALBOSS-4022": {
+    "q": "Assume the price level stays fixed and firms meet changes in spending by changing output. Government purchases rise $170, MPC is 0.75, and there are no taxes or imports in the multiplier. Higher interest rates then reduce total spending by $340, including all induced effects. Central-bank accommodation would remove half this crowding-out effect without changing government purchases. Which net output comparison follows?",
+    "options": [
+      "Without accommodation: +$340; with it: +$510, because less private spending is crowded out.",
+      "Without accommodation: +$680; with it: +$680, because government purchases have the same multiplier.",
+      "Without accommodation: −$680; with it: $0, because each total crowding-out effect is multiplied again.",
+      "Without accommodation: +$340; with it: +$1020, because accommodation doubles government purchases."
+    ],
+    "correctIndex": 0,
+    "feedback": "The gross spending effect is 170/(1−0.75)=$680. Subtract the total crowding-out effect once: 680−340=$340. Accommodation reduces the offset to $170, leaving $510. It changes the private-spending offset, not the purchases impulse.",
+    "reason": "Explain fixed prices and compare total effects at the same stage."
+  },
+  "ECON-SP-LEGENDARYBOSS-9118": {
+    "q": "Assume the price level stays fixed and firms meet changes in spending by changing output. Government purchases rise $290, MPC is 0.75, and there are no taxes or imports in the multiplier. Higher interest rates then reduce total spending by $580, including all induced effects. Central-bank accommodation would remove half this crowding-out effect without changing government purchases. Which net output comparison follows?",
+    "options": [
+      "Without accommodation: +$580; with it: +$870, because less private spending is crowded out.",
+      "Without accommodation: +$1160; with it: +$1160, because government purchases have the same multiplier.",
+      "Without accommodation: −$1160; with it: $0, because each total crowding-out effect is multiplied again.",
+      "Without accommodation: +$580; with it: +$1740, because accommodation doubles government purchases."
+    ],
+    "correctIndex": 0,
+    "feedback": "The gross spending effect is 290/(1−0.75)=$1160. Subtract the total crowding-out effect once: 1160−580=$580. Accommodation reduces the offset to $290, leaving $870. It changes the private-spending offset, not the purchases impulse.",
+    "reason": "Explain fixed prices and compare total effects at the same stage."
+  },
+  "P62D-ITP-EL-001": {
+    "q": "Import access raises consumer surplus by $640 and reduces producer surplus by $390. A proposal uses a domestic lump-sum transfer of $390 to restore producers and consumes $35 in real adjustment resources. Ignoring other effects, which result separates efficiency from distribution?",
+    "options": [
+      "Net national gain $215; the compensation itself creates additional surplus worth $390.",
+      "Net national gain $250; both the transfer and adjustment resources merely change recipients.",
+      "Net national gain $215; compensation redistributes gains, while adjustment resources reduce them.",
+      "Net national loss $175; both producers' initial loss and their compensation must be subtracted."
+    ],
+    "correctIndex": 2,
+    "feedback": "Trade creates 640−390=$250 in surplus. Domestic compensation is a transfer, not another gain or resource cost. Subtract the $35 resource cost to obtain $215. Producers are compensated because the proposal explicitly provides the transfer.",
+    "reason": "Pair the $215 result with competing interpretations to remove the unique-number clue."
+  },
+  "P62D-ITP-EL-008": {
+    "q": "A small importing country faces a world price of $30. Domestic demand is Qd=100−P and supply is Qs=P−20. A $10 tariff and a quota of 40 imports initially produce the same outcome. Demand then becomes Qd=120−P; supply and world price remain unchanged. Which tariff-versus-quota comparison follows?",
+    "options": [
+      "Tariff: $40 and 40 imports; quota: $50 and 60 imports.",
+      "Tariff: $40 and 60 imports; quota: $50 and 40 imports.",
+      "Tariff: $40 and 60 imports; quota: $40 and 40 imports.",
+      "Tariff: $40 and 40 imports; quota: $40 and 60 imports."
+    ],
+    "correctIndex": 1,
+    "feedback": "The tariff keeps domestic price at $40, where demand is 80 and domestic supply is 20, so imports rise to 60. Under the quota, 120−P−(P−20)=40, giving P=$50 and imports of 40. Knowing world price plus tariff alone no longer singles out an option.",
+    "reason": "Hold the easy tariff-price fact constant and require import-gap and quota-price reasoning."
+  },
+  "P62D-ITP-EL-009": {
+    "q": "A quota allows 36 imports at a domestic price of $29 while the world price stays $24. Consumers lose $310 and domestic producers gain $94. Foreign exporters receive the quota rights free. Relative to free trade, what are the national welfare loss and global distortion loss, ignoring other effects?",
+    "options": [
+      "National loss $216; global distortion loss $180.",
+      "National loss $36; global distortion loss $36.",
+      "National loss $216; global distortion loss $36.",
+      "National loss $36; global distortion loss $216."
+    ],
+    "correctIndex": 2,
+    "feedback": "Quota rents are (29−24)×36=$180 and go abroad. National surplus falls 310−94=$216. Of this, $180 is transferred to foreign exporters; only $216−180=$36 is destroyed globally. If rents stayed domestic, national loss would instead be $36.",
+    "reason": "Pair national and global amounts so rent incidence must be reasoned through."
+  },
+  "P62D-ITP-EL-010": {
+    "q": "Two quota systems create the same domestic price and import quantity. Quota rents total $240. System A auctions the rights to domestic importers and uses $20 of real resources to administer the auction. System B gives the rights free to domestic importers at no resource cost. Ignoring other effects, which comparison of A with B is correct?",
+    "options": [
+      "Government receives $240; national surplus is $220 higher because receipts create new resources.",
+      "Government receives $220; national surplus is unchanged because administration is a domestic transfer.",
+      "Government receives $240; national surplus is unchanged because both systems retain all rents.",
+      "Government receives $240; national surplus is $20 lower because administration uses real resources."
+    ],
+    "correctIndex": 3,
+    "feedback": "Competitive auction receipts transfer the $240 domestic rent from importers to government. That changes who receives surplus without creating it. The additional $20 of real resource use reduces national surplus by $20 compared with free domestic allocation.",
+    "reason": "Make alternatives compare revenue, transfers, and resource costs on equal terms."
+  },
+  "P62D-ITP-EL-017": {
+    "q": "A country imposes a $10 import tariff. The foreign export price falls from $50 to $46, so its domestic price becomes $56. It still imports 100 units. The tariff creates $250 in domestic production and consumption distortion losses. Ignoring other effects, which national-welfare calculation and model interpretation follow?",
+    "options": [
+      "A $750 gain; add all $1,000 of tariff revenue to welfare and subtract distortions.",
+      "A $250 loss; ignore the foreign-price change because tariff models hold world prices fixed.",
+      "A $150 gain; the $400 terms-of-trade benefit exceeds distortions, requiring a large-country model.",
+      "A $150 gain; the domestic price rises only $6 because small-country tariffs reduce foreign prices."
+    ],
+    "correctIndex": 2,
+    "feedback": "The lower foreign price saves $4 on each of 100 imports, a $400 terms-of-trade gain. Subtract $250 of distortions to obtain a $150 national gain. Foreign-price effects violate the small-country price-taking assumption; tariff revenue is not entirely a net welfare gain.",
+    "reason": "Replace an obvious model-label answer with a welfare calculation and assumption diagnosis."
+  },
+  "P62D-ITP-EL-024": {
+    "q": "A small country faces a fixed world price of $16. A tariff raises its domestic price to $21. Domestic production rises from 14 to 24 units and purchases fall from 74 to 59. Which tariff revenue and import-change calculation is correct?",
+    "options": [
+      "Revenue $175; imports fall by 35 units, from 60 to 25.",
+      "Revenue $175; imports fall by 25 units, from 60 to 35.",
+      "Revenue $295; imports fall by 25 units, from 60 to 35.",
+      "Revenue $300; imports fall by 35 units, from 60 to 25."
+    ],
+    "correctIndex": 1,
+    "feedback": "The tariff is $5 per imported unit. Imports initially equal 74−14=60 and afterward equal 59−24=35, a decline of 25. Revenue is 5×35=$175. The tax base is remaining imports, not total purchases or original imports.",
+    "reason": "Pair revenue with competing import changes and use plausible tax-base errors."
+  },
+  "LG-Q-364": {
+    "q": "With nominal money supply fixed, a higher price level increases transactions demand for money. The resulting interest-rate rise reduces investment by $20 billion. MPC is 0.75, and there are no other autonomous spending changes. Use a fixed-price multiplier to estimate the spending effect at the new price level. Which calculation and AD interpretation follow?",
+    "options": [
+      "Quantity of real output demanded falls $80 billion; this is movement along the existing AD curve.",
+      "Quantity of real output demanded falls $80 billion; the original price increase shifts AD left.",
+      "Quantity of real output demanded falls $20 billion; induced consumption leaves total spending unchanged.",
+      "Quantity of real output demanded rises $80 billion; higher money demand expands the money supply."
+    ],
+    "correctIndex": 0,
+    "feedback": "Higher transactions demand raises the interest rate when nominal money supply is fixed. The $20 billion investment decline has a multiplier of 4, reducing quantity of real output demanded by $80 billion. Because the sequence starts with a price-level change, it explains movement along AD rather than an autonomous shift.",
+    "reason": "Combine money-market transmission, the multiplier, and movement-versus-shift reasoning."
+  },
+  "P52A-AS-EL-001": {
+    "q": "An economy initially produces at potential output of 1,000. A permanent productivity improvement raises potential output by 5%, while a temporary imported-energy price spike leaves current output at 1,020 and raises the price level. Which assessment distinguishes capacity from current production?",
+    "options": [
+      "Potential is 1,050 and output is 30 below it; the temporary energy shock must also shift LRAS left.",
+      "Potential is 1,000 and output is 20 above it; productivity affects current production but not capacity.",
+      "Potential is 1,050 and output is 30 above it; higher current output proves an inflationary output gap.",
+      "Potential is 1,050 and output is 30 below it; the productivity gain can coexist with short-run cost pressure."
+    ],
+    "correctIndex": 3,
+    "feedback": "Potential rises to 1,000×1.05=1,050. Current output of 1,020 is higher than before but 30 below the new potential. Productivity shifts LRAS right; the temporary energy shock creates opposing short-run supply pressure without necessarily undoing the capacity gain.",
+    "reason": "Require a new potential-output calculation and interpret simultaneous permanent and temporary shocks."
+  }
+}

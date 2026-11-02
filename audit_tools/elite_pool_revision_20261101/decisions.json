@@ -1,0 +1,1190 @@
+{
+  "40004": {
+    "action": "retain",
+    "group": "unreviewed",
+    "reason": "Reads two numerical graph changes and distinguishes reallocation from capacity growth."
+  },
+  "40011": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Infer the shock, read two graph changes, and evaluate a competing explanation.",
+    "batch": "02-flagged-demand-policy.json"
+  },
+  "40013": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Supply the initial equilibrium and require event inference plus general-versus-specific reasoning.",
+    "batch": "03-flagged-trade-public.json"
+  },
+  "40029": {
+    "action": "retain",
+    "group": "unreviewed",
+    "reason": "Combines graph employment and labor surplus with before/after payroll calculation."
+  },
+  "40038": {
+    "action": "retain",
+    "group": "unreviewed",
+    "reason": "Derives buyer and seller burdens from three prices and infers relative elasticities."
+  },
+  "40041": {
+    "action": "retain",
+    "group": "unreviewed",
+    "reason": "Infers quantity under a halved tax using linear curves and compares two revenue calculations."
+  },
+  "40043": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation.",
+    "batch": "07-competition-policy-taxes.json"
+  },
+  "42126": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Quantify marginal social gains and distinguish selective regulation from a blanket ban.",
+    "batch": "03-flagged-trade-public.json"
+  },
+  "42127": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Add marginal abatement schedules and a feasible least-cost comparison.",
+    "batch": "03-flagged-trade-public.json"
+  },
+  "42156": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Add a concrete bargaining payment and calculate each party's gain.",
+    "batch": "03-flagged-trade-public.json"
+  },
+  "42157": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Require bargaining bounds under both assignments of rights.",
+    "batch": "03-flagged-trade-public.json"
+  },
+  "42166": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Calculate a welfare area and distinguish fiscal saving from efficiency.",
+    "batch": "03-flagged-trade-public.json"
+  },
+  "42176": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Add welfare and administrative-cost calculation while preserving the private-underprovision mechanism.",
+    "batch": "03-flagged-trade-public.json"
+  },
+  "42189": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Remove the unnecessary introductory clause and retain multistep graph-area reasoning.",
+    "batch": "03-flagged-trade-public.json"
+  },
+  "42196": {
+    "action": "retain",
+    "group": "unreviewed",
+    "reason": "Requires vertical benefit aggregation, a changed efficient quantity, and public-good interpretation."
+  },
+  "42249": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation.",
+    "batch": "05-controls-foundations-macro.json"
+  },
+  "42260": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation.",
+    "batch": "05-controls-foundations-macro.json"
+  },
+  "42807": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Combine decomposition of wage differences with limits of causal inference; balance choices.",
+    "batch": "02-flagged-demand-policy.json"
+  },
+  "43175": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation.",
+    "batch": "05-controls-foundations-macro.json"
+  },
+  "43189": {
+    "action": "retain",
+    "group": "unreviewed",
+    "reason": "Nets private/public saving shocks before tracing financing cost and investment."
+  },
+  "43203": {
+    "action": "retain",
+    "group": "unreviewed",
+    "reason": "Nets saving changes and combines opposing supply/demand quantity effects without confusing planned and realized saving."
+  },
+  "43217": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Use clearly identified endpoints and require imbalance plus two adjustment calculations.",
+    "batch": "03-flagged-trade-public.json"
+  },
+  "43307": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Infer shifts from events and use a graph counterfactual.",
+    "batch": "03-flagged-trade-public.json"
+  },
+  "LG-Q-307": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Balance alternatives while retaining the two-step solvency versus liquidity analysis.",
+    "batch": "01-flagged-costs-surplus.json"
+  },
+  "P62C-CPS-EL-001": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Require calculation of continuing and departing buyers' losses; use plausible competing decompositions.",
+    "batch": "01-flagged-costs-surplus.json"
+  },
+  "P62C-CPS-EL-002": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Calculate two components and distinguish lost trades from transfers on continuing units.",
+    "batch": "01-flagged-costs-surplus.json"
+  },
+  "P62C-CPS-EL-005": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Replace a leading conceptual slogan with a welfare calculation and competing accounting errors.",
+    "batch": "01-flagged-costs-surplus.json"
+  },
+  "P62C-CPS-EL-006": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Require comparison of distributional gains and net surplus, with plausible distractors.",
+    "batch": "01-flagged-costs-surplus.json"
+  },
+  "P62C-CPS-EL-013": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Strengthen to elite through calculation, a fixed-cost change, and distinction between surplus and profit.",
+    "batch": "01-flagged-costs-surplus.json"
+  },
+  "P62C-CPS-EL-019": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Require allocation and surplus comparison before evaluating the limits of willingness-to-pay measures.",
+    "batch": "01-flagged-costs-surplus.json"
+  },
+  "P62E-COP-EL-001": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Have the student calculate accounting profit and implicit cost before economic profit, as requested.",
+    "batch": "01-flagged-costs-surplus.json"
+  },
+  "P62E-COP-EL-002": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Retain the existing multistep opportunity-cost comparison and balance the alternatives.",
+    "batch": "01-flagged-costs-surplus.json"
+  },
+  "P62E-COP-EL-007": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Derive total fixed cost from AFC and output, then evaluate costs at a different output.",
+    "batch": "01-flagged-costs-surplus.json"
+  },
+  "P62E-COP-EL-008": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Combine a per-unit charge with an offsetting fixed-fee change rather than asking for one memorized rule.",
+    "batch": "01-flagged-costs-surplus.json"
+  },
+  "P62E-COP-EL-013": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Classify fixed versus sunk costs and compare actual alternatives using an avoidable fixed cost.",
+    "batch": "01-flagged-costs-surplus.json"
+  },
+  "P62E-COP-EL-015": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Require productivity and fixed-cost calculations before comparing four cost measures.",
+    "batch": "01-flagged-costs-surplus.json"
+  },
+  "P62E-COP-EL-016": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Require proportional comparisons and cost calculation without calculus; separate technology from input prices.",
+    "batch": "01-flagged-costs-surplus.json"
+  },
+  "P62E-COP-EL-021": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Strengthen the classification question by deriving average costs and assessing evidence about scale.",
+    "batch": "01-flagged-costs-surplus.json"
+  },
+  "P62E-COP-EL-025": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Use plausible single-component and break-even errors instead of obvious distractors.",
+    "batch": "01-flagged-costs-surplus.json"
+  },
+  "P62E-COP-EL-026": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Compare short-run and renewal decisions with explicit alternatives and plausible sunk-cost mistakes.",
+    "batch": "01-flagged-costs-surplus.json"
+  },
+  "P62E-COP-EL-028": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Supply both technologies explicitly and require cost comparisons and a break-even calculation.",
+    "batch": "01-flagged-costs-surplus.json"
+  },
+  "P62E-COP-EL-030": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Derive marginal and average costs before applying the marginal-average relationship.",
+    "batch": "01-flagged-costs-surplus.json"
+  },
+  "ECON-NL-ELITE-331": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Balance choice lengths and require weighted calculations plus an interpretation of index coverage.",
+    "batch": "01-flagged-costs-surplus.json"
+  },
+  "PG1-DMD-L-001": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Use instructor's preferred graph reference; retain evidence reconciliation.",
+    "batch": "02-flagged-demand-policy.json"
+  },
+  "PG1-DMD-L-002": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Implement the requested paired 50/125 distractors without a unique numerical clue.",
+    "batch": "02-flagged-demand-policy.json"
+  },
+  "ECON-SP-ELITE-308": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Infer both shifts from events and compare a counterfactual.",
+    "batch": "02-flagged-demand-policy.json"
+  },
+  "ECON-SP-ELITE-309": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Require event-to-curve inference and counterfactual reasoning.",
+    "batch": "02-flagged-demand-policy.json"
+  },
+  "ECON-SP-ELITE-312": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Infer the supply shock and fiscal response from events.",
+    "batch": "02-flagged-demand-policy.json"
+  },
+  "ECON-SP-ELITE-313": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Add multiplier calculation and policy tradeoff under explicit assumptions.",
+    "batch": "02-flagged-demand-policy.json"
+  },
+  "ECON-SP-ELITE-341": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Remove the supplied shift conclusion and require diagnosis from both outcomes.",
+    "batch": "02-flagged-demand-policy.json"
+  },
+  "ECON-SP-ELITE-302": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Quantify weakened deposit creation and distinguish reserves from deposits.",
+    "batch": "02-flagged-demand-policy.json"
+  },
+  "P62B-ELAS-EL-004": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Balance options and pair the best revenue with competing elasticity diagnoses.",
+    "batch": "02-flagged-demand-policy.json"
+  },
+  "P62B-ELAS-EL-011": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Replace out-of-topic marginal cost with a calculated elasticity–marginal revenue link.",
+    "batch": "02-flagged-demand-policy.json"
+  },
+  "P62B-ELAS-EL-015": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Use natural prose and paired numerical distractors.",
+    "batch": "02-flagged-demand-policy.json"
+  },
+  "P62B-ELAS-EL-016": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Add the requested elasticity calculation with plausible reciprocal/sign errors.",
+    "batch": "02-flagged-demand-policy.json"
+  },
+  "P62B-ELAS-EL-018": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Apply elasticities to quantity changes and resulting revenue.",
+    "batch": "02-flagged-demand-policy.json"
+  },
+  "P62B-ELAS-EL-020": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Replace obvious alternatives with a two-period elasticity calculation.",
+    "batch": "02-flagged-demand-policy.json"
+  },
+  "P62B-ELAS-EL-029": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Keep the item within elasticity by replacing the tariff context with time-horizon revenue analysis.",
+    "batch": "02-flagged-demand-policy.json"
+  },
+  "P52A-FISCAD-EL-002": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Specify distribution and multiplier assumptions and require weighted calculations.",
+    "batch": "02-flagged-demand-policy.json"
+  },
+  "ECON-EC-ELITE-13011": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Replace an obvious winners-and-losers statement with allocation and welfare accounting.",
+    "batch": "02-flagged-demand-policy.json"
+  },
+  "ECON-EC-ELITE-13026": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Add explicit elasticity and pass-through assumptions and quantify the forecast error.",
+    "batch": "02-flagged-demand-policy.json"
+  },
+  "ECON-SP-ELITE-336": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Combine shock identification, multiplier calculation, and asymmetric policy consequences.",
+    "batch": "02-flagged-demand-policy.json"
+  },
+  "ECON-SP-FINALBOSS-4002": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Define fixed prices in plain language and pair complete calculations without embedded hints.",
+    "batch": "02-flagged-demand-policy.json"
+  },
+  "ECON-SP-FINALBOSS-4021": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Define fixed prices in plain language and pair complete calculations without embedded hints.",
+    "batch": "02-flagged-demand-policy.json"
+  },
+  "ECON-SP-LEGENDARYBOSS-9117": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Define fixed prices in plain language and pair complete calculations without embedded hints.",
+    "batch": "02-flagged-demand-policy.json"
+  },
+  "ECON-SP-FINALBOSS-4003": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Explain fixed prices and compare total effects at the same stage.",
+    "batch": "03-flagged-trade-public.json"
+  },
+  "ECON-SP-FINALBOSS-4022": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Explain fixed prices and compare total effects at the same stage.",
+    "batch": "03-flagged-trade-public.json"
+  },
+  "ECON-SP-LEGENDARYBOSS-9118": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Explain fixed prices and compare total effects at the same stage.",
+    "batch": "03-flagged-trade-public.json"
+  },
+  "P62D-ITP-EL-001": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Pair the $215 result with competing interpretations to remove the unique-number clue.",
+    "batch": "03-flagged-trade-public.json"
+  },
+  "P62D-ITP-EL-008": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Hold the easy tariff-price fact constant and require import-gap and quota-price reasoning.",
+    "batch": "03-flagged-trade-public.json"
+  },
+  "P62D-ITP-EL-009": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Pair national and global amounts so rent incidence must be reasoned through.",
+    "batch": "03-flagged-trade-public.json"
+  },
+  "P62D-ITP-EL-010": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Make alternatives compare revenue, transfers, and resource costs on equal terms.",
+    "batch": "03-flagged-trade-public.json"
+  },
+  "P62D-ITP-EL-017": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Replace an obvious model-label answer with a welfare calculation and assumption diagnosis.",
+    "batch": "03-flagged-trade-public.json"
+  },
+  "P62D-ITP-EL-024": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Pair revenue with competing import changes and use plausible tax-base errors.",
+    "batch": "03-flagged-trade-public.json"
+  },
+  "LG-Q-364": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Combine money-market transmission, the multiplier, and movement-versus-shift reasoning.",
+    "batch": "03-flagged-trade-public.json"
+  },
+  "P52A-AS-EL-001": {
+    "action": "revise",
+    "group": "flagged",
+    "reason": "Require a new potential-output calculation and interpret simultaneous permanent and temporary shocks.",
+    "batch": "03-flagged-trade-public.json"
+  },
+  "P62H-MCMP-EL-001": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Infer new demand, solve MR=MC, then determine price; specify market structure and explain every step.",
+    "batch": "04-numerical-families.json"
+  },
+  "P62H-MCMP-EL-002": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Require before-and-after pricing and distinguish reoptimization from preservation of profit.",
+    "batch": "04-numerical-families.json"
+  },
+  "P62H-MCMP-EL-004": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Infer new demand, solve MR=MC, then determine price; specify market structure and explain every step.",
+    "batch": "04-numerical-families.json"
+  },
+  "P62H-MCMP-EL-005": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Require before-and-after pricing and distinguish reoptimization from preservation of profit.",
+    "batch": "04-numerical-families.json"
+  },
+  "P62H-MCMP-EL-007": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Infer new demand, solve MR=MC, then determine price; specify market structure and explain every step.",
+    "batch": "04-numerical-families.json"
+  },
+  "P62H-MCMP-EL-008": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Require before-and-after pricing and distinguish reoptimization from preservation of profit.",
+    "batch": "04-numerical-families.json"
+  },
+  "P62H-MCMP-EL-010": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Infer new demand, solve MR=MC, then determine price; specify market structure and explain every step.",
+    "batch": "04-numerical-families.json"
+  },
+  "P62H-MCMP-EL-011": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Require before-and-after pricing and distinguish reoptimization from preservation of profit.",
+    "batch": "04-numerical-families.json"
+  },
+  "P62H-MCMP-EL-013": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Infer new demand, solve MR=MC, then determine price; specify market structure and explain every step.",
+    "batch": "04-numerical-families.json"
+  },
+  "P62H-MCMP-EL-014": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Require before-and-after pricing and distinguish reoptimization from preservation of profit.",
+    "batch": "04-numerical-families.json"
+  },
+  "P62G-MON-EL-002": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Calculate optimal output, revenue and full cost; distinguish loss from shutdown with complete cost information.",
+    "batch": "04-numerical-families.json"
+  },
+  "P62G-MON-EL-004": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Calculate optimal output, revenue and full cost; distinguish loss from shutdown with complete cost information.",
+    "batch": "04-numerical-families.json"
+  },
+  "P62G-MON-EL-005": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "State market structure, provide costs without calculus, and distinguish monopoly and efficient outcomes.",
+    "batch": "04-numerical-families.json"
+  },
+  "P62G-MON-EL-006": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Calculate optimal output, revenue and full cost; distinguish loss from shutdown with complete cost information.",
+    "batch": "04-numerical-families.json"
+  },
+  "P62G-MON-EL-007": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "State market structure, provide costs without calculus, and distinguish monopoly and efficient outcomes.",
+    "batch": "04-numerical-families.json"
+  },
+  "P62G-MON-EL-008": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Calculate optimal output, revenue and full cost; distinguish loss from shutdown with complete cost information.",
+    "batch": "04-numerical-families.json"
+  },
+  "P62G-MON-EL-009": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "State market structure, provide costs without calculus, and distinguish monopoly and efficient outcomes.",
+    "batch": "04-numerical-families.json"
+  },
+  "P62G-MON-EL-010": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Calculate optimal output, revenue and full cost; distinguish loss from shutdown with complete cost information.",
+    "batch": "04-numerical-families.json"
+  },
+  "P62G-MON-EL-011": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "State market structure, provide costs without calculus, and distinguish monopoly and efficient outcomes.",
+    "batch": "04-numerical-families.json"
+  },
+  "P62G-MON-EL-013": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "State market structure, provide costs without calculus, and distinguish monopoly and efficient outcomes.",
+    "batch": "04-numerical-families.json"
+  },
+  "P62G-MON-EL-015": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "State market structure, provide costs without calculus, and distinguish monopoly and efficient outcomes.",
+    "batch": "04-numerical-families.json"
+  },
+  "P62I-OLI-EL-017": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Replace irrelevant distractors with full present-value calculations and timing errors.",
+    "batch": "04-numerical-families.json"
+  },
+  "P62I-OLI-EL-018": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Replace irrelevant distractors with full present-value calculations and timing errors.",
+    "batch": "04-numerical-families.json"
+  },
+  "P62I-OLI-EL-019": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Replace irrelevant distractors with full present-value calculations and timing errors.",
+    "batch": "04-numerical-families.json"
+  },
+  "P62I-OLI-EL-020": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Replace irrelevant distractors with full present-value calculations and timing errors.",
+    "batch": "04-numerical-families.json"
+  },
+  "P62F-PC-EL-005": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Specify the competitive setting, resolve equal-profit output ties, and explain full cost and shutdown comparison.",
+    "batch": "04-numerical-families.json"
+  },
+  "P62F-PC-EL-006": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Specify the competitive setting, resolve equal-profit output ties, and explain full cost and shutdown comparison.",
+    "batch": "04-numerical-families.json"
+  },
+  "P62F-PC-EL-008": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Specify the competitive setting, resolve equal-profit output ties, and explain full cost and shutdown comparison.",
+    "batch": "04-numerical-families.json"
+  },
+  "P62F-PC-EL-009": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Specify the competitive setting, resolve equal-profit output ties, and explain full cost and shutdown comparison.",
+    "batch": "04-numerical-families.json"
+  },
+  "P62F-PC-EL-010": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Specify the competitive setting, resolve equal-profit output ties, and explain full cost and shutdown comparison.",
+    "batch": "04-numerical-families.json"
+  },
+  "ECON-MG-ELITE-300": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation.",
+    "batch": "05-controls-foundations-macro.json"
+  },
+  "ECON-MG-ELITE-308": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation.",
+    "batch": "05-controls-foundations-macro.json"
+  },
+  "ECON-MG-ELITE-311": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation.",
+    "batch": "05-controls-foundations-macro.json"
+  },
+  "PG2-CEIL-EL-001": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation.",
+    "batch": "05-controls-foundations-macro.json"
+  },
+  "ECON-MG-ELITE-301": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation.",
+    "batch": "05-controls-foundations-macro.json"
+  },
+  "ECON-MG-ELITE-312": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation.",
+    "batch": "05-controls-foundations-macro.json"
+  },
+  "PG2-FLR-EL-001": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation.",
+    "batch": "05-controls-foundations-macro.json"
+  },
+  "P77-MVM-EL-015": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation.",
+    "batch": "05-controls-foundations-macro.json"
+  },
+  "ECON-NL-ELITE-379": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation.",
+    "batch": "05-controls-foundations-macro.json"
+  },
+  "PMOE-NER-EL-002": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation.",
+    "batch": "05-controls-foundations-macro.json"
+  },
+  "P52A-OPPC-EL-001": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Clarify feasible alternatives and require net-benefit ranking before identifying opportunity cost.",
+    "batch": "05-controls-foundations-macro.json"
+  },
+  "P77-PVN-EL-022": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation.",
+    "batch": "05-controls-foundations-macro.json"
+  },
+  "P52B-PSIG-EL-001": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation.",
+    "batch": "05-controls-foundations-macro.json"
+  },
+  "LG-Q-328": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation.",
+    "batch": "05-controls-foundations-macro.json"
+  },
+  "LG-Q-329": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation.",
+    "batch": "05-controls-foundations-macro.json"
+  },
+  "LG-Q-331": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation.",
+    "batch": "05-controls-foundations-macro.json"
+  },
+  "PMOE-RER-EL-001": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation.",
+    "batch": "05-controls-foundations-macro.json"
+  },
+  "ECON-NL-ELITE-315": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation.",
+    "batch": "05-controls-foundations-macro.json"
+  },
+  "ECON-MG-ELITE-335": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation.",
+    "batch": "05-controls-foundations-macro.json"
+  },
+  "P52A-SCAR-EL-001": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation.",
+    "batch": "05-controls-foundations-macro.json"
+  },
+  "ECON-MG-ELITE-323": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation.",
+    "batch": "05-controls-foundations-macro.json"
+  },
+  "P52B-S2-SUP-EL-001": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation.",
+    "batch": "05-controls-foundations-macro.json"
+  },
+  "P52B-S2-SUP-EL-002": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Replace one-step recognition with a multistep application, balanced alternatives, and a worked explanation.",
+    "batch": "05-controls-foundations-macro.json"
+  },
+  "P62H-MCMP-EL-026": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation.",
+    "batch": "06-monopoly-competition.json"
+  },
+  "P62H-MCMP-EL-027": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation.",
+    "batch": "06-monopoly-competition.json"
+  },
+  "P62H-MCMP-EL-028": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation.",
+    "batch": "06-monopoly-competition.json"
+  },
+  "P62H-MCMP-EL-029": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation.",
+    "batch": "06-monopoly-competition.json"
+  },
+  "P62H-MCMP-EL-030": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation.",
+    "batch": "06-monopoly-competition.json"
+  },
+  "P62G-MON-EL-017": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation.",
+    "batch": "06-monopoly-competition.json"
+  },
+  "P62G-MON-EL-020": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation.",
+    "batch": "06-monopoly-competition.json"
+  },
+  "P62G-MON-EL-018": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation.",
+    "batch": "06-monopoly-competition.json"
+  },
+  "P62G-MON-EL-021": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation.",
+    "batch": "06-monopoly-competition.json"
+  },
+  "P62G-MON-EL-019": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation.",
+    "batch": "06-monopoly-competition.json"
+  },
+  "P62G-MON-EL-022": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation.",
+    "batch": "06-monopoly-competition.json"
+  },
+  "P62G-MON-EL-023": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation.",
+    "batch": "06-monopoly-competition.json"
+  },
+  "P62G-MON-EL-025": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation.",
+    "batch": "06-monopoly-competition.json"
+  },
+  "P62G-MON-EL-024": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation.",
+    "batch": "06-monopoly-competition.json"
+  },
+  "P62G-MON-EL-026": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation.",
+    "batch": "06-monopoly-competition.json"
+  },
+  "P62G-MON-EL-027": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation.",
+    "batch": "06-monopoly-competition.json"
+  },
+  "P62G-MON-EL-028": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation.",
+    "batch": "06-monopoly-competition.json"
+  },
+  "P62G-MON-EL-029": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation.",
+    "batch": "06-monopoly-competition.json"
+  },
+  "P62G-MON-EL-030": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation.",
+    "batch": "06-monopoly-competition.json"
+  },
+  "P62G-MON-EL-035": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Require calculation plus economic interpretation, plausible paired alternatives, and a complete explanation.",
+    "batch": "06-monopoly-competition.json"
+  },
+  "P62F-PC-EL-013": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation.",
+    "batch": "07-competition-policy-taxes.json"
+  },
+  "P62F-PC-EL-017": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation.",
+    "batch": "07-competition-policy-taxes.json"
+  },
+  "P62F-PC-EL-021": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation.",
+    "batch": "07-competition-policy-taxes.json"
+  },
+  "P62F-PC-EL-022": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation.",
+    "batch": "07-competition-policy-taxes.json"
+  },
+  "P62F-PC-EL-023": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation.",
+    "batch": "07-competition-policy-taxes.json"
+  },
+  "P62F-PC-EL-024": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation.",
+    "batch": "07-competition-policy-taxes.json"
+  },
+  "P62F-PC-EL-025": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation.",
+    "batch": "07-competition-policy-taxes.json"
+  },
+  "P62F-PC-EL-026": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation.",
+    "batch": "07-competition-policy-taxes.json"
+  },
+  "P62F-PC-EL-027": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation.",
+    "batch": "07-competition-policy-taxes.json"
+  },
+  "P62F-PC-EL-028": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation.",
+    "batch": "07-competition-policy-taxes.json"
+  },
+  "P62F-PC-EL-029": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation.",
+    "batch": "07-competition-policy-taxes.json"
+  },
+  "P62I-OLI-EL-029": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation.",
+    "batch": "07-competition-policy-taxes.json"
+  },
+  "P62I-OLI-EL-030": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation.",
+    "batch": "07-competition-policy-taxes.json"
+  },
+  "PG4-MPT-EL-001": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation.",
+    "batch": "07-competition-policy-taxes.json"
+  },
+  "PMOE-POL-EL-001": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation.",
+    "batch": "07-competition-policy-taxes.json"
+  },
+  "ECON-MG-ELITE-313": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation.",
+    "batch": "07-competition-policy-taxes.json"
+  },
+  "ECON-MG-ELITE-317": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation.",
+    "batch": "07-competition-policy-taxes.json"
+  },
+  "ECON-MG-ELITE-318": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation.",
+    "batch": "07-competition-policy-taxes.json"
+  },
+  "ECON-MG-ELITE-326": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Add a multistep decision with explicit assumptions, balanced alternatives, and a worked explanation.",
+    "batch": "07-competition-policy-taxes.json"
+  },
+  "P62I-OLI-EL-001": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph.",
+    "batch": "08-final-review.json"
+  },
+  "P62I-OLI-EL-003": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph.",
+    "batch": "08-final-review.json"
+  },
+  "P62I-OLI-EL-005": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph.",
+    "batch": "08-final-review.json"
+  },
+  "P62I-OLI-EL-009": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph.",
+    "batch": "08-final-review.json"
+  },
+  "P62I-OLI-EL-007": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph.",
+    "batch": "08-final-review.json"
+  },
+  "P62H-MCMP-EL-034": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Retain multistep graph calculations and policy interpretation; explicitly name the market structure for mixed quests.",
+    "batch": "08-final-review.json"
+  },
+  "P62H-MCMP-EL-037": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Retain multistep graph calculations and policy interpretation; explicitly name the market structure for mixed quests.",
+    "batch": "08-final-review.json"
+  },
+  "P62H-MCMP-L-095": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Retain multistep graph calculations and policy interpretation; explicitly name the market structure for mixed quests.",
+    "batch": "08-final-review.json"
+  },
+  "P62F-PC-EL-038": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Retain multistep graph calculations and policy interpretation; explicitly name the market structure for mixed quests.",
+    "batch": "08-final-review.json"
+  },
+  "LG-Q-9055": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph.",
+    "batch": "08-final-review.json"
+  },
+  "LG-Q-9059": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph.",
+    "batch": "08-final-review.json"
+  },
+  "LG-Q-9072": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph.",
+    "batch": "08-final-review.json"
+  },
+  "P52B-MODL-EL-002": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph.",
+    "batch": "08-final-review.json"
+  },
+  "P76-MODL-EL-004": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph.",
+    "batch": "08-final-review.json"
+  },
+  "P62I-OLI-EL-027": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph.",
+    "batch": "08-final-review.json"
+  },
+  "P62I-OLI-EL-028": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph.",
+    "batch": "08-final-review.json"
+  },
+  "P77-PVN-EL-023": {
+    "action": "revise",
+    "group": "unreviewed",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph.",
+    "batch": "08-final-review.json"
+  },
+  "LG-Q-336": {
+    "action": "retain",
+    "group": "unreviewed",
+    "reason": "Requires reciprocal price levels, proportional wage changes, and real/nominal distinction with variable velocity."
+  },
+  "P62G-MON-EL-038": {
+    "action": "retain",
+    "group": "unreviewed",
+    "reason": "Reads three regulatory outcomes and distinguishes cost recovery from marginal efficiency."
+  },
+  "P62I-OLI-EL-008": {
+    "action": "retain",
+    "group": "unreviewed",
+    "reason": "Checks both unilateral incentives, equilibrium, and joint-profit loss."
+  },
+  "P62I-OLI-EL-010": {
+    "action": "retain",
+    "group": "unreviewed",
+    "reason": "Computes mutual best responses and compares equilibrium with joint-payoff maximum."
+  },
+  "P62I-OLI-L-004": {
+    "action": "retain",
+    "group": "unreviewed",
+    "reason": "Finds multiple equilibria, computes their totals, and distinguishes joint payoff from unilateral stability."
+  },
+  "P62I-OLI-L-010": {
+    "action": "retain",
+    "group": "unreviewed",
+    "reason": "Checks all four deviations and equal totals to establish absence of pure equilibrium."
+  },
+  "PMOE-POL-EL-002": {
+    "action": "retain",
+    "group": "unreviewed",
+    "reason": "Combines investment, exchange-rate and foreign-demand channels under an explicit short-run model."
+  },
+  "P52A-OPPC-EL-002": {
+    "action": "retain",
+    "group": "unreviewed",
+    "reason": "Ranks three net uses, includes conversion cost, and computes the gap against the next-best use."
+  },
+  "P72-OPPC-EL-003": {
+    "action": "retain",
+    "group": "unreviewed",
+    "reason": "Excludes sunk costs, calculates incremental net benefit, and compares the displaced use."
+  },
+  "P52A-AS-EL-003": {
+    "action": "retain",
+    "group": "unreviewed",
+    "reason": "Separates long-run capacity damage from competing short-run cost effects."
+  },
+  "P52A-AS-EL-004": {
+    "action": "retain",
+    "group": "unreviewed",
+    "reason": "Evaluates a cross-economy counterfactual with actual prices, expectations, contracts, and curve movement."
+  },
+  "PG2-STX-EL-001": {
+    "action": "retain",
+    "group": "unreviewed",
+    "reason": "Reads the tax wedge, splits burdens and corrects a double-charge after changing remittance."
+  },
+  "PG1-SUP-EL-002": {
+    "action": "retain",
+    "group": "unreviewed",
+    "reason": "Decomposes graph quantity changes at a common price and a later movement along changed supply."
+  },
+  "PG1-SUP-EL-003": {
+    "action": "retain",
+    "group": "unreviewed",
+    "reason": "Separates the graph supply shift from the later price movement despite the same final quantity."
+  },
+  "ECON-MG-ELITE-319": {
+    "action": "retain",
+    "group": "unreviewed",
+    "reason": "Calculates tax wedge, each burden and quantity change and separates legal from economic incidence."
+  },
+  "PG2-TAX-EL-001": {
+    "action": "retain",
+    "group": "unreviewed",
+    "reason": "Corrects an incomplete tax rate, derives both burdens and uses the post-tax quantity for revenue."
+  },
+  "ECON-NL-ELITE-366": {
+    "action": "retain",
+    "group": "unreviewed",
+    "reason": "Classifies employment and participation, calculates the denominator and rate, and identifies underemployment omitted."
+  }
+}

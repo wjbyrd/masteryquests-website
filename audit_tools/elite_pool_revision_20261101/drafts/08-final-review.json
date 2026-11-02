@@ -1,0 +1,178 @@
+{
+  "P62I-OLI-EL-001": {
+    "q": "Refer to the payoff matrix, with payoffs ordered (Row, Column). Suppose the two oligopolists propose A/X. Calculate each firm's gain from deviating alone, then compare the resulting Nash equilibrium with the highest joint payoff.",
+    "options": [
+      "Row gains 3 and Column gains 6; equilibrium A/X totals 20, because the largest joint payoff prevents deviation.",
+      "Row gains 6 and Column gains 3; equilibrium B/X totals 17, and Column has no profitable response.",
+      "Row gains 3 and Column gains 6; equilibrium B/Y totals 12, below the joint maximum 20 at A/X.",
+      "Row gains 3 and Column gains 6; equilibrium B/Y totals 12, which is also the largest joint payoff."
+    ],
+    "correctIndex": 2,
+    "feedback": "Starting at A/X, Row gains 15−12=3 by switching to B, and Column gains 14−8=6 by switching to Y. Row also prefers B against Y (6>3), and Column prefers Y against B (6>2). Thus B/Y is the unique equilibrium, with total 12; A/X totals 20. Joint payoff maximization does not remove unilateral incentives.",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph."
+  },
+  "P62I-OLI-EL-003": {
+    "q": "Refer to the payoff matrix, with payoffs ordered (Row, Column). Suppose the two oligopolists propose A/X. Calculate each firm's gain from deviating alone, then compare the resulting Nash equilibrium with the highest joint payoff.",
+    "options": [
+      "Row gains 3 and Column gains 5; equilibrium B/Y totals 11, below the joint maximum 16 at A/X.",
+      "Row gains 3 and Column gains 5; equilibrium A/X totals 16, because the largest joint payoff prevents deviation.",
+      "Row gains 5 and Column gains 3; equilibrium B/X totals 15, and Column has no profitable response.",
+      "Row gains 3 and Column gains 5; equilibrium B/Y totals 11, which is also the largest joint payoff."
+    ],
+    "correctIndex": 0,
+    "feedback": "Starting at A/X, Row gains 12−9=3 by switching to B, and Column gains 12−7=5 by switching to Y. Row also prefers B against Y (6>4), and Column prefers Y against B (5>3). Thus B/Y is the unique equilibrium, with total 11; A/X totals 16. Joint payoff maximization does not remove unilateral incentives.",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph."
+  },
+  "P62I-OLI-EL-005": {
+    "q": "Refer to the payoff matrix, with payoffs ordered (Row, Column). Suppose the two oligopolists propose A/X. Calculate each firm's gain from deviating alone, then compare the resulting Nash equilibrium with the highest joint payoff.",
+    "options": [
+      "Row gains 4 and Column gains 4; equilibrium A/X totals 26, because the largest joint payoff prevents deviation.",
+      "Row gains 4 and Column gains 4; equilibrium B/X totals 21, and Column has no profitable response.",
+      "Row gains 4 and Column gains 4; equilibrium B/Y totals 16, below the joint maximum 26 at A/X.",
+      "Row gains 4 and Column gains 4; equilibrium B/Y totals 16, which is also the largest joint payoff."
+    ],
+    "correctIndex": 2,
+    "feedback": "Starting at A/X, Row gains 17−13=4 by switching to B, and Column gains 17−13=4 by switching to Y. Row also prefers B against Y (8>4), and Column prefers Y against B (8>4). Thus B/Y is the unique equilibrium, with total 16; A/X totals 26. Joint payoff maximization does not remove unilateral incentives.",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph."
+  },
+  "P62I-OLI-EL-009": {
+    "q": "Refer to the payoff matrix, with payoffs ordered (Row, Column). Suppose the two oligopolists propose A/X. Calculate each firm's gain from deviating alone, then compare the resulting Nash equilibrium with the highest joint payoff.",
+    "options": [
+      "Row gains 4 and Column gains 4; equilibrium A/X totals 28, because the largest joint payoff prevents deviation.",
+      "Row gains 4 and Column gains 4; equilibrium B/X totals 23, and Column has no profitable response.",
+      "Row gains 4 and Column gains 4; equilibrium B/Y totals 18, below the joint maximum 28 at A/X.",
+      "Row gains 4 and Column gains 4; equilibrium B/Y totals 18, which is also the largest joint payoff."
+    ],
+    "correctIndex": 2,
+    "feedback": "Starting at A/X, Row gains 18−14=4 by switching to B, and Column gains 18−14=4 by switching to Y. Row also prefers B against Y (9>5), and Column prefers Y against B (9>5). Thus B/Y is the unique equilibrium, with total 18; A/X totals 28. Joint payoff maximization does not remove unilateral incentives.",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph."
+  },
+  "P62I-OLI-EL-007": {
+    "q": "Refer to the matrix, with payoffs ordered (Row, Column). Find all pure-strategy Nash equilibria and compare their joint payoffs. Would maximizing the joint payoff eliminate the other equilibrium?",
+    "options": [
+      "A/X and B/Y are equilibria, totaling 18 and 19; the higher total at B/Y does not eliminate A/X.",
+      "A/X and B/Y are equilibria, totaling 18 and 19; the higher total at B/Y makes A/X fail the Nash condition.",
+      "A/Y and B/X are equilibria, totaling 2 and 4; the higher total at B/X does not eliminate A/Y.",
+      "Only B/Y is an equilibrium, totaling 19; a cell with a smaller joint payoff cannot be stable."
+    ],
+    "correctIndex": 0,
+    "feedback": "At A/X, Row prefers 11 to 2 and Column prefers 7 to 1. At B/Y, Row prefers 7 to 1 and Column prefers 12 to 2. Both are mutual best responses. Their totals are 18 and 19. Nash stability concerns unilateral deviations, not the ranking of joint totals.",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph."
+  },
+  "P62H-MCMP-EL-034": {
+    "q": "For the monopolistically competitive firm shown, calculate the firm’s markup over marginal cost and its excess capacity. What does each tell us about allocative and productive efficiency?",
+    "correctIndex": 2,
+    "reason": "Retain multistep graph calculations and policy interpretation; explicitly name the market structure for mixed quests."
+  },
+  "P62H-MCMP-EL-037": {
+    "q": "For the monopolistically competitive firm shown, a policymaker says zero profit rules out further gains from trade. Calculate the markup and excess capacity shown. What can the graph establish about efficiency, and what information about cost recovery and product variety would a policy judgment still require?",
+    "correctIndex": 1,
+    "reason": "Retain multistep graph calculations and policy interpretation; explicitly name the market structure for mixed quests."
+  },
+  "P62H-MCMP-L-095": {
+    "q": "For the monopolistically competitive firm shown, a proposal would require output at minimum ATC and price equal to MC. Calculate the firm’s current markup and excess capacity. What do these reveal, and what limits on the graph’s evidence matter when evaluating the proposal?",
+    "correctIndex": 0,
+    "reason": "Retain multistep graph calculations and policy interpretation; explicitly name the market structure for mixed quests."
+  },
+  "P62F-PC-EL-038": {
+    "q": "For the competitive price-taking firm shown, using the firm panel, calculate current economic profit. Assume free entry, identical firms and unchanged input prices and cost curves. How will entry affect market supply, the price facing each firm, and incumbent output until profit is zero?",
+    "correctIndex": 2,
+    "reason": "Retain multistep graph calculations and policy interpretation; explicitly name the market structure for mixed quests."
+  },
+  "LG-Q-9055": {
+    "q": "Assume prices stay fixed and firms meet changes in spending by changing output, with no taxes or imports. Monetary easing lowers interest rates and raises autonomous investment $40 billion. A separate loss of business confidence reduces autonomous investment $25 billion. MPC is 0.5. Which policy contribution and net output change follow?",
+    "options": [
+      "Monetary contribution +$80 billion; net change +$80 billion because the rate reduction offsets confidence automatically.",
+      "Monetary contribution +$40 billion; net change +$15 billion because induced spending is already included.",
+      "Monetary contribution +$80 billion; net change +$55 billion after subtracting only the initial confidence loss.",
+      "Monetary contribution +$80 billion; net change +$30 billion after the confidence shock."
+    ],
+    "correctIndex": 3,
+    "feedback": "The multiplier is 2. Monetary easing contributes 40×2=$80 billion; the confidence shock contributes −25×2=−$50 billion. Net output rises $30 billion. Both initial autonomous changes must be treated at the same stage.",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph."
+  },
+  "LG-Q-9059": {
+    "q": "Assume prices stay fixed, MPC is 0.8, and there are no taxes or imports. A temporary monetary contraction reduces autonomous investment $40 billion. A fiscal program would add $200 billion to total spending after all induced effects. Compare immediate implementation with implementation after the original output gap has closed and no new gap exists.",
+    "options": [
+      "Immediate implementation offsets a $200 billion loss; delayed implementation also leaves output unchanged because the totals are equal.",
+      "Immediate implementation adds $800 billion net; delayed implementation adds $1,000 billion after multiplying the fiscal total.",
+      "Immediate implementation leaves a $160 billion gain; delayed implementation adds $200 billion because investment has no multiplier.",
+      "Immediate implementation offsets a $200 billion loss; delayed implementation instead adds $200 billion beyond the recovered baseline."
+    ],
+    "correctIndex": 3,
+    "feedback": "The monetary effect is −40/(1−0.8)=−$200 billion. The fiscal amount is already a total, so immediate implementation offsets it. After recovery, that original negative effect is absent; the same fiscal program adds $200 billion relative to the recovered baseline.",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph."
+  },
+  "LG-Q-9072": {
+    "q": "Initially, money demand is Md=500−20r and money supply is 300, with r measured in percentage points. The central bank cuts supply to 260, while a payment innovation lowers demand to Md=440−20r. Investment changes by −$10 billion for each percentage-point change in r. MPC is 0.5. With fixed prices and no other spending changes, which net result follows?",
+    "options": [
+      "The rate falls from 10% to 9%, investment rises $10 billion, and total spending rises $20 billion.",
+      "The rate rises from 10% to 12%, investment falls $20 billion, and total spending falls $40 billion.",
+      "The rate falls from 10% to 9%, investment rises $10 billion, and total spending rises only $10 billion.",
+      "The rate stays 10%, investment is unchanged, and the two money-market shifts cancel exactly."
+    ],
+    "correctIndex": 0,
+    "feedback": "Initially 500−20r=300 gives r=10. After both shifts, 440−20r=260 gives r=9. Lower money demand more than offsets the supply cut. The one-point rate decline raises investment $10 billion and, with multiplier 2, spending $20 billion.",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph."
+  },
+  "P52B-MODL-EL-002": {
+    "q": "Two models fit an office's original 30-minute average wait. Model A attributes 20 minutes to clustered arrivals and 10 to service time; Model B attributes 5 to clustering and 25 to service time. Appointments eliminate the modeled clustering delay without changing service speed. The observed wait becomes 11 minutes. Which prediction comparison best evaluates the models?",
+    "options": [
+      "A predicts 10 minutes and B 25; the evidence favors A's mechanism, without proving every part of A correct.",
+      "A predicts 10 minutes and B 25; the evidence proves A's assumptions literal and eliminates all other mechanisms.",
+      "A predicts 20 minutes and B 5; the evidence favors B because 11 lies nearer its prediction.",
+      "Both predict 30 minutes; matching the original wait means the intervention cannot distinguish them."
+    ],
+    "correctIndex": 0,
+    "feedback": "Removing the clustering component leaves A with 30−20=10 minutes and B with 30−5=25. An observed 11 is much closer to A. Intervention evidence discriminates between mechanisms that fit the same original outcome, but does not prove a complete model uniquely true.",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph."
+  },
+  "P76-MODL-EL-004": {
+    "q": "Two models both predict a policy will raise employment from 1,000 to 1,100, which occurs. Model A attributes 80 jobs to training and 20 to hiring subsidies; Model B attributes 20 to training and 80 to subsidies. A new trial removes subsidies while holding training and other conditions fixed. Employment becomes 1,075. Which assessment combines the original and trial evidence?",
+    "options": [
+      "Original outcomes prove both mechanisms; the new trial cannot distinguish models that predicted the original total.",
+      "Original outcomes do not distinguish the models; trial predictions of 1,080 versus 1,020 favor A's mechanism.",
+      "Original outcomes do not distinguish the models; trial predictions of 1,020 versus 1,080 favor B's mechanism.",
+      "Original outcomes favor A because its training component is larger; the trial proves all of A's assumptions exact."
+    ],
+    "correctIndex": 1,
+    "feedback": "Both models fit the initial 100-job gain. Without subsidies, A predicts an 80-job gain and B a 20-job gain, giving 1,080 and 1,020. The observed 1,075 favors A's mechanism. Prediction success on the original total alone could not establish that mechanism.",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph."
+  },
+  "P62I-OLI-EL-027": {
+    "q": "Before a merger, two close rivals charge $100 and have marginal cost $60. Verified efficiencies would lower MC by 20%. Analysts estimate that 50% of the dollar saving reaches buyers, while lost rivalry independently adds $9 to price. Treat those effects as additive estimates. Which predicted price and interpretation follow?",
+    "options": [
+      "Price rises to $103; a real cost saving can coexist with a consumer price increase.",
+      "Price falls to $94; the cost-saving channel alone determines the merger's price effect.",
+      "Price falls to $89; a 20% marginal-cost reduction is a 20% price reduction before rivalry effects.",
+      "Price rises to $109; efficiencies affect fixed costs and cannot offset pricing incentives."
+    ],
+    "correctIndex": 0,
+    "feedback": "MC falls by 0.20×60=$12. Half passed through reduces price $6, while weaker rivalry adds $9. Predicted price is 100−6+9=$103. The estimate depends on both channels and their evidence, not the efficiency percentage alone.",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph."
+  },
+  "P62I-OLI-EL-028": {
+    "q": "A platform's network effects create an $8 monthly user benefit relative to a new rival. A user can retain that benefit while also using the rival at a $2 monthly inconvenience cost. The rival offers a $5 monthly service benefit unavailable on the incumbent. Ignore other differences. Which user decision and market-power inference follow?",
+    "options": [
+      "Using both creates a net extra $3 benefit; the incumbent therefore has no network advantage or possible market power.",
+      "Using both creates a net extra $3 benefit; network effects need not prevent the rival from attracting users.",
+      "Using only the incumbent is better by $5; joining a second platform necessarily sacrifices the $8 network benefit.",
+      "Using only the rival is better by $3; using both requires paying the $8 network benefit as a fee."
+    ],
+    "correctIndex": 1,
+    "feedback": "Keeping the incumbent while adding the rival preserves the $8 network benefit. Adding the rival yields 5−2=$3 of extra value. This ability to use multiple platforms weakens exclusivity from network effects, but does not prove market power absent.",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph."
+  },
+  "P77-PVN-EL-023": {
+    "q": "Two analysts assess a preservation plan costing $2 million. A permanent record loss would cause $20 million of damage. Analyst A estimates that the plan lowers loss probability from 20% to 5%; Analyst B estimates a decline from 10% to 5%. Both use expected monetary benefits, but they also disagree on how much to value delayed public access. Which comparison separates their factual and value disagreements?",
+    "options": [
+      "A estimates $1 million net preservation benefit and B −$1 million; different numerical probabilities are themselves ethical rankings.",
+      "Both estimate $1 million net benefit; only their values can explain different recommendations.",
+      "A estimates $1 million net preservation benefit and B −$1 million; the probabilities are factual judgments, while the access weights are value judgments.",
+      "A estimates $3 million net benefit and B $1 million; plan cost is a value judgment and should not enter factual calculations."
+    ],
+    "correctIndex": 2,
+    "feedback": "A estimates avoided loss of (0.20−0.05)×20=$3 million, netting $1 million after cost. B estimates (0.10−0.05)×20=$1 million, netting −$1 million. Probabilities are empirical assessments; how delayed access is weighted is normative.",
+    "reason": "Strengthen the reasoning chain and answer alternatives; preserve topic and graph."
+  }
+}
