@@ -2,7 +2,7 @@
 (function(root,data){if(typeof module==='object'&&module.exports)module.exports=data;else root.MQFacultyOutcomePolicy=data;})(typeof globalThis!=='undefined'?globalThis:this,{
   "schemaVersion": 1,
   "policyVersion": "faculty-lo-1",
-  "librarySha256": "270770556299da4a5fa9695f7d818af4c090f67b1feed67e970fea54de9a4c01",
+  "librarySha256": "02ecab7d94216f1231f79bb914e5e93a25925aa0a5a5f45395a2a9bc4f4a7d90",
   "concepts": {
     "ad-as-equilibrium-and-output-gaps": {
       "outcomes": [
@@ -1155,9 +1155,9 @@
           "coverage": {
             "ordinary": 18,
             "checkpoints": 6,
-            "repair": 2,
+            "repair": 3,
             "bridge": 1,
-            "seed": 1,
+            "seed": 0,
             "difficulty": {
               "easy": 5,
               "medium": 6,
@@ -3200,9 +3200,9 @@
           "coverage": {
             "ordinary": 23,
             "checkpoints": 9,
-            "repair": 4,
+            "repair": 5,
             "bridge": 3,
-            "seed": 1,
+            "seed": 0,
             "difficulty": {
               "easy": 7,
               "medium": 6,
@@ -4568,9 +4568,9 @@
           "coverage": {
             "ordinary": 30,
             "checkpoints": 9,
-            "repair": 6,
+            "repair": 7,
             "bridge": 5,
-            "seed": 1,
+            "seed": 0,
             "difficulty": {
               "easy": 6,
               "medium": 16,
@@ -4931,9 +4931,9 @@
           "coverage": {
             "ordinary": 13,
             "checkpoints": 6,
-            "repair": 4,
+            "repair": 5,
             "bridge": 1,
-            "seed": 1,
+            "seed": 0,
             "difficulty": {
               "easy": 9,
               "medium": 2,
@@ -6842,9 +6842,9 @@
           "coverage": {
             "ordinary": 69,
             "checkpoints": 24,
-            "repair": 8,
+            "repair": 9,
             "bridge": 6,
-            "seed": 1,
+            "seed": 0,
             "difficulty": {
               "easy": 11,
               "medium": 17,
@@ -7284,9 +7284,9 @@
           "coverage": {
             "ordinary": 339,
             "checkpoints": 30,
-            "repair": 11,
+            "repair": 13,
             "bridge": 8,
-            "seed": 2,
+            "seed": 0,
             "difficulty": {
               "easy": 77,
               "medium": 132,
@@ -7730,9 +7730,9 @@
           "coverage": {
             "ordinary": 37,
             "checkpoints": 13,
-            "repair": 6,
+            "repair": 7,
             "bridge": 4,
-            "seed": 1,
+            "seed": 0,
             "difficulty": {
               "easy": 10,
               "medium": 10,
@@ -7855,9 +7855,9 @@
           "coverage": {
             "ordinary": 16,
             "checkpoints": 4,
-            "repair": 3,
+            "repair": 4,
             "bridge": 2,
-            "seed": 1,
+            "seed": 0,
             "difficulty": {
               "easy": 9,
               "medium": 3,
@@ -10312,9 +10312,9 @@
           "coverage": {
             "ordinary": 35,
             "checkpoints": 12,
-            "repair": 4,
+            "repair": 5,
             "bridge": 2,
-            "seed": 1,
+            "seed": 0,
             "difficulty": {
               "easy": 6,
               "medium": 8,
@@ -10962,9 +10962,9 @@
           "coverage": {
             "ordinary": 18,
             "checkpoints": 6,
-            "repair": 2,
+            "repair": 3,
             "bridge": 1,
-            "seed": 1,
+            "seed": 0,
             "difficulty": {
               "easy": 5,
               "medium": 7,
@@ -12070,9 +12070,9 @@
           "coverage": {
             "ordinary": 36,
             "checkpoints": 10,
-            "repair": 5,
+            "repair": 7,
             "bridge": 4,
-            "seed": 2,
+            "seed": 0,
             "difficulty": {
               "easy": 8,
               "medium": 15,
@@ -12115,9 +12115,9 @@
           "coverage": {
             "ordinary": 23,
             "checkpoints": 11,
-            "repair": 2,
+            "repair": 3,
             "bridge": 0,
-            "seed": 1,
+            "seed": 0,
             "difficulty": {
               "easy": 2,
               "medium": 5,
@@ -12697,9 +12697,9 @@
           "coverage": {
             "ordinary": 20,
             "checkpoints": 6,
-            "repair": 0,
+            "repair": 1,
             "bridge": 2,
-            "seed": 1,
+            "seed": 0,
             "difficulty": {
               "easy": 5,
               "medium": 6,
@@ -13717,5 +13717,5 @@
       "hidden": false
     }
   },
-  "policySha256": "d1c54d5dbfb549d7c3e7386f62a1fb641d63994ce19c4f83217ae69c309eb471"
+  "policySha256": "4de4de3d30b02c011d6e25871b6f1c6acb892ca8655ccb7d670675c00a435953"
 });
