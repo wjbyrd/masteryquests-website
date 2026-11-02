@@ -51,3 +51,4 @@ module.exports=require('./medium-review-revisions.js').wrap(module.exports);
 module.exports=require('./repair-review-revisions.js').wrap(module.exports);
 module.exports=require('./repair-seed-activation.js').wrap(module.exports);
 module.exports=require('./repair-review-acceptance.js').wrap(module.exports);
+module.exports=require('./bridge-pool-revisions.js').wrap(module.exports);

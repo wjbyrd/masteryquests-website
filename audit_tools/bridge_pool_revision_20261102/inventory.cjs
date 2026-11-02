@@ -1,0 +1,10 @@
+'use strict';
+const fs=require('fs'),path=require('path'),crypto=require('crypto');
+const root=path.resolve(__dirname,'../..'),core=require(path.join(root,'build/faculty-build-composer/composer-core.js')),con=require(path.join(root,'build/faculty-build-composer/tests/composer-integrity-contracts.js'));
+const lib=JSON.parse(fs.readFileSync(path.join(__dirname,'baseline/composer_library.js'),'utf8').slice('window.MQ_COMPOSER_LIBRARY='.length).trim().replace(/;$/,''));
+const outcomes=JSON.parse(fs.readFileSync(path.join(root,'faculty_exports/faculty_outcome_resolution.json'),'utf8')).questions;
+const review=JSON.parse(fs.readFileSync(path.join(__dirname,'baseline/personal-review-list-data.json'),'utf8'));
+const all=con.questionRecords(lib),rows=all.filter(r=>r.question.instructionalRole==='bridge').map((r,i)=>{const q=r.question,m=lib.concepts[r.conceptId],correctIndex=q.options.findIndex(o=>crypto.createHash('sha256').update(core.normalizeAnswerText(o)).digest('hex')===q.aHash);return {n:i+1,id:String(q.id),conceptId:r.conceptId,topic:m.title,question:q,correctIndex,outcomes:outcomes[String(q.id)]?.outcomes||[],repairIds:[...new Set([...(m.microSkillRepairPools?.[q.repairSkill]||[]),...(m.microSkillRepairPools?.[q.primarySkill]||[])])],review:review.reviewSeed[String(q.id)]||null};});
+fs.writeFileSync(path.join(__dirname,'inventory.json'),JSON.stringify({beforeLibrarySha256:lib.librarySha256,count:rows.length,items:rows},null,2)+'\n');
+const start=Number(process.argv[2]||1),end=Number(process.argv[3]||100),brief=rows.filter(r=>r.n>=start&&r.n<=end).map(r=>`${r.n} ${r.id} [${r.conceptId}; ${r.question.primarySkill}]\n${r.question.q}\n${r.question.options.map((o,i)=>`${i===r.correctIndex?'*':''}${'ABCD'[i]} ${o}`).join(' | ')}\nOutcome: ${r.outcomes.map(o=>o.label).join(' / ')}\nExplanation: ${r.question.feedback||''}`);
+console.log(brief.join('\n\n'));
