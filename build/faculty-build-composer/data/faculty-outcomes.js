@@ -2,7 +2,7 @@
 (function(root,data){if(typeof module==='object'&&module.exports)module.exports=data;else root.MQFacultyOutcomePolicy=data;})(typeof globalThis!=='undefined'?globalThis:this,{
   "schemaVersion": 1,
   "policyVersion": "faculty-lo-1",
-  "librarySha256": "28a4b717c8e2d81b8d3b204c19cab388e1367f22df26cd06272d2ec0af7b6f60",
+  "librarySha256": "fa5374477cc3c050470e82b427e07ae318fbbd064c3e924127a4acfec235ce6b",
   "concepts": {
     "ad-as-equilibrium-and-output-gaps": {
       "outcomes": [
@@ -4180,8 +4180,8 @@
             "bridge": 4,
             "seed": 0,
             "difficulty": {
-              "easy": 11,
-              "medium": 9,
+              "easy": 12,
+              "medium": 8,
               "hard": 11,
               "elite": 0,
               "legendary": 0
@@ -4296,8 +4296,8 @@
             "bridge": 2,
             "seed": 0,
             "difficulty": {
-              "easy": 4,
-              "medium": 6,
+              "easy": 6,
+              "medium": 4,
               "hard": 4,
               "elite": 1,
               "legendary": 2
@@ -13224,8 +13224,8 @@
             "seed": 0,
             "difficulty": {
               "easy": 5,
-              "medium": 28,
-              "hard": 11,
+              "medium": 27,
+              "hard": 12,
               "elite": 2,
               "legendary": 4
             },
@@ -13717,5 +13717,5 @@
       "hidden": false
     }
   },
-  "policySha256": "4b85bc86c86a5b558f0fc98fa771fc8634d0740488a5420fb80196cb64c1a935"
+  "policySha256": "e510ad826de27c98d97c0e780db892936bb9aaad82d2501f7e0d68b786a1fe53"
 });
