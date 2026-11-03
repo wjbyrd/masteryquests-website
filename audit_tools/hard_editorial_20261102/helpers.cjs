@@ -1,0 +1,7 @@
+'use strict';
+const money=s=>s.replace(/\$(\d{4,})(\.\d+)?/g,(_,n,d)=>'$'+Number(n).toLocaleString('en-US')+(d||''));
+const table=(caption,headers,rows)=>'<table>'+(caption?'<caption>'+caption+'</caption>':'')+'<thead><tr>'+headers.map(h=>'<th>'+h+'</th>').join('')+'</tr></thead><tbody>'+rows.map(r=>'<tr>'+r.map(v=>'<td>'+v+'</td>').join('')+'</tr>').join('')+'</tbody></table>';
+const costs=s=>s.replace(/\bLRATC\b/g,'long-run average total cost').replace(/\bLRAC\b/g,'long-run average cost').replace(/\bSRATC\b/g,'short-run average total cost').replace(/\bTVC\b/g,'total variable cost').replace(/\bTFC\b/g,'total fixed cost').replace(/\bTC\b/g,'total cost').replace(/\bATC\b/g,'average total cost').replace(/\bAVC\b/g,'average variable cost').replace(/\bAFC\b/g,'average fixed cost').replace(/\bMC\b/g,'marginal cost').replace(/\bMP\b/g,'marginal product').replace(/\bAP\b/g,'average product').replace(/\bTP\b/g,'total output');
+const sentence=s=>s[0].toUpperCase()+s.slice(1).replace(/[.;]$/,'')+'.';
+function finish(item,{q,options,feedback,hint},reason,edit,keep){const old=item.question,patch={};for(const [k,v]of Object.entries({q,options,feedback,hint}))if(v!==undefined&&JSON.stringify(v)!==JSON.stringify(old[k]))patch[k]=v;if(Object.keys(patch).length)edit(item.id,patch,reason);else keep([item.id],'Reviewed this topic family; the wording is already clear enough to retain. Difficulty placement remains for final review.');}
+module.exports={money,table,costs,sentence,finish};
