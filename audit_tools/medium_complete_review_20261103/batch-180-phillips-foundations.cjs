@@ -1,0 +1,20 @@
+'use strict';
+module.exports=({items,finish,choose})=>{
+const patches={
+'ECON-SP-MEDIUM-156':{options:['b','c','d','U3']},
+'ECON-SP-MEDIUM-163':{right:'It shifts the short-run Phillips curve upward, worsening the inflation-unemployment tradeoff.',wrong:['It moves the economy down an unchanged short-run Phillips curve.','It shifts the long-run Phillips curve to zero unemployment.','It eliminates expected inflation.']},
+'ECON-SP-HARD-245':{q:'An unexpected expansion of aggregate demand raises inflation above its expected rate. With no supply shock and the natural rate unchanged, what happens to unemployment in the short run?',right:'It temporarily falls below the natural rate.'},
+'PG5-PC-H-004':{feedback:'SRPC1 lies above SRPC0. At the same unemployment rate, it shows higher inflation, so this is a change in the inflation-unemployment relationship rather than movement along the original curve.'},
+'P52B-S2-PCEXP-B2-001':{feedback:'Once the oil shock ends, its direct upward pressure on inflation disappears. Higher expected inflation still keeps the final curve above its original position. Comparing the final curve with its shock-period position requires knowing the sizes of both effects.'},
+'P77-PVN-M-010':{feedback:'Whether the fee reduced waste can be tested with evidence. Calling that result fair adds a value judgment, which is the normative part of the statement.'},
+'P77-PVN-M-012':{feedback:'The claim that costs rose by 8% can be checked against data, so it is positive. Saying the city should respond is a recommendation about what ought to happen, making that part normative.'},
+'P77-PVN-M-013':{q:'A report says a program “works” without specifying what outcome improved. What is needed to make that claim testable?',feedback:'The report needs to specify an observable outcome. Without saying what “works” means, it is unclear what evidence would support or contradict the claim.'},
+'P77-PVN-M-015':{q:'A tax study defines “efficient” using a measurable revenue criterion. Does using that word necessarily make its finding normative?',feedback:'If “efficient” refers to a specified, measurable criterion, whether the tax meets it can be tested. Deciding that this criterion should be the policy goal would be a separate value judgment.'},
+'P77-PVN-MEDIUMB-029':{q:'“The city ought to accept higher costs for cleaner air.” What kind of statement is this?'},
+'P52B-S4-PPF-B2-001':{right:'Production moves toward the existing frontier as resources are used more fully; productive capacity does not increase.',feedback:'Putting idle workers and factories back to work increases actual production using existing capacity. It moves the economy toward its existing frontier rather than shifting that frontier outward.'},
+'ECON-MG-MEDIUM-110':{wrong:['It reached a point that is currently unattainable.','Its productive capacity necessarily increased.','It changed its mix of goods while remaining inefficient.']},
+'ECON-MG-MEDIUM-111':{wrong:['It shifts inward.','It stays fixed because technology cannot affect capacity.','The economy must move along an unchanged frontier.']},
+'ECON-MG-LEGENDARY-9009':{wrong:['More training guarantees that all existing resources were already fully employed.','More training changes only the mix of output along an unchanged frontier.','More training eliminates the opportunity cost of producing either good.']}
+};
+for(const item of items.filter(x=>['phillips-curve-expectations','positive-versus-normative-analysis','price-signals','production-possibilities-frontier'].includes(x.conceptId))){const p={...patches[item.id]};if(p.right||p.wrong){p.options=choose(item,p.right||item.question.options[item.correctIndex],p.wrong||item.question.options.filter((_,i)=>i!==item.correctIndex));delete p.right;delete p.wrong;}finish(item,p,Object.keys(p).length?'Read every component; align graph labels, clarify the claim or causal assumptions, and distinguish actual production growth from growth in productive capacity.':'Read the complete item; checked the curve comparison, opportunity-cost arithmetic, and conceptual distinction and retained consistent wording.');}
+};

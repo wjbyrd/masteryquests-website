@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "verifiedAt": "2026-11-03T11:42:24.317496+00:00",
+  "librarySha256": "fa406921519b511c3d3582e66ea7b7e485e91fdf94867de9ca37ece398e40c34",
+  "sourceSha256": "fcee0916b8b0825ae6bfc22a3fc2fb3b6fd91fd6a323b0a7ec5c300cfa8c29af",
+  "method": "Read the complete stem, every answer choice, explanation, and hint for every item, grouped only where the complete contents were exact duplicates. Checked context, assumptions, units, answer uniqueness, natural prose, and explanation agreement. Recomputed numerical families and individually inspected all 115 referenced graph asset paths for 320 items against their answers and explanations. No screening-only retention.",
+  "coverage": {
+    "completeItemRead": 1586,
+    "screenOnly": 0,
+    "graphQuestions": 320,
+    "graphAssets": 115
+  },
+  "mediumPoolScreened": 1586,
+  "topics": 66,
+  "revised": 652,
+  "retained": 934,
+  "difficultyChanges": 0,
+  "answerPositionsPreserved": true,
+  "pendingUserReview": 652,
+  "preservedPriorReviewRecords": 7579,
+  "allOtherRevisionRecordsPreserved": true,
+  "revisedQuestionsReturnedToQueue": 0,
+  "reviewQueueQuestions": 7579,
+  "facultyOutcomeAssertions": 193913,
+  "independentCalculationChecks": 149,
+  "preservedWorkbookCellsScanned": 215488,
+  "visualInspection": [
+    "general-pdf-contact.png",
+    "micro-pdf-contact.png",
+    "macro-pdf-contact.png",
+    "general-xlsx.png",
+    "micro-xlsx.png",
+    "macro-xlsx.png",
+    "manual-after.png",
+    "medium-review.png",
+    "surplus-table.png",
+    "mobile-project-table.png",
+    "monopoly-graph.png"
+  ],
+  "artifacts": [
+    {
+      "path": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/faculty_exports/general_economics_question_bank.pdf",
+      "bytes": 4099736,
+      "sha256": "9ea5ea67a6a7ce19aecdafd474fa642723f53d91dde5cdfe2ef805c530eb01ab"
+    },
+    {
+      "path": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/faculty_exports/general_economics_question_bank.xlsx",
+      "bytes": 367439,
+      "sha256": "68530ee5c0c9a23428129c9cca83ed0344c4526ffe1ebcf9d5e6a63d9cd8e0fc"
+    },
+    {
+      "path": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/faculty_exports/general_economics_question_bank.csv",
+      "bytes": 1199797,
+      "sha256": "37a67fcf1e3ab811b1c6db77d14d40390d19d0ffa3993df959cc2ede3fc1c0b2"
+    },
+    {
+      "path": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/faculty_exports/microeconomics_question_bank.pdf",
+      "bytes": 16908357,
+      "sha256": "63a2267ebbb17c54a683ed214ae89277b6223ff87db3317233f119b716d555c0"
+    },
+    {
+      "path": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/faculty_exports/microeconomics_question_bank.xlsx",
+      "bytes": 1175657,
+      "sha256": "ea2c2a7946507cf999033d2ec2c300467d23e0b9a787674e848c38d84510ede9"
+    },
+    {
+      "path": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/faculty_exports/microeconomics_question_bank.csv",
+      "bytes": 4587131,
+      "sha256": "c5814941e42ee72b881018801e46bd722b87b1bd70c1434dbf5f40e6bec68689"
+    },
+    {
+      "path": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/faculty_exports/macroeconomics_question_bank.pdf",
+      "bytes": 9747082,
+      "sha256": "9b9427ed75d55ffc0369909aa5f1c4f0143562680a068ddf59817f33ff631121"
+    },
+    {
+      "path": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/faculty_exports/macroeconomics_question_bank.xlsx",
+      "bytes": 1082971,
+      "sha256": "0cf64e6c270eedffa27bcacaf16de672565da9b0ba68a1884edc09c6d8d47b87"
+    },
+    {
+      "path": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/faculty_exports/macroeconomics_question_bank.csv",
+      "bytes": 3683221,
+      "sha256": "67d63a59303ca223b65f61e6aaef07d3bd9ef2a4cd1e6c0c29ef43f1fec10841"
+    },
+    {
+      "path": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/faculty_exports/microeconomics_manual_review.xlsx",
+      "bytes": 174195,
+      "sha256": "bb96a3b21fb069abbb112b8d15de704d7f24c5b621c235a276e436bade1eb7b6"
+    },
+    {
+      "path": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/faculty_exports/microeconomics_manual_review.csv",
+      "bytes": 348068,
+      "sha256": "6ec3684a9b555b4afbe452965542073ad4534d004e759771300f5ee80fbfa917"
+    },
+    {
+      "path": "C:/Users/Jennings/Documents/Mastery Quests Website/Conference_Presentation/deliverables/MasteryQuests_Question_Review.html",
+      "bytes": 26256975,
+      "sha256": "6b674cf79c5e9b44408ece1647c3fe3b0338fed7d83720361eb4c6a90e3f525d"
+    }
+  ],
+  "reproduceExports": [
+    "python tools/export_faculty_question_bank.py --node <bundled-node>",
+    "node audit_tools/easy_pool_review_20261101/excel.mjs --report-directory=<this-audit-directory>",
+    "python audit_tools/medium_complete_review_20261103/preserve-sheet-visibility.py"
+  ]
+}

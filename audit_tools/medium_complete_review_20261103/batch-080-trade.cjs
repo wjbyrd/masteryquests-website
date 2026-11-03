@@ -1,0 +1,17 @@
+'use strict';
+module.exports=({items,finish})=>{
+const patch={
+'PMA-ITP-M-015':{feedback:'Opening to trade can create total gains larger than total losses while still hurting some groups. A net gain does not mean that every household, worker, or producer benefits.'},
+'PMA-ITP-M-028':{options:['Whether domestic producers receive any revenue.','Whether domestic or foreign holders receive the quota rents.','Whether domestic consumers buy the good.','Whether the domestic price equals the world price despite the restriction.']},
+'P62D-ITP-H-014':{feedback:'Rectangle R measures the quota rent: the $10 gap between the domestic and world prices multiplied by 20 imported units gives $200.'},
+'P62D-ITP-B2-026':{q:'In the standard small-country trade model, which effect is a transfer between domestic groups rather than a loss of total surplus?'},
+'P62D-ITP-B2-027':{q:'In the standard small-country model, why do consumers’ gains from opening to imports exceed domestic producers’ losses?'},
+'P62D-ITP-B2-028':{q:'In the standard small-country model, why do producers’ gains from opening to exports exceed domestic consumers’ losses?',feedback:'Some goods move from domestic buyers to foreign buyers willing to pay more, and additional production costs less than its world-market value. These gains make the increase in producer surplus larger than the loss of consumer surplus.'},
+'P62D-ITP-B2-032':{q:'In the standard small-country model with no taxes or other market distortions, which change measures the national gains from opening to free trade?'},
+'PMOE-TX-M-002':{q:'An economy has national saving of $640 billion and domestic investment of $500 billion. What is its net capital outflow?',feedback:'National saving finances domestic investment and net capital outflow. Subtracting investment from saving gives $640 billion − $500 billion = $140 billion in net capital outflow.'},
+'PMOE-TX-M-003':{q:'In the standard open-economy accounting model, a country records net capital outflow of −$60 billion. What must its net exports equal?'},
+'PMOE-TX-M-004':{q:'Domestic residents buy $240 billion of foreign assets while foreigners buy $310 billion of domestic assets. What is net capital outflow?'},
+'PMOE-TX-B2-001':{q:'National saving is $300 billion and domestic investment is $360 billion. In the standard open-economy accounting model, what are net capital outflow and net exports?',feedback:'Saving minus investment is $300 billion − $360 billion = −$60 billion. Both net capital outflow and net exports equal that amount, indicating a net capital inflow and a trade deficit.'}
+};
+for(const item of items.filter(x=>x.conceptId.startsWith('international-'))){const p={...patch[item.id]};if(/^P62D-ITP-M-00[4-8]$|^P62D-ITP-M-010$/.test(item.id)){p.q=item.question.q.replace(/^Assume competitive markets in (a small country|two small countries) that take[s]? the world price as given\. Trade is unrestricted, transport costs are zero, and domestic demand and supply are unchanged\. /,'').replace('Relative to autarky','Relative to no trade');p.q='Assume competitive markets that take the world price as given, with no trade barriers or transport costs. '+p.q;}finish(item,p,Object.keys(p).length?'Read the complete item; reduce the opening boilerplate, clarify the welfare comparison or accounting terms, and make the explanation specific.':'Read question, every choice and explanation; checked trade direction and the stated arithmetic and retained consistent wording.');}
+};
