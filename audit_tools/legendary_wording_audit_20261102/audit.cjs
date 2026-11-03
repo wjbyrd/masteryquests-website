@@ -1,0 +1,35 @@
+'use strict';
+const fs=require('fs'),path=require('path'),crypto=require('crypto'),assert=require('assert/strict');
+const root=path.resolve(__dirname,'../..'),dir=path.join(root,'build/faculty-build-composer');
+const {questionRecords}=require(path.join(dir,'tests/composer-integrity-contracts.js'));
+const core=require(path.join(dir,'composer-core.js'));
+const file=path.join(dir,'data/composer_library.js'),raw=fs.readFileSync(file,'utf8');
+const lib=JSON.parse(raw.slice('window.MQ_COMPOSER_LIBRARY='.length).trim().replace(/;$/,''));
+const review=JSON.parse(fs.readFileSync('C:/Users/Jennings/Documents/Mastery Quests Website/Conference_Presentation/source/personal-review-list-data.json','utf8'));
+const known=new Map(review.questions.map(q=>[q.id,q]));
+const text=s=>String(s||'').replace(/<[^>]*>/g,' ').replace(/&nbsp;/g,' ').replace(/&(?:lt|gt|amp);/g,' ').replace(/\s+/g,' ').trim();
+const words=s=>(text(s).match(/\S+/g)||[]).length;
+const sha=s=>crypto.createHash('sha256').update(s).digest('hex');
+const all=questionRecords(lib),unique=new Map();
+for(const row of all){const id=String(row.question.id);if(unique.has(id))assert.deepEqual(unique.get(id).question,row.question);else unique.set(id,row);}
+const items=[...unique.values()].filter(r=>r.question.canonicalDifficulty==='legendary').map((r,i)=>{
+ const q=r.question,stem=text(q.q),options=q.options.map(text),feedback=text(q.feedback),correct=q.options.findIndex(o=>sha(core.normalizeAnswerText(o))===q.aHash);
+ assert(correct>=0);
+ const fieldText=[stem,...options],flags=[];
+ const add=(code,predicate)=>{const fields=fieldText.map((s,j)=>predicate(s,j)?(j===0?'stem':'option '+String.fromCharCode(64+j)):null).filter(Boolean);if(fields.length)flags.push({code,fields});};
+ add('meta_prompt_vocabulary',s=>/\b(bundle|package|chain|diagnostic|diagnosis|verdict|coherent|defensible|caveat|claim set|audit|cross.check|consistency check|checkpoint|boss)\b/i.test(s));
+ add('compressed_labels',s=>/\b(?:binding|nonbinding|shortage|surplus|profit|loss|elastic|inelastic|entry|exit|demand|supply|output|price|welfare|employment|inflation|rate|quantity|policy|effect|result|revenue|cost|mechanism|interpretation|direction|reason)\s*[:=]/i.test(s));
+ add('multiple_semicolons',s=>(s.match(/;/g)||[]).length>=2);
+ add('arrow_notation',s=>/[→⇒↑↓↔]/.test(s));
+ add('learner_word',s=>/\blearners?\b/i.test(s));
+ add('long_text',(s,j)=>words(s)>(j===0?90:40));
+ const lengths=options.map(words),avgOther=lengths.filter((_,j)=>j!==correct).reduce((a,b)=>a+b,0)/(lengths.length-1);
+ if(lengths[correct]>=25&&lengths[correct]>=1.65*avgOther&&lengths[correct]-Math.max(...lengths.filter((_,j)=>j!==correct))>=10)flags.push({code:'correct_choice_length_clue',fields:['option '+String.fromCharCode(65+correct)]});
+ return {n:i+1,id:String(q.id),conceptId:r.conceptId,topic:lib.concepts[r.conceptId].title,role:q.instructionalRole,stem,options,correct,feedback,graph:q.image||null,stemWords:words(stem),optionWords:lengths,flags,inReviewQueue:known.has(String(q.id)),reviewStatus:review.reviewSeed[String(q.id)]?.status||'outside_queue'};
+});
+const counts=fn=>{const out={};for(const r of items)for(const k of [].concat(fn(r)))out[k]=(out[k]||0)+1;return out;};
+const percentile=(values,p)=>[...values].sort((a,b)=>a-b)[Math.floor((values.length-1)*p)];
+const summary={scope:'All unique canonicalDifficulty=legendary questions, regardless of instructionalRole; automated indicators are screening candidates, not final editorial findings.',canonicalLibrarySha256:lib.librarySha256,sourceFileSha256:sha(raw),total:items.length,topics:new Set(items.map(r=>r.conceptId)).size,inCurrentReviewQueue:items.filter(r=>r.inReviewQueue).length,byRole:counts(r=>r.role),byReviewStatus:counts(r=>r.reviewStatus),flags:counts(r=>r.flags.map(f=>f.code)),anyScreeningIndicator:items.filter(r=>r.flags.length).length,stemWords:{median:percentile(items.map(r=>r.stemWords),.5),p90:percentile(items.map(r=>r.stemWords),.9),max:Math.max(...items.map(r=>r.stemWords))},optionWords:{median:percentile(items.flatMap(r=>r.optionWords),.5),p90:percentile(items.flatMap(r=>r.optionWords),.9),max:Math.max(...items.flatMap(r=>r.optionWords))}};
+fs.writeFileSync(path.join(__dirname,'inventory.json'),JSON.stringify({summary,items},null,2)+'\n');
+console.log(JSON.stringify(summary,null,2));
+console.log('TOPICS',JSON.stringify(Object.entries(counts(r=>r.topic)).sort((a,b)=>b[1]-a[1])));

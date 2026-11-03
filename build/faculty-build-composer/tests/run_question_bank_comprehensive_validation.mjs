@@ -60,7 +60,7 @@ for(const id of ['P62I-OLI-LB-001','P62I-OLI-LB-004']){
  const totals=payoffs.map(p=>p[0]+p[1]);const joint=labels.filter((_,i)=>totals[i]===Math.max(...totals));
  assert.equal(nash.length,1);assert.equal(joint.length,1);
  const key=q.options.find(o=>sha(norm(o))===q.aHash);
- assert.equal(key,`${nash[0]} is the unique equilibrium; ${joint[0]} maximizes joint payoff`);
+ assert.equal(key,`${nash[0]} is the unique equilibrium. ${joint[0]} maximizes joint payoff.`);
  payoffTables.push({id,payoffs,nash,joint});
 }
 fs.writeFileSync(resultOut+'/boss-payoff-table-proof.json',JSON.stringify(payoffTables,null,2)+'\n');

@@ -1,0 +1,14 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {createRequire} from 'node:module';
+import {fileURLToPath,pathToFileURL} from 'node:url';
+const here=path.dirname(fileURLToPath(import.meta.url)),root=path.resolve(here,'../..');
+const require=createRequire(path.join(root,'audit_tools/easy_pool_review_20261101/excel.mjs'));
+const {FileBlob,SpreadsheetFile}=await import(pathToFileURL(require.resolve('@oai/artifact-tool')));
+const wb=await SpreadsheetFile.importXlsx(await FileBlob.load(path.join(root,'faculty_exports/macroeconomics_question_bank.xlsx')));
+const sheet=wb.worksheets.getItem('Macroeconomics'),values=sheet.getUsedRange().values;
+const row=values.findIndex(r=>r[0]==='LG-Q-9122')+1;
+if(row<2)throw new Error('Preview ID missing');
+const png=await wb.render({sheetName:sheet.name,range:`G${row}:I${row+1}`,scale:1});
+await fs.writeFile(path.join(here,'qa/macro-quantity-table-xlsx.png'),new Uint8Array(await png.arrayBuffer()));
+console.log(JSON.stringify({preview:'LG-Q-9122',row}));
