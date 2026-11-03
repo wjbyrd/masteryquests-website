@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>MasteryQuests · Question review</title>
+<style>
+:root{font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;color:#172c3d;background:#f1f5f7;--blue:#14576b;--line:#d4dfe5}*{box-sizing:border-box}body{margin:0}header{background:#123242;color:white;padding:30px max(24px,calc((100% - 1120px)/2)) 24px}h1{margin:4px 0 8px;font-size:30px;letter-spacing:-.8px}.eyebrow{color:#88d7d0;font-size:12px;font-weight:750;letter-spacing:2px}header p{max-width:940px;margin:8px 0;color:#d7e5ed}.stats{display:flex;gap:22px;flex-wrap:wrap;margin-top:20px}.stats b{font-size:24px;color:white}.stats span{color:#c4d9e3}main{max-width:1168px;margin:auto;padding:24px}.toolbar{background:white;border:1px solid var(--line);border-radius:12px;padding:18px;margin-bottom:20px}.filters{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.filters>label:first-child{grid-column:1/-1}label.filter{display:grid;gap:5px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.4px}select,input[type=search],input[type=number],textarea{font:inherit;padding:9px 11px;border:1px solid #aebfc9;border-radius:6px;background:white;color:#172c3d;min-width:0}select,input[type=search]{width:100%;font-size:14px}button,.filebutton{font:600 14px system-ui;border:1px solid #9eafb9;background:white;color:#173d50;padding:10px 15px;border-radius:7px;cursor:pointer;text-decoration:none}button:hover,.filebutton:hover{background:#e5f1f4}button.primary{background:var(--blue);color:white;border-color:var(--blue)}button:disabled{opacity:.45;cursor:default}.tools,.pagination{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-top:15px}.save{font-size:13px;color:#28614b}.notice{font-size:13px;color:#536877;margin:10px 0 0}.error{background:#fff1ce;color:#784900;padding:10px;border-radius:6px}.pagination{position:sticky;top:0;z-index:2;background:#f1f5f7f5;padding:12px 0;border-bottom:1px solid var(--line);margin:0 0 18px}.pagination .range{margin-right:auto;font-weight:650}.pagination input{width:75px;font-size:14px;padding:8px}.card{background:white;border:1px solid var(--line);border-radius:12px;margin:0 0 18px;padding:24px;scroll-margin-top:90px;box-shadow:0 2px 3px #14293604}.meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:12px;color:#506677;margin-bottom:13px}.badge{background:#eaf0f4;padding:3px 8px;border-radius:5px}.qid{font-family:ui-monospace,monospace;overflow-wrap:anywhere}.stem{font-size:18px;font-weight:600;line-height:1.6;margin:0 0 18px;white-space:pre-wrap}.stem table{border-collapse:collapse;margin:12px 0;font-size:15px}.stem td,.stem th{border:1px solid #adbec8;padding:6px 12px;text-align:left}.graph{max-width:100%;max-height:520px;object-fit:contain;display:block;margin:12px auto 20px;border:1px solid #e5e9ec;border-radius:6px}.choices{display:grid;grid-template-columns:1fr 1fr;gap:9px;border:0;padding:0;margin:0 0 15px}.choices legend,.review legend{font-size:13px;font-weight:700;margin-bottom:8px;color:#506677}.choice{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:7px;padding:12px;font-size:15px;cursor:pointer;white-space:pre-wrap}.choice:has(input:checked){border-color:#287c90;background:#edf8fb}.choice input,.status input{accent-color:#176779;margin-top:5px;flex-shrink:0}details{margin:12px 0 18px;background:#f4f8fa;border-radius:7px;padding:11px 14px}summary{cursor:pointer;color:#14576b;font-weight:650;font-size:14px}.feedback{margin:10px 0 0;white-space:pre-wrap}.review{border:0;border-top:1px solid var(--line);padding:14px 0 0;margin:15px 0 0}.review legend{padding:0 8px 0 0}.statuses{display:flex;gap:8px;flex-wrap:wrap}.status{display:flex;gap:7px;align-items:center;padding:8px 11px;border:1px solid var(--line);border-radius:6px;font-size:13px;cursor:pointer}.status input{margin:0}.status:has(input:checked){background:#e4f2ec;border-color:#4a8d70}.status.flag:has(input:checked){background:#fff0dc;border-color:#c58d42}.card[data-status=flag]{border-left:5px solid #c58d42}.card[data-status=pass],.card[data-status=previous]{border-left:5px solid #4a8d70}.notes{display:grid;gap:5px;font-size:13px;color:#506677;margin-top:13px}.notes textarea{width:100%;min-height:50px;font-size:14px;resize:vertical}.cardfoot{display:flex;gap:12px;align-items:center;justify-content:flex-end;margin-top:12px}.answerresult{margin-right:auto;font-size:13px;color:#536877}.empty{text-align:center;padding:55px;background:white;border-radius:10px}.bottom{display:flex;justify-content:space-between;padding:8px 0 25px}footer{font-size:12px;color:#667a87;padding:15px 0}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #39a5c3;outline-offset:3px}@media(max-width:650px){main{padding:12px}header{padding:24px 18px}.filters{grid-template-columns:1fr 1fr}.choices{grid-template-columns:1fr}.card{padding:17px}.pagination{gap:6px}.pagination .range{width:100%}h1{font-size:26px}}@media print{header,.toolbar,.pagination,.bottom,footer,.cardfoot{display:none}.card{break-inside:avoid;box-shadow:none}.choices{grid-template-columns:1fr}main{padding:0}}
+.answer-key{margin:12px 0 18px;background:#f4f8fa;border-left:3px solid #287c90;border-radius:7px;padding:14px 16px}.answer-key .feedback:first-child{margin-top:0}.flag-reasons{border:0;padding:0;margin:16px 0 0}.flag-reasons legend{font-size:14px;font-weight:700;color:#784900;margin-bottom:9px}.reason-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.reason{display:flex;align-items:flex-start;gap:8px;padding:10px;border:1px solid var(--line);border-radius:7px;font-size:13px;cursor:pointer}.reason input{accent-color:#926016;flex-shrink:0;margin-top:4px}.reason:has(input:checked){background:#fff0dc;border-color:#a8732b}.reason:focus-within{outline:3px solid #39a5c3;outline-offset:2px}@media(max-width:800px){.reason-options{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:500px){.reason-options{grid-template-columns:1fr}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.revision-note{padding:14px 16px;margin:12px 0 18px;border:1px solid #bd985c;border-radius:8px;background:#fff8e9;font-size:14px}.revision-note p{margin:8px 0}.revision-note details{background:#fffdf7}.revision-note li{margin-bottom:8px}</style></head><body>
+<header><div class="eyebrow">MASTERYQUESTS / PERSONAL REVIEW</div><h1>Your question review queue</h1><p>All 1,586 remaining Medium questions received a complete review. This pass revised 652 questions, answers, or explanations. Use the comparison in each revised question to see what changed. Your earlier reviews and notes are preserved.</p><div class="stats"><span><b id="remaining">7,579</b> remaining</span><span><b id="done">0</b> marked reviewed</span><span><b id="flagged">0</b> flagged</span><span><b id="verification">0</b> revised reviews to verify</span></div></header>
+<main><section class="toolbar" aria-label="Review controls"><div class="filters">
+<label class="filter">Search<input type="search" id="search" placeholder="Question text, topic, or ID"></label>
+<label class="filter">Course<select id="course"><option value="">All courses</option><option value="general">General Economics</option><option value="micro">Microeconomics</option><option value="macro">Macroeconomics</option></select></label>
+<label class="filter">Topic<select id="topic"><option value="">All topics</option></select></label>
+<label class="filter">Difficulty<select id="difficulty"><option value="">All difficulties</option></select></label>
+<label class="filter">Question role<select id="role"><option value="">All roles</option></select></label>
+<label class="filter">Review status<select id="status"><option value="">All statuses</option><option value="mediumPending">Medium revisions — not yet reviewed</option><option value="hardPending">Hard revisions — not yet reviewed</option><option value="legendaryPending">Legendary revisions — not yet reviewed</option><option value="bridgePending">Bridge revisions — not yet reviewed</option><option value="needsVerification">Updated since your review</option><option value="unknown">Not yet marked</option><option value="previous">Previously reviewed</option><option value="pass">Reviewed — pass</option><option value="flag">Reviewed — flag</option></select></label>
+<label class="filter">Questions per page<select id="size"><option>25</option><option>50</option><option>100</option><option value="all">All 7,579</option></select></label></div>
+<div class="tools"><button id="reviewMediumRevisions" class="primary">Review Medium revisions</button><button id="reviewMedium">All Medium questions</button><button id="reviewHardRevisions">Review Hard revisions</button><button id="reviewHard">All Hard questions</button><button id="reviewLegendaryRevisions">Review Legendary revisions</button><button id="reviewLegendary">All Legendary questions</button><button id="continueMedium">Continue Medium review</button><button id="reviewBridge">All Bridge questions</button><button id="reviewBridgeRevisions">Bridge revisions awaiting review</button><button id="reviewSupport">Review support questions</button><button id="verifyElite">Verify previously reviewed questions</button><button id="continueElite">All elite questions</button><button id="allQuestions">All questions</button></div><div class="tools"><button id="export" class="primary">Save progress backup</button><button id="csv">Export all reviews (CSV)</button><button id="import">Restore backup</button><input type="file" id="importfile" accept="application/json,.json" hidden><span id="saved" class="save" role="status">Progress saves in this browser</span></div>
+<p class="notice">The revision queues show only questions you have not yet marked. Passed and flagged questions stay out of those queues. Continue Medium review includes all unmarked Medium questions. Use Verify previously reviewed questions to check changes made after an earlier review. Choose Reviewed — pass to accept the version shown. Next question and Next batch use your latest saved reviews. Your filters and place are restored when you return. Bridge revisions awaiting review shows revised Bridge questions you have not yet marked. All Bridge questions includes unchanged Bridge items already in your queue. Review support questions opens unmarked items with unspecified difficulty. Category counts reflect your other filters. CSV exports and backups include all questions, regardless of filters. Later revisions preserve your earlier status and notes in the separate verification view. A previous answer is labeled separately from a new attempt. Flag a question to add revision prompts and notes. Back up progress before moving this file, switching browsers, or clearing browser data.</p><p id="message" role="status" hidden></p></section>
+<nav class="pagination" aria-label="Page navigation"><span class="range" id="range"></span><button id="prev">← Previous</button><label>Start at question <input type="number" id="page" min="1" value="1" aria-label="Starting question number"></label><span id="pages"></span><button id="next" class="primary">Next batch →</button></nav>
+<div id="questions"></div><div class="bottom"><button id="bottomprev">← Previous batch</button><button id="bottomnext" class="primary">Next batch →</button></div><footer>Source: shared Composer bank refreshed November 3, 2026 (9,802 question IDs). The original queue and prior Bridge and Legendary additions are preserved, with 219 revised Hard questions returned for verification. Other earlier documented reviews and the approved easy additions remain outside it. Unknown review history does not mean definitely unread. All questions and graphs are included in this file; no internet connection is needed.</footer></main>
+<script id="data" type="application/json">__QUESTION_DATA__</script>
+<script>
+'use strict';
+if(document.getElementById('data').textContent.trim()[0]!=='{'){
+ document.body.innerHTML='<main><h1>Opening your question review tool…</h1><p><a href="../deliverables/MasteryQuests_Question_Review.html">Click here if it does not open automatically.</a></p></main>';
+ location.replace('../deliverables/MasteryQuests_Question_Review.html');
+}else{
+const DATA=JSON.parse(document.getElementById('data').textContent), Q=DATA.questions, byId=new Map(Q.map(q=>[q.id,q]));
+const $=id=>document.getElementById(id), KEY='masteryquests-personal-review-v1', areaNames={general:'General',micro:'Micro',macro:'Macro'}, statuses={unknown:'Not yet marked',previous:'Previously reviewed',pass:'Reviewed — pass',flag:'Reviewed — flag'};
+const roleLabels={main:'Main question',checkpoint:'Boss/checkpoint',repair:'Repair',bridge:'Bridge',repairSeed:'Repair seed',unknown:'Role not specified'};
+const flagReasons={wording:'Rewrite awkward or compressed wording.',length:'Balance answer-choice lengths.',distractors:'Improve distractors / remove answer clues.',answer:'Check the answer or calculation.',assumptions:'Clarify assumptions / ambiguous answers.',explanation:'Improve the explanation.',graph:'Fix the graph or its labels.',difficulty:'Reconsider difficulty or course scope.',duplicate:'Check for a duplicate question.'};
+let state={}, cursor=0, filtered=Q, storageOK=true;
+const questionOrder=new Map(Q.map((q,i)=>[q.id,i])), VIEW_KEY=KEY+'-view-v2';
+const viewFields=['search','course','topic','difficulty','role','status','size'];
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+// Only known formatting tags survive. Inequalities such as P<ATC remain text.
+function rich(s){return String(s??'').split(/(<\/?(?:table|tbody|thead|tfoot|caption|tr|td|th|p|div|span|strong|em|b|i|u|sub|sup|ul|ol|li|br)\b[^>]*>)/gi).map(t=>{const m=t.match(/^<(\/?)(table|tbody|thead|tfoot|caption|tr|td|th|p|div|span|strong|em|b|i|u|sub|sup|ul|ol|li|br)\b[^>]*>$/i);return m?'<'+m[1]+m[2].toLowerCase()+'>':esc(t).replace(/&amp;(nbsp|amp|lt|gt|quot|#39);/g,'&$1;')}).join('')}
+function notify(s,error=false){$('message').hidden=false;$('message').textContent=s;$('message').className=error?'error':'notice'}
+
+function validRecords(records){
+ if(!records||typeof records!=='object'||Array.isArray(records))throw Error('Missing review records.');
+ const out={};
+ for(const [id,r] of Object.entries(records)){
+  if(!byId.has(id))continue;
+  if(!r||!Object.hasOwn(statuses,r.status)||typeof r.notes!=='string'||r.notes.length>20000||!(r.answer===null||Number.isInteger(r.answer)&&r.answer>=0&&r.answer<byId.get(id).options.length))throw Error('Invalid review record for '+id);
+  const reasons=r.reasons??[];
+  if(!Array.isArray(reasons)||reasons.some(reason=>!Object.hasOwn(flagReasons,reason)))throw Error('Invalid flag reasons for '+id);
+  out[id]={status:r.status,answer:r.answer,notes:r.notes,reasons:[...new Set(reasons)],updated:typeof r.updated==='string'?r.updated:''};
+  for(const k of ['reviewedRevision','answerRevision'])if(typeof r[k]==='string')out[id][k]=r[k];
+  if(r.previousReview&&typeof r.previousReview==='object'&&!Array.isArray(r.previousReview)){
+   const old={...r.previousReview};delete old.previousReview;out[id].previousReview=validRecords({[id]:old})[id];
+  }
+ }
+ return out;
+}
+function mergeRecords(base,incoming){for(const [id,r]of Object.entries(incoming))if(!base[id]||r.updated>=base[id].updated)base[id]=r;return base;}
+// Batch approval follows the saved-progress merge. It changes status/version only;
+// individual edit timestamps still select the newest notes and answer. Subsequent
+// user actions and later question versions always take precedence.
+function applyBatchApprovals(records){
+ for(const approval of DATA.batchApprovals||[]){
+  const approvedAt=Date.parse(approval.approvedAt);
+  if(!Number.isFinite(approvedAt))continue;
+  for(const [id,revision]of Object.entries(approval.questionRevisions||{})){
+   const q=byId.get(id),r=records[id];
+   if(!q||!r||q.revision!==revision||Date.parse(r.updated)>approvedAt)continue;
+   if(r.status==='pass'&&r.reviewedRevision===revision)continue;
+   if(!r.previousReview&&(r.status!=='unknown'||r.answer!==null||r.notes||r.reasons?.length))r.previousReview=JSON.parse(JSON.stringify(r));
+   r.status='pass';r.reviewedRevision=revision;
+  }
+ }
+ return records;
+}
+state=applyBatchApprovals(validRecords(DATA.reviewSeed||{}));
+try{
+ const saved=localStorage.getItem(KEY);
+ if(saved){const b=JSON.parse(saved);mergeRecords(state,validRecords(b.records));$('saved').textContent='Saved progress and latest review export restored';}
+ applyBatchApprovals(state);
+ localStorage.setItem(KEY,JSON.stringify({version:1,records:state}));
+}catch(e){storageOK=false;notify('Browser saving is unavailable or saved data could not be read. The latest exported reviews are loaded; save a backup to keep this session.',true);}
+function needsVerification(q,r=state[q.id]){return !!(q.revision&&r&&r.status!=='unknown'&&r.reviewedRevision!==q.revision);}
+function answerCurrent(q,r){return !q.revision||r.answerRevision===q.revision;}
+function preservePrior(q,r){if(q.revision&&!r.previousReview&&r.reviewedRevision!==q.revision&&(r.status!=='unknown'||r.answer!==null||r.notes)){const old={...r};delete old.previousReview;r.previousReview=JSON.parse(JSON.stringify(old));}}
+function revisionNotice(q,r){
+ if(!q.revision)return '';
+ let s='<div class="revision-note"><strong>Updated question</strong>';
+ if(q.previous){const fields=[];if(q.stem!==q.previous.stem)fields.push('question');if(JSON.stringify(q.options)!==JSON.stringify(q.previous.options))fields.push('answer choices');if(q.feedback!==q.previous.feedback)fields.push('explanation');if(fields.length)s+='<p><strong>Changed:</strong> '+fields.join(', ')+'.</p>';}
+ if(q.previous?.difficulty&&q.previous.difficulty!==q.difficulty)s+='<p><strong>Difficulty changed:</strong> '+esc(q.previous.difficulty)+' → '+esc(q.difficulty)+'.</p>';
+ if(q.previous?.topic&&q.previous.topic!==q.topic)s+='<p><strong>Topic changed:</strong> '+esc(q.previous.topic)+' → '+esc(q.topic)+'.</p>';
+ if(q.previous?.role&&q.previous.role!==q.role)s+='<p><strong>Role changed:</strong> '+esc(roleLabels[q.previous.role]||q.previous.role)+' → '+esc(roleLabels[q.role]||q.role)+'.</p>';
+ if(needsVerification(q,r))s+='<p><strong>Earlier version: '+esc(statuses[r.status])+'.</strong> This version changed afterward. Your earlier review and notes are preserved; this question stays out of the not-yet-reviewed queues.</p><button data-confirm-revision="true">'+(r.status==='pass'?'Accept this revised question':r.status==='flag'?'Keep flagged for this version':'Confirm this version as reviewed')+'</button>';
+ else if(r.reviewedRevision===q.revision)s+='<p>Your review applies to this version.</p>';
+ if(r.answer!==null&&!answerCurrent(q,r))s+='<p>Previous version: selected '+String.fromCharCode(65+r.answer)+'. Choose an answer below to record a new attempt.</p>';
+ if(q.previous)s+='<details><summary>Compare previous question and answer</summary><div class="feedback">'+rich(q.previous.stem)+'</div><ol type="A">'+q.previous.options.map(o=>'<li>'+rich(o)+'</li>').join('')+'</ol><p><strong>Previous correct answer: '+String.fromCharCode(65+q.previous.answer)+'.</strong> '+rich(q.previous.feedback)+'</p>'+(q.previous.graph?'<p><strong>Previous graph</strong></p><img class="graph" alt="Previous version graph" src="'+DATA.images[q.previous.graph]+'">':'')+'</details>';
+ return s+'</div>';
+}
+function persist(){try{localStorage.setItem(KEY,JSON.stringify({version:1,records:state}));storageOK=true;$('saved').textContent='Saved in this browser · '+new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'})}catch(e){storageOK=false;$('saved').textContent='Not saved — download a backup';notify('Your changes remain on this page, but browser storage is unavailable or full. Save a progress backup before closing.',true)}}
+function record(id){return state[id]||(state[id]={status:'unknown',answer:null,notes:'',reasons:[],updated:''})}
+function stats(){let done=0,flag=0;for(const r of Object.values(state)){if(r.status!=='unknown')done++;if(r.status==='flag')flag++}$('done').textContent=done.toLocaleString();$('remaining').textContent=(Q.length-done).toLocaleString();$('flagged').textContent=flag.toLocaleString();$('verification').textContent=Q.filter(q=>needsVerification(q)).length.toLocaleString()}
+const topics=[...new Set(Q.map(q=>q.topic))].sort(),difficultyOrder=['easy','medium','hard','elite','legendary','unknown'],difficulties=[...new Set(Q.map(q=>q.difficulty))].sort((a,b)=>(difficultyOrder.indexOf(a)<0?99:difficultyOrder.indexOf(a))-(difficultyOrder.indexOf(b)<0?99:difficultyOrder.indexOf(b))||a.localeCompare(b));
+for(const role of Object.keys(roleLabels))if(Q.some(q=>q.role===role))$('role').add(new Option(roleLabels[role],role));
+for(const topic of topics)$('topic').add(new Option(topic,topic));
+for(const d of difficulties)$('difficulty').add(new Option(d==='unknown'?'Unspecified':d,d));
+function matchesStatus(q){
+ const selected=$('status').value,r=state[q.id],status=r?.status||'unknown';
+ const prefixes={mediumPending:['medium-editorial-20261102-','medium-complete-20261103-'],hardPending:['hard-20261102-'],legendaryPending:['legendary-20261102-'],bridgePending:['bridge-20261102-']};
+ if(prefixes[selected])return status==='unknown'&&prefixes[selected].some(prefix=>(q.revision||'').startsWith(prefix));
+ if(selected==='needsVerification')return needsVerification(q,r);
+ return !selected||status===selected;
+}
+function matches(q,skip=''){
+ const term=$('search').value.trim().toLowerCase();
+ return (!$('course').value||q.areas.includes($('course').value))
+  &&(skip==='topic'||!$('topic').value||q.topic===$('topic').value)
+  &&(skip==='difficulty'||!$('difficulty').value||q.difficulty===$('difficulty').value)
+  &&(skip==='role'||!$('role').value||q.role===$('role').value)
+  &&matchesStatus(q)
+  &&(!term||[q.id,q.topic,q.stem,...q.options].join(' ').toLowerCase().includes(term));
+}
+
+function updateCounts(){for(const dimension of ['topic','difficulty','role']){const counts=new Map();let total=0;for(const q of Q){if(!matches(q,dimension))continue;counts.set(q[dimension],(counts.get(q[dimension])||0)+1);total++}for(const option of $(dimension).options){const label=option.value?(dimension==='role'?roleLabels[option.value]:dimension==='difficulty'&&option.value==='unknown'?'Unspecified':option.value):({topic:'All topics',difficulty:'All difficulties',role:'All roles'}[dimension]);option.textContent=label+' ('+(option.value?(counts.get(option.value)||0):total).toLocaleString()+')'}}}
+function pageSize(){return $('size').value==='all'?Math.max(filtered.length,1):Number($('size').value)}
+function refreshSelection(){filtered=Q.filter(q=>matches(q));updateCounts();}
+function filter(){clearTimeout(searchTimer);cursor=0;refreshSelection();render();rememberView();}
+function reasonOptions(r){return Object.entries(flagReasons).map(([reason,label])=>`<label class="reason"><input type="checkbox" data-kind="reason" value="${reason}" ${(r.reasons||[]).includes(reason)?'checked':''}>${label}</label>`).join('')}
+function render(){
+ const size=pageSize(),pages=Math.max(1,Math.ceil(filtered.length/size));
+ cursor=Math.max(0,Math.min(cursor,Math.max(0,filtered.length-1)));
+ const start=cursor,items=filtered.slice(start,start+size);
+ $('range').textContent=filtered.length?`${(start+1).toLocaleString()}–${Math.min(start+size,filtered.length).toLocaleString()} of ${filtered.length.toLocaleString()} questions`:'No matching questions';
+ $('page').value=filtered.length?start+1:1;$('page').max=Math.max(1,filtered.length);$('pages').textContent='of '+filtered.length.toLocaleString();
+ for(const id of ['prev','bottomprev'])$(id).disabled=start===0;
+ for(const id of ['next','bottomnext'])$(id).disabled=start+size>=filtered.length;
+ $('questions').innerHTML=items.length?items.map((q,i)=>{const r=state[q.id]||{status:'unknown',answer:null,notes:''};return `<article class="card" id="card-${esc(q.id)}" data-id="${esc(q.id)}" data-status="${r.status}"><div class="meta"><span class="badge">${start+i+1}</span><span class="badge">${esc(q.topic)}</span><span class="badge question-role">${esc(roleLabels[q.role]||q.role)}</span><span>${esc(q.areas.map(a=>areaNames[a]).join(' / '))} · ${esc(q.difficulty==='unknown'?'Unspecified':q.difficulty)}</span><span class="qid">${esc(q.id)}</span></div><div class="stem">${rich(q.stem)}</div>${revisionNotice(q,r)}${q.graph?`<img class="graph" loading="lazy" src="${DATA.images[q.graph]}" alt="${esc(q.alt)}">`:''}<fieldset class="choices"><legend>Optional: choose your answer</legend>${q.options.map((o,j)=>`<label class="choice"><input type="radio" name="answer-${esc(q.id)}" data-kind="answer" value="${j}" ${answerCurrent(q,r)&&r.answer===j?'checked':''}><span><strong>${String.fromCharCode(65+j)}.</strong> ${rich(o)}</span></label>`).join('')}</fieldset><section class="answer-key" aria-label="Correct answer and explanation"><div class="feedback"><strong>Correct answer: ${String.fromCharCode(65+q.answer)}.</strong> ${rich(q.options[q.answer])}</div><div class="feedback"><strong>Explanation:</strong> ${rich(q.feedback)}</div></section><fieldset class="review"><legend>${needsVerification(q,r)?'Review this revised version':'My review status'}</legend><div class="statuses">${Object.entries(statuses).map(([s,label])=>`<label class="status ${s}"><input type="radio" name="status-${esc(q.id)}" data-kind="status" value="${s}" ${!needsVerification(q,r)&&r.status===s?'checked':''}>${label}</label>`).join('')}</div></fieldset><fieldset class="flag-reasons" ${r.status==='flag'?'':'hidden'}><legend>What needs attention? Select any that apply.</legend><div class="reason-options">${r.status==='flag'?reasonOptions(r):''}</div></fieldset><label class="notes">Review notes<textarea data-kind="notes" placeholder="Add a specific correction, example, or reminder…">${esc(r.notes)}</textarea></label><div class="cardfoot"><span class="answerresult">${r.answer===null?'No answer selected':!answerCurrent(q,r)?'Previous version answer retained':`Selected ${String.fromCharCode(65+r.answer)} · review status recorded separately`}</span><span class="review-saved" role="status"></span><button data-next="true">Next question ↓</button></div></article>`}).join(''):'<div class="empty">No questions match these filters. Try another topic or status.</div>';stats()}
+for(const id of ['course','topic','difficulty','role','status','size'])$(id).addEventListener('change',filter);let searchTimer;$('search').addEventListener('input',()=>{clearTimeout(searchTimer);searchTimer=setTimeout(filter,200)});
+function savedReview(card,r){
+ const leavesQueue=r.status!=='unknown'&&(['unknown','needsVerification'].includes($('status').value)||$('status').value.endsWith('Pending'));
+ card.querySelector('.review-saved').textContent='Saved: '+statuses[r.status]+(leavesQueue?' · This question will leave this queue when you continue.':'.');
+ card.querySelector('.review legend').textContent='My review status';
+}
+function snapshotView(){
+ return {...Object.fromEntries(viewFields.map(id=>[id,$(id).value])),cursor,anchor:document.querySelector('.card')?.dataset.id||''};
+}
+function rememberView(replace=false){
+ const view=snapshotView();
+ try{
+  if(replace)history.replaceState({reviewView:view},'',location.href);
+  else if(JSON.stringify(history.state?.reviewView)!==JSON.stringify(view))history.pushState({reviewView:view},'',location.href);
+ }catch(e){}
+ try{localStorage.setItem(VIEW_KEY,JSON.stringify(view));}catch(e){}
+}
+function restoreView(view){
+ clearTimeout(searchTimer);
+ for(const id of viewFields){
+  const input=$(id),value=typeof view[id]==='string'?view[id]:'';
+  if(id==='search'||[...input.options].some(o=>o.value===value))input.value=value;
+ }
+ refreshSelection();
+ const order=questionOrder.get(view.anchor),anchor=order===undefined?-1:filtered.findIndex(q=>questionOrder.get(q.id)>=order);
+ cursor=anchor>=0?anchor:Math.max(0,Number(view.cursor)||0);
+ render();rememberView(true);
+}
+function move(delta){
+ clearTimeout(searchTimer);
+ const cards=[...document.querySelectorAll('.card')],first=cards[0]?.dataset.id,last=cards.at(-1)?.dataset.id;
+ refreshSelection();
+ if(delta>0){
+  const next=last?filtered.findIndex(q=>questionOrder.get(q.id)>questionOrder.get(last)):0;
+  if(next<0){notify('You reached the end of this selection.');cursor=Math.max(0,filtered.length-pageSize());}
+  else cursor=next;
+ }else{
+  const firstIndex=first?filtered.findIndex(q=>questionOrder.get(q.id)>=questionOrder.get(first)):0;
+  cursor=Math.max(0,(firstIndex<0?filtered.length:firstIndex)-pageSize());
+ }
+ render();rememberView();document.querySelector('.pagination').scrollIntoView({block:'start'});
+}
+function nextQuestion(id){
+ clearTimeout(searchTimer);refreshSelection();
+ const next=filtered.findIndex(q=>questionOrder.get(q.id)>questionOrder.get(id));
+ if(next<0){cursor=Math.max(0,filtered.length-pageSize());render();rememberView();notify(filtered.length?'You reached the end of this selection. Earlier unreviewed questions remain in this queue.':'This queue is complete. Choose another filter to continue.');return;}
+ cursor=next;render();rememberView();
+ document.querySelector('.card')?.scrollIntoView({behavior:'smooth',block:'start'});
+}
+for(const id of ['next','bottomnext'])$(id).onclick=()=>move(1);
+for(const id of ['prev','bottomprev'])$(id).onclick=()=>move(-1);
+$('page').onchange=()=>{
+ const requested=Number($('page').value)||1;refreshSelection();cursor=Math.max(0,requested-1);render();rememberView();document.querySelector('.pagination').scrollIntoView();
+};
+
+$('questions').addEventListener('change',e=>{const kind=e.target.dataset.kind;if(!['answer','status','reason'].includes(kind))return;const card=e.target.closest('.card'),r=record(card.dataset.id),q=byId.get(card.dataset.id);preservePrior(q,r);if(kind==='answer'){r.answer=Number(e.target.value);r.answerRevision=q.revision||'';card.querySelector('.answerresult').textContent=`Selected ${String.fromCharCode(65+r.answer)} · review status recorded separately`}else if(kind==='status'){r.status=e.target.value;r.reviewedRevision=r.status==='unknown'?'':q.revision||'';card.dataset.status=r.status;card.querySelector('.flag-reasons').hidden=r.status!=='flag';if(r.status==='flag')card.querySelector('.reason-options').innerHTML=reasonOptions(r);updateCounts()}else{r.reasons=[...card.querySelectorAll('[data-kind=reason]:checked')].map(input=>input.value)}r.updated=new Date().toISOString();persist();stats();const notice=card.querySelector('.revision-note');if(notice)notice.outerHTML=revisionNotice(q,r);if(kind==='status')savedReview(card,r);});
+$('questions').addEventListener('input',e=>{if(e.target.dataset.kind!=='notes')return;const id=e.target.closest('.card').dataset.id,r=record(id);preservePrior(byId.get(id),r);r.notes=e.target.value;r.updated=new Date().toISOString();persist()});
+$('questions').addEventListener('click',e=>{
+ if(e.target.closest('[data-confirm-revision]')){
+  const card=e.target.closest('.card'),q=byId.get(card.dataset.id),r=record(q.id);
+  preservePrior(q,r);r.reviewedRevision=q.revision;r.updated=new Date().toISOString();persist();stats();
+  card.querySelector('.revision-note').outerHTML=revisionNotice(q,r);
+  card.querySelector('.review legend').textContent='My review status';
+  card.querySelector('[data-kind="status"][value="'+r.status+'"]').checked=true;
+  updateCounts();savedReview(card,r);return;
+ }
+ if(e.target.closest('[data-next]'))nextQuestion(e.target.closest('.card').dataset.id);
+});
+function download(name,text,type){const url=URL.createObjectURL(new Blob([text],{type})),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),10000)}
+$('export').onclick=()=>download('MasteryQuests-review-backup-'+new Date().toISOString().slice(0,10)+'.json',JSON.stringify({app:'MasteryQuests personal review',version:1,exported:new Date().toISOString(),records:state},null,2),'application/json');
+const csvCell=v=>'"'+String(v??'').replace(/^[=+@-]/,"'$&").replaceAll('"','""')+'"';
+$('csv').onclick=()=>{const rows=[['Question ID','Topic','Review status','Selected answer','Correct answer','Flag reasons','Notes','Last updated','Question revision','Review applies to revision','Needs verification','Answer applies to revision','Current difficulty','Previous difficulty','Question role'],...Q.map(q=>{const r=state[q.id]||{};return [q.id,q.topic,statuses[r.status||'unknown'],r.answer==null?'':String.fromCharCode(65+r.answer),String.fromCharCode(65+q.answer),(r.reasons||[]).map(reason=>flagReasons[reason]).join(' | '),r.notes||'',r.updated||'',q.revision||'',r.reviewedRevision||'',needsVerification(q,r)?'Yes':'No',r.answerRevision||'',q.difficulty,q.previous?.difficulty||'',roleLabels[q.role]||q.role]})];download('MasteryQuests-review-results.csv','\uFEFF'+rows.map(r=>r.map(csvCell).join(',')).join('\r\n'),'text/csv;charset=utf-8')};
+$('import').onclick=()=>$('importfile').click();$('importfile').onchange=async e=>{const file=e.target.files[0];if(!file)return;try{const b=JSON.parse(await file.text());if(b.version!==1||b.app!=='MasteryQuests personal review')throw Error('Choose a backup exported by this review tool.');const imported=validRecords(b.records);let count=0;for(const [id,r] of Object.entries(imported)){if(!state[id]||r.updated>=state[id].updated){state[id]=r;count++}}applyBatchApprovals(state);persist();filter();notify(`Restored ${count.toLocaleString()} records. More recent local changes were kept.`)}catch(err){notify('Backup could not be restored: '+err.message,true)}e.target.value=''};
+function difficultyQueue(difficulty,status){$('search').value='';$('course').value='';$('topic').value='';$('role').value='';$('difficulty').value=difficulty;$('status').value=status;filter();}
+function revisionQueue(){for(const id of ['search','course','topic','difficulty','role'])$(id).value='';$('status').value='needsVerification';filter();}
+function bridgeQueue(revised){for(const id of ['search','course','topic','difficulty'])$(id).value='';$('role').value='bridge';$('status').value=revised?'bridgePending':'';filter();}
+$('reviewBridgeRevisions').onclick=()=>bridgeQueue(true);
+$('reviewBridge').onclick=()=>bridgeQueue(false);
+$('reviewMediumRevisions').onclick=()=>difficultyQueue('medium','mediumPending');
+$('reviewMedium').onclick=()=>difficultyQueue('medium','');
+$('reviewHardRevisions').onclick=()=>difficultyQueue('hard','hardPending');
+$('reviewHard').onclick=()=>difficultyQueue('hard','');
+$('reviewLegendaryRevisions').onclick=()=>difficultyQueue('legendary','legendaryPending');
+$('reviewLegendary').onclick=()=>difficultyQueue('legendary','');
+$('continueMedium').onclick=()=>difficultyQueue('medium','unknown');
+$('reviewSupport').onclick=()=>difficultyQueue('unknown','unknown');
+$('continueElite').onclick=()=>difficultyQueue('elite','');
+$('verifyElite').onclick=revisionQueue;
+$('allQuestions').onclick=()=>{for(const id of ['search','course','topic','difficulty','role','status'])$(id).value='';filter();};
+let restoredView=false;
+try{const saved=localStorage.getItem(VIEW_KEY);if(saved){restoreView(JSON.parse(saved));restoredView=true;}}catch(e){}
+if(!restoredView){$('difficulty').value='medium';$('status').value='mediumPending';refreshSelection();render();rememberView(true);}
+window.addEventListener('popstate',e=>{if(e.state?.reviewView)restoreView(e.state.reviewView);});
+}
+</script></body></html>
