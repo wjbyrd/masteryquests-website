@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "beforeLibrarySha256": "fa406921519b511c3d3582e66ea7b7e485e91fdf94867de9ca37ece398e40c34",
+  "audited": 1,
+  "retained": 0,
+  "changes": [
+    {
+      "id": "P52A-FISCAD-B2-001",
+      "beforeRecord": {
+        "id": "P52A-FISCAD-B2-001",
+        "q": "The government pays $80 in transfers instead of buying goods and services. The marginal propensity to consume is 0.6. In a simple fixed-price model with no other changes, what happens to government purchases, initial consumption, and total aggregate demand?",
+        "options": [
+          "Government purchases rise by $80, consumption initially stays unchanged, and aggregate demand rises by $200.",
+          "Government purchases stay unchanged, consumption initially falls by $48, and aggregate demand falls by $120.",
+          "Government purchases stay unchanged, consumption initially rises by $48, and aggregate demand rises by $120.",
+          "Government purchases, initial consumption, and aggregate demand all stay unchanged."
+        ],
+        "tag": "fiscal_policy_ad",
+        "type": "analysis",
+        "objective": "LO35.3",
+        "difficulty": "mediumBoss",
+        "conceptCluster": "fiscal_policy",
+        "primarySkill": "calculate_tax_cut_consumption_effect",
+        "repairSkill": "calculate_tax_cut_consumption_effect",
+        "commonError": "Incorrectly concludes “The transfer is neither G nor capable of affecting consumption, so AD is unchanged” in this fiscal policy and aggregate demand task.",
+        "feedback": "Transfers do not count as government purchases. Recipients initially spend 0.6 × $80 = $48. The spending multiplier is 1 ÷ (1 − 0.6) = 2.5, so the initial $48 of consumption generates a total demand increase of $120.",
+        "aHash": "a241ef5912cf2851699c71c4a37dbb4a01a1b2dedaa449b275a3021e6a58a966",
+        "canonicalId": "P52A-FISCAD-B2-001",
+        "sourceId": 5200160,
+        "sourceGame": "phase5.2a-concept-expansion",
+        "sourceChapter": [],
+        "sourcePool": "mediumBoss",
+        "sourceHash": "90466c3e4f98745820e716c51938161879889c23d0a1c6d89d4738f27f6a0f0f",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "phase5.2a-concept-expansion",
+            "sourceFile": "phase5.2a_authoring_questions.json",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "mediumBoss",
+            "routeKey": null,
+            "sourceRecordOrder": 159,
+            "sourceId": 5200160,
+            "sourceHash": "90466c3e4f98745820e716c51938161879889c23d0a1c6d89d4738f27f6a0f0f"
+          }
+        ],
+        "primaryConceptId": "fiscal-policy-and-aggregate-demand",
+        "secondaryConceptIds": [],
+        "instructionalRole": "boss",
+        "canonicalDifficulty": "medium",
+        "originalSourcePool": "mediumBoss",
+        "originalBossTier": "mediumBoss",
+        "boss": "Checkpoint Two"
+      },
+      "afterRecord": {
+        "id": "P52A-FISCAD-B2-001",
+        "q": "The government increases transfer payments to households by $80. Households spend 60% of each additional dollar of income. If prices stay fixed and there are no offsetting changes, how much does aggregate demand increase after all rounds of spending?",
+        "options": [
+          "$48",
+          "$80",
+          "$120",
+          "$200"
+        ],
+        "tag": "fiscal_policy_ad",
+        "type": "analysis",
+        "objective": "LO35.3",
+        "difficulty": "mediumBoss",
+        "conceptCluster": "fiscal_policy",
+        "primarySkill": "calculate_tax_cut_consumption_effect",
+        "repairSkill": "calculate_tax_cut_consumption_effect",
+        "commonError": "Incorrectly concludes “The transfer is neither G nor capable of affecting consumption, so AD is unchanged” in this fiscal policy and aggregate demand task.",
+        "feedback": "The transfer is not a government purchase. Households first spend 60% of the $80, adding $48 to consumption. The spending multiplier is 1 ÷ (1 − 0.6) = 2.5, so the total increase in aggregate demand is $48 × 2.5 = $120.",
+        "aHash": "38f1defd84f62a3d821cf82e00ba4f8e81f9201dd9a1b3d4d86416f0419ca81f",
+        "canonicalId": "P52A-FISCAD-B2-001",
+        "sourceId": 5200160,
+        "sourceGame": "phase5.2a-concept-expansion",
+        "sourceChapter": [],
+        "sourcePool": "mediumBoss",
+        "sourceHash": "90466c3e4f98745820e716c51938161879889c23d0a1c6d89d4738f27f6a0f0f",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "phase5.2a-concept-expansion",
+            "sourceFile": "phase5.2a_authoring_questions.json",
+            "sourceGlobal": "questionBanks",
+            "sourcePool": "mediumBoss",
+            "routeKey": null,
+            "sourceRecordOrder": 159,
+            "sourceId": 5200160,
+            "sourceHash": "90466c3e4f98745820e716c51938161879889c23d0a1c6d89d4738f27f6a0f0f"
+          }
+        ],
+        "primaryConceptId": "fiscal-policy-and-aggregate-demand",
+        "secondaryConceptIds": [],
+        "instructionalRole": "boss",
+        "canonicalDifficulty": "medium",
+        "originalSourcePool": "mediumBoss",
+        "originalBossTier": "mediumBoss",
+        "boss": "Checkpoint Two"
+      },
+      "correctIndex": 2,
+      "fields": [
+        "q",
+        "options",
+        "feedback",
+        "aHash"
+      ],
+      "reason": "Remove the ambiguous suggestion that transfers replace government purchases. Focus on the initial consumption response and its multiplier effect, with concise numerical choices instead of three repeated outcomes."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "P52A-FISCAD-B2-001",
+      "action": "revise",
+      "reason": "Remove the ambiguous suggestion that transfers replace government purchases. Focus on the initial consumption response and its multiplier effect, with concise numerical choices instead of three repeated outcomes."
+    }
+  ]
+}

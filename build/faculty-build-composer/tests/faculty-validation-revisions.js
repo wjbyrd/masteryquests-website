@@ -59,3 +59,5 @@ module.exports=require('./hard-editorial-revisions.js').wrap(module.exports);
 module.exports=require('./medium-editorial-revisions.js').wrap(module.exports);
 
 module.exports=require('./medium-complete-review-revisions.js').wrap(module.exports);
+
+module.exports=require('./medium-fiscad-clarity-revisions.js').wrap(module.exports);

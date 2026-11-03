@@ -2,7 +2,7 @@
 (function(root,data){if(typeof module==='object'&&module.exports)module.exports=data;else root.MQFacultyOutcomePolicy=data;})(typeof globalThis!=='undefined'?globalThis:this,{
   "schemaVersion": 1,
   "policyVersion": "faculty-lo-1",
-  "librarySha256": "fa406921519b511c3d3582e66ea7b7e485e91fdf94867de9ca37ece398e40c34",
+  "librarySha256": "28a4b717c8e2d81b8d3b204c19cab388e1367f22df26cd06272d2ec0af7b6f60",
   "concepts": {
     "ad-as-equilibrium-and-output-gaps": {
       "outcomes": [
@@ -13717,5 +13717,5 @@
       "hidden": false
     }
   },
-  "policySha256": "e9cab36e0182505d9ebcf682a478b2583104beed9dd14205a4b409b4a0683fc6"
+  "policySha256": "4b85bc86c86a5b558f0fc98fa771fc8634d0740488a5420fb80196cb64c1a935"
 });
