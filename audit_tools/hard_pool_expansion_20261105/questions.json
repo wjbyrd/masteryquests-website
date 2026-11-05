@@ -1,0 +1,1602 @@
+[
+  {
+    "concept": "cross-price-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "cross_price_elasticity_calculation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-XPE-H-001",
+    "role": "main",
+    "q": "A 10% increase in bus fares raises train ridership by 15%, with train fares and other demand factors unchanged. What is the cross-price elasticity of train demand, and how does its demand curve change?",
+    "options": [
+      "+1.5; train demand shifts right.",
+      "+1.5; train demand shifts left.",
+      "−1.5; train demand shifts right.",
+      "+0.67; train demand shifts right."
+    ],
+    "correctIndex": 0,
+    "feedback": "Cross-price elasticity is 15% ÷ 10% = +1.5. The positive sign indicates substitutes. More train trips are demanded at the unchanged train fare, so the train demand curve shifts right.",
+    "commonError": "Reverses the elasticity ratio or confuses a demand shift with the sign of the other price change."
+  },
+  {
+    "concept": "cross-price-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "cross_price_elasticity_calculation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-XPE-H-002",
+    "role": "main",
+    "q": "A café’s demand has a cross-price elasticity of +1.5 with respect to a nearby café’s price. The nearby café cuts prices by 8%. If this café keeps its prices fixed, what happens to its sales and revenue?",
+    "options": [
+      "Both rise by about 12%.",
+      "Both fall by about 12%.",
+      "Sales fall about 12%; revenue rises about 12%.",
+      "Both fall by about 5.3%."
+    ],
+    "correctIndex": 1,
+    "feedback": "The predicted sales change is +1.5 × −8% = −12%. Because this café’s price is unchanged, its revenue changes by the same percentage as the number of items sold.",
+    "commonError": "Treats positive cross-price elasticity as a sales increase regardless of the rival’s price change."
+  },
+  {
+    "concept": "cross-price-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "cross_price_elasticity_calculation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-XPE-H-003",
+    "role": "main",
+    "q": "The cross-price elasticity of printer demand with respect to ink prices is −0.5. Ink prices rise 12%, while printer prices stay fixed. What happens to printer demand, and what does this imply about the two goods?",
+    "options": [
+      "Demand rises about 6%; the goods are substitutes.",
+      "Demand falls about 24%; the goods are complements.",
+      "Demand falls about 6%; the goods are complements.",
+      "Demand falls about 6%; the goods are substitutes."
+    ],
+    "correctIndex": 2,
+    "feedback": "The predicted change is −0.5 × 12% = −6%. A higher ink price reduces demand for printers, which is the complementary relationship indicated by the negative elasticity.",
+    "commonError": "Divides by elasticity or assigns the substitute classification to a negative value."
+  },
+  {
+    "concept": "cross-price-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "cross_price_elasticity_calculation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-XPE-H-004",
+    "role": "main",
+    "q": "In separate tests, a 5% rise in the price of Brand A raises Brand C’s sales 10%; a 10% rise in Brand B’s price raises C’s sales 12%. All other demand factors stay fixed. Which brand is the closer substitute for C?",
+    "options": [
+      "B: its cross-price elasticity is 1.2, versus 2.0 for A.",
+      "A: its cross-price elasticity is 0.5, versus 0.83 for B.",
+      "B: its cross-price elasticity is 12, versus 10 for A.",
+      "A: its cross-price elasticity is 2.0, versus 1.2 for B."
+    ],
+    "correctIndex": 3,
+    "feedback": "For A, divide the 10% sales response by the 5% price change to get 2.0. For B, 12% ÷ 10% = 1.2. C’s demand is more responsive to an equal percentage change in A’s price, indicating closer substitutes in these tests.",
+    "commonError": "Compares raw sales changes without allowing for different price changes."
+  },
+  {
+    "concept": "cross-price-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "cross_price_elasticity_calculation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-XPE-H-005",
+    "role": "main",
+    "q": "The price of tea rises from $4 to $5, and coffee sales rise from 200 to 240 cups. Coffee’s price and other demand factors stay fixed. Using starting values for percentage changes, what is the cross-price elasticity, and are the goods substitutes or complements?",
+    "options": [
+      "+0.8; substitutes.",
+      "+1.25; substitutes.",
+      "−0.8; complements.",
+      "+0.2; substitutes."
+    ],
+    "correctIndex": 0,
+    "feedback": "Tea’s price rises 25%, while coffee sales rise 20%. Cross-price elasticity is 20% ÷ 25% = +0.8. The positive value indicates substitutes.",
+    "commonError": "Uses dollar or unit changes in place of percentage changes."
+  },
+  {
+    "concept": "cross-price-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "cross_price_elasticity_calculation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-XPE-H-006",
+    "role": "main",
+    "q": "A 4% fall in game-console prices raises demand for games by 10%, with game prices unchanged. A student reports a cross-price elasticity of +2.5 and calls the goods substitutes. What needs correcting?",
+    "options": [
+      "Only the sign: −2.5 and substitutes.",
+      "Both the sign and the classification: −2.5 and complements.",
+      "Only the classification: +2.5 and complements.",
+      "Both the magnitude and classification: −0.4 and complements."
+    ],
+    "correctIndex": 1,
+    "feedback": "The price change is −4%, so 10% ÷ −4% = −2.5. Lower console prices increase demand for games, consistent with goods used together. Both the reported sign and the classification are wrong.",
+    "commonError": "Drops the negative sign on a price decrease."
+  },
+  {
+    "concept": "cross-price-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "cross_price_elasticity_calculation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-XPE-H-007",
+    "role": "main",
+    "q": "A store’s demand has cross-price elasticities of +0.2 with Rival A and +1.2 with Rival B. Each rival considers a 5% price cut. If only one cut occurs and other factors stay fixed, which cut would reduce the store’s sales more, and by how much?",
+    "options": [
+      "A’s cut: about 25%, compared with 4.2% for B.",
+      "B’s cut: about 1.2%, compared with 0.2% for A.",
+      "B’s cut: about 6%, compared with 1% for A.",
+      "Neither: each cut would reduce sales about 5%."
+    ],
+    "correctIndex": 2,
+    "feedback": "Multiply each elasticity by −5%. A’s cut predicts a 1% sales decline; B’s predicts a 6% decline. The larger positive cross-price elasticity makes B’s cut the greater competitive threat.",
+    "commonError": "Uses the elasticity itself as a percentage change or divides by it."
+  },
+  {
+    "concept": "cross-price-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "cross_price_elasticity_calculation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-XPE-H-008",
+    "role": "main",
+    "q": "Parking fees rise from $5 to $6, and visits to a nearby museum fall from 100 to 90 per day. Admission prices and other demand factors stay fixed. Using starting values, what is the cross-price elasticity of museum visits and the direction of the demand shift?",
+    "options": [
+      "−2.0; leftward.",
+      "+0.5; rightward.",
+      "−0.5; a movement along the same demand curve.",
+      "−0.5; leftward."
+    ],
+    "correctIndex": 3,
+    "feedback": "Parking fees rise 20%, and visits fall 10%, giving −10% ÷ 20% = −0.5. Museum admission prices have not changed, so fewer visits represent a leftward shift of museum demand, not movement along its curve.",
+    "commonError": "Confuses another good’s price change with a change in the museum’s own price."
+  },
+  {
+    "concept": "cross-price-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "cross_price_elasticity_calculation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-XPE-H-009",
+    "role": "main",
+    "q": "A bakery sells 500 loaves a week. Its demand has a cross-price elasticity of +2 with respect to a rival’s bread price. If the rival raises its price by 5% and other factors stay fixed, about how many loaves will the bakery sell?",
+    "options": [
+      "550 loaves.",
+      "525 loaves.",
+      "450 loaves.",
+      "600 loaves."
+    ],
+    "correctIndex": 0,
+    "feedback": "The rival’s increase predicts a 2 × 5% = 10% increase in the bakery’s sales. Ten percent of 500 is 50, so expected weekly sales are 550 loaves.",
+    "commonError": "Applies the rival’s price percentage directly to sales or reverses the response."
+  },
+  {
+    "concept": "cross-price-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "cross_price_elasticity_interpretation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-XPE-H-010",
+    "role": "main",
+    "q": "A cereal maker wants to test whether oatmeal is a substitute for its cereal. Which observation best isolates the cross-price effect and supports that conclusion?",
+    "options": [
+      "Cereal’s price falls; cereal sales rise while oatmeal’s price and income stay fixed.",
+      "Oatmeal’s price rises; cereal sales rise while cereal’s price and income stay fixed.",
+      "Income rises; both products’ sales rise while their prices stay fixed.",
+      "Oatmeal’s price rises; cereal sales fall while cereal’s price and income stay fixed."
+    ],
+    "correctIndex": 1,
+    "feedback": "The relevant comparison changes oatmeal’s price while holding cereal’s own price and other demand factors fixed. Higher cereal sales in response to a higher oatmeal price indicate positive cross-price elasticity and substitution.",
+    "commonError": "Mistakes an own-price or income response for evidence of cross-price substitution."
+  },
+  {
+    "concept": "cross-price-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "cross_price_elasticity_calculation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-XPE-CP-001",
+    "role": "checkpoint",
+    "q": "A 10% fall in camera prices raises demand for memory cards by 8%. Card prices and other demand factors stay fixed. Using that elasticity, if camera prices instead rise 5%, what card sales would you predict from a starting level of 1,000?",
+    "options": [
+      "About 1,040 cards; cameras and cards are substitutes.",
+      "About 950 cards; cameras and cards are complements.",
+      "About 960 cards; cameras and cards are complements.",
+      "About 1,080 cards; cameras and cards are substitutes."
+    ],
+    "correctIndex": 2,
+    "feedback": "The observed elasticity is 8% ÷ −10% = −0.8. A 5% camera-price increase predicts a 4% decline in card demand. Four percent of 1,000 is 40, leaving 960 cards. The negative elasticity indicates complements.",
+    "commonError": "Carries the original quantity change into the new forecast or drops the price-change sign."
+  },
+  {
+    "concept": "cross-price-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "cross_price_elasticity_calculation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-XPE-CP-002",
+    "role": "checkpoint",
+    "q": "The cross-price elasticity of A’s demand with respect to B’s price is +1.5; with respect to C’s price it is −0.5. Compare a 4% price cut by B with a separate 8% price rise for C. Which would reduce A’s sales more?",
+    "options": [
+      "C’s increase: about 4%, versus 6% from B’s cut.",
+      "B’s cut: about 6%; C’s increase would raise sales about 4%.",
+      "Neither: each would reduce A’s sales about 4%.",
+      "B’s cut: about 6%, versus 4% from C’s increase."
+    ],
+    "correctIndex": 3,
+    "feedback": "B is a substitute, so its price cut predicts 1.5 × −4% = −6%. C is a complement, so its increase predicts −0.5 × 8% = −4%. Both reduce A’s sales, but B’s cut has the larger predicted effect.",
+    "commonError": "Assumes price increases for other products must benefit the seller."
+  },
+  {
+    "concept": "cross-price-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "cross_price_elasticity_calculation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-XPE-CP-003",
+    "role": "checkpoint",
+    "q": "A 5% rise in coffee prices raises tea sales by 10%. Tea initially sells 400 cups at $3 each. If the same elasticity applies to a 2% coffee-price decrease, how would tea revenue change? Tea’s price and other demand factors stay fixed.",
+    "options": [
+      "It would fall about $48.",
+      "It would rise about $48.",
+      "It would fall about $24.",
+      "It would fall about $120."
+    ],
+    "correctIndex": 0,
+    "feedback": "Cross-price elasticity is 10% ÷ 5% = 2. A 2% coffee-price decrease predicts 4% fewer tea sales. With tea’s price fixed, revenue also falls 4%: 0.04 × $1,200 = $48.",
+    "commonError": "Uses the original sales response instead of applying elasticity to the new price change."
+  },
+  {
+    "concept": "cross-price-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "cross_price_elasticity_calculation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-XPE-CP-004",
+    "role": "checkpoint",
+    "q": "A printer retailer expects ink prices to rise 10%. Its printer demand has a cross-price elasticity of −0.6, and it currently sells 200 printers monthly. If other demand factors stay fixed, what monthly sales should it plan for, and why?",
+    "options": [
+      "About 212 printers; more expensive ink sends buyers toward a substitute.",
+      "About 188 printers; more expensive ink reduces demand for a complementary good.",
+      "About 180 printers; printer sales fall by the same percentage as ink prices rise.",
+      "About 194 printers; the elasticity means six fewer printers will be sold."
+    ],
+    "correctIndex": 1,
+    "feedback": "The predicted demand change is −0.6 × 10% = −6%. Six percent of 200 is 12 printers, leaving about 188. The negative elasticity reflects complementarity between printers and ink.",
+    "commonError": "Treats elasticity as a unit change or assumes equal percentage responses."
+  },
+  {
+    "concept": "cross-price-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "cross_price_elasticity_calculation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-XPE-CP-005",
+    "role": "checkpoint",
+    "q": "When parking prices rise 20%, cinema attendance falls 10%. When bus fares rise 5% in a separate test, attendance falls 5%. Cinema prices and other factors stay fixed. Which service is the stronger complement to cinema visits in these tests?",
+    "options": [
+      "Parking: elasticity is −0.5, compared with −1 for bus travel.",
+      "Parking: elasticity is −2, compared with −1 for bus travel.",
+      "Bus travel: elasticity is −1, compared with −0.5 for parking.",
+      "Neither: both services are substitutes for cinema visits."
+    ],
+    "correctIndex": 2,
+    "feedback": "The cross-price elasticity is −10% ÷ 20% = −0.5 for parking and −5% ÷ 5% = −1 for bus travel. Both are complements, but attendance responds more strongly to an equal percentage change in bus fares.",
+    "commonError": "Ranks relationships using the absolute attendance change instead of the elasticity."
+  },
+  {
+    "concept": "cross-price-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "cross_price_elasticity_calculation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-XPE-CP-006",
+    "role": "checkpoint",
+    "q": "A 4% rise in a rival’s price raises a firm’s sales from 1,000 to 1,080 units, with its own price fixed. Using starting values, what rival price increase would predict a 6% increase in the firm’s sales if the same elasticity applies?",
+    "options": [
+      "About 12%; the products are substitutes.",
+      "About 3%; the products are complements.",
+      "About 6%; the products are substitutes.",
+      "About 3%; the products are substitutes."
+    ],
+    "correctIndex": 3,
+    "feedback": "Sales rose 80 ÷ 1,000 = 8%, so cross-price elasticity is 8% ÷ 4% = 2. A 6% sales increase therefore requires a 6% ÷ 2 = 3% rival-price increase. The positive elasticity indicates substitutes.",
+    "commonError": "Multiplies the desired quantity change by elasticity instead of solving for the price change."
+  },
+  {
+    "concept": "income-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "income_elasticity_calculation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-INC-H-001",
+    "role": "main",
+    "q": "Income rises 5%, and restaurant-meal purchases rise 8%, with prices unchanged. What is income elasticity, and would spending on these meals take a larger or smaller share of income?",
+    "options": [
+      "1.6; a larger share.",
+      "0.625; a smaller share.",
+      "1.6; a smaller share.",
+      "−1.6; a larger share."
+    ],
+    "correctIndex": 0,
+    "feedback": "Income elasticity is 8% ÷ 5% = 1.6. With meal prices unchanged, spending rises 8%, faster than income’s 5% increase. Meals therefore take a larger share of income.",
+    "commonError": "Confuses a positive elasticity with spending rising at the same rate as income."
+  },
+  {
+    "concept": "income-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "income_elasticity_calculation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-INC-H-002",
+    "role": "main",
+    "q": "A shop’s demand has an income elasticity of −0.5. Customers’ incomes fall 6%, while the shop keeps prices fixed. What happens to its sales and revenue?",
+    "options": [
+      "Both fall about 3%.",
+      "Both rise about 3%.",
+      "Sales rise about 3%; revenue falls about 3%.",
+      "Both rise about 12%."
+    ],
+    "correctIndex": 1,
+    "feedback": "The predicted sales change is −0.5 × −6% = +3%. The negative elasticity identifies an inferior good whose demand increases as income falls. At an unchanged price, revenue also increases about 3%.",
+    "commonError": "Assumes falling income always reduces demand."
+  },
+  {
+    "concept": "income-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "income_elasticity_calculation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-INC-H-003",
+    "role": "main",
+    "q": "After a 4% income increase, purchases of Good A rise 2% and purchases of Good B rise 6%. Prices stay fixed. How should the goods be classified over this income range?",
+    "options": [
+      "A is inferior; B is a normal luxury.",
+      "A is a normal luxury; B is a normal necessity.",
+      "A is a normal necessity; B is a normal luxury.",
+      "Both are normal necessities."
+    ],
+    "correctIndex": 2,
+    "feedback": "A’s income elasticity is 2% ÷ 4% = 0.5, positive but below one, so it is a normal necessity. B’s is 6% ÷ 4% = 1.5, making it a normal luxury over this range.",
+    "commonError": "Calls a positive but small income response inferior."
+  },
+  {
+    "concept": "income-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "income_elasticity_calculation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-INC-H-004",
+    "role": "main",
+    "q": "Monthly income rises from $2,000 to $2,200, and bus trips fall from 40 to 38 at the same fare. Using starting values for percentage changes, what is income elasticity, and what kind of good are bus trips for this consumer?",
+    "options": [
+      "−2; inferior.",
+      "+0.5; normal.",
+      "−0.05; inferior.",
+      "−0.5; inferior."
+    ],
+    "correctIndex": 3,
+    "feedback": "Income rises 10%, while trips fall 2 ÷ 40 = 5%. Income elasticity is −5% ÷ 10% = −0.5. The negative relationship identifies bus trips as inferior for this consumer over this range.",
+    "commonError": "Reverses the percentage ratio or ignores the decline in trips."
+  },
+  {
+    "concept": "income-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "income_elasticity_calculation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-INC-H-005",
+    "role": "main",
+    "q": "A retailer sells 1,000 units a month of a product with income elasticity 1.5. If customer income rises 4% and prices remain unchanged, about how many units should the retailer expect to sell?",
+    "options": [
+      "1,060 units.",
+      "1,040 units.",
+      "940 units.",
+      "1,150 units."
+    ],
+    "correctIndex": 0,
+    "feedback": "Quantity demanded is predicted to rise 1.5 × 4% = 6%. Six percent of 1,000 is 60, giving expected monthly sales of 1,060 units.",
+    "commonError": "Uses the income change or the elasticity itself as the sales percentage."
+  },
+  {
+    "concept": "income-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "income_elasticity_interpretation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-INC-H-006",
+    "role": "main",
+    "q": "Income rises 10%, while spending on rice rises 4% at an unchanged rice price. A student calls rice inferior because its share of income falls. Which assessment is correct?",
+    "options": [
+      "Rice is inferior: a falling budget share means fewer units are purchased.",
+      "Rice is normal: purchases rise, but less than proportionally to income.",
+      "Rice is a luxury: any increase in purchases implies elasticity above one.",
+      "Rice has zero income elasticity: its price did not change."
+    ],
+    "correctIndex": 1,
+    "feedback": "At a fixed price, the 4% spending increase is also a 4% quantity increase. Income elasticity is 4% ÷ 10% = 0.4. Rice is a normal necessity even though its share of income declines.",
+    "commonError": "Treats a declining income share as a decline in quantity demanded."
+  },
+  {
+    "concept": "income-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "income_elasticity_calculation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-INC-H-007",
+    "role": "main",
+    "q": "A town’s income falls 5%. Meal kits have an income elasticity of +1.2; budget noodles have an elasticity of −0.4. With prices fixed, what changes in demand should local stores expect?",
+    "options": [
+      "Meal kits rise about 6%; budget noodles fall about 2%.",
+      "Meal kits fall about 6%; budget noodles fall about 2%.",
+      "Meal kits fall about 6%; budget noodles rise about 2%.",
+      "Meal kits fall about 5%; budget noodles rise about 5%."
+    ],
+    "correctIndex": 2,
+    "feedback": "Multiply each elasticity by the −5% income change. Meal-kit demand changes by 1.2 × −5% = −6%, while noodle demand changes by −0.4 × −5% = +2%. The income decline affects normal and inferior goods in opposite directions.",
+    "commonError": "Applies the same direction to products with opposite income-elasticity signs."
+  },
+  {
+    "concept": "income-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "income_elasticity_calculation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-INC-H-008",
+    "role": "main",
+    "q": "Income rises 8%, and demand for Good A rises 4% at a fixed price. Which forecast follows if that income elasticity applies to a later 6% income decrease?",
+    "options": [
+      "Demand rises about 3%; A is an inferior good.",
+      "Demand falls about 12%; A is a normal good.",
+      "Demand falls about 4%; A is a normal good.",
+      "Demand falls about 3%; A is a normal good."
+    ],
+    "correctIndex": 3,
+    "feedback": "The first change implies an income elasticity of 4% ÷ 8% = 0.5. Applying it to −6% income predicts −3% demand. The positive elasticity means A is normal, even though demand falls when income falls.",
+    "commonError": "Classifies a good from the direction of demand alone without comparing income."
+  },
+  {
+    "concept": "income-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "income_elasticity_calculation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-INC-H-009",
+    "role": "main",
+    "q": "A product’s income elasticity is 1.4 for lower-income households and 0.6 for higher-income households. With prices fixed, how would a 5% income increase affect demand in each group, and is the product inferior for either group?",
+    "options": [
+      "Demand rises 7% and 3%, respectively; it is inferior for neither.",
+      "Demand rises 7% and falls 3%, respectively; it is inferior for the second group.",
+      "Demand rises 5% in both groups; it is inferior for neither.",
+      "Demand rises 3% and 7%, respectively; it is inferior for the first group."
+    ],
+    "correctIndex": 0,
+    "feedback": "The predicted responses are 1.4 × 5% = 7% and 0.6 × 5% = 3%. Both elasticities are positive, so the product is normal for both groups. An elasticity below one makes it a necessity over that range, not an inferior good.",
+    "commonError": "Confuses an income elasticity below one with a negative income elasticity."
+  },
+  {
+    "concept": "income-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "income_elasticity_calculation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-INC-H-010",
+    "role": "main",
+    "q": "A study finds that demand for a product falls 3% when income falls 6%, with prices unchanged. If income rises in the next period, which demand change and classification are consistent with this estimate?",
+    "options": [
+      "Demand falls less than proportionally; the product is inferior.",
+      "Demand rises less than proportionally; the product is a normal necessity.",
+      "Demand rises more than proportionally; the product is a normal luxury.",
+      "Demand is unchanged; the product has zero income elasticity."
+    ],
+    "correctIndex": 1,
+    "feedback": "Dividing −3% by −6% gives a positive income elasticity of 0.5. An income increase would therefore raise demand by a smaller percentage. That is the normal-necessity classification.",
+    "commonError": "Mistakes two negative changes for negative income elasticity."
+  },
+  {
+    "concept": "income-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "income_elasticity_calculation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-INC-CP-001",
+    "role": "checkpoint",
+    "q": "Income falls 4%, and demand for a product rises 2% at an unchanged price. If the same elasticity applies when income later rises 6%, what sales would you predict from a starting level of 500 units?",
+    "options": [
+      "About 515 units; the good is normal.",
+      "About 470 units; the good is inferior.",
+      "About 485 units; the good is inferior.",
+      "About 560 units; the good is normal."
+    ],
+    "correctIndex": 2,
+    "feedback": "The observed income elasticity is 2% ÷ −4% = −0.5. A later 6% income increase predicts a 3% demand decline. Three percent of 500 is 15 units, giving 485. The negative elasticity identifies an inferior good.",
+    "commonError": "Uses the income percentage directly or loses the negative elasticity sign."
+  },
+  {
+    "concept": "income-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "income_elasticity_calculation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-INC-CP-002",
+    "role": "checkpoint",
+    "q": "A store earns $2,000 monthly from each of two products. Their income elasticities are 0.5 and 1.5. If incomes rise 4% and both prices stay fixed, what happens to the store’s combined monthly revenue?",
+    "options": [
+      "It rises about $80.",
+      "It rises about $120.",
+      "It rises about $320.",
+      "It rises about $160."
+    ],
+    "correctIndex": 3,
+    "feedback": "The first product’s quantity and revenue rise 2%, adding $40. The second product’s rise 6%, adding $120. Combined revenue therefore increases by about $160.",
+    "commonError": "Applies one product’s response to both revenue streams."
+  },
+  {
+    "concept": "income-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "income_elasticity_calculation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-INC-CP-003",
+    "role": "checkpoint",
+    "q": "A household’s income rises from $3,000 to $3,300. It buys 12 restaurant meals rather than 10 at the same price. Using starting values, what income elasticity does this imply, and what meal count would a separate 5% income rise predict from 10 meals?",
+    "options": [
+      "2; about 11 meals.",
+      "0.5; about 10.25 meals.",
+      "2; about 12 meals.",
+      "0.2; about 10.1 meals."
+    ],
+    "correctIndex": 0,
+    "feedback": "Income rises 10%, while meals rise 20%, giving elasticity 2. Applying that elasticity to a separate 5% income increase predicts 10% more meals. Starting from 10 meals gives about 11.",
+    "commonError": "Reuses the original unit increase rather than applying the elasticity to the stated new starting point."
+  },
+  {
+    "concept": "income-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "income_elasticity_calculation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-INC-CP-004",
+    "role": "checkpoint",
+    "q": "A retailer expects incomes to fall 5%. It currently sells 200 units of A and 500 units of B. Their income elasticities are +2 and −0.4, respectively. With prices unchanged, which sales plan fits these estimates?",
+    "options": [
+      "A: 220 units; B: 490 units.",
+      "A: 180 units; B: 510 units.",
+      "A: 190 units; B: 475 units.",
+      "A: 180 units; B: 490 units."
+    ],
+    "correctIndex": 1,
+    "feedback": "A’s predicted change is 2 × −5% = −10%, or 20 fewer units. B’s is −0.4 × −5% = +2%, or 10 more units. The resulting sales are 180 and 510.",
+    "commonError": "Treats an income decline as reducing demand for both normal and inferior goods."
+  },
+  {
+    "concept": "income-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "income_elasticity_calculation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-INC-CP-005",
+    "role": "checkpoint",
+    "q": "Food spending rises 3% when income rises 6%, with food prices unchanged. A student predicts that a later 4% income increase will raise food spending 8% and increase food’s income share. Which correction is appropriate?",
+    "options": [
+      "Spending rises about 2%, and food’s income share rises.",
+      "Spending rises about 8%, and food’s income share falls.",
+      "Spending rises about 2%, and food’s income share falls.",
+      "Spending falls about 2%, and food’s income share falls."
+    ],
+    "correctIndex": 2,
+    "feedback": "Income elasticity is 3% ÷ 6% = 0.5, so a 4% income increase predicts 2% more purchases and spending. Spending grows more slowly than income, reducing food’s income share.",
+    "commonError": "Reverses the elasticity ratio and then infers the wrong change in budget share."
+  },
+  {
+    "concept": "income-elasticity-of-demand",
+    "parent": "elasticity",
+    "objective": "ELAS.5",
+    "skill": "income_elasticity_calculation",
+    "area": "micro",
+    "tag": "elasticity",
+    "id": "HPEX-INC-CP-006",
+    "role": "checkpoint",
+    "q": "A 5% rise in income raises demand for Good A by 10% but reduces demand for Good B by 5%. At unchanged prices, what would a separate 3% income fall predict if these elasticities remain applicable?",
+    "options": [
+      "A rises about 6%; B falls about 3%.",
+      "A falls about 1.5%; B rises about 3%.",
+      "A falls about 6%; B falls about 3%.",
+      "A falls about 6%; B rises about 3%."
+    ],
+    "correctIndex": 3,
+    "feedback": "A’s income elasticity is 10% ÷ 5% = 2; B’s is −5% ÷ 5% = −1. Multiplying each by −3% gives a 6% decrease for A and a 3% increase for B.",
+    "commonError": "Fails to reverse the demand responses when the income change reverses."
+  },
+  {
+    "concept": "economic-costs",
+    "parent": "costs-of-production",
+    "objective": "COP.1",
+    "skill": "opportunity_cost_firm",
+    "area": "micro",
+    "tag": "costs_of_production",
+    "id": "HPEX-COST-H-001",
+    "role": "main",
+    "q": "A business pays $48,000 in annual expenses. Its owner gives up a $24,000 salary and $12,000 in rent from a building used by the business. What are its implicit costs and total economic costs?",
+    "options": [
+      "$36,000 implicit; $84,000 total.",
+      "$24,000 implicit; $72,000 total.",
+      "$12,000 implicit; $60,000 total.",
+      "$36,000 implicit; $48,000 total."
+    ],
+    "correctIndex": 0,
+    "feedback": "Forgone salary and rent are both implicit costs: $24,000 + $12,000 = $36,000. Add the $48,000 paid expenses to obtain total economic costs of $84,000.",
+    "commonError": "Omits one owner-supplied resource or leaves implicit costs out of the total."
+  },
+  {
+    "concept": "economic-costs",
+    "parent": "costs-of-production",
+    "objective": "COP.1",
+    "skill": "opportunity_cost_firm",
+    "area": "micro",
+    "tag": "costs_of_production",
+    "id": "HPEX-COST-H-002",
+    "role": "main",
+    "q": "A shop reports $40,000 in annual accounting profit. The owner gives up a $30,000 salary and $4,000 of interest by operating it. What is economic profit, and does the shop outperform those alternatives?",
+    "options": [
+      "$40,000; yes.",
+      "$6,000; yes.",
+      "−$6,000; no.",
+      "$10,000; yes."
+    ],
+    "correctIndex": 1,
+    "feedback": "Accounting profit has already deducted explicit expenses. Subtract the $34,000 in forgone salary and interest to get $6,000 of economic profit. The shop exceeds the combined value of the stated alternatives by that amount.",
+    "commonError": "Treats accounting profit as already net of implicit costs."
+  },
+  {
+    "concept": "economic-costs",
+    "parent": "costs-of-production",
+    "objective": "COP.1",
+    "skill": "opportunity_cost_firm",
+    "area": "micro",
+    "tag": "costs_of_production",
+    "id": "HPEX-COST-H-003",
+    "role": "main",
+    "q": "A firm can use its owner’s building, which could earn $18,000 a year in net rent, or lease an equally suitable building for $15,000. All other costs and output would be the same. Which location has the lower economic cost, and by how much?",
+    "options": [
+      "The owned building, by $15,000.",
+      "The owned building, by $3,000.",
+      "The leased building, by $3,000.",
+      "Both have the same economic cost."
+    ],
+    "correctIndex": 2,
+    "feedback": "Using the owned building costs $18,000 in forgone rent, even though no rent check is written. Leasing the other building costs $15,000. The leased location uses $3,000 less in resources valued at their alternative uses.",
+    "commonError": "Assigns zero cost to an owned building."
+  },
+  {
+    "concept": "economic-costs",
+    "parent": "costs-of-production",
+    "objective": "COP.1",
+    "skill": "opportunity_cost_firm",
+    "area": "micro",
+    "tag": "costs_of_production",
+    "id": "HPEX-COST-H-004",
+    "role": "main",
+    "q": "An owner’s best outside job offer rises from $45,000 to $55,000. The business’s revenue and paid expenses do not change. How do its accounting profit and economic profit change?",
+    "options": [
+      "Both profits fall $10,000.",
+      "Both profits stay unchanged.",
+      "Accounting profit rises $10,000; economic profit is unchanged.",
+      "Accounting profit is unchanged; economic profit falls $10,000."
+    ],
+    "correctIndex": 3,
+    "feedback": "The higher forgone salary adds $10,000 to the implicit cost of the owner’s time. Accounting profit uses paid expenses, so it is unchanged. Economic profit deducts implicit costs and falls $10,000.",
+    "commonError": "Treats a higher opportunity cost as a new cash expense."
+  },
+  {
+    "concept": "economic-costs",
+    "parent": "costs-of-production",
+    "objective": "COP.1",
+    "skill": "opportunity_cost_firm",
+    "area": "micro",
+    "tag": "costs_of_production",
+    "id": "HPEX-COST-H-005",
+    "role": "main",
+    "q": "To run a business, an owner declines two full-time job offers paying $50,000 and $65,000; only one job could be accepted. Paid business expenses are $30,000, with no other costs. What are the opportunity cost of the owner’s time and total economic cost?",
+    "options": [
+      "$65,000 for time; $95,000 total.",
+      "$115,000 for time; $145,000 total.",
+      "$50,000 for time; $80,000 total.",
+      "$65,000 for time; $30,000 total."
+    ],
+    "correctIndex": 0,
+    "feedback": "The relevant alternative is the best available job, worth $65,000. The two mutually exclusive salaries are not added. Total economic cost is $30,000 in paid expenses plus $65,000 in forgone salary, or $95,000.",
+    "commonError": "Adds mutually exclusive alternatives instead of choosing the best one."
+  },
+  {
+    "concept": "economic-costs",
+    "parent": "costs-of-production",
+    "objective": "COP.1",
+    "skill": "opportunity_cost_firm",
+    "area": "micro",
+    "tag": "costs_of_production",
+    "id": "HPEX-COST-H-006",
+    "role": "main",
+    "q": "An owner invests $50,000 that could earn 4% annually and gives up a $25,000 salary. The business pays $40,000 in annual operating expenses. Ignoring other costs, what are its implicit and total economic costs for the year?",
+    "options": [
+      "$75,000 implicit; $115,000 total.",
+      "$27,000 implicit; $67,000 total.",
+      "$25,000 implicit; $65,000 total.",
+      "$2,000 implicit; $42,000 total."
+    ],
+    "correctIndex": 1,
+    "feedback": "The forgone annual return on the funds is 4% of $50,000, or $2,000. Add the $25,000 salary to get $27,000 in implicit costs, then add operating expenses to get $67,000. The invested principal is not an annual forgone return.",
+    "commonError": "Counts the invested principal as a yearly implicit cost."
+  },
+  {
+    "concept": "economic-costs",
+    "parent": "costs-of-production",
+    "objective": "COP.1",
+    "skill": "opportunity_cost_firm",
+    "area": "micro",
+    "tag": "costs_of_production",
+    "id": "HPEX-COST-H-007",
+    "role": "main",
+    "q": "A workshop earns $64,000 in annual revenue and pays $60,000 in expenses. It also uses equipment that could earn $8,000 in net rental income elsewhere. With no other implicit costs, what does the workshop’s profit tell its owner?",
+    "options": [
+      "It earns $4,000 in both accounting and economic profit.",
+      "It earns $12,000 economic profit because the equipment is owned.",
+      "It earns $4,000 accounting profit but falls $4,000 short of its alternative.",
+      "It loses $4,000 in accounting terms but earns $4,000 economically."
+    ],
+    "correctIndex": 2,
+    "feedback": "Accounting profit is $64,000 − $60,000 = $4,000. Deducting the forgone $8,000 rent gives economic profit of −$4,000. The workshop covers its paid expenses but does not cover the equipment’s opportunity cost.",
+    "commonError": "Interprets positive accounting profit as proof that all opportunity costs are covered."
+  },
+  {
+    "concept": "economic-costs",
+    "parent": "costs-of-production",
+    "objective": "COP.1",
+    "skill": "opportunity_cost_firm",
+    "area": "micro",
+    "tag": "costs_of_production",
+    "id": "HPEX-COST-H-008",
+    "role": "main",
+    "q": "A business’s annual paid expenses fall $10,000, but the salary its owner could earn elsewhere rises $15,000. With revenue and all other costs unchanged, how do accounting profit and economic profit change?",
+    "options": [
+      "Both rise $10,000.",
+      "Accounting profit rises $10,000; economic profit rises $25,000.",
+      "Accounting profit falls $10,000; economic profit falls $15,000.",
+      "Accounting profit rises $10,000; economic profit falls $5,000."
+    ],
+    "correctIndex": 3,
+    "feedback": "Lower paid expenses add $10,000 to accounting profit. Economic profit also reflects the $15,000 increase in forgone salary. Its net change is +$10,000 − $15,000 = −$5,000.",
+    "commonError": "Ignores the offsetting change in the owner’s opportunity cost."
+  },
+  {
+    "concept": "economic-costs",
+    "parent": "costs-of-production",
+    "objective": "COP.1",
+    "skill": "opportunity_cost_firm",
+    "area": "micro",
+    "tag": "costs_of_production",
+    "id": "HPEX-COST-H-009",
+    "role": "main",
+    "q": "An owner could hire a manager for $30,000 a year and take an outside job paying $40,000. The manager would maintain the business’s revenue and other costs. Compared with the owner managing, what happens to explicit costs and total economic costs?",
+    "options": [
+      "Explicit costs rise $30,000; economic costs fall $10,000.",
+      "Both rise $30,000.",
+      "Explicit costs rise $30,000; economic costs rise $70,000.",
+      "Explicit costs fall $40,000; economic costs fall $10,000."
+    ],
+    "correctIndex": 0,
+    "feedback": "Hiring adds $30,000 to explicit expenses but removes the $40,000 salary forgone when the owner manages. Total economic cost changes by $30,000 − $40,000 = −$10,000.",
+    "commonError": "Adds the manager’s wage without removing the opportunity cost of the owner’s time."
+  },
+  {
+    "concept": "economic-costs",
+    "parent": "costs-of-production",
+    "objective": "COP.1",
+    "skill": "opportunity_cost_firm",
+    "area": "micro",
+    "tag": "costs_of_production",
+    "id": "HPEX-COST-H-010",
+    "role": "main",
+    "q": "A proposed business would pay $80,000 in yearly expenses and use its owner’s labor and building. Those resources could earn a $30,000 salary and $10,000 in net rent elsewhere. What annual revenue would cover all economic costs?",
+    "options": [
+      "$80,000; only paid expenses must be covered.",
+      "$120,000; the salary and rent must both be covered.",
+      "$110,000; the owned building has no rental cost.",
+      "$90,000; the owner’s unpaid labor has no cost."
+    ],
+    "correctIndex": 1,
+    "feedback": "Economic costs include $80,000 in explicit expenses and $40,000 in forgone salary and rent. Revenue of $120,000 covers those costs and leaves zero economic profit, meaning the owner earns the equivalent of the stated alternatives.",
+    "commonError": "Treats unpaid owner resources as costless."
+  },
+  {
+    "concept": "economic-costs",
+    "parent": "costs-of-production",
+    "objective": "COP.1",
+    "skill": "opportunity_cost_firm",
+    "area": "micro",
+    "tag": "costs_of_production",
+    "id": "HPEX-COST-CP-001",
+    "role": "checkpoint",
+    "q": "An owner can earn $42,000 at a job and rent out a building for $8,000, or use both resources in a business. The business would earn $110,000 and pay $55,000 in annual expenses. How much better or worse is operating the business financially?",
+    "options": [
+      "$13,000 better.",
+      "$55,000 better.",
+      "$5,000 better.",
+      "$5,000 worse."
+    ],
+    "correctIndex": 2,
+    "feedback": "The business leaves $110,000 − $55,000 = $55,000 after paid expenses. The available job and rental income together are $50,000. Operating the business therefore provides $5,000 more than those alternatives, its economic profit.",
+    "commonError": "Omits the building’s alternative return when comparing the choices."
+  },
+  {
+    "concept": "economic-costs",
+    "parent": "costs-of-production",
+    "objective": "COP.1",
+    "skill": "opportunity_cost_firm",
+    "area": "micro",
+    "tag": "costs_of_production",
+    "id": "HPEX-COST-CP-002",
+    "role": "checkpoint",
+    "q": "A business earns $12,000 in economic profit. Next year its paid expenses will rise $3,000, and the owner’s best alternative salary will rise $5,000. If revenue and other costs stay fixed, what will economic profit be, and will the business still cover all opportunity costs?",
+    "options": [
+      "$9,000; yes.",
+      "$7,000; yes.",
+      "−$4,000; no.",
+      "$4,000; yes."
+    ],
+    "correctIndex": 3,
+    "feedback": "Both the $3,000 explicit-cost increase and the $5,000 implicit-cost increase reduce economic profit. The new amount is $12,000 − $3,000 − $5,000 = $4,000. Because it remains positive, all stated opportunity costs are covered.",
+    "commonError": "Subtracts only one of the two cost increases."
+  },
+  {
+    "concept": "economic-costs",
+    "parent": "costs-of-production",
+    "objective": "COP.1",
+    "skill": "opportunity_cost_firm",
+    "area": "micro",
+    "tag": "costs_of_production",
+    "id": "HPEX-COST-CP-003",
+    "role": "checkpoint",
+    "q": "A shop pays $70,000 in annual expenses. Its owner forgoes a $40,000 salary and 5% interest on $100,000 invested in the shop. What revenue would cover all economic costs, and what accounting profit would that revenue produce?",
+    "options": [
+      "$115,000 revenue; $45,000 accounting profit.",
+      "$110,000 revenue; $40,000 accounting profit.",
+      "$210,000 revenue; $140,000 accounting profit.",
+      "$115,000 revenue; zero accounting profit."
+    ],
+    "correctIndex": 0,
+    "feedback": "Forgone interest is $5,000, so implicit costs total $45,000. Adding $70,000 in paid expenses gives $115,000 in economic costs. At that revenue, accounting profit is $115,000 − $70,000 = $45,000, just enough to cover implicit costs.",
+    "commonError": "Confuses zero economic profit with zero accounting profit."
+  },
+  {
+    "concept": "economic-costs",
+    "parent": "costs-of-production",
+    "objective": "COP.1",
+    "skill": "opportunity_cost_firm",
+    "area": "micro",
+    "tag": "costs_of_production",
+    "id": "HPEX-COST-CP-004",
+    "role": "checkpoint",
+    "q": "A business earns $20,000 in accounting profit while its owner forgoes $25,000 in salary. A proposed change would add $12,000 in revenue and $4,000 in paid expenses, without changing the owner’s time commitment. Would the change allow the business to cover all economic costs?",
+    "options": [
+      "Yes; economic profit would become $8,000.",
+      "Yes; economic profit would become $3,000.",
+      "No; economic profit would remain −$5,000.",
+      "No; economic profit would become −$13,000."
+    ],
+    "correctIndex": 1,
+    "feedback": "The change adds $12,000 − $4,000 = $8,000 to accounting profit, bringing it to $28,000. Deduct the unchanged $25,000 forgone salary to obtain $3,000 in economic profit. The business would then cover all stated economic costs.",
+    "commonError": "Reports the gain from the proposal as total economic profit."
+  },
+  {
+    "concept": "economic-costs",
+    "parent": "costs-of-production",
+    "objective": "COP.1",
+    "skill": "opportunity_cost_firm",
+    "area": "micro",
+    "tag": "costs_of_production",
+    "id": "HPEX-COST-CP-005",
+    "role": "checkpoint",
+    "q": "A firm replaces rented equipment costing $9,000 a year with owner-supplied equipment that could earn $6,000 in net rent elsewhere. Output and all other costs stay fixed. How do accounting profit and economic profit change?",
+    "options": [
+      "Both rise $9,000.",
+      "Accounting profit rises $9,000; economic profit rises $15,000.",
+      "Accounting profit rises $9,000; economic profit rises $3,000.",
+      "Accounting profit is unchanged; economic profit rises $3,000."
+    ],
+    "correctIndex": 2,
+    "feedback": "The avoided rental payment raises accounting profit by $9,000. The owner-supplied equipment adds $6,000 in implicit cost, so economic profit rises by only $9,000 − $6,000 = $3,000.",
+    "commonError": "Treats replacing a paid resource with an owned resource as eliminating its entire economic cost."
+  },
+  {
+    "concept": "economic-costs",
+    "parent": "costs-of-production",
+    "objective": "COP.1",
+    "skill": "opportunity_cost_firm",
+    "area": "micro",
+    "tag": "costs_of_production",
+    "id": "HPEX-COST-CP-006",
+    "role": "checkpoint",
+    "q": "An owner reports $60,000 accounting profit and claims the business covers all economic costs. Operating it requires giving up a $45,000 salary and $20,000 in net rental income. Which assessment is correct?",
+    "options": [
+      "Economic profit is $15,000; no increase is needed.",
+      "Economic profit is $40,000; no increase is needed.",
+      "Economic profit is −$65,000; accounting profit would need to rise $65,000.",
+      "Economic profit is −$5,000; accounting profit would need to rise $5,000."
+    ],
+    "correctIndex": 3,
+    "feedback": "The distinct forgone salary and rent total $65,000. Subtracting them from $60,000 accounting profit gives −$5,000 economic profit. With costs unchanged, another $5,000 of accounting profit would cover the shortfall.",
+    "commonError": "Counts only one implicit cost or mistakes total implicit costs for the loss."
+  },
+  {
+    "concept": "market-power",
+    "parent": "market-failures",
+    "objective": "LO1.6",
+    "skill": "market_power",
+    "area": "general",
+    "tag": "market_failures",
+    "id": "HPEX-MP-H-001",
+    "role": "main",
+    "q": "A town’s only pharmacy raises its price and loses some customers, but many continue buying because other pharmacies are far away. A delivery service then makes those alternatives easily available. How should this affect the pharmacy’s pricing power and demand sensitivity?",
+    "options": [
+      "Pricing power falls; customers become more responsive to its price.",
+      "Pricing power rises; customers become less responsive to its price.",
+      "Pricing power falls; customers become less responsive to its price.",
+      "Pricing power is unchanged; the number of local storefronts is unchanged."
+    ],
+    "correctIndex": 0,
+    "feedback": "Delivery gives customers closer alternatives even without a new local storefront. With switching easier, more customers can leave after a price increase. The pharmacy’s demand becomes more price-sensitive, limiting its market power.",
+    "commonError": "Measures market power only by the number of physical local sellers."
+  },
+  {
+    "concept": "market-power",
+    "parent": "market-failures",
+    "objective": "LO1.6",
+    "skill": "market_power_effect",
+    "area": "general",
+    "tag": "market_failures",
+    "id": "HPEX-MP-H-002",
+    "role": "main",
+    "q": "A sole seller refuses to serve a buyer willing to pay $24 for an extra unit that would cost $16 to produce. There are no external effects. If the unit remains unsold, what happens to total surplus, and why might the seller still restrict output?",
+    "options": [
+      "$24 of surplus is forgone; the production cost is a transfer.",
+      "$8 of surplus is forgone; restricting output can support a higher price.",
+      "$16 of surplus is forgone; the buyer’s value does not matter.",
+      "No surplus is forgone; avoiding production avoids its full social cost."
+    ],
+    "correctIndex": 1,
+    "feedback": "The extra trade would create $24 − $16 = $8 in surplus. A seller with market power may restrict output to support the price on its sales, even though some beneficial trades are lost.",
+    "commonError": "Counts only buyer value or only production cost when evaluating a forgone trade."
+  },
+  {
+    "concept": "market-power",
+    "parent": "market-failures",
+    "objective": "LO1.6",
+    "skill": "market_power_effect",
+    "area": "general",
+    "tag": "market_failures",
+    "id": "HPEX-MP-H-003",
+    "role": "main",
+    "q": "A supplier charges $12 for a product that costs $7 per additional unit to produce. A buyer values one more unit at $10 but does not buy it. With no external effects, would producing that unit improve efficiency, and by how much?",
+    "options": [
+      "No; it would reduce total surplus by $2.",
+      "Yes; it would add $5 to total surplus.",
+      "Yes; it would add $3 to total surplus.",
+      "No; a buyer who rejects the price cannot benefit from production."
+    ],
+    "correctIndex": 2,
+    "feedback": "The buyer’s $10 value exceeds the $7 resource cost by $3. That is the potential gain from the extra unit. The $12 selling price prevents the purchase, but it is not the unit’s social production cost.",
+    "commonError": "Uses the selling price instead of resource cost to judge efficiency."
+  },
+  {
+    "concept": "market-power",
+    "parent": "market-failures",
+    "objective": "LO1.6",
+    "skill": "market_power_effect",
+    "area": "general",
+    "tag": "market_failures",
+    "id": "HPEX-MP-H-004",
+    "role": "main",
+    "q": "A firm’s patent expires, allowing close substitutes to enter. Production costs remain unchanged. What combination is most likely as buyers gain alternatives?",
+    "options": [
+      "The firm’s markup rises, and fewer mutually beneficial trades can occur.",
+      "The firm’s markup falls, and the efficient quantity necessarily falls.",
+      "The firm’s markup is unchanged, because its production costs are unchanged.",
+      "The firm’s markup falls, and more mutually beneficial trades can occur."
+    ],
+    "correctIndex": 3,
+    "feedback": "Entry makes demand for the original firm’s product more sensitive to its price, putting downward pressure on its markup. Lower prices can allow purchases whose value exceeds production cost but which the previous price discouraged.",
+    "commonError": "Assumes unchanged production costs imply unchanged pricing power."
+  },
+  {
+    "concept": "market-power",
+    "parent": "market-failures",
+    "objective": "LO1.6",
+    "skill": "market_power",
+    "area": "general",
+    "tag": "market_failures",
+    "id": "HPEX-MP-H-005",
+    "role": "main",
+    "q": "Only three shops sell appliances in a town, but residents can buy identical appliances online with free next-day delivery. What does this suggest about local market power and the effect of a local price increase?",
+    "options": [
+      "Market power may be limited; buyers can switch to close online substitutes.",
+      "Market power must be strong; only local shops belong in the comparison.",
+      "Market power must be strong; delivery adds another seller but no substitute.",
+      "Market power may be limited; each shop can raise price without losing sales."
+    ],
+    "correctIndex": 0,
+    "feedback": "Market power depends on the alternatives buyers can actually use, not just the count of local stores. Convenient online sellers provide close substitutes, so local price increases can drive customers away.",
+    "commonError": "Defines the relevant alternatives by storefront location alone."
+  },
+  {
+    "concept": "market-power",
+    "parent": "market-failures",
+    "objective": "LO1.6",
+    "skill": "market_power_effect",
+    "area": "general",
+    "tag": "market_failures",
+    "id": "HPEX-MP-H-006",
+    "role": "main",
+    "q": "After easier entry lowers a market’s price from $20 to $16, the same 100 units are still sold. Production costs are unchanged. What happens to consumer surplus and total surplus on those units?",
+    "options": [
+      "Consumer surplus rises $400; total surplus rises $400.",
+      "Consumer surplus rises $400; total surplus is unchanged.",
+      "Consumer surplus is unchanged; total surplus rises $400.",
+      "Consumer surplus falls $400; total surplus is unchanged."
+    ],
+    "correctIndex": 1,
+    "feedback": "Buyers save $4 on each of 100 units, gaining $400 in consumer surplus. Sellers lose the same amount on those units. Because the quantity and production costs are unchanged, this is a transfer rather than an increase in total surplus.",
+    "commonError": "Counts a transfer from sellers to existing buyers as an efficiency gain."
+  },
+  {
+    "concept": "market-power",
+    "parent": "market-failures",
+    "objective": "LO1.6",
+    "skill": "market_power",
+    "area": "general",
+    "tag": "market_failures",
+    "id": "HPEX-MP-H-007",
+    "role": "main",
+    "q": "A city ends its exclusive waste-collection license and allows new providers to enter. Existing customers, however, must pay a large fee to cancel their current contracts. How should these changes affect entry and the incumbent’s pricing power?",
+    "options": [
+      "Entry becomes easier, so the incumbent must immediately lose all pricing power.",
+      "Entry remains blocked until every current customer’s contract has expired.",
+      "Entry becomes easier, but switching fees can limit competitive pressure.",
+      "Entry becomes harder, because switching fees raise new providers’ production costs."
+    ],
+    "correctIndex": 2,
+    "feedback": "Ending the exclusive license removes a legal entry barrier. The cancellation fees still make it costly for existing customers to use the new alternatives, however. Competitive pressure can increase without immediately eliminating the incumbent’s pricing power.",
+    "commonError": "Assumes removing an entry barrier also removes every obstacle to customer switching."
+  },
+  {
+    "concept": "market-power",
+    "parent": "market-failures",
+    "objective": "LO1.6",
+    "skill": "market_power_effect",
+    "area": "general",
+    "tag": "market_failures",
+    "id": "HPEX-MP-H-008",
+    "role": "main",
+    "q": "Two rival stores merge. Afterward, the price rises and total sales fall, while production costs are unchanged. With no external effects, which interpretation best fits these changes?",
+    "options": [
+      "The merged firm has less pricing power, and some beneficial trades may be lost.",
+      "Production has become cheaper, and the efficient quantity has fallen.",
+      "The price increase alone creates an equal increase in total surplus.",
+      "The merged firm has more pricing power, and some beneficial trades may be lost."
+    ],
+    "correctIndex": 3,
+    "feedback": "A merger removes a competing alternative. A higher price and lower output at unchanged costs are consistent with increased market power. Some buyers may now forgo units they value above production cost, reducing total surplus.",
+    "commonError": "Treats higher producer receipts as an automatic increase in social gains."
+  },
+  {
+    "concept": "market-power",
+    "parent": "market-failures",
+    "objective": "LO1.6",
+    "skill": "market_power_effect",
+    "area": "general",
+    "tag": "market_failures",
+    "id": "HPEX-MP-H-009",
+    "role": "main",
+    "q": "Competition lowers a product’s price from $18 to $14. Existing buyers gain $400, while sellers lose $400 on those same units. New buyers also make purchases worth $120 more than their production costs. What is the net change in total surplus?",
+    "options": [
+      "It rises $120.",
+      "It rises $520.",
+      "It rises $400.",
+      "It falls $280."
+    ],
+    "correctIndex": 0,
+    "feedback": "The $400 gain to existing buyers is offset by sellers’ $400 loss on those units. The additional trades create $120 in new gains, so total surplus rises by $120.",
+    "commonError": "Adds a redistribution of existing surplus to the gains from new trade."
+  },
+  {
+    "concept": "market-power",
+    "parent": "market-failures",
+    "objective": "LO1.6",
+    "skill": "natural_monopoly_tradeoff",
+    "area": "general",
+    "tag": "market_failures",
+    "id": "HPEX-MP-H-010",
+    "role": "main",
+    "q": "One water network could serve a town for $2 million annually. Two overlapping networks would cost $3 million for the same service. If the single network were an unregulated sole supplier, which assessment would be justified?",
+    "options": [
+      "It saves $1 million in costs, so its price must equal the competitive price.",
+      "It saves $1 million in costs but could still charge a high price and restrict service.",
+      "Two networks save $1 million in costs and guarantee lower prices.",
+      "Both arrangements cost the same per customer because they provide the same service."
+    ],
+    "correctIndex": 1,
+    "feedback": "One network saves $3 million − $2 million = $1 million in production costs. That natural-monopoly advantage does not ensure an efficient price: an unregulated sole supplier may use its market power to restrict service and raise its markup.",
+    "commonError": "Assumes a lower-cost market structure automatically produces an efficient price."
+  },
+  {
+    "concept": "market-power",
+    "parent": "market-failures",
+    "objective": "LO1.6",
+    "skill": "market_power_effect",
+    "area": "general",
+    "tag": "market_failures",
+    "id": "HPEX-MP-CP-001",
+    "role": "checkpoint",
+    "q": "A seller with market power leaves two potential units unsold. Buyers value them at $22 and $18; each would cost $14 to produce. With no external effects, how much surplus could these trades add, and what does their absence illustrate?",
+    "options": [
+      "$40; all buyer value becomes additional surplus.",
+      "$28; the forgone production costs measure lost surplus.",
+      "$12; output restriction can sacrifice beneficial trades.",
+      "$4; only the lower-valued buyer’s gain counts."
+    ],
+    "correctIndex": 2,
+    "feedback": "The potential gains are $22 − $14 = $8 and $18 − $14 = $4, totaling $12. Both buyers value the units above production cost, so leaving them unsold sacrifices mutually beneficial trades.",
+    "commonError": "Adds buyer values without subtracting the resources needed for production."
+  },
+  {
+    "concept": "market-power",
+    "parent": "market-failures",
+    "objective": "LO1.6",
+    "skill": "market_power_effect",
+    "area": "general",
+    "tag": "market_failures",
+    "id": "HPEX-MP-CP-002",
+    "role": "checkpoint",
+    "q": "After an entry barrier is removed, price falls $3 on 100 previously sold units. Twenty additional units are sold, each creating $2 in net gains from trade. What is the gain to existing buyers, and how much does total surplus increase?",
+    "options": [
+      "$300 to existing buyers; $340 more total surplus.",
+      "$40 to existing buyers; $300 more total surplus.",
+      "$340 to existing buyers; $340 more total surplus.",
+      "$300 to existing buyers; $40 more total surplus."
+    ],
+    "correctIndex": 3,
+    "feedback": "Existing buyers save $3 × 100 = $300, offset by sellers’ lower receipts on those units. The 20 new units each create $2 beyond their production costs, adding $40 to total surplus.",
+    "commonError": "Treats the price reduction on existing sales as new surplus."
+  },
+  {
+    "concept": "market-power",
+    "parent": "market-failures",
+    "objective": "LO1.6",
+    "skill": "market_power",
+    "area": "general",
+    "tag": "market_failures",
+    "id": "HPEX-MP-CP-003",
+    "role": "checkpoint",
+    "q": "A town has one internet provider. A second firm offers an equally reliable service with no installation fee. The first provider lowers its price, but still keeps many customers. What can be concluded about its demand and market power?",
+    "options": [
+      "Demand has become more price-sensitive; some market power may remain.",
+      "Demand has become less price-sensitive; market power must have increased.",
+      "Demand has become perfectly elastic; all market power must be gone.",
+      "Demand is unchanged; keeping customers proves that entry had no effect."
+    ],
+    "correctIndex": 0,
+    "feedback": "A close alternative makes switching easier and puts pressure on the incumbent’s price. Retaining customers does not imply the alternative has no effect, nor does one entrant guarantee perfect competition. Pricing power can weaken without disappearing.",
+    "commonError": "Treats market power as either complete monopoly or none at all."
+  },
+  {
+    "concept": "market-power",
+    "parent": "market-failures",
+    "objective": "LO1.6",
+    "skill": "market_power_effect",
+    "area": "general",
+    "tag": "market_failures",
+    "id": "HPEX-MP-CP-004",
+    "role": "checkpoint",
+    "q": "A sole supplier charges $20 per unit. Two potential buyers value an extra unit at $17 and $11, respectively. Each unit would cost $12 to produce. With no external effects, which unsold trade would improve efficiency and what gain would it create?",
+    "options": [
+      "Both trades; a $4 gain in total.",
+      "Only the $17 buyer’s trade; a $5 gain.",
+      "Only the $11 buyer’s trade; a $1 gain.",
+      "Neither trade; both values are below the current price."
+    ],
+    "correctIndex": 1,
+    "feedback": "The first buyer’s value exceeds cost by $17 − $12 = $5, so that trade would add surplus. The second buyer’s value is $1 below cost, so that unit would reduce surplus. Efficiency depends on value relative to cost, not relative to the supplier’s current price.",
+    "commonError": "Uses the market price as the social cost or includes a trade with value below cost."
+  },
+  {
+    "concept": "market-power",
+    "parent": "market-failures",
+    "objective": "LO1.6",
+    "skill": "market_power_effect",
+    "area": "general",
+    "tag": "market_failures",
+    "id": "HPEX-MP-CP-005",
+    "role": "checkpoint",
+    "q": "A firm gains exclusive control of a key input. Its competitors then leave, and it raises price while selling fewer units. The cost of producing each unit is unchanged. Which sequence best explains the outcome?",
+    "options": [
+      "A cost increase shifts supply left, raising price without changing market power.",
+      "Stronger competition lowers demand sensitivity, allowing the firm to raise its markup.",
+      "An entry barrier removes alternatives, allowing a larger markup and lost trades.",
+      "A higher price raises buyer value, making the lower quantity more efficient."
+    ],
+    "correctIndex": 2,
+    "feedback": "Control of an essential input blocks competitors from serving buyers. Fewer alternatives let the remaining firm sustain a larger markup. At unchanged costs, restricted sales can leave some units unproduced even though buyers value them above cost.",
+    "commonError": "Attributes a market-power change to production costs that the scenario holds fixed."
+  },
+  {
+    "concept": "market-power",
+    "parent": "market-failures",
+    "objective": "LO1.6",
+    "skill": "market_power_effect",
+    "area": "general",
+    "tag": "market_failures",
+    "id": "HPEX-MP-CP-006",
+    "role": "checkpoint",
+    "q": "A city considers removing an exclusive taxi license. New firms could then enter at the same operating costs as the current firm. If entry lowers fares and increases rides, what would that imply about the old license and the gains from additional rides?",
+    "options": [
+      "The license reduced operating costs; every new fare paid is a net surplus gain.",
+      "The license protected market power; lower fares alone measure all new surplus.",
+      "The license prevented external costs; more rides necessarily reduce total surplus.",
+      "The license protected market power; new rides valued above their costs add surplus."
+    ],
+    "correctIndex": 3,
+    "feedback": "The exclusive license kept competing suppliers out even though they could operate at the same costs. Lower fares and more rides after entry are consistent with reduced market power. Additional rides create new surplus when riders’ values exceed service costs; fare payments themselves are transfers.",
+    "commonError": "Confuses an entry barrier with a cost advantage or counts payments as net social gains."
+  },
+  {
+    "concept": "budget-accounting-and-public-saving",
+    "parent": "budget-accounting-and-public-saving",
+    "objective": "FB3",
+    "skill": "calculate_public_saving",
+    "area": "macro",
+    "tag": "public-saving",
+    "id": "HPEX-BUD-H-001",
+    "role": "main",
+    "q": "A government collects $500 billion in taxes, pays $80 billion in transfers, and purchases $450 billion in goods and services. These are its only budget items. What are net taxes and public saving?",
+    "options": [
+      "$420 billion net taxes; −$30 billion public saving.",
+      "$500 billion net taxes; +$50 billion public saving.",
+      "$580 billion net taxes; +$130 billion public saving.",
+      "$420 billion net taxes; +$30 billion public saving."
+    ],
+    "correctIndex": 0,
+    "feedback": "Net taxes are taxes minus transfers: $500 − $80 = $420 billion. Public saving is net taxes minus purchases: $420 − $450 = −$30 billion. The negative amount is a budget deficit.",
+    "commonError": "Omits transfers or subtracts them in the wrong direction."
+  },
+  {
+    "concept": "budget-accounting-and-public-saving",
+    "parent": "budget-accounting-and-public-saving",
+    "objective": "FB3",
+    "skill": "calculate_public_saving",
+    "area": "macro",
+    "tag": "public-saving",
+    "id": "HPEX-BUD-H-002",
+    "role": "main",
+    "q": "A government begins with a $20 billion surplus. Tax receipts then fall $15 billion and total spending rises $10 billion. What is the new budget position, and how much does public saving change?",
+    "options": [
+      "A $15 billion surplus; public saving falls $5 billion.",
+      "A $5 billion deficit; public saving falls $25 billion.",
+      "A $5 billion surplus; public saving falls $15 billion.",
+      "A $25 billion deficit; public saving falls $45 billion."
+    ],
+    "correctIndex": 1,
+    "feedback": "Lower receipts and higher spending both reduce the balance. The combined reduction is $15 + $10 = $25 billion. Starting from a $20 billion surplus leaves a $5 billion deficit.",
+    "commonError": "Offsets a revenue loss against a spending increase instead of adding their effects."
+  },
+  {
+    "concept": "budget-accounting-and-public-saving",
+    "parent": "budget-accounting-and-public-saving",
+    "objective": "FB3",
+    "skill": "calculate_public_saving",
+    "area": "macro",
+    "tag": "public-saving",
+    "id": "HPEX-BUD-H-003",
+    "role": "main",
+    "q": "Net taxes are $300 billion and government purchases are $340 billion. The government cuts purchases by $25 billion and net taxes by $10 billion. What happens to public saving?",
+    "options": [
+      "It falls $15 billion to −$55 billion.",
+      "It rises $35 billion to −$5 billion.",
+      "It rises $15 billion but remains negative at −$25 billion.",
+      "It becomes positive at +$15 billion."
+    ],
+    "correctIndex": 2,
+    "feedback": "Initial public saving is $300 − $340 = −$40 billion. After the changes it is $290 − $315 = −$25 billion. The spending cut exceeds the net-tax cut, improving public saving by $15 billion without eliminating the deficit.",
+    "commonError": "Confuses an improvement in the balance with a surplus."
+  },
+  {
+    "concept": "budget-accounting-and-public-saving",
+    "parent": "budget-accounting-and-public-saving",
+    "objective": "FB3",
+    "skill": "calculate_public_saving",
+    "area": "macro",
+    "tag": "public-saving",
+    "id": "HPEX-BUD-H-004",
+    "role": "main",
+    "q": "A government has a $60 billion deficit. It cuts transfers by $20 billion, raises purchases by $10 billion, and leaves tax receipts unchanged. With no other changes, what is the new deficit and the change in public saving?",
+    "options": [
+      "$30 billion deficit; public saving rises $30 billion.",
+      "$70 billion deficit; public saving falls $10 billion.",
+      "$50 billion deficit; public saving falls $10 billion.",
+      "$50 billion deficit; public saving rises $10 billion."
+    ],
+    "correctIndex": 3,
+    "feedback": "The transfer cut reduces total outlays by $20 billion, while higher purchases add $10 billion. Net outlays fall $10 billion, so the deficit shrinks from $60 billion to $50 billion and public saving rises $10 billion.",
+    "commonError": "Treats transfer payments as irrelevant to the budget balance."
+  },
+  {
+    "concept": "budget-accounting-and-public-saving",
+    "parent": "budget-accounting-and-public-saving",
+    "objective": "FB3",
+    "skill": "calculate_public_saving",
+    "area": "macro",
+    "tag": "public-saving",
+    "id": "HPEX-BUD-H-005",
+    "role": "main",
+    "q": "Government revenue is $900 billion and outlays are $960 billion. A proposal would raise revenue $40 billion and cut outlays $10 billion. Would the budget balance, and what gap would remain?",
+    "options": [
+      "No; a $10 billion deficit would remain.",
+      "Yes; the $50 billion improvement would balance it.",
+      "No; a $30 billion deficit would remain.",
+      "No; a $10 billion surplus would result."
+    ],
+    "correctIndex": 0,
+    "feedback": "The initial deficit is $60 billion. Higher revenue and lower outlays improve the balance by $40 + $10 = $50 billion. The remaining deficit is $10 billion, so the proposal does not quite balance the budget.",
+    "commonError": "Treats the improvement as sufficient without comparing it with the initial deficit."
+  },
+  {
+    "concept": "budget-accounting-and-public-saving",
+    "parent": "budget-accounting-and-public-saving",
+    "objective": "FB1",
+    "skill": "connect_balance_to_borrowing",
+    "area": "macro",
+    "tag": "public-saving",
+    "id": "HPEX-BUD-H-006",
+    "role": "main",
+    "q": "A government starts with $1,000 billion in debt and runs a $40 billion deficit this year, down from $70 billion last year. If it borrows the full deficit and makes no other debt adjustments, what is year-end debt and how has borrowing changed?",
+    "options": [
+      "$970 billion debt; annual borrowing is $30 billion lower.",
+      "$1,040 billion debt; annual borrowing is $30 billion lower.",
+      "$1,070 billion debt; annual borrowing is unchanged.",
+      "$1,030 billion debt; annual borrowing is $40 billion lower."
+    ],
+    "correctIndex": 1,
+    "feedback": "The current $40 billion deficit adds $40 billion to the initial debt, giving $1,040 billion. Borrowing is $70 − $40 = $30 billion lower than last year, but it is still positive, so debt rises.",
+    "commonError": "Treats a smaller deficit as repayment of existing debt."
+  },
+  {
+    "concept": "budget-accounting-and-public-saving",
+    "parent": "budget-accounting-and-public-saving",
+    "objective": "FB3",
+    "skill": "calculate_public_saving",
+    "area": "macro",
+    "tag": "public-saving",
+    "id": "HPEX-BUD-H-007",
+    "role": "main",
+    "q": "Public saving is −$30 billion. Two plans would leave tax receipts unchanged: A cuts transfers $12 billion; B cuts purchases $12 billion. Holding everything else fixed, how would public saving compare under the plans?",
+    "options": [
+      "A leaves it at −$30 billion; B raises it to −$18 billion.",
+      "A raises it to −$18 billion; B leaves it at −$30 billion.",
+      "Both produce −$18 billion in public saving.",
+      "Both produce +$12 billion in public saving."
+    ],
+    "correctIndex": 2,
+    "feedback": "A transfer cut raises net taxes by $12 billion; a purchase cut reduces the amount subtracted from net taxes by $12 billion. Either raises public saving from −$30 billion to −$18 billion. Their accounting effects match even though the spending categories differ.",
+    "commonError": "Excludes transfers from public-saving accounting."
+  },
+  {
+    "concept": "budget-accounting-and-public-saving",
+    "parent": "budget-accounting-and-public-saving",
+    "objective": "FB1",
+    "skill": "connect_balance_to_borrowing",
+    "area": "macro",
+    "tag": "public-saving",
+    "id": "HPEX-BUD-H-008",
+    "role": "main",
+    "q": "A government plans $120 billion in tax receipts and $130 billion in total outlays. It issues $10 billion in bonds to cover the gap. Does issuing the bonds balance the budget, and what is public saving?",
+    "options": [
+      "Yes; public saving becomes zero.",
+      "Yes; public saving becomes +$10 billion.",
+      "No; public saving falls to −$20 billion.",
+      "No; public saving remains −$10 billion."
+    ],
+    "correctIndex": 3,
+    "feedback": "Borrowing finances the gap but is not tax or other budget revenue. Outlays still exceed revenue by $10 billion, so the deficit and negative public saving remain. The bond sale does not create an additional $10 billion of spending either.",
+    "commonError": "Counts borrowing as revenue that eliminates the deficit."
+  },
+  {
+    "concept": "budget-accounting-and-public-saving",
+    "parent": "budget-accounting-and-public-saving",
+    "objective": "FB3",
+    "skill": "calculate_public_saving",
+    "area": "macro",
+    "tag": "public-saving",
+    "id": "HPEX-BUD-H-009",
+    "role": "main",
+    "q": "A government collects $400 billion in taxes, pays $50 billion in transfers, and buys $370 billion in goods and services. These are its only budget items. A report lists public saving as +$30 billion. What correction is needed?",
+    "options": [
+      "Public saving is −$20 billion; the report omitted transfers.",
+      "Public saving is +$80 billion; transfers should be added to taxes.",
+      "Public saving is −$30 billion; purchases should be subtracted from transfers.",
+      "Public saving is +$30 billion; transfers do not affect the budget."
+    ],
+    "correctIndex": 0,
+    "feedback": "Net taxes are $400 − $50 = $350 billion. Subtracting $370 billion in purchases gives −$20 billion. The reported +$30 billion comes from subtracting purchases directly from gross taxes and ignoring transfers.",
+    "commonError": "Uses gross tax revenue where net taxes are required."
+  },
+  {
+    "concept": "budget-accounting-and-public-saving",
+    "parent": "budget-accounting-and-public-saving",
+    "objective": "FB3",
+    "skill": "calculate_public_saving",
+    "area": "macro",
+    "tag": "public-saving",
+    "id": "HPEX-BUD-H-010",
+    "role": "main",
+    "q": "A government initially has a balanced budget. It cuts taxes $8 billion, cuts purchases $5 billion, and cuts transfers $2 billion. With no other changes, what budget position and public saving result?",
+    "options": [
+      "A $1 billion surplus; public saving is +$1 billion.",
+      "A $1 billion deficit; public saving is −$1 billion.",
+      "A $3 billion deficit; public saving is −$3 billion.",
+      "A $15 billion deficit; public saving is −$15 billion."
+    ],
+    "correctIndex": 1,
+    "feedback": "Revenue falls $8 billion, while total spending falls $5 + $2 = $7 billion. The balance deteriorates by $1 billion from zero. The result is a $1 billion deficit and −$1 billion in public saving.",
+    "commonError": "Omits one spending category or reverses the net change in the balance."
+  },
+  {
+    "concept": "budget-accounting-and-public-saving",
+    "parent": "budget-accounting-and-public-saving",
+    "objective": "FB3",
+    "skill": "calculate_public_saving",
+    "area": "macro",
+    "tag": "public-saving",
+    "id": "HPEX-BUD-CP-001",
+    "role": "checkpoint",
+    "q": "A government collects $600 billion in taxes, pays $100 billion in transfers, and purchases $540 billion in goods and services. These are its only outlays. If transfers fall $15 billion and taxes rise $10 billion, what is the new public saving and the borrowing needed to finance it?",
+    "options": [
+      "−$40 billion public saving; $40 billion borrowing.",
+      "+$15 billion public saving; no borrowing.",
+      "−$15 billion public saving; $15 billion borrowing.",
+      "−$35 billion public saving; $35 billion borrowing."
+    ],
+    "correctIndex": 2,
+    "feedback": "New net taxes are $610 − $85 = $525 billion. Subtract unchanged purchases of $540 billion to get −$15 billion public saving. Financing that remaining deficit requires $15 billion in borrowing.",
+    "commonError": "Fails to include both the tax increase and the transfer cut in net taxes."
+  },
+  {
+    "concept": "budget-accounting-and-public-saving",
+    "parent": "budget-accounting-and-public-saving",
+    "objective": "FB3",
+    "skill": "calculate_public_saving",
+    "area": "macro",
+    "tag": "public-saving",
+    "id": "HPEX-BUD-CP-002",
+    "role": "checkpoint",
+    "q": "A government has a $25 billion deficit and plans $15 billion in additional purchases. It also plans a $10 billion tax increase. How much must it cut transfers to balance the budget, assuming no other changes?",
+    "options": [
+      "$10 billion.",
+      "$20 billion.",
+      "$50 billion.",
+      "$30 billion."
+    ],
+    "correctIndex": 3,
+    "feedback": "The extra purchases raise the deficit to $40 billion, and the tax increase reduces it to $30 billion. A $30 billion transfer cut would remove the remaining gap.",
+    "commonError": "Offsets the initial deficit with a spending increase or adds a tax increase to the deficit."
+  },
+  {
+    "concept": "budget-accounting-and-public-saving",
+    "parent": "budget-accounting-and-public-saving",
+    "objective": "FB1",
+    "skill": "connect_balance_to_borrowing",
+    "area": "macro",
+    "tag": "public-saving",
+    "id": "HPEX-BUD-CP-003",
+    "role": "checkpoint",
+    "q": "A government begins with $500 billion in debt. It runs a $30 billion deficit in year 1 and a $10 billion surplus in year 2. It borrows for the deficit and uses the entire surplus to repay debt. What is debt after year 2, and what was public saving in year 2?",
+    "options": [
+      "$520 billion debt; +$10 billion public saving.",
+      "$520 billion debt; −$10 billion public saving.",
+      "$540 billion debt; +$10 billion public saving.",
+      "$490 billion debt; +$10 billion public saving."
+    ],
+    "correctIndex": 0,
+    "feedback": "Year 1 raises debt to $530 billion. The year-2 surplus repays $10 billion, leaving $520 billion. A surplus means positive public saving, so year-2 public saving is +$10 billion even though debt remains above its initial level.",
+    "commonError": "Confuses the debt stock with the current year’s budget flow."
+  },
+  {
+    "concept": "budget-accounting-and-public-saving",
+    "parent": "budget-accounting-and-public-saving",
+    "objective": "FB3",
+    "skill": "calculate_public_saving",
+    "area": "macro",
+    "tag": "public-saving",
+    "id": "HPEX-BUD-CP-004",
+    "role": "checkpoint",
+    "q": "Net taxes are $240 billion and purchases are $280 billion. Plan A raises net taxes $30 billion and purchases $10 billion. Plan B cuts purchases $25 billion and net taxes $10 billion. Which plan leaves more public saving, and by how much?",
+    "options": [
+      "B, by $5 billion; both plans still leave a deficit.",
+      "A, by $5 billion; both plans still leave a deficit.",
+      "A, by $20 billion; only A produces a surplus.",
+      "B, by $15 billion; only B produces a surplus."
+    ],
+    "correctIndex": 1,
+    "feedback": "Plan A gives $270 − $290 = −$20 billion public saving. Plan B gives $230 − $255 = −$25 billion. A’s balance is $5 billion higher, but both values are negative.",
+    "commonError": "Compares only the spending changes rather than each plan’s full budget balance."
+  },
+  {
+    "concept": "budget-accounting-and-public-saving",
+    "parent": "budget-accounting-and-public-saving",
+    "objective": "FB4",
+    "skill": "classify_budget_transactions",
+    "area": "macro",
+    "tag": "public-saving",
+    "id": "HPEX-BUD-CP-005",
+    "role": "checkpoint",
+    "q": "A government collects $200 billion in taxes and spends $210 billion, including $30 billion in transfers. Next year it shifts $10 billion from purchases to transfers without changing taxes or total spending. What happens to government purchases and public saving?",
+    "options": [
+      "Purchases fall to $170 billion; public saving rises to zero.",
+      "Purchases stay at $180 billion; public saving falls to −$20 billion.",
+      "Purchases fall to $170 billion; public saving stays at −$10 billion.",
+      "Purchases rise to $190 billion; public saving stays at −$10 billion."
+    ],
+    "correctIndex": 2,
+    "feedback": "Initial purchases are $210 − $30 = $180 billion. Reallocating $10 billion to transfers reduces purchases to $170 billion and raises transfers to $40 billion. Public saving remains $200 − $40 − $170 = −$10 billion because total outlays are unchanged.",
+    "commonError": "Counts a cut in purchases as deficit reduction even when transfers rise by the same amount."
+  },
+  {
+    "concept": "budget-accounting-and-public-saving",
+    "parent": "budget-accounting-and-public-saving",
+    "objective": "FB1",
+    "skill": "compare_budget_balances",
+    "area": "macro",
+    "tag": "public-saving",
+    "id": "HPEX-BUD-CP-006",
+    "role": "checkpoint",
+    "q": "This year, revenue is $300 billion, outlays are $340 billion, and year-end debt is $800 billion. Next year revenue rises $20 billion and outlays rise $5 billion. If that deficit is fully borrowed, what are next year’s deficit and year-end debt?",
+    "options": [
+      "$15 billion deficit; $815 billion debt.",
+      "$25 billion deficit; $775 billion debt.",
+      "$45 billion deficit; $845 billion debt.",
+      "$25 billion deficit; $825 billion debt."
+    ],
+    "correctIndex": 3,
+    "feedback": "Next year’s revenue is $320 billion and outlays are $345 billion, leaving a $25 billion deficit. Borrowing that amount raises debt from $800 billion to $825 billion. The smaller deficit slows debt growth; it does not reduce debt.",
+    "commonError": "Confuses the reduction in the deficit with the amount of the new deficit."
+  }
+]
